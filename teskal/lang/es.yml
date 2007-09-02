@@ -26,8 +26,8 @@ activerecord_error_confirmation: doesn't match confirmation
 activerecord_error_accepted: must be accepted
 activerecord_error_empty: can't be empty
 activerecord_error_blank: can't be blank
-activerecord_error_too_long: is too long
-activerecord_error_too_short: is too short
+activerecord_error_too_long: es demasiado larga
+activerecord_error_too_short: demasiado corta
 activerecord_error_wrong_length: is the wrong length
 activerecord_error_taken: has already been taken
 activerecord_error_not_a_number: is not a number
@@ -60,7 +60,7 @@ notice_account_register_done: Cuenta creada.
 notice_account_unknown_email: Usuario desconocido.
 notice_can_t_change_password: Esta cuenta usa una autentificación externa. No se puede cambiar la contraseña.
 notice_account_lost_email_sent: Se le ha enviado un correo con instrucciones para crear una contraseña.
-notice_account_activated: Your account has been activated. You can now log in.
+notice_account_activated: Tu cuenta ha sido activada. Puedes entrar.
 notice_successful_create: Successful creation.
 notice_successful_update: Successful update.
 notice_successful_delete: Successful deletion.
@@ -122,7 +122,7 @@ field_login: Identificador
 field_mail_notification: Notificación por mail
 field_admin: Administrador
 field_last_login_on: Última conexión
-field_language: Lengua
+field_language: Idioma
 field_effective_date: Fecha
 field_password: Contraseña
 field_new_password: Nueva contraseña
@@ -157,7 +157,7 @@ field_delay: Delay
 setting_app_title: Título del aplicación
 setting_app_subtitle: Subtítulo del aplicación
 setting_welcome_text: Texto acogida
-setting_default_language: Lengua del defecto
+setting_default_language: Idioma por defecto
 setting_login_required: Autentif. requerida
 setting_self_registration: Registro permitido
 setting_attachment_max_size: Tamaño máximo del fichero
@@ -219,7 +219,7 @@ label_password_lost: ¿Olvidaste la contraseña?
 label_home: Acogida
 label_my_page: Mi página
 label_my_account: Mi cuenta
-label_my_projects: Mis proyectos
+label_my_projects: Mis tests
 label_administration: Administración
 label_login: Conexión
 label_logout: Desconexión
@@ -454,7 +454,7 @@ text_tip_task_end_day: tarea que termina este día
 text_tip_task_begin_end_day: tarea que comienza y termina este día
 text_project_identifier_info: 'Lower case letters (a-z), numbers and dashes allowed.<br />Once saved, the identifier can not be changed.'
 text_caracters_maximum: %d characters maximum.
-text_length_between: Length between %d and %d characters.
+text_length_between: Longitud entre %d y %d caracteres.
 text_tracker_no_workflow: No workflow defined for this tracker
 text_unallowed_characters: Unallowed characters
 text_comma_separated: Multiple values allowed (comma separated).
