@@ -3516,3 +3516,115 @@ Processing AccountController#login (for 127.0.0.1 at 2007-09-03 01:01:42) [GET]
 Rendering  within layouts/base
 Rendering account/login
 Completed in 0.00655 (152 reqs/sec) | Rendering: 0.00446 (68%) | DB: 0.00117 (17%) | 200 OK [http://localhost/account/login]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2007-09-03 01:06:27) [GET]
+  Session ID: 417bf7cb4ed9e5fa42e0897695cdcf7a
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering  within layouts/base
+Rendering account/login
+Completed in 0.00646 (154 reqs/sec) | Rendering: 0.00460 (71%) | DB: 0.00158 (24%) | 200 OK [http://localhost/account/login]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2007-09-03 01:06:37) [GET]
+  Session ID: 417bf7cb4ed9e5fa42e0897695cdcf7a
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering  within layouts/base
+Rendering welcome/index
+Completed in 0.00732 (136 reqs/sec) | Rendering: 0.00336 (45%) | DB: 0.00239 (32%) | 200 OK [http://localhost/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2007-09-03 01:07:25) [GET]
+  Session ID: 417bf7cb4ed9e5fa42e0897695cdcf7a
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering  within layouts/base
+Rendering welcome/index
+Completed in 0.00973 (102 reqs/sec) | Rendering: 0.00447 (45%) | DB: 0.00273 (28%) | 200 OK [http://localhost/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2007-09-03 01:07:59) [GET]
+  Session ID: 417bf7cb4ed9e5fa42e0897695cdcf7a
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering  within layouts/base
+Rendering welcome/index
+Completed in 0.00965 (103 reqs/sec) | Rendering: 0.00437 (45%) | DB: 0.00274 (28%) | 200 OK [http://localhost/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2007-09-03 01:08:37) [GET]
+  Session ID: 417bf7cb4ed9e5fa42e0897695cdcf7a
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering  within layouts/base
+Rendering welcome/index
+Completed in 0.01245 (80 reqs/sec) | Rendering: 0.00886 (71%) | DB: 0.00197 (15%) | 200 OK [http://localhost/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2007-09-03 01:09:11) [GET]
+  Session ID: 417bf7cb4ed9e5fa42e0897695cdcf7a
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering  within layouts/base
+Rendering welcome/index
+Completed in 0.00926 (108 reqs/sec) | Rendering: 0.00430 (46%) | DB: 0.00248 (26%) | 200 OK [http://localhost/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2007-09-03 01:11:37) [GET]
+  Session ID: 417bf7cb4ed9e5fa42e0897695cdcf7a
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering  within layouts/base
+Rendering welcome/index
+Completed in 0.00711 (140 reqs/sec) | Rendering: 0.00322 (45%) | DB: 0.00204 (28%) | 200 OK [http://localhost/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2007-09-03 01:11:47) [GET]
+  Session ID: 417bf7cb4ed9e5fa42e0897695cdcf7a
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering  within layouts/base
+Rendering welcome/index
+Completed in 0.00888 (112 reqs/sec) | Rendering: 0.00404 (45%) | DB: 0.00248 (27%) | 200 OK [http://localhost/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2007-09-03 01:12:29) [GET]
+  Session ID: 417bf7cb4ed9e5fa42e0897695cdcf7a
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering  within layouts/base
+Rendering welcome/index
+Completed in 0.00647 (154 reqs/sec) | Rendering: 0.00313 (48%) | DB: 0.00179 (27%) | 200 OK [http://localhost/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2007-09-03 01:13:31) [GET]
+  Session ID: 417bf7cb4ed9e5fa42e0897695cdcf7a
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering  within layouts/base
+Rendering welcome/index
+Completed in 0.00780 (128 reqs/sec) | Rendering: 0.00368 (47%) | DB: 0.00215 (27%) | 200 OK [http://localhost/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2007-09-03 01:13:33) [GET]
+  Session ID: 417bf7cb4ed9e5fa42e0897695cdcf7a
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering  within layouts/base
+Rendering welcome/index
+Completed in 0.00823 (121 reqs/sec) | Rendering: 0.00322 (39%) | DB: 0.00322 (39%) | 200 OK [http://localhost/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2007-09-03 01:14:49) [GET]
+  Session ID: 417bf7cb4ed9e5fa42e0897695cdcf7a
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering  within layouts/base
+Rendering welcome/index
+Completed in 0.00954 (104 reqs/sec) | Rendering: 0.00436 (45%) | DB: 0.00264 (27%) | 200 OK [http://localhost/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2007-09-03 01:14:50) [GET]
+  Session ID: 417bf7cb4ed9e5fa42e0897695cdcf7a
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering  within layouts/base
+Rendering welcome/index
+Completed in 0.00856 (116 reqs/sec) | Rendering: 0.00345 (40%) | DB: 0.00330 (38%) | 200 OK [http://localhost/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2007-09-03 01:14:51) [GET]
+  Session ID: 417bf7cb4ed9e5fa42e0897695cdcf7a
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering  within layouts/base
+Rendering welcome/index
+Completed in 0.00801 (124 reqs/sec) | Rendering: 0.00308 (38%) | DB: 0.00315 (39%) | 200 OK [http://localhost/]
