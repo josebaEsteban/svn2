@@ -43,7 +43,8 @@ height:4.5em;
 margin:0;
 background:#467aa7;
 color:#ffffff;
-margin-bottom:1px;
+margin-bottom:1px; 
+background-image: url("../images/header.gif");
 }
 
 #header h1{
