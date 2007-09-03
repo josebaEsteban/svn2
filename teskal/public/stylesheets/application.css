@@ -17,9 +17,12 @@ background-image: url(../images/fondo_teskal_10.gif);
 .content {
 	margin:auto;
 	padding: 0;
-	width: 880px;
+	width: 910px;
 	background-color: #F8F5E2;
-	color: #628600;
+	color: #628600;  
+	background-image: url(../images/bgmain.gif);
+		background-repeat: repeat-y;
+		background-position: center;
 }
 
 a{color:#467aa7;font-weight:bold;text-decoration:none;background-color:inherit;}
