@@ -30,35 +30,35 @@
 	
 	<div id="navigation">
 		<ul>
-	<li><%= link_to l(:label_home), { :controller => 'welcome' }, :class => "icon icon-home" %></li>
-
-	<% if loggedin? and @logged_in_user.memberships.any? %>
-      <li class="submenu"><%= link_to l(:label_project_plural), { :controller => 'projects' }, :class => "icon icon-projects", :onmouseover => "buttonMouseover(event, 'menuAllProjects');" %></li>
-	<% else %>
-	  <li><%= link_to l(:label_project_plural), { :controller => 'projects' }, :class => "icon icon-projects" %></li>
-	<% end %>
-
-    <% unless @project.nil? || @project.id.nil? %>
-        <li class="submenu"><%= link_to @project.name, { :controller => 'projects', :action => 'show', :id => @project }, :class => "icon icon-projects", :onmouseover => "buttonMouseover(event, 'menuProject');"  %></li>
-    <% end %>
-			
+  	
     <% if loggedin? %>
-		<li><%= link_to l(:label_my_account), { :controller => 'my', :action => 'account' }, :class => "icon icon-user" %></li>
+		<li><%= link_to l(:label_my_account), { :controller => 'my', :action => 'account' } %></li>
     <% end %>
 			
 	<!-- <% if admin_loggedin? %>
 		<li class="submenu"><%= link_to l(:label_administration), { :controller => 'admin' }, :class => "icon icon-admin", :onmouseover => "buttonMouseover(event, 'menuAdmin');" %></li>
 	<% end %>    -->
-			
-	<li class="right"><%= link_to l(:label_help), { :controller => 'help', :ctrl => params[:controller], :page => params[:action] }, :onclick => "window.open(this.href); return false;", :class => "icon icon-help" %></li>
-	
+ 	
+	<% unless @project.nil? || @project.id.nil? %>
+        <li class="submenu"><%= link_to @project.name, { :controller => 'projects', :action => 'show', :id => @project }, :class => "icon icon-projects", :onmouseover => "buttonMouseover(event, 'menuProject');"  %></li>
+    <% end %>
+   		
+	<li class="right"><%= link_to l(:label_help), { :controller => 'help', :ctrl => params[:controller], :page => params[:action] }, :onclick => "window.open(this.href); return false;"%></li>  
+     
+	<% if loggedin? and @logged_in_user.memberships.any? %>
+      <li class="submenu"><%= link_to l(:label_project_plural), { :controller => 'projects' }, :class => "icon icon-projects", :onmouseover => "buttonMouseover(event, 'menuAllProjects');" %></li>
+	<% else %>
+	  <li class="right"><%= link_to l(:label_project_plural), { :controller => 'projects' } %></li>
+	<% end %>
 	<% if loggedin? %>
-		<li class="right"><%= link_to l(:label_logout), { :controller => 'account', :action => 'logout' }, :class => "icon icon-user" %></li>	
-	<% else %>	
-		<li class="right"><%= link_to l(:label_login), { :controller => 'account', :action => 'login' }, :class => "icon icon-user" %></li>
-	<% end %>	
+				<li class="right"><%= link_to l(:label_logout), { :controller => 'account', :action => 'logout' } %></li>	
+			<% else %>	
+				<li class="right"><%= link_to l(:label_login), { :controller => 'account', :action => 'login' } %></li>
+			<% end %>
+        <li class="right"><%= link_to l(:label_home), { :controller => 'welcome' } %></li>    
 		</ul>		
 	</div>
+    
 
     <!-- <% if admin_loggedin? %>
 		<%= render :partial => 'admin/menu' %>        
@@ -114,8 +114,6 @@
 
 
 	<div id="footer">
-		<p><a href="http://www.teskal.com/">Teskal</a>
-			  <small>&copy 2007 </small></p> 
 	</div>
 
 </div>

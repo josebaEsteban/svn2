@@ -18,7 +18,7 @@ body {
 	color:#303030;
 	background:#e8eaec;
 	margin:0;
-	background-image: url(images/fondo_teskal_10.gif);
+	background-image: url(../images/fondo_teskal_10.gif);
 }
 .content {
 	margin:auto;
@@ -27,7 +27,7 @@ body {
 	height:auto;
 	background-color: #F8F5E2;
 	color: #628600;
-	background-image: url(images/bgmain.gif);
+	background-image: url(../images/bgmain.gif);
 	background-repeat: repeat-y;
 	background-position: center;
 }
@@ -36,7 +36,7 @@ a {
 	font-weight:bold;
 	text-decoration:none;
 	background-color:inherit;
-	font-style:italic;
+
 }
 a:hover {
 	color:#2a5a8a;
@@ -76,7 +76,7 @@ img.right {
 	
 #header {
 	margin: 0;
-	background-image: url(images/header_all_1.gif);
+	background-image: url(../images/header_all_1.gif);
 	position: relative;
 	left: 40px;
 	top: 0px;
@@ -613,7 +613,7 @@ div.menu a.menuItem span.menuItemArrow {
 
 #footer {
 	margin: 0;
-	background-image: url(images/footer_1.gif);
+	background-image: url(../images/footer_1.gif);
 	background-repeat: no-repeat;
 	background-position: bottom;
 	
