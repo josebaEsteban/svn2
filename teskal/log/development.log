@@ -1659,3 +1659,1896 @@ ActionController::RoutingError (no route found to match "/account/favicon.ico" w
 
 
 Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AccountController#login (for 127.0.0.1 at 2007-09-04 17:53:34) [POST]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {"action"=>"login", "controller"=>"account", "password"=>"[FILTERED]", "login"=>"pepe"}
+  [4;36;1mSQL (0.000177)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Load (0.000389)[0m   [0mSELECT * FROM users WHERE (login='pepe') LIMIT 1[0m
+  [4;36;1mUser Columns (0.006873)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mSQL (0.000825)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.000414)[0m   [0;1mUPDATE users SET `login` = 'pepe', `hashed_password` = '265392dc2782778664cc9d56c8e3cd9956661bb0', `auth_source_id` = NULL, `lastname` = '', `status` = 1, `mail_notification` = 1, `admin` = 0, `last_login_on` = '2007-09-04 17:53:35', `updated_on` = '2007-09-04 17:53:35', `language` = 'en', `mail` = 'pepe@teskal.com', `firstname` = '', `created_on` = '2007-09-02 15:55:12' WHERE `id` = 5[0m
+  [4;35;1mSQL (0.016456)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/my/page
+Completed in 0.72517 (1 reqs/sec) | DB: 0.02513 (3%) | 302 Found [http://localhost/account/login]
+
+
+Processing MyController#page (for 127.0.0.1 at 2007-09-04 17:53:36) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {"action"=>"page", "controller"=>"my"}
+  [4;36;1mUser Columns (0.008460)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.005350)[0m   [0mSELECT * FROM users WHERE (users.`id` = 5) [0m
+  [4;36;1mUserPreference Load (0.000451)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+  [4;35;1mUserPreference Columns (0.010332)[0m   [0mSHOW FIELDS FROM user_preferences[0m
+Rendering  within layouts/base
+Rendering my/page
+  [4;36;1mIssue Columns (0.025303)[0m   [0;1mSHOW FIELDS FROM issues[0m
+  [4;35;1mIssueStatus Columns (0.059229)[0m   [0mSHOW FIELDS FROM issue_statuses[0m
+  [4;36;1mProject Columns (0.033754)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mTracker Columns (0.006947)[0m   [0mSHOW FIELDS FROM trackers[0m
+  [4;36;1mIssue Load Including Associations (0.005322)[0m   [0;1mSELECT issues.`id` AS t0_r0, issues.`tracker_id` AS t0_r1, issues.`project_id` AS t0_r2, issues.`subject` AS t0_r3, issues.`description` AS t0_r4, issues.`due_date` AS t0_r5, issues.`category_id` AS t0_r6, issues.`status_id` AS t0_r7, issues.`assigned_to_id` AS t0_r8, issues.`priority_id` AS t0_r9, issues.`fixed_version_id` AS t0_r10, issues.`author_id` AS t0_r11, issues.`lock_version` AS t0_r12, issues.`created_on` AS t0_r13, issues.`updated_on` AS t0_r14, issues.`start_date` AS t0_r15, issues.`done_ratio` AS t0_r16, issue_statuses.`id` AS t1_r0, issue_statuses.`name` AS t1_r1, issue_statuses.`is_closed` AS t1_r2, issue_statuses.`is_default` AS t1_r3, issue_statuses.`html_color` AS t1_r4, issue_statuses.`position` AS t1_r5, projects.`id` AS t2_r0, projects.`name` AS t2_r1, projects.`description` AS t2_r2, projects.`homepage` AS t2_r3, projects.`is_public` AS t2_r4, projects.`parent_id` AS t2_r5, projects.`projects_count` AS t2_r6, projects.`created_on` AS t2_r7, projects.`updated_on` AS t2_r8, projects.`identifier` AS t2_r9, projects.`status` AS t2_r10, trackers.`id` AS t3_r0, trackers.`name` AS t3_r1, trackers.`is_in_chlog` AS t3_r2, trackers.`position` AS t3_r3, trackers.`is_in_roadmap` AS t3_r4 FROM issues LEFT OUTER JOIN issue_statuses ON issue_statuses.id = issues.status_id LEFT OUTER JOIN projects ON projects.id = issues.project_id LEFT OUTER JOIN trackers ON trackers.id = issues.tracker_id WHERE (assigned_to_id=5 AND issue_statuses.is_closed=0 AND projects.status=1) ORDER BY issues.updated_on DESC LIMIT 10[0m
+Rendered issues/_list_simple (0.02876)
+Rendered my/blocks/_issuesassignedtome (0.24715)
+  [4;35;1mIssue Load Including Associations (0.000604)[0m   [0mSELECT issues.`id` AS t0_r0, issues.`tracker_id` AS t0_r1, issues.`project_id` AS t0_r2, issues.`subject` AS t0_r3, issues.`description` AS t0_r4, issues.`due_date` AS t0_r5, issues.`category_id` AS t0_r6, issues.`status_id` AS t0_r7, issues.`assigned_to_id` AS t0_r8, issues.`priority_id` AS t0_r9, issues.`fixed_version_id` AS t0_r10, issues.`author_id` AS t0_r11, issues.`lock_version` AS t0_r12, issues.`created_on` AS t0_r13, issues.`updated_on` AS t0_r14, issues.`start_date` AS t0_r15, issues.`done_ratio` AS t0_r16, issue_statuses.`id` AS t1_r0, issue_statuses.`name` AS t1_r1, issue_statuses.`is_closed` AS t1_r2, issue_statuses.`is_default` AS t1_r3, issue_statuses.`html_color` AS t1_r4, issue_statuses.`position` AS t1_r5, projects.`id` AS t2_r0, projects.`name` AS t2_r1, projects.`description` AS t2_r2, projects.`homepage` AS t2_r3, projects.`is_public` AS t2_r4, projects.`parent_id` AS t2_r5, projects.`projects_count` AS t2_r6, projects.`created_on` AS t2_r7, projects.`updated_on` AS t2_r8, projects.`identifier` AS t2_r9, projects.`status` AS t2_r10, trackers.`id` AS t3_r0, trackers.`name` AS t3_r1, trackers.`is_in_chlog` AS t3_r2, trackers.`position` AS t3_r3, trackers.`is_in_roadmap` AS t3_r4 FROM issues LEFT OUTER JOIN issue_statuses ON issue_statuses.id = issues.status_id LEFT OUTER JOIN projects ON projects.id = issues.project_id LEFT OUTER JOIN trackers ON trackers.id = issues.tracker_id WHERE (author_id=5 AND projects.status=1) ORDER BY issues.updated_on DESC LIMIT 10[0m
+Rendered issues/_list_simple (0.00027)
+Rendered my/blocks/_issuesreportedbyme (0.01413)
+  [4;36;1mSetting Columns (0.002657)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.001162)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000260)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000165)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_subtitle') LIMIT 1[0m
+  [4;36;1mMember Columns (0.001693)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mRole Columns (0.019714)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.002122)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 5 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.61944 (1 reqs/sec) | Rendering: 0.29427 (47%) | DB: 0.18353 (29%) | 200 OK [http://localhost/my/page]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 17:53:37) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/my/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing MyController#account (for 127.0.0.1 at 2007-09-04 17:53:43) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {"action"=>"account", "controller"=>"my"}
+  [4;35;1mUser Columns (0.014104)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.016610)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 5) [0m
+  [4;35;1mUserPreference Load (0.001262)[0m   [0mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+Rendering  within layouts/base
+Rendering my/account
+  [4;36;1mSetting Columns (0.009814)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.016493)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'date_format') LIMIT 1[0m
+  [4;36;1mUserPreference Columns (0.003556)[0m   [0;1mSHOW FIELDS FROM user_preferences[0m
+  [4;35;1mSetting Load (0.007767)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mSetting Load (0.011669)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000452)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_subtitle') LIMIT 1[0m
+  [4;36;1mMember Columns (0.004017)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.011708)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.017355)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.004988)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 5 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.59670 (1 reqs/sec) | Rendering: 0.11755 (19%) | DB: 0.11980 (20%) | 200 OK [http://localhost/my/account]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 17:53:44) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/my/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing MyController#account (for 127.0.0.1 at 2007-09-04 17:54:07) [POST]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {"user"=>{"language"=>"ja", "mail"=>"pepe@teskal.com"}, "commit"=>"Save", "action"=>"account", "controller"=>"my"}
+  [4;36;1mUser Columns (0.005654)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.000310)[0m   [0mSELECT * FROM users WHERE (users.`id` = 5) [0m
+  [4;36;1mUserPreference Load (0.000297)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.000162)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000456)[0m   [0;1mSELECT * FROM users WHERE (users.login = 'pepe' AND users.id <> 5) LIMIT 1[0m
+  [4;35;1mUser Load (0.000316)[0m   [0mSELECT * FROM users WHERE (users.mail = 'pepe@teskal.com' AND users.id <> 5) LIMIT 1[0m
+  [4;36;1mCustomValue Load (0.000349)[0m   [0;1mSELECT * FROM custom_values WHERE (custom_values.customized_id = 5 AND custom_values.customized_type = 'User') [0m
+  [4;35;1mUser Update (0.000299)[0m   [0mUPDATE users SET `login` = 'pepe', `hashed_password` = '265392dc2782778664cc9d56c8e3cd9956661bb0', `auth_source_id` = NULL, `lastname` = '', `status` = 1, `mail_notification` = 1, `admin` = 0, `last_login_on` = '2007-09-04 17:53:35', `updated_on` = '2007-09-04 17:54:07', `language` = 'ja', `mail` = 'pepe@teskal.com', `firstname` = '', `created_on` = '2007-09-02 15:55:12' WHERE `id` = 5[0m
+  [4;36;1mUserPreference Columns (0.002669)[0m   [0;1mSHOW FIELDS FROM user_preferences[0m
+  [4;35;1mSQL (0.002324)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mBEGIN[0m
+  [4;35;1mUserPreference Update (0.000243)[0m   [0mUPDATE user_preferences SET `hide_mail` = 0, `user_id` = 5, `others` = '--- {}\n\n' WHERE `id` = 3[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.000359)[0m   [0mSELECT * FROM users WHERE (users.`id` = 5) [0m
+Rendering  within layouts/base
+Rendering my/account
+  [4;36;1mSetting Columns (0.002586)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.002151)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'date_format') LIMIT 1[0m
+  [4;36;1mUserPreference Load (0.000270)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+  [4;35;1mSetting Load (0.000239)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000182)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000157)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_subtitle') LIMIT 1[0m
+  [4;36;1mMember Columns (0.007268)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.005389)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.004242)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.000569)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 5 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.25504 (3 reqs/sec) | Rendering: 0.03942 (15%) | DB: 0.03670 (14%) | 200 OK [http://localhost/my/account]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 17:54:08) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/my/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing MyController#account (for 127.0.0.1 at 2007-09-04 17:54:28) [POST]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {"user"=>{"language"=>"zh", "mail"=>"pepe@teskal.com"}, "commit"=>"保存", "action"=>"account", "controller"=>"my"}
+  [4;36;1mUser Columns (0.006546)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.000449)[0m   [0mSELECT * FROM users WHERE (users.`id` = 5) [0m
+  [4;36;1mUserPreference Load (0.000433)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.000140)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000371)[0m   [0;1mSELECT * FROM users WHERE (users.login = 'pepe' AND users.id <> 5) LIMIT 1[0m
+  [4;35;1mUser Load (0.000401)[0m   [0mSELECT * FROM users WHERE (users.mail = 'pepe@teskal.com' AND users.id <> 5) LIMIT 1[0m
+  [4;36;1mCustomValue Load (0.000353)[0m   [0;1mSELECT * FROM custom_values WHERE (custom_values.customized_id = 5 AND custom_values.customized_type = 'User') [0m
+  [4;35;1mUser Update (0.001208)[0m   [0mUPDATE users SET `login` = 'pepe', `hashed_password` = '265392dc2782778664cc9d56c8e3cd9956661bb0', `auth_source_id` = NULL, `lastname` = '', `status` = 1, `mail_notification` = 1, `admin` = 0, `last_login_on` = '2007-09-04 17:53:35', `updated_on` = '2007-09-04 17:54:29', `language` = 'zh', `mail` = 'pepe@teskal.com', `firstname` = '', `created_on` = '2007-09-02 15:55:12' WHERE `id` = 5[0m
+  [4;36;1mUserPreference Columns (0.002713)[0m   [0;1mSHOW FIELDS FROM user_preferences[0m
+  [4;35;1mSQL (0.000624)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000141)[0m   [0;1mBEGIN[0m
+  [4;35;1mUserPreference Update (0.000366)[0m   [0mUPDATE user_preferences SET `hide_mail` = 0, `user_id` = 5, `others` = '--- {}\n\n' WHERE `id` = 3[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.000668)[0m   [0mSELECT * FROM users WHERE (users.`id` = 5) [0m
+Rendering  within layouts/base
+Rendering my/account
+  [4;36;1mSetting Columns (0.008726)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.002743)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'date_format') LIMIT 1[0m
+  [4;36;1mUserPreference Load (0.000428)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+  [4;35;1mSetting Load (0.000303)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000320)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000180)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_subtitle') LIMIT 1[0m
+  [4;36;1mMember Columns (0.013933)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.010792)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.005663)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.002644)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 5 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.32377 (3 reqs/sec) | Rendering: 0.05509 (17%) | DB: 0.06028 (18%) | 200 OK [http://localhost/my/account]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 17:54:29) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/my/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing MyController#account (for 127.0.0.1 at 2007-09-04 17:54:39) [POST]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {"user"=>{"language"=>"es", "mail"=>"pepe@teskal.com"}, "commit"=>"保存", "action"=>"account", "controller"=>"my"}
+  [4;36;1mUser Columns (0.008080)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.004460)[0m   [0mSELECT * FROM users WHERE (users.`id` = 5) [0m
+  [4;36;1mUserPreference Load (0.000310)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.000111)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000326)[0m   [0;1mSELECT * FROM users WHERE (users.login = 'pepe' AND users.id <> 5) LIMIT 1[0m
+  [4;35;1mUser Load (0.000263)[0m   [0mSELECT * FROM users WHERE (users.mail = 'pepe@teskal.com' AND users.id <> 5) LIMIT 1[0m
+  [4;36;1mCustomValue Load (0.000328)[0m   [0;1mSELECT * FROM custom_values WHERE (custom_values.customized_id = 5 AND custom_values.customized_type = 'User') [0m
+  [4;35;1mUser Update (0.000286)[0m   [0mUPDATE users SET `login` = 'pepe', `hashed_password` = '265392dc2782778664cc9d56c8e3cd9956661bb0', `auth_source_id` = NULL, `lastname` = '', `status` = 1, `mail_notification` = 1, `admin` = 0, `last_login_on` = '2007-09-04 17:53:35', `updated_on` = '2007-09-04 17:54:39', `language` = 'es', `mail` = 'pepe@teskal.com', `firstname` = '', `created_on` = '2007-09-02 15:55:12' WHERE `id` = 5[0m
+  [4;36;1mUserPreference Columns (0.004151)[0m   [0;1mSHOW FIELDS FROM user_preferences[0m
+  [4;35;1mSQL (0.005543)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.001112)[0m   [0;1mBEGIN[0m
+  [4;35;1mUserPreference Update (0.000756)[0m   [0mUPDATE user_preferences SET `hide_mail` = 0, `user_id` = 5, `others` = '--- {}\n\n' WHERE `id` = 3[0m
+  [4;36;1mSQL (0.000174)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.000368)[0m   [0mSELECT * FROM users WHERE (users.`id` = 5) [0m
+Rendering  within layouts/base
+Rendering my/account
+  [4;36;1mSetting Columns (0.002906)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.002337)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'date_format') LIMIT 1[0m
+  [4;36;1mUserPreference Load (0.000308)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+  [4;35;1mSetting Load (0.000314)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000206)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000239)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_subtitle') LIMIT 1[0m
+  [4;36;1mMember Columns (0.003842)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.005190)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.004313)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.005316)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 5 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.20849 (4 reqs/sec) | Rendering: 0.03843 (18%) | DB: 0.05124 (24%) | 200 OK [http://localhost/my/account]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 17:54:40) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/my/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing MyController#account (for 127.0.0.1 at 2007-09-04 17:54:47) [POST]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {"user"=>{"language"=>"fr", "mail"=>"pepe@teskal.com"}, "commit"=>"Validar", "action"=>"account", "controller"=>"my"}
+  [4;36;1mUser Columns (0.004027)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.002603)[0m   [0mSELECT * FROM users WHERE (users.`id` = 5) [0m
+  [4;36;1mUserPreference Load (0.000347)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.000107)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000314)[0m   [0;1mSELECT * FROM users WHERE (users.login = 'pepe' AND users.id <> 5) LIMIT 1[0m
+  [4;35;1mUser Load (0.000302)[0m   [0mSELECT * FROM users WHERE (users.mail = 'pepe@teskal.com' AND users.id <> 5) LIMIT 1[0m
+  [4;36;1mCustomValue Load (0.000289)[0m   [0;1mSELECT * FROM custom_values WHERE (custom_values.customized_id = 5 AND custom_values.customized_type = 'User') [0m
+  [4;35;1mUser Update (0.000353)[0m   [0mUPDATE users SET `login` = 'pepe', `hashed_password` = '265392dc2782778664cc9d56c8e3cd9956661bb0', `auth_source_id` = NULL, `lastname` = '', `status` = 1, `mail_notification` = 1, `admin` = 0, `last_login_on` = '2007-09-04 17:53:35', `updated_on` = '2007-09-04 17:54:47', `language` = 'fr', `mail` = 'pepe@teskal.com', `firstname` = '', `created_on` = '2007-09-02 15:55:12' WHERE `id` = 5[0m
+  [4;36;1mUserPreference Columns (0.006380)[0m   [0;1mSHOW FIELDS FROM user_preferences[0m
+  [4;35;1mSQL (0.014873)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mUserPreference Update (0.000266)[0m   [0mUPDATE user_preferences SET `hide_mail` = 0, `user_id` = 5, `others` = '--- {}\n\n' WHERE `id` = 3[0m
+  [4;36;1mSQL (0.000104)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.000324)[0m   [0mSELECT * FROM users WHERE (users.`id` = 5) [0m
+Rendering  within layouts/base
+Rendering my/account
+  [4;36;1mSetting Columns (0.002784)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.002572)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'date_format') LIMIT 1[0m
+  [4;36;1mUserPreference Load (0.000287)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+  [4;35;1mSetting Load (0.000260)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000266)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000166)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_subtitle') LIMIT 1[0m
+  [4;36;1mMember Columns (0.002874)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.002955)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.002266)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.000650)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 5 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.30666 (3 reqs/sec) | Rendering: 0.04089 (13%) | DB: 0.04549 (14%) | 200 OK [http://localhost/my/account]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 17:54:48) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/my/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing MyController#account (for 127.0.0.1 at 2007-09-04 17:54:57) [POST]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {"user"=>{"language"=>"pt-br", "mail"=>"pepe@teskal.com"}, "commit"=>"Sauvegarder", "action"=>"account", "controller"=>"my"}
+  [4;36;1mUser Columns (0.006254)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.000391)[0m   [0mSELECT * FROM users WHERE (users.`id` = 5) [0m
+  [4;36;1mUserPreference Load (0.000348)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.000273)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000460)[0m   [0;1mSELECT * FROM users WHERE (users.login = 'pepe' AND users.id <> 5) LIMIT 1[0m
+  [4;35;1mUser Load (0.000344)[0m   [0mSELECT * FROM users WHERE (users.mail = 'pepe@teskal.com' AND users.id <> 5) LIMIT 1[0m
+  [4;36;1mCustomValue Load (0.000423)[0m   [0;1mSELECT * FROM custom_values WHERE (custom_values.customized_id = 5 AND custom_values.customized_type = 'User') [0m
+  [4;35;1mUser Update (0.000410)[0m   [0mUPDATE users SET `login` = 'pepe', `hashed_password` = '265392dc2782778664cc9d56c8e3cd9956661bb0', `auth_source_id` = NULL, `lastname` = '', `status` = 1, `mail_notification` = 1, `admin` = 0, `last_login_on` = '2007-09-04 17:53:35', `updated_on` = '2007-09-04 17:54:57', `language` = 'pt-br', `mail` = 'pepe@teskal.com', `firstname` = '', `created_on` = '2007-09-02 15:55:12' WHERE `id` = 5[0m
+  [4;36;1mUserPreference Columns (0.004019)[0m   [0;1mSHOW FIELDS FROM user_preferences[0m
+  [4;35;1mSQL (0.000388)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000140)[0m   [0;1mBEGIN[0m
+  [4;35;1mUserPreference Update (0.000307)[0m   [0mUPDATE user_preferences SET `hide_mail` = 0, `user_id` = 5, `others` = '--- {}\n\n' WHERE `id` = 3[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.000299)[0m   [0mSELECT * FROM users WHERE (users.`id` = 5) [0m
+Rendering  within layouts/base
+Rendering my/account
+  [4;36;1mSetting Columns (0.003475)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.002992)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'date_format') LIMIT 1[0m
+  [4;36;1mUserPreference Load (0.000345)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+  [4;35;1mSetting Load (0.000358)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000249)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000183)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_subtitle') LIMIT 1[0m
+  [4;36;1mMember Columns (0.003149)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.004896)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.005535)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.002407)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 5 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.27186 (3 reqs/sec) | Rendering: 0.04738 (17%) | DB: 0.03778 (13%) | 200 OK [http://localhost/my/account]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 17:54:57) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/my/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing MyController#account (for 127.0.0.1 at 2007-09-04 17:55:06) [POST]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {"user"=>{"language"=>"sv", "mail"=>"pepe@teskal.com"}, "commit"=>"Salvar", "action"=>"account", "controller"=>"my"}
+  [4;36;1mUser Columns (0.003576)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.002477)[0m   [0mSELECT * FROM users WHERE (users.`id` = 5) [0m
+  [4;36;1mUserPreference Load (0.000496)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.000107)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000362)[0m   [0;1mSELECT * FROM users WHERE (users.login = 'pepe' AND users.id <> 5) LIMIT 1[0m
+  [4;35;1mUser Load (0.000278)[0m   [0mSELECT * FROM users WHERE (users.mail = 'pepe@teskal.com' AND users.id <> 5) LIMIT 1[0m
+  [4;36;1mCustomValue Load (0.000367)[0m   [0;1mSELECT * FROM custom_values WHERE (custom_values.customized_id = 5 AND custom_values.customized_type = 'User') [0m
+  [4;35;1mUser Update (0.000585)[0m   [0mUPDATE users SET `login` = 'pepe', `hashed_password` = '265392dc2782778664cc9d56c8e3cd9956661bb0', `auth_source_id` = NULL, `lastname` = '', `status` = 1, `mail_notification` = 1, `admin` = 0, `last_login_on` = '2007-09-04 17:53:35', `updated_on` = '2007-09-04 17:55:06', `language` = 'sv', `mail` = 'pepe@teskal.com', `firstname` = '', `created_on` = '2007-09-02 15:55:12' WHERE `id` = 5[0m
+  [4;36;1mUserPreference Columns (0.002814)[0m   [0;1mSHOW FIELDS FROM user_preferences[0m
+  [4;35;1mSQL (0.002770)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000105)[0m   [0;1mBEGIN[0m
+  [4;35;1mUserPreference Update (0.000285)[0m   [0mUPDATE user_preferences SET `hide_mail` = 0, `user_id` = 5, `others` = '--- {}\n\n' WHERE `id` = 3[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.000365)[0m   [0mSELECT * FROM users WHERE (users.`id` = 5) [0m
+Rendering  within layouts/base
+Rendering my/account
+  [4;36;1mSetting Columns (0.002998)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.006233)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'date_format') LIMIT 1[0m
+  [4;36;1mUserPreference Load (0.000374)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+  [4;35;1mSetting Load (0.000302)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000207)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000191)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_subtitle') LIMIT 1[0m
+  [4;36;1mMember Columns (0.004308)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.007297)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.008165)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.002741)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 5 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.27229 (3 reqs/sec) | Rendering: 0.10751 (39%) | DB: 0.04751 (17%) | 200 OK [http://localhost/my/account]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 17:55:06) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/my/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing MyController#account (for 127.0.0.1 at 2007-09-04 17:55:32) [POST]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {"user"=>{"language"=>"es", "mail"=>"pepe@teskal.com"}, "commit"=>"Spara", "action"=>"account", "controller"=>"my"}
+  [4;36;1mUser Columns (0.018588)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.000402)[0m   [0mSELECT * FROM users WHERE (users.`id` = 5) [0m
+  [4;36;1mUserPreference Load (0.000842)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000442)[0m   [0;1mSELECT * FROM users WHERE (users.login = 'pepe' AND users.id <> 5) LIMIT 1[0m
+  [4;35;1mUser Load (0.000282)[0m   [0mSELECT * FROM users WHERE (users.mail = 'pepe@teskal.com' AND users.id <> 5) LIMIT 1[0m
+  [4;36;1mCustomValue Load (0.000567)[0m   [0;1mSELECT * FROM custom_values WHERE (custom_values.customized_id = 5 AND custom_values.customized_type = 'User') [0m
+  [4;35;1mUser Update (0.000330)[0m   [0mUPDATE users SET `login` = 'pepe', `hashed_password` = '265392dc2782778664cc9d56c8e3cd9956661bb0', `auth_source_id` = NULL, `lastname` = '', `status` = 1, `mail_notification` = 1, `admin` = 0, `last_login_on` = '2007-09-04 17:53:35', `updated_on` = '2007-09-04 17:55:32', `language` = 'es', `mail` = 'pepe@teskal.com', `firstname` = '', `created_on` = '2007-09-02 15:55:12' WHERE `id` = 5[0m
+  [4;36;1mUserPreference Columns (0.007558)[0m   [0;1mSHOW FIELDS FROM user_preferences[0m
+  [4;35;1mSQL (0.010610)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000118)[0m   [0;1mBEGIN[0m
+  [4;35;1mUserPreference Update (0.000321)[0m   [0mUPDATE user_preferences SET `hide_mail` = 0, `user_id` = 5, `others` = '--- {}\n\n' WHERE `id` = 3[0m
+  [4;36;1mSQL (0.000116)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.000505)[0m   [0mSELECT * FROM users WHERE (users.`id` = 5) [0m
+Rendering  within layouts/base
+Rendering my/account
+  [4;36;1mSetting Columns (0.005279)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.002457)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'date_format') LIMIT 1[0m
+  [4;36;1mUserPreference Load (0.000366)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+  [4;35;1mSetting Load (0.000263)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000984)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000209)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_subtitle') LIMIT 1[0m
+  [4;36;1mMember Columns (0.003247)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.037259)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.011003)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.003095)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 5 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.37307 (2 reqs/sec) | Rendering: 0.04614 (12%) | DB: 0.10497 (28%) | 200 OK [http://localhost/my/account]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 17:55:33) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/my/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 17:55:48) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/login" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AccountController#login (for 127.0.0.1 at 2007-09-04 17:55:59) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {"action"=>"login", "controller"=>"account"}
+  [4;36;1mUser Columns (0.003463)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.002532)[0m   [0mSELECT * FROM users WHERE (users.`id` = 5) [0m
+Rendering  within layouts/base
+Rendering account/login
+  [4;36;1mSetting Columns (0.003860)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.002257)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'autologin') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000232)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'self_registration') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000196)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'lost_password') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000248)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000233)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000168)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_subtitle') LIMIT 1[0m
+Completed in 0.18028 (5 reqs/sec) | Rendering: 0.04086 (22%) | DB: 0.01319 (7%) | 200 OK [http://localhost/account/login]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 17:55:59) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/account/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AccountController#login (for 127.0.0.1 at 2007-09-04 17:55:59) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering  within layouts/base
+Rendering account/login
+  [4;35;1mSetting Columns (0.002882)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.002435)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'autologin') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000223)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'self_registration') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000188)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'lost_password') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000205)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000233)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000182)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_subtitle') LIMIT 1[0m
+Completed in 0.03021 (33 reqs/sec) | Rendering: 0.02254 (74%) | DB: 0.00635 (21%) | 200 OK [http://localhost/account/login]
+
+
+Processing AccountController#lost_password (for 127.0.0.1 at 2007-09-04 17:56:05) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {"action"=>"lost_password", "controller"=>"account"}
+  [4;36;1mSetting Columns (0.005007)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.007987)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'lost_password') LIMIT 1[0m
+Rendering  within layouts/base
+Rendering account/lost_password
+  [4;36;1mSetting Load (0.000924)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000233)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000389)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_subtitle') LIMIT 1[0m
+Completed in 0.04355 (22 reqs/sec) | Rendering: 0.01846 (42%) | DB: 0.01454 (33%) | 200 OK [http://localhost/account/lost_password]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 17:56:06) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/account/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 17:57:30) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/account/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 17:59:29) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/account/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 18:00:24) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/account/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 18:01:02) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/account/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 18:24:28) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/account/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 18:24:31) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/account/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 18:40:46) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/account/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 18:42:09) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/account/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 18:42:48) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/account/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 18:43:27) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/account/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 18:43:46) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/account/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 18:53:59) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/account/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AccountController#login (for 127.0.0.1 at 2007-09-04 19:43:26) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering  within layouts/base
+Rendering account/login
+  [4;36;1mSQL (0.019657)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSetting Columns (0.094426)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.061520)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'autologin') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000839)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'self_registration') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000217)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'lost_password') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000300)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000373)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000129)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_subtitle') LIMIT 1[0m
+Completed in 0.57287 (1 reqs/sec) | Rendering: 0.26278 (45%) | DB: 0.17746 (30%) | 200 OK [http://localhost/account/login]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 19:43:27) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/account/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AccountController#login (for 127.0.0.1 at 2007-09-04 19:43:35) [POST]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {"action"=>"login", "controller"=>"account", "password"=>"[FILTERED]", "login"=>"pepe"}
+  [4;36;1mUser Load (0.024415)[0m   [0;1mSELECT * FROM users WHERE (login='pepe') LIMIT 1[0m
+  [4;35;1mUser Columns (0.002508)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.063668)[0m   [0mUPDATE users SET `login` = 'pepe', `hashed_password` = '265392dc2782778664cc9d56c8e3cd9956661bb0', `auth_source_id` = NULL, `lastname` = '', `status` = 1, `mail_notification` = 1, `admin` = 0, `last_login_on` = '2007-09-04 19:43:35', `updated_on` = '2007-09-04 19:43:35', `language` = 'es', `mail` = 'pepe@teskal.com', `firstname` = '', `created_on` = '2007-09-02 15:55:12' WHERE `id` = 5[0m
+  [4;36;1mSQL (0.042881)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/my/page
+Completed in 0.27414 (3 reqs/sec) | DB: 0.13359 (48%) | 302 Found [http://localhost/account/login]
+
+
+Processing MyController#page (for 127.0.0.1 at 2007-09-04 19:43:36) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {"action"=>"page", "controller"=>"my"}
+  [4;35;1mUser Columns (0.002037)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.000506)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 5) [0m
+  [4;35;1mUserPreference Load (0.000528)[0m   [0mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 5) LIMIT 1[0m
+  [4;36;1mUserPreference Columns (0.001269)[0m   [0;1mSHOW FIELDS FROM user_preferences[0m
+Rendering  within layouts/base
+Rendering my/page
+  [4;35;1mIssue Columns (0.004603)[0m   [0mSHOW FIELDS FROM issues[0m
+  [4;36;1mIssueStatus Columns (0.002008)[0m   [0;1mSHOW FIELDS FROM issue_statuses[0m
+  [4;35;1mProject Columns (0.018679)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mTracker Columns (0.002708)[0m   [0;1mSHOW FIELDS FROM trackers[0m
+  [4;35;1mIssue Load Including Associations (0.004327)[0m   [0mSELECT issues.`id` AS t0_r0, issues.`tracker_id` AS t0_r1, issues.`project_id` AS t0_r2, issues.`subject` AS t0_r3, issues.`description` AS t0_r4, issues.`due_date` AS t0_r5, issues.`category_id` AS t0_r6, issues.`status_id` AS t0_r7, issues.`assigned_to_id` AS t0_r8, issues.`priority_id` AS t0_r9, issues.`fixed_version_id` AS t0_r10, issues.`author_id` AS t0_r11, issues.`lock_version` AS t0_r12, issues.`created_on` AS t0_r13, issues.`updated_on` AS t0_r14, issues.`start_date` AS t0_r15, issues.`done_ratio` AS t0_r16, issue_statuses.`id` AS t1_r0, issue_statuses.`name` AS t1_r1, issue_statuses.`is_closed` AS t1_r2, issue_statuses.`is_default` AS t1_r3, issue_statuses.`html_color` AS t1_r4, issue_statuses.`position` AS t1_r5, projects.`id` AS t2_r0, projects.`name` AS t2_r1, projects.`description` AS t2_r2, projects.`homepage` AS t2_r3, projects.`is_public` AS t2_r4, projects.`parent_id` AS t2_r5, projects.`projects_count` AS t2_r6, projects.`created_on` AS t2_r7, projects.`updated_on` AS t2_r8, projects.`identifier` AS t2_r9, projects.`status` AS t2_r10, trackers.`id` AS t3_r0, trackers.`name` AS t3_r1, trackers.`is_in_chlog` AS t3_r2, trackers.`position` AS t3_r3, trackers.`is_in_roadmap` AS t3_r4 FROM issues LEFT OUTER JOIN issue_statuses ON issue_statuses.id = issues.status_id LEFT OUTER JOIN projects ON projects.id = issues.project_id LEFT OUTER JOIN trackers ON trackers.id = issues.tracker_id WHERE (assigned_to_id=5 AND issue_statuses.is_closed=0 AND projects.status=1) ORDER BY issues.updated_on DESC LIMIT 10[0m
+Rendered issues/_list_simple (0.00989)
+Rendered my/blocks/_issuesassignedtome (0.08937)
+  [4;36;1mIssue Load Including Associations (0.000845)[0m   [0;1mSELECT issues.`id` AS t0_r0, issues.`tracker_id` AS t0_r1, issues.`project_id` AS t0_r2, issues.`subject` AS t0_r3, issues.`description` AS t0_r4, issues.`due_date` AS t0_r5, issues.`category_id` AS t0_r6, issues.`status_id` AS t0_r7, issues.`assigned_to_id` AS t0_r8, issues.`priority_id` AS t0_r9, issues.`fixed_version_id` AS t0_r10, issues.`author_id` AS t0_r11, issues.`lock_version` AS t0_r12, issues.`created_on` AS t0_r13, issues.`updated_on` AS t0_r14, issues.`start_date` AS t0_r15, issues.`done_ratio` AS t0_r16, issue_statuses.`id` AS t1_r0, issue_statuses.`name` AS t1_r1, issue_statuses.`is_closed` AS t1_r2, issue_statuses.`is_default` AS t1_r3, issue_statuses.`html_color` AS t1_r4, issue_statuses.`position` AS t1_r5, projects.`id` AS t2_r0, projects.`name` AS t2_r1, projects.`description` AS t2_r2, projects.`homepage` AS t2_r3, projects.`is_public` AS t2_r4, projects.`parent_id` AS t2_r5, projects.`projects_count` AS t2_r6, projects.`created_on` AS t2_r7, projects.`updated_on` AS t2_r8, projects.`identifier` AS t2_r9, projects.`status` AS t2_r10, trackers.`id` AS t3_r0, trackers.`name` AS t3_r1, trackers.`is_in_chlog` AS t3_r2, trackers.`position` AS t3_r3, trackers.`is_in_roadmap` AS t3_r4 FROM issues LEFT OUTER JOIN issue_statuses ON issue_statuses.id = issues.status_id LEFT OUTER JOIN projects ON projects.id = issues.project_id LEFT OUTER JOIN trackers ON trackers.id = issues.tracker_id WHERE (author_id=5 AND projects.status=1) ORDER BY issues.updated_on DESC LIMIT 10[0m
+Rendered issues/_list_simple (0.00030)
+Rendered my/blocks/_issuesreportedbyme (0.00526)
+  [4;35;1mSetting Columns (0.002260)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.003740)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000188)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000259)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_subtitle') LIMIT 1[0m
+  [4;35;1mMember Columns (0.001974)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mRole Columns (0.001585)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.000660)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 5 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.30449 (3 reqs/sec) | Rendering: 0.17818 (58%) | DB: 0.04818 (15%) | 200 OK [http://localhost/my/page]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 19:43:36) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/my/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 19:45:36) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/my/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 19:45:37) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/my/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 19:51:59) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/my/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 21:01:01) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/my/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 22:17:01) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/my/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-04 22:22:14) [GET]
+  Session ID: ecbd0ca58796fc22ba299a5458c3ade2
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/my/favicon.ico" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
