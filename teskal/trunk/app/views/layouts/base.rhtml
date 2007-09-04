@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head> 
+
+ 	<link href="favicon.ico"
+		         rel="icon"
+		         type="image/x-icon" />
+<title><%= Setting.app_title + (@html_title ? ": #{@html_title}" : "") %></title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="Teskal, enjoy the pressure" />
+<meta name="keywords" content="sport" />
+<!--[if IE]>
+    <style type="text/css">
+    body {behavior: url(<%= stylesheet_path "csshover.htc" %>);}
+    </style>
+<![endif]-->
+<%= stylesheet_link_tag "application" %>
+
+</head>                       
+
+<body>
+
+<div class="content"> 
+    <div id="header">
+    <!-- <div style="float: left;">
+        <h1><%= Setting.app_title %></h1>
+        <h2><%= Setting.app_subtitle %></h2>
+    </div>    -->
+    </div>
+	
+	<div id="navigation">
+		<ul>
+  	
+    <% if loggedin? %>
+		<li><%= link_to l(:label_my_account), { :controller => 'my', :action => 'account' } %></li>
+    <% end %>
+			
+	<!-- <% if admin_loggedin? %>
+		<li class="submenu"><%= link_to l(:label_administration), { :controller => 'admin' }, :class => "icon icon-admin", :onmouseover => "buttonMouseover(event, 'menuAdmin');" %></li>
+	<% end %>    -->
+ 	
+	<% unless @project.nil? || @project.id.nil? %>
+        <li class="submenu"><%= link_to @project.name, { :controller => 'projects', :action => 'show', :id => @project }, :class => "icon icon-projects", :onmouseover => "buttonMouseover(event, 'menuProject');"  %></li>
+    <% end %>
+   		
+	<li class="right"><%= link_to l(:label_help), { :controller => 'help', :ctrl => params[:controller], :page => params[:action] }, :onclick => "window.open(this.href); return false;"%></li>  
+     
+	<% if loggedin? and @logged_in_user.memberships.any? %>
+      <li class="submenu"><%= link_to l(:label_project_plural), { :controller => 'projects' }, :class => "icon icon-projects", :onmouseover => "buttonMouseover(event, 'menuAllProjects');" %></li>
+	<% else %>
+	  <li class="right"><%= link_to l(:label_project_plural), { :controller => 'projects' } %></li>
+	<% end %>
+	<% if loggedin? %>
+				<li class="right"><%= link_to l(:label_logout), { :controller => 'account', :action => 'logout' } %></li>	
+			<% else %>	
+				<li class="right"><%= link_to l(:label_login), { :controller => 'account', :action => 'login' } %></li>
+			<% end %>
+        <li class="right"><%= link_to l(:label_home), { :controller => 'welcome' } %></li>    
+		</ul>		
+	</div>
+    
+
+    <!-- <% if admin_loggedin? %>
+		<%= render :partial => 'admin/menu' %>        
+    <% end %>  -->
+    
+    <% unless @project.nil? || @project.id.nil? %>
+    <div id="menuProject" class="menu" onmouseover="menuMouseover(event)">
+        <%= link_to l(:label_calendar), {:controller => 'projects', :action => 'calendar', :id => @project }, :class => "menuItem" %>
+
+        <%= link_to l(:label_issue_plural), {:controller => 'projects', :action => 'list_issues', :id => @project }, :class => "menuItem" %>
+        <% if @project && authorize_for('projects', 'add_issue') %>
+          <a class="menuItem" href="#" onmouseover="menuItemMouseover(event,'menuNewIssue');" onclick="this.blur(); return false;"><span class="menuItemText"><%= l(:label_issue_new) %></span><span class="menuItemArrow">&#9654;</span></a>
+        <% end %>
+        <%= link_to l(:label_report_plural), {:controller => 'reports', :action => 'issue_report', :id => @project }, :class => "menuItem" %>
+        <%= link_to l(:label_activity), {:controller => 'projects', :action => 'activity', :id => @project }, :class => "menuItem" %>
+        <%= link_to l(:label_news_plural), {:controller => 'projects', :action => 'list_news', :id => @project }, :class => "menuItem" %>
+        <%= link_to l(:label_change_log), {:controller => 'projects', :action => 'changelog', :id => @project }, :class => "menuItem" %>
+
+        <%= link_to l(:label_document_plural), {:controller => 'projects', :action => 'list_documents', :id => @project }, :class => "menuItem" %>
+        <%= link_to l(:label_wiki), {:controller => 'wiki', :id => @project, :page => nil }, :class => "menuItem" if @project.wiki and !@project.wiki.new_record? %>        
+        <%= link_to l(:label_board_plural), {:controller => 'boards', :project_id => @project }, :class => "menuItem" unless @project.boards.empty? %>
+        <%= link_to l(:label_attachment_plural), {:controller => 'projects', :action => 'list_files', :id => @project }, :class => "menuItem" %>
+        <%= link_to l(:label_search), {:controller => 'search', :action => 'index', :id => @project }, :class => "menuItem" %>
+        <%= link_to l(:label_repository), {:controller => 'repositories', :action => 'show', :id => @project}, :class => "menuItem" if @project.repository and !@project.repository.new_record? %>
+        <%= link_to_if_authorized l(:label_settings), {:controller => 'projects', :action => 'settings', :id => @project }, :class => "menuItem" %>
+    </div>
+    <% end %>
+    
+    <% if @project && authorize_for('projects', 'add_issue') %>
+        <div id="menuNewIssue" class="menu" onmouseover="menuMouseover(event)">
+        <% Tracker.find(:all, :order => 'position').each do |tracker| %>
+            <%= link_to tracker.name, {:controller => 'projects', :action => 'add_issue', :id => @project, :tracker_id => tracker}, :class => "menuItem" %>
+        <% end %>
+        </div>
+    <% end %>
+
+    <% if loggedin? and @logged_in_user.memberships.any? %>
+        <div id="menuAllProjects" class="menu" onmouseover="menuMouseover(event)">
+        <%= link_to l(:label_project_all), {:controller => 'projects' }, :class => "menuItem" %>
+        <% @logged_in_user.memberships.find(:all, :limit => 20).each do |membership| %>
+            <%= link_to membership.project.name, {:controller => 'projects',:action => 'show', :id => membership.project }, :class => "menuItem" %>
+        <% end %>
+        </div>
+    <% end %>
+	
+
+	
+	<div id="content">
+		<% if flash[:notice] %><p style="color: green"><%= flash[:notice] %></p><% end %>		
+		<%= yield %>	
+	</div>
+	
+
+
+	<div id="footer">
+	</div>
+
+</div>
+</body>
+</html>
