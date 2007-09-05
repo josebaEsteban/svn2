@@ -32,7 +32,7 @@ wiki_compression:
 default_language:
   default: en
 host_name:
-  default: localhost:3000
+  default: www.teskal.com
 feeds_limit:
   format: int
   default: 15
