@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :answers
+
   # Add your own custom routes here.
   # The priority is based upon order of creation: first created -> highest priority.
   
@@ -10,14 +12,14 @@ ActionController::Routing::Routes.draw do |map|
   # -- just remember to delete public/index.html.
   map.connect '', :controller => "welcome"
 
-  # map.connect 'wiki/:id/:page/:action', :controller => 'wiki', :page => nil
+ 
   # map.connect 'roles/workflow/:id/:role_id/:tracker_id', :controller => 'roles', :action => 'workflow'
   # map.connect 'help/:ctrl/:page', :controller => 'help'
   #map.connect ':controller/:action/:id/:sort_key/:sort_order'
   
-  map.connect 'issues/:issue_id/relations/:action/:id', :controller => 'issue_relations'
+
   map.connect 'projects/:project_id/boards/:action/:id', :controller => 'boards'
-  map.connect 'boards/:board_id/topics/:action/:id', :controller => 'messages'
+
   
   # Allow downloading Web Service WSDL as a file with an extension
   # instead of a file named 'wsdl'
