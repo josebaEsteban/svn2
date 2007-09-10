@@ -4,17 +4,16 @@
 
 class AccountController < ApplicationController
   layout 'base'	
-  helper :custom_fields
-  include CustomFieldsHelper   
+
+
   
   # prevents login action to be filtered by check_if_login_required application scope filter
-  skip_before_filter :check_if_login_required, :only => [:login, :lost_password, :register]
+  skip_before_filter :check_if_login_required, :only => [:login, :lost_password, :signup]
   before_filter :require_login, :only => :logout
 
   # Show user's account
   def show
     @user = User.find(params[:id])
-    @custom_values = @user.custom_values.find(:all, :include => :custom_field)
     
     # show only public projects and private projects that the logged in user is also a member of
     @memberships = @user.memberships.select do |membership|
@@ -77,8 +76,6 @@ class AccountController < ApplicationController
         user = User.find_by_mail(params[:mail])
         # user not found in db
         flash.now[:notice] = l(:notice_account_unknown_email) and return unless user
-        # user uses an external authentification
-        flash.now[:notice] = l(:notice_can_t_change_password) and return if user.auth_source_id
         # create a new token for password recovery
         token = Token.new(:user => user, :action => "recovery")
         if token.save
@@ -92,10 +89,10 @@ class AccountController < ApplicationController
   end
   
   # User self-registration
-  def register
+  def signup
     redirect_to :controller => 'welcome' and return unless Setting.self_registration?
     if params[:token]
-      token = Token.find_by_action_and_value("register", params[:token])
+      token = Token.find_by_action_and_value("signup", params[:token])
       redirect_to :controller => 'welcome' and return unless token and !token.expired?
       user = token.user
       redirect_to :controller => 'welcome' and return unless user.status == User::STATUS_REGISTERED
@@ -109,16 +106,16 @@ class AccountController < ApplicationController
     else
       if request.get?
         @user = User.new(:language => Setting.default_language)
-        @custom_values = UserCustomField.find(:all).collect { |x| CustomValue.new(:custom_field => x, :customized => @user) }
+
+
       else
         @user = User.new(params[:user])
         @user.admin = false
         @user.login = params[:user][:login]
         @user.status = User::STATUS_REGISTERED
         @user.password, @user.password_confirmation = params[:password], params[:password_confirmation]
-        @custom_values = UserCustomField.find(:all).collect { |x| CustomValue.new(:custom_field => x, :customized => @user, :value => params["custom_fields"][x.id.to_s]) }
-        @user.custom_values = @custom_values
-        token = Token.new(:user => @user, :action => "register")
+
+        token = Token.new(:user => @user, :action => "signup")
         if @user.save and token.save
           Mailer.deliver_register(token)
           flash[:notice] = l(:notice_account_register_done)

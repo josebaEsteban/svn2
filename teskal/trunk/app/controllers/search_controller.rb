@@ -1,20 +1,6 @@
 # Teskal
 
 
-#
-
-# modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2
-# of the License, or (at your option) any later version.
-# 
-
-
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-# 
-# You should have received a copy of the GNU General Public License
-
 
 
 class SearchController < ApplicationController
@@ -27,7 +13,7 @@ class SearchController < ApplicationController
     @question = params[:q] || ""
     @question.strip!
     @all_words = params[:all_words] || (params[:submit] ? false : true)
-    @scope = params[:scope] || (params[:submit] ? [] : %w(projects issues changesets news documents wiki messages) )
+    @scope = params[:scope] || (params[:submit] ? [] : %w(projects issues news documents messages) )
     
     # quick jump to an issue
     if @scope.include?('issues') && @question.match(/^#?(\d+)$/) && Issue.find_by_id($1, :include => :project, :conditions => Project.visible_by(logged_in_user))
@@ -53,10 +39,6 @@ class SearchController < ApplicationController
       @results = []
       if @project
         @results += @project.issues.find(:all, :limit => limit, :include => :author, :conditions => [ (["(LOWER(subject) like ? OR LOWER(description) like ?)"] * like_tokens.size).join(operator), * (like_tokens * 2).sort] ) if @scope.include? 'issues'
-        @results += @project.news.find(:all, :limit => limit, :conditions => [ (["(LOWER(title) like ? OR LOWER(description) like ?)"] * like_tokens.size).join(operator), * (like_tokens * 2).sort], :include => :author ) if @scope.include? 'news'
-        @results += @project.documents.find(:all, :limit => limit, :conditions => [ (["(LOWER(title) like ? OR LOWER(description) like ?)"] * like_tokens.size).join(operator), * (like_tokens * 2).sort] ) if @scope.include? 'documents'
-        @results += @project.wiki.pages.find(:all, :limit => limit, :include => :content, :conditions => [ (["(LOWER(title) like ? OR LOWER(text) like ?)"] * like_tokens.size).join(operator), * (like_tokens * 2).sort] ) if @project.wiki && @scope.include?('wiki')
-        @results += @project.repository.changesets.find(:all, :limit => limit, :conditions => [ (["(LOWER(comments) like ?)"] * like_tokens.size).join(operator), * (like_tokens).sort] ) if @project.repository && @scope.include?('changesets')
         Message.with_scope :find => {:conditions => ["#{Board.table_name}.project_id = ?", @project.id]} do
           @results += Message.find(:all, :include => :board, :limit => limit, :conditions => [ (["(LOWER(subject) like ? OR LOWER(content) like ?)"] * like_tokens.size).join(operator), * (like_tokens * 2).sort] ) if @scope.include? 'messages'
         end

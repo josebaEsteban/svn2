@@ -1,20 +1,5 @@
 # Teskal
-
 # Copyright (C) 2007 Teskal
-#
-
-# modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2
-# of the License, or (at your option) any later version.
-# 
-
-
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-# 
-# You should have received a copy of the GNU General Public License
-
 
 
 class UsersController < ApplicationController
@@ -23,8 +8,6 @@ class UsersController < ApplicationController
 
   helper :sort
   include SortHelper
-  helper :custom_fields
-  include CustomFieldsHelper   
 
   def index
     list
@@ -52,43 +35,33 @@ class UsersController < ApplicationController
   end
 
   def add
-    if request.get?
-      @user = User.new(:language => Setting.default_language)
-      @custom_values = UserCustomField.find(:all).collect { |x| CustomValue.new(:custom_field => x, :customized => @user) }
-    else
       @user = User.new(params[:user])
       @user.admin = params[:user][:admin] || false
       @user.login = params[:user][:login]
-      @user.password, @user.password_confirmation = params[:password], params[:password_confirmation] unless @user.auth_source_id
-      @custom_values = UserCustomField.find(:all).collect { |x| CustomValue.new(:custom_field => x, :customized => @user, :value => params["custom_fields"][x.id.to_s]) }
-      @user.custom_values = @custom_values			
+      @user.password, @user.password_confirmation = params[:password], params[:password_confirmation] 
+
       if @user.save
         Mailer.deliver_account_information(@user, params[:password]) if params[:send_information]
         flash[:notice] = l(:notice_successful_create)
         redirect_to :action => 'list'
       end
-    end
-    @auth_sources = AuthSource.find(:all)
+    # end
   end
 
   def edit
     @user = User.find(params[:id])
     if request.get?
-      @custom_values = UserCustomField.find(:all).collect { |x| @user.custom_values.find_by_custom_field_id(x.id) || CustomValue.new(:custom_field => x) }
+
     else
       @user.admin = params[:user][:admin] if params[:user][:admin]
       @user.login = params[:user][:login] if params[:user][:login]
-      @user.password, @user.password_confirmation = params[:password], params[:password_confirmation] unless params[:password].nil? or params[:password].empty? or @user.auth_source_id
-      if params[:custom_fields]
-        @custom_values = UserCustomField.find(:all).collect { |x| CustomValue.new(:custom_field => x, :customized => @user, :value => params["custom_fields"][x.id.to_s]) }
-        @user.custom_values = @custom_values
-      end
+      @user.password, @user.password_confirmation = params[:password], params[:password_confirmation] unless params[:password].nil? or params[:password].empty?
       if @user.update_attributes(params[:user])
         flash[:notice] = l(:notice_successful_update)
         redirect_to :action => 'list'
       end
     end
-    @auth_sources = AuthSource.find(:all)
+
     @roles = Role.find(:all, :order => 'position')
     @projects = Project.find(:all, :order => 'name', :conditions => "status=#{Project::STATUS_ACTIVE}") - @user.projects
     @membership ||= Member.new

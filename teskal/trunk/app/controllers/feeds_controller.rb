@@ -1,19 +1,6 @@
 # Teskal
 
 # Copyright (C) 2007 Teskal
-#
-
-# modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2
-# of the License, or (at your option) any later version.
-# 
-
-
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-# 
-# You should have received a copy of the GNU General Public License
 
 
 
@@ -23,8 +10,6 @@ class FeedsController < ApplicationController
 
   helper :issues
   include IssuesHelper
-  helper :custom_fields
-  include CustomFieldsHelper
     
   # news feeds
   def news
@@ -46,10 +31,6 @@ class FeedsController < ApplicationController
       @find_options[:conditions] = query.statement if query.valid? and @project == query.project
     end
 
-    Issue.with_scope(:find => @find_options) do
-      @issues = Issue.find :all, :include => [:project, :author, :tracker, :status, :custom_values], 
-                                 :order => "#{Issue.table_name}.created_on DESC"
-    end
     @title = (@project ? @project.name : Setting.app_title) + ": " + (query ? query.name : l(:label_reported_issues))
     headers["Content-Type"] = "application/rss+xml"
     render :action => 'issues_atom' if 'atom' == params[:format]
@@ -66,11 +47,7 @@ class FeedsController < ApplicationController
       @find_options[:conditions] = query.statement if query.valid? and @project == query.project
     end
 
-    Journal.with_scope(:find => @find_options) do
-      @journals = Journal.find :all, :include => [ :details, :user, {:issue => [:project, :author, :tracker, :status, :custom_values]} ], 
-                                     :order => "#{Journal.table_name}.created_on DESC"
-    end
-    
+     
     @title = (@project ? @project.name : Setting.app_title) + ": " + (query ? query.name : l(:label_reported_issues))
     headers["Content-Type"] = "application/rss+xml"
     render :action => 'history_atom' if 'atom' == params[:format]

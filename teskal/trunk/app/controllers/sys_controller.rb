@@ -13,16 +13,7 @@ class SysController < ActionController::Base
     Project.find(:all, :include => :repository)
   end
 
-  def repository_created(project_id, url)
-    project = Project.find_by_id(project_id)
-    return 0 unless project && project.repository.nil?
-    logger.debug "Repository for #{project.name} created"
-    repository = Repository.new(:project => project, :url => url)
-    repository.root_url = url
-    repository.save
-    repository.id
-  end
-
+ 
 protected
 
   def check_enabled(name, args)
