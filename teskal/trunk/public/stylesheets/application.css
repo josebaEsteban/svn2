@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/**************** Body and tag styles ****************/
+/****f************ Body and tag styles ****************/
 
 #header * {
 	margin:0;
@@ -25,10 +25,11 @@ body {
 	padding: 0;
 	width: 910px;
 	height:auto;
-	background-color: #F8F5E2;
+	background-color: #ffffff;
 	color: #628600;
-	background-image: url(../images/bgmain.gif);
-	background-repeat: repeat-y;
+	background-image: url(../images/bgmain_white.gif);
+/*	background-image: url(../images/bgmain.gif);   cream version
+*/	background-repeat: repeat-y;
 	background-position: center;
 }
 a {
@@ -76,8 +77,9 @@ img.right {
 	
 #header {
 	margin: 0;
-	background-image: url(../images/header_all_1.gif);
-	position: relative;
+	background-image: url(../images/header_all_white.gif);   
+/*	background-image: url(../images/header_all_1.gif); cream version
+*/	position: relative;
 	left: 40px;
 	top: 0px;
 	width: 830px;
@@ -131,6 +133,20 @@ img.right {
 	float:right;
 	list-style-type:none;
 	
+}   
+#navigation li.top {
+	position:relative;
+	left:720px;
+	top: -23px;
+	list-style-type:none;
+}
+#navigation li.bottom { 
+	float: right;
+	max-width: 100px;
+	list-style-type:none;
+	position:relative;
+	left:-6px;
+	top: -4px;
 }
 #navigation li a {
 	display:block;
@@ -153,8 +169,9 @@ img.right {
 #navigation .selected, #navigation a:hover {
 	color:#d42e12;
 	text-decoration:none;
-	background-color: #F8F5E2;
-
+/*	background-color: #F8F5E2;     cream
+*/                                      
+	
 }
 /**************** Icons *******************/
 .icon {
@@ -317,8 +334,9 @@ html>body #content {
 	width: auto;
 	height:500px;
 	font-size:0.9em;
-	padding:20px 10px 10px 20px;
-	margin-left: 40px;
+	padding:20px 20px 10px 20px;
+	margin-left: 40px; 
+	margin-right: 40px;
 }
 #content h2, #content div.wiki h1 {
 	display:block;
@@ -613,8 +631,9 @@ div.menu a.menuItem span.menuItemArrow {
 
 #footer {
 	margin: 0;
-	background-image: url(../images/footer_1.gif);
-	background-repeat: no-repeat;
+	background-image: url(../images/footer_1_white.gif);
+/*	background-image: url(../images/footer_1.gif); cream
+*/	background-repeat: no-repeat;
 	background-position: bottom;
 	
 	width: 910px;
@@ -673,7 +692,7 @@ div.menu a.menuItem span.menuItemArrow {
 	margin:0 0 20px 0;
 	padding:10px;
 	border:1px solid #c0c0c0;
-	
+	max-width: 530px;
 	color:#505050;
 	line-height:1.5em;
 }
