@@ -4,8 +4,9 @@
 <%=l(:field_created_on)%>: <%= format_time(@user.created_on) %></p>
 
 <%= error_messages_for 'user' %>
+	<center>
+<div class="box">  
 
-<div class="box">
 <h3><%=l(:label_information_plural)%></h3>
   
 <% labelled_tabular_form_for :user, @user, :url => { :action => "account" } do |f| %>
@@ -15,17 +16,17 @@
 --> 
 <p><%= f.text_field :mail, :required => true, :size => 40 %></p>
 <p><%= f.select :language, lang_options_for_select %></p>
-<!--
-<p><%= f.check_box :mail_notification %></p>
 
+<!--
+<p><%= f.check_box :mail_notification %></p>  
 <% fields_for :pref, @user.pref, :builder => TabularFormBuilder, :lang => current_language do |pref_fields| %>
 <p><%= pref_fields.check_box :hide_mail %></p>
 <% end %>
  -->   
 <center><%= submit_tag l(:button_save) %></center>
 <% end %>
+ 
 </div>
-
 
 <% unless @user.auth_source_id %>
   <div class="box">
@@ -45,5 +46,6 @@
 
   <center><%= submit_tag l(:button_save) %></center>
   <% end %>
-  </div>
+  </div>  
+</center>
 <% end %>

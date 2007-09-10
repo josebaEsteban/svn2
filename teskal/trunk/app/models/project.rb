@@ -24,26 +24,16 @@ class Project < ActiveRecord::Base
   
   has_many :members, :dependent => :delete_all, :include => :user, :conditions => "#{User.table_name}.status=#{User::STATUS_ACTIVE}"
   has_many :users, :through => :members
-  has_many :custom_values, :dependent => :delete_all, :as => :customized
-  has_many :issues, :dependent => :destroy, :order => "#{Issue.table_name}.created_on DESC", :include => [:status, :tracker]
-  has_many :versions, :dependent => :destroy, :order => "#{Version.table_name}.effective_date DESC, #{Version.table_name}.name DESC"
+
   has_many :time_entries, :dependent => :delete_all
-  has_many :queries, :dependent => :delete_all
-  has_many :documents, :dependent => :destroy
-  has_many :news, :dependent => :delete_all, :include => :author
-  has_many :issue_categories, :dependent => :delete_all, :order => "#{IssueCategory.table_name}.name"
-  has_many :boards, :order => "position ASC"
-  has_one :repository, :dependent => :destroy
-  has_one :wiki, :dependent => :destroy
-  has_and_belongs_to_many :custom_fields, :class_name => 'IssueCustomField', :join_table => "#{table_name_prefix}custom_fields_projects#{table_name_suffix}", :association_foreign_key => 'custom_field_id'
+
   acts_as_tree :order => "name", :counter_cache => true
   
   attr_protected :status
   
   validates_presence_of :name, :description, :identifier
   validates_uniqueness_of :name, :identifier
-  validates_associated :custom_values, :on => :update
-  validates_associated :repository, :wiki
+
   validates_length_of :name, :maximum => 30
   validates_format_of :name, :with => /^[\w\s\'\-]*$/i
   validates_length_of :description, :maximum => 255
@@ -58,17 +48,6 @@ class Project < ActiveRecord::Base
     errors[:identifier].nil? && !(new_record? || identifier.blank?)
   end
   
-  def issues_with_subprojects(include_subprojects=false)
-    conditions = nil
-    if include_subprojects && !active_children.empty?
-      ids = [id] + active_children.collect {|c| c.id}
-      conditions = ["#{Issue.table_name}.project_id IN (#{ids.join(',')})"]
-    end
-    conditions ||= ["#{Issue.table_name}.project_id = ?", id]
-    Issue.with_scope :find => { :conditions => conditions } do 
-      yield
-    end 
-  end
   
   # returns latest created projects
   # non public projects will be returned only if user is a member of those
@@ -107,16 +86,7 @@ class Project < ActiveRecord::Base
     children.select {|child| child.active?}
   end
   
-  # Returns an array of all custom fields enabled for project issues
-  # (explictly associated custom fields and custom fields enabled for all projects)
-  def custom_fields_for_issues(tracker)
-    all_custom_fields.select {|c| tracker.custom_fields.include? c }
-  end
-  
-  def all_custom_fields
-    @all_custom_fields ||= (IssueCustomField.for_all + custom_fields).uniq
-  end
-
+   
 protected
   def validate
     errors.add(parent_id, " must be a root project") if parent and parent.parent
