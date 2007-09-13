@@ -482,13 +482,13 @@ default_priority_immediate: Immediate
 default_activity_design: Design
 default_activity_development: Development
 
-valor_0: 0 (nothing)
-valor_1: 1 (rarely)
-valor_2: 2 (sometimes)
-valor_3: 3 (often)
-valor_4: 4 (many times)
-valor_5: 5 (almost always)
-valor_6: 6 (always)
+test2_valor_0: 0 (nothing)
+test2_valor_1: 1 (rarely)
+test2_valor_2: 2 (sometimes)
+test2_valor_3: 3 (often)
+test2_valor_4: 4 (many times)
+test2_valor_5: 5 (almost always)
+test2_valor_6: 6 (always)
 
 test2: Questionnaire Stress Tolerance
 test2_1: I felt pain in some parts of my body

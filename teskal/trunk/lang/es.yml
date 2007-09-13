@@ -482,13 +482,13 @@ default_priority_immediate: Ahora
 default_activity_design: Diseño
 default_activity_development: Desarrollo     
 
-valor_0: 0 - nada
-valor_1: 2 - rara vez
-valor_2: 3 - a veces
-valor_3: 4 - a menudo
-valor_4: 5 - muchas veces
-valor_5: 6 - casi siempre
-valor_6: 7 - siempre
+test2_valor_0: 0 - nada
+test2_valor_1: 2 - rara vez
+test2_valor_2: 3 - a veces
+test2_valor_3: 4 - a menudo
+test2_valor_4: 5 - muchas veces
+test2_valor_5: 6 - casi siempre
+test2_valor_6: 7 - siempre
 
 test2: Cuestionario Tolerancia al Estrés
 test2_1: Me han dolido algunas partes del cuerpo
