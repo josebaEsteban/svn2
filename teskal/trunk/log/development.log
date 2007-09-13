@@ -1,0 +1,489 @@
+# Logfile created on Tue Sep 11 16:59:31 +0200 2007 by /
+
+
+Processing MyController#account (for 127.0.0.1 at 2007-09-11 16:59:33) [GET]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"action"=>"account", "controller"=>"my"}
+  [4;36;1mSQL (0.000134)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSetting Columns (0.001943)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.002541)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'login_required') LIMIT 1[0m
+Redirected to http://localhost:3000/account/login
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x347cb44 @filter=:require_login>] returned false.
+Completed in 0.19024 (5 reqs/sec) | DB: 0.00462 (2%) | 302 Found [http://localhost/my/account]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2007-09-11 16:59:34) [GET]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering  within layouts/base
+Rendering account/login
+  [4;35;1mSetting Columns (0.001551)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.000851)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'autologin') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000197)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'self_registration') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000192)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'lost_password') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000345)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+Completed in 0.02245 (44 reqs/sec) | Rendering: 0.01825 (81%) | DB: 0.00314 (13%) | 200 OK [http://localhost/account/login]
+
+
+Processing AccountController#lost_password (for 127.0.0.1 at 2007-09-11 16:59:53) [GET]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"action"=>"lost_password", "controller"=>"account"}
+  [4;36;1mSetting Columns (0.004288)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000904)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'lost_password') LIMIT 1[0m
+Rendering  within layouts/base
+Rendering account/lost_password
+  [4;36;1mSetting Load (0.000341)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+Completed in 0.06895 (14 reqs/sec) | Rendering: 0.05570 (80%) | DB: 0.00553 (8%) | 200 OK [http://localhost/account/lost_password]
+
+
+Processing AccountController#lost_password (for 127.0.0.1 at 2007-09-11 17:00:11) [POST]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"commit"=>"Submit", "action"=>"lost_password", "mail"=>"ovinado@yahoo.com", "controller"=>"account"}
+  [4;35;1mSetting Columns (0.001503)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.000603)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'lost_password') LIMIT 1[0m
+  [4;35;1mUser Columns (0.002000)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.000515)[0m   [0;1mSELECT * FROM users WHERE (users.`mail` = 'ovinado@yahoo.com') LIMIT 1[0m
+  [4;35;1mToken Columns (0.016431)[0m   [0mSHOW FIELDS FROM tokens[0m
+  [4;36;1mSQL (0.000456)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.023934)[0m   [0mINSERT INTO tokens (`created_on`, `action`, `value`, `user_id`) VALUES('2007-09-11 17:00:11', 'recovery', 'UxKpDEJCTSa8gyRw0GMlxHd6hdsM2vPOYAzA67rH', 2)[0m
+  [4;36;1mSQL (0.000540)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSetting Load (0.000309)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'mail_from') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000374)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'host_name') LIMIT 1[0m
+Sent mail:
+ From: support@teskal.com
+To: ovinado@yahoo.com
+Subject: Your Teskal password
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+To change your password, use the following link:
+
+http://localhost:3000/account/lost_password?token=UxKpDEJCTSa8gyRw0GMlxHd6hdsM2vPOYAzA67rH
+Redirected to http://localhost:3000/account/login
+Completed in 30.20388 (0 reqs/sec) | DB: 0.04667 (0%) | 302 Found [http://localhost/account/lost_password]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2007-09-11 17:00:41) [GET]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering  within layouts/base
+Rendering account/login
+  [4;35;1mSetting Columns (0.001520)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.000628)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'autologin') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000196)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'self_registration') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000178)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'lost_password') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000173)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+Completed in 0.01563 (63 reqs/sec) | Rendering: 0.01180 (75%) | DB: 0.00270 (17%) | 200 OK [http://localhost/account/login]
+
+
+Processing AccountController#lost_password (for 127.0.0.1 at 2007-09-11 17:01:18) [GET]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"action"=>"lost_password", "controller"=>"account"}
+  [4;36;1mSetting Columns (0.001550)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000791)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'lost_password') LIMIT 1[0m
+Rendering  within layouts/base
+Rendering account/lost_password
+  [4;36;1mSetting Load (0.000205)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+Completed in 0.01345 (74 reqs/sec) | Rendering: 0.00329 (24%) | DB: 0.00255 (18%) | 200 OK [http://localhost/account/lost_password]
+
+
+Processing AccountController#lost_password (for 127.0.0.1 at 2007-09-11 17:01:25) [POST]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"commit"=>"Submit", "action"=>"lost_password", "mail"=>"ovinado@yahoo.com", "controller"=>"account"}
+  [4;35;1mSetting Columns (0.001477)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.000572)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'lost_password') LIMIT 1[0m
+  [4;35;1mUser Columns (0.001971)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.000579)[0m   [0;1mSELECT * FROM users WHERE (users.`mail` = 'ovinado@yahoo.com') LIMIT 1[0m
+  [4;35;1mToken Columns (0.001164)[0m   [0mSHOW FIELDS FROM tokens[0m
+  [4;36;1mSQL (0.000402)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000205)[0m   [0mINSERT INTO tokens (`created_on`, `action`, `value`, `user_id`) VALUES('2007-09-11 17:01:25', 'recovery', 'LxXjVXkeKGKtLwEYE1AqZwagTCT8ePYLYeP7cuih', 2)[0m
+  [4;36;1mSQL (0.000439)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSetting Load (0.000259)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'mail_from') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000175)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'host_name') LIMIT 1[0m
+Sent mail:
+ From: support@teskal.com
+To: ovinado@yahoo.com
+Subject: Your Teskal password
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+To change your password, use the following link:
+
+http://localhost:3000/account/lost_password?token=LxXjVXkeKGKtLwEYE1AqZwagTCT8ePYLYeP7cuih
+Redirected to http://localhost:3000/account/login
+Completed in 2.84229 (0 reqs/sec) | DB: 0.00724 (0%) | 302 Found [http://localhost/account/lost_password]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2007-09-11 17:01:28) [GET]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering  within layouts/base
+Rendering account/login
+  [4;35;1mSetting Columns (0.001557)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.000901)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'autologin') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000212)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'self_registration') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000181)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'lost_password') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000170)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+Completed in 0.01613 (61 reqs/sec) | Rendering: 0.01202 (74%) | DB: 0.00302 (18%) | 200 OK [http://localhost/account/login]
+
+
+Processing AccountController#lost_password (for 127.0.0.1 at 2007-09-11 17:01:53) [GET]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"token"=>"LxXjVXkeKGKtLwEYE1AqZwagTCT8ePYLYeP7cuih", "action"=>"lost_password", "controller"=>"account"}
+  [4;36;1mSetting Columns (0.095206)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000786)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'lost_password') LIMIT 1[0m
+  [4;36;1mToken Columns (0.001709)[0m   [0;1mSHOW FIELDS FROM tokens[0m
+  [4;35;1mToken Load (0.000610)[0m   [0mSELECT * FROM tokens WHERE (tokens.`action` = 'recovery' AND tokens.`value` = 'LxXjVXkeKGKtLwEYE1AqZwagTCT8ePYLYeP7cuih') LIMIT 1[0m
+  [4;36;1mUser Columns (0.001989)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.000555)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+Rendering layoutfalsetemplateaccount/password_recovery within layouts/base
+Rendering account/password_recovery
+  [4;36;1mSetting Load (0.000347)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+Completed in 0.15706 (6 reqs/sec) | Rendering: 0.02107 (13%) | DB: 0.10120 (64%) | 200 OK [http://localhost/account/lost_password?token=LxXjVXkeKGKtLwEYE1AqZwagTCT8ePYLYeP7cuih]
+
+
+Processing AccountController#lost_password (for 127.0.0.1 at 2007-09-11 17:02:31) [POST]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"commit"=>"Save", "token"=>"LxXjVXkeKGKtLwEYE1AqZwagTCT8ePYLYeP7cuih", "action"=>"lost_password", "controller"=>"account", "new_password_confirmation"=>"[FILTERED]", "new_password"=>"[FILTERED]"}
+  [4;35;1mSetting Columns (0.003248)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.002164)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'lost_password') LIMIT 1[0m
+  [4;35;1mToken Columns (0.001360)[0m   [0mSHOW FIELDS FROM tokens[0m
+  [4;36;1mToken Load (0.000623)[0m   [0;1mSELECT * FROM tokens WHERE (tokens.`action` = 'recovery' AND tokens.`value` = 'LxXjVXkeKGKtLwEYE1AqZwagTCT8ePYLYeP7cuih') LIMIT 1[0m
+  [4;35;1mUser Columns (0.001754)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.000600)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mSQL (0.000065)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.032589)[0m   [0;1mSELECT * FROM users WHERE (users.login = 'pepa' AND users.id <> 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.000370)[0m   [0mSELECT * FROM users WHERE (users.mail = 'ovinado@yahoo.com' AND users.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Update (0.000316)[0m   [0;1mUPDATE users SET `login` = 'pepa', `hashed_password` = '899ed5ef71b22ad224798d2b255ea073fdf4de20', `auth_source_id` = NULL, `lastname` = 'pepa', `status` = 1, `mail_notification` = 0, `admin` = 0, `last_login_on` = '2007-09-10 18:50:53', `updated_on` = '2007-09-11 17:02:31', `language` = 'en', `mail` = 'ovinado@yahoo.com', `firstname` = 'pepa', `created_on` = '2007-08-15 02:03:45' WHERE `id` = 2[0m
+  [4;35;1mSQL (0.000450)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000087)[0m   [0;1mBEGIN[0m
+  [4;35;1mToken Destroy (0.000214)[0m   [0m DELETE FROM tokens
+ WHERE `id` = 12
+[0m
+  [4;36;1mSQL (0.000403)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/account/login
+Completed in 0.08529 (11 reqs/sec) | DB: 0.04424 (51%) | 302 Found [http://localhost/account/lost_password?token=LxXjVXkeKGKtLwEYE1AqZwagTCT8ePYLYeP7cuih]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2007-09-11 17:02:31) [GET]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering  within layouts/base
+Rendering account/login
+  [4;35;1mSetting Columns (0.001509)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.000548)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'autologin') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000197)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'self_registration') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000177)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'lost_password') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000178)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+Completed in 0.01561 (64 reqs/sec) | Rendering: 0.01185 (75%) | DB: 0.00261 (16%) | 200 OK [http://localhost/account/login]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2007-09-11 17:02:41) [GET]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering  within layouts/base
+Rendering account/login
+  [4;36;1mSetting Columns (0.001178)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000576)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'autologin') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000199)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'self_registration') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000157)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'lost_password') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000173)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+Completed in 0.01596 (62 reqs/sec) | Rendering: 0.01258 (78%) | DB: 0.00228 (14%) | 200 OK [http://localhost/account/login]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2007-09-11 17:02:49) [POST]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"action"=>"login", "controller"=>"account", "password"=>"[FILTERED]", "login"=>"pepa"}
+  [4;35;1mUser Load (0.000494)[0m   [0mSELECT * FROM users WHERE (login='pepa') LIMIT 1[0m
+  [4;36;1mUser Columns (0.002057)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mSQL (0.000111)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.000284)[0m   [0;1mUPDATE users SET `login` = 'pepa', `hashed_password` = '899ed5ef71b22ad224798d2b255ea073fdf4de20', `auth_source_id` = NULL, `lastname` = 'pepa', `status` = 1, `mail_notification` = 0, `admin` = 0, `last_login_on` = '2007-09-11 17:02:49', `updated_on` = '2007-09-11 17:02:49', `language` = 'en', `mail` = 'ovinado@yahoo.com', `firstname` = 'pepa', `created_on` = '2007-08-15 02:03:45' WHERE `id` = 2[0m
+  [4;35;1mSQL (0.000298)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/my/account
+Completed in 0.02578 (38 reqs/sec) | DB: 0.00324 (12%) | 302 Found [http://localhost/account/login]
+
+
+Processing MyController#account (for 127.0.0.1 at 2007-09-11 17:02:49) [GET]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"action"=>"account", "controller"=>"my"}
+  [4;36;1mUser Columns (0.001943)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.000561)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mUserPreference Load (0.000234)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 2) LIMIT 1[0m
+Rendering  within layouts/base
+Rendering my/account
+  [4;35;1mSetting Columns (0.001274)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.000848)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'date_format') LIMIT 1[0m
+  [4;35;1mUserPreference Columns (0.001137)[0m   [0mSHOW FIELDS FROM user_preferences[0m
+  [4;36;1mSetting Load (0.000255)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.001362)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.001624)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.001090)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.000716)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.09578 (10 reqs/sec) | Rendering: 0.05988 (62%) | DB: 0.01104 (11%) | 200 OK [http://localhost/my/account]
+
+
+Processing MyController#account (for 127.0.0.1 at 2007-09-11 17:02:53) [POST]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"user"=>{"language"=>"es", "mail"=>"ovinado@yahoo.com"}, "commit"=>"Save", "action"=>"account", "controller"=>"my"}
+  [4;35;1mUser Columns (0.002020)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.000419)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mUserPreference Load (0.000255)[0m   [0mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000279)[0m   [0mSELECT * FROM users WHERE (users.login = 'pepa' AND users.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.000229)[0m   [0;1mSELECT * FROM users WHERE (users.mail = 'ovinado@yahoo.com' AND users.id <> 2) LIMIT 1[0m
+  [4;35;1mUser Update (0.000246)[0m   [0mUPDATE users SET `login` = 'pepa', `hashed_password` = '899ed5ef71b22ad224798d2b255ea073fdf4de20', `auth_source_id` = NULL, `lastname` = 'pepa', `status` = 1, `mail_notification` = 0, `admin` = 0, `last_login_on` = '2007-09-11 17:02:49', `updated_on` = '2007-09-11 17:02:53', `language` = 'es', `mail` = 'ovinado@yahoo.com', `firstname` = 'pepa', `created_on` = '2007-08-15 02:03:45' WHERE `id` = 2[0m
+  [4;36;1mUserPreference Columns (0.001225)[0m   [0;1mSHOW FIELDS FROM user_preferences[0m
+  [4;35;1mSQL (0.000875)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000060)[0m   [0;1mBEGIN[0m
+  [4;35;1mUserPreference Update (0.000201)[0m   [0mUPDATE user_preferences SET `hide_mail` = 0, `user_id` = 2, `others` = '--- {}\n\n' WHERE `id` = 2[0m
+  [4;36;1mSQL (0.000050)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.000217)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+Rendering  within layouts/base
+Rendering my/account
+  [4;36;1mSetting Columns (0.001032)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000705)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'date_format') LIMIT 1[0m
+  [4;36;1mUserPreference Load (0.000235)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 2) LIMIT 1[0m
+  [4;35;1mSetting Load (0.000207)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mMember Columns (0.001049)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.002155)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.001245)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.002392)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.07527 (13 reqs/sec) | Rendering: 0.02872 (38%) | DB: 0.01517 (20%) | 200 OK [http://localhost/my/account]
+
+
+Processing MyController#account (for 127.0.0.1 at 2007-09-11 17:03:14) [POST]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"user"=>{"language"=>"zh", "mail"=>"ovinado@yahoo.com"}, "commit"=>"Validar", "action"=>"account", "controller"=>"my"}
+  [4;36;1mUser Columns (0.004697)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.000655)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mUserPreference Load (0.000273)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.000085)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000322)[0m   [0;1mSELECT * FROM users WHERE (users.login = 'pepa' AND users.id <> 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.000278)[0m   [0mSELECT * FROM users WHERE (users.mail = 'ovinado@yahoo.com' AND users.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Update (0.000257)[0m   [0;1mUPDATE users SET `login` = 'pepa', `hashed_password` = '899ed5ef71b22ad224798d2b255ea073fdf4de20', `auth_source_id` = NULL, `lastname` = 'pepa', `status` = 1, `mail_notification` = 0, `admin` = 0, `last_login_on` = '2007-09-11 17:02:49', `updated_on` = '2007-09-11 17:03:14', `language` = 'zh', `mail` = 'ovinado@yahoo.com', `firstname` = 'pepa', `created_on` = '2007-08-15 02:03:45' WHERE `id` = 2[0m
+  [4;35;1mUserPreference Columns (0.001392)[0m   [0mSHOW FIELDS FROM user_preferences[0m
+  [4;36;1mSQL (0.002191)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000076)[0m   [0mBEGIN[0m
+  [4;36;1mUserPreference Update (0.000206)[0m   [0;1mUPDATE user_preferences SET `hide_mail` = 0, `user_id` = 2, `others` = '--- {}\n\n' WHERE `id` = 2[0m
+  [4;35;1mSQL (0.000072)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.000248)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+Rendering  within layouts/base
+Rendering my/account
+  [4;35;1mSetting Columns (0.001191)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.000563)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'date_format') LIMIT 1[0m
+  [4;35;1mUserPreference Load (0.000257)[0m   [0mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 2) LIMIT 1[0m
+  [4;36;1mSetting Load (0.000202)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.001192)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.001821)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.001241)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.000807)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.13697 (7 reqs/sec) | Rendering: 0.02985 (21%) | DB: 0.01803 (13%) | 200 OK [http://localhost/my/account]
+
+
+Processing MyController#account (for 127.0.0.1 at 2007-09-11 17:03:21) [POST]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"user"=>{"language"=>"sv", "mail"=>"ovinado@yahoo.com"}, "commit"=>"保存", "action"=>"account", "controller"=>"my"}
+  [4;35;1mUser Columns (0.002141)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001654)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mUserPreference Load (0.000236)[0m   [0mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000355)[0m   [0mSELECT * FROM users WHERE (users.login = 'pepa' AND users.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.000254)[0m   [0;1mSELECT * FROM users WHERE (users.mail = 'ovinado@yahoo.com' AND users.id <> 2) LIMIT 1[0m
+  [4;35;1mUser Update (0.000229)[0m   [0mUPDATE users SET `login` = 'pepa', `hashed_password` = '899ed5ef71b22ad224798d2b255ea073fdf4de20', `auth_source_id` = NULL, `lastname` = 'pepa', `status` = 1, `mail_notification` = 0, `admin` = 0, `last_login_on` = '2007-09-11 17:02:49', `updated_on` = '2007-09-11 17:03:22', `language` = 'sv', `mail` = 'ovinado@yahoo.com', `firstname` = 'pepa', `created_on` = '2007-08-15 02:03:45' WHERE `id` = 2[0m
+  [4;36;1mUserPreference Columns (0.001119)[0m   [0;1mSHOW FIELDS FROM user_preferences[0m
+  [4;35;1mSQL (0.000792)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mBEGIN[0m
+  [4;35;1mUserPreference Update (0.000184)[0m   [0mUPDATE user_preferences SET `hide_mail` = 0, `user_id` = 2, `others` = '--- {}\n\n' WHERE `id` = 2[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.000247)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+Rendering  within layouts/base
+Rendering my/account
+  [4;36;1mSetting Columns (0.001220)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.001316)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'date_format') LIMIT 1[0m
+  [4;36;1mUserPreference Load (0.000223)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 2) LIMIT 1[0m
+  [4;35;1mSetting Load (0.000209)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mMember Columns (0.001114)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.002683)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.001858)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.000688)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.13503 (7 reqs/sec) | Rendering: 0.08656 (64%) | DB: 0.01673 (12%) | 200 OK [http://localhost/my/account]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-11 17:03:42) [GET]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;36;1mUser Columns (0.004806)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.000834)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mAnswer Columns (0.005598)[0m   [0;1mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;35;1mSetting Columns (0.001256)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.001264)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.001460)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.002763)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.003463)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.000798)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.09436 (10 reqs/sec) | Rendering: 0.04380 (46%) | DB: 0.02224 (23%) | 200 OK [http://localhost/answers/new]
+
+
+Processing MyController#account (for 127.0.0.1 at 2007-09-11 17:04:03) [POST]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"user"=>{"language"=>"es", "mail"=>"ovinado@yahoo.com"}, "commit"=>"Spara", "action"=>"account", "controller"=>"my"}
+  [4;35;1mUser Columns (0.002013)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.000591)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mUserPreference Load (0.000249)[0m   [0mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000263)[0m   [0mSELECT * FROM users WHERE (users.login = 'pepa' AND users.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Load (0.000237)[0m   [0;1mSELECT * FROM users WHERE (users.mail = 'ovinado@yahoo.com' AND users.id <> 2) LIMIT 1[0m
+  [4;35;1mUser Update (0.000237)[0m   [0mUPDATE users SET `login` = 'pepa', `hashed_password` = '899ed5ef71b22ad224798d2b255ea073fdf4de20', `auth_source_id` = NULL, `lastname` = 'pepa', `status` = 1, `mail_notification` = 0, `admin` = 0, `last_login_on` = '2007-09-11 17:02:49', `updated_on` = '2007-09-11 17:04:03', `language` = 'es', `mail` = 'ovinado@yahoo.com', `firstname` = 'pepa', `created_on` = '2007-08-15 02:03:45' WHERE `id` = 2[0m
+  [4;36;1mUserPreference Columns (0.001702)[0m   [0;1mSHOW FIELDS FROM user_preferences[0m
+  [4;35;1mSQL (0.000555)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000084)[0m   [0;1mBEGIN[0m
+  [4;35;1mUserPreference Update (0.000192)[0m   [0mUPDATE user_preferences SET `hide_mail` = 0, `user_id` = 2, `others` = '--- {}\n\n' WHERE `id` = 2[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.000197)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+Rendering  within layouts/base
+Rendering my/account
+  [4;36;1mSetting Columns (0.001074)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000559)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'date_format') LIMIT 1[0m
+  [4;36;1mUserPreference Load (0.000221)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 2) LIMIT 1[0m
+  [4;35;1mSetting Load (0.000299)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mMember Columns (0.001300)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.001677)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.001334)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.000664)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.07272 (13 reqs/sec) | Rendering: 0.02862 (39%) | DB: 0.01359 (18%) | 200 OK [http://localhost/my/account]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-11 17:04:08) [GET]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;36;1mUser Columns (0.002032)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.000592)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mAnswer Columns (0.004655)[0m   [0;1mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;35;1mSetting Columns (0.001158)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.000665)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.001534)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.001472)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.001520)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.000706)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.12383 (8 reqs/sec) | Rendering: 0.02828 (22%) | DB: 0.01433 (11%) | 200 OK [http://localhost/answers/new]
+
+
+Processing MyController#account (for 127.0.0.1 at 2007-09-11 17:04:19) [GET]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"action"=>"account", "controller"=>"my"}
+  [4;35;1mUser Columns (0.001922)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.000630)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mUserPreference Load (0.000242)[0m   [0mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 2) LIMIT 1[0m
+Rendering  within layouts/base
+Rendering my/account
+  [4;36;1mSetting Columns (0.001114)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000530)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'date_format') LIMIT 1[0m
+  [4;36;1mUserPreference Columns (0.001055)[0m   [0;1mSHOW FIELDS FROM user_preferences[0m
+  [4;35;1mSetting Load (0.000273)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mMember Columns (0.001716)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.001444)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.001280)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.000640)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.06386 (15 reqs/sec) | Rendering: 0.02866 (44%) | DB: 0.01085 (16%) | 200 OK [http://localhost/my/account]
+
+
+Processing MyController#account (for 127.0.0.1 at 2007-09-11 17:04:24) [POST]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"user"=>{"language"=>"en", "mail"=>"ovinado@yahoo.com"}, "commit"=>"Validar", "action"=>"account", "controller"=>"my"}
+  [4;36;1mUser Columns (0.004624)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001385)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mUserPreference Load (0.000276)[0m   [0;1mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.000085)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000328)[0m   [0;1mSELECT * FROM users WHERE (users.login = 'pepa' AND users.id <> 2) LIMIT 1[0m
+  [4;35;1mUser Load (0.000276)[0m   [0mSELECT * FROM users WHERE (users.mail = 'ovinado@yahoo.com' AND users.id <> 2) LIMIT 1[0m
+  [4;36;1mUser Update (0.000248)[0m   [0;1mUPDATE users SET `login` = 'pepa', `hashed_password` = '899ed5ef71b22ad224798d2b255ea073fdf4de20', `auth_source_id` = NULL, `lastname` = 'pepa', `status` = 1, `mail_notification` = 0, `admin` = 0, `last_login_on` = '2007-09-11 17:02:49', `updated_on` = '2007-09-11 17:04:24', `language` = 'en', `mail` = 'ovinado@yahoo.com', `firstname` = 'pepa', `created_on` = '2007-08-15 02:03:45' WHERE `id` = 2[0m
+  [4;35;1mUserPreference Columns (0.001250)[0m   [0mSHOW FIELDS FROM user_preferences[0m
+  [4;36;1mSQL (0.007886)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000165)[0m   [0mBEGIN[0m
+  [4;36;1mUserPreference Update (0.000291)[0m   [0;1mUPDATE user_preferences SET `hide_mail` = 0, `user_id` = 2, `others` = '--- {}\n\n' WHERE `id` = 2[0m
+  [4;35;1mSQL (0.000124)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.000321)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+Rendering  within layouts/base
+Rendering my/account
+  [4;35;1mSetting Columns (0.001511)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.000610)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'date_format') LIMIT 1[0m
+  [4;35;1mUserPreference Load (0.000265)[0m   [0mSELECT * FROM user_preferences WHERE (user_preferences.user_id = 2) LIMIT 1[0m
+  [4;36;1mSetting Load (0.000264)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.001257)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.001750)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.001179)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.000808)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.09384 (10 reqs/sec) | Rendering: 0.03449 (36%) | DB: 0.02490 (26%) | 200 OK [http://localhost/my/account]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-11 17:04:30) [GET]
+  Session ID: c2629f1ba1af2ebd0ec82616283afdd0
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;35;1mUser Columns (0.002009)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.000385)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mAnswer Columns (0.004269)[0m   [0mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;36;1mSetting Columns (0.001179)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000638)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mMember Columns (0.001559)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.001529)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.001393)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.000631)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.12357 (8 reqs/sec) | Rendering: 0.02807 (22%) | DB: 0.01359 (10%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-11 17:06:26) [GET]
+  Session ID: f2ede205cd7c5c67d335b9aa6d1ab522
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;36;1mSetting Columns (0.002607)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000792)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'login_required') LIMIT 1[0m
+Redirected to http://localhost:3000/account/login
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x3472dc4 @filter=:require_login>] returned false.
+Completed in 0.01300 (76 reqs/sec) | DB: 0.00340 (26%) | 302 Found [http://localhost/answers/new]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2007-09-11 17:06:27) [GET]
+  Session ID: f2ede205cd7c5c67d335b9aa6d1ab522
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering  within layouts/base
+Rendering account/login
+  [4;36;1mSetting Columns (0.001772)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000497)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'autologin') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000216)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'self_registration') LIMIT 1[0m
+  [4;35;1mSetting Load (0.000215)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'lost_password') LIMIT 1[0m
+  [4;36;1mSetting Load (0.000209)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+Completed in 0.07452 (13 reqs/sec) | Rendering: 0.07049 (94%) | DB: 0.00291 (3%) | 200 OK [http://localhost/account/login]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2007-09-11 17:06:34) [POST]
+  Session ID: f2ede205cd7c5c67d335b9aa6d1ab522
+  Parameters: {"action"=>"login", "controller"=>"account", "password"=>"[FILTERED]", "login"=>"pepa"}
+  [4;35;1mUser Load (0.000343)[0m   [0mSELECT * FROM users WHERE (login='pepa') LIMIT 1[0m
+  [4;36;1mUser Columns (0.001894)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mSQL (0.000087)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.000432)[0m   [0;1mUPDATE users SET `login` = 'pepa', `hashed_password` = '899ed5ef71b22ad224798d2b255ea073fdf4de20', `auth_source_id` = NULL, `lastname` = 'pepa', `status` = 1, `mail_notification` = 0, `admin` = 0, `last_login_on` = '2007-09-11 17:06:34', `updated_on` = '2007-09-11 17:06:34', `language` = 'en', `mail` = 'ovinado@yahoo.com', `firstname` = 'pepa', `created_on` = '2007-08-15 02:03:45' WHERE `id` = 2[0m
+  [4;35;1mSQL (0.000460)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/answers/new
+Completed in 0.02512 (39 reqs/sec) | DB: 0.00322 (12%) | 302 Found [http://localhost/account/login]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-11 17:06:34) [GET]
+  Session ID: f2ede205cd7c5c67d335b9aa6d1ab522
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;36;1mUser Columns (0.219940)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.002698)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mAnswer Columns (0.008984)[0m   [0;1mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;35;1mSetting Columns (0.002223)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.001750)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.002232)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.002547)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.000971)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.000793)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.35819 (2 reqs/sec) | Rendering: 0.08800 (24%) | DB: 0.24214 (67%) | 200 OK [http://localhost/answers/new]
