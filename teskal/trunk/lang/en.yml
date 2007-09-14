@@ -492,7 +492,7 @@ test2_valor_6: 6 (always)
 
 test2: Questionnaire Stress Tolerance
 test2_header: During the last month...  
-test2_intro: Below you have a series of phrases related to different aspects of the training and the competition on which we want to gather your opinion. Please, read them with tranquillity, answer sincerely and check the number with which you agree more or than it describes better your opinion.
+test2_intro: Below you have a series of phrases related to different aspects of the training and the competition on which we want to gather your opinion. Please, read them with tranquillity, answer sincerely and check the option with which you agree more or than it describes better your opinion.
 test2_1: I felt pain in some parts of my body
 test2_2: No he podido descansar durante los descansos
 test2_3: He estado convencid@ de que podía lograr mis metas
@@ -518,7 +518,7 @@ test2_22: He estado convencid@ de que he entrenado correctamente
 test2_23: Los descansos no han sido en los momentos adecuados
 test2_24: Me he sentido vulnerable a las lesiones
 test2_25: I have goals for the training/competition
-test2_26: I felt phisically strong
+test2_26: I felt physically strong
 test2_27: I felt frustated in my sport
 test2_28: I've managed with tranquility the emotional troubles in my sport
 
