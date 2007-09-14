@@ -490,7 +490,7 @@ test2_valor_4: 5 - muchas veces
 test2_valor_5: 6 - casi siempre
 test2_valor_6: 7 - siempre
 
-test2: Cuestionario Tolerancia al Estrés
+test2: Cuestionario Tolerancia Psicológica al Estrés
 test2_header: En el último mes...
 test2_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y rodea con un círculo el número con el que estés más de acuerdo o que describa mejor tu opinión.
 test2_1: Me han dolido algunas partes del cuerpo

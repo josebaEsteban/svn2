@@ -490,35 +490,35 @@ test2_valor_4: 4 (many times)
 test2_valor_5: 5 (almost always)
 test2_valor_6: 6 (always)
 
-test2: Questionnaire Stress Tolerance
+test2: Questionnaire Psicological Stress Tolerance
 test2_header: During the last month...  
 test2_intro: Below you have a series of phrases related to different aspects of the training and the competition on which we want to gather your opinion. Please, read them with tranquillity, answer sincerely and check the option with which you agree more or than it describes better your opinion.
-test2_1: I felt pain in some parts of my body
-test2_2: No he podido descansar durante los descansos
-test2_3: He estado convencid@ de que podía lograr mis metas
-test2_4: Me he recuperado bien físicamente
-test2_5: I felt burnt out in my sport
-test2_6: He conseguido muchas cosas que merecen la pena en mi deporte
+test2_1: Parts of my body were aching
+test2_2: I could not get rest during the breaks
+test2_3: I was convinced I coud achieve my set goals during performance
+test2_4: I recovered well physically
+test2_5: I felt burned out by my sport
+test2_6: I acomplished many worthwhile things in my sport
 test2_7: I was mentally ready to perform
-test2_8: He tenido la musculatura tensa/agarrotada durante el entrenamiento/competición
-test2_9: He tenido la impresión de que había poco tiempo de descanso
-test2_10: He estado convencid@ de que podía rendir en cualquier momento
-test2_11: He resuelto de forma adecuada los problemas con mis compañeros/as
-test2_12: I have been in good shape
+test2_8: My muscles felt stiff or tene during performance
+test2_9: I had the impression there were too few breaks
+test2_10: I was convinced that I could achieve my performance at any time
+test2_11: I dealt very effectively with my teammates's problems
+test2_12: I was in a good condition physically
 test2_13: Me he motivado durante el entrenamiento/competición
-test2_14: I felt emotionally exhausted during the training/competition
-test2_15: He tenido dolores musculares tras el entrenamiento/competición
-test2_16: He estado convencid@ de que he entrenado/competido correctamente
-test2_17: Se me ha pedido que haga demasiadas cosas durante los descansos
-test2_18: Me he mentalizado antes de la actuación
-test2_19: I felt I wanted to quit my sport
-test2_20: I felt full of energy
-test2_21: I easily understood how my fellows were feeling
-test2_22: He estado convencid@ de que he entrenado correctamente
-test2_23: Los descansos no han sido en los momentos adecuados
-test2_24: Me he sentido vulnerable a las lesiones
-test2_25: I have goals for the training/competition
-test2_26: I felt physically strong
-test2_27: I felt frustated in my sport
-test2_28: I've managed with tranquility the emotional troubles in my sport
+test2_14: I felt emotionally drained from performance
+test2_15: I had muscle pain after performance
+test2_16: I was convinced that I performed well
+test2_17: Too much was demanded of me during the breaks
+test2_18: I psyched myself up before performance
+test2_19: I felt that I wanted to quit my sport
+test2_20: I felt very energetic
+test2_21: I easily understood how my teammates felt about things
+test2_22: I was convinced that I had trained well
+test2_23: The breaks were not at the right times
+test2_24: I felt vulberable to injuries
+test2_25: I set definite goals for myself during performance
+test2_26: My body felt strong
+test2_27: I felt frustated by my sport
+test2_28: I dealt with emotional problems in my sport very calmly
 
