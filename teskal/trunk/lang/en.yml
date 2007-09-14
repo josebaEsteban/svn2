@@ -490,7 +490,7 @@ test2_valor_4: 4 (many times)
 test2_valor_5: 5 (almost always)
 test2_valor_6: 6 (always)
 
-test2: Questionnaire Psicological Stress Tolerance
+test2: Questionnaire Psychological Stress Tolerance
 test2_header: During the last month...  
 test2_intro: Below you have a series of phrases related to different aspects of the training and the competition on which we want to gather your opinion. Please, read them with tranquillity, answer sincerely and check the option with which you agree more or than it describes better your opinion.
 test2_1: Parts of my body were aching
