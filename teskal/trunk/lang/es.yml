@@ -481,18 +481,18 @@ default_priority_urgent: Urgente
 default_priority_immediate: Ahora
 default_activity_design: Diseño
 default_activity_development: Desarrollo     
-
-test2_valor_0: 0 - nada
-test2_valor_1: 2 - rara vez
-test2_valor_2: 3 - a veces
-test2_valor_3: 4 - a menudo
-test2_valor_4: 5 - muchas veces
-test2_valor_5: 6 - casi siempre
-test2_valor_6: 7 - siempre
+    
+test2_valor_0: 0 (nada)
+test2_valor_1: 1 (rara vez)
+test2_valor_2: 2 (a veces)
+test2_valor_3: 3 (a menudo)
+test2_valor_4: 4 (muchas veces)
+test2_valor_5: 5 (casi siempre)
+test2_valor_6: 6 (siempre)
 
 test2: Cuestionario Tolerancia Psicológica al Estrés
 test2_header: En el último mes...
-test2_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y rodea con un círculo el número con el que estés más de acuerdo o que describa mejor tu opinión.
+test2_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y ahz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
 test2_1: Me han dolido algunas partes del cuerpo
 test2_2: No he podido descansar durante los descansos
 test2_3: He estado convencid@ de que podía lograr mis metas
@@ -522,4 +522,243 @@ test2_26: Me he sentido físicamente fuerte
 test2_27: Me he sentido frustrad@ en mi deporte
 test2_28: He manejado con tranquilidad los problemas emocionales en mi deporte
 
+test3_valor_0: 0 (nada)
+test3_valor_1: 1 (un poco)
+test3_valor_2: 2 (moderadamente)
+test3_valor_3: 3 (bastante)
+test3_valor_4: 4 (muchísimo)
+test3_valor_5: 0 (nunca)
+test3_valor_6: 1 (pocas veces)
+test3_valor_7: 2 (a veces)
+test3_valor_8: 3 (muchas veces)
+test3_valor_9: 4 (siempre)
 
+test3: Perfil de Estado de Forma del Entrenamiento
+test3_header: Ahora mismo me siento...
+test3_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente. A continuación aparecen una serie de comentarios que han sido utilizados por los deportistas para describir sus sentimientos o emociones antes de una competición . Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
+# esta primera parte es igual en el cuestionario 1, en el 4
+test3_1: Intranquil@
+test3_2: Desamparad@
+test3_3: Sin fuerzas
+test3_4: Llen@ de energia
+test3_5: Molest@
+test3_6: Agitad@
+test3_7: Desdichad@
+test3_8: Cansad@
+test3_9: Animad@
+test3_10: Enfadad@
+test3_11: Tens@
+test3_12: Triste
+test3_13: Fatigad@
+test3_14: Activ@
+test3_15: De mal genio 
+
+test3_16: Presto mucha atención a las cosas que tengo que hacer en el entrenamiento.
+test3_17: Soy capaz de hacer cosas que antes no podía hacer.
+test3_18: Si cometo fallos en el entrenamiento, al día siguiente estoy intranquil@.
+test3_19: Cuando el ejercicio es difícil, me esfuerzo más para conseguir hacerlo bien.
+test3_20: Lo hago todo lo mejor que sé hacer.
+test3_21: Me pongo nervios@ cuando cometo un fallo en el entrenamiento.
+test3_22: Sigo esforzándome en el entrenamiento aunque las cosas no me salgan bien.
+test3_23: Hago las cosas que me propongo.
+test3_24: Me pone nervios@ practicar tareas nuevas en el entrenamiento
+
+test3_25: Nivel de competencia que tienes EN ESTE MOMENTO para realizar acciones técnicas
+test3_26: En que medida te sientes capaz EN ESTE MOMENTO de competir en tu deporte
+
+#los niveles de valoracion 0 a 4 igual que en el cuestionario 3
+#textos cuestionario 2 del test 1
+test1_1: Me preocupa la competición en general
+test1_2: Estoy nervios@
+test1_3: Me encuentro a gusto
+test1_4: Dudo de mi mism@
+test1_5: Me siento muy inquiet@
+test1_6: Me siento cómod@
+test1_7: Me preocupa no hacerlo tan bien como podría en la competición
+test1_8: Tengo el cuerpo tenso
+test1_9: Tengo confianza en mí mism@
+test1_10: Me preocupa perder
+test1_11: Tengo tensión en el estómago
+test1_12: Me siento segur@
+test1_13: Me preocupa que la presión me domine
+test1_14: Mi cuerpo está relajado
+test1_15: Estoy segur@ de que puedo hacerlo
+test1_16: Me preocupa rendir poco
+test1_17: Mi corazón va acelerado
+test1_18: Estoy segur@ de rendir bien
+test1_19: Me preocupa conseguir mi objetivo
+test1_20: Siento un vacío en mi estomago
+test1_21: Me siento mentalmente relajad@
+test1_22: Me preocupa que mi rendimiento decepcione a los demás
+test1_23: Tengo un sudor frío en las manos
+test1_24: Tengo confianza porque me imagino consiguiendo mi objetivo
+test1_25: Me preocupa no ser capaz de concentrarme
+test1_26: Mi cuerpo está rígido
+test1_27: Me siento seguro/a de rendir bajo presión  
+ # titulo cuestionario 3 del test1  
+test1_28: Indica los objetivos de la temporada
+# textos cuestionario 3 del test1 
+test1_29: Nivel de dificultad
+test1_30: Grado de confianza en conseguir los objetivos
+# titulo cuestionario 4 del test1
+test1_31: A continuación te vamos a hacer una serie de preguntas relacionadas con el entrenamiento y la competición. Queremos conocer tu opinión y solicitamos que nos respondas con sinceridad. Son datos estrictamente confidenciales.
+# textos cuestionario 4 del test1
+test1_32: Te preparas psicológicamente antes de la competición
+test1_33: Utilizas alguna técnica de relajación
+test1_34: Usas alguna estrategia para mantener el control cuando la situación deportiva te supera
+test1_35: Sueles visionar cosas de tu deporte
+test1_36: Utilizas la visualización para mejorar tu rendimiento
+test1_37: Sueles soñar con...
+test1_38: Sueles hablar contigo mismo
+test1_39: Haces algo para motivarte
+test1_40: Utilizas rutinas en tu preparación
+test1_41: Tienes/utilizas un plan de competición? 
+#cabecera cuestionario 5 del test1
+test1_42: Al practicar deporte, siento que tengo éxito cuando...
+test1_43: Derroto a mis compañeros
+# textos cuestionario 5 del test1 											
+test1_44: Soy el/la mejor
+test1_45: Trabajo duro
+test1_46: Demuestro una clara mejoría personal
+test1_47: Lo hago mejor que los demás y las demás
+test1_48: Demuestro a la gente que soy el/la mejor
+test1_49: Supero las dificultades
+test1_50: Domino algo que no podía hacer
+test1_51: Hago algo que los demás no pueden hacer
+test1_52: Lo hago todo lo mejor que se
+test1_53: Alcanzo la meta que me propuse
+test1_54: Soy claramente superior a l@s demás
+#cabecera cuestionario 6 del test1
+test1_55: En que medida te sientes capaz de competir en tu deporte
+
+test4: Valoración Pre-Competición
+test4_header: Ahora mismo me siento...
+test4_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente. A continuación aparecen una serie de comentarios que han sido utilizados por los deportistas para describir sus sentimientos o emociones antes de una competición . Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
+# el cuestionario 1 es igual al de el Test 3
+#textos cuestionario 2 igual al del Test 1
+#cabecera cuestionario 4 del test 4
+test4_1: Resultado que esperas alcanzar si compites como quieres
+#textos cuestionario 4 del test 4  
+test4_2: Nivel de motivación
+test4_3: La importancia de la competición para ti
+test4_4: Tu conocimiento sobre los/las adversarias
+test4_5: La prueba es apropiada para ti?
+test4_6: Has preparado el plan de competición?
+test4_7: Tienes claro como quieres actuar
+ 
+test5: Valoración Post-Competición (Deportes Individuales)
+test5_header: El grado de satisfacción con mi actuación ha sido:
+test5_intro: Más abajo se plantean una serie de preguntas relacionadas con determinados aspectos de la competición, sobre las que queremos recoger tu opinión. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
+#los niveles de valoracion 0 a 4 igual que en el cuestionario 3
+test5_1: Técnicamente
+test5_2: Físicamente
+test5_3: Asertivamente
+test5_4: Mentalmente
+test5_5: Tácticamente
+test5_6: El grado de satisfacción durante la competición con:
+test5_7: El control de mis emociones
+test5_8: El disfrute al sentir mis emociones en determinados momentos.
+test5_9: La seguridad de haber rendido bajo la presión
+test5_10: La sensación de haber estado mentalmente relajado
+test5_11: El control de mis pensamientos y el afrontamiento positivo. 	
+test5_12: El grado de satisfacción con
+test5_13: La forma de responder a las acciones de las demás. 	
+test5_14: Las decisiones que he tomado, conocidos los objetivos del entrenador.
+test5_15: La claridad en la forma de actuar durante la competición. 	
+test5_16: La claridad del PIC durante todos los momentos.
+test5_17: Las acciones realizadas a lo largo de toda la competición 	
+test5_18: El grado de satisfacción con
+test5_19: El nivel de confianza que mantenía a lo largo de toda la competición.
+test5_20: El grado de satisfacción que tenía durante la competición 	
+test5_21: El pensamiento relacionado con cosas que tenía que hacer.
+test5_22: Los pensamientos que tenía relacionados con las buenas sensaciones.
+test5_23: El nivel de interés y de lucha que mantenía durante la competición.
+test5_24: Satisfacción con la Capacidad de Rendimiento Utilizada      
+
+test6: Valoración Post-Competición (Deportes Colectivos)
+# header, intro igual al cuestionario 6
+# preguntas 1 a 5 igual al cuestionario 6
+test6_1: Con tu grado de complicidad hacia el objetivo colectivo.
+test6_2: Con tu generosidad y apoyo hacia tus compañeros.
+test6_3: Con el respeto hacia tus compañeros.
+test6_4: Con tu lealtad hacia las decisiones adoptadas.
+test6_5: Con el grado de comunicación con tus compañeros. 	
+test6_6: Con tu aportación al trabajo colectivo. 	
+test6_7: Con tu implicación hacia el esfuerzo.
+test6_8: Con tu confianza en los objetivos del juego propuestos. 	
+test6_9: Con tu actitud hacia el trabajo que se te ha encomendado.
+test6_10: Con las decisiones que has tomado durante el partido. 	
+test6_11: Con tu nivel de confianza durante toda la competición
+test6_12: Con tu nivel de rendimiento ante las situaciones de muy alta intensidad. 	
+test6_13: Con tu capacidad luchadora y perseverante.
+test6_14: Con tu actitud positiva hacia tu propia mejora.
+test6_15: Con tu transmisión de disfrute, satisfacción y “buenas sensaciones”.
+test6_16: Satisfacción Con La Capacidad De Rendimiento Del Equipo
+
+test7: Cuestionario de Satisfacción (Deportes individuales) 
+test7_header: El grado de satisfacción con mi actuación ha sido:
+test7_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
+test7_1: El nivel que he alcanzado en mis objetivos durante la temporada.  	
+test7_2: La mejora de mi rendimiento en la temporada anterior. 	
+test7_3: El nivel de mejoría de mis habilidades hasta ahora.
+test7_4: El grado hasta el que utilizo mis habilidades.
+test7_5: El nivel de utilización de mi talento.
+test7_6: La medida en que mi rol se corresponde con mi potencial.
+test7_7: El reconocimiento que recibo de mi entrenador.
+test7_8: La amabilidad del/la entrenador/a conmigo.
+test7_9: El grado en que el/la entrenador/a aprecia que haga las cosas bien.
+test7_10: La formación que he recibido durante las temporadas anteriores.
+test7_11: La formación que he recibido durante esta temporada.
+test7_12: Las instrucciones del/la entrenador/a técnico-tácticas de mi papel.
+test7_13: El grado hasta el que los miembros de mi grupo son éticos.
+test7_14: El sentido que mis compañeros tienen a cerca del juego limpio.
+test7_15: El nivel de deportividad de mis compañeros de grupo.
+test7_16: El grado hasta el que hago lo mejor que puedo.
+test7_17: Mi dedicación personal durante el entrenamiento.
+test7_18: Mi entusiasmo durante las competiciones.
+
+test8: Cuestionario de Satisfacción (Deportes Colectivos)
+test8_header: El grado de satisfacción con mi actuación ha sido:
+test8_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
+test8_1: El nivel que he alcanzado en mis objetivos durante la temporada.  	
+test8_2: La mejora de mi rendimiento en la temporada anterior. 	
+test8_3: El nivel de mejoría de mis habilidades hasta ahora.
+test8_4: El nº de competiciones ganadas y perdidas durante la temporada. 	
+test8_5: El rendimiento global del equipo durante esta temporada. 	
+test8_6: La medida en que el equipo ha conseguido sus objetivos de temporada hasta ahora.
+test8_7: El grado hasta el que utilizan mis habilidades.
+test8_8: El nivel de utilización de mi talento.
+test8_9: La medida en que mi rol se corresponde con mi potencial. 	
+test8_10: La cantidad de tiempo que juego durante la competición. 	
+test8_11: El grado de correspondencia entre mi rol en el equipo con mi rol preferido.
+test8_12: La elección que el/la entrenador/a hace sobre los jugadores durante la competición.
+test8_13: Las tácticas utilizadas durante la competición.
+test8_14: La elección que el/la entrenador/a hace de las estrategias en la competición. 	
+test8_15: La forma en que el/la entrenador/a hace ajustes durante la competición.
+test8_16: Los planes de juego del/la entrenador/a.
+test8_17: La manera en que el/la entrenador/a combina el talento disponible.
+test8_18: El reconocimiento que recibo de mi entrenador.
+test8_19: La amabilidad del/la entrenador/a conmigo.
+test8_20: El grado en que el/la entrenador/a aprecia que haga las cosas bien.
+test8_21: La lealtad del/la entrenador/a conmigo.
+test8_22: El grado en que el/la entrenador/a está pendiente de mí.
+test8_23: La formación que he recibido del/la entrenador/a durante las temporadas anteriores.
+test8_24: La formación que he recibido durante esta temporada.
+test8_25: Las instrucciones del/la entrenador/a técnico-tácticas de mi posición.
+test8_26: La medida en que mis compañeros me proveen de instrucciones.
+test8_27: La orientación que recibo de mis compañeros de equipo.
+test8_28: El feed-back constructivo que recibo de mis compañeros.
+test8_29: Mi estatus social en el equipo.
+test8_30: El rol que juego en la vida social del equipo.
+test8_31: La medida en que mis compañeros me aceptan socialmente. 	
+test8_32: El grado hasta el que los miembros del equipo son éticos. 	
+test8_33: El sentido que mis compañeros tienen acerca del juego limpio. 	
+test8_34: El nivel de deportividad de mis compañeros de equipo. 	
+test8_35: La forma en que el equipo trabaja para ser el mejor. 	
+test8_36: El grado hasta el que los miembros del equipo comparten el mismo objetivo. 	
+test8_37: La dedicación de los miembros del equipo a trabajar conjuntamente para conseguir los objetivos del equipo. 	
+test8_38: El grado en el que los miembros del equipo “juegan como equipo”. 	
+test8_39: El grado hasta el que hago lo mejor que puedo para el equipo. 	
+test8_40: Mi dedicación personal durante el entrenamiento. 	
+test8_41: Mi entusiasmo durante las competiciones. 	
+test8_42: Mi compromiso hacia el equipo
