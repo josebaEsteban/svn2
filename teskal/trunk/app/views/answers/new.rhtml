@@ -1,14 +1,23 @@
-<!-- <h2><%=l(:test2)%></h2> 
+<h2><%=l(:test2)%></h2> 
 <br/> 
 
-<%= error_messages_for :answer %>
- -->
+<%=l(:test2_intro)%>
+<br/> 
+<!-- <div id="values">
+	<%=l(:test2_valor_0)%><br/>
+	 <%=l(:test2_valor_1)%><br/> 
+	 <%=l(:test2_valor_2)%><br/> 
+	 <%=l(:test2_valor_3)%><br/> 
+	 <%=l(:test2_valor_4)%><br/> 
+	 <%=l(:test2_valor_5)%><br/> 
+	 <%=l(:test2_valor_6)%><br/> 
+	</div> -->
 <center>
 <table> 
 	<caption><%=l(:test2)%></caption>
 	<thead>
 		<tr>
-			<th scope="col"></th>
+			<th scope="col"><%=l(:test2_header)%></th>
 			<th scope="col">0</th>
 			<th scope="col">1</th>
 			<th scope="col">2</th>
@@ -512,7 +521,8 @@
 	<td> 
       <input type="radio" name="respuesta[27]" value="0" id="RadioGroup27"/>
 </td>
-<td>      <input type="radio" name="respuesta[27]" value="1" id="RadioGroup27/>
+<td>      
+	<input type="radio" name="respuesta[27]" value="1" id="RadioGroup27"/>
 </td>
 <td>      <input type="radio" name="respuesta[27]" value="2" id="RadioGroup27"/>
 </td>

@@ -172,6 +172,15 @@ img.right {
 /*	background-color: #F8F5E2;     cream
 */                                      
 	
+}  
+#values
+{
+    text-align: left; 
+	color:#000000;
+	font-size:9px;
+	position:fixed; 
+	left: 855px;
+	top: 300px;
 }
 /**************** Icons *******************/
 .icon {
@@ -486,32 +495,7 @@ ul.documents li {
 	margin-bottom: 10px;
 	margin-left: -37px;
 }
-/********** Table used to display lists of things ***********/
 
-table.list {
-	width:100%;
-	border-collapse: collapse;
-	border: 1px dotted #d0d0d0;
-	margin-bottom: 6px;
-}
-table.with-cells td {
-	border: 1px solid #d7d7d7;
-}
-table.list td {
-	padding:2px;
-}
-table.list thead th {
-	text-align: center;
-	background: #eee;
-	border: 1px solid #d7d7d7;
-	color: #777;
-}
-table.list tbody th {
-	font-weight: bold;
-	background: #eed;
-	border: 1px solid #d7d7d7;
-	color: #777;
-}
 /********** Validation error messages *************/
 #errorExplanation {
 	width: 400px;
