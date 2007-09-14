@@ -44,7 +44,7 @@ module IfpdfHelper
         @font_for_content = 'Arial'
         @font_for_footer = 'Helvetica'              
       end
-      SetCreator("redMine #{Redmine::VERSION}")
+      SetCreator("Teskal #{Redmine::VERSION}")
       SetFont(@font_for_content)
     end
     
