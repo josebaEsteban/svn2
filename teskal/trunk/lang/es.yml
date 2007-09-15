@@ -645,35 +645,40 @@ test4_4: Tu conocimiento sobre los/las adversarias
 test4_5: La prueba es apropiada para ti?
 test4_6: Has preparado el plan de competición?
 test4_7: Tienes claro como quieres actuar
- 
+# test5 
+test5_valor_1: 1 (muy mala)
+test5_valor_2: 2 (mala)
+test5_valor_3: 3 (regular)
+test5_valor_4: 4 (buena)
+test5_valor_5: 5 (muy buena)
+
 test5: Valoración Post-Competición (Deportes Individuales)
-test5_header: El grado de satisfacción con mi actuación ha sido
+test5_header1: El grado de satisfacción con mi actuación ha sido...
+test5_header2: El grado de satisfacción durante la competición con...
+test5_header3: El grado de satisfacción con...
 test5_intro: Más abajo se plantean una serie de preguntas relacionadas con determinados aspectos de la competición, sobre las que queremos recoger tu opinión. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
-#los niveles de valoracion 0 a 4 igual que en el cuestionario 3
+
 test5_1: Técnicamente
 test5_2: Físicamente
 test5_3: Asertivamente
 test5_4: Mentalmente
 test5_5: Tácticamente
-test5_6: El grado de satisfacción durante la competición con
-test5_7: El control de mis emociones
-test5_8: El disfrute al sentir mis emociones en determinados momentos.
-test5_9: La seguridad de haber rendido bajo la presión
-test5_10: La sensación de haber estado mentalmente relajado
-test5_11: El control de mis pensamientos y el afrontamiento positivo. 	
-test5_12: El grado de satisfacción con
-test5_13: La forma de responder a las acciones de las demás. 	
-test5_14: Las decisiones que he tomado, conocidos los objetivos del entrenador.
-test5_15: La claridad en la forma de actuar durante la competición. 	
-test5_16: La claridad del PIC durante todos los momentos.
-test5_17: Las acciones realizadas a lo largo de toda la competición 	
-test5_18: El grado de satisfacción con
-test5_19: El nivel de confianza que mantenía a lo largo de toda la competición.
-test5_20: El grado de satisfacción que tenía durante la competición 	
-test5_21: El pensamiento relacionado con cosas que tenía que hacer.
-test5_22: Los pensamientos que tenía relacionados con las buenas sensaciones.
-test5_23: El nivel de interés y de lucha que mantenía durante la competición.
-test5_24: Satisfacción con la Capacidad de Rendimiento Utilizada      
+test5_6: El control de mis emociones
+test5_7: El disfrute al sentir mis emociones en determinados momentos
+test5_8: La seguridad de haber rendido bajo la presión
+test5_9: La sensación de haber estado mentalmente relajado
+test5_10: El control de mis pensamientos y el afrontamiento positivo
+test5_11: La forma de responder a las acciones de las demás
+test5_12: Las decisiones que he tomado, conocidos los objetivos del entrenador
+test5_13: La claridad en la forma de actuar durante la competición
+test5_14: La claridad del PIC durante todos los momentos
+test5_15: Las acciones realizadas a lo largo de toda la competición
+test5_16: El nivel de confianza que mantenía a lo largo de toda la competición
+test5_17: El grado de satisfacción que tenía durante la competición
+test5_18: El pensamiento relacionado con cosas que tenía que hacer
+test5_19: Los pensamientos que tenía relacionados con las buenas sensaciones
+test5_20: El nivel de interés y de lucha que mantenía durante la competición
+test5_21: Satisfacción con la Capacidad de Rendimiento Utilizada
 
 test6: Valoración Post-Competición (Deportes Colectivos)
 # header, intro igual al cuestionario 6
@@ -695,8 +700,10 @@ test6_14: Con tu actitud positiva hacia tu propia mejora.
 test6_15: Con tu transmisión de disfrute, satisfacción y “buenas sensaciones”.
 test6_16: Satisfacción Con La Capacidad De Rendimiento Del Equipo
 
-test7: Cuestionario de Satisfacción (Deportes individuales) 
-test7_header: El grado de satisfacción con mi actuación ha sido
+test7_valor_1: 1 (no, en absoluto)
+test7_valor_7: 7 (totalmente)
+test7: Cuestionario de Satisfacción (Deportes Individuales) 
+test7_header: El grado de satisfacción con...
 test7_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
 test7_1: El nivel que he alcanzado en mis objetivos durante la temporada.  	
 test7_2: La mejora de mi rendimiento en la temporada anterior. 	
@@ -717,8 +724,10 @@ test7_16: El grado hasta el que hago lo mejor que puedo.
 test7_17: Mi dedicación personal durante el entrenamiento.
 test7_18: Mi entusiasmo durante las competiciones.
 
+test8_valor_1: 1 (no, en absoluto)
+test8_valor_7: 7 (totalmente)
 test8: Cuestionario de Satisfacción (Deportes Colectivos)
-test8_header: El grado de satisfacción con mi actuación ha sido
+test8_header: El grado de satisfacción con...
 test8_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
 test8_1: El nivel que he alcanzado en mis objetivos durante la temporada.  	
 test8_2: La mejora de mi rendimiento en la temporada anterior. 	
