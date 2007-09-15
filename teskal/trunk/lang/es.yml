@@ -526,7 +526,7 @@ test3_valor_0: 0 (nada)
 test3_valor_1: 1 (un poco)
 test3_valor_2: 2 (moderadamente)
 test3_valor_3: 3 (bastante)
-test3_valor_4: 4 (muchísimo)
+test3_valor_4: 4 (mucho)
 test3_valor_5: 0 (nunca)
 test3_valor_6: 1 (pocas veces)
 test3_valor_7: 2 (a veces)
@@ -534,13 +534,14 @@ test3_valor_8: 3 (muchas veces)
 test3_valor_9: 4 (siempre)
 
 test3: Perfil de Estado de Forma del Entrenamiento
-test3_header: Ahora mismo me siento...
-test3_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente. A continuación aparecen una serie de comentarios que han sido utilizados por los deportistas para describir sus sentimientos o emociones antes de una competición . Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
+test3_header1: Ahora mismo me siento...
+test3_header2: En el entrenamiento...
+test3_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente, y una serie de comentarios y frases relacionadas con situaciones de entrenamiento. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento, o que mejor describa tu comportamiento durante las sesiones de entrenamiento.
 # esta primera parte es igual en el cuestionario 1, en el 4
 test3_1: Intranquil@
 test3_2: Desamparad@
 test3_3: Sin fuerzas
-test3_4: Llen@ de energia
+test3_4: Llen@ de energía
 test3_5: Molest@
 test3_6: Agitad@
 test3_7: Desdichad@
@@ -553,14 +554,14 @@ test3_13: Fatigad@
 test3_14: Activ@
 test3_15: De mal genio 
 
-test3_16: Presto mucha atención a las cosas que tengo que hacer en el entrenamiento.
-test3_17: Soy capaz de hacer cosas que antes no podía hacer.
-test3_18: Si cometo fallos en el entrenamiento, al día siguiente estoy intranquil@.
-test3_19: Cuando el ejercicio es difícil, me esfuerzo más para conseguir hacerlo bien.
-test3_20: Lo hago todo lo mejor que sé hacer.
-test3_21: Me pongo nervios@ cuando cometo un fallo en el entrenamiento.
-test3_22: Sigo esforzándome en el entrenamiento aunque las cosas no me salgan bien.
-test3_23: Hago las cosas que me propongo.
+test3_16: Presto mucha atención a las cosas que tengo que hacer en el entrenamiento
+test3_17: Soy capaz de hacer cosas que antes no podía hacer
+test3_18: Si cometo fallos en el entrenamiento, al día siguiente estoy intranquil@
+test3_19: Cuando el ejercicio es difícil, me esfuerzo más para conseguir hacerlo bien
+test3_20: Lo hago todo lo mejor que sé hacer
+test3_21: Me pongo nervios@ cuando cometo un fallo en el entrenamiento
+test3_22: Sigo esforzándome en el entrenamiento aunque las cosas no me salgan bien
+test3_23: Hago las cosas que me propongo
 test3_24: Me pone nervios@ practicar tareas nuevas en el entrenamiento
 
 test3_25: Nivel de competencia que tienes EN ESTE MOMENTO para realizar acciones técnicas
@@ -683,22 +684,22 @@ test5_21: Satisfacción con la Capacidad de Rendimiento Utilizada
 test6: Valoración Post-Competición (Deportes Colectivos)
 # header, intro igual al cuestionario 6
 # preguntas 1 a 5 igual al cuestionario 6
-test6_1: Con tu grado de complicidad hacia el objetivo colectivo.
-test6_2: Con tu generosidad y apoyo hacia tus compañeros.
-test6_3: Con el respeto hacia tus compañeros.
-test6_4: Con tu lealtad hacia las decisiones adoptadas.
-test6_5: Con el grado de comunicación con tus compañeros. 	
-test6_6: Con tu aportación al trabajo colectivo. 	
-test6_7: Con tu implicación hacia el esfuerzo.
-test6_8: Con tu confianza en los objetivos del juego propuestos. 	
-test6_9: Con tu actitud hacia el trabajo que se te ha encomendado.
-test6_10: Con las decisiones que has tomado durante el partido. 	
-test6_11: Con tu nivel de confianza durante toda la competición
-test6_12: Con tu nivel de rendimiento ante las situaciones de muy alta intensidad. 	
-test6_13: Con tu capacidad luchadora y perseverante.
-test6_14: Con tu actitud positiva hacia tu propia mejora.
-test6_15: Con tu transmisión de disfrute, satisfacción y “buenas sensaciones”.
-test6_16: Satisfacción Con La Capacidad De Rendimiento Del Equipo
+test6_6: Con tu grado de complicidad hacia el objetivo colectivo
+test6_7: Con tu generosidad y apoyo hacia tus compañeros
+test6_8: Con el respeto hacia tus compañeros
+test6_9: Con tu lealtad hacia las decisiones adoptadas
+test6_10: Con el grado de comunicación con tus compañeros
+test6_11: Con tu aportación al trabajo colectivo
+test6_12: Con tu implicación hacia el esfuerzo
+test6_13: Con tu confianza en los objetivos del juego propuestos
+test6_14: Con tu actitud hacia el trabajo que se te ha encomendado
+test6_15: Con las decisiones que has tomado durante el partido
+test6_16: Con tu nivel de confianza durante toda la competición
+test6_17: Con tu nivel de rendimiento ante las situaciones de muy alta intensidad
+test6_18: Con tu capacidad luchadora y perseverante
+test6_19: Con tu actitud positiva hacia tu propia mejora
+test6_20: Con tu transmisión de disfrute, satisfacción y “buenas sensaciones”
+test6_21: Satisfacción Con La Capacidad De Rendimiento Del Equipo
 
 test7_valor_1: 1 (no, en absoluto)
 test7_valor_7: 7 (totalmente)
