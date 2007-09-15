@@ -647,7 +647,7 @@ test4_6: Has preparado el plan de competición?
 test4_7: Tienes claro como quieres actuar
  
 test5: Valoración Post-Competición (Deportes Individuales)
-test5_header: El grado de satisfacción con mi actuación ha sido:
+test5_header: El grado de satisfacción con mi actuación ha sido
 test5_intro: Más abajo se plantean una serie de preguntas relacionadas con determinados aspectos de la competición, sobre las que queremos recoger tu opinión. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
 #los niveles de valoracion 0 a 4 igual que en el cuestionario 3
 test5_1: Técnicamente
@@ -655,7 +655,7 @@ test5_2: Físicamente
 test5_3: Asertivamente
 test5_4: Mentalmente
 test5_5: Tácticamente
-test5_6: El grado de satisfacción durante la competición con:
+test5_6: El grado de satisfacción durante la competición con
 test5_7: El control de mis emociones
 test5_8: El disfrute al sentir mis emociones en determinados momentos.
 test5_9: La seguridad de haber rendido bajo la presión
@@ -696,7 +696,7 @@ test6_15: Con tu transmisión de disfrute, satisfacción y “buenas sensaciones
 test6_16: Satisfacción Con La Capacidad De Rendimiento Del Equipo
 
 test7: Cuestionario de Satisfacción (Deportes individuales) 
-test7_header: El grado de satisfacción con mi actuación ha sido:
+test7_header: El grado de satisfacción con mi actuación ha sido
 test7_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
 test7_1: El nivel que he alcanzado en mis objetivos durante la temporada.  	
 test7_2: La mejora de mi rendimiento en la temporada anterior. 	
@@ -718,7 +718,7 @@ test7_17: Mi dedicación personal durante el entrenamiento.
 test7_18: Mi entusiasmo durante las competiciones.
 
 test8: Cuestionario de Satisfacción (Deportes Colectivos)
-test8_header: El grado de satisfacción con mi actuación ha sido:
+test8_header: El grado de satisfacción con mi actuación ha sido
 test8_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
 test8_1: El nivel que he alcanzado en mis objetivos durante la temporada.  	
 test8_2: La mejora de mi rendimiento en la temporada anterior. 	
