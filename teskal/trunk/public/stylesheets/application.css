@@ -23,7 +23,7 @@ body {
 .content {
 	margin:auto;
 	padding: 0;
-	width: 910px;
+	width: 910px;  
 	height:auto;
 	background-color: #ffffff;
 	color: #628600;
@@ -76,13 +76,14 @@ img.right {
 
 	
 #header {
-	margin: 0;
-	background-image: url(../images/header_all_white.gif);   
-/*	background-image: url(../images/header_all_1.gif); cream version
-*/	position: relative;
+	margin: 0px;
+	padding: 0;
+	background-image: url(../images/header_all_white_margin.gif);   
+/*	background-image: url(../images/header_all_1.gif); cream version*/
+/*	position: relative;
 	left: 40px;
-	top: 0px;
-	width: 830px;
+	top: 0px;  
+ 	width: 830px;*/
 	height: 158px;
 }
 #header_1 {
@@ -116,12 +117,15 @@ img.right {
 	color:#fff;
 }
 #navigation {
-	height:2.2em;
-	line-height:0.5em;
+	height:2.0em;
+/*	line-height:0.5em;*/
 	margin-right:33px;
 	color:#000000;
 	font-weight: bold;
 	font-size:13px;
+   	position: relative;
+	left: 28px;
+	top: -6px; 
 }
 #navigation li {
 	float:left;
@@ -145,7 +149,7 @@ img.right {
 	max-width: 100px;
 	list-style-type:none;
 	position:relative;
-	left:-6px;
+	left:-33px;
 	top: -4px;
 }
 #navigation li a {

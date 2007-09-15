@@ -492,7 +492,7 @@ test2_valor_6: 6 (siempre)
 
 test2: Cuestionario Tolerancia Psicológica al Estrés
 test2_header: En el último mes...
-test2_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y ahz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
+test2_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
 test2_1: Me han dolido algunas partes del cuerpo
 test2_2: No he podido descansar durante los descansos
 test2_3: He estado convencid@ de que podía lograr mis metas
