@@ -1,0 +1,40 @@
+# Logfile created on Sat Sep 15 02:04:47 +0200 2007 by /
+
+
+Processing AnswersController#index (for 127.0.0.1 at 2007-09-15 02:10:47) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"index", "controller"=>"answers"}
+Redirected to http://localhost:3000/account/login
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x354925c @filter=:require_login>] returned false.
+Completed in 0.14290 (6 reqs/sec) | DB: 0.04896 (34%) | 302 Found [http://localhost/answers]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2007-09-15 02:10:47) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering  within layouts/base
+Rendering account/login
+Completed in 0.01189 (84 reqs/sec) | Rendering: 0.00994 (83%) | DB: 0.00084 (7%) | 200 OK [http://localhost/account/login]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2007-09-15 02:11:07) [POST]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"login", "controller"=>"account", "password"=>"[FILTERED]", "login"=>"pepa"}
+Redirected to http://localhost:3000/answers
+Completed in 0.19773 (5 reqs/sec) | DB: 0.07708 (38%) | 302 Found [http://localhost/account/login]
+
+
+Processing AnswersController#index (for 127.0.0.1 at 2007-09-15 02:11:08) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"index", "controller"=>"answers"}
+Rendering content_typetext/htmllayoutfalseactionindex within layouts/base
+Rendering answers/index
+Completed in 0.11986 (8 reqs/sec) | Rendering: 0.02441 (20%) | DB: 0.08931 (74%) | 200 OK [http://localhost/answers]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 02:11:10) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+Rendering  within layouts/base
+Rendering answers/new
+Completed in 0.03027 (33 reqs/sec) | Rendering: 0.02101 (69%) | DB: 0.00632 (20%) | 200 OK [http://localhost/answers/new]
