@@ -7,7 +7,6 @@ class AnswersController < ApplicationController
    
   def index
     @answers = Answer.find(:all)
-
     respond_to do |format|
       format.html # index.rhtml
       format.xml  { render :xml => @answers.to_xml }
@@ -18,7 +17,6 @@ class AnswersController < ApplicationController
   # GET /answers/1.xml
   def show
     @answer = Answer.find(params[:id])
-
     respond_to do |format|
       format.html # show.rhtml
       format.xml  { render :xml => @answer.to_xml }
@@ -79,5 +77,18 @@ class AnswersController < ApplicationController
       format.html { redirect_to answers_url }
       format.xml  { head :ok }
     end
+  end  
+  def test7
+     @answer = Answer.new 
+      if @user.save  
+      end
+
+   end
+  
+  def test8
+    @answer = Answer.new 
+     if @user.save  
+     end
+
   end
 end
