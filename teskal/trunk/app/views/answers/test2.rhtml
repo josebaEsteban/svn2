@@ -1,32 +1,47 @@
-<h2><%=l(:test3)%></h2> 
+<h2><%=l(:test2)%></h2> 
 <br/> 
 
-<div id="intro"><%=l(:test3_intro)%></div>
+<div id="intro"><%=l(:test2_intro)%></div>
 <br/> 
 <div id="values">
-	<%=l(:test3_valor_0)%> •
-	 <%=l(:test3_valor_1)%> • 
-	 <%=l(:test3_valor_2)%> •
-	 <%=l(:test3_valor_3)%> •
-	 <%=l(:test3_valor_4)%>
-	 <br/><br/>
+	<%=l(:test2_valor_0)%> •
+	 <%=l(:test2_valor_1)%> • 
+	 <%=l(:test2_valor_2)%> •
+	 <%=l(:test2_valor_3)%> •
+	 <%=l(:test2_valor_4)%> •
+	 <%=l(:test2_valor_5)%> •
+	 <%=l(:test2_valor_6)%> <br/><br/>
 </div>
 <center>
 <table cellspacing="0"> 
-	<!-- <caption><%=l(:test3)%></caption> -->
+	<!-- <caption><%=l(:test2)%></caption> -->
 	<thead>
 		<tr>
-			<th scope="col"><div align="left"><%=l(:test3_header1)%></div></th>
+			<th scope="col"><%=l(:test2_header)%></th>
 			<th scope="col">0</th>
 			<th scope="col">1</th>
 			<th scope="col">2</th>
 			<th scope="col">3</th>
 			<th scope="col">4</th>
+			<th scope="col">5</th>
+			<th scope="col">6</th>
 		</tr>
 	</thead> 
+	<tfoot>
+		<tr>
+			<th scope="col"></th>
+			<th scope="col">0</th>
+			<th scope="col">1</th>
+			<th scope="col">2</th>
+			<th scope="col">3</th>
+			<th scope="col">4</th>
+			<th scope="col">5</th>
+			<th scope="col">6</th>
+		</tr>
+	</tfoot>  
 	<tbody>
 <tr>
-   <th><%=l(:test3_1)%></th>
+   <th><%=l(:test2_1)%></th>
 	<td> 
       <input type="radio" name="respuesta[1]" value="0" id="RadioGroup1" /> 
 </td>
@@ -41,10 +56,17 @@
       </td>
 	<td>
 		<input type="radio" name="respuesta[1]" value="4" id="RadioGroup1" />
-      </td> 
+      </td>
+	<td>
+		<input type="radio" name="respuesta[1]" value="5" id="RadioGroup1" />
+      </td>
+	<td>
+		<input type="radio" name="respuesta[1]" value="6" id="RadioGroup1" />
+</td> 
+		
 </tr> 
 <tr class="odd">
-	<td><%=l(:test3_2)%></td>
+	<td><%=l(:test2_2)%></td>
 	<td> 
       <input type="radio" name="respuesta[2]" value="0" id="RadioGroup2" />
 </td>
@@ -55,10 +77,14 @@
 <td>      <input type="radio" name="respuesta[2]" value="3" id="RadioGroup2" />
 </td>
 <td>      <input type="radio" name="respuesta[2]" value="4" id="RadioGroup2" />
+</td>
+<td>      <input type="radio" name="respuesta[2]" value="5" id="RadioGroup2" />
+</td>
+<td>      <input type="radio" name="respuesta[2]" value="6" id="RadioGroup2" />
 </td>  
 </tr>  
 <tr>
-	<td><%=l(:test3_3)%></td>
+	<td><%=l(:test2_3)%></td>
 	<td> 
       <input type="radio" name="respuesta[3]" value="0" id="RadioGroup3" />
 </td>
@@ -69,9 +95,14 @@
 <td>      <input type="radio" name="respuesta[3]" value="3" id="RadioGroup3" />
 </td>
 <td>      <input type="radio" name="respuesta[3]" value="4" id="RadioGroup3" />
+</td>
+<td>      <input type="radio" name="respuesta[3]" value="5" id="RadioGroup3" />
+</td>
+<td>      <input type="radio" name="respuesta[3]" value="6" id="RadioGroup3" />
+</td>
 </tr>                    
 <tr class="odd">
-	<td><%=l(:test3_4)%></td>
+	<td><%=l(:test2_4)%></td>
 	<td> 
       <input type="radio" name="respuesta[4]" value="0" id="RadioGroup4" />
 </td>
@@ -82,9 +113,14 @@
 <td>      <input type="radio" name="respuesta[4]" value="3" id="RadioGroup4" />
 </td>
 <td>      <input type="radio" name="respuesta[4]" value="4" id="RadioGroup4" />
+</td>
+<td>      <input type="radio" name="respuesta[4]" value="5" id="RadioGroup4" />
+</td>
+<td>      <input type="radio" name="respuesta[4]" value="6" id="RadioGroup4" />
+</td>
 </tr>                    
  <tr>
-	<td><%=l(:test3_5)%></td>
+	<td><%=l(:test2_5)%></td>
 	<td> 
       <input type="radio" name="respuesta[5]" value="0" id="RadioGroup5" />
 </td>
@@ -95,9 +131,14 @@
 <td>      <input type="radio" name="respuesta[5]" value="3" id="RadioGroup5" />
 </td>
 <td>      <input type="radio" name="respuesta[5]" value="4" id="RadioGroup5" />
+</td>
+<td>      <input type="radio" name="respuesta[5]" value="5" id="RadioGroup5" />
+</td>
+<td>      <input type="radio" name="respuesta[5]" value="6" id="RadioGroup5" />
+</td>
 </tr>                    
 <tr class="odd">
-	<td><%=l(:test3_6)%></td>
+	<td><%=l(:test2_6)%></td>
 	<td> 
       <input type="radio" name="respuesta[6]" value="0" id="RadioGroup6" />
 </td>
@@ -108,9 +149,14 @@
 <td>      <input type="radio" name="respuesta[6]" value="3" id="RadioGroup6" />
 </td>
 <td>      <input type="radio" name="respuesta[6]" value="4" id="RadioGroup6" />
-</td>                    
+</td>
+<td>      <input type="radio" name="respuesta[6]" value="5" id="RadioGroup6" />
+</td>
+<td>      <input type="radio" name="respuesta[6]" value="6" id="RadioGroup6" />
+</td>
+</tr>                    
 <tr>
-	<td><%=l(:test3_7)%></td>
+	<td><%=l(:test2_7)%></td>
 	<td> 
       <input type="radio" name="respuesta[7]" value="0" id="RadioGroup7" />
 </td>
@@ -122,9 +168,13 @@
 </td>
 <td>      <input type="radio" name="respuesta[7]" value="4" id="RadioGroup7" />
 </td>
+<td>      <input type="radio" name="respuesta[7]" value="5" id="RadioGroup7" />
+</td>
+<td>      <input type="radio" name="respuesta[7]" value="6" id="RadioGroup7" />
+</td>
 </tr>                    
 <tr class="odd">
-	<td><%=l(:test3_8)%></td>
+	<td><%=l(:test2_8)%></td>
 	<td> 
       <input type="radio" name="respuesta[8]" value="0" id="RadioGroup8" />
 </td>
@@ -135,9 +185,14 @@
 <td>      <input type="radio" name="respuesta[8]" value="3" id="RadioGroup8" />
 </td>
 <td>      <input type="radio" name="respuesta[8]" value="4" id="RadioGroup8" />
-</td>                  
+</td>
+<td>      <input type="radio" name="respuesta[8]" value="5" id="RadioGroup8" />
+</td>
+<td>      <input type="radio" name="respuesta[8]" value="6" id="RadioGroup8" />
+</td>
+</tr>                    
 <tr>
-	<td><%=l(:test3_9)%></td>
+	<td><%=l(:test2_9)%></td>
 	<td> 
       <input type="radio" name="respuesta[9]" value="0" id="RadioGroup9" />
 </td>
@@ -149,9 +204,13 @@
 </td>
 <td>      <input type="radio" name="respuesta[9]" value="4" id="RadioGroup9" />
 </td>
+<td>      <input type="radio" name="respuesta[9]" value="5" id="RadioGroup9" />
+</td>
+<td>      <input type="radio" name="respuesta[9]" value="6" id="RadioGroup9" />
+</td>
 </tr>                    
 <tr class="odd">
-	<td><%=l(:test3_10)%></td>
+	<td><%=l(:test2_10)%></td>
 	<td> 
       <input type="radio" name="respuesta[10]" value="0" id="RadioGroup10" />
 </td>
@@ -162,9 +221,14 @@
 <td>      <input type="radio" name="respuesta[10]" value="3" id="RadioGroup10" />
 </td>
 <td>      <input type="radio" name="respuesta[10]" value="4" id="RadioGroup10" />
-</td> 
+</td>
+<td>      <input type="radio" name="respuesta[10]" value="5" id="RadioGroup10" />
+</td>
+<td>      <input type="radio" name="respuesta[10]" value="6" id="RadioGroup10" />
+</td>
+</tr>  
 <tr>
-	<td><%=l(:test3_11)%></td>
+	<td><%=l(:test2_11)%></td>
 	<td> 
       <input type="radio" name="respuesta[11]" value="0" id="RadioGroup11" />
 </td>
@@ -175,9 +239,14 @@
 <td>      <input type="radio" name="respuesta[11]" value="3" id="RadioGroup11" />
 </td>
 <td>      <input type="radio" name="respuesta[11]" value="4" id="RadioGroup11" />
-</td>                    
+</td>
+<td>      <input type="radio" name="respuesta[11]" value="5" id="RadioGroup11" />
+</td>
+<td>      <input type="radio" name="respuesta[11]" value="6" id="RadioGroup11" />
+</td>
+</tr>                     
 <tr class="odd">
-	<td><%=l(:test3_12)%></td>
+	<td><%=l(:test2_12)%></td>
 	<td> 
       <input type="radio" name="respuesta[12]" value="0" id="RadioGroup12" />
 </td>
@@ -189,8 +258,13 @@
 </td>
 <td>      <input type="radio" name="respuesta[12]" value="4" id="RadioGroup12" />
 </td>
+<td>      <input type="radio" name="respuesta[12]" value="5" id="RadioGroup12" />
+</td>
+<td>      <input type="radio" name="respuesta[12]" value="6" id="RadioGroup12" />
+</td>
+</tr>                    
 <tr>
-	<td><%=l(:test3_13)%></td>
+	<td><%=l(:test2_13)%></td>
 	<td> 
       <input type="radio" name="respuesta[13]" value="0" id="RadioGroup13" />
 </td>
@@ -201,9 +275,14 @@
 <td>      <input type="radio" name="respuesta[13]" value="3" id="RadioGroup13" />
 </td>
 <td>      <input type="radio" name="respuesta[13]" value="4" id="RadioGroup13" />
-</td>                     
+</td>
+<td>      <input type="radio" name="respuesta[13]" value="5" id="RadioGroup13" />
+</td>
+<td>      <input type="radio" name="respuesta[13]" value="6" id="RadioGroup13" />
+</td>
+</tr>                     
 <tr class="odd">
-	<td><%=l(:test3_14)%></td>
+	<td><%=l(:test2_14)%></td>
 	<td> 
       <input type="radio" name="respuesta[14]" value="0" id="RadioGroup14" />
 </td>
@@ -214,9 +293,14 @@
 <td>      <input type="radio" name="respuesta[14]" value="3" id="RadioGroup14" />
 </td>
 <td>      <input type="radio" name="respuesta[14]" value="4" id="RadioGroup14" />
-</td>                    
+</td>
+<td>      <input type="radio" name="respuesta[14]" value="5" id="RadioGroup14" />
+</td>
+<td>      <input type="radio" name="respuesta[14]" value="6" id="RadioGroup14" />
+</td>
+</tr>                     
 <tr>
-	<td><%=l(:test3_15)%></td>
+	<td><%=l(:test2_15)%></td>
 	<td> 
       <input type="radio" name="respuesta[15]" value="0" id="RadioGroup15" />
 </td>
@@ -227,19 +311,14 @@
 <td>      <input type="radio" name="respuesta[15]" value="3" id="RadioGroup15" />
 </td>
 <td>      <input type="radio" name="respuesta[15]" value="4" id="RadioGroup15" />
-</td>                     
-<thead>
-	<tr>
-		<th scope="col"><div align="left"><%=l(:test3_header2)%></div></th>
-		<th scope="col">0</th>
-		<th scope="col">1</th>
-		<th scope="col">2</th>
-		<th scope="col">3</th>
-		<th scope="col">4</th>
-	</tr>
-</thead> 
+</td>
+<td>      <input type="radio" name="respuesta[15]" value="5" id="RadioGroup15" />
+</td>
+<td>      <input type="radio" name="respuesta[15]" value="6" id="RadioGroup15" />
+</td>
+</tr>                     
 <tr class="odd">
-	<td><%=l(:test3_16)%></td>
+	<td><%=l(:test2_16)%></td>
 	<td> 
       <input type="radio" name="respuesta[16]" value="0" id="RadioGroup16" />
 </td>
@@ -250,10 +329,14 @@
 <td>      <input type="radio" name="respuesta[16]" value="3" id="RadioGroup16" />
 </td>
 <td>      <input type="radio" name="respuesta[16]" value="4" id="RadioGroup16" />
-</td>                     
-
+</td>
+<td>      <input type="radio" name="respuesta[16]" value="5" id="RadioGroup16" />
+</td>
+<td>      <input type="radio" name="respuesta[16]" value="6" id="RadioGroup16" />
+</td>
+</tr>                     
 <tr>
-	<td><%=l(:test3_17)%></td>
+	<td><%=l(:test2_17)%></td>
 	<td> 
       <input type="radio" name="respuesta[17]" value="0" id="RadioGroup17" />
 </td>
@@ -264,9 +347,14 @@
 <td>      <input type="radio" name="respuesta[17]" value="3" id="RadioGroup17" />
 </td>
 <td>      <input type="radio" name="respuesta[17]" value="4" id="RadioGroup17" />
-</td>                     
+</td>
+<td>      <input type="radio" name="respuesta[17]" value="5" id="RadioGroup17" />
+</td>
+<td>      <input type="radio" name="respuesta[17]" value="6" id="RadioGroup" />
+</td>
+</tr>                     
 <tr class="odd">
-	<td><%=l(:test3_18)%></td>
+	<td><%=l(:test2_18)%></td>
 	<td> 
       <input type="radio" name="respuesta[18]" value="0" id="RadioGroup18" />
 </td>
@@ -277,9 +365,14 @@
 <td>      <input type="radio" name="respuesta[18]" value="3" id="RadioGroup18" />
 </td>
 <td>      <input type="radio" name="respuesta[18]" value="4" id="RadioGroup18" />
-</td>                     
+</td>
+<td>      <input type="radio" name="respuesta[18]" value="5" id="RadioGroup18" />
+</td>
+<td>      <input type="radio" name="respuesta[18]" value="6" id="RadioGroup18" />
+</td>
+</tr>                     
 <tr>
-	<td><%=l(:test3_19)%></td>
+	<td><%=l(:test2_19)%></td>
 	<td> 
       <input type="radio" name="respuesta[19]" value="0" id="RadioGroup19" />
 </td>
@@ -290,9 +383,14 @@
 <td>      <input type="radio" name="respuesta[19]" value="3" id="RadioGroup19" />
 </td>
 <td>      <input type="radio" name="respuesta[19]" value="4" id="RadioGroup19" />
-</td>                     
+</td>
+<td>      <input type="radio" name="respuesta[19]" value="5" id="RadioGroup19" />
+</td>
+<td>      <input type="radio" name="respuesta[19]" value="6" id="RadioGroup19" />
+</td>
+</tr>                     
 <tr class="odd">
-	<td><%=l(:test3_20)%></td>
+	<td><%=l(:test2_20)%></td>
 	<td> 
       <input type="radio" name="respuesta[20]" value="0" id="RadioGroup20" />
 </td>
@@ -303,9 +401,14 @@
 <td>      <input type="radio" name="respuesta[20]" value="3" id="RadioGroup20" />
 </td>
 <td>      <input type="radio" name="respuesta[20]" value="4" id="RadioGroup20" />
-</td>                     
+</td>
+<td>      <input type="radio" name="respuesta[20]" value="5" id="RadioGroup20" />
+</td>
+<td>      <input type="radio" name="respuesta[20]" value="6" id="RadioGroup20" />
+</td>
+</tr>                     
 <tr>
-	<td><%=l(:test3_21)%></td>
+	<td><%=l(:test2_21)%></td>
 	<td> 
       <input type="radio" name="respuesta[21]" value="0" id="RadioGroup21" />
 </td>
@@ -316,9 +419,14 @@
 <td>      <input type="radio" name="respuesta[21]" value="3" id="RadioGroup21" />
 </td>
 <td>      <input type="radio" name="respuesta[21]" value="4" id="RadioGroup21" />
+</td>
+<td>      <input type="radio" name="respuesta[21]" value="5" id="RadioGroup21" />
+</td>
+<td>      <input type="radio" name="respuesta[21]" value="6" id="RadioGroup21" />
+</td>
 </tr>                     
 <tr class="odd">
-	<td><%=l(:test3_22)%></td>
+	<td><%=l(:test2_22)%></td>
 	<td> 
       <input type="radio" name="respuesta[22]" value="0" id="RadioGroup22" />
 </td>
@@ -329,9 +437,14 @@
 <td>      <input type="radio" name="respuesta[22]" value="3" id="RadioGroup22" />
 </td>
 <td>      <input type="radio" name="respuesta[22]" value="4" id="RadioGroup22" />
-</td>                     
+</td>
+<td>      <input type="radio" name="respuesta[22]" value="5" id="RadioGroup22" />
+</td>
+<td>      <input type="radio" name="respuesta[22]" value="6" id="RadioGroup22" />
+</td>
+</tr>                     
 <tr>
-	<td><%=l(:test3_23)%></td>
+	<td><%=l(:test2_23)%></td>
 	<td> 
       <input type="radio" name="respuesta[23]" value="0" id="RadioGroup23" />
 </td>
@@ -343,9 +456,13 @@
 </td>
 <td>      <input type="radio" name="respuesta[23]" value="4" id="RadioGroup23" />
 </td>
+<td>      <input type="radio" name="respuesta[23]" value="5" id="RadioGroup23" />
+</td>
+<td>      <input type="radio" name="respuesta[23]" value="6" id="RadioGroup23" />
+</td>
 </tr>                     
 <tr class="odd">
-	<td><%=l(:test3_24)%></td>
+	<td><%=l(:test2_24)%></td>
 	<td> 
       <input type="radio" name="respuesta[24]" value="0" id="RadioGroup24" />
 </td>
@@ -357,8 +474,84 @@
 </td>
 <td>      <input type="radio" name="respuesta[24]" value="4" id="RadioGroup24" />
 </td>
+<td>      <input type="radio" name="respuesta[24]" value="5" id="RadioGroup24" />
+</td>
+<td>      <input type="radio" name="respuesta[24]" value="6" id="RadioGroup24" />
+</td>
 </tr>                     
- 
+<tr>
+	<td><%=l(:test2_25)%></td>
+	<td> 
+      <input type="radio" name="respuesta[25]" value="0" id="RadioGroup25" />
+</td>
+<td>      <input type="radio" name="respuesta[25]" value="1" id="RadioGroup25" />
+</td>
+<td>      <input type="radio" name="respuesta[25]" value="2" id="RadioGroup25" />
+</td>
+<td>      <input type="radio" name="respuesta[25]" value="3" id="RadioGroup25" />
+</td>
+<td>      <input type="radio" name="respuesta[25]" value="4" id="RadioGroup25" />
+</td>
+<td>      <input type="radio" name="respuesta[25]" value="5" id="RadioGroup25" />
+</td>
+<td>      <input type="radio" name="respuesta[25]" value="6" id="RadioGroup25" />
+</td>
+</tr>                     
+<tr class="odd">
+	<td><%=l(:test2_26)%></td>
+	<td> 
+      <input type="radio" name="respuesta[26]" value="0" id="RadioGroup26" />
+</td>
+<td>      <input type="radio" name="respuesta[26]" value="1" id="RadioGroup26" />
+</td>
+<td>      <input type="radio" name="respuesta[26]" value="2" id="RadioGroup26" />
+</td>
+<td>      <input type="radio" name="respuesta[26]" value="3" id="RadioGroup26" />
+</td>
+<td>      <input type="radio" name="respuesta[26]" value="4" id="RadioGroup26" />
+</td>
+<td>      <input type="radio" name="respuesta[26]" value="5" id="RadioGroup26" />
+</td>
+<td>      <input type="radio" name="respuesta[26]" value="6" id="RadioGroup26" />
+</td>
+</tr>                     
+<tr>
+	<td><%=l(:test2_27)%></td>
+	<td> 
+      <input type="radio" name="respuesta[27]" value="0" id="RadioGroup27"/>
+</td>
+<td>      
+	<input type="radio" name="respuesta[27]" value="1" id="RadioGroup27"/>
+</td>
+<td>      <input type="radio" name="respuesta[27]" value="2" id="RadioGroup27"/>
+</td>
+<td>      <input type="radio" name="respuesta[27]" value="3" id="RadioGroup27"/>
+</td>
+<td>      <input type="radio" name="respuesta[27]" value="4" id="RadioGroup27"/>
+</td>
+<td>      <input type="radio" name="respuesta[27]" value="5" id="RadioGroup27"/>
+</td>
+<td>      <input type="radio" name="respuesta[27]" value="6" id="RadioGroup27"/>
+</td>
+</tr>                     
+<tr class="odd">
+	<td><%=l(:test2_28)%></td>
+	<td> 
+      <input type="radio" name="respuesta[28]" value="0" id="RadioGroup28" />
+</td>
+<td>      <input type="radio" name="respuesta[28]" value="1" id="RadioGroup28" />
+</td>
+<td>      <input type="radio" name="respuesta[28]" value="2" id="RadioGroup28" />
+</td>
+<td>      <input type="radio" name="respuesta[28]" value="3" id="RadioGroup28" />
+</td>
+<td>      <input type="radio" name="respuesta[28]" value="4" id="RadioGroup28" />
+</td>
+<td>      <input type="radio" name="respuesta[28]" value="5" id="RadioGroup28" />
+</td>
+<td>      <input type="radio" name="respuesta[28]" value="6" id="RadioGroup28" />
+</td>
+</tr>    
 </tbody>
 </table>
 <br/>    

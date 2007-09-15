@@ -9184,3 +9184,377 @@ Rendering answers/new
   [4;35;1mRole Columns (0.002597)[0m   [0mSHOW FIELDS FROM roles[0m
   [4;36;1mMember Load Including Associations (0.000869)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
 Completed in 0.08948 (11 reqs/sec) | Rendering: 0.04219 (47%) | DB: 0.01836 (20%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 22:39:35) [GET]
+  Session ID: 90dd6c2d66cab1bbab0e74c1721f1d55
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;35;1mUser Columns (0.003492)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.000849)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mAnswer Columns (0.004593)[0m   [0mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;36;1mSetting Columns (0.001640)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000498)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mMember Columns (0.001258)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.002366)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.001397)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.000720)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.14961 (6 reqs/sec) | Rendering: 0.10320 (68%) | DB: 0.01681 (11%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 22:39:49) [GET]
+  Session ID: 90dd6c2d66cab1bbab0e74c1721f1d55
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;36;1mUser Columns (0.002238)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.000671)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mAnswer Columns (0.004642)[0m   [0;1mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;35;1mSetting Columns (0.001996)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.000691)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.001749)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.001764)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.001117)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.000890)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.08432 (11 reqs/sec) | Rendering: 0.04105 (48%) | DB: 0.01576 (18%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 22:48:20) [GET]
+  Session ID: 90dd6c2d66cab1bbab0e74c1721f1d55
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;35;1mUser Columns (0.002565)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.000847)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mAnswer Columns (0.004696)[0m   [0mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;36;1mSetting Columns (0.001537)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000653)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mMember Columns (0.001644)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.002209)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.001288)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.000845)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.08440 (11 reqs/sec) | Rendering: 0.04016 (47%) | DB: 0.01628 (19%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 22:51:18) [GET]
+  Session ID: 4f807113bc213ab5ca4ab5d1a9e031c8
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;36;1mUser Columns (0.010336)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.019080)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mAnswer Columns (0.035229)[0m   [0;1mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;35;1mSetting Columns (0.075722)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.003896)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.078830)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.010957)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.033684)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.022506)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.69846 (1 reqs/sec) | Rendering: 0.20432 (29%) | DB: 0.29024 (41%) | 200 OK [http://192.168.1.3/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 22:52:10) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;35;1mUser Columns (0.002905)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001148)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mAnswer Columns (0.007741)[0m   [0mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;36;1mSetting Columns (0.001654)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.001911)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mMember Columns (0.002495)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.002901)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.002957)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.002762)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.10260 (9 reqs/sec) | Rendering: 0.03948 (38%) | DB: 0.02647 (25%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 22:53:26) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;36;1mUser Columns (0.004396)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.007563)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mAnswer Columns (0.011088)[0m   [0;1mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;35;1mSetting Columns (0.002811)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.000883)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.001996)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.004422)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.002694)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.006825)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.11692 (8 reqs/sec) | Rendering: 0.03796 (32%) | DB: 0.04268 (36%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 22:53:43) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;35;1mUser Columns (0.002963)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.000888)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mAnswer Columns (0.006903)[0m   [0mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;36;1mSetting Columns (0.003133)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000823)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mMember Columns (0.003165)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.004122)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.003089)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.002661)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.19530 (5 reqs/sec) | Rendering: 0.05412 (27%) | DB: 0.02775 (14%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 22:53:53) [GET]
+  Session ID: 4f807113bc213ab5ca4ab5d1a9e031c8
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;36;1mUser Columns (0.027999)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.003425)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mAnswer Columns (0.017765)[0m   [0;1mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;35;1mSetting Columns (0.021844)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.009117)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.003553)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.002509)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.037439)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.001865)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.44293 (2 reqs/sec) | Rendering: 0.22788 (51%) | DB: 0.12552 (28%) | 200 OK [http://192.168.1.3/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 23:00:39) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;35;1mUser Columns (0.002294)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.000653)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mAnswer Columns (0.005042)[0m   [0mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;36;1mSetting Columns (0.001431)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000667)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mMember Columns (0.001655)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.001774)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.001329)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.000801)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.08214 (12 reqs/sec) | Rendering: 0.03806 (46%) | DB: 0.01565 (19%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 23:00:59) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;36;1mUser Columns (0.002591)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.000625)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mAnswer Columns (0.004655)[0m   [0;1mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;35;1mSetting Columns (0.001897)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.001835)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.001592)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.001850)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.001329)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.001067)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.08526 (11 reqs/sec) | Rendering: 0.03850 (45%) | DB: 0.01744 (20%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 23:03:06) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;35;1mUser Columns (0.002285)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.000643)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mAnswer Columns (0.004469)[0m   [0mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;36;1mSetting Columns (0.003263)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000622)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mMember Columns (0.001646)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.001716)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.003064)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.000816)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.21825 (4 reqs/sec) | Rendering: 0.02992 (13%) | DB: 0.01852 (8%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 23:03:57) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;36;1mUser Columns (0.050273)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.000955)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mAnswer Columns (0.004597)[0m   [0;1mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;35;1mSetting Columns (0.002544)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.002365)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.003216)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.001854)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.001290)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.000721)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.29447 (3 reqs/sec) | Rendering: 0.10492 (35%) | DB: 0.06781 (23%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 23:57:03) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;35;1mUser Columns (0.002749)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.014769)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mAnswer Columns (0.007689)[0m   [0mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;36;1mSetting Columns (0.001734)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000911)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mMember Columns (0.001589)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.002120)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.002677)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.001270)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.18724 (5 reqs/sec) | Rendering: 0.04301 (22%) | DB: 0.03551 (18%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 23:57:58) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;36;1mUser Columns (0.002211)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.000468)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mAnswer Columns (0.004424)[0m   [0;1mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;35;1mSetting Columns (0.001488)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.000598)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.001569)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.002141)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.001189)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.000946)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.08490 (11 reqs/sec) | Rendering: 0.04036 (47%) | DB: 0.01503 (17%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 23:59:22) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;35;1mUser Columns (0.002738)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.000656)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mAnswer Columns (0.005638)[0m   [0mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;36;1mSetting Columns (0.001254)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000646)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mMember Columns (0.001746)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.001560)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.001994)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.001429)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.16091 (6 reqs/sec) | Rendering: 0.04169 (25%) | DB: 0.01766 (10%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-15 23:59:30) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;36;1mUser Columns (0.002435)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001230)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mAnswer Columns (0.005780)[0m   [0;1mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;35;1mSetting Columns (0.001873)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.000831)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.001683)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.001769)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.001302)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.000705)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.17437 (5 reqs/sec) | Rendering: 0.12094 (69%) | DB: 0.01761 (10%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-16 00:00:47) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;35;1mUser Columns (0.002792)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.001090)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mAnswer Columns (0.005887)[0m   [0mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;36;1mSetting Columns (0.001797)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000762)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mMember Columns (0.001945)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.002229)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.001825)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.002295)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.10914 (9 reqs/sec) | Rendering: 0.05354 (49%) | DB: 0.02062 (18%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-16 00:01:16) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;36;1mUser Columns (0.002139)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001313)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mAnswer Columns (0.006059)[0m   [0;1mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;35;1mSetting Columns (0.002040)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.000503)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.001721)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.001557)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.001289)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.000790)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.14480 (6 reqs/sec) | Rendering: 0.03283 (22%) | DB: 0.01741 (12%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-16 00:03:10) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;35;1mUser Columns (0.002241)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.000719)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mAnswer Columns (0.005268)[0m   [0mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;36;1mSetting Columns (0.001248)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000797)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mMember Columns (0.002651)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.004095)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.003252)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.002273)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.21513 (4 reqs/sec) | Rendering: 0.02966 (13%) | DB: 0.02254 (10%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-16 00:03:36) [GET]
+  Session ID: 90dd6c2d66cab1bbab0e74c1721f1d55
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;36;1mUser Columns (0.003794)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.005108)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mAnswer Columns (0.006716)[0m   [0;1mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;35;1mSetting Columns (0.006510)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.002142)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.005961)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.005124)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.004032)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.002281)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.24912 (4 reqs/sec) | Rendering: 0.17066 (68%) | DB: 0.04167 (16%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-16 00:05:55) [GET]
+  Session ID: df64f019c4588089c0e650ec8ef891c7
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;35;1mUser Columns (0.002605)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mUser Load (0.000817)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;35;1mAnswer Columns (0.005441)[0m   [0mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;36;1mSetting Columns (0.001290)[0m   [0;1mSHOW FIELDS FROM settings[0m
+  [4;35;1mSetting Load (0.000638)[0m   [0mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;36;1mMember Columns (0.001369)[0m   [0;1mSHOW FIELDS FROM members[0m
+  [4;35;1mProject Columns (0.002533)[0m   [0mSHOW FIELDS FROM projects[0m
+  [4;36;1mRole Columns (0.001356)[0m   [0;1mSHOW FIELDS FROM roles[0m
+  [4;35;1mMember Load Including Associations (0.000832)[0m   [0mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.16131 (6 reqs/sec) | Rendering: 0.02843 (17%) | DB: 0.01688 (10%) | 200 OK [http://localhost/answers/new]
+
+
+Processing AnswersController#new (for 127.0.0.1 at 2007-09-16 00:10:24) [GET]
+  Session ID: 90dd6c2d66cab1bbab0e74c1721f1d55
+  Parameters: {"action"=>"new", "controller"=>"answers"}
+  [4;36;1mUser Columns (0.001983)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001076)[0m   [0mSELECT * FROM users WHERE (users.`id` = 2) [0m
+  [4;36;1mAnswer Columns (0.005804)[0m   [0;1mSHOW FIELDS FROM answers[0m
+Rendering  within layouts/base
+Rendering answers/new
+  [4;35;1mSetting Columns (0.001230)[0m   [0mSHOW FIELDS FROM settings[0m
+  [4;36;1mSetting Load (0.000593)[0m   [0;1mSELECT * FROM settings WHERE (settings.`name` = 'app_title') LIMIT 1[0m
+  [4;35;1mMember Columns (0.002008)[0m   [0mSHOW FIELDS FROM members[0m
+  [4;36;1mProject Columns (0.001464)[0m   [0;1mSHOW FIELDS FROM projects[0m
+  [4;35;1mRole Columns (0.001061)[0m   [0mSHOW FIELDS FROM roles[0m
+  [4;36;1mMember Load Including Associations (0.000587)[0m   [0;1mSELECT members.`id` AS t0_r0, members.`user_id` AS t0_r1, members.`project_id` AS t0_r2, members.`role_id` AS t0_r3, members.`created_on` AS t0_r4, projects.`id` AS t1_r0, projects.`name` AS t1_r1, projects.`description` AS t1_r2, projects.`homepage` AS t1_r3, projects.`is_public` AS t1_r4, projects.`parent_id` AS t1_r5, projects.`projects_count` AS t1_r6, projects.`created_on` AS t1_r7, projects.`updated_on` AS t1_r8, projects.`identifier` AS t1_r9, projects.`status` AS t1_r10, roles.`id` AS t2_r0, roles.`name` AS t2_r1, roles.`position` AS t2_r2 FROM members LEFT OUTER JOIN projects ON projects.id = members.project_id LEFT OUTER JOIN roles ON roles.id = members.role_id WHERE (members.user_id = 2 AND (projects.status=1)) ORDER BY projects.name[0m
+Completed in 0.15689 (6 reqs/sec) | Rendering: 0.03138 (20%) | DB: 0.01581 (10%) | 200 OK [http://localhost/answers/new]
