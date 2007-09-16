@@ -569,68 +569,72 @@ test3_26: En que medida te sientes capaz EN ESTE MOMENTO de competir en tu depor
 
 #los niveles de valoracion 0 a 4 igual que en el cuestionario 3
 #textos cuestionario 2 del test 1
-test1_1: Me preocupa la competición en general
-test1_2: Estoy nervios@
-test1_3: Me encuentro a gusto
-test1_4: Dudo de mi mism@
-test1_5: Me siento muy inquiet@
-test1_6: Me siento cómod@
-test1_7: Me preocupa no hacerlo tan bien como podría en la competición
-test1_8: Tengo el cuerpo tenso
-test1_9: Tengo confianza en mí mism@
-test1_10: Me preocupa perder
-test1_11: Tengo tensión en el estómago
-test1_12: Me siento segur@
-test1_13: Me preocupa que la presión me domine
-test1_14: Mi cuerpo está relajado
-test1_15: Estoy segur@ de que puedo hacerlo
-test1_16: Me preocupa rendir poco
-test1_17: Mi corazón va acelerado
-test1_18: Estoy segur@ de rendir bien
-test1_19: Me preocupa conseguir mi objetivo
-test1_20: Siento un vacío en mi estomago
-test1_21: Me siento mentalmente relajad@
-test1_22: Me preocupa que mi rendimiento decepcione a los demás
-test1_23: Tengo un sudor frío en las manos
-test1_24: Tengo confianza porque me imagino consiguiendo mi objetivo
-test1_25: Me preocupa no ser capaz de concentrarme
-test1_26: Mi cuerpo está rígido
-test1_27: Me siento seguro/a de rendir bajo presión  
+test1: Valoración Inicial Temporada
+test1_header2: Antes de la competición...
+test1_header4: Al practicar deporte, siento que tengo éxito cuando...
+test1_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente. A continuación aparecen una serie de comentarios que han sido utilizados por los deportistas para describir sus sentimientos o emociones antes de una competición. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
  # titulo cuestionario 3 del test1  
 test1_28: Indica los objetivos de la temporada
-# textos cuestionario 3 del test1 
+
 test1_29: Nivel de dificultad
 test1_30: Grado de confianza en conseguir los objetivos
 # titulo cuestionario 4 del test1
 test1_31: A continuación te vamos a hacer una serie de preguntas relacionadas con el entrenamiento y la competición. Queremos conocer tu opinión y solicitamos que nos respondas con sinceridad. Son datos estrictamente confidenciales.
 # textos cuestionario 4 del test1
-test1_32: Te preparas psicológicamente antes de la competición
-test1_33: Utilizas alguna técnica de relajación
-test1_34: Usas alguna estrategia para mantener el control cuando la situación deportiva te supera
-test1_35: Sueles visionar cosas de tu deporte
-test1_36: Utilizas la visualización para mejorar tu rendimiento
-test1_37: Sueles soñar con...
-test1_38: Sueles hablar contigo mismo
-test1_39: Haces algo para motivarte
-test1_40: Utilizas rutinas en tu preparación
-test1_41: Tienes/utilizas un plan de competición? 
+test1_16: Te preparas psicológicamente antes de la competición
+test1_17: Utilizas alguna técnica de relajación
+test1_18: Usas alguna estrategia para mantener el control cuando la situación deportiva te supera
+test1_19: Sueles visionar cosas de tu deporte
+test1_20: Utilizas la visualización para mejorar tu rendimiento
+test1_21: Sueles soñar con...
+test1_22: Sueles hablar contigo mismo
+test1_23: Haces algo para motivarte
+test1_24: Utilizas rutinas en tu preparación
+test1_25: Tienes/utilizas un plan de competición?
+# textos cuestionario 3 del test1  
+test1_26: Me preocupa la competición en general
+test1_27: Estoy nervios@
+test1_28: Me encuentro a gusto
+test1_29: Dudo de mi mism@
+test1_30: Me siento muy inquiet@
+test1_31: Me siento cómod@
+test1_32: Me preocupa no hacerlo tan bien como podría en la competición
+test1_33: Tengo el cuerpo tenso
+test1_34: Tengo confianza en mí mism@
+test1_35: Me preocupa perder
+test1_36: Tengo tensión en el estómago
+test1_37: Me siento segur@
+test1_38: Me preocupa que la presión me domine
+test1_39: Mi cuerpo está relajado
+test1_40: Estoy segur@ de que puedo hacerlo
+test1_41: Me preocupa rendir poco
+test1_42: Mi corazón va acelerado
+test1_43: Estoy segur@ de rendir bien
+test1_44: Me preocupa conseguir mi objetivo
+test1_45: Siento un vacío en mi estomago
+test1_46: Me siento mentalmente relajad@
+test1_47: Me preocupa que mi rendimiento decepcione a los demás
+test1_48: Tengo un sudor frío en las manos
+test1_49: Tengo confianza porque me imagino consiguiendo mi objetivo
+test1_50: Me preocupa no ser capaz de concentrarme
+test1_51: Mi cuerpo está rígido
+test1_52: Me siento seguro/a de rendir bajo presión
 #cabecera cuestionario 5 del test1
-test1_42: Al practicar deporte, siento que tengo éxito cuando...
-test1_43: Derroto a mis compañeros
+test1_53: Derroto a mis compañeros
 # textos cuestionario 5 del test1 											
-test1_44: Soy el/la mejor
-test1_45: Trabajo duro
-test1_46: Demuestro una clara mejoría personal
-test1_47: Lo hago mejor que los demás y las demás
-test1_48: Demuestro a la gente que soy el/la mejor
-test1_49: Supero las dificultades
-test1_50: Domino algo que no podía hacer
-test1_51: Hago algo que los demás no pueden hacer
-test1_52: Lo hago todo lo mejor que se
-test1_53: Alcanzo la meta que me propuse
-test1_54: Soy claramente superior a l@s demás
+test1_54: Soy el/la mejor
+test1_55: Trabajo duro
+test1_56: Demuestro una clara mejoría personal
+test1_57: Lo hago mejor que los demás y las demás
+test1_58: Demuestro a la gente que soy el/la mejor
+test1_59: Supero las dificultades
+test1_60: Domino algo que no podía hacer
+test1_61: Hago algo que los demás no pueden hacer
+test1_62: Lo hago todo lo mejor que se
+test1_63: Alcanzo la meta que me propuse
+test1_64: Soy claramente superior a l@s demás
 #cabecera cuestionario 6 del test1
-test1_55: En que medida te sientes capaz de competir en tu deporte
+test1_66: En que medida te sientes capaz de competir en tu deporte
 
 test4: Valoración Pre-Competición
 test4_header: Ahora mismo me siento...
