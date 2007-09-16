@@ -26,6 +26,7 @@ class AnswersController < ApplicationController
   # GET /answers/new
   def new
     @answer = Answer.new
+    render :layout  => 'test7'
   end 
  
   # GET /answers/1;edit

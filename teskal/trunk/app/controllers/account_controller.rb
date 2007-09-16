@@ -106,20 +106,18 @@ class AccountController < ApplicationController
     else
       if request.get?
         @user = User.new(:language => Setting.default_language)
-
-
       else
         @user = User.new(params[:user])
         @user.admin = false
         @user.login = params[:user][:login]
         @user.status = User::STATUS_REGISTERED
         @user.password, @user.password_confirmation = params[:password], params[:password_confirmation]
-
         token = Token.new(:user => @user, :action => "signup")
         if @user.save and token.save
           Mailer.deliver_register(token)
           flash[:notice] = l(:notice_account_register_done)
-          redirect_to :controller => 'welcome' and return
+          # redirect_to :controller => 'welcome' and return 
+                    redirect_to :controller => 'account', :action => 'login' 
         end
       end
     end

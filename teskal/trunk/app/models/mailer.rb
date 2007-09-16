@@ -18,7 +18,7 @@
 
 
 class Mailer < ActionMailer::Base
-  helper IssuesHelper
+  # helper IssuesHelper
   
   def account_information(user, password)
     set_language_if_valid user.language
