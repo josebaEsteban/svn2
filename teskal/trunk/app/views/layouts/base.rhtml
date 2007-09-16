@@ -26,8 +26,8 @@
 			<ul>
 				<li class="top"><%= link_to l(:label_home), { :controller => 'welcome' } %></li>
 
-				<li class="top"><%= link_to l(:label_help), { :controller => 'help', :ctrl => params[:controller], :page => params[:action] }, :onclick => "window.open(this.href); return false;"%></li><% if loggedin? %>
-
+<!-- 				<li class="top"><%= link_to l(:label_help), { :controller => 'help', :ctrl => params[:controller], :page => params[:action] }, :onclick => "window.open(this.href); return false;"%></li><% if loggedin? %>
+ -->
 				<li class="bottom"><%= link_to l(:label_logout), { :controller => 'account', :action => 'logout' } %></li><% else %>
 
 				<li class="bottom"><%= link_to l(:label_login), { :controller => 'account', :action => 'login' } %></li><% end %><% if loggedin? %>
