@@ -26,19 +26,26 @@
 			<ul>
 				<li class="top"><%= link_to l(:label_home), { :controller => 'welcome' } %></li>
 
-<!-- 				<li class="top"><%= link_to l(:label_help), { :controller => 'help', :ctrl => params[:controller], :page => params[:action] }, :onclick => "window.open(this.href); return false;"%></li><% if loggedin? %>
- -->
+<!-- 				
+	<li class="top"><%= link_to l(:label_help), { :controller => 'help', :ctrl => params[:controller], :page => params[:action] }, :onclick => "window.open(this.href); return false;"%></li>
+ -->      
+<% if loggedin? %>
 				<li class="bottom"><%= link_to l(:label_logout), { :controller => 'account', :action => 'logout' } %></li><% else %>
 
 				<li class="bottom"><%= link_to l(:label_login), { :controller => 'account', :action => 'login' } %></li><% end %><% if loggedin? %>
 
 				<li class="bottom"><%= link_to l(:label_my_account), { :controller => 'my', :action => 'account' } %></li><% end %><% if loggedin? %>
 
-				<li class="bottom"><%= link_to l(:label_project_plural), { :controller => 'answers' } %></li><% end %>
+				<li class="bottom"><%= link_to l(:label_project_plural), { :controller => 'answers' } %></li><% end %>  
+				
 			</ul>
-		</div><!-- <% if admin_loggedin? %>
+		</div>
+		
+<!-- 		
+<% if admin_loggedin? %>
 		<%= render :partial => 'admin/menu' %>        
-	<% end %>  -->
+	<% end %>  
+ -->
 		<% unless @project.nil? || @project.id.nil? %>
 
 		<div id="menuProject" class="menu" onmouseover="menuMouseover(event)">
