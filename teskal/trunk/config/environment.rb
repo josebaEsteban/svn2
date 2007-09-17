@@ -43,7 +43,7 @@ Rails::Initializer.run do |config|
   
 	# SMTP server configuration
 	config.action_mailer.smtp_settings = {
-		:address => "209.190.7.90",
+		:address => "smtp.teskal.com",
 		:port => 25,
 		:domain => "teskal.com",
 		:authentication => :login,

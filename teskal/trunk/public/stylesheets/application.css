@@ -193,7 +193,7 @@ img.right {
 	color:#606060; 
 }
 /**************** Icons *******************/
-.icon {
+/*.icon {
 	background-position: 0% 40%;
 	background-repeat: no-repeat;
 	padding-left: 20px;
@@ -342,7 +342,7 @@ img.right {
 }
 .icon22-settings {
 	background-image: url(../images/22x22/settings.png);
-}
+} */
 /**************** Content styles ****************/
 
 html>body #content {

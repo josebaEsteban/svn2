@@ -1,10 +1,10 @@
 class AnswersController < ApplicationController
   # GET /answers
-  # GET /answers.xml   
-   layout 'base'	 
-   before_filter :require_login   
-   
-   
+  # GET /answers.xml
+  layout 'base'
+  before_filter :require_login
+
+
   def index
     @answers = Answer.find(:all)
     respond_to do |format|
@@ -26,9 +26,8 @@ class AnswersController < ApplicationController
   # GET /answers/new
   def new
     @answer = Answer.new
-    render :layout  => 'test7'
-  end 
- 
+  end
+
   # GET /answers/1;edit
   def edit
     @answer = Answer.find(params[:id])
@@ -78,18 +77,5 @@ class AnswersController < ApplicationController
       format.html { redirect_to answers_url }
       format.xml  { head :ok }
     end
-  end  
-  def test7
-     @answer = Answer.new 
-      if @user.save  
-      end
-
-   end
-  
-  def test8
-    @answer = Answer.new 
-     if @user.save  
-     end
-
   end
 end
