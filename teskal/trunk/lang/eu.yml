@@ -42,10 +42,10 @@ general_fmt_date: %%d/%%m/%%Y
 general_fmt_datetime: %%d/%%m/%%Y %%H:%%M
 general_fmt_datetime_short: %%d/%%m %%H:%%M
 general_fmt_time: %%H:%%M
-general_text_No: 'No'
-general_text_Yes: 'Sí'
-general_text_no: 'no'
-general_text_yes: 'sí'
+general_text_No: 'Ez'
+general_text_Yes: 'Bai'
+general_text_no: 'ez'
+general_text_yes: 'bai'
 general_lang_name: 'Euskera'
 general_csv_separator: ';'
 general_csv_encoding: ISO-8859-1
@@ -482,13 +482,12 @@ default_priority_immediate: Ahora
 default_activity_design: Diseño
 default_activity_development: Desarrollo     
     
-test2_valor_0: 0 (nada)
+test2_valor_0: 0 (ezer ez)
 test2_valor_1: 1 (inoiz gutxitan)
 test2_valor_2: 2 (batzuetan)
 test2_valor_3: 3 (sarri)
 test2_valor_4: 4 (askotan)
 test2_valor_5: 5 (ia beti)
-    - 
 test2_valor_6: 6 (beti)
 
 test2: Estresarekio tolerantzia psikologikoaren galdetegia
