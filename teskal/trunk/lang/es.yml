@@ -156,7 +156,7 @@ field_delay: Delay
 
 setting_app_title: Título del aplicación
 setting_app_subtitle: Subtítulo del aplicación
-setting_welcome_text: Texto acogida
+setting_welcome_text: Texto de bienvenida
 setting_default_language: Idioma por defecto
 setting_login_required: Autentif. requerida
 setting_self_registration: Registro permitido
@@ -216,7 +216,7 @@ label_information_plural: Informaciones
 label_please_login: Conexión
 label_register: Registrar
 label_password_lost: ¿Olvidaste la contraseña?
-label_home: Acogida
+label_home: Inicio
 label_my_page: Mi página
 label_my_account: Mi cuenta
 label_my_projects: Mis tests
