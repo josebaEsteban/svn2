@@ -1,12 +1,12 @@
 _gloc_rule_default: '|n| n==1 ? "" : "_plural" '
 
 actionview_datehelper_select_day_prefix:
-actionview_datehelper_select_month_names: Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre
-actionview_datehelper_select_month_names_abbr: Ene,Feb,Mar,Abr,Mayo,Jun,Jul,Ago,Sep,Oct,Nov,Dic
+actionview_datehelper_select_month_names: Urtarrila, Otsaila, Martxoa, Apirila, Maiatza, Ekaina, Uztaila, Abuztua, Iraila, Urria, Azaroa, Abendua
+actionview_datehelper_select_month_names_abbr: Urt, Ots, Mar, Api, Mai, Eka, Uzt, Abu, Ira, Urr, Aza, Abe
 actionview_datehelper_select_month_prefix:
 actionview_datehelper_select_year_prefix:
-actionview_datehelper_time_in_words_day: 1 día
-actionview_datehelper_time_in_words_day_plural: %d días
+actionview_datehelper_time_in_words_day: Egun 1
+actionview_datehelper_time_in_words_day_plural: %d egun
 actionview_datehelper_time_in_words_hour_about: about an hour
 actionview_datehelper_time_in_words_hour_about_plural: about %d hours
 actionview_datehelper_time_in_words_hour_about_single: about an hour
@@ -17,27 +17,27 @@ actionview_datehelper_time_in_words_minute_plural: %d minutes
 actionview_datehelper_time_in_words_minute_single: 1 minute
 actionview_datehelper_time_in_words_second_less_than: less than a second
 actionview_datehelper_time_in_words_second_less_than_plural: less than %d seconds
-actionview_instancetag_blank_option: Please select
+actionview_instancetag_blank_option: Aukeratu mesedez
 
 activerecord_error_inclusion: is not included in the list
-activerecord_error_exclusion: está reservado
-activerecord_error_invalid: no es válido
+activerecord_error_exclusion: hartua dago
+activerecord_error_invalid: ez da baliokoa
 activerecord_error_confirmation: doesn't match confirmation
 activerecord_error_accepted: debe ser aceptado
-activerecord_error_empty: no puede estar en blanco
-activerecord_error_blank: no puede estar en blanco
-activerecord_error_too_long: es demasiado larga
-activerecord_error_too_short: demasiado corta
+activerecord_error_empty: ezin du zuriunerik egon
+activerecord_error_blank: ezin du zuriunerik egon
+activerecord_error_too_long: luzeegia da
+activerecord_error_too_short: laburregia da
 activerecord_error_wrong_length: is the wrong length
 activerecord_error_taken: has already been taken
-activerecord_error_not_a_number: no es un número
-activerecord_error_not_a_date: no es una fecha válida
-activerecord_error_greater_than_start_date: debe ser mayor que la fecha de comienzo
+activerecord_error_not_a_number: ez da zenbaki bat
+activerecord_error_not_a_date: ez da data egoki bat
+activerecord_error_greater_than_start_date: hasiera data baino handiagoa izan behar du
 activerecord_error_not_same_project: doesn't belong to the same project
 activerecord_error_circular_dependency: This relation would create a circular dependency
 
-general_fmt_age: %d año
-general_fmt_age_plural: %d años
+general_fmt_age: %d urtea
+general_fmt_age_plural: %d urteak
 general_fmt_date: %%d/%%m/%%Y
 general_fmt_datetime: %%d/%%m/%%Y %%H:%%M
 general_fmt_datetime_short: %%d/%%m %%H:%%M
@@ -50,7 +50,7 @@ general_lang_name: 'Euskera'
 general_csv_separator: ';'
 general_csv_encoding: ISO-8859-1
 general_pdf_encoding: ISO-8859-1
-general_day_names: Lunes,Martes,Miércoles,Jueves,Viernes,Sábado,Domingo
+general_day_names: Astelehena, Asteartea, Asteazkena, Osteguna, Ostirala, Larunbata, Igandea
 
 notice_account_updated: Kontua berraldatu egin da.
 notice_account_invalid_creditentials: Balio gabeko erabiltzaile edo eta pasa-hitza.
@@ -73,35 +73,35 @@ notice_not_authorized: No está autorizado a acceder a esta página
 mail_subject_lost_password: Zure pasa-hitza Teskal
 mail_subject_register: Kontuaren aktibazioa Teskal
 
-gui_validation_error: 1 error
-gui_validation_error_plural: %d errores
+gui_validation_error: akats 1
+gui_validation_error_plural: %d akats
 
-field_name: Nombre
-field_description: Descripción
-field_summary: Resumen
-field_is_required: Obligatorio
+field_name: Izena
+field_description: Deskribapena
+field_summary: Laburpena
+field_is_required: Derrigorrezkoa
 field_firstname: Nombre
-field_lastname: Apellido
-field_mail: Email
-field_filename: Fichero
-field_filesize: Tamaño
+field_lastname: Abizena
+field_mail: Emaila
+field_filename: Fitxategi
+field_filesize: Tamaina
 field_downloads: Telecargas
-field_author: Autor
-field_created_on: Creado
-field_updated_on: Actualizado
-field_field_format: Formato
+field_author: Egilea
+field_created_on: -n sortua
+field_updated_on: -n eguneratua
+field_field_format: Formatu
 field_is_for_all: Para todos los proyectos
 field_possible_values: Valores posibles
 field_regexp: Expresión regular
-field_min_length: Longitud mínima
-field_max_length: Longitud máxima
-field_value: Valor
-field_category: Categoría
-field_title: Título
+field_min_length: Gutxienezko luzera
+field_max_length: Gehienezko Luzera
+Field_Value: Balio
+Field_Category: Kategoria
+Field_Title: Izenburua
 field_project: Proyecto
 field_issue: Petición
 field_status: Estatuto
-field_notes: Notas
+Field_Notes: Oharrak
 field_is_closed: Petición resuelta
 field_is_default: Estatuto por defecto
 field_html_color: Color
@@ -111,24 +111,24 @@ field_due_date: Fecha debida
 field_assigned_to: Asignado a
 field_priority: Prioridad
 field_fixed_version: Versión corregida
-field_user: Usuario
-field_role: Papel
-field_homepage: Sitio web
-field_is_public: Público
+Field_User: Erabiltzaile
+Field_Role: Zeregin
+field_homepage: Web Gunea
+field_is_public: Publiko
 field_parent: Proyecto secundario de
 field_is_in_chlog: Consultar las peticiones en el histórico
 field_is_in_roadmap: Consultar las peticiones en el roadmap
-field_login: Identificador
-field_mail_notification: Notificación por mail
-field_admin: Administrador
-field_last_login_on: Última conexión
+field_login: Identifikatzailea
+field_mail_notification: Mail Bidezko Jakinarazpena
+field_admin: Administratzailea
+field_last_login_on: Azkenengo Konexioa
 field_language: Hizkuntza
 field_effective_date: Data
 field_password: Pasa-hitza
 field_new_password: Pasa-hitz berria
-field_password_confirmation: Confirmación
-field_version: Versión
-field_type: Tipo
+field_password_confirmation: Egiaztapena
+field_version: Bertsioa
+field_type: Mota
 field_host: Anfitrión
 field_port: Puerto
 field_account: Cuenta
@@ -157,9 +157,9 @@ field_delay: Delay
 setting_app_title: Título del aplicación
 setting_app_subtitle: Subtítulo del aplicación
 setting_welcome_text: Texto acogida
-setting_default_language: Idioma por defecto
-setting_login_required: Autentif. requerida
-setting_self_registration: Registro permitido
+setting_default_language: Gutxiegizko hizkuntza
+setting_login_required: Benetakotzea Eskatzen Da
+setting_self_registration: Erregistro Baimendua
 setting_attachment_max_size: Tamaño máximo del fichero
 setting_issues_export_limit: Issues export limit
 setting_mail_from: Email de la emisión
@@ -174,28 +174,28 @@ setting_commit_fix_keywords: Fixing keywords
 setting_autologin: Autologin
 setting_date_format: Date format
 
-label_user: Usuario
-label_user_plural: Usuarios
-label_user_new: Nuevo usuario
-label_project: Testa
-label_project_new: Nuevo testa
-label_project_plural: Tests
-label_project_all: Todos los tests
-label_project_latest: Los últimos tests
-label_issue: Petición
-label_issue_new: Nueva petición
+label_user: Erabiltzailea
+label_user_plural: Erabiltzaileak
+label_user_new: Erabiltzaile Berria
+label_project: Test
+label_project_new: Test Berria 
+label_project_plural: Testak
+label_project_all: Test guztiak 
+label_project_latest: Azkenengo testak
+label_issue: Eskaera
+label_issue_new: Eskaera berria
 label_issue_plural: Peticiones
 label_issue_view_all: Ver todas las peticiones
-label_document: Documento
-label_document_new: Nuevo documento
-label_document_plural: Documentos
+label_document: Dokumentu
+label_document_new: Dokumentu berria
+label_document_plural: Dokumentuak
 label_role: Papel
 label_role_plural: Papeles
 label_role_new: Nuevo papel
-label_role_and_permissions: Papeles y permisos
-label_member: Miembro
-label_member_new: Nuevo miembro
-label_member_plural: Miembros
+label_role_and_permissions: Rolak eta baimenak 
+label_member: Kidea
+label_member_new: Kide berria
+label_member_plural: Kideak
 label_tracker: Tracker
 label_tracker_plural: Trackers
 label_tracker_new: Nuevo tracker
@@ -211,45 +211,45 @@ label_custom_field_plural: Campos personalizados
 label_custom_field_new: Nuevo campo personalizado
 label_enumerations: Listas de valores
 label_enumeration_new: Nuevo valor
-label_information: Informacion
-label_information_plural: Informaciones
+label_information: Argibidea
+label_information_plural: Argibideak
 label_please_login: Conexión
-label_register: Registrar
-label_password_lost: ¿Olvidaste la contraseña?
-label_home: Acogida
-label_my_page: Mi página
-label_my_account: Mi cuenta
-label_my_projects: Mis tests
-label_administration: Administración
-label_login: Conexión
-label_logout: Desconexión
-label_help: Ayuda
+label_register: Erregistratu
+label_password_lost: Pasa-hitza ahaztu zaizu? 
+label_home: Hasiera
+label_my_page: Nire orria
+label_my_account: Nire kontua
+label_my_projects: Nire testak
+label_administration: Administrazioa
+label_login: Konexio
+label_logout: Deskonexio
+label_help: Laguntza
 label_reported_issues: Peticiones registradas
 label_assigned_to_me_issues: Peticiones que me están asignadas
 label_last_login: Última conexión
 label_last_updates: Actualizado
 label_last_updates_plural: %d Actualizados
-label_registered_on: Inscrito el
-label_activity: Actividad
+label_registered_on: (a)n inskribatua
+label_activity: Jarduera
 label_new: Nuevo
-label_logged_as: Conectado como
-label_environment: Environment
-label_authentication: Autentificación
-label_auth_source: Modo de la autentificación
-label_auth_source_new: Nuevo modo de la autentificación
-label_auth_source_plural: Modos de la autentificación
+label_logged_as: modura konektatua 
+label_environment: Ingurune
+label_authentication: Benetakotzea
+label_auth_source: Benetakotzea modua
+label_auth_source_new: Benetakotzeko modu berria
+label_auth_source_plural: Benetakotze moduak
 label_subproject_plural: Proyectos secundarios
 label_min_max_length: Longitud mín - máx
-label_list: Lista
+label_list: Zerrenda
 label_date: Data
-label_integer: Número
+label_integer: Zenbakia
 label_boolean: Boleano
-label_string: Texto
+label_string: Testua
 label_text: Texto largo
-label_attribute: Cualidad
-label_attribute_plural: Cualidades
-label_download: %d Telecarga
-label_download_plural: %d Telecargas
+label_attribute: Atributu
+label_attribute_plural: Atributuak
+label_download: %d descarga
+label_download_plural: %d deskargak
 label_no_data: Ningunos datos a exhibir
 label_change_status: Cambiar el estatuto
 label_history: Histórico
@@ -257,8 +257,8 @@ label_attachment: Fichero
 label_attachment_new: Nuevo fichero
 label_attachment_delete: Suprimir el fichero
 label_attachment_plural: Ficheros
-label_report: Informe
-label_report_plural: Informes
+label_report: Txostena
+label_report_plural: Txostenak
 label_news: Noticia
 label_news_new: Nueva noticia
 label_news_plural: Noticias
@@ -405,40 +405,40 @@ label_date_from: From
 label_date_to: To
 label_language_based: Language based
 
-button_login: Conexión
-button_submit: Someter
-button_save: Validar
+button_login: Konexio
+button_submit: Bidali
+button_save: Balioztatu
 button_check_all: Seleccionar todo
 button_uncheck_all: No seleccionar nada
-button_delete: Suprimir
-button_create: Crear
-button_test: Testar
-button_edit: Modificar
-button_add: Añadir
-button_change: Cambiar
-button_apply: Aplicar
-button_clear: Anular
-button_lock: Bloquear
-button_unlock: Desbloquear
-button_download: Telecargar
-button_list: Listar
-button_view: Ver
-button_move: Mover
-button_back: Atrás
-button_cancel: Cancelar
-button_activate: Activar
-button_sort: Clasificar
+button_delete: Ezabatu
+button_create: Sortu
+button_test: Testatu
+button_edit: Berraldatu
+button_add: Erantsi
+button_change: Aldatu
+button_apply: Aplikatu
+button_clear: Baliogabetu
+button_lock: Blokeatu
+button_unlock: Desblokeatu
+button_download: Deskargatu
+button_list: Zerrendatu
+button_view: Ikusi
+button_move: Mugitu
+button_back: Atzera
+button_cancel: Ezeztatu
+button_activate: Aktibatu
+button_sort: Ordenatu
 button_log_time: Log time
 button_rollback: Rollback to this version
 button_watch: Watch
 button_unwatch: Unwatch
-button_reply: Reply
-button_archive: Archive
+button_reply: Erantzun
+button_archive: Artxibatu
 button_unarchive: Unarchive
 
-status_active: active
-status_registered: registered
-status_locked: locked
+status_active: aktibo
+status_registered: erregistratu
+status_locked: blokeatuta
 
 text_select_mail_notifications: Seleccionar las actividades que necesitan la activación de la notificación por mail.
 text_regexp_info: eg. ^[A-Z0-9]+$
