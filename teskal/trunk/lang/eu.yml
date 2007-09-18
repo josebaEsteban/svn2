@@ -189,9 +189,9 @@ label_issue_view_all: Ver todas las peticiones
 label_document: Dokumentu
 label_document_new: Dokumentu berria
 label_document_plural: Dokumentuak
-label_role: Papel
-label_role_plural: Papeles
-label_role_new: Nuevo papel
+label_role: Rola
+label_role_plural: Rolak
+label_role_new: Rola berria
 label_role_and_permissions: Rolak eta baimenak 
 label_member: Kidea
 label_member_new: Kide berria
@@ -255,7 +255,7 @@ label_change_status: Cambiar el estatuto
 label_history: Histórico
 label_attachment: Fichero
 label_attachment_new: Nuevo fichero
-label_attachment_delete: Suprimir el fichero
+label_attachment_delete: Borrar el fichero
 label_attachment_plural: Ficheros
 label_report: Txostena
 label_report_plural: Txostenak
@@ -284,8 +284,8 @@ label_current_status: Estado actual
 label_new_statuses_allowed: Nuevos estatutos autorizados
 label_all: todos
 label_none: ninguno
-label_next: Próximo
-label_previous: Precedente
+label_next: Siguiente
+label_previous: Anterior
 label_used_by: Utilizado por
 label_details: Detalles
 label_add_note: Agregar una nota
