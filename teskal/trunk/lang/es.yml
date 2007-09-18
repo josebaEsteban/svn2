@@ -284,8 +284,8 @@ label_current_status: Estado actual
 label_new_statuses_allowed: Nuevos estatutos autorizados
 label_all: todos
 label_none: ninguno
-label_next: Próximo
-label_previous: Precedente
+label_next: Siguiente
+label_previous: Anterior
 label_used_by: Utilizado por
 label_details: Detalles
 label_add_note: Agregar una nota
@@ -406,7 +406,7 @@ label_date_to: To
 label_language_based: Language based
 
 button_login: Conexión
-button_submit: Someter
+button_submit: Guardar
 button_save: Validar
 button_check_all: Seleccionar todo
 button_uncheck_all: No seleccionar nada
