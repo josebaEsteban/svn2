@@ -19,17 +19,17 @@ actionview_datehelper_time_in_words_second_less_than: less than a second
 actionview_datehelper_time_in_words_second_less_than_plural: less than %d seconds
 actionview_instancetag_blank_option: Aukeratu mesedez
 
-activerecord_error_inclusion: is not included in the list
+activerecord_error_inclusion: ez dago zerrendan barne sartuta
 activerecord_error_exclusion: hartua dago
 activerecord_error_invalid: ez da baliokoa
-activerecord_error_confirmation: doesn't match confirmation
-activerecord_error_accepted: debe ser aceptado
+activerecord_error_confirmation: ez dator egiaztapenarekin bat
+activerecord_error_accepted: onartua izan behar du
 activerecord_error_empty: ezin du zuriunerik egon
 activerecord_error_blank: ezin du zuriunerik egon
 activerecord_error_too_long: luzeegia da
 activerecord_error_too_short: laburregia da
-activerecord_error_wrong_length: is the wrong length
-activerecord_error_taken: has already been taken
+activerecord_error_wrong_length: luzera desegokia
+activerecord_error_taken: hartua izan da / existitzen da
 activerecord_error_not_a_number: ez da zenbaki bat
 activerecord_error_not_a_date: ez da data egoki bat
 activerecord_error_greater_than_start_date: hasiera data baino handiagoa izan behar du
@@ -65,10 +65,10 @@ notice_successful_create: Successful creation.
 notice_successful_update: Successful update.
 notice_successful_delete: Successful deletion.
 notice_successful_connection: Successful connection.
-notice_file_not_found: La página que intentabas tener acceso no existe ni se ha quitado.
+notice_file_not_found: sartu nahi zenueneko orria ez da existitzen eta ez da kendua izan ere.
 notice_locking_conflict: Data have been updated by another user.
 notice_scm_error: La entrada y/o la revisión no existe en el depósito.
-notice_not_authorized: No está autorizado a acceder a esta página
+notice_not_authorized: Ez zaude orri honetan sartzeko baimendua
 
 mail_subject_lost_password: Zure pasa-hitza Teskal
 mail_subject_register: Kontuaren aktibazioa Teskal
@@ -106,7 +106,7 @@ field_is_closed: Petición resuelta
 field_is_default: Estatuto por defecto
 field_html_color: Color
 field_tracker: Tracker
-field_subject: Tema
+field_subject: Gaia
 field_due_date: Fecha debida
 field_assigned_to: Asignado a
 field_priority: Prioridad
@@ -131,23 +131,23 @@ field_version: Bertsioa
 field_type: Mota
 field_host: Anfitrión
 field_port: Puerto
-field_account: Cuenta
+field_account: Kontua
 field_base_dn: Base DN
 field_attr_login: Cualidad del identificador
 field_attr_firstname: Cualidad del nombre
 field_attr_lastname: Cualidad del apellido
 field_attr_mail: Cualidad del Email
 field_onthefly: Creación del usuario On-the-fly
-field_start_date: Comienzo
+field_start_date: Hasiera
 field_done_ratio: %% Realizado
 field_auth_source: Modo de la autentificación
 field_hide_mail: Ocultar mi email address
-field_comments: Comentario
+field_comments: Iruzkina
 field_url: URL
 field_start_page: Página principal
 field_subproject: Proyecto secundario
 field_hours: Horas
-field_activity: Actividad
+field_activity: Jarduera
 field_spent_on: Data
 field_identifier: Identifier
 field_is_filter: Used as a filter
@@ -239,7 +239,7 @@ label_auth_source: Benetakotzea modua
 label_auth_source_new: Benetakotzeko modu berria
 label_auth_source_plural: Benetakotze moduak
 label_subproject_plural: Proyectos secundarios
-label_min_max_length: Longitud mín - máx
+label_min_max_length: gutxieneko – gehienezko luzera
 label_list: Zerrenda
 label_date: Data
 label_integer: Zenbakia
@@ -252,16 +252,16 @@ label_download: %d descarga
 label_download_plural: %d deskargak
 label_no_data: Ningunos datos a exhibir
 label_change_status: Cambiar el estatuto
-label_history: Histórico
-label_attachment: Fichero
+label_history: Historiko
+label_attachment: Fitxategi
 label_attachment_new: Nuevo fichero
 label_attachment_delete: Borrar el fichero
 label_attachment_plural: Ficheros
 label_report: Txostena
 label_report_plural: Txostenak
-label_news: Noticia
-label_news_new: Nueva noticia
-label_news_plural: Noticias
+label_news: Albistea
+label_news_new: Albiste berria
+label_news_plural: Albisteak
 label_news_latest: Últimas noticias
 label_news_view_all: Ver todas las noticias
 label_change_log: Cambios
@@ -278,17 +278,17 @@ label_open_issues: abierta
 label_open_issues_plural: abiertas
 label_closed_issues: cerrada
 label_closed_issues_plural: cerradas
-label_total: Total
-label_permissions: Permisos
-label_current_status: Estado actual
+label_total: Guztira
+label_permissions: Baimenak
+label_current_status: Egungo egoera
 label_new_statuses_allowed: Nuevos estatutos autorizados
-label_all: todos
-label_none: ninguno
-label_next: Siguiente
-label_previous: Anterior
-label_used_by: Utilizado por
-label_details: Detalles
-label_add_note: Agregar una nota
+label_all: Guztiak
+label_none: Bat ere ez
+label_next: Hurrengoa
+label_previous: Aurrekoa
+label_used_by: (e)k erabilia
+label_details: Xehetasunak
+label_add_note: Ohar bat erantsi
 label_per_page: Por la página
 label_calendar: Calendario
 label_months_from: meses de
@@ -320,29 +320,29 @@ label_contains: contiene
 label_not_contains: no contiene
 label_day_plural: días
 label_repository: Depósito
-label_browse: Hojear
+label_browse: Gainbegiratu
 label_modification: %d modificación
 label_modification_plural: %d modificaciones
 label_revision: Revisión
 label_revision_plural: Revisiones
-label_added: agregado
-label_modified: modificado
-label_deleted: suprimido
+label_added: erantsia
+label_modified: berraldatua
+label_deleted: ezabatua
 label_latest_revision: La revisión más última
 label_latest_revision_plural: Latest revisions
 label_view_revisions: Ver las revisiones
 label_max_size: Tamaño máximo
 label_on: en
-label_sort_highest: Primero
+label_sort_highest: Lehen
 label_sort_higher: Subir
 label_sort_lower: Bajar
-label_sort_lowest: Último
+label_sort_lowest: Azken
 label_roadmap: Roadmap
 label_roadmap_due_in: Due in 
 label_roadmap_no_issues: No issues for this version
-label_search: Búsqueda
-label_result: %d resultado
-label_result_plural: %d resultados
+label_search: Bilaketa
+label_result: %d emaitza
+label_result_plural: %d emaitzak
 label_all_words: Todas las palabras
 label_wiki: Wiki
 label_wiki_edit: Wiki edit
@@ -393,11 +393,11 @@ label_board: Forum
 label_board_new: New forum
 label_board_plural: Forums
 label_topic_plural: Topics
-label_message_plural: Messages
+label_message_plural: Mezuak
 label_message_last: Last message
 label_message_new: New message
 label_reply_plural: Replies
-label_send_information: Información de la cuenta enviada al usuario
+label_send_information: Erabiltzaileari bidalitako kontuaren informazioa
 label_year: Year
 label_month: Month
 label_week: Week
