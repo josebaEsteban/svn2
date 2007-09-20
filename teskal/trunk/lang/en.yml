@@ -482,6 +482,82 @@ default_priority_immediate: Immediate
 default_activity_design: Design
 default_activity_development: Development
 
+#los niveles de valoracion 0 a 4 igual que en el cuestionario 3
+#textos cuestionario 2 del test 1
+test1: Valoración Inicial Temporada
+test1_header2: Antes de la competición...
+test1_header4: Al practicar deporte, siento que tengo éxito cuando...
+test1_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente. A continuación aparecen una serie de comentarios que han sido utilizados por los deportistas para describir sus sentimientos o emociones antes de una competición. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
+
+# titulo cuestionario 3 del test1  
+test1_28: Indica los objetivos de la temporada
+
+test1_29: Nivel de dificultad
+test1_30: Grado de confianza en conseguir los objetivos
+
+# titulo cuestionario 4 del test1
+test1_31: A continuación te vamos a hacer una serie de preguntas relacionadas con el entrenamiento y la competición. Queremos conocer tu opinión y solicitamos que nos respondas con sinceridad. Son datos estrictamente confidenciales.
+
+# textos cuestionario 4 del test1
+test1_16: Te preparas psicológicamente antes de la competición
+test1_17: Utilizas alguna técnica de relajación
+test1_18: Usas alguna estrategia para mantener el control cuando la situación deportiva te supera
+test1_19: Sueles visionar cosas de tu deporte
+test1_20: Utilizas la visualización para mejorar tu rendimiento
+test1_21: Sueles soñar con...
+test1_22: Sueles hablar contigo mismo
+test1_23: Haces algo para motivarte
+test1_24: Utilizas rutinas en tu preparación
+test1_25: Tienes/utilizas un plan de competición?
+
+# textos cuestionario 3 del test1  
+test1_26: I am concerned about this competition
+test1_27: I feel nervous
+test1_28: I feel at ease
+test1_29: I have self-doubts
+test1_30: I feel jittery
+test1_31: I feel confortable
+test1_32: I am concerned that I may not do as well in this competition as I could
+test1_33: My body feels tense
+test1_34: I feel self-confident
+test1_35: I am concerned about losing
+test1_36: I feel tense in my stomach
+test1_37: I feel secure
+test1_38: I am concerned about choking under pressure
+test1_39: My body feels relaxed
+test1_40: I am confident I can meet the challenge
+test1_41: I am concerned about performing poorly
+test1_42: My heart is racing
+test1_43: I am confident about performing well
+test1_44: I am concerned about reaching my goal
+test1_45: I feel my stomach sinking
+test1_46: I feel mentally relaxed
+test1_47: I am concerned that others will be disappointed with my performance
+test1_48: My hands are clammy
+test1_49: I am confident because I mentally picture myself reaching my goal
+test1_50: I'm concerned I won't be able to concentrate
+test1_51: My body feels tight
+test1_52: I'm confident of coming through under pressure
+
+#cabecera cuestionario 5 del test1
+test1_53: I beat other people 
+
+# textos cuestionario 5 del test1 											
+test1_54: I am the best
+test1_55: I work hard
+test1_56: I show clear personal improvements
+test1_57: I win
+test1_58: I show other people that I am the best
+test1_59: I overcome difficulties
+test1_60: I reach a personal goal
+test1_61: I outperform my opponents
+test1_62: I perform to the best of my ability
+test1_63: I reach a goal
+test1_64: I am clearly superior
+
+#cabecera cuestionario 6 del test1
+test1_66: En que medida te sientes capaz de competir en tu deporte
+
 test2_valor_0: 0 (nothing)
 test2_valor_1: 1 (rarely)
 test2_valor_2: 2 (sometimes)
@@ -491,7 +567,7 @@ test2_valor_5: 5 (almost always)
 test2_valor_6: 6 (always)
 
 test2: Questionnaire Psychological Stress Tolerance
-test2_header: During the last month...  
+test2_header: During the last month...
 test2_intro: Below you have a series of phrases related to different aspects of the training and the competition on which we want to gather your opinion. Please, read them with tranquillity, answer sincerely and check the option with which you agree more or than it describes better your opinion.
 test2_1: Parts of my body were aching
 test2_2: I could not get rest during the breaks
@@ -524,11 +600,11 @@ test2_28: I dealt with emotional problems in my sport very calmly
 
 test7_valor_1: 0 (no, en absoluto)
 test7_valor_7: 6 (totalmente)
-test7: Questionnaire of Satisfaction (Individual Sports)  
+test7: Questionnaire of Satisfaction (Individual Sports)
 test7_header: The degree of satisfaction with...
 test7_intro: Below you have a series of phrases related to different aspects of the training and the competition on which we want to gather your opinion. Please, read them with tranquillity, answer sincerely and check the option with which you agree more or than it describes better your opinion.
-test7_1: El nivel que he alcanzado en mis objetivos durante la temporada.  	
-test7_2: La mejora de mi rendimiento en la temporada anterior. 	
+test7_1: El nivel que he alcanzado en mis objetivos durante la temporada.
+test7_2: La mejora de mi rendimiento en la temporada anterior.
 test7_3: El nivel de mejoría de mis habilidades hasta ahora.
 test7_4: El grado hasta el que utilizo mis habilidades.
 test7_5: El nivel de utilización de mi talento.
@@ -551,20 +627,20 @@ test8_valor_7: 6 (totally)
 test8: Questionnaire of Satisfaction (Collective Sports)
 test8_header: The degree of satisfaction with...
 test8_intro: Below you have a series of phrases related to different aspects of the training and the competition on which we want to gather your opinion. Please, read them with tranquillity, answer sincerely and check the option with which you agree more or than it describes better your opinion.
-test8_1: The level that I have reached in my goals during the season.  	
-test8_2: The level that I have reached in my goals during the season. 	
+test8_1: The level that I have reached in my goals during the season.
+test8_2: The level that I have reached in my goals during the season.
 test8_3: The level of improvement of my abilities until now.
-test8_4: The number of competitions won and lost during the season.  
+test8_4: The number of competitions won and lost during the season.
 test8_5: The global performance of the team during this season.	
 test8_6: The measurement in which the team has obtained its goals of season until now.
 test8_7: The level which they use my abilities.
 test8_8: The level of use of my talent.
-test8_9: La medida en que mi rol se corresponde con mi potencial. 	
-test8_10: La cantidad de tiempo que juego durante la competición. 	
+test8_9: La medida en que mi rol se corresponde con mi potencial.
+test8_10: La cantidad de tiempo que juego durante la competición.
 test8_11: El grado de correspondencia entre mi rol en el equipo con mi rol preferido.
 test8_12: La elección que el/la entrenador/a hace sobre los jugadores durante la competición.
 test8_13: Las tácticas utilizadas durante la competición.
-test8_14: La elección que el/la entrenador/a hace de las estrategias en la competición. 	
+test8_14: La elección que el/la entrenador/a hace de las estrategias en la competición.
 test8_15: La forma en que el/la entrenador/a hace ajustes durante la competición.
 test8_16: Los planes de juego del/la entrenador/a.
 test8_17: La manera en que el/la entrenador/a combina el talento disponible.
@@ -581,16 +657,16 @@ test8_27: La orientación que recibo de mis compañeros de equipo.
 test8_28: El feed-back constructivo que recibo de mis compañeros.
 test8_29: Mi estatus social en el equipo.
 test8_30: El rol que juego en la vida social del equipo.
-test8_31: La medida en que mis compañeros me aceptan socialmente. 	
-test8_32: El grado hasta el que los miembros del equipo son éticos. 	
-test8_33: El sentido que mis compañeros tienen acerca del juego limpio. 	
-test8_34: El nivel de deportividad de mis compañeros de equipo. 	
-test8_35: La forma en que el equipo trabaja para ser el mejor. 	
-test8_36: El grado hasta el que los miembros del equipo comparten el mismo objetivo. 	
+test8_31: La medida en que mis compañeros me aceptan socialmente.
+test8_32: El grado hasta el que los miembros del equipo son éticos.
+test8_33: El sentido que mis compañeros tienen acerca del juego limpio.
+test8_34: El nivel de deportividad de mis compañeros de equipo.
+test8_35: La forma en que el equipo trabaja para ser el mejor.
+test8_36: El grado hasta el que los miembros del equipo comparten el mismo objetivo.
 test8_37: La dedicación de los miembros del equipo a trabajar conjuntamente para conseguir los objetivos del equipo. 	
-test8_38: El grado en el que los miembros del equipo “juegan como equipo”. 	
-test8_39: El grado hasta el que hago lo mejor que puedo para el equipo. 	
-test8_40: Mi dedicación personal durante el entrenamiento. 	
-test8_41: Mi entusiasmo durante las competiciones. 	
+test8_38: El grado en el que los miembros del equipo “juegan como equipo”.
+test8_39: El grado hasta el que hago lo mejor que puedo para el equipo.
+test8_40: Mi dedicación personal durante el entrenamiento.
+test8_41: Mi entusiasmo durante las competiciones.
 test8_42: Mi compromiso hacia el equipo
 
