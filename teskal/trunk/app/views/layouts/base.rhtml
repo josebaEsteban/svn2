@@ -21,19 +21,19 @@
 <body>
 	<div class="content">
 		<div id="header"></div>
-
-		<div id="navigation">
-			<ul>
-				<li class="top"><%= link_to l(:label_home), { :controller => 'welcome' } %></li>
+		<div id="nav">
+			<ul id="navTeskal">
+				<li> <%= link_to l(:label_home), { :controller => 'welcome' } %></li>
 
 <!-- 				
 	<li class="top"><%= link_to l(:label_help), { :controller => 'help', :ctrl => params[:controller], :page => params[:action] }, :onclick => "window.open(this.href); return false;"%></li>
  -->      
 <% if loggedin? %>
-				<li class="bottom"><%= link_to l(:label_logout), { :controller => 'account', :action => 'logout' } %></li><% else %>
+				<li><%= link_to l(:label_logout), { :controller => 'account', :action => 'logout' } %></li><% else %>
 
-				<li class="bottom"><%= link_to l(:label_login), { :controller => 'account', :action => 'login' } %></li><% end %><% if loggedin? %>
-
+				<li><a href="/account/login" class="active"><%= l(:label_login) %></a></li><% end %> 
+				
+<% if loggedin? %>
 				<li class="bottom"><%= link_to l(:label_my_account), { :controller => 'my', :action => 'account' } %></li><% end %><% if loggedin? %>
 
 				<li class="bottom"><%= link_to l(:label_project_plural), { :controller => 'answers' } %></li><% end %>  

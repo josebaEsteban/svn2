@@ -85,7 +85,8 @@ img.right {
 	top: 0px;  
  	width: 830px;*/
 	height: 158px;
-}
+}    
+/*
 #header_1 {
 	margin: 0;
 	background-image: url(images/logo_header.png);
@@ -112,7 +113,9 @@ img.right {
 	top: -217px;
 	width: 13px;
 	height: 11px;
-}
+}     
+
+*/
 #header a {
 	color:#fff;
 }
@@ -192,157 +195,7 @@ img.right {
 	text-align: left;
 	color:#606060; 
 }
-/**************** Icons *******************/
-/*.icon {
-	background-position: 0% 40%;
-	background-repeat: no-repeat;
-	padding-left: 20px;
-	padding-top: 2px;
-	padding-bottom: 3px;
-	vertical-align: middle;
-}
-#navigation .icon {
-	background-position: 4px 50%;
-}
-.icon22 {
-	background-position: 0% 40%;
-	background-repeat: no-repeat;
-	padding-left: 26px;
-	line-height: 22px;
-	vertical-align: middle;
-}
-.icon-add {
-	background-image: url(../images/add.png);
-}
-.icon-edit {
-	background-image: url(../images/edit.png);
-}
-.icon-del {
-	background-image: url(../images/delete.png);
-}
-.icon-move {
-	background-image: url(../images/move.png);
-}
-.icon-save {
-	background-image: url(../images/save.png);
-}
-.icon-cancel {
-	background-image: url(../images/cancel.png);
-}
-.icon-pdf {
-	background-image: url(../images/pdf.png);
-}
-.icon-csv {
-	background-image: url(../images/csv.png);
-}
-.icon-html {
-	background-image: url(../images/html.png);
-}
-.icon-txt {
-	background-image: url(../images/txt.png);
-}
-.icon-file {
-	background-image: url(../images/file.png);
-}
-.icon-folder {
-	background-image: url(../images/folder.png);
-}
-.icon-package {
-	background-image: url(../images/package.png);
-}
-.icon-home {
-	background-image: url(../images/home.png);
-}
-.icon-user {
-	background-image: url(../images/user.png);
-}
-.icon-mypage {
-	background-image: url(../images/user_page.png);
-}
-.icon-admin {
-	background-image: url(../images/admin.png);
-}
-.icon-projects {
-	background-image: url(../images/projects.png);
-}
-.icon-logout {
-	background-image: url(../images/logout.png);
-}
-.icon-help {
-	background-image: url(../images/help.png);
-}
-.icon-attachment {
-	background-image: url(../images/attachment.png);
-}
-.icon-index {
-	background-image: url(../images/index.png);
-}
-.icon-history {
-	background-image: url(../images/history.png);
-}
-.icon-feed {
-	background-image: url(../images/feed.png);
-}
-.icon-time {
-	background-image: url(../images/time.png);
-}
-.icon-stats {
-	background-image: url(../images/stats.png);
-}
-.icon-warning {
-	background-image: url(../images/warning.png);
-}
-.icon-fav {
-	background-image: url(../images/fav.png);
-}
-.icon-fav-off {
-	background-image: url(../images/fav_off.png);
-}
-.icon-reload {
-	background-image: url(../images/reload.png);
-}
-.icon-lock {
-	background-image: url(../images/locked.png);
-}
-.icon-unlock {
-	background-image: url(../images/unlock.png);
-}
-.icon22-projects {
-	background-image: url(../images/22x22/projects.png);
-}
-.icon22-users {
-	background-image: url(../images/22x22/users.png);
-}
-.icon22-tracker {
-	background-image: url(../images/22x22/tracker.png);
-}
-.icon22-role {
-	background-image: url(../images/22x22/role.png);
-}
-.icon22-workflow {
-	background-image: url(../images/22x22/workflow.png);
-}
-.icon22-options {
-	background-image: url(../images/22x22/options.png);
-}
-.icon22-notifications {
-	background-image: url(../images/22x22/notifications.png);
-}
-.icon22-authent {
-	background-image: url(../images/22x22/authent.png);
-}
-.icon22-info {
-	background-image: url(../images/22x22/info.png);
-}
-.icon22-comment {
-	background-image: url(../images/22x22/comment.png);
-}
-.icon22-package {
-	background-image: url(../images/22x22/package.png);
-}
-.icon22-settings {
-	background-image: url(../images/22x22/settings.png);
-} */
+
 /**************** Content styles ****************/
 
 html>body #content {
@@ -937,3 +790,45 @@ html>body #ajax-indicator {
 	padding-left: 26px;
 	vertical-align: bottom;
 }
+
+#nav {
+	position:relative;
+	/*  margin-left:290px;*/
+ 	height:100%;
+	
+	left: 470px;
+	top: -33px;
+	width: 400px;
+	font-family: verdana, sans-serif;
+	font-size: 10.4px;
+	font-weight: normal;
+	font-variant: normal; 
+}
+
+#navTeskal {
+	margin: 0;
+	padding: 0 0 20px 10px;
+	}
+
+#navTeskal li {
+	margin: 0; 
+	padding: 0px;
+	display: inline;
+	list-style-type: none;
+	}
+	
+#navTeskal a:link, #navTeskal a:visited {
+	float: right;
+	font-size: 11px;
+	line-height: 28px;
+	font-weight: normal;
+	padding: 0px 12px 6px 0px;
+	text-decoration: none;
+	color: #708491;
+	}
+
+#navTeskal a:link.active, #navTeskal a:visited.active, #navTeskal a:hover {
+	color: #000;
+	background: url(/images/teskalito_hover.png) no-repeat top left;
+	}
+	
