@@ -22,7 +22,7 @@ actionview_instancetag_blank_option: Selecione
 activerecord_error_inclusion: nao esta incluido na lista
 activerecord_error_exclusion: esta reservado
 activerecord_error_invalid: e invalido
-activerecord_error_confirmation: confirmacao nao confere
+activerecord_error_confirmation: confirmaçao nao confere
 activerecord_error_accepted: deve ser aceito
 activerecord_error_empty: nao pode ser vazio
 activerecord_error_blank: nao pode estar em branco
@@ -71,13 +71,13 @@ notice_scm_error: A entrada e/ou a revisao nao existem no repositorio.
 notice_not_authorized: You are not authorized to access this page.
 
 mail_subject_lost_password: Sua senha do Teskal.
-mail_subject_register: Ativacao de conta do Teskal.
+mail_subject_register: Ativaçao de conta do Teskal.
 
 gui_validation_error: 1 erro
 gui_validation_error_plural: %d erros
 
 field_name: Nome
-field_description: Descricao
+field_description: Descriçao
 field_summary: Sumario
 field_is_required: Obrigatorio
 field_firstname: Primeiro nome
@@ -119,14 +119,14 @@ field_parent: Sub-projeto de
 field_is_in_chlog: Tarefas mostradas no changelog
 field_is_in_roadmap: Tarefas mostradas no roadmap
 field_login: Login
-field_mail_notification: Notificacoes por email
+field_mail_notification: Notificaçoes por email
 field_admin: Administrador
 field_last_login_on: Ultima conexao
 field_language: Lingua
 field_effective_date: Data
 field_password: Senha
 field_new_password: Nova senha
-field_password_confirmation: Confirmacao
+field_password_confirmation: Confirmaçao
 field_version: Versao
 field_type: Tipo
 field_host: Servidor
@@ -137,10 +137,10 @@ field_attr_login: Atributo login
 field_attr_firstname: Atributo primeiro nome
 field_attr_lastname: Atributo ultimo nome
 field_attr_mail: Atributo email
-field_onthefly: Criacao de usuario on-the-fly
+field_onthefly: Criaçao de usuario on-the-fly
 field_start_date: Inicio
 field_done_ratio: %% Terminado
-field_auth_source: Modo de autenticacao
+field_auth_source: Modo de autenticaçao
 field_hide_mail: Esconder meu email
 field_comments: Comentario
 field_url: URL
@@ -154,18 +154,18 @@ field_is_filter: Used as a filter
 field_issue_to_id: Related issue
 field_delay: Delay
 
-setting_app_title: Titulo da aplicacao
-setting_app_subtitle: Sub-titulo da aplicacao
+setting_app_title: Titulo da aplicaçao
+setting_app_subtitle: Sub-titulo da aplicaçao
 setting_welcome_text: Texto de boa-vinda
 setting_default_language: Lingua padrao
-setting_login_required: Autenticacao obrigatoria
+setting_login_required: Autenticaçao obrigatoria
 setting_self_registration: Registro de si mesmo permitido
 setting_attachment_max_size: Tamanho maximo do anexo
-setting_issues_export_limit: Limite de exportacao das tarefas
+setting_issues_export_limit: Limite de exportaçao das tarefas
 setting_mail_from: Email enviado de
 setting_host_name: Servidor
 setting_text_formatting: Formato do texto
-setting_wiki_compression: Compactacao do historio do Wiki
+setting_wiki_compression: Compactaçao do historio do Wiki
 setting_feeds_limit: Limite do Feed
 setting_autofetch_changesets: Autofetch commits
 setting_sys_api_enabled: Ativa WS para gerenciamento do repositorio
@@ -209,7 +209,7 @@ label_issue_category_new: Nova categoria
 label_custom_field: Campo personalizado
 label_custom_field_plural: Campos personalizado
 label_custom_field_new: Novo campo personalizado
-label_enumerations: Enumeracao
+label_enumerations: Enumeraçao
 label_enumeration_new: Novo valor
 label_information: Informacao
 label_information_plural: Informacoes
@@ -220,24 +220,24 @@ label_home: Pagina inicial
 label_my_page: Minha pagina
 label_my_account: Minha conta
 label_my_projects: Meus projetos
-label_administration: Administracao
+label_administration: Administraçao
 label_login: Login
 label_logout: Logout
 label_help: Ajuda
 label_reported_issues: Tarefas reportadas
 label_assigned_to_me_issues: Tarefas atribuidas a mim
 label_last_login: Utima conexao
-label_last_updates: Ultima alteracao
+label_last_updates: Ultima alteraçao
 label_last_updates_plural: %d Ultimas alteracoes
 label_registered_on: Registrado em
 label_activity: Atividade
 label_new: Novo
 label_logged_as: Logado como
 label_environment: Ambiente
-label_authentication: Autenticacao
-label_auth_source: Modo de autenticacao
-label_auth_source_new: Novo modo de autenticacao
-label_auth_source_plural: Modos de autenticacao
+label_authentication: Autenticaçao
+label_auth_source: Modo de autenticaçao
+label_auth_source_new: Novo modo de autenticaçao
+label_auth_source_plural: Modos de autenticaçao
 label_subproject_plural: Sub-projetos
 label_min_max_length: Tamanho min-max
 label_list: Lista
@@ -270,7 +270,7 @@ label_overview: Visao geral
 label_version: Versao
 label_version_new: Nova versao
 label_version_plural: Versoes
-label_confirmation: Confirmacao
+label_confirmation: Confirmaçao
 label_export_to: Exportar para
 label_read: Ler...
 label_public_projects: Projetos publicos
@@ -294,8 +294,8 @@ label_calendar: Calendario
 label_months_from: Meses de
 label_gantt: Gantt
 label_internal: Interno
-label_last_changes: utlimas %d mudancas
-label_change_view_all: Mostrar todas as mudancas
+label_last_changes: utlimas %d mudanças
+label_change_view_all: Mostrar todas as mudanças
 label_personalize_page: Personalizar esta pagina
 label_comment: Comentario
 label_comment_plural: Comentarios
@@ -353,13 +353,13 @@ label_page_index: Index
 label_current_version: Versao atual
 label_preview: Previa
 label_feed_plural: Feeds
-label_changes_details: Detalhes de todas as mudancas
+label_changes_details: Detalhes de todas as mudanças
 label_issue_tracking: Tarefas
 label_spent_time: Tempo gasto
 label_f_hour: %.2f hora
 label_f_hour_plural: %.2f horas
 label_time_tracking: Tempo trabalhado
-label_change_plural: Mudancas
+label_change_plural: Mudanças
 label_statistics: Estatisticas
 label_commits_per_month: Commits por mes
 label_commits_per_author: Commits por autor
@@ -442,14 +442,14 @@ status_locked: bloqueado
 
 text_select_mail_notifications: Selecionar acoes para ser enviado uma notificacao por email
 text_regexp_info: eg. ^[A-Z0-9]+$
-text_min_max_length_info: 0 siginifica sem restricao
+text_min_max_length_info: 0 siginifica sem restriçao
 text_project_destroy_confirmation: Voce tem certeza que deseja deletar este projeto e todas os dados relacionados?
 text_workflow_edit: Selecione uma regra e um tipo de tarefa para editar o workflow
 text_are_you_sure: Voce tem certeza ?
 text_journal_changed: alterado de %s para %s
 text_journal_set_to: setar para %s
 text_journal_deleted: apagado
-text_tip_task_begin_day: tarefa comeca neste dia
+text_tip_task_begin_day: tarefa começa neste dia
 text_tip_task_end_day: tarefa termina neste dia
 text_tip_task_begin_end_day: tarefa comeca e termina neste dia
 text_project_identifier_info: 'Letras minusculas (a-z), numeros e tracos permitido.<br />Uma vez salvo, o identificador nao pode ser mudado.'
@@ -464,7 +464,7 @@ default_role_manager: Analista de Negocio ou Gerente de Projeto
 default_role_developper: Desenvolvedor
 default_role_reporter: Analista de Suporte
 default_tracker_bug: Bug
-default_tracker_feature: Implementacao
+default_tracker_feature: Implementaçao
 default_tracker_support: Suporte
 default_issue_status_new: Novo
 default_issue_status_assigned: Atribuido

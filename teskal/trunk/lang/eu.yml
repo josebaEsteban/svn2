@@ -480,7 +480,7 @@ default_priority_high: Alto
 default_priority_urgent: Urgente
 default_priority_immediate: Ahora
 default_activity_design: Diseño
-default_activity_development: Desarrollo     
+default_activity_development: Desarrollo
     
 test2_valor_0: 0 (ezer ez)
 test2_valor_1: 1 (inoiz gutxitan)
@@ -521,51 +521,51 @@ test2_25: Entrenamendurako / lehiaketarako helburuak finkatu ditut
 test2_26: Fisikoki sasoitsu sentitu naiz
 test2_27: Nire kirolean frustratuta sentitu naiz
 test2_28: Nire kirolean arazo emozionalak lasaitasunez maneiatu ditut
-
-test3_valor_0: 0 (nada)
-test3_valor_1: 1 (un poco)
-test3_valor_2: 2 (moderadamente)
-test3_valor_3: 3 (bastante)
-test3_valor_4: 4 (mucho)
-test3_valor_5: 0 (nunca)
-test3_valor_6: 1 (pocas veces)
-test3_valor_7: 2 (a veces)
-test3_valor_8: 3 (muchas veces)
-test3_valor_9: 4 (siempre)
-
-test3: Perfil de Estado de Forma del Entrenamiento
-test3_header1: Ahora mismo me siento...
-test3_header2: En el entrenamiento...
-test3_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente, y una serie de comentarios y frases relacionadas con situaciones de entrenamiento. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento, o que mejor describa tu comportamiento durante las sesiones de entrenamiento.
+                 
+test3_valor_0: 0 (ezer ez)
+test3_valor_1: 1 (pixka bat)
+test3_valor_2: 2 (neurrian)
+test3_valor_3: 3 (dexente)
+test3_valor_4: 4 (asko)
+test3_valor_5: 0 (inoiz ere ez)
+test3_valor_6: 1 (gutxitan)
+test3_valor_7: 2 (noizbehinka)
+test3_valor_8: 3 (askotan)
+test3_valor_9: 4 (beti)
+                 
+test3: Entrenamenduko sasoi mailaren profila
+test3_header1: Momentu honetan … sentitzen naiz
+test3_header2: Entrenamenduan...
+test3_intro: Behean, entrenamendu egoeratan jendeak izaten dituen sentsazioak deskribatzen dituzten hitz zerrenda bat eta hauekin zer ikusia duten esaldi eta iruzkin sorta bat dago. Mesedez,bakoitza arretaz irakurri ezazu eta momentuotan sentitzen duzuna, edo eta entrenamendu saioetan zure jokabidea egokien deskribatzen duen zenbaki gainean klik egin ezazu.
 # esta primera parte es igual en el cuestionario 1, en el 4
-test3_1: Intranquil@
-test3_2: Desamparad@
-test3_3: Sin fuerzas
-test3_4: Llen@ de energía
-test3_5: Molest@
-test3_6: Agitad@
-test3_7: Desdichad@
-test3_8: Cansad@
-test3_9: Animad@
-test3_10: Enfadad@
-test3_11: Tens@
+test3_1: Urduri
+test3_2: Babesgabe
+test3_3: Indarrik gabe
+test3_4: Energiaz beterik
+test3_5: Minduta
+test3_6: Astoratuta
+test3_7: Zoritxarreko
+test3_8: Nekatuta
+test3_9: Gogotsu
+test3_10: Haserre
+test3_11: Tenko
 test3_12: Triste
-test3_13: Fatigad@
-test3_14: Activ@
-test3_15: De mal genio 
+test3_13: Nekoso
+test3_14: Aktibo
+test3_15: Jenio txarrez
 
-test3_16: Presto mucha atención a las cosas que tengo que hacer en el entrenamiento
-test3_17: Soy capaz de hacer cosas que antes no podía hacer
-test3_18: Si cometo fallos en el entrenamiento, al día siguiente estoy intranquil@
-test3_19: Cuando el ejercicio es difícil, me esfuerzo más para conseguir hacerlo bien
-test3_20: Lo hago todo lo mejor que sé hacer
-test3_21: Me pongo nervios@ cuando cometo un fallo en el entrenamiento
-test3_22: Sigo esforzándome en el entrenamiento aunque las cosas no me salgan bien
-test3_23: Hago las cosas que me propongo
-test3_24: Me pone nervios@ practicar tareas nuevas en el entrenamiento
+test3_16: Entrenamenduan egin behar ditudan gauzei arreta handia jartzen diet
+test3_17: Garai batean egiteko gai ez nintzen gauazak egiteko gai naiz egun
+test3_18: Entrenamenduak akatsak baditut hurrengo egunean urduri nago
+test3_19: Ariketa zaila denean, ondo egiteko gehiago saiatzen naiz
+test3_20: Guztia dakidan bezain ondo egiten dut
+test3_21: Entrenamenduan akatsen bat egiten dudanean urduri jarzten naiz
+test3_22: Nahiz ta entrenamenduan zehar gauzak ez ondo atera ahaleginean jarraitzen dut
+test3_23: Burutzeko asmoa hartzen dudan hori egiten dut
+test3_24: Entrenamenduan ariketa berriak praktikatzeak urduri jartzen nau
 
-test3_25: Nivel de competencia que tienes EN ESTE MOMENTO para realizar acciones técnicas
-test3_26: En que medida te sientes capaz EN ESTE MOMENTO de competir en tu deporte
+test3_25: UNE HONETAN ekintza teknikoak egiteko daukazun eskumen maila
+test3_26: UNE HONETAN zein mailatan sentitzen zara zeure kirolean lehiatzeko gai
 
 #los niveles de valoracion 0 a 4 igual que en el cuestionario 3
 #textos cuestionario 2 del test 1
@@ -577,7 +577,7 @@ test1_intro: Behean, jendeak izaten dituen sentsazioak deskribatzen dituzten hit
 # titulo cuestionario 3 del test1  
 test1_28: Denboraldiko helburuak adierazi itzazu
 
-test1_29: Nivel de dificultad
+test1_29: Zailtasun maila  
 test1_30: Helburuak lortzeko konfiantza maila
 
 # titulo cuestionario 4 del test1
@@ -641,58 +641,58 @@ test1_63: Nire buruari jarritako jomuga lortzen dut
 test1_64: Argi eta garbi besteak baino gehiago naiz
 
 #cabecera cuestionario 6 del test1
-test1_66: En que medida te sientes capaz de competir en tu deporte
+test1_66: Zein mailatan sentitzen zara zure kirolean lehiatzeko gai.
 
-test4: Valoración Pre-Competición
-test4_header: Ahora mismo me siento...
+test4: Lehiaketa aurreko balorazioa
+test4_header: Momentu honetan … sentitzen naiz
 test4_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente. A continuación aparecen una serie de comentarios que han sido utilizados por los deportistas para describir sus sentimientos o emociones antes de una competición . Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
 
 # el cuestionario 1 es igual al de el Test 3
 #textos cuestionario 2 igual al del Test 1
 #cabecera cuestionario 4 del test 4
-test4_1: Resultado que esperas alcanzar si compites como quieres
+test4_1: Nahi bezala lehiatzen bazara lortzea espero duzun emaitza
 
 #textos cuestionario 4 del test 4  
-test4_2: Nivel de motivación
-test4_3: La importancia de la competición para ti
-test4_4: Tu conocimiento sobre los/las adversarias
-test4_5: La prueba es apropiada para ti?
-test4_6: Has preparado el plan de competición?
-test4_7: Tienes claro como quieres actuar
+test4_2: Motibazio maila
+test4_3: Lehiaketak zuretzako daukan garrantzia
+test4_4: Kaurkariei buruz daukazun ezagutza mailaTu conocimiento sobre los/las adversarias
+test4_5: Proba zuretzat egokia da
+test4_6: Lehiaketa plana prestatu duzu?
+test4_7: Zein modutan jokatu nahi duzun argi daukazu
 # test5 
-test5_valor_1: 1 (muy mala)
-test5_valor_2: 2 (mala)
-test5_valor_3: 3 (regular)
-test5_valor_4: 4 (buena)
-test5_valor_5: 5 (muy buena)
+test5_valor_1: 1 (oso txarra)
+test5_valor_2: 2 (txarra)
+test5_valor_3: 3 (nola-halakoa)
+test5_valor_4: 4 (ona)
+test5_valor_5: 5 (oso ona)
 
-test5: Valoración Post-Competición (Deportes Individuales)
-test5_header1: El grado de satisfacción con mi actuación ha sido...
-test5_header2: El grado de satisfacción durante la competición con...
-test5_header3: El grado de satisfacción con...
-test5_intro: Más abajo se plantean una serie de preguntas relacionadas con determinados aspectos de la competición, sobre las que queremos recoger tu opinión. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
+test5: Lehiaketa osteko balorazioa (Banakako Kirolak)
+test5_header1: Nire jokaerarekin izandako asetasun maila … izan da
+test5_header2: Lehiaketan zehar izandako asetasun maila … izan da
+test5_header3: …-kin/ko asetasun maila
+test5_intro: Segidan aurkezten zaizkizun lehiaketaren aspektu ezberdinekin zer ikusia duten galdera sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez,bakoitza arretaz irakurri ezazu eta momentuotan sentitzen duzuna egokien deskribatzen duen zenbaki gainean klik egin ezazu
 
-test5_1: Técnicamente
-test5_2: Físicamente
-test5_3: Asertivamente
-test5_4: Mentalmente
-test5_5: Tácticamente
-test5_6: El control de mis emociones
-test5_7: El disfrute al sentir mis emociones en determinados momentos
-test5_8: La seguridad de haber rendido bajo la presión
-test5_9: La sensación de haber estado mentalmente relajado
-test5_10: El control de mis pensamientos y el afrontamiento positivo
-test5_11: La forma de responder a las acciones de las demás
-test5_12: Las decisiones que he tomado, conocidos los objetivos del entrenador
-test5_13: La claridad en la forma de actuar durante la competición
-test5_14: La claridad del PIC durante todos los momentos
-test5_15: Las acciones realizadas a lo largo de toda la competición
-test5_16: El nivel de confianza que mantenía a lo largo de toda la competición
-test5_17: El grado de satisfacción que tenía durante la competición
-test5_18: El pensamiento relacionado con cosas que tenía que hacer
-test5_19: Los pensamientos que tenía relacionados con las buenas sensaciones
-test5_20: El nivel de interés y de lucha que mantenía durante la competición
-test5_21: Satisfacción con la Capacidad de Rendimiento Utilizada
+test5_1: Teknikoki
+test5_2: Fisikoki
+test5_3: Asertiboki
+test5_4: Mentalki
+test5_5: Taktikoki 
+test5_6: Nire emozioen kontrola
+test5_7: Momentu konkretu batzuetan nire emoziak sentitzearen gozamena
+test5_8: Presiopean errenditu izanaren ziurtasuna. 
+test5_9: Mentalki erlaxaturik egon izanaren sentsazioa
+test5_10: Nire pentsamenduen kontrola eta aurre egite positiboa
+test5_11: Besteen ekintzei erantzuteko modua
+test5_12: Entrenatzailearen helburuak jakinik hartu ditudan erabakiak
+test5_13: Lehiaketan zehar izandako jokaeraren argitasuna
+test5_14: Momenturo lehiketako plan integralaren argitasuna
+test5_15: Lehiaketa osoan zehar egindako ekintza denak
+test5_16: Lehiaketa osoan zehar mantentzen nuen konfiantza maila 
+test5_17: Lehiaketan zehar nuen asetasun maila
+test5_18: Egin behar nituen gauzekin loturiko pentsamendua
+test5_19: Sentsazio onekin loturik neuzkan pentsamenduak
+test5_20: Lehiaketan zehar mantentzen nuen interes eta borroka maila
+test5_21: Erabilitako errendimendu gaitasunarekiko asetasuna
 
 test6: Valoración Post-Competición (Deportes Colectivos)
 # header, intro igual al cuestionario 6
@@ -719,8 +719,8 @@ test7_valor_7: 7 (totalmente)
 test7: Cuestionario de Satisfacción (Deportes Individuales) 
 test7_header: El grado de satisfacción con...
 test7_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
-test7_1: El nivel que he alcanzado en mis objetivos durante la temporada.  	
-test7_2: La mejora de mi rendimiento en la temporada anterior. 	
+test7_1: El nivel que he alcanzado en mis objetivos durante la temporada
+test7_2: La mejora de mi rendimiento en la temporada anterior
 test7_3: El nivel de mejoría de mis habilidades hasta ahora.
 test7_4: El grado hasta el que utilizo mis habilidades.
 test7_5: El nivel de utilización de mi talento.
