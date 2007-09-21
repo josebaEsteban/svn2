@@ -40,7 +40,7 @@ general_fmt_age: %d urtea
 general_fmt_age_plural: %d urteak
 general_fmt_date: %%d/%%m/%%Y
 general_fmt_datetime: %%d/%%m/%%Y %%H:%%M
-general_fmt_datetime_short: %%d/%%m %%H:%%M
+general_fmt_date time_short: %%d/%%m %%H:%%M
 general_fmt_time: %%H:%%M
 general_text_No: 'Ez'
 general_text_Yes: 'Bai'
@@ -254,7 +254,7 @@ label_no_data: Ningunos datos a exhibir
 label_change_status: Cambiar el estatuto
 label_history: Historiko
 label_attachment: Fitxategi
-label_attachment_new: Nuevo fichero
+label_attachment_new: Fitxategi berria
 label_attachment_delete: Borrar el fichero
 label_attachment_plural: Ficheros
 label_report: Txostena
@@ -743,20 +743,20 @@ test8_valor_7: 7 (totalmente)
 test8: Cuestionario de Satisfacción (Deportes Colectivos)
 test8_header: El grado de satisfacción con...
 test8_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
-test8_1: El nivel que he alcanzado en mis objetivos durante la temporada.  	
-test8_2: La mejora de mi rendimiento en la temporada anterior. 	
+test8_1: El nivel que he alcanzado en mis objetivos durante la temporada.
+test8_2: La mejora de mi rendimiento en la temporada anterior.
 test8_3: El nivel de mejoría de mis habilidades hasta ahora.
-test8_4: El nº de competiciones ganadas y perdidas durante la temporada. 	
-test8_5: El rendimiento global del equipo durante esta temporada. 	
+test8_4: El nº de competiciones ganadas y perdidas durante la temporada.
+test8_5: El rendimiento global del equipo durante esta temporada.
 test8_6: La medida en que el equipo ha conseguido sus objetivos de temporada hasta ahora.
 test8_7: El grado hasta el que utilizan mis habilidades.
 test8_8: El nivel de utilización de mi talento.
-test8_9: La medida en que mi rol se corresponde con mi potencial. 	
-test8_10: La cantidad de tiempo que juego durante la competición. 	
+test8_9: La medida en que mi rol se corresponde con mi potencial.
+test8_10: La cantidad de tiempo que juego durante la competición.
 test8_11: El grado de correspondencia entre mi rol en el equipo con mi rol preferido.
 test8_12: La elección que el/la entrenador/a hace sobre los jugadores durante la competición.
 test8_13: Las tácticas utilizadas durante la competición.
-test8_14: La elección que el/la entrenador/a hace de las estrategias en la competición. 	
+test8_14: La elección que el/la entrenador/a hace de las estrategias en la competición.
 test8_15: La forma en que el/la entrenador/a hace ajustes durante la competición.
 test8_16: Los planes de juego del/la entrenador/a.
 test8_17: La manera en que el/la entrenador/a combina el talento disponible.
@@ -773,15 +773,15 @@ test8_27: La orientación que recibo de mis compañeros de equipo.
 test8_28: El feed-back constructivo que recibo de mis compañeros.
 test8_29: Mi estatus social en el equipo.
 test8_30: El rol que juego en la vida social del equipo.
-test8_31: La medida en que mis compañeros me aceptan socialmente. 	
-test8_32: El grado hasta el que los miembros del equipo son éticos. 	
-test8_33: El sentido que mis compañeros tienen acerca del juego limpio. 	
-test8_34: El nivel de deportividad de mis compañeros de equipo. 	
-test8_35: La forma en que el equipo trabaja para ser el mejor. 	
-test8_36: El grado hasta el que los miembros del equipo comparten el mismo objetivo. 	
-test8_37: La dedicación de los miembros del equipo a trabajar conjuntamente para conseguir los objetivos del equipo. 	
-test8_38: El grado en el que los miembros del equipo “juegan como equipo”. 	
-test8_39: El grado hasta el que hago lo mejor que puedo para el equipo. 	
-test8_40: Mi dedicación personal durante el entrenamiento. 	
-test8_41: Mi entusiasmo durante las competiciones. 	
+test8_31: La medida en que mis compañeros me aceptan socialmente.
+test8_32: El grado hasta el que los miembros del equipo son éticos.
+test8_33: El sentido que mis compañeros tienen acerca del juego limpio.
+test8_34: El nivel de deportividad de mis compañeros de equipo.
+test8_35: La forma en que el equipo trabaja para ser el mejor.
+test8_36: El grado hasta el que los miembros del equipo comparten el mismo objetivo.
+test8_37: La dedicación de los miembros del equipo a trabajar conjuntamente para conseguir los objetivos del equipo.
+test8_38: El grado en el que los miembros del equipo “juegan como equipo”.
+test8_39: El grado hasta el que hago lo mejor que puedo para el equipo.
+test8_40: Mi dedicación personal durante el entrenamiento.
+test8_41: Mi entusiasmo durante las competiciones.
 test8_42: Mi compromiso hacia el equipo
