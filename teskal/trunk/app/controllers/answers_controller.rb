@@ -35,9 +35,24 @@ class AnswersController < ApplicationController
 
   # POST /answers
   # POST /answers.xml
+  def test2
+    @answer = Answer.new(params[:answer])
+    @answer.questionnare_id=2
+    @answer.user_id=session[:user_id]
+    respond_to do |format|
+      if @answer.save
+        flash[:notice] = 'Answer was successfully created.'
+        format.html { redirect_to answer_url(@answer) }
+        format.xml  { head :created, :location => answer_url(@answer) }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @answer.errors.to_xml }
+      end
+    end
+  end
   def create
     @answer = Answer.new(params[:answer])
-
+    @answer.user_id=session[:user_id]
     respond_to do |format|
       if @answer.save
         flash[:notice] = 'Answer was successfully created.'
