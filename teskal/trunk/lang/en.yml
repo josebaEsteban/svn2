@@ -598,6 +598,122 @@ test2_26: My body felt strong
 test2_27: I felt frustated by my sport
 test2_28: I dealt with emotional problems in my sport very calmly 
 
+test3_valor_0: 0 (nada)
+test3_valor_1: 1 (un poco)
+test3_valor_2: 2 (moderadamente)
+test3_valor_3: 3 (bastante)
+test3_valor_4: 4 (mucho)
+test3_valor_5: 0 (nunca)
+test3_valor_6: 1 (pocas veces)
+test3_valor_7: 2 (a veces)
+test3_valor_8: 3 (muchas veces)
+test3_valor_9: 4 (siempre)
+
+test3: Perfil de Estado de Forma del Entrenamiento
+test3_header1: Ahora mismo me siento...
+test3_header2: En el entrenamiento...
+test3_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente, y una serie de comentarios y frases relacionadas con situaciones de entrenamiento. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento, o que mejor describa tu comportamiento durante las sesiones de entrenamiento.
+# esta primera parte es igual en el cuestionario 1, en el 4
+test3_1: Intranquil@
+test3_2: Desamparad@
+test3_3: Sin fuerzas
+test3_4: Llen@ de energía
+test3_5: Molest@
+test3_6: Agitad@
+test3_7: Desdichad@
+test3_8: Cansad@
+test3_9: Animad@
+test3_10: Enfadad@
+test3_11: Tens@
+test3_12: Triste
+test3_13: Fatigad@
+test3_14: Activ@
+test3_15: De mal genio 
+
+test3_16: Presto mucha atención a las cosas que tengo que hacer en el entrenamiento
+test3_17: Soy capaz de hacer cosas que antes no podía hacer
+test3_18: Si cometo fallos en el entrenamiento, al día siguiente estoy intranquil@
+test3_19: Cuando el ejercicio es difícil, me esfuerzo más para conseguir hacerlo bien
+test3_20: Lo hago todo lo mejor que sé hacer
+test3_21: Me pongo nervios@ cuando cometo un fallo en el entrenamiento
+test3_22: Sigo esforzándome en el entrenamiento aunque las cosas no me salgan bien
+test3_23: Hago las cosas que me propongo
+test3_24: Me pone nervios@ practicar tareas nuevas en el entrenamiento
+
+test3_25: Nivel de competencia que tienes EN ESTE MOMENTO para realizar acciones técnicas
+test3_26: En que medida te sientes capaz EN ESTE MOMENTO de competir en tu deporte
+
+test4: Valoración Pre-Competición
+test4_header: Ahora mismo me siento...
+test4_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente. A continuación aparecen una serie de comentarios que han sido utilizados por los deportistas para describir sus sentimientos o emociones antes de una competición . Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
+
+# el cuestionario 1 es igual al de el Test 3
+#textos cuestionario 2 igual al del Test 1
+#cabecera cuestionario 4 del test 4
+test4_1: Resultado que esperas alcanzar si compites como quieres
+
+#textos cuestionario 4 del test 4  
+test4_2: Nivel de motivación
+test4_3: La importancia de la competición para ti
+test4_4: Tu conocimiento sobre los/las adversarias
+test4_5: La prueba es apropiada para ti?
+test4_6: Has preparado el plan de competición?
+test4_7: Tienes claro como quieres actuar
+# test5 
+test5_valor_1: 1 (muy mala)
+test5_valor_2: 2 (mala)
+test5_valor_3: 3 (regular)
+test5_valor_4: 4 (buena)
+test5_valor_5: 5 (muy buena)
+
+test5: Valoración Post-Competición (Deportes Individuales)
+test5_header1: El grado de satisfacción con mi actuación ha sido...
+test5_header2: El grado de satisfacción durante la competición con...
+test5_header3: El grado de satisfacción con...
+test5_intro: Más abajo se plantean una serie de preguntas relacionadas con determinados aspectos de la competición, sobre las que queremos recoger tu opinión. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
+
+test5_1: Técnicamente
+test5_2: Físicamente
+test5_3: Asertivamente
+test5_4: Mentalmente
+test5_5: Tácticamente
+test5_6: El control de mis emociones
+test5_7: El disfrute al sentir mis emociones en determinados momentos
+test5_8: La seguridad de haber rendido bajo la presión
+test5_9: La sensación de haber estado mentalmente relajado
+test5_10: El control de mis pensamientos y el afrontamiento positivo
+test5_11: La forma de responder a las acciones de las demás
+test5_12: Las decisiones que he tomado, conocidos los objetivos del entrenador
+test5_13: La claridad en la forma de actuar durante la competición
+test5_14: La claridad del PIC durante todos los momentos
+test5_15: Las acciones realizadas a lo largo de toda la competición
+test5_16: El nivel de confianza que mantenía a lo largo de toda la competición
+test5_17: El grado de satisfacción que tenía durante la competición
+test5_18: El pensamiento relacionado con cosas que tenía que hacer
+test5_19: Los pensamientos que tenía relacionados con las buenas sensaciones
+test5_20: El nivel de interés y de lucha que mantenía durante la competición
+test5_21: Satisfacción con la Capacidad de Rendimiento Utilizada
+
+test6: Valoración Post-Competición (Deportes Colectivos)
+# header, intro igual al cuestionario 6
+# preguntas 1 a 5 igual al cuestionario 6
+test6_6: Con tu grado de complicidad hacia el objetivo colectivo
+test6_7: Con tu generosidad y apoyo hacia tus compañeros
+test6_8: Con el respeto hacia tus compañeros
+test6_9: Con tu lealtad hacia las decisiones adoptadas
+test6_10: Con el grado de comunicación con tus compañeros
+test6_11: Con tu aportación al trabajo colectivo
+test6_12: Con tu implicación hacia el esfuerzo
+test6_13: Con tu confianza en los objetivos del juego propuestos
+test6_14: Con tu actitud hacia el trabajo que se te ha encomendado
+test6_15: Con las decisiones que has tomado durante el partido
+test6_16: Con tu nivel de confianza durante toda la competición
+test6_17: Con tu nivel de rendimiento ante las situaciones de muy alta intensidad
+test6_18: Con tu capacidad luchadora y perseverante
+test6_19: Con tu actitud positiva hacia tu propia mejora
+test6_20: Con tu transmisión de disfrute, satisfacción y “buenas sensaciones”
+test6_21: Satisfacción Con La Capacidad De Rendimiento Del Equipo
+
 test7_valor_1: 0 (no, en absoluto)
 test7_valor_7: 6 (totalmente)
 test7: Questionnaire of Satisfaction (Individual Sports)

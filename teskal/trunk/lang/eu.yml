@@ -482,6 +482,82 @@ default_priority_immediate: Ahora
 default_activity_design: Diseño
 default_activity_development: Desarrollo
     
+#los niveles de valoracion 0 a 4 igual que en el cuestionario 3
+#textos cuestionario 2 del test 1
+test1: Denboraldiaren lehen balorazioa
+test1_header2: Lehiaketa aurretik 
+test1_header4: Kirola egiterakoan, … arrakasta dudala sentitzen dut
+test1_intro: Behean, jendeak izaten dituen sentsazioak deskribatzen dituzten hitz zerrenda bat dago. Segidan, kirolariek lehiaketa baten aurretik izan dituzten sentimenduak eta emoziak deskribatzeko erabilitako komentario batzuk azaltzen dira. Mesedez, arretaz irakurri itzazu eta momentuotan sentitzen duzuna egokien deskribatzen duen zenbaki gainean klik egin ezazu.
+
+# titulo cuestionario 3 del test1  
+test1_28: Denboraldiko helburuak adierazi itzazu
+
+test1_29: Zailtasun maila  
+test1_30: Helburuak lortzeko konfiantza maila
+
+# titulo cuestionario 4 del test1
+test1_31: Segidan, entrenamenduarekin eta lehiaketarekin zer ikusia duten galdera sorta bat egingo dizugu. Zure eritzia jakin nahi dugun heinean zintzoki erantzutea eskatzen dizugu. Babesturiko datuak dira guztiz.
+
+# textos cuestionario 4 del test1
+test1_16: Lehiaketa aurretik psikologikoki prestatzen zara
+test1_17: Erlaxapen teknikaren batetaz baliatzen zara
+test1_18: Kirol egoerak gainditzen zaituenean kontrola mantentzeko estrategiaren batetaz baliatzen zara
+test1_19: Zure kiroleko kontuak bisionatzen dituzu
+test1_20: Zure errendimendua areagotzeko bisualizazioaz baliatzen zara
+test1_21: …-kin amezten duzu
+test1_22: Zeure buruarekin hitz egiten duzu
+test1_23: Zeure burua akuilatzeko zerbait egiten duzu
+test1_24: Zeure prestakuntzan ohiturak erabiltzen dituzu
+test1_25: Lehiaketa planen batetaz baliatzen al zara?
+
+# textos cuestionario 3 del test1  
+test1_26: Lehiaketak, orokorrean, kezkatzen nau
+test1_27: Urdirik nago
+test1_28: Gustura sentitzen naiz
+test1_29: Neure buruaz duda egiten dut
+test1_30: Oso urduri sentitzen naiz
+test1_31: Eroso sentitzen naiz
+test1_32: Lehiaketan ahal bezain ondo ez egiteak kezkatzen nau
+test1_33: Gorputza tenko daukat
+test1_34: Neure buruarengan konfidantza daukat
+test1_35: Galtzeak kezkatzen nau
+test1_36: Sabelean tentsioa daukat
+test1_37: Seguru sentitzen naiz
+test1_38: Presioak meneratzea kezkatzen nau
+test1_39: Nire gorputza erlaxaturik dago
+test1_40: Egin dezakedalaz ziur nago
+test1_41: Gutxi errenditzeak kezkatzen nau
+test1_42: Bihotza azeleratua doakit
+test1_43: Ondo errendituko dudalaz ziur nago
+test1_44: Nire helburua lortzeak kezkatzen nau
+test1_45: Sabelean hustasun bat sentitzen dut
+test1_46: Mentalki erlaxaturik sentitzen naiz
+test1_47: Nire errendimenduak besteak desepzionatzea kezkatzen nau
+test1_48: Eskutan izerdi hotza daukat
+test1_49: Nire helburua lortzen imaginatzen naizelako daukat konfidantza nire buruarengan
+test1_50: Kontzentratzeko kapaz ez izateak kezkatzen nau
+test1_51: Gorputza trinko daukat
+test1_52: Presiopean errenditzeko ziur sentitzen naiz
+
+#cabecera cuestionario 5 del test1
+test1_53: Nire kideak garaitzen ditut
+
+# textos cuestionario 5 del test1 											
+test1_54: Hoberena naiz
+test1_55: Gogor lan egiten dut
+test1_56: Hobekuntza pertsonal argi bat erakusten dut
+test1_57: Besteek baino hobeto egiten dut
+test1_58: Jendeari onena naizela erakusten diot
+test1_59: Zailtasunak gainditzen ditut
+test1_60: Egin ezin nezaken zerbait meneratzen dut
+test1_61: Besteek egin ezin duten zerbait egiten dut
+test1_62: Guztia dakidan bezain ondo egiten dut
+test1_63: Nire buruari jarritako jomuga lortzen dut
+test1_64: Argi eta garbi besteak baino gehiago naiz
+
+#cabecera cuestionario 6 del test1
+test1_66: Zein mailatan sentitzen zara zure kirolean lehiatzeko gai.
+
 test2_valor_0: 0 (ezer ez)
 test2_valor_1: 1 (inoiz gutxitan)
 test2_valor_2: 2 (batzuetan)
@@ -566,82 +642,6 @@ test3_24: Entrenamenduan ariketa berriak praktikatzeak urduri jartzen nau
 
 test3_25: UNE HONETAN ekintza teknikoak egiteko daukazun eskumen maila
 test3_26: UNE HONETAN zein mailatan sentitzen zara zeure kirolean lehiatzeko gai
-
-#los niveles de valoracion 0 a 4 igual que en el cuestionario 3
-#textos cuestionario 2 del test 1
-test1: Denboraldiaren lehen balorazioa
-test1_header2: Lehiaketa aurretik 
-test1_header4: Kirola egiterakoan, … arrakasta dudala sentitzen dut
-test1_intro: Behean, jendeak izaten dituen sentsazioak deskribatzen dituzten hitz zerrenda bat dago. Segidan, kirolariek lehiaketa baten aurretik izan dituzten sentimenduak eta emoziak deskribatzeko erabilitako komentario batzuk azaltzen dira. Mesedez, arretaz irakurri itzazu eta momentuotan sentitzen duzuna egokien deskribatzen duen zenbaki gainean klik egin ezazu.
-
-# titulo cuestionario 3 del test1  
-test1_28: Denboraldiko helburuak adierazi itzazu
-
-test1_29: Zailtasun maila  
-test1_30: Helburuak lortzeko konfiantza maila
-
-# titulo cuestionario 4 del test1
-test1_31: Segidan, entrenamenduarekin eta lehiaketarekin zer ikusia duten galdera sorta bat egingo dizugu. Zure eritzia jakin nahi dugun heinean zintzoki erantzutea eskatzen dizugu. Babesturiko datuak dira guztiz.
-
-# textos cuestionario 4 del test1
-test1_16: Lehiaketa aurretik psikologikoki prestatzen zara
-test1_17: Erlaxapen teknikaren batetaz baliatzen zara
-test1_18: Kirol egoerak gainditzen zaituenean kontrola mantentzeko estrategiaren batetaz baliatzen zara
-test1_19: Zure kiroleko kontuak bisionatzen dituzu
-test1_20: Zure errendimendua areagotzeko bisualizazioaz baliatzen zara
-test1_21: …-kin amezten duzu
-test1_22: Zeure buruarekin hitz egiten duzu
-test1_23: Zeure burua akuilatzeko zerbait egiten duzu
-test1_24: Zeure prestakuntzan ohiturak erabiltzen dituzu
-test1_25: Lehiaketa planen batetaz baliatzen al zara?
-
-# textos cuestionario 3 del test1  
-test1_26: Lehiaketak, orokorrean, kezkatzen nau
-test1_27: Urdirik nago
-test1_28: Gustura sentitzen naiz
-test1_29: Neure buruaz duda egiten dut
-test1_30: Oso urduri sentitzen naiz
-test1_31: Eroso sentitzen naiz
-test1_32: Lehiaketan ahal bezain ondo ez egiteak kezkatzen nau
-test1_33: Gorputza tenko daukat
-test1_34: Neure buruarengan konfidantza daukat
-test1_35: Galtzeak kezkatzen nau
-test1_36: Sabelean tentsioa daukat
-test1_37: Seguru sentitzen naiz
-test1_38: Presioak meneratzea kezkatzen nau
-test1_39: Nire gorputza erlaxaturik dago
-test1_40: Egin dezakedalaz ziur nago
-test1_41: Gutxi errenditzeak kezkatzen nau
-test1_42: Bihotza azeleratua doakit
-test1_43: Ondo errendituko dudalaz ziur nago
-test1_44: Nire helburua lortzeak kezkatzen nau
-test1_45: Sabelean hustasun bat sentitzen dut
-test1_46: Mentalki erlaxaturik sentitzen naiz
-test1_47: Nire errendimenduak besteak desepzionatzea kezkatzen nau
-test1_48: Eskutan izerdi hotza daukat
-test1_49: Nire helburua lortzen imaginatzen naizelako daukat konfidantza nire buruarengan
-test1_50: Kontzentratzeko kapaz ez izateak kezkatzen nau
-test1_51: Gorputza trinko daukat
-test1_52: Presiopean errenditzeko ziur sentitzen naiz
-
-#cabecera cuestionario 5 del test1
-test1_53: Nire kideak garaitzen ditut
-
-# textos cuestionario 5 del test1 											
-test1_54: Hoberena naiz
-test1_55: Gogor lan egiten dut
-test1_56: Hobekuntza pertsonal argi bat erakusten dut
-test1_57: Besteek baino hobeto egiten dut
-test1_58: Jendeari onena naizela erakusten diot
-test1_59: Zailtasunak gainditzen ditut
-test1_60: Egin ezin nezaken zerbait meneratzen dut
-test1_61: Besteek egin ezin duten zerbait egiten dut
-test1_62: Guztia dakidan bezain ondo egiten dut
-test1_63: Nire buruari jarritako jomuga lortzen dut
-test1_64: Argi eta garbi besteak baino gehiago naiz
-
-#cabecera cuestionario 6 del test1
-test1_66: Zein mailatan sentitzen zara zure kirolean lehiatzeko gai.
 
 test4: Lehiaketa aurreko balorazioa
 test4_header: Momentu honetan … sentitzen naiz
