@@ -694,94 +694,94 @@ test5_19: Sentsazio onekin loturik neuzkan pentsamenduak
 test5_20: Lehiaketan zehar mantentzen nuen interes eta borroka maila
 test5_21: Erabilitako errendimendu gaitasunarekiko asetasuna
 
-test6: Valoración Post-Competición (Deportes Colectivos)
+test6: Lehiaketa osteko balorazioa (Talde kirola)
 # header, intro igual al cuestionario 6
 # preguntas 1 a 5 igual al cuestionario 6
-test6_6: Con tu grado de complicidad hacia el objetivo colectivo
-test6_7: Con tu generosidad y apoyo hacia tus compañeros
-test6_8: Con el respeto hacia tus compañeros
-test6_9: Con tu lealtad hacia las decisiones adoptadas
-test6_10: Con el grado de comunicación con tus compañeros
-test6_11: Con tu aportación al trabajo colectivo
-test6_12: Con tu implicación hacia el esfuerzo
-test6_13: Con tu confianza en los objetivos del juego propuestos
-test6_14: Con tu actitud hacia el trabajo que se te ha encomendado
-test6_15: Con las decisiones que has tomado durante el partido
-test6_16: Con tu nivel de confianza durante toda la competición
-test6_17: Con tu nivel de rendimiento ante las situaciones de muy alta intensidad
-test6_18: Con tu capacidad luchadora y perseverante
-test6_19: Con tu actitud positiva hacia tu propia mejora
-test6_20: Con tu transmisión de disfrute, satisfacción y “buenas sensaciones”
-test6_21: Satisfacción Con La Capacidad De Rendimiento Del Equipo
+test6_6: Talde helburuekiko daukazun konpizlizitate mailarekin
+test6_7: Zure kideekiko eskuzabaltasun eta sostenguarekin
+test6_8: Zure kideekiko errespetuarekin
+test6_9: Hartutako erabakiekiko zure leialtasunarekin
+test6_10: Zure kideekiko komunikazio mailarekin
+test6_11: Talde lanari egiten diozun ekarpenarekin
+test6_12: Ahaleginarekiko daukazun inplilazioarekin
+test6_13: Proposaturiko jokuaren helburuekiko daukazun konfiantza mailarekin
+test6_14: Eman zaizun lanarekiko daukazun jarrerarekin
+test6_15: Partiduan zeha hartu dituzun erabakiekin
+test6_16: Lehiaketa osoan zehar izan duzun konfiantza mailarekin
+test6_17: Intentsitate oso handiko egoeretan daukazun errendimendu mailarekin
+test6_18: Zure borroka eta pertseberantzia gaitasunarekin
+test6_19: Zure hobekuntzarekiko daukazun jarrera baikorrarekin
+test6_20: Gozamen, asetasun eta “sentsazio onen” transmisioarekin
+test6_21: Taldearen errendimendu gaitasunarekin daukazun asetasuna
 
-test7_valor_1: 1 (no, en absoluto)
-test7_valor_7: 7 (totalmente)
-test7: Cuestionario de Satisfacción (Deportes Individuales) 
-test7_header: El grado de satisfacción con...
-test7_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
-test7_1: El nivel que he alcanzado en mis objetivos durante la temporada
-test7_2: La mejora de mi rendimiento en la temporada anterior
-test7_3: El nivel de mejoría de mis habilidades hasta ahora.
-test7_4: El grado hasta el que utilizo mis habilidades.
-test7_5: El nivel de utilización de mi talento.
-test7_6: La medida en que mi rol se corresponde con mi potencial.
-test7_7: El reconocimiento que recibo de mi entrenador.
-test7_8: La amabilidad del/la entrenador/a conmigo.
-test7_9: El grado en que el/la entrenador/a aprecia que haga las cosas bien.
-test7_10: La formación que he recibido durante las temporadas anteriores.
-test7_11: La formación que he recibido durante esta temporada.
-test7_12: Las instrucciones del/la entrenador/a técnico-tácticas de mi papel.
-test7_13: El grado hasta el que los miembros de mi grupo son éticos.
-test7_14: El sentido que mis compañeros tienen a cerca del juego limpio.
-test7_15: El nivel de deportividad de mis compañeros de grupo.
-test7_16: El grado hasta el que hago lo mejor que puedo.
-test7_17: Mi dedicación personal durante el entrenamiento.
-test7_18: Mi entusiasmo durante las competiciones.
+test7_valor_1: 1 (inolaz ere)
+test7_valor_7: 7 (guztiz) 
+test7: Asetasun galdetegia (banakako kirolak)  
+test7_header: …-(r)ekiko asetasun maila
+test7_intro: Segidan aurkezten zaizkizun enrtenamenduaren eta lehiaketaren aspektu ezberdinekin zer ikusia duten esaldi sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotazunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbaki gainean klik eginaz.
+test7_1: Denboraldian zehar nire helburuetan lorturiko maila
+test7_2: Aurreko denboralidan nire errendiemnduan izandako hobekuntza
+test7_3: Orain arteko nire trebetasunen hobekuntza maila
+test7_4: Nire trebetasunak erabiltzen ditudaneko maila
+test7_5: Nire talentuaren erabilpen maila
+test7_6: Nire rola nire potentzialekin bat datorren maila
+test7_7: Nola nire entrenatzaileak aintzat hartzen nauen
+test7_8: Nirekin entrenatzaileak erakusten duen gozotasuna
+test7_9: Entrenatzaileak zenbateraino aintzat hartzen duen nik gauzak ondo egitea
+test7_10:Aurreko denboraldietan jaso dudan prestakuntza
+test7_11:Denboraldi honetan zehar jaso dudan prestakuntza
+test7_12:Entrenatzaileak nire zereginari buruz emandako jarraibide tekniko-taktikoak
+test7_13:Zenbateraino nire taldeko kideak etikoak diren
+test7_14:Nire kideek joko garbiari emten dioten zentzua
+test7_15:Nire talde kideen kiroltasun maila
+test7_16:Zenbateraino ahal dudan onena ematen dudan
+test7_17:Entrenamenduan zehar dudan dedikazio pertsonal maila
+test7_18:Lehiaketean zehar dudan gogoa
 
-test8_valor_1: 1 (no, en absoluto)
-test8_valor_7: 7 (totalmente)
-test8: Cuestionario de Satisfacción (Deportes Colectivos)
-test8_header: El grado de satisfacción con...
-test8_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
-test8_1: El nivel que he alcanzado en mis objetivos durante la temporada.
-test8_2: La mejora de mi rendimiento en la temporada anterior.
-test8_3: El nivel de mejoría de mis habilidades hasta ahora.
-test8_4: El nº de competiciones ganadas y perdidas durante la temporada.
-test8_5: El rendimiento global del equipo durante esta temporada.
-test8_6: La medida en que el equipo ha conseguido sus objetivos de temporada hasta ahora.
-test8_7: El grado hasta el que utilizan mis habilidades.
-test8_8: El nivel de utilización de mi talento.
-test8_9: La medida en que mi rol se corresponde con mi potencial.
-test8_10: La cantidad de tiempo que juego durante la competición.
-test8_11: El grado de correspondencia entre mi rol en el equipo con mi rol preferido.
-test8_12: La elección que el/la entrenador/a hace sobre los jugadores durante la competición.
-test8_13: Las tácticas utilizadas durante la competición.
-test8_14: La elección que el/la entrenador/a hace de las estrategias en la competición.
-test8_15: La forma en que el/la entrenador/a hace ajustes durante la competición.
-test8_16: Los planes de juego del/la entrenador/a.
-test8_17: La manera en que el/la entrenador/a combina el talento disponible.
-test8_18: El reconocimiento que recibo de mi entrenador.
-test8_19: La amabilidad del/la entrenador/a conmigo.
-test8_20: El grado en que el/la entrenador/a aprecia que haga las cosas bien.
-test8_21: La lealtad del/la entrenador/a conmigo.
-test8_22: El grado en que el/la entrenador/a está pendiente de mí.
-test8_23: La formación que he recibido del/la entrenador/a durante las temporadas anteriores.
-test8_24: La formación que he recibido durante esta temporada.
-test8_25: Las instrucciones del/la entrenador/a técnico-tácticas de mi posición.
-test8_26: La medida en que mis compañeros me proveen de instrucciones.
-test8_27: La orientación que recibo de mis compañeros de equipo.
-test8_28: El feed-back constructivo que recibo de mis compañeros.
-test8_29: Mi estatus social en el equipo.
-test8_30: El rol que juego en la vida social del equipo.
-test8_31: La medida en que mis compañeros me aceptan socialmente.
-test8_32: El grado hasta el que los miembros del equipo son éticos.
-test8_33: El sentido que mis compañeros tienen acerca del juego limpio.
-test8_34: El nivel de deportividad de mis compañeros de equipo.
-test8_35: La forma en que el equipo trabaja para ser el mejor.
-test8_36: El grado hasta el que los miembros del equipo comparten el mismo objetivo.
-test8_37: La dedicación de los miembros del equipo a trabajar conjuntamente para conseguir los objetivos del equipo.
-test8_38: El grado en el que los miembros del equipo “juegan como equipo”.
-test8_39: El grado hasta el que hago lo mejor que puedo para el equipo.
-test8_40: Mi dedicación personal durante el entrenamiento.
-test8_41: Mi entusiasmo durante las competiciones.
-test8_42: Mi compromiso hacia el equipo
+test8_valor_1: 1 (inolaz ere) 
+test8_valor_7: 7 (guztiz)
+test8: Asetasun galdetegia (Talde kirolak)
+test8_header: …-(r)ekiko asetasun maila
+test8_intro: Segidan aurkezten zaizkizun enrtenamenduaren eta lehiaketaren aspektu ezberdinekin zer ikusia duten esaldi sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotazunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbaki gainean klik eginaz.
+test8_1: Denboraldian zehar nire helburuetan lorturiko maila
+test8_2: Aurreko denboralidan nire errendiemnduan izandako hobekuntza
+test8_3: Orain arteko nire trebetasunen hobekuntza maila
+test8_4: Denboraldian zehar irabazi eta galdutako lehiaketa kopurua
+test8_5: Azken denboraldi honetan zehar taldeak izandako errendimendu globala
+test8_6: Orain artean taldeak zenbateraino lortu dituen denboraldi honetarako zituen helburuak
+test8_7: Nire trebetasunak erabiltzen dituzteneko maila
+test8_8: Nire talentuaren erabilpen maila
+test8_9: Nire rola nire potentzialekin bat datorren maila
+test8_10: Lehiaketan zehar jokatzen dudan denbora
+test8_11: Taldean dudan rolaren eta nire rol gustokoenaren arteko korrespondentzia maila
+test8_12: Lehiaketan zehar entrenatzaileak jokalariei buruz egiten duen hautaketa
+test8_13: Lehiaketan zehar erabilitako taktikak
+test8_14: Lehiaketan zehar entrenatzaileak egiten dituen estrategia hautaketak
+test8_15: Lehiaketan zehar entrenatzaileak egokitzeak egiten dituen modua
+test8_16: Entrenatzailearen joko planak
+test8_17: Entrenatzaileak erabilgarri duen talentua konbinatzen duen modua
+test8_18: Nola nire entrenatzaileak aintzat hartzen nauen
+test8_19: Nirekin entrenatzaileak erakusten duen gozotasuna
+test8_20: Entrenatzaileak zenbateraino aintzat hartzen duen nik gauzak ondo egitea
+test8_21: Entrenatzailearen nirekiko leialtasuna
+test8_22: Entrenatzailea zenbateraino dagoen nire pendiente 
+test8_23: Entrenatzaileangandik aurreko denboraldietan jaso dudan prestakuntza
+test8_24: Denboraldi honetan zehar jaso dudan prestakuntza
+test8_25: Entrenatzaileak nire kokaeraz emandako jarraibide tekniko-taktikoak
+test8_26: Nire kideek jarraibideak ematen dizkidaten maila
+test8_27: Nire talde kideengandik jasotzen dudan orientazioa
+test8_28: Nire kideengandik jasotzen dudan feed-back positiboa 
+test8_29: Taldean dudan estatus soziala
+test8_30: Taldearen bizitza sozialean jokatzen dudan rola
+test8_31: Nire kideek sozialki onartzen nauten maila
+test8_32: Zenbateraino nire taldeko kideak etikoak diren
+test8_33: Nire kideek joko garbiari emten dioten zentzua
+test8_34: Nire talde kideen kiroltasun maila
+test8_35: Hobea izateko taldeak lan egiten duen modua
+test8_36: Zenbateraino talde kideek helburu bera daukaten
+test8_37: Taldeko helburuak lortzeko taldeko kideek batera lan egiteari eskaintzen dioten dedikazioa
+test8_38: Zenbateraino taldeko kideek “talde bezala jokatzen” duten
+test8_39: Zenbateraino ahal dudan onena ematen dudan taldearentzako
+test8_40: Entrenamenduan zehar dudan dedikazio pertsonal maila
+test8_41: Lehiaketean zehar dudan gogoa.
+test8_42: Taldearekiko dudan konpromiso maila.
