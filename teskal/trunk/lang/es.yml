@@ -481,7 +481,7 @@ default_priority_urgent: Urgente
 default_priority_immediate: Ahora
 default_activity_design: Diseño
 default_activity_development: Desarrollo
-    
+ 
 #los niveles de valoracion 0 a 4 igual que en el cuestionario 3
 #textos cuestionario 2 del test 1
 test1: Valoración Inicial Temporada
@@ -489,7 +489,7 @@ test1_header2: Antes de la competición...
 test1_header4: Al practicar deporte, siento que tengo éxito cuando...
 test1_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente. A continuación aparecen una serie de comentarios que han sido utilizados por los deportistas para describir sus sentimientos o emociones antes de una competición. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
 
-# titulo cuestionario 3 del test1  
+# titulo cuestionario 3 del test1 
 test1_28: Indica los objetivos de la temporada
 
 test1_29: Nivel de dificultad
@@ -510,7 +510,7 @@ test1_23: Haces algo para motivarte
 test1_24: Utilizas rutinas en tu preparación
 test1_25: Tienes/utilizas un plan de competición?
 
-# textos cuestionario 3 del test1  
+# textos cuestionario 3 del test1 
 test1_26: Me preocupa la competición en general
 test1_27: Estoy nervios@
 test1_28: Me encuentro a gusto
@@ -554,10 +554,77 @@ test1_61: Hago algo que los demás no pueden hacer
 test1_62: Lo hago todo lo mejor que se
 test1_63: Alcanzo la meta que me propuse
 test1_64: Soy claramente superior a l@s demás
-
 #cabecera cuestionario 6 del test1
 test1_66: En que medida te sientes capaz de competir en tu deporte
+#labels
+test1_label_1: Tension
+test1_label_2: Depresion
+test1_label_3: Hostilidad
+test1_label_4: Vigor
+test1_label_5: Fatiga
+test1_label_6: Ansiedad cognitiva
+test1_label_7: Objetivos marcados
+test1_label_8: Objetivo (1)
+test1_label_9: Objetivo (2)
+test1_label_10: Objetivo (3)
+test1_label_11: Objetivo (4)
+test1_label_12: Dificultad percibida estimada
+test1_label_13: Grado de confianza
+test1_label_14: Autocontrol
+test1_label_15: Visualización
+test1_label_16: Autoacciones
+test1_label_17: Orientacion motivacional EGO
+test1_label_18: Orientacion motivacional Tarea
+test1_label_17: Optima
+test1_label_18: Actual
+#dimensions
+test1_d1_a: Los valores de la Tensión se encuentran en un nivel bajo, lo cual es positivo, y supone que est@ deportista se encuentra tranquil@ y centrad@ en el trabajo que se le encomiende.
+test1_d1_b: Los valores de la Tensión se encuentran en un nivel medio, que puede ser causar cierta intranquilidad en este caso. Conviene vigilar la evolución de esta dimensión durante los próximos días e intentar que poco a poco se vaya situando en la zona baja, sobre todo si estamos muy alejados de la competición.
+test1_d1_c: Los valores de la Tensión se encuentran en un nivel alto, lo cual es preocupante, ya que posiblemente est@ deportista no consiga centrarse en el trabajo que se le plantee mientras no se consigan reducir estos valores. Puede ser consecuencia de estar próxima la participación en competición, pero si no es así conviene realizar una labor de vigilancia.
+test1_d2_a: En cuanto a la Depresión, sus valores se encuentran en un nivel bajo, lo cual es positivo, supone que est@ deportista se siente apoyad@ y estimad@, transmitiendo un buen equilibrio y sensaciones durante las sesiones de entrenamiento, además de encontrarse muy centrada en ellas.
+test1_d2_b: En cuanto a la Depresión, sus valores se encuentran en un nivel medio, lo que puede ser un poco preocupante. Suele ser producido por un malestar generalizado que, a veces, afecta a la propia dinámica del entrenamiento. Conviene vigilar la evolución de esta dimensión durante los próximos días e intentar reducirla y situarla en la zona baja, ya que puede influir negativamente en el resto de las dimensiones, sobre todo, incrementando los valores de la Hostilidad y la Tensión.
+test1_d2_c: En cuanto a la Depresión, sus valores se encuentran en un nivel alto, lo cual es alarmante, ya que posiblemente su situación personal sea bastante complicada. Quizás haya elementos ajenos a la propia dinámica del entrenamiento que estén influyendo muy negativamente en su estado anímico. Es necesario evitar que empiece a contaminar al resto de las dimensiones negativas, sobre todo la Hostilidad y la Tensión.
+test1_d3_a: Si observamos los valores de la Hostilidad, vemos que se encuentran en un nivel bajo, lo cual es positivo, y supone que se siente content@ y satisfech@ de la forma en que van transcurriendo las cosas, manteniéndose centrad@ en el entrenamiento.
+test1_d3_b: Si observamos los valores de la Hostilidad, vemos que se encuentran en un nivel medio, quizás porque se encuentre un poco cabread@ con algunas cuestiones del entrenamiento, pero sin afectar de forma importante en su actuación. También pueden estar asociados a la existencia de ligeras molestias o puntos de lesión superficial. En algunos casos estos valores suponen una energía extra que viene muy bien para soportar las cargas de entrenamiento, si est@ deportista es capaz de reorientarlos positivamente. 
+test1_d3_c: Si observamos los valores de la Hostilidad, vemos que se encuentran en un nivel alto, lo cual es alarmante, ya que posiblemente se encuentre muy disgustado y disconforme con la forma en que se desarrollan los acontecimientos. Pueden estar asociados a la existencia de molestias musculares o leves lesiones. Es necesario minimizar el efecto contaminante que puede tener sobre el resto de las dimensiones negativas. En el caso de que se corresponda con niveles semejantes en la Depresión nos encontraríamos en una situación peligrosa.
+test1_d4_a: Si nos fijamos en los valores del Vigor, podemos apreciar que se encuentran en un nivel bajo, lo cual es negativo y preocupante, ya que se encuentra apagado y sin chispa. Pueden ser debidos a que est@ deportista tenga una lesión leve, o pequeñas molestias. Si los valores se encuentran invertidos con respecto a los de la Fatiga,y acompañados por altos registros en Hostilidad y/o Tensión, nos encontramos con un posible caso de sobreentrenamiento. De cualquier forma, sería recomendable identificar las causas y, si es necesario, descansar unos días y recuperar los valores óptimos. 
+test1_d4_b: Si nos fijamos en los valores del Vigor, podemos apreciar que se encuentran en un nivel medio, lo que en principio entra dentro de la normalidad, sobre todo y se encuentran en la zona superior de este nivel. También puede deberse a que se hayan registrado después de una dura sesión de entrenamiento. Si se encuentran acompañados de valores medios de las dimensiones negativas, sobre todo Hostilidad y Depresión, habrá que establecer una vigilancia para evitar los efectos contaminantes de las mismas. 
+test1_d4_c: Si nos fijamos en los valores del Vigor, podemos apreciar que se encuentran en un nivel alto, en la zona óptima para el rendimiento y para abordar cualquier situación de reto que se le plantee. Es un excelente indicador que, en principio, garantiza un buen equilibrio emocional. Si el resto de las dimensiones anímicas se encuentra en niveles bajos podemos señalar que este diagrama se corresponde con el “Perfil Iceberg.”
+test1_d5_a: En el caso de la Fatiga, sus valores presentan un nivel bajo, lo cual es positivo y supone que est@ deportista se encuentra pletóric@, con una alta disposición para darlo todo en el entrenamiento y soportar grandes cargas y altas intensidades de esfuerzo. 
+test1_d5_b: En el caso de la Fatiga, sus valores presentan un nivel medio, lo que puede ser un poco preocupante, si no se han registrado los datos después de la realización de esfuerzos o de una sesión de entrenamiento. También puede ser debido a que nos encontramos en un periodo de esfuerzos de altas intensidades, pero si estos valores se encuentran acompañados de un buen proceso de recuperación los podemos considerar como normales.
+test1_d5_c: En el caso de la Fatiga, sus valores presentan un nivel alto, lo cual es alarmante, ya que puede encontrarse en una situación de riesgo de sobreentrenamiento, sobre todo si los valores del Vigor se encuentran bajos, es decir, invertidos con respecto a esta dimensión, salvo que se hayan registrado después de una sesión de entrenamiento. También pueden haber sido contaminados por la existencia de valores altos en Hostilidad y Depresión, lo que representaría un cuadro anímico muy alarmante.
+test1_d6_a: Presenta un valor bajo en cuanto a la ansiedad cognitiva, transmitiendo calma y serenidad, despreocupad@, con mucha capacidad de concentración en los momentos que sean necesarios. 
+test1_d6_b: Se observa un valor medio en cuanto a la ansiedad cognitiva, lo que supone que, a veces, se encuentre un poco intranquil@ o ligeramente nervios@. Conviene realizar un trabajo específico y reforzarlo con sesiones de visionado de presión/estrés, para que estos valores se sitúen en la zona baja, es decir, por debajo de 48. 
+test1_d6_c: Presenta un valor alto en cuanto a la ansiedad cognitiva, con una excesiva preocupación relacionada con el rendimiento personal durante la competición. Quizás tenga demasiados pensamientos desordenados que le impiden concentrarse en momentos importantes. Es necesario realizar un trabajo específico para reducir este alto valor acompañado de sesiones de visionado con contenidos de presión/estrés, y en el caso de que persistan en el tiempo, consultar al tutor. 
+test1_d7_a: Los valores de la autoconfianza son muy bajos, provocando mucha inseguridad durante la competición, sobre todo cuando se dan situaciones de mucha presión. Se hace necesario elaborar un plan específico para aumentar estos valores. Se recomienda una sesión de visionado con contenidos de autoeficacia, acompañada de una explicación bien con el propio entrenador o bien con el tutor. 
+test1_d7_b: Presenta un nivel medio de autoconfianza, transmitiendo cierta incomodidad frente a situaciones de presión. Quizás le cueste un poco verse a sí mismo resolviendo exitosamente las situaciones de competición. Conviene proponer un trabajo específico para mejorar estos valores y se sitúen en la zona alta, es decir, por encima de 60. 
+test1_d7_c: Se observa un alto nivel de autoconfianza, con buenas sensaciones para competir, cómodo y con alta capacidad para optimizar su rendimiento en situaciones de presión.
+test1_d8_a: Presenta un valor bajo en cuanto a la ansiedad somática, transmitiendo comodidad y tranquilidad, con mucha capacidad para relajarse corporalmente y estar mentalmente activo en los momentos que sean requeridos, es decir, “calma expectante”.
+test1_d8_b: Se observa un valor medio en cuanto a la ansiedad somática, lo que supone que, a veces, se encuentre un poco inquiet@ y tens@. Se aconseja orientar una parte del entrenamiento hacia la reducción y mejora de estos valores y, además reforzarlo con unas sesiones de visionado con contenidos de Relajación.
+test1_d8_c: Los valores de la ansiedad somática son excesivos y perjudiciales para el rendimiento. Tendrá dificultades para controlar la tensión y es posible que en determinadas situaciones se precipite en sus acciones, lo que le impide rendir en sus niveles óptimos. Para reducir estos valores, se hace necesario realizar un trabajo específico de sesiones de visionado con contenidos de Relajación y de Presión/Estrés, reforzado con orientaciones del tutor. 
+test1_d9_a: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito: A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos valores bajos de la DPE, supone que una selección de objetivos poco ambiciosos. Si van acompañados de cierta inestabilidad en la valoración, supone que est@ deportista tiene capacidad discriminativa a la hora de seleccionar sus objetivos, pero seguramente sus niveles de autoconfianza serán bajos. Será necesario plantear un trabajo específico con el apoyo del Power de la Autoeficacia.
+test1_d9_b: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito: A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos valores medios de la DPE, supone una selección de objetivos limitados. Si van acompañados de cierta estabilidad en la valoración, en torno a 70, supone que est@ deportista tiende a uniformizar los objetivos autoimpuestos, pero debería de ser más ambiciosa. Conviene recordar que el grado de dificultad de las situaciones no depende del/a deportista, ya que en ningún caso lo va a poder cambiar, pero “aumentar las probabilidades de éxito sí, manteniendo alta las creencias en sí mism@”.
+test1_d9_c: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito: A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos altos valores de la DPE, supone una autoimposición de objetivos ambiciosos para esta temporada. Si van acompañados de cierta variabilidad en la valoración, entre 70 y 100, supone que est@ deportista posee una excelente capacidad discriminativa a la hora de seleccionar sus objetivos. Conviene recordar que el grado de dificultad de las situaciones no depende del/a deportista, ya que en ningún caso lo va a poder cambiar, pero “aumentar las probabilidades de éxito sí, manteniendo alta las creencias en sí mism@”.
+test1_d10_a: Este nivel tan bajo observado en el grado de confianza en sus objetivos, va a hacer muy difícil el conseguirlos, ya que es insuficiente e inestable y, además, provocará muchas dudas relacionadas con sus capacidades. Es necesario contemplar los niveles de ansiedad del/a deportista y, en el caso de que sean altos, conviene consultar con el tutor para plantear un trabajo conjunto de reestructuración general.
+test1_d10_b: Este nivel medio observado en el grado de confianza en sus objetivos, va a disminuir las posibilidades de alcanzarlos. Además, si van acompañados de cierta inestabilidad en sus estimaciones, de 50 a 90, supone un GRACO insuficiente e inestable, con dificultades para sentirse con capacidad para realizar cualquier tipo de habilidades que se le plantee. Es necesario realizar 3-4 sesiones orientadas hacia la mejora de este aspecto importante con el apoyo del Power de la Autoeficacia. 
+test1_d10_c: Este alto nivel del grado de confianza en sus objetivos, si van acompañados de estabilidad en sus estimaciones, de 80 a 100, supone que posee una alta convicción en conseguirlos. Esta máxima creencia en uno mismo tiene un efecto positivo sobre las endorfinas, y esto le permitirá disponer de energía extra. Es decir, dispone de un GRACO alto y estable, con buenas sensaciones para competir y con alta capacidad para realizar cualquier tipo de habilidades que se le planteen. Es importante detectar si estos valores fluctúan en función de la DPE, en cuyo caso sería conveniente comentarlo con el tutor.
+test1_d11_a: Se observan bajos valores en relación a la utilización de técnicas o estrategias relacionadas con la capacidad de autocontrol. Quizás, en su preparación, no haya tenido necesidad de dedicar atención a este aspecto porque posee un buen equilibrio emocional. Puede ser conveniente orientarle hacia un trabajo de relajación.
+test1_d11_b: Este valor medio indica que, a veces, dedica una parte de su preparación a desarrollar su capacidad de autocontrol, lo cual es positivo. Sería conveniente mantener y reforzar este trabajo de relajación, si se considera insuficiente. 
+test1_d11_c: Este alto valor indica que se encuentra familiarizado con las técnicas de relajación y posee una buena capacidad de autocontrol. En este caso, es suficiente con mantener una actitud de vigilancia sobre las tareas que se realicen a lo largo de la temporada, para mantener y reforzar esta importante capacidad.
+test1_d12_a: Se observan bajos valores en relación a la utilización de técnicas o estrategias relacionadas con el visionado. También presenta ciertas dificultades para el entrenamiento en imaginería. Es importante que visione materiales relacionados con su deporte y que, al mismo tiempo, trate de imaginárselos. Poco a poco deberá practicar tareas de visualización sin el soporte del visionado.
+test1_d12_b: Estos valores medios en relación a la utilización de técnicas o estrategias relacionadas con el visionado, indican que se debe aumentar los contenidos de esta actividad en su preparación. Es importante que combine el visionado de materiales relacionados con su propia actuación con fases de visualización sin el soporte visual. Además, sería interesante inducirle a que recordara los sueños que tenga relacionados con su deporte.
+test1_d12_c: Estos altos valores en relación a la utilización de técnicas o estrategias relacionadas con el visionado, supone que posee una especial habilidad que se debe potenciar más, si es posible. Además, sería interesante inducirle a que se planteara soñar con momentos de la competición, recrearse en ellos de forma positiva y poder recordarlos con total nitidez.
+test1_d13_a: Este bajo valor indica una falta de acciones personales relacionadas con la automotivación así como una carencia de rutinas en su preparación, lo que hace suponer que desconoce la importancia de acciones de anticipación y el plan de competición para su rendimiento. Conviene orientarle en este sentido e iniciarle en el trabajo de construcción del plan integral de competición (PIC). 
+test1_d13_b: Un valor medio indica que, a veces, realiza acciones personales relacionadas con la automotivación así como con determinadas rutinas en su preparación, lo cual es positivo. Habrá que interesarse por su plan integral de competición y orientarle en la mejora del mismo, a través de una sesión específica con los contenidos del PIC.
+test1_d13_c: Un valor alto supone que realiza acciones personales relacionadas con la automotivación así como con determinadas rutinas en su preparación, lo cual es positivo. Habrá que revisar su plan integral de competición y orientarle en la reconstrucción del mismo con apoyo de una sesión específica del PIC.
+test1_d14_a: Este bajo valor de asociado a la orientación motivacional EGO, situado por debajo de 4, supone que, para est@ deportista los resultados obtenidos tienen un valor bajo, quizás menos que la mejora de las habilidades, lo que producirá un aumento en su implicación durante el entrenamiento, y le facilitará el control sobre la ansiedad frente a los errores en el caso de que la hubiera.
+test1_d14_b: Este valor medio asociado a la orientación motivacional EGO, situado entre 4 y 7, supone que, para est@ deportista los resultados obtenidos tienen un importante valor, que si son semejantes a la OT, le proporcionará una buena motivación para aumentar su compromiso con el esfuerzo, ayudándole a controlar la ansiedad frente a los errores en el caso de que la hubiera.
+test1_d14_c: Este alto valor asociado a la orientación motivacional EGO, más de 7, supone que, para est@ deportista los resultados obtenidos tienen el máximo valor. Solamente si van acompañados de altos valores de OT, supondrá una buena motivación para aumentar su compromiso e implicación con el esfuerzo. En el caso de que prevalezca sobre la OT, posiblemente tenga un efecto negativo sobre la capacidad de l@s deportistas para afrontar situaciones de máximo desafío personal.
+test1_d15_a: Su orientación motivacional relacionada con la tarea (OT), se encuentra en niveles bajos, lo cual es un poco preocupante. Le cuesta valorar positivamente sus propias mejoras y en situaciones novedosas o de gran dificultad se retrae un poco, necesita un empujoncito. Habrá que vigilar su asistencia y continuidad en el entrenamiento, recordándole y reforzándole la importancia de su presencia en el mismo y de las mejoras que se produzcan, a través de la autocomparación. 
+test1_d15_b: Su orientación motivacional relacionada con la tarea (OT), se encuentra en niveles medios. Valorar positivamente sus propias mejoras y afronta con buena actitud situaciones novedosas o de gran dificultad. Habrá que reforzarle su implicación en el esfuerzo, destacando la importancia que tienen las mejoras para conseguir sus objetivos. Es conveniente reconocer y valorar su esfuerzo cuando se produzca una clara mejoría personal, por pequeña que sea. Así conseguiremos que aumente este valor.
+test1_d15_c: Su orientación motivacional relacionada con la tarea (OT), se encuentra en niveles altos, lo cual es positivo. Se centra en sus propias mejoras y afronta con una excelente actitud situaciones novedosas o de gran dificultad. Se destaca por su compromiso en el entrenamiento, por su alta competencia percibida y porque entiende que los errores son instrumentos de mejora. 
 
+#test 2 stress
 test2_valor_0: 0 (nada)
 test2_valor_1: 1 (rara vez)
 test2_valor_2: 2 (a veces)
@@ -565,7 +632,7 @@ test2_valor_3: 3 (a menudo)
 test2_valor_4: 4 (muchas veces)
 test2_valor_5: 5 (casi siempre)
 test2_valor_6: 6 (siempre)
-
+#answers
 test2: Cuestionario Tolerancia Psicológica al Estrés
 test2_header: En el último mes...
 test2_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
@@ -597,8 +664,45 @@ test2_25: Me he marcado objetivos para el entrenamiento/competición
 test2_26: Me he sentido físicamente fuerte
 test2_27: Me he sentido frustrad@ en mi deporte
 test2_28: He manejado con tranquilidad los problemas emocionales en mi deporte
-
-test3_valor_0: 0 (nada)
+#labels
+test2_label_1: Descanso Interrumpido
+test2_label_2: Cansancio emocional
+test2_label_3: Vulnerabilidad a las lesiones
+test2_label_4: Estado de Forma
+test2_label_5: Logro Personal
+test2_label_6: Autoeficacia
+test2_label_7: Autorregulación
+test2_label_8: Valoración General
+#dimensions
+test2_d1_a: Los valores relacionados con el descanso interrumpido o con un déficit en la recuperación son bajos, lo que permite considera ajustados los niveles de la carga de trabajo propuestos.
+test2_d1_b: Los valores relacionados con el descanso interrumpido o con un déficit en la recuperación son medios, por lo que habrá que vigilar la carga de trabajo durante el entrenamiento.
+test2_d1_c: Los valores relacionados con el descanso interrumpido o con un déficit en la recuperación son altos, por lo que habrá que revisar y quizás recomponer la carga de trabajo de las sesiones de entrenamiento
+test2_d2_a: En cuanto al cansancio emocional relacionado con situaciones de frustración y asociado a una posible falta de persistencia se encuentra en niveles bajos. 
+test2_d2_b: En cuanto al cansancio emocional relacionado con situaciones de frustración y asociado a una posible falta de persistencia se encuentra en niveles medios, con lo que se hace necesario analizar con el deportista este inquietante valor.
+test2_d2_c: En cuanto al cansancio emocional relacionado con situaciones de frustración y asociado a una posible falta de persistencia se encuentra en niveles altos, con lo que se hace necesario detectar las causas que están generando este peligroso valor.
+test2_d3_a: Al observar los valores de la vulnerabilidad a las lesiones vemos que se encuentran en un bajo nivel, lo que supone una buena disposición para afrontar con garantías y determinación las situaciones más duras o de mayor complejidad.
+test2_d3_b: Al observar los valores de la vulnerabilidad a las lesiones vemos que se encuentran en un nivel medio, lo que puede afectar negativamente a su disposición y a su firmeza decisional al afrontar situaciones duras o de mayor riesgo del entrenamiento.
+test2_d3_c: Al observar los valores de la vulnerabilidad a las lesiones vemos que se encuentran en un alto nivel, lo que supone una elevada percepción de fragilidad y de inseguridad al afrontar las situaciones más duras o de mayor riesgo en el entrenamiento. 
+test2_d4_a: En relación a su estado de forma, vemos que se sitúa en el nivel bajo, lo que perjudica a los sentimientos subjetivos de capacidad percibida relacionada con el rendimiento. Estar en forma mide los sentimientos subjetivos de habilidad y competencia en el rendimiento, la percepción de estar en forma y la vitalidad puntuaciones altas se describen como físicamente eficientes, y vitales.
+test2_d4_b: En relación a su estado de forma, vemos que se sitúa en un nivel medio, lo que ayudará a tener adecuados sentimientos de capacidad percibida relacionada con el rendimiento. 
+test2_d4_c: En relación a su estado de forma, vemos que se sitúan en un nivel alto, lo que supone tener profundos sentimientos de eficiencia y de vitalidad, acompañados de una alta percepción sobre su estado de forma relacionada con el rendimiento.
+test2_d5_a: Fijándonos en los valores relacionados con los logros personales vemos que se encuentran en un bajo nivel, lo que indica cierta insatisfacción con la consecución de sus metas, o también una baja apreciación y empatía con el grupo o el equipo.
+test2_d5_b: Fijándonos en los valores relacionados con los logros personales vemos que se encuentran en un nivel medio, lo que indica cierta satisfacción con la consecución de sus metas, o también una aceptable apreciación y empatía con el grupo o el equipo.
+test2_d5_c: Fijándonos en los valores relacionados con los logros personales vemos que se encuentran en un alto nivel, lo que indica una elevada satisfacción con la consecución de sus metas y, también, una alta apreciación y nivel de empatía con el grupo/equipo.
+test2_d6_a: La convicción que posee est@ deportista de la forma en que se ha desarrollado el entrenamiento y las creencias sobre su preparación son bajas, por lo que será necesario revisar la dinámica de los entrenamientos del último periodo.
+test2_d6_b: La convicción que posee est@ deportista de la forma en que se ha desarrollado el entrenamiento y las creencias sobre su preparación se sitúa en valores medios. Quizás hayan existido algunas interferencias en la dinámica de los entrenamientos del último periodo, que no han afectado a su preparación de forma importante.
+test2_d6_c: La convicción que posee est@ deportista de la forma en que se ha desarrollado el entrenamiento y las creencias sobre su preparación se sitúa en valores altos. Esto produce una sensación gratificante y autosatisfacción por entrenamientos realizado.
+test2_d7_a: Parece que le cueste utilizar las habilidades mentales en su preparación, entre ellas la automotivación y el establecimiento de objetivos autoimpuestos, ya que presenta bajos valores relacionados con esta dimensión. Es necesario realizar un trabajo específico, apoyado con el Power de la motivación de logro.
+test2_d7_b: Podemos señalara que utiliza las habilidades mentales en su preparación, entre ellas la automotivación y el establecimiento de objetivos autoimpuestos, ya que presenta valores medios relacionados con esta dimensión.
+test2_d7_c: Est@ deportista utiliza las habilidades mentales en su preparación, entre ellas la automotivación y el establecimiento de objetivos autoimpuestos, lo que se sirve de refuerzo y de guía en su camino hacia la consecución de los mismos.
+#valoracion
+test2_val_1: En general el nivel de tolerancia presenta unos valores medios muy positivos lo que le permitirá afrontar cualquier situación de entrenamiento o competición de forma óptima. El nivel de los generadores en su conjunto se sitúa en valores bajos, mientras que los valores de de las dimensiones recuperadoras son positivos, sobre todo los que hemos señalado. Por lo tanto, se puede afirmar que est@ deportista posee una alta percepción en cuanto a su estado de forma y a sus prestaciones de rendimiento, se encuentra muy motivad@ y con gran determinación para alcanzar sus objetivos.
+test2_val_2: En general el nivel de tolerancia presenta unos valores medios positivos, por lo que le dispone de recursos para afrontar situaciones especiales, tanto en el entrenamiento como en la competición. El nivel de los generadores en su conjunto se sitúan en la parte alta del nivel bajo, mientras que los valores de de las dimensiones recuperadoras se sitúan en la parte alta del nivel medio, en torno a 4, como los que hemos señalado. Podemos señalar que est@ deportista posee una adecuada percepción en cuanto a su estado de forma y a sus prestaciones de rendimiento, se encuentra motivad@ y con muchas ganas de alcanzar sus objetivos.
+test2_val_3: En general el nivel de tolerancia se encuentra en una delicada situación, dado que existe una igualdad entre los valores generadores y recuperadores, por lo que se encuentra en una situación de alarma, pero con recursos suficientes para afrontarla e intentar reducir el nivel de estrés generado por las dimensiones señaladas. Es importante plantear un trabajo específico apoyado por contenidos relacionados con la Presión/Estrés y, además, implementarlo con una exploración presencial al deportista, para conocer la posible causa estresora y, de esta manera abordarla adecuadamente.
+test2_val_4: En general el grado de tolerancia se encuentra en niveles bajísimos, dado que el nivel de los valores medios correspondiente a los generadores son mayores que los de los recuperadores. Es una situación de riego que necesita ser abordada inmediatamente con el asesoramiento del tutor, salvo que de la reflexión conjunta entrenador/a-deportista que se realice se identifiquen las causas que generan los valores señalados. En este caso se puede plantear un trabajo específico apoyado por contenidos relacionados con la Presión/Estrés y la orientación indirecta del tutor.
+ 
+#test3
+test3_valor_0: 0 (nada) 
 test3_valor_1: 1 (un poco)
 test3_valor_2: 2 (moderadamente)
 test3_valor_3: 3 (bastante)
@@ -642,7 +746,20 @@ test3_24: Me pone nervios@ practicar tareas nuevas en el entrenamiento
 
 test3_25: Nivel de competencia que tienes EN ESTE MOMENTO para realizar acciones técnicas
 test3_26: En que medida te sientes capaz EN ESTE MOMENTO de competir en tu deporte
+#labels
+test3_label_1: Tension
+test3_label_2: Depresion
+test3_label_3: Hostilidad
+test3_label_4: Vigor
+test3_label_5: Fatiga
+test3_label_6: Compromiso con el esfuerzo
+test3_label_7: Ansiedad frente a los errores
+test3_label_8: Competencia percibida
+test1_label_9: Optima
+test1_label_10: Actual
 
+
+#test4
 test4: Valoración Pre-Competición
 test4_header: Ahora mismo me siento...
 test4_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente. A continuación aparecen una serie de comentarios que han sido utilizados por los deportistas para describir sus sentimientos o emociones antes de una competición . Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
@@ -652,7 +769,7 @@ test4_intro: Más abajo hay una lista de palabras que describen sensaciones que 
 #cabecera cuestionario 4 del test 4
 test4_1: Resultado que esperas alcanzar si compites como quieres
 
-#textos cuestionario 4 del test 4  
+#textos cuestionario 4 del test 4 
 test4_2: Nivel de motivación
 test4_3: La importancia de la competición para ti
 test4_4: Tu conocimiento sobre los/las adversarias
