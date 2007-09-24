@@ -633,43 +633,6 @@ img.calendar-trigger {
 .contextual select, .contextual input {
 	font-size: 1em;
 }
-/***** Gantt chart *****/
-.gantt_hdr {
-	position:absolute;
-	top:0;
-	height:16px;
-	border-top: 1px solid #c0c0c0;
-	border-bottom: 1px solid #c0c0c0;
-	border-right: 1px solid #c0c0c0;
-	text-align: center;
-	overflow: hidden;
-}
-.task {
-	position: absolute;
-	height:8px;
-	font-size:0.8em;
-	color:#888;
-	padding:0;
-	margin:0;
-	line-height:0.8em;
-}
-.task_late {
-	background:#f66 url(../images/task_late.png);
-	border: 1px solid #f66;
-}
-.task_done {
-	background:#66f url(../images/task_done.png);
-	border: 1px solid #66f;
-}
-.task_todo {
-	background:#aaa url(../images/task_todo.png);
-	border: 1px solid #aaa;
-}
-.milestone {
-	background-image:url(../images/milestone.png);
-	background-repeat: no-repeat;
-	border: 0;
-}
 /***** Tooltips ******/
 .tooltip {
 	position:relative;
@@ -727,34 +690,7 @@ to account for 3 pixel bug: http://www.positioniseverything.net/explorer/threepx
 * html .threepxfix {
 	margin-left: 3px;
 }
-/***** Wiki sections ****/
-#content div.wiki {
-	font-size: 110%
-}
-#content div.wiki h2, div.wiki h3 {
-	font-family: Trebuchet MS, Georgia, "Times New Roman", serif;
-	color:#606060;
-}
-#content div.wiki h2 {
-	font-size: 1.4em;
-}
-#content div.wiki h3 {
-	font-size: 1.2em;
-}
-div.wiki table {
-	border: 1px solid #505050;
-	border-collapse: collapse;
-}
-div.wiki table, div.wiki td {
-	border: 1px solid #bbb;
-	padding: 4px;
-}
-div.wiki code {
-	font-size: 1.2em;
-}
-div.wiki img {
-	margin: 6px;
-}
+
 .diff_out {
 	background: #fcc;
 }
