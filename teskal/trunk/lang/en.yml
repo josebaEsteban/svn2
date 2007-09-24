@@ -597,7 +597,43 @@ test2_25: I set definite goals for myself during performance
 test2_26: My body felt strong
 test2_27: I felt frustated by my sport
 test2_28: I dealt with emotional problems in my sport very calmly 
-
+#labels
+test2_label_1: Descanso Interrumpid
+test2_label_2: Cansancio emocional
+test2_label_3: Vulnerabilidad a las lesiones
+test2_label_4: Estado de Forma
+test2_label_5: Logro Personal
+test2_label_6: Autoeficacia
+test2_label_7: Autorregulacion
+#dimensions
+test2_d1_a: Los valores relacionados con el descanso interrumpido o con un déficit  en la recuperación son bajos, lo que permite considera ajustados los niveles de la carga de trabajo propuestos.
+test2_d1_b: Los valores relacionados con el descanso interrumpido o con un déficit  en la recuperación son medios, por lo que habrá que vigilar la carga de trabajo durante el entrenamiento.
+test2_d1_c: Los valores relacionados con el descanso interrumpido o con un déficit  en la recuperación son altos, por lo que habrá que revisar y quizás recomponer la carga de trabajo de las sesiones de entrenamiento
+test2_d2_a: En cuanto al cansancio emocional relacionado con situaciones de frustración y asociado a una posible falta de persistencia se encuentra en niveles bajos.  
+test2_d2_b: En cuanto al cansancio emocional relacionado con situaciones de frustración y asociado a una posible falta de persistencia se encuentra en niveles medios, con lo que se hace necesario analizar con el deportista este inquietante valor.
+test2_d2_c: En cuanto al cansancio emocional relacionado con situaciones de frustración y asociado a una posible falta de persistencia se encuentra en niveles altos, con lo que se hace necesario detectar las causas que están generando este peligroso valor.
+test2_d3_a: Al observar los valores de la vulnerabilidad a las lesiones vemos que  se encuentran en un bajo nivel, lo que supone una buena disposición para afrontar con garantías y determinación las situaciones más duras o de mayor complejidad.
+test2_d3_b: Al observar los valores de la vulnerabilidad a las lesiones vemos que  se encuentran en un nivel medio, lo que puede afectar negativamente a su disposición y a su firmeza decisional al afrontar situaciones duras o de mayor riesgo del entrenamiento.
+test2_d3_c: Al observar los valores de la vulnerabilidad a las lesiones vemos que  se encuentran en un alto nivel, lo que supone una elevada percepción de fragilidad y de inseguridad al afrontar las situaciones más duras o de mayor riesgo en el entrenamiento. 
+test2_d4_a: En relación a su estado de forma, vemos que se sitúa en el nivel  bajo,  lo que perjudica a los sentimientos subjetivos de capacidad percibida relacionada con el rendimiento. Estar en forma mide los sentimientos subjetivos de habilidad y competencia en el rendimiento, la percepción de estar en forma y la vitalidad puntuaciones altas se describen como físicamente eficientes, y vitales.
+test2_d4_b: En relación a su estado de forma, vemos que se sitúa en un nivel medio, lo que ayudará a tener adecuados sentimientos de capacidad percibida relacionada con el rendimiento. 
+test2_d4_c: En relación a su estado de forma, vemos que se sitúan en un nivel alto, lo que supone tener profundos sentimientos de eficiencia y de vitalidad, acompañados de una alta percepción sobre su estado de forma relacionada con el rendimiento.
+test2_d5_a: Fijándonos en los valores relacionados con los logros personales vemos que se encuentran en un bajo nivel, lo que indica cierta insatisfacción con la consecución de sus metas, o también una baja apreciación y empatía con el grupo o el equipo.
+test2_d5_b: Fijándonos en los valores relacionados con los logros personales vemos que se encuentran en un nivel medio, lo que indica cierta satisfacción con la consecución de sus metas, o también una aceptable apreciación y empatía con el grupo o el equipo.
+test2_d5_c: Fijándonos en los valores relacionados con los logros personales vemos que se encuentran en un alto nivel, lo que indica una elevada satisfacción con la consecución de sus metas y, también, una alta apreciación y  nivel de empatía con el grupo/equipo.
+test2_d6_a: La convicción que posee est@ deportista de la forma en que se ha desarrollado el entrenamiento y las creencias sobre su preparación son bajas, por lo que será necesario revisar la dinámica de los entrenamientos del último periodo.
+test2_d6_b: La convicción que posee est@ deportista de la forma en que se ha desarrollado el entrenamiento y las creencias sobre su preparación se sitúa en valores medios. Quizás hayan existido algunas interferencias  en la dinámica de los entrenamientos del último periodo, que no han afectado a su preparación de forma importante.
+test2_d6_c: La convicción que posee est@ deportista de la forma en que se ha desarrollado el entrenamiento y las creencias sobre su preparación se sitúa en valores altos. Esto produce una sensación gratificante y autosatisfacción por entrenamientos realizado.
+test2_d7_a: Parece que le cueste utilizar las habilidades mentales en su preparación, entre ellas la automotivación y el establecimiento de objetivos autoimpuestos, ya que presenta bajos  valores relacionados con esta dimensión. Es necesario realizar un trabajo específico, apoyado con el Power de la motivación de logro.
+test2_d7_b: Podemos señalara que utiliza las habilidades mentales en su preparación, entre ellas la automotivación y el establecimiento de objetivos autoimpuestos, ya que presenta valores medios relacionados con esta dimensión.
+test2_d7_c: Est@ deportista utiliza las habilidades mentales en su preparación, entre ellas la automotivación y el establecimiento de objetivos autoimpuestos, lo que se sirve de refuerzo y de guía  en su camino hacia la consecución de los mismos.
+#valoracion
+test2_val_1: En general el nivel de tolerancia  presenta unos valores medios muy positivos lo que le permitirá afrontar cualquier situación de entrenamiento o competición de forma óptima. El nivel de los generadores en su conjunto se sitúa en valores bajos, mientras que los valores de de las dimensiones recuperadoras son positivos, sobre todo los que hemos señalado. Por lo tanto, se puede afirmar que est@ deportista posee una alta percepción en cuanto a su estado de forma y a sus prestaciones de rendimiento, se encuentra muy motivad@ y con gran determinación para alcanzar sus objetivos.
+test2_val_2: En general el nivel de tolerancia presenta unos valores medios  positivos, por lo que le dispone de recursos para afrontar situaciones especiales, tanto en  el entrenamiento como en la  competición. El nivel de los generadores en su conjunto se sitúan en la parte alta del nivel bajo,  mientras que los valores de de las dimensiones recuperadoras se sitúan en la parte alta del nivel medio, en torno a 4, como los que hemos señalado. Podemos señalar que est@ deportista posee una adecuada percepción en cuanto a su estado de forma y a sus prestaciones de rendimiento, se encuentra  motivad@ y con muchas ganas de alcanzar sus objetivos.
+test2_val_3: En general el nivel de tolerancia se encuentra en una delicada situación, dado que existe una igualdad entre los valores generadores y recuperadores, por lo que se encuentra en una situación de alarma, pero con recursos suficientes para afrontarla e intentar reducir el nivel de estrés generado por las dimensiones señaladas. Es importante plantear un trabajo específico apoyado por contenidos relacionados con la Presión/Estrés y, además,  implementarlo con una exploración presencial al deportista, para conocer la  posible causa estresora y, de esta manera  abordarla adecuadamente.
+test2_val_4: En general el grado de tolerancia  se encuentra en  niveles bajísimos, dado que el nivel de los valores medios correspondiente a los generadores son mayores que los de los  recuperadores. Es una  situación de riego que necesita ser abordada inmediatamente con el asesoramiento del tutor, salvo que de la reflexión conjunta entrenador/a-deportista que se realice se  identifiquen las causas que generan los valores señalados. En este caso se puede plantear un trabajo específico apoyado por contenidos relacionados con la Presión/Estrés y la orientación indirecta del tutor.
+   
+#test3
 test3_valor_0: 0 (nada)
 test3_valor_1: 1 (un poco)
 test3_valor_2: 2 (moderadamente)
