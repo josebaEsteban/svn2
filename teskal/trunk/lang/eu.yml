@@ -605,6 +605,7 @@ test2_label_4: Sasoi maila
 test2_label_5: Lorpen pertsonala
 test2_label_6: Autoefikazia
 test2_label_7: Autoerregulazioa
+test2_label_8: Valoración General 
 #dimensions
 test2_d1_a: Etendako atsedenaldiarekin edo eta errekuperazioaren gabeziarekin zer ikusia duten balore baxuak medio, proposaturiko lan karga maila egokiak izan dela pentsarasten digu. 
 test2_d1_b: Etendako atsedenaldiarekin edo eta errekuperazioaren gabeziarekin zer ikusia duten balore ertainak medio, entrenamenduan zehar lan karga zaindu beharko litzateke. 
@@ -633,191 +634,192 @@ test2_val_2: Orokorran entrenamenduko nahiz lehiaketako egoera bereziei aurre eg
 test2_val_3: Orokorrean, tolerantzia maila egoera delikatu batean aurkitzen da balio generatzaileen eta errekuperatzaileen artean berdintasun bat ematen den heinean. Beraz, nahiz eta seinalaturiko dimentsioek sortarazten duten estresari aurre egiteko baliabide nahikoak izan, alarma egoera batean gaudela esan liteke. Horregatik, kausa estresorea behin ezagututa modu egoki batetan heldu ahal izateko, garrantzitsua da Presioa/estresa-rekin zer ikusia duten edukietan oinarritutaok lan espezifiko bat planteatzea eta kirolariari egindako aurrez-aurreko explorazio batekin inplementu. 
 test2_val_4: Orokorrean, tolerantzia maila oso bajuan aurkitzen da bataz besteko balio generatzaileak bataz besteko balio errekuperatzaileak baino handiagoak diren heinean. Entrenatzailearen eta kirolariaren artean egindako hausnarketatik seinalaturiko balioen identifikaziorik eratortzen ez bada, tutorearen berehalako asesoramenduarekin heltzea eskazten duen Arrisku egoera baten aurrean gaude. Kasu honetan Presioa/estresa-rekin zer ikusia duten edukietan oinarritzen den lan espezifiko bat eta tutorearen zeharkako orientazioa planteatu litezke. 
  
-#test3 
-test3_valor_0: 0 (ezer ez)
-test3_valor_1: 1 (pixka bat)
-test3_valor_2: 2 (neurrian)
-test3_valor_3: 3 (dexente)
-test3_valor_4: 4 (asko)
-test3_valor_5: 0 (inoiz ere ez)
-test3_valor_6: 1 (gutxitan)
-test3_valor_7: 2 (noizbehinka)
-test3_valor_8: 3 (askotan)
-test3_valor_9: 4 (beti)
- 
-test3: Entrenamenduko sasoi mailaren profila
-test3_header1: Momentu honetan … sentitzen naiz
-test3_header2: Entrenamenduan...
-test3_intro: Behean, entrenamendu egoeratan jendeak izaten dituen sentsazioak deskribatzen dituzten hitz zerrenda bat eta hauekin zer ikusia duten esaldi eta iruzkin sorta bat dago. Mesedez,bakoitza arretaz irakurri ezazu eta momentuotan sentitzen duzuna, edo eta entrenamendu saioetan zure jokabidea egokien deskribatzen duen zenbaki gainean klik egin ezazu.
-# esta primera parte es igual en el cuestionario 1, en el 4
-test3_1: Urduri
-test3_2: Babesgabe
-test3_3: Indarrik gabe
-test3_4: Energiaz beterik
-test3_5: Minduta
-test3_6: Astoratuta
-test3_7: Zoritxarreko
-test3_8: Nekatuta
-test3_9: Gogotsu
-test3_10: Haserre
-test3_11: Tenko
-test3_12: Triste
-test3_13: Nekoso
-test3_14: Aktibo
-test3_15: Jenio txarrez
-
-test3_16: Entrenamenduan egin behar ditudan gauzei arreta handia jartzen diet
-test3_17: Garai batean egiteko gai ez nintzen gauazak egiteko gai naiz egun
-test3_18: Entrenamenduak akatsak baditut hurrengo egunean urduri nago
-test3_19: Ariketa zaila denean, ondo egiteko gehiago saiatzen naiz
-test3_20: Guztia dakidan bezain ondo egiten dut
-test3_21: Entrenamenduan akatsen bat egiten dudanean urduri jarzten naiz
-test3_22: Nahiz ta entrenamenduan zehar gauzak ez ondo atera ahaleginean jarraitzen dut
-test3_23: Burutzeko asmoa hartzen dudan hori egiten dut
-test3_24: Entrenamenduan ariketa berriak praktikatzeak urduri jartzen nau
-
-test3_25: UNE HONETAN ekintza teknikoak egiteko daukazun eskumen maila
-test3_26: UNE HONETAN zein mailatan sentitzen zara zeure kirolean lehiatzeko gai
-
-test4: Lehiaketa aurreko balorazioa
-test4_header: Momentu honetan … sentitzen naiz
-test4_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente. A continuación aparecen una serie de comentarios que han sido utilizados por los deportistas para describir sus sentimientos o emociones antes de una competición . Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
-
-# el cuestionario 1 es igual al de el Test 3
-#textos cuestionario 2 igual al del Test 1
-#cabecera cuestionario 4 del test 4
-test4_1: Nahi bezala lehiatzen bazara lortzea espero duzun emaitza
-
-#textos cuestionario 4 del test 4 
-test4_2: Motibazio maila
-test4_3: Lehiaketak zuretzako daukan garrantzia
-test4_4: Kaurkariei buruz daukazun ezagutza mailaTu conocimiento sobre los/las adversarias
-test4_5: Proba zuretzat egokia da
-test4_6: Lehiaketa plana prestatu duzu?
-test4_7: Zein modutan jokatu nahi duzun argi daukazu
-# test5 
-test5_valor_1: 1 (oso txarra)
-test5_valor_2: 2 (txarra)
-test5_valor_3: 3 (nola-halakoa)
-test5_valor_4: 4 (ona)
-test5_valor_5: 5 (oso ona)
-
-test5: Lehiaketa osteko balorazioa (Banakako Kirolak)
-test5_header1: Nire jokaerarekin izandako asetasun maila … izan da
-test5_header2: Lehiaketan zehar izandako asetasun maila … izan da
-test5_header3: …-kin/ko asetasun maila
-test5_intro: Segidan aurkezten zaizkizun lehiaketaren aspektu ezberdinekin zer ikusia duten galdera sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez,bakoitza arretaz irakurri ezazu eta momentuotan sentitzen duzuna egokien deskribatzen duen zenbaki gainean klik egin ezazu
-
-test5_1: Teknikoki
-test5_2: Fisikoki
-test5_3: Asertiboki
-test5_4: Mentalki
-test5_5: Taktikoki 
-test5_6: Nire emozioen kontrola
-test5_7: Momentu konkretu batzuetan nire emoziak sentitzearen gozamena
-test5_8: Presiopean errenditu izanaren ziurtasuna. 
-test5_9: Mentalki erlaxaturik egon izanaren sentsazioa
-test5_10: Nire pentsamenduen kontrola eta aurre egite positiboa
-test5_11: Besteen ekintzei erantzuteko modua
-test5_12: Entrenatzailearen helburuak jakinik hartu ditudan erabakiak
-test5_13: Lehiaketan zehar izandako jokaeraren argitasuna
-test5_14: Momenturo lehiketako plan integralaren argitasuna
-test5_15: Lehiaketa osoan zehar egindako ekintza denak
-test5_16: Lehiaketa osoan zehar mantentzen nuen konfiantza maila 
-test5_17: Lehiaketan zehar nuen asetasun maila
-test5_18: Egin behar nituen gauzekin loturiko pentsamendua
-test5_19: Sentsazio onekin loturik neuzkan pentsamenduak
-test5_20: Lehiaketan zehar mantentzen nuen interes eta borroka maila
-test5_21: Erabilitako errendimendu gaitasunarekiko asetasuna
-
-test6: Lehiaketa osteko balorazioa (Talde kirola)
-# header, intro igual al cuestionario 6
-# preguntas 1 a 5 igual al cuestionario 6
-test6_6: Talde helburuekiko daukazun konpizlizitate mailarekin
-test6_7: Zure kideekiko eskuzabaltasun eta sostenguarekin
-test6_8: Zure kideekiko errespetuarekin
-test6_9: Hartutako erabakiekiko zure leialtasunarekin
-test6_10: Zure kideekiko komunikazio mailarekin
-test6_11: Talde lanari egiten diozun ekarpenarekin
-test6_12: Ahaleginarekiko daukazun inplilazioarekin
-test6_13: Proposaturiko jokuaren helburuekiko daukazun konfiantza mailarekin
-test6_14: Eman zaizun lanarekiko daukazun jarrerarekin
-test6_15: Partiduan zeha hartu dituzun erabakiekin
-test6_16: Lehiaketa osoan zehar izan duzun konfiantza mailarekin
-test6_17: Intentsitate oso handiko egoeretan daukazun errendimendu mailarekin
-test6_18: Zure borroka eta pertseberantzia gaitasunarekin
-test6_19: Zure hobekuntzarekiko daukazun jarrera baikorrarekin
-test6_20: Gozamen, asetasun eta “sentsazio onen” transmisioarekin
-test6_21: Taldearen errendimendu gaitasunarekin daukazun asetasuna
-
-test7_valor_1: 1 (inolaz ere)
-test7_valor_7: 7 (guztiz) 
-test7: Asetasun galdetegia (banakako kirolak) 
-test7_header: …-(r)ekiko asetasun maila
-test7_intro: Segidan aurkezten zaizkizun enrtenamenduaren eta lehiaketaren aspektu ezberdinekin zer ikusia duten esaldi sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotazunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbaki gainean klik eginaz.
-test7_1: Denboraldian zehar nire helburuetan lorturiko maila
-test7_2: Aurreko denboralidan nire errendiemnduan izandako hobekuntza
-test7_3: Orain arteko nire trebetasunen hobekuntza maila
-test7_4: Nire trebetasunak erabiltzen ditudaneko maila
-test7_5: Nire talentuaren erabilpen maila
-test7_6: Nire rola nire potentzialekin bat datorren maila
-test7_7: Nola nire entrenatzaileak aintzat hartzen nauen
-test7_8: Nirekin entrenatzaileak erakusten duen gozotasuna
-test7_9: Entrenatzaileak zenbateraino aintzat hartzen duen nik gauzak ondo egitea
-test7_10:Aurreko denboraldietan jaso dudan prestakuntza
-test7_11:Denboraldi honetan zehar jaso dudan prestakuntza
-test7_12:Entrenatzaileak nire zereginari buruz emandako jarraibide tekniko-taktikoak
-test7_13:Zenbateraino nire taldeko kideak etikoak diren
-test7_14:Nire kideek joko garbiari emten dioten zentzua
-test7_15:Nire talde kideen kiroltasun maila
-test7_16:Zenbateraino ahal dudan onena ematen dudan
-test7_17:Entrenamenduan zehar dudan dedikazio pertsonal maila
-test7_18:Lehiaketean zehar dudan gogoa
-
-test8_valor_1: 1 (inolaz ere) 
-test8_valor_7: 7 (guztiz)
-test8: Asetasun galdetegia (Talde kirolak)
-test8_header: …-(r)ekiko asetasun maila
-test8_intro: Segidan aurkezten zaizkizun enrtenamenduaren eta lehiaketaren aspektu ezberdinekin zer ikusia duten esaldi sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotazunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbaki gainean klik eginaz.
-test8_1: Denboraldian zehar nire helburuetan lorturiko maila
-test8_2: Aurreko denboralidan nire errendiemnduan izandako hobekuntza
-test8_3: Orain arteko nire trebetasunen hobekuntza maila
-test8_4: Denboraldian zehar irabazi eta galdutako lehiaketa kopurua
-test8_5: Azken denboraldi honetan zehar taldeak izandako errendimendu globala
-test8_6: Orain artean taldeak zenbateraino lortu dituen denboraldi honetarako zituen helburuak
-test8_7: Nire trebetasunak erabiltzen dituzteneko maila
-test8_8: Nire talentuaren erabilpen maila
-test8_9: Nire rola nire potentzialekin bat datorren maila
-test8_10: Lehiaketan zehar jokatzen dudan denbora
-test8_11: Taldean dudan rolaren eta nire rol gustokoenaren arteko korrespondentzia maila
-test8_12: Lehiaketan zehar entrenatzaileak jokalariei buruz egiten duen hautaketa
-test8_13: Lehiaketan zehar erabilitako taktikak
-test8_14: Lehiaketan zehar entrenatzaileak egiten dituen estrategia hautaketak
-test8_15: Lehiaketan zehar entrenatzaileak egokitzeak egiten dituen modua
-test8_16: Entrenatzailearen joko planak
-test8_17: Entrenatzaileak erabilgarri duen talentua konbinatzen duen modua
-test8_18: Nola nire entrenatzaileak aintzat hartzen nauen
-test8_19: Nirekin entrenatzaileak erakusten duen gozotasuna
-test8_20: Entrenatzaileak zenbateraino aintzat hartzen duen nik gauzak ondo egitea
-test8_21: Entrenatzailearen nirekiko leialtasuna
-test8_22: Entrenatzailea zenbateraino dagoen nire pendiente 
-test8_23: Entrenatzaileangandik aurreko denboraldietan jaso dudan prestakuntza
-test8_24: Denboraldi honetan zehar jaso dudan prestakuntza
-test8_25: Entrenatzaileak nire kokaeraz emandako jarraibide tekniko-taktikoak
-test8_26: Nire kideek jarraibideak ematen dizkidaten maila
-test8_27: Nire talde kideengandik jasotzen dudan orientazioa
-test8_28: Nire kideengandik jasotzen dudan feed-back positiboa 
-test8_29: Taldean dudan estatus soziala
-test8_30: Taldearen bizitza sozialean jokatzen dudan rola
-test8_31: Nire kideek sozialki onartzen nauten maila
-test8_32: Zenbateraino nire taldeko kideak etikoak diren
-test8_33: Nire kideek joko garbiari emten dioten zentzua
-test8_34: Nire talde kideen kiroltasun maila
-test8_35: Hobea izateko taldeak lan egiten duen modua
-test8_36: Zenbateraino talde kideek helburu bera daukaten
-test8_37: Taldeko helburuak lortzeko taldeko kideek batera lan egiteari eskaintzen dioten dedikazioa
-test8_38: Zenbateraino taldeko kideek “talde bezala jokatzen” duten
-test8_39: Zenbateraino ahal dudan onena ematen dudan taldearentzako
-test8_40: Entrenamenduan zehar dudan dedikazio pertsonal maila
-test8_41: Lehiaketean zehar dudan gogoa.
-test8_42: Taldearekiko dudan konpromiso maila.
+# #test3 
+# test3_valor_0: 0 (ezer ez)
+# test3_valor_1: 1 (pixka bat)
+# test3_valor_2: 2 (neurrian)
+# test3_valor_3: 3 (dexente)
+# test3_valor_4: 4 (asko)
+# test3_valor_5: 0 (inoiz ere ez)
+# test3_valor_6: 1 (gutxitan)
+# test3_valor_7: 2 (noizbehinka)
+# test3_valor_8: 3 (askotan)
+# test3_valor_9: 4 (beti)
+#  
+# test3: Entrenamenduko sasoi mailaren profila
+# test3_header1: Momentu honetan … sentitzen naiz
+# test3_header2: Entrenamenduan...
+# test3_intro: Behean, entrenamendu egoeratan jendeak izaten dituen sentsazioak deskribatzen dituzten hitz zerrenda bat eta hauekin zer ikusia duten esaldi eta iruzkin sorta bat dago. Mesedez,bakoitza arretaz irakurri ezazu eta momentuotan sentitzen duzuna, edo eta entrenamendu saioetan zure jokabidea egokien deskribatzen duen zenbaki gainean klik egin ezazu.
+# # esta primera parte es igual en el cuestionario 1, en el 4
+# test3_1: Urduri
+# test3_2: Babesgabe
+# test3_3: Indarrik gabe
+# test3_4: Energiaz beterik
+# test3_5: Minduta
+# test3_6: Astoratuta
+# test3_7: Zoritxarreko
+# test3_8: Nekatuta
+# test3_9: Gogotsu
+# test3_10: Haserre
+# test3_11: Tenko
+# test3_12: Triste
+# test3_13: Nekoso
+# test3_14: Aktibo
+# test3_15: Jenio txarrez
+# 
+# test3_16: Entrenamenduan egin behar ditudan gauzei arreta handia jartzen diet
+# test3_17: Garai batean egiteko gai ez nintzen gauazak egiteko gai naiz egun
+# test3_18: Entrenamenduak akatsak baditut hurrengo egunean urduri nago
+# test3_19: Ariketa zaila denean, ondo egiteko gehiago saiatzen naiz
+# test3_20: Guztia dakidan bezain ondo egiten dut
+# test3_21: Entrenamenduan akatsen bat egiten dudanean urduri jarzten naiz
+# test3_22: Nahiz ta entrenamenduan zehar gauzak ez ondo atera ahaleginean jarraitzen dut
+# test3_23: Burutzeko asmoa hartzen dudan hori egiten dut
+# test3_24: Entrenamenduan ariketa berriak praktikatzeak urduri jartzen nau
+# 
+# test3_25: UNE HONETAN ekintza teknikoak egiteko daukazun eskumen maila
+# test3_26: UNE HONETAN zein mailatan sentitzen zara zeure kirolean lehiatzeko gai
+# 
+# test4: Lehiaketa aurreko balorazioa
+# test4_header: Momentu honetan … sentitzen naiz
+# test4_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente. A continuación aparecen una serie de comentarios que han sido utilizados por los deportistas para describir sus sentimientos o emociones antes de una competición . Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
+# 
+# # el cuestionario 1 es igual al de el Test 3
+# #textos cuestionario 2 igual al del Test 1
+# #cabecera cuestionario 4 del test 4
+# test4_1: Nahi bezala lehiatzen bazara lortzea espero duzun emaitza
+# 
+# #textos cuestionario 4 del test 4 
+# test4_2: Motibazio maila
+# test4_3: Lehiaketak zuretzako daukan garrantzia
+# test4_4: Kaurkariei buruz daukazun ezagutza mailaTu conocimiento sobre los/las adversarias
+# test4_5: Proba zuretzat egokia da
+# test4_6: Lehiaketa plana prestatu duzu?
+# test4_7: Zein modutan jokatu nahi duzun argi daukazu
+# # test5 
+# test5_valor_1: 1 (oso txarra)
+# test5_valor_2: 2 (txarra)
+# test5_valor_3: 3 (nola-halakoa)
+# test5_valor_4: 4 (ona)
+# test5_valor_5: 5 (oso ona)
+# 
+# test5: Lehiaketa osteko balorazioa (Banakako Kirolak)
+# test5_header1: Nire jokaerarekin izandako asetasun maila … izan da
+# test5_header2: Lehiaketan zehar izandako asetasun maila … izan da
+# test5_header3: …-kin/ko asetasun maila
+# test5_intro: Segidan aurkezten zaizkizun lehiaketaren aspektu ezberdinekin zer ikusia duten galdera sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez,bakoitza arretaz irakurri ezazu eta momentuotan sentitzen duzuna egokien deskribatzen duen zenbaki gainean klik egin ezazu
+# 
+# test5_1: Teknikoki
+# test5_2: Fisikoki
+# test5_3: Asertiboki
+# test5_4: Mentalki
+# test5_5: Taktikoki 
+# test5_6: Nire emozioen kontrola
+# test5_7: Momentu konkretu batzuetan nire emoziak sentitzearen gozamena
+# test5_8: Presiopean errenditu izanaren ziurtasuna. 
+# test5_9: Mentalki erlaxaturik egon izanaren sentsazioa
+# test5_10: Nire pentsamenduen kontrola eta aurre egite positiboa
+# test5_11: Besteen ekintzei erantzuteko modua
+# test5_12: Entrenatzailearen helburuak jakinik hartu ditudan erabakiak
+# test5_13: Lehiaketan zehar izandako jokaeraren argitasuna
+# test5_14: Momenturo lehiketako plan integralaren argitasuna
+# test5_15: Lehiaketa osoan zehar egindako ekintza denak
+# test5_16: Lehiaketa osoan zehar mantentzen nuen konfiantza maila 
+# test5_17: Lehiaketan zehar nuen asetasun maila
+# test5_18: Egin behar nituen gauzekin loturiko pentsamendua
+# test5_19: Sentsazio onekin loturik neuzkan pentsamenduak
+# test5_20: Lehiaketan zehar mantentzen nuen interes eta borroka maila
+# test5_21: Erabilitako errendimendu gaitasunarekiko asetasuna
+# 
+# test6: Lehiaketa osteko balorazioa (Talde kirola)
+# # header, intro igual al cuestionario 6
+# # preguntas 1 a 5 igual al cuestionario 6
+# test6_6: Talde helburuekiko daukazun konpizlizitate mailarekin
+# test6_7: Zure kideekiko eskuzabaltasun eta sostenguarekin
+# test6_8: Zure kideekiko errespetuarekin
+# test6_9: Hartutako erabakiekiko zure leialtasunarekin
+# test6_10: Zure kideekiko komunikazio mailarekin
+# test6_11: Talde lanari egiten diozun ekarpenarekin
+# test6_12: Ahaleginarekiko daukazun inplilazioarekin
+# test6_13: Proposaturiko jokuaren helburuekiko daukazun konfiantza mailarekin
+# test6_14: Eman zaizun lanarekiko daukazun jarrerarekin
+# test6_15: Partiduan zeha hartu dituzun erabakiekin
+# test6_16: Lehiaketa osoan zehar izan duzun konfiantza mailarekin
+# test6_17: Intentsitate oso handiko egoeretan daukazun errendimendu mailarekin
+# test6_18: Zure borroka eta pertseberantzia gaitasunarekin
+# test6_19: Zure hobekuntzarekiko daukazun jarrera baikorrarekin
+# test6_20: Gozamen, asetasun eta “sentsazio onen” transmisioarekin
+# test6_21: Taldearen errendimendu gaitasunarekin daukazun asetasuna
+# 
+# test7_valor_1: 1 (inolaz ere)
+# test7_valor_7: 7 (guztiz) 
+# test7: Asetasun galdetegia (banakako kirolak) 
+# test7_header: …-(r)ekiko asetasun maila
+# test7_intro: Segidan aurkezten zaizkizun enrtenamenduaren eta lehiaketaren aspektu ezberdinekin zer ikusia duten esaldi sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotazunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbaki gainean klik eginaz.
+# test7_1: Denboraldian zehar nire helburuetan lorturiko maila
+# test7_2: Aurreko denboralidan nire errendiemnduan izandako hobekuntza
+# test7_3: Orain arteko nire trebetasunen hobekuntza maila
+# test7_4: Nire trebetasunak erabiltzen ditudaneko maila
+# test7_5: Nire talentuaren erabilpen maila
+# test7_6: Nire rola nire potentzialekin bat datorren maila
+# test7_7: Nola nire entrenatzaileak aintzat hartzen nauen
+# test7_8: Nirekin entrenatzaileak erakusten duen gozotasuna
+# test7_9: Entrenatzaileak zenbateraino aintzat hartzen duen nik gauzak ondo egitea
+# test7_10:Aurreko denboraldietan jaso dudan prestakuntza
+# test7_11:Denboraldi honetan zehar jaso dudan prestakuntza
+# test7_12:Entrenatzaileak nire zereginari buruz emandako jarraibide tekniko-taktikoak
+# test7_13:Zenbateraino nire taldeko kideak etikoak diren
+# test7_14:Nire kideek joko garbiari emten dioten zentzua
+# test7_15:Nire talde kideen kiroltasun maila
+# test7_16:Zenbateraino ahal dudan onena ematen dudan
+# test7_17:Entrenamenduan zehar dudan dedikazio pertsonal maila
+# test7_18:Lehiaketean zehar dudan gogoa
+# 
+# test8_valor_1: 1 (inolaz ere) 
+# test8_valor_7: 7 (guztiz)
+# test8: Asetasun galdetegia (Talde kirolak)
+# test8_header: …-(r)ekiko asetasun maila
+# test8_intro: Segidan aurkezten zaizkizun enrtenamenduaren eta lehiaketaren aspektu ezberdinekin zer ikusia duten esaldi sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotazunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbaki gainean klik eginaz.
+# test8_1: Denboraldian zehar nire helburuetan lorturiko maila
+# test8_2: Aurreko denboralidan nire errendiemnduan izandako hobekuntza
+# test8_3: Orain arteko nire trebetasunen hobekuntza maila
+# test8_4: Denboraldian zehar irabazi eta galdutako lehiaketa kopurua
+# test8_5: Azken denboraldi honetan zehar taldeak izandako errendimendu globala
+# test8_6: Orain artean taldeak zenbateraino lortu dituen denboraldi honetarako zituen helburuak
+# test8_7: Nire trebetasunak erabiltzen dituzteneko maila
+# test8_8: Nire talentuaren erabilpen maila
+# test8_9: Nire rola nire potentzialekin bat datorren maila
+# test8_10: Lehiaketan zehar jokatzen dudan denbora
+# test8_11: Taldean dudan rolaren eta nire rol gustokoenaren arteko korrespondentzia maila
+# test8_12: Lehiaketan zehar entrenatzaileak jokalariei buruz egiten duen hautaketa
+# test8_13: Lehiaketan zehar erabilitako taktikak
+# test8_14: Lehiaketan zehar entrenatzaileak egiten dituen estrategia hautaketak
+# test8_15: Lehiaketan zehar entrenatzaileak egokitzeak egiten dituen modua
+# test8_16: Entrenatzailearen joko planak
+# test8_17: Entrenatzaileak erabilgarri duen talentua konbinatzen duen modua
+# test8_18: Nola nire entrenatzaileak aintzat hartzen nauen
+# test8_19: Nirekin entrenatzaileak erakusten duen gozotasuna
+# test8_20: Entrenatzaileak zenbateraino aintzat hartzen duen nik gauzak ondo egitea
+# test8_21: Entrenatzailearen nirekiko leialtasuna
+# test8_22: Entrenatzailea zenbateraino dagoen nire pendiente 
+# test8_23: Entrenatzaileangandik aurreko denboraldietan jaso dudan prestakuntza
+# test8_24: Denboraldi honetan zehar jaso dudan prestakuntza
+# test8_25: Entrenatzaileak nire kokaeraz emandako jarraibide tekniko-taktikoak
+# test8_26: Nire kideek jarraibideak ematen dizkidaten maila
+# test8_27: Nire talde kideengandik jasotzen dudan orientazioa
+# test8_28: Nire kideengandik jasotzen dudan feed-back positiboa 
+# test8_29: Taldean dudan estatus soziala
+# test8_30: Taldearen bizitza sozialean jokatzen dudan rola
+# test8_31: Nire kideek sozialki onartzen nauten maila
+# test8_32: Zenbateraino nire taldeko kideak etikoak diren
+# test8_33: Nire kideek joko garbiari emten dioten zentzua
+# test8_34: Nire talde kideen kiroltasun maila
+# test8_35: Hobea izateko taldeak lan egiten duen modua
+# test8_36: Zenbateraino talde kideek helburu bera daukaten
+# test8_37: Taldeko helburuak lortzeko taldeko kideek batera lan egiteari eskaintzen dioten dedikazioa
+# test8_38: Zenbateraino taldeko kideek “talde bezala jokatzen” duten
+# test8_39: Zenbateraino ahal dudan onena ematen dudan taldearentzako
+# test8_40: Entrenamenduan zehar dudan dedikazio pertsonal maila
+# test8_41: Lehiaketean zehar dudan gogoa.
+# test8_42: Taldearekiko dudan konpromiso maila.
+#    
