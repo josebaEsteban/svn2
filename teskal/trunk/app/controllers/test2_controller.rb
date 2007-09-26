@@ -2,11 +2,18 @@ class Test2Controller < ApplicationController
   layout 'base'
   before_filter :require_login
 
-  def default
+  def format_date(date)
+    return nil unless date
+    @date_format_setting ||= Setting.date_format.to_i
+    @date_format_setting == 0 ? l_date(date) : date.strftime("%Y-%m-%d")
+  end
+    def default
     #tolerancia al stress
 
     #Database Objects - Initialization
     @answer = Answer.find(params[:id])
+    fecha = @answer.created_on
+
     @user=User.find(@answer.user_id )
     # @answer = Answer.find_first
     # calculo de las dimensiones
@@ -112,7 +119,7 @@ class Test2Controller < ApplicationController
 
 
     #Generate the chart element
-    strXML = "<chart caption='"+l(:test2_label_0)+"' subCaption='"+@user.login+"' palette='2' yAxisMinValue='-6' yAxisMaxValue='6' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
+    strXML = "<chart caption='"+l(:test2_label_0)+"' subCaption='"+@user.login+"'"+" yAxisName='"+fecha.to_s+"' palette='2' yAxisMinValue='-6' yAxisMaxValue='6' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
 
     strXML = strXML + "<set label='" + l(:test2_label_1) + "' value='-" + item1.to_s + "'/>"
     strXML = strXML + "<set label='" + l(:test2_label_2) + "' value='-" + item2.to_s + "'/>"
