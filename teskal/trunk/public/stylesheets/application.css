@@ -26,7 +26,8 @@ body {
 	width: 910px;  
 	height:auto;
 	background-color: #ffffff;
-	color: #628600;
+/*	color: #628600; verde*/ 
+	color: #523A0B;
 	background-image: url(../images/bgmain_white.gif);
 /*	background-image: url(../images/bgmain.gif);   cream version
 */	background-repeat: repeat-y;
