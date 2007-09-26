@@ -1,18 +1,17 @@
 # Teskal
-
 # Copyright (C) 2007 Teskal
 
 
 class ApplicationController < ActionController::Base
   before_filter :check_if_login_required, :set_localization
   filter_parameter_logging :password
-  
-  
+
+
   def logged_in_user=(user)
     @logged_in_user = user
     session[:user_id] = (user ? user.id : nil)
   end
-  
+
   def logged_in_user
     if session[:user_id]
       @logged_in_user ||= User.find(session[:user_id])
@@ -20,13 +19,13 @@ class ApplicationController < ActionController::Base
       nil
     end
   end
-  
+
   # Returns the role that the logged in user has on the current project
   # or nil if current user is not a member of the project
   def logged_in_user_membership
     @user_membership ||= logged_in_user.role_for_project(@project)
   end
-  
+
   # check if login is globally required to access the application
   def check_if_login_required
     # no check needed if user is already logged in
@@ -37,8 +36,8 @@ class ApplicationController < ActionController::Base
       self.logged_in_user = User.find_by_autologin_key(autologin_key)
     end
     require_login if Setting.login_required?
-  end 
-  
+  end
+
   def set_localization
     lang = begin
       if self.logged_in_user and self.logged_in_user.language and !self.logged_in_user.language.empty? and GLoc.valid_languages.include? self.logged_in_user.language.to_sym
@@ -52,9 +51,9 @@ class ApplicationController < ActionController::Base
     rescue
       nil
     end || Setting.default_language
-    set_language_if_valid(lang)    
+    set_language_if_valid(lang)
   end
-  
+
   def require_login
     unless self.logged_in_user
       store_location
@@ -83,19 +82,19 @@ class ApplicationController < ActionController::Base
     # check if action is allowed on public projects
     if @project.is_public? and Permission.allowed_to_public "%s/%s" % [ ctrl, action ]
       return true
-    end    
+    end
     # if action is not public, force login
-    return unless require_login    
+    return unless require_login
     # admin is always authorized
     return true if self.logged_in_user.admin?
-    # if not admin, check membership permission    
-    if logged_in_user_membership and Permission.allowed_to_role( "%s/%s" % [ ctrl, action ], logged_in_user_membership )    
-      return true		
-    end		
+    # if not admin, check membership permission
+    if logged_in_user_membership and Permission.allowed_to_role( "%s/%s" % [ ctrl, action ], logged_in_user_membership )
+      return true
+    end
     render_403
     false
   end
-  
+
   # make sure that the user is a member of the project (or admin) if project is private
   # used as a before_filter for actions that do not require any particular permission on the project
   def check_project_privacy
@@ -126,14 +125,14 @@ class ApplicationController < ActionController::Base
       session[:return_to_params] = nil
     end
   end
-  
+
   def render_403
     @html_title = "403"
     @project = nil
     render :template => "common/403", :layout => true, :status => 403
     return false
   end
-    
+
   def render_404
     @html_title = "404"
     render :template => "common/404", :layout => true, :status => 404
@@ -158,4 +157,60 @@ class ApplicationController < ActionController::Base
     end
     return tmp
   end
+  
+  def renderChart(chartSWF, strURL, strXML, chartId, chartWidth, chartHeight, debugMode, registerWithJS)
+    renderChartText= "<!-- START Script Block for Chart " + chartId + " -->" + " \n "
+    renderChartText= renderChartText + " \t <div id='"+chartId+"Div' align='center'>" + " \n "
+    #The above text "Chart" is shown to users before the chart has started loading 	(if there is a lag in relaying SWF from server). This text is also shown to users who do not have Flash Player installed. You can configure it as per your needs.
+    renderChartText= renderChartText + "\t \t" + ' Chart. ' + " \n "
+    renderChartText= renderChartText + " \t </div> \n "
+    #Now, we render the chart using FusionCharts Class. Each chart's instance (JavaScript) Id is named as chart_"chartId".
+    renderChartText= renderChartText + "\t" + '<script type="text/javascript">' + " \n "
+    #Instantiate the Chart
+    renderChartText= renderChartText + "\t \t" +  'var chart_'+chartId+' = new FusionCharts("'+chartSWF+'", "'+chartId+'", "'+chartWidth.to_s+'", "'+chartHeight.to_s+'", "'+boolToNum(debugMode).to_s+'", "'+boolToNum(registerWithJS).to_s+'");' + " \n"
+    if strXML==""
+      #Set the dataURL of the chart
+      renderChartText= renderChartText + "\t \t" +'chart_'+chartId+'.setDataURL("'+strURL+'");' + " \n "
+    else
+      #Provide entire XML data using dataXML method
+      renderChartText= renderChartText + "\t \t" +'chart_'+chartId+'.setDataXML("'+strXML+'");' + " \n "
+    end
+    #Finally, render the chart.
+    renderChartText= renderChartText + "\t \t" +'chart_'+chartId+'.render("'+chartId+'Div");	' + " \n "
+    renderChartText= renderChartText + "\t" + '</script>' + " \n "
+    renderChartText= renderChartText + " \n <!-- END Script Block for Chart " + chartId + " -->"
+    return renderChartText
+  end
+
+  def boolToNum(bVal)
+    if bVal==true
+      intNum = 1
+    else
+      intNum = 0
+    end
+    boolToNum = intNum
+  end
+
+  def renderChartHTML(chartSWF, strURL, strXML, chartId, chartWidth, chartHeight, debugMode)
+    #Generate the FlashVars string based on whether dataURL has been provided or dataXML.
+    strFlashVars=''
+    if strXML==""
+      #DataURL Mode
+      strFlashVars = "&chartWidth="+ chartWidth.to_s+ "&chartHeight=" + chartHeight.to_s + "&debugMode=" + boolToNum(debugMode).to_s + "&dataURL=" + strURL
+    else
+      #DataXML Mode
+      strFlashVars = "&chartWidth=" + chartWidth.to_s + "&chartHeight=" +chartHeight.to_s + "&debugMode=" + boolToNum(debugMode).to_s + "&dataXML=" + strXML
+    end
+    renderChartText='<!-- START Code Block for Chart ' + chartId +' -->' + " \n "
+    renderChartText=renderChartText+'<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="'+ chartWidth.to_s + '" height="' + chartHeight.to_s + '" id="' + chartId + '">' + " \n "
+    renderChartText=renderChartText+ "\t" + '<param name="allowScriptAccess" value="always" />' + " \n "
+    renderChartText=renderChartText+ "\t" + '<param name="movie" value="'+chartSWF+'"/>' + " \n "
+    renderChartText=renderChartText+ "\t" + '<param name="FlashVars" value="'+strFlashVars+'" />' + " \n "
+    renderChartText=renderChartText+ "\t" + '<param name="quality" value="high" />' + " \n "
+    renderChartText=renderChartText+ "\t" + '<embed src="'+chartSWF+'" FlashVars="' + strFlashVars + '" quality="high" width="' + chartWidth.to_s +  '" height="'+chartHeight.to_s + '" name="' + chartId + '" allowScriptAccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />' + " \n "
+    renderChartText=renderChartText+ '</object>' + " \n "
+    renderChartText=renderChartText+'<!-- END Code Block for Chart ' + chartId +' -->'
+    renderChartHTML=renderChartText
+  end
+
 end

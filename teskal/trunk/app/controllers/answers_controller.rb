@@ -42,8 +42,10 @@ class AnswersController < ApplicationController
     respond_to do |format|
       if @answer.save
         flash[:notice] = 'Answer was successfully created.'
-        format.html { redirect_to answer_url(@answer) }
-        format.xml  { head :created, :location => answer_url(@answer) }
+        redirect_to :controller => 'test2', :action => 'default', :id => @answer
+        
+        # format.html { redirect_to answer_url(@answer) }
+        # format.xml  { head :created, :location => answer_url(@answer) }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @answer.errors.to_xml }
