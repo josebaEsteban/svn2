@@ -605,7 +605,10 @@ test2_label_4: Fitness
 test2_label_5: Personal goal
 test2_label_6: Self-Efficacy
 test2_label_7: Self-Regulation
+test2_label_8: General Valuation
+test2_label_9: answer 
 #dimensions
+test2_label_0: Psychological Stress Tolerance
 test2_d1_a: The values related to the interrupted rest or a deficit in the recovery are low, which allows considers fit the levels of the proposed service load.
 test2_d1_b: The values related to the interrupted rest or a deficit in the recovery are average, reason why it will be necessary to watch the service load during the training.
 test2_d1_c: The values related to the interrupted rest or a deficit in the recovery are high, reason why it will be necessary to review and to perhaps put together the service load of the training sessions
