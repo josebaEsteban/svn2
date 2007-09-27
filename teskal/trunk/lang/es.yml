@@ -499,15 +499,16 @@ test1_30: Grado de confianza en conseguir los objetivos
 test1_31: A continuación te vamos a hacer una serie de preguntas relacionadas con el entrenamiento y la competición. Queremos conocer tu opinión y solicitamos que nos respondas con sinceridad. Son datos estrictamente confidenciales.
 
 # textos cuestionario 4 del test1
-test1_16: Te preparas psicológicamente antes de la competición
-test1_17: Utilizas alguna técnica de relajación
-test1_18: Usas alguna estrategia para mantener el control cuando la situación deportiva te supera
-test1_19: Sueles visionar cosas de tu deporte
-test1_20: Utilizas la visualización para mejorar tu rendimiento
-test1_21: Sueles soñar con...
-test1_22: Sueles hablar contigo mismo
-test1_23: Haces algo para motivarte
-test1_24: Utilizas rutinas en tu preparación
+
+test1_16: Utilizas alguna técnica de relajación
+test1_17: Usas alguna estrategia para mantener el control cuando la situación deportiva te supera
+test1_18: Sueles visionar cosas de tu deporte
+test1_19: Utilizas la visualización para mejorar tu rendimiento
+test1_20: Sueles soñar con...
+test1_21: Sueles hablar contigo mismo
+test1_22: Haces algo para motivarte
+test1_23: Utilizas rutinas en tu preparación
+test1_24: Te preparas psicológicamente antes de la competición
 test1_25: Tienes/utilizas un plan de competición?
 
 # textos cuestionario 3 del test1 
@@ -703,38 +704,38 @@ test2_val_2: En general el nivel de tolerancia presenta unos valores medios posi
 test2_val_3: En general el nivel de tolerancia se encuentra en una delicada situación, dado que existe una igualdad entre los valores generadores y recuperadores, por lo que se encuentra en una situación de alarma, pero con recursos suficientes para afrontarla e intentar reducir el nivel de estrés generado por las dimensiones señaladas. Es importante plantear un trabajo específico apoyado por contenidos relacionados con la Presión/Estrés y, además, implementarlo con una exploración presencial al deportista, para conocer la posible causa estresora y, de esta manera abordarla adecuadamente.
 test2_val_4: En general el grado de tolerancia se encuentra en niveles bajísimos, dado que el nivel de los valores medios correspondiente a los generadores son mayores que los de los recuperadores. Es una situación de riego que necesita ser abordada inmediatamente con el asesoramiento del tutor, salvo que de la reflexión conjunta entrenador/a-deportista que se realice se identifiquen las causas que generan los valores señalados. En este caso se puede plantear un trabajo específico apoyado por contenidos relacionados con la Presión/Estrés y la orientación indirecta del tutor.
  
-# #test3
-# test3_valor_0: 0 (nada) 
-# test3_valor_1: 1 (un poco)
-# test3_valor_2: 2 (moderadamente)
-# test3_valor_3: 3 (bastante)
-# test3_valor_4: 4 (mucho)
-# test3_valor_5: 0 (nunca)
-# test3_valor_6: 1 (pocas veces)
-# test3_valor_7: 2 (a veces)
-# test3_valor_8: 3 (muchas veces)
-# test3_valor_9: 4 (siempre)
-# 
-# test3: Perfil de Estado de Forma del Entrenamiento
-# test3_header1: Ahora mismo me siento...
-# test3_header2: En el entrenamiento...
-# test3_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente, y una serie de comentarios y frases relacionadas con situaciones de entrenamiento. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento, o que mejor describa tu comportamiento durante las sesiones de entrenamiento.
-# # esta primera parte es igual en el cuestionario 1, en el 4
-# test3_1: Intranquil@
-# test3_2: Desamparad@
-# test3_3: Sin fuerzas
-# test3_4: Llen@ de energía
-# test3_5: Molest@
-# test3_6: Agitad@
-# test3_7: Desdichad@
-# test3_8: Cansad@
-# test3_9: Animad@
-# test3_10: Enfadad@
-# test3_11: Tens@
-# test3_12: Triste
-# test3_13: Fatigad@
-# test3_14: Activ@
-# test3_15: De mal genio 
+#test3
+test3_valor_0: 0 (nada) 
+test3_valor_1: 1 (un poco)
+test3_valor_2: 2 (moderadamente)
+test3_valor_3: 3 (bastante)
+test3_valor_4: 4 (mucho)
+test3_valor_5: 0 (nunca)
+test3_valor_6: 1 (pocas veces)
+test3_valor_7: 2 (a veces)
+test3_valor_8: 3 (muchas veces)
+test3_valor_9: 4 (siempre)
+
+test3: Perfil de Estado de Forma del Entrenamiento
+test3_header1: Ahora mismo me siento...
+test3_header2: En el entrenamiento...
+test3_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente, y una serie de comentarios y frases relacionadas con situaciones de entrenamiento. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento, o que mejor describa tu comportamiento durante las sesiones de entrenamiento.
+# esta primera parte es igual en el cuestionario 1, en el 4
+test3_1: Intranquil@
+test3_2: Desamparad@
+test3_3: Sin fuerzas
+test3_4: Llen@ de energía
+test3_5: Molest@
+test3_6: Agitad@
+test3_7: Desdichad@
+test3_8: Cansad@
+test3_9: Animad@
+test3_10: Enfadad@
+test3_11: Tens@
+test3_12: Triste
+test3_13: Fatigad@
+test3_14: Activ@
+test3_15: De mal genio 
 # 
 # test3_16: Presto mucha atención a las cosas que tengo que hacer en el entrenamiento
 # test3_17: Soy capaz de hacer cosas que antes no podía hacer
