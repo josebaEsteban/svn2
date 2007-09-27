@@ -29,11 +29,11 @@ class Test1Controller < ApplicationController
     # fatiga
     # 3-8-13
     # ansiedad cognitiva
-    # 28,31,34,37,40,43,46,49,52
-    # autoconfianza
     # 30,33,36,39,42,45,48,51,54
+    # autoconfianza
+    # 32,35,37,41,44,47,50,53,56
     # ansiedad somatica
-    # 29,32,35,38,41,44,47,50,53
+    # 31,34,37,40,43,45,49,52,55
 
     item1 = @answer.answ1 + @answer.answ11  + @answer.answ16
     item2 = @answer.answ2 + @answer.answ7 + @answer.answ12
@@ -52,97 +52,118 @@ class Test1Controller < ApplicationController
     item15 = ((@answer.answ59 + @answer.answ60 + @answer.answ63 + @answer.answ64 + @answer.answ66 + @answer.answ67) /6) /10
 
     @advice=[]
-    if item1 < 2
-      @advice[0]=l(:test2_d1_a)
+    if item1 < 5
+      @advice[0]=l(:test1_d1_a:)
     else
-      if item1 < 4
-        @advice[0]=l(:test2_d1_b)
+      if item1 < 9
+        @advice[0]=l(:test1_d1_b)
       else
-        @advice[0]=l(:test2_d1_c)
+        @advice[0]=l(:test1_d1_c)
       end
     end
-    if item2 < 2
-      @advice[1]=l(:test2_d2_a)
+    if item2 < 4
+      @advice[1]=l(:test1_d2_a)
     else
-      if item2 < 4
-        @advice[1]=l(:test2_d2_b)
+      if item2 < 9
+        @advice[1]=l(:test1_d2_b)
       else
-        @advice[1]=l(:test2_d2_c)
+        @advice[1]=l(:test1_d2_c)
       end
     end
-    if item3 < 2
-      @advice[2]=l(:test2_d3_a)
+    if item3 < 3
+      @advice[2]=l(:test1_d3_a)
     else
-      if item3 < 4
-        @advice[2]=l(:test2_d3_b)
+      if item3 < 7
+        @advice[2]=l(:test1_d3_b)
       else
-        @advice[2]=l(:test2_d3_c)
+        @advice[2]=l(:test1_d3_c)
       end
     end
-    if item4 < 2
-      @advice[3]=l(:test2_d4_a)
+    if item4 < 7
+      @advice[3]=l(:test1_d4_a)
     else
-      if item4 < 4
-        @advice[3]=l(:test2_d4_b)
+      if item4 < 10
+        @advice[3]=l(:test1_d4_b)
       else
-        @advice[3]=l(:test2_d4_c)
+        @advice[3]=l(:test1_d4_c)
       end
     end
-    if item5 < 2
-      @advice[4]=l(:test2_d5_a)
+    if item5 < 4
+      @advice[4]=l(:test1_d5_a)
     else
-      if item5 < 4
-        @advice[4]=l(:test2_d5_b)
+      if item5 < 8
+        @advice[4]=l(:test1_d5_b)
       else
-        @advice[4]=l(:test2_d5_c)
+        @advice[4]=l(:test1_d5_c)
       end
     end
-    if item6 < 2
-      @advice[5]=l(:test2_d6_a)
+    if item6 < 13
+      @advice[5]=l(:test1_d6_a)
     else
-      if item6 < 4
-        @advice[5]=l(:test2_d6_b)
+      if item6 < 25
+        @advice[5]=l(:test1_d6_b)
       else
-        @advice[5]=l(:test2_d6_c)
+        @advice[5]=l(:test1_d6_c)
       end
     end
-    if item7 < 2
-      @advice[6]=l(:test2_d7_a)
+    if item7 < 13
+      @advice[6]=l(:test1_d7_a)
     else
-      if item7 < 4
-        @advice[6]=l(:test2_d7_b)
+      if item7 < 25
+        @advice[6]=l(:test1_d7_b)
       else
-        @advice[6]=l(:test2_d7_c)
+        @advice[6]=l(:test1_d7_c)
       end
     end
+    if item8 < 13
+      @advice[7]=l(:test1_d7_a)
+    else
+      if item8 < 25
+        @advice[7]=l(:test1_d7_b)
+      else
+        @advice[7]=l(:test1_d7_c)
+      end
+    end 
+    
+    
     vg=((item4+item5+item6+item7/4))-((item1+item2+item3)/3)
 
     if vg < 0
-      @advice[7]=l(:test2_val_4)
+      @advice[7]=l(:test1_val_4)
     elsif vg < 1
-      @advice[7]=l(:test2_val_3)
+      @advice[7]=l(:test1_val_3)
     elsif vg < 3
-      @advice[7]=l(:test2_val_2)
+      @advice[7]=l(:test1_val_2)
     else
-      @advice[7]=l(:test2_val_1)
+      @advice[7]=l(:test1_val_1)
     end
     #strXML will be used to store the entire XML document generated
     strXML=''
 
 
     #Generate the chart element
-    strXML = "<chart caption='"+l(:test2_label_0)+"' subCaption='"+@user.login+"'"+" yAxisName='"+fecha.to_s+"' palette='2' yAxisMinValue='-6' yAxisMaxValue='6' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
-
-    strXML = strXML + "<set label='" + l(:test2_label_1) + "' value='-" + item1.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_2) + "' value='-" + item2.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_3) + "' value='-" + item3.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_4) + "' value='" + item4.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_5) + "' value='" + item5.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_6) + "' value='" + item6.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_7) + "' value='" + item7.to_s + "'/>"
+    strXML = "<chart caption='"+l(:test1_label_0)+"' subCaption='"+@user.login+"'"+" yAxisName='"+fecha.to_s+"' chart palette='2'  showvalues='0'  PYAxisName='' SYAxisName='' decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor="f8f6f4" labelDisplay='Stagger' staggerLines='2'>"
+   
+    strXML = strXML + "<set label='" + l(:test1_label_1) + "' value='-" + item1.to_s + "'/>"
+    strXML = strXML + "<set label='" + l(:test1_label_2) + "' value='-" + item2.to_s + "'/>"
+    strXML = strXML + "<set label='" + l(:test1_label_3) + "' value='-" + item3.to_s + "'/>"
+    strXML = strXML + "<set label='" + l(:test1_label_4) + "' value='" + item4.to_s + "'/>"
+    strXML = strXML + "<set label='" + l(:test1_label_5) + "' value='" + item5.to_s + "'/>"
+    strXML = strXML + "<set label='" + l(:test1_label_6) + "' value='" + item6.to_s + "'/>"
+    strXML = strXML + "<set label='" + l(:test1_label_7) + "' value='" + item7.to_s + "'/>"
+    strXML = strXML + "<dataset SeriesName="Optimo" lineThickness="3" renderAs="Line" >
+      <set value="42" />
+      <set value="37" />
+      <set value="40" />
+      <set value="68" />
+      <set value="38" />
+      <set value="42" />
+      <set value="68" />
+      <set value="38" />
+    </dataset>"
     strXML = strXML + "</chart>"
 
     #Create the chart - Pie 3D Chart with data from strXML
-    @chart1= renderChart("/charts/Bar2D.swf", "", strXML, "test2", 550, 300, false, false)
+    @chart1= renderChart("/charts/Bar2D.swf", "", strXML, "test1", 550, 300, false, false)
   end
 end
