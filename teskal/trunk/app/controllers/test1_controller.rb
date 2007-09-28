@@ -2,13 +2,27 @@ class Test1Controller < ApplicationController
   layout 'base'
   before_filter :require_login
 
-  def format_date(date)
-    return nil unless date
-    @date_format_setting ||= Setting.date_format.to_i
-    @date_format_setting == 0 ? l_date(date) : date.strftime("%Y-%m-%d")
+  def new
+    @answer = Answer.new
   end
-  def default
-    #tolerancia al stress
+
+  def create
+    @answer = Answer.new(params[:answer])
+    @answer.questionnare_id=1
+    @answer.user_id=session[:user_id]
+    if @answer.save
+      flash[:notice] = 'Answer was successfully created.'
+      redirect_to :controller => 'test1', :action => 'show', :id => @answer.id
+
+      # format.html { redirect_to answer_url(@answer) }
+      # format.xml  { head :created, :location => answer_url(@answer) }
+    else
+      format.html { render :action => "new" }
+      format.xml  { render :xml => @answer.errors.to_xml }
+    end
+  end
+
+  def show
 
     #Database Objects - Initialization
     @answer = Answer.find(params[:id])
@@ -53,7 +67,7 @@ class Test1Controller < ApplicationController
 
     @advice=[]
     if item1 < 5
-      @advice[0]=l(:test1_d1_a:)
+      @advice[0]=l(:test1_d1_a)
     else
       if item1 < 9
         @advice[0]=l(:test1_d1_b)
@@ -123,9 +137,9 @@ class Test1Controller < ApplicationController
       else
         @advice[7]=l(:test1_d7_c)
       end
-    end 
-    
-    
+    end
+
+
     vg=((item4+item5+item6+item7/4))-((item1+item2+item3)/3)
 
     if vg < 0
@@ -142,8 +156,8 @@ class Test1Controller < ApplicationController
 
 
     #Generate the chart element
-    strXML = "<chart caption='"+l(:test1_label_0)+"' subCaption='"+@user.login+"'"+" yAxisName='"+fecha.to_s+"' chart palette='2'  showvalues='0'  PYAxisName='' SYAxisName='' decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor="f8f6f4" labelDisplay='Stagger' staggerLines='2'>"
-   
+    strXML = "<chart caption='"+l(:test1_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+fecha.to_s+"' palette='2' showvalues='0'  PYAxisName='' SYAxisName='' decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4' labelDisplay='Stagger' staggerLines='2'>"
+
     strXML = strXML + "<set label='" + l(:test1_label_1) + "' value='-" + item1.to_s + "'/>"
     strXML = strXML + "<set label='" + l(:test1_label_2) + "' value='-" + item2.to_s + "'/>"
     strXML = strXML + "<set label='" + l(:test1_label_3) + "' value='-" + item3.to_s + "'/>"
@@ -151,15 +165,15 @@ class Test1Controller < ApplicationController
     strXML = strXML + "<set label='" + l(:test1_label_5) + "' value='" + item5.to_s + "'/>"
     strXML = strXML + "<set label='" + l(:test1_label_6) + "' value='" + item6.to_s + "'/>"
     strXML = strXML + "<set label='" + l(:test1_label_7) + "' value='" + item7.to_s + "'/>"
-    strXML = strXML + "<dataset SeriesName="Optimo" lineThickness="3" renderAs="Line" >
-      <set value="42" />
-      <set value="37" />
-      <set value="40" />
-      <set value="68" />
-      <set value="38" />
-      <set value="42" />
-      <set value="68" />
-      <set value="38" />
+    strXML = strXML + "<dataset SeriesName='Optimo' lineThickness='3' renderAs='Line' >
+    <set value='42' />
+    <set value='37' />
+    <set value='40' />
+    <set value='68' />
+    <set value='38' />
+    <set value='42' />
+    <set value='68' />
+    <set value='38' />
     </dataset>"
     strXML = strXML + "</chart>"
 
