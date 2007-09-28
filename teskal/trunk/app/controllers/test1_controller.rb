@@ -12,7 +12,7 @@ class Test1Controller < ApplicationController
     @answer.user_id=session[:user_id]
     if @answer.save
       flash[:notice] = 'Answer was successfully created.'
-      redirect_to :controller => 'test1', :action => 'show', :id => @answer.id
+      redirect_to :action => 'show', :id => @answer.id
 
       # format.html { redirect_to answer_url(@answer) }
       # format.xml  { head :created, :location => answer_url(@answer) }
@@ -174,7 +174,7 @@ class Test1Controller < ApplicationController
     <set value='42' />
     <set value='68' />
     <set value='38' />
-    </dataset>"
+    </dataset><dataset SeriesName='Actual' lineThickness='4' renderAs='Line' >"
     strXML = strXML + "</chart>"
 
     #Create the chart - Pie 3D Chart with data from strXML
