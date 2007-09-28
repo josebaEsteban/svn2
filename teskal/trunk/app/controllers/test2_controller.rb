@@ -1,3 +1,5 @@
+#tolerancia al stress
+
 class Test2Controller < ApplicationController
   layout 'base'
   before_filter :require_login
@@ -22,7 +24,6 @@ class Test2Controller < ApplicationController
   end
    
   def show
-    #tolerancia al stress
 
     #Database Objects - Initialization
     @answer = Answer.find(params[:id])
