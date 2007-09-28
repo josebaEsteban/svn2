@@ -3,8 +3,32 @@
 
 
 class ApplicationController < ActionController::Base
-  before_filter :check_if_login_required, :set_localization
+  before_filter :check_if_login_required, :set_localization   #, :store_locations
   filter_parameter_logging :password
+
+
+  # def store_locations
+  #   if @session['prevpage'] && @session['thispage'] != @request.request_uri
+  #     @session['prevpage'] = @session['thispage'] || ''
+  #     @session['thispage'] = @request.request_uri
+  #   end
+  # end
+  # 
+  # def redirect_back(default)
+  #   if @session['prevpage'].nil?
+  #     if default
+  #       redirect_to default
+  #     else
+  #       redirect_to :controller => "", :action => ""
+  #     end
+  #   else
+  #     if @session['prevpage'].length > 4
+  #       redirect_to_url @session['prevpage']
+  #     else
+  #       redirect_to default
+  #     end
+  #   end
+  # end
 
 
   def logged_in_user=(user)
@@ -51,7 +75,7 @@ class ApplicationController < ActionController::Base
     rescue
       nil
     end || Setting.default_language
-    set_language_if_valid(lang)
+    set_language_if_valid(lang)  
   end
 
   def require_login
@@ -157,7 +181,7 @@ class ApplicationController < ActionController::Base
     end
     return tmp
   end
-  
+
   def renderChart(chartSWF, strURL, strXML, chartId, chartWidth, chartHeight, debugMode, registerWithJS)
     renderChartText= "<!-- START Script Block for Chart " + chartId + " -->" + " \n "
     renderChartText= renderChartText + " \t <div id='"+chartId+"Div' align='center'>" + " \n "

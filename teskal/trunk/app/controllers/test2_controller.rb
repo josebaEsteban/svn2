@@ -2,12 +2,26 @@ class Test2Controller < ApplicationController
   layout 'base'
   before_filter :require_login
 
-  def format_date(date)
-    return nil unless date
-    @date_format_setting ||= Setting.date_format.to_i
-    @date_format_setting == 0 ? l_date(date) : date.strftime("%Y-%m-%d")
+  def new
+    @answer = Answer.new
   end
-    def default
+  def create
+    @answer = Answer.new(params[:answer])
+    @answer.questionnare_id=2
+    @answer.user_id=session[:user_id]
+      if @answer.save
+        # flash[:notice] = 'Answer was successfully created.'
+        redirect_to :action => 'show', :id => @answer.id
+
+        # format.html { redirect_to answer_url(@answer) }
+        # format.xml  { head :created, :location => answer_url(@answer) }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @answer.errors.to_xml }
+      end
+  end
+   
+  def show
     #tolerancia al stress
 
     #Database Objects - Initialization
@@ -119,7 +133,7 @@ class Test2Controller < ApplicationController
 
 
     #Generate the chart element
-    strXML = "<chart caption='"+l(:test2_label_0)+"' subCaption='"+@user.login+"'"+" yAxisName='"+fecha.to_s+"' palette='2' yAxisMinValue='-6' yAxisMaxValue='6' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
+    strXML = "<chart caption='"+l(:test2_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+fecha.to_s+"' palette='2' yAxisMinValue='-6' yAxisMaxValue='6' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
 
     strXML = strXML + "<set label='" + l(:test2_label_1) + "' value='-" + item1.to_s + "'/>"
     strXML = strXML + "<set label='" + l(:test2_label_2) + "' value='-" + item2.to_s + "'/>"
