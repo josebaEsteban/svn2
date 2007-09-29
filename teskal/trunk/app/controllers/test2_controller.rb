@@ -27,7 +27,7 @@ class Test2Controller < ApplicationController
 
     #Database Objects - Initialization
     @answer = Answer.find(params[:id])
-    fecha = @answer.created_on
+    fecha = l_datetime(@answer.created_on)
 
     @user=User.find(@answer.user_id )
     # @answer = Answer.find_first

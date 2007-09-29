@@ -598,11 +598,6 @@ div.attachments p {
 	width: 50%;
 	text-align: left;
 }
-img.calendar-trigger {
-	cursor: pointer;
-	vertical-align: middle;
-	margin-left: 4px;
-}
 #history p {
 	margin-left: 34px;
 }

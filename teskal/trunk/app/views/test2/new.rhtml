@@ -1,18 +1,38 @@
+<!-- test2 -->
+
+<% content_for :header_tags do %>
+<%= javascript_include_tag 'prototype' %> 
+<%= calendar_date_select_includes "plain" %>
+<% end %>
 <h2><%=l(:test2)%></h2>
-<br/>
-<div id="intro"><%=l(:test2_intro)%></div>
-<br/>
-<div id="values"> <%=l(:test2_valor_0)%> • <%=l(:test2_valor_1)%> • <%=l(:test2_valor_2)%> • <%=l(:test2_valor_3)%> • <%=l(:test2_valor_4)%> • <%=l(:test2_valor_5)%> • <%=l(:test2_valor_6)%> <br/>
-  <br/>
-</div>  
+
+<script type="text/javascript">
+  _translations = {
+    "OK": "OK",
+    "Now": "Ahora",
+    "Today": "Hoy"
+  }
+  Date.first_day_of_week = 1;
+  Date.weekdays = $w("L M Mi J V S D");
+  Date.months = $w("Enero Febrero Marzo Abril Mayo Junio Julio Agosto Septiembre Octubre Noviembre Diciembre"); 
+</script>
 <form action="/test2/create" method="post">
+ <div align="right">
+<%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true, :time => true %>
+</div>
+	<br/>
+	<div id="intro"><%=l(:test2_intro)%></div>
+	<br/>
+	<div id="values"> <%=l(:test2_valor_0)%> • <%=l(:test2_valor_1)%> • <%=l(:test2_valor_2)%> • <%=l(:test2_valor_3)%> • <%=l(:test2_valor_4)%> • <%=l(:test2_valor_5)%> • <%=l(:test2_valor_6)%> <br/>
+	  <br/>
+	</div>
 <div align="center">
   <table cellspacing="0">
     <!-- <caption><%=l(:test2)%></caption> -->
     <thead>
       <tr>
         <th scope="col">##</th>
-		<th scope="col"><%=l(:test2_header)%></th>
+        <th scope="col"><div align="left"><%=l(:test2_header)%></div></th>
         <th scope="col">0</th>
         <th scope="col">1</th>
         <th scope="col">2</th>
@@ -25,7 +45,7 @@
     <tfoot>
       <tr>
         <th scope="col"></th>
-		<th scope="col"></th>
+        <th scope="col"></th>
         <th scope="col">0</th>
         <th scope="col">1</th>
         <th scope="col">2</th>
@@ -38,7 +58,7 @@
     <tbody>
       <tr>
         <td> 1 </td>
-		<td><%=l(:test2_1)%></t>
+        <td><%=l(:test2_1)%></t>
         <td><input type="radio" name="answer[answ1]" value="0" id="answer_answ1_0"/></td>
         <td><input type="radio" name="answer[answ1]" value="1" id="answer_answ1_1"/></td>
         <td><input type="radio" name="answer[answ1]" value="2" id="answer_answ1_2"/></td>
@@ -49,7 +69,7 @@
       </tr>
       <tr class="odd">
         <td> 2 </td>
-		<td><%=l(:test2_2)%></td>
+        <td><%=l(:test2_2)%></td>
         <td><input type="radio" name="answer[answ2]" value="0" id="answer_answ2_0"/></td>
         <td><input type="radio" name="answer[answ2]" value="1" id="answer_answ2_1"/></td>
         <td><input type="radio" name="answer[answ2]" value="2" id="answer_answ2_2"/></td>
@@ -60,7 +80,7 @@
       </tr>
       <tr>
         <td> 3 </td>
-		<td><%=l(:test2_3)%></td>
+        <td><%=l(:test2_3)%></td>
         <td><input type="radio" name="answer[answ3]" value="0" id="answer_answ3_0"/></td>
         <td><input type="radio" name="answer[answ3]" value="1" id="answer_answ3_1"/></td>
         <td><input type="radio" name="answer[answ3]" value="2" id="answer_answ3_2"/></td>
@@ -71,7 +91,7 @@
       </tr>
       <tr class="odd">
         <td> 4 </td>
-		<td><%=l(:test2_4)%></td>
+        <td><%=l(:test2_4)%></td>
         <td><input type="radio" name="answer[answ4]" value="0" id="answer_answ4_0"/></td>
         <td><input type="radio" name="answer[answ4]" value="1" id="answer_answ4_1"/></td>
         <td><input type="radio" name="answer[answ4]" value="2" id="answer_answ4_2"/></td>
@@ -82,7 +102,7 @@
       </tr>
       <tr>
         <td> 5 </td>
-		<td><%=l(:test2_5)%></td>
+        <td><%=l(:test2_5)%></td>
         <td><input type="radio" name="answer[answ5]" value="0" id="answer_answ5_0"/></td>
         <td><input type="radio" name="answer[answ5]" value="1" id="answer_answ5_1"/></td>
         <td><input type="radio" name="answer[answ5]" value="2" id="answer_answ5_2"/></td>
@@ -93,7 +113,7 @@
       </tr>
       <tr class="odd">
         <td> 6 </td>
-		<td><%=l(:test2_6)%></td>
+        <td><%=l(:test2_6)%></td>
         <td><input type="radio" name="answer[answ6]" value="0" id="answer_answ6_0"/></td>
         <td><input type="radio" name="answer[answ6]" value="1" id="answer_answ6_1"/></td>
         <td><input type="radio" name="answer[answ6]" value="2" id="answer_answ6_2"/></td>
@@ -104,7 +124,7 @@
       </tr>
       <tr>
         <td> 7 </td>
-		<td><%=l(:test2_7)%></td>
+        <td><%=l(:test2_7)%></td>
         <td><input type="radio" name="answer[answ7]" value="0" id="answer_answ7_0"/></td>
         <td><input type="radio" name="answer[answ7]" value="1" id="answer_answ7_1"/></td>
         <td><input type="radio" name="answer[answ7]" value="2" id="answer_answ7_2"/></td>
@@ -115,7 +135,7 @@
       </tr>
       <tr class="odd">
         <td> 8 </td>
-		<td><%=l(:test2_8)%></td>
+        <td><%=l(:test2_8)%></td>
         <td><input type="radio" name="answer[answ8]" value="0" id="answer_answ8_0"/></td>
         <td><input type="radio" name="answer[answ8]" value="1" id="answer_answ8_1"/></td>
         <td><input type="radio" name="answer[answ8]" value="2" id="answer_answ8_2"/></td>
@@ -126,7 +146,7 @@
       </tr>
       <tr>
         <td> 9	 </td>
-		<td><%=l(:test2_9)%></td>
+        <td><%=l(:test2_9)%></td>
         <td><input type="radio" name="answer[answ9]" value="0" id="answer_answ9_0"/></td>
         <td><input type="radio" name="answer[answ9]" value="1" id="answer_answ9_1"/></td>
         <td><input type="radio" name="answer[answ9]" value="2" id="answer_answ9_2"/></td>
@@ -137,7 +157,7 @@
       </tr>
       <tr class="odd">
         <td> 10 </td>
-		<td><%=l(:test2_10)%></td>
+        <td><%=l(:test2_10)%></td>
         <td><input type="radio" name="answer[answ10]" value="0" id="answer_answ10_0"/></td>
         <td><input type="radio" name="answer[answ10]" value="1" id="answer_answ10_1"/></td>
         <td><input type="radio" name="answer[answ10]" value="2" id="answer_answ10_2"/></td>
@@ -148,7 +168,7 @@
       </tr>
       <tr>
         <td> 11 </td>
-		<td><%=l(:test2_11)%></td>
+        <td><%=l(:test2_11)%></td>
         <td><input type="radio" name="answer[answ11]" value="0" id="answer_answ11_0"/></td>
         <td><input type="radio" name="answer[answ11]" value="1" id="answer_answ11_1"/></td>
         <td><input type="radio" name="answer[answ11]" value="2" id="answer_answ11_2"/></td>
@@ -159,7 +179,7 @@
       </tr>
       <tr class="odd">
         <td> 12 </td>
-		<td><%=l(:test2_12)%></td>
+        <td><%=l(:test2_12)%></td>
         <td><input type="radio" name="answer[answ12]" value="0" id="answer_answ12_0"/></td>
         <td><input type="radio" name="answer[answ12]" value="1" id="answer_answ12_1"/></td>
         <td><input type="radio" name="answer[answ12]" value="2" id="answer_answ12_2"/></td>
@@ -170,7 +190,7 @@
       </tr>
       <tr>
         <td> 13 </td>
-		<td><%=l(:test2_13)%></td>
+        <td><%=l(:test2_13)%></td>
         <td><input type="radio" name="answer[answ13]" value="0" id="answer_answ13_0"/></td>
         <td><input type="radio" name="answer[answ13]" value="1" id="answer_answ13_1"/></td>
         <td><input type="radio" name="answer[answ13]" value="2" id="answer_answ13_2"/></td>
@@ -181,7 +201,7 @@
       </tr>
       <tr class="odd">
         <td> 14 </td>
-		<td><%=l(:test2_14)%></td>
+        <td><%=l(:test2_14)%></td>
         <td><input type="radio" name="answer[answ14]" value="0" id="answer_answ14_0"/></td>
         <td><input type="radio" name="answer[answ14]" value="1" id="answer_answ14_1"/></td>
         <td><input type="radio" name="answer[answ14]" value="2" id="answer_answ14_2"/></td>
@@ -192,7 +212,7 @@
       </tr>
       <tr>
         <td> 15 </td>
-		<td><%=l(:test2_15)%></td>
+        <td><%=l(:test2_15)%></td>
         <td><input type="radio" name="answer[answ15]" value="0" id="answer_answ15_0"/></td>
         <td><input type="radio" name="answer[answ15]" value="1" id="answer_answ15_1"/></td>
         <td><input type="radio" name="answer[answ15]" value="2" id="answer_answ15_2"/></td>
@@ -203,7 +223,7 @@
       </tr>
       <tr class="odd">
         <td> 16 </td>
-		<td><%=l(:test2_16)%></td>
+        <td><%=l(:test2_16)%></td>
         <td><input type="radio" name="answer[answ16]" value="0" id="answer_answ16_0"/></td>
         <td><input type="radio" name="answer[answ16]" value="1" id="answer_answ16_1"/></td>
         <td><input type="radio" name="answer[answ16]" value="2" id="answer_answ16_2"/></td>
@@ -214,7 +234,7 @@
       </tr>
       <tr>
         <td> 17 </td>
-		<td><%=l(:test2_17)%></td>
+        <td><%=l(:test2_17)%></td>
         <td><input type="radio" name="answer[answ17]" value="0" id="answer_answ17_0"/></td>
         <td><input type="radio" name="answer[answ17]" value="1" id="answer_answ17_1"/></td>
         <td><input type="radio" name="answer[answ17]" value="2" id="answer_answ17_2"/></td>
@@ -225,7 +245,7 @@
       </tr>
       <tr class="odd">
         <td> 18 </td>
-		<td><%=l(:test2_18)%></td>
+        <td><%=l(:test2_18)%></td>
         <td><input type="radio" name="answer[answ18]" value="0" id="answer_answ18_0"/></td>
         <td><input type="radio" name="answer[answ18]" value="1" id="answer_answ18_1"/></td>
         <td><input type="radio" name="answer[answ18]" value="2" id="answer_answ18_2"/></td>
@@ -236,7 +256,7 @@
       </tr>
       <tr>
         <td> 19 </td>
-		<td><%=l(:test2_19)%></td>
+        <td><%=l(:test2_19)%></td>
         <td><input type="radio" name="answer[answ19]" value="0" id="answer_answ19_0"/></td>
         <td><input type="radio" name="answer[answ19]" value="1" id="answer_answ19_1"/></td>
         <td><input type="radio" name="answer[answ19]" value="2" id="answer_answ19_2"/></td>
@@ -247,7 +267,7 @@
       </tr>
       <tr class="odd">
         <td> 20 </td>
-		<td><%=l(:test2_20)%></td>
+        <td><%=l(:test2_20)%></td>
         <td><input type="radio" name="answer[answ20]" value="0" id="answer_answ20_0"/></td>
         <td><input type="radio" name="answer[answ20]" value="1" id="answer_answ20_1"/></td>
         <td><input type="radio" name="answer[answ20]" value="2" id="answer_answ20_2"/></td>
@@ -258,7 +278,7 @@
       </tr>
       <tr>
         <td> 21 </td>
-		<td><%=l(:test2_21)%></td>
+        <td><%=l(:test2_21)%></td>
         <td><input type="radio" name="answer[answ21]" value="0" id="answer_answ21_0"/></td>
         <td><input type="radio" name="answer[answ21]" value="1" id="answer_answ21_1"/></td>
         <td><input type="radio" name="answer[answ21]" value="2" id="answer_answ21_2"/></td>
@@ -269,7 +289,7 @@
       </tr>
       <tr class="odd">
         <td> 22 </td>
-		<td><%=l(:test2_22)%></td>
+        <td><%=l(:test2_22)%></td>
         <td><input type="radio" name="answer[answ22]" value="0" id="answer_answ22_0"/></td>
         <td><input type="radio" name="answer[answ22]" value="1" id="answer_answ22_1"/></td>
         <td><input type="radio" name="answer[answ22]" value="2" id="answer_answ22_2"/></td>
@@ -280,7 +300,7 @@
       </tr>
       <tr>
         <td> 23 </td>
-		<td><%=l(:test2_23)%></td>
+        <td><%=l(:test2_23)%></td>
         <td><input type="radio" name="answer[answ23]" value="0" id="answer_answ23_0"/></td>
         <td><input type="radio" name="answer[answ23]" value="1" id="answer_answ23_1"/></td>
         <td><input type="radio" name="answer[answ23]" value="2" id="answer_answ23_2"/></td>
@@ -291,7 +311,7 @@
       </tr>
       <tr class="odd">
         <td> 24 </td>
-		<td><%=l(:test2_24)%></td>
+        <td><%=l(:test2_24)%></td>
         <td><input type="radio" name="answer[answ24]" value="0" id="answer_answ24_0"/></td>
         <td><input type="radio" name="answer[answ24]" value="1" id="answer_answ24_1"/></td>
         <td><input type="radio" name="answer[answ24]" value="2" id="answer_answ24_2"/></td>
@@ -302,7 +322,7 @@
       </tr>
       <tr>
         <td> 25 </td>
-		<td><%=l(:test2_25)%></td>
+        <td><%=l(:test2_25)%></td>
         <td><input type="radio" name="answer[answ25]" value="0" id="answer_answ25_0"/></td>
         <td><input type="radio" name="answer[answ25]" value="1" id="answer_answ25_1"/></td>
         <td><input type="radio" name="answer[answ25]" value="2" id="answer_answ25_2"/></td>
@@ -313,7 +333,7 @@
       </tr>
       <tr class="odd">
         <td> 26 </td>
-		<td><%=l(:test2_26)%></td>
+        <td><%=l(:test2_26)%></td>
         <td><input type="radio" name="answer[answ26]" value="0" id="answer_answ26_0"/></td>
         <td><input type="radio" name="answer[answ26]" value="1" id="answer_answ26_1"/></td>
         <td><input type="radio" name="answer[answ26]" value="2" id="answer_answ26_2"/></td>
@@ -324,7 +344,7 @@
       </tr>
       <tr>
         <td> 27 </td>
-		<td><%=l(:test2_27)%></td>
+        <td><%=l(:test2_27)%></td>
         <td><input type="radio" name="answer[answ27]" value="0" id="answer_answ27_0"/></td>
         <td><input type="radio" name="answer[answ27]" value="1" id="answer_answ27_1"/></td>
         <td><input type="radio" name="answer[answ27]" value="2" id="answer_answ27_2"/></td>
@@ -335,7 +355,7 @@
       </tr>
       <tr class="odd">
         <td> 28 </td>
-		<td><%=l(:test2_28)%></td>
+        <td><%=l(:test2_28)%></td>
         <td><input type="radio" name="answer[answ28]" value="0" id="answer_answ28_0"/></td>
         <td><input type="radio" name="answer[answ28]" value="1" id="answer_answ28_1"/></td>
         <td><input type="radio" name="answer[answ28]" value="2" id="answer_answ28_2"/></td>
@@ -352,15 +372,15 @@
     <!-- <caption><%=l(:test1)%></caption> -->
     <thead>
       <tr>
-        <th scope="col"><div align="left"><%= l(:test4_9) %></div></th>
+        <th scope="col"><div align="left"><%= l(:field_notes) %></div></th>
       </tr>
     </thead>
     <tbody>
- 		  <tr>
-			<td><textarea name="answer[note1]" id="note1" cols="75" rows="6"></textarea></td>
-	      </tr>
-	    </tbody>
-	  </table>
+      <tr>
+        <td><textarea name="answer[note1]" id="note1" cols="60" rows="6"></textarea></td>
+      </tr>
+    </tbody>
+  </table>
   <br/>
   <p><%= submit_tag l(:button_save) %></p>
 </div>

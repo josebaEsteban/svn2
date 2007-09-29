@@ -135,7 +135,7 @@ class Test1Controller < ApplicationController
       if item8 < 25
         @advice[7]=l(:test1_d7_b)
       else
-        @advice[7]=l(:test1_d7_c)
+        @advice[7]=l(:test1_d7_c)                     
       end
     end
 
