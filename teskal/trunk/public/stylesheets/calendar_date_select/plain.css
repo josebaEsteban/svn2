@@ -1,5 +1,5 @@
 .calendar_date_select {
-  border:#777 1px solid;
+  border:#999 1px solid;
   display:block;
   width:198px;
   z-index: 1000;
@@ -13,11 +13,11 @@
 
 .calendar_date_select .cds_buttons {
   text-align:center;
-  padding:5px 0px;
+  padding:0px 0px;
 }
 
 .calendar_date_select .cds_footer {
-  padding:3px;
+  padding:0px;
   font-size:10px;
   text-align:center;
 }
