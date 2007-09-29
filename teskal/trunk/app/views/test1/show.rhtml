@@ -1,132 +1,155 @@
-<%=javascript_include_tag 'charts.js' %> 
+<!-- test1 -->
+<%=javascript_include_tag 'charts.js' %>
+
 <center>
-<%= @chart1%> 
+  <%= @chart1%>
 </center>
 <div align="center">
+  <div id="values"> <%=l(:test3_valor_0)%> • <%=l(:test3_valor_1)%> • <%=l(:test3_valor_2)%> • <%=l(:test3_valor_3)%> • <%=l(:test3_valor_4)%> <br/>
+    <br/>
+  </div>
   <table cellspacing="0">
-    <!-- <caption><%=l(:test2)%></caption> -->
+    <!-- <caption><%=l(:test3)%></caption> -->
     <thead>
       <tr>
-        <th scope="col"><%=l(:test2_header)%></th>
+        <th scope="col"><%=l(:test3_header1)%></th>
         <th scope="col">0/6</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><%=l(:test2_1)%></td>
-        <td><%=answ1%></td>
+        <td><%=l(:test3_1)%></td>
+        <td><%=@answer.answ1%></td>
       </tr>
       <tr class="odd">
-        <td><%=l(:test2_2)%></td>
-		<td><%=answ2%></td> 
+        <td><%=l(:test3_2)%></td>
+        <td><%=@answer.answ2%></td>
       </tr>
       <tr>
-        <td><%=l(:test2_3)%></td>
-        <td><%=answ3%></td>
+        <td><%=l(:test3_3)%></td>
+        <td><%=@answer.answ3%></td>
       </tr>
       <tr class="odd">
-        <td><%=l(:test2_4)%></td>
-        <td><%=answ4%></td>
+        <td><%=l(:test3_4)%></td>
+        <td><%=@answer.answ4%></td>
       </tr>
       <tr>
-        <td><%=l(:test2_5)%></td>
-        <td><%=answ5%></td>
+        <td><%=l(:test3_5)%></td>
+        <td><%=@answer.answ5%></td>
       </tr>
       <tr class="odd">
-        <td><%=l(:test2_6)%></td>
-        <td><%=answ6%></td>
+        <td><%=l(:test3_6)%></td>
+        <td><%=@answer.answ6%></td>
       </tr>
       <tr>
-        <td><%=l(:test2_7)%></td>
-        <td><%=answ7%></td>
+        <td><%=l(:test3_7)%></td>
+        <td><%=@answer.answ7%></td>
       </tr>
       <tr class="odd">
-        <td><%=l(:test2_8)%></td>
-        <td><%=answ8%></td>
+        <td><%=l(:test3_8)%></td>
+        <td><%=@answer.answ8%></td>
       </tr>
       <tr>
-        <td><%=l(:test2_9)%></td>
-        <td><%=answ9%></td>
-       </tr>
+        <td><%=l(:test3_9)%></td>
+        <td><%=@answer.answ9%></td>
+      </tr>
       <tr class="odd">
-        <td><%=l(:test2_10)%></td>
-        <td><%=answ10%></td>
+        <td><%=l(:test3_10)%></td>
+        <td><%=@answer.answ10%></td>
       </tr>
       <tr>
-        <td><%=l(:test2_11)%></td>
-        <td><%=answ11%></td>
+        <td><%=l(:test3_11)%></td>
+        <td><%=@answer.answ11%></td>
       </tr>
       <tr class="odd">
-        <td><%=l(:test2_12)%></td>
-        <td><%=answ12%></td>
+        <td><%=l(:test3_12)%></td>
+        <td><%=@answer.answ12%></td>
       </tr>
       <tr>
-        <td><%=l(:test2_13)%></td>
-        <td><%=answ13%></td>
+        <td><%=l(:test3_13)%></td>
+        <td><%=@answer.answ13%></td>
       </tr>
       <tr class="odd">
-        <td><%=l(:test2_14)%></td>
-        <td><%=answ14%></td>
+        <td><%=l(:test3_14)%></td>
+        <td><%=@answer.answ14%></td>
       </tr>
       <tr>
-        <td><%=l(:test2_15)%></td>
-        <td><%=answ15%></td>
-      </tr>
-      <tr class="odd">
-        <td><%=l(:test2_16)%></td>
-        <td><%=answ16%></td>
-      </tr>
-      <tr>
-        <td><%=l(:test2_17)%></td>
-        <td><%=answ17%></td>
-      </tr>
-      <tr class="odd">
-        <td><%=l(:test2_18)%></td>
-        <td><%=answ18%></td>
-      </tr>
-      <tr>
-        <td><%=l(:test2_19)%></td>
-        <td><%=answ19%></td>
-      </tr>
-      <tr class="odd">
-        <td><%=l(:test2_20)%></td>
-        <td><%=answ20%></td>
-      </tr>
-      <tr>
-        <td><%=l(:test2_21)%></td>
-        <td><%=answ21%></td>
-      </tr>
-      <tr class="odd">
-        <td><%=l(:test2_22)%></td>
-        <td><%=answ22%></td>
-      </tr>
-      <tr>
-        <td><%=l(:test2_23)%></td>
-        <td><%=answ23%></td>
-      </tr>
-      <tr class="odd">
-        <td><%=l(:test2_24)%></td>
-        <td><%=answ24%></td>
-      </tr>
-      <tr>
-        <td><%=l(:test2_25)%></td>
-        <td><%=answ25%></td>
-      </tr>
-      <tr class="odd">
-        <td><%=l(:test2_26)%></td>
-        <td><%=answ26%></td>
-      </tr>
-      <tr>
-        <td><%=l(:test2_27)%></td>
-        <td><%=answ27%></td>
-      </tr>
-      <tr class="odd">
-        <td><%=l(:test2_28)%></td>
-        <td><%=answ28%></td>
+        <td><%=l(:test3_15)%></td>
+        <td><%=@answer.answ15%></td>
       </tr>
     </tbody>
   </table>
   <br/>
- 
+  <br/>
+  <table cellspacing="0">
+    <!-- <caption><%=l(:test3)%></caption> -->
+    <thead>
+      <tr>
+        <th scope="col"><%=l(:test1_header2)%></th>
+        <th scope="col">0/6</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%=l(:test1_16)%></td>
+        <td><%=@answer.answ16%></td>
+      </tr>
+      <tr  class="odd">
+        <td><%=l(:test1_17)%></td>
+        <td><%=@answer.answ17%></td>
+      </tr>
+      <tr>
+        <td><%=l(:test1_18)%></td>
+        <td><%=@answer.answ18%></td>
+      </tr>
+      <tr class="odd">
+        <td><%=l(:test1_19)%></td>
+        <td><%=@answer.answ19%></td>
+      </tr>
+      <tr>
+        <td><%=l(:test1_20)%></td>
+        <td><%=@answer.answ20%></td>
+      </tr>
+      <tr class="odd">
+        <td><%=l(:test1_21)%></td>
+        <td><%=@answer.answ21%></td>
+      </tr>
+      <tr>
+        <td><%=l(:test1_22)%></td>
+        <td><%=@answer.answ22%></td>
+      </tr>
+      <tr class="odd">
+        <td><%=l(:test1_23)%></td>
+        <td><%=@answer.answ23%></td>
+      </tr>
+    <thead>
+      <tr>
+        <th scope="col"> ## </th>
+        <th scope="col"><div align="left"><%=l(:test1_header2)%></div></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tr>
+      <td><%=l(:test1_24)%></td>
+      <td><%=@answer.answ24%></td>
+    </tr>
+    <tr>
+      <td><%=l(:test1_25)%></td>
+      <td><%=@answer.answ25%></td>
+    </tr>
+    </tbody>
+  </table>
+  <!-- <tr class="odd">
+    <td><%=l(:test1_26)%></td>
+    <td><%=@answer.answ26%></td>
+  </tr>
+  <tr>
+    <td><%=l(:test1_27)%></td>
+    <td><%=@answer.answ27%></td>
+  </tr>
+  <tr class="odd">
+    <td><%=l(:test1_28)%></td>
+    <td><%=@answer.answ28%></td>
+  </tr> -->
 </div>
-<%= link_to 'Back', <%=answers_path %>
+

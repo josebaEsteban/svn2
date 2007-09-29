@@ -3,23 +3,11 @@
 <% content_for :header_tags do %>
 <%= javascript_include_tag 'prototype' %> 
 <%= calendar_date_select_includes "plain" %>
+<%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language %>
 <% end %>
 <h2><%=l(:test2)%></h2>
 
-<script type="text/javascript">
-  _translations = {
-    "OK": "OK",
-    "Now": "Ahora",
-    "Today": "Hoy"
-  }
-  Date.first_day_of_week = 1;
-  Date.weekdays = $w("L M Mi J V S D");
-  Date.months = $w("Enero Febrero Marzo Abril Mayo Junio Julio Agosto Septiembre Octubre Noviembre Diciembre"); 
-</script>
 <form action="/test2/create" method="post">
- <div align="right">
-<%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true, :time => true %>
-</div>
 	<br/>
 	<div id="intro"><%=l(:test2_intro)%></div>
 	<br/>
@@ -382,6 +370,11 @@
     </tbody>
   </table>
   <br/>
-  <p><%= submit_tag l(:button_save) %></p>
+
+  <div align="right">
+<%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true %>
+ <!-- <%= calendar_date_select_tag "month_year_selector_label", "",:disabled => false, :readonly => false ,:popup => :force %> -->
+ </div>
+ <p><%= submit_tag l(:button_save) %></p>
 </div>
 <%= link_to 'Back', answers_path %>

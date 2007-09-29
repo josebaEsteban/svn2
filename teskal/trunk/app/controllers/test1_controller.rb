@@ -22,7 +22,15 @@ class Test1Controller < ApplicationController
     end
   end
 
+  
   def show
+    @answer = Answer.find(params[:id])
+    fecha = @answer.created_on
+
+    @user=User.find(@answer.user_id )
+  end
+    
+    def chart
 
     #Database Objects - Initialization
     @answer = Answer.find(params[:id])
