@@ -1,4 +1,9 @@
 <!-- test1 -->
+<% content_for :header_tags do %>
+<%= javascript_include_tag 'prototype' %> 
+<%= calendar_date_select_includes "plain" %>
+<%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language %>
+<% end %>
 
 <h2><%=l(:test1)%></h2>
 <br/>
