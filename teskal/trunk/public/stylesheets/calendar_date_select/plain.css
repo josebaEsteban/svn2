@@ -1,7 +1,7 @@
 .calendar_date_select {
   border:#777 1px solid;
   display:block;
-  width:195px;
+  width:198px;
   z-index: 1000;
   background-color:white;
 }
@@ -75,9 +75,9 @@
   font-size: 9px;
 }
 .calendar_date_select td {
-  font-size:10px;
-  width: 22px;
-  height: 19px;
+  font-size:100%;
+  width: 23px;
+  height: 20px;
   text-align:center;
   vertical-align: middle;
   background-color: #fff;

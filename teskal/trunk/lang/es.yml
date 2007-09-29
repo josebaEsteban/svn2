@@ -51,7 +51,7 @@ general_csv_separator: ';'
 general_csv_encoding: ISO-8859-1
 general_pdf_encoding: ISO-8859-1
 general_day_names: Lunes,Martes,Miércoles,Jueves,Viernes,Sábado,Domingo
-
+short_day_names: D L Ma Mi J V S
 notice_account_updated: La cuenta se ha modificado.
 notice_account_invalid_creditentials: Usuario o contraseña no válido.
 notice_account_password_updated: Contraseña actualizada.
@@ -487,6 +487,7 @@ default_activity_development: Desarrollo
 test1: Valoración Inicial Temporada
 test1_header2: Antes de la competición...
 test1_header4: Al practicar deporte, siento que tengo éxito cuando...
+test1_header5: Te sientes capaz de competir en tu deporte
 test1_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente. A continuación aparecen una serie de comentarios que han sido utilizados por los deportistas para describir sus sentimientos o emociones antes de una competición. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
 
 # titulo cuestionario 3 del test1 
@@ -555,8 +556,7 @@ test1_61: Hago algo que los demás no pueden hacer
 test1_62: Lo hago todo lo mejor que se
 test1_63: Alcanzo la meta que me propuse
 test1_64: Soy claramente superior a l@s demás
-#cabecera cuestionario 6 del test1
-test1_66: En que medida te sientes capaz de competir en tu deporte
+test1_65: En que medida?
 #labels
 test1_label_1: Tensión
 test1_label_2: Depresión
@@ -719,6 +719,7 @@ test3_valor_9: 4 (siempre)
 test3: Perfil de Estado de Forma del Entrenamiento
 test3_header1: Ahora mismo me siento...
 test3_header2: En el entrenamiento...
+test3_header3: En este momento...
 test3_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente, y una serie de comentarios y frases relacionadas con situaciones de entrenamiento. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento, o que mejor describa tu comportamiento durante las sesiones de entrenamiento.
 # esta primera parte es igual en el cuestionario 1, en el 4
 test3_1: Intranquil@
@@ -747,8 +748,8 @@ test3_22: Sigo esforzándome en el entrenamiento aunque las cosas no me salgan b
 test3_23: Hago las cosas que me propongo
 test3_24: Me pone nervios@ practicar tareas nuevas en el entrenamiento
 
-test3_25: Nivel de competencia que tienes EN ESTE MOMENTO para realizar acciones técnicas
-test3_26: En que medida te sientes capaz EN ESTE MOMENTO de competir en tu deporte
+test3_25: Nivel de competencia que tienes para realizar acciones técnicas
+test3_26: En que medida te sientes capaz de competir en tu deporte
 # #labels
 # test3_label_1: Tension
 # test3_label_2: Depresion
@@ -893,7 +894,7 @@ test5_17: El grado de satisfacción que tenía durante la competición
 test5_18: El pensamiento relacionado con cosas que tenía que hacer
 test5_19: Los pensamientos que tenía relacionados con las buenas sensaciones
 test5_20: El nivel de interés y de lucha que mantenía durante la competición
-test5_21: Satisfacción con la Capacidad de Rendimiento Utilizada
+test5_21: La capacidad de rendimiento utilizada
 # #labels
 # test5_label_1: Rendimiento Global
 # test5_label_2: Rendimiento Emocional
@@ -943,7 +944,7 @@ test6_17: Con tu nivel de rendimiento ante las situaciones de muy alta intensida
 test6_18: Con tu capacidad luchadora y perseverante
 test6_19: Con tu actitud positiva hacia tu propia mejora
 test6_20: Con tu transmisión de disfrute, satisfacción y “buenas sensaciones”
-test6_21: Satisfacción Con La Capacidad De Rendimiento Del Equipo
+test6_21: La capacidad de rendimiento del equipo
 # #labels
 # test6_label_1: Rendimiento Global
 # test6_label_2: Rendimiento Personal
