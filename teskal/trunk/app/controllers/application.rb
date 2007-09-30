@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
   #     @session['thispage'] = @request.request_uri
   #   end
   # end
-  # 
+  #
   # def redirect_back(default)
   #   if @session['prevpage'].nil?
   #     if default
@@ -75,7 +75,7 @@ class ApplicationController < ActionController::Base
     rescue
       nil
     end || Setting.default_language
-    set_language_if_valid(lang)  
+    set_language_if_valid(lang)
   end
 
   def require_login
@@ -236,5 +236,11 @@ class ApplicationController < ActionController::Base
     renderChartText=renderChartText+'<!-- END Code Block for Chart ' + chartId +' -->'
     renderChartHTML=renderChartText
   end
-
+  def acorta(valor)
+    valorStr=valor.to_s
+    if valorStr.length>4
+      valorStr=valorStr.slice(0,4)
+    end
+    return valorStr
+  end
 end
