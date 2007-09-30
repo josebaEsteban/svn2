@@ -1,3 +1,11 @@
+<!-- test4 -->
+
+<% content_for :header_tags do %>
+<%= javascript_include_tag 'prototype' %> 
+<%= calendar_date_select_includes "plain" %>
+<%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language %>
+<% end %>
+
 <h2><%=l(:test4)%></h2>
 <br/>
 <div id="intro"><%=l(:test1_intro)%></div>
@@ -586,7 +594,12 @@
       </tr>
     </tbody>
   </table>
-  <br/>
-  <p><%= submit_tag l(:button_save) %></p>
 </center>
+   <div align="right">
+<%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true %>
+ <!-- <%= calendar_date_select_tag "month_year_selector_label", "",:disabled => false, :readonly => false ,:popup => :force %> -->
+ </div>
+ <p><%= submit_tag l(:button_save) %></p>
+ <br/>
+ <br/>
 <%= link_to 'Back', answers_path %>

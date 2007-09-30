@@ -1,13 +1,21 @@
 <!-- test5 -->
 
+<% content_for :header_tags do %>
+<%= javascript_include_tag 'prototype' %> 
+<%= calendar_date_select_includes "plain" %>
+<%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language %>
+<% end %>
+
 <h2><%=l(:test5)%></h2>
 <br/>
 <div id="intro"><%=l(:test5_intro)%></div>
 <br/>
-<div id="values"> <%=l(:test5_valor_1)%> • <%=l(:test5_valor_2)%> • <%=l(:test5_valor_3)%> • <%=l(:test5_valor_4)%> • <%=l(:test5_valor_5)%> <br/>
-  <br/>
+<div id="values"> <%=l(:test5_valor_1)%> • <%=l(:test5_valor_2)%> • <%=l(:test5_valor_3)%> • <%=l(:test5_valor_4)%> • <%=l(:test5_valor_5)%>
 </div>
-<center>
+<br/>
+<br/>
+<center> 
+	<form action="/test5/create" method="post">
   <table cellspacing="0">
     <!-- <caption><%=l(:test5)%></caption> -->
     <thead>
@@ -269,6 +277,12 @@
   </table>
   </br>
   </br>
-  <p><%= submit_tag l(:button_save) %></p>
+   <div align="right">
+<%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true %>
+ <!-- <%= calendar_date_select_tag "month_year_selector_label", "",:disabled => false, :readonly => false ,:popup => :force %> -->
+ </div>
+<p><%= submit_tag l(:button_save) %></p>
 </center>
+<br/>
+<br/>  
 <%= link_to 'Back', answers_path %>
