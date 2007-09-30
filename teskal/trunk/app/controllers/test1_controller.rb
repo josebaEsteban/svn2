@@ -10,6 +10,12 @@ class Test1Controller < ApplicationController
     @answer = Answer.new(params[:answer])
     @answer.questionnare_id=1
     @answer.user_id=session[:user_id]
+    if @answer.answ24.nil? 
+      @answer.answ24=0
+    end
+    if @answer.answ25.nil? 
+      @answer.answ25=0
+    end
     if @answer.save
       flash[:notice] = 'Answer was successfully created.'
       redirect_to :action => 'show', :id => @answer.id
