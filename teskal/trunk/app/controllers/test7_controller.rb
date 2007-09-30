@@ -8,7 +8,7 @@ class Test7Controller < ApplicationController
 
   def create
     @answer = Answer.new(params[:answer])
-    @answer.questionnare_id=1
+    @answer.questionnare_id=7
     @answer.user_id=session[:user_id]
     if @answer.save
       flash[:notice] = 'Answer was successfully created.'
@@ -26,7 +26,7 @@ class Test7Controller < ApplicationController
 
     #Database Objects - Initialization
     @answer = Answer.find(params[:id])
-    fecha = l_datetime(@answer.created_on)
+    @fecha = l_datetime(@answer.created_on)
 
     @user=User.find(@answer.user_id )
     # @answer = Answer.find_first

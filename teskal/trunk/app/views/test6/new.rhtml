@@ -295,7 +295,7 @@
   <br/>
   <br/>
    <div align="right">
-<%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true %>
+<%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true, :time  => true%>
  <!-- <%= calendar_date_select_tag "month_year_selector_label", "",:disabled => false, :readonly => false ,:popup => :force %> -->
  </div>
   <p><%= submit_tag l(:button_save) %></p>
