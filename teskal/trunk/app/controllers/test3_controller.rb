@@ -1,19 +1,19 @@
 class Test3Controller < ApplicationController
   layout 'base'
   before_filter :require_login
-  
+
   def new
     @answer = Answer.new
-  end  
-  
+  end
+
   def create
     @answer = Answer.new(params[:answer])
     @answer.questionnare_id=1
     @answer.user_id=session[:user_id]
-    if @answer.answ24.nil? 
+    if @answer.answ24.nil?
       @answer.answ24=0
     end
-    if @answer.answ25.nil? 
+    if @answer.answ25.nil?
       @answer.answ25=0
     end
     if @answer.save
@@ -27,14 +27,14 @@ class Test3Controller < ApplicationController
       format.xml  { render :xml => @answer.errors.to_xml }
     end
   end
-  
+
   def show
     @answer = Answer.find(params[:id])
     fecha = @answer.created_on
 
     @user=User.find(@answer.user_id )
   end
-  
+
   def chart
     #tolerancia al stress
 
