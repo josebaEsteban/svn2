@@ -27,9 +27,13 @@ class Test2Controller < ApplicationController
 
     #Database Objects - Initialization
     @answer = Answer.find(params[:id])
-    fecha = l_datetime(@answer.created_on)
+    @fecha = l_datetime(@answer.created_on)
 
     @user=User.find(@answer.user_id )
+    teskalChart2
+    end
+    
+    def teskalChart2
     # @answer = Answer.find_first
     # calculo de las dimensiones
 
@@ -134,7 +138,7 @@ class Test2Controller < ApplicationController
 
 
     #Generate the chart element
-    strXML = "<chart caption='"+l(:test2_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+fecha.to_s+"' palette='2' yAxisMinValue='-6' yAxisMaxValue='6' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
+    strXML = "<chart caption='"+l(:test2_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMinValue='-6' yAxisMaxValue='6' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
 
     strXML = strXML + "<set label='" + l(:test2_label_1) + "' value='-" + item1.to_s + "'/>"
     strXML = strXML + "<set label='" + l(:test2_label_2) + "' value='-" + item2.to_s + "'/>"

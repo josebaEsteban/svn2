@@ -8,7 +8,7 @@ class Test8Controller < ApplicationController
   
   def create
     @answer = Answer.new(params[:answer])
-    @answer.questionnare_id=1
+    @answer.questionnare_id=8
     @answer.user_id=session[:user_id]
     if @answer.save
       flash[:notice] = 'Answer was successfully created.'
@@ -24,7 +24,7 @@ class Test8Controller < ApplicationController
 
   def show
     @answer = Answer.find(params[:id])
-    fecha = @answer.created_on
+    @fecha = l_datetime(@answer.created_on)
 
     @user=User.find(@answer.user_id )
   end

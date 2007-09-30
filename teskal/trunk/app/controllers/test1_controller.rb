@@ -10,10 +10,10 @@ class Test1Controller < ApplicationController
     @answer = Answer.new(params[:answer])
     @answer.questionnare_id=1
     @answer.user_id=session[:user_id]
-    if @answer.answ24.nil? 
+    if @answer.answ24.nil?
       @answer.answ24=0
     end
-    if @answer.answ25.nil? 
+    if @answer.answ25.nil?
       @answer.answ25=0
     end
     if @answer.save
@@ -28,20 +28,17 @@ class Test1Controller < ApplicationController
     end
   end
 
-  
+
   def show
     @answer = Answer.find(params[:id])
-    fecha = @answer.created_on
+    @fecha = l_datetime(@answer.created_on)
 
     @user=User.find(@answer.user_id )
+    teskalChart1
   end
-    
-    def chart
 
-    #Database Objects - Initialization
+  def teskalChart1
     @answer = Answer.find(params[:id])
-    fecha = @answer.created_on
-
     @user=User.find(@answer.user_id )
     # @answer = Answer.find_first
     # calculo de las dimensiones
@@ -149,7 +146,7 @@ class Test1Controller < ApplicationController
       if item8 < 25
         @advice[7]=l(:test1_d7_b)
       else
-        @advice[7]=l(:test1_d7_c)                     
+        @advice[7]=l(:test1_d7_c)
       end
     end
 
@@ -170,7 +167,7 @@ class Test1Controller < ApplicationController
 
 
     #Generate the chart element
-    strXML = "<chart caption='"+l(:test1_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+fecha.to_s+"' palette='2' showvalues='0'  PYAxisName='' SYAxisName='' decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4' labelDisplay='Stagger' staggerLines='2'>"
+    strXML = "<chart caption='"+l(:test1_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' showvalues='0'  PYAxisName='' SYAxisName='' decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4' labelDisplay='Stagger' staggerLines='2'>"
 
     strXML = strXML + "<set label='" + l(:test1_label_1) + "' value='-" + item1.to_s + "'/>"
     strXML = strXML + "<set label='" + l(:test1_label_2) + "' value='-" + item2.to_s + "'/>"

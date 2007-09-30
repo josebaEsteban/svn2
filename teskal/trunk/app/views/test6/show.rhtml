@@ -4,9 +4,26 @@
 <center>
   <%= @chart1%>
 </center>
+<br/>
+<div align="left">
+ 		<h2><%=l(:test6)%></h2>
+  <h4><%= @user.login+" - "+@fecha.to_s %></h4> 
+		<br/> 
+  <h3><%= l(:test6_label_1) %></h3>
+  <h4> <%=@advice[0]%> </h4>
+  <h3><%= l(:test6_label_2) %></h3>
+  <h4> <%=@advice[1]%> </h4>
+  <h3><%= l(:test6_label_3) %></h3>
+  <h4> <%=@advice[2]%> </h4>
+  <h3><%= l(:test6_label_4) %></h3>
+  <h4> <%=@advice[3]%> </h4>
+  <h2><%= l(:test6_label_0) %></h2>
+  <h4> <%=@advice[4]%> </h4>
+</div>
+<br/>
+<br/>
+
 <div align="center">
-  <h2><%=l(:test6)%></h2>
-  <br/>
   <div id="values"> <%=l(:test5_valor_1)%> • <%=l(:test5_valor_2)%> • <%=l(:test5_valor_3)%> • <%=l(:test5_valor_4)%> • <%=l(:test5_valor_5)%> </div>
   <br/>
   <br/>
