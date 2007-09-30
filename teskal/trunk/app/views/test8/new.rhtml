@@ -1,4 +1,10 @@
-          <!-- Teskal test8 -->
+<!-- Teskal test8 -->
+
+<% content_for :header_tags do %>
+<%= javascript_include_tag 'prototype' %> 
+<%= calendar_date_select_includes "plain" %>
+<%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language %>
+<% end %>
 
 <h2><%=l(:test8)%></h2>
 <br/>
@@ -14,7 +20,8 @@
   <%=l(:test8_valor_7)%> <br/>
   <br/>
 </div>
-<center>
+<div align="center">
+	<form action="/test8/create" method="post">
   <table cellspacing="0">
     <!-- <caption><%=l(:test8)%></caption> -->
     <thead>
@@ -526,6 +533,10 @@
   </table>
   <br/>
   <br/>
+   <div align="right">
+<%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true %>
+ <!-- <%= calendar_date_select_tag "month_year_selector_label", "",:disabled => false, :readonly => false ,:popup => :force %> -->
+ </div>
   <p><%= submit_tag l(:button_save) %></p>
-</center>
+</div>
 <%= link_to 'Back', answers_path %>
