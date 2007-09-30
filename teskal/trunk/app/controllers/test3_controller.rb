@@ -4,9 +4,38 @@ class Test3Controller < ApplicationController
   
   def new
     @answer = Answer.new
+  end  
+  
+  def create
+    @answer = Answer.new(params[:answer])
+    @answer.questionnare_id=1
+    @answer.user_id=session[:user_id]
+    if @answer.answ24.nil? 
+      @answer.answ24=0
+    end
+    if @answer.answ25.nil? 
+      @answer.answ25=0
+    end
+    if @answer.save
+      flash[:notice] = 'Answer was successfully created.'
+      redirect_to :action => 'show', :id => @answer.id
+
+      # format.html { redirect_to answer_url(@answer) }
+      # format.xml  { head :created, :location => answer_url(@answer) }
+    else
+      format.html { render :action => "new" }
+      format.xml  { render :xml => @answer.errors.to_xml }
+    end
   end
   
-  def default
+  def show
+    @answer = Answer.find(params[:id])
+    fecha = @answer.created_on
+
+    @user=User.find(@answer.user_id )
+  end
+  
+  def chart
     #tolerancia al stress
 
     #Database Objects - Initialization
