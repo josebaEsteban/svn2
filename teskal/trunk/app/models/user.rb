@@ -9,10 +9,8 @@ class User < ActiveRecord::Base
   STATUS_REGISTERED = 2
   STATUS_LOCKED     = 3
 
-  has_many :memberships, :class_name => 'Member', :include => [ :project, :role ], :conditions => "#{Project.table_name}.status=#{Project::STATUS_ACTIVE}", :order => "#{Project.table_name}.name", :dependent => :delete_all
-  has_many :projects, :through => :memberships
+  has_many :answers
   has_one :preference, :dependent => :destroy, :class_name => 'UserPreference'
-  has_one :rss_key, :dependent => :destroy, :class_name => 'Token', :conditions => "action='feeds'"
 
   attr_accessor :password, :password_confirmation
   attr_accessor :last_before_login_on
