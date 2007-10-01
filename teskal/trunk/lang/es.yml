@@ -814,17 +814,18 @@ test4_6: Has preparado el plan de competición?
 test4_7: Tienes claro como quieres actuar
 test4_8: Resultado que esperas alcanzar 
 #labels
-test4_label_1: Tension
-test4_label_2: Depresion
-test4_label_3: Hostilidad
-test4_label_4: Vigor
-test4_label_5: Fatiga
-test4_label_6: Ansiedad conginitiva
-test4_label_7: Autoconfianza
-test4_label_8: Ansiedad somatica
-test4_label_9: Optima
-test4_label_10: Actual
-test4_label_11: Significacion personal
+test4_label_0: Afrontamiento en Competición
+# test4_label_1: Tensión
+# test4_label_2: Depresión
+# test4_label_3: Hostilidad
+# test4_label_4: Vigor
+# test4_label_5: Fatiga
+# test4_label_6: Ansiedad conginitiva
+# test4_label_7: Autoconfianza
+# test4_label_8: Ansiedad somática
+# test4_label_9: Optima
+# test4_label_10: Actual
+test4_label_11: Significación personal
 test4_label_12: Dificultad percibida estimada
 test4_label_13: Grado de confianza
 test4_label_14: Percepción del Plan Integral de Competición
