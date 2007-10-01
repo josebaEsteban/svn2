@@ -189,6 +189,6 @@ class Test1Controller < ApplicationController
     strXML = strXML + "</chart>"
 
     #Create the chart - Pie 3D Chart with data from strXML
-    @chart1= renderChart("/charts/Bar2D.swf", "", strXML, "test1", 550, 300, false, false)
+    @chart1= renderChart("/charts/Bar2D.swf", "", strXML, "test1", 550, 320, false, false)
   end
 end
