@@ -33,132 +33,143 @@ class Test3Controller < ApplicationController
     @fecha = l_datetime(@answer.created_on)
 
     @user=User.find(@answer.user_id )
+    teskalChart3
   end
 
-  def chart
-    #tolerancia al stress
 
-    #Database Objects - Initialization
+  def teskalChart3
+    # transformadas
+    tVal = %w(36 36 38 42 46 49 53 57 60 64 68 71 75)
+    dVal = %w(41 45 49 52 56 60 64 67 71 75 79 79 79)
+    hVal = %w(38 42 45 49 53 56 60 63 67 70 74 77 79)
+    vVal = %w(36 36 36 37 41 44 48 51 55 59 62 66 69)
+    fVal = %w(36 39 42 45 49 52 55 59 62 65 68 72 75)
+
     @answer = Answer.find(params[:id])
-    fecha = @answer.created_on
-
     @user=User.find(@answer.user_id )
-    # @answer = Answer.find_first
     # calculo de las dimensiones
 
-    # Descanso Interrumpido
-    # 2,9,17,23
-    # Cansancio Emocional
-    # 5,14,19,27
-    # Vulnerabilidad a Las Lesiones
-    # 1,8,15,24
-    # Estado De Forma
-    # 4,12,20,26
-    # Logro Personal
-    # 6,11,21,28
-    # Autoeficacia
-    # 3,10,16,22
-    # Autorregulación
-    # 7,13,18,25
-    item1 = (@answer.answ2 + @answer.answ9  + @answer.answ17 + @answer.answ23) /4
-    item2 = (@answer.answ5 + @answer.answ14 + @answer.answ19 + @answer.answ27) /4
-    item3 = (@answer.answ1 + @answer.answ8  + @answer.answ15 + @answer.answ24) /4
-    item4 = (@answer.answ4 + @answer.answ12 + @answer.answ20 + @answer.answ26) /4
-    item5 = (@answer.answ6 + @answer.answ11 + @answer.answ21 + @answer.answ28) /4
-    item6 = (@answer.answ3 + @answer.answ10 + @answer.answ16 + @answer.answ22) /4
-    item7 = (@answer.answ7 + @answer.answ13 + @answer.answ18 + @answer.answ25) /4
-    @advice=[]
-    if item1 < 2
-      @advice[0]=l(:test2_d1_a)
-    else
-      if item1 < 4
-        @advice[0]=l(:test2_d1_b)
-      else
-        @advice[0]=l(:test2_d1_c)
-      end
-    end
-    if item2 < 2
-      @advice[1]=l(:test2_d2_a)
-    else
-      if item2 < 4
-        @advice[1]=l(:test2_d2_b)
-      else
-        @advice[1]=l(:test2_d2_c)
-      end
-    end
-    if item3 < 2
-      @advice[2]=l(:test2_d3_a)
-    else
-      if item3 < 4
-        @advice[2]=l(:test2_d3_b)
-      else
-        @advice[2]=l(:test2_d3_c)
-      end
-    end
-    if item4 < 2
-      @advice[3]=l(:test2_d4_a)
-    else
-      if item4 < 4
-        @advice[3]=l(:test2_d4_b)
-      else
-        @advice[3]=l(:test2_d4_c)
-      end
-    end
-    if item5 < 2
-      @advice[4]=l(:test2_d5_a)
-    else
-      if item5 < 4
-        @advice[4]=l(:test2_d5_b)
-      else
-        @advice[4]=l(:test2_d5_c)
-      end
-    end
-    if item6 < 2
-      @advice[5]=l(:test2_d6_a)
-    else
-      if item6 < 4
-        @advice[5]=l(:test2_d6_b)
-      else
-        @advice[5]=l(:test2_d6_c)
-      end
-    end
-    if item7 < 2
-      @advice[6]=l(:test2_d7_a)
-    else
-      if item7 < 4
-        @advice[6]=l(:test2_d7_b)
-      else
-        @advice[6]=l(:test2_d7_c)
-      end
-    end
-    vg=((item4+item5+item6+item7/4))-((item1+item2+item3)/3)
+    t = @answer.answ1 + @answer.answ6  + @answer.answ11
+    d = @answer.answ2 + @answer.answ7 + @answer.answ11
+    h = @answer.answ5 + @answer.answ10 + @answer.answ15
+    v = @answer.answ4 + @answer.answ9 + @answer.answ14
+    f = @answer.answ3 + @answer.answ8 + @answer.answ13
+    ce = (@answer.answ16 + @answer.answ19 + @answer.answ22)*3
+    ae = (@answer.answ18 + @answer.answ21 + @answer.answ24)*3
+    cp = (@answer.answ17 + @answer.answ20 + @answer.answ23)*3
 
-    if vg < 0
-      @advice[7]=l(:test2_val_4)
-    elsif vg < 1
-      @advice[7]=l(:test2_val_3)
-    elsif vg < 3
-      @advice[7]=l(:test2_val_2)
+    @advice=[]
+    if t < 5
+      @advice[0]=l(:test3_d1_a)
     else
-      @advice[7]=l(:test2_val_1)
+      if t < 9
+        @advice[0]=l(:test3_d1_b)
+      else
+        @advice[0]=l(:test3_d1_c)
+      end
     end
+    if d < 2
+      @advice[1]=l(:test3_d2_a)
+    else
+      if d < 6
+        @advice[1]=l(:test3_d2_b)
+      else
+        @advice[1]=l(:test3_d2_c)
+      end
+    end
+    if h < 3
+      @advice[2]=l(:test3_d3_a)
+    else
+      if h < 7
+        @advice[2]=l(:test3_d3_b)
+      else
+        @advice[2]=l(:test3_d3_c)
+      end
+    end
+    if v < 7
+      @advice[3]=l(:test3_d4_a)
+    else
+      if v < 10
+        @advice[3]=l(:test3_d4_b)
+      else
+        @advice[3]=l(:test3_d4_c)
+      end
+    end
+    if f < 4
+      @advice[4]=l(:test3_d5_a)
+    else
+      if f < 8
+        @advice[4]=l(:test3_d5_b)
+      else
+        @advice[4]=l(:test3_d5_c)
+      end
+    end
+    if ce < 13
+      @advice[5]=l(:test3_d6_a)
+    else
+      if ce < 25
+        @advice[5]=l(:test3_d6_b)
+      else
+        @advice[5]=l(:test3_d6_c)
+      end
+    end
+    if ae < 13
+      @advice[6]=l(:test3_d7_a)
+    else
+      if ae < 25
+        @advice[6]=l(:test3_d7_b)
+      else
+        @advice[6]=l(:test3_d7_c)
+      end
+    end
+    if cp < 13
+      @advice[7]=l(:test3_d7_a)
+    else
+      if cp < 25
+        @advice[7]=l(:test3_d7_b)
+      else
+        @advice[7]=l(:test3_d7_c)
+      end
+    end
+
+    tTrans=tVal[t]
+    dTrans=dVal[t]
+    hTrans=hVal[t]
+    vTrans=vVal[t]
+    fTrans=fVal[t]
+    ceTrans=ce+36
+    aeTrans=ae+36
+    cpTrans=cp+36
+
     #strXML will be used to store the entire XML document generated
     strXML=''
-
-
     #Generate the chart element
-    strXML = "<chart caption='"+l(:test2_label_0)+"' subCaption='"+@user.login+"'"+" yAxisName='"+@fecha.to_s+"' palette='2' yAxisMinValue='-6' yAxisMaxValue='6' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
-
-    strXML = strXML + "<set label='" + l(:test2_label_1) + "' value='-" + item1.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_2) + "' value='-" + item2.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_3) + "' value='-" + item3.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_4) + "' value='" + item4.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_5) + "' value='" + item5.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_6) + "' value='" + item6.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_7) + "' value='" + item7.to_s + "'/>"
-    strXML = strXML + "</chart>"
-
+    strXML = "<chart palette='2' caption='"+l(:test3_label_0)+"' subCaption='"+@user.login+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4'   bgcolor='ffffff' borderColor='ffffff'>"
+    strXML = strXML +"<categories>"
+    strXML = strXML + "<category label= '"+l(:test3_label_1)+"'/>"
+    strXML = strXML + "<category label= '"+l(:test3_label_2)+"'/>"
+    strXML = strXML + "<category label= '"+l(:test3_label_3)+"'/>"
+    strXML = strXML + "<category label= '"+l(:test3_label_4)+"'/>"
+    strXML = strXML + "<category label= '"+l(:test3_label_5)+"'/>"
+    strXML = strXML + "<category label= '"+l(:test3_label_6)+"'/>"
+    strXML = strXML + "<category label= '"+l(:test3_label_7)+"'/>"
+    strXML = strXML + "<category label= '"+l(:test3_label_8)+"'/>"
+    strXML = strXML +"</categories>"
+    strXML = strXML +"<dataset SeriesName='"+l(:test3_label_9)+"' lineThickness='3' renderAs='Line' >"
+    strXML = strXML +"<set value='40' /><set value='36' /><set value='40' /><set value='70' /><set value='38' /><set value='70' /><set value='38' /><set value='70' />"
+    strXML = strXML +"</dataset>"
+    strXML = strXML +"<dataset SeriesName='"+l(:test3_label_10)+"' lineThickness='4' renderAs='Line' >"
+    strXML = strXML + "<set value='" + tTrans + "'/>"
+    strXML = strXML + "<set value='" + dTrans + "'/>"
+    strXML = strXML + "<set value='" + hTrans + "'/>"
+    strXML = strXML + "<set value='" + vTrans + "'/>"
+    strXML = strXML + "<set value='" + fTrans + "'/>"
+    strXML = strXML + "<set value='" + ceTrans.to_s + "'/>"
+    strXML = strXML + "<set value='" + aeTrans.to_s + "'/>"
+    strXML = strXML + "<set value='" + cpTrans.to_s + "'/>"
+    strXML = strXML + "</dataset> </chart>"
+    puts strXML
     #Create the chart - Pie 3D Chart with data from strXML
-    @chart1= renderChart("/charts/Bar2D.swf", "", strXML, "test2", 550, 300, false, false)
+    @chart1= renderChart("/charts/MSCombi2D.swf", "", strXML, "test3", 740, 300, false, false)
   end
 end

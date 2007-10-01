@@ -6,11 +6,9 @@ class AnswersController < ApplicationController
 
 
   def index
-    @answers = Answer.find(:all)
-    respond_to do |format|
-      format.html # index.rhtml
-      format.xml  { render :xml => @answers.to_xml }
-    end
+      @answers = Answer.find(58) 
+      puts @answers
+    
   end
 
   # GET /answers/1
