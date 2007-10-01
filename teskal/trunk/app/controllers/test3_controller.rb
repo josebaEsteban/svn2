@@ -133,10 +133,10 @@ class Test3Controller < ApplicationController
     end
 
     tTrans=tVal[t]
-    dTrans=dVal[t]
-    hTrans=hVal[t]
-    vTrans=vVal[t]
-    fTrans=fVal[t]
+    dTrans=dVal[d]
+    hTrans=hVal[h]
+    vTrans=vVal[v]
+    fTrans=fVal[f]
     ceTrans=ce+36
     aeTrans=ae+36
     cpTrans=cp+36
@@ -144,7 +144,8 @@ class Test3Controller < ApplicationController
     #strXML will be used to store the entire XML document generated
     strXML=''
     #Generate the chart element
-    strXML = "<chart palette='2' caption='"+l(:test3_label_0)+"' subCaption='"+@user.login+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4'   bgcolor='ffffff' borderColor='ffffff'>"
+    # labelDisplay='Stagger' staggerLines='2'
+    strXML = "<chart palette='2' caption='"+l(:test3_label_0)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4'   bgcolor='ffffff' borderColor='ffffff' chartRightMargin='35'>"
     strXML = strXML +"<categories>"
     strXML = strXML + "<category label= '"+l(:test3_label_1)+"'/>"
     strXML = strXML + "<category label= '"+l(:test3_label_2)+"'/>"
@@ -170,6 +171,6 @@ class Test3Controller < ApplicationController
     strXML = strXML + "</dataset> </chart>"
     puts strXML
     #Create the chart - Pie 3D Chart with data from strXML
-    @chart1= renderChart("/charts/MSCombi2D.swf", "", strXML, "test3", 740, 300, false, false)
+    @chart1= renderChart("/charts/MSCombi2D.swf", "", strXML, "test3", 770, 300, false, false)
   end
 end
