@@ -568,14 +568,20 @@ test1_label_7: Autoconfianza
 test1_label_8: Ansiedad Somática
 test1_label_9: Optima
 test1_label_10: Actual
-test1_label_11: Objetivo (4)
-test1_label_12: Dificultad percibida estimada
-test1_label_13: Grado de confianza
-test1_label_14: Autocontrol
-test1_label_15: Visualización
-test1_label_16: Autoacciones
-test1_label_17: Orientacion motivacional EGO
-test1_label_18: Orientacion motivacional Tarea
+test1_label_11: Dificultad percibida estimada
+test1_label_12: Grado de confianza
+test1_label_13: Autocontrol
+test1_label_14: Visualización
+test1_label_15: Autoacciones
+test1_label_16: Orientación motivacional EGO
+test1_label_17: Orientación motivacional Tarea
+test1_label_18: Objetivo 1
+test1_label_19: Objetivo 2
+test1_label_20: Objetivo 3
+test1_label_21: Objetivo 4
+test1_label_22: Dificultad
+test1_label_23: Confianza
+
 #dimensions
 test1_d1_a: Los valores de la Tensión se encuentran en un nivel bajo, lo cual es positivo, y supone que est@ deportista se encuentra tranquil@ y centrad@ en el trabajo que se le encomiende.
 test1_d1_b: Los valores de la Tensión se encuentran en un nivel medio, que puede ser causar cierta intranquilidad en este caso. Conviene vigilar la evolución de esta dimensión durante los próximos días e intentar que poco a poco se vaya situando en la zona baja, sobre todo si estamos muy alejados de la competición.
