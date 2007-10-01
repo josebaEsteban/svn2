@@ -1,0 +1,12 @@
+<h1>Editing Test</h1>
+
+<%= error_messages_for :answer %>
+
+<% form_for(:answer, :url => answer_path(@answer), :html => { :method => :put }) do |f| %>
+  <p>
+    <%= submit_tag "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', answer_path(@answer) %> |
+<%= link_to 'Back', answers_path %>

@@ -1,0 +1,303 @@
+<!-- test6 -->
+
+<% content_for :header_tags do %>
+<%= javascript_include_tag 'prototype' %> 
+<%= calendar_date_select_includes "plain" %>
+<%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language %>
+<% end %>
+
+<h2><%=l(:test6)%></h2>
+<br/>
+<div id="intro"><%=l(:test5_intro)%></div>
+<br/>
+<div id="values"> <%=l(:test5_valor_1)%> • <%=l(:test5_valor_2)%> • <%=l(:test5_valor_3)%> • <%=l(:test5_valor_4)%> • <%=l(:test5_valor_5)%>
+</div>
+<br/>
+ <br/>
+<center>
+	<form action="/quest6/create" method="post">
+  <table cellspacing="0">
+    <!-- <caption><%=l(:test6)%></caption> -->
+    <thead>
+      <tr>
+        <th>##</th>
+        <th scope="col"><div align="left"><%=l(:test5_header1)%></div></th>
+        <th scope="col">1</th>
+        <th scope="col">2</th>
+        <th scope="col">3</th>
+        <th scope="col">4</th>
+        <th scope="col">5</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><%=l(:test5_1)%></td>
+        <td><input type="radio" name="answer[answ1]" value="1" id="answer_answ1_1"/></td>
+        <td><input type="radio" name="answer[answ1]" value="2" id="answer_answ1_2"/></td>
+        <td><input type="radio" name="answer[answ1]" value="3" id="answer_answ1_3"/></td>
+        <td><input type="radio" name="answer[answ1]" value="4" id="answer_answ1_4"/></td>
+        <td><input type="radio" name="answer[answ1]" value="5" id="answer_answ1_5"/></td>
+      </tr>
+      <tr class="odd">
+        <td>2</td>
+        <td><%=l(:test5_2)%></td>
+        <td><input type="radio" name="answer[answ2]" value="1" id="answer_answ2_1"/></td>
+        <td><input type="radio" name="answer[answ2]" value="2" id="answer_answ2_2"/></td>
+        <td><input type="radio" name="answer[answ2]" value="3" id="answer_answ2_3"/></td>
+        <td><input type="radio" name="answer[answ2]" value="4" id="answer_answ2_4"/></td>
+        <td><input type="radio" name="answer[answ2]" value="5" id="answer_answ2_5"/></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><%=l(:test5_3)%></td>
+        <td><input type="radio" name="answer[answ3]" value="1" id="answer_answ3_1"/></td>
+        <td><input type="radio" name="answer[answ3]" value="2" id="answer_answ3_2"/></td>
+        <td><input type="radio" name="answer[answ3]" value="3" id="answer_answ3_3"/></td>
+        <td><input type="radio" name="answer[answ3]" value="4" id="answer_answ3_4"/></td>
+        <td><input type="radio" name="answer[answ3]" value="5" id="answer_answ3_5"/></td>
+      </tr>
+      <tr class="odd">
+        <td>4</td>
+        <td><%=l(:test5_4)%></td>
+        <td><input type="radio" name="answer[answ4]" value="1" id="answer_answ4_1"/></td>
+        <td><input type="radio" name="answer[answ4]" value="2" id="answer_answ4_2"/></td>
+        <td><input type="radio" name="answer[answ4]" value="3" id="answer_answ4_3"/></td>
+        <td><input type="radio" name="answer[answ4]" value="4" id="answer_answ4_4"/></td>
+        <td><input type="radio" name="answer[answ4]" value="5" id="answer_answ4_5"/></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><%=l(:test5_5)%></td>
+        <td><input type="radio" name="answer[answ5]" value="1" id="answer_answ5_1"/></td>
+        <td><input type="radio" name="answer[answ5]" value="2" id="answer_answ5_2"/></td>
+        <td><input type="radio" name="answer[answ5]" value="3" id="answer_answ5_3"/></td>
+        <td><input type="radio" name="answer[answ5]" value="4" id="answer_answ5_4"/></td>
+        <td><input type="radio" name="answer[answ5]" value="5" id="answer_answ5_5"/></td>
+      </tr>
+    </tbody>
+  </table>
+  <br/>
+  <br/>
+  <table cellspacing="0">
+    <thead>
+      <tr>
+        <th>##</th>
+        <th scope="col"><div align="left"><%=l(:test5_header2)%></div></th>
+        <th scope="col">1</th>
+        <th scope="col">2</th>
+        <th scope="col">3</th>
+        <th scope="col">4</th>
+        <th scope="col">5</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>6</td>
+        <td><%=l(:test6_6)%></td>
+        <td><input type="radio" name="answer[answ6]" value="1" id="answer_answ6_1"/></td>
+        <td><input type="radio" name="answer[answ6]" value="2" id="answer_answ6_2"/></td>
+        <td><input type="radio" name="answer[answ6]" value="3" id="answer_answ6_3"/></td>
+        <td><input type="radio" name="answer[answ6]" value="4" id="answer_answ6_4"/></td>
+        <td><input type="radio" name="answer[answ6]" value="5" id="answer_answ6_5"/></td>
+      </tr>
+      <tr class="odd">
+        <td>7</td>
+        <td><%=l(:test6_7)%></td>
+        <td><input type="radio" name="answer[answ7]" value="1" id="answer_answ7_1"/></td>
+        <td><input type="radio" name="answer[answ7]" value="2" id="answer_answ7_2"/></td>
+        <td><input type="radio" name="answer[answ7]" value="3" id="answer_answ7_3"/></td>
+        <td><input type="radio" name="answer[answ7]" value="4" id="answer_answ7_4"/></td>
+        <td><input type="radio" name="answer[answ7]" value="5" id="answer_answ7_5"/></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td><%=l(:test6_8)%></td>
+        <td><input type="radio" name="answer[answ8]" value="1" id="answer_answ8_1"/></td>
+        <td><input type="radio" name="answer[answ8]" value="2" id="answer_answ8_2"/></td>
+        <td><input type="radio" name="answer[answ8]" value="3" id="answer_answ8_3"/></td>
+        <td><input type="radio" name="answer[answ8]" value="4" id="answer_answ8_4"/></td>
+        <td><input type="radio" name="answer[answ8]" value="5" id="answer_answ8_5"/></td>
+      </tr>
+      <tr class="odd">
+        <td>9</td>
+        <td><%=l(:test6_9)%></td>
+        <td><input type="radio" name="answer[answ9]" value="1" id="answer_answ9_1"/></td>
+        <td><input type="radio" name="answer[answ9]" value="2" id="answer_answ9_2"/></td>
+        <td><input type="radio" name="answer[answ9]" value="3" id="answer_answ9_3"/></td>
+        <td><input type="radio" name="answer[answ9]" value="4" id="answer_answ9_4"/></td>
+        <td><input type="radio" name="answer[answ9]" value="5" id="answer_answ9_5"/></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td><%=l(:test6_10)%></td>
+        <td><input type="radio" name="answer[answ10]" value="1" id="answer_answ10_1"/></td>
+        <td><input type="radio" name="answer[answ10]" value="2" id="answer_answ10_2"/></td>
+        <td><input type="radio" name="answer[answ10]" value="3" id="answer_answ10_3"/></td>
+        <td><input type="radio" name="answer[answ10]" value="4" id="answer_answ10_4"/></td>
+        <td><input type="radio" name="answer[answ10]" value="5" id="answer_answ10_5"/></td>
+      </tr>
+      <tr class="odd">
+        <td>11</td>
+        <td><%=l(:test6_11)%></td>
+        <td><input type="radio" name="answer[answ11]" value="1" id="answer_answ11_1"/></td>
+        <td><input type="radio" name="answer[answ11]" value="2" id="answer_answ11_2"/></td>
+        <td><input type="radio" name="answer[answ11]" value="3" id="answer_answ11_3"/></td>
+        <td><input type="radio" name="answer[answ11]" value="4" id="answer_answ11_4"/></td>
+        <td><input type="radio" name="answer[answ11]" value="5" id="answer_answ11_5"/></td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td><%=l(:test6_12)%></td>
+        <td><input type="radio" name="answer[answ12]" value="1" id="answer_answ12_1"/></td>
+        <td><input type="radio" name="answer[answ12]" value="2" id="answer_answ12_2"/></td>
+        <td><input type="radio" name="answer[answ12]" value="3" id="answer_answ12_3"/></td>
+        <td><input type="radio" name="answer[answ12]" value="4" id="answer_answ12_4"/></td>
+        <td><input type="radio" name="answer[answ12]" value="5" id="answer_answ12_5"/></td>
+      </tr>
+      <tr class="odd">
+        <td>13</td>
+        <td><%=l(:test6_13)%></td>
+        <td><input type="radio" name="answer[answ13]" value="1" id="answer_answ13_1"/></td>
+        <td><input type="radio" name="answer[answ13]" value="2" id="answer_answ13_2"/></td>
+        <td><input type="radio" name="answer[answ13]" value="3" id="answer_answ13_3"/></td>
+        <td><input type="radio" name="answer[answ13]" value="4" id="answer_answ13_4"/></td>
+        <td><input type="radio" name="answer[answ13]" value="5" id="answer_answ13_5"/></td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td><%=l(:test6_14)%></td>
+        <td><input type="radio" name="answer[answ14]" value="1" id="answer_answ14_1"/></td>
+        <td><input type="radio" name="answer[answ14]" value="2" id="answer_answ14_2"/></td>
+        <td><input type="radio" name="answer[answ14]" value="3" id="answer_answ14_3"/></td>
+        <td><input type="radio" name="answer[answ14]" value="4" id="answer_answ14_4"/></td>
+        <td><input type="radio" name="answer[answ14]" value="5" id="answer_answ14_5"/></td>
+      </tr>
+      <tr class="odd">
+        <td>15</td>
+        <td><%=l(:test6_15)%></td>
+        <td><input type="radio" name="answer[answ15]" value="1" id="answer_answ15_1"/></td>
+        <td><input type="radio" name="answer[answ15]" value="2" id="answer_answ15_2"/></td>
+        <td><input type="radio" name="answer[answ15]" value="3" id="answer_answ15_3"/></td>
+        <td><input type="radio" name="answer[answ15]" value="4" id="answer_answ15_4"/></td>
+        <td><input type="radio" name="answer[answ15]" value="5" id="answer_answ15_5"/></td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td><%=l(:test6_16)%></td>
+        <td><input type="radio" name="answer[answ16]" value="1" id="answer_answ16_1"/></td>
+        <td><input type="radio" name="answer[answ16]" value="2" id="answer_answ16_2"/></td>
+        <td><input type="radio" name="answer[answ16]" value="3" id="answer_answ16_3"/></td>
+        <td><input type="radio" name="answer[answ16]" value="4" id="answer_answ16_4"/></td>
+        <td><input type="radio" name="answer[answ16]" value="5" id="answer_answ16_5"/></td>
+      </tr>
+      <tr class="odd">
+        <td>17</td>
+        <td><%=l(:test6_17)%></td>
+        <td><input type="radio" name="answer[answ17]" value="1" id="answer_answ17_1"/></td>
+        <td><input type="radio" name="answer[answ17]" value="2" id="answer_answ17_2"/></td>
+        <td><input type="radio" name="answer[answ17]" value="3" id="answer_answ17_3"/></td>
+        <td><input type="radio" name="answer[answ17]" value="4" id="answer_answ17_4"/></td>
+        <td><input type="radio" name="answer[answ17]" value="5" id="answer_answ17_5"/></td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td><%=l(:test6_18)%></td>
+        <td><input type="radio" name="answer[answ18]" value="1" id="answer_answ18_1"/></td>
+        <td><input type="radio" name="answer[answ18]" value="2" id="answer_answ18_2"/></td>
+        <td><input type="radio" name="answer[answ18]" value="3" id="answer_answ18_3"/></td>
+        <td><input type="radio" name="answer[answ18]" value="4" id="answer_answ18_4"/></td>
+        <td><input type="radio" name="answer[answ18]" value="5" id="answer_answ18_5"/></td>
+      </tr>
+      <tr class="odd">
+        <td>19</td>
+        <td><%=l(:test6_19)%></td>
+        <td><input type="radio" name="answer[answ19]" value="1" id="answer_answ19_1"/></td>
+        <td><input type="radio" name="answer[answ19]" value="2" id="answer_answ19_2"/></td>
+        <td><input type="radio" name="answer[answ19]" value="3" id="answer_answ19_3"/></td>
+        <td><input type="radio" name="answer[answ19]" value="4" id="answer_answ19_4"/></td>
+        <td><input type="radio" name="answer[answ19]" value="5" id="answer_answ19_5"/></td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td><%=l(:test6_20)%></td>
+        <td><input type="radio" name="answer[answ20]" value="1" id="answer_answ20_1"/></td>
+        <td><input type="radio" name="answer[answ20]" value="2" id="answer_answ20_2"/></td>
+        <td><input type="radio" name="answer[answ20]" value="3" id="answer_answ20_3"/></td>
+        <td><input type="radio" name="answer[answ20]" value="4" id="answer_answ20_4"/></td>
+        <td><input type="radio" name="answer[answ20]" value="5" id="answer_answ20_5"/></td>
+      </tr>
+    </tbody>
+  </table>
+  <br/>
+  <br/>
+  <table cellspacing="0">
+    <!-- <caption><%=l(:test1)%></caption> -->
+    <thead>
+      <tr>
+        <th scope="col"> ## </th>
+        <th scope="col"><div align="left"><%=l(:test5_header3)%></div></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>21</td>
+        <td><%=l(:test5_21)%></td>
+        <td><select name="answer[answ21]" id="answer_answ21">
+	  <option value="0">0</option>
+	  <option value="10">10</option>
+	  <option value="20">20</option>
+	  <option value="30">30</option>
+	  <option value="40">40</option>
+	  <option value="50">50</option>
+	  <option value="60">60</option>
+	  <option value="70">70</option>
+	  <option value="80">80</option>
+	  <option value="90">90</option>
+	  <option value="100">100</option>
+	  </select></td>
+      </tr>
+      <tr class="odd">
+        <td>22</td>
+        <td><%=l(:test6_21)%></td>
+        <td><select name="answer[answ22]" id="answer_answ22">
+	  <option value="0">0</option>
+	  <option value="10">10</option>
+	  <option value="20">20</option>
+	  <option value="30">30</option>
+	  <option value="40">40</option>
+	  <option value="50">50</option>
+	  <option value="60">60</option>
+	  <option value="70">70</option>
+	  <option value="80">80</option>
+	  <option value="90">90</option>
+	  <option value="100">100</option>
+	  </select></td>
+      </tr>
+    </tbody>
+  </table>
+  <br/>
+  <br/>
+  <table cellspacing="0">
+    <!-- <caption><%=l(:test1)%></caption> -->
+    <thead>
+      <tr>
+        <th scope="col"><div align="left"><%= l(:field_notes) %></div></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><textarea name="answer[note1]" id="note1" cols="60" rows="5"></textarea></td>
+      </tr>
+    </tbody>
+  </table>
+  <br/>
+  <br/>
+   <div align="right">
+<%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true, :time  => true%>
+ <!-- <%= calendar_date_select_tag "month_year_selector_label", "",:disabled => false, :readonly => false ,:popup => :force %> -->
+ </div>
+  <p><%= submit_tag l(:button_save) %></p>
+</center>
+<%= link_to 'Back', answers_path %>

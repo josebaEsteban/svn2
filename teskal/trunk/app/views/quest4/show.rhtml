@@ -1,0 +1,350 @@
+<!-- Copyright (C) 2007 Teskal -->
+<!-- test4 -->
+<%=javascript_include_tag 'charts.js' %>
+
+<center>
+  <%= @chart1%>
+</center>
+<br/>
+<div align="left">
+  <h2><%=l(:test4)%></h2>
+  <h4><%= @user.login+" - "+@fecha.to_s %></h4>
+  <br/>
+  <h3><%= l(:test1_label_1) %></h3>
+  <h4> <%=@advice[0]%> </h4>
+  <h3><%= l(:test1_label_2) %></h3>
+  <h4> <%=@advice[1]%> </h4>
+  <h3><%= l(:test1_label_3) %></h3>
+  <h4> <%=@advice[2]%> </h4>
+  <h3><%= l(:test1_label_4) %></h3>
+  <h4> <%=@advice[3]%> </h4>
+  <h3><%= l(:test1_label_5) %></h3>
+  <h4> <%=@advice[4]%> </h4>
+  <h3><%= l(:test1_label_6) %></h3>
+  <h4> <%=@advice[5]%> </h4>
+  <h3><%= l(:test1_label_7) %></h3>
+  <h4> <%=@advice[6]%> </h4>
+  <h3><%= l(:test1_label_8) %></h3>
+  <h4> <%=@advice[7]%> </h4>
+</div>
+<br/>
+<center>
+  <%= @chart2%>
+</center>
+<div align="left">
+  <h3><%= l(:test4_label_11) %></h3>
+  <h4> <%=@advice[8]%> </h4>
+  <h3><%= l(:test4_label_12) %></h3>
+  <h4> <%=@advice[9]%> </h4>
+  <h3><%= l(:test4_label_13) %></h3>
+  <h4> <%=@advice[10]%> </h4>
+  <h3><%= l(:test4_label_14) %></h3>
+  <h4> <%=@advice[11]%> </h4>
+</div>
+<br/> 
+<br/>
+<div id="values"> <%=l(:test3_valor_0)%> • <%=l(:test3_valor_1)%> • <%=l(:test3_valor_2)%> • <%=l(:test3_valor_3)%> • <%=l(:test3_valor_4)%> </div>
+<br/>
+<br/>
+<div align="center">
+  <table cellspacing="0">
+    <!-- <caption><%=l(:test1)%></caption> -->
+    <thead>
+      <tr>
+        <th scope="col"> ## </th>
+        <th scope="col"><div align="left"><%=l(:test3_header1)%></div></th>
+        <th scope="col"><%=l(:test2_label_9)%></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><%=l(:test3_1)%></td>
+        <td><div align="center"><%=@answer.answ1%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>2</td>
+        <td><%=l(:test3_2)%></td>
+        <td><div align="center"><%=@answer.answ2%></div></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><%=l(:test3_3)%></td>
+        <td><div align="center"><%=@answer.answ3%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>4</td>
+        <td><%=l(:test3_4)%></td>
+        <td><div align="center"><%=@answer.answ4%></div></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><%=l(:test3_5)%></td>
+        <td><div align="center"><%=@answer.answ5%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>6</td>
+        <td><%=l(:test3_6)%></td>
+        <td><div align="center"><%=@answer.answ6%></div></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td><%=l(:test3_7)%></td>
+        <td><div align="center"><%=@answer.answ7%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>8</td>
+        <td><%=l(:test3_8)%></td>
+        <td><div align="center"><%=@answer.answ8%></div></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td><%=l(:test3_9)%></td>
+        <td><div align="center"><%=@answer.answ9%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>10</td>
+        <td><%=l(:test3_10)%></td>
+        <td><div align="center"><%=@answer.answ10%></div></td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td><%=l(:test3_11)%></td>
+        <td><div align="center"><%=@answer.answ11%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>12</td>
+        <td><%=l(:test3_12)%></td>
+        <td><div align="center"><%=@answer.answ12%></div></td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td><%=l(:test3_13)%></td>
+        <td><div align="center"><%=@answer.answ13%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>14</td>
+        <td><%=l(:test3_14)%></td>
+        <td><div align="center"><%=@answer.answ14%></div></td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td><%=l(:test3_15)%></td>
+        <td><div align="center"><%=@answer.answ15%></div></td>
+      </tr>
+    </tbody>
+  </table>
+  <br/>
+  <br/>
+  <table cellspacing="0">
+    <!-- <caption><%=l(:test1)%></caption> -->
+    <thead>
+      <tr>
+        <th scope="col"> ## </th>
+        <th scope="col"><div align="left"><%=l(:test4_header)%></div></th>
+        <th scope="col"><%=l(:test2_label_9)%></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>16</td>
+        <td><%=l(:test4_8)%></td>
+        <td><div align="left"><%=simple_format(@answer.note1)%></div></td>
+      </tr>
+      <tr  class="odd">
+        <td>17</td>
+        <td><%=l(:test4_0)%></td>
+        <td><div align="center"><%=@answer.answ17%></div></td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td><%=l(:test4_1)%></td>
+        <td><div align="center"><%=@answer.answ18%></div></td>
+      </tr>
+    </tbody>
+  </table>
+  <br/>
+  <br/>
+  <div id="values"> <%=l(:test4_valor_1)%> • <%=l(:test3_valor_2)%> • <%=l(:test3_valor_3)%> • <%=l(:test3_valor_4)%> <br/>
+    <br/>
+  </div>
+  <table cellspacing="0">
+    <!-- <caption><%=l(:test1)%></caption> -->
+    <thead>
+      <tr>
+        <th scope="col">##</th>
+        <th scope="col"><div align="left"><%=l(:test1_header2)%></div></th>
+        <th scope="col"><%=l(:test2_label_9)%></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>19</td>
+        <td><%=l(:test1_26)%></td>
+        <td><div align="center"><%=@answer.answ19%></div></td>
+      <tr class="odd">
+        <td>20</td>
+        <td><%=l(:test1_27)%></td>
+        <td><div align="center"><%=@answer.answ20%></div></td>
+      <tr>
+        <td>21</td>
+        <td><%=l(:test1_28)%></td>
+        <td><div align="center"><%=@answer.answ21%></div></td>
+      <tr class="odd">
+        <td>22</td>
+        <td><%=l(:test1_29)%></td>
+        <td><div align="center"><%=@answer.answ22%></div></td>
+      <tr>
+        <td>23</td>
+        <td><%=l(:test1_30)%></td>
+        <td><div align="center"><%=@answer.answ23%></div></td>
+      <tr class="odd">
+        <td>24</td>
+        <td><%=l(:test1_31)%></td>
+        <td><div align="center"><%=@answer.answ24%></div></td>
+      <tr>
+        <td>25</td>
+        <td><%=l(:test1_32)%></td>
+        <td><div align="center"><%=@answer.answ25%></div></td>
+      <tr class="odd">
+        <td>26</td>
+        <td><%=l(:test1_33)%></td>
+        <td><div align="center"><%=@answer.answ26%></div></td>
+      <tr>
+        <td>27</td>
+        <td><%=l(:test1_34)%></td>
+        <td><div align="center"><%=@answer.answ27%></div></td>
+      <tr class="odd">
+        <td>28</td>
+        <td><%=l(:test1_35)%></td>
+        <td><div align="center"><%=@answer.answ28%></div></td>
+      <tr>
+        <td>29</td>
+        <td><%=l(:test1_36)%></td>
+        <td><div align="center"><%=@answer.answ29%></div></td>
+      <tr class="odd">
+        <td>30</td>
+        <td><%=l(:test1_37)%></td>
+        <td><div align="center"><%=@answer.answ30%></div></td>
+      <tr>
+        <td>31</td>
+        <td><%=l(:test1_38)%></td>
+        <td><div align="center"><%=@answer.answ31%></div></td>
+      <tr class="odd">
+        <td>32</td>
+        <td><%=l(:test1_39)%></td>
+        <td><div align="center"><%=@answer.answ32%></div></td>
+      <tr>
+        <td>33</td>
+        <td><%=l(:test1_40)%></td>
+        <td><div align="center"><%=@answer.answ33%></div></td>
+      <tr class="odd">
+        <td>34</td>
+        <td><%=l(:test1_41)%></td>
+        <td><div align="center"><%=@answer.answ34%></div></td>
+      <tr>
+        <td>35</td>
+        <td><%=l(:test1_42)%></td>
+        <td><div align="center"><%=@answer.answ35%></div></td>
+      <tr class="odd">
+        <td>36</td>
+        <td><%=l(:test1_43)%></td>
+        <td><div align="center"><%=@answer.answ36%></div></td>
+      <tr>
+        <td>37</td>
+        <td><%=l(:test1_44)%></td>
+        <td><div align="center"><%=@answer.answ37%></div></td>
+      <tr class="odd">
+        <td>38</td>
+        <td><%=l(:test1_45)%></td>
+        <td><div align="center"><%=@answer.answ38%></div></td>
+      <tr>
+        <td>39</td>
+        <td><%=l(:test1_46)%></td>
+        <td><div align="center"><%=@answer.answ39%></div></td>
+      <tr class="odd">
+        <td>40</td>
+        <td><%=l(:test1_47)%></td>
+        <td><div align="center"><%=@answer.answ40%></div></td>
+      <tr>
+        <td>41</td>
+        <td><%=l(:test1_48)%></td>
+        <td><div align="center"><%=@answer.answ41%></div></td>
+      <tr class="odd">
+        <td>42</td>
+        <td><%=l(:test1_49)%></td>
+        <td><div align="center"><%=@answer.answ42%></div></td>
+      <tr>
+        <td>43</td>
+        <td><%=l(:test1_50)%></td>
+        <td><div align="center"><%=@answer.answ43%></div></td>
+      <tr class="odd">
+        <td>44</td>
+        <td><%=l(:test1_51)%></td>
+        <td><div align="center"><%=@answer.answ44%></div></td>
+      <tr>
+        <td>45</td>
+        <td><%=l(:test1_52)%></td>
+        <td><div align="center"><%=@answer.answ45%></div></td>
+    </tbody>
+  </table>
+  <br/>
+  <br/>
+  <table cellspacing="0">
+    <!-- <caption><%=l(:test1)%></caption> -->
+    <thead>
+      <tr>
+        <th scope="col"> ## </th>
+        <th scope="col"><div align="left"><%=l(:test1_header2)%></div></th>
+        <th scope="col"><%=l(:test2_label_9)%></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>46</td>
+        <td><%=l(:test4_2)%></td>
+        <td><div align="center"><%=@answer.answ46%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>47</td>
+        <td><%=l(:test4_3)%></td>
+        <td><div align="center"><%=@answer.answ47%></div></td>
+      </tr>
+      <tr>
+        <td>48</td>
+        <td><%=l(:test4_4)%></td>
+        <td><div align="center"><%=@answer.answ48%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>49</td>
+        <td><%=l(:test4_5)%></td>
+        <td><div align="center"><%=@answer.answ49%></div></td>
+      </tr>
+      <tr>
+        <td>50</td>
+        <td><%=l(:test4_6)%></td>
+        <td><div align="center"><%=@answer.answ50%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>51</td>
+        <td><%=l(:test4_7)%></td>
+        <td><div align="center"><%=@answer.answ51%></div></td>
+      </tr>
+    </tbody>
+  </table>
+  <br/>
+  <br/>
+  <table cellspacing="0">
+    <!-- <caption><%=l(:test1)%></caption> -->
+    <thead>
+      <tr>
+        <th scope="col"><div align="left"><%= l(:field_notes) %></div></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd">
+        <td><div align="left"><%=simple_format(@answer.note2)%></div></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
