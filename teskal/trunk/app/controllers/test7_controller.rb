@@ -129,6 +129,7 @@ class Test7Controller < ApplicationController
     strXML = strXML + "<set label='" + l(:test7_label_1) + "' value='" + rgs + "'/>"
     strXML = strXML + "<set label='" + l(:test7_label_2) + "' value='" + dps + "'/>"
     strXML = strXML + "<set label='" + l(:test7_label_3) + "' value='" + fes + "'/>"
+    strXML = strXML + "<set label='' value=''/>"
     strXML = strXML + "<set label='" + l(:test7_label_4) + "' value='" + ucs + "'/>"
     strXML = strXML + "<set label='" + l(:test7_label_5) + "' value='" + eis + "'/>"
     strXML = strXML + "<set label='" + l(:test7_label_6) + "' value='" + tps + "'/>"

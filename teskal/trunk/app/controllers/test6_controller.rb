@@ -122,6 +122,6 @@ class Test6Controller < ApplicationController
     strXML = strXML + "<set label='" + l(:test6_label_4) + "' value= '" + rp.to_s + "'/>"
     strXML = strXML + "</chart>"
     #Create the chart - Pie 3D Chart with data from strXML
-    @chart1= renderChart("/charts/Bar2D.swf", "", strXML, "test5", 450, 270, false, false)
+    @chart1= renderChart("/charts/Bar2D.swf", "", strXML, "test5", 550, 270, false, false)
   end
 end
