@@ -1,9 +1,47 @@
+<!-- Copyright (C) 2007 Teskal -->
 <!-- test4 -->
 <%=javascript_include_tag 'charts.js' %>
 
 <center>
   <%= @chart1%>
 </center>
+<br/>
+<div align="left">
+  <h2><%=l(:test4)%></h2>
+  <h4><%= @user.login+" - "+@fecha.to_s %></h4>
+  <br/>
+  <h3><%= l(:test1_label_1) %></h3>
+  <h4> <%=@advice[0]%> </h4>
+  <h3><%= l(:test1_label_2) %></h3>
+  <h4> <%=@advice[1]%> </h4>
+  <h3><%= l(:test1_label_3) %></h3>
+  <h4> <%=@advice[2]%> </h4>
+  <h3><%= l(:test1_label_4) %></h3>
+  <h4> <%=@advice[3]%> </h4>
+  <h3><%= l(:test1_label_5) %></h3>
+  <h4> <%=@advice[4]%> </h4>
+  <h3><%= l(:test1_label_6) %></h3>
+  <h4> <%=@advice[5]%> </h4>
+  <h3><%= l(:test1_label_7) %></h3>
+  <h4> <%=@advice[6]%> </h4>
+  <h3><%= l(:test1_label_8) %></h3>
+  <h4> <%=@advice[7]%> </h4>
+</div>
+<br/>
+<center>
+  <%= @chart2%>
+</center>
+<div align="left">
+  <h3><%= l(:test4_label_11) %></h3>
+  <h4> <%=@advice[8]%> </h4>
+  <h3><%= l(:test4_label_12) %></h3>
+  <h4> <%=@advice[9]%> </h4>
+  <h3><%= l(:test4_label_13) %></h3>
+  <h4> <%=@advice[10]%> </h4>
+  <h3><%= l(:test4_label_14) %></h3>
+  <h4> <%=@advice[11]%> </h4>
+</div>
+<br/> 
 <h2><%=l(:test4)%></h2>
 <br/>
 <div id="values"> <%=l(:test3_valor_0)%> • <%=l(:test3_valor_1)%> • <%=l(:test3_valor_2)%> • <%=l(:test3_valor_3)%> • <%=l(:test3_valor_4)%> </div>

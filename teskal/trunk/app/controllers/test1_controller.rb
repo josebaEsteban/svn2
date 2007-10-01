@@ -38,17 +38,15 @@ class Test1Controller < ApplicationController
   end
 
   def teskalChart1
-    @answer = Answer.find(params[:id])
-    @user=User.find(@answer.user_id )
 
-    # Transformadaformadas
+    # Transformadas
     tVal = %w(36 36 38 42 46 49 53 57 60 64 68 71 75)
     dVal = %w(41 45 49 52 56 60 64 67 71 75 79 79 79)
     hVal = %w(38 42 45 49 53 56 60 63 67 70 74 77 79)
     vVal = %w(36 36 36 37 41 44 48 51 55 59 62 66 69)
     fVal = %w(36 39 42 45 49 52 55 59 62 65 68 72 75)
 
-    tension = @answer.answ1 + @answer.answ11  + @answer.answ16
+    tension = @answer.answ1 + @answer.answ6  + @answer.answ11
     depresion = @answer.answ2 + @answer.answ7 + @answer.answ12
     hostilidad = @answer.answ5 + @answer.answ10  + @answer.answ15
     vigor = @answer.answ4 + @answer.answ9 + @answer.answ14
