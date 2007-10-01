@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <!-- <link href="favicon.ico"
+				 rel="icon"
+				 type="image/x-icon" />   -->
+  <title><%= Setting.app_title + (@html_title ? ": #{@html_title}" : "") %></title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Teskal, enjoy the pressure" />
+  <meta name="keywords" content="sport" />
+  <!--[if IE]>
+	<style type="text/css">
+	body {behavior: url(<%= stylesheet_path "csshover.htc" %>);}
+	</style>
+<![endif]-->
+  <%= stylesheet_link_tag "application" %><%= stylesheet_link_tag "coffee-with-milk" %>
+  <!-- <%= javascript_include_tag :defaults %> -->
+  <!-- page specific tags -->
+  <%= yield :header_tags %>
+</head>
+<body>
+<div class="content">
+  <div id="header"></div>
+  <div id="nav">
+    <ul id="navTeskal">
+      <li> <%= link_to l(:label_home), { :controller => 'welcome' } %></li>
+      <!-- 				
+	<li class="top"><%= link_to l(:label_help), { :controller => 'help', :ctrl => params[:controller], :page => params[:action] }, :onclick => "window.open(this.href); return false;"%></li>
+ -->
+      <% if loggedin? %>
+      <li><%= link_to l(:label_logout), { :controller => 'account', :action => 'logout' } %></li>
+      <% else %>
+      <li><a href="/account/login" class="active"><%= l(:label_login) %></a></li>
+      <% end %>
+      <% if loggedin? %>
+      <li class="bottom"><%= link_to l(:label_my_account), { :controller => 'my', :action => 'account' } %></li>
+      <% end %>
+      <% if loggedin? %>
+      <li class="bottom"><%= link_to l(:label_project_plural), { :controller => 'answers' } %></li>
+      <% end %>
+    </ul>
+  </div>
+  <!-- 		
+<% if admin_loggedin? %>
+		<%= render :partial => 'admin/menu' %>        
+	<% end %>  
+ -->
+<div id="content">
+  <% if flash[:notice] %>
+  <p style="color: green"><%= flash[:notice] %></p>
+  <% end %>
+  <%= yield %> </div>
+<div id="footer"></div>
+</div>
+</body>
+</html>

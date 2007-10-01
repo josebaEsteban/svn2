@@ -1,0 +1,18 @@
+<h2> Instalaciones</h2>  
+<table>
+  <tr>
+    <th>user</th>
+    <th>test</th>
+  </tr>
+  
+<% for answer in @answers %>
+  <tr>
+
+    <td><%=h @user.login %></td>
+    <td><%=h answer.quest_id   %></td>    
+
+    <td><%= link_to 'Show', :action => 'show', :id => answer %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => answer %></td>
+   </tr>
+<% end %>
+</table>
