@@ -29,6 +29,7 @@ class MyController < ApplicationController
   # Show user's page
   def page
     @user = self.logged_in_user
+    @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{session[:user_id]} order by answers.created_on DESC")
     @blocks = @user.pref[:my_page_layout] || DEFAULT_LAYOUT
   end
 

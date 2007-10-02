@@ -196,21 +196,6 @@ label_role_and_permissions: Rolak eta baimenak
 label_member: Kidea
 label_member_new: Kide berria
 label_member_plural: Kideak
-label_tracker: Tracker
-label_tracker_plural: Trackers
-label_tracker_new: Nuevo tracker
-label_workflow: Workflow
-label_issue_status: Estatuto de petición
-label_issue_status_plural: Estatutos de las peticiones
-label_issue_status_new: Nuevo estatuto
-label_issue_category: Categoría de las peticiones
-label_issue_category_plural: Categorías de las peticiones
-label_issue_category_new: Nueva categoría
-label_custom_field: Campo personalizado
-label_custom_field_plural: Campos personalizados
-label_custom_field_new: Nuevo campo personalizado
-label_enumerations: Listas de valores
-label_enumeration_new: Nuevo valor
 label_information: Argibidea
 label_information_plural: Argibideak
 label_please_login: Konexio

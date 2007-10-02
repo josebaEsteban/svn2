@@ -174,6 +174,11 @@ setting_commit_fix_keywords: Fixing keywords
 setting_autologin: Autologin
 setting_date_format: Date format
 
+label_quest: Questionnaire 
+label_competition: Competition 
+label_filled: Filled on
+label_fill: Fill
+label_show: Show
 label_user: User
 label_user_plural: Users
 label_user_new: New user
@@ -196,21 +201,6 @@ label_role_and_permissions: Roles and permissions
 label_member: Member
 label_member_new: New member
 label_member_plural: Members
-label_tracker: Tracker
-label_tracker_plural: Trackers
-label_tracker_new: New tracker
-label_workflow: Workflow
-label_issue_status: Issue status
-label_issue_status_plural: Issue statuses
-label_issue_status_new: New status
-label_issue_category: Issue category
-label_issue_category_plural: Issue categories
-label_issue_category_new: New category
-label_custom_field: Custom field
-label_custom_field_plural: Custom fields
-label_custom_field_new: New custom field
-label_enumerations: Enumerations
-label_enumeration_new: New value
 label_information: Information
 label_information_plural: Information
 label_please_login: Please login
