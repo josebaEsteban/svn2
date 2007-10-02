@@ -1,18 +1,50 @@
-<h2> Instalaciones</h2>  
-<table>
-  <tr>
-    <th>user</th>
-    <th>test</th>
-  </tr>
-  
-<% for answer in @answers %>
-  <tr>
-
-    <td><%=h @user.login %></td>
-    <td><%=h answer.quest_id   %></td>    
-
-    <td><%= link_to 'Show', :action => 'show', :id => answer %></td>
-    <td><%= link_to 'Edit', :action => 'edit', :id => answer %></td>
-   </tr>
-<% end %>
+<h2> Instalaciones</h2>
+<center>
+<table cellspacing="0">
+  <!-- <caption><%=l(:test2)%></caption> -->
+  <thead>
+    <tr>
+      <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
+      <th scope="col"><div align="left"><%= l(:label_competition) %></div></th>
+      <th scope="col"><div align="left"><%= l(:label_filled) %></div></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% odd=0 %>
+    <% for answer in @answers %>
+    <% case  answer.quest_id
+  when 1 
+  quest=l(:test1) 
+  when 2 
+  quest=l(:test2_label_0) 
+  when 3 
+  quest=l(:test3) 
+  when 4 
+  quest=l(:test4) 
+  when 4 
+  quest=l(:test5) 
+  when 5 
+  quest=l(:test6) 
+  when 6 
+  quest=l(:test6) 
+  when 7 
+  quest=l(:test7_label_0) 
+  when 8 
+  quest=l(:test8)  
+	end %>
+    <% if odd==1 %>
+<tr class="odd">
+      <% odd=0%>
+      <%else %>
+       <tr> 
+      <% odd=1 end %>
+      <td><%= quest %></td>
+      <td><%= answer.competition %></td>
+      <td><%= l_datetime(answer.created_on)%></td>
+      <% controlador="quest"+ answer.quest_id.to_s %>
+      <td><%= link_to 'Show', :controller  => controlador, :action => 'show', :id => answer %></td>
+    </tr>
+    <% end %>
+  </tbody>
 </table>
+<%= link_to 'Back', answers_path %>
