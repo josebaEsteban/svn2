@@ -33,9 +33,9 @@ class Project < ActiveRecord::Base
   end
   
   
-  # returns latest created projects
+  # returns laquest created projects
   # non public projects will be returned only if user is a member of those
-  def self.latest(user=nil, count=5)
+  def self.laquest(user=nil, count=5)
     find(:all, :limit => count, :conditions => visible_by(user), :order => "created_on DESC")	
   end	
 

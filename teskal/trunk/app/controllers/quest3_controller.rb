@@ -60,75 +60,75 @@ class Quest3Controller < ApplicationController
 
     @advice=[]
     if t < 5
-      @advice[0]=l(:test3_d1_a)
+      @advice[0]=l(:quest3_d1_a)
     else
       if t < 9
-        @advice[0]=l(:test3_d1_b)
+        @advice[0]=l(:quest3_d1_b)
       else
-        @advice[0]=l(:test3_d1_c)
+        @advice[0]=l(:quest3_d1_c)
       end
     end
     if d < 2
-      @advice[1]=l(:test3_d2_a)
+      @advice[1]=l(:quest3_d2_a)
     else
       if d < 6
-        @advice[1]=l(:test3_d2_b)
+        @advice[1]=l(:quest3_d2_b)
       else
-        @advice[1]=l(:test3_d2_c)
+        @advice[1]=l(:quest3_d2_c)
       end
     end
     if h < 3
-      @advice[2]=l(:test3_d3_a)
+      @advice[2]=l(:quest3_d3_a)
     else
       if h < 7
-        @advice[2]=l(:test3_d3_b)
+        @advice[2]=l(:quest3_d3_b)
       else
-        @advice[2]=l(:test3_d3_c)
+        @advice[2]=l(:quest3_d3_c)
       end
     end
     if v < 7
-      @advice[3]=l(:test3_d4_a)
+      @advice[3]=l(:quest3_d4_a)
     else
       if v < 10
-        @advice[3]=l(:test3_d4_b)
+        @advice[3]=l(:quest3_d4_b)
       else
-        @advice[3]=l(:test3_d4_c)
+        @advice[3]=l(:quest3_d4_c)
       end
     end
     if f < 4
-      @advice[4]=l(:test3_d5_a)
+      @advice[4]=l(:quest3_d5_a)
     else
       if f < 8
-        @advice[4]=l(:test3_d5_b)
+        @advice[4]=l(:quest3_d5_b)
       else
-        @advice[4]=l(:test3_d5_c)
+        @advice[4]=l(:quest3_d5_c)
       end
     end
     if ce < 13
-      @advice[5]=l(:test3_d6_a)
+      @advice[5]=l(:quest3_d6_a)
     else
       if ce < 25
-        @advice[5]=l(:test3_d6_b)
+        @advice[5]=l(:quest3_d6_b)
       else
-        @advice[5]=l(:test3_d6_c)
+        @advice[5]=l(:quest3_d6_c)
       end
     end
     if ae < 13
-      @advice[6]=l(:test3_d7_a)
+      @advice[6]=l(:quest3_d7_a)
     else
       if ae < 25
-        @advice[6]=l(:test3_d7_b)
+        @advice[6]=l(:quest3_d7_b)
       else
-        @advice[6]=l(:test3_d7_c)
+        @advice[6]=l(:quest3_d7_c)
       end
     end
     if cp < 13
-      @advice[7]=l(:test3_d7_a)
+      @advice[7]=l(:quest3_d7_a)
     else
       if cp < 25
-        @advice[7]=l(:test3_d7_b)
+        @advice[7]=l(:quest3_d7_b)
       else
-        @advice[7]=l(:test3_d7_c)
+        @advice[7]=l(:quest3_d7_c)
       end
     end
 
@@ -145,21 +145,21 @@ class Quest3Controller < ApplicationController
     strXML=''
     #Generate the chart element
     # labelDisplay='Stagger' staggerLines='2'
-    strXML = "<chart palette='2' caption='"+l(:test3_label_0)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4'   bgcolor='ffffff' borderColor='ffffff' chartRightMargin='35'>"
+    strXML = "<chart palette='2' caption='"+l(:quest3_label_0)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4'   bgcolor='ffffff' borderColor='ffffff' chartRightMargin='35'>"
     strXML = strXML +"<categories>"
-    strXML = strXML + "<category label= '"+l(:test3_label_1)+"'/>"
-    strXML = strXML + "<category label= '"+l(:test3_label_2)+"'/>"
-    strXML = strXML + "<category label= '"+l(:test3_label_3)+"'/>"
-    strXML = strXML + "<category label= '"+l(:test3_label_4)+"'/>"
-    strXML = strXML + "<category label= '"+l(:test3_label_5)+"'/>"
-    strXML = strXML + "<category label= '"+l(:test3_label_6)+"'/>"
-    strXML = strXML + "<category label= '"+l(:test3_label_7)+"'/>"
-    strXML = strXML + "<category label= '"+l(:test3_label_8)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest3_label_1)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest3_label_2)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest3_label_3)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest3_label_4)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest3_label_5)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest3_label_6)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest3_label_7)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest3_label_8)+"'/>"
     strXML = strXML +"</categories>"
-    strXML = strXML +"<dataset SeriesName='"+l(:test3_label_9)+"' lineThickness='3' renderAs='Line' >"
+    strXML = strXML +"<dataset SeriesName='"+l(:quest3_label_9)+"' lineThickness='3' renderAs='Line' >"
     strXML = strXML +"<set value='40' /><set value='36' /><set value='40' /><set value='70' /><set value='38' /><set value='70' /><set value='38' /><set value='70' />"
     strXML = strXML +"</dataset>"
-    strXML = strXML +"<dataset SeriesName='"+l(:test3_label_10)+"' lineThickness='4' renderAs='Line' >"
+    strXML = strXML +"<dataset SeriesName='"+l(:quest3_label_10)+"' lineThickness='4' renderAs='Line' >"
     strXML = strXML + "<set value='" + tTrans + "'/>"
     strXML = strXML + "<set value='" + dTrans + "'/>"
     strXML = strXML + "<set value='" + hTrans + "'/>"
@@ -171,6 +171,6 @@ class Quest3Controller < ApplicationController
     strXML = strXML + "</dataset> </chart>"
     puts strXML
     #Create the chart - Pie 3D Chart with data from strXML
-    @chart1= renderChart("/charts/MSCombi2D.swf", "", strXML, "test3", 770, 300, false, false)
+    @chart1= renderChart("/charts/MSCombi2D.swf", "", strXML, "quest3", 770, 300, false, false)
   end
 end

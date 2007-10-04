@@ -33,14 +33,14 @@ class AnswersController < ApplicationController
 
   # POST /answers
   # POST /answers.xml
-  def test2
+  def quest2
     @answer = Answer.new(params[:answer])
     @answer.questionnare_id=2
     @answer.user_id=session[:user_id]
     respond_to do |format|
       if @answer.save
         flash[:notice] = 'Answer was successfully created.'
-        redirect_to :controller => 'test2', :action => 'default', :id => @answer
+        redirect_to :controller => 'quest2', :action => 'default', :id => @answer
 
         # format.html { redirect_to answer_url(@answer) }
         # format.xml  { head :created, :location => answer_url(@answer) }

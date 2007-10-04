@@ -6,7 +6,7 @@ class WelcomeController < ApplicationController
   layout 'base'
 
   def index
-    # @projects = Project.latest logged_in_user
+    # @projects = Project.laquest logged_in_user
     @answers = Answer.find_by_user_id(session[:user_id])
     puts session[:user_id]
     puts  @answers
@@ -14,7 +14,7 @@ class WelcomeController < ApplicationController
 
   def en
     set_language_if_valid ('es')
-    redirect_to :controller  => 'test2', :action => 'show', :id => 22
+    redirect_to :controller  => 'quest2', :action => 'show', :id => 22
   end
 
   def list

@@ -53,111 +53,111 @@ class Quest4Controller < ApplicationController
 
     @advice=[]
     if tension< 5
-      @advice[0]=l(:test1_d1_a)
+      @advice[0]=l(:quest1_d1_a)
     else
       if tension< 9
-        @advice[0]=l(:test1_d1_b)
+        @advice[0]=l(:quest1_d1_b)
       else
-        @advice[0]=l(:test1_d1_c)
+        @advice[0]=l(:quest1_d1_c)
       end
     end
     if depresion< 2
-      @advice[1]=l(:test1_d2_a)
+      @advice[1]=l(:quest1_d2_a)
     else
       if depresion< 6
-        @advice[1]=l(:test1_d2_b)
+        @advice[1]=l(:quest1_d2_b)
       else
-        @advice[1]=l(:test1_d2_c)
+        @advice[1]=l(:quest1_d2_c)
       end
     end
     if hostilidad < 3
-      @advice[2]=l(:test1_d3_a)
+      @advice[2]=l(:quest1_d3_a)
     else
       if hostilidad < 7
-        @advice[2]=l(:test1_d3_b)
+        @advice[2]=l(:quest1_d3_b)
       else
-        @advice[2]=l(:test1_d3_c)
+        @advice[2]=l(:quest1_d3_c)
       end
     end
     if vigor < 7
-      @advice[3]=l(:test1_d4_a)
+      @advice[3]=l(:quest1_d4_a)
     else
       if vigor < 10
-        @advice[3]=l(:test1_d4_b)
+        @advice[3]=l(:quest1_d4_b)
       else
-        @advice[3]=l(:test1_d4_c)
+        @advice[3]=l(:quest1_d4_c)
       end
     end
     if fatiga < 4
-      @advice[4]=l(:test1_d5_a)
+      @advice[4]=l(:quest1_d5_a)
     else
       if fatiga < 8
-        @advice[4]=l(:test1_d5_b)
+        @advice[4]=l(:quest1_d5_b)
       else
-        @advice[4]=l(:test1_d5_c)
+        @advice[4]=l(:quest1_d5_c)
       end
     end
     if ansiedadCognitiva < 13
-      @advice[5]=l(:test1_d6_a)
+      @advice[5]=l(:quest1_d6_a)
     else
       if ansiedadCognitiva < 25
-        @advice[5]=l(:test1_d6_b)
+        @advice[5]=l(:quest1_d6_b)
       else
-        @advice[5]=l(:test1_d6_c)
+        @advice[5]=l(:quest1_d6_c)
       end
     end
     if autoConfianza < 13
-      @advice[6]=l(:test1_d7_a)
+      @advice[6]=l(:quest1_d7_a)
     else
       if autoConfianza < 25
-        @advice[6]=l(:test1_d7_b)
+        @advice[6]=l(:quest1_d7_b)
       else
-        @advice[6]=l(:test1_d7_c)
+        @advice[6]=l(:quest1_d7_c)
       end
     end
     if ansiedadSomatica < 13
-      @advice[7]=l(:test1_d8_a)
+      @advice[7]=l(:quest1_d8_a)
     else
       if ansiedadSomatica < 25
-        @advice[7]=l(:test1_d8_b)
+        @advice[7]=l(:quest1_d8_b)
       else
-        @advice[7]=l(:test1_d8_c)
+        @advice[7]=l(:quest1_d8_c)
       end
     end
     if nivelMotivacion < 60
-      @advice[8]=l(:test4_d9_a)
+      @advice[8]=l(:quest4_d9_a)
     else
       if nivelMotivacion <= 80
-        @advice[8]=l(:test4_d9_b)
+        @advice[8]=l(:quest4_d9_b)
       else
-        @advice[8]=l(:test4_d9_c)
+        @advice[8]=l(:quest4_d9_c)
       end
     end
     if nivelDificultad < 60
-      @advice[9]=l(:test4_d10_a)
+      @advice[9]=l(:quest4_d10_a)
     else
       if nivelDificultad <= 80
-        @advice[9]=l(:test4_d10_b)
+        @advice[9]=l(:quest4_d10_b)
       else
-        @advice[9]=l(:test4_d10_c)
+        @advice[9]=l(:quest4_d10_c)
       end
     end
     if gradoConfianza < 60
-      @advice[10]=l(:test4_d11_a)
+      @advice[10]=l(:quest4_d11_a)
     else
       if gradoConfianza <= 80
-        @advice[10]=l(:test4_d11_b)
+        @advice[10]=l(:quest4_d11_b)
       else
-        @advice[10]=l(:test4_d11_c)
+        @advice[10]=l(:quest4_d11_c)
       end
     end
     if percepcionElaboracion < 60
-      @advice[11]=l(:test4_d12_a)
+      @advice[11]=l(:quest4_d12_a)
     else
       if percepcionElaboracion <= 80
-        @advice[11]=l(:test4_d12_b)
+        @advice[11]=l(:quest4_d12_b)
       else
-        @advice[11]=l(:test4_d12_c)
+        @advice[11]=l(:quest4_d12_c)
       end
     end
 
@@ -174,21 +174,21 @@ class Quest4Controller < ApplicationController
     strXML=''
     #Generate the chart element
     # labelDisplay='Stagger' staggerLines='2'
-    strXML = "<chart palette='2' caption='"+l(:test4)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' chartRightMargin='35'>"
+    strXML = "<chart palette='2' caption='"+l(:quest4)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' chartRightMargin='35'>"
     strXML = strXML +"<categories>"
-    strXML = strXML + "<category label= '"+l(:test1_label_1)+"'/>"
-    strXML = strXML + "<category label= '"+l(:test1_label_2)+"'/>"
-    strXML = strXML + "<category label= '"+l(:test1_label_3)+"'/>"
-    strXML = strXML + "<category label= '"+l(:test1_label_4)+"'/>"
-    strXML = strXML + "<category label= '"+l(:test1_label_5)+"'/>"
-    strXML = strXML + "<category label= '"+l(:test1_label_6)+"'/>"
-    strXML = strXML + "<category label= '"+l(:test1_label_7)+"'/>"
-    strXML = strXML + "<category label= '"+l(:test1_label_8)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest1_label_1)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest1_label_2)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest1_label_3)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest1_label_4)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest1_label_5)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest1_label_6)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest1_label_7)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest1_label_8)+"'/>"
     strXML = strXML +"</categories>"
-    strXML = strXML +"<dataset SeriesName='"+l(:test1_label_9)+"' lineThickness='3' renderAs='Line' >"
+    strXML = strXML +"<dataset SeriesName='"+l(:quest1_label_9)+"' lineThickness='3' renderAs='Line' >"
     strXML = strXML +"<set value='42' /><set value='37' /><set value='40' /><set value='68' /><set value='38' /><set value='42' /><set value='68' /><set value='38' />"
     strXML = strXML +"</dataset>"
-    strXML = strXML +"<dataset SeriesName='"+l(:test1_label_10)+"' lineThickness='4' renderAs='Line' >"
+    strXML = strXML +"<dataset SeriesName='"+l(:quest1_label_10)+"' lineThickness='4' renderAs='Line' >"
     strXML = strXML + "<set value='" + tTransformada + "'/>"
     strXML = strXML + "<set value='" + dTransformada + "'/>"
     strXML = strXML + "<set value='" + hTransformada + "'/>"
@@ -200,15 +200,15 @@ class Quest4Controller < ApplicationController
     strXML = strXML + "</dataset> </chart>"
 
     #Create the chart - Pie 3D Chart with data from strXML
-    @chart1= renderChart("/charts/MSCombi2D.swf", "", strXML, "test3", 770, 300, false, false)
+    @chart1= renderChart("/charts/MSCombi2D.swf", "", strXML, "quest3", 770, 300, false, false)
 
     strXML=''
-    strXML ="<chart palette='2' caption='"+l(:test4_label_0)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+" 'showvalues='0'  formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='100'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
-    strXML = strXML + "<set label= '"+l(:test4_label_11)+"' value='"+nivelMotivacion.to_s+"'/>"
-    strXML = strXML + "<set label= '"+l(:test4_label_12)+"' value='"+nivelDificultad.to_s+"'/>"
-    strXML = strXML + "<set label= '"+l(:test4_label_13)+"' value='"+gradoConfianza.to_s+"'/>"
-    strXML = strXML + "<set label= '"+l(:test4_label_14)+"' value='"+percepcionElaboracion.to_s+"'/>"
+    strXML ="<chart palette='2' caption='"+l(:quest4_label_0)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+" 'showvalues='0'  formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='100'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
+    strXML = strXML + "<set label= '"+l(:quest4_label_11)+"' value='"+nivelMotivacion.to_s+"'/>"
+    strXML = strXML + "<set label= '"+l(:quest4_label_12)+"' value='"+nivelDificultad.to_s+"'/>"
+    strXML = strXML + "<set label= '"+l(:quest4_label_13)+"' value='"+gradoConfianza.to_s+"'/>"
+    strXML = strXML + "<set label= '"+l(:quest4_label_14)+"' value='"+percepcionElaboracion.to_s+"'/>"
     strXML = strXML + "</chart>"
-    @chart2= renderChart("/charts/Column2D.swf", "", strXML, "test4_2", 450, 300, false, false)
+    @chart2= renderChart("/charts/Column2D.swf", "", strXML, "quest4_2", 450, 300, false, false)
   end
 end

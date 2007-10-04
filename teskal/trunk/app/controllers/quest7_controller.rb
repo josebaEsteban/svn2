@@ -43,73 +43,73 @@ class Quest7Controller < ApplicationController
 
     @advice=[]
     if rg < 3
-      @advice[0]=l(:test7_d1_a)
+      @advice[0]=l(:quest7_d1_a)
     else
       if rg < 5
-        @advice[0]=l(:test7_d1_b)
+        @advice[0]=l(:quest7_d1_b)
       else
-        @advice[0]=l(:test7_d1_c)
+        @advice[0]=l(:quest7_d1_c)
       end
     end
     if dp < 3
-      @advice[1]=l(:test7_d2_a)
+      @advice[1]=l(:quest7_d2_a)
     else
       if dp < 5
-        @advice[1]=l(:test7_d2_b)
+        @advice[1]=l(:quest7_d2_b)
       else
-        @advice[1]=l(:test7_d2_c)
+        @advice[1]=l(:quest7_d2_c)
       end
     end
     if fe < 3
-      @advice[2]=l(:test7_d3_a)
+      @advice[2]=l(:quest7_d3_a)
     else
       if fe < 5
-        @advice[2]=l(:test7_d3_a)
+        @advice[2]=l(:quest7_d3_a)
       else
-        @advice[2]=l(:test7_d3_a)
+        @advice[2]=l(:quest7_d3_a)
       end
     end
     if uc < 3
-      @advice[3]=l(:test7_d4_a)
+      @advice[3]=l(:quest7_d4_a)
     else
       if uc < 5
-        @advice[3]=l(:test7_d4_b)
+        @advice[3]=l(:quest7_d4_b)
       else
-        @advice[3]=l(:test7_d4_c)
+        @advice[3]=l(:quest7_d4_c)
       end
     end
     if ei < 3
-      @advice[4]=l(:test7_d5_a)
+      @advice[4]=l(:quest7_d5_a)
     else
       if ei < 5
-        @advice[4]=l(:test7_d5_b)
+        @advice[4]=l(:quest7_d5_b)
       else
-        @advice[4]=l(:test7_d5_c)
+        @advice[4]=l(:quest7_d5_c)
       end
     end
     if tp < 3
-      @advice[5]=l(:test7_d6_a)
+      @advice[5]=l(:quest7_d6_a)
     else
       if tp < 5
-        @advice[5]=l(:test7_d6_b)
+        @advice[5]=l(:quest7_d6_b)
       else
-        @advice[5]=l(:test7_d6_c)
+        @advice[5]=l(:quest7_d6_c)
       end
     end
 
     #Generate the chart element
-    strXML = "<chart caption='"+l(:test7_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='7' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
+    strXML = "<chart caption='"+l(:quest7_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='7' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
 
-    strXML = strXML + "<set label='" + l(:test7_label_1) + "' value='" + acorta(rg) + "'/>"
-    strXML = strXML + "<set label='" + l(:test7_label_2) + "' value='" + acorta(dp) + "'/>"
-    strXML = strXML + "<set label='" + l(:test7_label_3) + "' value='" + acorta(fe) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest7_label_1) + "' value='" + acorta(rg) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest7_label_2) + "' value='" + acorta(dp) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest7_label_3) + "' value='" + acorta(fe) + "'/>"
     strXML = strXML + "<set label='' value=''/>"
-    strXML = strXML + "<set label='" + l(:test7_label_4) + "' value='" + acorta(uc) + "'/>"
-    strXML = strXML + "<set label='" + l(:test7_label_5) + "' value='" + acorta(ei) + "'/>"
-    strXML = strXML + "<set label='" + l(:test7_label_6) + "' value='" + acorta(tp) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest7_label_4) + "' value='" + acorta(uc) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest7_label_5) + "' value='" + acorta(ei) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest7_label_6) + "' value='" + acorta(tp) + "'/>"
     strXML = strXML + "</chart>"
 
     #Create the chart - Pie 3D Chart with data from strXML
-    @chart1= renderChart("/charts/Bar2D.swf", "", strXML, "test7", 550, 300, false, false)
+    @chart1= renderChart("/charts/Bar2D.swf", "", strXML, "quest7", 550, 300, false, false)
   end
 end

@@ -45,68 +45,68 @@ class Quest5Controller < ApplicationController
     
     @advice=[]
     if rg < 14
-      @advice[0]=l(:test5_d1_a)
+      @advice[0]=l(:quest5_d1_a)
     else
       if rg < 20
-        @advice[0]=l(:test5_d1_b)
+        @advice[0]=l(:quest5_d1_b)
       else
-        @advice[0]=l(:test5_d1_c)
+        @advice[0]=l(:quest5_d1_c)
       end
     end
     if re < 14
-      @advice[1]=l(:test5_d2_a)
+      @advice[1]=l(:quest5_d2_a)
     else
       if re < 20
-        @advice[1]=l(:test5_d2_b)
+        @advice[1]=l(:quest5_d2_b)
       else
-        @advice[1]=l(:test5_d2_c)
+        @advice[1]=l(:quest5_d2_c)
       end
     end
     if rcog < 14
-      @advice[2]=l(:test5_d3_a)
+      @advice[2]=l(:quest5_d3_a)
     else
       if rcog < 20
-        @advice[2]=l(:test5_d3_a)
+        @advice[2]=l(:quest5_d3_a)
       else
-        @advice[2]=l(:test5_d3_a)
+        @advice[2]=l(:quest5_d3_a)
       end
     end
     if rcom < 14
-      @advice[3]=l(:test5_d4_a)
+      @advice[3]=l(:quest5_d4_a)
     else
       if rcom < 20
-        @advice[3]=l(:test5_d4_b)
+        @advice[3]=l(:quest5_d4_b)
       else
-        @advice[3]=l(:test5_d4_c)
+        @advice[3]=l(:quest5_d4_c)
       end
     end
     case
     when x < 60
       case
       when y < 15
-        @advice[4]=l(:test5_val_g)
+        @advice[4]=l(:quest5_val_g)
       when y < 30
-        @advice[4]=l(:test5_val_h)
+        @advice[4]=l(:quest5_val_h)
       else
-        @advice[4]=l(:test5_val_i)
+        @advice[4]=l(:quest5_val_i)
       end
     when x < 80
       case
       when y < 15
-        @advice[4]=l(:test5_val_d)
+        @advice[4]=l(:quest5_val_d)
       when y < 30
-        @advice[4]=l(:test5_val_e)
+        @advice[4]=l(:quest5_val_e)
       else
-        @advice[4]=l(:test5_val_f)
+        @advice[4]=l(:quest5_val_f)
       end
     else
       case
       when y < 15
-        @advice[4]=l(:test5_val_a)
+        @advice[4]=l(:quest5_val_a)
       when y < 30
-        @advice[4]=l(:test5_val_c)
+        @advice[4]=l(:quest5_val_c)
       else
-        @advice[4]=l(:test5_val_c)
+        @advice[4]=l(:quest5_val_c)
       end
     end
 
@@ -115,14 +115,14 @@ class Quest5Controller < ApplicationController
 
 
     #Generate the chart element
-    strXML = "<chart caption='"+l(:test5_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='30' showvalues='0'  PYAxisName='Comarcas' formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='10'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
+    strXML = "<chart caption='"+l(:quest5_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='30' showvalues='0'  PYAxisName='Comarcas' formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='10'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
 
-    strXML = strXML + "<set label='" + l(:test5_label_1) + "' value= '" + rg.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:test5_label_2) + "' value= '" + re.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:test5_label_3) + "' value= '" + rcog.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:test5_label_4) + "' value= '" + rcom.to_s + "'/>"
+    strXML = strXML + "<set label='" + l(:quest5_label_1) + "' value= '" + rg.to_s + "'/>"
+    strXML = strXML + "<set label='" + l(:quest5_label_2) + "' value= '" + re.to_s + "'/>"
+    strXML = strXML + "<set label='" + l(:quest5_label_3) + "' value= '" + rcog.to_s + "'/>"
+    strXML = strXML + "<set label='" + l(:quest5_label_4) + "' value= '" + rcom.to_s + "'/>"
     strXML = strXML + "</chart>"
     #Create the chart - Pie 3D Chart with data from strXML
-    @chart1= renderChart("/charts/Bar2D.swf", "", strXML, "test5", 550, 270, false, false)
+    @chart1= renderChart("/charts/Bar2D.swf", "", strXML, "quest5", 550, 270, false, false)
   end
 end

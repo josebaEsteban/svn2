@@ -14,7 +14,7 @@
 <br/>
 <center>
   <table cellspacing="0">
-    <!-- <caption><%=l(:test2)%></caption> -->
+    <!-- <caption><%=l(:quest2)%></caption> -->
     <thead>
       <tr>
         <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
@@ -22,35 +22,35 @@
     </thead>
     <tbody>
       <tr>
-        <td><%= l(:test1)  %></td>
+        <td><%= l(:quest1)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest1', :action => 'new' %></td>
       <tr class='odd'>
-        <td><%= l(:test2_label_0)  %></td>
+        <td><%= l(:quest2_label_0)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest2', :action => 'new' %></td>
       <tr>
-        <td><%= l(:test3)  %></td>
+        <td><%= l(:quest3)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest3', :action => 'new' %></td>
       <tr class='odd'>
-        <td><%= l(:test4)  %></td>
+        <td><%= l(:quest4)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest4', :action => 'new' %></td>
       <tr>
-        <td><%= l(:test5)  %></td>
+        <td><%= l(:quest5)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest5', :action => 'new' %></td>
       <tr class='odd'>
-        <td><%= l(:test6)  %></td>
+        <td><%= l(:quest6)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest6', :action => 'new' %></td>
       <tr>
-        <td><%= l(:test7_label_0)  %></td>
+        <td><%= l(:quest7_label_0)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest7', :action => 'new' %></td>
       <tr class='odd'>
-        <td><%= l(:test8)  %></td>
+        <td><%= l(:quest8)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest8', :action => 'new' %></td>
     </tbody>
   </table>
 <br/>
 <br/>
   <table cellspacing="0">
-    <!-- <caption><%=l(:test2)%></caption> -->
+    <!-- <caption><%=l(:quest2)%></caption> -->
     <thead>
       <tr>
         <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
@@ -63,23 +63,23 @@
       <% for answer in @answers %>
       <% case  answer.quest_id
   when 1 
-  quest=l(:test1) 
+  quest=l(:quest1) 
   when 2 
-  quest=l(:test2_label_0) 
+  quest=l(:quest2_label_0) 
   when 3 
-  quest=l(:test3) 
+  quest=l(:quest3) 
   when 4 
-  quest=l(:test4) 
+  quest=l(:quest4) 
   when 4 
-  quest=l(:test5) 
+  quest=l(:quest5) 
   when 5 
-  quest=l(:test6) 
+  quest=l(:quest6) 
   when 6 
-  quest=l(:test6) 
+  quest=l(:quest6) 
   when 7 
-  quest=l(:test7_label_0) 
+  quest=l(:quest7_label_0) 
   when 8 
-  quest=l(:test8)  
+  quest=l(:quest8)  
 	end %>
       <% if odd==1 %>
       <tr class="odd">

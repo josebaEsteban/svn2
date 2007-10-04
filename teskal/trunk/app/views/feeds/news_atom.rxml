@@ -1,6 +1,6 @@
 xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
-  xml.title   "#{Setting.app_title}: #{l(:label_news_latest)}"
+  xml.title   "#{Setting.app_title}: #{l(:label_news_laquest)}"
   xml.link    "rel" => "self", "href" => url_for(:controller => 'feeds', :action => 'news', :format => 'atom', :only_path => false)
   xml.link    "rel" => "alternate", "href" => url_for(:controller => 'welcome', :only_path => false)
   xml.id      url_for(:controller => 'welcome', :only_path => false)

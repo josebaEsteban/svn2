@@ -24,8 +24,8 @@ class News < ActiveRecord::Base
   
   validates_presence_of :title, :description
   
-  # returns latest news for projects visible by user
-  def self.latest(user=nil, count=5)
+  # returns laquest news for projects visible by user
+  def self.laquest(user=nil, count=5)
     find(:all, :limit => count, :conditions => Project.visible_by(user), :include => [ :author, :project ], :order => "#{News.table_name}.created_on DESC")	
   end
 end
