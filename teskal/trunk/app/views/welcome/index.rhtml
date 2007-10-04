@@ -6,11 +6,11 @@
 
 <div class="splitcontentright">
 	<div class="box">
-	<h3><%=l(:label_project_latest)%></h3>
+	<h3><%=l(:label_project_laquest)%></h3>
 		<ul>
 		<% for answer in @answers %>
 			<li>
-			<%= link_to answer.id, :controller => 'test2', :action => 'show', :id => answer %> (<%= format_time(project.created_on) %>)<br />
+			<%= link_to answer.id, :controller => 'quest2', :action => 'show', :id => answer %> (<%= format_time(project.created_on) %>)<br />
 			<%=h project.description %>
 			</li>
 		<% end %>

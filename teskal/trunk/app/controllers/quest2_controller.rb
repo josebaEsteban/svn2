@@ -49,95 +49,95 @@ class Quest2Controller < ApplicationController
 
     @advice=[]
     if descansoInterrumpido < 2
-      @advice[0]=l(:test2_d1_a)
+      @advice[0]=l(:quest2_d1_a)
     else
       if descansoInterrumpido < 4
-        @advice[0]=l(:test2_d1_b)
+        @advice[0]=l(:quest2_d1_b)
       else
-        @advice[0]=l(:test2_d1_c)
+        @advice[0]=l(:quest2_d1_c)
       end
     end
     if cansancioEmocional < 2
-      @advice[1]=l(:test2_d2_a)
+      @advice[1]=l(:quest2_d2_a)
     else
       if cansancioEmocional < 4
-        @advice[1]=l(:test2_d2_b)
+        @advice[1]=l(:quest2_d2_b)
       else
-        @advice[1]=l(:test2_d2_c)
+        @advice[1]=l(:quest2_d2_c)
       end
     end
     if vulnerabilidadLesiones < 2
-      @advice[2]=l(:test2_d3_a)
+      @advice[2]=l(:quest2_d3_a)
     else
       if vulnerabilidadLesiones < 4
-        @advice[2]=l(:test2_d3_b)
+        @advice[2]=l(:quest2_d3_b)
       else
-        @advice[2]=l(:test2_d3_c)
+        @advice[2]=l(:quest2_d3_c)
       end
     end
     if estadoForma < 2
-      @advice[3]=l(:test2_d4_a)
+      @advice[3]=l(:quest2_d4_a)
     else
       if estadoForma < 4
-        @advice[3]=l(:test2_d4_b)
+        @advice[3]=l(:quest2_d4_b)
       else
-        @advice[3]=l(:test2_d4_c)
+        @advice[3]=l(:quest2_d4_c)
       end
     end
     if logroPersonal < 2
-      @advice[4]=l(:test2_d5_a)
+      @advice[4]=l(:quest2_d5_a)
     else
       if logroPersonal < 4
-        @advice[4]=l(:test2_d5_b)
+        @advice[4]=l(:quest2_d5_b)
       else
-        @advice[4]=l(:test2_d5_c)
+        @advice[4]=l(:quest2_d5_c)
       end
     end
     if autoEficacia < 2
-      @advice[5]=l(:test2_d6_a)
+      @advice[5]=l(:quest2_d6_a)
     else
       if autoEficacia < 4
-        @advice[5]=l(:test2_d6_b)
+        @advice[5]=l(:quest2_d6_b)
       else
-        @advice[5]=l(:test2_d6_c)
+        @advice[5]=l(:quest2_d6_c)
       end
     end
     if autoRegulacion < 2
-      @advice[6]=l(:test2_d7_a)
+      @advice[6]=l(:quest2_d7_a)
     else
       if autoRegulacion < 4
-        @advice[6]=l(:test2_d7_b)
+        @advice[6]=l(:quest2_d7_b)
       else
-        @advice[6]=l(:test2_d7_c)
+        @advice[6]=l(:quest2_d7_c)
       end
     end
     vg=((estadoForma+logroPersonal+autoEficacia+autoRegulacion/4))-((descansoInterrumpido+cansancioEmocional+vulnerabilidadLesiones)/3)
 
     if vg < 0
-      @advice[7]=l(:test2_val_4)
+      @advice[7]=l(:quest2_val_4)
     elsif vg < 1
-      @advice[7]=l(:test2_val_3)
+      @advice[7]=l(:quest2_val_3)
     elsif vg < 3
-      @advice[7]=l(:test2_val_2)
+      @advice[7]=l(:quest2_val_2)
     else
-      @advice[7]=l(:test2_val_1)
+      @advice[7]=l(:quest2_val_1)
     end
     #strXML will be used to store the entire XML document generated
     strXML=''
 
     #Generate the chart element
-    strXML = "<chart caption='"+l(:test2_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMinValue='-6' yAxisMaxValue='6' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
+    strXML = "<chart caption='"+l(:quest2_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMinValue='-6' yAxisMaxValue='6' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
 
-    strXML = strXML + "<set label='" + l(:test2_label_1) + "' value='-" + acorta(descansoInterrumpido)  + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_2) + "' value='-" + acorta(vulnerabilidadLesiones)  + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_3) + "' value='-" + acorta(vulnerabilidadLesiones)+ "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_4) + "' value='" + acorta(estadoForma) + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_5) + "' value='" + acorta(logroPersonal) + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_6) + "' value='" + acorta(autoEficacia) + "'/>"
-    strXML = strXML + "<set label='" + l(:test2_label_7) + "' value='" + acorta(autoRegulacion) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest2_label_1) + "' value='-" + acorta(descansoInterrumpido)  + "'/>"
+    strXML = strXML + "<set label='" + l(:quest2_label_2) + "' value='-" + acorta(vulnerabilidadLesiones)  + "'/>"
+    strXML = strXML + "<set label='" + l(:quest2_label_3) + "' value='-" + acorta(vulnerabilidadLesiones)+ "'/>"
+    strXML = strXML + "<set label='" + l(:quest2_label_4) + "' value='" + acorta(estadoForma) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest2_label_5) + "' value='" + acorta(logroPersonal) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest2_label_6) + "' value='" + acorta(autoEficacia) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest2_label_7) + "' value='" + acorta(autoRegulacion) + "'/>"
     strXML = strXML + "</chart>"
 
     #Create the chart - Pie 3D Chart with data from strXML
-    @chart1= renderChart("/charts/Bar2D.swf", "", strXML, "test2", 550, 300, false, false)
+    @chart1= renderChart("/charts/Bar2D.swf", "", strXML, "quest2", 550, 300, false, false)
   end
 end
