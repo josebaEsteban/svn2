@@ -6,10 +6,9 @@ class AnswersController < ApplicationController
 
 
   def index
-    @answer = Answer.find_by_user_id(session[:user_id])   
-          # @answers = Answer.find(58) 
-      puts @answer
-    
+    @answer = Answer.find_by_user_id(session[:user_id])
+    # @answers = Answer.find(58)
+    puts @answer
   end
 
   # GET /answers/1
@@ -42,7 +41,7 @@ class AnswersController < ApplicationController
       if @answer.save
         flash[:notice] = 'Answer was successfully created.'
         redirect_to :controller => 'test2', :action => 'default', :id => @answer
-        
+
         # format.html { redirect_to answer_url(@answer) }
         # format.xml  { head :created, :location => answer_url(@answer) }
       else

@@ -14,9 +14,7 @@
 	body {behavior: url(<%= stylesheet_path "csshover.htc" %>);}
 	</style>
 <![endif]-->
-  <%= stylesheet_link_tag "application" %><%= stylesheet_link_tag "coffee-with-milk" %>
-  <!-- <%= javascript_include_tag :defaults %> -->
-  <!-- page specific tags -->
+  <%= stylesheet_link_tag "application" %><%= stylesheet_link_tag "coffee-with-milk" -%>
   <%= yield :header_tags %>
 </head>
 <body>
@@ -36,16 +34,12 @@
       <% if loggedin? %>
       <li class="bottom"><%= link_to l(:label_my_account), { :controller => 'my', :action => 'account' } %></li>
       <% end %>
-      <% if loggedin? %>
+      <!-- <% if loggedin? %>
       <li class="bottom"><%= link_to l(:label_project_plural), { :controller => 'answers' } %></li>
-      <% end %>
+      <% end %> -->
     </ul>
   </div>
-  <!-- 		
-<% if admin_loggedin? %>
-		<%= render :partial => 'admin/menu' %>        
-	<% end %>  
- -->
+
 <div id="content">
   <% if flash[:notice] %>
   <p style="color: green"><%= flash[:notice] %></p>
