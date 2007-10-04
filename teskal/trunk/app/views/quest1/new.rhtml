@@ -1,9 +1,15 @@
 <!-- test1 -->
-<% content_for :header_tags do %>
-<%= javascript_include_tag 'prototype' %> 
-<%= calendar_date_select_includes "plain" %>
-<%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language %>
-<% end %>
+<% content_for :header_tags do -%>
+<%= javascript_include_tag :defaults -%>
+<%= calendar_date_select_includes "plain" -%>
+<%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language -%>
+<%- case @logged_in_user.language -%>
+<%- when "es:" -%>
+<%= javascript_include_tag 'validation/validation_es' -%> 
+<%- else -%>
+<%= javascript_include_tag 'validation/validation_es' -%>  
+<%- end -%>
+<%- end -%>
 
 <h2><%=l(:test1)%></h2>
 <br/>
@@ -12,7 +18,7 @@
 <div id="values"> <%=l(:test3_valor_0)%> • <%=l(:test3_valor_1)%> • <%=l(:test3_valor_2)%> • <%=l(:test3_valor_3)%> • <%=l(:test3_valor_4)%> <br/>
   <br/>
 </div>
-<form action="/quest1/create" method="post">
+<form id="quest1" action="/quest1/create" method="post">
 <center>
   <table cellspacing="0">
     <!-- <caption><%=l(:test1)%></caption> -->
@@ -35,7 +41,7 @@
         <td><input type="radio" name="answer[answ1]" value="1" id="answer_answ1_1"/></td>
         <td><input type="radio" name="answer[answ1]" value="2" id="answer_answ1_2"/></td>
         <td><input type="radio" name="answer[answ1]" value="3" id="answer_answ1_3"/></td>
-        <td><input type="radio" name="answer[answ1]" value="4" id="answer_answ1_3"/></td>
+        <td><input type="radio" name="answer[answ1]" class="validate-one-required" value="4" id="answer_answ1_3"/></td>
       </tr>
       <tr class="odd">
         <td> 2 </td>
@@ -44,7 +50,7 @@
         <td><input type="radio" name="answer[answ2]" value="1" id="answer_answ2_1"/></td>
         <td><input type="radio" name="answer[answ2]" value="2" id="answer_answ2_2"/></td>
         <td><input type="radio" name="answer[answ2]" value="3" id="answer_answ2_3"/></td>
-        <td><input type="radio" name="answer[answ2]" value="4" id="answer_answ2_4"/></td>
+        <td><input type="radio" name="answer[answ2]" class="validate-one-required" value="4" id="answer_answ2_4"/></td>
       </tr>
       <tr>
         <td> 3 </td>
@@ -53,7 +59,7 @@
         <td><input type="radio" name="answer[answ3]" value="1" id="answer_answ3_1"/></td>
         <td><input type="radio" name="answer[answ3]" value="2" id="answer_answ3_2"/></td>
         <td><input type="radio" name="answer[answ3]" value="3" id="answer_answ3_3"/></td>
-        <td><input type="radio" name="answer[answ3]" value="4" id="answer_answ3_4"/></td>
+        <td><input type="radio" name="answer[answ3]" class="validate-one-required" value="4" id="answer_answ3_4"/></td>
       </tr>
       <tr class="odd">
         <td> 4 </td>
@@ -62,7 +68,7 @@
         <td><input type="radio" name="answer[answ4]" value="1" id="answer_answ4_1"/></td>
         <td><input type="radio" name="answer[answ4]" value="2" id="answer_answ4_2"/></td>
         <td><input type="radio" name="answer[answ4]" value="3" id="answer_answ4_3"/></td>
-        <td><input type="radio" name="answer[answ4]" value="4" id="answer_answ4_4"/></td>
+        <td><input type="radio" name="answer[answ4]" class="validate-one-required" value="4" id="answer_answ4_4"/></td>
       </tr>
       <tr>
         <td> 5 </td>
@@ -71,7 +77,7 @@
         <td><input type="radio" name="answer[answ5]" value="1" id="answer_answ5_1"/></td>
         <td><input type="radio" name="answer[answ5]" value="2" id="answer_answ5_2"/></td>
         <td><input type="radio" name="answer[answ5]" value="3" id="answer_answ5_3"/></td>
-        <td><input type="radio" name="answer[answ5]" value="4" id="answer_answ5_4"/></td>
+        <td><input type="radio" name="answer[answ5]" class="validate-one-required" value="4" id="answer_answ5_4"/></td>
       </tr>
       <tr class="odd">
         <td> 6 </td>
@@ -80,7 +86,7 @@
         <td><input type="radio" name="answer[answ6]" value="1" id="answer_answ6_1"/></td>
         <td><input type="radio" name="answer[answ6]" value="2" id="answer_answ6_2"/></td>
         <td><input type="radio" name="answer[answ6]" value="3" id="answer_answ6_3"/></td>
-        <td><input type="radio" name="answer[answ6]" value="4" id="answer_answ6_4"/></td>
+        <td><input type="radio" name="answer[answ6]" class="validate-one-required" value="4" id="answer_answ6_4"/></td>
       </tr>
       <tr>
         <td> 7 </td>
@@ -89,7 +95,7 @@
         <td><input type="radio" name="answer[answ7]" value="1" id="answer_answ7_1"/></td>
         <td><input type="radio" name="answer[answ7]" value="2" id="answer_answ7_2"/></td>
         <td><input type="radio" name="answer[answ7]" value="3" id="answer_answ7_3"/></td>
-        <td><input type="radio" name="answer[answ7]" value="4" id="answer_answ7_4"/></td>
+        <td><input type="radio" name="answer[answ7]" class="validate-one-required" value="4" id="answer_answ7_4"/></td>
       </tr>
       <tr class="odd">
         <td> 8 </td>
@@ -98,7 +104,7 @@
         <td><input type="radio" name="answer[answ8]" value="1" id="answer_answ8_1"/></td>
         <td><input type="radio" name="answer[answ8]" value="2" id="answer_answ8_2"/></td>
         <td><input type="radio" name="answer[answ8]" value="3" id="answer_answ8_3"/></td>
-        <td><input type="radio" name="answer[answ8]" value="4" id="answer_answ8_4"/></td>
+        <td><input type="radio" name="answer[answ8]" class="validate-one-required" value="4" id="answer_answ8_4"/></td>
       </tr>
       <tr>
         <td> 9 </td>
@@ -107,7 +113,7 @@
         <td><input type="radio" name="answer[answ9]" value="1" id="answer_answ9_1"/></td>
         <td><input type="radio" name="answer[answ9]" value="2" id="answer_answ9_2"/></td>
         <td><input type="radio" name="answer[answ9]" value="3" id="answer_answ9_3"/></td>
-        <td><input type="radio" name="answer[answ9]" value="4" id="answer_answ9_4"/></td>
+        <td><input type="radio" name="answer[answ9]" class="validate-one-required" value="4" id="answer_answ9_4"/></td>
       </tr>
       <tr class="odd">
         <td> 10 </td>
@@ -116,7 +122,7 @@
         <td><input type="radio" name="answer[answ10]" value="1" id="answer_answ10_1"/></td>
         <td><input type="radio" name="answer[answ10]" value="2" id="answer_answ10_2"/></td>
         <td><input type="radio" name="answer[answ10]" value="3" id="answer_answ10_3"/></td>
-        <td><input type="radio" name="answer[answ10]" value="4" id="answer_answ10_4"/></td>
+        <td><input type="radio" name="answer[answ10]" class="validate-one-required" value="4" id="answer_answ10_4"/></td>
       </tr>
       <tr>
         <td> 11 </td>
@@ -125,7 +131,7 @@
         <td><input type="radio" name="answer[answ11]" value="1" id="answer_answ11_1"/></td>
         <td><input type="radio" name="answer[answ11]" value="2" id="answer_answ11_2"/></td>
         <td><input type="radio" name="answer[answ11]" value="3" id="answer_answ11_3"/></td>
-        <td><input type="radio" name="answer[answ11]" value="4" id="answer_answ11_4"/></td>
+        <td><input type="radio" name="answer[answ11]" class="validate-one-required" value="4" id="answer_answ11_4"/></td>
       </tr>
       <tr class="odd">
         <td> 12 </td>
@@ -134,7 +140,7 @@
         <td><input type="radio" name="answer[answ12]" value="1" id="answer_answ12_1"/></td>
         <td><input type="radio" name="answer[answ12]" value="2" id="answer_answ12_2"/></td>
         <td><input type="radio" name="answer[answ12]" value="3" id="answer_answ12_3"/></td>
-        <td><input type="radio" name="answer[answ12]" value="4" id="answer_answ12_4"/></td>
+        <td><input type="radio" name="answer[answ12]" class="validate-one-required" value="4" id="answer_answ12_4"/></td>
       </tr>
       <tr>
         <td> 13 </td>
@@ -143,7 +149,7 @@
         <td><input type="radio" name="answer[answ13]" value="1" id="answer_answ13_1"/></td>
         <td><input type="radio" name="answer[answ13]" value="2" id="answer_answ13_2"/></td>
         <td><input type="radio" name="answer[answ13]" value="3" id="answer_answ13_3"/></td>
-        <td><input type="radio" name="answer[answ13]" value="4" id="answer_answ13_4"/></td>
+        <td><input type="radio" name="answer[answ13]" class="validate-one-required" value="4" id="answer_answ13_4"/></td>
       </tr>
       <tr class="odd">
         <td> 14 </td>
@@ -152,7 +158,7 @@
         <td><input type="radio" name="answer[answ14]" value="1" id="answer_answ14_1"/></td>
         <td><input type="radio" name="answer[answ14]" value="2" id="answer_answ14_2"/></td>
         <td><input type="radio" name="answer[answ14]" value="3" id="answer_answ14_3"/></td>
-        <td><input type="radio" name="answer[answ14]" value="4" id="answer_answ14_4"/></td>
+        <td><input type="radio" name="answer[answ14]" class="validate-one-required" value="4" id="answer_answ14_4"/></td>
       </tr>
       <tr>
         <td> 15 </td>
@@ -161,7 +167,7 @@
         <td><input type="radio" name="answer[answ15]" value="1" id="answer_answ15_1"/></td>
         <td><input type="radio" name="answer[answ15]" value="2" id="answer_answ15_2"/></td>
         <td><input type="radio" name="answer[answ15]" value="3" id="answer_answ15_3"/></td>
-        <td><input type="radio" name="answer[answ15]" value="4" id="answer_answ15_4"/></td>
+        <td><input type="radio" name="answer[answ15]" class="validate-one-required" value="4" id="answer_answ15_4"/></td>
       </tr>
     </tbody>
   </table>
@@ -186,7 +192,7 @@
       <td><input type="radio" name="answer[answ16]" value="1" id="answer_answ16_1"/></td>
       <td><input type="radio" name="answer[answ16]" value="2" id="answer_answ16_2"/></td>
       <td><input type="radio" name="answer[answ16]" value="3" id="answer_answ16_3"/></td>
-      <td><input type="radio" name="answer[answ16]" value="4" id="answer_answ16_4"/></td>
+      <td><input type="radio" name="answer[answ16]" class="validate-one-required" value="4" id="answer_answ16_4"/></td>
     </tr>
     <tr  class="odd">
       <td> 17 </td>
@@ -195,7 +201,7 @@
       <td><input type="radio" name="answer[answ17]" value="1" id="answer_answ17_1"/></td>
       <td><input type="radio" name="answer[answ17]" value="2" id="answer_answ17_2"/></td>
       <td><input type="radio" name="answer[answ17]" value="3" id="answer_answ17_3"/></td>
-      <td><input type="radio" name="answer[answ17]" value="4" id="answer_answ17_4"/></td>
+      <td><input type="radio" name="answer[answ17]" class="validate-one-required" value="4" id="answer_answ17_4"/></td>
     </tr>
     <tr>
       <td> 18 </td>
@@ -204,7 +210,7 @@
       <td><input type="radio" name="answer[answ18]" value="1" id="answer_answ18_1"/></td>
       <td><input type="radio" name="answer[answ18]" value="2" id="answer_answ18_2"/></td>
       <td><input type="radio" name="answer[answ18]" value="3" id="answer_answ18_3"/></td>
-      <td><input type="radio" name="answer[answ18]" value="4" id="answer_answ18_4"/></td>
+      <td><input type="radio" name="answer[answ18]" class="validate-one-required" value="4" id="answer_answ18_4"/></td>
     </tr>
     <tr  class="odd">
       <td> 19 </td>
@@ -213,7 +219,7 @@
       <td><input type="radio" name="answer[answ19]" value="1" id="answer_answ19_1"/></td>
       <td><input type="radio" name="answer[answ19]" value="2" id="answer_answ19_2"/></td>
       <td><input type="radio" name="answer[answ19]" value="3" id="answer_answ19_3"/></td>
-      <td><input type="radio" name="answer[answ19]" value="4" id="answer_answ19_4"/></td>
+      <td><input type="radio" name="answer[answ19]" class="validate-one-required" value="4" id="answer_answ19_4"/></td>
     </tr>
     <tr>
       <td> 20 </td>
@@ -222,7 +228,7 @@
       <td><input type="radio" name="answer[answ20]" value="1" id="answer_answ20_1"/></td>
       <td><input type="radio" name="answer[answ20]" value="2" id="answer_answ20_2"/></td>
       <td><input type="radio" name="answer[answ20]" value="3" id="answer_answ20_3"/></td>
-      <td><input type="radio" name="answer[answ20]" value="4" id="answer_answ20_4"/></td>
+      <td><input type="radio" name="answer[answ20]" class="validate-one-required" value="4" id="answer_answ20_4"/></td>
     </tr>
     <tr class="odd">
       <td> 21 </td>
@@ -231,7 +237,7 @@
       <td><input type="radio" name="answer[answ21]" value="1" id="answer_answ21_1"/></td>
       <td><input type="radio" name="answer[answ21]" value="2" id="answer_answ21_2"/></td>
       <td><input type="radio" name="answer[answ21]" value="3" id="answer_answ21_3"/></td>
-      <td><input type="radio" name="answer[answ21]" value="4" id="answer_answ21_4"/></td>
+      <td><input type="radio" name="answer[answ21]" class="validate-one-required" value="4" id="answer_answ21_4"/></td>
     </tr>
     <tr>
       <td> 22 </td>
@@ -240,7 +246,7 @@
       <td><input type="radio" name="answer[answ22]" value="1" id="answer_answ22_1"/></td>
       <td><input type="radio" name="answer[answ22]" value="2" id="answer_answ22_2"/></td>
       <td><input type="radio" name="answer[answ22]" value="3" id="answer_answ22_3"/></td>
-      <td><input type="radio" name="answer[answ22]" value="4" id="answer_answ22_4"/></td>
+      <td><input type="radio" name="answer[answ22]" class="validate-one-required" value="4" id="answer_answ22_4"/></td>
     </tr>
     <tr  class="odd">
       <td> 23 </td>
@@ -249,7 +255,7 @@
       <td><input type="radio" name="answer[answ23]" value="1" id="answer_answ23_1"/></td>
       <td><input type="radio" name="answer[answ23]" value="2" id="answer_answ23_2"/></td>
       <td><input type="radio" name="answer[answ23]" value="3" id="answer_answ23_3"/></td>
-      <td><input type="radio" name="answer[answ23]" value="4" id="answer_answ23_4"/></td>
+      <td><input type="radio" name="answer[answ23]" class="validate-one-required" value="4" id="answer_answ23_4"/></td>
     </tr>
     <thead>
       <tr>
@@ -298,7 +304,7 @@
         <td><input type="radio" name="answer[answ26]" value="1" id="answer_answ26_1"/></td>
         <td><input type="radio" name="answer[answ26]" value="2" id="answer_answ26_2"/></td>
         <td><input type="radio" name="answer[answ26]" value="3" id="answer_answ26_3"/></td>
-        <td><input type="radio" name="answer[answ26]" value="4" id="answer_answ26_4"/></td>
+        <td><input type="radio" name="answer[answ26]" class="validate-one-required" value="4" id="answer_answ26_4"/></td>
       </tr>
       <tr class="odd">
         <td> 27 </td>
@@ -306,7 +312,7 @@
         <td><input type="radio" name="answer[answ27]" value="1" id="answer_answ27_1"/></td>
         <td><input type="radio" name="answer[answ27]" value="2" id="answer_answ27_2"/></td>
         <td><input type="radio" name="answer[answ27]" value="3" id="answer_answ27_3"/></td>
-        <td><input type="radio" name="answer[answ27]" value="4" id="answer_answ27_4"/></td>
+        <td><input type="radio" name="answer[answ27]" class="validate-one-required" value="4" id="answer_answ27_4"/></td>
       </tr>
       <tr>
         <td> 28 </td>
@@ -314,7 +320,7 @@
         <td><input type="radio" name="answer[answ28]" value="1" id="answer_answ28_1"/></td>
         <td><input type="radio" name="answer[answ28]" value="2" id="answer_answ28_2"/></td>
         <td><input type="radio" name="answer[answ28]" value="3" id="answer_answ28_3"/></td>
-        <td><input type="radio" name="answer[answ28]" value="4" id="answer_answ28_4"/></td>
+        <td><input type="radio" name="answer[answ28]" class="validate-one-required" value="4" id="answer_answ28_4"/></td>
       </tr>
       <tr class="odd">
         <td> 29 </td>
@@ -322,7 +328,7 @@
         <td><input type="radio" name="answer[answ29]" value="1" id="answer_answ29_1"/></td>
         <td><input type="radio" name="answer[answ29]" value="2" id="answer_answ29_2"/></td>
         <td><input type="radio" name="answer[answ29]" value="3" id="answer_answ29_3"/></td>
-        <td><input type="radio" name="answer[answ29]" value="4" id="answer_answ29_4"/></td>
+        <td><input type="radio" name="answer[answ29]" class="validate-one-required" value="4" id="answer_answ29_4"/></td>
       </tr>
       <tr>
         <td> 30 </td>
@@ -330,7 +336,7 @@
         <td><input type="radio" name="answer[answ30]" value="1" id="answer_answ30_1"/></td>
         <td><input type="radio" name="answer[answ30]" value="2" id="answer_answ30_2"/></td>
         <td><input type="radio" name="answer[answ30]" value="3" id="answer_answ30_3"/></td>
-        <td><input type="radio" name="answer[answ30]" value="4" id="answer_answ30_4"/></td>
+        <td><input type="radio" name="answer[answ30]" class="validate-one-required" value="4" id="answer_answ30_4"/></td>
       </tr>
       <tr class="odd">
         <td> 31 </td>
@@ -338,7 +344,7 @@
         <td><input type="radio" name="answer[answ31]" value="1" id="answer_answ31_1"/></td>
         <td><input type="radio" name="answer[answ31]" value="2" id="answer_answ31_2"/></td>
         <td><input type="radio" name="answer[answ31]" value="3" id="answer_answ31_3"/></td>
-        <td><input type="radio" name="answer[answ31]" value="4" id="answer_answ31_4"/></td>
+        <td><input type="radio" name="answer[answ31]" class="validate-one-required" value="4" id="answer_answ31_4"/></td>
       </tr>
       <tr>
         <td> 32 </td>
@@ -346,7 +352,7 @@
         <td><input type="radio" name="answer[answ32]" value="1" id="answer_answ32_1"/></td>
         <td><input type="radio" name="answer[answ32]" value="2" id="answer_answ32_2"/></td>
         <td><input type="radio" name="answer[answ32]" value="3" id="answer_answ32_3"/></td>
-        <td><input type="radio" name="answer[answ32]" value="4" id="answer_answ32_4"/></td>
+        <td><input type="radio" name="answer[answ32]" class="validate-one-required" value="4" id="answer_answ32_4"/></td>
       </tr>
       <tr class="odd">
         <td> 33 </td>
@@ -354,7 +360,7 @@
         <td><input type="radio" name="answer[answ33]" value="1" id="answer_answ33_1"/></td>
         <td><input type="radio" name="answer[answ33]" value="2" id="answer_answ33_2"/></td>
         <td><input type="radio" name="answer[answ33]" value="3" id="answer_answ33_3"/></td>
-        <td><input type="radio" name="answer[answ33]" value="4" id="answer_answ33_4"/></td>
+        <td><input type="radio" name="answer[answ33]" class="validate-one-required" value="4" id="answer_answ33_4"/></td>
       </tr>
       <tr>
         <td> 34 </td>
@@ -362,7 +368,7 @@
         <td><input type="radio" name="answer[answ34]" value="1" id="answer_answ34_1"/></td>
         <td><input type="radio" name="answer[answ34]" value="2" id="answer_answ34_2"/></td>
         <td><input type="radio" name="answer[answ34]" value="3" id="answer_answ34_3"/></td>
-        <td><input type="radio" name="answer[answ34]" value="4" id="answer_answ34_4"/></td>
+        <td><input type="radio" name="answer[answ34]" class="validate-one-required" value="4" id="answer_answ34_4"/></td>
       </tr>
       <tr class="odd">
         <td> 35 </td>
@@ -370,7 +376,7 @@
         <td><input type="radio" name="answer[answ35]" value="1" id="answer_answ35_1"/></td>
         <td><input type="radio" name="answer[answ35]" value="2" id="answer_answ35_2"/></td>
         <td><input type="radio" name="answer[answ35]" value="3" id="answer_answ35_3"/></td>
-        <td><input type="radio" name="answer[answ35]" value="4" id="answer_answ35_4"/></td>
+        <td><input type="radio" name="answer[answ35]" class="validate-one-required" value="4" id="answer_answ35_4"/></td>
       </tr>
       <tr>
         <td> 36 </td>
@@ -378,7 +384,7 @@
         <td><input type="radio" name="answer[answ36]" value="1" id="answer_answ36_1"/></td>
         <td><input type="radio" name="answer[answ36]" value="2" id="answer_answ36_2"/></td>
         <td><input type="radio" name="answer[answ36]" value="3" id="answer_answ36_3"/></td>
-        <td><input type="radio" name="answer[answ36]" value="4" id="answer_answ36_4"/></td>
+        <td><input type="radio" name="answer[answ36]" class="validate-one-required" value="4" id="answer_answ36_4"/></td>
       </tr>
       <tr class="odd">
         <td>37</td>
@@ -386,7 +392,7 @@
         <td><input type="radio" name="answer[answ37]" value="1" id="answer_answ37_1"/></td>
         <td><input type="radio" name="answer[answ37]" value="2" id="answer_answ37_2"/></td>
         <td><input type="radio" name="answer[answ37]" value="3" id="answer_answ37_3"/></td>
-        <td><input type="radio" name="answer[answ37]" value="4" id="answer_answ37_4"/></td>
+        <td><input type="radio" name="answer[answ37]" class="validate-one-required" value="4" id="answer_answ37_4"/></td>
       </tr>
       <tr>
         <td>38</td>
@@ -394,7 +400,7 @@
         <td><input type="radio" name="answer[answ38]" value="1" id="answer_answ38_1"/></td>
         <td><input type="radio" name="answer[answ38]" value="2" id="answer_answ38_2"/></td>
         <td><input type="radio" name="answer[answ38]" value="3" id="answer_answ38_3"/></td>
-        <td><input type="radio" name="answer[answ38]" value="4" id="answer_answ38_4"/></td>
+        <td><input type="radio" name="answer[answ38]" class="validate-one-required" value="4" id="answer_answ38_4"/></td>
       </tr>
       <tr class="odd">
         <td>39</td>
@@ -402,7 +408,7 @@
         <td><input type="radio" name="answer[answ39]" value="1" id="answer_answ39_1"/></td>
         <td><input type="radio" name="answer[answ39]" value="2" id="answer_answ39_2"/></td>
         <td><input type="radio" name="answer[answ39]" value="3" id="answer_answ39_3"/></td>
-        <td><input type="radio" name="answer[answ39]" value="4" id="answer_answ39_4"/></td>
+        <td><input type="radio" name="answer[answ39]" class="validate-one-required" value="4" id="answer_answ39_4"/></td>
       </tr>
       <tr>
         <td>40</td>
@@ -410,7 +416,7 @@
         <td><input type="radio" name="answer[answ40]" value="1" id="answer_answ40_1"/></td>
         <td><input type="radio" name="answer[answ40]" value="2" id="answer_answ40_2"/></td>
         <td><input type="radio" name="answer[answ40]" value="3" id="answer_answ40_3"/></td>
-        <td><input type="radio" name="answer[answ40]" value="4" id="answer_answ40_4"/></td>
+        <td><input type="radio" name="answer[answ40]" class="validate-one-required" value="4" id="answer_answ40_4"/></td>
       </tr>
       <tr class="odd">
         <td>41</td>
@@ -418,7 +424,7 @@
         <td><input type="radio" name="answer[answ41]" value="1" id="answer_answ41_1"/></td>
         <td><input type="radio" name="answer[answ41]" value="2" id="answer_answ41_2"/></td>
         <td><input type="radio" name="answer[answ41]" value="3" id="answer_answ41_3"/></td>
-        <td><input type="radio" name="answer[answ41]" value="4" id="answer_answ41_4"/></td>
+        <td><input type="radio" name="answer[answ41]" class="validate-one-required" value="4" id="answer_answ41_4"/></td>
       </tr>
       <tr>
         <td>42</td>
@@ -426,7 +432,7 @@
         <td><input type="radio" name="answer[answ42]" value="1" id="answer_answ42_1"/></td>
         <td><input type="radio" name="answer[answ42]" value="2" id="answer_answ42_2"/></td>
         <td><input type="radio" name="answer[answ42]" value="3" id="answer_answ42_3"/></td>
-        <td><input type="radio" name="answer[answ42]" value="4" id="answer_answ42_4"/></td>
+        <td><input type="radio" name="answer[answ42]" class="validate-one-required" value="4" id="answer_answ42_4"/></td>
       </tr>
       <tr class="odd">
         <td>43</td>
@@ -434,7 +440,7 @@
         <td><input type="radio" name="answer[answ43]" value="1" id="answer_answ43_1"/></td>
         <td><input type="radio" name="answer[answ43]" value="2" id="answer_answ43_2"/></td>
         <td><input type="radio" name="answer[answ43]" value="3" id="answer_answ43_3"/></td>
-        <td><input type="radio" name="answer[answ43]" value="4" id="answer_answ43_4"/></td>
+        <td><input type="radio" name="answer[answ43]" class="validate-one-required" value="4" id="answer_answ43_4"/></td>
       </tr>
       <tr>
         <td>44</td>
@@ -442,7 +448,7 @@
         <td><input type="radio" name="answer[answ44]" value="1" id="answer_answ44_1"/></td>
         <td><input type="radio" name="answer[answ44]" value="2" id="answer_answ44_2"/></td>
         <td><input type="radio" name="answer[answ44]" value="3" id="answer_answ44_3"/></td>
-        <td><input type="radio" name="answer[answ44]" value="4" id="answer_answ44_4"/></td>
+        <td><input type="radio" name="answer[answ44]" class="validate-one-required" value="4" id="answer_answ44_4"/></td>
       </tr>
       <tr class="odd">
         <td>45</td>
@@ -450,7 +456,7 @@
         <td><input type="radio" name="answer[answ45]" value="1" id="answer_answ45_1"/></td>
         <td><input type="radio" name="answer[answ45]" value="2" id="answer_answ45_2"/></td>
         <td><input type="radio" name="answer[answ45]" value="3" id="answer_answ45_3"/></td>
-        <td><input type="radio" name="answer[answ45]" value="4" id="answer_answ45_4"/></td>
+        <td><input type="radio" name="answer[answ45]" class="validate-one-required" value="4" id="answer_answ45_4"/></td>
       </tr>
       <tr>
         <td>46</td>
@@ -458,7 +464,7 @@
         <td><input type="radio" name="answer[answ46]" value="1" id="answer_answ46_1"/></td>
         <td><input type="radio" name="answer[answ46]" value="2" id="answer_answ46_2"/></td>
         <td><input type="radio" name="answer[answ46]" value="3" id="answer_answ46_3"/></td>
-        <td><input type="radio" name="answer[answ46]" value="4" id="answer_answ46_4"/></td>
+        <td><input type="radio" name="answer[answ46]" class="validate-one-required" value="4" id="answer_answ46_4"/></td>
       </tr>
       <tr class="odd">
         <td>47</td>
@@ -466,7 +472,7 @@
         <td><input type="radio" name="answer[answ47]" value="1" id="answer_answ47_1"/></td>
         <td><input type="radio" name="answer[answ47]" value="2" id="answer_answ47_2"/></td>
         <td><input type="radio" name="answer[answ47]" value="3" id="answer_answ47_3"/></td>
-        <td><input type="radio" name="answer[answ47]" value="4" id="answer_answ47_4"/></td>
+        <td><input type="radio" name="answer[answ47]" class="validate-one-required" value="4" id="answer_answ47_4"/></td>
       </tr>
       <tr>
         <td>48</td>
@@ -474,7 +480,7 @@
         <td><input type="radio" name="answer[answ48]" value="1" id="answer_answ48_1"/></td>
         <td><input type="radio" name="answer[answ48]" value="2" id="answer_answ48_2"/></td>
         <td><input type="radio" name="answer[answ48]" value="3" id="answer_answ48_3"/></td>
-        <td><input type="radio" name="answer[answ48]" value="4" id="answer_answ48_4"/></td>
+        <td><input type="radio" name="answer[answ48]" class="validate-one-required" value="4" id="answer_answ48_4"/></td>
       </tr>
       <tr class="odd">
         <td>49</td>
@@ -482,7 +488,7 @@
         <td><input type="radio" name="answer[answ49]" value="1" id="answer_answ49_1"/></td>
         <td><input type="radio" name="answer[answ49]" value="2" id="answer_answ49_2"/></td>
         <td><input type="radio" name="answer[answ49]" value="3" id="answer_answ49_3"/></td>
-        <td><input type="radio" name="answer[answ49]" value="4" id="answer_answ49_4"/></td>
+        <td><input type="radio" name="answer[answ49]" class="validate-one-required" value="4" id="answer_answ49_4"/></td>
       </tr>
       <tr>
         <td>50</td>
@@ -490,7 +496,7 @@
         <td><input type="radio" name="answer[answ50]" value="1" id="answer_answ50_1"/></td>
         <td><input type="radio" name="answer[answ50]" value="2" id="answer_answ50_2"/></td>
         <td><input type="radio" name="answer[answ50]" value="3" id="answer_answ50_3"/></td>
-        <td><input type="radio" name="answer[answ50]" value="4" id="answer_answ50_4"/></td>
+        <td><input type="radio" name="answer[answ50]" class="validate-one-required" value="4" id="answer_answ50_4"/></td>
       </tr>
       <tr class="odd">
         <td>51</td>
@@ -498,7 +504,7 @@
         <td><input type="radio" name="answer[answ51]" value="1" id="answer_answ51_1"/></td>
         <td><input type="radio" name="answer[answ51]" value="2" id="answer_answ51_2"/></td>
         <td><input type="radio" name="answer[answ51]" value="3" id="answer_answ51_3"/></td>
-        <td><input type="radio" name="answer[answ51]" value="4" id="answer_answ51_4"/></td>
+        <td><input type="radio" name="answer[answ51]" class="validate-one-required" value="4" id="answer_answ51_4"/></td>
       </tr>
       <tr>
         <td>52</td>
@@ -506,7 +512,7 @@
         <td><input type="radio" name="answer[answ52]" value="1" id="answer_answ52_1"/></td>
         <td><input type="radio" name="answer[answ52]" value="2" id="answer_answ52_2"/></td>
         <td><input type="radio" name="answer[answ52]" value="3" id="answer_answ52_3"/></td>
-        <td><input type="radio" name="answer[answ52]" value="4" id="answer_answ52_4"/></td>
+        <td><input type="radio" name="answer[answ52]" class="validate-one-required" value="4" id="answer_answ52_4"/></td>
       </tr>
     </tbody>
   </table>
@@ -522,8 +528,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><textarea name="answer[note1]" id="note1" cols="60" rows="2"></textarea></td>
-        <td> <div align="center"><select name="answer[answ59]" id="answer_answ59">
+        <td><textarea name="answer[note1]" id="note1" cols="50" rows="2"></textarea></td>
+        <td> <div align="center"><select name="answer[answ59]" class="validate-selection" id="answer_answ59">
 				  <option value="0">0</option>
 				  <option value="10">10</option>
 				  <option value="20">20</option>
@@ -536,7 +542,7 @@
 				  <option value="90">90</option>
 				  <option value="100">100</option>
 				  </select></div></td>
-        <td><div align="center"><select name="answer[answ60]" id="answer_answ60">
+        <td><div align="center"><select name="answer[answ60]" class="validate-selection" id="answer_answ60">
 				  <option value="0">0</option>
 				  <option value="10">10</option>
 				  <option value="20">20</option>
@@ -551,8 +557,8 @@
 				  </select></div></td>
       </tr>
       <tr  class="odd">
-        <td><textarea name="answer[note2]" id="note2" cols="60" rows="2"></textarea></td>
-        <td> <div align="center"><select name="answer[answ61]" id="answer_answ61">
+        <td><textarea name="answer[note2]" id="note2" cols="50" rows="2"></textarea></td>
+        <td> <div align="center"><select name="answer[answ61]" class="validate-selection" id="answer_answ61">
 				  <option value="0">0</option>
 				  <option value="10">10</option>
 				  <option value="20">20</option>
@@ -565,7 +571,7 @@
 				  <option value="90">90</option>
 				  <option value="100">100</option>
 				  </select></div></td>
-        <td><div align="center"><select name="answer[answ62]" id="answer_answ62">
+        <td><div align="center"><select name="answer[answ62]" class="validate-selection" id="answer_answ62">
 				  <option value="0">0</option>
 				  <option value="10">10</option>
 				  <option value="20">20</option>
@@ -580,8 +586,8 @@
 				  </select></div></td>
       </tr>
       <tr>
-        <td><textarea name="answer[note3]" id="note3" cols="60" rows="2"></textarea></td>
-        <td> <div align="center"><select name="answer[answ63]" id="answer_answ63">
+        <td><textarea name="answer[note3]" id="note3" cols="50" rows="2"></textarea></td>
+        <td> <div align="center"><select name="answer[answ63]" class="validate-selection" id="answer_answ63">
 				  <option value="0">0</option>
 				  <option value="10">10</option>
 				  <option value="20">20</option>
@@ -594,7 +600,7 @@
 				  <option value="90">90</option>
 				  <option value="100">100</option>
 				  </select></div></td>
-        <td><div align="center"><select name="answer[answ64]" id="answer_answ64">
+        <td><div align="center"><select name="answer[answ64]" class="validate-selection" id="answer_answ64">
 				  <option value="0">0</option>
 				  <option value="10">10</option>
 				  <option value="20">20</option>
@@ -609,8 +615,8 @@
 				  </select></div></td>
       </tr>
       <tr  class="odd">
-        <td><textarea name="answer[note4]" id="note4" cols="60" rows="2"></textarea></td>
-        <td> <div align="center"><select name="answer[answ65]" id="answer_answ65">
+        <td><textarea name="answer[note4]" id="note4" cols="50" rows="2"></textarea></td>
+        <td> <div align="center"><select name="answer[answ65]" class="validate-selection" id="answer_answ65">
 				  <option value="0">0</option>
 				  <option value="10">10</option>
 				  <option value="20">20</option>
@@ -623,7 +629,7 @@
 				  <option value="90">90</option>
 				  <option value="100">100</option>
 				  </select></div></td>
-        <td><div align="center"><select name="answer[answ66]" id="answer_answ66">
+        <td><div align="center"><select name="answer[answ66]" class="validate-selection" id="answer_answ66">
 				  <option value="0">0</option>
 				  <option value="10">10</option>
 				  <option value="20">20</option>
@@ -654,7 +660,7 @@
       <tr>
         <td>53</td>
         <td><%=l(:test1_53)%></td>
-        <td> 	<select name="answer[answ53]" id="answer_answ53">
+        <td> 	<select name="answer[answ53]" class="validate-selection" id="answer_answ53">
 	  <option value="0">0</option>
 	  <option value="10">10</option>
 	  <option value="20">20</option>
@@ -672,7 +678,7 @@
       <tr class="odd">
         <td>54</td>
         <td><%=l(:test1_54)%></td>
-        <td> 	<select name="answer[answ54]" id="answer_answ54">
+        <td> 	<select name="answer[answ54]" class="validate-selection" id="answer_answ54">
 		  <option value="0">0</option>
 		  <option value="10">10</option>
 		  <option value="20">20</option>
@@ -690,7 +696,7 @@
       <tr>
         <td>55</td>
         <td><%=l(:test1_55)%></td>
-        <td> 	<select name="answer[answ55]" id="answer_answ55">
+        <td> 	<select name="answer[answ55]" class="validate-selection" id="answer_answ55">
 		  <option value="0">0</option>
 		  <option value="10">10</option>
 		  <option value="20">20</option>
@@ -708,7 +714,7 @@
       <tr class="odd">
         <td>56</td>
         <td><%=l(:test1_56)%></td>
-        <td> 	<select name="answer[answ56]" id="answer_answ56">
+        <td> 	<select name="answer[answ56]" class="validate-selection" id="answer_answ56">
 		  <option value="0">0</option>
 		  <option value="10">10</option>
 		  <option value="20">20</option>
@@ -726,7 +732,7 @@
       <tr>
         <td>57</td>
         <td><%=l(:test1_57)%></td>
-        <td> 	<select name="answer[answ57]" id="answer_answ57">
+        <td> 	<select name="answer[answ57]" class="validate-selection" id="answer_answ57">
 		  <option value="0">0</option>
 		  <option value="10">10</option>
 		  <option value="20">20</option>
@@ -744,7 +750,7 @@
       <tr class="odd">
         <td>58</td>
         <td><%=l(:test1_58)%></td>
-        <td> 	<select name="answer[answ58]" id="answer_answ58">
+        <td> 	<select name="answer[answ58]" class="validate-selection" id="answer_answ58">
 		  <option value="0">0</option>
 		  <option value="10">10</option>
 		  <option value="20">20</option>
@@ -762,7 +768,7 @@
       <tr>
         <td>59</td>
         <td><%=l(:test1_59)%></td>
-        <td> 	<select name="answer[answ59]" id="answer_answ59">
+        <td> 	<select name="answer[answ59]" class="validate-selection" id="answer_answ59">
 		  <option value="0">0</option>
 		  <option value="10">10</option>
 		  <option value="20">20</option>
@@ -780,7 +786,7 @@
       <tr class="odd">
         <td>60</td>
         <td><%=l(:test1_60)%></td>
-        <td> 	<select name="answer[answ60]" id="answer_answ60">
+        <td> 	<select name="answer[answ60]" class="validate-selection" id="answer_answ60">
 		  <option value="0">0</option>
 		  <option value="10">10</option>
 		  <option value="20">20</option>
@@ -798,7 +804,7 @@
       <tr>
         <td>61</td>
         <td><%=l(:test1_61)%></td>
-        <td> 	<select name="answer[answ61]" id="answer_answ61">
+        <td> 	<select name="answer[answ61]" class="validate-selection" id="answer_answ61">
 		  <option value="0">0</option>
 		  <option value="10">10</option>
 		  <option value="20">20</option>
@@ -816,7 +822,7 @@
       <tr class="odd">
         <td>62</td>
         <td><%=l(:test1_62)%></td>
-        <td> 	<select name="answer[answ62]" id="answer_answ62">
+        <td> 	<select name="answer[answ62]" class="validate-selection" id="answer_answ62">
 		  <option value="0">0</option>
 		  <option value="10">10</option>
 		  <option value="20">20</option>
@@ -834,7 +840,7 @@
       <tr>
         <td> 63 </td>
         <td><%=l(:test1_63)%></td>
-        <td> 	<select name="answer[answ63]" id="answer_answ63">
+        <td> 	<select name="answer[answ63]" class="validate-selection" id="answer_answ63">
 		  <option value="0">0</option>
 		  <option value="10">10</option>
 		  <option value="20">20</option>
@@ -852,7 +858,7 @@
       <tr class="odd">
         <td>64</td>
         <td><%=l(:test1_64)%></td>
-        <td> 	<select name="answer[answ64]" id="answer_answ64">
+        <td> 	<select name="answer[answ64]" class="validate-selection" id="answer_answ64">
 		  <option value="0">0</option>
 		  <option value="10">10</option>
 		  <option value="20">20</option>
@@ -884,7 +890,7 @@
       <tr>
         <td>65</td>
         <td><%=l(:test1_65)%></td>
-        <td> 	<select name="answer[answ65]" id="answer_answ65">
+        <td> 	<select name="answer[answ65]" class="validate-selection" id="answer_answ65">
 	  <option value="0">0</option>
 	  <option value="10">10</option>
 	  <option value="20">20</option>
@@ -900,28 +906,44 @@
       </tr>
     </tbody>
   </table>
-  <br/>
-  <br/>
-  <table cellspacing="0">
-    <!-- <caption><%=l(:test1)%></caption> -->
-    <thead>
-      <tr>
-        <th scope="col"><div align="left"><%= l(:field_notes) %></div></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><textarea name="answer[note5]" id="note5" cols="60" rows="5"></textarea></td>
-      </tr>
-    </tbody>
-  </table>
-  <br/>
-</center>
-  <div align="right">
-<%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true , :time  => true%>
- <!-- <%= calendar_date_select_tag "month_year_selector_label", "",:disabled => false, :readonly => false ,:popup => :force %> -->
- </div>
- <p><%= submit_tag l(:button_save) %></p>
- <br/>
- <br/>
+<br/>
+<br/>
+    <div class="splitcontentleft">
+      <table cellspacing="0">
+        <!-- <caption><%=l(:test1)%></caption> -->
+        <thead>
+          <tr>
+            <th scope="col"><div align="left"><%= l(:field_notes) %></div></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><textarea name="answer[note5]" id="note5" cols="60" rows="6"></textarea></td>
+           </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="splitcontentright"> <%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true , :time  => true%>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+   <p><%= submit_tag l(:button_save) %></p> 
+  </form>
+	<script type="text/javascript">
+		var valid3 = new Validation('quest1',{immediate : true});
+	</script>
 <%= link_to l(:button_back),'/my/page' %> 

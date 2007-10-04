@@ -142,7 +142,7 @@ Object.extend(Validation, {
 						case 'radio':
 							var p = elm.parentNode;
 							if(p) {
-								new Insertion.Bottom(p, advice);
+								new Insertion.After(p, advice); //Bottom
 							} else {
 								new Insertion.After(elm, advice);
 							}
@@ -198,7 +198,7 @@ Object.extend(Validation, {
 				elm[prop] = '';
 			}
 			elm.removeClassName('validation-failed');
-			elm.removeClassName('validation-passed');
+			elm.removeClassName('validation-passed');  
 		});
 	},
 	add : function(className, error, test, options) {

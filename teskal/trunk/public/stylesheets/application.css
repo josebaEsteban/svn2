@@ -748,7 +748,7 @@ html>body #ajax-indicator {
 }
 .validation-advice {
 	margin: 1px 0;
-	padding: 2px;
+	padding: 3px;
 	background-color: #523a0b;
 	color : #fff;
 	font-weight: normal;
