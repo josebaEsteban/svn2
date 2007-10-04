@@ -34,9 +34,9 @@
       <% if loggedin? %>
       <li class="bottom"><%= link_to l(:label_my_account), { :controller => 'my', :action => 'account' } %></li>
       <% end %>
-      <!-- <% if loggedin? %>
-      <li class="bottom"><%= link_to l(:label_project_plural), { :controller => 'answers' } %></li>
-      <% end %> -->
+      <% if loggedin? %>
+      <li class="bottom"><%= link_to l(:label_project_plural), { :controller => 'my',:action => 'page' } %></li>
+      <% end %> 
     </ul>
   </div>
 
