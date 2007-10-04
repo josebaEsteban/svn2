@@ -18,16 +18,18 @@ class Quest2Controller < ApplicationController
       # format.html { redirect_to answer_url(@answer) }
       # format.xml  { head :created, :location => answer_url(@answer) }
     else
-      format.html { render :action => "new" }
-      format.xml  { render :xml => @answer.errors.to_xml }
+      flash[:notice] = ' nil'
+      redirect_to :action => 'new'
+      #         format.html { render :action => "new" }
+      # format.xml  { render :xml => @answer.errors.to_xml }
     end
   end
 
   def show
 
     #Database Objects - Initialization
-    # @answer = Answer.find(params[:id])
-    @answer = Answer.find_by_user_id(session[:user_id])
+    @answer = Answer.find(params[:id])
+    # @answer = Answer.find(session[:use)
     @fecha = l_datetime(@answer.created_on)
 
     @user=User.find(@answer.user_id )
@@ -43,8 +45,8 @@ class Quest2Controller < ApplicationController
     estadoForma = (@answer.answ4 + @answer.answ12 + @answer.answ20 + @answer.answ26) /4
     logroPersonal = (@answer.answ6 + @answer.answ11 + @answer.answ21 + @answer.answ28) /4
     autoEficacia = (@answer.answ3 + @answer.answ10 + @answer.answ16 + @answer.answ22) /4
-    autoRegulacion = (@answer.answ7 + @answer.answ13 + @answer.answ18 + @answer.answ25) /4 
-    
+    autoRegulacion = (@answer.answ7 + @answer.answ13 + @answer.answ18 + @answer.answ25) /4
+
     @advice=[]
     if descansoInterrumpido < 2
       @advice[0]=l(:test2_d1_a)
