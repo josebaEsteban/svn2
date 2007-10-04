@@ -66,6 +66,11 @@ Validator.methods = {
 		return Validation.get(value).test(v,elm);
 	})}
 }
+_transl = {
+   "required": "This is a required field",
+   "selection": "Please make a selection",
+   "options": "Please select an option"
+ }
 
 var Validation = Class.create();
 
@@ -142,7 +147,7 @@ Object.extend(Validation, {
 						case 'radio':
 							var p = elm.parentNode;
 							if(p) {
-								new Insertion.Bottom(p, advice);
+								new Insertion.After(p, advice);
 							} else {
 								new Insertion.After(elm, advice);
 							}
@@ -226,7 +231,7 @@ Validation.add('IsEmpty', '', function(v) {
 			});
 
 Validation.addAllThese([
-	['required', 'This is a required field.', function(v) {
+	['required', _transl["required"], function(v) {
 				return !Validation.get('IsEmpty').test(v);
 			}],
 	['validate-number', 'Please enter a valid number in this field.', function(v) {
@@ -267,20 +272,20 @@ Validation.addAllThese([
 				// [$].##
 				return Validation.get('IsEmpty').test(v) ||  /^\$?\-?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}\d*(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$/.test(v)
 			}],
-	['validate-selection', 'Please make a selection', function(v,elm){
+	['validate-selection', _transl["selection"], function(v,elm){
 				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
 			}],
-	['validate-one-required', 'Please select one of the above options.', function (v,elm) {
-			   var p = elm;
-              var options = new Array();
-              while (options.length < 2) {
-                      p = p.parentNode;
-                      options = p.getElementsByTagName('INPUT');
-              }
-             // var p = elm.parentNode;
-				// var options = p.getElementsByTagName('INPUT');
-				return $A(options).any(function(elm) {
-					return $F(elm);
+	['validate-one-required', _transl["options"], function (v,elm) {
+		 var p = elm;
+		var options = new Array();
+		while (options.length < 2) {
+			p = p.parentNode;
+			options = p.getElementsByTagName('INPUT');
+			}
+			// var p = elm.parentNode;
+			// var options = p.getElementsByTagName('INPUT');
+			return $A(options).any(function(elm) {
+				return $F(elm);
 				});
-			}]
-]);
+				}]
+				]);

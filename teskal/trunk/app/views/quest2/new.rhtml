@@ -1,15 +1,27 @@
 <!-- test2 -->
 <% content_for :header_tags do -%>
 <%= javascript_include_tag :defaults -%>
-<%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language -%>
 <%= calendar_date_select_includes "plain" -%>
+<%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language -%>
+<%= javascript_include_tag 'validation/validation' -%> 
 <%- case @logged_in_user.language -%>
-<%- when "es:" -%>
-<%= javascript_include_tag 'validation/validation_es' -%> 
+<%- when "es" -%>
+<%= javascript_include_tag 'validation/locale/es' -%> 
+<%- when "eu" -%>
+<%= javascript_include_tag 'validation/locale/eu' -%>
 <%- else -%>
-<%= javascript_include_tag 'validation/validation_es' -%>  
+ 
 <%- end -%>
 <%- end -%>
+<SCRIPT type="text/javascript" language="JavaScript">
+<!--
+_transl = {
+   "required": "Este campo es obligatorio",
+   "selection": "Por favor haga una selección",
+   "options": "Por favor seleccione un ítem"
+ }
+//-->
+</SCRIPT>
 
 <h2><%=l(:test2)%></h2>
 <center>
@@ -31,7 +43,7 @@
           <th scope="col">3</th>
           <th scope="col">4</th>
           <th scope="col">5</th>
-          <th scope="col"><div align="left">6</div></th>
+          <th scope="col">6</th>
         </tr>
       </thead>
       <tfoot>
@@ -44,7 +56,7 @@
           <th scope="col">3</th>
           <th scope="col">4</th>
           <th scope="col">5</th>
-          <th scope="col"><div align="left">6</div></th>
+          <th scope="col">6</th>
         </tr>
       </tfoot>
       <tbody>
@@ -57,7 +69,7 @@
           <td><input type="radio" name="answer[answ1]" value="3"  id="answer_answ1_3"/></td>
           <td><input type="radio" name="answer[answ1]" value="4"  id="answer_answ1_4"/></td>
           <td><input type="radio" name="answer[answ1]" value="5"  id="answer_answ1_5"/></td>
-          <td><input class="validate-one-required" type="radio" name="answer[answ1]" value="6"  id="answer_answ1_6"/></td>
+          <td><input type="radio" name="answer[answ1]" class="validate-one-required" value="6"  id="answer_answ1_6"/></td>
         </tr>                           
         <tr class="odd">
           <td> 2 </td>
@@ -370,7 +382,7 @@
         </thead>
         <tbody>
           <tr>
-            <td><textarea  class="required" name="answer[note1]"  title="Enter your name" id="note1" cols="60" rows="6"></textarea></td>
+            <td><textarea name="answer[note1]" id="note1" cols="60" rows="6"></textarea></td>
            </tr>
         </tbody>
       </table>
