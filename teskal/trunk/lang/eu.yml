@@ -688,56 +688,56 @@ quest6_d3_c: En el caso de la CT, los valores se sitúan en un alto nivel, lo qu
 quest6_d4_a: En el caso de la IT, los valores se sitúan en un nivel bajo, lo que representa una reducida o mínima complicidad y lealtad con las decisiones tomadas. Tampoco se puede destacar el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. Es aconsejable realizar una sesión conjunta con la orientación del/a tutor/a.
 quest6_d4_b: En el caso de la IT, los valores se sitúan en un nivel medio, lo que representa cierto nivel de complicidad y lealtad con las decisiones tomadas. También manifiesta una buena satisfacción relacionada con el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. 
 quest6_d4_c: En el caso de la IT, los valores se sitúan en un alto nivel, lo que representa una alta complicidad y lealtad con las decisiones tomadas. A destacar la alta satisfacción que manifiesta relacionada con el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. 
-# # quest7
-# quest7: Asetasun galdetegia (banakako kirolak) 
-# quest7_header: …-(r)ekiko asetasun maila
-# quest7_intro: Segidan aurkezten zaizkizun enrtenamenduaren eta lehiaketaren aspektu ezberdinekin zer ikusia duten esaldi sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotazunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbaki gainean klik eginaz.
-# quest7_label_0: Satisfacción (Deportes Individuales)
-# quest7_label_1: Rendimiento Personal
-# quest7_label_2: Dedicación Personal
-# quest7_label_3: Funcionamiento Etico
-# quest7_label_4: Uso de la capacidad
-# quest7_label_5: Enseñanza e instrucción
-# quest7_label_6: Trato personal
-# quest7_valor_1: 1 (inolaz ere)
-# quest7_valor_7: 7 (guztiz) 
-# quest7_10:Aurreko denboraldietan jaso dudan prestakuntza
-# quest7_11:Denboraldi honetan zehar jaso dudan prestakuntza
-# quest7_12:Entrenatzaileak nire zereginari buruz emandako jarraibide tekniko-taktikoak
-# quest7_13:Zenbateraino nire taldeko kideak etikoak diren
-# quest7_14:Nire kideek joko garbiari emten dioten zentzua
-# quest7_15:Nire talde kideen kiroltasun maila
-# quest7_16:Zenbateraino ahal dudan onena ematen dudan
-# quest7_17:Entrenamenduan zehar dudan dedikazio pertsonal maila
-# quest7_18:Lehiaketean zehar dudan gogoa
-# quest7_1: Denboraldian zehar nire helburuetan lorturiko maila
-# quest7_2: Aurreko denboralidan nire errendiemnduan izandako hobekuntza
-# quest7_3: Orain arteko nire trebetasunen hobekuntza maila
-# quest7_4: Nire trebetasunak erabiltzen ditudaneko maila
-# quest7_5: Nire talentuaren erabilpen maila
-# quest7_6: Nire rola nire potentzialekin bat datorren maila
-# quest7_7: Nola nire entrenatzaileak aintzat hartzen nauen
-# quest7_8: Nirekin entrenatzaileak erakusten duen gozotasuna
-# quest7_9: Entrenatzaileak zenbateraino aintzat hartzen duen nik gauzak ondo egitea
-# # dimensiones
-# quest7_d1_a: El bajo nivel de satisfacción relacionado con rendimiento personal (RP), puede estar asociado a la consecución de los objetivos propios de la temporada, o también a la baja percepción de mejora de sus cualidades y de sus posibles puntos débiles.
-# quest7_d1_b: El nivel medio de satisfacción relacionado con rendimiento personal (RP) que se observa, puede estar relacionado con mediana percepción de consecución de sus objetivos de la temporada, o también se puede asociar al nivel de mejora de sus cualidades y de sus posibles puntos débiles.
-# quest7_d1_c: El alto nivel de satisfacción relacionado con rendimiento personal (RP) que se contempla, está asociado a la consecución de los objetivos propios de la temporada, y también puede estar relacionada con una alta percepción de mejora de sus cualidades y de sus puntos débiles.
-# quest7_d2_a: Por otra parte, la satisfacción con su compromiso personal hacia el equipo (DP), en función de sus posibilidades, se encuentra en niveles bajos, pudiendo estar asociado a una insuficiente dedicación e implicación personal, tanto durante el entrenamiento como en la competición. Quizás existan elementos externos que estén interfiriendo y mediando negativamente en este aspecto.
-# quest7_d2_b: El nivel medio de satisfacción relacionado con su compromiso personal hacia el equipo (DP), en función de sus posibilidades, se encuentra en niveles medios, pudiendo influir en su dedicación e implicación personal, tanto durante el entrenamiento como en la competición. Es importante recordar que este aspecto es fundamental para la consecución de los objetivos planteados.
-# quest7_d2_c: Por otra parte, la satisfacción con su compromiso personal hacia el equipo (DP), en función de sus posibilidades, se encuentra en niveles altos, lo que conlleva una excelente dedicación e implicación personal, tanto durante el entrenamiento como en la competición. Tiene claro que el éxito llega a través del esfuerzo y es positivo reforzárselo. 
-# quest7_d3_a: Los valores de la satisfacción relacionados con el funcionamiento ético (FE) del grupo y con el sentido que tienen acerca del juego limpio son bajos. Además piensa que sus compañeros tienen poca deportividad.
-# quest7_d3_b: Estos valores de satisfacción relacionados con el funcionamiento ético (FE) del grupo y con el sentido que tienen acerca del juego limpio son medios. A veces cree que sus compañeros podrían comportarse con mayor deportividad.
-# quest7_d3_c: Estos valores tan altos de satisfacción relacionados con el funcionamiento ético (FE) del grupo y con el sentido que tienen acerca del juego limpio, refuerzan su integración en el equipo. Además siente que sus compañeros se comportan con una gran deportividad en todas sus acciones.
-# quest7_d4_a: El nivel de satisfacción con la forma en que maximiza el talento de l@s deportistas, con la utilización de sus habilidades, con el tiempo de competición y con la medida en que el rol asignado al deportista se corresponde con su preferido o con su ideal se sitúa en niveles bajos. Será interesante conocer su nivel de estado de ánimo y de motivación.
-# quest7_d4_b: El nivel de satisfacción con la forma en que maximiza el talento de l@s deportistas, con la utilización de sus habilidades, con el tiempo de competición y con la medida en que el rol asignado al deportista se corresponde con su preferido o con su ideal se sitúa en niveles medios, lo que a veces provoca cierta inestabilidad emocional.
-# quest7_d4_c: El nivel de satisfacción con la forma en que maximiza el talento de l@s deportistas, con la utilización de sus habilidades, con el tiempo de competición y con la medida en que el rol asignado al deportista se corresponde con su preferido o con su ideal se sitúa en niveles altos, lo que reforzará su nivel de motivación.
-# quest7_d5_a: El grado de satisfacción relacionado con la información recibida asociada a las prestaciones técnico-tácticas de su posición o con aspectos de su mejoría personal (EI), es bajo. 
-# quest7_d5_b: El grado de satisfacción relacionado con la información recibida asociada a las prestaciones técnico-tácticas de su posición o con aspectos de mejora personal (EI), se sitúa en un nivel medio.
-# quest7_d5_c: El grado de satisfacción relacionado con la información recibida asociada a las prestaciones técnico-tácticas de su posición o con aspectos de mejora personal (EI), se sitúa en valores altos. Esto supondrá un buen refuerzo para su nivel de autoeficacia percibida.
-# quest7_d6_a: En cuanto a la satisfacción por el trato que ha recibido del entrenador/a asociado a la amabilidad, al reconocimiento, y la estima por el trabajo bien hecho (TP) se sitúa en niveles bajos, lo que supone que el nivel de atención recibido también será bajo.
-# quest7_d6_b: El nivel de satisfacción relacionado con el trato que ha recibido del entrenador/a asociado a la amabilidad, al reconocimiento, y la estima por el trabajo bien hecho (TP) se sitúa en niveles medios, lo que supone que el nivel de atención recibido habrá normal, como al resto de deportistas.
-# quest7_d6_c: El nivel de satisfacción relacionado con el trato que ha recibido del entrenador/a asociado a la amabilidad, al reconocimiento, la estima por el trabajo bien hecho, así como el nivel de atención recibido (TP) se sitúa en niveles altos, lo que supone que percibe una excelente relación con el/la entrenador/a.
+# quest7
+quest7: Asetasun galdetegia (banakako kirolak) 
+quest7_header: …-(r)ekiko asetasun maila
+quest7_intro: Segidan aurkezten zaizkizun enrtenamenduaren eta lehiaketaren aspektu ezberdinekin zer ikusia duten esaldi sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotazunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbaki gainean klik eginaz.
+quest7_label_0: Satisfacción (Deportes Individuales)
+quest7_label_1: Rendimiento Personal
+quest7_label_2: Dedicación Personal
+quest7_label_3: Funcionamiento Etico
+quest7_label_4: Uso de la capacidad
+quest7_label_5: Enseñanza e instrucción
+quest7_label_6: Trato personal
+quest7_valor_1: 1 (inolaz ere)
+quest7_valor_7: 7 (guztiz) 
+quest7_10:Aurreko denboraldietan jaso dudan prestakuntza
+quest7_11:Denboraldi honetan zehar jaso dudan prestakuntza
+quest7_12:Entrenatzaileak nire zereginari buruz emandako jarraibide tekniko-taktikoak
+quest7_13:Zenbateraino nire taldeko kideak etikoak diren
+quest7_14:Nire kideek joko garbiari emten dioten zentzua
+quest7_15:Nire talde kideen kiroltasun maila
+quest7_16:Zenbateraino ahal dudan onena ematen dudan
+quest7_17:Entrenamenduan zehar dudan dedikazio pertsonal maila
+quest7_18:Lehiaketean zehar dudan gogoa
+quest7_1: Denboraldian zehar nire helburuetan lorturiko maila
+quest7_2: Aurreko denboralidan nire errendiemnduan izandako hobekuntza
+quest7_3: Orain arteko nire trebetasunen hobekuntza maila
+quest7_4: Nire trebetasunak erabiltzen ditudaneko maila
+quest7_5: Nire talentuaren erabilpen maila
+quest7_6: Nire rola nire potentzialekin bat datorren maila
+quest7_7: Nola nire entrenatzaileak aintzat hartzen nauen
+quest7_8: Nirekin entrenatzaileak erakusten duen gozotasuna
+quest7_9: Entrenatzaileak zenbateraino aintzat hartzen duen nik gauzak ondo egitea
+# dimensiones
+quest7_d1_a: El bajo nivel de satisfacción relacionado con rendimiento personal (RP), puede estar asociado a la consecución de los objetivos propios de la temporada, o también a la baja percepción de mejora de sus cualidades y de sus posibles puntos débiles.
+quest7_d1_b: El nivel medio de satisfacción relacionado con rendimiento personal (RP) que se observa, puede estar relacionado con mediana percepción de consecución de sus objetivos de la temporada, o también se puede asociar al nivel de mejora de sus cualidades y de sus posibles puntos débiles.
+quest7_d1_c: El alto nivel de satisfacción relacionado con rendimiento personal (RP) que se contempla, está asociado a la consecución de los objetivos propios de la temporada, y también puede estar relacionada con una alta percepción de mejora de sus cualidades y de sus puntos débiles.
+quest7_d2_a: Por otra parte, la satisfacción con su compromiso personal hacia el equipo (DP), en función de sus posibilidades, se encuentra en niveles bajos, pudiendo estar asociado a una insuficiente dedicación e implicación personal, tanto durante el entrenamiento como en la competición. Quizás existan elementos externos que estén interfiriendo y mediando negativamente en este aspecto.
+quest7_d2_b: El nivel medio de satisfacción relacionado con su compromiso personal hacia el equipo (DP), en función de sus posibilidades, se encuentra en niveles medios, pudiendo influir en su dedicación e implicación personal, tanto durante el entrenamiento como en la competición. Es importante recordar que este aspecto es fundamental para la consecución de los objetivos planteados.
+quest7_d2_c: Por otra parte, la satisfacción con su compromiso personal hacia el equipo (DP), en función de sus posibilidades, se encuentra en niveles altos, lo que conlleva una excelente dedicación e implicación personal, tanto durante el entrenamiento como en la competición. Tiene claro que el éxito llega a través del esfuerzo y es positivo reforzárselo. 
+quest7_d3_a: Los valores de la satisfacción relacionados con el funcionamiento ético (FE) del grupo y con el sentido que tienen acerca del juego limpio son bajos. Además piensa que sus compañeros tienen poca deportividad.
+quest7_d3_b: Estos valores de satisfacción relacionados con el funcionamiento ético (FE) del grupo y con el sentido que tienen acerca del juego limpio son medios. A veces cree que sus compañeros podrían comportarse con mayor deportividad.
+quest7_d3_c: Estos valores tan altos de satisfacción relacionados con el funcionamiento ético (FE) del grupo y con el sentido que tienen acerca del juego limpio, refuerzan su integración en el equipo. Además siente que sus compañeros se comportan con una gran deportividad en todas sus acciones.
+quest7_d4_a: El nivel de satisfacción con la forma en que maximiza el talento de l@s deportistas, con la utilización de sus habilidades, con el tiempo de competición y con la medida en que el rol asignado al deportista se corresponde con su preferido o con su ideal se sitúa en niveles bajos. Será interesante conocer su nivel de estado de ánimo y de motivación.
+quest7_d4_b: El nivel de satisfacción con la forma en que maximiza el talento de l@s deportistas, con la utilización de sus habilidades, con el tiempo de competición y con la medida en que el rol asignado al deportista se corresponde con su preferido o con su ideal se sitúa en niveles medios, lo que a veces provoca cierta inestabilidad emocional.
+quest7_d4_c: El nivel de satisfacción con la forma en que maximiza el talento de l@s deportistas, con la utilización de sus habilidades, con el tiempo de competición y con la medida en que el rol asignado al deportista se corresponde con su preferido o con su ideal se sitúa en niveles altos, lo que reforzará su nivel de motivación.
+quest7_d5_a: El grado de satisfacción relacionado con la información recibida asociada a las prestaciones técnico-tácticas de su posición o con aspectos de su mejoría personal (EI), es bajo. 
+quest7_d5_b: El grado de satisfacción relacionado con la información recibida asociada a las prestaciones técnico-tácticas de su posición o con aspectos de mejora personal (EI), se sitúa en un nivel medio.
+quest7_d5_c: El grado de satisfacción relacionado con la información recibida asociada a las prestaciones técnico-tácticas de su posición o con aspectos de mejora personal (EI), se sitúa en valores altos. Esto supondrá un buen refuerzo para su nivel de autoeficacia percibida.
+quest7_d6_a: En cuanto a la satisfacción por el trato que ha recibido del entrenador/a asociado a la amabilidad, al reconocimiento, y la estima por el trabajo bien hecho (TP) se sitúa en niveles bajos, lo que supone que el nivel de atención recibido también será bajo.
+quest7_d6_b: El nivel de satisfacción relacionado con el trato que ha recibido del entrenador/a asociado a la amabilidad, al reconocimiento, y la estima por el trabajo bien hecho (TP) se sitúa en niveles medios, lo que supone que el nivel de atención recibido habrá normal, como al resto de deportistas.
+quest7_d6_c: El nivel de satisfacción relacionado con el trato que ha recibido del entrenador/a asociado a la amabilidad, al reconocimiento, la estima por el trabajo bien hecho, así como el nivel de atención recibido (TP) se sitúa en niveles altos, lo que supone que percibe una excelente relación con el/la entrenador/a.
 # # quest8
 # quest8: Asetasun galdetegia (Talde kirolak)
 # quest8_header: …-(r)ekiko asetasun maila
