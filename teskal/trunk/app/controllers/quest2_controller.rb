@@ -39,13 +39,13 @@ class Quest2Controller < ApplicationController
   def teskalChart2
     # @answer = Answer.find_first
     # calculo de las dimensiones
-    descansoInterrumpido = (@answer.answ2 + @answer.answ9  + @answer.answ17 + @answer.answ23) /4
-    cansancioEmocional = (@answer.answ5 + @answer.answ14 + @answer.answ19 + @answer.answ27) /4
-    vulnerabilidadLesiones = (@answer.answ1 + @answer.answ8  + @answer.answ15 + @answer.answ24) /4
-    estadoForma = (@answer.answ4 + @answer.answ12 + @answer.answ20 + @answer.answ26) /4
-    logroPersonal = (@answer.answ6 + @answer.answ11 + @answer.answ21 + @answer.answ28) /4
-    autoEficacia = (@answer.answ3 + @answer.answ10 + @answer.answ16 + @answer.answ22) /4
-    autoRegulacion = (@answer.answ7 + @answer.answ13 + @answer.answ18 + @answer.answ25) /4
+    descansoInterrumpido = (@answer.answ2 + @answer.answ9  + @answer.answ17 + @answer.answ23) /4.0
+    cansancioEmocional = (@answer.answ5 + @answer.answ14 + @answer.answ19 + @answer.answ27) /4.0
+    vulnerabilidadLesiones = (@answer.answ1 + @answer.answ8  + @answer.answ15 + @answer.answ24) /4.0
+    estadoForma = (@answer.answ4 + @answer.answ12 + @answer.answ20 + @answer.answ26) /4.0
+    logroPersonal = (@answer.answ6 + @answer.answ11 + @answer.answ21 + @answer.answ28) /4.0
+    autoEficacia = (@answer.answ3 + @answer.answ10 + @answer.answ16 + @answer.answ22) /4.0
+    autoRegulacion = (@answer.answ7 + @answer.answ13 + @answer.answ18 + @answer.answ25) /4.0
 
     @advice=[]
     if descansoInterrumpido < 2
@@ -111,7 +111,7 @@ class Quest2Controller < ApplicationController
         @advice[6]=l(:quest2_d7_c)
       end
     end
-    vg=((estadoForma+logroPersonal+autoEficacia+autoRegulacion/4))-((descansoInterrumpido+cansancioEmocional+vulnerabilidadLesiones)/3)
+    vg=((estadoForma+logroPersonal+autoEficacia+autoRegulacion/4.0))-((descansoInterrumpido+cansancioEmocional+vulnerabilidadLesiones)/3.0)
 
     if vg < 0
       @advice[7]=l(:quest2_val_4)
