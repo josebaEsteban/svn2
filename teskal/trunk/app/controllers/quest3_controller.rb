@@ -50,13 +50,13 @@ class Quest3Controller < ApplicationController
     # calculo de las dimensiones
 
     t = @answer.answ1 + @answer.answ6  + @answer.answ11
-    d = @answer.answ2 + @answer.answ7 + @answer.answ11
+    d = @answer.answ2 + @answer.answ7 + @answer.answ12
     h = @answer.answ5 + @answer.answ10 + @answer.answ15
     v = @answer.answ4 + @answer.answ9 + @answer.answ14
     f = @answer.answ3 + @answer.answ8 + @answer.answ13
-    ce = (@answer.answ16 + @answer.answ19 + @answer.answ22)*3
-    ae = (@answer.answ18 + @answer.answ21 + @answer.answ24)*3
-    cp = (@answer.answ17 + @answer.answ20 + @answer.answ23)*3
+    ce = ((@answer.answ16 + @answer.answ19 + @answer.answ22)*3.0).round
+    ae = ((@answer.answ18 + @answer.answ21 + @answer.answ24)*3.0).round
+    cp = ((@answer.answ17 + @answer.answ20 + @answer.answ23)*3.0).round
 
     @advice=[]
     if t < 5

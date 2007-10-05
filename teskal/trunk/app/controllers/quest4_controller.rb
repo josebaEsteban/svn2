@@ -46,10 +46,10 @@ class Quest4Controller < ApplicationController
     ansiedadCognitiva = @answer.answ19 + @answer.answ22 + @answer.answ25 + @answer.answ28 + @answer.answ31 + @answer.answ34 + @answer.answ37 + @answer.answ40 + @answer.answ43
     autoConfianza = @answer.answ21 + @answer.answ24 + @answer.answ27 + @answer.answ30 + @answer.answ33 + @answer.answ36 + @answer.answ39 + @answer.answ42 + @answer.answ45
     ansiedadSomatica = @answer.answ20 + @answer.answ23 + @answer.answ26 + @answer.answ29 + @answer.answ32+ @answer.answ35 + @answer.answ38 + @answer.answ41 + @answer.answ44
-    nivelMotivacion = (@answer.answ46 + @answer.answ47)/2
+    nivelMotivacion = (@answer.answ46 + @answer.answ47)/2.0
     nivelDificultad = @answer.answ17
     gradoConfianza =  @answer.answ18
-    percepcionElaboracion = (@answer.answ50 + @answer.answ51)/2
+    percepcionElaboracion = (@answer.answ50 + @answer.answ51)/2.0
 
     @advice=[]
     if tension< 5
@@ -204,10 +204,10 @@ class Quest4Controller < ApplicationController
 
     strXML=''
     strXML ="<chart palette='2' caption='"+l(:quest4_label_0)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+" 'showvalues='0'  formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='100'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
-    strXML = strXML + "<set label= '"+l(:quest4_label_11)+"' value='"+nivelMotivacion.to_s+"'/>"
+    strXML = strXML + "<set label= '"+l(:quest4_label_11)+"' value='"+acorta(nivelMotivacion)+"'/>"
     strXML = strXML + "<set label= '"+l(:quest4_label_12)+"' value='"+nivelDificultad.to_s+"'/>"
     strXML = strXML + "<set label= '"+l(:quest4_label_13)+"' value='"+gradoConfianza.to_s+"'/>"
-    strXML = strXML + "<set label= '"+l(:quest4_label_14)+"' value='"+percepcionElaboracion.to_s+"'/>"
+    strXML = strXML + "<set label= '"+l(:quest4_label_14)+"' value='"+acorta(percepcionElaboracion)+"'/>"
     strXML = strXML + "</chart>"
     @chart2= renderChart("/charts/Column2D.swf", "", strXML, "quest4_2", 450, 300, false, false)
   end
