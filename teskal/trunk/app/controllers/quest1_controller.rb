@@ -59,8 +59,8 @@ class Quest1Controller < ApplicationController
     autoControl = ((@answer.answ16 + @answer.answ17) /2) *2.5
     visionado = ((@answer.answ18 + @answer.answ19 + @answer.answ20) /3) *2.5
     autoMotivacion = ((@answer.answ21 + @answer.answ22 + @answer.answ23) /3) *2.5
-    ego = ((@answer.answ53 + @answer.answ54 + @answer.answ57 + @answer.answ58 + @answer.answ61 + @answer.answ64) /6) /10
-    ot = ((@answer.answ55 + @answer.answ56 + @answer.answ59 + @answer.answ60 + @answer.answ62 + @answer.answ63) /6) /10
+    ego = ((@answer.answ53 + @answer.answ54 + @answer.answ57 + @answer.answ58 + @answer.answ61 + @answer.answ64) /6.0) /10.0
+    ot = ((@answer.answ55 + @answer.answ56 + @answer.answ59 + @answer.answ60 + @answer.answ62 + @answer.answ63) /6.0) /10.0
 
     @advice=[]
     if tension< 5
@@ -249,26 +249,26 @@ class Quest1Controller < ApplicationController
     strXML = strXML + "<category label= '"+l(:quest1_label_21)+"'/>"
     strXML = strXML +"</categories>"
     strXML = strXML +"<dataset SeriesName='"+l(:quest1_label_22)+"' color='b23f3f'>"
-    strXML = strXML +"<set value='"+@answer.answ59.to_s+"' />"
-    strXML = strXML +"<set value='"+@answer.answ61.to_s+"' />"
-    strXML = strXML +"<set value='"+@answer.answ63.to_s+"' />"
-    strXML = strXML +"<set value='"+@answer.answ65.to_s+"' />"
+    strXML = strXML +"<set value='"+@answer.answ66.to_s+"' />"
+    strXML = strXML +"<set value='"+@answer.answ68.to_s+"' />"
+    strXML = strXML +"<set value='"+@answer.answ70.to_s+"' />"
+    strXML = strXML +"<set value='"+@answer.answ72.to_s+"' />"
     strXML = strXML +"</dataset>"
     strXML = strXML +"<dataset SeriesName='"+l(:quest1_label_23)+"' renderAs='Area' color='759a0c'>"
-    strXML = strXML +"<set value='"+@answer.answ60.to_s+"' />"
-    strXML = strXML +"<set value='"+@answer.answ62.to_s+"' />"
-    strXML = strXML +"<set value='"+@answer.answ64.to_s+"' />"
-    strXML = strXML +"<set value='"+@answer.answ66.to_s+"' />"
+    strXML = strXML +"<set value='"+@answer.answ67.to_s+"' />"
+    strXML = strXML +"<set value='"+@answer.answ69.to_s+"' />"
+    strXML = strXML +"<set value='"+@answer.answ71.to_s+"' />"
+    strXML = strXML +"<set value='"+@answer.answ73.to_s+"' />"
     strXML = strXML + "</dataset> </chart>"
     @chart2= renderChart("/charts/MSCombi2D.swf", "", strXML, "quest3_2", 450, 300, false, false)
 
     strXML=''
     strXML ="<chart palette='2' caption='"+l(:quest1)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+" 'showvalues='0'  formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='10'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
-    strXML = strXML + "<set label= '"+l(:quest1_label_13)+"' value='"+autoControl.to_s+"'/>"
-    strXML = strXML + "<set label= '"+l(:quest1_label_14)+"' value='"+visionado.to_s+"'/>"
-    strXML = strXML + "<set label= '"+l(:quest1_label_15)+"' value='"+autoMotivacion.to_s+"'/>"
-    strXML = strXML + "<set label= '"+l(:quest1_label_16)+"' value='"+ego.to_s+"'/>"
-    strXML = strXML + "<set label= '"+l(:quest1_label_17)+"' value='"+ot.to_s+"'/>"
+    strXML = strXML + "<set label= '"+l(:quest1_label_13)+"' value='"+acorta(autoControl)+"'/>"
+    strXML = strXML + "<set label= '"+l(:quest1_label_14)+"' value='"+acorta(visionado)+"'/>"
+    strXML = strXML + "<set label= '"+l(:quest1_label_15)+"' value='"+acorta(autoMotivacion)+"'/>"
+    strXML = strXML + "<set label= '"+l(:quest1_label_16)+"' value='"+acorta(ego)+"'/>"
+    strXML = strXML + "<set label= '"+l(:quest1_label_17)+"' value='"+acorta(ot)+"'/>"
     strXML = strXML + "</chart>"
     @chart3= renderChart("/charts/Column2D.swf", "", strXML, "quest3_2", 450, 300, false, false)
   end

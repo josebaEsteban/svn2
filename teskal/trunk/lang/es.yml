@@ -216,6 +216,7 @@ label_please_login: Conexión
 label_preview: Previo
 label_previous: Anterior
 label_quest: Cuestionario 
+label_quest_plural: Cuestionarios
 label_read: Leer...
 label_register: Registrar
 label_registered_on: Inscrito el
@@ -784,7 +785,7 @@ quest8_34: El nivel de deportividad de mis compañeros de equipo
 quest8_35: La forma en que el equipo trabaja para ser el mejor 
 quest8_36: El grado hasta el que los miembros del equipo comparten el mismo objetivo
 quest8_37: La dedicación de los miembros del equipo a trabajar conjuntamente para conseguir los objetivos del equipo
-quest8_38: El grado en el que los miembros del equipo “juegan como equipo
+quest8_38: El grado en el que los miembros del equipo juegan como equipo
 quest8_39: El grado hasta el que hago lo mejor que puedo para el equipo 
 quest8_3: El nivel de mejoría de mis habilidades hasta ahora
 quest8_40: Mi dedicación personal durante el entrenamiento
