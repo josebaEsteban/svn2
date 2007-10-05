@@ -37,7 +37,7 @@ class Quest6Controller < ApplicationController
     it =  @answer.answ6 + @answer.answ7 + @answer.answ8 + @answer.answ9 + @answer.answ10
     ct = @answer.answ11 + @answer.answ12 + @answer.answ13 + @answer.answ14 + @answer.answ15
     rp = @answer.answ16 + @answer.answ17 + @answer.answ18 + @answer.answ19 + @answer.answ20
-    cl = (rg + it + ct + rp)
+    cl = rg + it + ct + rp
     ctt = @answer.answ21
     x = (cl + ctt) / 2
     y = (cl - ct).abs
@@ -114,12 +114,11 @@ class Quest6Controller < ApplicationController
 
 
     #Generate the chart element
-    strXML = "<chart caption='"+l(:quest6_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='30' showvalues='0'  PYAxisName='Comarcas' formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='10'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
-
+    strXML = "<chart caption='"+l(:quest6_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='25' showvalues='0'  PYAxisName='Comarcas' formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='10'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
     strXML = strXML + "<set label='" + l(:quest6_label_1) + "' value= '" + rg.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:quest6_label_2) + "' value= '" + it.to_s + "'/>"
+    strXML = strXML + "<set label='" + l(:quest6_label_2) + "' value= '" + rp.to_s + "'/>" 
     strXML = strXML + "<set label='" + l(:quest6_label_3) + "' value= '" + ct.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:quest6_label_4) + "' value= '" + rp.to_s + "'/>"
+    strXML = strXML + "<set label='" + l(:quest6_label_4) + "' value= '" + it.to_s + "'/>"  
     strXML = strXML + "</chart>"
     #Create the chart - Pie 3D Chart with data from strXML
     @chart1= renderChart("/charts/Bar2D.swf", "", strXML, "quest5", 550, 270, false, false)

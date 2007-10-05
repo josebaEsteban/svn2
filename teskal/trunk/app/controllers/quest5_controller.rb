@@ -38,7 +38,7 @@ class Quest5Controller < ApplicationController
     re =  @answer.answ6 + @answer.answ7 + @answer.answ8 + @answer.answ9 + @answer.answ10
     rcog = @answer.answ11 + @answer.answ12 + @answer.answ13 + @answer.answ14 + @answer.answ15
     rcom = @answer.answ16 + @answer.answ17 + @answer.answ18 + @answer.answ19 + @answer.answ20
-    cl = (rg + re + rcog + rcom)
+    cl = rg + re + rcog + rcom
     ct = @answer.answ21
     x = (cl + ct) / 2
     y = (cl - ct).abs
@@ -115,7 +115,7 @@ class Quest5Controller < ApplicationController
 
 
     #Generate the chart element
-    strXML = "<chart caption='"+l(:quest5_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='30' showvalues='0'  PYAxisName='Comarcas' formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='10'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
+    strXML = "<chart caption='"+l(:quest5_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='25' showvalues='0'  PYAxisName='Comarcas' formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='10'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
 
     strXML = strXML + "<set label='" + l(:quest5_label_1) + "' value= '" + rg.to_s + "'/>"
     strXML = strXML + "<set label='" + l(:quest5_label_2) + "' value= '" + re.to_s + "'/>"
