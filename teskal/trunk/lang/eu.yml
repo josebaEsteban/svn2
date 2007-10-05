@@ -829,71 +829,71 @@ quest8_d9_a: Por otro lado, los valores de la satisfacción en relación a la pe
 quest8_d9_b: Por otro lado, los valores de la satisfacción en relación a la percepción que tiene de la acciones de apoyo del grupo para su mejor contribución al mismo, y de las orientaciones recibidas durante el juego por sus compañer@s (IT) se encuentran en un nivel medio. Quizás le gustaría mejorar su grado de comunicación con l@s demás componentes del equipo.
 quest8_d9_c: También podemos observar que los valores de la satisfacción en relación a la percepción que tiene de la acciones de apoyo del grupo para su mejor contribución al mismo, y de las orientaciones recibidas durante el juego por sus compañer@s (IT) se encuentran en un nivel alto, lo cual es muy positivo para mantener un buen grado de comunicación entre l@s demás componentes del equipo.
 # quest9
-quest9: Cuestionario de Clima de Tecnificación Percibido
-quest9_header: El grado de satisfacción con...
-quest9_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
-# labels 
-quest9_label_0: Clima de Tecnificación Percibido
-quest9_label_1: Valores de la percepción de éxito grupal
-quest9_label_2: Confianza en los jugadores percibida
-quest9_label_3: Comunicación reactiva
-quest9_label_4: Comunicación reactiva
-quest9_label_5: Comunicación instruccional
-quest9_label_6: Estilo desicional percibido
-quest9_label_7: Clima de Maestría
-quest9_label_8: Clima De Rendimiento  
-quest9_valor_1: 1 (no, en absoluto)
-quest9_valor_7: 7 (totalmente)
-quest9_valor_1: 1 (nunca)
-quest9_valor_2: 2 (pocas veces)
-quest9_valor_3: 3 (a menudo)
-quest9_valor_4: 4 (casi siempre)
-quest9_valor_5: 5 (siempre)
-quest9_1: Permito que tomen decisiones que no se corresponden con la táctica prevista
-quest9_2: Pienso que l@s deportistas tienen éxito cuando superan las dificultades
-quest9_3: Prefiero que el equipo gane a que -Se hagan las cosas bien hechas-
-quest9_4: Sacrifico la calidad de la técnica de competición por amarrar el resultado
-quest9_5: Lo primero es ganar la competición y después competir bien
-quest9_6: Felicito a l@s deportistas cuando hacen las cosas bien, actúan según lo esperado
-quest9_7: Animo a l@s deportistas en las acciones futuras
-quest9_8: Doy instrucciones sobre aspectos técnicos, tácticos, estilo, recorrido..etc.
-quest9_9: Pienso que l@s deportistas tienen éxito cuando lo hacen mejor que los demás
-quest9_10: Permito solucionar situaciones de competición de forma diferente a mis directrices
-quest9_11: Animo a l@s deportistas cuando cometen un fallo
-quest9_12: Pienso que l@s deportistas tienen éxito cuando son claramente superiores a los demás
-quest9_13: Me enfado cuando l@s deportistas actúan de forma no deseada
-quest9_14: Me enfado cuando tengo que corregir a l@s deportistas después de un error
-quest9_15: Los errores ayudan a l@s deportistas a darse cuenta de sus déficits y a mejorar.
-quest9_16: Procuro que el tiempo de competición de cada deportistas en la temporada sea semejante
-quest9_17: Procuro que l@s deportistas participen en el mismo nº de competiciones en la temporada
-quest9_18: Pienso que l@s deportistas tienen éxito cuando lo hacen todo lo mejor que saben hacerlo
-quest9_19: Tengo la máxima confianza en todos l@s deportistas cuando disputan una competición
-quest9_20: Cuando l@s deportistas cometen errores sigo manteniendo la confianza en ell@s
-# dimensions
-quest9_d1_a: Los valores de la percepción de éxito grupal (PEG) se sitúan por debajo de 2,5.Esto es positivo y supone la existencia de una focalización atencional del/a entrenador/a centrada en la mejora de l@s deportist@s, tanto en el entrenamiento como durante la competición.                    
-quest9_d1_b: Los valores de la percepción de éxito grupal (PEG) se sitúan en una zona media, lo cual es muy positivo y supone la existencia de un equilibrio entre la percepción de éxito del/a entrenador/a asociada al resultado, clima de rendimiento grupal, con el clima de maestría grupal, focalizado en la mejora de l@s deportist@s.
-quest9_d1_c: Los valores de la percepción de éxito grupal (PEG) se sitúan en valores altos, lo que provoca una desigualdad entre la percepción de éxito asociada al resultado, clima de rendimiento grupal, con el clima de maestría grupal, centrado en la mejora de l@s deportist@s. Esto supone un alejamiento de los valores que se manejan con respecto a un modelo de formación óptimo para l@s deportistas.
-quest9_d2_a: Esta baja puntuación observada en el grado de confianza (CO), supone la existencia de dudas en el/la entrenador@ acerca de la capacidad de sus jugadores. Es decir, una baja convicción de que cada uno de ellos hará un buen trabajo. Si estos valores coinciden con los del/la entrenador@, será importante desarrollar una miniestrategia específica para conseguir aumentar este nivel, bien consultando al tutor o bien a través de sesiones de visionado con contenidos de Autoeficacia.
-quest9_d2_b: Esta puntuación media observada en el grado de confianza (CO), supondrá que el/la entrenador/@ tiene positivas creencias acerca de que cada uno de sus jugadores será capaz de utilizar sus recursos eficientemente, es decir, de que cada uno de ellos lo hará bien, en la medida de sus posibilidades. Sería importante mantener o aumentar este nivel observado, considerando que la confianza hay que valorarla en términos autoreferentes, es decir, cada jugador consigo mismo.
-quest9_d2_c: Esta alta puntuación observada en el grado de confianza (CO), supondrá que el entrenador tiene alta creencia en que cada uno de sus jugadores será capaz de utilizar sus recursos eficientemente, es decir, alta convicción de que cada uno de ellos lo hará bien, en la medida de sus posibilidades. Es importante señalar que la confianza hay que valorarla en términos autoreferentes, es decir, cada jugador consigo mismo.
-quest9_d3_a: Esta baja puntuación indica la existencia de un déficit percibido en la manera de transmitir la información. La característica fundamental es la ausencia de manifestaciones emocionales empáticas y existenciales y la presencia de las vitales negativas que, a veces, se perciben como irrespetuosas y ofensivas. Enturbian las relaciones entrenador/a-deportista.
-quest9_d3_b: Esta puntuación media se encuentra asociada a comportamientos correctos percibidos, a la hora de transmitir la información. Cuando esta percepción va acompañada de manifestaciones emocionales empáticas y existenciales facilitan las relaciones con el/la entrenador/a.
-quest9_d3_c: Esta alta puntuación se corresponde con maneras respetuosas y afectuosas percibidas de transmitir la información. Se encuentran acompañadas de manifestaciones emocionales empáticas y existenciales, con un efecto de reforzamiento positivo.
-quest9_d4_a: Esta baja puntuación observada en relación a la respuesta del entrenador frente a los errores (RE), supone la existencia de reacciones emocionales positivas y adecuadas del entrenador. Su comportamiento carece de elementos reactivos y se centra en proponer contenidos instruccionales y formativos a l@s deportist@s.
-quest9_d4_b: Esta puntuación media observada en relación a la respuesta del entrenador frente a los errores (RE), es bastante negativa y supone que su comportamiento contiene elementos reactivos y, a veces, también  proporciona instrucciones  de carácter formativo.
-quest9_d4_c: Esta alta puntuación observada en relación a la respuesta del entrenador frente a los errores (RE), es muy negativa y supone un comportamiento visceral de carácter reactivo, lo que hace del todo inútil las instrucciones que pretenda comunicar. El/la deportist@ no se encuentra en disposición de atender a los contenidos formativos de la instrucción proporcionada.
-quest9_d5_a: Esta baja puntuación en este factor supone que el/a entrenador/a no corrige o indica a l@s deportistas las diferentes maneras de “hacerlo bien”, es decir, existe un déficit importante en la cantidad, calidad y adecuación del tipo de información que se pretende transmitir.
-quest9_d5_b: Esta puntuación media de este factor se corresponde con una adecuada forma de transmitir la información. Supone una buena manera de contribuir a la mejora del comportamiento del/a deportist@ de forma cualitativa.
-quest9_d5_c: Esta alta puntuación en este factor se corresponde con una mejor calidad y adecuación del tipo de información que se pretende transmitir. Supone una excelente forma de reforzar y mejorar el comportamiento del/a deportist@ de forma cualitativa.
-quest9_d6_a: La baja puntuación observada en este factor supone que el jugador carece de posibilidades para decidir, estilo directivo, lo que disminuirá su confianza decisional, perjudicando el desarrollo de procesos decisionales autónomos. Sólo se contempla una solución frente a las situaciones de competición, la que propone el/la entrenadora, y con este estilo, se hace muy difícil formar jugadores con alta capacidad resolutiva.
-quest9_d6_b: Esta puntuación media observada en este factor supone que el entrenador, combina los dos estilos decisionales, el directivo y el reflexivo,  lo que genera cierto retraimiento en el/la deportista y un estancamiento del desarrollo de procesos decisionales autónomos. No está bien visto, por parte del/a entrenador@, contemplar diferentes posibilidades de solución frente a una misma situación, sólo “la más adecuada”.
-quest9_d6_c: La alta puntuación observada en este factor hace que se perciba que entrenador refuerza la autonomía decisional del jugador, utilizando un estilo decisional reflexivo, lo que aumentará su confianza decisional, favoreciendo el desarrollo de procesos decisionales autónomos y permitiendo contemplar diferentes posibilidades de solución frente a una misma situación. Esta manera de decidir contribuye a formar jugadores inteligentes, que piensen, y que posean una alta capacidad resolutiva.
-quest9_d7_a: Los valores del clima de maestría (PEM) se sitúan en un nivel por debajo de 2,5. Supone percibir que, para el/la entrenador/a, las mejoras que se producen en l@s deportist@s se encuentran en un segundo plano frente a los resultados, lo que debilita la implicación con el trabajo propuesto y puede provocar un aumento de la ansiedad frente a los errores que se cometan.
-quest9_d7_b: Los valores del clima de maestría (PEM) se sitúan en una zona media, entre 2,5 y 4, lo que supone percibir que, para el/la entrenador/a, también es positivo el compromiso con el trabajo, la persistencia frente a las dificultades y que las equivocaciones pueden ayudar a mejorar a l@s deportist@s.
-quest9_d7_c: Los valores del clima de maestría (PEM) se sitúan por encima del nivel 4, lo que supone percibir que para el/a entrenador/a es importante el compromiso en el entrenamiento, refuerza la persistencia frente a las dificultades y a las equivocaciones y valora, sobre todo, las mejoras que se producen en l@s deportist@s. Es la atmósfera más adecuada para progresar y enfrentarse a retos personales de máximas dificultades, ya que consolida las mejoras que se producen, y minimiza los errores.
-quest9_d8_a: Este bajo valor del clima de rendimiento (PER), situado por debajo de 2,5 supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s se encuentran en un segundo plano frente a la mejora de las habilidades, lo que refuerza la implicación durante el entrenamiento, y puede ayudar a disminuir la ansiedad frente a los errores en el caso de que la hubiera.
-quest9_d8_b: Este valor medio del clima de rendimiento (PER), supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s son importantes, a veces, incluso más que la mejora de sus habilidades. Puede influir positivamente en el compromiso con el esfuerzo, y contribuye a disminuir la ansiedad frente a los errores en el caso de que la hubiera.
-quest9_d8_c: Este alto valor del clima de rendimiento (PER), situado entre 4 y 5, supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s es lo más importante. Esto debilitará la capacidad de l@ deportistas para afrontar situaciones de máximo desafío personal y, además, contribuirá de forma importante en el aumento de la ansiedad frente a los errores en situaciones de alta dificultad.
+# quest9: Cuestionario de Clima de Tecnificación Percibido
+# quest9_header: El grado de satisfacción con...
+# quest9_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
+# # labels 
+# quest9_label_0: Clima de Tecnificación Percibido
+# quest9_label_1: Valores de la percepción de éxito grupal
+# quest9_label_2: Confianza en los jugadores percibida
+# quest9_label_3: Comunicación reactiva
+# quest9_label_4: Comunicación reactiva
+# quest9_label_5: Comunicación instruccional
+# quest9_label_6: Estilo desicional percibido
+# quest9_label_7: Clima de Maestría
+# quest9_label_8: Clima De Rendimiento  
+# quest9_valor_1: 1 (no, en absoluto)
+# quest9_valor_7: 7 (totalmente)
+# quest9_valor_1: 1 (nunca)
+# quest9_valor_2: 2 (pocas veces)
+# quest9_valor_3: 3 (a menudo)
+# quest9_valor_4: 4 (casi siempre)
+# quest9_valor_5: 5 (siempre)
+# quest9_1: Permito que tomen decisiones que no se corresponden con la táctica prevista
+# quest9_2: Pienso que l@s deportistas tienen éxito cuando superan las dificultades
+# quest9_3: Prefiero que el equipo gane a que -Se hagan las cosas bien hechas-
+# quest9_4: Sacrifico la calidad de la técnica de competición por amarrar el resultado
+# quest9_5: Lo primero es ganar la competición y después competir bien
+# quest9_6: Felicito a l@s deportistas cuando hacen las cosas bien, actúan según lo esperado
+# quest9_7: Animo a l@s deportistas en las acciones futuras
+# quest9_8: Doy instrucciones sobre aspectos técnicos, tácticos, estilo, recorrido..etc.
+# quest9_9: Pienso que l@s deportistas tienen éxito cuando lo hacen mejor que los demás
+# quest9_10: Permito solucionar situaciones de competición de forma diferente a mis directrices
+# quest9_11: Animo a l@s deportistas cuando cometen un fallo
+# quest9_12: Pienso que l@s deportistas tienen éxito cuando son claramente superiores a los demás
+# quest9_13: Me enfado cuando l@s deportistas actúan de forma no deseada
+# quest9_14: Me enfado cuando tengo que corregir a l@s deportistas después de un error
+# quest9_15: Los errores ayudan a l@s deportistas a darse cuenta de sus déficits y a mejorar.
+# quest9_16: Procuro que el tiempo de competición de cada deportistas en la temporada sea semejante
+# quest9_17: Procuro que l@s deportistas participen en el mismo nº de competiciones en la temporada
+# quest9_18: Pienso que l@s deportistas tienen éxito cuando lo hacen todo lo mejor que saben hacerlo
+# quest9_19: Tengo la máxima confianza en todos l@s deportistas cuando disputan una competición
+# quest9_20: Cuando l@s deportistas cometen errores sigo manteniendo la confianza en ell@s
+# # dimensions
+# quest9_d1_a: Los valores de la percepción de éxito grupal (PEG) se sitúan por debajo de 2,5.Esto es positivo y supone la existencia de una focalización atencional del/a entrenador/a centrada en la mejora de l@s deportist@s, tanto en el entrenamiento como durante la competición.                    
+# quest9_d1_b: Los valores de la percepción de éxito grupal (PEG) se sitúan en una zona media, lo cual es muy positivo y supone la existencia de un equilibrio entre la percepción de éxito del/a entrenador/a asociada al resultado, clima de rendimiento grupal, con el clima de maestría grupal, focalizado en la mejora de l@s deportist@s.
+# quest9_d1_c: Los valores de la percepción de éxito grupal (PEG) se sitúan en valores altos, lo que provoca una desigualdad entre la percepción de éxito asociada al resultado, clima de rendimiento grupal, con el clima de maestría grupal, centrado en la mejora de l@s deportist@s. Esto supone un alejamiento de los valores que se manejan con respecto a un modelo de formación óptimo para l@s deportistas.
+# quest9_d2_a: Esta baja puntuación observada en el grado de confianza (CO), supone la existencia de dudas en el/la entrenador@ acerca de la capacidad de sus jugadores. Es decir, una baja convicción de que cada uno de ellos hará un buen trabajo. Si estos valores coinciden con los del/la entrenador@, será importante desarrollar una miniestrategia específica para conseguir aumentar este nivel, bien consultando al tutor o bien a través de sesiones de visionado con contenidos de Autoeficacia.
+# quest9_d2_b: Esta puntuación media observada en el grado de confianza (CO), supondrá que el/la entrenador/@ tiene positivas creencias acerca de que cada uno de sus jugadores será capaz de utilizar sus recursos eficientemente, es decir, de que cada uno de ellos lo hará bien, en la medida de sus posibilidades. Sería importante mantener o aumentar este nivel observado, considerando que la confianza hay que valorarla en términos autoreferentes, es decir, cada jugador consigo mismo.
+# quest9_d2_c: Esta alta puntuación observada en el grado de confianza (CO), supondrá que el entrenador tiene alta creencia en que cada uno de sus jugadores será capaz de utilizar sus recursos eficientemente, es decir, alta convicción de que cada uno de ellos lo hará bien, en la medida de sus posibilidades. Es importante señalar que la confianza hay que valorarla en términos autoreferentes, es decir, cada jugador consigo mismo.
+# quest9_d3_a: Esta baja puntuación indica la existencia de un déficit percibido en la manera de transmitir la información. La característica fundamental es la ausencia de manifestaciones emocionales empáticas y existenciales y la presencia de las vitales negativas que, a veces, se perciben como irrespetuosas y ofensivas. Enturbian las relaciones entrenador/a-deportista.
+# quest9_d3_b: Esta puntuación media se encuentra asociada a comportamientos correctos percibidos, a la hora de transmitir la información. Cuando esta percepción va acompañada de manifestaciones emocionales empáticas y existenciales facilitan las relaciones con el/la entrenador/a.
+# quest9_d3_c: Esta alta puntuación se corresponde con maneras respetuosas y afectuosas percibidas de transmitir la información. Se encuentran acompañadas de manifestaciones emocionales empáticas y existenciales, con un efecto de reforzamiento positivo.
+# quest9_d4_a: Esta baja puntuación observada en relación a la respuesta del entrenador frente a los errores (RE), supone la existencia de reacciones emocionales positivas y adecuadas del entrenador. Su comportamiento carece de elementos reactivos y se centra en proponer contenidos instruccionales y formativos a l@s deportist@s.
+# quest9_d4_b: Esta puntuación media observada en relación a la respuesta del entrenador frente a los errores (RE), es bastante negativa y supone que su comportamiento contiene elementos reactivos y, a veces, también  proporciona instrucciones  de carácter formativo.
+# quest9_d4_c: Esta alta puntuación observada en relación a la respuesta del entrenador frente a los errores (RE), es muy negativa y supone un comportamiento visceral de carácter reactivo, lo que hace del todo inútil las instrucciones que pretenda comunicar. El/la deportist@ no se encuentra en disposición de atender a los contenidos formativos de la instrucción proporcionada.
+# quest9_d5_a: Esta baja puntuación en este factor supone que el/a entrenador/a no corrige o indica a l@s deportistas las diferentes maneras de “hacerlo bien”, es decir, existe un déficit importante en la cantidad, calidad y adecuación del tipo de información que se pretende transmitir.
+# quest9_d5_b: Esta puntuación media de este factor se corresponde con una adecuada forma de transmitir la información. Supone una buena manera de contribuir a la mejora del comportamiento del/a deportist@ de forma cualitativa.
+# quest9_d5_c: Esta alta puntuación en este factor se corresponde con una mejor calidad y adecuación del tipo de información que se pretende transmitir. Supone una excelente forma de reforzar y mejorar el comportamiento del/a deportist@ de forma cualitativa.
+# quest9_d6_a: La baja puntuación observada en este factor supone que el jugador carece de posibilidades para decidir, estilo directivo, lo que disminuirá su confianza decisional, perjudicando el desarrollo de procesos decisionales autónomos. Sólo se contempla una solución frente a las situaciones de competición, la que propone el/la entrenadora, y con este estilo, se hace muy difícil formar jugadores con alta capacidad resolutiva.
+# quest9_d6_b: Esta puntuación media observada en este factor supone que el entrenador, combina los dos estilos decisionales, el directivo y el reflexivo,  lo que genera cierto retraimiento en el/la deportista y un estancamiento del desarrollo de procesos decisionales autónomos. No está bien visto, por parte del/a entrenador@, contemplar diferentes posibilidades de solución frente a una misma situación, sólo “la más adecuada”.
+# quest9_d6_c: La alta puntuación observada en este factor hace que se perciba que entrenador refuerza la autonomía decisional del jugador, utilizando un estilo decisional reflexivo, lo que aumentará su confianza decisional, favoreciendo el desarrollo de procesos decisionales autónomos y permitiendo contemplar diferentes posibilidades de solución frente a una misma situación. Esta manera de decidir contribuye a formar jugadores inteligentes, que piensen, y que posean una alta capacidad resolutiva.
+# quest9_d7_a: Los valores del clima de maestría (PEM) se sitúan en un nivel por debajo de 2,5. Supone percibir que, para el/la entrenador/a, las mejoras que se producen en l@s deportist@s se encuentran en un segundo plano frente a los resultados, lo que debilita la implicación con el trabajo propuesto y puede provocar un aumento de la ansiedad frente a los errores que se cometan.
+# quest9_d7_b: Los valores del clima de maestría (PEM) se sitúan en una zona media, entre 2,5 y 4, lo que supone percibir que, para el/la entrenador/a, también es positivo el compromiso con el trabajo, la persistencia frente a las dificultades y que las equivocaciones pueden ayudar a mejorar a l@s deportist@s.
+# quest9_d7_c: Los valores del clima de maestría (PEM) se sitúan por encima del nivel 4, lo que supone percibir que para el/a entrenador/a es importante el compromiso en el entrenamiento, refuerza la persistencia frente a las dificultades y a las equivocaciones y valora, sobre todo, las mejoras que se producen en l@s deportist@s. Es la atmósfera más adecuada para progresar y enfrentarse a retos personales de máximas dificultades, ya que consolida las mejoras que se producen, y minimiza los errores.
+# quest9_d8_a: Este bajo valor del clima de rendimiento (PER), situado por debajo de 2,5 supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s se encuentran en un segundo plano frente a la mejora de las habilidades, lo que refuerza la implicación durante el entrenamiento, y puede ayudar a disminuir la ansiedad frente a los errores en el caso de que la hubiera.
+# quest9_d8_b: Este valor medio del clima de rendimiento (PER), supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s son importantes, a veces, incluso más que la mejora de sus habilidades. Puede influir positivamente en el compromiso con el esfuerzo, y contribuye a disminuir la ansiedad frente a los errores en el caso de que la hubiera.
+# quest9_d8_c: Este alto valor del clima de rendimiento (PER), situado entre 4 y 5, supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s es lo más importante. Esto debilitará la capacidad de l@ deportistas para afrontar situaciones de máximo desafío personal y, además, contribuirá de forma importante en el aumento de la ansiedad frente a los errores en situaciones de alta dificultad.
 
 text_are_you_sure: ¿ Estás seguro ?
 text_caracters_maximum: %d characters maximum.
