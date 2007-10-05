@@ -47,152 +47,110 @@ class Quest8Controller < ApplicationController
 
     @advice=[]
     if rg < 3
-      @advice[0]=l(:quest8_d1_a)
+      @advice[0]=l(:quest8_d0_a)
     else
       if rg < 5
-        @advice[0]=l(:quest8_d1_b)
+        @advice[0]=l(:quest8_d0_b)
       else
-        @advice[0]=l(:quest8_d1_c)
-      end
-    end
-    if uc < 3
-      @advice[1]=l(:quest8_d2_a)
-    else
-      if uc < 5
-        @advice[1]=l(:quest8_d2_b)
-      else
-        @advice[1]=l(:quest8_d2_c)
-      end
-    end
-    if fe < 3
-      @advice[2]=l(:quest8_d3_a)
-    else
-      if fe < 5
-        @advice[2]=l(:quest8_d3_a)
-      else
-        @advice[2]=l(:quest8_d3_a)
+        @advice[0]=l(:quest8_d0_c)
       end
     end
     if dp < 3
-      @advice[3]=l(:quest8_d4_a)
+       @advice[1]=l(:quest8_d1_a)
+     else
+       if dp < 5
+         @advice[1]=l(:quest8_d1_b)
+       else
+         @advice[1]=l(:quest8_d1_c)
+       end
+     end
+     if fe < 3
+       @advice[2]=l(:quest8_d2_a)
+     else
+       if fe < 5
+         @advice[2]=l(:quest8_d2_a)
+       else
+         @advice[2]=l(:quest8_d2_a)
+       end
+     end
+    if uc < 3
+      @advice[3]=l(:quest8_d3_a)
     else
-      if dp < 5
-        @advice[3]=l(:quest8_d4_b)
+      if uc < 5
+        @advice[3]=l(:quest8_d3_b)
       else
-        @advice[3]=l(:quest8_d4_c)
+        @advice[3]=l(:quest8_d3_c)
       end
     end
-    if ei < 3
-      @advice[4]=l(:quest8_d5_a)
+     if ei < 3
+      @advice[4]=l(:quest8_d4_a)
     else
       if ei < 5
-        @advice[4]=l(:quest8_d5_b)
+        @advice[4]=l(:quest8_d4_b)
       else
-        @advice[4]=l(:quest8_d5_c)
+        @advice[4]=l(:quest8_d4_c)
       end
     end
     if tp < 3
-      @advice[5]=l(:quest8_d6_a)
+      @advice[5]=l(:quest8_d5_a)
     else
       if tp < 5
-        @advice[5]=l(:quest8_d6_b)
+        @advice[5]=l(:quest8_d5_b)
       else
-        @advice[5]=l(:quest8_d6_c)
+        @advice[5]=l(:quest8_d5_c)
       end
     end
     if td < 3
-      @advice[0]=l(:quest8_d7_a)
+      @advice[6]=l(:quest8_d6_a)
     else
       if td < 5
-        @advice[0]=l(:quest8_d7_b)
+        @advice[6]=l(:quest8_d6_b)
       else
-        @advice[0]=l(:quest8_d7_c)
+        @advice[6]=l(:quest8_d6_c)
       end
     end
     if re < 3
-      @advice[6]=l(:quest8_d8_a)
+      @advice[7]=l(:quest8_d7_a)
     else
       if re < 5
-        @advice[6]=l(:quest8_d8_b)
+        @advice[7]=l(:quest8_d7_b)
       else
-        @advice[6]=l(:quest8_d8_c)
+        @advice[7]=l(:quest8_d7_c)
       end
     end
     if it < 3
-      @advice[0]=l(:quest8_d9_a)
+      @advice[8]=l(:quest8_d8_a)
     else
       if it < 5
-        @advice[0]=l(:quest8_d9_b)
+        @advice[8]=l(:quest8_d8_b)
       else
-        @advice[0]=l(:quest8_d9_c)
+        @advice[8]=l(:quest8_d8_c)
       end
     end
     if ct < 3
-      @advice[0]=l(:quest8_d10_a)
+      @advice[9]=l(:quest8_d9_a)
     else
       if ct < 5
-        @advice[0]=l(:quest8_d10_b)
+        @advice[9]=l(:quest8_d9_b)
       else
-        @advice[0]=l(:quest8_d10_c)
+        @advice[9]=l(:quest8_d9_c)
       end
     end
 
-
-
-    rgs=rg.to_s
-    if rgs.length>4
-      rgs=rgs.slice(0,4)
-    end
-    dps=dp.to_s
-    if dps.length>4
-      dps=dps.slice(0,4)
-    end
-    fes=fe.to_s
-    if fes.length>4
-      fes=fes.slice(0,4)
-    end
-    ucs=uc.to_s
-    if ucs.length>4
-      ucs=ucs.slice(0,4)
-    end
-    eis=ei.to_s
-    if eis.length>4
-      eis=eis.slice(0,4)
-    end
-    tps=tp.to_s
-    if tps.length>4
-      tps=tps.slice(0,4)
-    end
-    tds=td.to_s
-    if tds.length>4
-      tds=fes.slice(0,4)
-    end
-    res=re.to_s
-    if res.length>4
-      res=ucs.slice(0,4)
-    end
-    its=it.to_s
-    if its.length>4
-      its=its.slice(0,4)
-    end
-    cts=ct.to_s
-    if cts.length>4
-      cts=cts.slice(0,4)
-    end
     #Generate the chart element
     strXML = "<chart caption='"+l(:quest8_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='7' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
-    strXML = strXML + "<set label='" + l(:quest8_label_1) + "' value='" + rgs + "'/>"
-    strXML = strXML + "<set label='" + l(:quest8_label_8) + "' value='" + dps + "'/>"
-    strXML = strXML + "<set label='" + l(:quest8_label_7) + "' value='" + fes + "'/>"
+    strXML = strXML + "<set label='" + l(:quest8_label_1) + "' value='" + acorta(rg) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest8_label_2) + "' value='" + acorta(dp) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest8_label_3) + "' value='" + acorta(fe) + "'/>"
     strXML = strXML + "<set label='' value=''/>"
-    strXML = strXML + "<set label='" + l(:quest8_label_3) + "' value='" + ucs + "'/>"
-    strXML = strXML + "<set label='" + l(:quest8_label_4) + "' value='" + eis + "'/>"
-    strXML = strXML + "<set label='" + l(:quest8_label_5) + "' value='" + tps + "'/>"
-    strXML = strXML + "<set label='" + l(:quest8_label_6) + "' value='" + tds + "'/>"
+    strXML = strXML + "<set label='" + l(:quest8_label_4) + "' value='" + acorta(uc) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest8_label_5) + "' value='" + acorta(ei) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest8_label_6) + "' value='" + acorta(tp) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest8_label_7) + "' value='" + acorta(td) + "'/>"
     strXML = strXML + "<set label='' value=''/>"
-    strXML = strXML + "<set label='" + l(:quest8_label_11) + "' value='" + res + "'/>"
-    strXML = strXML + "<set label='" + l(:quest8_label_9) + "' value='" + its + "'/>"
-    strXML = strXML + "<set label='" + l(:quest8_label_10) + "' value='" + cts + "'/>"
+    strXML = strXML + "<set label='" + l(:quest8_label_8) + "' value='" + acorta(re) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest8_label_9) + "' value='" + acorta(it) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest8_label_10) + "' value='" + acorta(ct) + "'/>"
     strXML = strXML + "</chart>"
 
     #Create the chart - Pie 3D Chart with data from strXML

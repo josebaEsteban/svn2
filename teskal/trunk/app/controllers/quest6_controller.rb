@@ -52,10 +52,10 @@ class Quest6Controller < ApplicationController
         @advice[0]=l(:quest5_d1_c)
       end
     end
-    if it < 14
+    if rp < 14
       @advice[1]=l(:quest5_d2_a)
     else
-      if it < 20
+      if rp < 20
         @advice[1]=l(:quest5_d2_b)
       else
         @advice[1]=l(:quest5_d2_c)
@@ -65,15 +65,15 @@ class Quest6Controller < ApplicationController
       @advice[2]=l(:quest5_d3_a)
     else
       if ct < 20
-        @advice[2]=l(:quest5_d3_a)
+        @advice[2]=l(:quest5_d3_b)
       else
-        @advice[2]=l(:quest5_d3_a)
+        @advice[2]=l(:quest5_d3_c)
       end
     end
-    if rp < 14
+    if it < 14
       @advice[3]=l(:quest5_d4_a)
     else
-      if rp < 20
+      if it < 20
         @advice[3]=l(:quest5_d4_b)
       else
         @advice[3]=l(:quest5_d4_c)
@@ -103,7 +103,7 @@ class Quest6Controller < ApplicationController
       when y < 15
         @advice[4]=l(:quest5_val_a)
       when y < 30
-        @advice[4]=l(:quest5_val_c)
+        @advice[4]=l(:quest5_val_b)
       else
         @advice[4]=l(:quest5_val_c)
       end
