@@ -745,14 +745,14 @@ quest8_intro: Segidan aurkezten zaizkizun enrtenamenduaren eta lehiaketaren aspe
 quest8_label_0: Satisfacción (Deportes Colectivos)
 quest8_label_10: Contribución tarea
 quest8_label_1: Rendimiento personal
-quest8_label_2: Dedicación personal
 quest8_label_3: Uso de la capacidad
 quest8_label_4: Enseñanza e instrucción
 quest8_label_5: Trato personal
 quest8_label_6: Toma de decisiones
 quest8_label_7: Funcionamiento ético
-quest8_label_8: Rendimiento equipo
+quest8_label_8: Compromiso personal hacia el equipo
 quest8_label_9: Integración tarea
+quest8_label_11: Rendimiento del equipo
 quest8_valor_1: 1 (inolaz ere) 
 quest8_valor_7: 7 (guztiz)
 quest8_10: Lehiaketan zehar jokatzen dudan denbora

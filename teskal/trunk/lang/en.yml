@@ -739,20 +739,20 @@ quest7_d6_a: En cuanto a la satisfacción por el trato que ha recibido del entre
 quest7_d6_b: El nivel de satisfacción relacionado con el trato que ha recibido del entrenador/a asociado a la amabilidad, al reconocimiento, y la estima por el trabajo bien hecho (TP) se sitúa en niveles medios, lo que supone que el nivel de atención recibido habrá normal, como al resto de deportistas.
 quest7_d6_c: El nivel de satisfacción relacionado con el trato que ha recibido del entrenador/a asociado a la amabilidad, al reconocimiento, la estima por el trabajo bien hecho, así como el nivel de atención recibido (TP) se sitúa en niveles altos, lo que supone que percibe una excelente relación con el/la entrenador/a.
 # quest8
-quest8: Questionnaire of Satisfaction (Collective Sports)
-quest8_header: The degree of satisfaction with...
-quest8_intro: Below you have a series of phrases related to different aspects of the training and the competition on which we want to gather your opinion. Please, read them with tranquillity, answer sincerely and check the option with which you agree more or than it describes better your opinion.
+quest8: Cuestionario de Satisfacción (Deportes Colectivos)
+quest8_header: El grado de satisfacción con...
+quest8_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
 quest8_label_0: Satisfacción (Deportes Colectivos)
 quest8_label_10: Contribución tarea
 quest8_label_1: Rendimiento personal
-quest8_label_2: Dedicación personal
 quest8_label_3: Uso de la capacidad
 quest8_label_4: Enseñanza e instrucción
 quest8_label_5: Trato personal
 quest8_label_6: Toma de decisiones
 quest8_label_7: Funcionamiento ético
-quest8_label_8: Rendimiento equipo
+quest8_label_8: Compromiso personal hacia el equipo
 quest8_label_9: Integración tarea
+quest8_label_11: Rendimiento del equipo
 quest8_valor_1: 0 (no, en absoluto)
 quest8_valor_7: 6 (totally)
 quest8_10: La cantidad de tiempo que juego durante la competición
