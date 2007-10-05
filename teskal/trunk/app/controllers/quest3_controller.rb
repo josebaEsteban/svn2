@@ -123,12 +123,12 @@ class Quest3Controller < ApplicationController
       end
     end
     if cp < 13
-      @advice[7]=l(:quest3_d7_a)
+      @advice[7]=l(:quest3_d8_a)
     else
       if cp < 25
-        @advice[7]=l(:quest3_d7_b)
+        @advice[7]=l(:quest3_d8_b)
       else
-        @advice[7]=l(:quest3_d7_c)
+        @advice[7]=l(:quest3_d8_c)
       end
     end
 
