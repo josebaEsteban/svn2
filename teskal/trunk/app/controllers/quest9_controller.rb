@@ -119,7 +119,7 @@ class Quest9Controller < ApplicationController
     strXML=''
     #Generate the chart element
     # labelDisplay='Stagger' staggerLines='2'
-    strXML = "<chart palette='2' caption='"+l(:quest9_label_0)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='0' yAxisMaxValue='6' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' chartLeftMargin='25' chartRightMargin='35'>"
+    strXML = "<chart palette='2' caption='"+l(:quest9_label_0)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='0' yAxisMaxValue='5' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' chartLeftMargin='25' chartRightMargin='35'>"
     strXML = strXML +"<categories>"
     strXML = strXML + "<category label= '"+l(:quest9_label_1)+"'/>"
     strXML = strXML + "<category label= '"+l(:quest9_label_2)+"'/>"
@@ -130,10 +130,10 @@ class Quest9Controller < ApplicationController
     strXML = strXML + "<category label= '"+l(:quest9_label_7)+"'/>"
     strXML = strXML + "<category label= '"+l(:quest9_label_8)+"'/>"
     strXML = strXML +"</categories>"
-    strXML = strXML +"<dataset SeriesName='"+l(:quest3_label_9)+"' lineThickness='3' renderAs='Line' >"
-    strXML = strXML +"<set value='4' /><set value='3' /><set value='3' /><set value='3' /><set value='2' /><set value='4' /><set value='5' /><set value='3' />"
+    strXML = strXML +"<dataset SeriesName='"+l(:quest3_label_9)+"' lineThickness='3' renderAs='Area' >"
+    strXML = strXML +"<set value='2.5' /><set value='5' /><set value='5' /><set value='0' /><set value='5' /><set value='5' /><set value='4' /><set value='0' />"
     strXML = strXML +"</dataset>"
-    strXML = strXML +"<dataset SeriesName='"+l(:quest3_label_10)+"' lineThickness='4' renderAs='Area' >"
+    strXML = strXML +"<dataset SeriesName='"+l(:quest3_label_10)+"' lineThickness='4' renderAs='Line' >"
     strXML = strXML + "<set value='" + acorta(peg) + "'/>"
     strXML = strXML + "<set value='" + acorta(co) + "'/>"
     strXML = strXML + "<set value='" + acorta(ca) + "'/>"
