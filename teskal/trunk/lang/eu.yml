@@ -753,51 +753,51 @@ quest6_d4_c: En el caso de la IT, los valores se sitúan en un alto nivel, lo qu
 # quest8_label_8: Compromiso personal hacia el equipo
 # quest8_label_9: Integración tarea
 # quest8_label_11: Rendimiento del equipo
-# quest8_valor_1: 1 (inolaz ere) 
-# quest8_valor_7: 7 (guztiz)
-# quest8_10: Lehiaketan zehar jokatzen dudan denbora
-# quest8_11: Taldean dudan rolaren eta nire rol gustokoenaren arteko korrespondentzia maila
-# quest8_12: Lehiaketan zehar entrenatzaileak jokalariei buruz egiten duen hautaketa
-# quest8_13: Lehiaketan zehar erabilitako taktikak
-# quest8_14: Lehiaketan zehar entrenatzaileak egiten dituen estrategia hautaketak
-# quest8_15: Lehiaketan zehar entrenatzaileak egokitzeak egiten dituen modua
-# quest8_16: Entrenatzailearen joko planak
-# quest8_17: Entrenatzaileak erabilgarri duen talentua konbinatzen duen modua
-# quest8_18: Nola nire entrenatzaileak aintzat hartzen nauen
-# quest8_19: Nirekin entrenatzaileak erakusten duen gozotasuna
-# quest8_1: Denboraldian zehar nire helburuetan lorturiko maila
-# quest8_20: Entrenatzaileak zenbateraino aintzat hartzen duen nik gauzak ondo egitea
-# quest8_21: Entrenatzailearen nirekiko leialtasuna
-# quest8_22: Entrenatzailea zenbateraino dagoen nire pendiente 
-# quest8_23: Entrenatzaileangandik aurreko denboraldietan jaso dudan prestakuntza
-# quest8_24: Denboraldi honetan zehar jaso dudan prestakuntza
-# quest8_25: Entrenatzaileak nire kokaeraz emandako jarraibide tekniko-taktikoak
-# quest8_26: Nire kideek jarraibideak ematen dizkidaten maila
-# quest8_27: Nire talde kideengandik jasotzen dudan orientazioa
-# quest8_28: Nire kideengandik jasotzen dudan feed-back positiboa 
-# quest8_29: Taldean dudan estatus soziala
-# quest8_2: Aurreko denboralidan nire errendiemnduan izandako hobekuntza
-# quest8_30: Taldearen bizitza sozialean jokatzen dudan rola
-# quest8_31: Nire kideek sozialki onartzen nauten maila
-# quest8_32: Zenbateraino nire taldeko kideak etikoak diren
-# quest8_33: Nire kideek joko garbiari emten dioten zentzua
-# quest8_34: Nire talde kideen kiroltasun maila
-# quest8_35: Hobea izateko taldeak lan egiten duen modua
-# quest8_36: Zenbateraino talde kideek helburu bera daukaten
-# quest8_37: Taldeko helburuak lortzeko taldeko kideek batera lan egiteari eskaintzen dioten dedikazioa
-# quest8_38: Zenbateraino taldeko kideek talde bezala jokatzen duten
-# quest8_39: Zenbateraino ahal dudan onena ematen dudan taldearentzako
-# quest8_3: Orain arteko nire trebetasunen hobekuntza maila
-# quest8_40: Entrenamenduan zehar dudan dedikazio pertsonal maila
-# quest8_41: Lehiaketean zehar dudan gogoa.
-# quest8_42: Taldearekiko dudan konpromiso maila.
-# quest8_4: Denboraldian zehar irabazi eta galdutako lehiaketa kopurua
-# quest8_5: Azken denboraldi honetan zehar taldeak izandako errendimendu globala
-# quest8_6: Orain artean taldeak zenbateraino lortu dituen denboraldi honetarako zituen helburuak
-# quest8_7: Nire trebetasunak erabiltzen dituzteneko maila
-# quest8_8: Nire talentuaren erabilpen maila
-# quest8_9: Nire rola nire potentzialekin bat datorren maila
-# # dimensiones
+quest8_valor_1: 1 (inolaz ere) 
+quest8_valor_7: 7 (guztiz)
+quest8_10: Lehiaketan zehar jokatzen dudan denbora
+quest8_11: Taldean dudan rolaren eta nire rol gustokoenaren arteko korrespondentzia maila
+quest8_12: Lehiaketan zehar entrenatzaileak jokalariei buruz egiten duen hautaketa
+quest8_13: Lehiaketan zehar erabilitako taktikak
+quest8_14: Lehiaketan zehar entrenatzaileak egiten dituen estrategia hautaketak
+quest8_15: Lehiaketan zehar entrenatzaileak egokitzeak egiten dituen modua
+quest8_16: Entrenatzailearen joko planak
+quest8_17: Entrenatzaileak erabilgarri duen talentua konbinatzen duen modua
+quest8_18: Nola nire entrenatzaileak aintzat hartzen nauen
+quest8_19: Nirekin entrenatzaileak erakusten duen gozotasuna
+quest8_1: Denboraldian zehar nire helburuetan lorturiko maila
+quest8_20: Entrenatzaileak zenbateraino aintzat hartzen duen nik gauzak ondo egitea
+quest8_21: Entrenatzailearen nirekiko leialtasuna
+quest8_22: Entrenatzailea zenbateraino dagoen nire pendiente 
+quest8_23: Entrenatzaileangandik aurreko denboraldietan jaso dudan prestakuntza
+quest8_24: Denboraldi honetan zehar jaso dudan prestakuntza
+quest8_25: Entrenatzaileak nire kokaeraz emandako jarraibide tekniko-taktikoak
+quest8_26: Nire kideek jarraibideak ematen dizkidaten maila
+quest8_27: Nire talde kideengandik jasotzen dudan orientazioa
+quest8_28: Nire kideengandik jasotzen dudan feed-back positiboa 
+quest8_29: Taldean dudan estatus soziala
+quest8_2: Aurreko denboralidan nire errendiemnduan izandako hobekuntza
+quest8_30: Taldearen bizitza sozialean jokatzen dudan rola
+quest8_31: Nire kideek sozialki onartzen nauten maila
+quest8_32: Zenbateraino nire taldeko kideak etikoak diren
+quest8_33: Nire kideek joko garbiari emten dioten zentzua
+quest8_34: Nire talde kideen kiroltasun maila
+quest8_35: Hobea izateko taldeak lan egiten duen modua
+quest8_36: Zenbateraino talde kideek helburu bera daukaten
+quest8_37: Taldeko helburuak lortzeko taldeko kideek batera lan egiteari eskaintzen dioten dedikazioa
+quest8_38: Zenbateraino taldeko kideek talde bezala jokatzen duten
+quest8_39: Zenbateraino ahal dudan onena ematen dudan taldearentzako
+quest8_3: Orain arteko nire trebetasunen hobekuntza maila
+quest8_40: Entrenamenduan zehar dudan dedikazio pertsonal maila
+quest8_41: Lehiaketean zehar dudan gogoa.
+quest8_42: Taldearekiko dudan konpromiso maila.
+quest8_4: Denboraldian zehar irabazi eta galdutako lehiaketa kopurua
+quest8_5: Azken denboraldi honetan zehar taldeak izandako errendimendu globala
+quest8_6: Orain artean taldeak zenbateraino lortu dituen denboraldi honetarako zituen helburuak
+quest8_7: Nire trebetasunak erabiltzen dituzteneko maila
+quest8_8: Nire talentuaren erabilpen maila
+quest8_9: Nire rola nire potentzialekin bat datorren maila
+# dimensiones
 # quest8_d10_a: Por otro lado, los valores de la satisfacción relacionada con el nivel de integración grupal del equipo (CT) es bajo. Piensa que los miembros del equipo podrían hacer bastante más para trabajar conjuntamente y alcanzar sus objetivos y, además, siente que el equipo no juega como equipo. 
 # quest8_d10_b: Estos valores de satisfacción relacionados con el nivel de integración grupal del equipo (CT) son medios. A veces cree que los miembros del equipo podrían hacer algo más para trabajar conjuntamente y alcanzar sus objetivos y, además, en ocasiones duda de que el equipo juega como equipo. 
 # quest8_d10_c: Estos altos valores observados en cuanto a la satisfacción relacionada con el nivel de integración grupal del equipo (CT) le hacen pensar que el equipo juega como equipo, y además, considera que sus miembros trabajan conjuntamente y adecuadamente para alcanzar sus objetivos.
