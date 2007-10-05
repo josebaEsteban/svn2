@@ -40,7 +40,7 @@ class Quest6Controller < ApplicationController
     cl = rg + it + ct + rp
     ctt = @answer.answ21
     x = (cl + ctt) / 2
-    y = (cl - ct).abs
+    y = (cl - ctt).abs
 
     @advice=[]
     if rg < 14
