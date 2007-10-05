@@ -849,27 +849,27 @@ quest9_valor_2: 2 (pocas veces)
 quest9_valor_3: 3 (a menudo)
 quest9_valor_4: 4 (casi siempre)
 quest9_valor_5: 5 (siempre)
-# quest9_1: Permito que tomen decisiones que no se corresponden con la táctica prevista
-# quest9_2: Pienso que l@s deportistas tienen éxito cuando superan las dificultades
-# quest9_3: Prefiero que el equipo gane a que 'Se hagan las cosas bien hechas'
-# quest9_4: Sacrifico la calidad de la técnica de competición por amarrar el resultado
-# quest9_5: Lo primero es ganar la competición y después competir bien
-# quest9_6: Felicito a l@s deportistas cuando hacen las cosas bien, actúan según lo esperado
-# quest9_7: Animo a l@s deportistas en las acciones futuras
-# quest9_8: Doy instrucciones sobre aspectos técnicos, tácticos, estilo, recorrido..etc.
-# quest9_9: Pienso que l@s deportistas tienen éxito cuando lo hacen mejor que los demás
-# quest9_10: Permito solucionar situaciones de competición de forma diferente a mis directrices
-# quest9_11: Animo a l@s deportistas cuando cometen un fallo
-# quest9_12: Pienso que l@s deportistas tienen éxito cuando son claramente superiores a los demás
-# quest9_13: Me enfado cuando l@s deportistas actúan de forma no deseada
-# quest9_14: Me enfado cuando tengo que corregir a l@s deportistas después de un error
-# quest9_15: Los errores ayudan a l@s deportistas a darse cuenta de sus déficits y a mejorar.
-# quest9_16: Procuro que el tiempo de competición de cada deportistas en la temporada sea semejante
-# quest9_17: Procuro que l@s deportistas participen en el mismo nº de competiciones en la temporada
-# quest9_18: Pienso que l@s deportistas tienen éxito cuando lo hacen todo lo mejor que saben hacerlo
-# quest9_19: Tengo la máxima confianza en todos l@s deportistas cuando disputan una competición
-# quest9_20: Cuando l@s deportistas cometen errores sigo manteniendo la confianza en ell@s
-# # dimensions
+quest9_1: Permito que tomen decisiones que no se corresponden con la táctica prevista
+quest9_2: Pienso que l@s deportistas tienen éxito cuando superan las dificultades
+quest9_3: Prefiero que el equipo gane a que 'Se hagan las cosas bien hechas'
+quest9_4: Sacrifico la calidad de la técnica de competición por amarrar el resultado
+quest9_5: Lo primero es ganar la competición y después competir bien
+quest9_6: Felicito a l@s deportistas cuando hacen las cosas bien, actúan según lo esperado
+quest9_7: Animo a l@s deportistas en las acciones futuras
+quest9_8: Doy instrucciones sobre aspectos técnicos, tácticos, estilo, recorrido..etc.
+quest9_9: Pienso que l@s deportistas tienen éxito cuando lo hacen mejor que los demás
+quest9_10: Permito solucionar situaciones de competición de forma diferente a mis directrices
+quest9_11: Animo a l@s deportistas cuando cometen un fallo
+quest9_12: Pienso que l@s deportistas tienen éxito cuando son claramente superiores a los demás
+quest9_13: Me enfado cuando l@s deportistas actúan de forma no deseada
+quest9_14: Me enfado cuando tengo que corregir a l@s deportistas después de un error
+quest9_15: Los errores ayudan a l@s deportistas a darse cuenta de sus déficits y a mejorar.
+quest9_16: Procuro que el tiempo de competición de cada deportistas en la temporada sea semejante
+quest9_17: Procuro que l@s deportistas participen en el mismo nº de competiciones en la temporada
+quest9_18: Pienso que l@s deportistas tienen éxito cuando lo hacen todo lo mejor que saben hacerlo
+quest9_19: Tengo la máxima confianza en todos l@s deportistas cuando disputan una competición
+quest9_20: Cuando l@s deportistas cometen errores sigo manteniendo la confianza en ell@s
+# dimensions
 # quest9_d1_a: Los valores de la percepción de éxito grupal (PEG) se sitúan por debajo de 2,5.Esto es positivo y supone la existencia de una focalización atencional del/a entrenador/a centrada en la mejora de l@s deportist@s, tanto en el entrenamiento como durante la competición.                    
 # quest9_d1_b: Los valores de la percepción de éxito grupal (PEG) se sitúan en una zona media, lo cual es muy positivo y supone la existencia de un equilibrio entre la percepción de éxito del/a entrenador/a asociada al resultado, clima de rendimiento grupal, con el clima de maestría grupal, focalizado en la mejora de l@s deportist@s.
 # quest9_d1_c: Los valores de la percepción de éxito grupal (PEG) se sitúan en valores altos, lo que provoca una desigualdad entre la percepción de éxito asociada al resultado, clima de rendimiento grupal, con el clima de maestría grupal, centrado en la mejora de l@s deportist@s. Esto supone un alejamiento de los valores que se manejan con respecto a un modelo de formación óptimo para l@s deportistas.
