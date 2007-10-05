@@ -688,10 +688,10 @@ quest6_d3_c: En el caso de la CT, los valores se sitúan en un alto nivel, lo qu
 quest6_d4_a: En el caso de la IT, los valores se sitúan en un nivel bajo, lo que representa una reducida o mínima complicidad y lealtad con las decisiones tomadas. Tampoco se puede destacar el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. Es aconsejable realizar una sesión conjunta con la orientación del/a tutor/a.
 quest6_d4_b: En el caso de la IT, los valores se sitúan en un nivel medio, lo que representa cierto nivel de complicidad y lealtad con las decisiones tomadas. También manifiesta una buena satisfacción relacionada con el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. 
 quest6_d4_c: En el caso de la IT, los valores se sitúan en un alto nivel, lo que representa una alta complicidad y lealtad con las decisiones tomadas. A destacar la alta satisfacción que manifiesta relacionada con el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. 
-quest7
-quest7: Asetasun galdetegia (banakako kirolak) 
-quest7_header: …-(r)ekiko asetasun maila
-quest7_intro: Segidan aurkezten zaizkizun enrtenamenduaren eta lehiaketaren aspektu ezberdinekin zer ikusia duten esaldi sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotazunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbaki gainean klik eginaz.
+# quest7
+# quest7: Asetasun galdetegia (banakako kirolak) 
+# quest7_header: …-(r)ekiko asetasun maila
+# quest7_intro: Segidan aurkezten zaizkizun enrtenamenduaren eta lehiaketaren aspektu ezberdinekin zer ikusia duten esaldi sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotazunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbaki gainean klik eginaz.
 # quest7_label_0: Satisfacción (Deportes Individuales)
 # quest7_label_1: Rendimiento Personal
 # quest7_label_2: Dedicación Personal
@@ -699,25 +699,25 @@ quest7_intro: Segidan aurkezten zaizkizun enrtenamenduaren eta lehiaketaren aspe
 # quest7_label_4: Uso de la capacidad
 # quest7_label_5: Enseñanza e instrucción
 # quest7_label_6: Trato personal
-quest7_valor_1: 1 (inolaz ere)
-quest7_valor_7: 7 (guztiz) 
-quest7_10:Aurreko denboraldietan jaso dudan prestakuntza
-quest7_11:Denboraldi honetan zehar jaso dudan prestakuntza
-quest7_12:Entrenatzaileak nire zereginari buruz emandako jarraibide tekniko-taktikoak
-quest7_13:Zenbateraino nire taldeko kideak etikoak diren
-quest7_14:Nire kideek joko garbiari emten dioten zentzua
-quest7_15:Nire talde kideen kiroltasun maila
-quest7_16:Zenbateraino ahal dudan onena ematen dudan
-quest7_17:Entrenamenduan zehar dudan dedikazio pertsonal maila
-quest7_18:Lehiaketean zehar dudan gogoa
-quest7_1: Denboraldian zehar nire helburuetan lorturiko maila
-quest7_2: Aurreko denboralidan nire errendiemnduan izandako hobekuntza
-quest7_3: Orain arteko nire trebetasunen hobekuntza maila
-quest7_4: Nire trebetasunak erabiltzen ditudaneko maila
-quest7_5: Nire talentuaren erabilpen maila
-quest7_6: Nire rola nire potentzialekin bat datorren maila
-quest7_7: Nola nire entrenatzaileak aintzat hartzen nauen
-quest7_8: Nirekin entrenatzaileak erakusten duen gozotasuna
+# quest7_valor_1: 1 (inolaz ere)
+# quest7_valor_7: 7 (guztiz) 
+# quest7_10:Aurreko denboraldietan jaso dudan prestakuntza
+# quest7_11:Denboraldi honetan zehar jaso dudan prestakuntza
+# quest7_12:Entrenatzaileak nire zereginari buruz emandako jarraibide tekniko-taktikoak
+# quest7_13:Zenbateraino nire taldeko kideak etikoak diren
+# quest7_14:Nire kideek joko garbiari emten dioten zentzua
+# quest7_15:Nire talde kideen kiroltasun maila
+# quest7_16:Zenbateraino ahal dudan onena ematen dudan
+# quest7_17:Entrenamenduan zehar dudan dedikazio pertsonal maila
+# quest7_18:Lehiaketean zehar dudan gogoa
+# quest7_1: Denboraldian zehar nire helburuetan lorturiko maila
+# quest7_2: Aurreko denboralidan nire errendiemnduan izandako hobekuntza
+# quest7_3: Orain arteko nire trebetasunen hobekuntza maila
+# quest7_4: Nire trebetasunak erabiltzen ditudaneko maila
+# quest7_5: Nire talentuaren erabilpen maila
+# quest7_6: Nire rola nire potentzialekin bat datorren maila
+# quest7_7: Nola nire entrenatzaileak aintzat hartzen nauen
+# quest7_8: Nirekin entrenatzaileak erakusten duen gozotasuna
 # quest7_9: Entrenatzaileak zenbateraino aintzat hartzen duen nik gauzak ondo egitea
 # # dimensiones
 # quest7_d1_a: El bajo nivel de satisfacción relacionado con rendimiento personal (RP), puede estar asociado a la consecución de los objetivos propios de la temporada, o también a la baja percepción de mejora de sus cualidades y de sus posibles puntos débiles.
