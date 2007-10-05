@@ -1,0 +1,145 @@
+<!-- quest9 -->
+<%=javascript_include_tag 'charts.js' %>
+
+<center>
+  <%= @chart1%>
+</center>
+<br/>
+<div align="left">
+ 		<h2><%=l(:quest9)%></h2>
+  <h4><%= @user.login+" - "+@fecha.to_s %></h4> 
+		<br/> 
+  <h3><%= l(:quest9_label_1) %></h3>
+  <h4> <%=@advice[0]%> </h4>
+  <h3><%= l(:quest9_label_2) %></h3>
+  <h4> <%=@advice[1]%> </h4>
+  <h3><%= l(:quest9_label_3) %></h3>
+  <h4> <%=@advice[2]%> </h4>
+  <h3><%= l(:quest9_label_4) %></h3>
+  <h4> <%=@advice[3]%> </h4>
+  <h2><%= l(:quest9_label_0) %></h2>
+  <h4> <%=@advice[4]%> </h4>
+</div>
+<br/>
+<br/>
+
+<div align="center">
+  <div id="values"> <%=l(:quest9_valor_1)%> • <%=l(:quest9_valor_2)%> • <%=l(:quest9_valor_3)%> • <%=l(:quest9_valor_4)%> • <%=l(:quest9_valor_5)%> </div>
+  <br/>
+  <br/>
+  <table cellspacing="0">
+    <!-- <caption><%=l(:quest9)%></caption> -->
+    <thead>
+      <tr>
+        <th>##</th>
+        <th scope="col"></th>
+        <th scope="col"><%=l(:quest2_label_9)%></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><%=l(:quest9_1)%></td>
+        <td><div align="center"><%=@answer.answ1%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>2</td>
+        <td><%=l(:quest9_2)%></td>
+        <td><div align="center"><%=@answer.answ2%></div></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><%=l(:quest9_3)%></td>
+        <td><div align="center"><%=@answer.answ3%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>4</td>
+        <td><%=l(:quest9_4)%></td>
+        <td><div align="center"><%=@answer.answ4%></div></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><%=l(:quest9_5)%></td>
+        <td><div align="center"><%=@answer.answ5%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>6</td>
+        <td><%=l(:quest9_6)%></td>
+        <td><div align="center"><%=@answer.answ1%></div></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td><%=l(:quest9_7)%></td>
+        <td><div align="center"><%=@answer.answ2%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>8</td>
+        <td><%=l(:quest9_8)%></td>
+        <td><div align="center"><%=@answer.answ3%></div></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td><%=l(:quest9_9)%></td>
+        <td><div align="center"><%=@answer.answ4%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>10</td>
+        <td><%=l(:quest9_10)%></td>
+        <td><div align="center"><%=@answer.answ5%></div></td>
+      </tr>
+      <tr
+        <td>11</td>
+        <td><%=l(:quest9_11)%></td>
+        <td><div align="center"><%=@answer.answ1%></div></td>
+      </tr>
+      <tr class="odd" class="odd">
+        <td>12</td>
+        <td><%=l(:quest9_12)%></td>
+        <td><div align="center"><%=@answer.answ2%></div></td>
+      </tr>
+      <tr
+        <td>13</td>
+        <td><%=l(:quest9_13)%></td>
+        <td><div align="center"><%=@answer.answ3%></div></td>
+      </tr>
+      <tr class="odd" class="odd">
+        <td>14</td>
+        <td><%=l(:quest9_14)%></td>
+        <td><div align="center"><%=@answer.answ4%></div></td>
+      </tr>
+      <tr
+        <td>15</td>
+        <td><%=l(:quest9_15)%></td>
+        <td><div align="center"><%=@answer.answ5%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>16</td>
+        <td><%=l(:quest9_16)%></td>
+        <td><div align="center"><%=@answer.answ1%></div></td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td><%=l(:quest9_17)%></td>
+        <td><div align="center"><%=@answer.answ2%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>18</td>
+        <td><%=l(:quest9_18)%></td>
+        <td><div align="center"><%=@answer.answ3%></div></td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td><%=l(:quest9_19)%></td>
+        <td><div align="center"><%=@answer.answ4%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>20</td>
+        <td><%=l(:quest9_20)%></td>
+        <td><div align="center"><%=@answer.answ5%></div></td>
+      </tr>
+    </tbody>
+  </table>
+  <br/>
+  <br/>
+</div>
+<%= link_to l(:button_back),'/my/page' %>
