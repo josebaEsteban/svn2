@@ -828,6 +828,46 @@ quest8_d8_c: Su nivel de satisfacción con el rendimiento del equipo es alto (RE
 quest8_d9_a: Por otro lado, los valores de la satisfacción en relación a la percepción que tiene de la acciones de apoyo del grupo para su mejor contribución al mismo, y de las orientaciones recibidas durante el juego por sus compañer@s (IT) son bajos. En ocasiones esto se produce porque no existe una buena comunicación entre l@s componentes del equipo. 
 quest8_d9_b: Por otro lado, los valores de la satisfacción en relación a la percepción que tiene de la acciones de apoyo del grupo para su mejor contribución al mismo, y de las orientaciones recibidas durante el juego por sus compañer@s (IT) se encuentran en un nivel medio. Quizás le gustaría mejorar su grado de comunicación con l@s demás componentes del equipo.
 quest8_d9_c: También podemos observar que los valores de la satisfacción en relación a la percepción que tiene de la acciones de apoyo del grupo para su mejor contribución al mismo, y de las orientaciones recibidas durante el juego por sus compañer@s (IT) se encuentran en un nivel alto, lo cual es muy positivo para mantener un buen grado de comunicación entre l@s demás componentes del equipo.
+# quest9
+quest9: Cuestionario de Clima de Tecnificación Percibido
+quest9_header: El grado de satisfacción con...
+quest9_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
+# labels 
+quest9_label_0: Clima de Tecnificación Percibido
+quest9_label_1: Los valores de la percepción de éxito grupal
+quest9_label_3: La confianza en los jugadores percibida
+quest9_label_4: Comunicación reactiva
+quest9_label_5: Comunicación instruccional
+quest9_label_6: Estilo desicional percibido
+quest9_label_7: Clima de Maestría
+quest9_label_8: Clima De Rendimiento  
+quest9_valor_1: 1 (no, en absoluto)
+quest9_valor_7: 7 (totalmente)
+quest9_valor_1: 1 (nunca)
+quest9_valor_2: 2 (pocas veces)
+quest9_valor_3: 3 (a menudo)
+quest9_valor_4: 4 (casi siempre)
+quest9_valor_5: 5 (siempre)
+quest9_1: Permito que tomen decisiones que no se corresponden con la táctica prevista
+quest9_2: Pienso que l@s deportistas tienen éxito cuando superan las dificultades
+quest9_3: Prefiero que el equipo gane a que “Se hagan las cosas bien hechas”
+quest9_4: Sacrifico la calidad de la técnica de competición por amarrar el resultado
+quest9_5: Lo primero es ganar la competición y después competir bien
+quest9_6: Felicito a l@s deportistas cuando hacen las cosas bien, actúan según lo esperado
+quest9_7: Animo a l@s deportistas en las acciones futuras
+quest9_8: Doy instrucciones sobre aspectos técnicos, tácticos, estilo, recorrido..etc.
+quest9_9: Pienso que l@s deportistas tienen éxito cuando lo hacen mejor que los demás
+quest9_10: Permito solucionar situaciones de competición de forma diferente a mis directrices
+quest9_11: Animo a l@s deportistas cuando cometen un fallo
+quest9_12: Pienso que l@s deportistas tienen éxito cuando son claramente superiores a los demás
+quest9_13: Me enfado cuando l@s deportistas actúan de forma no deseada
+quest9_14: Me enfado cuando tengo que corregir a l@s deportistas después de un error
+quest9_15: Los errores ayudan a l@s deportistas a darse cuenta de sus déficits y a mejorar.
+quest9_16: Procuro que el tiempo de competición de cada deportistas en la temporada sea semejante
+quest9_17: Procuro que l@s deportistas participen en el mismo nº de competiciones en la temporada
+quest9_18: Pienso que l@s deportistas tienen éxito cuando lo hacen todo lo mejor que saben hacerlo
+quest9_19: Tengo la máxima confianza en todos l@s deportistas cuando disputan una competición
+quest9_20: Cuando l@s deportistas cometen errores sigo manteniendo la confianzaen ell@s
 
 text_are_you_sure: ¿ Estás seguro ?
 text_caracters_maximum: %d characters maximum.
