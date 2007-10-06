@@ -225,6 +225,12 @@ Validation.add('IsEmpty', '', function(v) {
 				return ((v == null) || (v.length == 0)); // || /^\s+$/.test(v));
 			});
 
+			Validation.add('validate-select', 'This is a required field.', function(v) {
+			return ((v != "none") && (v != null) && (v.length != 0));
+			});
+
+
+
 Validation.addAllThese([
 	['required', 'Este campo es obligatorio', function(v) {
 				return !Validation.get('IsEmpty').test(v);
