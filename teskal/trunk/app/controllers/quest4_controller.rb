@@ -24,7 +24,7 @@ class Quest4Controller < ApplicationController
   def show
     @answer = Answer.find(params[:id])
     @fecha = l_datetime(@answer.created_on)
-
+    require_coach(@answer.user_id)
     @user=User.find(@answer.user_id )
     teskalChart4
   end

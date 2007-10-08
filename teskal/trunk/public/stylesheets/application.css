@@ -133,9 +133,7 @@ height: 11px;
 #navigation li {
 	float: left;
 	list-style-type: none;
-<!--
-border-right:1px solid #ccc;
--->
+	/*border-right:1px solid #ccc;*/
 white-space:nowrap;
 }
 #navigation li.right {

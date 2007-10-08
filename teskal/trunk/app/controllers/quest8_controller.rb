@@ -25,9 +25,12 @@ class Quest8Controller < ApplicationController
   def show
     @answer = Answer.find(params[:id])
     @fecha = l_datetime(@answer.created_on)
-
+    require_coach(@answer.user_id)
     @user=User.find(@answer.user_id )
+    require_coach(@answer.user_id)
     teskalChart8
+  else
+
   end
 
 
@@ -56,23 +59,23 @@ class Quest8Controller < ApplicationController
       end
     end
     if dp < 3
-       @advice[1]=l(:quest8_d1_a)
-     else
-       if dp < 5
-         @advice[1]=l(:quest8_d1_b)
-       else
-         @advice[1]=l(:quest8_d1_c)
-       end
-     end
-     if fe < 3
-       @advice[2]=l(:quest8_d2_a)
-     else
-       if fe < 5
-         @advice[2]=l(:quest8_d2_a)
-       else
-         @advice[2]=l(:quest8_d2_a)
-       end
-     end
+      @advice[1]=l(:quest8_d1_a)
+    else
+      if dp < 5
+        @advice[1]=l(:quest8_d1_b)
+      else
+        @advice[1]=l(:quest8_d1_c)
+      end
+    end
+    if fe < 3
+      @advice[2]=l(:quest8_d2_a)
+    else
+      if fe < 5
+        @advice[2]=l(:quest8_d2_a)
+      else
+        @advice[2]=l(:quest8_d2_a)
+      end
+    end
     if uc < 3
       @advice[3]=l(:quest8_d3_a)
     else
@@ -82,7 +85,7 @@ class Quest8Controller < ApplicationController
         @advice[3]=l(:quest8_d3_c)
       end
     end
-     if ei < 3
+    if ei < 3
       @advice[4]=l(:quest8_d4_a)
     else
       if ei < 5

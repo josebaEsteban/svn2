@@ -31,7 +31,7 @@ class Quest2Controller < ApplicationController
     @answer = Answer.find(params[:id])
     # @answer = Answer.find(session[:use)
     @fecha = l_datetime(@answer.created_on)
-
+    require_coach(@answer.user_id)
     @user=User.find(@answer.user_id )
     teskalChart2
   end

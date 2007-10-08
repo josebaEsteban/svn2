@@ -1,29 +1,23 @@
-<script src="/javascripts/prototype.js?1187755996" type="text/javascript"></script>   
 <h2><%=l(:label_my_account)%></h2>
+
 <p><%=l(:field_login)%>: <strong><%= @user.login %></strong><br />
   <%=l(:field_created_on)%>: <%= format_time(@user.created_on) %></p>
 <%=error_messages_for 'user' %> 
+
 <center>
   <div class="box">
     <h3><%=l(:label_information_plural)%></h3>
     <% labelled_tabular_form_for :user, @user, :url => { :action => "account" } do |f| %>
-    <!--  
-<p><%= f.text_field :firstname, :required => true %></p>
-<p><%= f.text_field :lastname, :required => true %></p>
--->
+    <p><%= f.text_field :firstname, :required => false %></p>
+    <p><%= f.text_field :lastname, :required => false %></p>
     <p><%= f.text_field :mail, :required => true, :size => 40 %></p>
     <p><%= f.select :language, lang_options_for_select %></p>
-    <!--
-<p><%= f.check_box :mail_notification %></p>  
-<% fields_for :pref, @user.pref, :builder => TabularFormBuilder, :lang => current_language do |pref_fields| %>
-<p><%= pref_fields.check_box :hide_mail %></p>
-<% end %>
- -->
     <center>
       <%= submit_tag l(:button_save) %>
     </center>
     <% end %>
-  </div>
+  </div> 
+
   <% unless @user.auth_source_id %>
   <div class="box">
     <h3><%=l(:field_password)%></h3>

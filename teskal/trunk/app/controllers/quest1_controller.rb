@@ -32,7 +32,7 @@ class Quest1Controller < ApplicationController
   def show
     @answer = Answer.find(params[:id])
     @fecha = l_datetime(@answer.created_on)
-
+    require_coach(@answer.user_id)
     @user=User.find(@answer.user_id )
     teskalChart1
   end
@@ -237,7 +237,7 @@ class Quest1Controller < ApplicationController
     strXML = strXML + "<set value='" + asTransformada.to_s + "'/>"
     strXML = strXML + "</dataset> </chart>"
 
-    #Create the chart - Pie 3D Chart with data from strXML
+    #Create the chart 
     @chart1= renderChart("/charts/MSCombi2D.swf", "", strXML, "quest3", 770, 300, false, false)
 
     strXML=''
