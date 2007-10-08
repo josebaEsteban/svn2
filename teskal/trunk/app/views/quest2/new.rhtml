@@ -1,27 +1,17 @@
 <!-- quest2 -->
 <% content_for :header_tags do -%>
-<%= javascript_include_tag :defaults -%>
+<%= javascript_include_tag 'prototype' -%>
 <%= calendar_date_select_includes "plain" -%>
 <%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language -%>
-<%= javascript_include_tag 'validation/validation' -%> 
 <%- case @logged_in_user.language -%>
-<%- when "es" -%>
-<%= javascript_include_tag 'validation/locale/es' -%> 
-<%- when "eu" -%>
-<%= javascript_include_tag 'validation/locale/eu' -%>
+<%- when "es": -%>
+<%= javascript_include_tag 'validation/validation_es' -%> 
+<%- when "eu": -%>
+<%= javascript_include_tag 'validation/validation_eu' -%> 
 <%- else -%>
- 
+<%= javascript_include_tag 'validation/validation' -%>  
 <%- end -%>
 <%- end -%>
-<SCRIPT type="text/javascript" language="JavaScript">
-<!--
-_transl = {
-   "required": "Este campo es obligatorio",
-   "selection": "Por favor haga una selección",
-   "options": "Por favor seleccione un ítem"
- }
-//-->
-</SCRIPT>
 
 <h2><%=l(:quest2)%></h2>
 <center>

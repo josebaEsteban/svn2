@@ -1,13 +1,15 @@
 <!-- quest1 -->
 <% content_for :header_tags do -%>
-<%= javascript_include_tag :defaults -%>
+<%= javascript_include_tag 'prototype' -%>
 <%= calendar_date_select_includes "plain" -%>
 <%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language -%>
 <%- case @logged_in_user.language -%>
-<%- when "es:" -%>
+<%- when "es": -%>
 <%= javascript_include_tag 'validation/validation_es' -%> 
+<%- when "eu": -%>
+<%= javascript_include_tag 'validation/validation_eu' -%> 
 <%- else -%>
-<%= javascript_include_tag 'validation/validation_es' -%>  
+<%= javascript_include_tag 'validation/validation' -%>  
 <%- end -%>
 <%- end -%>
 
