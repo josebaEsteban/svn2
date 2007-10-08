@@ -238,7 +238,7 @@ class Quest1Controller < ApplicationController
     strXML = strXML + "</dataset> </chart>"
 
     #Create the chart 
-    @chart1= renderChart("/charts/MSCombi2D.swf", "", strXML, "quest3", 770, 300, false, false)
+    @chart1= renderChart("/charts/MSCombi2D.swf?PBarLoadingText"+"Cargando datos. Espere por favor", "", strXML, "quest3", 770, 300, false, false)
 
     strXML=''
     strXML ="<chart palette='2' caption='"+l(:quest1)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+" 'showvalues='0'  formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='100'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' >"
