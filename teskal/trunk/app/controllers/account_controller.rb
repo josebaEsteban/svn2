@@ -36,7 +36,7 @@ class AccountController < ApplicationController
         # generate a key and set cookie if autologin
         if params[:autologin] && Setting.autologin?
           token = Token.create(:user => user, :action => 'autologin')
-          cookies[:autologin] = { :value => token.value, :expires => 1.year.from_now }
+          cookies[:autologin] = { :value => token.value, :expires => 1.day.from_now }
         end
         redirect_back_or_default :controller => 'my', :action => 'page'
       else
@@ -115,6 +115,7 @@ class AccountController < ApplicationController
         token = Token.new(:user => @user, :action => "signup")
         if @user.save and token.save
           Mailer.deliver_register(token)
+          set_language_if_valid(@user.language)
           flash[:notice] = l(:notice_account_register_done)
           # redirect_to :controller => 'welcome' and return 
                     redirect_to :controller => 'account', :action => 'login' 
