@@ -1,4 +1,3 @@
-# Teskal
 # Copyright (C)2007  Teskal
 
 
@@ -10,11 +9,6 @@ class WelcomeController < ApplicationController
     @answers = Answer.find_by_user_id(session[:user_id])
     puts session[:user_id]
     puts  @answers
-  end
-
-  def en
-    set_language_if_valid ('es')
-    redirect_to :controller  => 'quest2', :action => 'show', :id => 22
   end
 
   def list
