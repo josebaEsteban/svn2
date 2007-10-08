@@ -83,7 +83,7 @@ field_is_required: Obligatorio
 field_language: Idioma
 field_lastname: Apellido
 field_last_login_on: Última conexión
-field_login: Identificador
+field_login: Usuario
 field_mail: Email
 field_mail_notification: Notificación por mail
 field_max_length: Longitud máxima
@@ -243,14 +243,14 @@ notice_account_activated: Tu cuenta ha sido activada. Puedes entrar.
 notice_account_invalid_creditentials: Usuario o contraseña no válido.
 notice_account_lost_email_sent: Se le ha enviado un correo con instrucciones para crear una contraseña.
 notice_account_password_updated: Contraseña actualizada.
-notice_account_register_done: Cuenta creada.
+notice_account_register_done: Cuenta creada. Se le ha enviado un correo con instrucciones para activarla.
 notice_account_unknown_email: Usuario desconocido.
 notice_account_updated: La cuenta se ha modificado.
 notice_account_wrong_password: Contraseña errónea.
 notice_can_t_change_password: Esta cuenta usa una autentificación externa. No se puede cambiar la contraseña.
 notice_file_not_found: La página que intentabas tener acceso no existe ni se ha quitado.
 notice_locking_conflict: Data have been updated by another user.
-notice_not_authorized: No está autorizado a acceder a esta página
+notice_not_authorized: No está autorizado a acceder a esta página.
 notice_scm_error: La entrada y/o la revisión no existe en el depósito.
 notice_successful_connection: Successful connection.
 notice_successful_create: Successful creation.
@@ -486,7 +486,7 @@ quest2_val_4: En general el grado de tolerancia se encuentra en niveles bajísim
 quest3: Perfil de Estado de Forma del Entrenamiento
 quest3_header1: Ahora mismo me siento...
 quest3_header2: En el entrenamiento...
-quest3_header3: En este momento...
+quest3_header3: En este momento, indica el porcentaje de...
 quest3_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente, y una serie de comentarios y frases relacionadas con situaciones de entrenamiento. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento, o que mejor describa tu comportamiento durante las sesiones de entrenamiento.
 quest3_valor_0: 0 (nada) 
 quest3_valor_1: 1 (un poco)
@@ -743,7 +743,6 @@ quest8: Cuestionario de Satisfacción (Deportes Colectivos)
 quest8_header: El grado de satisfacción con...
 quest8_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
 quest8_label_0: Satisfacción (Deportes Colectivos)
-quest8_label_10: Contribución tarea
 quest8_label_1: Rendimiento personal
 quest8_label_2: Compromiso personal hacia el equipo
 quest8_label_3: Funcionamiento ético

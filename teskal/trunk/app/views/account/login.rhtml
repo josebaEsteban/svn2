@@ -16,7 +16,6 @@
 
 <p><input type="submit" name="login" value="<%=l(:button_login)%> &#187;" class="primary" /></p>
 <% end %>
-<%= javascript_tag "Form.Element.focus('login');" %>
 
 <% links = []
    links << link_to(l(:label_register), :action => 'signup') if Setting.self_registration?
