@@ -1,5 +1,4 @@
-# teskal
-# Copyright (C) 2007
+# teskal  Copyright (C) 2007
 
 
 class AccountController < ApplicationController
@@ -92,12 +91,13 @@ class AccountController < ApplicationController
   def signup
     redirect_to :controller => 'welcome' and return unless Setting.self_registration?
     if params[:token]
-      token = Token.find_by_action_and_value("signup", params[:token])
+      token = Token.find_by_action_and_value("signup", params[:token])  
       redirect_to :controller => 'welcome' and return unless token and !token.expired?
       user = token.user
       redirect_to :controller => 'welcome' and return unless user.status == User::STATUS_REGISTERED
       user.status = User::STATUS_ACTIVE
-      if user.save
+      if user.save  
+        puts user.status
         token.destroy
         flash[:notice] = l(:notice_account_activated)
         redirect_to :action => 'login'
@@ -114,7 +114,7 @@ class AccountController < ApplicationController
         @user.password, @user.password_confirmation = params[:password], params[:password_confirmation]
         token = Token.new(:user => @user, :action => "signup")
         if @user.save and token.save
-          Mailer.deliver_register(token)
+          Mailer.deliver_signup(token)
           set_language_if_valid(@user.language)
           flash[:notice] = l(:notice_account_register_done)
           # redirect_to :controller => 'welcome' and return 
