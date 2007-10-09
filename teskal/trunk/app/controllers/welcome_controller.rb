@@ -7,8 +7,6 @@ class WelcomeController < ApplicationController
   def index
     # @projects = Project.laquest logged_in_user
     @answers = Answer.find_by_user_id(session[:user_id])
-    puts session[:user_id]
-    puts  @answers
   end
 
   def list

@@ -23,7 +23,7 @@ class AccountController < ApplicationController
   end
 
   # Login request and validation
-  def login
+  def login 
     if request.get?
       # Logout user
       self.logged_in_user = nil
@@ -97,7 +97,6 @@ class AccountController < ApplicationController
       redirect_to :controller => 'welcome' and return unless user.status == User::STATUS_REGISTERED
       user.status = User::STATUS_ACTIVE
       if user.save  
-        puts user.status
         token.destroy
         flash[:notice] = l(:notice_account_activated)
         redirect_to :action => 'login'
@@ -113,6 +112,7 @@ class AccountController < ApplicationController
         @user.status = User::STATUS_REGISTERED
         @user.password, @user.password_confirmation = params[:password], params[:password_confirmation]
         token = Token.new(:user => @user, :action => "signup")
+        @user.ip = request.remote_ip 
         if @user.save and token.save
           Mailer.deliver_signup(token)
           set_language_if_valid(@user.language)

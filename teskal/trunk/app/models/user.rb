@@ -50,7 +50,6 @@ class User < ActiveRecord::Base
 
   # Returns the user that matches provided login and password, or nil
   def self.try_to_login(login, password) 
-    puts login
     user = find(:first, :conditions => ["login=?", login])
     if user
       # user is already in local database

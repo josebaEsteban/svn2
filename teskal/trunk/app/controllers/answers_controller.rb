@@ -8,7 +8,6 @@ class AnswersController < ApplicationController
   def index
     @answer = Answer.find_by_user_id(session[:user_id])
     # @answers = Answer.find(58)
-    puts @answer
   end
 
   # GET /answers/1

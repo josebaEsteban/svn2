@@ -10,6 +10,7 @@ class Quest6Controller < ApplicationController
     @answer = Answer.new(params[:answer])
     @answer.quest_id=6
     @answer.user_id=session[:user_id]
+    @answer.ip = request.remote_ip
     if @answer.save
       # flash[:notice] = 'Answer was successfully created.'
       redirect_to :action => 'show', :id => @answer.id
