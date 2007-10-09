@@ -83,13 +83,13 @@ class Mailer < ActionMailer::Base
     @body['token']  = token
   end  
 
-  def register(token)
-    set_language_if_valid(token.user.language)
-    @recipients     = token.user.mail
-    @from           = Setting.mail_from
-    @subject        = l(:mail_subject_register)
-    @body['token']  = token
-  end
+  # def register(token)
+  #   set_language_if_valid(token.user.language)
+  #   @recipients     = token.user.mail
+  #   @from           = Setting.mail_from
+  #   @subject        = l(:mail_subject_register)
+  #   @body['token']  = token
+  # end
   def signup(token)
     set_language_if_valid(token.user.language)
     @recipients     = token.user.mail
