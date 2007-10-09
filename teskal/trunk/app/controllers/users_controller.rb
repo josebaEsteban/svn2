@@ -40,7 +40,6 @@ class UsersController < ApplicationController
       @user.login = params[:user][:login]
       @user.password, @user.password_confirmation = params[:password], params[:password_confirmation] 
       ip = request.remote_ip
-      puts ip
       if @user.save
         Mailer.deliver_account_information(@user, params[:password]) if params[:send_information]
         flash[:notice] = l(:notice_successful_create)

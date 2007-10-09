@@ -8,6 +8,7 @@ class Quest1Controller < ApplicationController
 
   def create
     @answer = Answer.new(params[:answer])
+    @answer.ip = request.remote_ip
     @answer.quest_id=1
     @answer.user_id=session[:user_id]
     if @answer.answ24.nil?
@@ -270,6 +271,6 @@ class Quest1Controller < ApplicationController
     strXML = strXML + "<set label= '"+l(:quest1_label_16)+"' value='"+acorta(ego)+"'/>"
     strXML = strXML + "<set label= '"+l(:quest1_label_17)+"' value='"+acorta(ot)+"'/>"
     strXML = strXML + "</chart>"
-    @chart3= renderChart("/charts/Column2D.swf", "", strXML, "quest3_2", 450, 300, false, false)
+    @chart3= renderChart("/charts/Column2D.swf", "", strXML, "quest3_3", 450, 300, false, false)
   end
 end

@@ -10,6 +10,7 @@ class Quest3Controller < ApplicationController
     @answer = Answer.new(params[:answer])
     @answer.quest_id=3
     @answer.user_id=session[:user_id]
+    @answer.ip = request.remote_ip
     if @answer.answ24.nil?
       @answer.answ24=0
     end
@@ -169,7 +170,6 @@ class Quest3Controller < ApplicationController
     strXML = strXML + "<set value='" + aeTrans.to_s + "'/>"
     strXML = strXML + "<set value='" + cpTrans.to_s + "'/>"
     strXML = strXML + "</dataset> </chart>"
-    puts strXML
     #Create the chart - Pie 3D Chart with data from strXML
     @chart1= renderChart("/charts/MSCombi2D.swf", "", strXML, "quest3", 770, 300, false, false)
   end
