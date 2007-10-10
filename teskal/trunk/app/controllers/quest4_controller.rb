@@ -251,7 +251,7 @@ class Quest4Controller < ApplicationController
     strXML = strXML + "</dataset> </chart>"
 
     #Create the chart - Pie 3D Chart with data from strXML
-    @chart1= renderChart("/charts/MSCombi2D.swf", "", strXML, "quest3", 770, 300, false, false)
+    @chart1= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest3", 770, 300, false, false)
 
     strXML=''
     strXML ="<chart palette='2' caption='"+l(:quest4_label_0)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+" 'showvalues='0'  formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='100'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
@@ -260,6 +260,6 @@ class Quest4Controller < ApplicationController
     strXML = strXML + "<set label= '"+l(:quest4_label_13)+"' value='"+gradoConfianza.to_s+"'/>"
     strXML = strXML + "<set label= '"+l(:quest4_label_14)+"' value='"+acorta(percepcionElaboracion)+"'/>"
     strXML = strXML + "</chart>"
-    @chart2= renderChart("/charts/Column2D.swf", "", strXML, "quest4_2", 450, 300, false, false)
+    @chart2= renderChart("/charts/Column2D.swf"+l(:PBarLoadingText), "", strXML, "quest4_2", 450, 300, false, false)
   end
 end

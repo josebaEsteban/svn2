@@ -204,6 +204,6 @@ class Quest3Controller < ApplicationController
     strXML = strXML + "<set value='" + cpTrans.to_s + "'/>"
     strXML = strXML + "</dataset> </chart>"
     #Create the chart - Pie 3D Chart with data from strXML
-    @chart1= renderChart("/charts/MSCombi2D.swf", "", strXML, "quest3", 770, 300, false, false)
+    @chart1= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest3", 770, 300, false, false)
   end
 end

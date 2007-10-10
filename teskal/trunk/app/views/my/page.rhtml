@@ -17,51 +17,65 @@
     <!-- <caption><%=l(:quest2)%></caption> -->
     <thead>
       <tr>
-		<th>##</th>
+        <th>##</th>
         <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-		<td>1</td>
+        <td>1</td>
         <td><%= l(:quest1)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest1', :action => 'new' %></td>
+      </tr>
       <tr class='odd'>
-		<td>2</td>
+        <td>2</td>
         <td><%= l(:quest2_label_0)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest2', :action => 'new' %></td>
+      </tr>
       <tr>
-		<td>3</td>
+        <td>3</td>
         <td><%= l(:quest3)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest3', :action => 'new' %></td>
+      </tr>
       <tr class='odd'>
-		<td>4</td>
+        <td>4</td>
         <td><%= l(:quest4)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest4', :action => 'new' %></td>
+      </tr>
       <tr>
-		<td>5</td>
+        <td>5</td>
         <td><%= l(:quest5)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest5', :action => 'new' %></td>
+      </tr>
       <tr class='odd'>
-		<td>6</td>
+        <td>6</td>
         <td><%= l(:quest6)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest6', :action => 'new' %></td>
-      <tr>   
-		<td>7</td>	
+      </tr>
+      <tr>
+        <td>7</td>
         <td><%= l(:quest7_label_0)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest7', :action => 'new' %></td>
+      </tr>
       <tr class='odd'>
-		<td>8</td>	
+        <td>8</td>
         <td><%= l(:quest8_label_0)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest8', :action => 'new' %></td>
-      <tr>   
-		<td>9</td>	
+      </tr>
+      <tr>
+        <td>9</td>
         <td><%= l(:quest9_label_0)  %></td>
         <td><%= link_to l(:label_fill), :controller  => 'quest9', :action => 'new' %></td>
+      </tr>
+      <tr class='odd'>
+        <td>10</td>
+        <td><%= l(:quest10_label_0)  %></td>
+        <td><%= link_to l(:label_fill), :controller  => 'quest10', :action => 'new' %></td>
+      </tr>
     </tbody>
   </table>
-<br/>
-<br/>
+  <br/>
+  <br/>
   <table cellspacing="0">
     <!-- <caption><%=l(:quest2)%></caption> -->
     <thead>
@@ -93,14 +107,16 @@
   quest=l(:quest8_label_0)  
   when 9 
   quest=l(:quest9_label_0)  
-	end %>
+  when 10 
+  quest=l(:quest10_label_0)  
+   end %>
       <% if odd==1 %>
       <tr class="odd">
         <% odd=0%>
         <%else %>
       <tr>
         <% odd=1 end %>
-        <% controlador="quest"+ answer.quest_id.to_s %> 
+        <% controlador="quest"+ answer.quest_id.to_s %>
         <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
         <td><%= answer.competition %></td>
         <td><%= l_datetime(answer.created_on)%></td>

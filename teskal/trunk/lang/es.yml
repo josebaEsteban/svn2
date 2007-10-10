@@ -1,4 +1,5 @@
 _gloc_rule_default: '|n| n==1 ? "" : "_plural" ' 
+PBarLoadingText: ?PBarLoadingText=Cargando datos. ...Espere por favor
 actionview_datehelper_select_day_prefix:
 actionview_datehelper_select_month_names: Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre
 actionview_datehelper_select_month_names_abbr: Ene,Feb,Mar,Abr,Mayo,Jun,Jul,Ago,Sep,Oct,Nov,Dic
@@ -753,7 +754,6 @@ quest8_label_7: Toma de decisiones
 quest8_label_8: Rendimiento del equipo
 quest8_label_9: Integración tarea
 quest8_label_10: Contribución tarea
-
 quest8_valor_1: 1 (no, en absoluto)
 quest8_valor_7: 7 (totalmente)
 quest8_10: La cantidad de tiempo que juego durante la competición
@@ -827,6 +827,7 @@ quest9_label_5: Comunicación instruccional
 quest9_label_6: Estilo desicional percibido
 quest9_label_7: Clima de Maestría
 quest9_label_8: Clima De Rendimiento 
+quest9_label_9: Como entrenador/a... 
 quest9_valor_1: 1 (no, en absoluto)
 quest9_valor_7: 7 (totalmente)
 quest9_valor_1: 1 (nunca)
@@ -882,7 +883,8 @@ quest9_d8_c: Este alto valor del clima de rendimiento (PER), situado entre 4 y 5
 # quest10
 quest10: Cuestionario de Clima de Tecnificación Reflejado
 quest10_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de  competición. Por favor, lee cuidadosamente y después rodea con un círculo el número que hay al lado, el que mejor describa el comportamiento de tu entrenador durante  el entrenamiento y los partidos de competición.
-quest10_label_0: Clima de Tecnificación Percibido
+quest10_label_0: Clima de Tecnificación Reflejado
+quest10_label_1: Mi entrenador/a
 quest10_1: Permite que tomen decisiones que no se corresponden con la táctica prevista
 quest10_2: Piensa que l@s deportistas tienen éxito cuando superan las dificultades
 quest10_3: Prefiere que el equipo gane a que 'Se hagan las cosas bien hechas'
