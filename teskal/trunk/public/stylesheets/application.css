@@ -212,7 +212,7 @@ vertical-align: middle;
 
 .icon-stop { background-image: url(../images/stop.png); }
 .icon-star { background-image: url(../images/star.png); }
-.icon-medium { background-image: url(../images/error_tri.png); }  
+.icon-medium { background-image: url(../images/error_delete.png); }  
 /**************** Content styles ****************/
 
 html>body #content {
