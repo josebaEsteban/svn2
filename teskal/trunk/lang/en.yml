@@ -702,24 +702,24 @@ quest7_label_5: Enseñanza e instrucción
 quest7_label_6: Trato personal
 quest7_valor_1: 1 (no, en absoluto)
 quest7_valor_7: 7 (totalmente)
-quest7_10: La formación que he recibido durante las temporadas anteriores
-quest7_11: La formación que he recibido durante esta temporada
-quest7_12: Las instrucciones del/la entrenador/a técnico-tácticas de mi papel
-quest7_13: El grado hasta el que los miembros de mi grupo son éticos
-quest7_14: El sentido que mis compañeros tienen a cerca del juego limpio
-quest7_15: El nivel de deportividad de mis compañeros de grupo
-quest7_16: El grado hasta el que hago lo mejor que puedo
-quest7_17: Mi dedicación personal durante el entrenamiento
-quest7_18: Mi entusiasmo durante las competiciones
-quest7_1: El nivel que he alcanzado en mis objetivos durante la temporada
-quest7_2: La mejora de mi rendimiento en la temporada anterior
-quest7_3: El nivel de mejoría de mis habilidades hasta ahora
-quest7_4: El grado hasta el que utilizo mis habilidades
-quest7_5: El nivel de utilización de mi talento
-quest7_6: La medida en que mi rol se corresponde con mi potencial
-quest7_7: El reconocimiento que recibo de mi entrenador
-quest7_8: La amabilidad del/la entrenador/a conmigo
-quest7_9: El grado en que el/la entrenador/a aprecia que haga las cosas bien
+quest7_10: The instruction I have received from the coach past seasons
+quest7_11: The instruction I have received from the coach this season
+quest7_12: The coach's teaching of the tactics and techniques of my position
+quest7_13: The extent to which all team members are ethical
+quest7_14: My teammates's sense of fair play
+quest7_15: My teammates's sportmanlike behavior
+quest7_16: The degree to which I do my best
+quest7_17: My dedication during practices
+quest7_18: My enthusiasm during competitions
+quest7_1: The degree of which I have reached my performance goals during the season
+quest7_2: The improvement in my performance over the previous season
+quest7_3: The improvement in my skill level thus far
+quest7_4: The degree to which my abilities are used
+quest7_5: The level to which my talents are employed
+quest7_6: The extent to which my role matches my potential
+quest7_7: The recognition I receive from my coach
+quest7_8: The friendliness of the coach towards me
+quest7_9: The level of appreciation my coach shows when I do well
 # dimensiones
 quest7_d1_a: El bajo nivel de satisfacción relacionado con rendimiento personal (RP), puede estar asociado a la consecución de los objetivos propios de la temporada, o también a la baja percepción de mejora de sus cualidades y de sus posibles puntos débiles.
 quest7_d1_b: El nivel medio de satisfacción relacionado con rendimiento personal (RP) que se observa, puede estar relacionado con mediana percepción de consecución de sus objetivos de la temporada, o también se puede asociar al nivel de mejora de sus cualidades y de sus posibles puntos débiles.
@@ -756,48 +756,32 @@ quest8_label_9: Integración tarea
 quest8_label_10: Contribución tarea
 quest8_valor_1: 1 (no, en absoluto)
 quest8_valor_7: 7 (totalmente)
-quest8_10: La cantidad de tiempo que juego durante la competición
-quest8_11: El grado de correspondencia entre mi rol en el equipo con mi rol preferido
-quest8_12: La elección que el/la entrenador/a hace sobre los jugadores durante la competición
-quest8_13: Las tácticas utilizadas durante la competición
-quest8_14: La elección que el/la entrenador/a hace de las estrategias en la competición
-quest8_15: La forma en que el/la entrenador/a hace ajustes durante la competición
-quest8_16: Los planes de juego del/la entrenador/a
-quest8_17: La manera en que el/la entrenador/a combina el talento disponible
-quest8_18: El reconocimiento que recibo de mi entrenador
-quest8_19: La amabilidad del/la entrenador/a conmigo
-quest8_1: El nivel que he alcanzado en mis objetivos durante la temporada
-quest8_20: El grado en que el/la entrenador/a aprecia que haga las cosas bien
-quest8_21: La lealtad del/la entrenador/a conmigo
-quest8_22: El grado en que el/la entrenador/a está pendiente de mí
-quest8_23: La formación que he recibido del/la entrenador/a durante las temporadas anteriores
-quest8_24: La formación que he recibido durante esta temporada
-quest8_25: Las instrucciones del/la entrenador/a técnico-tácticas de mi posición
-quest8_26: La medida en que mis compañeros me proveen de instrucciones
-quest8_27: La orientación que recibo de mis compañeros de equipo
-quest8_28: El feed-back constructivo que recibo de mis compañeros
-quest8_29: Mi estatus social en el equipo
-quest8_2: La mejora de mi rendimiento en la temporada anterior
-quest8_30: El rol que juego en la vida social del equipo
-quest8_31: La medida en que mis compañeros me aceptan socialmente
-quest8_32: El grado hasta el que los miembros del equipo son éticos
-quest8_33: El sentido que mis compañeros tienen acerca del juego limpio
-quest8_34: El nivel de deportividad de mis compañeros de equipo
-quest8_35: La forma en que el equipo trabaja para ser el mejor 
-quest8_36: El grado hasta el que los miembros del equipo comparten el mismo objetivo
-quest8_37: La dedicación de los miembros del equipo a trabajar conjuntamente para conseguir los objetivos del equipo
-quest8_38: El grado en el que los miembros del equipo juegan como equipo
-quest8_39: El grado hasta el que hago lo mejor que puedo para el equipo 
-quest8_3: El nivel de mejoría de mis habilidades hasta ahora
-quest8_40: Mi dedicación personal durante el entrenamiento
-quest8_41: Mi entusiasmo durante las competiciones
-quest8_42: Mi compromiso hacia el equipo
-quest8_4: El nº de competiciones ganadas y perdidas durante la temporada
-quest8_5: El rendimiento global del equipo durante esta temporada
-quest8_6: La medida en que el equipo ha conseguido sus objetivos de temporada hasta ahora
-quest8_7: El grado hasta el que utilizan mis habilidades
-quest8_8: El nivel de utilización de mi talento
-quest8_9: La medida en que mi rol se corresponde con mi potencial
+quest8_10: The amount of time I play during competitions
+quest8_11: The degree to which my role on the team matches my preferred role
+quest8_12: The coach's choice of plays during competition
+quest8_13: The tactics used during games
+quest8_14: Coach's choice of strategies during games
+quest8_15: How the coach makes adjustments during competition
+quest8_16: Coach's game plans
+quest8_17: The manner in which coach combines the available talent
+quest8_21: My coach's loyalty towards me
+quest8_22: The extent to which the coach is behind me
+quest8_26: The extent to which teammates provide me with instructions
+quest8_27: The guidance I receive from my teammates
+quest8_28: The constructive feedback I receive from my teammates
+quest8_29: My social status on the team
+quest8_30: The role I play in the social life of the team
+quest8_31: The degree to which my teammates accept me on a social level
+quest8_33: My teammates's sense of fair play
+quest8_35: How the team woks to be the best
+quest8_36: The degree to which teammates share the same goal
+quest8_37: Team members's dedication to work together toward team goals
+quest8_38: The extent to which teammates play as a team
+quest8_39: The degree to which I do my best for the team
+quest8_42: My commitment to the team
+quest8_4: The team's win/loss record this season
+quest8_5: The teams's overall performance this season
+quest8_6: The extent to which the team has met its goals for the season thus far
 # dimensiones
 quest8_d0_a: El bajo nivel de satisfacción relacionado con rendimiento personal (RP), puede estar asociado a la consecución de los objetivos propios de la temporada, o también a la baja percepción de mejora de sus cualidades y de sus posibles puntos débiles.
 quest8_d0_b: El nivel medio de satisfacción relacionado con rendimiento personal (RP) que se observa, puede estar relacionado con mediana percepción de consecución de sus objetivos de la temporada, o también se puede asociar al nivel de mejora de sus cualidades y de sus posibles puntos débiles.

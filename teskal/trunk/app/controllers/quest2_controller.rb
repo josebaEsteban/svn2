@@ -123,7 +123,7 @@ class Quest2Controller < ApplicationController
       if autoEficacia < 4
         @advice[item]=l(:quest2_d6_b)
         @icon[item]="medium"
-      else
+      else  
         @advice[item]=l(:quest2_d6_c)
         @icon[item]="star"
       end

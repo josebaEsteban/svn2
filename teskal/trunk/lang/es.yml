@@ -764,40 +764,24 @@ quest8_14: La elección que el/la entrenador/a hace de las estrategias en la com
 quest8_15: La forma en que el/la entrenador/a hace ajustes durante la competición
 quest8_16: Los planes de juego del/la entrenador/a
 quest8_17: La manera en que el/la entrenador/a combina el talento disponible
-quest8_18: El reconocimiento que recibo de mi entrenador
-quest8_19: La amabilidad del/la entrenador/a conmigo
-quest8_1: El nivel que he alcanzado en mis objetivos durante la temporada
-quest8_20: El grado en que el/la entrenador/a aprecia que haga las cosas bien
 quest8_21: La lealtad del/la entrenador/a conmigo
 quest8_22: El grado en que el/la entrenador/a está pendiente de mí
-quest8_23: La formación que he recibido del/la entrenador/a durante las temporadas anteriores
-quest8_24: La formación que he recibido durante esta temporada
-quest8_25: Las instrucciones del/la entrenador/a técnico-tácticas de mi posición
 quest8_26: La medida en que mis compañeros me proveen de instrucciones
 quest8_27: La orientación que recibo de mis compañeros de equipo
 quest8_28: El feed-back constructivo que recibo de mis compañeros
 quest8_29: Mi estatus social en el equipo
-quest8_2: La mejora de mi rendimiento en la temporada anterior
 quest8_30: El rol que juego en la vida social del equipo
 quest8_31: La medida en que mis compañeros me aceptan socialmente
-quest8_32: El grado hasta el que los miembros del equipo son éticos
 quest8_33: El sentido que mis compañeros tienen acerca del juego limpio
-quest8_34: El nivel de deportividad de mis compañeros de equipo
 quest8_35: La forma en que el equipo trabaja para ser el mejor 
 quest8_36: El grado hasta el que los miembros del equipo comparten el mismo objetivo
 quest8_37: La dedicación de los miembros del equipo a trabajar conjuntamente para conseguir los objetivos del equipo
 quest8_38: El grado en el que los miembros del equipo juegan como equipo
 quest8_39: El grado hasta el que hago lo mejor que puedo para el equipo 
-quest8_3: El nivel de mejoría de mis habilidades hasta ahora
-quest8_40: Mi dedicación personal durante el entrenamiento
-quest8_41: Mi entusiasmo durante las competiciones
 quest8_42: Mi compromiso hacia el equipo
 quest8_4: El nº de competiciones ganadas y perdidas durante la temporada
 quest8_5: El rendimiento global del equipo durante esta temporada
 quest8_6: La medida en que el equipo ha conseguido sus objetivos de temporada hasta ahora
-quest8_7: El grado hasta el que utilizan mis habilidades
-quest8_8: El nivel de utilización de mi talento
-quest8_9: La medida en que mi rol se corresponde con mi potencial
 # dimensiones
 quest8_d0_a: El bajo nivel de satisfacción relacionado con rendimiento personal (RP), puede estar asociado a la consecución de los objetivos propios de la temporada, o también a la baja percepción de mejora de sus cualidades y de sus posibles puntos débiles.
 quest8_d0_b: El nivel medio de satisfacción relacionado con rendimiento personal (RP) que se observa, puede estar relacionado con mediana percepción de consecución de sus objetivos de la temporada, o también se puede asociar al nivel de mejora de sus cualidades y de sus posibles puntos débiles.
@@ -832,7 +816,7 @@ quest8_d9_c: Estos altos valores observados en cuanto a la satisfacción relacio
 # quest9
 quest9: Cuestionario de Clima de Tecnificación Percibido
 quest9_header: El grado de satisfacción con...
-quest9_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
+quest9_intro:  Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de  competición. Por favor, lee cuidadosamente y después rodea con un círculo el número que hay al lado, el que mejor describa tu comportamiento durante  el entrenamiento y los partidos de competición.
 # labels 
 quest9_label_0: Clima de Tecnificación Percibido
 quest9_label_1: Valores de la percepción de éxito grupal
@@ -895,6 +879,30 @@ quest9_d7_c: Los valores del clima de maestría (PEM) se sitúan por encima del 
 quest9_d8_a: Este bajo valor del clima de rendimiento (PER), situado por debajo de 2,5 supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s se encuentran en un segundo plano frente a la mejora de las habilidades, lo que refuerza la implicación durante el entrenamiento, y puede ayudar a disminuir la ansiedad frente a los errores en el caso de que la hubiera.
 quest9_d8_b: Este valor medio del clima de rendimiento (PER), supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s son importantes, a veces, incluso más que la mejora de sus habilidades. Puede influir positivamente en el compromiso con el esfuerzo, y contribuye a disminuir la ansiedad frente a los errores en el caso de que la hubiera.
 quest9_d8_c: Este alto valor del clima de rendimiento (PER), situado entre 4 y 5, supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s es lo más importante. Esto debilitará la capacidad de l@ deportistas para afrontar situaciones de máximo desafío personal y, además, contribuirá de forma importante en el aumento de la ansiedad frente a los errores en situaciones de alta dificultad.
+# quest10
+quest10: Cuestionario de Clima de Tecnificación Reflejado
+quest10_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de  competición. Por favor, lee cuidadosamente y después rodea con un círculo el número que hay al lado, el que mejor describa el comportamiento de tu entrenador durante  el entrenamiento y los partidos de competición.
+quest10_label_0: Clima de Tecnificación Percibido
+quest10_1: Permite que tomen decisiones que no se corresponden con la táctica prevista
+quest10_2: Piensa que l@s deportistas tienen éxito cuando superan las dificultades
+quest10_3: Prefiere que el equipo gane a que 'Se hagan las cosas bien hechas'
+quest10_4: Sacrifica la calidad de la técnica de competición por amarrar el resultado
+quest10_5: Para él/ella, lo primero es ganar la competición y después competir bien
+quest10_6: Felicita a l@s deportistas cuando hacen las cosas bien, actúan según lo esperado
+quest10_7: Anima a l@s deportistas en las acciones futuras
+quest10_8: Da instrucciones sobre aspectos técnicos, tácticos, estilo, recorrido..etc.
+quest10_9: Piensa que l@s deportistas tienen éxito cuando lo hacen mejor que los demás
+quest10_10: Permite solucionar situaciones de competición de forma diferente a mis directrices
+quest10_11: Anima a l@s deportistas cuando cometen un fallo
+quest10_12: Piensa que l@s deportistas tienen éxito cuando son claramente superiores a los demás
+quest10_13: Se enfada cuando l@s deportistas actúan de forma no deseada
+quest10_14: Se enfada cuando tengo que corregir a l@s deportistas después de un error
+quest10_15: Para él/ella, los errores ayudan a l@s deportistas a darse cuenta de sus déficits y a mejorar.
+quest10_16: Procura que el tiempo de competición de cada deportistas en la temporada sea semejante
+quest10_17: Procura que l@s deportistas participen en el mismo nº de competiciones en la temporada
+quest10_18: Piensa que l@s deportistas tienen éxito cuando lo hacen todo lo mejor que saben hacerlo
+quest10_19: Tiene la máxima confianza en todos l@s deportistas cuando disputan una competición
+quest10_20: Cuando l@s deportistas cometen errores sigue manteniendo la confianza en ell@s
 
 text_are_you_sure: ¿ Estás seguro ?
 text_caracters_maximum: %d characters maximum.
