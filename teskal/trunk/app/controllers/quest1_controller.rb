@@ -172,14 +172,14 @@ class Quest1Controller < ApplicationController
     item=8
     if dificultad < 60
       @advice[item]=l(:quest1_d9_a)
-      @icon[item]="star"
+      @icon[item]="stop"
     else
       if dificultad < 80
         @advice[item]=l(:quest1_d9_b)
         @icon[item]="medium"
       else
         @advice[item]=l(:quest1_d9_c)
-        @icon[item]="stop"
+        @icon[item]="star"
       end
     end
     item=9
