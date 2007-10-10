@@ -1,5 +1,5 @@
 _gloc_rule_default: '|n| n==1 ? "" : "_plural" ' 
-PBarLoadingText: Loading Chart. Please Wait...
+PBarLoadingText: ?PBarLoadingText=Loading Chart. Please Wait...
 actionview_datehelper_select_day_prefix:
 actionview_datehelper_select_month_names: January,February,March,April,May,June,July,August,September,October,November,December
 actionview_datehelper_select_month_names_abbr: Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec
@@ -813,7 +813,6 @@ quest8_d8_c: También podemos observar que los valores de la satisfacción en re
 quest8_d9_a: Por otro lado, los valores de la satisfacción relacionada con el nivel de integración grupal del equipo (CT) es bajo. Piensa que los miembros del equipo podrían hacer bastante más para trabajar conjuntamente y alcanzar sus objetivos y, además, siente que el equipo no juega como equipo. 
 quest8_d9_b: Estos valores de satisfacción relacionados con el nivel de integración grupal del equipo (CT) son medios. A veces cree que los miembros del equipo podrían hacer algo más para trabajar conjuntamente y alcanzar sus objetivos y, además, en ocasiones duda de que el equipo juega como equipo. 
 quest8_d9_c: Estos altos valores observados en cuanto a la satisfacción relacionada con el nivel de integración grupal del equipo (CT) le hacen pensar que el equipo juega como equipo, y además, considera que sus miembros trabajan conjuntamente y adecuadamente para alcanzar sus objetivos.
- 
 # quest9
 quest9: Cuestionario de Clima de Tecnificación Percibido
 quest9_header: El grado de satisfacción con...
@@ -828,6 +827,7 @@ quest9_label_5: Comunicación instruccional
 quest9_label_6: Estilo desicional percibido
 quest9_label_7: Clima de Maestría
 quest9_label_8: Clima De Rendimiento 
+quest9_label_9: Como entrenador/a... 
 quest9_valor_1: 1 (no, en absoluto)
 quest9_valor_7: 7 (totalmente)
 quest9_valor_1: 1 (nunca)
@@ -880,6 +880,31 @@ quest9_d7_c: Los valores del clima de maestría (PEM) se sitúan por encima del 
 quest9_d8_a: Este bajo valor del clima de rendimiento (PER), situado por debajo de 2,5 supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s se encuentran en un segundo plano frente a la mejora de las habilidades, lo que refuerza la implicación durante el entrenamiento, y puede ayudar a disminuir la ansiedad frente a los errores en el caso de que la hubiera.
 quest9_d8_b: Este valor medio del clima de rendimiento (PER), supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s son importantes, a veces, incluso más que la mejora de sus habilidades. Puede influir positivamente en el compromiso con el esfuerzo, y contribuye a disminuir la ansiedad frente a los errores en el caso de que la hubiera.
 quest9_d8_c: Este alto valor del clima de rendimiento (PER), situado entre 4 y 5, supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s es lo más importante. Esto debilitará la capacidad de l@ deportistas para afrontar situaciones de máximo desafío personal y, además, contribuirá de forma importante en el aumento de la ansiedad frente a los errores en situaciones de alta dificultad.
+# quest10
+quest10: Cuestionario de Clima de Tecnificación Reflejado
+quest10_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de  competición. Por favor, lee cuidadosamente y después rodea con un círculo el número que hay al lado, el que mejor describa el comportamiento de tu entrenador durante  el entrenamiento y los partidos de competición.
+quest10_label_0: Clima de Tecnificación Reflejado
+quest10_label_1: Mi entrenador/a 
+quest10_1: Permite que tomen decisiones que no se corresponden con la táctica prevista
+quest10_2: Piensa que l@s deportistas tienen éxito cuando superan las dificultades
+quest10_3: Prefiere que el equipo gane a que 'Se hagan las cosas bien hechas'
+quest10_4: Sacrifica la calidad de la técnica de competición por amarrar el resultado
+quest10_5: Para él/ella, lo primero es ganar la competición y después competir bien
+quest10_6: Felicita a l@s deportistas cuando hacen las cosas bien, actúan según lo esperado
+quest10_7: Anima a l@s deportistas en las acciones futuras
+quest10_8: Da instrucciones sobre aspectos técnicos, tácticos, estilo, recorrido..etc.
+quest10_9: Piensa que l@s deportistas tienen éxito cuando lo hacen mejor que los demás
+quest10_10: Permite solucionar situaciones de competición de forma diferente a mis directrices
+quest10_11: Anima a l@s deportistas cuando cometen un fallo
+quest10_12: Piensa que l@s deportistas tienen éxito cuando son claramente superiores a los demás
+quest10_13: Se enfada cuando l@s deportistas actúan de forma no deseada
+quest10_14: Se enfada cuando tengo que corregir a l@s deportistas después de un error
+quest10_15: Para él/ella, los errores ayudan a l@s deportistas a darse cuenta de sus déficits y a mejorar.
+quest10_16: Procura que el tiempo de competición de cada deportistas en la temporada sea semejante
+quest10_17: Procura que l@s deportistas participen en el mismo nº de competiciones en la temporada
+quest10_18: Piensa que l@s deportistas tienen éxito cuando lo hacen todo lo mejor que saben hacerlo
+quest10_19: Tiene la máxima confianza en todos l@s deportistas cuando disputan una competición
+quest10_20: Cuando l@s deportistas cometen errores sigue manteniendo la confianza en ell@s
  
 text_are_you_sure: Are you sure ?
 text_caracters_maximum: %d characters maximum.

@@ -145,6 +145,6 @@ class Quest5Controller < ApplicationController
     strXML = strXML + "<set label='" + l(:quest5_label_4) + "' value= '" + rcom.to_s + "'/>"
     strXML = strXML + "</chart>"
     #Create the chart - Pie 3D Chart with data from strXML
-    @chart1= renderChart("/charts/Bar2D.swf", "", strXML, "quest5", 550, 270, false, false)
+    @chart1= renderChart("/charts/Bar2D.swf"+l(:PBarLoadingText), "", strXML, "quest5", 550, 270, false, false)
   end
 end

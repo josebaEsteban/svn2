@@ -41,6 +41,11 @@ class AdminController < ApplicationController
       }
       flash.now[:notice] = l(:notice_successful_update)
     end
+  end                                      
+  
+  def stats
+    @users = User.find_by_sql("select count(*) from users")
+    @quests = Answer.find_by_sql("select count(*) from answers")
   end
   
   def info

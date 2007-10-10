@@ -179,6 +179,6 @@ class Quest9Controller < ApplicationController
     strXML = strXML + "</dataset> </chart>"
 
     #Create the chart - Pie 3D Chart with data from strXML
-    @chart1= renderChart("/charts/MSCombi2D.swf", "", strXML, "quest3", 750, 300, false, false)
+    @chart1= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest3", 750, 300, false, false)
   end
 end

@@ -300,7 +300,7 @@ class Quest1Controller < ApplicationController
     strXML = strXML + "</dataset> </chart>"
 
     #Create the chart
-    @chart1= renderChart("/charts/MSCombi2D.swf?PBarLoadingText"+"Cargando datos. Espere por favor", "", strXML, "quest3", 770, 300, false, false)
+    @chart1= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest3", 770, 300, false, false)
 
     strXML=''
     strXML ="<chart palette='2' caption='"+l(:quest1)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+" 'showvalues='0'  formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='100'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' >"
@@ -322,7 +322,7 @@ class Quest1Controller < ApplicationController
     strXML = strXML +"<set value='"+@answer.answ71.to_s+"' />"
     strXML = strXML +"<set value='"+@answer.answ73.to_s+"' />"
     strXML = strXML + "</dataset> </chart>"
-    @chart2= renderChart("/charts/MSCombi2D.swf", "", strXML, "quest3_2", 450, 300, false, false)
+    @chart2= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest3_2", 450, 300, false, false)
 
     strXML=''
     strXML ="<chart palette='2' caption='"+l(:quest1)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+" 'showvalues='0'  formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='10'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
@@ -332,6 +332,6 @@ class Quest1Controller < ApplicationController
     strXML = strXML + "<set label= '"+l(:quest1_label_16)+"' value='"+acorta(ego)+"'/>"
     strXML = strXML + "<set label= '"+l(:quest1_label_17)+"' value='"+acorta(ot)+"'/>"
     strXML = strXML + "</chart>"
-    @chart3= renderChart("/charts/Column2D.swf", "", strXML, "quest3_3", 450, 300, false, false)
+    @chart3= renderChart("/charts/Column2D.swf"+l(:PBarLoadingText), "", strXML, "quest3_3", 450, 300, false, false)
   end
 end
