@@ -50,97 +50,130 @@ class Quest3Controller < ApplicationController
     @user=User.find(@answer.user_id )
     # calculo de las dimensiones
 
-    t = @answer.answ1 + @answer.answ6  + @answer.answ11
-    d = @answer.answ2 + @answer.answ7 + @answer.answ12
-    h = @answer.answ5 + @answer.answ10 + @answer.answ15
-    v = @answer.answ4 + @answer.answ9 + @answer.answ14
-    f = @answer.answ3 + @answer.answ8 + @answer.answ13
-    ce = ((@answer.answ16 + @answer.answ19 + @answer.answ22)*3.0).round
-    ae = ((@answer.answ18 + @answer.answ21 + @answer.answ24)*3.0).round
-    cp = ((@answer.answ17 + @answer.answ20 + @answer.answ23)*3.0).round
+    tension = @answer.answ1 + @answer.answ6  + @answer.answ11
+    depresion = @answer.answ2 + @answer.answ7 + @answer.answ12
+    hostilidad = @answer.answ5 + @answer.answ10 + @answer.answ15
+    vigor = @answer.answ4 + @answer.answ9 + @answer.answ14
+    fatiga = @answer.answ3 + @answer.answ8 + @answer.answ13
+    compromisoEsfuerzo = ((@answer.answ16 + @answer.answ19 + @answer.answ22)*3.0).round
+    ansiedadErrores = ((@answer.answ18 + @answer.answ21 + @answer.answ24)*3.0).round
+    competenciaPercibida = ((@answer.answ17 + @answer.answ20 + @answer.answ23)*3.0).round
 
     @advice=[]
-    if t < 5
-      @advice[0]=l(:quest3_d1_a)
+    @icon=[]
+    item=0
+    if tension < 5
+      @advice[item]=l(:quest3_d1_a)
+      @icon[item]="star"
     else
-      if t < 9
-        @advice[0]=l(:quest3_d1_b)
+      if tension < 9
+        @advice[item]=l(:quest3_d1_b)
+        @icon[item]="medium"
       else
-        @advice[0]=l(:quest3_d1_c)
+        @advice[item]=l(:quest3_d1_c)
+        @icon[item]="stop"
       end
     end
-    if d < 2
-      @advice[1]=l(:quest3_d2_a)
+    item=1
+    if depresion < 2
+      @advice[item]=l(:quest3_d2_a)
+      @icon[item]="star"
     else
-      if d < 6
-        @advice[1]=l(:quest3_d2_b)
+      if depresion < 6
+        @advice[item]=l(:quest3_d2_b)
+        @icon[item]="medium"
       else
-        @advice[1]=l(:quest3_d2_c)
+        @advice[item]=l(:quest3_d2_c)
+        @icon[item]="stop"
       end
     end
-    if h < 3
-      @advice[2]=l(:quest3_d3_a)
+    item=2
+    if hostilidad < 3
+      @advice[item]=l(:quest3_d3_a)
+      @icon[item]="star"
     else
-      if h < 7
-        @advice[2]=l(:quest3_d3_b)
+      if hostilidad < 7
+        @advice[item]=l(:quest3_d3_b)
+        @icon[item]="medium"
       else
-        @advice[2]=l(:quest3_d3_c)
+        @advice[item]=l(:quest3_d3_c)
+        @icon[item]="stop"
       end
     end
-    if v < 7
-      @advice[3]=l(:quest3_d4_a)
+    item=3
+    if vigor < 7
+      @advice[item]=l(:quest3_d4_a)
+      @icon[item]="stop"
     else
-      if v < 10
-        @advice[3]=l(:quest3_d4_b)
+      if vigor < 10
+        @advice[item]=l(:quest3_d4_b)
+        @icon[item]="medium"
       else
-        @advice[3]=l(:quest3_d4_c)
+        @advice[item]=l(:quest3_d4_c)
+        @icon[item]="star"
       end
     end
-    if f < 4
-      @advice[4]=l(:quest3_d5_a)
+    item=4
+    if fatiga < 4
+      @advice[item]=l(:quest3_d5_a)
+      @icon[item]="star"
     else
-      if f < 8
-        @advice[4]=l(:quest3_d5_b)
+      if fatiga < 8
+        @advice[item]=l(:quest3_d5_b)
+        @icon[item]="medium"
       else
-        @advice[4]=l(:quest3_d5_c)
+        @advice[item]=l(:quest3_d5_c)
+        @icon[item]="stop"
       end
     end
-    if ce < 13
-      @advice[5]=l(:quest3_d6_a)
+    item=5
+    if compromisoEsfuerzo < 13
+      @advice[item]=l(:quest3_d6_a)
+      @icon[item]="stop"
     else
-      if ce < 25
-        @advice[5]=l(:quest3_d6_b)
+      if compromisoEsfuerzo < 25
+        @advice[item]=l(:quest3_d6_b)
+        @icon[item]="medium"
       else
-        @advice[5]=l(:quest3_d6_c)
+        @advice[item]=l(:quest3_d6_c)
+        @icon[item]="star"
       end
     end
-    if ae < 13
-      @advice[6]=l(:quest3_d7_a)
+    item=6
+    if ansiedadErrores < 13
+      @advice[item]=l(:quest3_d7_a)
+      @icon[item]="stop"
     else
-      if ae < 25
-        @advice[6]=l(:quest3_d7_b)
+      if ansiedadErrores < 25
+        @advice[item]=l(:quest3_d7_b)
+        @icon[item]="medium"
       else
-        @advice[6]=l(:quest3_d7_c)
+        @advice[item]=l(:quest3_d7_c)
+        @icon[item]="star"
       end
     end
-    if cp < 13
-      @advice[7]=l(:quest3_d8_a)
+    item=7
+    if competenciaPercibida < 13
+      @advice[item]=l(:quest3_d8_a)
+      @icon[item]="stop"
     else
-      if cp < 25
-        @advice[7]=l(:quest3_d8_b)
+      if competenciaPercibida < 25
+        @advice[item]=l(:quest3_d8_b)
+        @icon[item]="medium"
       else
-        @advice[7]=l(:quest3_d8_c)
+        @advice[item]=l(:quest3_d8_c)
+        @icon[item]="star"
       end
     end
 
-    tTrans=tVal[t]
-    dTrans=dVal[d]
-    hTrans=hVal[h]
-    vTrans=vVal[v]
-    fTrans=fVal[f]
-    ceTrans=ce+36
-    aeTrans=ae+36
-    cpTrans=cp+36
+    tTrans=tVal[tension]
+    dTrans=dVal[depresion]
+    hTrans=hVal[hostilidad]
+    vTrans=vVal[vigor]
+    fTrans=fVal[fatiga]
+    ceTrans=compromisoEsfuerzo+36
+    aeTrans=ansiedadErrores+36
+    cpTrans=competenciaPercibida+36
 
     #strXML will be used to store the entire XML document generated
     strXML=''
