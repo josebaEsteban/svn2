@@ -34,85 +34,118 @@ class Quest9Controller < ApplicationController
 
   def teskalChart9
     @advice=[]
+    @icon=[]
 
     peg = (@answer.answ3 + @answer.answ4 + @answer.answ5)/3.0
+    item=0
     if peg < 2.5
-      @advice[0]=l(:quest9_d1_a)
+      @advice[item]=l(:quest9_d1_a)
+      @icon[item]="stop"
     else
       if peg < 4
-        @advice[0]=l(:quest9_d1_b)
+        @advice[item]=l(:quest9_d1_b)
+        @icon[item]="medium"
       else
-        @advice[0]=l(:quest9_d1_c)
+        @advice[item]=l(:quest9_d1_c)
+        @icon[item]="star"
       end
     end
     co = (@answer.answ16 + @answer.answ17 + @answer.answ19 + @answer.answ20)/4.0
+    item=1
     if co < 2.5
-      @advice[1]=l(:quest9_d2_a)
+      @advice[item]=l(:quest9_d2_a)
+      @icon[item]="stop"
     else
       if co < 4
-        @advice[1]=l(:quest9_d2_b)
+        @advice[item]=l(:quest9_d2_b)
+        @icon[item]="medium"
       else
-        @advice[1]=l(:quest9_d2_c)
+        @advice[item]=l(:quest9_d2_c)
+        @icon[item]="star"
       end
     end
     ca = (@answer.answ6 + @answer.answ7 + @answer.answ11)/3.0
+    item=2
     if ca < 2.5
-      @advice[2]=l(:quest9_d3_a)
+      @advice[item]=l(:quest9_d3_a)
+      @icon[item]="stop"
     else
       if ca < 4
-        @advice[2]=l(:quest9_d3_b)
+        @advice[item]=l(:quest9_d3_b)
+        @icon[item]="medium"
       else
-        @advice[2]=l(:quest9_d3_c)
+        @advice[item]=l(:quest9_d3_c)
+        @icon[item]="star"
       end
     end
     cr = (@answer.answ13 + @answer.answ14)/2.0
+    item=3
     if cr < 2.5
-      @advice[3]=l(:quest9_d4_a)
+      @advice[item]=l(:quest9_d4_a)
+      @icon[item]="stop"
     else
       if cr < 4
-        @advice[3]=l(:quest9_d4_b)
+        @advice[item]=l(:quest9_d4_b)
+        @icon[item]="medium"
       else
-        @advice[3]=l(:quest9_d4_c)
+        @advice[item]=l(:quest9_d4_c)
+        @icon[item]="star"
       end
     end
     ci = (@answer.answ18 + @answer.answ15)/2.0
+    item=4
     if ci < 2.5
-      @advice[4]=l(:quest9_d5_a)
+      @advice[item]=l(:quest9_d5_a)
+      @icon[item]="stop"
     else
       if ci < 4
-        @advice[4]=l(:quest9_d5_b)
+        @advice[item]=l(:quest9_d5_b)
+        @icon[item]="medium"
       else
-        @advice[4]=l(:quest9_d5_c)
+        @advice[item]=l(:quest9_d5_c)
+        @icon[item]="star"
       end
     end
     ed = (@answer.answ1 + @answer.answ11)/2.0
+    item=5
     if ed < 2.5
-      @advice[5]=l(:quest9_d6_a)
+      @advice[item]=l(:quest9_d6_a)
+      @icon[item]="stop"
     else
       if ed < 4
-        @advice[5]=l(:quest9_d6_b)
+        @advice[item]=l(:quest9_d6_b)
+        @icon[item]="medium"
       else
-        @advice[5]=l(:quest9_d6_c)
+        @advice[item]=l(:quest9_d6_c)
+        @icon[item]="star"
       end
     end
     pem = (@answer.answ2 + @answer.answ18)/2.0
+    item=6
     if pem < 2.5
-      @advice[6]=l(:quest9_d7_a)
+      @advice[item]=l(:quest9_d7_a)
+      @icon[item]="stop"
     else
       if pem < 4
-        @advice[6]=l(:quest9_d7_b)
+        @advice[item]=l(:quest9_d7_b)
+        @icon[item]="medium"
       else
-        @advice[6]=l(:quest9_d7_c)
+        @advice[item]=l(:quest9_d7_c)
+        @icon[item]="star"
       end
     end
     per = (@answer.answ9 + @answer.answ12)/2.0
+    item=7
     if per < 2.5
-      @advice[7]=l(:quest9_d8_a)
+      @advice[item]=l(:quest9_d8_a)
+      @icon[item]="stop"
     else
       if per < 4
-        @advice[7]=l(:quest9_d8_b)
+        @advice[item]=l(:quest9_d8_b)
+        @icon[item]="medium"
       else
-        @advice[7]=l(:quest9_d8_c)
+        @advice[item]=l(:quest9_d8_c)
+        @icon[item]="star"
       end
     end
 

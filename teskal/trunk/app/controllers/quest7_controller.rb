@@ -43,58 +43,83 @@ class Quest7Controller < ApplicationController
     tp = ( @answer.answ7 + @answer.answ8 + @answer.answ9 )/3.0
 
     @advice=[]
+    @icon=[]
+    item=0
     if rg < 3
-      @advice[0]=l(:quest7_d1_a)
+      @advice[item]=l(:quest7_d1_a)
+      @icon[item]="stop"
     else
       if rg < 5
-        @advice[0]=l(:quest7_d1_b)
+        @advice[item]=l(:quest7_d1_b)
+        @icon[item]="medium"
       else
-        @advice[0]=l(:quest7_d1_c)
+        @advice[item]=l(:quest7_d1_c)
+        @icon[item]="star"
       end
     end
+    item=1
     if dp < 3
-      @advice[1]=l(:quest7_d2_a)
+      @advice[item]=l(:quest7_d2_a)
+      @icon[item]="stop"
     else
       if dp < 5
-        @advice[1]=l(:quest7_d2_b)
+        @advice[item]=l(:quest7_d2_b)
+        @icon[item]="medium"
       else
-        @advice[1]=l(:quest7_d2_c)
+        @advice[item]=l(:quest7_d2_c)
+        @icon[item]="star"
       end
     end
+    item=2
     if fe < 3
-      @advice[2]=l(:quest7_d3_a)
+      @advice[item]=l(:quest7_d3_a)
+      @icon[item]="stop"
     else
       if fe < 5
-        @advice[2]=l(:quest7_d3_a)
+        @advice[item]=l(:quest7_d3_b)
+        @icon[item]="medium"
       else
-        @advice[2]=l(:quest7_d3_a)
+        @advice[item]=l(:quest7_d3_c)
+        @icon[item]="star"
       end
     end
+    item=3
     if uc < 3
-      @advice[3]=l(:quest7_d4_a)
+      @advice[item]=l(:quest7_d4_a)
+      @icon[item]="stop"
     else
       if uc < 5
-        @advice[3]=l(:quest7_d4_b)
+        @advice[item]=l(:quest7_d4_b)
+        @icon[item]="medium"
       else
-        @advice[3]=l(:quest7_d4_c)
+        @advice[item]=l(:quest7_d4_c)
+        @icon[item]="star"
       end
     end
+    item=4
     if ei < 3
-      @advice[4]=l(:quest7_d5_a)
+      @advice[item]=l(:quest7_d5_a)
+      @icon[item]="stop"
     else
       if ei < 5
-        @advice[4]=l(:quest7_d5_b)
+        @advice[item]=l(:quest7_d5_b)
+        @icon[item]="medium"
       else
-        @advice[4]=l(:quest7_d5_c)
+        @advice[item]=l(:quest7_d5_c)
+        @icon[item]="star"
       end
     end
+    item=5
     if tp < 3
-      @advice[5]=l(:quest7_d6_a)
+      @advice[item]=l(:quest7_d6_a)
+      @icon[item]="stop"
     else
       if tp < 5
-        @advice[5]=l(:quest7_d6_b)
+        @advice[item]=l(:quest7_d6_b)
+        @icon[item]="medium"
       else
-        @advice[5]=l(:quest7_d6_c)
+        @advice[item]=l(:quest7_d6_c)
+        @icon[item]="star"
       end
     end
 

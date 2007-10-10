@@ -44,69 +44,90 @@ class Quest6Controller < ApplicationController
     y = (cl - ctt).abs
 
     @advice=[]
+    @icon=[]
+    item=0
     if rg < 14
-      @advice[0]=l(:quest5_d1_a)
+      @advice[item]=l(:quest5_d1_a)
+      @icon[item]="stop"
     else
       if rg < 20
-        @advice[0]=l(:quest5_d1_b)
+        @advice[item]=l(:quest5_d1_b)
+        @icon[item]="medium"
       else
-        @advice[0]=l(:quest5_d1_c)
+        @advice[item]=l(:quest5_d1_c)
+        @icon[item]="star"
       end
     end
+    item=1
     if rp < 14
-      @advice[1]=l(:quest5_d2_a)
+      @advice[item]=l(:quest5_d2_a)
+      @icon[item]="stop"
     else
       if rp < 20
-        @advice[1]=l(:quest5_d2_b)
+        @advice[item]=l(:quest5_d2_b)
+        @icon[item]="medium"
       else
-        @advice[1]=l(:quest5_d2_c)
+        @advice[item]=l(:quest5_d2_c)
+        @icon[item]="star"
       end
     end
+    item=2
     if ct < 14
-      @advice[2]=l(:quest5_d3_a)
+      @advice[item]=l(:quest5_d3_a)
+      @icon[item]="stop"
     else
       if ct < 20
-        @advice[2]=l(:quest5_d3_b)
+        @advice[item]=l(:quest5_d3_b)
+        @icon[item]="medium"
       else
-        @advice[2]=l(:quest5_d3_c)
+        @advice[item]=l(:quest5_d3_c)
+        @icon[item]="star"
       end
     end
+    item=3
     if it < 14
-      @advice[3]=l(:quest5_d4_a)
+      @advice[item]=l(:quest5_d4_a)
+      @icon[item]="stop"
     else
       if it < 20
-        @advice[3]=l(:quest5_d4_b)
+        @advice[item]=l(:quest5_d4_b)
+        @icon[item]="medium"
       else
-        @advice[3]=l(:quest5_d4_c)
+        @advice[item]=l(:quest5_d4_c)
+        @icon[item]="star"
       end
     end
+    item=4
     case
     when x < 60
+      @icon[item]="stop"
       case
       when y < 15
-        @advice[4]=l(:quest5_val_g)
+        @advice[item]=l(:quest5_val_g)
       when y < 30
-        @advice[4]=l(:quest5_val_h)
+        @advice[item]=l(:quest5_val_h)
       else
-        @advice[4]=l(:quest5_val_i)
+        @advice[item]=l(:quest5_val_i)
       end
     when x < 80
+      @icon[item]="medium"
       case
       when y < 15
-        @advice[4]=l(:quest5_val_d)
+        @advice[item]=l(:quest5_val_d)
       when y < 30
-        @advice[4]=l(:quest5_val_e)
+        @advice[item]=l(:quest5_val_e)
       else
-        @advice[4]=l(:quest5_val_f)
+        @advice[item]=l(:quest5_val_f)
       end
     else
+      @icon[item]="star"
       case
       when y < 15
-        @advice[4]=l(:quest5_val_a)
+        @advice[item]=l(:quest5_val_a)
       when y < 30
-        @advice[4]=l(:quest5_val_b)
+        @advice[item]=l(:quest5_val_b)
       else
-        @advice[4]=l(:quest5_val_c)
+        @advice[item]=l(:quest5_val_c)
       end
     end
 

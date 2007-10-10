@@ -49,79 +49,108 @@ class Quest2Controller < ApplicationController
     autoRegulacion = (@answer.answ7 + @answer.answ13 + @answer.answ18 + @answer.answ25) /4.0
 
     @advice=[]
+    @icon=[]
+    item=0
     if descansoInterrumpido < 2
-      @advice[0]=l(:quest2_d1_a)
+      @advice[item]=l(:quest2_d1_a)
+      @icon[item]="star"
     else
       if descansoInterrumpido < 4
-        @advice[0]=l(:quest2_d1_b)
+        @advice[item]=l(:quest2_d1_b)
+        @icon[item]="medium"
       else
-        @advice[0]=l(:quest2_d1_c)
+        @advice[item]=l(:quest2_d1_c)
+        @icon[item]="stop"
       end
     end
+    item=1
     if cansancioEmocional < 2
-      @advice[1]=l(:quest2_d2_a)
+      @advice[item]=l(:quest2_d2_a)
+      @icon[item]="star"
     else
       if cansancioEmocional < 4
-        @advice[1]=l(:quest2_d2_b)
+        @advice[item]=l(:quest2_d2_b)
+        @icon[item]="medium"
       else
-        @advice[1]=l(:quest2_d2_c)
+        @advice[item]=l(:quest2_d2_c)
+        @icon[item]="stop"
       end
     end
+    item=2
     if vulnerabilidadLesiones < 2
-      @advice[2]=l(:quest2_d3_a)
+      @advice[item]=l(:quest2_d3_a)
+      @icon[item]="star"
     else
       if vulnerabilidadLesiones < 4
-        @advice[2]=l(:quest2_d3_b)
+        @advice[item]=l(:quest2_d3_b)
+        @icon[item]="medium"
       else
-        @advice[2]=l(:quest2_d3_c)
+        @advice[item]=l(:quest2_d3_c)
+        @icon[item]="stop"
       end
     end
+    item=3
     if estadoForma < 2
-      @advice[3]=l(:quest2_d4_a)
+      @advice[item]=l(:quest2_d4_a)
+      @icon[item]="stop"
     else
       if estadoForma < 4
-        @advice[3]=l(:quest2_d4_b)
+        @advice[item]=l(:quest2_d4_b)
+        @icon[item]="medium"
       else
-        @advice[3]=l(:quest2_d4_c)
+        @advice[item]=l(:quest2_d4_c)
+        @icon[item]="star"
       end
     end
+    item=4
     if logroPersonal < 2
-      @advice[4]=l(:quest2_d5_a)
+      @advice[item]=l(:quest2_d5_a)
+      @icon[item]="stop"
     else
       if logroPersonal < 4
-        @advice[4]=l(:quest2_d5_b)
+        @advice[item]=l(:quest2_d5_b)
+        @icon[item]="medium"
       else
-        @advice[4]=l(:quest2_d5_c)
+        @advice[item]=l(:quest2_d5_c)
+        @icon[item]="star"
       end
     end
+    item=5
     if autoEficacia < 2
-      @advice[5]=l(:quest2_d6_a)
+      @advice[item]=l(:quest2_d6_a)
+      @icon[item]="stop"
     else
       if autoEficacia < 4
-        @advice[5]=l(:quest2_d6_b)
+        @advice[item]=l(:quest2_d6_b)
+        @icon[item]="medium"
       else
-        @advice[5]=l(:quest2_d6_c)
+        @advice[item]=l(:quest2_d6_c)
+        @icon[item]="star"
       end
     end
+    item=6
     if autoRegulacion < 2
-      @advice[6]=l(:quest2_d7_a)
+      @advice[item]=l(:quest2_d7_a)
+      @icon[item]="stop"
     else
       if autoRegulacion < 4
-        @advice[6]=l(:quest2_d7_b)
+        @advice[item]=l(:quest2_d7_b)
+        @icon[item]="medium"
       else
-        @advice[6]=l(:quest2_d7_c)
+        @advice[item]=l(:quest2_d7_c)
+        @icon[item]="star"
       end
     end
     vg=((estadoForma+logroPersonal+autoEficacia+autoRegulacion/4.0))-((descansoInterrumpido+cansancioEmocional+vulnerabilidadLesiones)/3.0)
-
+    item=7
     if vg < 0
-      @advice[7]=l(:quest2_val_4)
+      @advice[item]=l(:quest2_val_4)
     elsif vg < 1
-      @advice[7]=l(:quest2_val_3)
+      @advice[item]=l(:quest2_val_3)
     elsif vg < 3
-      @advice[7]=l(:quest2_val_2)
+      @advice[item]=l(:quest2_val_2)
     else
-      @advice[7]=l(:quest2_val_1)
+      @advice[item]=l(:quest2_val_1)
     end
     #strXML will be used to store the entire XML document generated
     strXML=''

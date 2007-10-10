@@ -3,28 +3,28 @@
 <CENTER>
   <%= @chart1%>
 </CENTER>
-<br/>
+<br + 
 <br/>
 <div align="left">
 	<h2><%=l(:quest2_label_0)%></h2>
   <h4><%= @user.login+" - "+@fecha.to_s %></h4> 
 		<br/> 
-  <h3><%= l(:quest2_label_1) %></h3>
+  <h3><span class=<%= '"icon icon-'+@icon[0]+'">' + l(:quest2_label_1) %></span></h3>
   <h4> <%=@advice[0]%> </h4>
-  <h3><%= l(:quest2_label_2) %></h3>
-  <h4> <%=@advice[1]%> </h4>
-  <h3><%= l(:quest2_label_3) %></h3>
+  <h3><span class=<%= '"icon icon-'+@icon[1]+'">' + l(:quest2_label_2) %></h3>
+  <h4><%=@advice[1]%></h4>
+  <h3><span class=<%= '"icon icon-'+@icon[2]+'">' + l(:quest2_label_3) %></h3>
   <h4> <%=@advice[2]%> </h4>
-  <h3><%= l(:quest2_label_4) %></h3>
+  <h3><span class=<%= '"icon icon-'+@icon[3]+'">' + l(:quest2_label_4) %></span></h3>
   <h4> <%=@advice[3]%> </h4>
-  <h3><%= l(:quest2_label_5) %></h3>
-  <h4> <%=@advice[4]%> </h4>
-  <h3><%= l(:quest2_label_6) %></h3>
+  <h3><span class=<%= '"icon icon-'+@icon[4]+'">' + l(:quest2_label_5) %></h3>
+  <h4><%=@advice[4]%></h4>
+  <h3><span class=<%= '"icon icon-'+@icon[5]+'">' + l(:quest2_label_6) %></h3>
   <h4> <%=@advice[5]%> </h4>
-  <h3><%= l(:quest2_label_7) %></h3>
+  <h3><span class=<%= '"icon icon-'+@icon[6]+'">' + l(:quest2_label_7) %></span></h3>
   <h4> <%=@advice[6]%> </h4>
   <br/>
-  <h2><%= l(:quest2_label_8) %></h2>
+  <h2><%=l(:quest2_label_8) %></h2>
   <h4> <%=@advice[7]%> <br/>
   </h4>
 </div>
