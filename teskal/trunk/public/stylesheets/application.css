@@ -188,6 +188,31 @@ top: 300px; */
 	text-align: left;
 	color: #606060;
 }
+/**************** Icons *******************/
+.icon {
+background-position: 0% 40%;
+background-repeat: no-repeat;
+padding-left: 20px;
+padding-top: 2px;
+padding-bottom: 3px;
+vertical-align: middle;
+}
+
+#navigation .icon {
+background-position: 4px 50%;
+}
+
+.icon22 {
+background-position: 0% 40%;
+background-repeat: no-repeat;
+padding-left: 26px;
+line-height: 22px;
+vertical-align: middle;
+}
+
+.icon-stop { background-image: url(../images/stop.png); }
+.icon-star { background-image: url(../images/star.png); }
+.icon-medium { background-image: url(../images/error_delete.png); }  
 /**************** Content styles ****************/
 
 html>body #content {

@@ -64,139 +64,200 @@ class Quest1Controller < ApplicationController
     ot = ((@answer.answ55 + @answer.answ56 + @answer.answ59 + @answer.answ60 + @answer.answ62 + @answer.answ63) /6.0) /10.0
 
     @advice=[]
+    @icon=[]
+    item=0
     if tension< 5
-      @advice[0]=l(:quest1_d1_a)
+      @advice[item]=l(:quest1_d1_a)
+      @icon[item]="star"
     else
       if tension< 9
-        @advice[0]=l(:quest1_d1_b)
+        @advice[item]=l(:quest1_d1_b)
+        @icon[item]="medium"
       else
-        @advice[0]=l(:quest1_d1_c)
+        @advice[item]=l(:quest1_d1_c)
+        @icon[item]="stop"
       end
     end
+    item=1
     if depresion< 2
-      @advice[1]=l(:quest1_d2_a)
+      @advice[item]=l(:quest1_d2_a)
+      @icon[item]="star"
     else
       if depresion< 6
-        @advice[1]=l(:quest1_d2_b)
+        @advice[item]=l(:quest1_d2_b)
+        @icon[item]="medium"
       else
-        @advice[1]=l(:quest1_d2_c)
+        @advice[item]=l(:quest1_d2_c)
+        @icon[item]="stop"
       end
     end
+    item=2
     if hostilidad < 3
-      @advice[2]=l(:quest1_d3_a)
+      @advice[item]=l(:quest1_d3_a)
+      @icon[item]="star"
     else
       if hostilidad < 7
-        @advice[2]=l(:quest1_d3_b)
+        @advice[item]=l(:quest1_d3_b)
+        @icon[item]="medium"
       else
-        @advice[2]=l(:quest1_d3_c)
+        @advice[item]=l(:quest1_d3_c)
+        @icon[item]="stop"
       end
     end
+    item=3
     if vigor < 7
-      @advice[3]=l(:quest1_d4_a)
+      @advice[item]=l(:quest1_d4_a)
+      @icon[item]="stop"
     else
       if vigor < 10
-        @advice[3]=l(:quest1_d4_b)
+        @advice[item]=l(:quest1_d4_b)
+        @icon[item]="medium"
       else
-        @advice[3]=l(:quest1_d4_c)
+        @advice[item]=l(:quest1_d4_c)
+        @icon[item]="star"
       end
     end
+    item=4
     if fatiga < 4
-      @advice[4]=l(:quest1_d5_a)
+      @advice[item]=l(:quest1_d5_a)
+      @icon[item]="star"
     else
       if fatiga < 8
-        @advice[4]=l(:quest1_d5_b)
+        @advice[item]=l(:quest1_d5_b)
+        @icon[item]="medium"
       else
-        @advice[4]=l(:quest1_d5_c)
+        @advice[item]=l(:quest1_d5_c)
+        @icon[item]="stop"
       end
     end
+    item=5
     if ansiedadCognitiva < 13
-      @advice[5]=l(:quest1_d6_a)
+      @advice[item]=l(:quest1_d6_a)
+      @icon[item]="star"
     else
       if ansiedadCognitiva < 25
-        @advice[5]=l(:quest1_d6_b)
+        @advice[item]=l(:quest1_d6_b)
+        @icon[item]="medium"
       else
-        @advice[5]=l(:quest1_d6_c)
+        @advice[item]=l(:quest1_d6_c)
+        @icon[item]="stop"
       end
     end
+    item=6
     if autoConfianza < 13
-      @advice[6]=l(:quest1_d7_a)
+      @advice[item]=l(:quest1_d7_a)
+      @icon[item]="stop"
     else
       if autoConfianza < 25
-        @advice[6]=l(:quest1_d7_b)
+        @advice[item]=l(:quest1_d7_b)
+        @icon[item]="medium"
       else
-        @advice[6]=l(:quest1_d7_c)
+        @advice[item]=l(:quest1_d7_c)
+        @icon[item]="star"
       end
     end
+    item=7
     if ansiedadSomatica < 13
-      @advice[7]=l(:quest1_d8_a)
+      @advice[item]=l(:quest1_d8_a)
+      @icon[item]="star"
     else
       if ansiedadSomatica < 25
-        @advice[7]=l(:quest1_d8_b)
+        @advice[item]=l(:quest1_d8_b)
+        @icon[item]="medium"
       else
-        @advice[7]=l(:quest1_d8_c)
+        @advice[item]=l(:quest1_d8_c)
+        @icon[item]="stop"
       end
     end
+    item=8
     if dificultad < 60
-      @advice[8]=l(:quest1_d9_a)
+      @advice[item]=l(:quest1_d9_a)
+      @icon[item]="star"
     else
       if dificultad < 80
-        @advice[8]=l(:quest1_d9_b)
+        @advice[item]=l(:quest1_d9_b)
+        @icon[item]="medium"
       else
-        @advice[8]=l(:quest1_d9_c)
+        @advice[item]=l(:quest1_d9_c)
+        @icon[item]="stop"
       end
     end
+    item=9
     if confianza < 60
-      @advice[9]=l(:quest1_d10_a)
+      @advice[item]=l(:quest1_d10_a)
+      @icon[item]="stop"
     else
       if confianza < 80
-        @advice[9]=l(:quest1_d10_b)
+        @advice[item]=l(:quest1_d10_b)
+        @icon[item]="medium"
       else
-        @advice[9]=l(:quest1_d10_c)
+        @advice[item]=l(:quest1_d10_c)
+        @icon[item]="star"
       end
     end
+    item=10
     if autoControl < 4
-      @advice[10]=l(:quest1_d11_a)
+      @advice[item]=l(:quest1_d11_a)
+      @icon[item]="stop"
     else
       if autoControl <= 7
-        @advice[10]=l(:quest1_d11_b)
+        @advice[item]=l(:quest1_d11_b)
+        @icon[item]="medium"
       else
-        @advice[10]=l(:quest1_d11_c)
+        @advice[item]=l(:quest1_d11_c)
+        @icon[item]="star"
       end
     end
+    item=11
     if visionado < 4
-      @advice[11]=l(:quest1_d12_a)
+      @advice[item]=l(:quest1_d12_a)
+      @icon[item]="stop"
     else
       if visionado <= 7
-        @advice[11]=l(:quest1_d12_b)
+        @advice[item]=l(:quest1_d12_b)
+        @icon[item]="medium"
       else
-        @advice[11]=l(:quest1_d12_c)
+        @advice[item]=l(:quest1_d12_c)
+        @icon[item]="star"
       end
     end
+    item=12
     if autoMotivacion < 4
-      @advice[12]=l(:quest1_d13_a)
+      @advice[item]=l(:quest1_d13_a)
+      @icon[item]="stop"
     else
       if autoMotivacion <= 7
-        @advice[12]=l(:quest1_d13_b)
+        @advice[item]=l(:quest1_d13_b)
+        @icon[item]="medium"
       else
-        @advice[12]=l(:quest1_d13_c)
+        @advice[item]=l(:quest1_d13_c)
+        @icon[item]="star"
       end
     end
+    item=13
     if ego < 4
-      @advice[13]=l(:quest1_d14_a)
+      @advice[item]=l(:quest1_d14_a)
+      @icon[item]="stop"
     else
       if ego <= 7
-        @advice[13]=l(:quest1_d14_b)
+        @advice[item]=l(:quest1_d14_b)
+        @icon[item]="medium"
       else
-        @advice[13]=l(:quest1_d14_c)
+        @advice[item]=l(:quest1_d14_c)
+        @icon[item]="star"
       end
     end
+    item=14
     if ot < 4
-      @advice[14]=l(:quest1_d15_a)
+      @advice[item]=l(:quest1_d15_a)
+      @icon[item]="stop"
     else
       if ot <= 7
-        @advice[14]=l(:quest1_d15_b)
+        @advice[item]=l(:quest1_d15_b)
+        @icon[item]="medium"
       else
-        @advice[14]=l(:quest1_d15_c)
+        @advice[item]=l(:quest1_d15_c)
+        @icon[item]="star"
       end
     end
 
@@ -238,7 +299,7 @@ class Quest1Controller < ApplicationController
     strXML = strXML + "<set value='" + asTransformada.to_s + "'/>"
     strXML = strXML + "</dataset> </chart>"
 
-    #Create the chart 
+    #Create the chart
     @chart1= renderChart("/charts/MSCombi2D.swf?PBarLoadingText"+"Cargando datos. Espere por favor", "", strXML, "quest3", 770, 300, false, false)
 
     strXML=''
