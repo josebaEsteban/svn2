@@ -78,14 +78,35 @@ img.right {
 #header {
 	margin: 0px;
 	padding: 0;
-	background-image: url(../images/header_all_white_margin.gif);
+	background-image: url(../images/head1.gif);
 	/*	background-image: url(../images/header_all_1.gif); cream version*/
 /*	position: relative;
 left: 40px;
 top: 0px;
 width: 830px;*/
-	height: 158px;
-}
+	height: 130px;
+} 
+
+#head_lang{
+	margin: 0px;
+	padding: 0; 
+	height: 28px; 
+} 
+#head_lang_en {  
+margin: 0px;
+padding: 0; 
+height: 28px;
+background-image: url(../images/head2.gif);	 }
+#head_lang_es {  
+margin: 0px;
+padding: 0; 
+height: 28px;
+background-image: url(../images/head2_es.gif);	 }
+#head_lang_eu {  
+margin: 0px;
+padding: 0; 
+height: 28px;
+background-image: url(../images/head2_eu.gif);	 } 
 /*
 #header_1 {
 margin: 0;

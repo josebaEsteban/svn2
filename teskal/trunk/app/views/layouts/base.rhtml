@@ -14,12 +14,26 @@
 	body {behavior: url(<%= stylesheet_path "csshover.htc" %>);}
 	</style>
 <![endif]-->
-  <%= stylesheet_link_tag "application" %><%= stylesheet_link_tag "coffee-with-milk" -%>
-  <%= yield :header_tags %>
+  <%= stylesheet_link_tag "application" %><%= stylesheet_link_tag "coffee-with-milk" -%><%= yield :header_tags %>
+  <style type="text/css"></style>
 </head>
 <body>
 <div class="content">
   <div id="header"></div>
+  <%-if loggedin? -%>
+  <%- case @logged_in_user.language -%>
+  <%- when "es": -%>
+  <%- head_lang='head2_es.gif'-%>
+  <div id="head_lang_es"></div>
+  <%- when "eu": -%>
+  <%- head_lang='head2_es.gif' -%>
+  <div id="head_lang_eu"></div>
+  <%- else -%>
+  <div id="head_lang_en"></div>
+  <%- end -%>
+  <%- else -%>
+  <div id="head_lang_en"></div>
+  <%- end -%>
   <div id="nav">
     <ul id="navTeskal">
       <li> <%= link_to l(:label_home), { :controller => 'welcome' } %></li>
@@ -36,16 +50,15 @@
       <% end %>
       <% if loggedin? %>
       <li class="bottom"><%= link_to l(:label_quest_plural), { :controller => 'my',:action => 'page' } %></li>
-      <% end %> 
+      <% end %>
     </ul>
   </div>
-
-<div id="content">
-  <% if flash[:notice] %>
-  <p style="color: green"><%= flash[:notice] %></p>
-  <% end %>
-  <%= yield %> </div>
-<div id="footer"></div>
+  <div id="content">
+    <% if flash[:notice] %>
+    <p style="color: green"><%= flash[:notice] %></p>
+    <% end %>
+    <%= yield %> </div>
+  <div id="footer"></div>
 </div>
 </body>
 </html>
