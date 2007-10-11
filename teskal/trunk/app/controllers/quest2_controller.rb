@@ -159,7 +159,7 @@ class Quest2Controller < ApplicationController
     strXML = "<chart caption='"+l(:quest2_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMinValue='-6' yAxisMaxValue='6' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
 
     strXML = strXML + "<set label='" + l(:quest2_label_1) + "' value='-" + acorta(descansoInterrumpido)  + "'/>"
-    strXML = strXML + "<set label='" + l(:quest2_label_2) + "' value='-" + acorta(vulnerabilidadLesiones)  + "'/>"
+    strXML = strXML + "<set label='" + l(:quest2_label_2) + "' value='-" + acorta(cansancioEmocional)  + "'/>"
     strXML = strXML + "<set label='" + l(:quest2_label_3) + "' value='-" + acorta(vulnerabilidadLesiones)+ "'/>"
     strXML = strXML + "<set label='" + l(:quest2_label_4) + "' value='" + acorta(estadoForma) + "'/>"
     strXML = strXML + "<set label='" + l(:quest2_label_5) + "' value='" + acorta(logroPersonal) + "'/>"
