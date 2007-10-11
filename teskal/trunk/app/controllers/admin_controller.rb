@@ -44,8 +44,8 @@ class AdminController < ApplicationController
   end                                      
   
   def stats
-    @users = User.find_by_sql("select count(*) from users")
-    @quests = Answer.find_by_sql("select count(*) from answers")
+    @users = User.count_by_sql "select count(*) from users"
+    @quests = Answer.count_by_sql "select count(*) from answers"
   end
   
   def info
