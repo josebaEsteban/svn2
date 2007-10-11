@@ -1,5 +1,5 @@
 _gloc_rule_default: '|n| n==1 ? "" : "_plural" ' 
-PBarLoadingText: ?PBarLoadingText=Cargando datos. ...Espere por favor
+PBarLoadingText: ?PBarLoadingText=Cargando datos. Espere por favor...
 actionview_datehelper_select_day_prefix:
 actionview_datehelper_select_month_names: Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre
 actionview_datehelper_select_month_names_abbr: Ene,Feb,Mar,Abr,Mayo,Jun,Jul,Ago,Sep,Oct,Nov,Dic
