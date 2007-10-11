@@ -565,7 +565,7 @@ quest3_d8_c: Este deportista presenta un alto nivel de competencia percibida, co
 # quest4
 quest4: Valoración Pre-Competición
 quest4_header: Si compites como quieres...
-quest4_label_0: Afrontamiento en Competición
+quest4_label_0: Diagrama de Afrontamiento en Competición
 quest4_label_11: Significación personal
 quest4_label_12: Dificultad percibida estimada
 quest4_label_13: Grado de confianza
