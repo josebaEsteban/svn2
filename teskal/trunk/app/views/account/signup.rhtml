@@ -1,19 +1,16 @@
-<% content_for :header_tags do -%>
+<% content_for :header_tags do -%>
 <%= javascript_include_tag 'prototype' -%>
 <%= javascript_include_tag 'validation/validation' -%>  
-<%= stylesheet_link_tag "signup" -%>
-<%- end -%>                                                            
-
-<!-- <h2><%=l(:label_register)%></h2>   -->
-<center>
+<%= stylesheet_link_tag 'signup' -%>
+<%- end -%>
+<center> 
 <div id="signup">
-
 <form id="theform" action="/account/signup" method="post">
 	<fieldset id="pt1">
 		<legend><span>Step </span>1. <span>: Login details</span></legend>
 		<h3>Pick a login name and a language.</h3>
-		<div class="help">Your login will be part of your website URL.</div>
-		<label for="user_login">Usuario</label>
+		<div class="help">The language will be used next time you login.</div>
+		<label for="user_login"><%=l(:field_login)%></label>
 		<input class="required" id="user_login" name="user[login]"  type="text" value="" tabindex="1"/>
 		<label for="user_language"><%=l(:field_language)%> </label>
 		<%= select("user", "language", lang_options_for_select) %>
@@ -22,16 +19,16 @@
 		<legend><span>Step </span>2. <span>: Password</span></legend>
 		<h3>Choose a password for your new account.</h3>
 		<div class="help">Passwords must be 6-30 characters in length.</div>
-		<label for="password">Contraseña</label>
+		<label for="password"><%=l(:field_password)%></label>
 		<input class="required validate-password" id="password" name="password"  type="password" tabindex="3" />
-		<label for="password-confirm">Confirmación</label>
+		<label for="password-confirm"><%=l(:field_password_confirmation)%></label>
 		<input class="required validate-password-confirm" id="password_confirmation" name="password_confirmation" type="password" tabindex="4" />
 	</fieldset>
 	<fieldset id="pt3" class="error">
 		<legend><span>Step </span>3. <span>: Email details</span></legend>
 		<h3>Enter your email address.</h3>
 		<div class="help">You must enter a valid email address to activate your account.</div>
-		<label for="user_mail">Email</label>
+		<label for="user_mail"><%=l(:field_mail)%></label>
 		<input class="required validate-email" id="user_mail" name="user[mail]"  type="text" value="" tabindex="5" />
   </fieldset>
 	<fieldset id="pt4">
