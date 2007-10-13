@@ -1,15 +1,8 @@
-<% content_for :header_tags do -%>
+<% content_for :header_tags do -%>
 <%= javascript_include_tag 'prototype' -%>
-<%- case @logged_in_user.language -%>
-<%- when "es": -%>
-<%= javascript_include_tag 'validation/validation_es' -%> 
-<%- when "eu": -%>
-<%= javascript_include_tag 'validation/validation_eu' -%> 
-<%- else -%>
 <%= javascript_include_tag 'validation/validation' -%>  
-<%- end -%>
 <%= stylesheet_link_tag "signup" -%>
-<%- end -%>
+<%- end -%>                                                            
 
 <!-- <h2><%=l(:label_register)%></h2>   -->
 <center>
