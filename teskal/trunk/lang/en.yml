@@ -1,4 +1,15 @@
 _gloc_rule_default: '|n| n==1 ? "" : "_plural" ' 
+signup_label_1: Step
+signup_label_2: Pick a login name and a language.
+signup_label_3: The language will be used next time you login.
+signup_label_4: Choose a password for your new account.
+signup_label_5: Passwords must be 6-30 characters in length.
+signup_label_6: Email details
+signup_label_7: Enter your email address.
+signup_label_8: You must enter a valid email address to activate your account.
+signup_label_9: Submit form
+signup_label_10: Terms of Service
+signup_label_11: By clicking the 'Complete Signup' button, I am attaching my electronic signature to and agreeing to the Teskal Terms of Service Agreement; I understand that if I do not agree to these terms of use and privacy statements, I should refrain from using Teskal.
 PBarLoadingText: ?PBarLoadingText=Loading Chart. Please Wait...
 actionview_datehelper_select_day_prefix:
 actionview_datehelper_select_month_names: January,February,March,April,May,June,July,August,September,October,November,December
