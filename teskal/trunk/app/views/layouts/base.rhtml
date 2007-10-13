@@ -21,17 +21,11 @@
   <body>
     <div class="content">
       <div id="header"></div>
-      <%-if loggedin? -%>
-      <%- case @logged_in_user.language -%>
-      <%- when "es": -%>
-      <%- head_lang='head2_es.gif'-%>
+      <%- case current_language -%>
+      <%- when :es -%>
       <div id="head_lang_es"></div>
-      <%- when "eu": -%>
-      <%- head_lang='head2_es.gif' -%>
+      <%- when :eu -%>
       <div id="head_lang_eu"></div>
-      <%- else -%>
-      <div id="head_lang_en"></div>
-      <%- end -%>
       <%- else -%>
       <div id="head_lang_en"></div>
       <%- end -%>

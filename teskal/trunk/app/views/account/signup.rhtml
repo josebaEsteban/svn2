@@ -1,6 +1,13 @@
 <% content_for :header_tags do -%>
 <%= javascript_include_tag 'prototype' -%>
+<%- case current_language -%>
+<%- when :es -%>
+<%= javascript_include_tag 'validation/validation_es' -%> 
+<%- when :eu -%>
+<%= javascript_include_tag 'validation/validation_eu' -%> 
+<%- else -%>
 <%= javascript_include_tag 'validation/validation' -%>  
+<%- end -%>
 <%= stylesheet_link_tag 'signup' -%>
 <%- end -%>
 <center> 
