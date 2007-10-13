@@ -465,7 +465,7 @@ quest2_d2_b: Iraunkortasun maila baxu bati lotuak dauden frustrazio egoerekin er
 quest2_d2_c: Iraunkortasun maila baxu bati lotuak dauden frustrazio egoerekin erlazioaturik dagoen neke emozionalari dagokionez, maila altuetan aurkitzen denez,balio kezkagarria honen jatorria atzematea eskatzen dute.
 quest2_d3_a: Lesioekiko zaurkortasun baloreei so eginez gero, maila baxu batean aurkitzen direla ikusten degu. Honek egoera gogor edo eta komplexutasun handiagokoei bermez eta determinazioz aurre egiteko gaitasun ona adierazten du. 
 quest2_d3_b: Lesioekiko zaurkortasun baloreei so eginez gero, maila ertain batean aurkitzen direla ikusten degu. Honek entrenamenduan azaltzen diren egoera gogor eta harrisku handiagokoei aurre egiteko behar den erabakitzeko irmotasunarengan eragin kaltegarria izan lezake.
-quest2_d3_c: lesioekiko zaurkortasun baloreei so eginez gero, maila altu batean aurkitzen direla ikusten degu. Honek entrenamenduan azaltzen diren egoera gogor eta harrisku handiagokoei aurre egiteko ahultasun eta ziurgabetasun pertzepzioa altu bat suposatzen du.
+quest2_d3_c: Lesioekiko zaurkortasun baloreei so eginez gero, maila altu batean aurkitzen direla ikusten degu. Honek entrenamenduan azaltzen diren egoera gogor eta harrisku handiagokoei aurre egiteko ahultasun eta ziurgabetasun pertzepzioa altu bat suposatzen du.
 quest2_d4_a: Sasoi mailari dagokionez, maila baxu batean kokatzen dela ikusten degu. Honek errendimenduarekin erlazionaturik dauden antzemandako gaitasunaren sentimendu subjektiboak kaltetzen ditu. Sasoi onean egoteak trebetasun eta konpetentzia errendimenduaren sentimendu subjektiboak neurtzen ditu, sasoi onean egotea eta bizitasunaren pertzepzioan puntuazio altuak efizienteak bezain ezinbestekoak dira fisikoki.
 quest2_d4_b: Sasoi mailari dagokionez, maila ertainean kokatzen dela ikusten dugu. Honek errendimenduarekin erlazionaturik dauden antzemandako gaitasunen sentimendu egokiak izaten lagunduko du.
 quest2_d4_c: Sasoi mailari dagokionez, maila altu batean kokatzen dela ikusten degu. Honek errendimenduarekin zer ikusia duten bizitasun eta efikazia sentimendu sakonak izateaz gain, sasoi mailaren pertzepzio altu batekin zer ikusia dute.
@@ -833,7 +833,7 @@ quest9_valor_7: 7 (totalmente)
 quest9_valor_1: 1 (nunca)
 quest9_valor_2: 2 (pocas veces)
 quest9_valor_3: 3 (a menudo)
-quest9_valor_4: 4 (casi siempre)
+quest9_valor_4: 4 (casi siempre)o
 quest9_valor_5: 5 (siempre)
 quest9_1: Permito que tomen decisiones que no se corresponden con la táctica prevista
 quest9_2: Pienso que l@s deportistas tienen éxito cuando superan las dificultades

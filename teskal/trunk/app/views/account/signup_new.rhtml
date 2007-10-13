@@ -53,11 +53,8 @@
 	<div id="copyright"></div>	
 </form>
 <script type="text/javascript">
-	function formCallback(result, form) {
-		window.status = "valiation callback for form '" + form.id + "': result = " + result;
-	}
-    var valid = new Validation('theform', {immediate : true, onFormValidate : formCallback}); 
- 	Validation.addAllThese([
+	var valid3 = new Validation('theform',{immediate : true});
+	Validation.addAllThese([
 		['validate-password', 'Your password must be more than 6 characters and not be \'password\' or the same as your name.', {
 			minLength : 7,
 			notOneOf : ['password','PASSWORD','1234567','0123456'],

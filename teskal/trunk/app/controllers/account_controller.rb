@@ -2,7 +2,7 @@
 
 
 class AccountController < ApplicationController
-  layout 'base'	
+  layout 'base' 
 
 
   
@@ -103,9 +103,9 @@ class AccountController < ApplicationController
         return
       end      
     else
-      if request.get?
+      if request.get? 
         @user = User.new(:language => Setting.default_language)
-      else
+      else        
         @user = User.new(params[:user])
         @user.admin = false
         @user.login = params[:user][:login]
