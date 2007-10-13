@@ -1,44 +1,9 @@
 @charset "UTF-8";
-/* CSS Document */
 
-/*html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;}
-	:focus {
-		outline: 0;
-	}
-	body {
-		line-height: 1;
-		color: black;
-		background: white;
-	}
-	blockquote:before, blockquote:after,
-	q:before, q:after {
-		content: "";
-	}
-	blockquote, q {
-		quotes: "" "";
-	}
- */
-	
-	#signup {
-	width: 53em;
+#signup {
+	width: 54em;
 	background-color: #f7f4ee;
-	font-weight: normal;   
+	font-weight: normal;
 }
 #theform {
 	background-color: #f7f4ee;
@@ -46,7 +11,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	text-align: left;
 	line-height: 1em;
 	font: 135% Verdana, Tahoma, Arial, sans-serif;
-	}
+}
 #theform fieldset {
 	height: 25em;
 	width: 11em;
@@ -54,86 +19,86 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	margin: 0;
 	padding: 1em;
 	float: left;
-	}
+}
 #theform fieldset legend {
 	font-size: 4em;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	color: #523a0b;
-	}
+}
 #theform fieldset legend span {
 	display: none;
-	}
+}
 #theform fieldset h3 {
 	height: 4em;
 	font-size: 1em;
 	color: #523a0b;
-	}
+}
 #theform fieldset div.help {
 	color: #B0ABA2;
 	font-size: 0.7em;
 	font-weight: bold;
 	height: 5em;
-	}
+}
 #theform fieldset label {
 	font-size: 0.7em;
 	display: block;
 	line-height: 1.5em;
-	}
+}
 #theform fieldset input {
 	font-size: 0.8em;
 	height: 1.4em;
-	}
+}
 /* Part 4 Styling */
 #theform #pt4 {
 	clear: both;
 	width: 38em;
 	height: 5em;
-	border: 10px solid #ffffff;
-	border-width: 10px 0;
+	border: 0px dotted #999999;
+	border-width: 1px 0;
 	padding: 1em;
-	}
+}
 #theform #pt4 legend {
 	display: none;
-	}
+}
 #theform #pt4 h3 {
 	display: none;
-	}
+}
 #theform #pt4 #disclaimer {
 	width: 24em;
 	float: left;
 	font-size: 0.7em;
-	}
+}
 #theform #pt4 input {
-	height: 5em;
-	font-size: 1em;
-	width: 18em;
-	color: #666666; 
+	height: 4em;
+	font-size: 1.3em;
+	width: 14em;
+	color: #333333;
 	background: #f3f3f3;
 	font-weight: bold;
-	border-bottom: 	1px solid #999999;
+	border-bottom: 1px solid #999999;
 	border-right: 1px solid #999999;
 	border-top: 1px solid #CCCCCC;
-	border-left: 1px solid #CCCCCC;	
+	border-left: 1px solid #CCCCCC;
 	float: right;
-	}
-
+}
 #copyright {
 	clear: both;
 	padding: 0em;
 	font-size: 0em;
 	color: #ebe5d9;
 	font-style: italic;
-	}
-	.validation-advice {
-		margin: 1px 0;
-		padding: 3px;
-		background-color: #523a0b;
-		color : #fff;
-		font-weight: normal; 
-		font: 70% Verdana, Tahoma, Arial, sans-serif;  
-	}
-	<!--[if IE]>
-	#theform #pt4 {
-		padding: 2em 1em 1em 1em;
-		}
-	<![endif]-->
+}
+.validation-advice {
+	margin: 1px 0;
+	padding: 3px;
+	background-color: #523a0b;
+	color : #fff;
+	font-weight: normal;
+	font: 70% Verdana, Tahoma, Arial, sans-serif;
+}
+<!--
+[if IE]>  #theform #pt4 {
+padding: 2em 1em 1em 1em;
+}
+<![endif]
+-->
