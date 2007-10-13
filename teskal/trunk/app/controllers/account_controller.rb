@@ -102,7 +102,7 @@ class AccountController < ApplicationController
         redirect_to :action => 'login'
         return
       end      
-    else
+    else 
       if request.get? 
         @user = User.new(:language => Setting.default_language)
       else        
