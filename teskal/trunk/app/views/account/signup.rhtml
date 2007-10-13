@@ -46,6 +46,25 @@
 	</fieldset>
 	<div id="copyright"></div>	
 </form>
+<%- case current_language -%>
+<%- when :es -%>
+<script type="text/javascript">
+	function formCallback(result, form) {
+		window.status = "valiation callback for form '" + form.id + "': result = " + result;
+	}
+    var valid = new Validation('theform', {immediate : true, onFormValidate : formCallback}); 
+ 	Validation.addAllThese([
+		['validate-password', 'Tu contraseña debe tener más de 6 caracteres y no ser \'password\' ni igual que el nombre de tu cuenta.', {
+			minLength : 7,
+			notOneOf : ['password','PASSWORD','1234567','0123456'],
+			notEqualToField : 'user[login]'
+		}],
+		['validate-password-confirm', 'No es igual que la contraseña, inténtalo de nuevo por favor.', {
+			equalToField : 'password'
+		}]
+	]);
+</script>
+<%- else -%>
 <script type="text/javascript">
 	function formCallback(result, form) {
 		window.status = "valiation callback for form '" + form.id + "': result = " + result;
@@ -62,5 +81,6 @@
 		}]
 	]);
 </script>
+<%- end -%>   
 </div> 
 </center>
