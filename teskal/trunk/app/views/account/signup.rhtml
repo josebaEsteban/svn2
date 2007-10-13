@@ -54,7 +54,7 @@
 	}
     var valid = new Validation('theform', {immediate : true, onFormValidate : formCallback}); 
  	Validation.addAllThese([
-		['validate-password', 'Tu contraseña debe tener más de 6 caracteres y no ser \'password\' ni igual que el nombre de tu cuenta.', {
+		['validate-password', 'Tu contraseña debe tener más de 6 caracteres y no ser igual que el nombre de tu cuenta.', {
 			minLength : 7,
 			notOneOf : ['password','PASSWORD','1234567','0123456'],
 			notEqualToField : 'user[login]'
