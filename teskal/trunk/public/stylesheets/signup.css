@@ -4,6 +4,8 @@
 	width: 54em;
 	background-color: #f7f4ee;
 	font-weight: normal;
+	top: -10px;        	
+	position: relative;
 }
 #theform {
 	background-color: #f7f4ee;
@@ -16,7 +18,7 @@
 	height: 25em;
 	width: 11em;
 	border: 0;
-	margin: 0;
+	margin: 0.9em 0 0 0;
 	padding: 1em;
 	float: left;
 }
