@@ -15,10 +15,10 @@
 	font: 135% Verdana, Tahoma, Arial, sans-serif;
 }
 #theform fieldset {
-	height: 25em;
+	height: 23.3em;
 	width: 11em;
 	border: 0;
-	margin: 0.9em 0 0 0;
+	margin: 0em 0 0 0;
 	padding: 1em;
 	float: left;
 }
@@ -54,7 +54,7 @@
 #theform #pt4 {
 	clear: both;
 	width: 38em;
-	height: 5em;
+	height: 3em;
 	border: 0px dotted #999999;
 	border-width: 1px 0;
 	padding: 1em;
@@ -66,12 +66,12 @@
 	display: none;
 }
 #theform #pt4 #disclaimer {
-	width: 24em;
+	width: 24.5em;
 	float: left;
 	font-size: 0.7em;
 }
 #theform #pt4 input {
-	height: 4em;
+	height: 2.4em;
 	font-size: 1.3em;
 	width: 14em;
 	color: #333333;

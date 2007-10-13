@@ -9,7 +9,7 @@ signup_label_7: Enter your email address.
 signup_label_8: You must enter a valid email address to activate your account.
 signup_label_9: Submit form
 signup_label_10: Terms of Service
-signup_label_11: By clicking the 'Complete Signup' button, I am attaching my electronic signature to and agreeing to the Teskal Terms of Service Agreement; I understand that if I do not agree to these terms of use and privacy statements, I should refrain from using Teskal.
+signup_label_11: By clicking the 'Complete Signup' button, I am attaching my electronic signature to and agreeing to the Teskal Terms of Service Agreement.
 PBarLoadingText: ?PBarLoadingText=Loading Chart. Please Wait...
 actionview_datehelper_select_day_prefix:
 actionview_datehelper_select_month_names: January,February,March,April,May,June,July,August,September,October,November,December
