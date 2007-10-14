@@ -2,18 +2,18 @@
 
 
 class AccountController < ApplicationController
-  layout 'base' 
+  layout 'base'
 
 
-  
+
   # prevents login action to be filtered by check_if_login_required application scope filter
-  skip_before_filter :check_if_login_required, :only => [:login, :lost_password, :signup]
+  skip_before_filter :check_if_login_required, :only => [:login, :lost_password, :signup, :terms]
   before_filter :require_login, :only => :logout
 
   # Show user's account
   def show
     @user = User.find(params[:id])
-    
+
     # show only public projects and private projects that the logged in user is also a member of
     @memberships = @user.memberships.select do |membership|
       membership.project.is_public? || (logged_in_user && logged_in_user.role_for_project(membership.project))
@@ -23,7 +23,7 @@ class AccountController < ApplicationController
   end
 
   # Login request and validation
-  def login 
+  def login
     if request.get?
       # Logout user
       self.logged_in_user = nil
@@ -51,7 +51,7 @@ class AccountController < ApplicationController
     self.logged_in_user = nil
     redirect_to :controller => 'welcome'
   end
-  
+
   # Enable user to choose a new password
   def lost_password
     redirect_to :controller => 'welcome' and return unless Setting.lost_password?
@@ -66,7 +66,7 @@ class AccountController < ApplicationController
           flash[:notice] = l(:notice_account_password_updated)
           redirect_to :action => 'login'
           return
-        end 
+        end
       end
       render :template => "account/password_recovery"
       return
@@ -86,41 +86,44 @@ class AccountController < ApplicationController
       end
     end
   end
-  
+
   # User self-registration
   def signup
     redirect_to :controller => 'welcome' and return unless Setting.self_registration?
     if params[:token]
-      token = Token.find_by_action_and_value("signup", params[:token])  
+      token = Token.find_by_action_and_value("signup", params[:token])
       redirect_to :controller => 'welcome' and return unless token and !token.expired?
       user = token.user
       redirect_to :controller => 'welcome' and return unless user.status == User::STATUS_REGISTERED
       user.status = User::STATUS_ACTIVE
-      if user.save  
+      if user.save
         token.destroy
         flash[:notice] = l(:notice_account_activated)
         redirect_to :action => 'login'
         return
-      end      
-    else 
-      if request.get? 
+      end
+    else
+      if request.get?
         @user = User.new(:language => Setting.default_language)
-      else        
+      else
         @user = User.new(params[:user])
         @user.admin = false
         @user.login = params[:user][:login]
         @user.status = User::STATUS_REGISTERED
         @user.password, @user.password_confirmation = params[:password], params[:password_confirmation]
         token = Token.new(:user => @user, :action => "signup")
-        @user.ip = request.remote_ip 
+        @user.ip = request.remote_ip
         if @user.save and token.save
           Mailer.deliver_signup(token)
           set_language_if_valid(@user.language)
           flash[:notice] = l(:notice_account_register_done)
-          # redirect_to :controller => 'welcome' and return 
-                    redirect_to :controller => 'account', :action => 'login' 
+          # redirect_to :controller => 'welcome' and return
+          redirect_to :controller => 'account', :action => 'login'
         end
       end
     end
+  end
+
+  def terms
   end
 end
