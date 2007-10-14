@@ -38,14 +38,14 @@ class AccountController < ApplicationController
           cookies[:autologin] = { :value => token.value, :expires => 1.day.from_now }
         end
         redirect_back_or_default :controller => 'my', :action => 'page'
-      else
+      else   
         flash.now[:notice] = l(:notice_account_invalid_creditentials)
       end
     end
   end
 
   # Log out current user and redirect to welcome page
-  def logout
+  def logout 
     cookies.delete :autologin
     Token.delete_all(["user_id = ? AND action = ?", logged_in_user.id, "autologin"]) if logged_in_user
     self.logged_in_user = nil
