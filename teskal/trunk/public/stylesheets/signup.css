@@ -15,7 +15,7 @@
 	font: 135% Verdana, Tahoma, Arial, sans-serif;
 }
 #theform fieldset {
-	height: 23.3em;
+	height: 21.3em;
 	width: 11em;
 	border: 0;
 	margin: 0em 0 0 0;
@@ -31,15 +31,15 @@
 	display: none;
 }
 #theform fieldset h3 {
-	height: 4em;
+	height: 3em;
 	font-size: 1em;
 	color: #523a0b;
 }
 #theform fieldset div.help {
 	color: #B0ABA2;
-	font-size: 0.7em;
+	font-size: 0.65em;
 	font-weight: bold;
-	height: 5em;
+	height: 4em;
 }
 #theform fieldset label {
 	font-size: 0.7em;
