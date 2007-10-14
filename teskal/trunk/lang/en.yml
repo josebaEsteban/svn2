@@ -310,10 +310,10 @@ quest1_label_20: Objetivo 3
 quest1_label_21: Objetivo 4
 quest1_label_22: Dificultad
 quest1_label_23: Confianza
-quest1_label_2: Depresión
+quest1_label_2: Depression
 quest1_label_3: Hostilidad
 quest1_label_4: Vigor
-quest1_label_5: Fatiga
+quest1_label_5: Fatigue
 quest1_label_6: Ansiedad cognitiva
 quest1_label_7: Autoconfianza
 quest1_label_8: Ansiedad Somática
@@ -333,7 +333,7 @@ quest1_27: I feel nervous
 quest1_28: I feel at ease
 quest1_28: Indica los objetivos de la temporada
 quest1_29: I have self-doubts
-quest1_29: Nivel de dificultad
+quest1_29: Difficulty Level
 quest1_30: Grado de confianza en conseguir los objetivos
 quest1_30: I feel jittery
 quest1_31: A continuación te vamos a hacer una serie de preguntas relacionadas con el entrenamiento y la competición. Queremos conocer tu opinión y solicitamos que nos respondas con sinceridad. Son datos estrictamente confidenciales.
@@ -424,7 +424,7 @@ quest2_header: During the last month...
 quest2_intro: Below you have a series of phrases related to different aspects of the training and the competition on which we want to gather your opinion. Please, read them with tranquillity, answer sincerely and check the option with which you agree more or than it describes better your opinion.
 # label
 quest2_label_0: Psychological Stress Tolerance
-quest2_label_1: Disturbed breaks
+quest2_label_1: Disturbed sleep
 quest2_label_2: Emotional fatigue
 quest2_label_3: Vulnerability to injuries
 quest2_label_4: Fitness level
@@ -514,40 +514,40 @@ quest3_valor_9: 4 (siempre)
 quest3_label_0: Perfil de Estado de Forma del Entrenamiento
 quest3_label_10: Actual
 quest3_label_1: Tensión
-quest3_label_2: Depresión
+quest3_label_2: Depression
 quest3_label_3: Hostilidad
 quest3_label_4: Vigor
-quest3_label_5: Fatiga
+quest3_label_5: Fatigue
 quest3_label_6: Compromiso con el esfuerzo
 quest3_label_7: Ansiedad frente a los errores
 quest3_label_8: Competencia percibida
 quest3_label_9: Optima
-quest3_10: Enfadad@
-quest3_11: Tens@
-quest3_12: Triste
-quest3_13: Fatigad@
-quest3_14: Activ@
-quest3_15: De mal genio 
+quest3_10: Angry
+quest3_11: Tense
+quest3_12: Sad
+quest3_13: Fatigued
+quest3_14: Active
+quest3_15: Grouchy
 quest3_16: Presto mucha atención a las cosas que tengo que hacer en el entrenamiento
 quest3_17: Soy capaz de hacer cosas que antes no podía hacer
 quest3_18: Si cometo fallos en el entrenamiento, al día siguiente estoy intranquil@
 quest3_19: Cuando el ejercicio es difícil, me esfuerzo más para conseguir hacerlo bien
-quest3_1: Intranquil@
-quest3_20: Lo hago todo lo mejor que sé hacer
+quest3_1: Restless
+quest3_20: Domino cualquier tarea que se plantee
 quest3_21: Me pongo nervios@ cuando cometo un fallo en el entrenamiento
 quest3_22: Sigo esforzándome en el entrenamiento aunque las cosas no me salgan bien
 quest3_23: Hago las cosas que me propongo
 quest3_24: Me pone nervios@ practicar tareas nuevas en el entrenamiento
 quest3_25: Nivel de competencia que tienes para realizar acciones técnicas
 quest3_26: En que medida te sientes capaz de competir en tu deporte
-quest3_2: Desamparad@
-quest3_3: Sin fuerzas
-quest3_4: Llen@ de energía
-quest3_5: Molest@
-quest3_6: Agitad@
-quest3_7: Desdichad@
-quest3_8: Cansad@
-quest3_9: Animad@
+quest3_2: Helpless
+quest3_3: Listless
+quest3_4: Full of Pep
+quest3_5: Annoyed
+quest3_6: Shaky
+quest3_7: Unhappy
+quest3_8: Fatigued
+quest3_9: Lively
 # dimensiones 
 quest3_d1_a: Los valores de la Tensión se encuentran en un nivel bajo, lo cual es positivo, y supone que est@ deportista se encuentra tranquil@ y centrad@ en el trabajo que se le encomiende. 
 quest3_d1_b: Los valores de la Tensión se encuentran en un nivel medio, que puede ser causar cierta intranquilidad en este caso. Conviene vigilar la evolución de esta dimensión durante los próximos días e intentar que poco a poco se vaya situando en la zona baja, sobre todo si estamos muy alejados de la competición.
