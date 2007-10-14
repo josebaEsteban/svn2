@@ -311,11 +311,11 @@ quest1_label_21: Objetivo 4
 quest1_label_22: Dificultad
 quest1_label_23: Confianza
 quest1_label_2: Depression
-quest1_label_3: Hostilidad
+quest1_label_3: Hostility
 quest1_label_4: Vigor
 quest1_label_5: Fatigue
 quest1_label_6: Ansiedad cognitiva
-quest1_label_7: Autoconfianza
+quest1_label_7: Self-confidence
 quest1_label_8: Ansiedad Somática
 quest1_label_9: Optima
 quest1_16: Te preparas psicológicamente antes de la competición
@@ -500,22 +500,22 @@ quest3_header1: Ahora mismo me siento...
 quest3_header2: En el entrenamiento...
 quest3_header3: En este momento...
 quest3_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente, y una serie de comentarios y frases relacionadas con situaciones de entrenamiento. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento, o que mejor describa tu comportamiento durante las sesiones de entrenamiento.
-quest3_valor_0: 0 (nada) 
-quest3_valor_1: 1 (un poco)
-quest3_valor_2: 2 (moderadamente)
-quest3_valor_3: 3 (bastante)
-quest3_valor_4: 4 (mucho)
-quest3_valor_5: 0 (nunca)
-quest3_valor_6: 1 (pocas veces)
-quest3_valor_7: 2 (a veces)
-quest3_valor_8: 3 (muchas veces)
-quest3_valor_9: 4 (siempre)
+quest3_valor_0: 0 (not at all) 
+quest3_valor_1: 1 (a little)
+quest3_valor_2: 2 (moderately)
+quest3_valor_3: 3 (quite a bit)
+quest3_valor_4: 4 (extremely)
+quest3_valor_5: 0 (never)
+quest3_valor_6: 1 (rarely)
+quest3_valor_7: 2 (sometimes)
+quest3_valor_8: 3 (many times)
+quest3_valor_9: 4 (always)
 # labels
 quest3_label_0: Perfil de Estado de Forma del Entrenamiento
 quest3_label_10: Actual
 quest3_label_1: Tensión
 quest3_label_2: Depression
-quest3_label_3: Hostilidad
+quest3_label_3: Hostility
 quest3_label_4: Vigor
 quest3_label_5: Fatigue
 quest3_label_6: Compromiso con el esfuerzo
