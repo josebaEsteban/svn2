@@ -9,7 +9,7 @@ signup_label_7: Escribe tu dirección de correo.
 signup_label_8: La dirección debe ser válida para poder activar tu cuenta.
 signup_label_9: Submit form
 signup_label_10: Términos del Servicio
-signup_label_11: Al hacer clic en 'Guardar', adjunto mi firma electrónica y estoy de acuerdo con los Términos de Servicio Teskal; entiendo que si no estoy  de acuerdo con estos términos de uso y declaraciones de privacidad, debo abstenerme de utilizar Teskal.
+signup_label_11: Al hacer clic en 'Guardar', adjunto mi firma electrónica y estoy de acuerdo con los <a href="http://www.teskal.com/welcome/terms">Términos de Servicio Teskal.</a>
 PBarLoadingText: ?PBarLoadingText=Datuak kargatzen. Itxaron mesedez...
 actionview_datehelper_select_day_prefix:
 actionview_datehelper_select_month_names: Urtarrila, Otsaila, Martxoa, Apirila, Maiatza, Ekaina, Uztaila, Abuztua, Iraila, Urria, Azaroa, Abendua
