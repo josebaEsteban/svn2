@@ -10,6 +10,11 @@ signup_label_8: La dirección debe ser válida para poder activar tu cuenta.
 signup_label_9: Submit form
 signup_label_10: Condiciones del Servicio
 signup_label_11: Al hacer clic en 'Guardar', adjunto mi firma electrónica y estoy de acuerdo con las <a href="http://www.teskal.com/account/terms">Condiciones de Servicio</a> de Teskal.
+login_label_1: Has olvidado tu contraseña?
+login_label_2: Envíate un correo
+login_label_3: con información sobre como crear una nueva contraseña
+login_label_4: Nuevo en Teskal?
+login_label_5: Crea una cuenta gratis
 PBarLoadingText: ?PBarLoadingText=Cargando datos. Espere por favor...
 actionview_datehelper_select_day_prefix:
 actionview_datehelper_select_month_names: Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre
@@ -95,7 +100,7 @@ field_is_required: Obligatorio
 field_language: Idioma
 field_lastname: Apellido
 field_last_login_on: Última conexión
-field_login: Usuario
+field_login: Entrar
 field_mail: Email
 field_mail_notification: Notificación por mail
 field_max_length: Longitud máxima
