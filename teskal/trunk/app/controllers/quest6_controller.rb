@@ -47,40 +47,40 @@ class Quest6Controller < ApplicationController
     @icon=[]
     item=0
     if rg < 14
-      @advice[item]=l(:quest5_d1_a)
+      @advice[item]=l(:quest6_d1_a)
       @icon[item]="stop"
     else
       if rg < 20
-        @advice[item]=l(:quest5_d1_b)
+        @advice[item]=l(:quest6_d1_b)
         @icon[item]="medium"
       else
-        @advice[item]=l(:quest5_d1_c)
+        @advice[item]=l(:quest6_d1_c)
         @icon[item]="star"
       end
     end
     item=1
     if rp < 14
-      @advice[item]=l(:quest5_d2_a)
+      @advice[item]=l(:quest6_d2_a)
       @icon[item]="stop"
     else
       if rp < 20
-        @advice[item]=l(:quest5_d2_b)
+        @advice[item]=l(:quest6_d2_b)
         @icon[item]="medium"
       else
-        @advice[item]=l(:quest5_d2_c)
+        @advice[item]=l(:quest6_d2_c)
         @icon[item]="star"
       end
     end
     item=2
     if ct < 14
-      @advice[item]=l(:quest5_d3_a)
+      @advice[item]=l(:quest6_d3_a)
       @icon[item]="stop"
     else
       if ct < 20
-        @advice[item]=l(:quest5_d3_b)
+        @advice[item]=l(:quest6_d3_b)
         @icon[item]="medium"
       else
-        @advice[item]=l(:quest5_d3_c)
+        @advice[item]=l(:quest6_d3_c)
         @icon[item]="star"
       end
     end
