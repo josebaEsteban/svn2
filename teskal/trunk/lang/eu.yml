@@ -670,12 +670,12 @@ quest5_val_h: Orohar bere AEB baxua da, aipatutako aspetuek adierazten duten mod
 quest5_val_i: EBALUAZIO EZ BALIOZKOA. Gurutzatutako analisian behatutako balorazio kualitatibo eta kuantitatiboaren arteko aldea onarturiko gehienezkoa gainditzen duenez galdetegia errepikatzea gomendatzen da.
 # quest6
 quest6: Lehiaketa osteko balorazioa (Talde kirola)
-quest6_label_0: Rendimiento Percibido Individual en el Equipo
-quest6_label_1: Rendimiento Global
-quest6_label_2: Rendimiento Personal
-quest6_label_3: Contribución a la Tarea
-quest6_label_4: Integración Tarea
-quest6_label_5: Valoración general 
+quest6_label_0: Taldean Antzemandako Errendimendu indibiduala
+quest6_label_1: Errendimendu globala
+quest6_label_2: Errendimendu pertsonala
+quest6_label_3: Zereginari egindako ekarpena
+quest6_label_4: Zeregin integrazioa
+quest6_label_5: Balorazio orokorra
 quest6_10: Zure kideekiko komunikazio mailarekin
 quest6_11: Talde lanari egiten diozun ekarpenarekin
 quest6_12: Ahaleginarekiko daukazun inplilazioarekin
@@ -693,18 +693,18 @@ quest6_7: Zure kideekiko eskuzabaltasun eta sostenguarekin
 quest6_8: Zure kideekiko errespetuarekin
 quest6_9: Hartutako erabakiekiko zure leialtasunarekin
 # dimensiones
-quest6_d1_a: Los valores relacionados con el RG se sitúan en un nivel bajo, lo que supone que su comportamiento técnico-táctico, físico y psicológico en competición ha estado alejado de su capacidad. Esto condicionará la VRP, por lo que será necesario analizar con profundidad aquellas acciones más significativas ocurridas en la competición. 
-quest6_d1_b: Los valores relacionados con el RG se sitúan en un nivel medio, lo que supone cierta satisfacción con su comportamiento técnico-táctico, físico y psicológico, pero es evidente que no ha conseguido rendir como esperaba. 
-quest6_d1_c: Los valores relacionados con el RG se sitúan en un alto nivel, lo que supone una elevada satisfacción con su comportamiento técnico-táctico, físico, psicológico y, además, contribuyen a percibir una alta VRP. 
-quest6_d2_a: Al observar los valores relacionados con el RP, vemos que se sitúan en un nivel bajo, lo que representa que las cosas le han ido mal y en ningún momento de la competición se ha encontrado a gusto. Además, su confianza y su capacidad luchadora no han sido altas. En el caso de que la VRP sea baja, y se repita a lo largo de diferentes competiciones, será necesario realizar una sesión conjunta con el tutor/a, para realizar una valoración más completa. 
-quest6_d2_b: Al observar los valores relacionados con el RP, vemos que se sitúan en un nivel medio, lo que representa que las cosas no han ido tan fluidas como esperaba y que le ha costado tener buenas sensaciones a lo largo de la competición. Aunque a veces le han surgido algunas dudas, siempre ha intentado mantenerse luchador/a. 
-quest6_d2_c: Al observar los valores relacionados con el RP, vemos que se sitúan en un alto nivel, lo que representa que ha tenido buenas sensaciones a lo largo de la competición y, sobre todo, que ha sido perseverante manteniendo la confianza hasta el final. Además, esto refuerza el camino hacia su propia mejora.
-quest6_d3_a: En el caso de la contribución tarea, los valores se sitúan en un nivel bajo, lo que implica que la toma de decisiones ha sido desacertada durante el partido y que tanto su implicación con el esfuerzo como la actitud relacionada con el rol que se le ha encomendado son bajas. Si se repiten estos valores será necesario realizar una sesión conjunta con el apoyo del/a tutor/a. 
-quest6_d3_b: En el caso de la contribución tarea, los valores se sitúan en un nivel medio, lo que implica que algunas de las decisiones tomadas durante el partido no han sido acertadas. Además, tanto su implicación con el esfuerzo como la actitud relacionada con el rol que se le ha encomendado podían haber sido mayores. 
-quest6_d3_c: En el caso de la CT, los valores se sitúan en un alto nivel, lo que implica que ha tomado decisiones acertadas durante el partido con alta implicación en el esfuerzo. Tanto su aportación al trabajo colectivo como la actitud relacionada con el rol que se le ha encomendado han sido muy satisfactorias. 
-quest6_d4_a: En el caso de la IT, los valores se sitúan en un nivel bajo, lo que representa una reducida o mínima complicidad y lealtad con las decisiones tomadas. Tampoco se puede destacar el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. Es aconsejable realizar una sesión conjunta con la orientación del/a tutor/a.
-quest6_d4_b: En el caso de la IT, los valores se sitúan en un nivel medio, lo que representa cierto nivel de complicidad y lealtad con las decisiones tomadas. También manifiesta una buena satisfacción relacionada con el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. 
-quest6_d4_c: En el caso de la IT, los valores se sitúan en un alto nivel, lo que representa una alta complicidad y lealtad con las decisiones tomadas. A destacar la alta satisfacción que manifiesta relacionada con el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. 
+quest6_d1_a: EG-arekin zer ikusia duten balioak maila baxu batean kokatzen diren heinean lehiaketan bere jokabide tekniko-taktikoa, fisikoa eta psikologikoa bere gaitasunetatik urrun egon dela esan nahi du. Honek AEB-a baldintzatuko duenez lehikatan gertaturiko ekintza esanguratsuenak sakonean aztertzea beharrezko egingo du.
+quest6_d1_b: EG-arekin zer ikusia duten balioak maila ertain batean kokatzen dira. Honek jokabide tekniko-taktiko, fisiko eta psikologikoarekiko nolabaiteko asetasuna suposatzen du baina argi dago ez duela nahi bezala errenditzea lortu.
+quest6_d1_c: EG-arekin zer ikusia duten balioak maila altu batean kokatzen dira. Honek jokabide tekniko-taktiko, fisiko eta psikologikoarekiko asetasun handi batetaz gain AEB altu bat antzematen laguntzen dute.
+quest6_d2_a: EP-arekin zer ikusia duten balioei so eginez gero hauek maila baxu batean kokatzen direla ikusi dezakegu. Honek lehiaketan zehar gauzak gaizki joan zaizkiola eta une bat beran ere gustora ez dela egon aditzera ematen du. Gainera bere konfiantza eta borrokarako gaitasunak ez dira altuak izan. AEB-a ere baxua izanez gero eta lehiaketa ezberdinetan zehar errepikatuz gero, beharrezkoa izango da tutorearekin batera egindako sesio bat balorazio osoago bat egiteko.
+quest6_d2_b: EP-arekin zer ikusia duten balioei so eginez gero hauek maila ertain batean kokatzen direla ikusi dezakegu. Honek gauzak ez direla espero bezain erraz joan eta sentsazio onak izatea kostatu zaiola aditzera ematen digu. Nahiz eta batzuetan zalantza batzuk sortu zaizkion beti saiatu da borrokalari mantentzen.
+quest6_d2_c: EP-arekin zer ikusia duten balioei so eginez gero hauek maila altu batean kokatzen direla ikusi dezakegu. Honek lehiaketan zehar sentsazio onak izan dituela eta, bereziki, bukaeraraino konfiantza mantentzen iraunkorra izan dela aditzera ematen digu. Gaiera, honek bere hobekuntza propiorako  bidea sendotzen du.
+quest6_d3_a: Zereginari egindako ekarpenari dagokionez, balioak maila baxu batean kokatzen dira. Honek suposatzen du partidan zehar egindako erabaki hartzea oker egon dela eta bai bere esfortzuarekiko inplikazioa nola gomendatu zaion eginkizunarekiko jarrerak baxuak dira. Balio hauek errepikatzen badira beharrezkoa izango da tutorearen babesarekin sesio bat egitea.
+quest6_d3_b: Zereginari egindako ekarpenari dagokionez, balioak maila ertain batean kokatzen dira. Honek partidan zehar harturiko erabaki batzuk ez direla egokiak izan aditzera ematen digute. Gainera, bai bere esfortzuarekiko inplikazioa nola jarrerarekin zer ikusia duten gomendatu zaion eginkizunarekiko jarrerak handiagoak izan zitezken.
+quest6_d3_c: ZEE-aren kasuan balioak maila altu batean kokatzen dira. Honek partidan zehar erabaki egokiak hartu dituela eta esfortzuarekiko inplikazio altuarekin esan nahi du. Bai talde lanari egindako ekarpena nola gomendatu zaion eginkizunarekiko jarrera oso asegarriak izan dira.
+quest6_d4_a: Zeregin integrazioarne kasuan, balioak maila baxu batean kokatzen dira. Honek harturiko erabakiekiko kidetasun eta leialtasun minimoa adierazten ditu. Ezin nabarmendu daitezke ezta kideei eskainitako babesa ez eta heuren arteko komunikazio maila. Tutorearen orientazioarekin batera saio bat egitea gomendatzen da.
+quest6_d4_b: ZI-aren kasuan balioak maila ertain batean kokatzen dira. Honek harturiko erabakiekiko nolabaiteko kidetasun eta leialtasun maila suposatzen du. Halaber, kideei eskainitako babesarekiko nola euren arteko komunikazio mailarekiko asetasun onak aurkezten ditu.
+quest6_d4_c: ZI-aren kasuan balioak maila altu batean kokatzen dira. Honek harturiko erabakiekiko kidetasun eta leialtasun maila altua suposatzen du. Halaber, kideei eskainitako babesarekiko nola euren arteko komunikazio mailarekiko asetasun onak nabarmentzekoak dira.
 # quest7
 quest7: Asetasun galdetegia (banakako kirolak) 
 quest7_header: …-(r)ekiko asetasun maila
