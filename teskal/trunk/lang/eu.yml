@@ -1,15 +1,15 @@
 _gloc_rule_default: '|n| n==1 ? "" : "_plural" ' 
-signup_label_1: Paso
-signup_label_2: Escoge un usuario y un lenguaje.
-signup_label_3: El lenguaje será usado cuando entres la próxima vez.
-signup_label_4: Elige una contraseña para tu nueva cuenta.
-signup_label_5: La contraseña debe tener de 6 a 30 caracteres de longitud.
-signup_label_6: Detalles email.
-signup_label_7: Escribe tu dirección de correo.
-signup_label_8: La dirección debe ser válida para poder activar tu cuenta.
-signup_label_9: Submit form
-signup_label_10: Términos del Servicio
-signup_label_11: Al hacer clic en 'Guardar', adjunto mi firma electrónica y estoy de acuerdo con los <a href="http://www.teskal.com/account/terms">Términos de Servicio</a> Teskal.
+signup_label_1: Pasatu
+signup_label_2: Erabiltzaile eta hizkuntza bat aukeratu
+signup_label_3: Hizkuntza sartzen zaren hurrengoan erabilia izango da. 
+signup_label_4: Zure kontu berriarentzar pasa-hitz bat aukeratu ezazu. 
+signup_label_5: Pasa-hitzak 6-30 karaktere bitartekoa izan behar du.
+signup_label_6: Postaren xehetasunak.
+signup_label_7: Zure posta elektronikoaren helbidea idatzi ezazu
+signup_label_8: Zure kontua aktibatu ahal izateko posta elektronikoak baliagarria izan behar du. 
+signup_label_9: Gorde
+signup_label_10: Zerbitzuaren terminoak
+signup_label_11: `Gorde´-tzeko klik egiterako orduan, nire sinadura eranstearekin batera Teskal Zerbitzuaren Baldintzekin ados nagoela adierazten dut.
 PBarLoadingText: ?PBarLoadingText=Datuak kargatzen. Itxaron mesedez...
 actionview_datehelper_select_day_prefix:
 actionview_datehelper_select_month_names: Urtarrila, Otsaila, Martxoa, Apirila, Maiatza, Ekaina, Uztaila, Abuztua, Iraila, Urria, Azaroa, Abendua
@@ -315,8 +315,8 @@ quest1_label_3: Areriotasuna
 quest1_label_4: Kemena
 quest1_label_5: Nekea
 quest1_label_6: Antsietate Kognitiboa
-quest1_label_7: Autoconfianza
-quest1_label_8: Ansiedad Somática
+quest1_label_7: Autokonfiantza
+quest1_label_8: Antsietate somatikoa
 quest1_label_9: Ezin hobea
 quest1_16: Lehiaketa aurretik psikologikoki prestatzen zara
 quest1_17: Erlaxapen teknikaren batetaz baliatzen zara
@@ -533,8 +533,7 @@ quest3_17: Garai batean egiteko gai ez nintzen gauazak egiteko gai naiz egun
 quest3_18: Entrenamenduak akatsak baditut hurrengo egunean urduri nago
 quest3_19: Ariketa zaila denean, ondo egiteko gehiago saiatzen naiz
 quest3_1: Urduri
-# cambio
-quest3_20: Guztia dakidan bezain ondo egiten dut
+quest3_20: Planteatzen den edozein zeregin meneratzen det
 quest3_21: Entrenamenduan akatsen bat egiten dudanean urduri jarzten naiz
 quest3_22: Nahiz ta entrenamenduan zehar gauzak ez ondo atera ahaleginean jarraitzen dut
 quest3_23: Burutzeko asmoa hartzen dudan hori egiten dut
