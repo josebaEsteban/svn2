@@ -30,10 +30,11 @@ class AccountController < ApplicationController
     else
       # Authenticate user
       user = User.try_to_login(params[:login], params[:password])
-      if user
+      if user 
         self.logged_in_user = user
         # generate a key and set cookie if autologin
-        if params[:autologin] && Setting.autologin?
+        if params[:autologin] && Setting.autologin? 
+          puts "autologin"
           token = Token.create(:user => user, :action => 'autologin')
           cookies[:autologin] = { :value => token.value, :expires => 1.day.from_now }
         end
@@ -45,11 +46,12 @@ class AccountController < ApplicationController
   end
 
   # Log out current user and redirect to welcome page
-  def logout 
+  def logout
     cookies.delete :autologin
     Token.delete_all(["user_id = ? AND action = ?", logged_in_user.id, "autologin"]) if logged_in_user
     self.logged_in_user = nil
-    redirect_to :controller => 'welcome'
+    # redirect_to :controller => 'welcome'
+    redirect_to :action => 'login'
   end
 
   # Enable user to choose a new password

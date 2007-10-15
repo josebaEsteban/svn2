@@ -10,7 +10,11 @@ signup_label_8: Zure kontua aktibatu ahal izateko posta elektronikoak baliagarri
 signup_label_9: Gorde
 signup_label_10: Zerbitzuaren terminoak
 signup_label_11: `Gorde´-tzeko klik egiterako orduan, nire sinadura eranstearekin batera Teskal Zerbitzuaren Baldintzekin ados nagoela adierazten dut.
-PBarLoadingText: ?PBarLoadingText=Datuak kargatzen. Itxaron mesedez...
+login_label_1: Has olvidado tu contraseña?
+login_label_2: Envíate un correo
+login_label_3: con información sobre como crear una nueva contraseña
+login_label_4: Nuevo en Teskal?
+login_label_5: Crea una cuenta gratisPBarLoadingText: ?PBarLoadingText=Datuak kargatzen. Itxaron mesedez...
 actionview_datehelper_select_day_prefix:
 actionview_datehelper_select_month_names: Urtarrila, Otsaila, Martxoa, Apirila, Maiatza, Ekaina, Uztaila, Abuztua, Iraila, Urria, Azaroa, Abendua
 actionview_datehelper_select_month_names_abbr: Urt, Ots, Mar, Api, Mai, Eka, Uzt, Abu, Ira, Urr, Aza, Abe
@@ -118,8 +122,8 @@ field_tracker: Tracker
 field_type: Mota
 field_updated_on: -n eguneratua
 field_url: URL
-Field_User: Erabiltzaile
-Field_Value: Balio
+field_user: Erabiltzaile
+field_value: Balio
 field_version: Bertsioa
 general_csv_encoding: ISO-8859-1
 general_csv_separator: ';'
