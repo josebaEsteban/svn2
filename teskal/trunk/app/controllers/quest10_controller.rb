@@ -92,7 +92,7 @@ class Quest10Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    ci = (@answer.answ18 + @answer.answ15)/2.0
+    ci = (@answer.answ8 + @answer.answ15)/2.0
     item=4
     if ci < 2.5
       @advice[item]=l(:quest9_d5_a)
@@ -106,7 +106,7 @@ class Quest10Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    ed = (@answer.answ1 + @answer.answ11)/2.0
+    ed = (@answer.answ1 + @answer.answ10)/2.0
     item=5
     if ed < 2.5
       @advice[item]=l(:quest9_d6_a)
