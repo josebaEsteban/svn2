@@ -1,11 +1,11 @@
 _gloc_rule_default: '|n| n==1 ? "" : "_plural" ' 
 signup_label_1: Pasatu
-signup_label_2: Erabiltzaile eta hizkuntza bat aukeratu
+signup_label_2: Erabiltzaile eta hizkuntza bat aukeratu.
 signup_label_3: Hizkuntza sartzen zaren hurrengoan erabilia izango da. 
 signup_label_4: Zure kontu berriarentzar pasa-hitz bat aukeratu ezazu. 
 signup_label_5: Pasa-hitzak 6-30 karaktere bitartekoa izan behar du.
 signup_label_6: Postaren xehetasunak.
-signup_label_7: Zure posta elektronikoaren helbidea idatzi ezazu
+signup_label_7: Zure posta elektronikoaren helbidea idatzi ezazu.
 signup_label_8: Zure kontua aktibatu ahal izateko posta elektronikoak baliagarria izan behar du. 
 signup_label_9: Gorde
 signup_label_10: Zerbitzuaren terminoak
