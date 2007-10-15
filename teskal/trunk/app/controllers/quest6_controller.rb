@@ -86,14 +86,14 @@ class Quest6Controller < ApplicationController
     end
     item=3
     if it < 14
-      @advice[item]=l(:quest5_d4_a)
+      @advice[item]=l(:quest6_d4_a)
       @icon[item]="stop"
     else
       if it < 20
-        @advice[item]=l(:quest5_d4_b)
+        @advice[item]=l(:quest6_d4_b)
         @icon[item]="medium"
       else
-        @advice[item]=l(:quest5_d4_c)
+        @advice[item]=l(:quest6_d4_c)
         @icon[item]="star"
       end
     end
