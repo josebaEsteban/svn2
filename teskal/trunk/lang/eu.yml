@@ -14,7 +14,8 @@ login_label_1: Has olvidado tu contraseña?
 login_label_2: Envíate un correo
 login_label_3: con información sobre como crear una nueva contraseña
 login_label_4: Nuevo en Teskal?
-login_label_5: Crea una cuenta gratisPBarLoadingText: ?PBarLoadingText=Datuak kargatzen. Itxaron mesedez...
+login_label_5: Crea una cuenta gratis
+PBarLoadingText: ?PBarLoadingText=Datuak kargatzen. Itxaron mesedez...
 actionview_datehelper_select_day_prefix:
 actionview_datehelper_select_month_names: Urtarrila, Otsaila, Martxoa, Apirila, Maiatza, Ekaina, Uztaila, Abuztua, Iraila, Urria, Azaroa, Abendua
 actionview_datehelper_select_month_names_abbr: Urt, Ots, Mar, Api, Mai, Eka, Uzt, Abu, Ira, Urr, Aza, Abe
