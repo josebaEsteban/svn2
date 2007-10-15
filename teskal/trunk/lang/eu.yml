@@ -10,11 +10,11 @@ signup_label_8: Zure kontua aktibatu ahal izateko posta elektronikoak baliagarri
 signup_label_9: Gorde
 signup_label_10: Zerbitzuaren terminoak
 signup_label_11: Gorde-tzeko klik egiterako orduan, nire sinadura eranstearekin batera Teskal Zerbitzuaren Baldintzekin ados nagoela adierazten dut.
-login_label_1: Has olvidado tu contraseña?
-login_label_2: Envíate un correo
-login_label_3: con información sobre como crear una nueva contraseña
-login_label_4: Nuevo en Teskal?
-login_label_5: Crea una cuenta gratis
+login_label_1: Pasa-hitza ahaztu duzu?
+login_label_2: Bidali zaitez mail bat
+login_label_3: pasa-hitz berri bat eratzari buruzko informazioarekin.
+login_label_4: Berria Teskalen?
+login_label_5: Eratu ezazu kontu bat doan.
 PBarLoadingText: ?PBarLoadingText=Datuak kargatzen. Itxaron mesedez...
 actionview_datehelper_select_day_prefix:
 actionview_datehelper_select_month_names: Urtarrila, Otsaila, Martxoa, Apirila, Maiatza, Ekaina, Uztaila, Abuztua, Iraila, Urria, Azaroa, Abendua
@@ -616,10 +616,10 @@ quest5_header2: Lehiaketan zehar izandako asetasun maila … izan da
 quest5_header3: …-kin/ko asetasun maila
 quest5_intro: Segidan aurkezten zaizkizun lehiaketaren aspektu ezberdinekin zer ikusia duten galdera sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez,bakoitza arretaz irakurri ezazu eta momentuotan sentitzen duzuna egokien deskribatzen duen zenbaki gainean klik egin ezazu
 quest5_label_0: Valoración de Rendimiento Percibido Individual 
-quest5_label_1: Rendimiento Global
-quest5_label_2: Rendimiento Emocional
-quest5_label_3: Rendimiento Cognitivo
-quest5_label_4: Rendimiento Comportamental
+quest5_label_1: Errendimendu Globala
+quest5_label_2: Errendimendu emozionala
+quest5_label_3: Errendimendu kognitiboa
+quest5_label_4: Portaeraren errendimendua
 quest5_valor_1: 1 (oso txarra)
 quest5_valor_2: 2 (txarra)
 quest5_valor_3: 3 (nola-halakoa)
@@ -647,27 +647,27 @@ quest5_7: Momentu konkretu batzuetan nire emoziak sentitzearen gozamena
 quest5_8: Presiopean errenditu izanaren ziurtasuna. 
 quest5_9: Mentalki erlaxaturik egon izanaren sentsazioa
 # dimensiones
-quest5_d1_a: Los valores relacionados con el RG se sitúan en un nivel bajo, lo que supone que su comportamiento técnico-táctico, físico y psicológico en competición ha estado alejado de su capacidad. Esto condicionará la VRP, por lo que será necesario analizar con profundidad aquellas acciones más significativas ocurridas en la competición. 
-quest5_d1_b: Los valores relacionados con el RG se sitúan en un nivel medio, lo que supone cierta satisfacción con su comportamiento técnico-táctico, físico y psicológico, pero es evidente que no ha conseguido rendir como esperaba. 
-quest5_d1_c: Los valores relacionados con el RG se sitúan en un alto nivel, lo que supone una elevada satisfacción con su comportamiento técnico-táctico, físico, psicológico y, además, contribuyen a percibir una alta VRP. 
-quest5_d2_a: En cuanto al rendimiento emocional (RE), sus valores se sitúan en un nivel bajo, lo que representa que durante la competición no ha podido utilizar adecuadamente su respuesta emocional. No ha disfrutado y se ha sentido inseguro en determinados momentos de presión, es decir, a pesar de haberse esforzado en tener un buen afrontamiento emocional no lo ha conseguido. Si se repiten este tipo de actuaciones, es conveniente realizar un trabajo específico con el Power de las Emociones, del Estrés y del PIC, con la orientación del/a tutor/a. 
-quest5_d2_b: En cuanto al rendimiento emocional (RE), sus valores se sitúan en un nivel medio, lo que representa que durante la competición su respuesta emocional ha tenido altibajos, con una sensación de falta de control, acompañada de dudas en los momentos de presión, es decir, se ha esforzado en tener un buen afrontamiento emocional pero le ha costado mantenerlo a lo largo de la competición. 
-quest5_d2_c: En cuanto al rendimiento emocional (RE), sus valores se sitúan en un alto nivel, lo que representa que durante la competición ha tenido una excelente respuesta emocional, ha disfrutando, con una sensación de control y con la seguridad de haber rendido bajo la presión, es decir, con un afrontamiento emocional muy positivo. 
-quest5_d3_a: En el caso del RCOG, los valores se sitúan en un nivel bajo, lo que implica que no ha podido mantener los niveles de confianza y de satisfacción durante la competición. Además, en escasos momentos ha tenido buenas sensaciones o se ha sentido cómodo. 
-quest5_d3_b: En el caso del RCOG, los valores se sitúan en un nivel medio, lo que implica que la posibilidad de fluctuaciones en los niveles de confianza y de satisfacción durante la competición. También pueden haber influido en el interés y en las sensaciones que haya podido tener durante la misma. 
-quest5_d3_c: En el caso del RCOG, los valores se sitúan en un alto nivel, lo que implica que ha mantenido sus niveles de confianza y de satisfacción durante toda la competición. También indican la presencia de alto de interés acompañado de buenas sensaciones. 
-quest5_d4_a: Al observar los valores del RCOM, vemos que se encuentran en un bajo nivel, lo que representa muchas dificultades a la hora de responder a las acciones de l@s adversari@s, y que el PIC no estaba claro. En ocasiones se ha quedado sin saber lo que tenía que hacer y, además, las decisiones tomadas han sido desacertadas. Habrá que realizar una revisión exhaustiva del PIC, con la ayuda del/a tutor/a. 
-quest5_d4_b: Al observar los valores del RCOM, vemos que se encuentran en un nivel medio, lo que representa dificultades a la hora de responder a las acciones de l@s adversari@s, aunque el PIC lo tenía bastante claro. Casi siempre sabía lo que tenía que hacer, y considera que las decisiones adoptadas han sido acertadas. 
-quest5_d4_c: Al observar los valores del RCOM, vemos que se encuentran en un alto nivel, lo que representa que ha respondido eficientemente a las acciones de l@s adversari@s y que ha tenido claro el PIC a lo largo de toda la competición. Además, en todo momento ha sabido lo que tenía que hacer, sin dudarlo y con determinación en las decisiones adoptadas. 
-quest5_val_a: En general su VRP es muy positiva, acercándose a su máximo nivel, como reflejan los aspectos señalados. Además, se produce una concordancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, lo que refuerza la consistencia y coherencia de la valoración realizada.
-quest5_val_b: En general su VRP es muy positiva, acercándose a su máximo nivel, como reflejan los aspectos señalados. Sin embargo, se produce una discrepancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, por lo que será necesario revisar la valoración realizada entre ambas, reajustándola a una menor diferencia entre ellas.
-quest5_val_c: EVALUACIÓN NO VÁLIDA. La diferencia entre la valoración cualitativa y cuantitativa observada en el análisis cruzado realizado supera el valor máximo permitido, por lo tanto se recomienda volver a completar el cuestionario.
-quest5_val_d: En general su VRP es positiva, aunque ha rendido por debajo de su nivel habitual, como reflejan los aspectos señalados. Además, se produce una concordancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, lo que le aporta consistencia y coherencia a la valoración realizada.
-quest5_val_e: En general su VRP es positiva, aunque ha rendido por debajo de su nivel habitual, como reflejan los aspectos señalados. Sin embargo, se produce una discrepancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, con lo que será necesario revisar la valoración realizada, reajustándola a una menor diferencia entre ellas. 
-quest5_val_f: EVALUACIÓN NO VÁLIDA. La diferencia entre la valoración cualitativa y cuantitativa observada en el análisis cruzado realizado supera el valor máximo permitido, por lo tanto se recomienda volver a completar el cuestionario. 
-quest5_val_g: En general su VRP es baja, con un nivel de rendimiento alejado de su capacidad, como reflejan los aspectos señalados. Es positivo que se produzca una concordancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, lo que le aporta consistencia y coherencia a la valoración realizada.
-quest5_val_h: En general su VRP es baja, con un nivel de rendimiento alejado de su capacidad, como reflejan los aspectos señalados. Además, se produce una discrepancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, con lo que será necesario revisar la valoración realizada, reajustándola a una menor diferencia entre ellas, que quizás pueda influir positivamente con una mejora sustancial de la misma.
-quest5_val_i: EVALUACIÓN NO VÁLIDA. La diferencia entre la valoración cualitativa y cuantitativa observada en el análisis cruzado realizado supera el valor máximo permitido, por lo tanto se recomienda volver a completar el cuestionario. 
+quest5_d1_a: EG-arekin zer ikusia duten balioak maila baxu batean kokatzen diren heinean lehiaketan bere jokabide tekniko-taktikoa, fisikoa eta psikologikoa bere gaitasunetatik urrun egon dela esan nahi du. Honek AEB-a baldintzatuko duenez lehikatan gertaturiko ekintza esanguratsuenak sakonean aztertzea beharrezko egingo du.
+quest5_d1_b: EG-arekin zer ikusia duten balioak maila ertain batean kokatzen dira. Honek jokabide tekniko-taktiko, fisiko eta psikologikoarekiko nolabaiteko asetasuna suposatzen du baina argi dago ez duela nahi bezala errenditzea lortu.
+quest5_d1_c: EG-arekin zer ikusia duten balioak maila altu batean kokatzen dira. Honek jokabide tekniko-taktiko, fisiko eta psikologikoarekiko asetasun handi batetaz gain AEB altu bat antzematen laguntzen dute.
+quest5_d2_a: Errendimendu emozionalari dagokionez (EE), bere balioak maila baxu batean aurkitzeak lehiaketan zehar bere erantzun emozionala behar bezala ezin izan duela erabili adierazten du. Presio momentu batzuetan ez du gozatu eta ez da ziur sentitu, hau da, nahiz eta aurre egite emozional on bat edukitzen saiatu den ez du lortu. Honelako jokaerak errepikatzen badira komenigarria izango da Emozio, estrés eta LPI-an Power-arekin lan espezifiko bat egitea tutorearen orientazioarekin.
+quest5_d2_b: Errendimendu emozionalari dagokionez (EE) bere balioak maila ertain batean aurkitzen dira. Honek lehiaketan zehar bere erantzun emozionalak gorabeherak izan dituela esan nahi du, presio uneetan zalantzekin batera kontrol falta sentsazioa ere izan duelarik, hau da, aurre egite emozional on bat izaten saiatu da baina lehiaketan zehar mantentzea kostatu egin zaio.
+quest5_d2_c: Errendimendu emozionalari dagokionez (EE), maila altu batean kokatzen dira. Honek lehiaketan zehar erantzun emozional ezin hobea izan duela esan nahi du, presiopean erantzun izanaren segurtasunarekin, kontrol sentsazioarekin eta gozatuaz gainera, hau da, aurre egite emozional oso positiboarekin.
+quest5_d3_a: EKOG-aren kasuan balioak maila baxu batean kokatzen dira. Honek esan nahi du lehiaketan zehar ez dela konfiantza eta asetasuna mailak mantentzeko gai izan. Honez gain, momentu oso gutxitan izan ditu sentsazio onak edo eroso sentitu da.
+quest5_d3_b: EKOG-aren kasuan balioak maila ertain batean kokatzen dira. Honek lehiaketan zehar konfiantza eta asetasun mailetan gorabeherak egoteko aukera suposatzen du. Aldi berean, lehiaketan zehar izandako interesean eta sentsazioetan ere eragin ahal izan du.
+quest5_d3_c: EKOG-aren kasuan balioak maila altu batean kokatzen dira. Honek lehiaketa osoan zehar bere konfiantza eta asetasun mailak mantendu dituela esan nahi du. Sentsazio onek lagunduriko interes altu baten presentzia ere adierazten dute.
+quest5_d4_a: PORTE-aren balioei so eginez gero, maila baxu batean aurkitzen direla ikusi dezakegu. Honek aurkarien ekintzei erantzuterako orduan zailtasun ugari daudela eta LPI-a argi ez zegoela adierazten dute. Hainbat kasutan zer egin nehar zuen ez zekiela geratu da eta gainera hartutako erabakiak ez desegokiak izaz dira. Tutorearen laguntzarekin LPI-aren sakoneko berrikuspen bat egin beharko da.
+quest5_d4_b: PORTE-aren balioei so eginez gero, maila ertain batean aurkitzen direla ikusi dezakegu. Honek aurkarien ekintzei erantzuterako orduan zailtasunak daudela adierazten du nahiz eta LPI-a nahiko argi zuen. Gehienetan bazekien zer egin behar zuen eta hartutako erabakiak egokiak izan direla uste du.
+quest5_d4_c: PORTE-aren balioei so eginez gero, maila altu batean aurkitzen direla ikusi dezakegu. Honek aurkarien ekintzei modu eraginkor batean erantzun diela eta LPI-a lehiaketa osoan zehar argi izan duela esan nahi du. Halaber, momentuoro jakin izan du egin behar zuena, zalantzarik gabe eta determinazioarekin hartutako erabakietan.
+quest5_val_a: Orohar bere AEB oso positiboa da, maila altuenera hurbilduaz aipaturiko aspektuek islatzen duten moduan. Gainera dimentsio kualitatiboen eta kuantitatiboen arteko bateratasun bat ematen da egidako balorazioaren kontsistentzia eta koherentzia indartuaz.
+quest5_val_b: Orohar bere AEB oso positiboa da, maila altuenera hurbilduaz aipaturiko aspektuek islatzen duten moduan. Aldiz, dimentsio kualitatibo eta kuantitatiboen balioen arteko diferentzia bat ematen da bien artean egindako balorazioa berrikustea beharrezkoa izango delarik bien arteko alde txikiago batetara aldaketa eginaz.
+quest5_val_c: EBALUAZIO EZ BALIOZKOA. Gurutzatutako analisian behatutako balorazio kualitatibo eta kuantitatiboaren arteko aldea onarturiko gehienezkoa gainditzen duenez galdetegia errepikatzea gomendatzen da.
+quest5_val_d: Aipaturiko aspektuek islatzen duten moduan, orohar bere AEB oso positiboa da nahiz eta bere ohiko mailaren azpitik errenditu duen. Gainera, egindako balorazioari kontsistentzia eta koherentzia ematen dion dimentsio kualitatibo eta kuantitatiboen arteko bateratasun bat ematen da.
+quest5_val_e: Aipaturiko aspektuek islatzen duten moduan, orohar bere AEB oso positiboa da nahiz eta bere ohiko mailaren azpitik errenditu duen. Aldiz, dimentsio kualitatibo eta kuantitatiboen balioen arteko diferentzia bat ematen da bien artean egindako balorazioa berrikustea beharrezkoa izango delarik bien arteko alde txikiago batetara aldaketa eginaz.
+quest5_val_f: EBALUAZIO EZ BALIOZKOA. Gurutzatutako analisian behatutako balorazio kualitatibo eta kuantitatiboaren arteko aldea onarturiko gehienezkoa gainditzen duenez galdetegia errepikatzea gomendatzen da.
+quest5_val_g: Orohar bere AEB baxua da, aipatutako aspetuek adierazten duten moduan bere gaitasunetatik urrun dagoen errendimendu maila batean dagoelarik. Positiboa da dimentsio kualitatibo eta kuantitatiboen artean bateratasun bat ematea, egindako balorazioari kontsistentzia eta koherentzia ematen bait dizkio.
+quest5_val_h: Orohar bere AEB baxua da, aipatutako aspetuek adierazten duten moduan bere gaitasunetatik urrun dagoen errendimendu maila batean dagoelarik. Gainera dimentsio kualitatibo eta kuantitatiboen balioen arteko diferentzia bat ematen da bien artean egindako balorazioa berrikustea beharrezkoa izango delarik bien arteko alde txikiago batetara aldaketa eginaz, zeren akaso, honen hobekuntza nabari batean eragin positiboa izan bait dezake.
+quest5_val_i: EBALUAZIO EZ BALIOZKOA. Gurutzatutako analisian behatutako balorazio kualitatibo eta kuantitatiboaren arteko aldea onarturiko gehienezkoa gainditzen duenez galdetegia errepikatzea gomendatzen da.
 # quest6
 quest6: Lehiaketa osteko balorazioa (Talde kirola)
 quest6_label_0: Rendimiento Percibido Individual en el Equipo

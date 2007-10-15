@@ -14,7 +14,7 @@ login_label_1: Has olvidado tu contraseña?
 login_label_2: Envíate un correo
 login_label_3: con información sobre como crear una nueva contraseña
 login_label_4: Nuevo en Teskal?
-login_label_5: Crea una cuenta gratis
+login_label_5: Crea una cuenta gratis.
 PBarLoadingText: ?PBarLoadingText=Cargando datos. Espere por favor...
 actionview_datehelper_select_day_prefix:
 actionview_datehelper_select_month_names: Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre
