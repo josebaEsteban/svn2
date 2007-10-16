@@ -6,7 +6,9 @@ class WelcomeController < ApplicationController
 
   def index
     # @projects = Project.laquest logged_in_user
-    @answers = Answer.find_by_user_id(session[:user_id])
+    # @answers = Answer.find_by_user_id(session[:user_id])
+    redirect_to :controller => 'account', :action => 'login'
+    
   end
 
   def list
