@@ -925,12 +925,12 @@ quest10_20: Cuando l@s deportistas cometen errores sigue manteniendo la confianz
 quest11: Cuestionario de Motivación Intrínseca
 quest11_intro: Utilizando la escala que se está debajo, indica por favor en qué medida cada uno de los siguientes temas corresponde a una de las razones por las que practicas tu deporte. 
 quest11_header: Porqué practicas tu deporte
-quest11_valor_1: 1 (no del todo)
+quest11_valor_1: 1 (nada)
 quest11_valor_2: 2 (muy poco)
 quest11_valor_3: 3 (un poco)
-quest11_valor_4: 4 (mas bien)
-quest11_valor_5: 5 (corresponds quit a bit)
-quest11_valor_6: 6 (bastante)
+quest11_valor_4: 4 (moderadamente)
+quest11_valor_5: 5 (bastante)
+quest11_valor_6: 6 (mucho)
 quest11_valor_7: 7 (totalmente)
 quest11_label_0: Motivación Intrínseca
 quest11_label_1: Conocer
