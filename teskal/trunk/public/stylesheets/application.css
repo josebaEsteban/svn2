@@ -21,16 +21,16 @@ body {
 	background-image: url(../images/fondo_teskal_10.gif);
 }
 .content {
-	margin: auto;
+	margin: 10px auto 10px auto; 
 	padding: 0;
 	width: 910px;
 	height: auto;
 	background-color: #ffffff;
 	/*	color: #628600; verde*/ 
 	color: #523A0B;
-	background-image: url(../images/bgmain_white.gif);
-	/*	background-image: url(../images/bgmain.gif);   cream version
-*/	background-repeat: repeat-y;
+/*	background-image: url(../images/bgmain_white.gif);*/
+	background-image: url(../images/bg_stripe.gif); 
+	background-repeat: repeat-y;
 	background-position: center;
 }
 a {
@@ -78,8 +78,7 @@ img.right {
 #header {
 	margin: 0px;
 	padding: 0;
-	background-image: url(../images/head1.gif);
-	/*	background-image: url(../images/header_all_1.gif); cream version*/
+	background-image: url(../images/head1_stripe.gif);
 /*	position: relative;
 left: 40px;
 top: 0px;
@@ -96,17 +95,17 @@ width: 830px;*/
 margin: 0px;
 padding: 0; 
 height: 28px;
-background-image: url(../images/head2.gif);	 }
+background-image: url(../images/head2_stripe.gif);	 }
 #head_lang_es {  
 margin: 0px;
 padding: 0; 
 height: 28px;
-background-image: url(../images/head2_es.gif);	 }
+background-image: url(../images/head2_stripe_es.gif);	 }
 #head_lang_eu {  
 margin: 0px;
 padding: 0; 
 height: 28px;
-background-image: url(../images/head2_eu.gif);	 } 
+background-image: url(../images/head2_stripe_eu.gif);	 } 
 /*
 #header_1 {
 margin: 0;
@@ -514,12 +513,12 @@ div.menu a.menuItem span.menuItemArrow {
 
 #footer {
 	margin: 0;
-	background-image: url(../images/footer_1_white.gif);
-	/*	background-image: url(../images/footer_1.gif); cream
-*/	background-repeat: no-repeat;
+/*	background-image: url(../images/footer_1_white.gif); */	
+	background-image: url(../images/footer_stripe.gif);
+	background-repeat: no-repeat;
 	background-position: bottom;
 	width: 910px;
-	height: 51px;
+	height: 53px;
 	padding: 0;
 	clear: both;
 }
