@@ -921,7 +921,59 @@ quest10_17: Procura que l@s deportistas participen en el mismo nº de competicio
 quest10_18: Piensa que l@s deportistas tienen éxito cuando lo hacen todo lo mejor que saben hacerlo
 quest10_19: Tiene la máxima confianza en todos l@s deportistas cuando disputan una competición
 quest10_20: Cuando l@s deportistas cometen errores sigue manteniendo la confianza en ell@s
- 
+#quest11
+quest11: Questionnaraire of Intrinsic Motivation
+quest11_intro: Using the scale below, please indicate to what extent each of the following items corresponds to one of the reasons for which you are presently practicing your sport.
+quest11_header: Why do you practice your sport?
+quest11_valor_1: 1 (does not correspond at all)
+quest11_valor_2: 2 (corresponds very little)
+quest11_valor_3: 3 (corresponds a little)
+quest11_valor_4: 4 (corresponds moderately)
+quest11_valor_5: 5 corresponds quit a bit)
+quest11_valor_6: 6 (quite a lot)
+quest11_valor_7: 7 (completely)
+quest11_label_0: Intrinsic Motivation
+quest11_label_1: To know
+quest11_label_2: To accomplish
+quest11_label_3: To experience stimulation
+quest11_label_4: Integrated regulation
+quest11_label_5: Identified regulation
+quest11_label_6: Introjected regulation
+quest11_label_7: External regulation
+quest11_label_8: Amotivation
+quest11_1: For the pleasure I feel in living exciting experiences.
+quest11_2: For the pleasure it gives me to know more about the sport that I practice.
+quest11_3: I used to have good reasons for doing sports, but now I am asking myself if I should continue.
+quest11_4: Because practicing sports renects the essence of whom I am.
+quest11_5: For the pleasure of discovering new training techniques.
+quest11_6: I don't know anymore; I have the impression that I am incapable of succeeding in this sport.
+quest11_7: Because it allows me to be well regarded by people that I know.
+quest11_8: Because, in my opinion, it is one of the best ways to meet people.
+quest11_9: Because I feel a lot of personal satisfaction while mastering certain difficult training techniques.
+quest11_10: Because it is absolutely necessary to do sports if one wants to be in shape.
+quest11_11: For the prestige of being an athlete.
+quest11_12: Because it is one of the best ways I have chosen to develop other aspects of myself.
+quest11_13: For the pleasure I feel while improving some of my weak points.
+quest11_14: For the excitement I feel when I am really involved in the activity.
+quest11_15: Because I must do sports to feel good about myself.
+quest11_16: For the satisfaction I experience while I am perfecting my abilities.
+quest11_17: Because people around me think it is important to be in shape.
+quest11_18: Because participating in sport is an integral part of my life.
+quest11_19: Because it is a good way to learn lots of things which could be useful to me in other areas of my life.
+quest11_20: For the intense emotions that I feel while I am doing a sport that I like.
+quest11_21: It is not clear to me anymore; I don't really think my place is in sport.
+quest11_22: For the pleasure that I feel while executing certain difficult movements.
+quest11_23: Because I would feel bad if I was not taking the time to do it.
+quest11_24: Because through sport, I am living in line with my deepest principles.
+quest11_25: To show others how good I am at my sport.
+quest11_26: For the pleasure I feel while learning training techniques that I have never tried before.
+quest11_27: Because it is one of the best ways to maintain good relationships with my friends.
+quest11_28: Because I like the feeling of being totally immersed in the activity.
+quest11_29: Because I must do sports regularly.
+quest11_30: For the pleasure of discovering new performance strategies.
+quest11_31: Because by doing it I am fully expressing my deepest values.
+quest11_32: I often ask myself; I can't seem to achieve the goals that I set for myself.
+
 text_are_you_sure: Are you sure ?
 text_caracters_maximum: %d characters maximum.
 text_length_between: Length between %d and %d characters.
