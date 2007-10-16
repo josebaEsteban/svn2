@@ -95,12 +95,14 @@ class ApplicationController < ActionController::Base
     end
     true
   end
+
   def require_coach(user)
-     if user != session[:user_id]
+    if user != session[:user_id]
       flash[:notice] = l(:notice_not_authorized)
       redirect_back_or_default :controller => 'my', :action => 'page'
     end
   end
+
   # authorizes the user for the requested action.
   def authorize(ctrl = params[:controller], action = params[:action])
     unless @project.active?
