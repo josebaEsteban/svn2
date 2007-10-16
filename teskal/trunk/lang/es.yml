@@ -921,9 +921,60 @@ quest10_17: Procura que l@s deportistas participen en el mismo nº de competicio
 quest10_18: Piensa que l@s deportistas tienen éxito cuando lo hacen todo lo mejor que saben hacerlo
 quest10_19: Tiene la máxima confianza en todos l@s deportistas cuando disputan una competición
 quest10_20: Cuando l@s deportistas cometen errores sigue manteniendo la confianza en ell@s
+#quest11
+quest11: Cuestionario de Motivación Intrínseca
+quest11_intro: Utilizando la escala que se está debajo, indica por favor en qué medida cada uno de los siguientes temas corresponde a una de las razones por las que practicas tu deporte. 
+quest11_header: Porqué practicas tu deporte
+quest11_valor_1: 1 (no del todo)
+quest11_valor_2: 2 (muy poco)
+quest11_valor_3: 3 (un poco)
+quest11_valor_4: 4 (mas bien)
+quest11_valor_5: 5 (corresponds quit a bit)
+quest11_valor_6: 6 (bastante)
+quest11_valor_7: 7 (totalmente)
+quest11_label_0: Motivación Intrínseca
+quest11_label_1: Conocer
+quest11_label_2: Lograr
+quest11_label_3: Experimentar estímulo
+quest11_label_4: Regulación integrada
+quest11_label_5: Regulación identificada
+quest11_label_6: Regulación introyectada
+quest11_label_7: Regulación externa
+quest11_label_8: Amotivación
+quest11_1: Por el placer de vivir experiencias excitantes
+quest11_2: Por el placer que me da saber más del deporte que practico
+quest11_3: Solía tener buenas razones para practicar deporte, pero ahora me pregunto si debo seguir
+quest11_4: Porque practicar deporte representa la esencia de lo que yo soy
+quest11_5: Por el placer de descubrir nuevas técnicas de entrenamiento
+quest11_6: Ya no lo tengo claro; tengo la impresion de que soy incapaz de tener éxito en este deporte
+quest11_7: Porque me permite estar bien visto(a) por la gente que conozco
+quest11_8: Porque, para mi, es una de las mejores formas de conocer gente
+quest11_9: Porque experimento mucha satisfacción nersonal cuando controlo algunas técnicas difíciles 
+quest11_10: Porque es absolutamente necesario hacer deportes si se quiere estar en forma
+quest11_11: Por el prestigio de ser un deportista
+quest11_12: Porque es uno de los medios que he elegido para desarrollar otros aspectos de mi persona
+quest11_13: Por el placer que experimento cuando mejoro alguno de mis puntos débiles
+quest11_14: Por la excitación que experimento cuando practico esta actividad
+quest11_15: Porque considero absolutamente necesario practicar deporte para sentirme bien conmigo mismo
+quest11_16: Por la satisfacción que siento cuando mejoro mis habilidades
+quest11_17: Porque estar en forma está bien visto por la gente de mi alrededor
+quest11_18: Porque hacer deporte es una parte integral de mi vida
+quest11_19: Porque es una buena manera de aprender otras cosas que me pueden ser útiles en otros ámbitos de mi vida
+quest11_20: Por las emociones intensas que experimento al hacer un deporte que me gusta
+quest11_21: No lo sé claramente; creo que mi sitio no está en este deporte
+quest11_22: Por el placer aue obtengo cuando ejecuto algunos movimientos difíciles
+quest11_23: Porque me sentiría mal si no no dedicase el tiempo necesario para practicar deporte
+quest11_24: Porque a través del deporte, puedo expresar principios relacionados con mi forma de entender la vida
+quest11_25: Para demostrar a los demás hasta que punto soy bueno en mi deporte
+quest11_26: Porque para mi es muy agradable descubrir nuevos métodos de entrenamiento
+quest11_27: Porque es una de las mejores formas de mantener buenas relaciones con mis amigos
+quest11_28: Porque me gusta la sensación de sentirme inmerso a tope en mi deporte
+quest11_29: Porque es necesario practicar deporte a menudo
+quest11_30: Por el placer de descubrir nuevas técnicas
+quest11_31: Porque practicando deporte, puedo expresar valores importantes para mi
+quest11_32: Me lo pregunto a menudo; no llego a conseguir los objetivos que me planteo
 
 text_are_you_sure: ¿ Estás seguro ?
 text_caracters_maximum: %d characters maximum.
 text_length_between: Longitud entre %d y %d caracteres.
 text_min_max_length_info: 0 para ninguna restricción
-
