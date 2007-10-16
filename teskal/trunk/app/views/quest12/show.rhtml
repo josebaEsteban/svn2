@@ -1,0 +1,114 @@
+<!-- Copyright (C) 2007 Teskal -->
+<!-- quest12-->
+<%=javascript_include_tag 'charts.js' %>
+
+<center>
+  <%= @chart1%>
+</center>
+<br/>
+<div align="left">
+  <h2><%=l(:quest12_label_0)%></h2>
+  <h4><%= @user.login+" - "+@fecha.to_s %></h4>
+  <br/>
+  <h3><span class=<%= '"icon icon-'+@icon[0]+'">' + l(:quest12_label_1) %></span></h3>
+  <h4> <%=@advice[0]%> </h4>
+  <h3><span class=<%= '"icon icon-'+@icon[1]+'">' + l(:quest12_label_2) %></span></h3>
+  <h4> <%=@advice[1]%> </h4>
+</div>
+<br/>
+<br/>
+<div id="values"> <%=l(:quest12_valor_1)%><•> <•> <•> <•> <•> <•> <•> <•> <%=l(:quest12_valor_2)%> <br/>
+  <br/>
+</div>
+<br/>
+<br/>
+<div align="center">
+  <table cellspacing="0">
+    <!-- <caption><%=l(:quest1)%></caption> -->
+    <thead>
+      <tr>
+        <th scope="col"> ## </th>
+        <th scope="col"><div align="left"><%=l(:quest12_header)%></div></th>
+        <th scope="col"><%=l(:quest2_label_9)%></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><%=l(:quest12_1)%></td>
+        <td><div align="center"><%=@answer.answ1%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>2</td>
+        <td><%=l(:quest12_2)%></td>
+        <td><div align="center"><%=@answer.answ2%></div></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><%=l(:quest12_3)%></td>
+        <td><div align="center"><%=@answer.answ3%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>4</td>
+        <td><%=l(:quest12_4)%></td>
+        <td><div align="center"><%=@answer.answ4%></div></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><%=l(:quest12_5)%></td>
+        <td><div align="center"><%=@answer.answ5%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>6</td>
+        <td><%=l(:quest12_6)%></td>
+        <td><div align="center"><%=@answer.answ6%></div></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td><%=l(:quest12_7)%></td>
+        <td><div align="center"><%=@answer.answ7%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>8</td>
+        <td><%=l(:quest12_8)%></td>
+        <td><div align="center"><%=@answer.answ8%></div></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td><%=l(:quest12_9)%></td>
+        <td><div align="center"><%=@answer.answ9%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>10</td>
+        <td><%=l(:quest12_10)%></td>
+        <td><div align="center"><%=@answer.answ10%></div></td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td><%=l(:quest12_11)%></td>
+        <td><div align="center"><%=@answer.answ11%></div></td>
+      </tr>
+      <tr class="odd">
+        <td>12</td>
+        <td><%=l(:quest12_12)%></td>
+        <td><div align="center"><%=@answer.answ12%></div></td>
+      </tr>
+    </tbody>
+  </table>
+  <br/>
+  <br/>
+  <table cellspacing="0">
+    <!-- <caption><%=l(:quest1)%></caption> -->
+    <thead>
+      <tr>
+        <th scope="col"><div align="left"><%= l(:field_notes) %></div></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd">
+        <td><div align="left"><%=simple_format(@answer.note2)%></div></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<%= link_to l(:button_back),'/my/page' %>
