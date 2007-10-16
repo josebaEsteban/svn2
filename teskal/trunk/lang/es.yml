@@ -974,12 +974,12 @@ quest11_30: Por el placer de descubrir nuevas técnicas
 quest11_31: Porque practicando deporte, puedo expresar valores importantes para mi
 quest11_32: Me lo pregunto a menudo; no llego a conseguir los objetivos que me planteo
 # quest12
-quest12: Cuestionario de Percepción de Exito
+quest12: Cuestionario de Clima Motivacional
 quest12_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de  competición. Por favor, lee cuidadosamente y después selecciona el porcentaje que mejor describa la opinión de tu entrenador.
 quest12_header: Al practicar deporte, mi entrenador/a piensa que tengo éxito cuando
 quest12_valor_1: 0 (nada)
 quest12_valor_2: 100 (completamente)
-quest12_label_0: Percepción de Exito
+quest12_label_0: Clima Motivacional
 quest12_label_1: Clima de Rendimiento
 quest12_label_2: Clima de Maestría
 quest12_1: Derroto a mis compañeros

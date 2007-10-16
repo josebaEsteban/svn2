@@ -974,12 +974,12 @@ quest11_30: For the pleasure of discovering new performance strategies.
 quest11_31: Because by doing it I am fully expressing my deepest values.
 quest11_32: I often ask myself; I can't seem to achieve the goals that I set for myself.
 # quest12
-quest12: Perception of Success Questionnaire
+quest12: Motivational Climate Questionnaire
 quest12_intro: This is a questionnaire which asks you to express your perception of what success in sport means to your coach. There are no right or wrong answers.
 quest12_header: When playing sport, the coach thinks I am most successful when
 quest12_valor_1: 0 (nothing)
 quest12_valor_2: 100 (completely)
-quest12_label_0: Perception of Success
+quest12_label_0: Motivational Climate
 quest12_label_1: Clima de Rendimiento
 quest12_label_2: Clima de Maestría
 quest12_1: I beat other people
