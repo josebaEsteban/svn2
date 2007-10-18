@@ -83,9 +83,9 @@
   <table cellspacing="0">
     <thead>
       <tr>
-        <th scope="col"><div align="left"><%=l(:label_quest_plural)%></div></th>
+        <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>     
         <th scope="col"><div align="left"><%=l(:label_competition) %></div></th>
-        <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>
+        <th scope="col"><div align="left"><%=l(:label_quest_plural)%></div></th>
       </tr>
     </thead>
     <tbody>
@@ -124,9 +124,9 @@
       <tr>
         <% odd=1 end %>
         <% controlador="quest"+ answer.quest_id.to_s %>
+        <td><%= l_datetime(answer.created_on)%></td> 
+        <td><%= answer.competition %></td> 
         <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
-        <td><%= answer.competition %></td>
-        <td><%= l_datetime(answer.created_on)%></td>
       </tr>
       <% end %>
     </tbody>
