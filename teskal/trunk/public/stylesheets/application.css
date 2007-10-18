@@ -240,8 +240,8 @@ html>body #content {
 	height: 500px;
 	font-size: 0.9em;
 	padding: 20px 20px 10px 20px;
-	margin-left: 40px;
-	margin-right: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 #content h2, #content div.wiki h1 {
 	display: block;
@@ -537,12 +537,12 @@ div.menu a.menuItem span.menuItemArrow {
 
 .splitcontentleft {
 	float: left;
-	width: 40%;
+	width: 38%;
 	text-align: left;
 }
 .splitcontentright {
 	float: right;
-	width: 60%;
+	width: 50%;
 	}
 .clear {
 	clear: both;
