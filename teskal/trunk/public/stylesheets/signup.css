@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #signup {
-	width: 54em;
+	width: 57em;
 	background-color: #f7f4ee;
 	font-weight: normal;
 	top: -10px;        	
@@ -9,7 +9,7 @@
 }
 #theform {
 	background-color: #f7f4ee;
-	width: 40em;
+	width: 42em;
 	text-align: left;
 	line-height: 1em;
 	font: 135% Verdana, Tahoma, Arial, sans-serif;
