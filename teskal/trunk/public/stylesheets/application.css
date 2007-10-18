@@ -537,12 +537,13 @@ div.menu a.menuItem span.menuItemArrow {
 
 .splitcontentleft {
 	float: left;
-	width: 50%;
+	width: 40%;
+	text-align: left;
 }
 .splitcontentright {
 	float: right;
-	width: 25%;
-}
+	width: 60%;
+	}
 .clear {
 	clear: both;
 }
