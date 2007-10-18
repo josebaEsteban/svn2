@@ -232,8 +232,9 @@ label_per_page: Per page
 label_please_login: Please login
 label_preview: Preview
 label_previous: Previous
-label_quest: Available questionnaires
+label_quest_avail: Available questionnaires
 label_quest_plural: Questionnaires
+label_quest: Questionnaire
 label_read: Read...
 label_register: Sign up
 label_registered_on: Registered on
