@@ -1,18 +1,4 @@
-<!-- <div class="contextual">
-    <%= link_to l(:label_personalize_page), :action => 'page_layout' %>
-</div> 
- -->
-<!-- <h2><%=l(:label_my_page)%></h2> -->
-
-<div id="list-top">
-  <% @blocks['top'].each do |b| 
-	   next unless MyController::BLOCKS.keys.include? b	%>
-  <div class="mypage-box"> <%= render :partial => "my/blocks/#{b}", :locals => { :user => @user } %> </div>
-  <% end if @blocks['top'] %>
-</div>
-<br/>
-<br/>
-<center>
+<div class="splitcontentleft"> 
   <table cellspacing="0">
     <!-- <caption><%=l(:quest2)%></caption> -->
     <thead>
@@ -72,46 +58,65 @@
       </tr>
     </tbody>
   </table>
-  <br/>
-  <br/>
+<br/>
+<table cellspacing="0">
+  <thead>
+    <tr>
+      <th>##</th>
+      <th scope="col"><div align="left"><%=l(:label_library)%></div></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="http://www.cabezadelobo.com/pdf/01.Teskal.pdf">Presentación Teskal</a></td>
+    </tr>
+    <tr class='odd'>
+      <td>4</td>
+      <td><a href="http://www.cabezadelobo.com/pdf/05.Estres.pdf">El estrés en la competición</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="splitcontentright">
+	<center>
   <table cellspacing="0">
-    <!-- <caption><%=l(:quest2)%></caption> -->
     <thead>
       <tr>
         <th scope="col"><div align="left"><%=l(:label_quest_plural)%></div></th>
-        <th scope="col"><div align="left"><%= l(:label_competition) %></div></th>
-        <th scope="col"><div align="left"><%= l(:label_filled) %></div></th>
+        <th scope="col"><div align="left"><%=l(:label_competition) %></div></th>
+        <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>
       </tr>
     </thead>
     <tbody>
       <% odd=0 %>
       <% for answer in @answers %>
-      <% case  answer.quest_id
-  when 1 
-  quest=l(:quest1) 
-  when 2 
-  quest=l(:quest2_label_0) 
-  when 3 
-  quest=l(:quest3) 
-  when 4 
-  quest=l(:quest4) 
-  when 5 
-  quest=l(:quest5) 
-  when 6 
-  quest=l(:quest6) 
-  when 7 
-  quest=l(:quest7_label_0) 
-  when 8 
-  quest=l(:quest8_label_0)  
-  when 9 
-  quest=l(:quest9_label_0)  
-  when 10 
-  quest=l(:quest10_label_0)  
- when 11 
- quest=l(:quest11_label_0)
-when 12 
-quest=l(:quest12_label_0)
-  end %>
+      <% case answer.quest_id
+              when 1 
+                quest=l(:quest1) 
+              when 2 
+                quest=l(:quest2_label_0) 
+              when 3 
+                quest=l(:quest3) 
+              when 4 
+                quest=l(:quest4) 
+              when 5 
+                quest=l(:quest5) 
+              when 6 
+                quest=l(:quest6) 
+              when 7 
+                quest=l(:quest7_label_0) 
+              when 8 
+                quest=l(:quest8_label_0)  
+              when 9 
+                quest=l(:quest9_label_0)  
+              when 10 
+                quest=l(:quest10_label_0)  
+              when 11 
+                quest=l(:quest11_label_0)
+              when 12 
+                quest=l(:quest12_label_0)
+              end %>
       <% if odd==1 %>
       <tr class="odd">
         <% odd=0%>
@@ -122,9 +127,9 @@ quest=l(:quest12_label_0)
         <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
         <td><%= answer.competition %></td>
         <td><%= l_datetime(answer.created_on)%></td>
-        <!-- <td><%= link_to l(:label_show), :controller  => controlador, :action => 'show', :id => answer %></td> -->
       </tr>
       <% end %>
     </tbody>
   </table>
-</center>
+</center> 
+</div>

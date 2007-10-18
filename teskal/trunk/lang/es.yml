@@ -254,6 +254,7 @@ label_user: Usuario
 label_user_new: Nuevo usuario
 label_user_plural: Usuarios
 label_year: Year
+label_library: Biblioteca
 mail_subject_lost_password: Tu contraseña de Teskal
 mail_subject_register: Activación de la cuenta de Teskal
 notice_account_activated: Tu cuenta ha sido activada. Puedes entrar.

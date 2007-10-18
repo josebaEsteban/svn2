@@ -254,6 +254,7 @@ label_user: Erabiltzailea
 label_user_new: Erabiltzaile Berria
 label_user_plural: Erabiltzaileak
 label_year: Year
+label_library: Biblioteca  
 mail_subject_lost_password: Zure pasa-hitza Teskal
 mail_subject_register: Kontuaren aktibazioa Teskal
 notice_account_activated: Zure kontua aktibatua izan da. Sartu egin zaitezke.
