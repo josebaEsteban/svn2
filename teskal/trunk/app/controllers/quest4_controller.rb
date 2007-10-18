@@ -46,7 +46,18 @@ class Quest4Controller < ApplicationController
     fatiga = @answer.answ3 + @answer.answ8 + @answer.answ13
     ansiedadCognitiva = @answer.answ19 + @answer.answ22 + @answer.answ25 + @answer.answ28 + @answer.answ31 + @answer.answ34 + @answer.answ37 + @answer.answ40 + @answer.answ43
     autoConfianza = @answer.answ21 + @answer.answ24 + @answer.answ27 + @answer.answ30 + @answer.answ33 + @answer.answ36 + @answer.answ39 + @answer.answ42 + @answer.answ45
-    ansiedadSomatica = @answer.answ20 + @answer.answ23 + @answer.answ26 + @answer.answ29 + @answer.answ32+ @answer.answ35 + @answer.answ38 + @answer.answ41 + @answer.answ44
+    relajado = 0
+    case @answer.answ32
+      when 1:
+      relajado = 4
+      when 2:
+      relajado = 3
+      when 3:
+      relajado = 2
+      when 4:
+      relajado = 1
+    end
+    ansiedadSomatica = @answer.answ20 + @answer.answ23 + @answer.answ26 + @answer.answ29 + relajado+ @answer.answ35 + @answer.answ38 + @answer.answ41 + @answer.answ44
     nivelMotivacion = (@answer.answ46 + @answer.answ47)/2.0
     nivelDificultad = @answer.answ17
     gradoConfianza =  @answer.answ18
@@ -56,106 +67,106 @@ class Quest4Controller < ApplicationController
     @icon=[]
     item=0
     if tension< 5
-      @advice[item]=l(:quest1_d1_a)
+      @advice[item]=l(:quest4_d1_a)
       @icon[item]="star"
     else
       if tension< 9
-        @advice[item]=l(:quest1_d1_b)
+        @advice[item]=l(:quest4_d1_b)
         @icon[item]="medium"
       else
-        @advice[item]=l(:quest1_d1_c)
+        @advice[item]=l(:quest4_d1_c)
         @icon[item]="stop"
       end
     end
     item=1
     if depresion< 2
-      @advice[item]=l(:quest1_d2_a)
+      @advice[item]=l(:quest4_d2_a)
       @icon[item]="star"
     else
       if depresion< 6
-        @advice[item]=l(:quest1_d2_b)
+        @advice[item]=l(:quest4_d2_b)
         @icon[item]="medium"
       else
-        @advice[item]=l(:quest1_d2_c)
+        @advice[item]=l(:quest4_d2_c)
         @icon[item]="stop"
       end
     end
     item=2
     if hostilidad < 3
-      @advice[item]=l(:quest1_d3_a)
+      @advice[item]=l(:quest4_d3_a)
       @icon[item]="star"
     else
       if hostilidad < 7
-        @advice[item]=l(:quest1_d3_b)
+        @advice[item]=l(:quest4_d3_b)
         @icon[item]="medium"
       else
-        @advice[item]=l(:quest1_d3_c)
+        @advice[item]=l(:quest4_d3_c)
         @icon[item]="stop"
       end
     end
     item=3
     if vigor < 7
-      @advice[item]=l(:quest1_d4_a)
+      @advice[item]=l(:quest4_d4_a)
       @icon[item]="stop"
     else
       if vigor < 10
-        @advice[item]=l(:quest1_d4_b)
+        @advice[item]=l(:quest4_d4_b)
         @icon[item]="medium"
         @icon[item]="medium"
       else
-        @advice[item]=l(:quest1_d4_c)
+        @advice[item]=l(:quest4_d4_c)
         @icon[item]="star"
       end
     end
     item=4
     if fatiga < 4
-      @advice[item]=l(:quest1_d5_a)
+      @advice[item]=l(:quest4_d5_a)
       @icon[item]="star"
     else
       if fatiga < 8
-        @advice[item]=l(:quest1_d5_b)
+        @advice[item]=l(:quest4_d5_b)
         @icon[item]="medium"
       else
-        @advice[item]=l(:quest1_d5_c)
+        @advice[item]=l(:quest4_d5_c)
         @icon[item]="stop"
       end
     end
     item=5
     if ansiedadCognitiva < 13
-      @advice[item]=l(:quest1_d6_a)
+      @advice[item]=l(:quest4_d6_a)
       @icon[item]="star"
     else
       if ansiedadCognitiva < 25
-        @advice[item]=l(:quest1_d6_b)
+        @advice[item]=l(:quest4_d6_b)
         @icon[item]="medium"
       else
-        @advice[item]=l(:quest1_d6_c)
+        @advice[item]=l(:quest4_d6_c)
         @icon[item]="stop"
       end
     end
     item=6
     if autoConfianza < 1
-      @advice[item]=l(:quest1_d7_a)
+      @advice[item]=l(:quest4_d7_a)
       @icon[item]="stop"
     else
       if autoConfianza < 25
-        @advice[item]=l(:quest1_d7_b)
+        @advice[item]=l(:quest4_d7_b)
         @icon[item]="medium"
       else
-        @advice[item]=l(:quest1_d7_c)
+        @advice[item]=l(:quest4_d7_c)
         @icon[item]="star"
       end
     end
     item=7
     if ansiedadSomatica < 13
-      @advice[item]=l(:quest1_d8_a)
+      @advice[item]=l(:quest4_d8_a)
       @icon[item]="star"
     else
       if ansiedadSomatica < 25
-        @advice[item]=l(:quest1_d8_b)
+        @advice[item]=l(:quest4_d8_b)
         @icon[item]="medium"
       else
-        @advice[item]=l(:quest1_d8_c)
+        @advice[item]=l(:quest4_d8_c)
         @icon[item]="stop"
       end
     end
