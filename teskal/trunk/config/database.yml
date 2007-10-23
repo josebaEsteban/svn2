@@ -28,6 +28,6 @@ production:
   adapter: mysql
   database: teskal
   username: octavio
-  password: 
+  password:
   socket: /opt/local/var/run/mysql5/mysqld.sock
   encoding: utf8
