@@ -1,3 +1,32 @@
 <h3>Users <%= @users %> </h3>
 <h3>Quests <%= @quests %></h3>
 <h3><a href="/rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>  
+<table cellspacing="0">
+
+  <tbody>
+<%- odd=0 -%> 
+<%- nope="" -%>
+  <%- (Answer.find_by_sql("select * from answers order by user_id, quest_id")).each do |answer|  -%> 
+<%- if answer.user_id != nope
+	user=User.find_by_id(answer.user_id)
+    nope = answer.user_id  -%>
+   <thead>
+	   <tr>
+        <th scope="col"><div align="left"><%= user.firstname + " " +user.lastname %></div></th>
+        <th scope="col"><div align="left"><%=l_datetime(user.last_login_on)%></div></th>
+      </tr>
+    </thead>
+<%- end -%>
+	   <%- if odd == 1 -%>
+	    <tr class="odd">
+	      <%- odd=0-%>
+	      <%-else -%>
+	    <tr>
+	      <%- odd=1 end -%> 
+	
+	    <td><%= answer.quest_id %></td>
+	 <td><%= l_datetime(answer.created_on) %></td>
+	</tr>
+    <%- end -%> 
+</tbody>
+</table>
