@@ -16,7 +16,8 @@
       <%- else -%>
       <th scope="col"><div align="left"><%=l_datetime(user.last_login_on)%></div></th>
       <%- end -%>
-    </tr>
+    <th scope="col"><div align="left"><%= user.ip %></div></th>
+    </tr>   
   </thead>
 <%- respuestas=1 -%>
   <%- (Answer.find_by_sql("select * from answers where answers.user_id=#{user.id } order by answers.created_on")).each do |answer|  -%>
@@ -29,6 +30,7 @@
     <td><%= respuestas %></td>
     <td><%= answer.quest_id %></td>
     <td><%= l_datetime(answer.created_on) %></td>
+    <td><%= answer.ip %></td> 
   </tr>
 <%- respuestas = respuestas+1 -%>
   <%- end -%>
