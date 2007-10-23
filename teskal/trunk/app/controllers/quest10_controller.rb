@@ -40,14 +40,14 @@ class Quest10Controller < ApplicationController
     item=0
     if peg < 2.5
       @advice[item]=l(:quest9_d1_a)
-      @icon[item]="stop"
+      @icon[item]="star"
     else
       if peg < 4
         @advice[item]=l(:quest9_d1_b)
         @icon[item]="medium"
       else
         @advice[item]=l(:quest9_d1_c)
-        @icon[item]="star"
+        @icon[item]="stop"
       end
     end
     co = (@answer.answ16 + @answer.answ17 + @answer.answ19 + @answer.answ20)/4.0
