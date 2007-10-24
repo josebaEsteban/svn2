@@ -899,30 +899,30 @@ quest9_d8_a: 2,5 azpitik kokatzen den errendimendu klimaren (PER) balio baxu hon
 quest9_d8_b: Errendimendu klimaren (PER) balio ertain honek entrenatzailearentzat kirolariengan ematen diren emaitzak garrantzitsuak direla, batzuetan bere gaitasunen hobetzea bainon gehiago gainera, antzematea suposatzen du. Esfortzuarekiko konpromezuan positiboki eragin dezake eta akatsen aurrean antsietatea gutxitzen lagundu dezake, egotekotan.
 quest9_d8_c: Errendimendu klimaren (PER) balio altu honek entrenatzailearentzat kirolariengan ematen diren emaitzak garrantzitsuena direla antzematea suposatzen du. Honek kirolarien erronka pertsonal handieneko egoerei aurre egiteko gaitasuna ahultzeaz gain, zailtasun handiko egoeretan ematen diren akatsen aurrean ematen den antsietatearen areagotze garrantzitsuan lagunduko du.
 # quest10
-quest10: Cuestionario de Clima de Tecnificación Reflejado
-quest10_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de  competición. Por favor, lee cuidadosamente y después rodea con un círculo el número que hay al lado, el que mejor describa el comportamiento de tu entrenador durante  el entrenamiento y los partidos de competición.
-quest10_label_0: Clima de Tecnificación Reflejado
-quest10_label_1: Mi entrenador/a 
-quest10_1: Permite que tomen decisiones que no se corresponden con la táctica prevista
-quest10_2: Piensa que l@s deportistas tienen éxito cuando superan las dificultades
-quest10_3: Prefiere que el equipo gane a que 'Se hagan las cosas bien hechas'
-quest10_4: Sacrifica la calidad de la técnica de competición por amarrar el resultado
-quest10_5: Para él/ella, lo primero es ganar la competición y después competir bien
-quest10_6: Felicita a l@s deportistas cuando hacen las cosas bien, actúan según lo esperado
-quest10_7: Anima a l@s deportistas en las acciones futuras
-quest10_8: Da instrucciones sobre aspectos técnicos, tácticos, estilo, recorrido..etc.
-quest10_9: Piensa que l@s deportistas tienen éxito cuando lo hacen mejor que los demás
-quest10_10: Permite solucionar situaciones de competición de forma diferente a mis directrices
-quest10_11: Anima a l@s deportistas cuando cometen un fallo
-quest10_12: Piensa que l@s deportistas tienen éxito cuando son claramente superiores a los demás
-quest10_13: Se enfada cuando l@s deportistas actúan de forma no deseada
-quest10_14: Se enfada cuando tengo que corregir a l@s deportistas después de un error
-quest10_15: Para él/ella, los errores ayudan a l@s deportistas a darse cuenta de sus déficits y a mejorar.
-quest10_16: Procura que el tiempo de competición de cada deportistas en la temporada sea semejante
-quest10_17: Procura que l@s deportistas participen en el mismo nº de competiciones en la temporada
-quest10_18: Piensa que l@s deportistas tienen éxito cuando lo hacen todo lo mejor que saben hacerlo
-quest10_19: Tiene la máxima confianza en todos l@s deportistas cuando disputan una competición
-quest10_20: Cuando l@s deportistas cometen errores sigue manteniendo la confianza en ell@s
+quest10: Erakutsitako teknifikazio klimaren galdetegia
+quest10_intro: Behean lehiaketako egoerekin eta  jokabidearekin zer ikusia duten komentario eta esaldi sorta dago. Mesedez, arretaz irakurri eta entrenamenduetan zehar eta lehiaketa partiduetan zehar zure entrenatzailearen portaera hobekien deskribatzen duen zenbakia borobildu ezazu.
+quest10_label_0: Erakutsitako teknifikazio klima
+quest10_label_1: Nire entrenatzailea
+quest10_1: Aurreikusitako taktikarekin bat ez datozen erabakiak hartzen usten die
+quest10_2: Kirolariek arrakasta zailtasunak gainditzen dituztenean lortzen dutela uste du
+quest10_3: Nahiago du taldeak irabaztea –gauzak ondo egiñak egotea baino-
+quest10_4: Emaitza lotzearren lehiaketako teknikaren kalitatea sakrifikatzen du
+quest10_5: Berarentzat aurrena irabaztea da eta ondon lehiatzea ondoren
+quest10_6: Gauzak ondo egiten dituztenean kirolariak zoriontzen ditu, espero denaren arabera jokatzen dute
+quest10_7: Kirolariak etorkizuneko egintzetan animatzen ditu
+quest10_8: Aspektu tekniko, taktiko, estilozko, ibilbidezko, etab.-i buruzko instrukzioak ematen ditu
+quest10_9: Kirolariek arrakasta besteek bainon heobeto egiten dutenean lortzen dutela uste du
+quest10_10: Lehiaketako egoerak emandako gidalerroen modu ezberdinean konpontzen usten du
+quest10_11: Kirolariak hutsen bat egiten dutenean animatu egiten ditu
+quest10_12: Kirolariek arrakasta dutela uste du modu nabarian beste guztiei nagusitzen direnean
+quest10_13: Kirolariek desio ez den moduan jokatzen dutenean haserretu egiten da
+quest10_14: Kirolariek akatsen baten ostean zuzendu behar dituenean haserretu egiten da
+quest10_15: Berarentzat Akatsek kirolaria beren defizietaz eta hobetu beharraz ohartarazten laguntzen dute
+quest10_16: Denboraldian zehar, kirolari bakoitzaren lehiaketa denbora berdina izan dadin saiatzen da
+quest10_17: Denboraldian zehar kirolariak lehiaketa kopuru berean parte hartu dezaten saiatzen da
+quest10_18: Kirolariek arrakasta dutela uste du, hauek dakiten bezain ondo egiten dutenean
+quest10_19: Lehiaketa bat jokatzen dutenenan kirolari guztiengan konfiantza osoa dauka
+quest10_20: Kirolariek akatsen bat egiten dutenean beraiengan konfiantza mantentzen jarraitzen du
 #quest11
 quest11: Cuestionario de Motivación Intrínseca
 quest11_intro: Utilizando la escala que se está debajo, indica por favor en qué medida cada uno de los siguientes temas corresponde a una de las razones por las que practicas tu deporte. 
