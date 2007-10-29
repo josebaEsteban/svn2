@@ -597,8 +597,32 @@ quest4_4: Kaurkariei buruz daukazun ezagutza mailaTu conocimiento sobre los/las 
 quest4_5: Proba zuretzat egokia da
 quest4_6: Lehiaketa plana prestatu duzu?
 quest4_7: Zein modutan jokatu nahi duzun argi daukazu
-quest4_8: Resultado que esperas alcanzar
+quest4_8: Lortzea espero duen emaitza
 # dimensiones
+quest4_d1_a: Tentsioaren balioak maila baxu batean aurkitzen direnez kirolari hau lasai dagolea suposatzen du. Balio hau lehiaketa egoera honetan positiboa denentz identifikatu behar da ze errendimendu altueneko egoerei aurre egiteko zonalde ertaineko emaitzak lortzea gomendatzen bait da.
+quest4_d1_b: Tentsioaren balioak maila ertain batean aurkitzen dira. Kasu honetan positiboa da kirolaria erne eta zain egon bait da. Lehiaketa egoeretan dimentsio hau erdiko zonaldeko maila ertainean kokatzea komeni da.
+quest4_d1_c: Tentsioaren balioak bere errendimenduan modu negatibo batean eragin ahal izan duten maila altu batean aurkitzen dira. Kezkatuegi eta urduriegi litekena da lehiaketan zehar egin behar zuen lanean ezin zentratu izana.
+quest4_d2_a: Depresioaren kasuan balioak maila baxu batean aurkitzen dira. Hau positiboa da kirolari hau babestua eta aintzat hartua sentitzen bait da, lehiaketan zehar oreka emozionala  eta sentsazio onak transmitituaz.
+quest4_d2_b: Depresioaren kasuan, balioak apur bat kezkagarria izan daiteken maila ertain batean aurkitzen dira. Batzuetan lehiaketaren dinamika berari eragiten dion gaizkiegon orokor batek eragina izan ohi da. Dimentsio honen bilakaera eta honelako balio baten arrazoiak aztertzea komeni da datozen lehiaketetan indargabetzeko.
+quest4_d2_c: Depresioaren kasuan balioak maila altu batean aurkitzen dira. Hau kezkagarria da litekena bait da lehiaketa konplikatu izana. Beharrezkoa litzateke bere tentuarengan modu negatiboan eragiten ari diren elementuak identifikatzea.
+quest4_d3_a: Areriotasunari so egiterakoan bere balioak kasu honetan komenigarria ez den maila baxu batean aurkitzen direla ikusi dezakegu. Balio hau lehiaketa egoera honetan positiboa den ala ez identifikatu beharko litzateke ze errendimendu goreneko egoerei aurre egiteko erdiko zonaldeko erdiko balioak lortzea gomendatzen bait da.
+quest4_d3_b: Areriotasunari so egiterakoan bere balioak maila ertain batean aurkitzen direla ikusten dugu. Hau lehiaketa egoera honentzako egokia iruditzen zaigu. Kasu hauetan balio hauek “lehiaketako egoera gogorrei” aurre egiteko aparteko energia suposatze dute.
+quest4_d3_c: Areriotasunari so egiterakoan bere balioak maila altu batean aurkitzen direla ikusten dugu. Hau kezkagarria da litekena bait da bere errendimenduan modu negatiboan eragitea. Haserreegi, bere indarrak modu ez inteligente batean erabiliko zituen eta lehiaketako momento garrantzitsuenetan bere errendimendua bere aukeren azpitik izango zen. Kirolari honi Aktibazioaren Power-a eta Errendimendu Egoera Optimoaren (EEO) edukiak esplikatu beharko litzaizkioke.
+quest4_d4_a: Kemenaren balioak maila baxu batean aurkitzen dira. Honek lehiatzeko itzalita eta txispa gabe aurkitzen dela suposatzen du. Balioak nekearen balioekiko alderantzikatuak badaude gehiegizko entrenamendu kasu posible baten aurrean geundeke. Nolanahi ere, behin lehiaketa amaituta eta entrenamenduekin berriro hasi aurretik komenigarria litzateke egun batzuetan zehar atseden hartzea eta profil optimoaren balioetara hurbiltzea.
+quest4_d4_b: Kemenaren balioak maila ertain batean aurkitzen dira. Honek, printzipioz, bere errendimendua kaltetuko du balioak maila honen goiko zonaldean aurkitu ezean. Litekena da lehiaketa honetarako espezifikoki ez prestatu izana edo eta entrenamendu dentso eta intentsitate altuko periodo batean aurkitzea.
+quest4_d4_c: Kemenaren balioak maila altu batean aurkitzen dira, lehiatzeko zonalde optimoan alegia. Honek planteatzen zaion dena delako erronkaren aurrean arrakasta aukerak areagotzea suposatzen du. Honen arabera, printzipioz, errendimendurako dimentsio emozional positiboak lehiaketa honi garantiekin aurre egiteko oreka emozional on bat bermatzen du.
+quest4_d5_a: Nekearen balioei dagokionez maila baxu batean aurkitzen dira. Hau positiboa da kirolari hau lehiaketan zehar lehiaketa erritmo altuak eta iraupen luzeko esfortzuak jasateko pletoriko dagoela suposatzen bait du.
+quest4_d5_b: Nekearen balioei dagokionez maila ertain batean aurkitzen dira. Kasu honetan hau apur bat kezkagarria izan daiteke bere errendiemenduan modu negatiboan eragingo bait du.  Balio hauek intralehiaketan egindako pasazioetatik eratortzen badira, normaltzat jo daitezke errekuperazio prozesuak kontutan hartu beharko direlarik ebaluatuak izan ahal izateko.
+quest4_d5_c: Nekearen balioei dagokionez maila altu batetan aurkitzen dira. Hau oso kezkagarria da bere lehiakortasunaren errendimenduan modu oso negatiboan eragingo bait du, beti ere lehiaketa hau prestatu ez badu eta intentsitate bolumen handiko entrenamendu bolada batekin kointziditzen ez badu. Sasoi puntuan jartzeko lan egokia egin bada, balio altu honek kirolari honengan gehiegizko entrenamendu arriskua dagoela adierazi diezaguke.
+quest4_d6_a: Antsietate kognitiboari dagokionez balio baxua aurkezten du lasaitasuna eta baretasuna transmitituaz, arduragabe, lehiaketan beharrezkoak diren uneetan kontzentratzeko gaitasun handiarekin.
+quest4_d6_b: Antsietate kognitiboari dagokionez balio ertain bat behatzen da. Honen arabera, batzuetan apur bat kezkati edo eta urduri aurkitzen dela esan nahi du. Hurrengo lehiaketari begira balio hauek murrizteko ahozko persuazioaren bitartez, presio/estres bisionatuetaz lagunduta, lehiaketan zehar egokitzapen txiki bat egitea komeni da.
+quest4_d6_c: Antsietate kognitiboari dagokionean, lehiaketan zeharreko errendimendu pertsonalarekiko gehiegizko kezkarekin erlazionaturiko balio altu bat aurkezten du. Akaso momento garrantzitsuetan kontzentratzen usten ez dioten pentsamendu desordenatu gehiegi ditu. Segidan datozen lehiaketetarako Lehiaketako Plan Integralean zentratzea beharrezkoa izango da eta, entrenamenduan, presio/estres bisionatu sesioetaz lagunduriko lan espezifiko bat egitea.
+quest4_d7_a: Autokonfiantza balioak oso baxuak dira lehiaketan zehar ziurgabetasun handia eraginaz, bereziki presio handiko egoerak sortzen direnean. Beharrezkoa egiten da Lehiaketako Plan Integralean zentratzea eta datozen lehiaketetarako ahozko persuasioaz baliatzea. Luzera begira, tutoreak gidaturiko bere esperientzia pertsonaletan eta autoefikazia edukien bisionatu sesioekin balio hauek areagotzeko entrenamenduan lan espezifiko bat proposatu.
+quest4_d7_b: Autokonfiantza maila ertain bat aurkezten du nolabaiteko deserosotasuna erakutsiaz errendimendu egoera honetan. Akaso kosta egiten zaio bere burua lehiaketako egoerak modu arrakastatsu batean erabakizten ikustea, horregatik berehalako lehiaketei begira hau hobetzeko ahozko persuasioaz baliatzea gomendatzen da. Luzera begira, balio hauek areagotzeko entrenamenduan lan espezifiko bat proposatu.
+quest4_d7_c: Autokonfiantza maila altu bat ikusten da lehiatzeko sentsazio onekin, eroso eta presio egoeretan bere errendimendua hobezin egiteko gaitasunarekin batera. Konbikzio altu honek lehiaketari bere aukera guztiekin aurre egiteko bermea eskainiko dio.
+quest4_d8_a: Antsietate somatikoari dagokionez balio baxu bat aurkezten du lasaitasuna eta erosotasuna azalduaz, beharrezkoak diren momentuetan gorputza erlaxatzeko eta mentalki aktibo egoteko, “calma expectante”-a alegia,  gaitasun handiarekin. Lehiaketan errenditzeko balio ezin hobeak dira.
+quest4_d8_b: Antsietate somatikoari dagokionez balio ertain bat ikusten da noizbehinka apur bat urduri eta tentso dagoela suposatzen duena. Datozen lehiaketetarako miniestrategia bat erlaxapen/arnasketa edukiekiekin eta Lehiaketako Plan Integralaren reebaluazio kognitiboaren atalari lotua, eskaintzea gomendatzen da. Luzera begira, erlaxapen edukiekin loturiko iraganeko esperientzia arrakastatsuen bisionatu sesioekin sendotu.
+quest4_d8_c: Antsietate somatikoaren balioak gehiegizkoak eta errendimenduarentzako kaltegarriak dira. Tentsio kontrolatzeko zailtasunak izango ditu eta litekena da egoera konkretu batzuetan bere ekintzetan prezipitatzea bere maila hoberenean errenditzea galeraziz. Balio hauek murrizteko datozen lehiaketetarako erlaxapen/arnasketa edukiekin miniestrategia bat eskainztea gomendatzen da, Lehiaketako Plan Integralaren reebaluazio kognitiboaren atalari lotua eta honetan bertan integratzea. Luzera begira, erlaxapen eta Presio/estres edukiekin loturiko iraganeko esperientzia arrakastatsuen bisionatu sesioekin sendotu tutorearen gidaritzarekin.
 quest4_d10_a: Antzemandako zailtasun estimatua (AZE) arrakasta izateko probabilidadeekin zuzenki erlkazionaturik aurkitzen da. Proposaturiko helburua geroz eta txikiagoa lortzeko geroz eta probabilidade gehiago. Beharrezkoa da, gutxienez helburuetako bi hobekuntza pertsonalaren helburuei lotuak egotea. AZEaren balio baxu hauek helburuen hautaketa xumea izan dela adierazten dute. Balorazioan nolabaiteko ezegonkortasuna azaltzen badute, kirolari honek bere helburuak hautatzeko orduan diskriminazio gaitasuna duela esan nahiko du baina seguruaski autokonfiantza maila baxuekin. Autoefikaziaren Power-ean oinarrituriko lan espezifiko bat planteatzea ezin bestekoa egingo da.
 quest4_d10_b: Antzemandako zailtasun estimatua (AZE) arrakasta lortzeko probabilitatearekin zuzenki erlazionaturik aurkitzen da. Proposaturiko helburua geroz eta txikiagoa lortzeko geroz eta probabilidade gehiago. Beharrezkoa da, gutxienez helburuetako bi hobekuntza pertsonalaren helburuei lotuak egotea. AZEaren balio ertain hauek helburuen hautaketa mugatua izan dela adierazten dute. Balorazioan nolabaiteko egonkortasunarekin bat badatoz, 70 inguru alegia, kirolariak autoinposaturiko helburuak uniformatzeko joera duela bainan asmo handiagoan izan beharko lituzkeela esan nahiko du. Komeni da egoeraren zailtasun maila kirolariaren esku ez dagoela gogoraraztea inolaz ezingo baitu hau aldatu bainan bai -arrakasta lortzeko probabilitatea hareagotu bere buruarenganako sinesmenak altu mantenduaz-.
 quest4_d10_c: Antzemandako zailtasun estimatua (AZE) arrakasta lortzeko probabilitatearekin zuzenki erlazionaturik aurkitzen da. Proposaturiko helburua geroz eta txikiagoa lortzeko geroz eta probabilidade gehiago. Beharrezkoa da, gutxienez helburuetako bi hobekuntza pertsonalaren helburuei lotuak egotea. AZEaren balio altu hauek helburuen hautaketa amso handikoa izan dela adierazten dute. Balorazioan nolabaiteko aldakortasunaz lagunduak badoaz, 70-100 bitarte alegia, kirolari honek bere helburuak hautatzerako orduan diskriminaziorako gaitasun bikaina duela esan nahiko du. Komeni da egoeraren zailtasun maila kirolariaren esku ez dagoela gogoraraztea inolaz ezingo baitu hau aldatu bainan bai -arrakasta lortzeko probabilitatea hareagotu bere buruarenganako sinesmenak altu mantenduaz-.
@@ -924,86 +948,86 @@ quest10_18: Kirolariek arrakasta dutela uste du, hauek dakiten bezain ondo egite
 quest10_19: Lehiaketa bat jokatzen dutenenan kirolari guztiengan konfiantza osoa dauka
 quest10_20: Kirolariek akatsen bat egiten dutenean beraiengan konfiantza mantentzen jarraitzen du
 #quest11
-quest11: Cuestionario de Motivación Intrínseca
-quest11_intro: Utilizando la escala que se está debajo, indica por favor en qué medida cada uno de los siguientes temas corresponde a una de las razones por las que practicas tu deporte. 
-quest11_header: Porqué practicas tu deporte
-quest11_valor_1: 1 (no del todo)
-quest11_valor_2: 2 (muy poco)
-quest11_valor_3: 3 (un poco)
-quest11_valor_4: 4 (mas bien)
-quest11_valor_5: 5 (corresponds quit a bit)
-quest11_valor_6: 6 (bastante)
-quest11_valor_7: 7 (totalmente)
-quest11_label_0: Motivación Intrínseca
-quest11_label_1: Conocer
-quest11_label_2: Lograr
-quest11_label_3: Experimentar estímulo
-quest11_label_4: Regulación integrada
-quest11_label_5: Regulación identificada
-quest11_label_6: Regulación introyectada
-quest11_label_7: Regulación externa
-quest11_label_8: Amotivación
-quest11_1: Por el placer de vivir experiencias excitantes
-quest11_2: Por el placer que me da saber más del deporte que practico
-quest11_3: Solía tener buenas razones para practicar deporte, pero ahora me pregunto si debo seguir
-quest11_4: Porque practicar deporte representa la esencia de lo que yo soy
-quest11_5: Por el placer de descubrir nuevas técnicas de entrenamiento
-quest11_6: Ya no lo tengo claro; tengo la impresion de que soy incapaz de tener éxito en este deporte
-quest11_7: Porque me permite estar bien visto(a) por la gente que conozco
-quest11_8: Porque, para mi, es una de las mejores formas de conocer gente
-quest11_9: Porque experimento mucha satisfacción nersonal cuando controlo algunas técnicas difíciles 
-quest11_10: Porque es absolutamente necesario hacer deportes si se quiere estar en forma
-quest11_11: Por el prestigio de ser un deportista
-quest11_12: Porque es uno de los medios que he elegido para desarrollar otros aspectos de mi persona
-quest11_13: Por el placer que experimento cuando mejoro alguno de mis puntos débiles
-quest11_14: Por la excitación que experimento cuando practico esta actividad
-quest11_15: Porque considero absolutamente necesario practicar deporte para sentirme bien conmigo mismo
-quest11_16: Por la satisfacción que siento cuando mejoro mis habilidades
-quest11_17: Porque estar en forma está bien visto por la gente de mi alrededor
-quest11_18: Porque hacer deporte es una parte integral de mi vida
-quest11_19: Porque es una buena manera de aprender otras cosas que me pueden ser útiles en otros ámbitos de mi vida
-quest11_20: Por las emociones intensas que experimento al hacer un deporte que me gusta
-quest11_21: No lo sé claramente; creo que mi sitio no está en este deporte
-quest11_22: Por el placer aue obtengo cuando ejecuto algunos movimientos difíciles
-quest11_23: Porque me sentiría mal si no no dedicase el tiempo necesario para practicar deporte
-quest11_24: Porque a través del deporte, puedo expresar principios relacionados con mi forma de entender la vida
-quest11_25: Para demostrar a los demás hasta que punto soy bueno en mi deporte
-quest11_26: Porque para mi es muy agradable descubrir nuevos métodos de entrenamiento
-quest11_27: Porque es una de las mejores formas de mantener buenas relaciones con mis amigos
-quest11_28: Porque me gusta la sensación de sentirme inmerso a tope en mi deporte
-quest11_29: Porque es necesario practicar deporte a menudo
-quest11_30: Por el placer de descubrir nuevas técnicas
-quest11_31: Porque practicando deporte, puedo expresar valores importantes para mi
-quest11_32: Me lo pregunto a menudo; no llego a conseguir los objetivos que me planteo
+quest11: Motibazio intrintsekoaren galdetegia
+quest11_intro: Behean dagoen eskalaz baliatuta adierazi ezazu mesedez zenbateraino gai hauetako bakoitzak zure kirola praktikatzeko arrazoietako batekin bat egiten duen. 
+quest11_header: Zergatik praktikatzen duzu zure kirola
+quest11_valor_1: 1 (ez guztiz)
+quest11_valor_2: 2 (oso gutxi)
+quest11_valor_3: 3 (pixka bat)
+quest11_valor_4: 4 (hobe esanda)
+quest11_valor_5: 5 (dexent)
+quest11_valor_6: 6 (asko)
+quest11_valor_7: 7 (guztiz)
+quest11_label_0: Motibazio intrintsekoa
+quest11_label_1: Ezagutu
+quest11_label_2: Lortu
+quest11_label_3: Estimulua esperimentatu
+quest11_label_4: Integraturiko erregulazioa 
+quest11_label_5: Identifikaturiko erregulazioa
+quest11_label_6: Introiektaturiko erregulazioa
+quest11_label_7: Kanpo erregulazioa 
+quest11_label_8: Amotibazioa
+quest11_1: Esperientzia suspergarriak bizitzearen plazerragatik
+quest11_2: Praktikatzen dudan kirolari buruz geroz eta gehiago jakiteak eragiten didan plazerragatik
+quest11_3: Lehen kirola praktikatzeko arrazoi onak izaten nituen baina egun, jarraitu ala ez galdetzen diot neure buruari
+quest11_4: Kirola praktikatzeak ni naizenaren esentzia adierazten duelako
+quest11_5: Entrenamendu teknika berriak deskubritzearen plazerragatik
+quest11_6: Jada ez daukat bat ere argi; kirol honetan arrakasta lortzeko gai ez naizenaren inpresioa daukat
+quest11_7: Ezagutzen dudan jendeagatik ondo ikusia izaten laguntzen didalako
+quest11_8: Niretzako, jendea ezagutzeko modu onenetarikoa delako
+quest11_9: Teknika zail batzuk kontrolatzen ditudanean gozamen pertsonal asko esperimentatzen dudalako
+quest11_10: Sasoi onean egon nahi baldin bada guztiz ezinbestekoa bait da kirolak egitea
+quest11_11: Kirolaria izatearen ospeagatik
+quest11_12: Nire bizitzako beste aspektu batzuk garatzeko aukeratu dudan bitartekoetariko bat delako
+quest11_13: Nire ahulezietakoren bat hobetzen dudanean esperimentatzen dudan gozamenagatik
+quest11_14: Jarduera hau praktikatzen dudanean esperimentatzen dudan eszitazioagatik
+quest11_15: Nire buruarekin gustura sentitzeko ezinbestekotzat jotzen dudalako kirolen bat praktikatzea
+quest11_16: Nire trebetasunak hobetzen ditudanean sentitzen dudan gozamenarengatik
+quest11_17: Sasoi onean egotea nire inguruko jendeagatik ondo ikusia dagoelako
+quest11_18: Kirola egitea nire bizitzako parte integrala delako
+quest11_19: Nire bizitzako beste esparru batzuetan baliagarriak izan daitezken beste gauza batzuk ikasteko modu on bat delako
+quest11_20: Gustuko dudan kirola bat egiterako orduan esperimentazten ditudan emozio biziengatik
+quest11_21: Argi ez dakit; nire lekua kirol honetan ez dagoela uste dut
+quest11_22: Mugiendu zail batzuk gauzatzen ditudanean lortzen dudan gozamenarengatik
+quest11_23: Kirola praktikatzeko behar haina denbora dedikatuko ez banu gaizki sentituko nintzatekeelako
+quest11_24: Kirolaren bitartez bizitza ulertzeko dudan moduarekin erlazionaturiko printzipioak adierazi ditzazkedalako
+quest11_25: Besteei nire kirolean zenabteraino ona naizen erakusteko
+quest11_26: Niretzako entrenamendu metodo berriak aurkitzea oso atsegina delako
+quest11_27: Nire lagunekin harreman onak mantentzeko modu onenetarikoa delako
+quest11_28: Nire kirolea guztiz murgildua sentitzearen sentsazioa gustoko dudalako
+quest11_29: Kirola maiz praktikatzea beharrezkoa delako
+quest11_30: Teknika berriak aurkitzearen gozamenarengatik
+quest11_31: Zeren kirola praktikatuaz niretzako garrantzitsuak diren balioak adierazi ditzazkedalako
+quest11_32: Maiz galdetzen diot nire buruari; ez naiz iristen planteatzen ditudan helburuak lortzera
 # quest12
-quest12: Cuestionario de Percepción de Exito
-quest12_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de  competición. Por favor, lee cuidadosamente y después selecciona el porcentaje que mejor describa la opinión de tu entrenador.
-quest12_header: Al practicar deporte, mi entrenador/a piensa que tengo éxito cuando
-quest12_valor_1: 0 (nada)
-quest12_valor_2: 100 (completamente)
-quest12_label_0: Percepción de Exito
-quest12_label_1: Clima de Rendimiento
-quest12_label_2: Clima de Maestría
-quest12_1: Derroto a mis compañeros
-quest12_2: Soy el/la mejor
-quest12_3: Trabajo duro
-quest12_4: Demuestro una clara mejoría personal
-quest12_5: Lo hago mejor que los demás y que las demás
-quest12_6: Demuestro a la gente que soy el/la mejor
-quest12_7: Supero las dificultades
-quest12_8: Domino algo que no podía hacer
-quest12_9: Hago algo que los demás no pueden hacer
-quest12_10: Lo hago todo lo mejor que se
-quest12_11: Alcanzo la meta que me propuse
-quest12_12: Soy claramente superior a los/las demás
-quest12_d1_a: Este bajo valor de asociado al clima motivacional  rendimiento, situado por debajo de 4, supone que, para est@  técnico,  los resultados obtenidos por l@s deportistas tienen un valor  bajo, quizás menos que la mejora de las habilidades, lo que producirá un efecto positivo sobre  la implicación durante el entrenamiento y el control sobre la ansiedad frente a los errores de l@s deportistas, en el caso de que la hubiera.
-quest12_d1_b: Este  valor medio  asociado clima motivacional  rendimiento, situado entre 4 y 7, supone que, para est@ técnico, los resultados obtenidos por l@s deportistas tienen un importante valor, que  si son semejantes a los del clima de maestría, fortalecerá la motivación y aumentará su compromiso con el esfuerzo, ayudándole al deprotista a  controlar la ansiedad frente a los errores en el caso de que la tuviera.
-quest12_d1_c: Este alto valor asociado clima motivacional  rendimiento situado por encima de 7, supone que, para est@ técnico, los resultados obtenidos por l@s deportistas tienen un máximo valor. Solamente si van acompañados de máximos valores en el clima moticacional de maestría, supondrá una buena motivación para aumentar su compromiso e implicación con el esfuerzo. En el caso de que prevalezca sobre el de maestría señalado, posiblemente mermará la capacidad de l@s deportistas frente a situaciones de máximo desafío personal.
-quest12_d2_a: El clima motivacional de maestría, se encuentra en niveles bajos, lo cual es un poco preocupante. Le cuesta valorar positivamente  las  mejoras  de l@s deportistas y, cuando se enfrenten a situaciones  novedosas o de gran dificultad se sentirán incómodos, sin iniciativa Habrá  que orientar al técnico para que valore la importancia de las mejoras que se produzcan, a través de la autocomparación del deportista.
-quest12_d2_b: El clima motivacional de maestría, se encuentra en niveles medios, lo cual es adecuado pero mejorable. Valora positivamente las mejoras de sus deportistas, lo que les ayuda a afronta con buena actitud situaciones  novedosas o de gran dificultad. Será adecuado recordarle la importancia que tienen las mejoras para que los deportistas consigan sus objetivos, reconociendo y valorando  su esfuerzo al producirse  una mejoría personal, por ligera que sea.
-quest12_d2_c: El clima motivacional de maestría, se encuentra en niveles altos, lo cual es positivo. Este técnico se centra en la mejora personal de l@s deportistas, siendo esto lo más importante. Esto contribuye a afrontar, con una excelente actitud, situaciones  novedosas o de gran dificultad. Genera una influencia positiva en el compromiso con el entrenamiento, en la competencia percibida y minimiza la posible ansiedad frente a los errores que pudieran tener l@s deportistas.
+quest12: Arrakasta pertzepzioaren galdetegia
+quest12_intro: Behean lehiaketako egoerekin eta  jokabidearekin zer ikusia duten komentario eta esaldi sorta dago. Mesedez, arretaz irakurri eta zure entrenatzailearen iritzia hobekien deskribatzen duen portzentaia aukeratu.
+quest12_header: Kirola praktikatzerako orduan, nire entrenatzaileak arrakasta dudala uste du …dudanean
+quest12_valor_1: 0 (Ezer ez)
+quest12_valor_2: 100 (erabat)
+quest12_label_0: Arrakasta pertzepzioa
+quest12_label_1: Errendimendu klima
+quest12_label_2: Maisutza klima
+quest12_1: Nire kideak garaitzen ditut
+quest12_2: Hoberena naiz
+quest12_3: Gogor lan egiten dut
+quest12_4: Hobekuntza pertsonal argi bat erakusten dut 
+quest12_5: Besteek baino hobeto egiten dut
+quest12_6: Jendeari onena naizela erakusten diot
+quest12_7: Zailtasunak gainditzen ditut
+quest12_8: Egin ezin nezaken zerbait meneratzen dut
+quest12_9: Besteek egin ezin duten zerbait egiten dut
+quest12_10: Guztia dakidan bezain ondo egiten dut
+quest12_11: Nire buruari jarritako jomuga lortzen dut
+quest12_12: Argi eta garbi besteak baino gehiago naiz
+quest12_d1_a: Errendimedu motibazional klimarekin elkarturiko 4 azpiko balio baxu honen arabera, entrenatzaile honentzako kirolariek lorturiko emaitzek balio baxua daukate, akaso trebezien hobekuntza baino gutxiago. Honek entrenamenduan zehar inplikazioaren areagotze bat eragingo du eta kirolarien akatsen aurrean, egonez gero, aintsietatearen kontrola erraztuko du.
+quest12_d1_b: Errendimedu motibazional klimarekin elkarturiko 4 eta 7 artean kokaturiko balio ertain honen arabera, entrenatzaile honentzako kirolariek lorturiko emaitzek balio handia daukate, maisutza klimaren antzekoak izanez gero, esfortzuarekiko konpromezua areagotzeko motibazio on batetaz hornituko dute, akatsak egonez gero, kirolariari hauen aurrean antsietatea kontrolatzen lagunduaz.
+quest12_d1_c: Errendimedu motibazional klimarekin elkarturiko 7 bainon altuagoko balio altu honen arabera, entrenatzaile honentzako kirolariek lorturiko emaitzek garantzi handiena daukate. Soilik maisutza klima motibazionalaren balio altuekin batera joanez gero esfortzuarekiko konpromezua eta inplikazioa areagotzeko motibazio on bat suposatuko du. Aipaturiko maisutza klima motibazionalari gailenduz gero, seguruenik kirolariarengan eragin ezkorra izango du erronka pertsonal handiei aurre egiterako orduan.
+quest12_d2_a: Maisutza klima motibazionala kezkagarria da maila oso baxuetan aurkitzen den heinean. Kirolarien hobekuntzak modu positibo batean baloratzea kosta egiten zaio eta egoera berrien edo eta zailtasun handikoen aurrean aurkitzen direnean deseroso eta iniziatiba sentituko dira. Entrenatzailea kirolariaren autokonparaziaren bitartez ematen diren hobekuntzen garrantzia aintzat har dezan zuzendu beharko zaio.
+quest12_d2_b: Maisutza klima motibazionala egokia bada ere, hobetu liteken maila ertain batean aurkitzen da. Positiboki baloratzen ditu kirolarien hobekuntzak, egoera berriei edo eta zailtasun handikoei jarrera onarekin aurre egiten laguntzen dielarik. Komenigarria litzateke kirolariek beren helburuak lortzeko hobekuntzek duten garrantzia azpimarratzea, hobekuntza pertsonal bat ematerako orduan, txikia bada ere, hau aintzat hartuaz eta baloratuaz.
+quest12_d2_c: Maisutza klima motibazionala positiboa da maila altuan aurkitzen bait da. Entrenatzaile hau kirolarien hobekuntza pertsonalean zentratzen da, hau izanik garrantzitsuena. Honek jarrera ezin hobeaz egoera berriei edo eta zailtasun berezikoei aurre egiten laguntzen du. Entrenamenduarekiko konpromezuarengan, antzemandako eskumenarengan eragin positibo bat sortzen du eta kirolariak izan litzazkteten akatsen aurreko antsietatea murrizten du.
 
-text_are_you_sure: ¿ Estás seguro ?
+text_are_you_sure: ¿ Ziur zaude ?
 text_caracters_maximum: %d characters maximum.
 text_length_between: Longitud entre %d y %d caracteres.
 
