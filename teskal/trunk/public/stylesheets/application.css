@@ -762,6 +762,7 @@ html>body #ajax-indicator {
 	font-size: 10.4px;
 	font-weight: normal;
 	font-variant: normal;
+	  padding-right: 30px;
 }
 #navTeskal {
 	margin: 0;
