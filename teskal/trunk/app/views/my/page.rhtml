@@ -89,9 +89,9 @@
       </tr>
     </thead>
     <tbody>
-      <% odd=0 %>
-      <% for answer in @answers %>
-      <% case answer.quest_id
+      <%- odd=0 -%>
+      <%- for answer in @answers -%>
+      <%- case answer.quest_id
               when 1 
                 quest=l(:quest1) 
               when 2 
@@ -116,19 +116,19 @@
                 quest=l(:quest11_label_0)
               when 12 
                 quest=l(:quest12_label_0)
-              end %>
-      <% if odd==1 %>
+              end -%>
+      <%- if odd == 1 -%>
       <tr class="odd">
-        <% odd=0%>
-        <%else %>
+        <%- odd=0-%>
+        <%-else -%>
       <tr>
-        <% odd=1 end %>
-        <% controlador="quest"+ answer.quest_id.to_s %>
+        <%- odd=1 end -%>
+        <%- controlador="quest"+ answer.quest_id.to_s -%>
         <td><%= l_datetime(answer.created_on)%></td> 
         <td><%= answer.competition %></td> 
         <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
       </tr>
-      <% end %>
+      <%- end -%>
     </tbody>
   </table>
 </center> 
