@@ -25,6 +25,7 @@ table a:visited:after {
 	}
 table a:hover {
 	border-bottom-style:solid;
+	background:none;
 	}
 thead th,
 thead td,
@@ -56,6 +57,7 @@ tbody th {
 tbody th a:link,
 tbody th a:visited {
 	font-weight:bold;
+	background:none;
 	}
 tbody td,
 tbody th {
