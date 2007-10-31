@@ -632,7 +632,7 @@ html>body #ajax-indicator {
 } 
 #navTeskal a:link.active, #navTeskal a:visited.active, #navTeskal a:hover {
 	color: #000;
-	background: url(/images/teskalito_hover.png) no-repeat top left;
+	background: url(../images/teskalito_hover.png) no-repeat top left;
 }
 .validation-advice {
 	margin: 1px 0;
