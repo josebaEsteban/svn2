@@ -624,7 +624,7 @@ html>body #ajax-indicator {
 	color: #708491;
 	padding: 0px 12px 6px 0px;  
 	display: block;
-	text-align: left;
+	text-align: center;
 	height: 25px;
 	font-size: 11px;
 	line-height: 28px;
