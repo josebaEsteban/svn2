@@ -5,7 +5,7 @@
   <tbody>
     <%- odd=0 -%>
     <%- nope=0 -%>
-    <%- (User.find_by_sql("select * from users order by users.lastname, users.firstname")).each do |user|  -%> 
+    <%- (User.find_by_sql("select * from users order by last_login_on desc	, lastname asc, firstname")).each do |user|  -%> 
     <%- odd=0 -%>
   <thead>
     <tr>
