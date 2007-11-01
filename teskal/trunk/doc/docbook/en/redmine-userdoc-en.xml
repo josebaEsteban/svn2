@@ -445,7 +445,7 @@
     <section>
       <title>Authentication</title>
 
-      <para>By default, redMine refers to its own database to authenticate
+      <para>By default, Teskal refers to its own database to authenticate
       users, by a specific password.</para>
 
       <para>If you already have one or several external user references (like

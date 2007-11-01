@@ -32,6 +32,7 @@ body {
 	background-image: url(../images/bg_stripe.gif);
 	background-repeat: repeat-y;
 	background-position: center;
+	float: none; 
 }
 a {
 	color: #d42e12;
@@ -206,7 +207,7 @@ html>body #content {
 	margin: 0;
 }
 #content .tabs ul li {
-	float: left;
+
 	list-style-type: none;
 	white-space: nowrap;
 	margin-right: 8px;
@@ -597,43 +598,36 @@ html>body #ajax-indicator {
 	padding-left: 26px;
 	vertical-align: bottom;
 }
-#navTeskal {
-	clear: both;
-}
-#navTeskal ul {
-	position: relative;
-	top: -32px;
-	left: 350px;
-	padding: 0;
-	width: 600px;
-	height: 28px;
-	margin: 0px auto -15px auto;
-	list-style: none;
+#navTeskal { 
+	position: relative; 
+	top: -31px; 
+	margin: 0 40px 0 450px;
+	padding: 0 0 5px 10px;
+/*	border-bottom: 1px solid #999;*/
 }
 #navTeskal li {
-	float: left;
-	width: 87px;
+	margin: 0; 
 	padding: 0;
-	margin: 0 1px 0 0;
-	font-family: verdana, sans-serif;
-	font-size: 10.4px;
-	font-weight: normal;
-	font-variant: normal;
+	display: inline;  
+	list-style-type: none;
 }
-#navTeskal li a {
-	color: #708491;
-	padding: 0px 12px 6px 0px;  
-	display: block;
-	text-align: center;
-	height: 25px;
-	font-size: 11px;
-	line-height: 28px;
-	font-weight: normal;  
-} 
-#navTeskal a:link.active, #navTeskal a:visited.active, #navTeskal a:hover {
+#navTeskal a:link, #navTeskal a:visited {
+/*	float: right; */
+	font-size: 10px;
+	line-height: 14px;
+	font-weight: bold;
+	margin: 0 10px 4px 10px;
+	padding-bottom: 2px;
+	text-decoration: none;
+	color: #999;
+	}
+
+#navTeskal a.active:link, #navTeskal a.active:visited, #navTeskal a:hover {
+	border-bottom: 4px solid #d42e12;
+	padding-bottom: 1px;
+	background: #fff;
 	color: #000;
-	background: url(../images/teskalito_hover.png) no-repeat top left;
-}
+	}
 .validation-advice {
 	margin: 1px 0;
 	padding: 3px;
