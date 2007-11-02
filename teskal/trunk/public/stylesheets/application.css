@@ -73,7 +73,7 @@ img.right {
 	float: right;
 	margin: 0 0 5px 12px;
 }
-/**************** Header and navigation styles ****************/
+/**************** Header ****************/
 #header {
 	margin: 0px;
 	padding: 0;
@@ -116,6 +116,37 @@ img.right {
 	text-align: left;
 	color: #606060;
 }
+/**************** navigation ****************/
+#navTeskal { 
+	position: relative; 
+	top: -31px; 
+	margin: 0 40px 0 450px;
+	padding: 0 0 5px 10px;
+/*	border-bottom: 1px solid #999;*/
+}
+#navTeskal li {
+	margin: 0; 
+	padding: 0;
+	display: inline;  
+	list-style-type: none;
+}
+#navTeskal a:link, #navTeskal a:visited {
+/*	float: right; */
+	font-size: 10px;
+	line-height: 14px;
+	font-weight: bold;
+	margin: 0 10px 4px 10px;
+	padding-bottom: 2px;
+	text-decoration: none;
+	color: #999;
+	}
+
+#navTeskal a.active:link, #navTeskal a.active:visited, #navTeskal a:hover {
+	border-bottom: 4px solid #d42e12;
+	padding-bottom: 1px;
+	background: #fff;
+	color: #000;
+	}
 /**************** Icons *******************/
 .icon {
 	background-position: 0% 40%;
@@ -598,36 +629,6 @@ html>body #ajax-indicator {
 	padding-left: 26px;
 	vertical-align: bottom;
 }
-#navTeskal { 
-	position: relative; 
-	top: -31px; 
-	margin: 0 40px 0 450px;
-	padding: 0 0 5px 10px;
-/*	border-bottom: 1px solid #999;*/
-}
-#navTeskal li {
-	margin: 0; 
-	padding: 0;
-	display: inline;  
-	list-style-type: none;
-}
-#navTeskal a:link, #navTeskal a:visited {
-/*	float: right; */
-	font-size: 10px;
-	line-height: 14px;
-	font-weight: bold;
-	margin: 0 10px 4px 10px;
-	padding-bottom: 2px;
-	text-decoration: none;
-	color: #999;
-	}
-
-#navTeskal a.active:link, #navTeskal a.active:visited, #navTeskal a:hover {
-	border-bottom: 4px solid #d42e12;
-	padding-bottom: 1px;
-	background: #fff;
-	color: #000;
-	}
 .validation-advice {
 	margin: 1px 0;
 	padding: 3px;
