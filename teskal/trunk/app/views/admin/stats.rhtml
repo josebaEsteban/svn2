@@ -20,7 +20,7 @@
     </tr>   
   </thead>
 <%- respuestas=1 -%>
-  <%- (Answer.find_by_sql("select * from answers where answers.user_id=#{user.id } order by answers.created_on")).each do |answer|  -%>
+  <%- (Answer.find_by_sql("select * from answers where answers.user_id=#{user.id } order by answers.created_on desc")).each do |answer|  -%>
   <%- if odd == 1 -%>
   <tr class="odd">
     <%- odd=0-%>

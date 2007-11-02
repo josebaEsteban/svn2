@@ -5,11 +5,7 @@ class MyController < ApplicationController
   layout 'base'
   before_filter :require_login
 
-  BLOCKS = { 'issuesassignedtome' => :label_assigned_to_me_issues,
-             'issuesreportedbyme' => :label_reported_issues,
-             'issueswatched' => :label_watched_issues,
-             'news' => :label_news_laquest,
-             'calendar' => :label_calendar,
+  BLOCKS = { 'news' => :label_news_laquest,
              'documents' => :label_document_plural
            }.freeze
 
