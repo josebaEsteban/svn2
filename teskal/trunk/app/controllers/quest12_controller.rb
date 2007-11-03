@@ -1,6 +1,6 @@
 class Quest12Controller < ApplicationController
   layout 'base'
-  before_filter :require_login, :require_suscription
+  before_filter :require_login
 
   def new
     @answer = Answer.new
