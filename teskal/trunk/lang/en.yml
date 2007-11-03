@@ -983,8 +983,8 @@ quest12_header: When playing sport, the coach thinks I am most successful when
 quest12_valor_1: 0 (nothing)
 quest12_valor_2: 100 (completely)
 quest12_label_0: Motivational Climate
-quest12_label_1: Clima de Rendimiento
-quest12_label_2: Clima de Maestría
+quest12_label_1: Performance Climate
+quest12_label_2: Master Climate
 quest12_1: I beat other people
 quest12_2: I am clearly superior
 quest12_3: I am the best
@@ -997,12 +997,12 @@ quest12_9: I reach personal goals
 quest12_10: I win
 quest12_11: I show other people I am the best
 quest12_12: I perform to the best of my ability
-quest12_d1_a: Este bajo valor de asociado al clima motivacional rendimiento, situado por debajo de 4, supone que, para est@ técnico, los resultados obtenidos por l@s deportistas tienen un valor bajo, quizás menos que la mejora de las habilidades, lo que producirá un efecto positivo sobre la implicación durante el entrenamiento y el control sobre la ansiedad frente a los errores de l@s deportistas, en el caso de que la hubiera.
-quest12_d1_b: Este valor medio asociado clima motivacional rendimiento, situado entre 4 y 7, supone que, para est@ técnico, los resultados obtenidos por l@s deportistas tienen un importante valor, que si son semejantes a los del clima de maestría, fortalecerá la motivación y aumentará su compromiso con el esfuerzo, ayudándole al deprotista a controlar la ansiedad frente a los errores en el caso de que la tuviera.
-quest12_d1_c: Este alto valor asociado clima motivacional rendimiento situado por encima de 7, supone que, para est@ técnico, los resultados obtenidos por l@s deportistas tienen un máximo valor. Solamente si van acompañados de máximos valores en el clima moticacional de maestría, supondrá una buena motivación para aumentar su compromiso e implicación con el esfuerzo. En el caso de que prevalezca sobre el de maestría señalado, posiblemente mermará la capacidad de l@s deportistas frente a situaciones de máximo desafío personal.
-quest12_d2_a: El clima motivacional de maestría, se encuentra en niveles bajos, lo cual es un poco preocupante. Le cuesta valorar positivamente las mejoras de l@s deportistas y, cuando se enfrenten a situaciones novedosas o de gran dificultad se sentirán incómodos, sin iniciativa Habrá que orientar al técnico para que valore la importancia de las mejoras que se produzcan, a través de la autocomparación del deportista.
-quest12_d2_b: El clima motivacional de maestría, se encuentra en niveles medios, lo cual es adecuado pero mejorable. Valora positivamente las mejoras de sus deportistas, lo que les ayuda a afronta con buena actitud situaciones novedosas o de gran dificultad. Será adecuado recordarle la importancia que tienen las mejoras para que los deportistas consigan sus objetivos, reconociendo y valorando su esfuerzo al producirse una mejoría personal, por ligera que sea.
-quest12_d2_c: El clima motivacional de maestría, se encuentra en niveles altos, lo cual es positivo. Este técnico se centra en la mejora personal de l@s deportistas, siendo esto lo más importante. Esto contribuye a afrontar, con una excelente actitud, situaciones novedosas o de gran dificultad. Genera una influencia positiva en el compromiso con el entrenamiento, en la competencia percibida y minimiza la posible ansiedad frente a los errores que pudieran tener l@s deportistas.
+quest12_d1_a: This low value associated to the performance motivational climate, below 4, supposes that, for this technician, the results have a low value, lower than the improvement of the abilities, which will produce a positive effect on the implication during the training and the control on the anxiety against the athletes's errors.
+quest12_d1_b: This average value associated to the performance motivational climate, located between 4 and 7, supposes that, for this technician, the results have an important value, that if it is similar to those of the masters climate, it will fortify the motivation and it will increase his commitment with the effort, helping the athlete to control the anxiety against the errors.
+quest12_d1_c: This high value associated to the performance motivational, over 7, supposes that, for this technician, the results obtained in a sport competition have a maximum value. Only if they go accompanied of maximum values in the master motivational climate, supposes a good motivation to increase his commitment and the implication with the effort. In case it prevails over master climate, possibly it will decrease the athlete's capacity against situations of maximum personal challenge.
+quest12_d2_a: The master motivational climate is in low levels, which is a little worrisome. He/she finds it difficult to value positively the sport improvements, and when their athletes face situations of novelty or of great difficulty  they will feel uneasy, without initiative. It is necessary to orient the technician so that it values the importance of the improvements.
+quest12_d2_b: The master motivational climate is in mean levels, which is adapted but improvable. It positively values the improvements of his athletes, which them aid to confronts with good attitude novel situations or of great difficulty. It will be adapted to remember the importance to him that has the improvements so that the athletes secure their objectives, recognizing and valuing their effort when taking place a personal improvement.
+quest12_d2_c: The master motivational climate is in high levels, which is very positive. This technician concentrates in the personal improvement of the sport, being this most important. This contributes to confront, with an excellent attitude, novel situations or of great difficulty. It generates a positive influence in the commitment with the training, the perceived competition and diminishes the possible anxiety against the sport errors.
 
 text_are_you_sure: Are you sure ?
 text_caracters_maximum: %d characters maximum.
