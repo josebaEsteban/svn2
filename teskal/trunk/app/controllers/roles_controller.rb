@@ -1,7 +1,5 @@
 # Teskal
 
-
-
 class RolesController < ApplicationController
   layout 'base'	
   before_filter :require_admin

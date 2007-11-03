@@ -513,22 +513,22 @@
     <section>
       <title>Authentification</title>
 
-      <para>Par défaut, redMine s'appuie sur sa propre base de données pour
+      <para>Par défaut, Teskal s'appuie sur sa propre base de données pour
       authentifier les utilisateurs, à l'aide d'un mot de passe
       spécifique.</para>
 
       <para>Si vous disposez déjà d'un ou plusieurs référentiels externes
       d'utilisateurs (annuaires LDAP), vous pouvez les déclarer afin qu'ils
-      soient utilisés pour l'authentification sur redMine. Cela permet aux
-      utilisateurs d'accéder à redMine avec leurs identifiants et mots de
+      soient utilisés pour l'authentification sur Teskal. Cela permet aux
+      utilisateurs d'accéder à Teskal avec leurs identifiants et mots de
       passe habituels.</para>
 
       <para>Pour chaque référentiel déclaré, vous pouvez spécifier si les
-      comptes peuvent être créés à la volée dans redMine. Si c'est le cas, les
+      comptes peuvent être créés à la volée dans Teskal. Si c'est le cas, les
       comptes utilisateurs sont automatiquement créés à la première connexion
       de l'utilisateur (sans droits spécifiques sur les projets), à partir des
       informations disponibles dans le référentiel. Sinon, l'administrateur
-      doit au préalable créer le compte de l'utilisateur dans redMine.</para>
+      doit au préalable créer le compte de l'utilisateur dans Teskal.</para>
 
       <para></para>
 
@@ -1052,7 +1052,7 @@
 
         <para>Si votre compte utilise une authentification externe (un
         annuaire LDAP), vous ne pouvez pas changer votre mot de passe dans
-        redMine.</para>
+        Teskal.</para>
       </section>
     </section>
 

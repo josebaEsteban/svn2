@@ -16,7 +16,7 @@
     <section>
       <title>ユーザ</title>
 
-      <para>ユーザ画面ではredMineのユーザを管理できます。</para>
+      <para>ユーザ画面ではTeskalのユーザを管理できます。</para>
 
       <section>
         <title>ユーザ一覧</title>
@@ -68,13 +68,13 @@
         <para>ユーザ情報の変更時にパスワードを変更しないならパスワード欄を
         空白にしてください。</para>
 
-        <para>管理者に指定されたユーザは、redMineアプリケーションと
+        <para>管理者に指定されたユーザは、Teskalアプリケーションと
         すべてのプロジェクトに無制限にアクセスできます。</para>
 
         <itemizedlist>
           <listitem>
             <para><guilabel moreinfo="none">管理者</guilabel> :
-            ユーザをredMineの管理者に設定します。</para>
+            ユーザをTeskalの管理者に設定します。</para>
           </listitem>
 
           <listitem>
@@ -302,7 +302,7 @@
     <section>
       <title>列挙項目</title>
 
-      <para>redMineで使用される選択肢をカスタマイズできます
+      <para>Teskalで使用される選択肢をカスタマイズできます
       （例えば、問題の優先度の設定）。列挙項目画面では、以下のそれぞれに項目を
       定義できます。</para>
 
@@ -326,7 +326,7 @@
       <para>メール通知画面ではプロジェクトのメンバーにメール通知を
       するかどうかを選択できます。</para>
 
-      <para>注記: 通知を行いたい場合、メール送信がredMineの設定で
+      <para>注記: 通知を行いたい場合、メール送信がTeskalの設定で
       有効にされていなければなりません。</para>
 
     </section>
@@ -334,19 +334,19 @@
     <section>
       <title>認証</title>
 
-      <para>デフォルトでは、redMineはユーザ認証のために指定のパスワードで
+      <para>デフォルトでは、Teskalはユーザ認証のために指定のパスワードで
       自身のデータベースを参照します。</para>
 
-      <para>すでに外部ユーザ参照（LDAPのような）がある場合、redMine認証で使われ
+      <para>すでに外部ユーザ参照（LDAPのような）がある場合、Teskal認証で使われ
       るために知らせることができます。そうすることでユーザはいつものユーザ名と
-      パスワードでredMineにアクセスできます。</para>
+      パスワードでTeskalにアクセスできます。</para>
 
-      <para>既知のユーザ参照ごとに、redMineでオンザフライにアカウントを作成
+      <para>既知のユーザ参照ごとに、Teskalでオンザフライにアカウントを作成
       することができるかどうかを指定することができます。必要であれば、
       ユーザ参照の有効な情報に従って、ユーザアカウントはユーザが
       ログインしている間に自動的に作成されます（プロジェクトに何も
       権限を持たずに）。そうでなければ、管理者は以前にユーザアカウントを
-      redMineに作成したに違いありません。
+      Teskalに作成したに違いありません。
       </para>
 
       <para></para>
@@ -430,26 +430,26 @@
     <section>
       <title>設定</title>
 
-      <para>設定画面ではredMineの設定を変更できます。</para>
+      <para>設定画面ではTeskalの設定を変更できます。</para>
       <para></para>
 
       <itemizedlist>
         <listitem>
           <para><guilabel>アプリケーションのタイトル</guilabel></para>
 
-          <para>redMineのヘッダに表示するタイトルです。</para>
+          <para>Teskalのヘッダに表示するタイトルです。</para>
         </listitem>
 
         <listitem>
           <para><guilabel>アプリケーションのサブタイトル</guilabel></para>
 
-          <para>redMineのヘッダに表示するサブタイトルです。</para>
+          <para>Teskalのヘッダに表示するサブタイトルです。</para>
         </listitem>
 
         <listitem>
           <para><guilabel>ウェルカムメッセージ</guilabel></para>
 
-          <para>redMineのホームに表示されるテキストです。
+          <para>Teskalのホームに表示されるテキストです。
           テキストにはHTMLタグが使用できます。</para>
         </listitem>
 
@@ -467,7 +467,7 @@
           <para><guilabel>認証が必要</guilabel></para>
 
           <para>このオプションがチェックされている場合、ログインなしでは
-          redMineのどのページにもアクセスできません。
+          Teskalのどのページにもアクセスできません。
           ユーザは必ずログインしなければなりません。</para>
 
           <para><emphasis>デフォルト: いいえ</emphasis></para>
@@ -774,7 +774,7 @@
         （2度）を入力してください。パスワードの長さは4から12文字です。</para>
 
         <para>アカウントに外部認証（LDAP）を使用する場合、
-        redMineではパスワードを変更できません。</para>
+        Teskalではパスワードを変更できません。</para>
       </section>
     </section>
 
@@ -814,7 +814,7 @@
       アカウントを有効化するため、メールに含まれるリンクを
       クリックしてください。</para>
 
-      <para>redMineの設定で登録機能を無効化できます。</para>
+      <para>Teskalの設定で登録機能を無効化できます。</para>
     </section>
   </chapter>
 </book>

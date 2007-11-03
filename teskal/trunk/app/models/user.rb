@@ -8,6 +8,10 @@ class User < ActiveRecord::Base
   STATUS_ACTIVE     = 1
   STATUS_REGISTERED = 2
   STATUS_LOCKED     = 3
+  ROLE_GRATIS       = 1
+  ROLE_SPORT        = 2
+  ROLE_COACH        = 3
+  ROLE_TUTOR        = 4
 
   has_many :answers
   has_one :preference, :dependent => :destroy, :class_name => 'UserPreference'
@@ -49,13 +53,13 @@ class User < ActiveRecord::Base
   end
 
   # Returns the user that matches provided login and password, or nil
-  def self.try_to_login(login, password) 
+  def self.try_to_login(login, password)
     user = find(:first, :conditions => ["login=?", login])
     if user
       # user is already in local database
-      return nil if !user.active? 
+      return nil if !user.active?
       entra=0
-      if entra==1       
+      if entra==1
         # aqui habia una autentificacion ldap
       else
         # authentication with local password
@@ -89,6 +93,10 @@ class User < ActiveRecord::Base
     self.status == STATUS_LOCKED
   end
 
+  def suscription?
+    self.role > ROLE_GRATIS
+  end 
+  
   def check_password?(clear_password)
     User.hash_password(clear_password) == self.hashed_password
   end

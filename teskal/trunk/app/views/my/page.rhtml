@@ -8,6 +8,7 @@
       </tr>
     </thead>
     <tbody>
+	<%- if @logged_in_user.suscription? -%>
       <tr>
         <td>1</td>
         <td><%= link_to l(:quest1), :controller  => 'quest1', :action => 'new' %></td>
@@ -56,6 +57,13 @@
         <td>12</td>
         <td><%= link_to l(:quest12_label_0), :controller  => 'quest12', :action => 'new' %></td>
       </tr>
+<% else %> 
+<tr>
+  <td>2</td>
+  <td><%= link_to l(:quest2_label_0), :controller  => 'quest2', :action => 'new' %></td>
+</tr>
+<% end %>
+
     </tbody>
   </table>
 <br/>
