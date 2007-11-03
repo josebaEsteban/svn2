@@ -444,13 +444,24 @@ ul.documents li {
 	background-color: inherit;
 	font-weight: bold;
 }
-.box {
+.box { 
+	background-color: #f7f4ee;
+
+	text-align: left;
+	font: 100% Verdana, Tahoma, Arial, sans-serif;
+	
 	margin: 0 0 20px 0;
 	padding: 10px;
-	border: 1px solid #c0c0c0;
+  
 	max-width: 530px;
 	color: #505050;
 	line-height: 1.5em;
+}
+.box.h3 {
+	height: 2.5em;
+	font-size: 1.7em;
+	color: #523a0b;
+	line-height: 1em;
 }
 a.close-icon {
 	display: block;
