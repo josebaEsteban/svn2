@@ -9,12 +9,13 @@ signup_label_7: Zure posta elektronikoaren helbidea idatzi ezazu.
 signup_label_8: Zure kontua aktibatu ahal izateko posta elektronikoak baliagarria izan behar du. 
 signup_label_9: Gorde
 signup_label_10: Zerbitzuaren terminoak
-signup_label_11: Gorde-tzeko klik egiterako orduan, nire sinadura eranstearekin batera Teskal Zerbitzuaren Baldintzekin ados nagoela adierazten dut.
+signup_label_11: Gorde-tzeko klik egiterako orduan, nire sinadura eranstearekin batera <a href="http:/account/terms">Teskal Zerbitzuaren Baldintzekin</a> ados nagoela adierazten dut.
 login_label_1: Pasa-hitza ahaztu duzu?
 login_label_2: Bidali zaitez mail bat
 login_label_3: pasa-hitz berri bat eratzari buruzko informazioarekin.
 login_label_4: Berria Teskalen?
-login_label_5: Eratu ezazu kontu bat doan.
+login_label_5: Eratu ezazu kontu
+login_label_6: bat doan.
 PBarLoadingText: ?PBarLoadingText=Datuak kargatzen. Itxaron mesedez...
 actionview_datehelper_select_day_prefix:
 actionview_datehelper_select_month_names: Urtarrila, Otsaila, Martxoa, Apirila, Maiatza, Ekaina, Uztaila, Abuztua, Iraila, Urria, Azaroa, Abendua

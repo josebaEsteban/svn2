@@ -103,7 +103,17 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  # authorizes the user for the requested action.
+  # authorizes only to suscribed customers
+  def require_suscription 
+    if @logged_in_user.suscription? 
+      
+      else 
+      flash[:notice] = l(:notice_not_authorized)
+      redirect_back_or_default :controller => 'my', :action => 'page'
+    end
+  end
+  
+    # authorizes the user for the requested action.
   def authorize(ctrl = params[:controller], action = params[:action])
     unless @project.active?
       @project = nil

@@ -450,15 +450,15 @@
 
       <para>If you already have one or several external user references (like
       LDAP), you can make them known in order to be used for authentication on
-      redMine. This allows users to access redMine with their usual user names
+      Teskal. This allows users to access Teskal with their usual user names
       and passwords.</para>
 
       <para>For each known reference, you can specify if the accounts can be
-      created on the fly on redMine. If needed, the user accounts will be
+      created on the fly on Teskal. If needed, the user accounts will be
       created automatically during the user’s signing in (without any specific
       rights on the projects), according to information available in the
       reference. Otherwise, the administrator must have previously created the
-      user account on redMine.</para>
+      user account on Teskal.</para>
 
       <para></para>
 
@@ -943,7 +943,7 @@
         characters.</para>
 
         <para>If your account uses an external authentication (LDAP), you
-        can't change your password in redMine.</para>
+        can't change your password in Teskal.</para>
       </section>
     </section>
 
