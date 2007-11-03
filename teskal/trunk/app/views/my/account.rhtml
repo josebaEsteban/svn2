@@ -1,11 +1,28 @@
-<h2><%=l(:label_my_account)%></h2>
+<style type="text/css">
+#theform {background-color: #f7f4ee;
+text-align: left;
+font: 100% Verdana, Tahoma, Arial, sans-serif;
+margin: 0 0 20px 0;
+padding: 10px;
+max-width: 530px;
+color: #505050;
+line-height: 1.5em;}
+#theform h3 {
+	height: 2em;
+	font-size: 1.7em;
+	color: #523a0b;
+	line-height: 1em;
+}
+
+</style>
+<!-- <h2><%=l(:label_my_account)%></h2>    -->
 
 <p><%=l(:field_login)%>: <strong><%= @user.login %></strong><br />
   <%=l(:field_created_on)%>: <%= format_time(@user.created_on) %></p>
 <%=error_messages_for 'user' %> 
 
 <center>
-  <div class="box">
+  <div id="theform">
     <h3><%=l(:label_information_plural)%></h3>
     <% labelled_tabular_form_for :user, @user, :url => { :action => "account" } do |f| %>
     <p><%= f.text_field :firstname, :required => false %></p>
@@ -17,9 +34,8 @@
     </center>
     <% end %>
   </div> 
-
   <% unless @user.auth_source_id %>
-  <div class="box">
+  <div id="theform">
     <h3><%=l(:field_password)%></h3>
     <% form_tag({:action => 'change_password'}, :class => "tabular") do %>
     <p>
@@ -38,4 +54,5 @@
     <% end %>
   </div>
 </center>
+
 <% end %>
