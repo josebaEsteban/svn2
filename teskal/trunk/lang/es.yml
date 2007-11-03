@@ -45,7 +45,7 @@ activerecord_error_inclusion: is not included in the list
 activerecord_error_invalid: no es válido
 activerecord_error_not_a_date: no es una fecha válida
 activerecord_error_not_a_number: no es un número
-activerecord_error_taken: has already been taken
+activerecord_error_taken: ya existe
 activerecord_error_too_long: es demasiado larga
 activerecord_error_too_short: demasiado corta
 activerecord_error_wrong_length: is the wrong length
@@ -83,7 +83,7 @@ field_author: Autor
 field_auth_source: Modo de la autentificación
 field_category: Categoría
 field_comments: Comentario
-field_created_on: Creado
+field_created_on: Creada el
 field_delay: Delay
 field_description: Descripción
 field_downloads: Telecargas
@@ -101,7 +101,7 @@ field_is_required: Obligatorio
 field_language: Idioma
 field_lastname: Apellido
 field_last_login_on: Última conexión
-field_login: Entrar
+field_login: Usuario
 field_mail: Email
 field_mail_notification: Notificación por mail
 field_max_length: Longitud máxima
@@ -186,8 +186,8 @@ label_help: Ayuda
 label_history: Histórico
 label_home: Inicio
 label_in: en
-label_information: Informacion
-label_information_plural: Informaciones
+label_information: Información
+label_information_plural: Datos personales
 label_internal: Interno
 label_in_less_than: en menos que
 label_in_more_than: en más que
@@ -222,7 +222,7 @@ label_not_contains: no contiene
 label_not_equals: no igual
 label_no_data: Ningunos datos a exhibir
 label_on: en
-label_options: Options
+label_options: Opciones
 label_overview: Vistazo
 label_page_index: Índice
 label_password_lost: ¿Olvidaste la contraseña?
@@ -239,15 +239,15 @@ label_quest: Cuestionario
 label_read: Leer...
 label_register: Registrarse
 label_registered_on: Inscrito el
-label_reply_plural: Replies
+label_reply_plural: Respuestas
 label_report: Informe
 label_report_plural: Informes
 label_result: %d resultado
 label_result_plural: %d resultados
-label_role: Papel
-label_role_and_permissions: Papeles y permisos
-label_role_new: Nuevo papel
-label_role_plural: Papeles
+label_role: Rol
+label_role_and_permissions: Roles y permisos
+label_role_new: Nuevo rol
+label_role_plural: Roles
 label_search: Búsqueda
 label_send_information: Información de la cuenta enviada al usuario
 label_settings: Configuración
@@ -255,7 +255,7 @@ label_show: Mostrar
 label_user: Usuario
 label_user_new: Nuevo usuario
 label_user_plural: Usuarios
-label_year: Year
+label_year: Año
 label_library: Biblioteca
 mail_subject_lost_password: Tu contraseña de Teskal
 mail_subject_register: Activación de la cuenta de Teskal
@@ -293,9 +293,9 @@ setting_mail_from: Email de la emisión
 setting_self_registration: Registro permitido
 setting_text_formatting: Formato de texto
 setting_welcome_text: Texto de bienvenida
-status_active: active
-status_locked: locked
-status_registered: registered
+status_active: activo
+status_locked: bloqueado
+status_registered: registrado
 # quest1
 quest1: Valoración Inicial Temporada
 quest1_header2: Antes de la competición...
@@ -423,7 +423,7 @@ quest1_d7_c: Se observa un alto nivel de autoconfianza, con buenas sensaciones p
 quest1_d8_a: Presenta un valor bajo en cuanto a la ansiedad somática, transmitiendo comodidad y tranquilidad, con mucha capacidad para relajarse corporalmente y estar mentalmente activo en los momentos que sean requeridos, es decir, calma expectante.
 quest1_d8_b: Se observa un valor medio en cuanto a la ansiedad somática, lo que supone que, a veces, se encuentre un poco inquiet@ y tens@. Se aconseja orientar una parte del entrenamiento hacia la reducción y mejora de estos valores y, además reforzarlo con unas sesiones de visionado con contenidos de Relajación.
 quest1_d8_c: Los valores de la ansiedad somática son excesivos y perjudiciales para el rendimiento. Tendrá dificultades para controlar la tensión y es posible que en determinadas situaciones se precipite en sus acciones, lo que le impide rendir en sus niveles óptimos. Para reducir estos valores, se hace necesario realizar un trabajo específico de sesiones de visionado con contenidos de Relajación y de Presión/Estrés, reforzado con orientaciones del tutor. 
-    - 
+  - 
 quest1_d9_a: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito. A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos valores bajos de la DPE, supone que una selección de objetivos poco ambiciosos. Si van acompañados de cierta inestabilidad en la valoración, supone que est@ deportista tiene capacidad discriminativa a la hora de seleccionar sus objetivos, pero seguramente sus niveles de autoconfianza serán bajos. Será necesario plantear un trabajo específico con el apoyo del Power de la Autoeficacia.
 quest1_d9_b: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito. A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos valores medios de la DPE, supone una selección de objetivos limitados. Si van acompañados de cierta estabilidad en la valoración, en torno a 70, supone que est@ deportista tiende a uniformizar los objetivos autoimpuestos, pero debería de ser más ambiciosa. Conviene recordar que el grado de dificultad de las situaciones no depende del/a deportista, ya que en ningún caso lo va a poder cambiar, pero -aumentar las probabilidades de éxito sí, manteniendo alta las creencias en sí mism@-.
 quest1_d9_c: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito. A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos altos valores de la DPE, supone una autoimposición de objetivos ambiciosos para esta temporada. Si van acompañados de cierta variabilidad en la valoración, entre 70 y 100, supone que est@ deportista posee una excelente capacidad discriminativa a la hora de seleccionar sus objetivos. Conviene recordar que el grado de dificultad de las situaciones no depende del/a deportista, ya que en ningún caso lo va a poder cambiar, pero - aumentar las probabilidades de éxito sí, manteniendo alta las creencias en sí mism@-.
@@ -604,27 +604,27 @@ quest4_8: Resultado que esperas alcanzar
 quest4_d1_a: Los valores de la Tensión se encuentran en un nivel bajo, lo que supone que est@ deportista se encuentra tranquil@. Habrá que identificar si este valor es positivo en esta situación de competición, dado que se recomienda que alcance los valores de la zona media para afrontar situaciones de máximo rendimiento.
 quest4_d1_b: Los valores de la Tensión se encuentran en un nivel medio, lo que en este caso es positivo, ya que est@ deportista se ha encontrado alerta y expectante. En situaciones de competición conviene que esta dimensión se sitúe en la zona central del nivel medio.
 quest4_d1_c: Los valores de la Tensión se encuentran en un nivel alto, lo cual ha podido influir negativamente en su rendimiento. Excesivamente preocupada y demasiado nerviosa e intranquila, posiblemente no ha podido centrarse en el trabajo que tenia que desarrollar durante la competición.
-quest4_d2_a: En el caso de la Depresión,  los valores se encuentran en un nivel bajo, lo cual es positivo, lo que supone que est@ deportista se siente apoyad@ y estimad@, transmitiendo equilibrio emocional y buenas sensaciones  durante la competición.
+quest4_d2_a: En el caso de la Depresión, los valores se encuentran en un nivel bajo, lo cual es positivo, lo que supone que est@ deportista se siente apoyad@ y estimad@, transmitiendo equilibrio emocional y buenas sensaciones durante la competición.
 quest4_d2_b: En el caso de la Depresión, los valores se encuentran en un nivel medio, lo que puede ser un poco preocupante. Suele ser producido por un malestar generalizado que, a veces, afecta a la propia dinámica de la competición. Conviene vigilar la evolución de esta dimensión y analizar las causas de semejante valor, para neutralizarlo en las siguientes competiciones.
 quest4_d2_c: En el caso de la Depresión los valores se encuentran en un nivel alto, lo cual es alarmante, ya que posiblemente se le haya complicado la competición. Será necesario identificar aquellos elementos que están influyendo tan negativamente en su estado anímico.
-quest4_d3_a: Al observar la Hostilidad, vemos que sus valores  se encuentran en un nivel bajo, lo que en este caso no es conveniente. Habrá que identificar si este valor es positivo en esta situación de competición, dado que se recomienda que alcance valores centrales de la zona media para afrontar situaciones de máximo rendimiento.
-quest4_d3_b: Al observar  la Hostilidad, vemos que sus valores se encuentran en un nivel medio, lo que nos parece adecuado para esta situación de competición. En estos casos, estos valores suponen una energía extra que viene muy bien para afrontar  situaciones “duras” de competición.
-quest4_d3_c: Al observar  la Hostilidad, vemos que sus valores se encuentran en un nivel alto, lo cual es alarmante, ya que posiblemente le afecten negativamente en su rendimiento. Demasiado enfadada y cabreada, habrá utilizado sus energías de forma poco inteligente y, en los momentos importantes de la competición su rendimiento habrá sido por debajo de sus posibilidades. Habrá que explicar a est@ deportista los contenidos del Power Activación y  Estado de Rendimiento Optimo (ERO).
+quest4_d3_a: Al observar la Hostilidad, vemos que sus valores se encuentran en un nivel bajo, lo que en este caso no es conveniente. Habrá que identificar si este valor es positivo en esta situación de competición, dado que se recomienda que alcance valores centrales de la zona media para afrontar situaciones de máximo rendimiento.
+quest4_d3_b: Al observar la Hostilidad, vemos que sus valores se encuentran en un nivel medio, lo que nos parece adecuado para esta situación de competición. En estos casos, estos valores suponen una energía extra que viene muy bien para afrontar situaciones “duras” de competición.
+quest4_d3_c: Al observar la Hostilidad, vemos que sus valores se encuentran en un nivel alto, lo cual es alarmante, ya que posiblemente le afecten negativamente en su rendimiento. Demasiado enfadada y cabreada, habrá utilizado sus energías de forma poco inteligente y, en los momentos importantes de la competición su rendimiento habrá sido por debajo de sus posibilidades. Habrá que explicar a est@ deportista los contenidos del Power Activación y Estado de Rendimiento Optimo (ERO).
 quest4_d4_a: Los valores del Vigor se encuentran en un nivel bajo, lo que supone que se encuentra apagado y sin chispa para competir. Si se encuentran invertidos con respecto a los de la Fatiga, nos encontramos con un posible caso de sobreentrenamiento. De cualquier forma, una vez finalizada la competición, sería recomendable descansar unos días y aproximarse a los valores del perfil óptimo antes de volver al entrenamiento.
 quest4_d4_b: Los valores del Vigor se encuentran en un nivel medio, lo que en principio le perjudicará en su rendimiento, salvo que se encuentran en la zona superior de este nivel. Puede ser que no se haya preparado específicamente esta competición, o que nos encontremos en un periodo de entrenamiento muy denso y con altas intensidades.
 quest4_d4_c: Los valores del Vigor se encuentran en un nivel alto, en la zona óptima para competir, lo que supone incrementar las probabilidades de éxito en cualquier situación de reto que se le plantee. Esto indica que la dimensión emocional positiva para el rendimiento, en principio, garantiza un buen equilibrio emocional para afrontar con garantías esta competición.
-quest4_d5_a: En cuanto a los valores de la Fatiga se encuentran en un nivel bajo, lo cual es positivo, lo que supone que est@ deportista se encuentra pletóric@ para  soportar ritmos de competición altos o esfuerzos de larga duración durante la competición.
-quest4_d5_b: En cuanto al os valores de la Fatiga se encuentran en un nivel medio, lo que puede ser un poco preocupante en este caso, ya que influirá negativamente en su rendimiento. Si estos valores corresponden a pasaciones realizadas intracompetición, se pueden considerar normales y   habrá que tener en cuenta los procesos de recuperación para poder evaluarlos.
-quest4_d5_c: En cuanto a los valores de la Fatiga se encuentran en un nivel alto, lo cual es alarmante, ya que afectará muy negativamente a su rendimiento competitivo, salvo que no se haya preparado esta competición y coincida con  un periodo de entrenamiento de gran volumen e intensidad. Si se ha realizado una puesta a punto adecuada, este alto valor nos puede indicar que existe un riesgo de sobreentrenamiento en est@ deportista.
-quest4_d6_a: Presenta un valor bajo en cuanto a la ansiedad cognitiva, transmitiendo calma y serenidad, despreocupad@, con  mucha capacidad de concentración en los momentos que sean necesarios de la competición.
+quest4_d5_a: En cuanto a los valores de la Fatiga se encuentran en un nivel bajo, lo cual es positivo, lo que supone que est@ deportista se encuentra pletóric@ para soportar ritmos de competición altos o esfuerzos de larga duración durante la competición.
+quest4_d5_b: En cuanto al os valores de la Fatiga se encuentran en un nivel medio, lo que puede ser un poco preocupante en este caso, ya que influirá negativamente en su rendimiento. Si estos valores corresponden a pasaciones realizadas intracompetición, se pueden considerar normales y  habrá que tener en cuenta los procesos de recuperación para poder evaluarlos.
+quest4_d5_c: En cuanto a los valores de la Fatiga se encuentran en un nivel alto, lo cual es alarmante, ya que afectará muy negativamente a su rendimiento competitivo, salvo que no se haya preparado esta competición y coincida con un periodo de entrenamiento de gran volumen e intensidad. Si se ha realizado una puesta a punto adecuada, este alto valor nos puede indicar que existe un riesgo de sobreentrenamiento en est@ deportista.
+quest4_d6_a: Presenta un valor bajo en cuanto a la ansiedad cognitiva, transmitiendo calma y serenidad, despreocupad@, con mucha capacidad de concentración en los momentos que sean necesarios de la competición.
 quest4_d6_b: Se observa un valor medio en cuanto a la ansiedad cognitiva, lo que supone que, a veces, se encuentre un poco intranquil@ o ligeramente nervios@. Conviene realizar un pequeño ajuste durante la competición, a través de la persuasión verbal, acompañado de sesiones de visionado de presión/estrés, para reducir estos valores de cara a la próxima competición.
-quest4_d6_c: Presenta un valor alto en cuanto a la ansiedad cognitiva, con una excesiva preocupación relacionada con el rendimiento personal durante la competición. Quizás tenga demasiados  pensamientos desordenados  que le impiden concentrarse en momentos importantes. Será  necesario centrarse en el Plan Integral de Competición para las competiciones inmediatas y, en el entrenamiento, realizar un trabajo específico acompañado de sesiones de visionado con contenidos de presión/estrés.
-quest4_d7_a: Los valores de la autoconfianza son muy bajos, provocando mucha inseguridad durante la competición, sobre todo cuando surjan situaciones de mucha presión. Se hace necesario centrarse en el Plan Integral de Competición y utilizar la persuasión verbal para las próximas competiciones. A largo plazo, proponerle un trabajo específico en el entrenamiento para aumentar estos valores, con  sesiones de visionado de experiencias propias y de contenidos de autoeficacia, orientadas por el tutor/a.
+quest4_d6_c: Presenta un valor alto en cuanto a la ansiedad cognitiva, con una excesiva preocupación relacionada con el rendimiento personal durante la competición. Quizás tenga demasiados pensamientos desordenados que le impiden concentrarse en momentos importantes. Será necesario centrarse en el Plan Integral de Competición para las competiciones inmediatas y, en el entrenamiento, realizar un trabajo específico acompañado de sesiones de visionado con contenidos de presión/estrés.
+quest4_d7_a: Los valores de la autoconfianza son muy bajos, provocando mucha inseguridad durante la competición, sobre todo cuando surjan situaciones de mucha presión. Se hace necesario centrarse en el Plan Integral de Competición y utilizar la persuasión verbal para las próximas competiciones. A largo plazo, proponerle un trabajo específico en el entrenamiento para aumentar estos valores, con sesiones de visionado de experiencias propias y de contenidos de autoeficacia, orientadas por el tutor/a.
 quest4_d7_b: Presenta un nivel medio de autoconfianza, transmitiendo cierta incomodidad en esta situación de rendimiento. Quizás le cueste un poco verse a sí mismo resolviendo exitosamente las situaciones de competición, por lo que se recomienda utilizar la persuasión verbal para mejorarlo de cara a las competiciones inmediatas. A largo plazo, proponerle un trabajo específico en el entrenamiento para aumentar estos valores.
-quest4_d7_c: Se observa un alto nivel de autoconfianza, con buenas sensaciones para competir, cómodo y con alta capacidad para optimizar su rendimiento en situaciones de presión. Esta alta convicción  le permitirá afrontar la competición con garantís de rendir al máximo de sus posibilidades.
-quest4_d8_a: Presenta un valor bajo en cuanto a la ansiedad somática, transmitiendo comodidad y tranquilidad, con mucha capacidad para relajarse corporalmente  y estar mentalmente activo en los momentos que sean requeridos, es decir, “calma expectante”. Son unos valores óptimos para rendir en la competición.
-quest4_d8_b: Se observa un valor medio en cuanto a la ansiedad somática, lo que supone que se encuentre un poco inquiet@ y tens@. Se aconseja  proporcionarles una miniestrategia con contenidos de Relajación/Respiración para las próximas competiciones, asociado a la parte de reevaluación cognitiva del Plan Integral de Competición. A largo plazo, reforzarlo con sesiones de visionado de experiencias pasadas exitosas asociadas a contenidos de Relajación.
-quest4_d8_c: Los valores de la ansiedad somática son excesivos y perjudiciales para el rendimiento. Tendrá dificultades para controlar la tensión y es posible que se precipite en sus acciones, lo que le impedirá rendir en sus niveles óptimos. Para reducir estos valores se aconseja proporcionarle una miniestrategia con contenidos de Relajación/Respiración para las próximas competiciones, asociado a la parte de reevaluación cognitiva del Plan Integral de Competición e integrarlo en el mismo. A largo plazo,  reforzarlo con  sesiones de visionado de experiencias pasadas exitosas, asociadas a contenidos de Relajación y de Presión/Estrés, con orientación del/a Tutor/a.
+quest4_d7_c: Se observa un alto nivel de autoconfianza, con buenas sensaciones para competir, cómodo y con alta capacidad para optimizar su rendimiento en situaciones de presión. Esta alta convicción le permitirá afrontar la competición con garantís de rendir al máximo de sus posibilidades.
+quest4_d8_a: Presenta un valor bajo en cuanto a la ansiedad somática, transmitiendo comodidad y tranquilidad, con mucha capacidad para relajarse corporalmente y estar mentalmente activo en los momentos que sean requeridos, es decir, “calma expectante”. Son unos valores óptimos para rendir en la competición.
+quest4_d8_b: Se observa un valor medio en cuanto a la ansiedad somática, lo que supone que se encuentre un poco inquiet@ y tens@. Se aconseja proporcionarles una miniestrategia con contenidos de Relajación/Respiración para las próximas competiciones, asociado a la parte de reevaluación cognitiva del Plan Integral de Competición. A largo plazo, reforzarlo con sesiones de visionado de experiencias pasadas exitosas asociadas a contenidos de Relajación.
+quest4_d8_c: Los valores de la ansiedad somática son excesivos y perjudiciales para el rendimiento. Tendrá dificultades para controlar la tensión y es posible que se precipite en sus acciones, lo que le impedirá rendir en sus niveles óptimos. Para reducir estos valores se aconseja proporcionarle una miniestrategia con contenidos de Relajación/Respiración para las próximas competiciones, asociado a la parte de reevaluación cognitiva del Plan Integral de Competición e integrarlo en el mismo. A largo plazo, reforzarlo con sesiones de visionado de experiencias pasadas exitosas, asociadas a contenidos de Relajación y de Presión/Estrés, con orientación del/a Tutor/a.
 quest4_d10_a: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito - A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos valores bajos de la DPE, supone que una selección de objetivos poco ambiciosos. Si van acompañados de cierta inestabilidad en la valoración, supone que est@ deportista tiene capacidad discriminativa a la hora de seleccionar sus objetivos, pero seguramente sus niveles de autoconfianza serán bajos. Será necesario plantear un trabajo específico con el apoyo del Power de la Autoeficacia. 
 quest4_d10_b: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito - A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos valores medios de la DPE, supone una selección de objetivos limitados. Si van acompañados de cierta estabilidad en la valoración, en torno a 70, supone que est@ deportista tiende a uniformizar los objetivos autoimpuestos, pero debería de ser más ambiciosa. Conviene recordar que el grado de dificultad de las situaciones no depende del/a deportista, ya que en ningún caso lo va a poder cambiar, pero -aumentar las probabilidades de éxito sí, manteniendo alta las creencias en sí mism@-.
 quest4_d10_c: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito - A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos altos valores de la DPE, supone una autoimposición de objetivos ambiciosos para esta temporada. Si van acompañados de cierta variabilidad en la valoración, entre 70 y 100, supone que est@ deportista posee una excelente capacidad discriminativa a la hora de seleccionar sus objetivos. Conviene recordar que el grado de dificultad de las situaciones no depende del/a deportista, ya que en ningún caso lo va a poder cambiar, pero -aumentar las probabilidades de éxito sí, manteniendo alta las creencias en sí mism@-. 
@@ -729,7 +729,7 @@ quest6_d2_b: Al observar los valores relacionados con el RP, vemos que se sitúa
 quest6_d2_c: Al observar los valores relacionados con el RP, vemos que se sitúan en un alto nivel, lo que representa que ha tenido buenas sensaciones a lo largo de la competición y, sobre todo, que ha sido perseverante manteniendo la confianza hasta el final. Además, esto refuerza el camino hacia su propia mejora.
 quest6_d3_a: En el caso de la contribución tarea, los valores se sitúan en un nivel bajo, lo que implica que la toma de decisiones ha sido desacertada durante el partido y que tanto su implicación con el esfuerzo como la actitud relacionada con el rol que se le ha encomendado son bajas. Si se repiten estos valores será necesario realizar una sesión conjunta con el apoyo del/a tutor/a. 
 quest6_d3_b: En el caso de la contribución tarea, los valores se sitúan en un nivel medio, lo que implica que algunas de las decisiones tomadas durante el partido no han sido acertadas. Además, tanto su implicación con el esfuerzo como la actitud relacionada con el rol que se le ha encomendado podían haber sido mayores. 
-quest6_d3_c: En el caso de la contribución tarea    , los valores se sitúan en un alto nivel, lo que implica que ha tomado decisiones acertadas durante el partido con alta implicación en el esfuerzo. Tanto su aportación al trabajo colectivo como la actitud relacionada con el rol que se le ha encomendado han sido muy satisfactorias. 
+quest6_d3_c: En el caso de la contribución tarea, los valores se sitúan en un alto nivel, lo que implica que ha tomado decisiones acertadas durante el partido con alta implicación en el esfuerzo. Tanto su aportación al trabajo colectivo como la actitud relacionada con el rol que se le ha encomendado han sido muy satisfactorias. 
 quest6_d4_a: En el caso de la IT, los valores se sitúan en un nivel bajo, lo que representa una reducida o mínima complicidad y lealtad con las decisiones tomadas. Tampoco se puede destacar el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. Es aconsejable realizar una sesión conjunta con la orientación del/a tutor/a.
 quest6_d4_b: En el caso de la IT, los valores se sitúan en un nivel medio, lo que representa cierto nivel de complicidad y lealtad con las decisiones tomadas. También manifiesta una buena satisfacción relacionada con el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. 
 quest6_d4_c: En el caso de la IT, los valores se sitúan en un alto nivel, lo que representa una alta complicidad y lealtad con las decisiones tomadas. A destacar la alta satisfacción que manifiesta relacionada con el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. 
@@ -860,7 +860,7 @@ quest8_d9_c: Estos altos valores observados en cuanto a la satisfacción relacio
 # quest9
 quest9: Cuestionario de Clima de Tecnificación Percibido
 quest9_header: El grado de satisfacción con...
-quest9_intro:  Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de  competición. Por favor, lee cuidadosamente y después rodea con un círculo el número que hay al lado, el que mejor describa tu comportamiento durante  el entrenamiento y los partidos de competición.
+quest9_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de competición. Por favor, lee cuidadosamente y después rodea con un círculo el número que hay al lado, el que mejor describa tu comportamiento durante el entrenamiento y los partidos de competición.
 # labels 
 quest9_label_0: Clima de Tecnificación Percibido
 quest9_label_1: Valores de la percepción de éxito grupal
@@ -926,7 +926,7 @@ quest9_d8_b: Este valor medio del clima de rendimiento (PER), supone percibir qu
 quest9_d8_c: Este alto valor del clima de rendimiento (PER), situado entre 4 y 5, supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s es lo más importante. Esto debilitará la capacidad de l@ deportistas para afrontar situaciones de máximo desafío personal y, además, contribuirá de forma importante en el aumento de la ansiedad frente a los errores en situaciones de alta dificultad.
 # quest10
 quest10: Cuestionario de Clima de Tecnificación Reflejado
-quest10_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de  competición. Por favor, lee cuidadosamente y después seleccina el que mejor describa el comportamiento de tu entrenador durante  el entrenamiento y los partidos de competición.
+quest10_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de competición. Por favor, lee cuidadosamente y después seleccina el que mejor describa el comportamiento de tu entrenador durante el entrenamiento y los partidos de competición.
 quest10_label_0: Clima de Tecnificación Reflejado
 quest10_label_1: Mi entrenador/a
 quest10_1: Permite que tomen decisiones que no se corresponden con la táctica prevista
@@ -1003,7 +1003,7 @@ quest11_31: Porque practicando deporte, puedo expresar valores importantes para 
 quest11_32: Me lo pregunto a menudo; no llego a conseguir los objetivos que me planteo
 # quest12
 quest12: Cuestionario de Clima Motivacional
-quest12_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de  competición. Por favor, lee cuidadosamente y después selecciona el porcentaje que mejor describa la opinión de tu entrenador.
+quest12_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de competición. Por favor, lee cuidadosamente y después selecciona el porcentaje que mejor describa la opinión de tu entrenador.
 quest12_header: Al practicar deporte, mi entrenador/a piensa que tengo éxito cuando
 quest12_valor_1: 0 (nada)
 quest12_valor_2: 100 (completamente)
@@ -1022,12 +1022,12 @@ quest12_9: Hago algo que los demás no pueden hacer
 quest12_10: Lo hago todo lo mejor que se
 quest12_11: Alcanzo la meta que me propuse
 quest12_12: Soy claramente superior a los/las demás
-quest12_d1_a: Este bajo valor de asociado al clima motivacional  rendimiento, situado por debajo de 4, supone que, para est@  técnico,  los resultados obtenidos por l@s deportistas tienen un valor  bajo, quizás menos que la mejora de las habilidades, lo que producirá un efecto positivo sobre  la implicación durante el entrenamiento y el control sobre la ansiedad frente a los errores de l@s deportistas, en el caso de que la hubiera.
-quest12_d1_b: Este  valor medio  asociado clima motivacional  rendimiento, situado entre 4 y 7, supone que, para est@ técnico, los resultados obtenidos por l@s deportistas tienen un importante valor, que  si son semejantes a los del clima de maestría, fortalecerá la motivación y aumentará su compromiso con el esfuerzo, ayudándole al deprotista a  controlar la ansiedad frente a los errores en el caso de que la tuviera.
-quest12_d1_c: Este alto valor asociado clima motivacional  rendimiento situado por encima de 7, supone que, para est@ técnico, los resultados obtenidos por l@s deportistas tienen un máximo valor. Solamente si van acompañados de máximos valores en el clima moticacional de maestría, supondrá una buena motivación para aumentar su compromiso e implicación con el esfuerzo. En el caso de que prevalezca sobre el de maestría señalado, posiblemente mermará la capacidad de l@s deportistas frente a situaciones de máximo desafío personal.
-quest12_d2_a: El clima motivacional de maestría, se encuentra en niveles bajos, lo cual es un poco preocupante. Le cuesta valorar positivamente  las  mejoras  de l@s deportistas y, cuando se enfrenten a situaciones  novedosas o de gran dificultad se sentirán incómodos, sin iniciativa Habrá  que orientar al técnico para que valore la importancia de las mejoras que se produzcan, a través de la autocomparación del deportista.
-quest12_d2_b: El clima motivacional de maestría, se encuentra en niveles medios, lo cual es adecuado pero mejorable. Valora positivamente las mejoras de sus deportistas, lo que les ayuda a afronta con buena actitud situaciones  novedosas o de gran dificultad. Será adecuado recordarle la importancia que tienen las mejoras para que los deportistas consigan sus objetivos, reconociendo y valorando  su esfuerzo al producirse  una mejoría personal, por ligera que sea.
-quest12_d2_c: El clima motivacional de maestría, se encuentra en niveles altos, lo cual es positivo. Este técnico se centra en la mejora personal de l@s deportistas, siendo esto lo más importante. Esto contribuye a afrontar, con una excelente actitud, situaciones  novedosas o de gran dificultad. Genera una influencia positiva en el compromiso con el entrenamiento, en la competencia percibida y minimiza la posible ansiedad frente a los errores que pudieran tener l@s deportistas.
+quest12_d1_a: Este bajo valor de asociado al clima motivacional rendimiento, situado por debajo de 4, supone que, para est@ técnico, los resultados obtenidos por l@s deportistas tienen un valor bajo, quizás menos que la mejora de las habilidades, lo que producirá un efecto positivo sobre la implicación durante el entrenamiento y el control sobre la ansiedad frente a los errores de l@s deportistas, en el caso de que la hubiera.
+quest12_d1_b: Este valor medio asociado clima motivacional rendimiento, situado entre 4 y 7, supone que, para est@ técnico, los resultados obtenidos por l@s deportistas tienen un importante valor, que si son semejantes a los del clima de maestría, fortalecerá la motivación y aumentará su compromiso con el esfuerzo, ayudándole al deprotista a controlar la ansiedad frente a los errores en el caso de que la tuviera.
+quest12_d1_c: Este alto valor asociado clima motivacional rendimiento situado por encima de 7, supone que, para est@ técnico, los resultados obtenidos por l@s deportistas tienen un máximo valor. Solamente si van acompañados de máximos valores en el clima moticacional de maestría, supondrá una buena motivación para aumentar su compromiso e implicación con el esfuerzo. En el caso de que prevalezca sobre el de maestría señalado, posiblemente mermará la capacidad de l@s deportistas frente a situaciones de máximo desafío personal.
+quest12_d2_a: El clima motivacional de maestría, se encuentra en niveles bajos, lo cual es un poco preocupante. Le cuesta valorar positivamente las mejoras de l@s deportistas y, cuando se enfrenten a situaciones novedosas o de gran dificultad se sentirán incómodos, sin iniciativa Habrá que orientar al técnico para que valore la importancia de las mejoras que se produzcan, a través de la autocomparación del deportista.
+quest12_d2_b: El clima motivacional de maestría, se encuentra en niveles medios, lo cual es adecuado pero mejorable. Valora positivamente las mejoras de sus deportistas, lo que les ayuda a afronta con buena actitud situaciones novedosas o de gran dificultad. Será adecuado recordarle la importancia que tienen las mejoras para que los deportistas consigan sus objetivos, reconociendo y valorando su esfuerzo al producirse una mejoría personal, por ligera que sea.
+quest12_d2_c: El clima motivacional de maestría, se encuentra en niveles altos, lo cual es positivo. Este técnico se centra en la mejora personal de l@s deportistas, siendo esto lo más importante. Esto contribuye a afrontar, con una excelente actitud, situaciones novedosas o de gran dificultad. Genera una influencia positiva en el compromiso con el entrenamiento, en la competencia percibida y minimiza la posible ansiedad frente a los errores que pudieran tener l@s deportistas.
 
 
 text_are_you_sure: ¿ Estás seguro ?
