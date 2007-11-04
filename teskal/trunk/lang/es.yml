@@ -3,7 +3,7 @@ signup_label_1: Paso
 signup_label_2: Escoge un usuario y un lenguaje.
 signup_label_3: El lenguaje será usado cuando entres la próxima vez.
 signup_label_4: Elige una contraseña para tu nueva cuenta.
-signup_label_5: La contraseña debe tener de 6 a 30 caracteres de longitud.
+signup_label_5: La contraseña debe tener de 6 a 12 caracteres de longitud.
 signup_label_6: Detalles email.
 signup_label_7: Escribe tu dirección de correo.
 signup_label_8: La dirección debe ser válida para poder activar tu cuenta.
@@ -110,6 +110,7 @@ field_name: Nombre
 field_new_password: Nueva contraseña
 field_notes: Notas
 field_password: Contraseña
+field_password_change: Cambiar contraseña
 field_password_confirmation: Confirmación
 field_priority: Prioridad
 field_role: Papel

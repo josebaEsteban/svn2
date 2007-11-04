@@ -50,12 +50,13 @@
 <%- when :es -%>
 <script type="text/javascript">
 	function formCallback(result, form) {
-		window.status = "valiation callback for form '" + form.id + "': result = " + result;
+		window.status = "validation callback for form '" + form.id + "': result = " + result;
 	}
     var valid = new Validation('theform', {immediate : true, onFormValidate : formCallback}); 
  	Validation.addAllThese([
-		['validate-password', 'Tu contraseña debe tener más de 6 caracteres y no ser igual que el nombre de tu cuenta.', {
-			minLength : 7,
+			['validate-password', 'Tu contraseña debe tener entre 6 y 12 caracteres y no ser \'contraseña\' o igual que el nombre de tu cuenta.', {
+			minLength : 6,
+			maxLength : 12,  
 			notOneOf : ['password','PASSWORD','1234567','0123456'],
 			notEqualToField : 'user[login]'
 		}],
@@ -67,12 +68,13 @@
 <%- else -%>
 <script type="text/javascript">
 	function formCallback(result, form) {
-		window.status = "valiation callback for form '" + form.id + "': result = " + result;
+		window.status = "validation callback for form '" + form.id + "': result = " + result;
 	}
     var valid = new Validation('theform', {immediate : true, onFormValidate : formCallback}); 
  	Validation.addAllThese([
-		['validate-password', 'Your password must be more than 6 characters and not be \'password\' or the same as your name.', {
-			minLength : 7,
+		['validate-password', 'Your password must be between 6 and 12 characters and not be \'password\' or the same as your name.', {
+			minLength : 6,
+			maxLength : 12,  
 			notOneOf : ['password','PASSWORD','1234567','0123456'],
 			notEqualToField : 'user[login]'
 		}],
