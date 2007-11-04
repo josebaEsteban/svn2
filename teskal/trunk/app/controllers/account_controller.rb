@@ -36,7 +36,7 @@ class AccountController < ApplicationController
         if params[:autologin] && Setting.autologin? 
           puts "autologin"
           token = Token.create(:user => user, :action => 'autologin')
-          cookies[:autologin] = { :value => token.value, :expires => 1.day.from_now }
+          cookies[:autologin] = { :value => token.value, :expires => 5.day.from_now }
         end
         redirect_back_or_default :controller => 'my', :action => 'page'
       else   

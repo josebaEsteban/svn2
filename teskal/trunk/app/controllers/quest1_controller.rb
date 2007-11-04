@@ -18,7 +18,7 @@ class Quest1Controller < ApplicationController
       @answer.answ25=0
     end
     if @answer.save
-      flash[:notice] = 'Answer was successfully created.'
+      # flash[:notice] = 'Answer was successfully created.'
       redirect_to :action => 'show', :id => @answer.id
 
       # format.html { redirect_to answer_url(@answer) }
