@@ -979,7 +979,7 @@ quest11_32: I often ask myself; I can't seem to achieve the goals that I set for
 # quest12
 quest12: Motivational Climate Questionnaire
 quest12_intro: This is a questionnaire which asks you to express your perception of what success in sport means to your coach. There are no right or wrong answers.
-quest12_header: When playing sport, the coach thinks I am most successful when
+quest12_header: Playing sport, the coach thinks I am most successful when...
 quest12_valor_1: 0 (nothing)
 quest12_valor_2: 100 (completely)
 quest12_label_0: Motivational Climate
