@@ -292,9 +292,9 @@ fieldset {
 legend {
 	color: #505050;
 }
-.required {
+/*.required {
 	color: #bb0000;
-}
+}   */
 .odd {
 	background-color: #f6f7f8;
 }
@@ -577,14 +577,14 @@ div.tooltip:hover span.tip {
 .tabular p {
 	margin: 0;
 	padding: 5px 0 8px 0;
-	padding-left: 180px; /*width of left column containing the label elements*/
+	padding-left: 140px; /*width of left column containing the label elements*/
 	height: 1%;
 }
 .tabular label {
 	font-weight: bold;
 	float: left;
-	margin-left: -180px; /*width of left column*/
-	width: 175px; /*width of labels. Should be smaller than left column to create some right 
+	margin-left: -140px; /*width of left column*/
+	width: 135px; /*width of labels. Should be smaller than left column to create some right 
 margin*/
 }
 .error {

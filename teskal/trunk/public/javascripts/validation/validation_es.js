@@ -251,7 +251,7 @@ Validation.addAllThese([
 				var test = new Date(v);
 				return Validation.get('IsEmpty').test(v) || !isNaN(test);
 			}],
-	['validate-email', 'Por favor introduzca una dirección de E-mail válida. Por ejemplo fred@domain.com.', function (v) {
+	['validate-email', 'Por favor introduzca una dirección de E-mail válida. Por ejemplo jose@web.com', function (v) {
 				return Validation.get('IsEmpty').test(v) || /\w{1,}[@][\w\-]{1,}([.]([\w\-]{1,})){1,3}$/.test(v)
 			}],
 	['validate-url', 'Por favor introduzca una URL válida.', function (v) {
