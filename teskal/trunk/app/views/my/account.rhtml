@@ -96,6 +96,24 @@
 			}]
 		]);
 	 </script>
+	<%- elsif @user.language == "eu" -%>
+    <script type="text/javascript">
+		function formCallback(result, form) {
+			window.status = "validation callback for form '" + form.id + "': result = " + result;
+		}
+	    var valid = new Validation('myPassword', {immediate : true, onFormValidate : formCallback}); 
+	 	Validation.addAllThese([
+			['validate-password', 'Zure pasa-hitzak zure kontuaren ezberdinak diren 6-12 karaketere bitarte izan behar ditu.', {
+				minLength : 6,
+				maxLength : 12,
+				notOneOf : ['password','PASSWORD','1234567','0123456','12345679012','012345678901'],
+				notEqualToField : 'user[login]'
+			}],
+			['validate-password-confirm', 'Egiaztapena ez da pasa-hitz berria bezalakoa, beste saiakera bat gehiago egin ezazu mesedez.', {
+				equalToField : 'new_password'
+			}]
+		]);
+	 </script> 
     <%- else -%>
     <script type="text/javascript">
 		function formCallback(result, form) {
