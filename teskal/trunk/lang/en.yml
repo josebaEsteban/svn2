@@ -304,6 +304,9 @@ quest1_header4: When playing sport, i feel most successful when
 quest1_header5: Te sientes capaz de competir en tu deporte
 quest1_intro: Below is a list of words that describe feelings people have. Underneath is a list of comments used by athletes to describe some of their feelings or emotions before a competition. Please read each one carefully. Then click the answer which best describes how have you been feeling during the past week including today.
 #labels
+quest1_label_30: Perfil de rendimiento básico
+quest1_label_31: Objetivos de Temporada
+quest1_label_32: Sistema de autoregulación
 quest1_label_10: Actual
 quest1_label_11: Dificultad percibida estimada
 quest1_label_12: Grado de confianza
@@ -340,12 +343,8 @@ quest1_25: Tienes/utilizas un plan de competición?
 quest1_26: I am concerned about this competition
 quest1_27: I feel nervous
 quest1_28: I feel at ease
-quest1_28: Indica los objetivos de la temporada
 quest1_29: I have self-doubts
-quest1_29: Difficulty Level
-quest1_30: Grado de confianza en conseguir los objetivos
 quest1_30: I feel jittery
-quest1_31: A continuación te vamos a hacer una serie de preguntas relacionadas con el entrenamiento y la competición. Queremos conocer tu opinión y solicitamos que nos respondas con sinceridad. Son datos estrictamente confidenciales.
 quest1_31: I feel confortable
 quest1_32: I am concerned that I may not do as well in this competition as I could
 quest1_33: My body feels tense
@@ -586,6 +585,7 @@ quest3_d8_c: Este deportista presenta un alto nivel de competencia percibida, co
 quest4: Valoración Pre-Competición
 quest4_header: Si compites como quieres...
 quest4_label_0: Afrontamiento en Competición
+quest4_label_1: Perfil de Rendimiento en Competición 
 quest4_label_11: Significación personal
 quest4_label_12: Dificultad percibida estimada
 quest4_label_13: Grado de confianza
