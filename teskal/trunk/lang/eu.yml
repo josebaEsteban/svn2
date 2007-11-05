@@ -583,7 +583,7 @@ quest3_d8_a: Antzemandako eskumen mailari dagokionez balio baxuak aurkezten ditu
 quest3_d8_b: Kirolari honek aurkezten zaizkion zereginak garatzeko gaitasun on bat aurkezten du antzemandako eskumen maila on batekin. Nolanahi ere, pertzepzio hau hobetu dezake, bereziki bere hobekuntza propioarekiko zuzentzen bazaio. Erronka edo eta zeregin oso konplikatuei aurre egin behar dienean arreta berezia jartzea eta positiboki sendotzea.
 quest3_d8_c: Kirolari honek antzemandako eskumen maila altua aurkezten du gauza berriak egiteko gaitasun handiarekin. Beti, proposatzen zaion lana dakien bezain ondoen egiten saiatzen da domeinu eta gauzatze sentzazio mugagabe batekin, hau da, bere buruari proposatzen dizkion gauzak egiteko gai da.
 # quest4
-quest4: Lehiaketa aurreko balorazioa
+quest4: Lehiaketa aurreko balorazioatu
 quest4_header: Momentu honetan … sentitzen naiz
 quest4_label_0: Lehiaketako aurre egitea 
 quest4_label_11: Esanahi pertsonala
@@ -595,7 +595,7 @@ quest4_0: Zailtasun maila
 quest4_1: Nahi bezala lehiatzen bazara lortzea espero duzun emaitza
 quest4_2: Motibazio maila
 quest4_3: Lehiaketak zuretzako daukan garrantzia
-quest4_4: Kaurkariei buruz daukazun ezagutza mailaTu conocimiento sobre los/las adversarias
+quest4_4: Aurkariei buruz daukazun ezagutza maila
 quest4_5: Proba zuretzat egokia da
 quest4_6: Lehiaketa plana prestatu duzu?
 quest4_7: Zein modutan jokatu nahi duzun argi daukazu
