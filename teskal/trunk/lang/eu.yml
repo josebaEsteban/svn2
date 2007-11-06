@@ -304,9 +304,9 @@ quest1_header4: Kirola egiterakoan, … arrakasta dudala sentitzen dut
 quest1_header5: Te sientes capaz de competir en tu deporte
 quest1_intro: Behean, jendeak izaten dituen sentsazioak deskribatzen dituzten hitz zerrenda bat dago. Segidan, kirolariek lehiaketa baten aurretik izan dituzten sentimenduak eta emoziak deskribatzeko erabilitako komentario batzuk azaltzen dira. Mesedez, arretaz irakurri itzazu eta momentuotan sentitzen duzuna egokien deskribatzen duen zenbaki gainean klik egin ezazu.
 #labels
-quest1_label_30: Perfil de rendimiento básico
-quest1_label_31: Objetivos de Temporada
-quest1_label_32: Sistema de autoregulación
+quest1_label_30: Oinarrizko Errendimenduaren Profila
+quest1_label_31: Denboraldiko Helburuak
+quest1_label_32: Autoerregulazio Sistema
 quest1_label_10: Egungoa
 quest1_label_11: Antzemandako zailtasun estimatua
 quest1_label_12: Konfiantza maila
@@ -585,7 +585,7 @@ quest3_d8_c: Kirolari honek antzemandako eskumen maila altua aurkezten du gauza 
 quest4: Lehiaketa aurreko balorazioatu
 quest4_header: Momentu honetan … sentitzen naiz
 quest4_label_0: Lehiaketako aurre egitea 
-quest4_label_1: Perfil de Rendimiento en Competición 
+quest4_label_1: Lehiaketako Errendimendu Profila
 quest4_label_11: Esanahi pertsonala
 quest4_label_12: Antzemandako zailtasun estimatua
 quest4_label_13: Konfiantza maila
