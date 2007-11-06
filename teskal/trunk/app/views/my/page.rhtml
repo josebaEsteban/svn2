@@ -1,4 +1,4 @@
-<div class="splitcontentleft"> 
+<div class="splitcontentleft">
   <table cellspacing="0">
     <!-- <caption><%=l(:quest2)%></caption> -->
     <thead>
@@ -8,7 +8,7 @@
       </tr>
     </thead>
     <tbody>
-	<%- if @logged_in_user.suscription? -%>
+      <%- if @logged_in_user.suscription? -%>
       <tr>
         <td>1</td>
         <td><%= link_to l(:quest1), :controller  => 'quest1', :action => 'new' %></td>
@@ -57,53 +57,64 @@
         <td>12</td>
         <td><%= link_to l(:quest12_label_0), :controller  => 'quest12', :action => 'new' %></td>
       </tr>
-<% else %> 
-<tr>
-  <td>2</td>
-  <td><%= link_to l(:quest2_label_0), :controller  => 'quest2', :action => 'new' %></td>
-</tr>
-<tr class='odd'>
-  <td>12</td>
-  <td><%= link_to l(:quest12_label_0), :controller  => 'quest12', :action => 'new' %></td>
-</tr>
-<% end %>
-
+      <% else %>
+      <tr>
+        <td>2</td>
+        <td><%= link_to l(:quest2_label_0), :controller  => 'quest2', :action => 'new' %></td>
+      </tr>
+      <tr class='odd'>
+        <td>12</td>
+        <td><%= link_to l(:quest12_label_0), :controller  => 'quest12', :action => 'new' %></td>
+      </tr>
+      <% end %>
     </tbody>
   </table>
-<br/>
-<table cellspacing="0">
-  <thead>
-    <tr>
-      <th>##</th>
-      <th scope="col"><div align="left"><%=l(:label_library)%></div></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td><a href="../lib/01.Teskal.pdf" onclick="javascript:urchinTracker ('/lib/01.Teskal.pdf');">Presentación Teskal</a></td>
-    </tr>
-    <tr class='odd'>
-      <td>5</td>
-      <td><a href="../lib/05.Estres.pdf" onclick="javascript:urchinTracker ('/lib/05.Estres.pdf');">El estrés en la competición</a></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-<div class="splitcontentright">
-	<center>
+  <br/>
   <table cellspacing="0">
     <thead>
       <tr>
-        <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>     
-        <th scope="col"><div align="left"><%=l(:label_competition) %></div></th>
-        <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
+        <th>##</th>
+        <th scope="col"><div align="left"><%=l(:label_library)%></div></th>
       </tr>
     </thead>
     <tbody>
-      <%- odd=0 -%>
-      <%- for answer in @answers -%>
-      <%- case answer.quest_id
+      <tr>
+        <td>1</td>
+        <%- if @user.language == "es" -%>
+        <td><a href="../lib/01.Teskal.pdf" onClick="javascript:urchinTracker ('/lib/01.Teskal.pdf');">Presentación Teskal</a></td>
+        <%- elsif @user.language == "eu" -%>
+        <td><a href="../lib/01.Teskal.pdf" onClick="javascript:urchinTracker ('/lib/01.Teskal.pdf');">Teskal Aurkezpena</a></td>
+        <%- else -%>
+        <td><a href="../lib/01.Teskal.pdf" onClick="javascript:urchinTracker ('/lib/01.Teskal.pdf');">Presentación Teskal</a></td>
+        <%- end -%>
+      </tr>
+      <tr class='odd'>
+        <td>5</td>
+        <%- if @user.language == "es" -%>
+        <td><a href="../lib/05.Estres.pdf" onClick="javascript:urchinTracker ('/lib/05.Estres.pdf');">El estrés en la competición</a></td>
+        <%- elsif @user.language == "eu" -%>
+        <td><a href="../lib/05.Estres.pdf" onClick="javascript:urchinTracker ('/lib/05.Estres.pdf');">Estresa lehiaketan</a></td>
+        <%- else -%>
+        <td><a href="../lib/05.Estres.pdf" onClick="javascript:urchinTracker ('/lib/05.Estres.pdf');">Competitive Stress</a></td>
+        <%- end -%>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="splitcontentright">
+  <center>
+    <table cellspacing="0">
+      <thead>
+        <tr>
+          <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>
+          <th scope="col"><div align="left"><%=l(:label_competition) %></div></th>
+          <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
+        </tr>
+      </thead>
+      <tbody>
+        <%- odd=0 -%>
+        <%- for answer in @answers -%>
+        <%- case answer.quest_id
               when 1 
                 quest=l(:quest1) 
               when 2 
@@ -129,19 +140,19 @@
               when 12 
                 quest=l(:quest12_label_0)
               end -%>
-      <%- if odd == 1 -%>
-      <tr class="odd">
-        <%- odd=0-%>
-        <%-else -%>
-      <tr>
-        <%- odd=1 end -%>
-        <%- controlador="quest"+ answer.quest_id.to_s -%>
-        <td><%= l_datetime(answer.created_on)%></td> 
-        <td><%= answer.competition %></td> 
-        <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
-      </tr>
-      <%- end -%>
-    </tbody>
-  </table>
-</center> 
+        <%- if odd == 1 -%>
+        <tr class="odd">
+          <%- odd=0-%>
+          <%-else -%>
+        <tr>
+          <%- odd=1 end -%>
+          <%- controlador="quest"+ answer.quest_id.to_s -%>
+          <td><%= l_datetime(answer.created_on)%></td>
+          <td><%= answer.competition %></td>
+          <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
+        </tr>
+        <%- end -%>
+      </tbody>
+    </table>
+  </center>
 </div>
