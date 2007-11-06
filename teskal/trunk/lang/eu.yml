@@ -639,8 +639,8 @@ quest4_d9_b: Kirolari honen egutegian balio eta esangura erlatiboa duen lehiaket
 quest4_d9_c: Kirolari honentzako lehiaketa honek garrantzi eta esangura oso handiak dauzka balioal maila altuenean kokatzen bait dira. Garratzitsua litzateke balorazioa modu positiboan zuzentzea, erronkaruntz, lehiatzeko prestatzen egon bait da eta egin ahal izate hutsa pozgarria bait da.
 # quest5
 quest5: Lehiaketa osteko balorazioa (Banakako Kirolak)
-quest5_header1: Nire jokaerarekin izandako asetasun maila … izan da
-quest5_header2: Lehiaketan zehar izandako asetasun maila … izan da
+quest5_header1: Nire jokaerarekin izandako asetasun maila
+quest5_header2: Lehiaketan zehar izandako asetasun maila
 quest5_header3: …-kin/ko asetasun maila
 quest5_intro: Segidan aurkezten zaizkizun lehiaketaren aspektu ezberdinekin zer ikusia duten galdera sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez,bakoitza arretaz irakurri ezazu eta momentuotan sentitzen duzuna egokien deskribatzen duen zenbaki gainean klik egin ezazu
 quest5_label_0: Valoración de Rendimiento Percibido Individual 
@@ -716,7 +716,7 @@ quest6_18: Zure borroka eta pertseberantzia gaitasunarekin
 quest6_19: Zure hobekuntzarekiko daukazun jarrera baikorrarekin
 quest6_20: Gozamen, asetasun eta sentsazio onen transmisioarekin
 quest6_21: Taldearen errendimendu gaitasunarekin daukazun asetasuna
-quest6_6: Talde helburuekiko daukazun konpizlizitate mailarekin
+quest6_6: Talde helburuekiko daukazun konplizitate mailarekin
 quest6_7: Zure kideekiko eskuzabaltasun eta sostenguarekin
 quest6_8: Zure kideekiko errespetuarekin
 quest6_9: Hartutako erabakiekiko zure leialtasunarekin
@@ -744,8 +744,8 @@ quest7_label_3: Funtzionamendu etikoa
 quest7_label_4: Gaitasunaren erabilpena
 quest7_label_5: Irakaskuntza eta instrukzioa
 quest7_label_6: Tratu pertsonala
-quest7_valor_1: 1 (inolaz ere)
-quest7_valor_7: 7 (guztiz) 
+quest7_valor_1: 1 (guztiz ase gabe)
+quest7_valor_7: 7 (guztiz asebete) 
 quest7_10: Aurreko denboraldietan jaso dudan prestakuntza
 quest7_11: Denboraldi honetan zehar jaso dudan prestakuntza
 quest7_12: Entrenatzaileak nire zereginari buruz emandako jarraibide tekniko-taktikoak
@@ -756,7 +756,7 @@ quest7_16: Zenbateraino ahal dudan onena ematen dudan
 quest7_17: Entrenamenduan zehar dudan dedikazio pertsonal maila
 quest7_18: Lehiaketean zehar dudan gogoa
 quest7_1: Denboraldian zehar nire helburuetan lorturiko maila
-quest7_2: Aurreko denboralidan nire errendiemnduan izandako hobekuntza
+quest7_2: Aurreko denboralidan nire errendimenduan izandako hobekuntza
 quest7_3: Orain arteko nire trebetasunen hobekuntza maila
 quest7_4: Nire trebetasunak erabiltzen ditudaneko maila
 quest7_5: Nire talentuaren erabilpen maila

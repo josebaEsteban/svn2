@@ -744,8 +744,8 @@ quest7_label_3: Funcionamiento Etico
 quest7_label_4: Uso de la capacidad
 quest7_label_5: Enseñanza e instrucción
 quest7_label_6: Trato personal
-quest7_valor_1: 1 (no, en absoluto)
-quest7_valor_7: 7 (totalmente)
+quest7_valor_1: 1 (totalmente insatisfecho)
+quest7_valor_7: 7 (totalmente satisfecho)
 quest7_10: La formación que he recibido durante las temporadas anteriores
 quest7_11: La formación que he recibido durante esta temporada
 quest7_12: Las instrucciones del/la entrenador/a técnico-tácticas de mi papel
