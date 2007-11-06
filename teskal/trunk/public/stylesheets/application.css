@@ -388,13 +388,23 @@ ul.documents li {
 #footer {
 	margin: 0;
 	/*	background-image: url(../images/footer_1_white.gif); */	
-	background-image: url(../images/footer_stripe.gif);
+	background-image: url(../images/footer_plain.gif);
 	background-repeat: no-repeat;
 	background-position: bottom;
 	width: 910px;
 	height: 53px;
 	padding: 0;
 	clear: both;
+	font-size: 90%;
+	color: #999;
+}
+#footer .padding {
+	padding: 30px 0px 0px 0px;
+}
+#footer .right {
+	float: right;
+	clear: right;
+	text-align: right;
 }
 #footer p {
 	padding: 0;
@@ -402,12 +412,12 @@ ul.documents li {
 	text-align: center;
 }
 #footer a {
-	color: #f0f0f0;
+	color: #999;
 	background-color: inherit;
 	font-weight: bold;
 }
 #footer a:hover {
-	color: #ffffff;
+	color: #000;
 	background-color: inherit;
 	text-decoration: underline;
 }

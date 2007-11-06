@@ -1,4 +1,6 @@
-_gloc_rule_default: '|n| n==1 ? "" : "_plural" ' 
+_gloc_rule_default: '|n| n==1 ? "" : "_plural" '
+footer_1: Diseinu 
+footer_2: Kontaktua info arroba teskal.com
 signup_label_1: Pasatu
 signup_label_2: Erabiltzaile eta hizkuntza bat aukeratu.
 signup_label_3: Hizkuntza sartzen zaren hurrengoan erabilia izango da. 
