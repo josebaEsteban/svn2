@@ -395,7 +395,7 @@ ul.documents li {
 	height: 53px;
 	padding: 0;
 	clear: both;
-	font-size: 90%;
+	font-size: 0.75em;
 	color: #999;
 }
 #footer .padding {
