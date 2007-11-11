@@ -1,24 +1,5 @@
-_gloc_rule_default: '|n| n==1 ? "" : "_plural" '
-footer_1: Design
-footer_2: Contact info at teskal.com
-signup_label_1: Step
-signup_label_2: Pick a login name and a language.
-signup_label_3: The language will be used next time you login.
-signup_label_4: Choose a password for your new account.
-signup_label_5: Passwords must be 6-12 characters in length.
-signup_label_6: Email details
-signup_label_7: Enter your email address.
-signup_label_8: You must enter a valid email address to activate your account.
-signup_label_9: Submit form
-signup_label_10: Terms of Service
-signup_label_11: By clicking the 'Complete Signup' button, I am attaching my electronic signature to and agreeing to the Teskal <a href="http:/account/terms">Terms of Service Agreement</a>.
-login_label_1: Forgot your password?
-login_label_2: Send an email to yourself
-login_label_3: with information about creating a new password.
-login_label_4: New to Teskal?
-login_label_5: Sign up
-login_label_6: for a free account.
 PBarLoadingText: ?PBarLoadingText=Loading Chart. Please Wait...
+_gloc_rule_default: '|n| n==1 ? "" : "_plural" '
 actionview_datehelper_select_day_prefix:
 actionview_datehelper_select_month_names: January,February,March,April,May,June,July,August,September,October,November,December
 actionview_datehelper_select_month_names_abbr: Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec
@@ -66,8 +47,8 @@ button_download: Download
 button_edit: Edit
 button_list: List
 button_lock: Lock
-button_login: Login
 button_log_time: Log time
+button_login: Login
 button_move: Move
 button_reply: Reply
 button_save: Save
@@ -81,8 +62,8 @@ field_attr_firstname: Firstname attribute
 field_attr_lastname: Lastname attribute
 field_attr_login: Login attribute
 field_attr_mail: Email attribute
-field_author: Author
 field_auth_source: Authentication mode
+field_author: Author
 field_category: Category
 field_comments: Comment
 field_created_on: Created
@@ -101,8 +82,8 @@ field_homepage: Homepage
 field_is_public: Public
 field_is_required: Required
 field_language: Language
-field_lastname: Lastname
 field_last_login_on: Last connection
+field_lastname: Lastname
 field_login: Login
 field_mail: Email
 field_mail_notification: Mail notifications
@@ -130,6 +111,8 @@ field_url: URL
 field_user: User
 field_value: Value
 field_version: Version
+footer_1: Design
+footer_2: Contact info at teskal.com
 general_csv_encoding: ISO-8859-1
 general_csv_separator: ','
 general_day_names: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
@@ -142,14 +125,14 @@ general_fmt_time: %%I:%%M %%p
 general_lang_name: 'English'
 general_pdf_encoding: ISO-8859-1
 general_text_No: 'No'
-general_text_no: 'no'
 general_text_Yes: 'Yes'
+general_text_no: 'no'
 general_text_yes: 'yes'
 gui_validation_error: 1 error
 gui_validation_error_plural: %d errors
 label_activity: Activity
-label_added: added
 label_add_note: Add a note
+label_added: added
 label_administration: Administration
 label_ago: days ago
 label_all: all
@@ -181,25 +164,26 @@ label_download: %d Download
 label_download_plural: %d Downloads
 label_equals: is
 label_export_to: Export to
-label_fill: Fill
-label_filled: Filled on
 label_f_hour: %.2f hour
 label_f_hour_plural: %.2f hours
+label_fill: Fill
+label_filled: Filled on
 label_help: Help
 label_history: History
 label_home: Home
 label_in: in
+label_in_less_than: in less than
+label_in_more_than: in more than
 label_information: Information
 label_information_plural: Information
 label_internal: Internal
-label_in_less_than: in less than
-label_in_more_than: in more than
 label_language_based: Language based
 label_last_changes: last %d changes
 label_last_login: Last connection
 label_last_updates: Last updated
 label_last_updates_plural: %d last updated
 label_less_than_ago: less than days ago
+label_library: Library 
 label_list: List
 label_loading: Loading...
 label_logged_as: Logged as
@@ -220,25 +204,25 @@ label_my_quest: My questionnaires
 label_new: New
 label_news: News
 label_next: Next
+label_no_data: No data to display
 label_none: none
 label_not_contains: doesn't contain
 label_not_equals: is not
-label_no_data: No data to display
 label_on: 'on'
 label_options: Options
 label_overview: Overview
 label_page_index: Index
 label_password_lost: Lost password
+label_per_page: Per page
 label_permissions: Permissions
 label_permissions_report: Permissions report
 label_personalize_page: Personalize this page
-label_per_page: Per page
 label_please_login: Please login
 label_preview: Preview
 label_previous: Previous
+label_quest: Questionnaire
 label_quest_avail: Available questionnaires
 label_quest_plural: Questionnaires
-label_quest: Questionnaire
 label_read: Read...
 label_register: Sign up
 label_registered_on: Registered on
@@ -259,7 +243,12 @@ label_user: User
 label_user_new: New user
 label_user_plural: Users
 label_year: Year
-label_library: Library 
+login_label_1: Forgot your password?
+login_label_2: Send an email to yourself
+login_label_3: with information about creating a new password.
+login_label_4: New to Teskal?
+login_label_5: Sign up
+login_label_6: for a free account.
 mail_subject_lost_password: Your Teskal password
 mail_subject_register: Teskal account activation
 notice_account_activated: Your account has been activated. You can now log in.
@@ -279,59 +268,111 @@ notice_successful_connection: Successful connection.
 notice_successful_create: Successful creation.
 notice_successful_delete: Successful deletion.
 notice_successful_update: Successful update.
-setting_app_subtitle: Application subtitle
-setting_app_title: Application title
-setting_attachment_max_size: Attachment max. size
-setting_autofetch_changesets: Autofetch commits
-setting_autologin: Autologin
-setting_commit_fix_keywords: Fixing keywords
-setting_commit_ref_keywords: Referencing keywords
-setting_date_format: Date format
-setting_default_language: Default language
-setting_feeds_limit: Feed content limit
-setting_host_name: Host name
-setting_issues_export_limit: Issues export limit
-setting_login_required: Authent. required
-setting_mail_from: Emission mail address
-setting_self_registration: Self-registration enabled
-setting_text_formatting: Text formatting
-setting_welcome_text: Welcome text
-status_active: active
-status_locked: locked
-status_registered: registered
-#quest1
+quest10: Cuestionario de Clima de Tecnificación Reflejado
+quest10_10: Permite solucionar situaciones de competición de forma diferente a mis directrices
+quest10_11: Anima a l@s deportistas cuando cometen un fallo
+quest10_12: Piensa que l@s deportistas tienen éxito cuando son claramente superiores a los demás
+quest10_13: Se enfada cuando l@s deportistas actúan de forma no deseada
+quest10_14: Se enfada cuando tengo que corregir a l@s deportistas después de un error
+quest10_15: Para él/ella, los errores ayudan a l@s deportistas a darse cuenta de sus déficits y a mejorar.
+quest10_16: Procura que el tiempo de competición de cada deportistas en la temporada sea semejante
+quest10_17: Procura que l@s deportistas participen en el mismo nº de competiciones en la temporada
+quest10_18: Piensa que l@s deportistas tienen éxito cuando lo hacen todo lo mejor que saben hacerlo
+quest10_19: Tiene la máxima confianza en todos l@s deportistas cuando disputan una competición
+quest10_1: Permite que tomen decisiones que no se corresponden con la táctica prevista
+quest10_20: Cuando l@s deportistas cometen errores sigue manteniendo la confianza en ell@s
+#quest11
+quest10_2: Piensa que l@s deportistas tienen éxito cuando superan las dificultades
+quest10_3: Prefiere que el equipo gane a que 'Se hagan las cosas bien hechas'
+quest10_4: Sacrifica la calidad de la técnica de competición por amarrar el resultado
+quest10_5: Para él/ella, lo primero es ganar la competición y después competir bien
+quest10_6: Felicita a l@s deportistas cuando hacen las cosas bien, actúan según lo esperado
+quest10_7: Anima a l@s deportistas en las acciones futuras
+quest10_8: Da instrucciones sobre aspectos técnicos, tácticos, estilo, recorrido..etc.
+quest10_9: Piensa que l@s deportistas tienen éxito cuando lo hacen mejor que los demás
+quest10_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de competición. Por favor, lee cuidadosamente y después rodea con un círculo el número que hay al lado, el que mejor describa el comportamiento de tu entrenador durante el entrenamiento y los partidos de competición.
+quest10_label_0: Clima de Tecnificación Reflejado
+quest10_label_1: Mi entrenador/a 
+quest11: Questionaire of Intrinsic Motivation
+quest11_10: Because it is absolutely necessary to do sports if one wants to be in shape.
+quest11_11: For the prestige of being an athlete.
+quest11_12: Because it is one of the best ways I have chosen to develop other aspects of myself.
+quest11_13: For the pleasure I feel while improving some of my weak points.
+quest11_14: For the excitement I feel when I am really involved in the activity.
+quest11_15: Because I must do sports to feel good about myself.
+quest11_16: For the satisfaction I experience while I am perfecting my abilities.
+quest11_17: Because people around me think it is important to be in shape.
+quest11_18: Because participating in sport is an integral part of my life.
+quest11_19: Because it is a good way to learn lots of things which could be useful to me in other areas of my life.
+quest11_1: For the pleasure I feel in living exciting experiences.
+quest11_20: For the intense emotions that I feel while I am doing a sport that I like.
+quest11_21: It is not clear to me anymore; I don't really think my place is in sport.
+quest11_22: For the pleasure that I feel while executing certain difficult movements.
+quest11_23: Because I would feel bad if I was not taking the time to do it.
+quest11_24: Because through sport, I am living in line with my deepest principles.
+quest11_25: To show others how good I am at my sport.
+quest11_26: For the pleasure I feel while learning training techniques that I have never tried before.
+quest11_27: Because it is one of the best ways to maintain good relationships with my friends.
+quest11_28: Because I like the feeling of being totally immersed in the activity.
+quest11_29: Because I must do sports regularly.
+quest11_2: For the pleasure it gives me to know more about the sport that I practice.
+quest11_30: For the pleasure of discovering new performance strategies.
+quest11_31: Because by doing it I am fully expressing my deepest values.
+quest11_32: I often ask myself; I can't seem to achieve the goals that I set for myself.
+# quest12
+quest11_3: I used to have good reasons for doing sports, but now I am asking myself if I should continue.
+quest11_4: Because practicing sports renects the essence of whom I am.
+quest11_5: For the pleasure of discovering new training techniques.
+quest11_6: I don't know anymore; I have the impression that I am incapable of succeeding in this sport.
+quest11_7: Because it allows me to be well regarded by people that I know.
+quest11_8: Because, in my opinion, it is one of the best ways to meet people.
+quest11_9: Because I feel a lot of personal satisfaction while mastering certain difficult training techniques.
+quest11_header: Why do you practice your sport?
+quest11_intro: Using the scale below, please indicate to what extent each of the following items corresponds to one of the reasons for which you are presently practicing your sport.
+quest11_label_0: Intrinsic Motivation
+quest11_label_1: To know
+quest11_label_2: To accomplish
+quest11_label_3: To experience stimulation
+quest11_label_4: Integrated regulation
+quest11_label_5: Identified regulation
+quest11_label_6: Introjected regulation
+quest11_label_7: External regulation
+quest11_label_8: Amotivation
+quest11_valor_1: 1 (does not correspond at all)
+quest11_valor_2: 2 (corresponds very little)
+quest11_valor_3: 3 (corresponds a little)
+quest11_valor_4: 4 (corresponds moderately)
+quest11_valor_5: 5 corresponds quit a bit)
+quest11_valor_6: 6 (quite a lot)
+quest11_valor_7: 7 (completely)
+quest12: Motivational Climate Questionnaire
+quest12_10: I win
+quest12_11: I show other people I am the best
+quest12_12: I perform to the best of my ability
+quest12_1: I beat other people
+quest12_2: I am clearly superior
+quest12_3: I am the best
+quest12_4: I work hard
+quest12_5: I show clear personal improvement
+quest12_6: I outperform my opponents
+quest12_7: I reach a goal
+quest12_8: I overcome difficulties
+quest12_9: I reach personal goals
+quest12_d1_a: This low value associated to the performance motivational climate, below 4, supposes that, for this technician, the results have a low value, lower than the improvement of the abilities, which will produce a positive effect on the implication during the training and the control on the anxiety against the athletes's errors.
+quest12_d1_b: This average value associated to the performance motivational climate, located between 4 and 7, supposes that, for this technician, the results have an important value, that if it is similar to those of the masters climate, it will fortify the motivation and it will increase his commitment with the effort, helping the athlete to control the anxiety against the errors.
+quest12_d1_c: This high value associated to the performance motivational, over 7, supposes that, for this technician, the results obtained in a sport competition have a maximum value. Only if they go accompanied of maximum values in the master motivational climate, supposes a good motivation to increase his commitment and the implication with the effort. In case it prevails over master climate, possibly it will decrease the athlete's capacity against situations of maximum personal challenge.
+quest12_d2_a: The master motivational climate is in low levels, which is a little worrisome. He/she finds it difficult to value positively the sport improvements, and when their athletes face situations of novelty or of great difficulty  they will feel uneasy, without initiative. It is necessary to orient the technician so that it values the importance of the improvements.
+quest12_d2_b: The master motivational climate is in mean levels, which is adapted but improvable. It positively values the improvements of his athletes, which them aid to confronts with good attitude novel situations or of great difficulty. It will be adapted to remember the importance to him that has the improvements so that the athletes secure their objectives, recognizing and valuing their effort when taking place a personal improvement.
+quest12_d2_c: The master motivational climate is in high levels, which is very positive. This technician concentrates in the personal improvement of the sport, being this most important. This contributes to confront, with an excellent attitude, novel situations or of great difficulty. It generates a positive influence in the commitment with the training, the perceived competition and diminishes the possible anxiety against the sport errors.
+
+quest12_header: Playing sport, the coach thinks I am most successful when...
+quest12_intro: This is a questionnaire which asks you to express your perception of what success in sport means to your coach. There are no right or wrong answers.
+quest12_label_0: Motivational Climate
+quest12_label_1: Performance Climate
+quest12_label_2: Master Climate
+quest12_valor_1: 0 (nothing)
+quest12_valor_2: 100 (completely)
 quest1: Valoración Inicial Temporada
-quest1_header2: Before the competition...
-quest1_header4: When playing sport, i feel most successful when
-quest1_header5: Te sientes capaz de competir en tu deporte
-quest1_intro: Below is a list of words that describe feelings people have. Underneath is a list of comments used by athletes to describe some of their feelings or emotions before a competition. Please read each one carefully. Then click the answer which best describes how have you been feeling during the past week including today.
-#labels
-quest1_label_30: Perfil de rendimiento básico
-quest1_label_31: Objetivos de Temporada
-quest1_label_32: Sistema de autoregulación
-quest1_label_10: Actual
-quest1_label_11: Dificultad percibida estimada
-quest1_label_12: Grado de confianza
-quest1_label_13: Autocontrol
-quest1_label_14: Visualización
-quest1_label_15: Autoacciones
-quest1_label_16: Orientación motivacional EGO
-quest1_label_17: Orientación motivacional Tarea
-quest1_label_18: Goal 1
-quest1_label_19: Goal 2
-quest1_label_1: Tensión
-quest1_label_20: Goal 3
-quest1_label_21: Goal 4
-quest1_label_22: Difficulty
-quest1_label_23: Confianza
-quest1_label_2: Depression
-quest1_label_3: Hostility
-quest1_label_4: Vigor
-quest1_label_5: Fatigue
-quest1_label_6: Ansiedad cognitiva
-quest1_label_7: Self-confidence
-quest1_label_8: Ansiedad Somática
-quest1_label_9: Optima
 quest1_16: Te preparas psicológicamente antes de la competición
 quest1_17: Utilizas alguna técnica de relajación
 quest1_18: Usas alguna estrategia para mantener el control cuando la situación deportiva te supera
@@ -429,27 +470,38 @@ quest1_d9_a: La dificultad percibida estimada (DPE) se encuentra directamente re
 quest1_d9_b: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito. A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos valores medios de la DPE, supone una selección de objetivos limitados. Si van acompañados de cierta estabilidad en la valoración, en torno a 70, supone que est@ deportista tiende a uniformizar los objetivos autoimpuestos, pero debería de ser más ambiciosa. Conviene recordar que el grado de dificultad de las situaciones no depende del/a deportista, ya que en ningún caso lo va a poder cambiar, pero aumentar las probabilidades de éxito sí, manteniendo alta las creencias en sí mism@.
 quest1_d9_c: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito. A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos altos valores de la DPE, supone una autoimposición de objetivos ambiciosos para esta temporada. Si van acompañados de cierta variabilidad en la valoración, entre 70 y 100, supone que est@ deportista posee una excelente capacidad discriminativa a la hora de seleccionar sus objetivos. Conviene recordar que el grado de dificultad de las situaciones no depende del/a deportista, ya que en ningún caso lo va a poder cambiar, pero aumentar las probabilidades de éxito sí, manteniendo alta las creencias en sí mism@.
 # quest2
+quest1_header2: Before the competition...
+quest1_header4: When playing sport, i feel most successful when
+quest1_header5: Te sientes capaz de competir en tu deporte
+quest1_intro: Below is a list of words that describe feelings people have. Underneath is a list of comments used by athletes to describe some of their feelings or emotions before a competition. Please read each one carefully. Then click the answer which best describes how have you been feeling during the past week including today.
+#labels
+quest1_label_10: Actual
+quest1_label_11: Dificultad percibida estimada
+quest1_label_12: Grado de confianza
+quest1_label_13: Autocontrol
+quest1_label_14: Visualización
+quest1_label_15: Autoacciones
+quest1_label_16: Orientación motivacional EGO
+quest1_label_17: Orientación motivacional Tarea
+quest1_label_18: Goal 1
+quest1_label_19: Goal 2
+quest1_label_1: Tensión
+quest1_label_20: Goal 3
+quest1_label_21: Goal 4
+quest1_label_22: Difficulty
+quest1_label_23: Confianza
+quest1_label_2: Depression
+quest1_label_30: Perfil de rendimiento básico
+quest1_label_31: Objetivos de Temporada
+quest1_label_32: Sistema de autoregulación
+quest1_label_3: Hostility
+quest1_label_4: Vigor
+quest1_label_5: Fatigue
+quest1_label_6: Ansiedad cognitiva
+quest1_label_7: Self-confidence
+quest1_label_8: Ansiedad Somática
+quest1_label_9: Optima
 quest2: Questionnaire Psychological Stress Tolerance
-quest2_header: During the last month...
-quest2_intro: Below you have a series of phrases related to different aspects of the training and the competition on which we want to gather your opinion. Please, read them with tranquillity, answer sincerely and check the option with which you agree more or than it describes better your opinion.
-# label
-quest2_label_0: Psychological Stress Tolerance
-quest2_label_1: Disturbed sleep
-quest2_label_2: Emotional fatigue
-quest2_label_3: Vulnerability to injuries
-quest2_label_4: Fitness level
-quest2_label_5: Personal achievement
-quest2_label_6: Self-Efficacy
-quest2_label_7: Self-Regulation
-quest2_label_8: General Evaluation
-quest2_label_9: answer 
-quest2_valor_0: 0 (nothing)
-quest2_valor_1: 1 (rarely)
-quest2_valor_2: 2 (sometimes)
-quest2_valor_3: 3 (often)
-quest2_valor_4: 4 (many times)
-quest2_valor_5: 5 (almost always)
-quest2_valor_6: 6 (always)
 quest2_10: I was convinced that I could achieve my performance at any time
 quest2_11: I dealt very effectively with my teammates's problems
 quest2_12: I was in good condition physically
@@ -500,38 +552,32 @@ quest2_d7_a: A low level of self-regulation implies difficulty using mental skil
 quest2_d7_b: Moderate level of usage of skills such as self-motivation and establishment of personal goals is seen with moderate levels of self-regulation.
 quest2_d7_c: High scores indicate high level of use of mental skills in practice, such as self-motivation and establishment of personal goals, which then reinforces and highlights the path to achievement of these goals.
 # valoracion
+quest2_header: During the last month...
+quest2_intro: Below you have a series of phrases related to different aspects of the training and the competition on which we want to gather your opinion. Please, read them with tranquillity, answer sincerely and check the option with which you agree more or than it describes better your opinion.
+# label
+quest2_label_0: Psychological Stress Tolerance
+quest2_label_1: Disturbed sleep
+quest2_label_2: Emotional fatigue
+quest2_label_3: Vulnerability to injuries
+quest2_label_4: Fitness level
+quest2_label_5: Personal achievement
+quest2_label_6: Self-Efficacy
+quest2_label_7: Self-Regulation
+quest2_label_8: General Evaluation
+quest2_label_9: answer 
 quest2_val_1: Overall the level of stress tolerance is very good, indicating optimal capacity to handle any situation in practice or competition. The level of stress generator indices is low, while the values of the recovery dimensions are positive, particularly the ones indicated above. In summary, this athlete has a positive perception of his fitness and preparation level, his performances and is strongly motivated to reach his or her goals.
 quest2_val_2: The tolerance level is overall positive, indicating the presence of enough resources to cope with special situations, both in practice and in competition. The level of the stress generating indices is at the low-medium level, while the levels of the recovery dimensions are at the medium-high levels, around 4. Overall this is a motivated athlete, with a positive perception of his or her fitness level, readiness and achievement and motivated to achieve his or her goals. 
 quest2_val_3: There is a delicate balance here between stress inducers and recovery dimensions, which is a dangerous situation. The athlete has enough resources to cope with it and can reduce the level of stress generated by the dimensions indicated above. It is important to set up a specific intervention based on the Stress/Pressure module, applied with a direct interview with the athlete to evaluate the current stressors and tailor the intervention appropriately. 
 quest2_val_4: This means that the level of tolerance is very low because the generating indices are larger than the recovery indices. It is a high risk situation that needs to be addressed immediately with the help of the tutor, unless the joint reflection of the coach/athlete dyad identifies the causes generating the values observed. In that instance, specific work based on the Stress/Pressure module can be designed with the supervision of the tutor.
 # quest3
+quest2_valor_0: 0 (nothing)
+quest2_valor_1: 1 (rarely)
+quest2_valor_2: 2 (sometimes)
+quest2_valor_3: 3 (often)
+quest2_valor_4: 4 (many times)
+quest2_valor_5: 5 (almost always)
+quest2_valor_6: 6 (always)
 quest3: Perfil de Estado de Forma del Entrenamiento
-quest3_header1: Right now I feel...
-quest3_header2: En el entrenamiento...
-quest3_header3: En este momento...
-quest3_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente, y una serie de comentarios y frases relacionadas con situaciones de entrenamiento. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento, o que mejor describa tu comportamiento durante las sesiones de entrenamiento.
-quest3_valor_0: 0 (not at all) 
-quest3_valor_1: 1 (a little)
-quest3_valor_2: 2 (moderately)
-quest3_valor_3: 3 (quite a bit)
-quest3_valor_4: 4 (extremely)
-quest3_valor_5: 0 (never)
-quest3_valor_6: 1 (rarely)
-quest3_valor_7: 2 (sometimes)
-quest3_valor_8: 3 (many times)
-quest3_valor_9: 4 (always)
-# labels
-quest3_label_0: Perfil de Estado de Forma del Entrenamiento
-quest3_label_10: Actual
-quest3_label_1: Tensión
-quest3_label_2: Depression
-quest3_label_3: Hostility
-quest3_label_4: Vigor
-quest3_label_5: Fatigue
-quest3_label_6: Compromiso con el esfuerzo
-quest3_label_7: Ansiedad frente a los errores
-quest3_label_8: Competencia percibida
-quest3_label_9: Optima
 quest3_10: Angry
 quest3_11: Tense
 quest3_12: Sad
@@ -584,15 +630,33 @@ quest3_d8_a: Presenta valores bajos en cuanto a su nivel de competencia percibid
 quest3_d8_b: Este deportista presenta una buena capacidad para desarrollar las tareas que se le proponen, con un buen nivel de competencia percibida. Sin embargo, puede mejorar esta percepción, sobre todo si se le orienta hacia su propia mejora. Es conveniente prestarle atención especial y reforzarle positivamente cuando se enfrenta a retos muy complicados o a tareas complejas.
 quest3_d8_c: Este deportista presenta un alto nivel de competencia percibida, con una gran capacidad para hacer cosas nuevas. Siempre intenta hacer el trabajo que se le propone lo mejor que sabe hacerlo, con una sensación de dominio y de realización ilimitada, es decir, es capaz de hacer las cosas que se propone.
 # quest4
+quest3_header1: Right now I feel...
+quest3_header2: En el entrenamiento...
+quest3_header3: En este momento...
+quest3_intro: Más abajo hay una lista de palabras que describen sensaciones que tiene la gente, y una serie de comentarios y frases relacionadas con situaciones de entrenamiento. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento, o que mejor describa tu comportamiento durante las sesiones de entrenamiento.
+quest3_label_0: Perfil de Estado de Forma del Entrenamiento
+quest3_label_10: Actual
+quest3_label_1: Tensión
+quest3_label_2: Depression
+quest3_label_3: Hostility
+quest3_label_4: Vigor
+quest3_label_5: Fatigue
+quest3_label_6: Compromiso con el esfuerzo
+quest3_label_7: Ansiedad frente a los errores
+quest3_label_8: Competencia percibida
+quest3_label_9: Optima
+quest3_valor_0: 0 (not at all) 
+quest3_valor_1: 1 (a little)
+quest3_valor_2: 2 (moderately)
+quest3_valor_3: 3 (quite a bit)
+quest3_valor_4: 4 (extremely)
+quest3_valor_5: 0 (never)
+quest3_valor_6: 1 (rarely)
+quest3_valor_7: 2 (sometimes)
+quest3_valor_8: 3 (many times)
+quest3_valor_9: 4 (always)
+# labels
 quest4: Valoración Pre-Competición
-quest4_header: Si compites como quieres...
-quest4_label_0: Afrontamiento en Competición
-quest4_label_1: Perfil de Rendimiento en Competición 
-quest4_label_11: Significación personal
-quest4_label_12: Dificultad percibida estimada
-quest4_label_13: Grado de confianza
-quest4_label_14: Percepción del Plan Integral de Competición
-quest4_valor_1: 1 (nada)
 quest4_0: Nivel de dificultad
 quest4_1: Grado de confianza en competir de esa manera
 quest4_2: Nivel de motivación
@@ -616,21 +680,15 @@ quest4_d9_a: Es una competición de baja significación e importante y significa
 quest4_d9_b: Es una competición relativamente importante y significativa dentro del calendario de est@ deportista, ya que los valores se sitúan en el nivel medio. Será importante centrarse en la automotivación y en la oportunidad de mejora que supone toda participación en competición. La reestructuración emocional dentro del Plan Integral de Competición seguirá la misma dirección - reto, oportunidad de mejora y anticipar deseo por disputarla.
 quest4_d9_c: Esta competición es muy importante y significativa para est@ deportista, ya que los valores se sitúan en el nivel más alto. Será importante orientar la valoración de forma positiva, hacia el reto, dado que se ha estado preparando para disputarla y el hecho de poder hacerlo ya es satisfactorio.
 # quest5 
+quest4_header: Si compites como quieres...
+quest4_label_0: Afrontamiento en Competición
+quest4_label_11: Significación personal
+quest4_label_12: Dificultad percibida estimada
+quest4_label_13: Grado de confianza
+quest4_label_14: Percepción del Plan Integral de Competición
+quest4_label_1: Perfil de Rendimiento en Competición 
+quest4_valor_1: 1 (nada)
 quest5: Valoración Post-Competición (Deportes Individuales)
-quest5_header1: El grado de satisfacción con mi actuación ha sido...
-quest5_header2: El grado de satisfacción durante la competición con...
-quest5_header3: El grado de satisfacción con...
-quest5_intro: Más abajo se plantean una serie de preguntas relacionadas con determinados aspectos de la competición, sobre las que queremos recoger tu opinión. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
-quest5_label_0: Valoración de Rendimiento Percibido Individual 
-quest5_label_1: Rendimiento Global
-quest5_label_2: Rendimiento Emocional
-quest5_label_3: Rendimiento Cognitivo
-quest5_label_4: Rendimiento Comportamental
-quest5_valor_1: 1 (muy mala)
-quest5_valor_2: 2 (mala)
-quest5_valor_3: 3 (regular)
-quest5_valor_4: 4 (buena)
-quest5_valor_5: 5 (muy buena)
 quest5_10: El control de mis pensamientos y el afrontamiento positivo
 quest5_11: La forma de responder a las acciones de las demás
 quest5_12: Las decisiones que he tomado, conocidos los objetivos del entrenador
@@ -665,6 +723,15 @@ quest5_d3_c: En el caso del RCOG, los valores se sitúan en un alto nivel, lo qu
 quest5_d4_a: Al observar los valores del RCOM, vemos que se encuentran en un bajo nivel, lo que representa muchas dificultades a la hora de responder a las acciones de l@s adversari@s, y que el PIC no estaba claro. En ocasiones se ha quedado sin saber lo que tenía que hacer y, además, las decisiones tomadas han sido desacertadas. Habrá que realizar una revisión exhaustiva del PIC, con la ayuda del/a tutor/a. 
 quest5_d4_b: Al observar los valores del RCOM, vemos que se encuentran en un nivel medio, lo que representa dificultades a la hora de responder a las acciones de l@s adversari@s, aunque el PIC lo tenía bastante claro. Casi siempre sabía lo que tenía que hacer, y considera que las decisiones adoptadas han sido acertadas. 
 quest5_d4_c: Al observar los valores del RCOM, vemos que se encuentran en un alto nivel, lo que representa que ha respondido eficientemente a las acciones de l@s adversari@s y que ha tenido claro el PIC a lo largo de toda la competición. Además, en todo momento ha sabido lo que tenía que hacer, sin dudarlo y con determinación en las decisiones adoptadas. 
+quest5_header1: El grado de satisfacción con mi actuación ha sido...
+quest5_header2: El grado de satisfacción durante la competición con...
+quest5_header3: El grado de satisfacción con...
+quest5_intro: Más abajo se plantean una serie de preguntas relacionadas con determinados aspectos de la competición, sobre las que queremos recoger tu opinión. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
+quest5_label_0: Valoración de Rendimiento Percibido Individual 
+quest5_label_1: Rendimiento Global
+quest5_label_2: Rendimiento Emocional
+quest5_label_3: Rendimiento Cognitivo
+quest5_label_4: Rendimiento Comportamental
 quest5_val_a: En general su VRP es muy positiva, acercándose a su máximo nivel, como reflejan los aspectos señalados. Además, se produce una concordancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, lo que refuerza la consistencia y coherencia de la valoración realizada.
 quest5_val_b: En general su VRP es muy positiva, acercándose a su máximo nivel, como reflejan los aspectos señalados. Sin embargo, se produce una discrepancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, por lo que será necesario revisar la valoración realizada entre ambas, reajustándola a una menor diferencia entre ellas.
 quest5_val_c: EVALUACIÓN NO VÁLIDA. La diferencia entre la valoración cualitativa y cuantitativa observada en el análisis cruzado realizado supera el valor máximo permitido, por lo tanto se recomienda volver a completar el cuestionario.
@@ -675,13 +742,12 @@ quest5_val_g: En general su VRP es baja, con un nivel de rendimiento alejado de 
 quest5_val_h: En general su VRP es baja, con un nivel de rendimiento alejado de su capacidad, como reflejan los aspectos señalados. Además, se produce una discrepancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, con lo que será necesario revisar la valoración realizada, reajustándola a una menor diferencia entre ellas, que quizás pueda influir positivamente con una mejora sustancial de la misma.
 quest5_val_i: EVALUACIÓN NO VÁLIDA. La diferencia entre la valoración cualitativa y cuantitativa observada en el análisis cruzado realizado supera el valor máximo permitido, por lo tanto se recomienda volver a completar el cuestionario. 
 # quest6
+quest5_valor_1: 1 (muy mala)
+quest5_valor_2: 2 (mala)
+quest5_valor_3: 3 (regular)
+quest5_valor_4: 4 (buena)
+quest5_valor_5: 5 (muy buena)
 quest6: Valoración Post-Competición (Deportes Colectivos)
-quest6_label_0: Rendimiento Percibido Individual en el Equipo
-quest6_label_1: Rendimiento Global
-quest6_label_2: Rendimiento Personal
-quest6_label_3: Contribución a la Tarea
-quest6_label_4: Integración Tarea
-quest6_label_5: Valoración general 
 quest6_10: Con el grado de comunicación con tus compañeros
 quest6_11: Con tu aportación al trabajo colectivo
 quest6_12: Con tu implicación hacia el esfuerzo
@@ -712,18 +778,13 @@ quest6_d4_a: En el caso de la IT, los valores se sitúan en un nivel bajo, lo qu
 quest6_d4_b: En el caso de la IT, los valores se sitúan en un nivel medio, lo que representa cierto nivel de complicidad y lealtad con las decisiones tomadas. También manifiesta una buena satisfacción relacionada con el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. 
 quest6_d4_c: En el caso de la IT, los valores se sitúan en un alto nivel, lo que representa una alta complicidad y lealtad con las decisiones tomadas. A destacar la alta satisfacción que manifiesta relacionada con el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. 
 # quest7
+quest6_label_0: Rendimiento Percibido Individual en el Equipo
+quest6_label_1: Rendimiento Global
+quest6_label_2: Rendimiento Personal
+quest6_label_3: Contribución a la Tarea
+quest6_label_4: Integración Tarea
+quest6_label_5: Valoración general 
 quest7: Cuestionario de Satisfacción (Deportes Individuales) 
-quest7_header: El grado de satisfacción con...
-quest7_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
-quest7_label_0: Satisfacción (Deportes Individuales)
-quest7_label_1: Rendimiento Personal
-quest7_label_2: Dedicación Personal
-quest7_label_3: Funcionamiento Etico
-quest7_label_4: Uso de la capacidad
-quest7_label_5: Enseñanza e instrucción
-quest7_label_6: Trato personal
-quest7_valor_1: 1 (no, en absoluto)
-quest7_valor_7: 7 (totalmente)
 quest7_10: The instruction I have received from the coach past seasons
 quest7_11: The instruction I have received from the coach this season
 quest7_12: The coach's teaching of the tactics and techniques of my position
@@ -762,22 +823,18 @@ quest7_d6_a: En cuanto a la satisfacción por el trato que ha recibido del entre
 quest7_d6_b: El nivel de satisfacción relacionado con el trato que ha recibido del entrenador/a asociado a la amabilidad, al reconocimiento, y la estima por el trabajo bien hecho (TP) se sitúa en niveles medios, lo que supone que el nivel de atención recibido habrá normal, como al resto de deportistas.
 quest7_d6_c: El nivel de satisfacción relacionado con el trato que ha recibido del entrenador/a asociado a la amabilidad, al reconocimiento, la estima por el trabajo bien hecho, así como el nivel de atención recibido (TP) se sitúa en niveles altos, lo que supone que percibe una excelente relación con el/la entrenador/a.
 # quest8
+quest7_header: El grado de satisfacción con...
+quest7_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
+quest7_label_0: Satisfacción (Deportes Individuales)
+quest7_label_1: Rendimiento Personal
+quest7_label_2: Dedicación Personal
+quest7_label_3: Funcionamiento Etico
+quest7_label_4: Uso de la capacidad
+quest7_label_5: Enseñanza e instrucción
+quest7_label_6: Trato personal
+quest7_valor_1: 1 (no, en absoluto)
+quest7_valor_7: 7 (totalmente)
 quest8: Cuestionario de Satisfacción (Deportes Colectivos)
-quest8_header: El grado de satisfacción con...
-quest8_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
-quest8_label_0: Satisfacción (Deportes Colectivos)
-quest8_label_1: Rendimiento personal
-quest8_label_2: Compromiso personal hacia el equipo
-quest8_label_3: Funcionamiento ético
-quest8_label_4: Uso de la capacidad
-quest8_label_5: Enseñanza e instrucción
-quest8_label_6: Trato personal
-quest8_label_7: Toma de decisiones
-quest8_label_8: Rendimiento del equipo
-quest8_label_9: Integración tarea
-quest8_label_10: Contribución tarea
-quest8_valor_1: 1 (no, en absoluto)
-quest8_valor_7: 7 (totalmente)
 quest8_10: The amount of time I play during competitions
 quest8_11: The degree to which my role on the team matches my preferred role
 quest8_12: The coach's choice of plays during competition
@@ -836,36 +893,22 @@ quest8_d9_a: Por otro lado, los valores de la satisfacción relacionada con el n
 quest8_d9_b: Estos valores de satisfacción relacionados con el nivel de integración grupal del equipo (CT) son medios. A veces cree que los miembros del equipo podrían hacer algo más para trabajar conjuntamente y alcanzar sus objetivos y, además, en ocasiones duda de que el equipo juega como equipo. 
 quest8_d9_c: Estos altos valores observados en cuanto a la satisfacción relacionada con el nivel de integración grupal del equipo (CT) le hacen pensar que el equipo juega como equipo, y además, considera que sus miembros trabajan conjuntamente y adecuadamente para alcanzar sus objetivos.
 # quest9
+quest8_header: El grado de satisfacción con...
+quest8_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
+quest8_label_0: Satisfacción (Deportes Colectivos)
+quest8_label_10: Contribución tarea
+quest8_label_1: Rendimiento personal
+quest8_label_2: Compromiso personal hacia el equipo
+quest8_label_3: Funcionamiento ético
+quest8_label_4: Uso de la capacidad
+quest8_label_5: Enseñanza e instrucción
+quest8_label_6: Trato personal
+quest8_label_7: Toma de decisiones
+quest8_label_8: Rendimiento del equipo
+quest8_label_9: Integración tarea
+quest8_valor_1: 1 (no, en absoluto)
+quest8_valor_7: 7 (totalmente)
 quest9: Cuestionario de Clima de Tecnificación Percibido
-quest9_header: El grado de satisfacción con...
-quest9_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
-# labels 
-quest9_label_0: Clima de Tecnificación Percibido
-quest9_label_1: Valores de la percepción de éxito grupal
-quest9_label_2: Confianza en los jugadores percibida
-quest9_label_3: Comunicación reactiva
-quest9_label_4: Comunicación reactiva
-quest9_label_5: Comunicación instruccional
-quest9_label_6: Estilo desicional percibido
-quest9_label_7: Clima de Maestría
-quest9_label_8: Clima De Rendimiento 
-quest9_label_9: Como entrenador/a... 
-quest9_valor_1: 1 (no, en absoluto)
-quest9_valor_7: 7 (totalmente)
-quest9_valor_1: 1 (nunca)
-quest9_valor_2: 2 (pocas veces)
-quest9_valor_3: 3 (a menudo)
-quest9_valor_4: 4 (casi siempre)
-quest9_valor_5: 5 (siempre)
-quest9_1: Permito que tomen decisiones que no se corresponden con la táctica prevista
-quest9_2: Pienso que l@s deportistas tienen éxito cuando superan las dificultades
-quest9_3: Prefiero que el equipo gane a que 'Se hagan las cosas bien hechas'
-quest9_4: Sacrifico la calidad de la técnica de competición por amarrar el resultado
-quest9_5: Lo primero es ganar la competición y después competir bien
-quest9_6: Felicito a l@s deportistas cuando hacen las cosas bien, actúan según lo esperado
-quest9_7: Animo a l@s deportistas en las acciones futuras
-quest9_8: Doy instrucciones sobre aspectos técnicos, tácticos, estilo, recorrido..etc.
-quest9_9: Pienso que l@s deportistas tienen éxito cuando lo hacen mejor que los demás
 quest9_10: Permito solucionar situaciones de competición de forma diferente a mis directrices
 quest9_11: Animo a l@s deportistas cuando cometen un fallo
 quest9_12: Pienso que l@s deportistas tienen éxito cuando son claramente superiores a los demás
@@ -876,8 +919,17 @@ quest9_16: Procuro que el tiempo de competición de cada deportistas en la tempo
 quest9_17: Procuro que l@s deportistas participen en el mismo nº de competiciones en la temporada
 quest9_18: Pienso que l@s deportistas tienen éxito cuando lo hacen todo lo mejor que saben hacerlo
 quest9_19: Tengo la máxima confianza en todos l@s deportistas cuando disputan una competición
+quest9_1: Permito que tomen decisiones que no se corresponden con la táctica prevista
 quest9_20: Cuando l@s deportistas cometen errores sigo manteniendo la confianza en ell@s
 # dimensions
+quest9_2: Pienso que l@s deportistas tienen éxito cuando superan las dificultades
+quest9_3: Prefiero que el equipo gane a que 'Se hagan las cosas bien hechas'
+quest9_4: Sacrifico la calidad de la técnica de competición por amarrar el resultado
+quest9_5: Lo primero es ganar la competición y después competir bien
+quest9_6: Felicito a l@s deportistas cuando hacen las cosas bien, actúan según lo esperado
+quest9_7: Animo a l@s deportistas en las acciones futuras
+quest9_8: Doy instrucciones sobre aspectos técnicos, tácticos, estilo, recorrido..etc.
+quest9_9: Pienso que l@s deportistas tienen éxito cuando lo hacen mejor que los demás
 quest9_d1_a: Los valores de la percepción de éxito grupal (PEG) se sitúan por debajo de 2,5. Esto es positivo y supone la existencia de una focalización atencional del/a entrenador/a centrada en la mejora de l@s deportist@s, tanto en el entrenamiento como durante la competición. 
 quest9_d1_b: Los valores de la percepción de éxito grupal (PEG) se sitúan en una zona media, lo cual es muy positivo y supone la existencia de un equilibrio entre la percepción de éxito del/a entrenador/a asociada al resultado, clima de rendimiento grupal, con el clima de maestría grupal, focalizado en la mejora de l@s deportist@s.
 quest9_d1_c: Los valores de la percepción de éxito grupal (PEG) se sitúan en valores altos, lo que provoca una desigualdad entre la percepción de éxito asociada al resultado, clima de rendimiento grupal, con el clima de maestría grupal, centrado en la mejora de l@s deportist@s. Esto supone un alejamiento de los valores que se manejan con respecto a un modelo de formación óptimo para l@s deportistas.
@@ -903,110 +955,59 @@ quest9_d8_a: Este bajo valor del clima de rendimiento (PER), situado por debajo 
 quest9_d8_b: Este valor medio del clima de rendimiento (PER), supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s son importantes, a veces, incluso más que la mejora de sus habilidades. Puede influir positivamente en el compromiso con el esfuerzo, y contribuye a disminuir la ansiedad frente a los errores en el caso de que la hubiera.
 quest9_d8_c: Este alto valor del clima de rendimiento (PER), situado entre 4 y 5, supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s es lo más importante. Esto debilitará la capacidad de l@ deportistas para afrontar situaciones de máximo desafío personal y, además, contribuirá de forma importante en el aumento de la ansiedad frente a los errores en situaciones de alta dificultad.
 # quest10
-quest10: Cuestionario de Clima de Tecnificación Reflejado
-quest10_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de competición. Por favor, lee cuidadosamente y después rodea con un círculo el número que hay al lado, el que mejor describa el comportamiento de tu entrenador durante el entrenamiento y los partidos de competición.
-quest10_label_0: Clima de Tecnificación Reflejado
-quest10_label_1: Mi entrenador/a 
-quest10_1: Permite que tomen decisiones que no se corresponden con la táctica prevista
-quest10_2: Piensa que l@s deportistas tienen éxito cuando superan las dificultades
-quest10_3: Prefiere que el equipo gane a que 'Se hagan las cosas bien hechas'
-quest10_4: Sacrifica la calidad de la técnica de competición por amarrar el resultado
-quest10_5: Para él/ella, lo primero es ganar la competición y después competir bien
-quest10_6: Felicita a l@s deportistas cuando hacen las cosas bien, actúan según lo esperado
-quest10_7: Anima a l@s deportistas en las acciones futuras
-quest10_8: Da instrucciones sobre aspectos técnicos, tácticos, estilo, recorrido..etc.
-quest10_9: Piensa que l@s deportistas tienen éxito cuando lo hacen mejor que los demás
-quest10_10: Permite solucionar situaciones de competición de forma diferente a mis directrices
-quest10_11: Anima a l@s deportistas cuando cometen un fallo
-quest10_12: Piensa que l@s deportistas tienen éxito cuando son claramente superiores a los demás
-quest10_13: Se enfada cuando l@s deportistas actúan de forma no deseada
-quest10_14: Se enfada cuando tengo que corregir a l@s deportistas después de un error
-quest10_15: Para él/ella, los errores ayudan a l@s deportistas a darse cuenta de sus déficits y a mejorar.
-quest10_16: Procura que el tiempo de competición de cada deportistas en la temporada sea semejante
-quest10_17: Procura que l@s deportistas participen en el mismo nº de competiciones en la temporada
-quest10_18: Piensa que l@s deportistas tienen éxito cuando lo hacen todo lo mejor que saben hacerlo
-quest10_19: Tiene la máxima confianza en todos l@s deportistas cuando disputan una competición
-quest10_20: Cuando l@s deportistas cometen errores sigue manteniendo la confianza en ell@s
-#quest11
-quest11: Questionnaraire of Intrinsic Motivation
-quest11_intro: Using the scale below, please indicate to what extent each of the following items corresponds to one of the reasons for which you are presently practicing your sport.
-quest11_header: Why do you practice your sport?
-quest11_valor_1: 1 (does not correspond at all)
-quest11_valor_2: 2 (corresponds very little)
-quest11_valor_3: 3 (corresponds a little)
-quest11_valor_4: 4 (corresponds moderately)
-quest11_valor_5: 5 corresponds quit a bit)
-quest11_valor_6: 6 (quite a lot)
-quest11_valor_7: 7 (completely)
-quest11_label_0: Intrinsic Motivation
-quest11_label_1: To know
-quest11_label_2: To accomplish
-quest11_label_3: To experience stimulation
-quest11_label_4: Integrated regulation
-quest11_label_5: Identified regulation
-quest11_label_6: Introjected regulation
-quest11_label_7: External regulation
-quest11_label_8: Amotivation
-quest11_1: For the pleasure I feel in living exciting experiences.
-quest11_2: For the pleasure it gives me to know more about the sport that I practice.
-quest11_3: I used to have good reasons for doing sports, but now I am asking myself if I should continue.
-quest11_4: Because practicing sports renects the essence of whom I am.
-quest11_5: For the pleasure of discovering new training techniques.
-quest11_6: I don't know anymore; I have the impression that I am incapable of succeeding in this sport.
-quest11_7: Because it allows me to be well regarded by people that I know.
-quest11_8: Because, in my opinion, it is one of the best ways to meet people.
-quest11_9: Because I feel a lot of personal satisfaction while mastering certain difficult training techniques.
-quest11_10: Because it is absolutely necessary to do sports if one wants to be in shape.
-quest11_11: For the prestige of being an athlete.
-quest11_12: Because it is one of the best ways I have chosen to develop other aspects of myself.
-quest11_13: For the pleasure I feel while improving some of my weak points.
-quest11_14: For the excitement I feel when I am really involved in the activity.
-quest11_15: Because I must do sports to feel good about myself.
-quest11_16: For the satisfaction I experience while I am perfecting my abilities.
-quest11_17: Because people around me think it is important to be in shape.
-quest11_18: Because participating in sport is an integral part of my life.
-quest11_19: Because it is a good way to learn lots of things which could be useful to me in other areas of my life.
-quest11_20: For the intense emotions that I feel while I am doing a sport that I like.
-quest11_21: It is not clear to me anymore; I don't really think my place is in sport.
-quest11_22: For the pleasure that I feel while executing certain difficult movements.
-quest11_23: Because I would feel bad if I was not taking the time to do it.
-quest11_24: Because through sport, I am living in line with my deepest principles.
-quest11_25: To show others how good I am at my sport.
-quest11_26: For the pleasure I feel while learning training techniques that I have never tried before.
-quest11_27: Because it is one of the best ways to maintain good relationships with my friends.
-quest11_28: Because I like the feeling of being totally immersed in the activity.
-quest11_29: Because I must do sports regularly.
-quest11_30: For the pleasure of discovering new performance strategies.
-quest11_31: Because by doing it I am fully expressing my deepest values.
-quest11_32: I often ask myself; I can't seem to achieve the goals that I set for myself.
-# quest12
-quest12: Motivational Climate Questionnaire
-quest12_intro: This is a questionnaire which asks you to express your perception of what success in sport means to your coach. There are no right or wrong answers.
-quest12_header: Playing sport, the coach thinks I am most successful when...
-quest12_valor_1: 0 (nothing)
-quest12_valor_2: 100 (completely)
-quest12_label_0: Motivational Climate
-quest12_label_1: Performance Climate
-quest12_label_2: Master Climate
-quest12_1: I beat other people
-quest12_2: I am clearly superior
-quest12_3: I am the best
-quest12_4: I work hard
-quest12_5: I show clear personal improvement
-quest12_6: I outperform my opponents
-quest12_7: I reach a goal
-quest12_8: I overcome difficulties
-quest12_9: I reach personal goals
-quest12_10: I win
-quest12_11: I show other people I am the best
-quest12_12: I perform to the best of my ability
-quest12_d1_a: This low value associated to the performance motivational climate, below 4, supposes that, for this technician, the results have a low value, lower than the improvement of the abilities, which will produce a positive effect on the implication during the training and the control on the anxiety against the athletes's errors.
-quest12_d1_b: This average value associated to the performance motivational climate, located between 4 and 7, supposes that, for this technician, the results have an important value, that if it is similar to those of the masters climate, it will fortify the motivation and it will increase his commitment with the effort, helping the athlete to control the anxiety against the errors.
-quest12_d1_c: This high value associated to the performance motivational, over 7, supposes that, for this technician, the results obtained in a sport competition have a maximum value. Only if they go accompanied of maximum values in the master motivational climate, supposes a good motivation to increase his commitment and the implication with the effort. In case it prevails over master climate, possibly it will decrease the athlete's capacity against situations of maximum personal challenge.
-quest12_d2_a: The master motivational climate is in low levels, which is a little worrisome. He/she finds it difficult to value positively the sport improvements, and when their athletes face situations of novelty or of great difficulty  they will feel uneasy, without initiative. It is necessary to orient the technician so that it values the importance of the improvements.
-quest12_d2_b: The master motivational climate is in mean levels, which is adapted but improvable. It positively values the improvements of his athletes, which them aid to confronts with good attitude novel situations or of great difficulty. It will be adapted to remember the importance to him that has the improvements so that the athletes secure their objectives, recognizing and valuing their effort when taking place a personal improvement.
-quest12_d2_c: The master motivational climate is in high levels, which is very positive. This technician concentrates in the personal improvement of the sport, being this most important. This contributes to confront, with an excellent attitude, novel situations or of great difficulty. It generates a positive influence in the commitment with the training, the perceived competition and diminishes the possible anxiety against the sport errors.
+quest9_header: El grado de satisfacción con...
+quest9_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
+# labels 
+quest9_label_0: Clima de Tecnificación Percibido
+quest9_label_1: Valores de la percepción de éxito grupal
+quest9_label_2: Confianza en los jugadores percibida
+quest9_label_3: Comunicación reactiva
+quest9_label_4: Comunicación reactiva
+quest9_label_5: Comunicación instruccional
+quest9_label_6: Estilo desicional percibido
+quest9_label_7: Clima de Maestría
+quest9_label_8: Clima De Rendimiento 
+quest9_label_9: Como entrenador/a... 
+quest9_valor_1: 1 (no, en absoluto)
+quest9_valor_1: 1 (nunca)
+quest9_valor_2: 2 (pocas veces)
+quest9_valor_3: 3 (a menudo)
+quest9_valor_4: 4 (casi siempre)
+quest9_valor_5: 5 (siempre)
+quest9_valor_7: 7 (totalmente) 
 
+setting_app_subtitle: Application subtitle
+setting_app_title: Application title
+setting_attachment_max_size: Attachment max. size
+setting_autofetch_changesets: Autofetch commits
+setting_autologin: Autologin
+setting_commit_fix_keywords: Fixing keywords
+setting_commit_ref_keywords: Referencing keywords
+setting_date_format: Date format
+setting_default_language: Default language
+setting_feeds_limit: Feed content limit
+setting_host_name: Host name
+setting_issues_export_limit: Issues export limit
+setting_login_required: Authent. required
+setting_mail_from: Emission mail address
+setting_self_registration: Self-registration enabled
+setting_text_formatting: Text formatting
+setting_welcome_text: Welcome text
+signup_label_10: Terms of Service
+signup_label_11: By clicking the 'Complete Signup' button, I am attaching my electronic signature to and agreeing to the Teskal <a href="http:/account/terms">Terms of Service Agreement</a>.
+signup_label_1: Step
+signup_label_2: Pick a login name and a language.
+signup_label_3: The language will be used next time you login.
+signup_label_4: Choose a password for your new account.
+signup_label_5: Passwords must be 6-12 characters in length.
+signup_label_6: Email details
+signup_label_7: Enter your email address.
+signup_label_8: You must enter a valid email address to activate your account.
+signup_label_9: Submit form
+status_active: active
+status_locked: locked
+status_registered: registered
+#quest1  
 text_are_you_sure: Are you sure ?
 text_caracters_maximum: %d characters maximum.
 text_length_between: Length between %d and %d characters.
