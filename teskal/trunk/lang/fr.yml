@@ -1,4 +1,4 @@
-_gloc_rule_default: '|n| n==1 ? "" : "_plural" '
+_gloc_rule_default: '|n| n==1 ? "": "_plural" '
 footer_1: Conception
 footer_2: Contacter info dans teskal.com   
 signup_label_1: Étape
@@ -428,81 +428,81 @@ quest1_d9_a: La dificultad percibida estimada (DPE) se encuentra directamente re
 quest1_d9_b: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito. A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos valores medios de la DPE, supone una selección de objetivos limitados. Si van acompañados de cierta estabilidad en la valoración, en torno a 70, supone que est@ deportista tiende a uniformizar los objetivos autoimpuestos, pero debería de ser más ambiciosa. Conviene recordar que el grado de dificultad de las situaciones no depende del/a deportista, ya que en ningún caso lo va a poder cambiar, pero -aumentar las probabilidades de éxito sí, manteniendo alta las creencias en sí mism@-.
 quest1_d9_c: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito. A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos altos valores de la DPE, supone una autoimposición de objetivos ambiciosos para esta temporada. Si van acompañados de cierta variabilidad en la valoración, entre 70 y 100, supone que est@ deportista posee una excelente capacidad discriminativa a la hora de seleccionar sus objetivos. Conviene recordar que el grado de dificultad de las situaciones no depende del/a deportista, ya que en ningún caso lo va a poder cambiar, pero - aumentar las probabilidades de éxito sí, manteniendo alta las creencias en sí mism@-.
 # quest2
-quest2: Cuestionario Tolerancia Psicológica al Estrés
-quest2_header: En el último mes...
-quest2_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
-# labels
-quest2_label_0: Tolerancia Psicológica al Estrés
-quest2_label_1: Descanso Interrumpido
-quest2_label_2: Cansancio emocional
-quest2_label_3: Vulnerabilidad a las lesiones
-quest2_label_4: Estado de Forma
-quest2_label_5: Logro Personal
-quest2_label_6: Autoeficacia
-quest2_label_7: Autorregulación
-quest2_label_8: Valoración General
-quest2_label_9: respuesta
-quest2_valor_0: 0 (nada)
-quest2_valor_1: 1 (rara vez)
-quest2_valor_2: 2 (a veces)
-quest2_valor_3: 3 (a menudo)
-quest2_valor_4: 4 (muchas veces)
-quest2_valor_5: 5 (casi siempre)
-quest2_valor_6: 6 (siempre)
-quest2_10: He estado convencid@ de que podía rendir en cualquier momento
-quest2_11: He resuelto de forma adecuada los problemas con mis compañeros/as
-quest2_12: He estado en buena forma física
-quest2_13: Me he motivado durante el entrenamiento/competición
-quest2_14: Me he sentido agotad@ emocionalmente durante el entrenamiento/competición
-quest2_15: He tenido dolores musculares tras el entrenamiento/competición
-quest2_16: He estado convencid@ de que he entrenado/competido correctamente
-quest2_17: Se me ha pedido que haga demasiadas cosas durante los descansos
-quest2_18: Me he mentalizado antes de la actuación
-quest2_19: He sentido que quería abandonar mi deporte
-quest2_1: Me han dolido algunas partes del cuerpo
-quest2_20: Me he sentido llen@ de energía
-quest2_21: He comprendido fácilmente cómo se sentían mis compañeros/as
-quest2_22: He estado convencid@ de que he entrenado correctamente
-quest2_23: Los descansos no han sido en los momentos adecuados
-quest2_24: Me he sentido vulnerable a las lesiones
-quest2_25: Me he marcado objetivos para el entrenamiento/competición
-quest2_26: Me he sentido físicamente fuerte
-quest2_27: Me he sentido frustrad@ en mi deporte
-quest2_28: He manejado con tranquilidad los problemas emocionales en mi deporte
-quest2_2: No he podido descansar durante los descansos
-quest2_3: He estado convencid@ de que podía lograr mis metas
-quest2_4: Me he recuperado bien físicamente
-quest2_5: Me he sentido quemad@ en mi deporte
-quest2_6: He conseguido muchas cosas que merecen la pena en mi deporte
-quest2_7: Me he preparado mentalmente para rendir
-quest2_8: He tenido la musculatura tensa/agarrotada durante el entrenamiento/competición
-quest2_9: He tenido la impresión de que había poco tiempo de descanso
-quest2_d1_a: Los valores relacionados con el descanso interrumpido o con un déficit en la recuperación son bajos, lo que permite considera ajustados los niveles de la carga de trabajo propuestos.
-quest2_d1_b: Los valores relacionados con el descanso interrumpido o con un déficit en la recuperación son medios, por lo que habrá que vigilar la carga de trabajo durante el entrenamiento.
-quest2_d1_c: Los valores relacionados con el descanso interrumpido o con un déficit en la recuperación son altos, por lo que habrá que revisar y quizás recomponer la carga de trabajo de las sesiones de entrenamiento
-quest2_d2_a: En cuanto al cansancio emocional relacionado con situaciones de frustración y asociado a una posible falta de persistencia se encuentra en niveles bajos. 
-quest2_d2_b: En cuanto al cansancio emocional relacionado con situaciones de frustración y asociado a una posible falta de persistencia se encuentra en niveles medios, con lo que se hace necesario analizar con el deportista este inquietante valor.
-quest2_d2_c: En cuanto al cansancio emocional relacionado con situaciones de frustración y asociado a una posible falta de persistencia se encuentra en niveles altos, con lo que se hace necesario detectar las causas que están generando este peligroso valor.
-quest2_d3_a: Al observar los valores de la vulnerabilidad a las lesiones vemos que se encuentran en un bajo nivel, lo que supone una buena disposición para afrontar con garantías y determinación las situaciones más duras o de mayor complejidad.
-quest2_d3_b: Al observar los valores de la vulnerabilidad a las lesiones vemos que se encuentran en un nivel medio, lo que puede afectar negativamente a su disposición y a su firmeza decisional al afrontar situaciones duras o de mayor riesgo del entrenamiento.
-quest2_d3_c: Al observar los valores de la vulnerabilidad a las lesiones vemos que se encuentran en un alto nivel, lo que supone una elevada percepción de fragilidad y de inseguridad al afrontar las situaciones más duras o de mayor riesgo en el entrenamiento. 
-quest2_d4_a: En relación a su estado de forma, vemos que se sitúa en el nivel bajo, lo que perjudica a los sentimientos subjetivos de capacidad percibida relacionada con el rendimiento. Estar en forma mide los sentimientos subjetivos de habilidad y competencia en el rendimiento, la percepción de estar en forma y la vitalidad puntuaciones altas se describen como físicamente eficientes, y vitales.
-quest2_d4_b: En relación a su estado de forma, vemos que se sitúa en un nivel medio, lo que ayudará a tener adecuados sentimientos de capacidad percibida relacionada con el rendimiento. 
-quest2_d4_c: En relación a su estado de forma, vemos que se sitúan en un nivel alto, lo que supone tener profundos sentimientos de eficiencia y de vitalidad, acompañados de una alta percepción sobre su estado de forma relacionada con el rendimiento.
-quest2_d5_a: Fijándonos en los valores relacionados con los logros personales vemos que se encuentran en un bajo nivel, lo que indica cierta insatisfacción con la consecución de sus metas, o también una baja apreciación y empatía con el grupo o el equipo.
-quest2_d5_b: Fijándonos en los valores relacionados con los logros personales vemos que se encuentran en un nivel medio, lo que indica cierta satisfacción con la consecución de sus metas, o también una aceptable apreciación y empatía con el grupo o el equipo.
-quest2_d5_c: Fijándonos en los valores relacionados con los logros personales vemos que se encuentran en un alto nivel, lo que indica una elevada satisfacción con la consecución de sus metas y, también, una alta apreciación y nivel de empatía con el grupo/equipo.
-quest2_d6_a: La convicción que posee est@ deportista de la forma en que se ha desarrollado el entrenamiento y las creencias sobre su preparación son bajas, por lo que será necesario revisar la dinámica de los entrenamientos del último periodo.
-quest2_d6_b: La convicción que posee est@ deportista de la forma en que se ha desarrollado el entrenamiento y las creencias sobre su preparación se sitúa en valores medios. Quizás hayan existido algunas interferencias en la dinámica de los entrenamientos del último periodo, que no han afectado a su preparación de forma importante.
-quest2_d6_c: La convicción que posee est@ deportista de la forma en que se ha desarrollado el entrenamiento y las creencias sobre su preparación se sitúa en valores altos. Esto produce una sensación gratificante y autosatisfacción por entrenamientos realizado.
-quest2_d7_a: Parece que le cueste utilizar las habilidades mentales en su preparación, entre ellas la automotivación y el establecimiento de objetivos autoimpuestos, ya que presenta bajos valores relacionados con esta dimensión. Es necesario realizar un trabajo específico, apoyado con el Power de la motivación de logro.
-quest2_d7_b: Podemos señalara que utiliza las habilidades mentales en su preparación, entre ellas la automotivación y el establecimiento de objetivos autoimpuestos, ya que presenta valores medios relacionados con esta dimensión.
-quest2_d7_c: Est@ deportista utiliza las habilidades mentales en su preparación, entre ellas la automotivación y el establecimiento de objetivos autoimpuestos, lo que se sirve de refuerzo y de guía en su camino hacia la consecución de los mismos.
+quest2: Questionnaire de Tolérance de Contrainte Psychologique
+quest2_header: Pendant le mois dernier…
+quest2_intro: Au-dessous de vous avoir une série d'expressions liées à différents aspects de la formation et de la concurrence sur lesquelles nous voulons recueillir votre avis. Svp, les lire avec la tranquilité, les répondre sincèrement et contrôler l'option avec laquelle vous êtes d'accord davantage ou qu'elle décrit mieux votre avis.
+# étiquette
+quest2_label_0: Tolérance de contrainte psychologique
+quest2_label_1: Sommeil perturbé
+quest2_label_2: Fatigue émotive
+quest2_label_3: Vulnérabilité aux dommages
+quest2_label_4: Niveau de forme physique
+quest2_label_5: Accomplissement personnel
+quest2_label_6: Auto-efficacité
+quest2_label_7: Autorégulation
+quest2_label_8: Évaluation générale
+quest2_label_9: réponse 
+quest2_valor_0: 0 (rien)
+quest2_valor_1: 1 (rarement)
+quest2_valor_2: 2 (parfois)
+quest2_valor_3: 3 (souvent)
+quest2_valor_4: 4 (beaucoup de fois)
+quest2_valor_5: 5 (presque toujours)
+quest2_valor_6: 6 (toujours)
+quest2_10: J'ai été convaincu que je pourrais réaliser mon exécution à tout moment
+quest2_11: J'ai traité très effectivement les problèmes de mes équipiers
+quest2_12: J'étais in good condition physiquement
+quest2_13: Je me suis poussé pendant l'exécution
+quest2_14: J'ai senti l'exécution avec émotion écoulée
+quest2_15: J'ai eu la douleur musculaire après exécution
+quest2_16: J'ai été convaincu que je me suis comporté bien
+quest2_17: Trop a été exigé de moi pendant les ruptures
+quest2_18: Je psyched vers le haut avant exécution
+quest2_19: J'ai estimé que j'ai voulu quitter mon sport
+quest2_1: Les parties de mon corps faisaient mal
+quest2_20: Je me suis senti très énergique
+quest2_21: I facilement compréhensible ce que mes équipiers ont pensé des choses
+quest2_22: J'ai été convaincu que je m'étais bien exercé
+quest2_23: Les ruptures n'avaient pas lieu aux bons moments
+quest2_24: Je me suis senti vulnérable aux dommages
+quest2_25: J'ai fixé des buts définis pour me pendant l'exécution
+quest2_26: Mon corps s'est senti fort
+quest2_27: Je me suis senti frustated par mon sport
+quest2_28: J'ai traité des problèmes émotifs dans mon sport très calmement 
+quest2_2: Je ne pourrais pas obtenir le repos pendant les ruptures
+quest2_3: J'ai été convaincu que coud d'I atteignent mes buts de positionnement pendant l'exécution
+quest2_4: J'ai bien physiquement récupéré
+quest2_5: Je me suis senti pour griller par mon sport
+quest2_6: J'ai accompli beaucoup de choses valables dans mon sport
+quest2_7: J'étais mentalement prêt à exécuter
+quest2_8: Mes muscles se sont sentis raides ou tendus pendant l'exécution
+quest2_9: J'ai eu l'impression là étais trop peu de ruptures
+quest2_d1_a: Les valeurs liées au sommeil perturbé ou à un déficit de reprise sont basses, ainsi il signifie que les charges de travail peuvent être considérées adéquates.
+quest2_d1_b: Les valeurs liées au sommeil perturbé ou à un déficit de reprise sont moyennes, ainsi il signifie que les charges de travail doivent être suivies attentivement.
+quest2_d1_c: Les valeurs liées au sommeil perturbé ou à un déficit de reprise sont élevées, ainsi il signifie que les charges de travail doivent être mises à jour et les demandes de la pratique ajustées.
+quest2_d2_a: La fatigue émotive a associé aux situations frustrantes et s'est associée à la basse persévérance possible est aux niveaux bas.
+quest2_d2_b: La fatigue émotive a associé aux situations frustrantes et s'est associée à la basse persévérance possible est aux niveaux intermédiaires et cette valeur worrysome doit être discutée avec l'athlète.
+quest2_d2_c: La fatigue émotive a associé aux situations frustrantes et s'est associée à la basse persévérance possible est aux niveaux élevés et il est nécessaire de découvrir ce qui entraîne ces niveaux dangereux.
+quest2_d3_a: Un inférieur de la vulnérabilité de dommages indique une bonne destination pour faire face à et aborder des situations difficiles ou complexes avec la détermination.
+quest2_d3_b: Un de niveau intermédiaire de la vulnérabilité de dommages peut négativement effectuer sa conviction de l'athlète la décision et en faisant face à des situations difficiles ou risquées dans la pratique.
+quest2_d3_c: Un à niveau élevé de la vulnérabilité aux dommages implique une perception intensifiée de la fragilité et de l'insécurité en faisant face à des situations dures ou plus risquées dans la pratique.
+quest2_d4_a: La basse santé physique nivelle négativement l'incidence les sentiments subjectifs de la compétence perçue dans l'exécution physique.
+quest2_d4_b: Un niveau modéré de forme physique implique des sentiments adéquats de la compétence perçue dans l'exécution physique.
+quest2_d4_c: Les niveaux élevés de forme physique signifient des sentiments forts d'efficacité et de vitalité, avec une perception élevée d'à un santé physique dans la pratique.
+quest2_d5_a: Les niveaux bas de l'accomplissement personnel indiquent la basse satisfaction avec l'accomplissement de but et également les niveaux bas de l'appréciation ou l'empathie avec l'équipe ou les groupent.
+quest2_d5_b: Un de niveau intermédiaire de l'accomplissement personnel signifie un certain degré de satisfaction avec l'accomplissement de but et également l'appréciation acceptable et d'empathie avec l'équipe ou le groupe.
+quest2_d5_c: Les niveaux personnels élevés d'accomplissement indiquent un niveau important de satisfaction avec l'accomplissement de but et le niveau élevé également d'appréciation et d'empathie avec l'équipe ou le groupent. 
+quest2_d6_a: Inférieur de l'auto-efficacité signifie que le sentiment de l'athlète au sujet des pratiques en matière de voie étaient allés et au sujet de son niveau de la promptitude être bas, ainsi la dynamique du bout plusieurs pratiques doit être passée en revue.
+quest2_d6_b: La perception de l'athlète au sujet des pratiques en matière de voie ont disparu et au sujet de sa préparation est à un niveau modéré. Il y a probablement eu quelques interférences avec la dynamique de pratique mais elles n'ont pas eu un impact majeur sur la promptitude de l'athlète.
+quest2_d6_c: Les niveaux élevés de l'auto-efficacité indiquent que l'athlète se sent très positif au sujet des pratiques et de sa propre préparation, avec des niveaux élevés de fatuité pour le travail effectué.
+quest2_d7_a: Un inférieur de l'autorégulation implique la difficulté using des qualifications mentales dans la pratique, comme l'individu-motivation et l'établissement des buts personnels. Il est nécessaire d'aborder spécifiquement ces issues, peut-être using l'information contenue dans la présentation de motivation d'accomplissement dans la bibliothèque.
+quest2_d7_b: Le niveau modéré de l'utilisation des qualifications telles que l'individu-motivation et de l'établissement des buts personnels est vu avec les niveaux modérés de l'autorégulation.
+quest2_d7_c: Les scores élevés indiquent à niveau élevé de l'utilisation des qualifications mentales dans la pratique, comme l'individu-motivation et l'établissement des buts personnels, qui alors renforce et met en valeur le chemin à l'accomplissement de ces buts.
 # valoracion
-quest2_val_1: En general el nivel de tolerancia presenta unos valores medios muy positivos lo que le permitirá afrontar cualquier situación de entrenamiento o competición de forma óptima. El nivel de los generadores en su conjunto se sitúa en valores bajos, mientras que los valores de de las dimensiones recuperadoras son positivos, sobre todo los que hemos señalado. Por lo tanto, se puede afirmar que est@ deportista posee una alta percepción en cuanto a su estado de forma y a sus prestaciones de rendimiento, se encuentra muy motivad@ y con gran determinación para alcanzar sus objetivos.
-quest2_val_2: En general el nivel de tolerancia presenta unos valores medios positivos, por lo que le dispone de recursos para afrontar situaciones especiales, tanto en el entrenamiento como en la competición. El nivel de los generadores en su conjunto se sitúan en la parte alta del nivel bajo, mientras que los valores de de las dimensiones recuperadoras se sitúan en la parte alta del nivel medio, en torno a 4, como los que hemos señalado. Podemos señalar que est@ deportista posee una adecuada percepción en cuanto a su estado de forma y a sus prestaciones de rendimiento, se encuentra motivad@ y con muchas ganas de alcanzar sus objetivos.
-quest2_val_3: En general el nivel de tolerancia se encuentra en una delicada situación, dado que existe una igualdad entre los valores generadores y recuperadores, por lo que se encuentra en una situación de alarma, pero con recursos suficientes para afrontarla e intentar reducir el nivel de estrés generado por las dimensiones señaladas. Es importante plantear un trabajo específico apoyado por contenidos relacionados con la Presión/Estrés y, además, implementarlo con una exploración presencial al deportista, para conocer la posible causa estresora y, de esta manera abordarla adecuadamente.
-quest2_val_4: En general el grado de tolerancia se encuentra en niveles bajísimos, dado que el nivel de los valores medios correspondiente a los generadores son mayores que los de los recuperadores. Es una situación de riego que necesita ser abordada inmediatamente con el asesoramiento del tutor, salvo que de la reflexión conjunta entrenador/a-deportista que se realice se identifiquen las causas que generan los valores señalados. En este caso se puede plantear un trabajo específico apoyado por contenidos relacionados con la Presión/Estrés y la orientación indirecta del tutor.
+quest2_val_1: De façon générale le niveau de la tolérance d'effort est très bon, indiquant la capacité optimale de manipuler n'importe quelle situation dans la pratique ou concurrence. Le niveau des incréments de générateur d'effort est bas, alors que les valeurs des dimensions de reprise sont positives, en particulier celles indiquées ci-dessus. En résumé, cet athlète a une perception positive de son niveau de forme physique et de préparation, ses exécutions et est fortement motivé pour atteindre ses buts.
+quest2_val_2: Le seuil de tolérance est globalement positif, indiquant la présence d'assez de ressources pour faire face aux situations spéciales, dans la pratique et en concurrence. Le niveau de l'effort produisant des incréments est au niveau de bas-médium, alors que les niveaux des dimensions de reprise sont aux niveaux médium-élevés, environ 4. De façon générale c'est un athlète motivé, avec une perception positive de son niveau, promptitude et accomplissement et motivé de forme physique pour atteindre ses buts. 
+quest2_val_3: Il y a un équilibre sensible ici entre les inducteurs d'effort et les dimensions de reprise, qui est une situation dangereuse. L'athlète a assez de ressources à faire face à lui et peut réduire le niveau de l'effort produit par les dimensions indiquées ci-dessus. Il est important d'installer une interposition spécifique basée sur le module d'effort/pression, appliqué avec une entrevue directe avec l'athlète pour évaluer les facteurs de force actuels et pour travailler l'interposition convenablement. 
+quest2_val_4: Ceci signifie que le niveau de la tolérance est très bas parce que les incréments se produisants sont plus grands que les incréments de reprise. C'est une situation à haut risque qui doit être adressée immédiatement avec l'aide du précepteur, à moins que la réflexion commune de la dyade d'entraîneur/athlète identifie les causes produisant des valeurs observées. Dans cet exemple, le travail spécifique basé sur le module d'effort/pression peut être conçu avec la surveillance du précepteur.
 # quest3
 quest3: Perfil de Estado de Forma del Entrenamiento
 quest3_header1: Ahora mismo me siento...
@@ -951,84 +951,84 @@ quest10_18: Piensa que l@s deportistas tienen éxito cuando lo hacen todo lo mej
 quest10_19: Tiene la máxima confianza en todos l@s deportistas cuando disputan una competición
 quest10_20: Cuando l@s deportistas cometen errores sigue manteniendo la confianza en ell@s
 #quest11
-quest11: Cuestionario de Motivación Intrínseca
-quest11_intro: Utilizando la escala que se está debajo, indica por favor en qué medida cada uno de los siguientes temas corresponde a una de las razones por las que practicas tu deporte. 
-quest11_header: Por qué practicas tu deporte
-quest11_valor_1: 1 (nada)
-quest11_valor_2: 2 (muy poco)
-quest11_valor_3: 3 (un poco)
-quest11_valor_4: 4 (moderadamente)
-quest11_valor_5: 5 (bastante)
-quest11_valor_6: 6 (mucho)
-quest11_valor_7: 7 (totalmente)
-quest11_label_0: Motivación Intrínseca
-quest11_label_1: Conocer
-quest11_label_2: Lograr
-quest11_label_3: Experimentar estímulo
-quest11_label_4: Regulación integrada
-quest11_label_5: Regulación identificada
-quest11_label_6: Regulación introyectada
-quest11_label_7: Regulación externa
-quest11_label_8: Amotivación
-quest11_1: Por el placer de vivir experiencias excitantes
-quest11_2: Por el placer que me da saber más del deporte que practico
-quest11_3: Solía tener buenas razones para practicar deporte, pero ahora me pregunto si debo seguir
-quest11_4: Porque practicar deporte representa la esencia de lo que yo soy
-quest11_5: Por el placer de descubrir nuevas técnicas de entrenamiento
-quest11_6: Ya no lo tengo claro; tengo la impresion de que soy incapaz de tener éxito en este deporte
-quest11_7: Porque me permite estar bien visto(a) por la gente que conozco
-quest11_8: Porque, para mi, es una de las mejores formas de conocer gente
-quest11_9: Porque experimento mucha satisfacción nersonal cuando controlo algunas técnicas difíciles 
-quest11_10: Porque es absolutamente necesario hacer deportes si se quiere estar en forma
-quest11_11: Por el prestigio de ser un deportista
-quest11_12: Porque es uno de los medios que he elegido para desarrollar otros aspectos de mi persona
-quest11_13: Por el placer que experimento cuando mejoro alguno de mis puntos débiles
-quest11_14: Por la excitación que experimento cuando practico esta actividad
-quest11_15: Porque considero absolutamente necesario practicar deporte para sentirme bien conmigo mismo
-quest11_16: Por la satisfacción que siento cuando mejoro mis habilidades
-quest11_17: Porque estar en forma está bien visto por la gente de mi alrededor
-quest11_18: Porque hacer deporte es una parte integral de mi vida
-quest11_19: Porque es una buena manera de aprender otras cosas que me pueden ser útiles en otros ámbitos de mi vida
-quest11_20: Por las emociones intensas que experimento al hacer un deporte que me gusta
-quest11_21: No lo sé claramente; creo que mi sitio no está en este deporte
-quest11_22: Por el placer que obtengo cuando ejecuto algunos movimientos difíciles
-quest11_23: Porque me sentiría mal si no no dedicase el tiempo necesario para practicar deporte
-quest11_24: Porque a través del deporte, puedo expresar principios relacionados con mi forma de entender la vida
-quest11_25: Para demostrar a los demás hasta que punto soy bueno en mi deporte
-quest11_26: Porque para mi es muy agradable descubrir nuevos métodos de entrenamiento
-quest11_27: Porque es una de las mejores formas de mantener buenas relaciones con mis amigos
-quest11_28: Porque me gusta la sensación de sentirme inmerso a tope en mi deporte
-quest11_29: Porque es necesario practicar deporte a menudo
-quest11_30: Por el placer de descubrir nuevas técnicas
-quest11_31: Porque practicando deporte, puedo expresar valores importantes para mi
-quest11_32: Me lo pregunto a menudo; no llego a conseguir los objetivos que me planteo
+quest11: Questionnaire de Motivation Intrinsèque
+quest11_intro: Using l'échelle ci-dessous, indiquer s'il vous plaît dans quelle mesure chacun des articles suivants correspond à une des raisons pour lesquelles vous pratiquez actuellement votre sport.
+quest11_header: Pourquoi pratiquez-vous votre sport ?
+quest11_valor_1: 1 (ne correspond pas du tout)
+quest11_valor_2: 2 (correspondent très peu)
+quest11_valor_3: 3 (correspondent)
+quest11_valor_4: 4 (correspondent modérément)
+quest11_valor_5: 5 correspond ont quitté un bit)
+quest11_valor_6: 6 (énormément)
+quest11_valor_7: 7 (complètement)
+quest11_label_0: Motivation intrinsèque
+quest11_label_1: Pour savoir
+quest11_label_2: Pour accomplir
+quest11_label_3: À la stimulation d'expérience
+quest11_label_4: Règlement Integrated
+quest11_label_5: Règlement identifié
+quest11_label_6: Règlement d'Introjected
+quest11_label_7: Règlement externe
+quest11_label_8: Amotivation
+quest11_1: Pour le plaisir je me sens dans des expériences passionnantes vivantes.
+quest11_2: Pour le plaisir il me donne pour savoir plus au sujet du sport que je pratique.
+quest11_3: J'avais l'habitude d'avoir des bonnes raisons pour faire des sports, mais maintenant je suis se demandant si je continue.
+quest11_4: Puisque la pratique folâtre des renects l'essence dont je suis.
+quest11_5: Pour le plaisir de découvrir de nouvelles techniques de formation.
+quest11_6: Je ne sais plus ; J'ai l'impression que je suis incapable de la réussite à ce sport.
+quest11_7: Puisqu'il me permet d'être bien considéré par les personnes que je connais.
+quest11_8: Puisque, à mon avis, il est l'une des meilleures voies de rencontrer des personnes.
+quest11_9: Puisque je sens beaucoup de satisfaction personnelle tout en maîtrisant certaines techniques s'exerçantes difficiles.
+quest11_10: Puisqu'il est absolument nécessaire de faire des sports si on veut être dans la forme.
+quest11_11: Pour le prestige d'être un athlète.
+quest11_12: Puisqu'il est l'une des meilleures voies j'ont choisi de développer d'autres aspects de me.
+quest11_13: Pour le plaisir je me sens tout en améliorant certains de mes points faibles.
+quest11_14: Pour l'excitation je juge quand je suis vraiment impliqué dans l'activité.
+quest11_15: Puisque je dois faire des sports pour me sentir bien au sujet de me.
+quest11_16: Pour l'expérience de la satisfaction I tandis que je perfectionne mes capacités.
+quest11_17: Puisque les gens autour de moi pensent il est important d'être dans la forme.
+quest11_18: Puisque participer au sport est des parties intégrantes de ma vie.
+quest11_19: Puisque c'est une bonne voie d'apprendre un bon nombre de choses qui pourraient m'être utiles dans d'autres zones de ma vie.
+quest11_20: Pour les émotions fortes qui je me sens tandis que je fais un sport que j'aime.
+quest11_21: Il ne m'est plus clair ; Je ne pense pas vraiment que mon endroit est dans le sport.
+quest11_22: Pour le plaisir qui je me sens tout en exécutant certains mouvements difficiles.
+quest11_23: Puisque je sentirais le mauvais si je ne prenais pas le temps de cela faire.
+quest11_24: Puisque par le sport, je vis en conformité avec mes principes plus profonds.
+quest11_25: Pour afficher à d'autres à quel point bon je suis à mon sport.
+quest11_26: Pour le plaisir je me sens tout en apprenant les techniques s'exerçantes que je n'ai avant jamais essayées.
+quest11_27: Puisqu'il est l'une des meilleures voies de mettre à jour des bonnes relations avec mes amis.
+quest11_28: Puisque j'aime le sentiment d'être totalement immergé dans l'activité.
+quest11_29: Puisque je dois faire des sports régulièrement.
+quest11_30: Pour le plaisir de découvrir de nouvelles stratégies d'exécution.
+quest11_31: Puisqu'en le faisant j'exprime entièrement mes valeurs plus profondes.
+quest11_32: Je me demande souvent ; Je ne peux pas sembler atteindre les buts que je fixe pour me.
 # quest12
-quest12: Cuestionario de Clima Motivacional
-quest12_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de competición. Por favor, lee cuidadosamente y después selecciona el porcentaje que mejor describa la opinión de tu entrenador.
-quest12_header: Al practicar deporte, mi entrenador/a piensa que tengo éxito cuando
-quest12_valor_1: 0 (nada)
-quest12_valor_2: 100 (completamente)
-quest12_label_0: Clima Motivacional
-quest12_label_1: Clima de Rendimiento
-quest12_label_2: Clima de Maestría
-quest12_1: Derroto a mis compañeros
-quest12_2: Soy el/la mejor
-quest12_3: Trabajo duro
-quest12_4: Demuestro una clara mejoría personal
-quest12_5: Lo hago mejor que los demás y que las demás
-quest12_6: Demuestro a la gente que soy el/la mejor
-quest12_7: Supero las dificultades
-quest12_8: Domino algo que no podía hacer
-quest12_9: Hago algo que los demás no pueden hacer
-quest12_10: Lo hago todo lo mejor que se
-quest12_11: Alcanzo la meta que me propuse
-quest12_12: Soy claramente superior a los/las demás
-quest12_d1_a: Este bajo valor de asociado al clima motivacional rendimiento, situado por debajo de 4, supone que, para est@ técnico, los resultados obtenidos por l@s deportistas tienen un valor bajo, quizás menos que la mejora de las habilidades, lo que producirá un efecto positivo sobre la implicación durante el entrenamiento y el control sobre la ansiedad frente a los errores de l@s deportistas, en el caso de que la hubiera.
-quest12_d1_b: Este valor medio asociado clima motivacional rendimiento, situado entre 4 y 7, supone que, para est@ técnico, los resultados obtenidos por l@s deportistas tienen un importante valor, que si son semejantes a los del clima de maestría, fortalecerá la motivación y aumentará su compromiso con el esfuerzo, ayudándole al deprotista a controlar la ansiedad frente a los errores en el caso de que la tuviera.
-quest12_d1_c: Este alto valor asociado clima motivacional rendimiento situado por encima de 7, supone que, para est@ técnico, los resultados obtenidos por l@s deportistas tienen un máximo valor. Solamente si van acompañados de máximos valores en el clima moticacional de maestría, supondrá una buena motivación para aumentar su compromiso e implicación con el esfuerzo. En el caso de que prevalezca sobre el de maestría señalado, posiblemente mermará la capacidad de l@s deportistas frente a situaciones de máximo desafío personal.
-quest12_d2_a: El clima motivacional de maestría, se encuentra en niveles bajos, lo cual es un poco preocupante. Le cuesta valorar positivamente las mejoras de l@s deportistas y, cuando se enfrenten a situaciones novedosas o de gran dificultad se sentirán incómodos, sin iniciativa Habrá que orientar al técnico para que valore la importancia de las mejoras que se produzcan, a través de la autocomparación del deportista.
-quest12_d2_b: El clima motivacional de maestría, se encuentra en niveles medios, lo cual es adecuado pero mejorable. Valora positivamente las mejoras de sus deportistas, lo que les ayuda a afronta con buena actitud situaciones novedosas o de gran dificultad. Será adecuado recordarle la importancia que tienen las mejoras para que los deportistas consigan sus objetivos, reconociendo y valorando su esfuerzo al producirse una mejoría personal, por ligera que sea.
-quest12_d2_c: El clima motivacional de maestría, se encuentra en niveles altos, lo cual es positivo. Este técnico se centra en la mejora personal de l@s deportistas, siendo esto lo más importante. Esto contribuye a afrontar, con una excelente actitud, situaciones novedosas o de gran dificultad. Genera una influencia positiva en el compromiso con el entrenamiento, en la competencia percibida y minimiza la posible ansiedad frente a los errores que pudieran tener l@s deportistas.
+quest12: Questionnaire de Climat de Motivation
+quest12_intro: C'est un questionnaire qui te demande d'exprimer votre perception de quel succès dans le sport signifie à votre entraîneur. Il n'y a aucune bonne ou fausse réponse.
+quest12_header: Jouant le sport, l'entraîneur pense que je suis le plus réussi quand…
+quest12_valor_1: 0 (rien)
+quest12_valor_2: 100 (complètement)
+quest12_label_0: Climat de motivation
+quest12_label_1: Climat d'exécution
+quest12_label_2: Climat principal
+quest12_1: J'ai battu d'autres personnes
+quest12_2: Je suis nettement supérieur
+quest12_3: Je suis le meilleur
+quest12_4: Je travaille dur
+quest12_5: J'affiche l'amélioration personnelle claire
+quest12_6: Je surpasse mes adversaires
+quest12_7: J'atteins un but
+quest12_8: Je surmonte des difficultés
+quest12_9: J'atteins des buts personnels
+quest12_10: Je gagne
+quest12_11: J'affiche d'autres personnes que je suis le meilleur
+quest12_12: J'exécute au meilleur de ma capacité
+quest12_d1_a: Cette valeur basse associée au climat de motivation d'exécution, en-dessous de 4, suppose que, pour ce technicien, les résultats ont une valeur basse, inférieure que l'amélioration des capacités, qui produiront une conséquence positive sur l'implication pendant la formation et la commande sur l'inquiétude contre les erreurs des athlètes.
+quest12_d1_b: Cette valeur moyenne associée au climat de motivation d'exécution, situé entre 4 et 7, suppose que, pour ce technicien, les résultats ont une valeur importante, qui si elle est semblable à ceux du climat de maîtres, il enrichira la motivation et elle augmentera son engagement avec l'effort, aidant l'athlète à contrôler l'inquiétude contre les erreurs.
+quest12_d1_c: Ces valeurs élevées associées à l'exécution de motivation, plus de 7, supposent que, pour ce technicien, les résultats obtenus en compétition sportive ont des valeurs maximales. Seulement s'ils disparaissent accompagné des valeurs maximales dans le climat de motivation principal, suppose une bonne motivation augmenter son engagement et l'implication avec l'effort. Au cas où il régnerait au-dessus du climat principal, probablement il diminuera la capacité de l'athlète contre des situations de défi personnel maximum.
+quest12_d2_a: Le climat de motivation principal est dans les niveaux bas, qui est peu un inquiétant. Il le trouve difficile d'évaluer franchement les améliorations de sport, et quand leurs athlètes font face à des situations de nouveauté ou de grande difficulté ils se sentiront incommodes, sans initiative. Il est nécessaire d'orienter le technicien de sorte qu'elle évalue l'importance des améliorations.
+quest12_d2_b: Le climat de motivation principal est dans les taux moyens, qui est adapté mais améliorable. Il évalue franchement les améliorations de ses athlètes, qu'ils aide confronte avec des situations originales de bonne attitude ou de la grande difficulté. Il sera adapté pour se rappeler l'importance pour lui qu'a les améliorations de sorte que les athlètes fixent leurs objectifs, identifiant et évaluant leur effort en ayant lieu une amélioration personnelle.
+quest12_d2_c: Le climat de motivation principal est dans les niveaux élevés, qui est très positif. Ce technicien se concentre dans l'amélioration personnelle du sport, étant ceci le plus important. Ceci contribue pour confronter, avec une excellente attitude, des situations originales ou de la grande difficulté. Il produit d'une influence positive dans l'engagement avec la formation, la concurrence perçue et diminue l'inquiétude possible contre les erreurs de sport.
 
 
 text_are_you_sure: Etes-vous sûr ?
