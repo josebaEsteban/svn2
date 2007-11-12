@@ -368,7 +368,7 @@ quest12_d2_c: Le climat de motivation principal est dans les niveaux élevés, q
 quest12_header: Jouant le sport, l'entraîneur pense que je suis le plus réussi quand…
 quest12_intro: C'est un questionnaire qui te demande d'exprimer votre perception de quel succès dans le sport signifie à votre entraîneur. Il n'y a aucune bonne ou fausse réponse.
 quest12_label_0: Climat de Motivation
-quest12_label_1: Climat d'exécution
+quest12_label_1: Climat Exécution
 quest12_label_2: Climat Maître
 quest12_valor_1: 0 (rien)
 quest12_valor_2: 100 (complètement)
