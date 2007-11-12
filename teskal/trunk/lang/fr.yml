@@ -428,11 +428,11 @@ quest1_d9_a: La dificultad percibida estimada (DPE) se encuentra directamente re
 quest1_d9_b: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito. A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos valores medios de la DPE, supone una selección de objetivos limitados. Si van acompañados de cierta estabilidad en la valoración, en torno a 70, supone que est@ deportista tiende a uniformizar los objetivos autoimpuestos, pero debería de ser más ambiciosa. Conviene recordar que el grado de dificultad de las situaciones no depende del/a deportista, ya que en ningún caso lo va a poder cambiar, pero -aumentar las probabilidades de éxito sí, manteniendo alta las creencias en sí mism@-.
 quest1_d9_c: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito. A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos altos valores de la DPE, supone una autoimposición de objetivos ambiciosos para esta temporada. Si van acompañados de cierta variabilidad en la valoración, entre 70 y 100, supone que est@ deportista posee una excelente capacidad discriminativa a la hora de seleccionar sus objetivos. Conviene recordar que el grado de dificultad de las situaciones no depende del/a deportista, ya que en ningún caso lo va a poder cambiar, pero - aumentar las probabilidades de éxito sí, manteniendo alta las creencias en sí mism@-.
 # quest2
-quest2: Questionnaire de Tolérance de Contrainte Psychologique
+quest2: Questionnaire de Tolérance de Stress Psychologique
 quest2_header: Pendant le mois dernier…
 quest2_intro: Au-dessous de vous avoir une série d'expressions liées à différents aspects de la formation et de la concurrence sur lesquelles nous voulons recueillir votre avis. Svp, les lire avec la tranquilité, les répondre sincèrement et contrôler l'option avec laquelle vous êtes d'accord davantage ou qu'elle décrit mieux votre avis.
 # étiquette
-quest2_label_0: Tolérance de contrainte psychologique
+quest2_label_0: Tolérance Stress Psychologique
 quest2_label_1: Sommeil perturbé
 quest2_label_2: Fatigue émotive
 quest2_label_3: Vulnérabilité aux dommages

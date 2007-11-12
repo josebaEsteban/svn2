@@ -1,4 +1,4 @@
-PBarLoadingText: ?PBarLoadingText=Carregando Carta. Esperar por favor…
+PBarLoadingText: ?PBarLoadingText=Carregando Carta. Esperar por favor...
 _gloc_rule_default: '|n| n==1 ? "": "_plural" '
 actionview_datehelper_select_day_prefix:
 actionview_datehelper_select_month_names: Janeiro,Fevereiro,Marco,Abril,Maio,Junho,Julho,Agosto,Setembro,Outubro,Novembro,Dezembro
@@ -346,7 +346,7 @@ quest12_label_1: Clima do desempenho
 quest12_label_2: Clima mestre
 quest12_valor_1: 0 (nada)
 quest12_valor_2: 100 (completamente)
-quest2: Questionário do Tolerância do Esforço Psicológico 
+quest2: Questionário do Tolerância do Estresse Psicológico 
 quest2_10: Eu fui convencido que eu poderia conseguir meu desempenho a qualquer hora
 quest2_11: Eu tratei muito eficazmente os problemas dos meus teammates
 quest2_12: Eu estava nas boas condições fisicamente
@@ -398,7 +398,7 @@ quest2_d7_b: O nível moderado de uso das habilidades tais como a auto-motivaç�
 quest2_d7_c: As contagens elevadas indicam de nível elevado do uso de habilidades mentais na prática, como a auto-motivação e o estabelecimento de objetivos pessoais, que então reforça e destaca o trajeto à realização destes objetivos.
 quest2_header: Durante o mês passado…
 quest2_intro: Abaixo de você ter uma série de frases relativas aos aspetos diferentes do treinamento e da competição em que nós queremos recolher sua opinião. Por favor, lê-los com tranquilidade, respondê-los sincera e verifica a opção com que você concorda mais ou do que descreve melhor sua opinião.
-quest2_label_0: Tolerância do Esforço Psicológico
+quest2_label_0: Tolerância do Estresse Psicológico
 quest2_label_1: Sono perturbado
 quest2_label_2: Fatiga emocional
 quest2_label_3: Vulnerabilidade aos ferimentos
