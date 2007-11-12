@@ -184,8 +184,8 @@ label_last_changes: ultimas %d mudanças
 label_last_login: Utima conexao
 label_last_updates: Ultima alteraçao
 label_last_updates_plural: %d últimas mudanças
-label_library: Biblioteca
 label_less_than_ago: faz menos de
+label_library: Biblioteca
 label_list: Lista
 label_loading: Carregamento...
 label_logged_as: Registrado como
@@ -244,9 +244,9 @@ label_user: Usuário
 label_user_new: Novo usuário
 label_user_plural: Usuários
 label_year: Ano
-login_label_1: Esqueceu sua senha?
-login_label_2: O senhor mesmoemitir- um email
-login_label_3: com informação sobre a criação de uma senha nova.
+login_label_1: Esqueceu a sua senha?
+login_label_2: Envie um correio eletrônico a você
+login_label_3: com a informação para criar uma nova senha.
 login_label_4: Novo a Teskal?
 login_label_5: Assinar acima
 login_label_6: para uma conta grátis.
@@ -341,9 +341,9 @@ quest12_d2_b: O clima inspirador mestre está em níveis médios, que é adaptad
 quest12_d2_c: O clima inspirador mestre está nos altos níeses, que é muito positivo. Este técnico concentra-se na melhoria pessoal do esporte, sendo este o mais importante. Isto contribui para confrontar, com uma atitude excelente, umas situações novas ou da grande dificuldade. Gera uma influência positiva no comprometimento com o treinamento, a competição percebida e diminui a ansiedade possível de encontro aos erros do esporte.
 quest12_header: Jogando o esporte, o ônibus pensa que eu sou o mais bem sucedido quando…
 quest12_intro: Este é um questionário que peça que você expresse sua percepção de que sucesso no esporte significa a seu ônibus. Não há nenhuma resposta direita ou errada.
-quest12_label_0: Clima inspirador
-quest12_label_1: Clima do desempenho
-quest12_label_2: Clima mestre
+quest12_label_0: Clima Inspirador
+quest12_label_1: Clima do Desempenho
+quest12_label_2: Clima de Maestría
 quest12_valor_1: 0 (nada)
 quest12_valor_2: 100 (completamente)
 quest2: Questionário do Tolerância do Estresse Psicológico 
