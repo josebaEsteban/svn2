@@ -33,6 +33,8 @@ Rails::Initializer.run do |config|
   config.active_record.observers = :message_observer
 
   # Make Active Record use UTC-base instead of local time
+  # require_gem 'tzinfo'
+  # include TZInfo
   config.active_record.default_timezone = :utc
 
   # Use Active Record's schema dumper instead of SQL when creating the test database
@@ -77,7 +79,7 @@ ActiveRecord::Errors.default_error_messages = {
 
 ActionView::Base.field_error_proc = Proc.new{ |html_tag, instance| "#{html_tag}" }
 
-GLoc.set_config :default_language => :en
+GLoc.set_config :default_language => :es
 GLoc.clear_strings
 GLoc.set_kcode
 GLoc.load_localized_strings
