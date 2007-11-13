@@ -186,7 +186,7 @@ module ApplicationHelper
           full_messages << "&#171; " + (l_has_string?("field_" + attr) ? l("field_" + attr) : object.class.human_attribute_name(attr)) + " &#187; " + l(msg)
         end
       end
-      
+
       content_tag("div",
       content_tag(
       options[:header_tag] || "h2", lwr(:gui_validation_error, full_messages.length) + " :"
@@ -263,5 +263,9 @@ class TabularFormBuilder < ActionView::Helpers::FormBuilder
     :for => (@object_name.to_s + "_" + field.to_s))
     label + super
   end
+
+  # def tz(time_at)
+  #   TzTime.zone.utc_to_local(time_at.utc)
+  # end  
 
 end

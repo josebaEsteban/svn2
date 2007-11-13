@@ -33,8 +33,7 @@ Rails::Initializer.run do |config|
   config.active_record.observers = :message_observer
 
   # Make Active Record use UTC-base instead of local time
-  # require_gem 'tzinfo'
-  # include TZInfo
+
   config.active_record.default_timezone = :utc
 
   # Use Active Record's schema dumper instead of SQL when creating the test database
@@ -85,4 +84,4 @@ GLoc.set_kcode
 GLoc.load_localized_strings
 GLoc.set_config(:raise_string_not_found_errors => false)
 
-require 'teskal'
+require 'teskal'  

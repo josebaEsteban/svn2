@@ -5,6 +5,8 @@
 class ApplicationController < ActionController::Base
   before_filter :check_if_login_required, :set_localization   #, :store_locations
   filter_parameter_logging :password
+  # around_filter :set_timezone
+
 
 
   # def store_locations
@@ -78,7 +80,7 @@ class ApplicationController < ActionController::Base
     set_language_if_valid(lang)
   end
 
-  def require_login
+  def require_login 
     unless self.logged_in_user
       store_location
       redirect_to :controller => "account", :action => "login"
@@ -104,16 +106,16 @@ class ApplicationController < ActionController::Base
   end
 
   # authorizes only to suscribed customers
-  def require_suscription 
-    if @logged_in_user.suscription? 
-      
-      else 
+  def require_suscription
+    if @logged_in_user.suscription?
+
+    else
       flash[:notice] = l(:notice_not_authorized)
       redirect_back_or_default :controller => 'my', :action => 'page'
     end
   end
-  
-    # authorizes the user for the requested action.
+
+  # authorizes the user for the requested action.
   def authorize(ctrl = params[:controller], action = params[:action])
     unless @project.active?
       @project = nil
@@ -253,6 +255,7 @@ class ApplicationController < ActionController::Base
     renderChartText=renderChartText+'<!-- END Code Block for Chart ' + chartId +' -->'
     renderChartHTML=renderChartText
   end
+
   def acorta(valor)
     valorStr=valor.to_s
     if valorStr.length>4
@@ -260,4 +263,13 @@ class ApplicationController < ActionController::Base
     end
     return valorStr
   end
+
+  # private
+  # def set_timezone
+  #   TzTime.zone = TimeZone["Madrid"]
+  #   # TzTime.zone = @user.time_zone if loggedin?
+  #   yield
+  #   TzTime.reset!
+  # end  
+
 end
