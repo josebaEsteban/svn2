@@ -19,6 +19,7 @@ general_text_no: 'no'
 general_text_yes: 'sí'    
 gui_validation_error: 1 error
 gui_validation_error_plural: %d errors
+label_10: Condicions del Servei
 label_activity: Activitat 
 label_add_note: Agregar una nota 
 label_added: agregat 
@@ -75,7 +76,7 @@ label_less_than_ago Actualitzats: fa menys de
 label_library: Biblioteca 
 label_list: Llista
 label_loading: Loading...
-label_logged_as: Connectat com|com a 
+label_logged_as: Connectat com a 
 label_login: Connexió
 label_logout: Desconnexió 
 label_max_size: Mida màxima 
@@ -267,4 +268,3 @@ signup_label_6: Detalls email.
 signup_label_7: Escriu la teva direcció de correu.
 signup_label_8: La direcció ha de ser vàlida per poder activar el teu compte.
 signup_label_9: Submit form signup
-label_10: Condicions del Servei
