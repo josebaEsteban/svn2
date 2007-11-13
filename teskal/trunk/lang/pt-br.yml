@@ -349,8 +349,8 @@ quest12_valor_1: 0 (nada)
 quest12_valor_2: 100 (completamente)
 quest2: Questionário do Tolerância do Estresse Psicológico 
 quest2_10: Eu fui convencido que eu poderia conseguir meu desempenho a qualquer hora
-quest2_11: Eu tratei muito eficazmente os problemas dos meus teammates
-quest2_12: Eu estava nas boas condições fisicamente
+quest2_11: Eu tratei muito eficazmente os problemas dos meus companheros da equipo
+quest2_12: Eu estava en boas condições fisicamente
 quest2_13: Eu empurrei-me durante o desempenho
 quest2_14: Eu senti o desempenho emocionalmente escoado
 quest2_15: Eu tive a dor de músculo após o desempenho
@@ -368,10 +368,10 @@ quest2_25: Eu ajustei objetivos definitivos para mim mesmo durante o desempenho
 quest2_26: Meu corpo sentiu forte
 quest2_27: Eu senti frustado por meu esporte
 quest2_28: Eu tratei os problemas emocionais em meu esporte muito calma 
-quest2_2: Eu não poderia começ o descanso durante as rupturas
-quest2_3: Eu fui convencido que coud de I consegue meus objetivos do jogo durante o desempenho
+quest2_2: Eu não poderia começar o descanso durante as rupturas
+quest2_3: Eu estaba convencido de que iria conseguir meus objetivos
 quest2_4: Eu recuperei bem fisicamente
-quest2_5: Eu senti para queimar-se por meu esporte
+quest2_5: Eu me senti quemado por meu esporte
 quest2_6: Eu realizei muitas coisas de valor em meu esporte
 quest2_7: Eu estava mentalmente pronto para executar
 quest2_8: Meus músculos sentiram duros ou tensos durante o desempenho
