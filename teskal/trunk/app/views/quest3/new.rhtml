@@ -4,10 +4,16 @@
 <%= calendar_date_select_includes "plain" -%>
 <%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language -%>
 <%- case @logged_in_user.language -%>
+<%- when "br": -%>
+<%= javascript_include_tag 'validation/validation_br' -%>
+<%- when "ca": -%>
+<%= javascript_include_tag 'validation/validation_ca' -%>
 <%- when "es": -%>
 <%= javascript_include_tag 'validation/validation_es' -%> 
 <%- when "eu": -%>
-<%= javascript_include_tag 'validation/validation_eu' -%> 
+<%= javascript_include_tag 'validation/validation_eu' -%>
+<%- when "fr": -%>
+<%= javascript_include_tag 'validation/validation_fr' -%> 
 <%- else -%>
 <%= javascript_include_tag 'validation/validation' -%>  
 <%- end -%>

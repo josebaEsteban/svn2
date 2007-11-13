@@ -1,9 +1,15 @@
 <% content_for :header_tags do -%>
-<%= javascript_include_tag 'prototype' -%>
-<%- if @user.language == "es" -%>
+<%= javascript_include_tag 'prototype' -%> 
+<%- if @user.language == "br" -%> 
+<%= javascript_include_tag 'validation/validation_br' -%> 
+<%- elsif @user.language == "ca"-%>
+<%= javascript_include_tag 'validation/validation_ca' -%> 
+<%- elsif @user.language == "es" -%>
 <%= javascript_include_tag 'validation/validation_es' -%>
 <%- elsif @user.language == "eu"-%>
 <%= javascript_include_tag 'validation/validation_eu' -%>
+<%- elsif @user.language == "fr"-%> 
+<%= javascript_include_tag 'validation/validation_fr' -%> 
 <%- else -%>
 <%= javascript_include_tag 'validation/validation' -%>
 <%- end -%>
@@ -18,7 +24,7 @@
 	max-width: 450px;
 	color: #505050;
 	line-height: 1.5em;
-}
+}                                        	
 #theform h3 {
 	height: 2em;
 	font-size: 1.7em;
@@ -48,6 +54,9 @@
       <p>
         <label for="user_language"><%= l(:field_language) %></label>
         <%= select("user", "language", lang_options_for_select) %></p>
+		<label>Default timezone</label>
+		<%= time_zone_select 'user', 'time_zone', TZInfo::Timezone.all.sort, :model => TZInfo::Timezone %>
+
       <center>
         <%= submit_tag l(:button_save) %>
       </center>
@@ -78,6 +87,42 @@
         <%= submit_tag l(:button_save) %>
       </center>
     </form>
+    <%- if @user.language == "br" -%>
+    <script type="text/javascript">
+		function formCallback(result, form) {
+			window.status = "validation callback for form '" + form.id + "': result = " + result;
+		}
+	    var valid = new Validation('myPassword', {immediate : true, onFormValidate : formCallback}); 
+	 	Validation.addAllThese([
+			['validate-password', 'Sua senha deve ter entre 6 e 12 caracteres e não pode ser \'senha\' ou o mesmo que o seu nome.', {
+				minLength : 6,
+				maxLength : 12,
+				notOneOf : ['password','PASSWORD','1234567','0123456','12345679012','012345678901'],
+				notEqualToField : 'user[login]'
+			}],
+			['validate-password-confirm', 'Sua confirmação não corresponde à sua senha, por favor, tente novamente.', {
+				equalToField : 'new_password'
+			}]
+		]);
+	 </script>
+	 <%- elsif @user.language == "ca" -%>
+    <script type="text/javascript">
+		function formCallback(result, form) {
+			window.status = "validation callback for form '" + form.id + "': result = " + result;
+		}
+	    var valid = new Validation('myPassword', {immediate : true, onFormValidate : formCallback}); 
+	 	Validation.addAllThese([
+			['validate-password', 'La teva contrasenya ha de tenir entre 6 i 12 caràcters i no ser \'contrasenya\' o igual que el nom del teu compte.', {
+				minLength : 6,
+				maxLength : 12,
+				notOneOf : ['password','PASSWORD','1234567','0123456','12345679012','012345678901'],
+				notEqualToField : 'user[login]'
+			}],
+			['validate-password-confirm', 'La confirmació no és igual a la nova contrasenya, intenta-ho de nou si us plau.', {
+				equalToField : 'new_password'
+			}]
+		]);
+	 </script>
     <%- if @user.language == "es" -%>
     <script type="text/javascript">
 		function formCallback(result, form) {
@@ -114,6 +159,24 @@
 			}]
 		]);
 	 </script> 
+   <%- elsif @user.language == "fr"  -%>
+    <script type="text/javascript">
+		function formCallback(result, form) {
+			window.status = "validation callback for form '" + form.id + "': result = " + result;
+		}
+	    var valid = new Validation('myPassword', {immediate : true, onFormValidate : formCallback}); 
+	 	Validation.addAllThese([
+			['validate-password', 'Votre mot de passe doit être compris entre 6 et 12 caractères et ne pas être \'mot de passe\' ou identique à votre nom.', {
+				minLength : 6,
+				maxLength : 12,
+				notOneOf : ['password','PASSWORD','1234567','0123456'],
+				notEqualToField : 'user[login]'
+			}],
+			['validate-password-confirm', 'Votre confirmation de mot de passe ne correspond pas à votre premier mot de passe, veuillez réessayer.', {
+				equalToField : 'new_password'
+			}]
+		]);
+	 </script>
     <%- else -%>
     <script type="text/javascript">
 		function formCallback(result, form) {
