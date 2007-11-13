@@ -1033,6 +1033,6 @@ status_locked: bloqueado
 status_registered: registrado
 # quest1
 text_are_you_sure: ¿ Estás seguro ?
-text_caracters_maximum: %d characters maximum.
+text_caracters_maximum: máximo %d caracteres.
 text_length_between: Longitud entre %d y %d caracteres.
 text_min_max_length_info: 0 para ninguna restricción

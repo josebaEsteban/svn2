@@ -52,8 +52,25 @@
 	</fieldset>
 	<div id="copyright"></div>	
 </form>
-<%= puts current_language %>
 <%- case current_language -%>
+	<%- when :br -%>
+	<script type="text/javascript">
+		function formCallback(result, form) {
+			window.status = "validation callback for form '" + form.id + "': result = " + result;
+		}
+	    var valid = new Validation('theform', {immediate : true, onFormValidate : formCallback}); 
+	 	Validation.addAllThese([
+			['validate-password', 'Sua senha deve ter entre 6 e 12 caracteres e não pode ser \'senha\' ou o mesmo que o seu nome.', {
+				minLength : 6,
+				maxLength : 12,  
+				notOneOf : ['password','PASSWORD','1234567','0123456'],
+				notEqualToField : 'user[login]'
+			}],
+			['validate-password-confirm', 'Sua confirmação não corresponde à sua senha, por favor, tente novamente.', {
+				equalToField : 'password'
+			}]
+		]);
+	</script>
 <%- when :ca -%>
 <script type="text/javascript">
 	function formCallback(result, form) {
@@ -122,24 +139,6 @@
 			notEqualToField : 'user[login]'
 		}],
 		['validate-password-confirm', 'Votre confirmation de mot de passe ne correspond pas à votre premier mot de passe, veuillez réessayer.', {
-			equalToField : 'password'
-		}]
-	]);
-</script>
-<%- when :br -%>
-<script type="text/javascript">
-	function formCallback(result, form) {
-		window.status = "validation callback for form '" + form.id + "': result = " + result;
-	}
-    var valid = new Validation('theform', {immediate : true, onFormValidate : formCallback}); 
- 	Validation.addAllThese([
-		['validate-password', 'Sua senha deve ter entre 6 e 12 caracteres e não pode ser \'senha\' ou o mesmo que o seu nome.', {
-			minLength : 6,
-			maxLength : 12,  
-			notOneOf : ['password','PASSWORD','1234567','0123456'],
-			notEqualToField : 'user[login]'
-		}],
-		['validate-password-confirm', 'Sua confirmação não corresponde à sua senha, por favor, tente novamente.', {
 			equalToField : 'password'
 		}]
 	]);
