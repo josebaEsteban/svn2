@@ -1,10 +1,16 @@
 <% content_for :header_tags do -%>
 <%= javascript_include_tag 'prototype' -%>
 <%- case current_language -%>
+<%- when :br -%>
+<%= javascript_include_tag 'validation/validation_br' -%>
+<%- when :ca -%>
+<%= javascript_include_tag 'validation/validation_ca' -%>
 <%- when :es -%>
 <%= javascript_include_tag 'validation/validation_es' -%> 
 <%- when :eu -%>
-<%= javascript_include_tag 'validation/validation_eu' -%> 
+<%= javascript_include_tag 'validation/validation_eu' -%>
+<%- when :fr -%>
+<%= javascript_include_tag 'validation/validation_fr' -%> 
 <%- else -%>
 <%= javascript_include_tag 'validation/validation' -%>  
 <%- end -%>
@@ -46,7 +52,26 @@
 	</fieldset>
 	<div id="copyright"></div>	
 </form>
+<%= puts current_language %>
 <%- case current_language -%>
+<%- when :ca -%>
+<script type="text/javascript">
+	function formCallback(result, form) {
+		window.status = "validation callback for form '" + form.id + "': result = " + result;
+	}
+    var valid = new Validation('theform', {immediate : true, onFormValidate : formCallback}); 
+ 	Validation.addAllThese([
+			['validate-password', 'La teva contrasenya ha de tenir entre 6 i 12 caràcters i no ser \'contrasenya\' o igual que el nom del teu compte.', {
+			minLength : 6,
+			maxLength : 12,  
+			notOneOf : ['password','PASSWORD','1234567','0123456'],
+			notEqualToField : 'user[login]'
+		}],
+		['validate-password-confirm', 'La confirmació no és igual a la nova contrasenya, intenta-ho de nou si us plau.', {
+			equalToField : 'password'
+		}]
+	]);
+</script>
 <%- when :es -%>
 <script type="text/javascript">
 	function formCallback(result, form) {
@@ -79,6 +104,42 @@
 			notEqualToField : 'user[login]'
 		}],
 		['validate-password-confirm', 'Egiaztapena ez da pasa-hitz berria bezalakoa, beste saiakera bat gehiago egin ezazu mesedez.', {
+			equalToField : 'password'
+		}]
+	]);
+</script>
+<%- when :fr -%>
+<script type="text/javascript">
+	function formCallback(result, form) {
+		window.status = "validation callback for form '" + form.id + "': result = " + result;
+	}
+    var valid = new Validation('theform', {immediate : true, onFormValidate : formCallback}); 
+ 	Validation.addAllThese([
+		['validate-password', 'Votre mot de passe doit être compris entre 6 et 12 caractères et ne pas être \'mot de passe\'ou identique à votre nom.', {
+			minLength : 6,
+			maxLength : 12,  
+			notOneOf : ['password','PASSWORD','1234567','0123456'],
+			notEqualToField : 'user[login]'
+		}],
+		['validate-password-confirm', 'Votre confirmation de mot de passe ne correspond pas à votre premier mot de passe, veuillez réessayer.', {
+			equalToField : 'password'
+		}]
+	]);
+</script>
+<%- when :br -%>
+<script type="text/javascript">
+	function formCallback(result, form) {
+		window.status = "validation callback for form '" + form.id + "': result = " + result;
+	}
+    var valid = new Validation('theform', {immediate : true, onFormValidate : formCallback}); 
+ 	Validation.addAllThese([
+		['validate-password', 'Sua senha deve ter entre 6 e 12 caracteres e não pode ser \'senha\' ou o mesmo que o seu nome.', {
+			minLength : 6,
+			maxLength : 12,  
+			notOneOf : ['password','PASSWORD','1234567','0123456'],
+			notEqualToField : 'user[login]'
+		}],
+		['validate-password-confirm', 'Sua confirmação não corresponde à sua senha, por favor, tente novamente.', {
 			equalToField : 'password'
 		}]
 	]);
