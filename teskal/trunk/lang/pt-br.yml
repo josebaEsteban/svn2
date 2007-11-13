@@ -96,7 +96,8 @@ field_min_length: Tamanho minimo
 field_name: Nome
 field_new_password: Nova senha
 field_notes: Notas
-field_password: Senha
+field_password: Senha 
+field_password_change: Alterar senha
 field_password_confirmation: Confirmaçao
 field_priority: Prioridade
 field_role: Papel
