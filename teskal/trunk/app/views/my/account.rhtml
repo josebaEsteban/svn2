@@ -123,7 +123,7 @@
 			}]
 		]);
 	 </script>
-    <%- if @user.language == "es" -%>
+    <%- elsif @user.language == "es" -%>
     <script type="text/javascript">
 		function formCallback(result, form) {
 			window.status = "validation callback for form '" + form.id + "': result = " + result;
