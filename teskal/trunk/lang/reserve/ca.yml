@@ -1,5 +1,7 @@
 PBarLoadingText: ?PBarLoadingText=Cargando dades. Esperi si us plau...
 _gloc_rule_default: '|n| n==1 ? "" : "_plural" '
+footer_1: Disseny 
+footer_2: Contacte en info rova teskal.com
 general_csv_encoding: ISO-8859-1
 general_csv_separator: ';'
 general_day_names: Dilluns,Dimarts,Dimecres,Dijous,Divendres,Dissabte,Diumenge
@@ -14,15 +16,147 @@ general_pdf_encoding: ISO-8859-1
 general_text_No: 'No'
 general_text_Yes: 'Sí'
 general_text_no: 'no'
-general_text_yes: 'sí'
+general_text_yes: 'sí'    
+gui_validation_error: 1 error
+gui_validation_error_plural: %d errors
+label_activity: Activitat 
+label_add_note: Agregar una nota 
+label_added: agregat 
+label_administration: Administració 
+label_ago: fa 
+label_all: tots
+label_all_words: Totes les paraules 
+label_applied_status: Applied estatus 
+label_assigned_to_me_issues: Peticions que m'estan
+label_attachment assignades: Fitxer 
+label_attachment_delete: Suprimir el fitxer 
+label_attachment_new: Nou fitxer 
+label_attachment_plural: Fitxers
+label_boolean: Boleano 
+label_browse: Fullejar 
+label_calendar: Calendari 
+label_competition: Competició 
+label_confirmation: Confirmació
+label_contains: conté 
+label_current_status: Estat actual
+label_current_version: Versió actual 
+label_date: Data
+label_date_from: From 
+label_date_to: To 
+label_day_plural: dies 
+label_deleted: suprimit 
+label_details: Detalls 
+label_document: Document
+label_document_new: Nou document 
+label_document_plural: Documents
+label_download: %d Descarrega 
+label_download_plural: %d Descàrregues
+label_equals: igual 
+label_export_to: Exportar a 
+label_f_hour: %.2f hour 
+label_f_hour_plural: %.2f hours 
+label_fill: Omplir
+label_filled: Omplert el 
+label_help: Ajuda 
+label_history: Històric
+label_home: Inici 
+label_in: en 
+label_in_less_than: en menys que
+label_in_more_than: en més que 
+label_information: Informació
+label_information_plural: Dades personals 
+label_internal: Intern
+label_language_based: Language based 
+# label_last_changes: %d canvis de l'últim 
+label_last_login: Última connexió 
+label_last_updates: Actualitzat 
+label_last_updates_plural: %d 
+label_less_than_ago Actualitzats: fa menys de 
+label_library: Biblioteca 
+label_list: Llista
+label_loading: Loading...
+label_logged_as: Connectat com|com a 
+label_login: Connexió
+label_logout: Desconnexió 
+label_max_size: Mida màxima 
+label_me: em
+label_message_last: Last message 
+label_message_new: New message 
+label_message_plural: Messages 
+label_min_max_length: Longitud com a mínim - com a màxim 
+label_modification: %d modificació
+label_modification_plural: %d modificacions 
+label_modified: modificat
+label_my_account: El meu compte 
+label_my_page: La meva pàgina
+label_my_quest: Els meus qüestionaris 
+label_new: Nou
+label_news: Notícies
+label_next: Següent 
+label_no_data: Cap dada a exhibir 
+label_none: cap
+label_not_contains: no conté 
+label_not_equals: no igual 
+label_on: en
+label_options: Opcions 
+label_overview: Cop d'ull 
+label_page_index: Índex
+label_password_lost: Vas oblidar la contrasenya?
+label_per_page: Per la pàgina 
+label_permissions: Permisos
+label_permissions_report: Permissions report
+label_personalize_page: Personalitzar aquesta pàgina 
+label_please_login: Connexió 
+label_preview: Previ 
+label_previous: Anterior 
+label_quest: Qüestionari 
+label_quest_avail: Qüestionaris disponibles
+label_quest_plural: Qüestionaris 
+label_read: Llegir...
+label_register: Registrar-se 
+label_registered_on: Inscrit el
+label_reply_plural: Respostes 
+label_report: Informe 
+label_report_plural: Informes 
+label_result: %d resultat 
+label_result_plural: %d resultats
+label_role: Rol 
+label_role_and_permissions: Rols i permisos
+label_role_new: Nou rol 
+label_role_plural: Rols 
+label_search: Recerca
+label_send_information: Informació del compte enviat a l'usuari
+label_settings: Configuració 
+label_show: Mostrar 
+label_user: Usuari
+label_user_new: Nou usuari 
+label_user_plural: Usuaris 
+label_year: Any
 login_label_1: Has oblidat la teva contrasenya?
 login_label_2: Envia't un correu 
 login_label_3: amb informació sobre com crear una nova contrasenya 
 login_label_4: Nou en Teskal?
 login_label_5: Crea un compte
 login_label_6: gratis.
-footer_1: Disseny 
-footer_2: Contacte en info rova teskal.com
+mail_subject_lost_password: La teva contrasenya de Teskal
+mail_subject_register: Activació del compte de Teskal
+notice_account_activated: El teu compte ha estat activat. Pots entrar.
+notice_account_invalid_creditentials: Usuari o contrasenya no vàlid.
+notice_account_lost_email_sent: Se li ha enviat un correu amb instruccions per crear una contrasenya.
+notice_account_password_updated: Contrasenya actualitzada.
+notice_account_register_done: Compte creat. Se li ha enviat un correu amb instruccions per activar-la.
+notice_account_unknown_email: Usuari desconegut.
+notice_account_updated: El compte s'ha modificat.
+notice_account_wrong_password: Contrasenya errònia.
+notice_can_t_change_password: Aquest compte usa una autenticació externa. No es pot canviar la contrasenya.
+notice_file_not_found: La pàgina que intentaves tenir accés no existeix ni s'ha tret.
+notice_locking_conflict: Data have been updated by another user.
+notice_not_authorized: No està autoritzat a accedir a aquesta pàgina.
+notice_scm_error: L'entrada i/o la revisió no existeix en el dipòsit.
+notice_successful_connection: Successful connection.
+notice_successful_create: Successful creation.
+notice_successful_delete: Successful deletion.
+notice_successful_update: Successful update.
 quest12: Qüestionari de Clima Motivacional
 quest12_10: Ho faig tot el millor que es
 quest12_11: Assoleixo la meta que em vaig proposar
@@ -42,7 +176,6 @@ quest12_d1_c: Aquest alt valor associat clima motivacional rendiment situat per 
 quest12_d2_a: El clima motivacional de mestria, es troba en nivells baixos, la qual cosa és una mica preocupant. Li costa valorar positivament les millores de l@s esportistes i, quan s'enfrontin a situacions noves o de gran dificultat se sentiran incòmodes, sense iniciativa Habrá per orientar al tècnic perquè valori la importància de les millores que es produeixin, a través de l'autocomparació de l'esportista.
 quest12_d2_b: El clima motivacional de mestria, es troba en nivells mitjos, el qual és adequat però millorable. Valora positivament les millores dels seus esportistes, el que els ajuda a afronta amb bona actitud situacions noves o de gran dificultat. Serà adequat recordar-li la importància que tenen les millores perquè els esportistes aconsegueixin els seus objectius, reconeixent i valorant el seu esforç en produir-se una millora personal, per lleugera que sigui.
 quest12_d2_c: El clima motivacional de mestria, es troba en nivells alts, la qual cosa és positiu. Aquest tècnic se centra en la millora personal de l@s esportistes, sent això el més important. Això contribueix a afrontar, amb una excel·lent actitud, situacions noves o de gran dificultat. Genera una influència positiva en el compromís amb l'entrenament, en la competència percebuda i minimitza la possible ansietat davant els errors que poguessin tenir l@s esportistes.
-
 quest12_header: En practicar esport, meu entrenador/a pensa que tinc èxit quan
 quest12_intro: Més a baix hi ha una sèrie de comentaris i frases relacionades amb situacions i comportament de competició. Si us plau, llegeix acuradament i després selecciona el percentatge que millor descrigui l'opinió del teu entrenador.
 quest12_label_0: Clima Motivacional
@@ -116,19 +249,22 @@ quest2_val_1: En general el nivell de tolerància presenta uns valors mitjos mol
 quest2_val_2: En general el nivell de tolerància presenta uns valors mitjos positius, per la qual cosa li disposa de recursos per afrontar situacions especials, tant en l'entrenament com en la competició. El nivell dels generadors en el seu conjunt se situen en la part alta del nivell baix, mentre que els valors de de les dimensions recuperadores se situen en la part alta del nivell mig, entorn de 4, com els que hem assenyalat. Podem assenyalar que això esportista té|posseeix una adequada percepció quant al seu estat de forma i a les seves prestacions de rendiment, es troba motivat i amb moltes ganes d'assolir els seus objectius.
 quest2_val_3: En general el nivell de tolerància es troba en una delicada situació, ja que existeix una igualtat entre els valors generadors i recuperadors, per la qual cosa es troba en una situació d'alarma, però amb recursos suficients per afrontar-la i intentar reduir el nivell d'estrès generat per les dimensions assenyalades. És important plantejar un treball|feina específic recolzat per continguts relacionats amb la Pressió/Estrès i, a més, implementar-lo amb una exploració presencial a l'esportista, per conèixer la possible causa estresora i, d'aquesta manera abordar-la adequadament.
 quest2_val_4: En general el grau de tolerància es troba en nivells baixíssims, ja que el nivell dels valors mitjos corresponent als generadors són majors que els dels recuperadors. És una situació de reg que necessita ser abordada immediatament amb l'assessorament del tutor, llevat que de la reflexió conjunta entrenador/a-esportista que es realitzi s'identifiquin les causes que generen els valors assenyalats. En aquest cas es pot plantejar un treball|feina específic recolzat per continguts relacionats amb la Pressió/Estrès i l'orientació indirecta del tutor.
-
 quest2_valor_0: 0 (res)
 quest2_valor_1: 1 (rares vegades)
 quest2_valor_2: 2 (de vegades)
 quest2_valor_3: 3 (sovint)
 quest2_valor_4: 4 (moltes vegades)
 quest2_valor_5: 5 (gairebé sempre)
-quest2_valor_6: 6 (sempre)
+quest2_valor_6: 6 (sempre)      
+
+signup_label_10: Condicions del Servei
+signup_label_11: En fer clic en 'Guardar', adjunt la meva signatura electrònica i estic d'acord amb les < a href="http:/account/terms">Condicions del Servei</a > de Teskal.
 signup_label_1: Pas signup_label_2: Escull un usuari i un llenguatge.
 signup_label_3: El llenguatge serà usat quan entris la pròxima vegada.
 signup_label_4: Elegeix una contrasenya per al teu nou compte.
 signup_label_5: La contrasenya ha de tenir de 6 a 12 caràcters de longitud.
 signup_label_6: Detalls email.
-signup_label_7: Escriu la teva direcció|adreça de correu.
-signup_label_8: La direcció|adreça ha de ser vàlida per poder activar el teu compte.
-signup_label_9: Submit form signup_label_10: Condicions del Servei
+signup_label_7: Escriu la teva direcció de correu.
+signup_label_8: La direcció ha de ser vàlida per poder activar el teu compte.
+signup_label_9: Submit form signup
+label_10: Condicions del Servei
