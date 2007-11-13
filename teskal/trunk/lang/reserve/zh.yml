@@ -39,45 +39,62 @@ activerecord_error_greater_than_start_date: 必需大于开始日期
 activerecord_error_not_same_project: doesn't belong to the same project
 activerecord_error_circular_dependency: This relation would create a circular dependency
 
-general_fmt_age: %d yr
-general_fmt_age_plural: %d yrs
-general_fmt_date: %%m/%%d/%%Y
-general_fmt_datetime: %%m/%%d/%%Y %%I:%%M %%p
-general_fmt_datetime_short: %%b %%d, %%I:%%M %%p
-general_fmt_time: %%I:%%M %%p
-general_text_No: '否'
-general_text_Yes: '是'
-general_text_no: '否'
-general_text_yes: '是'
-general_lang_name: 'Chinese (简体中文)'
-general_csv_separator: ','
-general_csv_encoding: gb2312
-general_pdf_encoding: Big5
-general_day_names: 一,二,三,四,五,六,日
+button_login: 登录
+button_submit: 提交
+button_save: 保存
+button_check_all: 全选
+button_uncheck_all: 清除
+button_delete: 删除
+button_create: 创建
+button_test: 测试
+button_edit: 编辑
+button_add: 新增
+button_change: 修改
+button_apply: 应用
+button_clear: 清除
+button_lock: 锁定
+button_unlock: 解锁
+button_download: 下载
+button_list: 列表
+button_view: 查看
+button_move: 移动
+button_back: 返回
+button_cancel: 取消
+button_activate: 激活
+button_sort: 排序
+button_log_time: 登记工时
+button_rollback: Rollback to this version
+button_watch: Watch
+button_unwatch: Unwatch
+button_reply: Reply
+button_archive: Archive
+button_unarchive: Unarchive
 
-notice_account_updated: 帐户更新成功。
-notice_account_invalid_creditentials: 用户名或密码不正确
-notice_account_password_updated: 成功更新口令
-notice_account_wrong_password: 错误的口令
-notice_account_register_done: 帐户已创建成功
-notice_account_unknown_email: 未知用户
-notice_can_t_change_password: 该帐户使用了外部认证。无法更改口令。
-notice_account_lost_email_sent: 邮件已被发送，邮件中有关于选择新口令的指导
-notice_account_activated: 您的帐号已被激活。您现在可以登录了。
-notice_successful_create: 创建成功
-notice_successful_update: 更新成功
-notice_successful_delete: 删除成功
-notice_successful_connection: 连接成功
-notice_file_not_found: 您访问的页面不存在或已被删除。
-notice_locking_conflict: 数据已被另一个用户更新
-notice_scm_error: 在版本库中不存在该条目或修订
-notice_not_authorized: You are not authorized to access this page.
+default_role_manager: 管理员
+default_role_developper: 开发人员
+default_role_reporter: 报告人员
+default_tracker_bug: 问题
+default_tracker_feature: 功能
+default_tracker_support: 支持
+default_issue_status_new: 新建
+default_issue_status_assigned: 已分配
+default_issue_status_resolved: 已解决
+default_issue_status_feedback: 回复
+default_issue_status_closed: 已关闭
+default_issue_status_rejected: 已打回
+default_doc_category_user: 用户文档
+default_doc_category_tech: 技术文档
+default_priority_low: 低
+default_priority_normal: 普通
+default_priority_high: 高
+default_priority_urgent: 紧急
+default_priority_immediate: 立刻
+default_activity_design: 设计
+default_activity_development: 开发
 
-mail_subject_lost_password: 您的Teskal口令
-mail_subject_register: Teskal帐户激活
-
-gui_validation_error: 1 个错误
-gui_validation_error_plural: %d 个错误
+enumeration_issue_priorities: 任务优先级
+enumeration_doc_categories: 文档类别
+enumeration_activities: Activities (time tracking)
 
 field_name: 名称
 field_description: 描述
@@ -157,25 +174,24 @@ field_is_filter: Used as a filter
 field_issue_to_id: Related issue
 field_delay: Delay
 
-setting_app_title: 应用程序标题
-setting_app_subtitle: 应用程序子标题
-setting_welcome_text: 欢迎文字
-setting_default_language: 默认语言
-setting_login_required: 要求认证
-setting_self_registration: 允许自注册
-setting_attachment_max_size: 附件最大尺寸
-setting_issues_export_limit: Issues export limit
-setting_mail_from: Emission mail address
-setting_host_name: 主机名称
-setting_text_formatting: 文本格式
-setting_wiki_compression: Wiki history compression
-setting_feeds_limit: Feed content limit
-setting_autofetch_changesets: Autofetch commits
-setting_sys_api_enabled: Enable WS for repository management
-setting_commit_ref_keywords: Referencing keywords
-setting_commit_fix_keywords: Fixing keywords
-setting_autologin: Autologin
-setting_date_format: Date format
+general_fmt_age: %d yr
+general_fmt_age_plural: %d yrs
+general_fmt_date: %%m/%%d/%%Y
+general_fmt_datetime: %%m/%%d/%%Y %%I:%%M %%p
+general_fmt_datetime_short: %%b %%d, %%I:%%M %%p
+general_fmt_time: %%I:%%M %%p
+general_text_No: '否'
+general_text_Yes: '是'
+general_text_no: '否'
+general_text_yes: '是'
+general_lang_name: 'Chinese (简体中文)'
+general_csv_separator: ','
+general_csv_encoding: gb2312
+general_pdf_encoding: Big5
+general_day_names: 一,二,三,四,五,六,日
+
+gui_validation_error: 1 个错误
+gui_validation_error_plural: %d 个错误
 
 label_user: 用户
 label_user_plural: 用户列表
@@ -407,36 +423,46 @@ label_date_from: From
 label_date_to: To
 label_language_based: Language based
 
-button_login: 登录
-button_submit: 提交
-button_save: 保存
-button_check_all: 全选
-button_uncheck_all: 清除
-button_delete: 删除
-button_create: 创建
-button_test: 测试
-button_edit: 编辑
-button_add: 新增
-button_change: 修改
-button_apply: 应用
-button_clear: 清除
-button_lock: 锁定
-button_unlock: 解锁
-button_download: 下载
-button_list: 列表
-button_view: 查看
-button_move: 移动
-button_back: 返回
-button_cancel: 取消
-button_activate: 激活
-button_sort: 排序
-button_log_time: 登记工时
-button_rollback: Rollback to this version
-button_watch: Watch
-button_unwatch: Unwatch
-button_reply: Reply
-button_archive: Archive
-button_unarchive: Unarchive
+mail_subject_lost_password: 您的Teskal口令
+mail_subject_register: Teskal帐户激活
+
+notice_account_updated: 帐户更新成功。
+notice_account_invalid_creditentials: 用户名或密码不正确
+notice_account_password_updated: 成功更新口令
+notice_account_wrong_password: 错误的口令
+notice_account_register_done: 帐户已创建成功
+notice_account_unknown_email: 未知用户
+notice_can_t_change_password: 该帐户使用了外部认证。无法更改口令。
+notice_account_lost_email_sent: 邮件已被发送，邮件中有关于选择新口令的指导
+notice_account_activated: 您的帐号已被激活。您现在可以登录了。
+notice_successful_create: 创建成功
+notice_successful_update: 更新成功
+notice_successful_delete: 删除成功
+notice_successful_connection: 连接成功
+notice_file_not_found: 您访问的页面不存在或已被删除。
+notice_locking_conflict: 数据已被另一个用户更新
+notice_scm_error: 在版本库中不存在该条目或修订
+notice_not_authorized: You are not authorized to access this page.
+
+setting_app_title: 应用程序标题
+setting_app_subtitle: 应用程序子标题
+setting_welcome_text: 欢迎文字
+setting_default_language: 默认语言
+setting_login_required: 要求认证
+setting_self_registration: 允许自注册
+setting_attachment_max_size: 附件最大尺寸
+setting_issues_export_limit: Issues export limit
+setting_mail_from: Emission mail address
+setting_host_name: 主机名称
+setting_text_formatting: 文本格式
+setting_wiki_compression: Wiki history compression
+setting_feeds_limit: Feed content limit
+setting_autofetch_changesets: Autofetch commits
+setting_sys_api_enabled: Enable WS for repository management
+setting_commit_ref_keywords: Referencing keywords
+setting_commit_fix_keywords: Fixing keywords
+setting_autologin: Autologin
+setting_date_format: Date format
 
 status_active: 激活
 status_registered: 已注册
@@ -461,29 +487,3 @@ text_tracker_no_workflow: No workflow defined for this tracker
 text_unallowed_characters: Unallowed characters
 text_comma_separated: Multiple values allowed (comma separated).
 text_issues_ref_in_commit_messages: Referencing and fixing issues in commit messages
-
-default_role_manager: 管理员
-default_role_developper: 开发人员
-default_role_reporter: 报告人员
-default_tracker_bug: 问题
-default_tracker_feature: 功能
-default_tracker_support: 支持
-default_issue_status_new: 新建
-default_issue_status_assigned: 已分配
-default_issue_status_resolved: 已解决
-default_issue_status_feedback: 回复
-default_issue_status_closed: 已关闭
-default_issue_status_rejected: 已打回
-default_doc_category_user: 用户文档
-default_doc_category_tech: 技术文档
-default_priority_low: 低
-default_priority_normal: 普通
-default_priority_high: 高
-default_priority_urgent: 紧急
-default_priority_immediate: 立刻
-default_activity_design: 设计
-default_activity_development: 开发
-
-enumeration_issue_priorities: 任务优先级
-enumeration_doc_categories: 文档类别
-enumeration_activities: Activities (time tracking)
