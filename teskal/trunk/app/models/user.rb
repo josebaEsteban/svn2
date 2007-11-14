@@ -15,7 +15,8 @@ class User < ActiveRecord::Base
 
   has_many :answers
   has_one :preference, :dependent => :destroy, :class_name => 'UserPreference'
-
+  composed_of :timezone, :class_name => 'TZInfo::Timezone', :mapping => %w( time_zone time_zone )
+  
   attr_accessor :password, :password_confirmation
   attr_accessor :last_before_login_on
   # Prevents unauthorized assignments
@@ -57,6 +58,7 @@ class User < ActiveRecord::Base
     user = find(:first, :conditions => ["login=?", login])
     if user
       # user is already in local database
+      user.update_attribute(:ip_last, request.remote_ip)
       return nil if !user.active?
       entra=0
       if entra==1
