@@ -23,15 +23,17 @@ class AccountController < ApplicationController
   end
 
   # Login request and validation
-  def login
+  def login 
     if request.get?
       # Logout user
-      self.logged_in_user = nil
+      self.logged_in_user = nil 
     else
       # Authenticate user
-      user = User.try_to_login(params[:login], params[:password])
-      if user 
-        self.logged_in_user = user
+      user = User.try_to_login(params[:login], params[:password]) 
+      if user
+        self.logged_in_user = user 
+        user.update_attribute(:ip_last, request.remote_ip) 
+        
         # generate a key and set cookie if autologin
         if params[:autologin] && Setting.autologin? 
           puts "autologin"
