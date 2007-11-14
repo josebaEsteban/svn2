@@ -18,10 +18,23 @@
       <%- end -%>
     <th scope="col"><div align="left"><%= user.ip %></div></th>
     <th scope="col"><div align="left"><%= user.ip_last %></div></th>
-    <th scope="col"><div align="left"><%= user.language %></div></th>
-    <th scope="col"><div align="left"><%= user.role %></div></th>
+    <th scope="col"><div align="left"><%= user.language %></div></th> 
+    <th scope="col"><div align="left">
+	<%- case user.status -%>
+	<%- when 1: -%>active
+	<%- when 2: -%>registered
+	<%- when 3: -%>locked
+	<%- end -%>  
+	</div></th>
+    <th scope="col"><div align="left">	
+	<%- case user.role -%>
+	<%- when 1: -%>gratis
+	<%- when 2: -%>athlete
+	<%- when 3: -%>coach
+	<%- when 4: -%>tutor
+ 	<%- end -%>
+	</div></th>
     <th scope="col"><div align="left"><%= user.time_zone %></div></th>
-    <th scope="col"><div align="left"><%= user.status %></div></th>
     <th scope="col"><div align="left"><%= user.created_on %></div></th>
     <th scope="col"><div align="left"><%= user.updated_on %></div></th>
     </tr>   
