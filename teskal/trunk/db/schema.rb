@@ -110,58 +110,6 @@ ActiveRecord::Schema.define(:version => 0) do
     t.column "created_on",     :datetime
   end
 
-  create_table "globalize_countries", :force => true do |t|
-    t.column "code",                   :string, :limit => 2
-    t.column "english_name",           :string
-    t.column "date_format",            :string
-    t.column "currency_format",        :string
-    t.column "currency_code",          :string, :limit => 3
-    t.column "thousands_sep",          :string, :limit => 2
-    t.column "decimal_sep",            :string, :limit => 2
-    t.column "currency_decimal_sep",   :string, :limit => 2
-    t.column "number_grouping_scheme", :string
-  end
-
-  add_index "globalize_countries", ["code"], :name => "index_globalize_countries_on_code"
-
-  create_table "globalize_languages", :force => true do |t|
-    t.column "iso_639_1",             :string,  :limit => 2
-    t.column "iso_639_2",             :string,  :limit => 3
-    t.column "iso_639_3",             :string,  :limit => 3
-    t.column "rfc_3066",              :string
-    t.column "english_name",          :string
-    t.column "english_name_locale",   :string
-    t.column "english_name_modifier", :string
-    t.column "native_name",           :string
-    t.column "native_name_locale",    :string
-    t.column "native_name_modifier",  :string
-    t.column "macro_language",        :boolean
-    t.column "direction",             :string
-    t.column "pluralization",         :string
-    t.column "scope",                 :string,  :limit => 1
-  end
-
-  add_index "globalize_languages", ["iso_639_1"], :name => "index_globalize_languages_on_iso_639_1"
-  add_index "globalize_languages", ["iso_639_2"], :name => "index_globalize_languages_on_iso_639_2"
-  add_index "globalize_languages", ["iso_639_3"], :name => "index_globalize_languages_on_iso_639_3"
-  add_index "globalize_languages", ["rfc_3066"], :name => "index_globalize_languages_on_rfc_3066"
-
-  create_table "globalize_translations", :force => true do |t|
-    t.column "type",                :string
-    t.column "tr_key",              :string
-    t.column "table_name",          :string
-    t.column "item_id",             :integer
-    t.column "facet",               :string
-    t.column "built_in",            :boolean
-    t.column "language_id",         :integer
-    t.column "pluralization_index", :integer
-    t.column "text",                :text
-    t.column "namespace",           :string
-  end
-
-  add_index "globalize_translations", ["tr_key", "language_id"], :name => "index_globalize_translations_on_tr_key_and_language_id"
-  add_index "globalize_translations", ["table_name", "item_id", "language_id"], :name => "globalize_translations_table_name_and_item_and_language"
-
   create_table "members", :force => true do |t|
     t.column "user_id",    :integer,  :default => 0, :null => false
     t.column "project_id", :integer,  :default => 0, :null => false
@@ -238,21 +186,23 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   create_table "users", :force => true do |t|
-    t.column "login",             :string,   :limit => 30, :default => "",    :null => false
-    t.column "hashed_password",   :string,   :limit => 40, :default => "",    :null => false
-    t.column "firstname",         :string,   :limit => 30, :default => "",    :null => false
-    t.column "lastname",          :string,   :limit => 30, :default => "",    :null => false
-    t.column "mail",              :string,   :limit => 60, :default => "",    :null => false
-    t.column "mail_notification", :boolean,                :default => true,  :null => false
-    t.column "admin",             :boolean,                :default => false, :null => false
-    t.column "status",            :integer,                :default => 1,     :null => false
+    t.column "login",             :string,   :limit => 30, :default => "",              :null => false
+    t.column "hashed_password",   :string,   :limit => 40, :default => "",              :null => false
+    t.column "firstname",         :string,   :limit => 30, :default => "",              :null => false
+    t.column "lastname",          :string,   :limit => 30, :default => "",              :null => false
+    t.column "mail",              :string,   :limit => 60, :default => "",              :null => false
+    t.column "mail_notification", :boolean,                :default => true,            :null => false
+    t.column "admin",             :boolean,                :default => false,           :null => false
+    t.column "status",            :integer,                :default => 1,               :null => false
     t.column "last_login_on",     :datetime
     t.column "language",          :string,   :limit => 5,  :default => ""
     t.column "auth_source_id",    :integer
     t.column "created_on",        :datetime
     t.column "updated_on",        :datetime
     t.column "ip",                :string,   :limit => 15
-    t.column "role",              :integer,                :default => 1,     :null => false
+    t.column "role",              :integer,                :default => 1,               :null => false
+    t.column "time_zone",         :string,   :limit => 25, :default => "Europe/Madrid"
+    t.column "ip_last",           :string,   :limit => 15
   end
 
 end
