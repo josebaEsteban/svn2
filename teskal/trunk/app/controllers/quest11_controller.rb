@@ -82,7 +82,7 @@ class Quest11Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    introjectedRegulation = (@answer.answ10 + @answer.answ15 + @answer.answ23 + @answer.answ29)/4.0 
+    introjectedRegulation = (@answer.answ10 + @answer.answ15 + @answer.answ23 + @answer.answ29)/4.0
     item=3
     if introjectedRegulation < 3
       @advice[item]=l(:quest11_d4_a)
@@ -96,7 +96,7 @@ class Quest11Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    motivacionExtrinseca = (@answer.answ7 + @answer.answ11 + @answer.answ17 + @answer.answ25)/4.0 
+    motivacionExtrinseca = (@answer.answ7 + @answer.answ11 + @answer.answ17 + @answer.answ25)/4.0
     item=4
     if motivacionExtrinseca < 3
       @advice[item]=l(:quest11_d5_a)
@@ -122,6 +122,44 @@ class Quest11Controller < ApplicationController
       else
         @advice[item]=l(:quest11_d6_c)
         @icon[item]="stop"
+      end
+    end
+    valorIntrinseco =  (motivacionIntrinseca + integratedRegulation + identifiedRegulation) /3.0
+    valorExtrinseco =  (introjectedRegulation + motivacionExtrinseca + amotivation) / 3.0
+
+    item=6
+    if valorIntrinseco >=5
+      if valorExtrinseco <=3
+        @advice[item]=l(:quest11_val_1)
+        @titulo=l(:quest11_valor_tit_1)
+      elsif valorExtrinseco >3 and  valorExtrinseco < 5
+        @advice[item]=l(:quest11_val_2)
+        @titulo=l(:quest11_valor_tit_2)
+      else
+        @advice[item]=l(:quest11_val_3)
+        @titulo=l(:quest11_valor_tit_3)
+      end
+    elsif valorIntrinseco >=3
+      if valorExtrinseco <=3
+        @advice[item]=l(:quest11_val_4)
+        @titulo=l(:quest11_valor_tit_4)
+      elsif valorExtrinseco >3 and  valorExtrinseco < 5
+        @advice[item]=l(:quest11_val_5)
+        @titulo=l(:quest11_valor_tit_5)
+      else
+        @advice[item]=l(:quest11_val_6)
+        @titulo=l(:quest11_valor_tit_6)
+      end
+    else
+      if valorExtrinseco <=3
+        @advice[item]=l(:quest11_val_7)
+        @titulo=l(:quest11_valor_tit_7)
+      elsif valorExtrinseco >3 and  valorExtrinseco < 5
+        @advice[item]=l(:quest11_val_8)
+        @titulo=l(:quest11_valor_tit_8)
+      else
+        @advice[item]=l(:quest11_val_9)
+        @titulo=l(:quest11_valor_tit_9)
       end
     end
 
@@ -157,7 +195,7 @@ class Quest11Controller < ApplicationController
 
     strXML = "<chart caption='"+l(:quest11_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='7' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
     strXML = strXML + "<set label='" + l(:quest11_label_1) + "' value='" + acorta(motivacionIntrinseca) + "'/>"
-    strXML = strXML + "<set label='" + l(:quest11_label_2) + "' value='" + acorta(integratedRegulation) + "'/>" 
+    strXML = strXML + "<set label='" + l(:quest11_label_2) + "' value='" + acorta(integratedRegulation) + "'/>"
     strXML = strXML + "<set label='" + l(:quest11_label_3) + "' value='" + acorta(identifiedRegulation) + "'/>"
     strXML = strXML + "<set label='" + l(:quest11_label_4) + "' value='" + acorta(introjectedRegulation) + "'/>"
     strXML = strXML + "<set label='" + l(:quest11_label_5) + "' value='" + acorta(motivacionExtrinseca) + "'/>"
