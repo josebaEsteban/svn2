@@ -100,14 +100,14 @@ class Quest11Controller < ApplicationController
     item=4
     if motivacionExtrinseca < 3
       @advice[item]=l(:quest11_d5_a)
-      @icon[item]="stop"
+      @icon[item]="star"
     else
       if motivacionExtrinseca < 5
         @advice[item]=l(:quest11_d5_b)
         @icon[item]="medium"
       else
         @advice[item]=l(:quest11_d5_c)
-        @icon[item]="star"
+        @icon[item]="stop"
       end
     end
     amotivation = (@answer.answ3 + @answer.answ6 + @answer.answ21 + @answer.answ32)/4.0
