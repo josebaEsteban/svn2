@@ -37,117 +37,93 @@ class Quest11Controller < ApplicationController
     @icon=[]
 
     toKnow = (@answer.answ2 + @answer.answ5 + @answer.answ26 + @answer.answ30)/4.0
-    item=0
-    # if toKnow < 2.5
-    #   @advice[item]=l(:quest11_d1_a)
-    #   @icon[item]="stop"
-    # else
-    #   if toKnow < 4
-    #     @advice[item]=l(:quest11_d1_b)
-    #     @icon[item]="medium"
-    #   else
-    #     @advice[item]=l(:quest11_d1_c)
-    #     @icon[item]="star"
-    #   end
-    # end
     toAccomplish = (@answer.answ9 + @answer.answ13 + @answer.answ16 + @answer.answ22)/4.0
-    item=1
-    # if toAccomplish < 2.5
-    #   @advice[item]=l(:quest11_d2_a)
-    #   @icon[item]="stop"
-    # else
-    #   if toAccomplish < 4
-    #     @advice[item]=l(:quest11_d2_b)
-    #     @icon[item]="medium"
-    #   else
-    #     @advice[item]=l(:quest11_d2_c)
-    #     @icon[item]="star"
-    #   end
-    # end
     toExperience = (@answer.answ1 + @answer.answ14 + @answer.answ20 + @answer.answ28)/4.0
-    item=2
-    # if toExperience < 2.5
-    #   @advice[item]=l(:quest11_d3_a)
-    #   @icon[item]="stop"
-    # else
-    #   if toExperience < 4
-    #     @advice[item]=l(:quest11_d3_b)
-    #     @icon[item]="medium"
-    #   else
-    #     @advice[item]=l(:quest11_d3_c)
-    #     @icon[item]="star"
-    #   end
-    # end
+    motivacionIntrinseca= (toKnow+toAccomplish+toExperience)/3.0
+
+    item=0
+    if motivacionIntrinseca < 3
+      @advice[item]=l(:quest11_d1_a)
+      @icon[item]="stop"
+    else
+      if motivacionIntrinseca < 5
+        @advice[item]=l(:quest11_d1_b)
+        @icon[item]="medium"
+      else
+        @advice[item]=l(:quest11_d1_c)
+        @icon[item]="star"
+      end
+    end
     integratedRegulation = (@answer.answ4 + @answer.answ18 + @answer.answ24 + @answer.answ31)/4.0
-    item=3
-    # if integratedRegulation < 2.5
-    #   @advice[item]=l(:quest11_d4_a)
-    #   @icon[item]="stop"
-    # else
-    #   if integratedRegulation < 4
-    #     @advice[item]=l(:quest11_d4_b)
-    #     @icon[item]="medium"
-    #   else
-    #     @advice[item]=l(:quest11_d4_c)
-    #     @icon[item]="star"
-    #   end
-    # end
+    item=1
+    if integratedRegulation < 3
+      @advice[item]=l(:quest11_d2_a)
+      @icon[item]="stop"
+    else
+      if integratedRegulation < 5
+        @advice[item]=l(:quest11_d2_b)
+        @icon[item]="medium"
+      else
+        @advice[item]=l(:quest11_d2_c)
+        @icon[item]="star"
+      end
+    end
     identifiedRegulation = (@answer.answ8 + @answer.answ12 + @answer.answ19 + @answer.answ27)/4.0
-    item=4
-    # if identifiedRegulation < 2.5
-    #   @advice[item]=l(:quest11_d5_a)
-    #   @icon[item]="stop"
-    # else
-    #   if identifiedRegulation < 4
-    #     @advice[item]=l(:quest11_d5_b)
-    #     @icon[item]="medium"
-    #   else
-    #     @advice[item]=l(:quest11_d5_c)
-    #     @icon[item]="star"
-    #   end
-    # end
+    item=2
+    if identifiedRegulation < 3
+      @advice[item]=l(:quest11_d3_a)
+      @icon[item]="stop"
+    else
+      if identifiedRegulation < 5
+        @advice[item]=l(:quest11_d3_b)
+        @icon[item]="medium"
+      else
+        @advice[item]=l(:quest11_d3_c)
+        @icon[item]="star"
+      end
+    end
     introjectedRegulation = (@answer.answ10 + @answer.answ15 + @answer.answ23 + @answer.answ29)/4.0 
-    item=5
-    # if introjectedRegulation < 2.5
-    #   @advice[item]=l(:quest11_d6_a)
-    #   @icon[item]="stop"
-    # else
-    #   if introjectedRegulation < 4
-    #     @advice[item]=l(:quest11_d6_b)
-    #     @icon[item]="medium"
-    #   else
-    #     @advice[item]=l(:quest11_d6_c)
-    #     @icon[item]="star"
-    #   end
-    # end
-    externalRegulation = (@answer.answ7 + @answer.answ11 + @answer.answ17 + @answer.answ25)/4.0 
-    item=6
-    # if externalRegulation < 2.5
-    #   @advice[item]=l(:quest11_d7_a)
-    #   @icon[item]="stop"
-    # else
-    #   if externalRegulation < 4
-    #     @advice[item]=l(:quest11_d7_b)
-    #     @icon[item]="medium"
-    #   else
-    #     @advice[item]=l(:quest11_d7_c)
-    #     @icon[item]="star"
-    #   end
-    # end
+    item=3
+    if introjectedRegulation < 3
+      @advice[item]=l(:quest11_d4_a)
+      @icon[item]="stop"
+    else
+      if introjectedRegulation < 5
+        @advice[item]=l(:quest11_d4_b)
+        @icon[item]="medium"
+      else
+        @advice[item]=l(:quest11_d4_c)
+        @icon[item]="star"
+      end
+    end
+    motivacionExtrinseca = (@answer.answ7 + @answer.answ11 + @answer.answ17 + @answer.answ25)/4.0 
+    item=4
+    if motivacionExtrinseca < 3
+      @advice[item]=l(:quest11_d5_a)
+      @icon[item]="stop"
+    else
+      if motivacionExtrinseca < 5
+        @advice[item]=l(:quest11_d5_b)
+        @icon[item]="medium"
+      else
+        @advice[item]=l(:quest11_d5_c)
+        @icon[item]="star"
+      end
+    end
     amotivation = (@answer.answ3 + @answer.answ6 + @answer.answ21 + @answer.answ32)/4.0
-    item=7
-    # if amotivation < 2.5
-    #   @advice[item]=l(:quest11_d8_a)
-    #   @icon[item]="stop"
-    # else
-    #   if amotivation < 4
-    #     @advice[item]=l(:quest11_d8_b)
-    #     @icon[item]="medium"
-    #   else
-    #     @advice[item]=l(:quest11_d8_c)
-    #     @icon[item]="star"
-    #   end
-    # end
+    item=5
+    if amotivation < 3
+      @advice[item]=l(:quest11_d6_a)
+      @icon[item]="star"
+    else
+      if amotivation < 5
+        @advice[item]=l(:quest11_d6_b)
+        @icon[item]="medium"
+      else
+        @advice[item]=l(:quest11_d6_c)
+        @icon[item]="stop"
+      end
+    end
 
     #strXML will be used to store the entire XML document generated
     strXML=''
@@ -180,14 +156,12 @@ class Quest11Controller < ApplicationController
     # @chart1= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest11", 750, 300, false, false)
 
     strXML = "<chart caption='"+l(:quest11_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='7' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
-    strXML = strXML + "<set label='" + l(:quest11_label_1) + "' value='" + acorta(toKnow) + "'/>"
-    strXML = strXML + "<set label='" + l(:quest11_label_2) + "' value='" + acorta(toAccomplish) + "'/>"
-    strXML = strXML + "<set label='" + l(:quest11_label_3) + "' value='" + acorta(toExperience) + "'/>"
-    strXML = strXML + "<set label='" + l(:quest11_label_4) + "' value='" + acorta(integratedRegulation) + "'/>" 
-    strXML = strXML + "<set label='" + l(:quest11_label_5) + "' value='" + acorta(identifiedRegulation) + "'/>"
-    strXML = strXML + "<set label='" + l(:quest11_label_6) + "' value='" + acorta(introjectedRegulation) + "'/>"
-    strXML = strXML + "<set label='" + l(:quest11_label_7) + "' value='" + acorta(externalRegulation) + "'/>"
-    strXML = strXML + "<set label='" + l(:quest11_label_8) + "' value='" + acorta(amotivation) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest11_label_1) + "' value='" + acorta(motivacionIntrinseca) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest11_label_2) + "' value='" + acorta(integratedRegulation) + "'/>" 
+    strXML = strXML + "<set label='" + l(:quest11_label_3) + "' value='" + acorta(identifiedRegulation) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest11_label_4) + "' value='" + acorta(introjectedRegulation) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest11_label_5) + "' value='" + acorta(motivacionExtrinseca) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest11_label_6) + "' value='" + acorta(amotivation) + "'/>"
     strXML = strXML + "</chart>"
 
     #Create the chart - Pie 3D Chart with data from strXML
