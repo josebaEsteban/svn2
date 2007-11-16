@@ -266,10 +266,13 @@ class ApplicationController < ActionController::Base
 
   # private
   # def set_timezone
-  #   TzTime.zone = TimeZone["Madrid"]
-  #   # TzTime.zone = @user.time_zone if loggedin?
+  #   if logged_in? && !current_user.time_zone.nil?
+  #     TzTime.zone = current_user.tz
+  #   else
+  #     TzTime.zone = TZInfo::Timezone.new(ENV['TZ'])
+  #   end
   #   yield
   #   TzTime.reset!
-  # end  
+  # end
 
 end

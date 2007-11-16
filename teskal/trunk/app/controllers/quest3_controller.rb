@@ -34,6 +34,8 @@ class Quest3Controller < ApplicationController
     @fecha = l_datetime(@answer.created_on)
     require_coach(@answer.user_id)
     @user=User.find(@answer.user_id )
+    TzTime.zone=@user.timezone
+    @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
     teskalChart3
   end
 

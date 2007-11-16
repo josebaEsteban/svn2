@@ -31,13 +31,14 @@ class Quest2Controller < ApplicationController
     #Database Objects - Initialization
     @answer = Answer.find(params[:id])
     # @answer = Answer.find(session[:use)
-    @fecha = l_datetime(@answer.created_on)
     require_coach(@answer.user_id)
     @user=User.find(@answer.user_id )
-    teskalChart2
+    TzTime.zone=@user.timezone
+    @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
+    teskal_chart2
   end
 
-  def teskalChart2
+  def teskal_chart2
     # @answer = Answer.find_first
     # calculo de las dimensiones
     descansoInterrumpido = (@answer.answ2 + @answer.answ9  + @answer.answ17 + @answer.answ23) /4.0
@@ -123,7 +124,7 @@ class Quest2Controller < ApplicationController
       if autoEficacia < 4
         @advice[item]=l(:quest2_d6_b)
         @icon[item]="medium"
-      else  
+      else
         @advice[item]=l(:quest2_d6_c)
         @icon[item]="star"
       end
