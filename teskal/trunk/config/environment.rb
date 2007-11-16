@@ -35,7 +35,7 @@ Rails::Initializer.run do |config|
   # Make Active Record use UTC-base instead of local time
 
   config.active_record.default_timezone = :utc
-  # ENV['TZ'] = 'UTC'
+  ENV['TZ'] = 'UTC'
     # ENV['TZ'] = 'Europe/Madrid'
 
   # Use Active Record's schema dumper instead of SQL when creating the test database
