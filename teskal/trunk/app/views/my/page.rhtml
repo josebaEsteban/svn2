@@ -101,6 +101,7 @@
     </tbody>
   </table>
 </div>
+<%- TzTime.zone=@user.timezone -%>
 <div class="splitcontentright">
   <center>
     <table cellspacing="0">
@@ -147,7 +148,7 @@
         <tr>
           <%- odd=1 end -%>
           <%- controlador="quest"+ answer.quest_id.to_s -%>
-          <td><%= l_datetime(answer.created_on)%></td> 
+          <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on))%></td> 
           <td><%= answer.competition %></td>
           <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
         </tr>
