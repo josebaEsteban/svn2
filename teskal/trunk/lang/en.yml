@@ -167,7 +167,7 @@ label_export_to: Export to
 label_f_hour: %.2f hour
 label_f_hour_plural: %.2f hours
 label_fill: Fill
-label_filled: Filled on
+label_filled: Date filled
 label_help: Help
 label_history: History
 label_home: Home
@@ -281,7 +281,6 @@ quest10_18: Piensa que l@s deportistas tienen éxito cuando lo hacen todo lo mej
 quest10_19: Tiene la máxima confianza en todos l@s deportistas cuando disputan una competición
 quest10_1: Permite que tomen decisiones que no se corresponden con la táctica prevista
 quest10_20: Cuando l@s deportistas cometen errores sigue manteniendo la confianza en ell@s
-#quest11
 quest10_2: Piensa que l@s deportistas tienen éxito cuando superan las dificultades
 quest10_3: Prefiere que el equipo gane a que 'Se hagan las cosas bien hechas'
 quest10_4: Sacrifica la calidad de la técnica de competición por amarrar el resultado
@@ -319,7 +318,6 @@ quest11_2: For the pleasure it gives me to know more about the sport that I prac
 quest11_30: For the pleasure of discovering new performance strategies.
 quest11_31: Because by doing it I am fully expressing my deepest values.
 quest11_32: I often ask myself; I can't seem to achieve the goals that I set for myself.
-# quest12
 quest11_3: I used to have good reasons for doing sports, but now I am asking myself if I should continue.
 quest11_4: Because practicing sports renects the essence of whom I am.
 quest11_5: For the pleasure of discovering new training techniques.
@@ -327,17 +325,42 @@ quest11_6: I don't know anymore; I have the impression that I am incapable of su
 quest11_7: Because it allows me to be well regarded by people that I know.
 quest11_8: Because, in my opinion, it is one of the best ways to meet people.
 quest11_9: Because I feel a lot of personal satisfaction while mastering certain difficult training techniques.
+quest11_d1_a: Este bajo valor de la motivación intrínseca, supone baja implicación en el entrenamiento y no disfruta de lo que está haciendo. Rehuye enfrentarse a tareas nuevas o difíciles en el entrenamiento y le cuesta centrarse en la mejora de sus puntos débiles.
+quest11_d1_b: Este valor medio de la motivación intrínseca, supone que se encuentra implicado en el entrenamiento, pero podía estarlo más. Siente cierta satisfacción personal cuando se le proponen tareas difíciles, sobre todo en el entrenamiento, y se encuentra centrado en la mejora de sus puntos débiles.
+quest11_d1_c: Este alto valor de la motivación intrínseca, supone que se encuentra altamente implicado en el entrenamiento y disfruta de lo que está haciendo. Además siente una alta satisfacción personal sobre todo al enfrentarse a tareas difíciles, tanto en el entrenamiento como en la competición, intenta hacer cosas que antes no lo había intentado y se encuentra muy centrado en la mejora de sus puntos débiles.
+quest11_d2_a: Este bajo nivel de regulación integrada supone una escasa concordancia con sus principios básicos, alejada de un reflejo de ser fiel a sí mismo. Duda de que este deporte constituya una parte integral de su vida y que se corresponda con su esencia.
+quest11_d2_b: Este nivel de regulación integrada supone cierta concordancia con sus principios básicos que alimenta una sensación de ser fiel a sí mismo. Además, considera que este deporte es una parte integral de su vida y que refleja, en parte, su esencia.
+quest11_d2_c: Este alto nivel de regulación integrada supone una alta concordancia con sus principios básicos y con una excelente sensación de ser fiel a sí mismo. Además, considera que este deporte es una parte integral de su vida y que refleja nítidamente su esencia.
+quest11_d3_a: Este valor bajo de regulación motivacional identificada le hace reconsiderar la idea de que la práctica de este deporte le permita contactar con gente y le ayuden a mantener buenas relaciones con sus amigos. Duda de que pueda brindarle oportunidades de desarrollo personal transferibles a otros ámbitos de su vida.
+quest11_d3_b: Este valor medio de regulación motivacional identificada le hace mantener la idea de que la práctica de este deporte le permite contactar con gente y mantener buenas relaciones con sus amigos. Además, piensa que puede brindar oportunidades de desarrollo personal para aplicarlos en otros ámbitos de su vida.
+quest11_d3_c: Este valor alto de regulación motivacional identificada refuerza la idea de que la práctica de este deporte le permite contactar con gente y mantener buenas relaciones con sus amigos. Además, piensa que le brinda excelentes posibilidades de desarrollo personal que le servirán para otros ámbitos de su vida.
+quest11_d4_a: Este bajo valor de regulación introyectada le hace pensar que este deporte, en parte, le ayuda a mantenerse en forma, lo que le genera cierta satisfacción consigo mismo, aunque considere que pueden existir otras razones más importantes.
+quest11_d4_b: Este valor de regulación introyectada se encuentra asociada a la necesidad de practicar este deporte para mantenerse en forma, lo que le hace sentirse a gusto consigo mismo pero, a veces se siente mal, porque el hecho de entrenar lo considera como una obligación.
+quest11_d4_c: Este alto valor de regulación introyectada se encuentra asociada a una importante necesidad de practicar este deporte para mantenerse en forma, lo que le hace sentirse a gusto consigo mismo, pero lo toma como una obligación y cuando no acude al entrenamiento, puede que se sienta culpable por no haber acudido.
+quest11_d5_a: Este bajo nivel de motivación extrínseca supone que no necesita demostrar lo bueno que es para tener prestigio y ser bien considerado entre sus amistades. Relativiza en valor que tiene, para los demás, el hecho de estar en buena forma.
+quest11_d5_b: Este nivel de motivación extrínseca le hace pensar que, el hecho de demostrar lo bueno que es le puede dar prestigio y contribuir a ser bien considerado entre sus amistades. También cree que, para los demás, el estar en buena forma tiene cierta importancia.
+quest11_d5_c: Este alto nivel de motivación extrínseca le hace pensar que, el hecho de demostrar lo bueno que es le dará prestigio y será bien considerado en su entorno social. También cree que, para los demás, el estar en buena forma es importante.
+quest11_d6_a: Este valor bajo supone que, tiene pocas dudas acerca de su capacidad para tener éxito y para conseguir las metas que se propone. Además, en ningún caso se cuestiona abandonar este deporte.
+quest11_d6_b: Este valor medio supone que, a veces le entran dudas en relación a su capacidad para tener éxito, se siente incapaz de conseguir las metas propuestas y, a veces, se cuestiona el abandonar este deporte.
+quest11_d6_c: Este valor tan alto supone que se está planteando abandonar este deporte, ya que siente cierta incapacidad para tener éxito. Además puede estar en peligro su continuidad, dado que se siente incapaz de conseguir las metas propuestas.
 quest11_header: Why do you practice your sport?
 quest11_intro: Using the scale below, please indicate to what extent each of the following items corresponds to one of the reasons for which you are presently practicing your sport.
-quest11_label_0: Intrinsic Motivation
-quest11_label_1: To know
-quest11_label_2: To accomplish
-quest11_label_3: To experience stimulation
-quest11_label_4: Integrated regulation
-quest11_label_5: Identified regulation
-quest11_label_6: Introjected regulation
-quest11_label_7: External regulation
-quest11_label_8: Amotivation
+quest11_label_0: Autodeterminated Motivation
+quest11_label_1: Intrinsic Motivation
+quest11_label_2: Integrated regulation
+quest11_label_3: Identified regulation
+quest11_label_4: Introjected regulation
+quest11_label_5: Extrinsic Motivation
+quest11_label_6: Amotivation
+quest11_val_1: Se produce un alto valor en las dimensiones motivacionales de carácter intrínseco, acompañadas de bajos valores en las dimensiones extrínsecas. Esto supone que, además de lo comentado en los apartados correspondientes, este nivel elevado de motivación autodeterminada le ayudará a mantener una alta eficacia en sus acciones, reforzará la persistencia en sus objetivos, le facilitará la utilización de estilos de afrontamiento positivos y contribuirá a alcanzar u mejor ajuste personal acompañado de mayores sensaciones de bienestar.
+quest11_val_2: Se produce un alto valor en las dimensiones motivacionales de regulación autodeterminada, acompañadas de valores medios en las dimensiones extrínsecas de la motivación. En principio supone que, por un lado, los altos valores de las dimensiones motivacionales de carácter intrínseco le ayudarán a mantener una alta eficacia en sus acciones, reforzará la persistencia en sus objetivos, le facilitará la utilización de estilos de afrontamiento positivos y contribuirá a alcanzar u mejor ajuste personal acompañado de mayores sensaciones de bienestar. Por otro, habrá que vigilar el comportamiento que, a corto plazo, se produzca en los valores de las dimensiones extrínsecas (la amotivación), dado que pueden minar el positivo estado motivacional indicado, sobre todo si esta valoración se ha realizado fuera del periodo competitivo.
+quest11_val_3: Como se puede observar, se producen altos valores en el conjunto de las dimensiones valoradas. En base a esto, se puede señalar que su estado motivacional es contradictorio y confuso, dado que los valores se agrupan en torno a los dos polos opuestos de la motivación (autodeterminado-no autodeterminado). Se hace necesario consultar con el/la tutor/a, salvo que los valores de la amotivación sean muy bajos y nos encontremos en periodo competitivo, en cuyo caso esta sugerencia sería recomendable. Además, sería conveniente mantener la vigilancia y volver a realizar otra valoración a corto plazo.
+quest11_val_4: Se produce un valor medio de las dimensiones motivacionales de regulación autodeterminadas, acompañadas de bajos valores en las no-autodeterminadas. En principio supone que, por un lado, los valores de las dimensiones motivacionales de carácter intrínseco le pueden ayudar a mantener una alta eficacia en sus acciones acompañada de cierta persistencia en sus objetivos, con una tendencia a utilizar estilos de afrontamiento positivos y a tener, a menudo, sensaciones de bienestar. Los bajos valores de las dimensiones extrínsecas pueden ser considerados muy positivamente, ya que suponen un antídoto contra la baja implicación en situaciones difíciles o la aparición de fatiga crónica, sobre todo si est@ deportista se encuentra fuera de su periodo competitivo. Se recomienda fortalecer e intentar elevar los valores de la motivación intrínseca.
+quest11_val_5: Se produce un valor medio tanto en las dimensiones motivacionales de regulación autodeterminada como no-autodeterminada. En principio supone que, por un lado, los valores de las dimensiones motivacionales de carácter intrínseco le pueden ayudar a mantener una alta eficacia en sus acciones acompañada de cierta persistencia en sus objetivos. Por otro, habrá que vigilar el comportamiento que, a corto plazo, se produzca en los valores de las dimensiones extrínsecas para contrarrestar la posible ausencia de motivación (amotivación) o el negativo impacto que puedan generar situaciones de presión exógena (motivación extrínseca). Sería conveniente consultar con el tutor para establecer una miniestrategia orientada a elevar los valores correspondientes a las dimensiones de la motivación intrínseca.
+quest11_val_6: Se produce un valor medio en las dimensiones motivacionales de regulación autodeterminada, acompañadas de altos valores en las dimensiones extrínsecas de la motivación. En principio supone que, por un lado, estos valores de las dimensiones motivacionales de carácter intrínseco le pueden ayudar a mantener una alta eficacia en sus acciones pero, tanto la persistencia en sus objetivos como la utilización de estilos de afrontamiento positivos se verán mermados. Por otro, estos altos valores de las dimensiones extrínsecas (sobre todo de la amotivación), le dificultarán alcanzar el nivel motivacional necesario para sentir un ajuste y un equilibrio personal acorde a los requerimientos del estado de rendimiento óptimo. Es necesario consultar con el/la tutor/a para reestablecer un equilibrio emocional y tomar medidas adecuadas que refuercen su persistencia y su continuidad.
+quest11_val_7: Se produce un bajo valor tanto de las dimensiones motivacionales de regulación autodeterminada como no autodeterminada. A pesar de que carece de la fuerza dinámica suficiente para mantener una alta eficacia en sus acciones y una persistencia en sus objetivos, puede ser positiva la baja dependencia que posee respecto a contingencias externas. Quizás se encuentre en un ciclo de preparación de altas intensidades o de gran complejidad y volumen de tareas. Será importante mantener bajos los valores de las dimensiones extrínsecas, sobre todo si estamos en periodos competitivos, para evitar el exceso de presión o el miedo a cometer errores. Es una situación que requiere consultar con el/la tutor/a para establecer una miniestrategia orientada a elevar, cuanto antes, los valores de las dimensiones de la motivación intrínseca, y mantener los correspondientes a la extrínseca.
+quest11_val_8: Se produce un bajo valor de las dimensiones motivacionales de regulación autodeterminada, acompañadas de valores medios en las dimensiones extrínsecas de la motivación. En principio, carece de la fuerza dinámica suficiente para mantener una alta eficacia en sus acciones y una persistencia en sus objetivos, que afectarán negativamente a los estilos de afrontamiento. Habrá que vigilar el comportamiento que, a corto plazo, se produzca en los valores de las dimensiones extrínsecas para contrarrestar la posible ausencia de motivación (amotivación) o el negativo impacto que puedan generar situaciones de presión exógena (motivación extrínseca). Sería conveniente consultar con el/la tutor/a para establecer una miniestrategia orientada a elevar los valores de las dimensiones de la motivación intrínseca y mantener o minimizar los correspondientes a la extrínseca.
+quest11_val_9: Se produce un bajo valor de las dimensiones motivacionales de regulación autodeterminada, acompañadas de altos valores en las dimensiones extrínsecas de la motivación. En principio supone que, por un lado, carece de la fuerza dinámica suficientes para mantener una alta eficacia en sus acciones y una persistencia en sus objetivos, que afectarán negativamente a los estilos de afrontamiento. Por otro, estos altos valores de las dimensiones extrínsecas (sobre todo de la amotivación), supone que se encuentra excesivamente mediatizado por fuerzas percibidas ajenas, con una alta dependencia de contingencias externas. Es necesario consultar con el/la tutor/a para establecer una miniestrategia orientada a elevar los valores de las dimensiones intrínsecas de la motivación y reducir los de carácter extrínseco, ya que puede verse afectada la continuidad de la práctica de este deporte.
 quest11_valor_1: 1 (does not correspond at all)
 quest11_valor_2: 2 (corresponds very little)
 quest11_valor_3: 3 (corresponds a little)
@@ -345,6 +368,15 @@ quest11_valor_4: 4 (corresponds moderately)
 quest11_valor_5: 5 corresponds quit a bit)
 quest11_valor_6: 6 (quite a lot)
 quest11_valor_7: 7 (completely)
+quest11_valor_tit_1: Presenta un Perfil Global de Motivación Autodeterminado.
+quest11_valor_tit_2: Presenta un Perfil Global de Motivación Autodeterminado.
+quest11_valor_tit_3: Presenta un Perfil Global de Motivación Bipolar.
+quest11_valor_tit_4: Presenta un Perfil Global de Motivación Moderado.
+quest11_valor_tit_5: Presenta un Perfil Global de Motivación Moderado.
+quest11_valor_tit_6: Presenta un Perfil Global de Motivación No Autodeterminado.
+quest11_valor_tit_7: Presenta un Perfil Global de Motivación Bajo Autodeterminado.
+quest11_valor_tit_8: Presenta un Perfil Global de Motivación Bajo Autodeterminado.
+quest11_valor_tit_9: Presenta un Perfil Global de Motivación No Autodeterminado.
 quest12: Motivational Climate Questionnaire
 quest12_10: I win
 quest12_11: I show other people I am the best
@@ -364,7 +396,6 @@ quest12_d1_c: This high value associated to the performance motivational, over 7
 quest12_d2_a: The master motivational climate is in low levels, which is a little worrisome. He/she finds it difficult to value positively the sport improvements, and when their athletes face situations of novelty or of great difficulty  they will feel uneasy, without initiative. It is necessary to orient the technician so that it values the importance of the improvements.
 quest12_d2_b: The master motivational climate is in mean levels, which is adapted but improvable. It positively values the improvements of his athletes, which them aid to confronts with good attitude novel situations or of great difficulty. It will be adapted to remember the importance to him that has the improvements so that the athletes secure their objectives, recognizing and valuing their effort when taking place a personal improvement.
 quest12_d2_c: The master motivational climate is in high levels, which is very positive. This technician concentrates in the personal improvement of the sport, being this most important. This contributes to confront, with an excellent attitude, novel situations or of great difficulty. It generates a positive influence in the commitment with the training, the perceived competition and diminishes the possible anxiety against the sport errors.
-
 quest12_header: Playing sport, the coach thinks I am most successful when...
 quest12_intro: This is a questionnaire which asks you to express your perception of what success in sport means to your coach. There are no right or wrong answers.
 quest12_label_0: Motivational Climate
@@ -423,7 +454,6 @@ quest1_62: I perform to the best of my ability
 quest1_63: I reach a goal
 quest1_64: I am clearly superior
 quest1_65: En que medida?
-#dimensiones
 quest1_d10_a: Este nivel tan bajo observado en el grado de confianza en sus objetivos, va a hacer muy difícil el conseguirlos, ya que es insuficiente e inestable y, además, provocará muchas dudas relacionadas con sus capacidades. Es necesario contemplar los niveles de ansiedad del/a deportista y, en el caso de que sean altos, conviene consultar con el tutor para plantear un trabajo conjunto de reestructuración general.
 quest1_d10_b: Este nivel medio observado en el grado de confianza en sus objetivos, va a disminuir las posibilidades de alcanzarlos. Además, si van acompañados de cierta inestabilidad en sus estimaciones, de 50 a 90, supone un GRACO insuficiente e inestable, con dificultades para sentirse con capacidad para realizar cualquier tipo de habilidades que se le plantee. Es necesario realizar 3-4 sesiones orientadas hacia la mejora de este aspecto importante con el apoyo del Power de la Autoeficacia. 
 quest1_d10_c: Este alto nivel del grado de confianza en sus objetivos, si van acompañados de estabilidad en sus estimaciones, de 80 a 100, supone que posee una alta convicción en conseguirlos. Esta máxima creencia en uno mismo tiene un efecto positivo sobre las endorfinas, y esto le permitirá disponer de energía extra. Es decir, dispone de un GRACO alto y estable, con buenas sensaciones para competir y con alta capacidad para realizar cualquier tipo de habilidades que se le planteen. Es importante detectar si estos valores fluctúan en función de la DPE, en cuyo caso sería conveniente comentarlo con el tutor.
@@ -469,12 +499,10 @@ quest1_d8_c: Los valores de la ansiedad somática son excesivos y perjudiciales 
 quest1_d9_a: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito. A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos valores bajos de la DPE, supone que una selección de objetivos poco ambiciosos. Si van acompañados de cierta inestabilidad en la valoración, supone que est@ deportista tiene capacidad discriminativa a la hora de seleccionar sus objetivos, pero seguramente sus niveles de autoconfianza serán bajos. Será necesario plantear un trabajo específico con el apoyo del Power de la Autoeficacia.
 quest1_d9_b: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito. A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos valores medios de la DPE, supone una selección de objetivos limitados. Si van acompañados de cierta estabilidad en la valoración, en torno a 70, supone que est@ deportista tiende a uniformizar los objetivos autoimpuestos, pero debería de ser más ambiciosa. Conviene recordar que el grado de dificultad de las situaciones no depende del/a deportista, ya que en ningún caso lo va a poder cambiar, pero aumentar las probabilidades de éxito sí, manteniendo alta las creencias en sí mism@.
 quest1_d9_c: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito. A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos altos valores de la DPE, supone una autoimposición de objetivos ambiciosos para esta temporada. Si van acompañados de cierta variabilidad en la valoración, entre 70 y 100, supone que est@ deportista posee una excelente capacidad discriminativa a la hora de seleccionar sus objetivos. Conviene recordar que el grado de dificultad de las situaciones no depende del/a deportista, ya que en ningún caso lo va a poder cambiar, pero aumentar las probabilidades de éxito sí, manteniendo alta las creencias en sí mism@.
-# quest2
 quest1_header2: Before the competition...
 quest1_header4: When playing sport, i feel most successful when
 quest1_header5: Te sientes capaz de competir en tu deporte
 quest1_intro: Below is a list of words that describe feelings people have. Underneath is a list of comments used by athletes to describe some of their feelings or emotions before a competition. Please read each one carefully. Then click the answer which best describes how have you been feeling during the past week including today.
-#labels
 quest1_label_10: Actual
 quest1_label_11: Dificultad percibida estimada
 quest1_label_12: Grado de confianza
@@ -551,10 +579,8 @@ quest2_d6_c: High levels of self-efficacy indicate that the athlete feels very p
 quest2_d7_a: A low level of self-regulation implies difficulty using mental skills in practice, such as self-motivation and establishment of personal goals. It is necessary to specifically address these issues, perhaps using the information contained in the achievement motivation presentation in the library.
 quest2_d7_b: Moderate level of usage of skills such as self-motivation and establishment of personal goals is seen with moderate levels of self-regulation.
 quest2_d7_c: High scores indicate high level of use of mental skills in practice, such as self-motivation and establishment of personal goals, which then reinforces and highlights the path to achievement of these goals.
-# valoracion
 quest2_header: During the last month...
 quest2_intro: Below you have a series of phrases related to different aspects of the training and the competition on which we want to gather your opinion. Please, read them with tranquillity, answer sincerely and check the option with which you agree more or than it describes better your opinion.
-# label
 quest2_label_0: Psychological Stress Tolerance
 quest2_label_1: Disturbed sleep
 quest2_label_2: Emotional fatigue
@@ -569,7 +595,6 @@ quest2_val_1: Overall the level of stress tolerance is very good, indicating opt
 quest2_val_2: The tolerance level is overall positive, indicating the presence of enough resources to cope with special situations, both in practice and in competition. The level of the stress generating indices is at the low-medium level, while the levels of the recovery dimensions are at the medium-high levels, around 4. Overall this is a motivated athlete, with a positive perception of his or her fitness level, readiness and achievement and motivated to achieve his or her goals. 
 quest2_val_3: There is a delicate balance here between stress inducers and recovery dimensions, which is a dangerous situation. The athlete has enough resources to cope with it and can reduce the level of stress generated by the dimensions indicated above. It is important to set up a specific intervention based on the Stress/Pressure module, applied with a direct interview with the athlete to evaluate the current stressors and tailor the intervention appropriately. 
 quest2_val_4: This means that the level of tolerance is very low because the generating indices are larger than the recovery indices. It is a high risk situation that needs to be addressed immediately with the help of the tutor, unless the joint reflection of the coach/athlete dyad identifies the causes generating the values observed. In that instance, specific work based on the Stress/Pressure module can be designed with the supervision of the tutor.
-# quest3
 quest2_valor_0: 0 (nothing)
 quest2_valor_1: 1 (rarely)
 quest2_valor_2: 2 (sometimes)
@@ -604,7 +629,6 @@ quest3_6: Shaky
 quest3_7: Unhappy
 quest3_8: Fatigued
 quest3_9: Lively
-# dimensiones 
 quest3_d1_a: Los valores de la Tensión se encuentran en un nivel bajo, lo cual es positivo, y supone que est@ deportista se encuentra tranquil@ y centrad@ en el trabajo que se le encomiende. 
 quest3_d1_b: Los valores de la Tensión se encuentran en un nivel medio, que puede ser causar cierta intranquilidad en este caso. Conviene vigilar la evolución de esta dimensión durante los próximos días e intentar que poco a poco se vaya situando en la zona baja, sobre todo si estamos muy alejados de la competición.
 quest3_d1_c: Los valores de la Tensión se encuentran en un nivel alto, lo cual es preocupante, ya que posiblemente est@ deportista no consiga centrarse en el trabajo que se le plantee mientras no se consigan reducir estos valores. Puede ser consecuencia de estar próxima la participación en competición, pero si no es así conviene realizar una labor de vigilancia.
@@ -629,7 +653,6 @@ quest3_d7_c: Presenta valores altos en relación a los niveles de ansiedad frent
 quest3_d8_a: Presenta valores bajos en cuanto a su nivel de competencia percibida. Quizás sea porque realiza valoraciones basadas en comparaciones normativas, es decir, se compara con otr@s deportistas para valorar su nivel de competencia. Se trata de un caso que necesita ser reforzado en la percepción de sus propias habilidades, especialmente en aquellas situaciones especialmente complejas o de difícil resolución. Habrá que considerar el valor de la ansiedad frente a los errores para establecer un diagnóstico más ajustado.
 quest3_d8_b: Este deportista presenta una buena capacidad para desarrollar las tareas que se le proponen, con un buen nivel de competencia percibida. Sin embargo, puede mejorar esta percepción, sobre todo si se le orienta hacia su propia mejora. Es conveniente prestarle atención especial y reforzarle positivamente cuando se enfrenta a retos muy complicados o a tareas complejas.
 quest3_d8_c: Este deportista presenta un alto nivel de competencia percibida, con una gran capacidad para hacer cosas nuevas. Siempre intenta hacer el trabajo que se le propone lo mejor que sabe hacerlo, con una sensación de dominio y de realización ilimitada, es decir, es capaz de hacer las cosas que se propone.
-# quest4
 quest3_header1: Right now I feel...
 quest3_header2: En el entrenamiento...
 quest3_header3: En este momento...
@@ -655,7 +678,6 @@ quest3_valor_6: 1 (rarely)
 quest3_valor_7: 2 (sometimes)
 quest3_valor_8: 3 (many times)
 quest3_valor_9: 4 (always)
-# labels
 quest4: Valoración Pre-Competición
 quest4_0: Nivel de dificultad
 quest4_1: Grado de confianza en competir de esa manera
@@ -666,7 +688,6 @@ quest4_5: La prueba es apropiada para ti?
 quest4_6: Has preparado el plan de competición?
 quest4_7: Tienes claro como quieres actuar
 quest4_8: Resultado que esperas alcanzar 
-# dimensiones
 quest4_d10_a: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito - A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos valores bajos de la DPE, supone que una selección de objetivos poco ambiciosos. Si van acompañados de cierta inestabilidad en la valoración, supone que est@ deportista tiene capacidad discriminativa a la hora de seleccionar sus objetivos, pero seguramente sus niveles de autoconfianza serán bajos. Será necesario plantear un trabajo específico con el apoyo del Power de la Autoeficacia. 
 quest4_d10_b: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito - A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos valores medios de la DPE, supone una selección de objetivos limitados. Si van acompañados de cierta estabilidad en la valoración, en torno a 70, supone que est@ deportista tiende a uniformizar los objetivos autoimpuestos, pero debería de ser más ambiciosa. Conviene recordar que el grado de dificultad de las situaciones no depende del/a deportista, ya que en ningún caso lo va a poder cambiar, pero aumentar las probabilidades de éxito sí, manteniendo alta las creencias en sí mism@.
 quest4_d10_c: La dificultad percibida estimada (DPE) se encuentra directamente relacionada con las probabilidades de tener éxito - A menor dificultad de objetivo propuesto más probabilidades de alcanzarlo. Es necesario que, por lo menos, dos de los objetivos se encuentren asociados a metas de mejoría personal Estos altos valores de la DPE, supone una autoimposición de objetivos ambiciosos para esta temporada. Si van acompañados de cierta variabilidad en la valoración, entre 70 y 100, supone que est@ deportista posee una excelente capacidad discriminativa a la hora de seleccionar sus objetivos. Conviene recordar que el grado de dificultad de las situaciones no depende del/a deportista, ya que en ningún caso lo va a poder cambiar, pero aumentar las probabilidades de éxito sí, manteniendo alta las creencias en sí mism@. 
@@ -679,7 +700,6 @@ quest4_d12_c: Supone que la percepción de elaboración del Plan Integral de Com
 quest4_d9_a: Es una competición de baja significación e importante y significativa para est@ deportista, ya que los valores se sitúan en un nivel bajo. Será importante centrarse en el sistema de Autorregulación y hacer un esfuerzo en sus tres dimensiones -Autocontrol, Visualización del Plan Integral de Competición y Autoacciones de anticipación. Es una buena oportunidad para esforzarse y trabajar de forma consciente en la búsqueda del Estado de Rendimiento Optimo (ERO).
 quest4_d9_b: Es una competición relativamente importante y significativa dentro del calendario de est@ deportista, ya que los valores se sitúan en el nivel medio. Será importante centrarse en la automotivación y en la oportunidad de mejora que supone toda participación en competición. La reestructuración emocional dentro del Plan Integral de Competición seguirá la misma dirección - reto, oportunidad de mejora y anticipar deseo por disputarla.
 quest4_d9_c: Esta competición es muy importante y significativa para est@ deportista, ya que los valores se sitúan en el nivel más alto. Será importante orientar la valoración de forma positiva, hacia el reto, dado que se ha estado preparando para disputarla y el hecho de poder hacerlo ya es satisfactorio.
-# quest5 
 quest4_header: Si compites como quieres...
 quest4_label_0: Afrontamiento en Competición
 quest4_label_11: Significación personal
@@ -710,7 +730,6 @@ quest5_6: El control de mis emociones
 quest5_7: El disfrute al sentir mis emociones en determinados momentos
 quest5_8: La seguridad de haber rendido bajo la presión
 quest5_9: La sensación de haber estado mentalmente relajado
-# dimensiones
 quest5_d1_a: Los valores relacionados con el RG se sitúan en un nivel bajo, lo que supone que su comportamiento técnico-táctico, físico y psicológico en competición ha estado alejado de su capacidad. Esto condicionará la VRP, por lo que será necesario analizar con profundidad aquellas acciones más significativas ocurridas en la competición. 
 quest5_d1_b: Los valores relacionados con el RG se sitúan en un nivel medio, lo que supone cierta satisfacción con su comportamiento técnico-táctico, físico y psicológico, pero es evidente que no ha conseguido rendir como esperaba. 
 quest5_d1_c: Los valores relacionados con el RG se sitúan en un alto nivel, lo que supone una elevada satisfacción con su comportamiento técnico-táctico, físico, psicológico y, además, contribuyen a percibir una alta VRP. 
@@ -741,7 +760,6 @@ quest5_val_f: EVALUACIÓN NO VÁLIDA. La diferencia entre la valoración cualita
 quest5_val_g: En general su VRP es baja, con un nivel de rendimiento alejado de su capacidad, como reflejan los aspectos señalados. Es positivo que se produzca una concordancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, lo que le aporta consistencia y coherencia a la valoración realizada.
 quest5_val_h: En general su VRP es baja, con un nivel de rendimiento alejado de su capacidad, como reflejan los aspectos señalados. Además, se produce una discrepancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, con lo que será necesario revisar la valoración realizada, reajustándola a una menor diferencia entre ellas, que quizás pueda influir positivamente con una mejora sustancial de la misma.
 quest5_val_i: EVALUACIÓN NO VÁLIDA. La diferencia entre la valoración cualitativa y cuantitativa observada en el análisis cruzado realizado supera el valor máximo permitido, por lo tanto se recomienda volver a completar el cuestionario. 
-# quest6
 quest5_valor_1: 1 (muy mala)
 quest5_valor_2: 2 (mala)
 quest5_valor_3: 3 (regular)
@@ -764,7 +782,6 @@ quest6_6: Con tu grado de complicidad hacia el objetivo colectivo
 quest6_7: Con tu generosidad y apoyo hacia tus compañeros
 quest6_8: Con el respeto hacia tus compañeros
 quest6_9: Con tu lealtad hacia las decisiones adoptadas
-# dimensiones
 quest6_d1_a: Los valores relacionados con el RG se sitúan en un nivel bajo, lo que supone que su comportamiento técnico-táctico, físico y psicológico en competición ha estado alejado de su capacidad. Esto condicionará la VRP, por lo que será necesario analizar con profundidad aquellas acciones más significativas ocurridas en la competición. 
 quest6_d1_b: Los valores relacionados con el RG se sitúan en un nivel medio, lo que supone cierta satisfacción con su comportamiento técnico-táctico, físico y psicológico, pero es evidente que no ha conseguido rendir como esperaba. 
 quest6_d1_c: Los valores relacionados con el RG se sitúan en un alto nivel, lo que supone una elevada satisfacción con su comportamiento técnico-táctico, físico, psicológico y, además, contribuyen a percibir una alta VRP. 
@@ -777,7 +794,6 @@ quest6_d3_c: En el caso de la CT, los valores se sitúan en un alto nivel, lo qu
 quest6_d4_a: En el caso de la IT, los valores se sitúan en un nivel bajo, lo que representa una reducida o mínima complicidad y lealtad con las decisiones tomadas. Tampoco se puede destacar el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. Es aconsejable realizar una sesión conjunta con la orientación del/a tutor/a.
 quest6_d4_b: En el caso de la IT, los valores se sitúan en un nivel medio, lo que representa cierto nivel de complicidad y lealtad con las decisiones tomadas. También manifiesta una buena satisfacción relacionada con el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. 
 quest6_d4_c: En el caso de la IT, los valores se sitúan en un alto nivel, lo que representa una alta complicidad y lealtad con las decisiones tomadas. A destacar la alta satisfacción que manifiesta relacionada con el apoyo prestado a sus compañeros, así como el grado de comunicación entre ellos. 
-# quest7
 quest6_label_0: Rendimiento Percibido Individual en el Equipo
 quest6_label_1: Rendimiento Global
 quest6_label_2: Rendimiento Personal
@@ -803,7 +819,6 @@ quest7_6: The extent to which my role matches my potential
 quest7_7: The recognition I receive from my coach
 quest7_8: The friendliness of the coach towards me
 quest7_9: The level of appreciation my coach shows when I do well
-# dimensiones
 quest7_d1_a: El bajo nivel de satisfacción relacionado con rendimiento personal (RP), puede estar asociado a la consecución de los objetivos propios de la temporada, o también a la baja percepción de mejora de sus cualidades y de sus posibles puntos débiles.
 quest7_d1_b: El nivel medio de satisfacción relacionado con rendimiento personal (RP) que se observa, puede estar relacionado con mediana percepción de consecución de sus objetivos de la temporada, o también se puede asociar al nivel de mejora de sus cualidades y de sus posibles puntos débiles.
 quest7_d1_c: El alto nivel de satisfacción relacionado con rendimiento personal (RP) que se contempla, está asociado a la consecución de los objetivos propios de la temporada, y también puede estar relacionada con una alta percepción de mejora de sus cualidades y de sus puntos débiles.
@@ -822,7 +837,6 @@ quest7_d5_c: El grado de satisfacción relacionado con la información recibida 
 quest7_d6_a: En cuanto a la satisfacción por el trato que ha recibido del entrenador/a asociado a la amabilidad, al reconocimiento, y la estima por el trabajo bien hecho (TP) se sitúa en niveles bajos, lo que supone que el nivel de atención recibido también será bajo.
 quest7_d6_b: El nivel de satisfacción relacionado con el trato que ha recibido del entrenador/a asociado a la amabilidad, al reconocimiento, y la estima por el trabajo bien hecho (TP) se sitúa en niveles medios, lo que supone que el nivel de atención recibido habrá normal, como al resto de deportistas.
 quest7_d6_c: El nivel de satisfacción relacionado con el trato que ha recibido del entrenador/a asociado a la amabilidad, al reconocimiento, la estima por el trabajo bien hecho, así como el nivel de atención recibido (TP) se sitúa en niveles altos, lo que supone que percibe una excelente relación con el/la entrenador/a.
-# quest8
 quest7_header: El grado de satisfacción con...
 quest7_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
 quest7_label_0: Satisfacción (Deportes Individuales)
@@ -861,7 +875,6 @@ quest8_42: My commitment to the team
 quest8_4: The team's win/loss record this season
 quest8_5: The teams's overall performance this season
 quest8_6: The extent to which the team has met its goals for the season thus far
-# dimensiones
 quest8_d0_a: El bajo nivel de satisfacción relacionado con rendimiento personal (RP), puede estar asociado a la consecución de los objetivos propios de la temporada, o también a la baja percepción de mejora de sus cualidades y de sus posibles puntos débiles.
 quest8_d0_b: El nivel medio de satisfacción relacionado con rendimiento personal (RP) que se observa, puede estar relacionado con mediana percepción de consecución de sus objetivos de la temporada, o también se puede asociar al nivel de mejora de sus cualidades y de sus posibles puntos débiles.
 quest8_d0_c: El alto nivel de satisfacción relacionado con rendimiento personal (RP) que se contempla, está asociado a la consecución de los objetivos propios de la temporada, y también puede estar relacionada con una alta percepción de mejora de sus cualidades y de sus puntos débiles.
@@ -892,7 +905,6 @@ quest8_d8_c: También podemos observar que los valores de la satisfacción en re
 quest8_d9_a: Por otro lado, los valores de la satisfacción relacionada con el nivel de integración grupal del equipo (CT) es bajo. Piensa que los miembros del equipo podrían hacer bastante más para trabajar conjuntamente y alcanzar sus objetivos y, además, siente que el equipo no juega como equipo. 
 quest8_d9_b: Estos valores de satisfacción relacionados con el nivel de integración grupal del equipo (CT) son medios. A veces cree que los miembros del equipo podrían hacer algo más para trabajar conjuntamente y alcanzar sus objetivos y, además, en ocasiones duda de que el equipo juega como equipo. 
 quest8_d9_c: Estos altos valores observados en cuanto a la satisfacción relacionada con el nivel de integración grupal del equipo (CT) le hacen pensar que el equipo juega como equipo, y además, considera que sus miembros trabajan conjuntamente y adecuadamente para alcanzar sus objetivos.
-# quest9
 quest8_header: El grado de satisfacción con...
 quest8_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
 quest8_label_0: Satisfacción (Deportes Colectivos)
@@ -921,7 +933,6 @@ quest9_18: Pienso que l@s deportistas tienen éxito cuando lo hacen todo lo mejo
 quest9_19: Tengo la máxima confianza en todos l@s deportistas cuando disputan una competición
 quest9_1: Permito que tomen decisiones que no se corresponden con la táctica prevista
 quest9_20: Cuando l@s deportistas cometen errores sigo manteniendo la confianza en ell@s
-# dimensions
 quest9_2: Pienso que l@s deportistas tienen éxito cuando superan las dificultades
 quest9_3: Prefiero que el equipo gane a que 'Se hagan las cosas bien hechas'
 quest9_4: Sacrifico la calidad de la técnica de competición por amarrar el resultado
@@ -954,10 +965,8 @@ quest9_d7_c: Los valores del clima de maestría (PEM) se sitúan por encima del 
 quest9_d8_a: Este bajo valor del clima de rendimiento (PER), situado por debajo de 2,5 supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s se encuentran en un segundo plano frente a la mejora de las habilidades, lo que refuerza la implicación durante el entrenamiento, y puede ayudar a disminuir la ansiedad frente a los errores en el caso de que la hubiera.
 quest9_d8_b: Este valor medio del clima de rendimiento (PER), supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s son importantes, a veces, incluso más que la mejora de sus habilidades. Puede influir positivamente en el compromiso con el esfuerzo, y contribuye a disminuir la ansiedad frente a los errores en el caso de que la hubiera.
 quest9_d8_c: Este alto valor del clima de rendimiento (PER), situado entre 4 y 5, supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s es lo más importante. Esto debilitará la capacidad de l@ deportistas para afrontar situaciones de máximo desafío personal y, además, contribuirá de forma importante en el aumento de la ansiedad frente a los errores en situaciones de alta dificultad.
-# quest10
 quest9_header: El grado de satisfacción con...
 quest9_intro: Más abajo tienes una serie de frases relacionadas con diferentes aspectos del entrenamiento y de la competición sobre las que queremos recoger tu opinión. Por favor, léelas con tranquilidad, responde con sinceridad y haz clic en el número con el que estés más de acuerdo o que describa mejor tu opinión.
-# labels 
 quest9_label_0: Clima de Tecnificación Percibido
 quest9_label_1: Valores de la percepción de éxito grupal
 quest9_label_2: Confianza en los jugadores percibida
@@ -975,7 +984,6 @@ quest9_valor_3: 3 (a menudo)
 quest9_valor_4: 4 (casi siempre)
 quest9_valor_5: 5 (siempre)
 quest9_valor_7: 7 (totalmente) 
-
 setting_app_subtitle: Application subtitle
 setting_app_title: Application title
 setting_attachment_max_size: Attachment max. size
@@ -1007,9 +1015,7 @@ signup_label_9: Submit form
 status_active: active
 status_locked: locked
 status_registered: registered
-#quest1  
 text_are_you_sure: Are you sure ?
 text_caracters_maximum: %d characters maximum.
 text_length_between: Length between %d and %d characters.
 text_min_max_length_info: 0 means no restriction
- 
