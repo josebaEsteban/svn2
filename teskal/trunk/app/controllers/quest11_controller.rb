@@ -28,11 +28,11 @@ class Quest11Controller < ApplicationController
     @fecha = l_datetime(@answer.created_on)
     require_coach(@answer.user_id)
     @user=User.find(@answer.user_id )
-    teskalChart11
+    teskal_chart11
   end
 
 
-  def teskalChart11
+  def teskal_chart11
     @advice=[]
     @icon=[]
 
