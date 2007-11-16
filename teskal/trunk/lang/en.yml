@@ -1015,7 +1015,7 @@ signup_label_9: Submit form
 status_active: active
 status_locked: locked
 status_registered: registered
-text_are_you_sure: Are you sure ?
+text_are_you_sure: Are you sure?
 text_caracters_maximum: %d characters maximum.
 text_length_between: Length between %d and %d characters.
 text_min_max_length_info: 0 means no restriction
