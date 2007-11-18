@@ -80,7 +80,7 @@ class ApplicationController < ActionController::Base
     set_language_if_valid(lang)
   end
 
-  def require_login 
+  def require_login
     unless self.logged_in_user
       store_location
       redirect_to :controller => "account", :action => "login"
@@ -262,6 +262,15 @@ class ApplicationController < ActionController::Base
       valorStr=valorStr.slice(0,4)
     end
     return valorStr
+  end
+
+  def journal(event, owner)
+    journal = Journal.new
+    journal.user_id = session[:user_id]
+    journal.event= event
+    journal.ip = request.remote_ip
+    journal.owner_id = owner
+    journal.save
   end
 
   # private

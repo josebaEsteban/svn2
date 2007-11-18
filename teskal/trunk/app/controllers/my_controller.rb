@@ -36,6 +36,7 @@ class MyController < ApplicationController
     @user.attributes = params[:user]
     @user.pref.attributes = params[:pref]
     if request.post? and @user.save and @user.pref.save
+      journal("update account",@user.id)
       set_localization
       flash.now[:notice] = l(:notice_account_updated)
       self.logged_in_user.reload
@@ -48,7 +49,9 @@ class MyController < ApplicationController
     # flash[:notice] = l(:notice_can_t_change_password) and redirect_to :action => 'account' 
     if @user.check_password?(params[:password])
       @user.password, @user.password_confirmation = params[:new_password], params[:new_password_confirmation]
-      if @user.save
+      @user.updated_on = Time.now 
+       if @user.save 
+        journal("update password",@user.id) 
         flash[:notice] = l(:notice_account_password_updated)
       else
         render :action => 'account'

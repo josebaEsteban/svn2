@@ -11,10 +11,11 @@
     <tr>
       <th scope="col"><div align="left">#</div></th>   
       <th scope="col"><div align="left"><%= user.firstname + " " +user.lastname %></div></th>
+	 <%- TzTime.zone=user.timezone -%> 
       <%- if user.last_login_on.nil? -%>
       <th scope="col"><div align="left">never</div></th>
       <%- else -%>
-      <th scope="col"><div align="left"><%=l_datetime(user.last_login_on)%></div></th>
+      <th scope="col"><div align="left"><%=l_datetime(TzTime.zone.utc_to_local(user.last_login_on))%></div></th>
       <%- end -%>
     <th scope="col"><div align="left"><%= user.ip %></div></th>
     <th scope="col"><div align="left"><%= user.ip_last %></div></th>
@@ -35,9 +36,6 @@
  	<%- end -%>
 	</div></th>
     <th scope="col"><div align="left"><%= user.time_zone %></div></th>
-	 <%- TzTime.zone=user.timezone -%>
-    <th scope="col"><div align="left"><%= l_datetime(TzTime.zone.utc_to_local(user.created_on)) %></div></th>
-    <th scope="col"><div align="left"><%= l_datetime(TzTime.zone.utc_to_local(user.updated_on)) %></div></th>
     </tr>   
   </thead>
 <%- respuestas=1 -%>
@@ -77,6 +75,11 @@
     <td><%= respuestas %></td> 
     <td><%= quest %></td>
     <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on)) %></td>
+	<%- if  answer.time_to_fill.nil? -%>
+    <td><%=answer.time_to_fill %></td>
+	<%- else -%>
+    <td><%=l_time(answer.time_to_fill) %></td> 
+	<%- end -%>
     <td><%= answer.ip %></td> 
   </tr>
 <%- respuestas = respuestas+1 -%>
