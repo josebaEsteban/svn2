@@ -266,7 +266,11 @@ class ApplicationController < ActionController::Base
 
   def journal(event, owner)
     journal = Journal.new
-    journal.user_id = session[:user_id]
+    if session[:user_id].nil?
+      journal.user_id = owner
+    else
+      journal.user_id = session[:user_id]
+    end
     journal.event= event
     journal.ip = request.remote_ip
     journal.owner_id = owner
