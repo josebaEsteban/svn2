@@ -5,96 +5,97 @@
 ActiveRecord::Schema.define(:version => 0) do
 
   create_table "answers", :force => true do |t|
-    t.column "quest_id",    :integer,                                  :null => false
-    t.column "user_id",     :integer,                :default => 0,    :null => false
-    t.column "competition", :text
-    t.column "answ1",       :integer,  :limit => 3
-    t.column "answ2",       :integer,  :limit => 3
-    t.column "answ3",       :integer,  :limit => 3
-    t.column "answ4",       :integer,  :limit => 3
-    t.column "answ5",       :integer,  :limit => 3
-    t.column "answ6",       :integer,  :limit => 3
-    t.column "answ7",       :integer,  :limit => 3
-    t.column "answ8",       :integer,  :limit => 3
-    t.column "answ9",       :integer,  :limit => 3
-    t.column "answ10",      :integer,  :limit => 3
-    t.column "answ11",      :integer,  :limit => 3
-    t.column "answ12",      :integer,  :limit => 3
-    t.column "answ13",      :integer,  :limit => 3
-    t.column "answ14",      :integer,  :limit => 3
-    t.column "answ15",      :integer,  :limit => 3
-    t.column "answ16",      :integer,  :limit => 3
-    t.column "answ17",      :integer,  :limit => 3
-    t.column "answ18",      :integer,  :limit => 3
-    t.column "answ19",      :integer,  :limit => 3
-    t.column "answ20",      :integer,  :limit => 3
-    t.column "answ21",      :integer,  :limit => 3
-    t.column "answ22",      :integer,  :limit => 3
-    t.column "answ23",      :integer,  :limit => 3
-    t.column "answ24",      :integer,  :limit => 3
-    t.column "answ25",      :integer,  :limit => 3
-    t.column "answ26",      :integer,  :limit => 3
-    t.column "answ27",      :integer,  :limit => 3
-    t.column "answ28",      :integer,  :limit => 3
-    t.column "answ29",      :integer,  :limit => 3
-    t.column "answ30",      :integer,  :limit => 3
-    t.column "answ31",      :integer,  :limit => 3
-    t.column "answ32",      :integer,  :limit => 3
-    t.column "answ33",      :integer,  :limit => 3
-    t.column "answ34",      :integer,  :limit => 3
-    t.column "answ35",      :integer,  :limit => 3
-    t.column "answ36",      :integer,  :limit => 3
-    t.column "answ37",      :integer,  :limit => 3
-    t.column "answ38",      :integer,  :limit => 3
-    t.column "answ39",      :integer,  :limit => 3
-    t.column "answ40",      :integer,  :limit => 3
-    t.column "answ41",      :integer,  :limit => 3
-    t.column "answ42",      :integer,  :limit => 3
-    t.column "answ43",      :integer,  :limit => 3
-    t.column "answ44",      :integer,  :limit => 3
-    t.column "answ45",      :integer,  :limit => 3
-    t.column "answ46",      :integer,  :limit => 3
-    t.column "answ47",      :integer,  :limit => 3
-    t.column "answ48",      :integer,  :limit => 3
-    t.column "answ49",      :integer,  :limit => 3
-    t.column "answ50",      :integer,  :limit => 3
-    t.column "answ51",      :integer,  :limit => 3
-    t.column "answ52",      :integer,  :limit => 3
-    t.column "answ53",      :integer,  :limit => 3
-    t.column "answ54",      :integer,  :limit => 3
-    t.column "answ55",      :integer,  :limit => 3
-    t.column "answ56",      :integer,  :limit => 3
-    t.column "answ57",      :integer,  :limit => 3
-    t.column "answ58",      :integer,  :limit => 3
-    t.column "answ59",      :integer,  :limit => 3
-    t.column "answ60",      :integer,  :limit => 3
-    t.column "answ61",      :integer,  :limit => 3
-    t.column "answ62",      :integer,  :limit => 3
-    t.column "answ63",      :integer,  :limit => 3
-    t.column "answ64",      :integer,  :limit => 3
-    t.column "answ65",      :integer,  :limit => 3
-    t.column "answ66",      :integer,  :limit => 3
-    t.column "answ67",      :integer,  :limit => 3
-    t.column "answ68",      :integer,  :limit => 3
-    t.column "answ69",      :integer,  :limit => 3
-    t.column "answ70",      :integer,  :limit => 3
-    t.column "answ71",      :integer,  :limit => 3
-    t.column "answ72",      :integer,  :limit => 3
-    t.column "answ73",      :integer,  :limit => 3
-    t.column "answ74",      :integer,  :limit => 3
-    t.column "answ75",      :integer,  :limit => 3
-    t.column "answ76",      :integer,  :limit => 3
-    t.column "answ77",      :integer,  :limit => 3
-    t.column "checked_out", :string,   :limit => 0,  :default => "NO", :null => false
-    t.column "allowedDep",  :string,   :limit => 0,  :default => "NO", :null => false
-    t.column "note1",       :text
-    t.column "note2",       :text
-    t.column "vistoDep",    :string,   :limit => 0,  :default => "NO", :null => false
-    t.column "created_on",  :datetime
-    t.column "note3",       :text
-    t.column "note4",       :text
-    t.column "note5",       :text
-    t.column "ip",          :string,   :limit => 15
+    t.column "quest_id",     :integer,                                  :null => false
+    t.column "user_id",      :integer,                :default => 0,    :null => false
+    t.column "competition",  :text
+    t.column "answ1",        :integer,  :limit => 3
+    t.column "answ2",        :integer,  :limit => 3
+    t.column "answ3",        :integer,  :limit => 3
+    t.column "answ4",        :integer,  :limit => 3
+    t.column "answ5",        :integer,  :limit => 3
+    t.column "answ6",        :integer,  :limit => 3
+    t.column "answ7",        :integer,  :limit => 3
+    t.column "answ8",        :integer,  :limit => 3
+    t.column "answ9",        :integer,  :limit => 3
+    t.column "answ10",       :integer,  :limit => 3
+    t.column "answ11",       :integer,  :limit => 3
+    t.column "answ12",       :integer,  :limit => 3
+    t.column "answ13",       :integer,  :limit => 3
+    t.column "answ14",       :integer,  :limit => 3
+    t.column "answ15",       :integer,  :limit => 3
+    t.column "answ16",       :integer,  :limit => 3
+    t.column "answ17",       :integer,  :limit => 3
+    t.column "answ18",       :integer,  :limit => 3
+    t.column "answ19",       :integer,  :limit => 3
+    t.column "answ20",       :integer,  :limit => 3
+    t.column "answ21",       :integer,  :limit => 3
+    t.column "answ22",       :integer,  :limit => 3
+    t.column "answ23",       :integer,  :limit => 3
+    t.column "answ24",       :integer,  :limit => 3
+    t.column "answ25",       :integer,  :limit => 3
+    t.column "answ26",       :integer,  :limit => 3
+    t.column "answ27",       :integer,  :limit => 3
+    t.column "answ28",       :integer,  :limit => 3
+    t.column "answ29",       :integer,  :limit => 3
+    t.column "answ30",       :integer,  :limit => 3
+    t.column "answ31",       :integer,  :limit => 3
+    t.column "answ32",       :integer,  :limit => 3
+    t.column "answ33",       :integer,  :limit => 3
+    t.column "answ34",       :integer,  :limit => 3
+    t.column "answ35",       :integer,  :limit => 3
+    t.column "answ36",       :integer,  :limit => 3
+    t.column "answ37",       :integer,  :limit => 3
+    t.column "answ38",       :integer,  :limit => 3
+    t.column "answ39",       :integer,  :limit => 3
+    t.column "answ40",       :integer,  :limit => 3
+    t.column "answ41",       :integer,  :limit => 3
+    t.column "answ42",       :integer,  :limit => 3
+    t.column "answ43",       :integer,  :limit => 3
+    t.column "answ44",       :integer,  :limit => 3
+    t.column "answ45",       :integer,  :limit => 3
+    t.column "answ46",       :integer,  :limit => 3
+    t.column "answ47",       :integer,  :limit => 3
+    t.column "answ48",       :integer,  :limit => 3
+    t.column "answ49",       :integer,  :limit => 3
+    t.column "answ50",       :integer,  :limit => 3
+    t.column "answ51",       :integer,  :limit => 3
+    t.column "answ52",       :integer,  :limit => 3
+    t.column "answ53",       :integer,  :limit => 3
+    t.column "answ54",       :integer,  :limit => 3
+    t.column "answ55",       :integer,  :limit => 3
+    t.column "answ56",       :integer,  :limit => 3
+    t.column "answ57",       :integer,  :limit => 3
+    t.column "answ58",       :integer,  :limit => 3
+    t.column "answ59",       :integer,  :limit => 3
+    t.column "answ60",       :integer,  :limit => 3
+    t.column "answ61",       :integer,  :limit => 3
+    t.column "answ62",       :integer,  :limit => 3
+    t.column "answ63",       :integer,  :limit => 3
+    t.column "answ64",       :integer,  :limit => 3
+    t.column "answ65",       :integer,  :limit => 3
+    t.column "answ66",       :integer,  :limit => 3
+    t.column "answ67",       :integer,  :limit => 3
+    t.column "answ68",       :integer,  :limit => 3
+    t.column "answ69",       :integer,  :limit => 3
+    t.column "answ70",       :integer,  :limit => 3
+    t.column "answ71",       :integer,  :limit => 3
+    t.column "answ72",       :integer,  :limit => 3
+    t.column "answ73",       :integer,  :limit => 3
+    t.column "answ74",       :integer,  :limit => 3
+    t.column "answ75",       :integer,  :limit => 3
+    t.column "answ76",       :integer,  :limit => 3
+    t.column "answ77",       :integer,  :limit => 3
+    t.column "checked_out",  :string,   :limit => 0,  :default => "NO", :null => false
+    t.column "allowedDep",   :string,   :limit => 0,  :default => "NO", :null => false
+    t.column "note1",        :text
+    t.column "note2",        :text
+    t.column "vistoDep",     :string,   :limit => 0,  :default => "NO", :null => false
+    t.column "created_on",   :datetime
+    t.column "note3",        :text
+    t.column "note4",        :text
+    t.column "note5",        :text
+    t.column "ip",           :string,   :limit => 15
+    t.column "time_to_fill", :time
   end
 
   create_table "attachments", :force => true do |t|
@@ -109,6 +110,16 @@ ActiveRecord::Schema.define(:version => 0) do
     t.column "author_id",      :integer,                :default => 0,  :null => false
     t.column "created_on",     :datetime
   end
+
+  create_table "journals", :force => true do |t|
+    t.column "event",      :string,   :limit => 30, :default => "", :null => false
+    t.column "created_on", :datetime
+    t.column "ip",         :string,   :limit => 15
+    t.column "user_id",    :integer,                :default => 0,  :null => false
+    t.column "owner_id",   :integer,                                :null => false
+  end
+
+  add_index "journals", ["user_id"], :name => "user"
 
   create_table "members", :force => true do |t|
     t.column "user_id",    :integer,  :default => 0, :null => false
@@ -186,23 +197,23 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   create_table "users", :force => true do |t|
-    t.column "login",             :string,   :limit => 30, :default => "",              :null => false
-    t.column "hashed_password",   :string,   :limit => 40, :default => "",              :null => false
-    t.column "firstname",         :string,   :limit => 30, :default => "",              :null => false
-    t.column "lastname",          :string,   :limit => 30, :default => "",              :null => false
-    t.column "mail",              :string,   :limit => 60, :default => "",              :null => false
-    t.column "mail_notification", :boolean,                :default => true,            :null => false
-    t.column "admin",             :boolean,                :default => false,           :null => false
-    t.column "status",            :integer,                :default => 1,               :null => false
+    t.column "login",             :string,    :limit => 30, :default => "",              :null => false
+    t.column "hashed_password",   :string,    :limit => 40, :default => "",              :null => false
+    t.column "firstname",         :string,    :limit => 30, :default => "",              :null => false
+    t.column "lastname",          :string,    :limit => 30, :default => "",              :null => false
+    t.column "mail",              :string,    :limit => 60, :default => "",              :null => false
+    t.column "mail_notification", :boolean,                 :default => true,            :null => false
+    t.column "admin",             :boolean,                 :default => false,           :null => false
+    t.column "status",            :integer,                 :default => 1,               :null => false
     t.column "last_login_on",     :datetime
-    t.column "language",          :string,   :limit => 5,  :default => ""
+    t.column "language",          :string,    :limit => 5,  :default => ""
     t.column "auth_source_id",    :integer
     t.column "created_on",        :datetime
-    t.column "updated_on",        :datetime
-    t.column "ip",                :string,   :limit => 15
-    t.column "role",              :integer,                :default => 1,               :null => false
-    t.column "time_zone",         :string,   :limit => 25, :default => "Europe/Madrid"
-    t.column "ip_last",           :string,   :limit => 15
+    t.column "ip",                :string,    :limit => 15
+    t.column "role",              :integer,                 :default => 1,               :null => false
+    t.column "time_zone",         :string,    :limit => 25, :default => "Europe/Madrid"
+    t.column "ip_last",           :string,    :limit => 15
+    t.column "start",             :timestamp,                                            :null => false
   end
 
 end

@@ -121,7 +121,7 @@ general_fmt_age_plural: %d años
 general_fmt_date: %%d/%%m/%%Y
 general_fmt_datetime: %%d/%%m/%%Y %%H:%%M
 general_fmt_datetime_short: %%d/%%m %%H:%%M
-general_fmt_time: %%H:%%M
+general_fmt_time: %%X
 general_lang_name: 'Español'
 general_pdf_encoding: ISO-8859-1
 general_text_No: 'No'

@@ -33,7 +33,7 @@ class AccountController < ApplicationController
       if user
         self.logged_in_user = user 
         user.update_attribute(:ip_last, request.remote_ip) 
-        
+        journal("log_in",user.id)
         # generate a key and set cookie if autologin
         if params[:autologin] && Setting.autologin? 
           puts "autologin"
@@ -49,6 +49,7 @@ class AccountController < ApplicationController
 
   # Log out current user and redirect to welcome page
   def logout
+    journal("log_out",session[:user_id]) 
     cookies.delete :autologin
     Token.delete_all(["user_id = ? AND action = ?", logged_in_user.id, "autologin"]) if logged_in_user
     self.logged_in_user = nil
@@ -66,6 +67,7 @@ class AccountController < ApplicationController
       if request.post?
         @user.password, @user.password_confirmation = params[:new_password], params[:new_password_confirmation]
         if @user.save
+          journal("recovery password",@user.id)
           @token.destroy
           flash[:notice] = l(:notice_account_password_updated)
           redirect_to :action => 'login'
@@ -81,7 +83,8 @@ class AccountController < ApplicationController
         flash.now[:notice] = l(:notice_account_unknown_email) and return unless user
         # create a new token for password recovery
         token = Token.new(:user => user, :action => "recovery")
-        if token.save
+        if token.save 
+          journal("deliver lost password",user.id)
           Mailer.deliver_lost_password(token)
           flash[:notice] = l(:notice_account_lost_email_sent)
           redirect_to :action => 'login'
@@ -101,6 +104,7 @@ class AccountController < ApplicationController
       redirect_to :controller => 'welcome' and return unless user.status == User::STATUS_REGISTERED
       user.status = User::STATUS_ACTIVE
       if user.save
+        journal("activate account", user.id)
         token.destroy
         flash[:notice] = l(:notice_account_activated)
         redirect_to :action => 'login'
@@ -118,6 +122,7 @@ class AccountController < ApplicationController
         token = Token.new(:user => @user, :action => "signup")
         @user.ip = request.remote_ip
         if @user.save and token.save
+          journal("signup account",@user.id)
           Mailer.deliver_signup(token)
           set_language_if_valid(@user.language)
           flash[:notice] = l(:notice_account_register_done)
