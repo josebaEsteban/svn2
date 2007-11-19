@@ -1,3 +1,8 @@
+<% for column in Journals.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @journals.send(column.name) %>
+</p>
+<% end %>
 
-<%= link_to 'Edit', edit_journal_path(@journal) %> |
-<%= link_to 'Back', journals_path %>
+<%= link_to 'Edit', :action => 'edit', :id => @journals %> |
+<%= link_to 'Back', :action => 'list' %>

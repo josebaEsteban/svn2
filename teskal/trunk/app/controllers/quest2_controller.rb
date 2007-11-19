@@ -19,6 +19,7 @@ class Quest2Controller < ApplicationController
     @answer.time_to_fill =  Time.now - user.start
     if @answer.save
       # flash[:notice] = 'Answer was successfully created.'
+      # journal("create/"+@answer.id.to_s, @answer.user_id)
       redirect_to :action => 'show', :id => @answer.id
 
       # format.html { redirect_to answer_url(@answer) }

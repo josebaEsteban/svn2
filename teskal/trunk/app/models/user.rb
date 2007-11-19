@@ -1,4 +1,3 @@
-# Teskal - enjoy the pressure
 # Copyright (C)2007  Teskal
 
 require "digest/sha1"

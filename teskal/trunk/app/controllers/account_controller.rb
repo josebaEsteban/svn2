@@ -32,7 +32,7 @@ class AccountController < ApplicationController
       user = User.try_to_login(params[:login], params[:password]) 
       if user
         self.logged_in_user = user 
-        user.update_attribute(:ip_last, request.remote_ip) 
+        # user.update_attribute(:ip_last, request.remote_ip) 
         journal("log_in",user.id)
         # generate a key and set cookie if autologin
         if params[:autologin] && Setting.autologin? 
@@ -43,6 +43,7 @@ class AccountController < ApplicationController
         redirect_back_or_default :controller => 'my', :action => 'page'
       else   
         flash.now[:notice] = l(:notice_account_invalid_creditentials)
+        journal("account invalid",0) 
       end
     end
   end

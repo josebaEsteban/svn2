@@ -420,7 +420,6 @@ quest2_valor_3: 3 (frequentemente)
 quest2_valor_4: 4 (muitas vezes)
 quest2_valor_5: 5 (quase sempre)
 quest2_valor_6: 6 (sempre)
-
 setting_app_subtitle: Subtítulo da aplicação
 setting_app_title: Título da aplicação
 setting_attachment_max_size: Tamanho do máximo do anexo
@@ -448,9 +447,7 @@ signup_label_8: Você deve incorporar um email address válido para ativar seu c
 signup_label_9: Submeter o formulário
 status_active: ativo
 status_locked: bloqueado
-
 status_registered: registrado
-# quest2
 text_are_you_sure: Você tem certeza ?
 text_caracters_maximum: %d máximo de caráteres
 text_length_between: Tamanho entre %d e %d caráteres.

@@ -1,6 +1,4 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :journals
-
   map.resources :answers
 
   # Add your own custom routes here.

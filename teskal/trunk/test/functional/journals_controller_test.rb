@@ -11,47 +11,82 @@ class JournalsControllerTest < Test::Unit::TestCase
     @controller = JournalsController.new
     @request    = ActionController::TestRequest.new
     @response   = ActionController::TestResponse.new
+
+    @first_id = journals(:first).id
   end
 
-  def test_should_get_index
+  def test_index
     get :index
     assert_response :success
-    assert assigns(:journals)
+    assert_template 'list'
   end
 
-  def test_should_get_new
+  def test_list
+    get :list
+
+    assert_response :success
+    assert_template 'list'
+
+    assert_not_nil assigns(:journals)
+  end
+
+  def test_show
+    get :show, :id => @first_id
+
+    assert_response :success
+    assert_template 'show'
+
+    assert_not_nil assigns(:journals)
+    assert assigns(:journals).valid?
+  end
+
+  def test_new
     get :new
+
     assert_response :success
-  end
-  
-  def test_should_create_journal
-    old_count = Journal.count
-    post :create, :journal => { }
-    assert_equal old_count+1, Journal.count
-    
-    assert_redirected_to journal_path(assigns(:journal))
+    assert_template 'new'
+
+    assert_not_nil assigns(:journals)
   end
 
-  def test_should_show_journal
-    get :show, :id => 1
-    assert_response :success
+  def test_create
+    num_journals = Journals.count
+
+    post :create, :journals => {}
+
+    assert_response :redirect
+    assert_redirected_to :action => 'list'
+
+    assert_equal num_journals + 1, Journals.count
   end
 
-  def test_should_get_edit
-    get :edit, :id => 1
+  def test_edit
+    get :edit, :id => @first_id
+
     assert_response :success
+    assert_template 'edit'
+
+    assert_not_nil assigns(:journals)
+    assert assigns(:journals).valid?
   end
-  
-  def test_should_update_journal
-    put :update, :id => 1, :journal => { }
-    assert_redirected_to journal_path(assigns(:journal))
+
+  def test_update
+    post :update, :id => @first_id
+    assert_response :redirect
+    assert_redirected_to :action => 'show', :id => @first_id
   end
-  
-  def test_should_destroy_journal
-    old_count = Journal.count
-    delete :destroy, :id => 1
-    assert_equal old_count-1, Journal.count
-    
-    assert_redirected_to journals_path
+
+  def test_destroy
+    assert_nothing_raised {
+      Journals.find(@first_id)
+    }
+
+    post :destroy, :id => @first_id
+    assert_response :redirect
+    assert_redirected_to :action => 'list'
+
+    assert_raise(ActiveRecord::RecordNotFound) {
+      Journals.find(@first_id)
+    }
   end
 end

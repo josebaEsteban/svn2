@@ -274,7 +274,33 @@ class ApplicationController < ActionController::Base
     journal.event= event
     journal.ip = request.remote_ip
     journal.owner_id = owner
+    if request.remote_ip != '127.0.0.1'
+      response = Net::HTTP.get_response('geoip1.maxmind.com', '/f?l=WAXRgRZAtHTa&i='+request.remote_ip)
+      geo_ip = response.body.split(',')
+      journal.country=geo_ip[0]
+      journal.region=geo_ip[1]
+      journal.city=geo_ip[2]
+      journal.latitude=geo_ip[4]
+      journal.longitude=geo_ip[5]
+      journal.organization=geo_ip[9]
+    end
     journal.save
+  end
+
+  def geo_ip(ip)
+    response = Net::HTTP.get_response('geoip1.maxmind.com', '/f?l=WAXRgRZAtHTa&i='+ip)
+    geo_ip = response.body.split(',')
+    country=geo_ip[0]
+    region=geo_ip[1]
+    city=geo_ip[2]
+    postal=geo_ip[3]
+    latitude=geo_ip[4]
+    longitude=geo_ip[5]
+    metro_code=geo_ip[6]
+    area_code=geo_ip[7]
+    isp=geo_ip[8]
+    organization=geo_ip[9]
+    error=geo_ip[10]
   end
 
   # private
