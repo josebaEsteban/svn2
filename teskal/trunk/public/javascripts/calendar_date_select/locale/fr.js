@@ -1,7 +1,7 @@
 _translations = {
    "OK": "OK",
-   "Now": "Ahora",
-   "Today": "Hoy"
+   "Now": "Maintenant",
+   "Today": "Aujourd'hui"
  }
  Date.first_day_of_week = 1;
  Date.weekdays = $w("L M Me J V S D");

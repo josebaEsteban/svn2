@@ -519,9 +519,12 @@ quest1_label_21: Goal 4
 quest1_label_22: Difficulty
 quest1_label_23: Confidence
 quest1_label_2: Depression
-quest1_label_30: Basic performance profile
+quest1_label_30: Basic Performance Profile
 quest1_label_31: Season goals
 quest1_label_32: Self-regulation system
+quest1_label_33: Season's goals
+quest1_label_34: Difficulty Level
+quest1_label_35: Degree of confidence in their achievement
 quest1_label_3: Hostility
 quest1_label_4: Vigor
 quest1_label_5: Fatigue
@@ -1019,6 +1022,3 @@ text_are_you_sure: Are you sure?
 text_caracters_maximum: %d characters maximum.
 text_length_between: Length between %d and %d characters.
 text_min_max_length_info: 0 means no restriction
-quest1_label_33: Season's goals
-quest1_label_34: Difficulty Level
-quest1_label_35: Degree of confidence in their achievement
