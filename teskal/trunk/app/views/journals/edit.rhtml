@@ -1,12 +1,9 @@
-<h1>Editing journal</h1>
+<h1>Editing journals</h1>
 
-<%= error_messages_for :journal %>
-
-<% form_for(:journal, :url => journal_path(@journal), :html => { :method => :put }) do |f| %>
-  <p>
-    <%= submit_tag "Update" %>
-  </p>
+<% form_tag :action => 'update', :id => @journals do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
 <% end %>
 
-<%= link_to 'Show', journal_path(@journal) %> |
-<%= link_to 'Back', journals_path %>
+<%= link_to 'Show', :action => 'show', :id => @journals %> |
+<%= link_to 'Back', :action => 'list' %>

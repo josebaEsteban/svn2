@@ -1,79 +1,51 @@
 class JournalsController < ApplicationController
-  # GET /journals
-  # GET /journals.xml
   def index
-    @journals = Journal.find(:all)
-
-    respond_to do |format|
-      format.html # index.rhtml
-      format.xml  { render :xml => @journals.to_xml }
-    end
+    list
+    render :action => 'list'
   end
 
-  # GET /journals/1
-  # GET /journals/1.xml
+  # GETs should be safe (see http://www.w3.org/2001/tag/doc/whenToUseGet.html)
+  verify :method => :post, :only => [ :destroy, :create, :update ],
+         :redirect_to => { :action => :list }
+
+  def list
+    @journals_pages, @journals = paginate :journals, :per_page => 100
+  end
+
   def show
-    @journal = Journal.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.rhtml
-      format.xml  { render :xml => @journal.to_xml }
-    end
+    @journals = Journals.find(params[:id])
   end
 
-  # GET /journals/new
   def new
-    @journal = Journal.new
+    @journals = Journals.new
   end
 
-  # GET /journals/1;edit
-  def edit
-    @journal = Journal.find(params[:id])
-  end
-
-  # POST /journals
-  # POST /journals.xml
   def create
-    @journal = Journal.new(params[:journal])
-
-    respond_to do |format|
-      if @journal.save
-        flash[:notice] = 'Journal was successfully created.'
-        format.html { redirect_to journal_url(@journal) }
-        format.xml  { head :created, :location => journal_url(@journal) }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @journal.errors.to_xml }
-      end
+    @journals = Journals.new(params[:journals])
+    if @journals.save
+      flash[:notice] = 'Journals was successfully created.'
+      redirect_to :action => 'list'
+    else
+      render :action => 'new'
     end
   end
 
-  # PUT /journals/1
-  # PUT /journals/1.xml
+  def edit
+    @journals = Journals.find(params[:id])
+  end
+
   def update
-    @journal = Journal.find(params[:id])
-
-    respond_to do |format|
-      if @journal.update_attributes(params[:journal])
-        flash[:notice] = 'Journal was successfully updated.'
-        format.html { redirect_to journal_url(@journal) }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @journal.errors.to_xml }
-      end
+    @journals = Journals.find(params[:id])
+    if @journals.update_attributes(params[:journals])
+      flash[:notice] = 'Journals was successfully updated.'
+      redirect_to :action => 'show', :id => @journals
+    else
+      render :action => 'edit'
     end
   end
 
-  # DELETE /journals/1
-  # DELETE /journals/1.xml
   def destroy
-    @journal = Journal.find(params[:id])
-    @journal.destroy
-
-    respond_to do |format|
-      format.html { redirect_to journals_url }
-      format.xml  { head :ok }
-    end
+    Journals.find(params[:id]).destroy
+    redirect_to :action => 'list'
   end
 end

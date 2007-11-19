@@ -5,8 +5,8 @@
 ActiveRecord::Schema.define(:version => 0) do
 
   create_table "answers", :force => true do |t|
-    t.column "quest_id",     :integer,                                  :null => false
-    t.column "user_id",      :integer,                :default => 0,    :null => false
+    t.column "quest_id",     :integer,                               :null => false
+    t.column "user_id",      :integer,                :default => 0, :null => false
     t.column "competition",  :text
     t.column "answ1",        :integer,  :limit => 3
     t.column "answ2",        :integer,  :limit => 3
@@ -85,11 +85,10 @@ ActiveRecord::Schema.define(:version => 0) do
     t.column "answ75",       :integer,  :limit => 3
     t.column "answ76",       :integer,  :limit => 3
     t.column "answ77",       :integer,  :limit => 3
-    t.column "checked_out",  :string,   :limit => 0,  :default => "NO", :null => false
-    t.column "allowedDep",   :string,   :limit => 0,  :default => "NO", :null => false
+    t.column "browse",       :integer,  :limit => 3,  :default => 0, :null => false
     t.column "note1",        :text
     t.column "note2",        :text
-    t.column "vistoDep",     :string,   :limit => 0,  :default => "NO", :null => false
+    t.column "checked",      :integer,  :limit => 3,  :default => 0, :null => false
     t.column "created_on",   :datetime
     t.column "note3",        :text
     t.column "note4",        :text
@@ -97,6 +96,8 @@ ActiveRecord::Schema.define(:version => 0) do
     t.column "ip",           :string,   :limit => 15
     t.column "time_to_fill", :time
   end
+
+  add_index "answers", ["user_id"], :name => "user_id"
 
   create_table "attachments", :force => true do |t|
     t.column "container_id",   :integer,                :default => 0,  :null => false
@@ -211,7 +212,7 @@ ActiveRecord::Schema.define(:version => 0) do
     t.column "created_on",        :datetime
     t.column "ip",                :string,    :limit => 15
     t.column "role",              :integer,                 :default => 1,               :null => false
-    t.column "time_zone",         :string,    :limit => 25, :default => "Europe/Madrid"
+    t.column "time_zone",         :string,    :limit => 40, :default => "Europe/Madrid"
     t.column "ip_last",           :string,    :limit => 15
     t.column "start",             :timestamp,                                            :null => false
   end
