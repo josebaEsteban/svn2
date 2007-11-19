@@ -94,7 +94,7 @@ ActiveRecord::Schema.define(:version => 0) do
     t.column "note4",        :text
     t.column "note5",        :text
     t.column "ip",           :string,   :limit => 15
-    t.column "time_to_fill", :time
+    t.column "time_to_fill", :time,                                  :null => false
   end
 
   add_index "answers", ["user_id"], :name => "user_id"
@@ -113,11 +113,17 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   create_table "journals", :force => true do |t|
-    t.column "event",      :string,   :limit => 30, :default => "", :null => false
-    t.column "created_on", :datetime
-    t.column "ip",         :string,   :limit => 15
-    t.column "user_id",    :integer,                :default => 0,  :null => false
-    t.column "owner_id",   :integer,                                :null => false
+    t.column "event",        :string,   :limit => 30,  :default => "", :null => false
+    t.column "created_on",   :datetime
+    t.column "ip",           :string,   :limit => 15
+    t.column "user_id",      :integer,                 :default => 0,  :null => false
+    t.column "owner_id",     :integer,                                 :null => false
+    t.column "country",      :string,   :limit => 5
+    t.column "region",       :string,   :limit => 30
+    t.column "city",         :string,   :limit => 30
+    t.column "latitude",     :string,   :limit => 20
+    t.column "longitude",    :string,   :limit => 20
+    t.column "organization", :string,   :limit => 100
   end
 
   add_index "journals", ["user_id"], :name => "user"
