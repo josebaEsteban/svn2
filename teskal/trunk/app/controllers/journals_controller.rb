@@ -1,4 +1,6 @@
-class JournalsController < ApplicationController
+class JournalsController < ApplicationController 
+ before_filter :require_admin
+  
   def index
     list
     render :action => 'list'
@@ -9,21 +11,21 @@ class JournalsController < ApplicationController
          :redirect_to => { :action => :list }
 
   def list
-    @journals_pages, @journals = paginate :journals, :per_page => 100
+    @journal_pages, @journals = paginate :journals, :per_page => 10
   end
 
   def show
-    @journals = Journals.find(params[:id])
+    @journal = Journal.find(params[:id])
   end
 
   def new
-    @journals = Journals.new
+    @journal = Journal.new
   end
 
   def create
-    @journals = Journals.new(params[:journals])
-    if @journals.save
-      flash[:notice] = 'Journals was successfully created.'
+    @journal = Journal.new(params[:journal])
+    if @journal.save
+      flash[:notice] = 'Journal was successfully created.'
       redirect_to :action => 'list'
     else
       render :action => 'new'
@@ -31,21 +33,21 @@ class JournalsController < ApplicationController
   end
 
   def edit
-    @journals = Journals.find(params[:id])
+    @journal = Journal.find(params[:id])
   end
 
   def update
-    @journals = Journals.find(params[:id])
-    if @journals.update_attributes(params[:journals])
-      flash[:notice] = 'Journals was successfully updated.'
-      redirect_to :action => 'show', :id => @journals
+    @journal = Journal.find(params[:id])
+    if @journal.update_attributes(params[:journal])
+      flash[:notice] = 'Journal was successfully updated.'
+      redirect_to :action => 'show', :id => @journal
     else
       render :action => 'edit'
     end
   end
 
   def destroy
-    Journals.find(params[:id]).destroy
+    Journal.find(params[:id]).destroy
     redirect_to :action => 'list'
   end
 end

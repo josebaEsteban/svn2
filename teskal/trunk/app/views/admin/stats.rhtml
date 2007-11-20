@@ -73,7 +73,8 @@
               quest=l(:quest12_label_0)
             end -%>
     <td><%= respuestas %></td> 
-    <td><%= quest %></td>
+    <%- controlador="quest"+ answer.quest_id.to_s -%>
+    <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
     <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on)) %></td>
 	<%- if  answer.time_to_fill.nil? -%>
     <td><%=answer.time_to_fill %></td>

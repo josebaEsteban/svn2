@@ -36,8 +36,8 @@ class JournalsControllerTest < Test::Unit::TestCase
     assert_response :success
     assert_template 'show'
 
-    assert_not_nil assigns(:journals)
-    assert assigns(:journals).valid?
+    assert_not_nil assigns(:journal)
+    assert assigns(:journal).valid?
   end
 
   def test_new
@@ -46,18 +46,18 @@ class JournalsControllerTest < Test::Unit::TestCase
     assert_response :success
     assert_template 'new'
 
-    assert_not_nil assigns(:journals)
+    assert_not_nil assigns(:journal)
   end
 
   def test_create
-    num_journals = Journals.count
+    num_journals = Journal.count
 
-    post :create, :journals => {}
+    post :create, :journal => {}
 
     assert_response :redirect
     assert_redirected_to :action => 'list'
 
-    assert_equal num_journals + 1, Journals.count
+    assert_equal num_journals + 1, Journal.count
   end
 
   def test_edit
@@ -66,8 +66,8 @@ class JournalsControllerTest < Test::Unit::TestCase
     assert_response :success
     assert_template 'edit'
 
-    assert_not_nil assigns(:journals)
-    assert assigns(:journals).valid?
+    assert_not_nil assigns(:journal)
+    assert assigns(:journal).valid?
   end
 
   def test_update
@@ -78,7 +78,7 @@ class JournalsControllerTest < Test::Unit::TestCase
 
   def test_destroy
     assert_nothing_raised {
-      Journals.find(@first_id)
+      Journal.find(@first_id)
     }
 
     post :destroy, :id => @first_id
@@ -86,7 +86,7 @@ class JournalsControllerTest < Test::Unit::TestCase
     assert_redirected_to :action => 'list'
 
     assert_raise(ActiveRecord::RecordNotFound) {
-      Journals.find(@first_id)
+      Journal.find(@first_id)
     }
   end
 end
