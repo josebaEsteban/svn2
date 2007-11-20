@@ -37,7 +37,26 @@
 	</div></th>
     <th scope="col"><div align="left"><%= user.time_zone %></div></th>
     </tr>   
-  </thead>
+  </thead> 
+<%- respuestas=1 -%>
+  <%- (Journal.find_by_sql("select * from journals where journals.user_id=#{user.id } order by journals.created_on desc")).each do |journal|  -%>
+  <%- if odd == 1 -%>
+  <tr class="odd">
+    <%- odd=0-%>
+    <%-else -%>
+  <tr>
+    <%- odd=1 end -%>
+        <td><%= respuestas %></td> 
+     <td><%= journal.event %></td>   
+    <td><%= l_datetime(TzTime.zone.utc_to_local(journal.created_on)) %></td> 
+    <td><%= journal.ip %></td>
+    <td><%= journal.country %></td>         
+    <td><%= journal.region %></td>  
+    <td><%= journal.city %></td>  
+    <td><%= journal.organization %></td>  
+  </tr>   
+<%- respuestas = respuestas+1 -%> 
+   <%- end -%>
 <%- respuestas=1 -%>
   <%- (Answer.find_by_sql("select * from answers where answers.user_id=#{user.id } order by answers.created_on desc")).each do |answer|  -%>
   <%- if odd == 1 -%>
