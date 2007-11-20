@@ -11,7 +11,7 @@ class JournalsController < ApplicationController
          :redirect_to => { :action => :list }
 
   def list
-    @journal_pages, @journals = paginate :journals, :per_page => 10
+    @journal_pages, @journals = paginate :journals, :order => 'created_on DESC', :per_page => 100
   end
 
   def show
