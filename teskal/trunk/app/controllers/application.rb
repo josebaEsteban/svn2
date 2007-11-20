@@ -282,7 +282,7 @@ class ApplicationController < ActionController::Base
       journal.city=geo_ip[2]
       journal.latitude=geo_ip[4]
       journal.longitude=geo_ip[5]
-      journal.organization=geo_ip[9]
+      journal.organization=geo_ip[9].delete('"')
     end
     journal.save
   end
