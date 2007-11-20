@@ -6,7 +6,7 @@ class Quest6Controller < ApplicationController
     user=User.find(session[:user_id])
     user.start = Time.now
     user.save
-  end 
+  end
 
   def create
     @answer = Answer.new(params[:answer])
@@ -17,6 +17,7 @@ class Quest6Controller < ApplicationController
     @answer.time_to_fill =  Time.now - user.start
     if @answer.save
       # flash[:notice] = 'Answer was successfully created.'
+      journal( "quest6/create/"+@answer.id.to_s, @answer.user_id)
       redirect_to :action => 'show', :id => @answer.id
 
       # format.html { redirect_to answer_url(@answer) }
@@ -32,7 +33,7 @@ class Quest6Controller < ApplicationController
     @fecha = l_datetime(@answer.created_on)
     require_coach(@answer.user_id)
     @user=User.find(@answer.user_id )
-    journal( "show/"+@answer.id.to_s, @answer.user_id) 
+    journal( "quest6/show/"+@answer.id.to_s, @answer.user_id)
     TzTime.zone=@user.timezone
     @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
     teskalChart6
@@ -145,9 +146,9 @@ class Quest6Controller < ApplicationController
     #Generate the chart element
     strXML = "<chart caption='"+l(:quest6_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='25' showvalues='0'  PYAxisName='Comarcas' formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='10'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
     strXML = strXML + "<set label='" + l(:quest6_label_1) + "' value= '" + rg.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:quest6_label_2) + "' value= '" + rp.to_s + "'/>" 
+    strXML = strXML + "<set label='" + l(:quest6_label_2) + "' value= '" + rp.to_s + "'/>"
     strXML = strXML + "<set label='" + l(:quest6_label_3) + "' value= '" + ct.to_s + "'/>"
-    strXML = strXML + "<set label='" + l(:quest6_label_4) + "' value= '" + it.to_s + "'/>"  
+    strXML = strXML + "<set label='" + l(:quest6_label_4) + "' value= '" + it.to_s + "'/>"
     strXML = strXML + "</chart>"
     #Create the chart - Pie 3D Chart with data from strXML
     @chart1= renderChart("/charts/Bar2D.swf"+l(:PBarLoadingText), "", strXML, "quest5", 550, 270, false, false)

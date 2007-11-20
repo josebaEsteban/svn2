@@ -19,7 +19,7 @@ class Quest2Controller < ApplicationController
     @answer.time_to_fill =  Time.now - user.start
     if @answer.save
       # flash[:notice] = 'Answer was successfully created.'
-      # journal("create/"+@answer.id.to_s, @answer.user_id)
+      journal( "quest2/create/"+@answer.id.to_s, @answer.user_id) 
       redirect_to :action => 'show', :id => @answer.id
 
       # format.html { redirect_to answer_url(@answer) }
@@ -38,7 +38,7 @@ class Quest2Controller < ApplicationController
     # @answer = Answer.find(session[:use)
     require_coach(@answer.user_id)
     @user=User.find(@answer.user_id )
-    journal("show/"+@answer.id.to_s, @answer.user_id)
+    journal("quest2/show/"+@answer.id.to_s, @answer.user_id)
     TzTime.zone=@user.timezone
     @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
     teskal_chart2

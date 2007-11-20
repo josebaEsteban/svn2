@@ -15,7 +15,8 @@ class Quest10Controller < ApplicationController
     @answer.ip = request.remote_ip
     user=User.find(session[:user_id])
     @answer.time_to_fill =  Time.now - user.start
-    if @answer.save
+    if @answer.save                              
+      journal( "quest10/create/"+@answer.id.to_s, @answer.user_id)    
       # flash[:notice] = 'Answer was successfully created.'
       redirect_to :action => 'show', :id => @answer.id
 
@@ -32,7 +33,7 @@ class Quest10Controller < ApplicationController
     @fecha = l_datetime(@answer.created_on)
     require_coach(@answer.user_id)
     @user=User.find(@answer.user_id )
-    journal( "show/"+@answer.id.to_s, @answer.user_id)
+    journal( "quest10/show/"+@answer.id.to_s, @answer.user_id)
     TzTime.zone=@user.timezone
     @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
     teskalChart10

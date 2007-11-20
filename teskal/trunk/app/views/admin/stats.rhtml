@@ -46,8 +46,14 @@
     <%-else -%>
   <tr>
     <%- odd=1 end -%>
-        <td><%= respuestas %></td> 
-     <td><%= journal.event %></td>   
+        <td><%= respuestas %></td>
+<%- if journal.event[0,1]=='q'
+paso = journal.event.split('/') 
+accion = "/"+paso[0]+"/show/"+ paso[2]-%>
+<td><a href=<%= accion %>><%= journal.event %></td>
+<%- else -%>
+     <td><%= journal.event %></td>
+<%- end -%>   
     <td><%= l_datetime(TzTime.zone.utc_to_local(journal.created_on)) %></td> 
     <td><%= journal.ip %></td>
     <td><%= journal.country %></td>         
