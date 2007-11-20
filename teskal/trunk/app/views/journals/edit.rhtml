@@ -1,9 +1,9 @@
-<h1>Editing journals</h1>
+<h1>Editing journal</h1>
 
-<% form_tag :action => 'update', :id => @journals do %>
+<% form_tag :action => 'update', :id => @journal do %>
   <%= render :partial => 'form' %>
   <%= submit_tag 'Edit' %>
 <% end %>
 
-<%= link_to 'Show', :action => 'show', :id => @journals %> |
+<%= link_to 'Show', :action => 'show', :id => @journal %> |
 <%= link_to 'Back', :action => 'list' %>
