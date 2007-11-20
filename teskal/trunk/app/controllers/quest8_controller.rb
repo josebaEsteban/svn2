@@ -6,7 +6,7 @@ class Quest8Controller < ApplicationController
     user=User.find(session[:user_id])
     user.start = Time.now
     user.save
-  end 
+  end
 
   def create
     @answer = Answer.new(params[:answer])
@@ -17,6 +17,7 @@ class Quest8Controller < ApplicationController
     @answer.time_to_fill =  Time.now - user.start
     if @answer.save
       # flash[:notice] = 'Answer was successfully created.'
+      journal( "quest8/create/"+@answer.id.to_s, @answer.user_id)
       redirect_to :action => 'show', :id => @answer.id
 
       # format.html { redirect_to answer_url(@answer) }
@@ -33,7 +34,7 @@ class Quest8Controller < ApplicationController
     require_coach(@answer.user_id)
     @user=User.find(@answer.user_id )
     require_coach(@answer.user_id)
-    journal( "show/"+@answer.id.to_s, @answer.user_id) 
+    journal( "quest8/show/"+@answer.id.to_s, @answer.user_id)
     TzTime.zone=@user.timezone
     @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
     teskalChart8
@@ -193,7 +194,7 @@ class Quest8Controller < ApplicationController
     strXML = "<chart caption='"+l(:quest8_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='7' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
     strXML = strXML + "<set label='" + l(:quest8_label_1) + "' value='" + acorta(rg) + "'/>"
     strXML = strXML + "<set label='" + l(:quest8_label_2) + "' value='" + acorta(dp) + "'/>"
-    
+
     strXML = strXML + "<set label='' value=''/>"
     strXML = strXML + "<set label='" + l(:quest8_label_4) + "' value='" + acorta(uc) + "'/>"
     strXML = strXML + "<set label='" + l(:quest8_label_5) + "' value='" + acorta(ei) + "'/>"

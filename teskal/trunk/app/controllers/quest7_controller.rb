@@ -6,7 +6,7 @@ class Quest7Controller < ApplicationController
     user=User.find(session[:user_id])
     user.start = Time.now
     user.save
-  end 
+  end
 
   def create
     @answer = Answer.new(params[:answer])
@@ -17,6 +17,7 @@ class Quest7Controller < ApplicationController
     @answer.time_to_fill =  Time.now - user.start
     if @answer.save
       # flash[:notice] = 'Answer was successfully created.'
+      journal( "quest7/create/"+@answer.id.to_s, @answer.user_id)
       redirect_to :action => 'show', :id => @answer.id
 
       # format.html { redirect_to answer_url(@answer) }
@@ -32,7 +33,7 @@ class Quest7Controller < ApplicationController
     @fecha = l_datetime(@answer.created_on)
     require_coach(@answer.user_id)
     @user=User.find(@answer.user_id )
-    journal( "show/"+@answer.id.to_s, @answer.user_id) 
+    journal( "quest7/show/"+@answer.id.to_s, @answer.user_id)
     TzTime.zone=@user.timezone
     @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
     teskalChart7
