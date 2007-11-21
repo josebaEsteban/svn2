@@ -112,7 +112,7 @@ field_user: Utilisateur
 field_value: Valeur
 field_version: Version
 footer_1: Conception
-footer_2: Contacter info dans teskal.com   
+footer_2: Contacter info dans teskal.com 
 general_csv_encoding: ISO-8859-1
 general_csv_separator: ';'
 general_day_names: Lundi,Mardi,Mercredi,Jeudi,Vendredi,Samedi,Dimanche
@@ -146,7 +146,7 @@ label_attachment_plural: Fichiers
 label_boolean: Booléen
 label_browse: Parcourir
 label_calendar: Calendrier
-label_competition: Concurrence  
+label_competition: Concurrence 
 label_confirmation: Confirmation
 label_contains: contient
 label_current_status: Statut actuel
@@ -344,32 +344,30 @@ quest11_valor_4: 4 (correspondent modérément)
 quest11_valor_5: 5 correspond ont quitté un bit)
 quest11_valor_6: 6 (énormément)
 quest11_valor_7: 7 (complètement)
-quest12: Questionnaire de Climat de Motivation
-quest12_10: Je gagne
-quest12_11: J'affiche d'autres personnes que je suis le meilleur
-quest12_12: J'exécute au meilleur de ma capacité
-quest12_1: J'ai battu d'autres personnes
-quest12_2: Je suis nettement supérieur
-quest12_3: Je suis le meilleur
-quest12_4: Je travaille dur
-quest12_5: J'affiche l'amélioration personnelle claire
-quest12_6: Je surpasse mes adversaires
-quest12_7: J'atteins un but
-quest12_8: Je surmonte des difficultés
-quest12_9: J'atteins des buts personnels
-quest12_d1_a: Cette valeur basse associée au climat de motivation d'exécution, en-dessous de 4, suppose que, pour ce technicien, les résultats ont une valeur basse, inférieure que l'amélioration des capacités, qui produiront une conséquence positive sur l'implication pendant la formation et la commande sur l'inquiétude contre les erreurs des athlètes.
-quest12_d1_b: Cette valeur moyenne associée au climat de motivation d'exécution, situé entre 4 et 7, suppose que, pour ce technicien, les résultats ont une valeur importante, qui si elle est semblable à ceux du climat de maîtres, il enrichira la motivation et elle augmentera son engagement avec l'effort, aidant l'athlète à contrôler l'inquiétude contre les erreurs.
-quest12_d1_c: Ces valeurs élevées associées à l'exécution de motivation, plus de 7, supposent que, pour ce technicien, les résultats obtenus en compétition sportive ont des valeurs maximales. Seulement s'ils disparaissent accompagné des valeurs maximales dans le climat de motivation principal, suppose une bonne motivation augmenter son engagement et l'implication avec l'effort. Au cas où il régnerait au-dessus du climat principal, probablement il diminuera la capacité de l'athlète contre des situations de défi personnel maximum.
-quest12_d2_a: Le climat de motivation principal est dans les niveaux bas, qui est peu un inquiétant. Il le trouve difficile d'évaluer franchement les améliorations de sport, et quand leurs athlètes font face à des situations de nouveauté ou de grande difficulté ils se sentiront incommodes, sans initiative. Il est nécessaire d'orienter le technicien de sorte qu'elle évalue l'importance des améliorations.
-quest12_d2_b: Le climat de motivation principal est dans les taux moyens, qui est adapté mais améliorable. Il évalue franchement les améliorations de ses athlètes, qu'ils aide confronte avec des situations originales de bonne attitude ou de la grande difficulté. Il sera adapté pour se rappeler l'importance pour lui qu'a les améliorations de sorte que les athlètes fixent leurs objectifs, identifiant et évaluant leur effort en ayant lieu une amélioration personnelle.
-quest12_d2_c: Le climat de motivation principal est dans les niveaux élevés, qui est très positif. Ce technicien se concentre dans l'amélioration personnelle du sport, étant ceci le plus important. Ceci contribue pour confronter, avec une excellente attitude, des situations originales ou de la grande difficulté. Il produit d'une influence positive dans l'engagement avec la formation, la concurrence perçue et diminue l'inquiétude possible contre les erreurs de sport.
-
-
-quest12_header: Jouant le sport, l'entraîneur pense que je suis le plus réussi quand…
-quest12_intro: C'est un questionnaire qui te demande d'exprimer votre perception de quel succès dans le sport signifie à votre entraîneur. Il n'y a aucune bonne ou fausse réponse.
-quest12_label_0: Climat de Motivation
-quest12_label_1: Climat Exécution
-quest12_label_2: Climat Maître
+quest12: Questionnaire sur le climat motivationnel
+quest12_10: Je fais tout de la meilleure façon que je sais
+quest12_11: Je réussi le but que je m´avais fixé
+quest12_12: Je suis clairement mieux que les autres
+quest12_1: Je bats mes collègues
+quest12_2: Je suis le/la meilleur/e
+quest12_3: Je travaille dur
+quest12_4: Je montre une amélioration personnelle très claire
+quest12_5: Je le fais mieux que les autres
+quest12_6: Je montre aux gens que je suis le/la meilleur/e
+quest12_7: Je surmonte les difficultés
+quest12_8: Je maîtrise quelque chose que je ne pouvais pas faire 
+quest12_9: Je fais quelque chose que les autres ne savent pas faire
+quest12_d1_a: Cette valeur baisse qui est en relation avec le climat motivationnel du rendement qui est situé aux alentours de 4, veut dire que pour ce technicien les résultats obtenus par les deportistes ont une valeur baisse peut être moins que les améliorations des habilités ce qui produit un effet positif sur l´auto perception dans l´entraînement et le control sur l´anxiété face aux erreurs des deportistes au cas où ils les arrivent.
+quest12_d1_b: Cette valeur moyen associé au climat motivationnel de rendement situé entre 4 et 7, veut dire, que pour un technicien les résultats obtenus pour les deportistes ont une valeur importante et s´ils sont similaires aux valeurs du niveau de maîtrise va augmenter la motivation et son compromis avec l´effort, cela va aider le deportiste à contrôler l´anxiété face aux erreurs dans le cas ou ils apparaissent.
+quest12_d1_c: Cette valeur é levé associé au climat motivationnel du rendement situé plus haute que 7, cela veut dire que ce technicien les résultants obtenus par le deportiste a une valeur maximale. Seulement s´ils vont accompagnés des valeurs élevés dans le climat motivationnel de maîtrise peut supposer une bonne motivation pour augmenter le compromis et l´implication avec l´effort .Dans le cas ou il soit plus forte que celle de maîtrise signalé, sûrement va diminuer la capacité des deportistes face aux situations d´effort personnel maximal.
+quest12_d2_a: Le climat motivationnel de maîtrise se trouve dans des niveaux baisses ce qui est un peut alarmante. Il a des problèmes pour valoriser positivement les améliorations des deportistes et quand ils doivent faire face aux situations nouvelles ou avec une grande difficulté ils vont se sentir malalaises sans initiative. Il faudra orienter le technicien pour qu´il valorisé l´importance des améliorations qui se produisent a travers l´autocomparation du deportiste.
+quest12_d2_b: Le climat motivationnel de maîtrise se trouve dans des niveaux moyens, ce qui est correct mais peu s´améliorer. Il faut mettre en valeur les améliorations des deportistes ce qui les aide à affronter avec une bonne attitude les situations nouvelles ou avec une grande difficulté .Il sera nécessaire de les rappeler sur l´importance qui ont les améliorations pour que les deportistes réussissent ses buts, en reconnaissant et en valorisant son effort quant on produit une amélioration personnel bien qu´elle soit petite.
+quest12_d2_c: Le climat motivationnel de maîtrise se trouve dans des niveaux élèves ce qui est positif .Ce technicien est centré dans l´amélioration personnel des deportistes ce qui est le plus importante. Ceci contribue à affronter, avec une excellente attitude des situations nouvelles ou avec une grande difficulté .Produire une influence positive dans le compromis avec l´entraîneur, dans la compétence aperçu et minimise la possible anxiété face aux erreurs qui puisse.
+quest12_header: Quant on fait du sport mon entraîneur pense que je réussi quand
+quest12_intro: Plus bas il y a une série de commentaires et phrases qui ont relation avec situations et comportements dans la compétition .S´il te plait lis les attentivement et choisi le pourcentage qui montre de la meilleure façon possible l´avis de ton entraîneur.
+quest12_label_0: Climat motivationnel
+quest12_label_1: Climat de rendement
+quest12_label_2: Climat de maitrìse
 quest12_valor_1: 0 (rien)
 quest12_valor_2: 100 (complètement)
 quest1: Valoración Inicial Temporada
@@ -501,78 +499,75 @@ quest1_label_6: Ansiedad cognitiva
 quest1_label_7: Autoconfianza
 quest1_label_8: Ansiedad Somática
 quest1_label_9: Optima
-quest2: Questionnaire de Tolérance de Stress Psychologique
-quest2_10: J'ai été convaincu que je pourrais réaliser mon exécution à tout moment
-quest2_11: J'ai traité très effectivement les problèmes de mes équipiers
-quest2_12: J'étais in good condition physiquement
-quest2_13: Je me suis poussé pendant l'exécution
-quest2_14: J'ai senti l'exécution avec émotion écoulée
-quest2_15: J'ai eu la douleur musculaire après exécution
-quest2_16: J'ai été convaincu que je me suis comporté bien
-quest2_17: Trop a été exigé de moi pendant les ruptures
-quest2_18: Je psyched vers le haut avant exécution
-quest2_19: J'ai estimé que j'ai voulu quitter mon sport
-quest2_1: Les parties de mon corps faisaient mal
-quest2_20: Je me suis senti très énergique
-quest2_21: I facilement compréhensible ce que mes équipiers ont pensé des choses
-quest2_22: J'ai été convaincu que je m'étais bien exercé
-quest2_23: Les ruptures n'avaient pas lieu aux bons moments
-quest2_24: Je me suis senti vulnérable aux dommages
-quest2_25: J'ai fixé des buts définis pour me pendant l'exécution
-quest2_26: Mon corps s'est senti fort
-quest2_27: Je me suis senti frustated par mon sport
-quest2_28: J'ai traité des problèmes émotifs dans mon sport très calmement 
-quest2_2: Je ne pourrais pas obtenir le repos pendant les ruptures
+quest2: Questionnaire Tolérance Psychologique au stress
+quest2_10: J´étais convaincu que je pourrais avoir du rendement dans n´importe quelle moment.
+quest2_11: J´ai résolu correctement les problèmes avec mes collègues.
+quest2_12: J´ai été en bonne forme physique.
+quest2_13: Je me suis motivé pendant l´entraînement/compétition
+quest2_14: Je me sentais fatigué émotionnellement pendant l´entraînement/compétition.
+quest2_15: J´ai eu des douleurs musculaires après d´entraînement/compétition.
+quest2_16: J´étais convaincu d´avoir entraîné/faite la compétition correctement. 
+quest2_17: On m´a demandé de faire trop de choses pendant mes repos.
+quest2_18: Je me suis mentalisé avant la compétition.
+quest2_19: J´ai perçu que je voulais abandonner mon sport.
+quest2_1: J´eu du mal dans quelques parties de mon corps.
+quest2_20: Je me sentais plain d´énergie.
+quest2_21: J´ai compris rapidement comme étaient mes collègues.
+quest2_22: J´étais convaincu que j´entrenai correctement
+quest2_23: Les repos n´ont pas eu lieu aux moments adeptes
+quest2_24: Je me sentais vulnérable aux lésions.
+quest2_25: Je me suis marqué des objectifs pour l´entraînement.
+quest2_26: Je me sentais fort physiquement.
+quest2_27: Je me sentais frustré dans mon sport.
+quest2_28: J´ai utilisé correctement (avec tranquillité) les problèmes émotionnels dans mon sport.
+quest2_2: J´ai eu l´impression d´avoir très peut de temps pour me reposer.
 quest2_3: J'ai été convaincu que coud d'I atteignent mes buts de positionnement pendant l'exécution
 quest2_4: J'ai bien physiquement récupéré
 quest2_5: Je me suis senti pour griller par mon sport
 quest2_6: J'ai accompli beaucoup de choses valables dans mon sport
 quest2_7: J'étais mentalement prêt à exécuter
 quest2_8: Mes muscles se sont sentis raides ou tendus pendant l'exécution
-quest2_9: J'ai eu l'impression là étais trop peu de ruptures
-quest2_d1_a: Les valeurs liées au sommeil perturbé ou à un déficit de reprise sont basses, ainsi il signifie que les charges de travail peuvent être considérées adéquates.
-quest2_d1_b: Les valeurs liées au sommeil perturbé ou à un déficit de reprise sont moyennes, ainsi il signifie que les charges de travail doivent être suivies attentivement.
-quest2_d1_c: Les valeurs liées au sommeil perturbé ou à un déficit de reprise sont élevées, ainsi il signifie que les charges de travail doivent être mises à jour et les demandes de la pratique ajustées.
-quest2_d2_a: La fatigue émotive a associé aux situations frustrantes et s'est associée à la basse persévérance possible est aux niveaux bas.
-quest2_d2_b: La fatigue émotive a associé aux situations frustrantes et s'est associée à la basse persévérance possible est aux niveaux intermédiaires et cette valeur worrysome doit être discutée avec l'athlète.
-quest2_d2_c: La fatigue émotive a associé aux situations frustrantes et s'est associée à la basse persévérance possible est aux niveaux élevés et il est nécessaire de découvrir ce qui entraîne ces niveaux dangereux.
-quest2_d3_a: Un inférieur de la vulnérabilité de dommages indique une bonne destination pour faire face à et aborder des situations difficiles ou complexes avec la détermination.
-quest2_d3_b: Un de niveau intermédiaire de la vulnérabilité de dommages peut négativement effectuer sa conviction de l'athlète la décision et en faisant face à des situations difficiles ou risquées dans la pratique.
-quest2_d3_c: Un à niveau élevé de la vulnérabilité aux dommages implique une perception intensifiée de la fragilité et de l'insécurité en faisant face à des situations dures ou plus risquées dans la pratique.
-quest2_d4_a: La basse santé physique nivelle négativement l'incidence les sentiments subjectifs de la compétence perçue dans l'exécution physique.
-quest2_d4_b: Un niveau modéré de forme physique implique des sentiments adéquats de la compétence perçue dans l'exécution physique.
-quest2_d4_c: Les niveaux élevés de forme physique signifient des sentiments forts d'efficacité et de vitalité, avec une perception élevée d'à un santé physique dans la pratique.
-quest2_d5_a: Les niveaux bas de l'accomplissement personnel indiquent la basse satisfaction avec l'accomplissement de but et également les niveaux bas de l'appréciation ou l'empathie avec l'équipe ou les groupent.
-quest2_d5_b: Un de niveau intermédiaire de l'accomplissement personnel signifie un certain degré de satisfaction avec l'accomplissement de but et également l'appréciation acceptable et d'empathie avec l'équipe ou le groupe.
-quest2_d5_c: Les niveaux personnels élevés d'accomplissement indiquent un niveau important de satisfaction avec l'accomplissement de but et le niveau élevé également d'appréciation et d'empathie avec l'équipe ou le groupent. 
-quest2_d6_a: Inférieur de l'auto-efficacité signifie que le sentiment de l'athlète au sujet des pratiques en matière de voie étaient allés et au sujet de son niveau de la promptitude être bas, ainsi la dynamique du bout plusieurs pratiques doit être passée en revue.
-quest2_d6_b: La perception de l'athlète au sujet des pratiques en matière de voie ont disparu et au sujet de sa préparation est à un niveau modéré. Il y a probablement eu quelques interférences avec la dynamique de pratique mais elles n'ont pas eu un impact majeur sur la promptitude de l'athlète.
-quest2_d6_c: Les niveaux élevés de l'auto-efficacité indiquent que l'athlète se sent très positif au sujet des pratiques et de sa propre préparation, avec des niveaux élevés de fatuité pour le travail effectué.
-quest2_d7_a: Un inférieur de l'autorégulation implique la difficulté using des qualifications mentales dans la pratique, comme l'individu-motivation et l'établissement des buts personnels. Il est nécessaire d'aborder spécifiquement ces issues, peut-être using l'information contenue dans la présentation de motivation d'accomplissement dans la bibliothèque.
-quest2_d7_b: Le niveau modéré de l'utilisation des qualifications telles que l'individu-motivation et de l'établissement des buts personnels est vu avec les niveaux modérés de l'autorégulation.
-quest2_d7_c: Les scores élevés indiquent à niveau élevé de l'utilisation des qualifications mentales dans la pratique, comme l'individu-motivation et l'établissement des buts personnels, qui alors renforce et met en valeur le chemin à l'accomplissement de ces buts.
-# valoracion
-quest2_header: Pendant le mois dernier…
-quest2_intro: Au-dessous de vous avoir une série d'expressions liées à différents aspects de la formation et de la concurrence sur lesquelles nous voulons recueillir votre avis. Svp, les lire avec la tranquilité, les répondre sincèrement et contrôler l'option avec laquelle vous êtes d'accord davantage ou qu'elle décrit mieux votre avis.
-# étiquette
-quest2_label_0: Tolérance Stress Psychologique
-quest2_label_1: Sommeil perturbé
-quest2_label_2: Fatigue émotive
-quest2_label_3: Vulnérabilité aux dommages
-quest2_label_4: Niveau de forme physique
-quest2_label_5: Accomplissement personnel
-quest2_label_6: Auto-efficacité
+quest2_9: J´ai eu l´impression d´avoir très peut de temps pour me reposer.
+quest2_d1_a: Les valeurs relationnées avec le repos interrompu ou avec un déficit dans la récupération sont baisses, ce qui permet de considérer ajustés les niveaux de la charge de travail proposé.
+quest2_d1_b: Les valeurs relationnées avec le repos interrompue ou avec un déficit dans la récupération sont moyennes, ce qui nous mène à être vigilant avec la change de travail pendant l´entraînement.
+quest2_d1_c: Les valeurs relationnées avec le repos interrompue ou avec un déficit dans la récupération sont élevés, ce qui nous mène a révisé et peut être refaire la charge de travail dans la session d´entraînements.
+quest2_d2_a: En ce qui concerne la fatigue émotionnelle en relation avec des situations de frustration, s'est associée à la basse persévérance possible est aux niveaux bas.
+quest2_d2_b: La fatigue émotionnel a associé aux situations frustrantes et s'est associée à la basse persévérance possible est aux niveaux intermédiaires et cette valeur inquiétante être discutée avec l'athlète.
+quest2_d2_c: En ce qui concerne la fatigue émotionnel en relation avec des situations de frustration et associé a une manque de persistance se trouve dans des niveaux élevé il est nécessaire de détecter les causes qui gêneraient ces dangereuses valeurs.
+quest2_d3_a: En observant les valeurs de vulnérabilité aux lésions on voit qu´ils se trouvent dans un niveau bas ce qui veut dire une bonne disposition pour affronter avec garanties et détermination les situations plus dures et plus complexes.
+quest2_d3_b: En observant les valeurs de vulnérabilité aux lésions on voit qu´ils se trouvent dans un niveau moyen ce qui peut affecter négativement sa disposition et sa fermeté décisionnel au moment d´affronter les plus dures situations ou avec plus de risqué dans l´entraînement.
+quest2_d3_c: En observant les valeurs de vulnérabilité aux lésions on voit qu´ils se trouvent dans un niveau élevé ce qui veut dire une grande perception de fragilité et d´insécurité au moment d´affronter les plus dures situations ou avec plus de risque dans l´entraînement.
+quest2_d4_a: En relation avec son état de forme on voit qu´il est dans un niveau bas ce qui ennui les sentiments subjectifs de capacité aperçu en relation avec le rendement .avoir la forme mesure les sentiments subjectifs d´habileté et compétence dans l´entraînement la perception d´avoir la forme et la vitalité avec les scores les plus élevés sont décrites comme physiquement efficaces et vitales. 
+quest2_d4_b: En relation avec son état de forme on voit qu´il est dans un niveau moyen ce qui va l´aider à avoir des sentiments adéquates de capacité aperçu on avec le rendement 
+quest2_d4_c: En relation avec son état de forme on voit qu´ils sont situés dans un niveau élevé ce qui veut dire qu´on a des très profonds sentiments d´efficacité et de vitalité accompagnes d´une haute perception sur son état de forme en relation avec son rendement.
+quest2_d5_a: Si on fait attention aux valeurs qui sont en relation avec les réussites personnels on voit qu´ils se trouvent dans un niveau bas ce qui montre une certaine insatisfaction avec la réussite de ses buts ou une basse appréciation et empathie avec le groupe ou équipe.
+quest2_d5_b: Si on fait attention aux valeurs qui sont en relation avec les réussites personnels on voit qu´ils se trouvent dans un niveau moyen ce qui montre une certaine satisfaction avec la réussite de ses buts ou aussi une acceptable appréciation et empathie avec le groupe ou équipe.
+quest2_d5_c: Si on fait attention aux valeurs qui sont en relation avec les réussites personnels on voit qu´ils se trouvent dans un niveau élevé ce qui montre une grande satisfaction avec la réussite de ses buts ou aussi une grande appréciation et empathie avec le groupe ou équipe.
+quest2_d6_a: La conviction qui possède ce deportiste sur le déroulement de son entraînement et les croyances sur sa perception sont baisses ce qui fait nécessaire la révision de la dynamique des entraînements de la dernière période. 
+quest2_d6_b: La conviction qui possède ce deportiste sur le déroulement de son entraînement et les croyances sur sa perception sont moyens, peut être on a quelques interférences dans la dynamique des entraînements de la dernière période, mais ils n´ont pas affecté en grande mesure son entraînement.
+quest2_d6_c: La conviction qui possède ce deportiste sur le déroulement de son entraînement et les croyances sur sa perception est élevée, ce qui produit une sensation gratifiante et d´autosatisfaction avec l´ entraînement réalisé.
+quest2_d7_a: Apparemment il a des problèmes pour utiliser les habilités mentales dans sa préparation, parmi elles l´auto motivation et l´établissement des objectifs auto imposés car ils présentent des valeurs baisses en relation avec cette dimension .C´est nécessaire réaliser un travail spécifique appuyé sur le “Power” sur la motivation au succès.
+quest2_d7_b: On peut signaler qu´il utilise les habilités mentales dans sa préparation, parmi elles l´auto motivation et l´établissement des objectifs auto imposés car elle présente valeurs moyens relationnés avec cette dimension.
+quest2_d7_c: Le deportiste utilise les habilités mentales dans sa préparation, parmi elles l´auto motivation et l´établissement d´objectifs auto imposés ce qui serve de renforcement et de guide dans son chemin pour la réussite de ses buts.
+quest2_header: Dans le dernier mois
+quest2_intro: Plus bas vous avez plusieurs phrases qu´ont relation avec les différents aspects d´un entraînement et d´une compétition avec lesquels nous voulons connaître ton avis. S´il te plait, lis les phrases tranquillement et répond avec sincérité et clic dans le numéro avec lequel tu es d´accord ou exprime mieux ton avis.
+quest2_label_0: Tolérance Psychologique au stress
+quest2_label_1: Repos interrompue
+quest2_label_2: Fatigue émotionnelle
+quest2_label_3: Vulnérabilité aux lésions
+quest2_label_4: État de Forme
+quest2_label_5: Réussi personnel
+quest2_label_6: Autoeficacité
 quest2_label_7: Autorégulation
 quest2_label_8: Évaluation générale
 quest2_label_9: réponse 
-quest2_val_1: De façon générale le niveau de la tolérance d'effort est très bon, indiquant la capacité optimale de manipuler n'importe quelle situation dans la pratique ou concurrence. Le niveau des incréments de générateur d'effort est bas, alors que les valeurs des dimensions de reprise sont positives, en particulier celles indiquées ci-dessus. En résumé, cet athlète a une perception positive de son niveau de forme physique et de préparation, ses exécutions et est fortement motivé pour atteindre ses buts.
-quest2_val_2: Le seuil de tolérance est globalement positif, indiquant la présence d'assez de ressources pour faire face aux situations spéciales, dans la pratique et en concurrence. Le niveau de l'effort produisant des incréments est au niveau de bas-médium, alors que les niveaux des dimensions de reprise sont aux niveaux médium-élevés, environ 4. De façon générale c'est un athlète motivé, avec une perception positive de son niveau, promptitude et accomplissement et motivé de forme physique pour atteindre ses buts. 
-quest2_val_3: Il y a un équilibre sensible ici entre les inducteurs d'effort et les dimensions de reprise, qui est une situation dangereuse. L'athlète a assez de ressources à faire face à lui et peut réduire le niveau de l'effort produit par les dimensions indiquées ci-dessus. Il est important d'installer une interposition spécifique basée sur le module d'effort/pression, appliqué avec une entrevue directe avec l'athlète pour évaluer les facteurs de force actuels et pour travailler l'interposition convenablement. 
-quest2_val_4: Ceci signifie que le niveau de la tolérance est très bas parce que les incréments se produisants sont plus grands que les incréments de reprise. C'est une situation à haut risque qui doit être adressée immédiatement avec l'aide du précepteur, à moins que la réflexion commune de la dyade d'entraîneur/athlète identifie les causes produisant des valeurs observées. Dans cet exemple, le travail spécifique basé sur le module d'effort/pression peut être conçu avec la surveillance du précepteur.
-# quest3
+quest2_val_1: En général le niveau de tolérance présente des valeurs moyens très positifs ce qui va le permettre d´affronter n´importe quelle situation d´entraînement ou de compétition de forme optimal. Le niveau des générateurs est dans son ensemble dans des valeurs baisses tandis que les valeurs des dimensions récupératrices sont positifs, surtout ceux qu´on vienne de signaler. Pourtant on peut signaler que ce deportiste à une perception élevé sur son état de forme et ses prestations de rendement il se trouve très motivé et avec une grande détermination pour réussir ses buts.
+quest2_val_2: En général le niveau de tolérance présente des valeurs moyens très positifs ce qui faite qu´il possède des ressources pour entamer des situations spéciales dans l´entraînement et dans la compétition. Le niveau des générateurs est dans son ensemble dans des valeurs élevé dans la partie baisses tandis que les valeurs des dimensions récupératrices sont situés dans la partie haute du niveau moyen c´est à dire 4, comme on vient de signaler .On peut signaler aussi que ce deportiste possède une correcte perception en ce qui concerne son état de forme et ses prestations de rendements ; il se trouve motivé et avec beaucoup d´envie de réussir ses buts.
+quest2_val_3: En général le niveau de tolérance se trouve dans une situation délicate car il existe une égalité parmi les valeurs générateurs et récupérateurs ce qui nous mène a une situation d´alarme mais avec des ressources suffisantes pour l´affronter et essayer de réduire le niveau d´estress généré par les dimensions signalés .C´est important de envisager un plan de travail spécifique appuyé sur des contenues qui ont relation avec la Pression/Estrées et en plus, l´implémenter avec une exploration presentiel au deportiste pour contrôler une possible cause d´estress et pouvoir l´aborder correctement.
+quest2_val_4: En général le niveau de tolérance se trouve dans des niveaux très baisses car le niveau des valeurs moyens qui correspond aux générateurs sont plus grandes que les récupérateurs .Il s´agit d´une situation de risque qui demande être abordé tout de suite avec le conseil du tuteur quoique après la réflexion entraîneur deportiste puisse identifier les causes qui ont généré les valeurs signales .Dans ce cas la on peut proposer un travail spécifique appuyé sur les contenus qui sont en relation avec la Pression/estrés et avec l´orientation indirecte du tuteur.
 quest2_valor_0: 0 (rien)
-quest2_valor_1: 1 (rarement)
-quest2_valor_2: 2 (parfois)
+quest2_valor_1: 1 (rare fois)
+quest2_valor_2: 2 (quelque fois)
 quest2_valor_3: 3 (souvent)
 quest2_valor_4: 4 (beaucoup de fois)
 quest2_valor_5: 5 (presque toujours)
@@ -689,7 +684,7 @@ quest4_d4_a: Los valores del Vigor se encuentran en un nivel bajo, lo que supone
 quest4_d4_b: Los valores del Vigor se encuentran en un nivel medio, lo que en principio le perjudicará en su rendimiento, salvo que se encuentran en la zona superior de este nivel. Puede ser que no se haya preparado específicamente esta competición, o que nos encontremos en un periodo de entrenamiento muy denso y con altas intensidades.
 quest4_d4_c: Los valores del Vigor se encuentran en un nivel alto, en la zona óptima para competir, lo que supone incrementar las probabilidades de éxito en cualquier situación de reto que se le plantee. Esto indica que la dimensión emocional positiva para el rendimiento, en principio, garantiza un buen equilibrio emocional para afrontar con garantías esta competición.
 quest4_d5_a: En cuanto a los valores de la Fatiga se encuentran en un nivel bajo, lo cual es positivo, lo que supone que est@ deportista se encuentra pletóric@ para soportar ritmos de competición altos o esfuerzos de larga duración durante la competición.
-quest4_d5_b: En cuanto al os valores de la Fatiga se encuentran en un nivel medio, lo que puede ser un poco preocupante en este caso, ya que influirá negativamente en su rendimiento. Si estos valores corresponden a pasaciones realizadas intracompetición, se pueden considerar normales y  habrá que tener en cuenta los procesos de recuperación para poder evaluarlos.
+quest4_d5_b: En cuanto al os valores de la Fatiga se encuentran en un nivel medio, lo que puede ser un poco preocupante en este caso, ya que influirá negativamente en su rendimiento. Si estos valores corresponden a pasaciones realizadas intracompetición, se pueden considerar normales y habrá que tener en cuenta los procesos de recuperación para poder evaluarlos.
 quest4_d5_c: En cuanto a los valores de la Fatiga se encuentran en un nivel alto, lo cual es alarmante, ya que afectará muy negativamente a su rendimiento competitivo, salvo que no se haya preparado esta competición y coincida con un periodo de entrenamiento de gran volumen e intensidad. Si se ha realizado una puesta a punto adecuada, este alto valor nos puede indicar que existe un riesgo de sobreentrenamiento en est@ deportista.
 quest4_d6_a: Presenta un valor bajo en cuanto a la ansiedad cognitiva, transmitiendo calma y serenidad, despreocupad@, con mucha capacidad de concentración en los momentos que sean necesarios de la competición.
 quest4_d6_b: Se observa un valor medio en cuanto a la ansiedad cognitiva, lo que supone que, a veces, se encuentre un poco intranquil@ o ligeramente nervios@. Conviene realizar un pequeño ajuste durante la competición, a través de la persuasión verbal, acompañado de sesiones de visionado de presión/estrés, para reducir estos valores de cara a la próxima competición.
