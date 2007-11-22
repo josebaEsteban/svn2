@@ -265,26 +265,30 @@ class ApplicationController < ActionController::Base
   end
 
   def journal(event, owner)
-    journal = Journal.new
-    if session[:user_id].nil?
-      journal.user_id = owner
+    if logged_in_user and @logged_in_user 
+     # nothing by the moment if user is admin 
     else
-      journal.user_id = session[:user_id]
+      journal = Journal.new
+      if session[:user_id].nil?
+        journal.user_id = owner
+      else
+        journal.user_id = session[:user_id]
+      end
+      journal.event= event
+      journal.ip = request.remote_ip
+      journal.owner_id = owner
+      if request.remote_ip != '127.0.0.1'
+        response = Net::HTTP.get_response('geoip1.maxmind.com', '/f?l=WAXRgRZAtHTa&i='+request.remote_ip)
+        geo_ip = response.body.split(',')
+        journal.country=geo_ip[0]
+        journal.region=geo_ip[1]
+        journal.city=geo_ip[2]
+        journal.latitude=geo_ip[4]
+        journal.longitude=geo_ip[5]
+        journal.organization=geo_ip[9].delete('"')
+      end
+      journal.save
     end
-    journal.event= event
-    journal.ip = request.remote_ip
-    journal.owner_id = owner
-    if request.remote_ip != '127.0.0.1'
-      response = Net::HTTP.get_response('geoip1.maxmind.com', '/f?l=WAXRgRZAtHTa&i='+request.remote_ip)
-      geo_ip = response.body.split(',')
-      journal.country=geo_ip[0]
-      journal.region=geo_ip[1]
-      journal.city=geo_ip[2]
-      journal.latitude=geo_ip[4]
-      journal.longitude=geo_ip[5]
-      journal.organization=geo_ip[9].delete('"')
-    end
-    journal.save
   end
 
   def geo_ip(ip)
