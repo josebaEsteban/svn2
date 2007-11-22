@@ -5,36 +5,34 @@
   <tbody>
   <thead>
     <tr>
-      <th scope="col">name</th>
-      <th scope="col">timezone</th>
-      <th scope="col">ip</th>
-      <th scope="col">language</th>
-      <th scope="col">status</th>
-      <th scope="col">role</th>
-      <th scope="col">event</th>
-      <th scope="col">2fill</th>  
-      <th scope="col">created_on</th>
-      <th scope="col">ip</th>
-      <th scope="col">country</th>
-      <th scope="col">region</th>
-      <th scope="col">city</th>
-      <th scope="col">organization</th>
+      <th scope="col"><div align="left">name</div></th>
+      <th scope="col"><div align="left">timezone</div></th>
+      <th scope="col"><div align="left">lg</div></th>
+      <th scope="col"><div align="left">status</div></th>
+      <th scope="col"><div align="left">role</div></th>
+      <th scope="col"><div align="left">event</div></th>
+      <th scope="col"><div align="left">2fill</div></th>  
+      <th scope="col"><div align="left">date</div></th>
+      <th scope="col"><div align="left">co</div></th>
+      <th scope="col"><div align="left">reg</div></th>
+      <th scope="col"><div align="left">city</div></th>
+      <th scope="col"><div align="left">org</div></th>
     </tr>
   </thead>
   <%- odd=0 -%>
   <%- nope=0 -%>
   <%- (Journal.find_by_sql("select * from journals order by journals.created_on desc")).each do |journal|  -%>
-  <%- if journal.user_id >0 -%>
+  	  <%- if odd == 1 -%>
+	  <tr class="odd">
+	    <%- odd=0-%>
+	    <%-else -%>
+	  <tr>
+	    <%- odd=1 end -%>
+<%- if journal.user_id >0 -%>
   <%- user = User.find(journal.user_id) -%>
-  <tr>
     <th scope="col"><div align="left"><%= user.firstname + " " +user.lastname %></div></th>
     <%- TzTime.zone=user.timezone -%>
-    <%- if user.last_login_on.nil? -%>
-    <th scope="col"><div align="left">never</div></th>
-    <%- else -%>
-    <th scope="col"><div align="left"><%=l_datetime(TzTime.zone.utc_to_local(user.last_login_on))%></div></th>
-    <%- end -%>
-    <th scope="col"><div align="left"><%= user.ip %></div></th>
+    <th scope="col"><div align="left"><%=user.timezone %></div></th>
     <th scope="col"><div align="left"><%= user.language %></div></th>
     <th scope="col"><div align="left">
         <%- case user.status -%>
@@ -58,9 +56,7 @@
         tutor
         <%- end -%>
       </div></th>
-    <th scope="col"><div align="left"><%= user.time_zone %></div></th>
     <%- else -%>
-    <th scope="col"></th>
     <th scope="col"></th>
     <th scope="col"></th>
     <th scope="col"></th>
@@ -72,7 +68,7 @@
 		accion = "/"+paso[0]+"/show/"+ paso[2]-%>
     <td><a href=<%= accion %>><%= journal.event %></td>
     <%- 	if paso[1]='create'
-	  			answer=Anwer.find(paso[2])
+	  			answer=Answer.find(paso[2])
 	  				if  answer.time_to_fill.nil?
 	    				time_taken = 0
 	  				else
@@ -87,7 +83,6 @@
     <%- end -%>
     <td><%= time_taken %></td>
     <td><%= l_datetime(TzTime.zone.utc_to_local(journal.created_on)) %></td>
-    <td><%= journal.ip %></td>
     <td><%= journal.country %></td>
     <td><%= journal.region %></td>
     <td><%= journal.city %></td>
