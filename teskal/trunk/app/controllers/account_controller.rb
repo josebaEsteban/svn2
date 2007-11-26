@@ -23,34 +23,38 @@ class AccountController < ApplicationController
   end
 
   # Login request and validation
-  def login 
+  def login
     if request.get?
       # Logout user
-      self.logged_in_user = nil 
+      self.logged_in_user = nil
     else
       # Authenticate user
-      user = User.try_to_login(params[:login], params[:password]) 
+      user = User.try_to_login(params[:login], params[:password])
       if user
-        self.logged_in_user = user 
-        # user.update_attribute(:ip_last, request.remote_ip) 
+        self.logged_in_user = user
+        # user.update_attribute(:ip_last, request.remote_ip)
         journal("log_in",user.id)
         # generate a key and set cookie if autologin
-        if params[:autologin] && Setting.autologin? 
+        if params[:autologin] && Setting.autologin?
           puts "autologin"
           token = Token.create(:user => user, :action => 'autologin')
           cookies[:autologin] = { :value => token.value, :expires => 5.day.from_now }
         end
         redirect_back_or_default :controller => 'my', :action => 'page'
-      else   
+      else
+        # if user.locked?
+        # flash.now[:notice] = l(:status_locked)
+        # else
         flash.now[:notice] = l(:notice_account_invalid_creditentials)
-        journal("account invalid",0) 
+        # end
+        journal("account invalid",0)
       end
     end
   end
 
   # Log out current user and redirect to welcome page
   def logout
-    journal("log_out",session[:user_id]) 
+    journal("log_out",session[:user_id])
     cookies.delete :autologin
     Token.delete_all(["user_id = ? AND action = ?", logged_in_user.id, "autologin"]) if logged_in_user
     self.logged_in_user = nil
@@ -84,7 +88,7 @@ class AccountController < ApplicationController
         flash.now[:notice] = l(:notice_account_unknown_email) and return unless user
         # create a new token for password recovery
         token = Token.new(:user => user, :action => "recovery")
-        if token.save 
+        if token.save
           journal("deliver lost password",user.id)
           Mailer.deliver_lost_password(token)
           flash[:notice] = l(:notice_account_lost_email_sent)

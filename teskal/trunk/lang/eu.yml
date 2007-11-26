@@ -368,6 +368,15 @@ quest11_valor_4: 4 (hobe esanda)
 quest11_valor_5: 5 (dexent)
 quest11_valor_6: 6 (asko)
 quest11_valor_7: 7 (guztiz)
+quest11_valor_tit_1: Autodeterminaturiko Motibazio Profil Globala aurkezten du. 
+quest11_valor_tit_2: Autodeterminaturiko Motibazio Profil Globala aurkezten du. 
+quest11_valor_tit_3: Motibazio Bipolar Profil Globala aurkezten du. 
+quest11_valor_tit_4: Motibazio moderatu Profil Globala aurkezten du.
+quest11_valor_tit_5: Motibazio moderatu Profil Globala aurkezten du.
+quest11_valor_tit_6: Ez Autodeterminaturiko Motibazio Profil Globala aurkezten du. 
+quest11_valor_tit_7: Baxu Autodeterminaturiko Motibazio Profil Globala aurkezten du. 
+quest11_valor_tit_8: Baxu Autodeterminaturiko Motibazio Profil Globala aurkezten du. 
+quest11_valor_tit_9: Ez Autodeterminaturiko Motibazio Profil Globala aurkezten du.
 quest12: Arrakasta pertzepzioaren galdetegia
 quest12_10: Guztia dakidan bezain ondo egiten dut
 quest12_11: Nire buruari jarritako jomuga lortzen dut
@@ -1036,15 +1045,6 @@ status_registered: erregistratu
 text_are_you_sure: ¿ Ziur zaude ?
 text_caracters_maximum: %d characters maximum.
 text_length_between: Longitud entre %d y %d caracteres. 
-quest11_valor_tit_1: Presenta un Perfil Global de Motivación Autodeterminado.
-quest11_valor_tit_2: Presenta un Perfil Global de Motivación Autodeterminado.
-quest11_valor_tit_3: Presenta un Perfil Global de Motivación Bipolar.
-quest11_valor_tit_4: Presenta un Perfil Global de Motivación Moderado.
-quest11_valor_tit_5: Presenta un Perfil Global de Motivación Moderado.
-quest11_valor_tit_6: Presenta un Perfil Global de Motivación No Autodeterminado.
-quest11_valor_tit_7: Presenta un Perfil Global de Motivación Bajo Autodeterminado.
-quest11_valor_tit_8: Presenta un Perfil Global de Motivación Bajo Autodeterminado.
-quest11_valor_tit_9: Presenta un Perfil Global de Motivación No Autodeterminado.
 unit_10_path: 10.La.Comunicacion.es
 unit_10_title: La Comunicación
 unit_11_path: 11.Responsabilidad.vs.Culpabilidad.es
@@ -1077,4 +1077,3 @@ unit_8_path: 08.Tolerancia.Psicologica.es
 unit_8_title: Tolerancia Psicólogica
 unit_9_path: 09.La.Competicion.es
 unit_9_title: La Competición
-

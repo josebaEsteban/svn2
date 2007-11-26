@@ -178,6 +178,12 @@ img.right {
 .icon-eye_crossed {
 	background-image: url(../images/eye_crossed.png);
 }
+.icon-key {
+	background-image: url(../images/key.png);
+}
+.icon-key_crossed {
+	background-image: url(../images/key_delete.png);
+}
 /**************** Content styles ****************/
 
 html>body #content {

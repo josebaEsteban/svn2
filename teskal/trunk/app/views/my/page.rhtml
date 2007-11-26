@@ -96,52 +96,56 @@
         <td><a href="../lib/<%= l(:unit_4_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_4_path) %>');"><%= l(:unit_4_title) %></a></td>
       </tr>
       <%- end -%>
+      <%- if @logged_in_user.show? -%> 
+      <tr>
+		<%- else -%>
       <tr class='odd'>
+	   <%- end -%>
         <td>5</td>
         <td><a href="../lib/<%= l(:unit_5_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_5_path) %>');"><%= l(:unit_5_title) %></a></td>
       </tr>
       <%- if @logged_in_user.show? -%>
-      <tr>
+      <tr class='odd'>
         <td>6</td>
         <td><a href="../lib/<%= l(:unit_6_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_6_path) %>');"><%= l(:unit_6_title) %></a></td>
       </tr>
-      <tr class='odd'>
+      <tr>
         <td>7</td>
         <td><a href="../lib/<%= l(:unit_7_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_7_path) %>');"><%= l(:unit_7_title) %></a></td>
       </tr>
-      <tr>
+      <tr class='odd'>
         <td>8</td>
         <td><a href="../lib/<%= l(:unit_8_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_8_path) %>');"><%= l(:unit_8_title) %></a></td>
       </tr>
-      <tr class='odd'>
+      <tr>
         <td>9</td>
         <td><a href="../lib/<%= l(:unit_9_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_9_path) %>');"><%= l(:unit_9_title) %></a></td>
       </tr>
-      <tr>
+      <tr class='odd'>
         <td>10</td>
         <td><a href="../lib/<%= l(:unit_10_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_10_path) %>');"><%= l(:unit_10_title) %></a></td>
       </tr>
-      <tr class='odd'>
+      <tr>
         <td>11</td>
         <td><a href="../lib/<%= l(:unit_11_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_11_path) %>');"><%= l(:unit_11_title) %></a></td>
       </tr>
-      <tr>
+      <tr class='odd'>
         <td>12</td>
         <td><a href="../lib/<%= l(:unit_12_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_12_path) %>');"><%= l(:unit_12_title) %></a></td>
       </tr>
-      <tr class='odd'>
+      <tr>
         <td>13</td>
         <td><a href="../lib/<%= l(:unit_13_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_13_path) %>');"><%= l(:unit_13_title) %></a></td>
       </tr>
-      <tr>
+      <tr class='odd'>
         <td>14</td>
         <td><a href="../lib/<%= l(:unit_14_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_14_path) %>');"><%= l(:unit_14_title) %></a></td>
       </tr>
-      <tr class='odd'>
+      <tr>
         <td>15</td>
         <td><a href="../lib/<%= l(:unit_15_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_15_path) %>');"><%= l(:unit_15_title) %></a></td>
       </tr>
-      <tr>
+      <tr class='odd'>
         <td>16</td>
         <td><a href="../lib/<%= l(:unit_16_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_16_path) %>');"><%= l(:unit_16_title) %></a></td>
       </tr>
