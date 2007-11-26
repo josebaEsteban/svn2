@@ -6,7 +6,7 @@ class Quest10Controller < ApplicationController
     user=User.find(session[:user_id])
     user.start = Time.now
     user.save
-  end 
+  end
 
   def create
     @answer = Answer.new(params[:answer])
@@ -15,11 +15,17 @@ class Quest10Controller < ApplicationController
     @answer.ip = request.remote_ip
     user=User.find(session[:user_id])
     @answer.time_to_fill =  Time.now - user.start
-    if @answer.save                              
-      journal( "quest10/create/"+@answer.id.to_s, @answer.user_id)    
+    if user.show?
+      @answer.browse = 1
+    end
+    if @answer.save
+      journal( "quest10/create/"+@answer.id.to_s, @answer.user_id)
       # flash[:notice] = 'Answer was successfully created.'
-      redirect_to :action => 'show', :id => @answer.id
-
+      if user.show?
+        redirect_to :action => 'show', :id => @answer.id
+      else
+        redirect_to :controller  => 'my', :action  => 'page'
+      end
       # format.html { redirect_to answer_url(@answer) }
       # format.xml  { head :created, :location => answer_url(@answer) }
     else

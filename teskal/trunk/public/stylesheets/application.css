@@ -32,7 +32,7 @@ body {
 	background-image: url(../images/bg_stripe.gif);
 	background-repeat: repeat-y;
 	background-position: center;
-	float: none; 
+	float: none;
 }
 a {
 	color: #d42e12;
@@ -103,7 +103,6 @@ img.right {
 	height: 28px;
 	background-image: url(../images/head2_stripe_eu.gif);
 }
-
 #header a {
 	color: #fff;
 }
@@ -117,21 +116,20 @@ img.right {
 	color: #606060;
 }
 /**************** navigation ****************/
-#navTeskal { 
-	position: relative; 
-	top: -31px; 
+#navTeskal {
+	position: relative;
+	top: -31px;
 	margin: 0 40px 0 450px;
-	padding: 0 0 5px 10px;
-/*	border-bottom: 1px solid #999;*/
+	padding: 0 0 5px 10px;/*	border-bottom: 1px solid #999;*/
 }
 #navTeskal li {
-	margin: 0; 
+	margin: 0;
 	padding: 0;
-	display: inline;  
+	display: inline;
 	list-style-type: none;
 }
 #navTeskal a:link, #navTeskal a:visited {
-/*	float: right; */
+	/*	float: right; */
 	font-size: 10px;
 	line-height: 14px;
 	font-weight: bold;
@@ -139,14 +137,13 @@ img.right {
 	padding-bottom: 2px;
 	text-decoration: none;
 	color: #999;
-	}
-
+}
 #navTeskal a.active:link, #navTeskal a.active:visited, #navTeskal a:hover {
 	border-bottom: 4px solid #d42e12;
 	padding-bottom: 1px;
 	background: #fff;
 	color: #000;
-	}
+}
 /**************** Icons *******************/
 .icon {
 	background-position: 0% 40%;
@@ -175,6 +172,12 @@ img.right {
 .icon-medium {
 	background-image: url(../images/error_delete.png);
 }
+.icon-eye {
+	background-image: url(../images/eye.png);
+}
+.icon-eye_crossed {
+	background-image: url(../images/eye_crossed.png);
+}
 /**************** Content styles ****************/
 
 html>body #content {
@@ -189,7 +192,7 @@ html>body #content {
 	margin-left: 20px;
 	margin-right: 20px;
 }
-#content h2, #content  h1 {
+#content h2, #content h1 {
 	display: block;
 	margin: 0 0 16px 0;
 	font-size: 1.7em;
@@ -238,7 +241,6 @@ html>body #content {
 	margin: 0;
 }
 #content .tabs ul li {
-
 	list-style-type: none;
 	white-space: nowrap;
 	margin-right: 8px;
@@ -275,7 +277,6 @@ input, select {
 input.button-small {
 	font-size: 0.8em;
 }
-
 .select-small {
 	font-size: 0.8em;
 }
@@ -454,15 +455,12 @@ ul.documents li {
 	background-color: inherit;
 	font-weight: bold;
 }
-.box { 
+.box {
 	background-color: #f7f4ee;
-
 	text-align: left;
 	font: 100% Verdana, Tahoma, Arial, sans-serif;
-	
 	margin: 0 0 20px 0;
 	padding: 10px;
-  
 	max-width: 530px;
 	color: #505050;
 	line-height: 1.5em;

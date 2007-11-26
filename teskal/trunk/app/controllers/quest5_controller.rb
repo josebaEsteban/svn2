@@ -15,10 +15,17 @@ class Quest5Controller < ApplicationController
     @answer.ip = request.remote_ip
     user=User.find(session[:user_id])
     @answer.time_to_fill =  Time.now - user.start
+    if user.show?
+      @answer.browse = 1
+    end
     if @answer.save
       # flash[:notice] = 'Answer was successfully created.'
       journal( "quest5/create/"+@answer.id.to_s, @answer.user_id)
-      redirect_to :action => 'show', :id => @answer.id
+      if user.show?
+        redirect_to :action => 'show', :id => @answer.id
+      else
+        redirect_to :controller  => 'my', :action  => 'page'
+      end
 
       # format.html { redirect_to answer_url(@answer) }
       # format.xml  { head :created, :location => answer_url(@answer) }
