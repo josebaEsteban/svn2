@@ -96,6 +96,10 @@ class User < ActiveRecord::Base
   def suscription?
     self.role > ROLE_GRATIS
   end 
+
+  def show?
+    self.role > ROLE_SPORT
+  end 
   
   def check_password?(clear_password)
     User.hash_password(clear_password) == self.hashed_password

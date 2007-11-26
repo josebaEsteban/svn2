@@ -29,6 +29,9 @@ class MyController < ApplicationController
     @blocks = @user.pref[:my_page_layout] || DEFAULT_LAYOUT
   end
 
+  def athletes
+  end
+  
   # Edit user's account
   def account
     @user = self.logged_in_user

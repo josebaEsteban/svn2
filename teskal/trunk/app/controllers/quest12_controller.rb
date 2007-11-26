@@ -15,10 +15,11 @@ class Quest12Controller < ApplicationController
     @answer.ip = request.remote_ip
     user=User.find(session[:user_id])
     @answer.time_to_fill =  Time.now - user.start
+    @answer.browse=1    
     if @answer.save
       # flash[:notice] = 'Answer was successfully created.'
       journal( "quest12/create/"+@answer.id.to_s, @answer.user_id) 
-      redirect_to :action => 'show', :id => @answer.id
+        redirect_to :action => 'show', :id => @answer.id
 
       # format.html { redirect_to answer_url(@answer) }
       # format.xml  { head :created, :location => answer_url(@answer) }

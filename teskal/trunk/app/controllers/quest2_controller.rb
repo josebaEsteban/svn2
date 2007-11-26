@@ -17,6 +17,7 @@ class Quest2Controller < ApplicationController
     @answer.ip = request.remote_ip
     user=User.find(session[:user_id])
     @answer.time_to_fill =  Time.now - user.start
+    @answer.browse=1
     if @answer.save
       # flash[:notice] = 'Answer was successfully created.'
       journal( "quest2/create/"+@answer.id.to_s, @answer.user_id) 
