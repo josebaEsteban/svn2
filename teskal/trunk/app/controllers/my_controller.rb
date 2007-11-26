@@ -6,16 +6,16 @@ class MyController < ApplicationController
   before_filter :require_login
 
   BLOCKS = { 'news' => :label_news_laquest,
-             'documents' => :label_document_plural
-           }.freeze
+    'documents' => :label_document_plural
+  }.freeze
 
-  DEFAULT_LAYOUT = {  'left' => ['issuesassignedtome'], 
-                      'right' => ['issuesreportedbyme'] 
-                   }.freeze
+  DEFAULT_LAYOUT = {  'left' => ['issuesassignedtome'],
+    'right' => ['issuesreportedbyme']
+  }.freeze
 
   verify :xhr => true,
-         :session => :page_layout,
-         :only => [:add_block, :remove_block, :order_blocks]
+  :session => :page_layout,
+  :only => [:add_block, :remove_block, :order_blocks]
 
   def index
     page
@@ -30,8 +30,14 @@ class MyController < ApplicationController
   end
 
   def athletes
+    @user = self.logged_in_user
+    if @user.show?
+      @users = User.find_by_sql("select * from users where users.managed_by=#{session[:user_id]} order by users.created_on DESC")
+    else
+      redirect_back_or_default :controller => 'my', :action => 'page'
+    end
   end
-  
+
   # Edit user's account
   def account
     @user = self.logged_in_user
@@ -49,12 +55,12 @@ class MyController < ApplicationController
   # Change user's password
   def change_password
     @user = self.logged_in_user
-    # flash[:notice] = l(:notice_can_t_change_password) and redirect_to :action => 'account' 
+    # flash[:notice] = l(:notice_can_t_change_password) and redirect_to :action => 'account'
     if @user.check_password?(params[:password])
       @user.password, @user.password_confirmation = params[:new_password], params[:new_password_confirmation]
-      @user.updated_on = Time.now 
-       if @user.save 
-        journal("update password",@user.id) 
+      @user.updated_on = Time.now
+      if @user.save
+        journal("update password",@user.id)
         flash[:notice] = l(:notice_account_password_updated)
       else
         render :action => 'account'
@@ -75,7 +81,7 @@ class MyController < ApplicationController
     @block_options = []
     BLOCKS.each {|k, v| @block_options << [l(v), k]}
   end
-  
+
   # Add a block to user's page
   # The block is added on top of the page
   # params[:block] : id of the block to add
@@ -89,7 +95,7 @@ class MyController < ApplicationController
     session[:page_layout]['top'].unshift block
     render :partial => "block", :locals => {:user => @user, :block_name => block}
   end
-  
+
   # Remove a block to user's page
   # params[:block] : id of the block to remove
   def remove_block
@@ -110,12 +116,12 @@ class MyController < ApplicationController
       %w(top left right).each {|f|
         session[:page_layout][f] = (session[:page_layout][f] || []) - group_items
       }
-      session[:page_layout][group] = group_items    
+      session[:page_layout][group] = group_items
     end
     render :nothing => true
   end
-  
-  # Save user's page layout  
+
+  # Save user's page layout
   def page_layout_save
     @user = self.logged_in_user
     @user.pref[:my_page_layout] = session[:page_layout] if session[:page_layout]

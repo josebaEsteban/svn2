@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   STATUS_REGISTERED = 2
   STATUS_LOCKED     = 3
   ROLE_GRATIS       = 1
-  ROLE_SPORT        = 2
+  ROLE_ATHLETE        = 2
   ROLE_COACH        = 3
   ROLE_TUTOR        = 4
 
@@ -98,7 +98,7 @@ class User < ActiveRecord::Base
   end 
 
   def show?
-    self.role > ROLE_SPORT
+    self.role > ROLE_ATHLETE
   end 
   
   def check_password?(clear_password)
