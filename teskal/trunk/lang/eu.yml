@@ -454,6 +454,7 @@ quest1_62: Guztia dakidan bezain ondo egiten dut
 quest1_63: Nire buruari jarritako jomuga lortzen dut
 quest1_64: Argi eta garbi besteak baino gehiago naiz
 quest1_65: En que medida?
+quest1_65: Zein neurritan?
 quest1_d10_a: Behaturiko bere helburuekiko duen konfiantza maila hain baxu honek oso zaila egingo du hauek lortu ahal izatea gutxiegi eta ezegonkorra delako eta gainera, bere gaitasunekin loturiko zalantza asko eragingo ditu. Beharrezkoa da kirolariaren antsietate mailak behatzea eta, altuak izanez gero, tutorearekin kontsultatzea komenigarria da berregituratze lan orokor amankomun bat planteatzeko.
 quest1_d10_b: Behaturiko bere helburuekiko duen konfiantza maila ertainak hauek lortzeko aukerak murriztuko ditu. Honez gain, balioespenetan nolabaiteko ezegonkortasunarekin batera badoaz, 50-90 ingurukoa alegia, planteatzen dituen edozein trebetasun gauzatzeko gai sentitzeko zailtasunak dituen KOMAIL (GRACO) gutxiegi eta ezegonkorra suposatzen du. Beharrezkoa da Autoefikaziaren PDF-aren babesarekin aspektu garrantzitsu hau hobetzeko helburuarekin 3-4 saio egitea.
 quest1_d10_c: Bere helburuekiko duen konfiantza maila altua, bere balioespenetan egonkortasunak, 80-100 bitarte alegia, lagunduta badijoa hauek lortzeko konbentzimendu maila altua duela esan nahi du. Norberarengan sinesmen maila maximo honek aparteko energiaz baliatzen lagunduko dion eragin positiboa du endorfinengan. Hau da, KOMAIL altu eta egonkor bat dauka, lehiatzeko sentzazio onekin eta planteatzen dituen edozein trebezia mota gauzatu ahal izateko gaitasun handiarekin. Garrantzitsu da balio hauek AZE-aren arabera aldatzen diren ala ez ikustea zeren horrela balitz tutorearekin hitz egitea komenigarria bait litzateke.
@@ -502,6 +503,7 @@ quest1_d9_c: Antzemandako zailtasun estimatua (AZE) arrakasta lortzeko probabili
 quest1_header2: Lehiaketa aurretik 
 quest1_header4: Kirola egiterakoan, … arrakasta dudala sentitzen dut
 quest1_header5: Te sientes capaz de competir en tu deporte
+quest1_header5: Zure kirolean lehiatzeko gai ikusted duzu zeure burua
 quest1_intro: Behean, jendeak izaten dituen sentsazioak deskribatzen dituzten hitz zerrenda bat dago. Segidan, kirolariek lehiaketa baten aurretik izan dituzten sentimenduak eta emoziak deskribatzeko erabilitako komentario batzuk azaltzen dira. Mesedez, arretaz irakurri itzazu eta momentuotan sentitzen duzuna egokien deskribatzen duen zenbaki gainean klik egin ezazu.
 quest1_label_10: Egungoa
 quest1_label_11: Antzemandako zailtasun estimatua
@@ -1044,36 +1046,37 @@ status_locked: blokeatuta
 status_registered: erregistratu
 text_are_you_sure: ¿ Ziur zaude ?
 text_caracters_maximum: %d characters maximum.
+text_caracters_maximum: karaktereen %d maximoa
 text_length_between: Longitud entre %d y %d caracteres. 
 unit_10_path: 10.La.Comunicacion.es
-unit_10_title: La Comunicación
+unit_10_title: Komunikazioa
 unit_11_path: 11.Responsabilidad.vs.Culpabilidad.es
-unit_11_title: Responsabilidad vs Culpabilidad
+unit_11_title: Erantzunkizuna vs Erruduntasuna
 unit_12_path: 12.Confianza.y.Auto.Eficacia.es 
-unit_12_title: Confianza y Auto Eficacia
+unit_12_title: Konfiantza eta Auto Efikazia
 unit_13_path: 13.Estado.de.Animo.es
-unit_13_title: Estado de Animo
+unit_13_title: Tentua
 unit_14_path: 14.Asertividad.es 
-unit_14_title: Asertividad
+unit_14_title: Asertibitatea
 unit_15_path: 15.Deportista.de.ARD.es 
-unit_15_title: Deportista de ARD 
+unit_15_title: EHK-ko Kirolaria
 unit_16_path: 16.Sistema.de.Autoregulacion.es
-unit_16_title: Sistema de Autoregulación
+unit_16_title: Autoerregulazio Sistema
 unit_1_path: 01.Teskal.eu.pdf
 unit_1_title: Teskal Aurkezpena
 unit_2_path: 02.Atencion.y.Concentracion.es.pdf
-unit_2_title: Atención y Concentración
+unit_2_title: Arreta y Kontzentrazioa
 unit_3_path: 03.Emociones.y.Rendimiento.Deportivo.es
-unit_3_title: Emociones y Rendimiento Deportivo
+unit_3_title: Emozioak eta Kirol Errendimendua
 unit_4_path: 04.Establecimiento.de.Objetivos.es
-unit_4_title: Establecimiento de Objetivos
+unit_4_title: Helburuen Ezarpena
 unit_5_path: 05.Estresa.eu.pdf
 unit_5_title: Estresa lehiaketan
 unit_6_path: 06.Motivacion.es
-unit_6_title: Motivación
+unit_6_title: Motibazioa
 unit_7_path: 07.Tension.y.Relajacion.es 
-unit_7_title: Tension y Relajación
+unit_7_title: Tentsioa eta Erlaxapena
 unit_8_path: 08.Tolerancia.Psicologica.es
-unit_8_title: Tolerancia Psicólogica
+unit_8_title: Tolerantzia Psikologikoa
 unit_9_path: 09.La.Competicion.es
-unit_9_title: La Competición
+unit_9_title: Lehiaketa

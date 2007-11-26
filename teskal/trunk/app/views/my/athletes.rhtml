@@ -1,0 +1,33 @@
+  <table cellspacing="0">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>
+        <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
+        <th scope="col"><div align="left"><%=l(:label_competition) %></div></th>
+      </tr>
+    </thead>
+    <tbody>
+      <%- odd=0 -%>
+      <%- for user in @users -%>
+      <tr class="odd">
+        <%- if odd == 1 -%>
+        <tr class="odd">
+          <%- odd=0-%>
+          <%-else -%>
+        <tr>
+          <%- odd=1 end -%> 
+			<%- name= user.firstname+" "+ user.lastname -%>
+<%- if user.status == 3 -%>
+<td><span class="icon icon-key_crossed">
+ <%- else -%>
+ <td><span class="icon icon-key">
+<%- end -%>
+<%= name %></span></td>
+        <td> </td>
+        <td><%= user.created_on %> </td>  
+      </tr>
+      <%- end -%>
+    </tbody>
+  </table>
+</center>
