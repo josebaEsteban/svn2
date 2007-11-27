@@ -1,10 +1,10 @@
+<%- TzTime.zone=@user.timezone -%>
   <table cellspacing="0">
     <thead>
       <tr>
-        <th scope="col"></th>
-        <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>
-        <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
-        <th scope="col"><div align="left"><%=l(:label_competition) %></div></th>
+        <th scope="col"><div align="left"><%=l(:field_name) %></div></th>
+        <th scope="col"></th> 
+        <th scope="col"><div align="left"><%=l(:field_created_on)%></div></th>
       </tr>
     </thead>
     <tbody>
@@ -25,7 +25,7 @@
 <%- end -%>
 <%= name %></span></td>
         <td> </td>
-        <td><%= user.created_on %> </td>  
+          <td><%= l_datetime(TzTime.zone.utc_to_local(user.created_on))%></td> 
       </tr>
       <%- end -%>
     </tbody>

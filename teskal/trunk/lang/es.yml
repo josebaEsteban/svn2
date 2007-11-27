@@ -66,7 +66,7 @@ field_auth_source: Modo de la autentificación
 field_author: Autor
 field_category: Categoría
 field_comments: Comentario
-field_created_on: Creada el
+field_created_on: Creado el
 field_delay: Delay
 field_description: Descripción
 field_downloads: Telecargas
@@ -1078,3 +1078,4 @@ unit_8_path: 08.Tolerancia.Psicologica.es.pdf
 unit_8_title: Tolerancia Psicólogica
 unit_9_path: 09.La.Competicion.es.pdf
 unit_9_title: La Competición
+label_my_athletes: Mis atletas 

@@ -204,7 +204,7 @@
           <%- if answer.browse == 1 -%>
           <td><span class="icon icon-eye"></span></td>
           <%- else -%>
-          <td></td>
+          <td><span class="icon icon-eye_crossed"></span></td>
           <%- end -%>
           <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on))%></td>
           <%- if answer.browse == 1 -%>

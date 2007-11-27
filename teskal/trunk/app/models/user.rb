@@ -8,14 +8,14 @@ class User < ActiveRecord::Base
   STATUS_REGISTERED = 2
   STATUS_LOCKED     = 3
   ROLE_GRATIS       = 1
-  ROLE_ATHLETE        = 2
+  ROLE_ATHLETE      = 2
   ROLE_COACH        = 3
   ROLE_TUTOR        = 4
 
   has_many :answers
   has_one :preference, :dependent => :destroy, :class_name => 'UserPreference'
   composed_of :timezone, :class_name => 'TZInfo::Timezone', :mapping => %w( time_zone time_zone )
-  
+
   attr_accessor :password, :password_confirmation
   attr_accessor :last_before_login_on
   # Prevents unauthorized assignments
@@ -56,7 +56,7 @@ class User < ActiveRecord::Base
   def self.try_to_login(login, password)
     user = find(:first, :conditions => ["login=?", login])
     if user
-      # user is already in local database 
+      # user is already in local database
       return nil if !user.active?
       entra=0
       if entra==1
@@ -95,12 +95,12 @@ class User < ActiveRecord::Base
 
   def suscription?
     self.role > ROLE_GRATIS
-  end 
+  end
 
   def show?
     self.role > ROLE_ATHLETE
-  end 
-  
+  end
+
   def check_password?(clear_password)
     User.hash_password(clear_password) == self.hashed_password
   end
