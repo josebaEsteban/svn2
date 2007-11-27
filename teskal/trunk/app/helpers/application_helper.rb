@@ -16,7 +16,15 @@ module ApplicationHelper
   def loggedin?
     @logged_in_user
   end
-
+  def status
+    case @logged_in_user.role
+    when ROLE_GRATIS 
+      "usuario"
+    when ROLE_ATHLETE
+    when ROLE_COACH
+    when ROLE_TUTOR
+    end
+  end
   # Return true if user is logged in and is admin, otherwise false
   def admin_loggedin?
     @logged_in_user and @logged_in_user.admin?
@@ -266,6 +274,6 @@ class TabularFormBuilder < ActionView::Helpers::FormBuilder
 
   # def tz(time_at)
   #   TzTime.zone.utc_to_local(time_at.utc)
-  # end  
+  # end
 
 end
