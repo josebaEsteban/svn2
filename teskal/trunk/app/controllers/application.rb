@@ -265,7 +265,7 @@ class ApplicationController < ActionController::Base
   end
 
   def journal(event, owner)
-    if logged_in_user and @logged_in_user 
+    if logged_in_user and @logged_in_user.admin?
      # nothing by the moment if user is admin 
     else
       journal = Journal.new
