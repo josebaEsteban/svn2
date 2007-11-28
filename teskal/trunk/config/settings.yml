@@ -30,7 +30,7 @@ text_formatting:
 wiki_compression:
   default: ""
 default_language:
-  default: en
+  default: es
 host_name:
   default: www.teskal.com
 feeds_limit:

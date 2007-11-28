@@ -221,6 +221,7 @@ ActiveRecord::Schema.define(:version => 0) do
     t.column "time_zone",         :string,    :limit => 40, :default => "Europe/Madrid"
     t.column "ip_last",           :string,    :limit => 15
     t.column "start",             :timestamp,                                            :null => false
+    t.column "managed_by",        :integer
   end
 
 end

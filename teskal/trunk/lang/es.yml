@@ -199,6 +199,7 @@ label_modification: %d modificación
 label_modification_plural: %d modificaciones
 label_modified: modificado
 label_my_account: Mi cuenta
+label_my_athletes: Mis atletas
 label_my_page: Mi página
 label_my_quest: Mis cuestionarios
 label_new: Nuevo
@@ -713,7 +714,7 @@ quest4_d4_a: Los valores del Vigor se encuentran en un nivel bajo, lo que supone
 quest4_d4_b: Los valores del Vigor se encuentran en un nivel medio, lo que en principio le perjudicará en su rendimiento, salvo que se encuentran en la zona superior de este nivel. Puede ser que no se haya preparado específicamente esta competición, o que nos encontremos en un periodo de entrenamiento muy denso y con altas intensidades.
 quest4_d4_c: Los valores del Vigor se encuentran en un nivel alto, en la zona óptima para competir, lo que supone incrementar las probabilidades de éxito en cualquier situación de reto que se le plantee. Esto indica que la dimensión emocional positiva para el rendimiento, en principio, garantiza un buen equilibrio emocional para afrontar con garantías esta competición.
 quest4_d5_a: En cuanto a los valores de la Fatiga se encuentran en un nivel bajo, lo cual es positivo, lo que supone que est@ deportista se encuentra pletóric@ para soportar ritmos de competición altos o esfuerzos de larga duración durante la competición.
-quest4_d5_b: En cuanto al os valores de la Fatiga se encuentran en un nivel medio, lo que puede ser un poco preocupante en este caso, ya que influirá negativamente en su rendimiento. Si estos valores corresponden a pasaciones realizadas intracompetición, se pueden considerar normales y habrá que tener en cuenta los procesos de recuperación para poder evaluarlos.
+quest4_d5_b: En cuanto a los valores de la Fatiga se encuentran en un nivel medio, lo que puede ser un poco preocupante en este caso, ya que influirá negativamente en su rendimiento. Si estos valores corresponden a pasaciones realizadas intracompetición, se pueden considerar normales y habrá que tener en cuenta los procesos de recuperación para poder evaluarlos.
 quest4_d5_c: En cuanto a los valores de la Fatiga se encuentran en un nivel alto, lo cual es alarmante, ya que afectará muy negativamente a su rendimiento competitivo, salvo que no se haya preparado esta competición y coincida con un periodo de entrenamiento de gran volumen e intensidad. Si se ha realizado una puesta a punto adecuada, este alto valor nos puede indicar que existe un riesgo de sobreentrenamiento en est@ deportista.
 quest4_d6_a: Presenta un valor bajo en cuanto a la ansiedad cognitiva, transmitiendo calma y serenidad, despreocupad@, con mucha capacidad de concentración en los momentos que sean necesarios de la competición.
 quest4_d6_b: Se observa un valor medio en cuanto a la ansiedad cognitiva, lo que supone que, a veces, se encuentre un poco intranquil@ o ligeramente nervios@. Conviene realizar un pequeño ajuste durante la competición, a través de la persuasión verbal, acompañado de sesiones de visionado de presión/estrés, para reducir estos valores de cara a la próxima competición.
@@ -778,8 +779,8 @@ quest5_label_1: Rendimiento Global
 quest5_label_2: Rendimiento Emocional
 quest5_label_3: Rendimiento Cognitivo
 quest5_label_4: Rendimiento Comportamental
-quest5_val_a: En general su VRP es muy positiva, acercándose a su máximo nivel, como reflejan los aspectos señalados. Además, se produce una concordancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, lo que refuerza la consistencia y coherencia de la valoración realizada.
-quest5_val_b: En general su VRP es muy positiva, acercándose a su máximo nivel, como reflejan los aspectos señalados. Sin embargo, se produce una discrepancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, por lo que será necesario revisar la valoración realizada entre ambas, reajustándola a una menor diferencia entre ellas.
+quest5_val_a: En general su VRP es muy positiva, acercándose a su máximo nivel. Además, se produce una concordancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, lo que refuerza la consistencia y coherencia de la valoración realizada.
+quest5_val_b: En general su VRP es muy positiva, acercándose a su máximo nivel. Sin embargo, se produce una discrepancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, por lo que será necesario revisar la valoración realizada entre ambas, reajustándola a una menor diferencia entre ellas.
 quest5_val_c: EVALUACIÓN NO VÁLIDA. La diferencia entre la valoración cualitativa y cuantitativa observada en el análisis cruzado realizado supera el valor máximo permitido, por lo tanto se recomienda volver a completar el cuestionario.
 quest5_val_d: En general su VRP es positiva, aunque ha rendido por debajo de su nivel habitual, como reflejan los aspectos señalados. Además, se produce una concordancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, lo que le aporta consistencia y coherencia a la valoración realizada.
 quest5_val_e: En general su VRP es positiva, aunque ha rendido por debajo de su nivel habitual, como reflejan los aspectos señalados. Sin embargo, se produce una discrepancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, con lo que será necesario revisar la valoración realizada, reajustándola a una menor diferencia entre ellas. 
@@ -1060,7 +1061,7 @@ unit_15_path: 15.Deportista.de.ARD.es.pdf
 unit_15_title: Deportista de ARD 
 unit_16_path: 16.Sistema.de.Autoregulacion.es.pdf
 unit_16_title: Sistema de Autoregulación
-unit_1_path: 01.Teskal.es.pdf.pdf
+unit_1_path: 01.Teskal.es.pdf
 unit_1_title: Presentación Teskal
 unit_2_path: 02.Atencion.y.Concentracion.es.pdf
 unit_2_title: Atención y Concentración
@@ -1068,7 +1069,7 @@ unit_3_path: 03.Emociones.y.Rendimiento.Deportivo.es.pdf
 unit_3_title: Emociones y Rendimiento Deportivo
 unit_4_path: 04.Establecimiento.de.Objetivos.es.pdf
 unit_4_title: Establecimiento de Objetivos
-unit_5_path: 05.Estres.es.pdf.pdf
+unit_5_path: 05.Estres.es.pdf
 unit_5_title: El estrés en la competición
 unit_6_path: 06.Motivacion.es.pdf
 unit_6_title: Motivación
@@ -1078,4 +1079,3 @@ unit_8_path: 08.Tolerancia.Psicologica.es.pdf
 unit_8_title: Tolerancia Psicólogica
 unit_9_path: 09.La.Competicion.es.pdf
 unit_9_title: La Competición
-label_my_athletes: Mis atletas 
