@@ -23,7 +23,7 @@ class AccountController < ApplicationController
   end
 
   # Login request and validation
-  def login
+  def login 
     if request.get?
       # Logout user
       self.logged_in_user = nil

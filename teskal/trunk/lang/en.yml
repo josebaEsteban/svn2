@@ -199,6 +199,7 @@ label_modification: %d change
 label_modification_plural: %d changes
 label_modified: modified
 label_my_account: My account
+label_my_athletes: My athletes
 label_my_page: My page
 label_my_quest: My questionnaires
 label_new: New
@@ -735,63 +736,63 @@ quest4_label_13: Degree of confidence
 quest4_label_14: Percepción del Plan Integral de Competición
 quest4_label_1: Profile of Performance during Competition
 quest4_valor_1: 1 (nothing o not at all)
-quest5: Valoración Post-Competición (Deportes Individuales)
-quest5_10: El control de mis pensamientos y el afrontamiento positivo
-quest5_11: La forma de responder a las acciones de las demás
-quest5_12: Las decisiones que he tomado, conocidos los objetivos del entrenador
-quest5_13: La claridad en la forma de actuar durante la competición
-quest5_14: La claridad del PIC durante todos los momentos
-quest5_15: Las acciones realizadas a lo largo de toda la competición
-quest5_16: El nivel de confianza que mantenía a lo largo de toda la competición
-quest5_17: El grado de satisfacción que tenía durante la competición
-quest5_18: El pensamiento relacionado con cosas que tenía que hacer
-quest5_19: Los pensamientos que tenía relacionados con las buenas sensaciones
-quest5_1: Técnicamente
-quest5_20: El nivel de interés y de lucha que mantenía durante la competición
-quest5_21: La capacidad de rendimiento utilizada
-quest5_2: Físicamente
-quest5_3: Asertivamente
-quest5_4: Mentalmente
-quest5_5: Tácticamente
-quest5_6: El control de mis emociones
-quest5_7: El disfrute al sentir mis emociones en determinados momentos
-quest5_8: La seguridad de haber rendido bajo la presión
-quest5_9: La sensación de haber estado mentalmente relajado
-quest5_d1_a: Los valores relacionados con el RG se sitúan en un nivel bajo, lo que supone que su comportamiento técnico-táctico, físico y psicológico en competición ha estado alejado de su capacidad. Esto condicionará la VRP, por lo que será necesario analizar con profundidad aquellas acciones más significativas ocurridas en la competición. 
-quest5_d1_b: Los valores relacionados con el RG se sitúan en un nivel medio, lo que supone cierta satisfacción con su comportamiento técnico-táctico, físico y psicológico, pero es evidente que no ha conseguido rendir como esperaba. 
-quest5_d1_c: Los valores relacionados con el RG se sitúan en un alto nivel, lo que supone una elevada satisfacción con su comportamiento técnico-táctico, físico, psicológico y, además, contribuyen a percibir una alta VRP. 
-quest5_d2_a: En cuanto al rendimiento emocional (RE), sus valores se sitúan en un nivel bajo, lo que representa que durante la competición no ha podido utilizar adecuadamente su respuesta emocional. No ha disfrutado y se ha sentido inseguro en determinados momentos de presión, es decir, a pesar de haberse esforzado en tener un buen afrontamiento emocional no lo ha conseguido. Si se repiten este tipo de actuaciones, es conveniente realizar un trabajo específico con el PDF de las Emociones, del Estrés y del PIC, con la orientación del/a tutor/a. 
-quest5_d2_b: En cuanto al rendimiento emocional (RE), sus valores se sitúan en un nivel medio, lo que representa que durante la competición su respuesta emocional ha tenido altibajos, con una sensación de falta de control, acompañada de dudas en los momentos de presión, es decir, se ha esforzado en tener un buen afrontamiento emocional pero le ha costado mantenerlo a lo largo de la competición. 
-quest5_d2_c: En cuanto al rendimiento emocional (RE), sus valores se sitúan en un alto nivel, lo que representa que durante la competición ha tenido una excelente respuesta emocional, ha disfrutando, con una sensación de control y con la seguridad de haber rendido bajo la presión, es decir, con un afrontamiento emocional muy positivo. 
-quest5_d3_a: En el caso del RCOG, los valores se sitúan en un nivel bajo, lo que implica que no ha podido mantener los niveles de confianza y de satisfacción durante la competición. Además, en escasos momentos ha tenido buenas sensaciones o se ha sentido cómodo. 
-quest5_d3_b: En el caso del RCOG, los valores se sitúan en un nivel medio, lo que implica que la posibilidad de fluctuaciones en los niveles de confianza y de satisfacción durante la competición. También pueden haber influido en el interés y en las sensaciones que haya podido tener durante la misma. 
-quest5_d3_c: En el caso del RCOG, los valores se sitúan en un alto nivel, lo que implica que ha mantenido sus niveles de confianza y de satisfacción durante toda la competición. También indican la presencia de alto de interés acompañado de buenas sensaciones. 
-quest5_d4_a: Al observar los valores del RCOM, vemos que se encuentran en un bajo nivel, lo que representa muchas dificultades a la hora de responder a las acciones de l@s adversari@s, y que el PIC no estaba claro. En ocasiones se ha quedado sin saber lo que tenía que hacer y, además, las decisiones tomadas han sido desacertadas. Habrá que realizar una revisión exhaustiva del PIC, con la ayuda del/a tutor/a. 
-quest5_d4_b: Al observar los valores del RCOM, vemos que se encuentran en un nivel medio, lo que representa dificultades a la hora de responder a las acciones de l@s adversari@s, aunque el PIC lo tenía bastante claro. Casi siempre sabía lo que tenía que hacer, y considera que las decisiones adoptadas han sido acertadas. 
-quest5_d4_c: Al observar los valores del RCOM, vemos que se encuentran en un alto nivel, lo que representa que ha respondido eficientemente a las acciones de l@s adversari@s y que ha tenido claro el PIC a lo largo de toda la competición. Además, en todo momento ha sabido lo que tenía que hacer, sin dudarlo y con determinación en las decisiones adoptadas. 
-quest5_header1: El grado de satisfacción con mi actuación ha sido...
-quest5_header2: El grado de satisfacción durante la competición con...
-quest5_header3: El grado de satisfacción con...
-quest5_intro: Más abajo se plantean una serie de preguntas relacionadas con determinados aspectos de la competición, sobre las que queremos recoger tu opinión. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
-quest5_label_0: Valoración de Rendimiento Percibido Individual 
-quest5_label_1: Rendimiento Global
-quest5_label_2: Rendimiento Emocional
-quest5_label_3: Rendimiento Cognitivo
-quest5_label_4: Rendimiento Comportamental
-quest5_val_a: En general su VRP es muy positiva, acercándose a su máximo nivel, como reflejan los aspectos señalados. Además, se produce una concordancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, lo que refuerza la consistencia y coherencia de la valoración realizada.
-quest5_val_b: En general su VRP es muy positiva, acercándose a su máximo nivel, como reflejan los aspectos señalados. Sin embargo, se produce una discrepancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, por lo que será necesario revisar la valoración realizada entre ambas, reajustándola a una menor diferencia entre ellas.
-quest5_val_c: EVALUACIÓN NO VÁLIDA. La diferencia entre la valoración cualitativa y cuantitativa observada en el análisis cruzado realizado supera el valor máximo permitido, por lo tanto se recomienda volver a completar el cuestionario.
-quest5_val_d: En general su VRP es positiva, aunque ha rendido por debajo de su nivel habitual, como reflejan los aspectos señalados. Además, se produce una concordancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, lo que le aporta consistencia y coherencia a la valoración realizada.
-quest5_val_e: En general su VRP es positiva, aunque ha rendido por debajo de su nivel habitual, como reflejan los aspectos señalados. Sin embargo, se produce una discrepancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, con lo que será necesario revisar la valoración realizada, reajustándola a una menor diferencia entre ellas. 
-quest5_val_f: EVALUACIÓN NO VÁLIDA. La diferencia entre la valoración cualitativa y cuantitativa observada en el análisis cruzado realizado supera el valor máximo permitido, por lo tanto se recomienda volver a completar el cuestionario. 
-quest5_val_g: En general su VRP es baja, con un nivel de rendimiento alejado de su capacidad, como reflejan los aspectos señalados. Es positivo que se produzca una concordancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, lo que le aporta consistencia y coherencia a la valoración realizada.
-quest5_val_h: En general su VRP es baja, con un nivel de rendimiento alejado de su capacidad, como reflejan los aspectos señalados. Además, se produce una discrepancia entre los valores de las dimensiones cualitativas con el de la cuantitativa, con lo que será necesario revisar la valoración realizada, reajustándola a una menor diferencia entre ellas, que quizás pueda influir positivamente con una mejora sustancial de la misma.
-quest5_val_i: EVALUACIÓN NO VÁLIDA. La diferencia entre la valoración cualitativa y cuantitativa observada en el análisis cruzado realizado supera el valor máximo permitido, por lo tanto se recomienda volver a completar el cuestionario. 
-quest5_valor_1: 1 (muy mala)
-quest5_valor_2: 2 (mala)
-quest5_valor_3: 3 (regular)
-quest5_valor_4: 4 (buena)
-quest5_valor_5: 5 (muy buena)
+quest5: Post Competition Evaluation (Individual Sports)
+quest5_10: My thought control and positive coping 
+quest5_11: The way to respond to the actions of others
+quest5_12: The decisions I have made, knowing the coaches goals
+quest5_13: Clarity in the way to act during competition
+quest5_14: Clarity of the Personal Competition Plan at all times
+quest5_15: Actions taken during the whole competition
+quest5_16: Degree of confidence maintained during the whole competition
+quest5_17: Degree of satisfaction experienced during competition
+quest5_18: Thoughts related to what I had to do
+quest5_19: Thoughts related to good feelings
+quest5_1: Technically
+quest5_20: Level of interest and fight maintained during competition
+quest5_21: Performance skills used
+quest5_2: Physically
+quest5_3: Assertively
+quest5_4: Mentally
+quest5_5: Tactically
+quest5_6: Control of my emotions
+quest5_7: Joy at feeling my emotions at certain times
+quest5_8: The certainty of having performed well under pressure
+quest5_9: The feeling of having been mentally relaxed
+quest5_d1_a: The values of Global Performance evaluation are low, which means that the technical-tactical, physical and psychological performance in competition has not been at the level of the athlete’s ability. This will impact the Evaluation of Perceived Performance, and it will be necessary to analyze in detail the most relevant actions taken during competition. 
+quest5_d1_b: The values of Global Performance are at a medium level, which implies a certain degree of satisfaction with the technical-tactical, physical and psychological behavior, but it is also clear that the athlete’s performance has not been as good as expected. 
+quest5_d1_c: The values of Global Performance are high, which implies a high degree of satisfaction with the technical-tactical, physical and psychological response, and it also contributes to a high score in the Evaluation of Perceived Performance. 
+quest5_d2_a: Emotional performance evaluation is low, which means that during the competition the athlete has not been able to utilize properly the emotional response. There has been no enjoyment and when pressure was high the athlete was likely feeling insecure. It seems that in spite of trying to have good emotional coping, it has not happened. If this keeps happening it will be necessary to implement a specific intervention with the tutor and the contents of the Emotions, Stress and Personal Competition Plan materials.
+quest5_d2_b: Emotional performance evaluation is at a medium level, which means that the emotional response during competition has been up and down, feeling a bit out of control and with doubts in the moments of maximum pressure. It has been hard for this athlete to maintain good emotional coping during the whole competition. 
+quest5_d2_c: Emotional performance scores are high, which mean that this athlete has had an excellent emotional response during competition, has enjoyed it, felt in control and is confident that his or her performance under pressure was good, that is, good emotional coping.
+quest5_d3_a: The levels of Cognitive Performance are low, which means that the athlete has been unable to maintain adequate levels of confidence and satisfaction during competition. It also indicates that he or she rarely had good feelings or felt comfortable. 
+quest5_d3_b: The values of Cognitive Performance are at a medium level, which implies possible fluctuations in the confidence and satisfaction levels during competition. These fluctuations may have also impacted the interest and feelings he or she experienced during the competition. 
+quest5_d3_c: Values of Cognitive Performance are high, indicating that the athlete maintained high levels of confidence and satisfaction during the entire competition. These values also mean the presence of high levels of interest and good feelings. 
+quest5_d4_a: Low levels of Competitive Performance indicate difficulties when having to respond to opponent’s actions and an unclear Personal Competition Plan. At times the athlete did not know what to do and the decisions made were not the right ones. The Personal Competition Plan must be totally re-evaluated with help from the tutor. 
+quest5_d4_b: Competitive Performance values are at a medium level, which means some difficulties when responding to opponent’s behavior, even though the Personal Competition Plan was quite clear. The athlete knew what he or she was supposed to do and thinks that the decisions made were right. 
+quest5_d4_c: Competitive Performance values are high, which indicates that the athlete has answered adequately the opponent’s behaviors and that he or she had a clear Personal Competition Plan during the entire competition. At all times this athlete knew what to do, without doubts and with certainty in the decision-making. 
+quest5_header1: The degree of satisfaction with my performance was...
+quest5_header2: The degree of satisfaction during the competition with...
+quest5_header3: The percentage of the degree of satisfaction with...
+quest5_intro: Below you will find a series of questions about certain aspects of competition, and we want to know your opinion about them. Please, read each one of them carefully and click on the number that best describes how you feel right now.
+quest5_label_0: Evaluation of Perception of Individual Performance 
+quest5_label_1: Global Performance
+quest5_label_2: Emotional Performance
+quest5_label_3: Cognitive Performance
+quest5_label_4: Behavioral Performance
+quest5_val_a: Overall, the athlete’s Perceived Performance Evaluation is very positive, close to the maximum level. There is consistency between the qualitative and quantitative dimensions, which strengthens the validity of the evaluation.
+quest5_val_b: Overall the Perceived Performance Evaluation is very positive, close to the maximum level. There is a discrepancy between the qualitative and the quantitative dimensions, which indicates the need to re-assess the evaluation, making adjustments to decrease the difference.
+quest5_val_c: INVALID EVALUATION. The obtained difference between the quantitative and qualitative dimensions is over the limit. We recommend re-administering the questionnaire.
+quest5_val_d: Overall the Perceived Performance Evaluation is positive, but the athlete performed below his or her usual level, as indicated by the areas highlighted. There is consistency between the qualitative and quantitative dimensions, which increases the validity of the evaluation.
+quest5_val_e: Overall the Perceived Performance Evaluation is positive, but the athlete performed below his or her usual level, as indicated by the areas highlighted. There is a discrepancy between the quantitative and qualitative dimensions, which indicates a need to reassess the evaluation, making adjustments to reduce the difference. 
+quest5_val_f: INVALID EVALUATION. The obtained difference between the quantitative and qualitative dimensions is over the limit. We recommend re-administering the questionnaire.
+quest5_val_g: Overall the Perceived Performance Evaluation is low, with performance levels far away from the athlete’s potential. There is agreement between the qualitative and quantitative values, which is positive and increases the consistency of the evaluation
+quest5_val_h: Overall the Perceived Performance Evaluation is low, with performance levels far away from the athlete’s potential. There is discrepancy between the qualitative and quantitative values obtained, which means that the evaluation should be reassessed, making adjustments to reduce this difference, and that may also help improve the evaluation.
+quest5_val_i: INVALID EVALUATION. The obtained difference between the quantitative and qualitative dimensions is over the limit. We recommend re-administering the questionnaire... 
+quest5_valor_1: 1 (very poor)
+quest5_valor_2: 2 (poor)
+quest5_valor_3: 3 (so-so)
+quest5_valor_4: 4 (good)
+quest5_valor_5: 5 (very good)
 quest6: Valoración Post-Competición (Deportes Colectivos)
 quest6_10: Con el grado de comunicación con tus compañeros
 quest6_11: Con tu aportación al trabajo colectivo
@@ -1078,4 +1079,3 @@ unit_8_path: 08.Tolerancia.Psicologica.es
 unit_8_title: Tolerancia Psicólogica
 unit_9_path: 09.La.Competicion.es
 unit_9_title: La Competición
-label_my_athletes: My athletes

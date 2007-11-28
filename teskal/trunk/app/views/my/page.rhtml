@@ -202,11 +202,11 @@
           <%- odd=1 end -%>
           <%- controlador="quest"+ answer.quest_id.to_s -%>
           <%- if answer.browse == 1 -%>
-          <td><span class="icon icon-eye"></span></td>
+          <td><span class="icon icon-eye">
           <%- else -%>
-          <td><span class="icon icon-eye_crossed"></span></td>
+          <td><span class="icon icon-eye_crossed"></span></td> 
           <%- end -%>
-          <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on))%></td>
+          <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on))%></td></span></td>
           <%- if answer.browse == 1 -%>
           <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
           <%- else -%>
