@@ -97,8 +97,31 @@ class User < ActiveRecord::Base
     self.role > ROLE_GRATIS
   end
 
+  def suscription?
+    self.role > ROLE_GRATIS
+  end
+
   def show?
     self.role > ROLE_ATHLETE
+  end
+
+  def athlete?
+    self.role == ROLE_ATHLETE
+  end
+
+  def my_role
+    my_role=""
+    case self.role
+    when ROLE_GRATIS
+      my_role=l(:label_role_1)
+    when ROLE_ATHLETE
+      my_role=l(:label_role_2)
+    when ROLE_COACH
+      my_role=l(:label_role_3)
+    when ROLE_TUTOR
+      my_role=l(:label_role_4)
+    end
+    return my_role
   end
 
   def check_password?(clear_password)
