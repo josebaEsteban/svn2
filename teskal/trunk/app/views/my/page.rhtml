@@ -96,11 +96,11 @@
         <td><a href="../lib/<%= l(:unit_4_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_4_path) %>');"><%= l(:unit_4_title) %></a></td>
       </tr>
       <%- end -%>
-      <%- if @logged_in_user.show? -%> 
+      <%- if @logged_in_user.show? -%>
       <tr>
-		<%- else -%>
+        <%- else -%>
       <tr class='odd'>
-	   <%- end -%>
+        <%- end -%>
         <td>5</td>
         <td><a href="../lib/<%= l(:unit_5_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_5_path) %>');"><%= l(:unit_5_title) %></a></td>
       </tr>
@@ -201,12 +201,15 @@
         <tr>
           <%- odd=1 end -%>
           <%- controlador="quest"+ answer.quest_id.to_s -%>
-          <%- if answer.browse == 1 -%>
-          <td><span class="icon icon-eye">
-          <%- else -%>
-          <td><span class="icon icon-eye_crossed"></span></td> 
+          <td>
+			 <%- if @logged_in_user.athlete?-%>	
+          	<%- if answer.browse == 1 -%>
+          		<span class="icon icon-eye">
+          	<%- else -%>
+          		<span class="icon icon-eye_crossed">
+          	<%- end -%>
           <%- end -%>
-          <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on))%></td></span></td>
+          <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on))%></span></td>
           <%- if answer.browse == 1 -%>
           <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
           <%- else -%>

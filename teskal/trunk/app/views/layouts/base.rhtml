@@ -60,6 +60,9 @@
   </div>
   <% if loggedin? %>
   <%= @logged_in_user.name %>
+  <%- if @logged_in_user.suscription? -%>
+ • <%= @logged_in_user.my_role %>
+  <% end %>
   <% end %>
   <div id="content">
     <% if flash[:notice] %>
