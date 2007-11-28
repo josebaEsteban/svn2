@@ -224,4 +224,6 @@ ActiveRecord::Schema.define(:version => 0) do
     t.column "managed_by",        :integer
   end
 
+  add_index "users", ["managed_by"], :name => "managed_by"
+
 end
