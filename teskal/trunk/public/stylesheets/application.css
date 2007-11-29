@@ -103,6 +103,12 @@ img.right {
 	height: 28px;
 	background-image: url(../images/head2_stripe_eu.gif);
 }
+#head_lang_br {
+	margin: 0px;
+	padding: 0;
+	height: 28px;
+	background-image: url(../images/head2_stripe_br.gif);
+}
 #header a {
 	color: #fff;
 }
