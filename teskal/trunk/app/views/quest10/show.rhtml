@@ -30,7 +30,8 @@
 <br/>
 
 <div align="center">
-  <div id="values"> <%=l(:quest9_valor_1)%> • <%=l(:quest9_valor_2)%> • <%=l(:quest9_valor_3)%> • <%=l(:quest9_valor_4)%> • <%=l(:quest9_valor_5)%> </div>
+	<%- if @user.show? -%> 
+	  <div id="values"> <%=l(:quest9_valor_1)%> • <%=l(:quest9_valor_2)%> • <%=l(:quest9_valor_3)%> • <%=l(:quest9_valor_4)%> • <%=l(:quest9_valor_5)%> </div>
   <br/>
   <br/>
   <table cellspacing="0">
@@ -147,5 +148,19 @@
   </table>
   <br/>
   <br/>
+<%- end -%>
+<table cellspacing="0">
+  <!-- <caption><%=l(:quest1)%></caption> -->
+  <thead>
+    <tr>
+      <th scope="col"><div align="left"><%= l(:field_notes) %></div></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td><div align="left"><%=simple_format(@answer.note1)%></div></td>
+    </tr>
+  </tbody>
+</table>
 </div>
 <%= link_to l(:button_back),'/my/page' %>

@@ -30,9 +30,11 @@
 <br/>
 
 <div align="center">
-  <h2><%=l(:quest11_label_0)%></h2>
+	<%- if @user.show? -%> 
+	  <h2><%=l(:quest11_label_0)%></h2>
   <br/>
-  <div id="values"> <%=l(:quest11_valor_1)%>•
+
+	  <div id="values"> <%=l(:quest11_valor_1)%>•
 <%=l(:quest11_valor_2)%>•
 <%=l(:quest11_valor_3)%>•
 <%=l(:quest11_valor_4)%>•
@@ -216,6 +218,7 @@
   </table>
   <br/>
   <br/>
+<%- end -%>
   <table cellspacing="0">
     <!-- <caption><%=l(:quest1)%></caption> -->
     <thead>

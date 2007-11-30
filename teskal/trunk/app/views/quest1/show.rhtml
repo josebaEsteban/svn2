@@ -55,7 +55,8 @@
 <br/>
 <br/>
 <div align="center">
-  <div id="values"> <%=l(:quest3_valor_0)%> • <%=l(:quest3_valor_1)%> • <%=l(:quest3_valor_2)%> • <%=l(:quest3_valor_3)%> • <%=l(:quest3_valor_4)%> </div>
+	<%- if @user.show? -%> 
+	  <div id="values"> <%=l(:quest3_valor_0)%> • <%=l(:quest3_valor_1)%> • <%=l(:quest3_valor_2)%> • <%=l(:quest3_valor_3)%> • <%=l(:quest3_valor_4)%> </div>
   <br/>
   <table cellspacing="0">
     <!-- <caption><%=l(:quest3)%></caption> -->
@@ -497,6 +498,7 @@
   </table>
   <br/>
   <br/>
+<%- end -%>
   <table cellspacing="0">
     <!-- <caption><%=l(:quest1)%></caption> -->
     <thead>
