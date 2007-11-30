@@ -108,6 +108,7 @@ class AccountController < ApplicationController
       user = token.user
       redirect_to :controller => 'welcome' and return unless user.status == User::STATUS_REGISTERED
       user.status = User::STATUS_ACTIVE
+      user.firstname = user.login
       if user.save
         journal("activate account", user.id)
         token.destroy
