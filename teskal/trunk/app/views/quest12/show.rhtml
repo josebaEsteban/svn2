@@ -17,12 +17,15 @@
 </div>
 <br/>
 <br/>
-<div id="values"> <%=l(:quest12_valor_1)%><•> <•> <•> <•> <•> <•> <•> <•> <%=l(:quest12_valor_2)%> <br/>
+ 
+	<div align="center">
+	<%- if @user.show? -%>
+	<div id="values"> <%=l(:quest12_valor_1)%><•> <•> <•> <•> <•> <•> <•> <•> <%=l(:quest12_valor_2)%> <br/>
   <br/>
 </div>
 <br/>
 <br/>
-<div align="center">
+
   <table cellspacing="0">
     <!-- <caption><%=l(:quest1)%></caption> -->
     <thead>
@@ -97,6 +100,7 @@
   </table>
   <br/>
   <br/>
+<%- end -%>
   <table cellspacing="0">
     <!-- <caption><%=l(:quest1)%></caption> -->
     <thead>

@@ -25,6 +25,7 @@
 <br/>
 <br/>
 <div align="center">
+<%- if @user.show? -%>
   <div id="values"> <%=l(:quest7_valor_1)%>
     <•>
     <•>
@@ -139,6 +140,7 @@
   </table>
   <br/>
   <br/>
+<%- end -%>
   <table cellspacing="0">
     <!-- <caption><%=l(:quest1)%></caption> -->
     <thead>
