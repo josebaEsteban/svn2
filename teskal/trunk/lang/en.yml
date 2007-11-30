@@ -273,30 +273,30 @@ notice_successful_connection: Successful connection.
 notice_successful_create: Successful creation.
 notice_successful_delete: Successful deletion.
 notice_successful_update: Successful update.
-quest10: Cuestionario de Clima de Tecnificación Reflejado
-quest10_10: Permite solucionar situaciones de competición de forma diferente a mis directrices
-quest10_11: Anima a l@s deportistas cuando cometen un fallo
-quest10_12: Piensa que l@s deportistas tienen éxito cuando son claramente superiores a los demás
-quest10_13: Se enfada cuando l@s deportistas actúan de forma no deseada
-quest10_14: Se enfada cuando tengo que corregir a l@s deportistas después de un error
-quest10_15: Para él/ella, los errores ayudan a l@s deportistas a darse cuenta de sus déficits y a mejorar.
-quest10_16: Procura que el tiempo de competición de cada deportistas en la temporada sea semejante
-quest10_17: Procura que l@s deportistas participen en el mismo nº de competiciones en la temporada
-quest10_18: Piensa que l@s deportistas tienen éxito cuando lo hacen todo lo mejor que saben hacerlo
-quest10_19: Tiene la máxima confianza en todos l@s deportistas cuando disputan una competición
-quest10_1: Permite que tomen decisiones que no se corresponden con la táctica prevista
-quest10_20: Cuando l@s deportistas cometen errores sigue manteniendo la confianza en ell@s
-quest10_2: Piensa que l@s deportistas tienen éxito cuando superan las dificultades
-quest10_3: Prefiere que el equipo gane a que 'Se hagan las cosas bien hechas'
-quest10_4: Sacrifica la calidad de la técnica de competición por amarrar el resultado
-quest10_5: Para él/ella, lo primero es ganar la competición y después competir bien
-quest10_6: Felicita a l@s deportistas cuando hacen las cosas bien, actúan según lo esperado
-quest10_7: Anima a l@s deportistas en las acciones futuras
-quest10_8: Da instrucciones sobre aspectos técnicos, tácticos, estilo, recorrido..etc.
-quest10_9: Piensa que l@s deportistas tienen éxito cuando lo hacen mejor que los demás
-quest10_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de competición. Por favor, lee cuidadosamente y después rodea con un círculo el número que hay al lado, el que mejor describa el comportamiento de tu entrenador durante el entrenamiento y los partidos de competición.
-quest10_label_0: Clima de Tecnificación Reflejado
-quest10_label_1: Mi entrenador/a 
+quest10: Technical Coaching Climate Questionnaire
+quest10_10: Allows for different solutions to competition situations than originally planned.
+quest10_11: Encourages athletes after a mistake
+quest10_12: Thinks that athletes are successful when they are clearly better than others.
+quest10_13: Gets mad when athletes behave in an undesirable way
+quest10_14: Gets mad when he or she has to correct an athlete after a mistake
+quest10_15: For him/her mistakes help athletes become aware of their deficits and improve.
+quest10_16: Tries to make sure that each athlete has similar amounts of competition time during the season.
+quest10_17: Tries to get athlete to compete in the same number of competitions during the season.
+quest10_18: Believes that athletes are successful when they perform as well as they are capable.
+quest10_19: Has the utmost confidence in all athletes when they compete.
+quest10_1: Allows the making of decisions that do not match the tactical plan. 
+quest10_20: Remains confident in the athletes even when they make mistakes.
+quest10_2: Believes that athletes are successful when they overcome difficulties.
+quest10_3: Prefers a victory over “Doing things well”
+quest10_4: Will sacrifice the quality of the competition tecnique to secure the result.
+quest10_5: For him/her winning is first, and then competing well 
+quest10_6: Congratulates the athletes when they perform well, do what was expected. 
+quest10_7:  Encourages athletes in their future actions.
+quest10_8: Gives instructions on technical and tactical aspects, style, 
+quest10_9: Thinks that athletes are successful when they perform better than others.
+quest10_intro: Below is a series of comments and expressions related to competition situations and behaviors. Please, read them carefully and then select the one that best describes your coach’s behavior during practices and games. 
+quest10_label_0: Technical Coaching Climate
+quest10_label_1: My coach
 quest11: Questionaire of Intrinsic Motivation
 quest11_10: Because it is absolutely necessary to do sports if one wants to be in shape.
 quest11_11: For the prestige of being an athlete.
