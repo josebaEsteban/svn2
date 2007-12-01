@@ -157,27 +157,27 @@ class Quest3Controller < ApplicationController
     item=6
     if ansiedadErrores < 13
       @advice[item]=l(:quest3_d7_a)
-      @icon[item]="stop"
+      @icon[item]="star"
     else
       if ansiedadErrores < 25
         @advice[item]=l(:quest3_d7_b)
         @icon[item]="medium"
       else
         @advice[item]=l(:quest3_d7_c)
-        @icon[item]="star"
+        @icon[item]="stop"
       end
     end
     item=7
     if competenciaPercibida < 13
       @advice[item]=l(:quest3_d8_a)
-      @icon[item]="star"
+      @icon[item]="stop"
     else
       if competenciaPercibida < 25
         @advice[item]=l(:quest3_d8_b)
         @icon[item]="medium"
       else
         @advice[item]=l(:quest3_d8_c)
-        @icon[item]="stop"
+        @icon[item]="star"
       end
     end
 
