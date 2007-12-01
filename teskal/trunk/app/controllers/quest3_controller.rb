@@ -170,14 +170,14 @@ class Quest3Controller < ApplicationController
     item=7
     if competenciaPercibida < 13
       @advice[item]=l(:quest3_d8_a)
-      @icon[item]="stop"
+      @icon[item]="star"
     else
       if competenciaPercibida < 25
         @advice[item]=l(:quest3_d8_b)
         @icon[item]="medium"
       else
         @advice[item]=l(:quest3_d8_c)
-        @icon[item]="star"
+        @icon[item]="stop"
       end
     end
 
