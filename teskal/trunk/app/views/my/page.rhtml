@@ -197,7 +197,7 @@
         <%- if odd == 1 -%>
         <tr class="odd">
           <%- odd=0-%>
-          <%-else -%>
+        <%-else -%>
         <tr>
           <%- odd=1 end -%>
           <%- controlador="quest"+ answer.quest_id.to_s -%>
@@ -205,9 +205,9 @@
 			 <%- if @logged_in_user.athlete?-%>	
           	<%- if answer.browse == 1 -%>
           		<span class="icon icon-eye">
-          	<%- else -%>
-          		<span class="icon icon-eye_crossed">
-          	<%- end -%>
+          <%- else -%>
+          <span class="icon icon-eye_crossed">
+          <%- end -%>
           <%- end -%>
           <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on))%></span></td>
           <%- if answer.browse == 1 -%>
