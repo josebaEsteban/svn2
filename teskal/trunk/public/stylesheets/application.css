@@ -353,12 +353,18 @@ ul.documents li {
 	margin-bottom: 10px;
 	margin-left: -37px;
 }
+#signin {
+	width: 420px;
+	height: auto;
+	text-align: left;
+  background: #f7f4ee;
+padding: 15px;
+  font-size: 110%; 
+}
 #errors h3,
 #signin h3 {
-  text-shadow: 2px 2px #eee;
-  background: #f7f4ee;
+  text-shadow: 2px 2px #bbb;
   color: #523a0b;
-  padding: 5px;
 }
 /********** Validation error messages *************/
 #errorExplanation {
