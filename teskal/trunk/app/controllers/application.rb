@@ -1,4 +1,3 @@
-# Teskal
 # Copyright (C) 2007 Teskal
 
 

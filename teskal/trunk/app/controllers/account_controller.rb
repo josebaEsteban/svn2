@@ -4,9 +4,7 @@
 class AccountController < ApplicationController
   layout 'base'
 
-
-
-  # prevents login action to be filtered by check_if_login_required application scope filter
+ # prevents login action to be filtered by check_if_login_required application scope filter
   skip_before_filter :check_if_login_required, :only => [:login, :lost_password, :signup, :terms]
   before_filter :require_login, :only => :logout
 
@@ -130,10 +128,11 @@ class AccountController < ApplicationController
         if @user.save and token.save
           journal("signup account",@user.id)
           Mailer.deliver_signup(token)
-          set_language_if_valid(@user.language)
-          flash[:notice] = l(:notice_account_register_done)
-          # redirect_to :controller => 'welcome' and return
-          redirect_to :controller => 'account', :action => 'login'
+          set_language_if_valid(@user.language) 
+          # render :partial => "signup_done"
+          # flash[:notice] = l(:notice_account_register_done)
+          # redirect_to :controller => 'account', :action => 'login'
+          redirect_to :controller => 'welcome', :action => 'signup_done'
         end
       end
     end
@@ -141,4 +140,5 @@ class AccountController < ApplicationController
 
   def terms
   end
+
 end
