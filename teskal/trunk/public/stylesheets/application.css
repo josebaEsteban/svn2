@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/****f************ Body and tag styles ****************/
+/**************** Body and tag styles ****************/
 
 #header * {
 	margin: 0;
@@ -190,6 +190,12 @@ img.right {
 .icon-key_crossed {
 	background-image: url(../images/key_delete.png);
 }
+#signin p {
+  padding: 5px;
+  font-weight: normal;
+}
+
+
 /**************** Content styles ****************/
 
 html>body #content {
@@ -346,6 +352,13 @@ ul.documents li {
 	padding-left: 36px;
 	margin-bottom: 10px;
 	margin-left: -37px;
+}
+#errors h3,
+#signin h3 {
+  text-shadow: 2px 2px #eee;
+  background: #f7f4ee;
+  color: #523a0b;
+  padding: 5px;
 }
 /********** Validation error messages *************/
 #errorExplanation {
