@@ -6,8 +6,8 @@ class WelcomeController < ApplicationController
     skip_before_filter :check_if_login_required, :only => [:signup_done, :index] 
   def index
     # @projects = Project.laquest logged_in_user
-    @answers = Answer.find_by_user_id('21')
-    # redirect_to :controller => 'account', :action => 'login'
+    # @answers = Answer.find_by_user_id('21')
+    redirect_to :controller => 'account', :action => 'login'
 
   end
 
