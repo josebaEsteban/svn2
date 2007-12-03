@@ -258,7 +258,7 @@ notice_account_invalid_creditentials: Usuário ou senha inválido.
 notice_account_lost_email_sent: Um email com instruções para escolher uma nova senha foi enviado para você.
 notice_account_password_updated: A senha foi atualizada com sucesso.
 notice_account_register_done: A senha foi criada com sucesso. Um email com instruções para ativá-lo foi-lhe emitido.
-notice_account_unknown_email: Usuário desconhecido.
+notice_account_unknown_email: Usuário desconhecido
 notice_account_updated: Conta foi alterada com sucesso.
 notice_account_wrong_password: Senha errada.
 notice_can_t_change_password: Esta conta usa uma fonte externa da autenticação. Impossível mudar a senha.

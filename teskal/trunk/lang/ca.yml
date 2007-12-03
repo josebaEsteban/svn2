@@ -258,7 +258,7 @@ notice_account_invalid_creditentials: Usuari o contrasenya no vàlid.
 notice_account_lost_email_sent: Se li ha enviat un correu amb instruccions per crear una contrasenya.
 notice_account_password_updated: Contrasenya actualitzada.
 notice_account_register_done: Compte creat. Se li ha enviat un correu amb instruccions per activar-la.
-notice_account_unknown_email: Usuari desconegut.
+notice_account_unknown_email: Usuari desconegut
 notice_account_updated: El compte s'ha modificat.
 notice_account_wrong_password: Contrasenya errònia.
 notice_can_t_change_password: Aquest compte usa una autenticació externa. No es pot canviar la contrasenya.

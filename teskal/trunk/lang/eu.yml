@@ -256,7 +256,7 @@ notice_account_invalid_creditentials: Balio gabeko erabiltzaile edo eta pasa-hit
 notice_account_lost_email_sent: Pasa-hitza sortzeko behar dituzun argibideekin mezu bat bidali zaizu.
 notice_account_password_updated: Pasa-hitz eguneratua.
 notice_account_register_done: Kontu sortu berria.
-notice_account_unknown_email: Erabiltzaile ezezaguna.
+notice_account_unknown_email: Erabiltzaile ezezaguna
 notice_account_updated: Kontua berraldatu egin da.
 notice_account_wrong_password: Okerreko pasa-hitz.
 notice_can_t_change_password: Esta cuenta usa una autentificación externa. No se puede cambiar la contraseña.
