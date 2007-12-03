@@ -495,13 +495,8 @@ padding: 15px;
 	max-width: 530px;
 	color: #505050;
 	line-height: 1.5em;
-}
-.box.h3 {
-	height: 2.5em;
-	font-size: 1.7em;
-	color: #523a0b;
-	line-height: 1em;
-}
+} 
+
 a.close-icon {
 	display: block;
 	margin-top: 3px;
@@ -555,6 +550,13 @@ div.attachments p {
 .login {
 	width: 50%;
 	text-align: left;
+	border: 1px solid #ddd; 
+}
+.login titulo {
+	height: 1.5em;
+	font-size: 3em;
+	color: #523a0b;
+	line-height: 1em;
 }
 #history p {
 	margin-left: 34px;
@@ -622,10 +624,10 @@ div.tooltip:hover span.tip {
 .tabular label {
 	font-weight: bold;
 	float: left;
-	margin-left: -140px; /*width of left column*/
-	width: 135px; /*width of labels. Should be smaller than left column to create some right 
+	margin-left: -90px; /*width of left column*/
+	width: 90px; /*width of labels. Should be smaller than left column to create some right 
 margin*/
-}
+} 
 .error {
 	color: #cc0000;
 }
