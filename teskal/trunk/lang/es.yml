@@ -233,6 +233,10 @@ label_report_plural: Informes
 label_result: %d resultado
 label_result_plural: %d resultados
 label_role: Rol
+label_role_1: cuenta gratuita
+label_role_2: deportista
+label_role_3: entrenador/a
+label_role_4: tutor/a
 label_role_and_permissions: Roles y permisos
 label_role_new: Nuevo rol
 label_role_plural: Roles
@@ -240,13 +244,14 @@ label_search: Búsqueda
 label_send_information: Información de la cuenta enviada al usuario
 label_settings: Configuración
 label_show: Mostrar
+label_timezone: Zona horaria
 label_user: Usuario
 label_user_new: Nuevo usuario
 label_user_plural: Usuarios
 label_year: Año
 login_label_1: Has olvidado tu contraseña?
 login_label_2: Envíate un correo
-login_label_3: con información sobre como crear una nueva contraseña
+login_label_3: con información sobre como crear una nueva contraseña.
 login_label_4: ¿Nuevo en Teskal?
 login_label_5: Crea una cuenta 
 login_label_6: gratis.
@@ -1031,6 +1036,10 @@ setting_text_formatting: Formato de texto
 setting_welcome_text: Texto de bienvenida
 signup_label_10: Condiciones del Servicio
 signup_label_11: Al hacer clic en 'Guardar', adjunto mi firma electrónica y estoy de acuerdo con las <a href="http:/account/terms">Condiciones de Servicio</a> de Teskal.
+signup_label_12: Gracias por registrarte! 
+signup_label_13: Tu cuenta ha sido creada en Teskal.
+signup_label_14: Recibirás una confirmación por correo.
+signup_label_15: Tiene un enlace de activación de tu cuenta que debes clicar para entrar en
 signup_label_1: Paso
 signup_label_2: Escoge un usuario y un lenguaje.
 signup_label_3: El lenguaje será usado cuando entres la próxima vez.
@@ -1079,12 +1088,3 @@ unit_8_path: 08.Tolerancia.Psicologica.es.pdf
 unit_8_title: Tolerancia Psicólogica
 unit_9_path: 09.La.Competicion.es.pdf
 unit_9_title: La Competición
-label_role_1: cuenta gratuita
-label_role_2: deportista
-label_role_3: entrenador/a
-label_role_4: tutor/a
-signup_label_12: Gracias por registrarte! 
-signup_label_13: Tu cuenta ha sido creada en Teskal.
-signup_label_14: Recibirás una confirmación por correo.
-signup_label_15: Tiene un enlace de activación de tu cuenta que debes clicar para entrar en
-label_timezone: Zona horaria
