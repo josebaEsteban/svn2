@@ -6,6 +6,7 @@
 	font-weight: normal;
 	top: -10px;        	
 	position: relative;
+				border: 1px solid #ddd;
 }
 #theform {
 	background-color: #f7f4ee;
@@ -57,7 +58,7 @@
 	width: 40em;
 	height: 3em;
 	border: 0px dotted #999999;
-	border-width: 1px 0;
+	border-width: 1px 0 0 0;
 	padding: 1em;
 }
 #theform #pt4 legend {

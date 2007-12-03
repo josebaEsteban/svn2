@@ -23,7 +23,8 @@
 	padding: 10px;
 	max-width: 450px;
 	color: #505050;
-	line-height: 1.5em;
+	line-height: 1.5em; 
+				border: 1px solid #ddd; 
 }                                        	
 #theform h3 {
 	height: 2em;
@@ -64,6 +65,7 @@
 		var valid3 = new Validation('myData',{immediate : true});
 	</script>
   </div>
+<br/>
   <% unless @user.auth_source_id %>
   <div id="theform">
     <h3><%=l(:field_password_change)%></h3>

@@ -1048,27 +1048,27 @@ text_are_you_sure: ¿ Ziur zaude ?
 text_caracters_maximum: %d characters maximum.
 text_caracters_maximum: karaktereen %d maximoa
 text_length_between: Longitud entre %d y %d caracteres. 
-unit_10_path: 10.La.Comunicacion.es
+unit_10_path: 10.La.Comunicacion.es.pdf
 unit_10_title: Komunikazioa
-unit_11_path: 11.Responsabilidad.vs.Culpabilidad.es
+unit_11_path: 11.Responsabilidad.vs.Culpabilidad.es.pdf
 unit_11_title: Erantzunkizuna vs Erruduntasuna
-unit_12_path: 12.Confianza.y.Auto.Eficacia.es 
+unit_12_path: 12.Confianza.y.Auto.Eficacia.es.pdf 
 unit_12_title: Konfiantza eta Auto Efikazia
-unit_13_path: 13.Estado.de.Animo.es
+unit_13_path: 13.Estado.de.Animo.es.pdf
 unit_13_title: Tentua
-unit_14_path: 14.Asertividad.es 
+unit_14_path: 14.Asertividad.es.pdf 
 unit_14_title: Asertibitatea
-unit_15_path: 15.Deportista.de.ARD.es 
+unit_15_path: 15.Deportista.de.ARD.es.pdf 
 unit_15_title: EHK-ko Kirolaria
-unit_16_path: 16.Sistema.de.Autoregulacion.es
+unit_16_path: 16.Sistema.de.Autoregulacion.es.pdf
 unit_16_title: Autoerregulazio Sistema
 unit_1_path: 01.Teskal.eu.pdf
 unit_1_title: Teskal Aurkezpena
 unit_2_path: 02.Atencion.y.Concentracion.es.pdf
 unit_2_title: Arreta y Kontzentrazioa
-unit_3_path: 03.Emociones.y.Rendimiento.Deportivo.es
+unit_3_path: 03.Emociones.y.Rendimiento.Deportivo.es.pdf
 unit_3_title: Emozioak eta Kirol Errendimendua
-unit_4_path: 04.Establecimiento.de.Objetivos.es
+unit_4_path: 04.Establecimiento.de.Objetivos.es.pdf
 unit_4_title: Helburuen Ezarpena
 unit_5_path: 05.Estresa.eu.pdf
 unit_5_title: Estresa lehiaketan
@@ -1089,3 +1089,4 @@ signup_label_12: Mila esker erregistratzeagatik!
 signup_label_13: Zure Teskaleko kontua sortua izan da.
 signup_label_14: Korreoz konfirmazio bat jasoko duzu.
 signup_label_15: Sartzeko klikatu behar duzun zure kontuaren aktibazio lotura bat dauka
+label_timezone: Ordu-zona
