@@ -255,7 +255,7 @@ notice_account_invalid_creditentials: Identifiant ou mot de passe invalide.
 notice_account_lost_email_sent: Un message contenant les instructions pour choisir un nouveau mot de passe vous a été envoyé.
 notice_account_password_updated: Mot de passe mis à jour avec succès.
 notice_account_register_done: Un message contenant les instructions pour activer votre compte vous a été envoyé.
-notice_account_unknown_email: Aucun compte ne correspond à cette adresse.
+notice_account_unknown_email: Aucun compte ne correspond à cette adresse
 notice_account_updated: Le compte a été mis à jour avec succès.
 notice_account_wrong_password: Mot de passe incorrect
 notice_can_t_change_password: Ce compte utilise une authentification externe. Impossible de changer le mot de passe.

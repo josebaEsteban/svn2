@@ -262,7 +262,7 @@ notice_account_invalid_creditentials: Usuario o contraseña no válido.
 notice_account_lost_email_sent: Se le ha enviado un correo con instrucciones para crear una contraseña.
 notice_account_password_updated: Contraseña actualizada.
 notice_account_register_done: Cuenta creada. Se le ha enviado un correo con instrucciones para activarla.
-notice_account_unknown_email: Usuario desconocido.
+notice_account_unknown_email: Usuario desconocido
 notice_account_updated: La cuenta se ha modificado.
 notice_account_wrong_password: Contraseña errónea.
 notice_can_t_change_password: Esta cuenta usa una autentificación externa. No se puede cambiar la contraseña.
