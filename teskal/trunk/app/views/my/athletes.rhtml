@@ -17,13 +17,13 @@
           <%-else -%>
         <tr>
           <%- odd=1 end -%> 
-			<%- name= user.firstname+" "+ user.lastname -%>
 <%- if user.status == 3 -%>
 <td><span class="icon icon-key_crossed">
  <%- else -%>
  <td><span class="icon icon-key">
 <%- end -%>
-<%= name %></span></td>
+<%= link_to user.name, :controller  => 'my', :action => 'quest', :id => user.id %>
+</span></td>
         <td> </td>
           <td><%= l_datetime(TzTime.zone.utc_to_local(user.created_on))%></td> 
       </tr>

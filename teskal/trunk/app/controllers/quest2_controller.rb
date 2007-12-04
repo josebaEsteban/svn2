@@ -37,8 +37,8 @@ class Quest2Controller < ApplicationController
     #Database Objects - Initialization
     @answer = Answer.find(params[:id])
     # @answer = Answer.find(session[:use)
-    require_coach(@answer.user_id)
-    @user=User.find(@answer.user_id )
+    @user=User.find(@answer.user_id ) 
+    @browse_score = answer_show(@answer.user_id, @answer.browse, @user.managed_by)
     journal("quest2/show/"+@answer.id.to_s, @answer.user_id)
     TzTime.zone=@user.timezone
     @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))

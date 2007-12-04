@@ -38,6 +38,11 @@ class MyController < ApplicationController
     end
   end
 
+  def quest
+      @athlete = User.find(params[:id])
+      @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{params[:id]} order by answers.created_on DESC")
+  end
+
   # Edit user's account
   def account
     @user = self.logged_in_user

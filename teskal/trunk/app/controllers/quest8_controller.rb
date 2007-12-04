@@ -38,9 +38,8 @@ class Quest8Controller < ApplicationController
   def show
     @answer = Answer.find(params[:id])
     @fecha = l_datetime(@answer.created_on)
-    require_coach(@answer.user_id)
-    @user=User.find(@answer.user_id )
-    require_coach(@answer.user_id)
+    @user=User.find(@answer.user_id ) 
+    @browse_score = answer_show(@answer.user_id, @answer.browse, @user.managed_by)
     journal( "quest8/show/"+@answer.id.to_s, @answer.user_id)
     TzTime.zone=@user.timezone
     @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))

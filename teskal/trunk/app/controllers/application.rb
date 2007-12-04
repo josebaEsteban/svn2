@@ -97,11 +97,23 @@ class ApplicationController < ActionController::Base
     true
   end
 
-  def require_coach(user)
-    if user != session[:user_id] and @logged_in_user.admin == 0
-      flash[:notice] = l(:notice_not_authorized)
-      redirect_back_or_default :controller => 'my', :action => 'page'
+  def answer_show(user, browse, managed_by)
+    browse_score = 1
+    if !@logged_in_user.admin?
+      if user == session[:user_id]
+        if browse == 0
+          redirect_back_or_default :controller => 'my', :action => 'page'
+        else
+          browse_score = 0
+        end
+      else
+        if @logged_in_user.id != managed_by
+          flash[:notice] = l(:notice_not_authorized)
+          redirect_back_or_default :controller => 'my', :action => 'page'
+        end
+      end
     end
+    return browse_score
   end
 
   # authorizes only to suscribed customers
@@ -265,7 +277,7 @@ class ApplicationController < ActionController::Base
 
   def journal(event, owner)
     if logged_in_user and @logged_in_user.admin?
-     # nothing by the moment if user is admin 
+      # nothing by the moment if user is admin
     else
       journal = Journal.new
       if session[:user_id].nil?
