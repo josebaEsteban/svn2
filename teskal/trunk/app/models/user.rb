@@ -109,6 +109,9 @@ class User < ActiveRecord::Base
     self.role == ROLE_ATHLETE
   end
 
+  def managed_by?
+  end
+
   def my_role
     my_role=""
     case self.role
