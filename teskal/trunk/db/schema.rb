@@ -95,6 +95,7 @@ ActiveRecord::Schema.define(:version => 0) do
     t.column "note5",        :text
     t.column "ip",           :string,   :limit => 15
     t.column "time_to_fill", :time,                                  :null => false
+    t.column "filled_by",    :integer
   end
 
   add_index "answers", ["user_id"], :name => "user_id"
@@ -149,6 +150,14 @@ ActiveRecord::Schema.define(:version => 0) do
 
   add_index "messages", ["board_id"], :name => "messages_board_id"
   add_index "messages", ["parent_id"], :name => "messages_parent_id"
+
+  create_table "pendings", :force => true do |t|
+    t.column "user_id",    :integer
+    t.column "quest_id",   :integer,  :limit => 2
+    t.column "created_on", :datetime
+  end
+
+  add_index "pendings", ["user_id"], :name => "user_id"
 
   create_table "permissions", :force => true do |t|
     t.column "controller",   :string,  :limit => 30, :default => "",    :null => false
@@ -222,6 +231,7 @@ ActiveRecord::Schema.define(:version => 0) do
     t.column "ip_last",           :string,    :limit => 15
     t.column "start",             :timestamp,                                            :null => false
     t.column "managed_by",        :integer
+    t.column "filled_for",        :integer
   end
 
   add_index "users", ["managed_by"], :name => "managed_by"

@@ -190,9 +190,11 @@ img.right {
 .icon-key_crossed {
 	background-image: url(../images/key_delete.png);
 }
-#signin p {
-	padding: 5px;
-	font-weight: normal;
+.icon-add {
+	background-image: url(../images/add.png);
+}
+.icon-write {
+	background-image: url(../images/pencil.png);
 }
 /**************** Content styles ****************/
 
@@ -293,7 +295,7 @@ input, select {
 	margin-bottom: 1px;
 }
 input.button-small {
-	font-size: 0.8em;
+	font-size: 0.95em;
 }
 .select-small {
 	font-size: 0.8em;
@@ -360,6 +362,10 @@ ul.documents li {
 	background: #f7f4ee;
 	padding: 15px;
 	font-size: 110%;
+}
+#signin p {
+	padding: 5px;
+	font-weight: normal;
 }
 #errors h3, #signin h3 {
 	text-shadow: 2px 2px #bbb;
@@ -467,7 +473,7 @@ ul.documents li {
 	clear: both;
 }
 .small {
-	font-size: 0.8em;
+	font-size: 0.95em;
 	line-height: 1.4em;
 	padding: 0 0 0 0;
 }
@@ -494,6 +500,7 @@ ul.documents li {
 	max-width: 530px;
 	color: #505050;
 	line-height: 1.5em;
+	border: 1px solid #ddd;
 }
 a.close-icon {
 	display: block;

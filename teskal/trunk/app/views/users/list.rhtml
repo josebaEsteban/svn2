@@ -1,3 +1,4 @@
+<%= stylesheet_link_tag "reset" -%>
 <div class="contextual">
 <%= link_to l(:label_user_new), {:action => 'add'}, :class => 'icon icon-add' %>
 </div>
@@ -19,7 +20,6 @@
 	<!-- <%= sort_header_tag('firstname', :caption => l(:field_firstname)) %>
 	<%= sort_header_tag('lastname', :caption => l(:field_lastname)) %>     -->
 	<th><%=l(:field_mail)%></th>
-	<%= sort_header_tag('admin', :caption => l(:field_admin)) %>
 	<%= sort_header_tag('status', :caption => l(:field_status)) %>
 	<%= sort_header_tag('created_on', :caption => l(:field_created_on)) %>
 	<%= sort_header_tag('last_login_on', :caption => l(:field_last_login_on)) %>
@@ -32,8 +32,14 @@
 	<!-- <td><%= user.firstname %></td>
 	<td><%= user.lastname %></td>  -->
 	<td><%= user.mail %></td>
-	<td align="center"><%= image_tag 'true.png' if user.admin? %></td>
-	<td align="center"><%= image_tag 'locked.png' if user.locked? %><%= image_tag 'user_new.png' if user.registered? %></td>
+
+	<% if user.locked? %>
+	<td align="center"><%= image_tag 'status_busy.png' if user.locked? %><%= image_tag 'user_new.png' if user.registered? %></td>
+	<% elsif user.registered? %>
+	<td align="center"><%= image_tag 'status_offline.png'%></td>
+	<% else %>
+	<td align="center"><%= image_tag 'status_online.png'%></td>
+	<% end %>
 	<td align="center"><%= format_time(user.created_on) %></td>
 	<td align="center"><%= format_time(user.last_login_on) unless user.last_login_on.nil? %></td>
   <td align="center">

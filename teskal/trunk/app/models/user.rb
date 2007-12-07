@@ -97,10 +97,6 @@ class User < ActiveRecord::Base
     self.role > ROLE_GRATIS
   end
 
-  def suscription?
-    self.role > ROLE_GRATIS
-  end
-
   def show?
     self.role > ROLE_ATHLETE
   end

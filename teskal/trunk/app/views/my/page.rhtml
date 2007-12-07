@@ -8,7 +8,47 @@
       </tr>
     </thead>
     <tbody>
-      <%- if @logged_in_user.suscription? -%>
+      <%- if @logged_in_user.athlete? -%>
+      <%- odd = 0 -%>
+      <%- for pending in @pendings -%>
+      <%- case pending.quest_id
+	            when 1 
+	              quest=l(:quest1) 
+	            when 2 
+	              quest=l(:quest2_label_0) 
+	            when 3 
+	              quest=l(:quest3) 
+	            when 4 
+	              quest=l(:quest4) 
+	            when 5 
+	              quest=l(:quest5) 
+	            when 6 
+	              quest=l(:quest6) 
+	            when 7 
+	              quest=l(:quest7_label_0) 
+	            when 8 
+	              quest=l(:quest8_label_0)  
+	            when 9 
+	              quest=l(:quest9_label_0)  
+	            when 10 
+	              quest=l(:quest10_label_0)  
+	            when 11 
+	              quest=l(:quest11_label_0)
+	            when 12 
+	              quest=l(:quest12_label_0)
+	            end -%>
+      <%- if odd == 1 -%>
+      <tr class="odd">
+        <%- odd = 0-%>
+        <%-else -%>
+      <tr>
+        <%- odd=1 end -%>
+        <%- controlador="quest"+ pending.quest_id.to_s -%>
+        <td> <%= pending.quest_id.to_s %> </td>
+        <td><%= link_to quest, :controller  => controlador, :action => 'new' %></td>
+      </tr>
+      <%- end -%>
+      <%- elsif @logged_in_user.show? -%>
       <tr>
         <td>1</td>
         <td><%= link_to l(:quest1), :controller  => 'quest1', :action => 'new' %></td>
@@ -57,7 +97,7 @@
         <td>12</td>
         <td><%= link_to l(:quest12_label_0), :controller  => 'quest12', :action => 'new' %></td>
       </tr>
-      <% else %>
+      <%- else -%>
       <tr>
         <td>2</td>
         <td><%= link_to l(:quest2_label_0), :controller  => 'quest2', :action => 'new' %></td>
@@ -66,7 +106,7 @@
         <td>12</td>
         <td><%= link_to l(:quest12_label_0), :controller  => 'quest12', :action => 'new' %></td>
       </tr>
-      <% end %>
+      <%- end -%>
     </tbody>
   </table>
   <br/>
@@ -159,7 +199,6 @@
     <table cellspacing="0">
       <thead>
         <tr>
-          <th scope="col"></th>
           <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>
           <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
           <th scope="col"><div align="left"><%=l(:label_competition) %></div></th>
@@ -197,19 +236,11 @@
         <%- if odd == 1 -%>
         <tr class="odd">
           <%- odd=0-%>
-        <%-else -%>
+          <%-else -%>
         <tr>
           <%- odd=1 end -%>
           <%- controlador="quest"+ answer.quest_id.to_s -%>
-          <td>
-			 <%- if @logged_in_user.athlete?-%>	
-          	<%- if answer.browse == 1 -%>
-          		<span class="icon icon-eye">
-          <%- else -%>
-          <span class="icon icon-eye_crossed">
-          <%- end -%>
-          <%- end -%>
-          <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on))%></span></td>
+          <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on))%></td>
           <%- if answer.browse == 1 -%>
           <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
           <%- else -%>

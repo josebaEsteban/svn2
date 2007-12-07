@@ -96,12 +96,13 @@ class ApplicationController < ActionController::Base
     end
     true
   end
-
+  
   def answer_show(user, browse, managed_by)
     browse_score = 1
     if !@logged_in_user.admin?
       if user == session[:user_id]
         if browse == 0
+          flash[:notice] = l(:notice_not_authorized)
           redirect_back_or_default :controller => 'my', :action => 'page'
         else
           browse_score = 0
@@ -317,7 +318,10 @@ class ApplicationController < ActionController::Base
     organization=geo_ip[9]
     error=geo_ip[10]
   end
+      
 
+  
+  
   # private
   # def set_timezone
   #   if logged_in? && !current_user.time_zone.nil?

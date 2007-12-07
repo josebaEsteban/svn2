@@ -10,17 +10,17 @@
 <p><%= f.select :language, lang_options_for_select %></p>
 
 
-<p><%= f.check_box :admin %></p>
-<p><%= f.check_box :mail_notification %></p>
+<!-- <p><%= f.check_box :admin %></p>
+<p><%= f.check_box :mail_notification %></p> -->
 </div>
 
 <div class="box">
 <h3><%=l(:label_authentication)%></h3>
-<div id="password_fields" style="<%= 'display:none;' if @user.auth_source %>">
-<p><label for="password"><%=l(:field_password)%><span class="required"> *</span></label>
+<div id="password_fields" >
+<p><label for="password"><%=l(:field_password)%><span class="required"></span></label>
 <%= password_field_tag 'password', nil, :size => 25  %><br />
 <em><%= l(:text_length_between, 4, 12) %></em></p>
-<p><label for="password_confirmation"><%=l(:field_password_confirmation)%><span class="required"> *</span></label>
+<p><label for="password_confirmation"><%=l(:field_password_confirmation)%><span class="required"></span></label>
 <%= password_field_tag 'password_confirmation', nil, :size => 25  %></p>
 </div>
 </div>

@@ -1,9 +1,11 @@
+<%= stylesheet_link_tag "reset" -%> 
 <%- TzTime.zone=@user.timezone -%>
-  <table cellspacing="0">
+  <table cellspacing="0"> 
+	<!-- <caption>elele</caption> -->
     <thead>
-      <tr>
+      <tr>                                                               
+	        <th scope="col"></th> 
         <th scope="col"><div align="left"><%=l(:field_name) %></div></th>
-        <th scope="col"></th> 
         <th scope="col"><div align="left"><%=l(:field_created_on)%></div></th>
       </tr>
     </thead>
@@ -17,14 +19,14 @@
           <%-else -%>
         <tr>
           <%- odd=1 end -%> 
+<td><a href="/users/switch/<%= user.id.to_s %>"
 <%- if user.status == 3 -%>
-<td><span class="icon icon-key_crossed">
+<span class="icon icon-key_crossed">
  <%- else -%>
- <td><span class="icon icon-key">
-<%- end -%>
-<%= link_to user.name, :controller  => 'my', :action => 'quest', :id => user.id %>
-</span></td>
-        <td> </td>
+ <span class="icon icon-key">
+<%- end -%> 
+</span></a></td>
+<td><%= link_to user.name, :controller  => 'my', :action => 'quest', :id => user.id %></td>
           <td><%= l_datetime(TzTime.zone.utc_to_local(user.created_on))%></td> 
       </tr>
       <%- end -%>
