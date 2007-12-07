@@ -1,12 +1,27 @@
-<%= stylesheet_link_tag "reset" -%> 
+<%= stylesheet_link_tag "reset" -%>
 <%- TzTime.zone=@user.timezone -%>
-  <table cellspacing="0"> 
-	<!-- <caption>elele</caption> -->
+<div align="right">
+		<a href="/users/add" <img alt="Add" src="/images/add.png"><%= l(:label_user_new)%> </a>
+		</div>
+<br/>
+<div align="center">
+  <table cellspacing="0">
+    <!-- <caption>Mis atletas</caption> -->
     <thead>
-      <tr>                                                               
-	        <th scope="col"></th> 
+      <tr>
+        <th scope="col"><div align="left"><%=l(:field_login)%></div></th>
+        <th></th>
         <th scope="col"><div align="left"><%=l(:field_name) %></div></th>
+        <th></th>
         <th scope="col"><div align="left"><%=l(:field_created_on)%></div></th>
+        <th></th>
+        <th scope="col"><div align="left"><%=l(:field_mail)%></div></th>
+        <th></th>
+        <th scope="col"><div align="left"><%=l(:field_last_login_on)%></div></th>
+        <th></th>
+        <th scope="col"><div align="left"><%=l(:field_language)%></div></th>
+        <th></th>
+        <th scope="col"><div align="left"><%=l(:field_status)%></div></th>
       </tr>
     </thead>
     <tbody>
@@ -14,22 +29,33 @@
       <%- for user in @users -%>
       <tr class="odd">
         <%- if odd == 1 -%>
-        <tr class="odd">
-          <%- odd=0-%>
-          <%-else -%>
-        <tr>
-          <%- odd=1 end -%> 
-<td><a href="/users/switch/<%= user.id.to_s %>"
-<%- if user.status == 3 -%>
-<span class="icon icon-key_crossed">
- <%- else -%>
- <span class="icon icon-key">
-<%- end -%> 
-</span></a></td>
-<td><%= link_to user.name, :controller  => 'my', :action => 'quest', :id => user.id %></td>
-          <td><%= l_datetime(TzTime.zone.utc_to_local(user.created_on))%></td> 
+      <tr class="odd">
+        <%- odd=0-%>
+        <%-else -%>
+      <tr>
+        <%- odd=1 end -%>
+        <td><%= link_to user.login, :controller  => 'my', :action => 'quest', :id => user.id %></td>
+        <td></td>
+        <td><%= user.name %></td>
+        <td></td>
+        <td><%= l_datetime(TzTime.zone.utc_to_local(user.created_on))%></td>
+        <td></td>
+        <td><%= user.mail %></td>
+        <td></td>
+        <td><%= l_datetime(TzTime.zone.utc_to_local(user.last_login_on)) unless user.last_login_on.nil? %></td>
+        <td></td>
+        <td><div align="center"><%= user.language %></div></td>
+        <td></td>
+        <td><div align="center"><a href="/users/switch/<%= user.id.to_s %>"
+			<%- if user.status == 3 -%>
+			<%= image_tag 'key_crossed.png' %>
+			 <%- else -%>
+			<%= image_tag 'key.png' %>
+			<%- end -%> 
+			</a></div></td>
       </tr>
       <%- end -%>
     </tbody>
   </table>
-</center>
+  </center>
+</div>

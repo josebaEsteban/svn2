@@ -97,6 +97,15 @@ class ApplicationController < ActionController::Base
     true
   end
   
+  def require_coach
+    return unless require_login
+    unless self.logged_in_user.show?
+      render_403
+      return false
+    end
+    true
+  end
+
   def answer_show(user, browse, managed_by)
     browse_score = 1
     if !@logged_in_user.admin?

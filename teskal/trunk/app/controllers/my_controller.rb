@@ -31,7 +31,7 @@ class MyController < ApplicationController
   end
 
   def athletes
-    @user = self.logged_in_user  
+    @user = self.logged_in_user
     if @user.show?
       @users = User.find_by_sql("select * from users where users.managed_by=#{session[:user_id]} and  (users.status =1 or users.status=3) order by users.created_on DESC")
     else
@@ -40,9 +40,9 @@ class MyController < ApplicationController
   end
 
   def quest
-      @athlete = User.find(params[:id])
-      @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{params[:id]}  order by answers.created_on DESC")
-      @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{params[:id]}  order by pendings.created_on DESC")
+    @athlete = User.find(params[:id])
+    @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{params[:id]}  order by answers.created_on DESC")
+    @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{params[:id]}  order by pendings.created_on DESC")
   end
 
   # Edit user's account
@@ -136,4 +136,5 @@ class MyController < ApplicationController
     session[:page_layout] = nil
     redirect_to :action => 'page'
   end
+
 end
