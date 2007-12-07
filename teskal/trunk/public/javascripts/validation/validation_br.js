@@ -272,6 +272,15 @@ Validation.addAllThese([
 				// [$].##
 				return Validation.get('IsEmpty').test(v) ||  /^\$?\-?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}\d*(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$/.test(v)
 			}],
+	['validate-password', 'La senha deve ter entre 6 e 12 caracteres e não pode ser \'senha\' ou o mesmo que o seu nome.', {
+				minLength : 6,
+				maxLength : 12,
+				notOneOf : ['password','PASSWORD','1234567','0123456','12345679012','012345678901'],
+				notEqualToField : 'user[login]'
+			}],
+	['validate-password-confirm', 'Sua confirmação não corresponde à sua senha, por favor, tente novamente.', {
+				equalToField : 'password'
+			}],
 	['validate-selection', _transl["selection"], function(v,elm){
 				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
 			}],

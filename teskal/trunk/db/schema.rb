@@ -232,6 +232,7 @@ ActiveRecord::Schema.define(:version => 0) do
     t.column "start",             :timestamp,                                            :null => false
     t.column "managed_by",        :integer
     t.column "filled_for",        :integer
+    t.column "updated_on",        :datetime
   end
 
   add_index "users", ["managed_by"], :name => "managed_by"

@@ -231,7 +231,7 @@ Validation.add('IsEmpty', '', function(v) {
 			});
 
 Validation.addAllThese([
-	['required', _transl["required"], function(v) {
+	['required', 'This is a required field', function(v) {
 				return !Validation.get('IsEmpty').test(v);
 			}],
 	['validate-number', 'Please enter a valid number in this field.', function(v) {
@@ -271,6 +271,15 @@ Validation.addAllThese([
 				// [$]0.##
 				// [$].##
 				return Validation.get('IsEmpty').test(v) ||  /^\$?\-?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}\d*(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$/.test(v)
+			}],
+	 ['validate-password', 'Your password must be between 6 and 12 characters and not be \'password\' or the same as your name.', {
+				minLength : 6,
+				maxLength : 12,
+				notOneOf : ['password','PASSWORD','1234567','0123456'],
+				notEqualToField : 'user[login]'
+			}],
+	['validate-password-confirm', 'Your confirmation password does not match your first password, please try again.', {
+				equalToField : 'password'
 			}],
 	['validate-selection', _transl["selection"], function(v,elm){
 				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);

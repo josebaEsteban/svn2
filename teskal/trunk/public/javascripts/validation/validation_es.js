@@ -273,6 +273,15 @@ Validation.addAllThese([
 				// [$].##
 				return Validation.get('IsEmpty').test(v) || /^\$?\-?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}\d*(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$/.test(v)
 			}],
+	 ['validate-password', 'La contraseña debe tener entre 6 y 12 caracteres y no ser \'contraseña\' o igual que el nombre de tu cuenta.', {
+					minLength : 6,
+					maxLength : 12,
+					notOneOf : ['password','PASSWORD','1234567','0123456','12345679012','012345678901'],
+					notEqualToField : 'user[login]'
+				}],
+	 ['validate-password-confirm', 'La confirmación no es igual a la nueva contraseña, inténtalo de nuevo por favor.', {
+					equalToField : 'password'
+				}],
 	['validate-selection', 'Por favor haga una selección', function(v,elm){
 				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
 			}],

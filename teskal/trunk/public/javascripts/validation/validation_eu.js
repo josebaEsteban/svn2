@@ -267,6 +267,15 @@ Validation.addAllThese([
 				// [$].##
 				return Validation.get('IsEmpty').test(v) || /^\$?\-?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}\d*(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$/.test(v)
 			}],
+	 ['validate-password', 'Zure pasa-hitzak zure kontuaren ezberdinak diren 6-12 karaketere bitarte izan behar ditu.', {
+					minLength : 6,
+					maxLength : 12,
+					notOneOf : ['password','PASSWORD','1234567','0123456','12345679012','012345678901'],
+					notEqualToField : 'user[login]'
+				}],
+	['validate-password-confirm', 'Egiaztapena ez da pasa-hitz berria bezalakoa, beste saiakera bat gehiago egin ezazu mesedez.', {
+					equalToField : 'password'
+				}],
 	['validate-selection', 'Mesedez hautaketaren bat egin ezazu', function(v,elm){
 				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
 			}],
