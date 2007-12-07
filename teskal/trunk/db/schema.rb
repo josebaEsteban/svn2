@@ -158,6 +158,7 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   add_index "pendings", ["user_id"], :name => "user_id"
+  add_index "pendings", ["quest_id"], :name => "quest_id"
 
   create_table "permissions", :force => true do |t|
     t.column "controller",   :string,  :limit => 30, :default => "",    :null => false
