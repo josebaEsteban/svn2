@@ -191,9 +191,10 @@
     <table cellspacing="0">
       <thead>
         <tr>
-          <th scope="col"></th>
-          <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>
+          <th scope="col"><div align="left"><%=l(:label_filled) %></div></th> 
+          <th scope="col">##</th> 
           <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
+          <th scope="col"></th>
         </tr>
       </thead>
       <tbody>
@@ -232,9 +233,10 @@
         <tr>
           <%- odd=1 end -%>
           <%- controlador="quest"+ pending.quest_id.to_s -%>
-          <td><a href="/pendings/delete/<%= pending.id.to_s %>d<%= id %>"<%= image_tag 'delete.png' %></a></td>
-          <td><%= l_datetime(TzTime.zone.utc_to_local(pending.created_on))%></td>
+          <td><%= l_date(TzTime.zone.utc_to_local(pending.created_on))%></td>
+			<td> <%= pending.quest_id.to_s %> </td>
           <td><%= quest %></td>
+          <td><a href="/pendings/delete/<%= pending.id.to_s %>d<%= id %>"<%= image_tag 'delete.png' %></a></td>
         </tr>
         <%- end -%>
       </tbody>
@@ -243,11 +245,13 @@
     <table cellspacing="0">
       <thead>
         <tr>
-          <th scope="col"></th>
+
           <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>
+          <th scope="col">##</th> 
           <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
           <th scope="col"><div align="left"><%=l(:label_competition) %></div></th>
-        </tr>
+          <th scope="col"></th>            
+</tr>
       </thead>
       <tbody>
         <%- odd=0 -%>
@@ -285,17 +289,17 @@
         <tr>
           <%- odd=1 end -%>
           <%- controlador="quest"+ answer.quest_id.to_s -%>
+          <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on))%></td>
+          <td> <%= answer.quest_id.to_s %> </td> 
+          <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
+          <td><%= answer.competition %></td>
           <td> <a href="/answers/switch/<%= answer.id.to_s %>"
 	
           	<%- if answer.browse == 1 -%>
           		<%= image_tag 'eye.png' %>
           <%- else -%>
           		<%= image_tag 'eye_crossed.png' %> 
-          <%- end -%></a></td>
-          <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on))%></td>
-          <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
-          <td><%= answer.competition %></td>
-        </tr>
+          <%- end -%></a></td>        </tr>
         <%- end -%>
       </tbody>
     </table>

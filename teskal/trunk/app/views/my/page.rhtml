@@ -200,6 +200,7 @@
       <thead>
         <tr>
           <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>
+			 <th>##</th>        
           <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
           <th scope="col"><div align="left"><%=l(:label_competition) %></div></th>
         </tr>
@@ -241,6 +242,7 @@
           <%- odd=1 end -%>
           <%- controlador="quest"+ answer.quest_id.to_s -%>
           <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on))%></td>
+			 <td> <%= answer.quest_id.to_s %></td>  
           <%- if answer.browse == 1 -%>
           <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
           <%- else -%>

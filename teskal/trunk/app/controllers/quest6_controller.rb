@@ -6,6 +6,11 @@ class Quest6Controller < ApplicationController
     user=User.find(session[:user_id])
     user.start = Time.now
     user.save
+    if !params[:id].nil?
+      user.filled_for = params[:id]
+    else
+      user.filled_for = session[:user_id]
+    end
   end
 
   def create
@@ -21,6 +26,10 @@ class Quest6Controller < ApplicationController
     if @answer.save
       # flash[:notice] = 'Answer was successfully created.'
       journal( "quest6/create/"+@answer.id.to_s, @answer.user_id)
+      pendings = Pending.find_by_sql("select id from pendings where pendings.user_id=#{@answer.user_id} and pendings.quest_id=#{@answer.quest_id} order by pendings.created_on ASC")
+      if pendings.length >0
+        Pending.delete(pendings[0])
+      end
       if user.show?
         redirect_to :action => 'show', :id => @answer.id
       else
