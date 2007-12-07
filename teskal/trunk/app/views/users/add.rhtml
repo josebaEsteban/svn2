@@ -1,15 +1,15 @@
 <% content_for :header_tags do -%>
-<%= javascript_include_tag 'prototype' -%> 
-<%- if @user.language == "br" -%> 
-<%= javascript_include_tag 'validation/validation_br' -%> 
+<%= javascript_include_tag 'prototype' -%>
+<%- if @user.language == "br" -%>
+<%= javascript_include_tag 'validation/validation_br' -%>
 <%- elsif @user.language == "ca"-%>
-<%= javascript_include_tag 'validation/validation_ca' -%> 
+<%= javascript_include_tag 'validation/validation_ca' -%>
 <%- elsif @user.language == "es" -%>
 <%= javascript_include_tag 'validation/validation_es' -%>
 <%- elsif @user.language == "eu"-%>
 <%= javascript_include_tag 'validation/validation_eu' -%>
-<%- elsif @user.language == "fr"-%> 
-<%= javascript_include_tag 'validation/validation_fr' -%> 
+<%- elsif @user.language == "fr"-%>
+<%= javascript_include_tag 'validation/validation_fr' -%>
 <%- else -%>
 <%= javascript_include_tag 'validation/validation' -%>
 <%- end -%>
@@ -23,9 +23,9 @@
 	padding: 10px;
 	max-width: 450px;
 	color: #505050;
-	line-height: 1.5em; 
-				border: 1px solid #ddd; 
-}                                        	
+	line-height: 1.5em;
+	border: 1px solid #ddd;
+}
 #theform h3 {
 	height: 2em;
 	font-size: 1.7em;
@@ -57,27 +57,26 @@
       <p>
         <label for="user_language"><%= l(:field_language) %></label>
         <%= select("user", "language", lang_options_for_select) %></p>
-		<p><label for="default_timezone"><%= l(:label_timezone) %></label>
-		<%= time_zone_select 'user', 'time_zone', TZInfo::Timezone.all.sort, :model => TZInfo::Timezone %> </p>
-<br/>
-    <h3><%=l(:label_authentication)%></h3>
+      <p>
+        <label for="default_timezone"><%= l(:label_timezone) %></label>
+        <%= time_zone_select 'user', 'time_zone', TZInfo::Timezone.all.sort, :model => TZInfo::Timezone %> </p>
+      <br/>
+      <h3><%=l(:label_authentication)%></h3>
       <p>
         <label for="password"><%= l(:field_password) %></label>
         <input class="required validate-password" id="password" name="password" size="25" type="password" />
-      <br />
-      <em><%= l(:text_length_between, 6, 12) %></em></p>  
+        <br />
+        <em><%= l(:text_length_between, 6, 12) %></em></p>
       <p>
         <label for="password_confirmation"><%= l(:field_password_confirmation) %></label>
         <input class="required validate-password-confirm" id="password_confirmation" name="password_confirmation" size="25" type="password" />
       </p>
       <center>
-<%= submit_tag l(:button_create) %> 
+        <%= submit_tag l(:button_create) %>
       </center>
-    </form> 
+    </form>
     <script type="text/javascript">
 		var valid3 = new Validation('myData',{immediate : true});
 	</script>
-
-
   </div>
 </center>
