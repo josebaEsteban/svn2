@@ -53,8 +53,9 @@ class UsersController < ApplicationController
       if @user.save
         Mailer.deliver_account_information(@user, params[:password])
         # if params[:send_information]
-        flash[:notice] = l(:notice_successful_create)
-        redirect_to :action => 'list'
+        flash[:notice] = l(:notice_successful_create) 
+              redirect_to :controller => 'my', :action => 'athletes'
+        # redirect_to :action => 'list'
       end
     end
   end
