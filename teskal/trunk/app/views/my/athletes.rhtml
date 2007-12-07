@@ -48,9 +48,9 @@
         <td></td>
         <td><div align="center"><a href="/users/switch/<%= user.id.to_s %>"
 			<%- if user.status == 3 -%>
-			<%= image_tag 'key_crossed.png' %>
+			<%= image_tag 'status_busy.png' %>
 			 <%- else -%>
-			<%= image_tag 'key.png' %>
+			<%= image_tag 'status_online.png' %>
 			<%- end -%> 
 			</a></div></td>
       </tr>
