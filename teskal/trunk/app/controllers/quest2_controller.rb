@@ -13,19 +13,24 @@ class Quest2Controller < ApplicationController
     else
       user.filled_for = session[:user_id]
     end
-  end 
-  
+  end
+
   def create
     @answer = Answer.new(params[:answer])
-    @answer.quest_id=2
-    @answer.user_id=session[:user_id]
-    @answer.ip = request.remote_ip
     user=User.find(session[:user_id])
+    @answer.quest_id=2
+    if user.filled_for == session[:user_id]
+      @answer.user_id=session[:user_id]
+    else
+      @answer.user_id = user.filled_for
+    end
+    @answer.filled_by = session[:user_id]
+    @answer.ip = request.remote_ip
     @answer.time_to_fill =  Time.now - user.start
     @answer.browse=1
     if @answer.save
       # flash[:notice] = 'Answer was successfully created.'
-      journal( "quest2/create/"+@answer.id.to_s, @answer.user_id) 
+      journal( "quest2/create/"+@answer.id.to_s, @answer.user_id)
       pendings = Pending.find_by_sql("select id from pendings where pendings.user_id=#{@answer.user_id} and pendings.quest_id=#{@answer.quest_id} order by pendings.created_on ASC")
       if pendings.length >0
         Pending.delete(pendings[0])
@@ -46,7 +51,7 @@ class Quest2Controller < ApplicationController
     #Database Objects - Initialization
     @answer = Answer.find(params[:id])
     # @answer = Answer.find(session[:use)
-    @user=User.find(@answer.user_id ) 
+    @user=User.find(@answer.user_id )
     @browse_score = answer_show(@answer.user_id, @answer.browse, @user.managed_by)
     journal("quest2/show/"+@answer.id.to_s, @answer.user_id)
     TzTime.zone=@user.timezone

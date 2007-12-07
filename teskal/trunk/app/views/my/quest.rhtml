@@ -241,7 +241,6 @@
         <%- end -%>
       </tbody>
     </table>
- <center>
     <table cellspacing="0">
       <thead>
         <tr>
@@ -249,7 +248,6 @@
           <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>
           <th scope="col">##</th> 
           <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
-          <th scope="col"><div align="left"><%=l(:label_competition) %></div></th>
           <th scope="col"></th>            
 </tr>
       </thead>
@@ -289,10 +287,9 @@
         <tr>
           <%- odd=1 end -%>
           <%- controlador="quest"+ answer.quest_id.to_s -%>
-          <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on))%></td>
+          <td><%= l_date(TzTime.zone.utc_to_local(answer.created_on))%></td>
           <td> <%= answer.quest_id.to_s %> </td> 
           <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
-          <td><%= answer.competition %></td>
           <td> <a href="/answers/switch/<%= answer.id.to_s %>"
 	
           	<%- if answer.browse == 1 -%>
@@ -303,5 +300,4 @@
         <%- end -%>
       </tbody>
     </table>
-  </center>
 </div>

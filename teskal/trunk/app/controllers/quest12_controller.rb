@@ -11,20 +11,25 @@ class Quest12Controller < ApplicationController
       user.filled_for = session[:user_id]
     end
     user.save
-  end 
+  end
 
   def create
     @answer = Answer.new(params[:answer])
-    @answer.quest_id=12
-    @answer.user_id=session[:user_id]
-    @answer.ip = request.remote_ip
     user=User.find(session[:user_id])
+    @answer.quest_id=12
+    if user.filled_for == session[:user_id]
+      @answer.user_id=session[:user_id]
+    else
+      @answer.user_id = user.filled_for
+    end
+    @answer.filled_by = session[:user_id]
+    @answer.ip = request.remote_ip
     @answer.time_to_fill =  Time.now - user.start
-    @answer.browse=1    
+    @answer.browse=1
     if @answer.save
       # flash[:notice] = 'Answer was successfully created.'
-      journal( "quest12/create/"+@answer.id.to_s, @answer.user_id) 
-        redirect_to :action => 'show', :id => @answer.id
+      journal( "quest12/create/"+@answer.id.to_s, @answer.user_id)
+      redirect_to :action => 'show', :id => @answer.id
 
       # format.html { redirect_to answer_url(@answer) }
       # format.xml  { head :created, :location => answer_url(@answer) }
@@ -37,9 +42,9 @@ class Quest12Controller < ApplicationController
   def show
     @answer = Answer.find(params[:id])
     @fecha = l_datetime(@answer.created_on)
-    @user=User.find(@answer.user_id ) 
+    @user=User.find(@answer.user_id )
     @browse_score = answer_show(@answer.user_id, @answer.browse, @user.managed_by)
-    journal( "quest12/show/"+@answer.id.to_s, @answer.user_id) 
+    journal( "quest12/show/"+@answer.id.to_s, @answer.user_id)
     TzTime.zone=@user.timezone
     @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
     teskalChart12

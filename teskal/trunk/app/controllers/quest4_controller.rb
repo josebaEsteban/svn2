@@ -11,30 +11,32 @@ class Quest4Controller < ApplicationController
     else
       user.filled_for = session[:user_id]
     end
-  end 
-  
+  end
+
   def create
     @answer = Answer.new(params[:answer])
-    @answer.quest_id=4
-    @answer.user_id=session[:user_id]
-    @answer.ip = request.remote_ip
     user=User.find(session[:user_id])
-    @answer.time_to_fill =  Time.now - user.start
-    if user.show?
-      @answer.browse = 1
+    @answer.quest_id=4
+    if user.filled_for == session[:user_id]
+      @answer.user_id=session[:user_id]
+    else
+      @answer.user_id = user.filled_for
     end
+    @answer.filled_by = session[:user_id]
+    @answer.ip = request.remote_ip
+    @answer.time_to_fill =  Time.now - user.start
     if @answer.save
       # flash[:notice] = 'Answer was successfully created.'
-      journal( "quest4/create/"+@answer.id.to_s, @answer.user_id) 
+      journal( "quest4/create/"+@answer.id.to_s, @answer.user_id)
       pendings = Pending.find_by_sql("select id from pendings where pendings.user_id=#{@answer.user_id} and pendings.quest_id=#{@answer.quest_id} order by pendings.created_on ASC")
       if pendings.length >0
         Pending.delete(pendings[0])
       end
-        if user.show?
-          redirect_to :action => 'show', :id => @answer.id
-        else
-          redirect_to :controller  => 'my', :action  => 'page'
-        end
+      if user.show?
+        redirect_to :action => 'show', :id => @answer.id
+      else
+        redirect_to :controller  => 'my', :action  => 'page'
+      end
 
       # format.html { redirect_to answer_url(@answer) }
       # format.xml  { head :created, :location => answer_url(@answer) }
@@ -47,9 +49,9 @@ class Quest4Controller < ApplicationController
   def show
     @answer = Answer.find(params[:id])
     @fecha = l_datetime(@answer.created_on)
-    @user=User.find(@answer.user_id ) 
+    @user=User.find(@answer.user_id )
     @browse_score = answer_show(@answer.user_id, @answer.browse, @user.managed_by)
-    journal( "quest4/show/"+@answer.id.to_s, @answer.user_id) 
+    journal( "quest4/show/"+@answer.id.to_s, @answer.user_id)
     TzTime.zone=@user.timezone
     @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
     teskalChart4
@@ -73,13 +75,13 @@ class Quest4Controller < ApplicationController
     autoConfianza = @answer.answ21 + @answer.answ24 + @answer.answ27 + @answer.answ30 + @answer.answ33 + @answer.answ36 + @answer.answ39 + @answer.answ42 + @answer.answ45
     relajado = 0
     case @answer.answ32
-      when 1:
+    when 1:
       relajado = 4
-      when 2:
+    when 2:
       relajado = 3
-      when 3:
+    when 3:
       relajado = 2
-      when 4:
+    when 4:
       relajado = 1
     end
     ansiedadSomatica = @answer.answ20 + @answer.answ23 + @answer.answ26 + @answer.answ29 + relajado+ @answer.answ35 + @answer.answ38 + @answer.answ41 + @answer.answ44
