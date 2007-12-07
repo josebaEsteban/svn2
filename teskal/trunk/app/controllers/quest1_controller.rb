@@ -7,7 +7,7 @@ class Quest1Controller < ApplicationController
     user.start = Time.now
     user.save
   end 
-
+  
   def create
     @answer = Answer.new(params[:answer])
     @answer.ip = request.remote_ip

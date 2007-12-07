@@ -44,7 +44,7 @@
 	<li class="top"><%= link_to l(:label_help), { :controller => 'help', :ctrl => params[:controller], :page => params[:action] }, :onclick => "window.open(this.href); return false;"%></li>
 
       <li> <%= link_to l(:label_home), { :controller => 'welcome' } %></li>
- -->      <% if loggedin? %>
+ -->   <% if loggedin? %>
       <li><%= link_to l(:label_logout), { :controller => 'account', :action => 'logout' } %></li>
       <% else %>
       <li><a href="/account/login" class="active"><%= l(:label_login) %></a></li>
@@ -60,14 +60,18 @@
       <% end %>
     </ul>
   </div>
-  <% if loggedin? %>
-  <%= @logged_in_user.name %>
-  <%- if @logged_in_user.suscription? -%>
- • <%= @logged_in_user.my_role %>
-  <% end %>
-  <% end %>
+
+
   <div id="content">
-    <% if flash[:notice] %>
+	  <% if loggedin? %>
+	<div align="left">
+	  <h3><%= @logged_in_user.name %>
+	  <%- if @logged_in_user.suscription? -%>
+	 • <%= @logged_in_user.my_role %> </h3>
+	</div>
+	  <% end %>
+	  <% end %>
+		    <% if flash[:notice] %>
     <p style="color: white;text-shadow: 2px 2px #eee;
 		background: #ccc;
 		padding: 5px;  font-size: 120%;"><%= flash[:notice] %></p>

@@ -143,6 +143,7 @@ label_attachment: File
 label_attachment_delete: Delete file
 label_attachment_new: New file
 label_attachment_plural: Files
+label_authentication: Authentication 
 label_boolean: Boolean
 label_browse: Browse
 label_calendar: Calendar
@@ -168,6 +169,7 @@ label_f_hour: %.2f hour
 label_f_hour_plural: %.2f hours
 label_fill: Fill
 label_filled: Date filled
+label_filter_plural: Filters
 label_help: Help
 label_history: History
 label_home: Home
@@ -232,6 +234,7 @@ label_report: Report
 label_report_plural: Reports
 label_result: %d result
 label_result_plural: %d results
+button_unlock: Unlock
 label_role: Role
 label_role_1: free account
 label_role_2: athlete
@@ -244,6 +247,7 @@ label_search: Search
 label_send_information: Send account information to the user
 label_settings: Settings
 label_show: Show
+label_timezone: Default timezone
 label_user: User
 label_user_new: New user
 label_user_plural: Users
@@ -1035,6 +1039,10 @@ setting_text_formatting: Text formatting
 setting_welcome_text: Welcome text
 signup_label_10: Terms of Service
 signup_label_11: By clicking the 'Complete Signup' button, I am attaching my electronic signature to and agreeing to the Teskal <a href="http:/account/terms">Terms of Service Agreement</a>.
+signup_label_12: Thanks for signing up!
+signup_label_13: Your Teskal account has been created.
+signup_label_14: Watch for an email confirming your new subscription.
+signup_label_15: It contains an activation link that you must click before trying to log into
 signup_label_1: Step
 signup_label_2: Pick a login name and a language.
 signup_label_3: The language will be used next time you login.
@@ -1083,8 +1091,3 @@ unit_8_path: 08.Tolerancia.Psicologica.es
 unit_8_title: Tolerancia Psicólogica
 unit_9_path: 09.La.Competicion.es
 unit_9_title: La Competición
-signup_label_12: Thanks for signing up!
-signup_label_13: Your Teskal account has been created.
-signup_label_14: Watch for an email confirming your new subscription.
-signup_label_15: It contains an activation link that you must click before trying to log into
-label_timezone: Default timezone

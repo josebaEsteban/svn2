@@ -5,22 +5,33 @@ class Quest7Controller < ApplicationController
   def new
     user=User.find(session[:user_id])
     user.start = Time.now
+    if !params[:id].nil?
+      user.filled_for = params[:id]
+    else
+      user.filled_for = session[:user_id]
+    end
     user.save
   end
 
   def create
     @answer = Answer.new(params[:answer])
-    @answer.quest_id=7
-    @answer.user_id=session[:user_id]
-    @answer.ip = request.remote_ip
     user=User.find(session[:user_id])
-    @answer.time_to_fill =  Time.now - user.start
-    if user.show?
-      @answer.browse = 1
+    @answer.quest_id=7
+    if user.filled_for == session[:user_id]
+      @answer.user_id=session[:user_id]
+    else
+      @answer.user_id = user.filled_for
     end
+    @answer.filled_by = session[:user_id]
+    @answer.ip = request.remote_ip
+    @answer.time_to_fill =  Time.now - user.start
     if @answer.save
       # flash[:notice] = 'Answer was successfully created.'
       journal( "quest7/create/"+@answer.id.to_s, @answer.user_id)
+      pendings = Pending.find_by_sql("select id from pendings where pendings.user_id=#{@answer.user_id} and pendings.quest_id=#{@answer.quest_id} order by pendings.created_on ASC")
+      if pendings.length >0
+        Pending.delete(pendings[0])
+      end
       if user.show?
         redirect_to :action => 'show', :id => @answer.id
       else
@@ -38,7 +49,7 @@ class Quest7Controller < ApplicationController
   def show
     @answer = Answer.find(params[:id])
     @fecha = l_datetime(@answer.created_on)
-    @user=User.find(@answer.user_id ) 
+    @user=User.find(@answer.user_id )
     @browse_score = answer_show(@answer.user_id, @answer.browse, @user.managed_by)
     journal( "quest7/show/"+@answer.id.to_s, @answer.user_id)
     TzTime.zone=@user.timezone

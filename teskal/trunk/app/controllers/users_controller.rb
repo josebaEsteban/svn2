@@ -3,7 +3,7 @@
 
 
 class UsersController < ApplicationController
-  layout 'base'	
+  layout 'base'
   before_filter :require_admin
 
   helper :sort
@@ -17,35 +17,39 @@ class UsersController < ApplicationController
   def list
     sort_init 'login', 'asc'
     sort_update
-    
-    @status = params[:status] ? params[:status].to_i : 1    
+
+    @status = params[:status] ? params[:status].to_i : 1
     conditions = nil
     conditions = ["status=?", @status] unless @status == 0
-    
+
     @user_count = User.count(:conditions => conditions)
     @user_pages = Paginator.new self, @user_count,
-								15,
-								params['page']								
+    15,
+    params['page']
     @users =  User.find :all,:order => sort_clause,
-                        :conditions => conditions,
-						:limit  =>  @user_pages.items_per_page,
-						:offset =>  @user_pages.current.offset
+    :conditions => conditions,
+    :limit  =>  @user_pages.items_per_page,
+    :offset =>  @user_pages.current.offset
 
-    render :action => "list", :layout => false if request.xhr?	
+    render :action => "list", :layout => false if request.xhr?
   end
 
   def add
-      @user = User.new(params[:user])
-      @user.admin = params[:user][:admin] || false
-      @user.login = params[:user][:login]
-      @user.password, @user.password_confirmation = params[:password], params[:password_confirmation] 
-      ip = request.remote_ip
-      if @user.save
-        Mailer.deliver_account_information(@user, params[:password]) if params[:send_information]
-        flash[:notice] = l(:notice_successful_create)
-        redirect_to :action => 'list'
-      end
-    # end
+    if request.get?  
+      puts "request.get?"
+      @user = User.new(:language => Setting.default_language)
+    else
+    @user = User.new(params[:user])
+    @user.admin = params[:user][:admin] || false
+    @user.login = params[:user][:login]
+    @user.password, @user.password_confirmation = params[:password], params[:password_confirmation]
+    ip = request.remote_ip
+    if @user.save
+      Mailer.deliver_account_information(@user, params[:password]) if params[:send_information]
+      flash[:notice] = l(:notice_successful_create)
+      redirect_to :action => 'list'
+    end
+    end
   end
 
   def edit
@@ -63,10 +67,10 @@ class UsersController < ApplicationController
     end
 
     @roles = Role.find(:all, :order => 'position')
-    @projects = Project.find(:all, :order => 'name', :conditions => "status=#{Project::STATUS_ACTIVE}") - @user.projects
-    @membership ||= Member.new
+    # @projects = Project.find(:all, :order => 'name', :conditions => "status=#{Project::STATUS_ACTIVE}") - @user.projects
+    # @membership ||= Member.new
   end
-  
+
   def edit_membership
     @user = User.find(params[:id])
     @membership = params[:membership_id] ? Member.find(params[:membership_id]) : Member.new(:user => @user)
@@ -76,7 +80,7 @@ class UsersController < ApplicationController
     end
     redirect_to :action => 'edit', :id => @user and return
   end
-  
+
   def destroy_membership
     @user = User.find(params[:id])
     if request.post? and Member.find(params[:membership_id]).destroy
@@ -91,5 +95,23 @@ class UsersController < ApplicationController
   rescue
     flash[:notice] = "Unable to delete user"
     redirect_to :action => 'list'
-  end  
+  end
+
+  def switch
+    user = User.find(params[:id])
+    if  @logged_in_user.admin? or @logged_in_user.id == user.managed_by
+      if user.status == 3
+        user.status = 1
+      else
+        if user.status == 1
+          user.status = 3
+        end
+      end
+      user.save
+      redirect_back_or_default :controller => 'my', :action => 'athletes'
+    else
+      redirect_back_or_default :controller => 'my', :action => 'page'
+    end
+  end
+
 end

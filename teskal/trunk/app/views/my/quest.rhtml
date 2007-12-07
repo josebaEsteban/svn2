@@ -1,64 +1,93 @@
-	<%= @athlete.name %> • <%= @athlete.my_role %><br/><br/>
-<div class="splitcontentleft"> 
+<%= stylesheet_link_tag "reset" -%> 
+<%= @athlete.name %>
+• <%= @athlete.my_role %><br/>
+<br/>                   
+<%- id = @athlete.id.to_s -%> 
 
-
+<div class="splitcontentleft">
   <table cellspacing="0">
     <!-- <caption><%=l(:quest2)%></caption> -->
     <thead>
       <tr>
         <th>##</th>
         <th scope="col"><div align="left"><%=l(:label_quest_avail)%></div></th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
       <%- if @logged_in_user.suscription? -%>
       <tr>
         <td>1</td>
-        <td><%= link_to l(:quest1), :controller  => 'quest1', :action => 'new' %></td>
+        <td><%= l(:quest1)%></td>
+        <td><a href="/quest1/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
+        <td><a href="/pendings/add/1p<%= id %>"> <%= image_tag 'add.png' %></a></td>
       </tr>
       <tr class='odd'>
         <td>2</td>
-        <td><%= link_to l(:quest2_label_0), :controller  => 'quest2', :action => 'new' %></td>
+        <td><%= l(:quest2_label_0)%></td>
+        <td><a href="/quest2/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
+        <td><a href="/pendings/add/2p<%= id %>"><%= image_tag 'add.png' %></a></td>
       </tr>
       <tr>
         <td>3</td>
-        <td><%= link_to l(:quest3), :controller  => 'quest3', :action => 'new' %></td>
+        <td><%=l(:quest3)%></td>
+        <td><a href="/quest3/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
+        <td><a href="/pendings/add/3p<%= id %>"><%= image_tag 'add.png' %></a></td>
       </tr>
       <tr class='odd'>
         <td>4</td>
-        <td><%= link_to l(:quest4), :controller  => 'quest4', :action => 'new' %></td>
+        <td><%= l(:quest4)%></td>
+        <td><a href="/quest4/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
+        <td><a href="/pendings/add/4p<%= id %>"><%= image_tag 'add.png' %></a></td>
       </tr>
       <tr>
         <td>5</td>
-        <td><%= link_to l(:quest5), :controller  => 'quest5', :action => 'new' %></td>
+        <td><%= l(:quest5) %></td>
+        <td><a href="/quest5/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
+        <td><a href="/pendings/add/5p<%= id %>"><%= image_tag 'add.png' %></a></td>
       </tr>
       <tr class='odd'>
         <td>6</td>
-        <td><%= link_to l(:quest6), :controller  => 'quest6', :action => 'new' %></td>
+        <td><%= l(:quest6) %></td>
+        <td><a href="/quest6/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
+        <td><a href="/pendings/add/6p<%= id %>"><%= image_tag 'add.png' %></a></td>
       </tr>
       <tr>
         <td>7</td>
-        <td><%= link_to l(:quest7_label_0), :controller  => 'quest7', :action => 'new' %></td>
+        <td><%= l(:quest7_label_0) %></td>
+        <td><a href="/quest7/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
+        <td><a href="/pendings/add/7p<%= id %>"><%= image_tag 'add.png' %></a></td>
       </tr>
       <tr class='odd'>
         <td>8</td>
-        <td><%= link_to l(:quest8_label_0), :controller  => 'quest8', :action => 'new' %></td>
+        <td><%= l(:quest8_label_0) %></td>
+        <td><a href="/quest8/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
+        <td><a href="/pendings/add/8p<%= id %>"><%= image_tag 'add.png' %></a></td>
       </tr>
       <tr>
         <td>9</td>
-        <td><%= link_to l(:quest9_label_0), :controller  => 'quest9', :action => 'new' %></td>
+        <td><%= l(:quest9_label_0) %></td>
+        <td><a href="/quest9/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
+        <td><a href="/pendings/add/9p<%= id %>"><%= image_tag 'add.png' %></a></td>
       </tr>
       <tr class='odd'>
         <td>10</td>
-        <td><%= link_to l(:quest10_label_0), :controller  => 'quest10', :action => 'new' %></td>
+        <td><%=l(:quest10_label_0) %></td>
+        <td><a href="/quest10/new/<%= id %>"><%= image_tag 'pencil.png' %></span></a></td>
+        <td><a href="/pendings/add/10p<%= id %>"><%= image_tag 'add.png' %></span></a></td>
       </tr>
       <tr>
         <td>11</td>
-        <td><%= link_to l(:quest11_label_0), :controller  => 'quest11', :action => 'new' %></td>
+        <td><%=  l(:quest11_label_0) %></td>
+        <td><a href="/quest11/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
+        <td><a href="/pendings/add/11p<%= id %>"><%= image_tag 'add.png' %></a></td>
       </tr>
       <tr class='odd'>
         <td>12</td>
-        <td><%= link_to l(:quest12_label_0), :controller  => 'quest12', :action => 'new' %></td>
+        <td><%= l(:quest12_label_0) %></td>
+        <td><a href="/quest12/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
+        <td><a href="/pendings/add/12p<%= id %>"><%= image_tag 'add.png' %></a></td>
       </tr>
       <% else %>
       <tr>
@@ -158,7 +187,59 @@
 </div>
 <%- TzTime.zone=@athlete.timezone -%>
 <div class="splitcontentright">
-  <center>
+ 
+    <table cellspacing="0">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>
+          <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
+        </tr>
+      </thead>
+      <tbody>
+        <%- odd=0 -%>
+        <%- for pending in @pendings -%>
+        <%- case pending.quest_id
+              when 1 
+                quest=l(:quest1) 
+              when 2 
+                quest=l(:quest2_label_0) 
+              when 3 
+                quest=l(:quest3) 
+              when 4 
+                quest=l(:quest4) 
+              when 5 
+                quest=l(:quest5) 
+              when 6 
+                quest=l(:quest6) 
+              when 7 
+                quest=l(:quest7_label_0) 
+              when 8 
+                quest=l(:quest8_label_0)  
+              when 9 
+                quest=l(:quest9_label_0)  
+              when 10 
+                quest=l(:quest10_label_0)  
+              when 11 
+                quest=l(:quest11_label_0)
+              when 12 
+                quest=l(:quest12_label_0)
+              end -%>
+        <%- if odd == 1 -%>
+        <tr class="odd">
+          <%- odd=0-%>
+          <%-else -%>
+        <tr>
+          <%- odd=1 end -%>
+          <%- controlador="quest"+ pending.quest_id.to_s -%>
+          <td><a href="/pendings/delete/<%= pending.id.to_s %>d<%= id %>"<%= image_tag 'delete.png' %></a></td>
+          <td><%= l_datetime(TzTime.zone.utc_to_local(pending.created_on))%></td>
+          <td><%= quest %></td>
+        </tr>
+        <%- end -%>
+      </tbody>
+    </table>
+ <center>
     <table cellspacing="0">
       <thead>
         <tr>
@@ -200,25 +281,19 @@
         <%- if odd == 1 -%>
         <tr class="odd">
           <%- odd=0-%>
-        <%-else -%>
+          <%-else -%>
         <tr>
           <%- odd=1 end -%>
           <%- controlador="quest"+ answer.quest_id.to_s -%>
-          <td>
+          <td> <a href="/answers/switch/<%= answer.id.to_s %>"
 	
           	<%- if answer.browse == 1 -%>
-          		<span class="icon icon-eye">
+          		<%= image_tag 'eye.png' %>
           <%- else -%>
-          <span class="icon icon-eye_crossed">
-          <%- end -%>
-
-          <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on))%></span></td>
-          <%- if answer.browse == 1 -%>
+          		<%= image_tag 'eye_crossed.png' %> 
+          <%- end -%></a></td>
+          <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on))%></td>
           <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
-          <%- else -%>
-          <td><%= quest %></td>
-          <td></td>
-          <%- end -%>
           <td><%= answer.competition %></td>
         </tr>
         <%- end -%>

@@ -100,7 +100,7 @@ field_role: Papel
 field_spent_on: Fecha
 field_start_date: Comienzo
 field_start_page: Página principal
-field_status: Estatuto
+field_status: Estado
 field_subject: Tema
 field_summary: Resumen
 field_title: Título
@@ -143,6 +143,7 @@ label_attachment: Fichero
 label_attachment_delete: Suprimir el fichero
 label_attachment_new: Nuevo fichero
 label_attachment_plural: Ficheros
+label_authentication: Autentificación 
 label_boolean: Boleano
 label_browse: Hojear
 label_calendar: Calendario
@@ -168,6 +169,7 @@ label_f_hour: %.2f hour
 label_f_hour_plural: %.2f hours
 label_fill: Rellenar
 label_filled: Rellenado el
+label_filter_plural: Filtros
 label_help: Ayuda
 label_history: Histórico
 label_home: Inicio
@@ -538,6 +540,7 @@ quest1_label_6: Ansiedad cognitiva
 quest1_label_7: Autoconfianza
 quest1_label_8: Ansiedad Somática
 quest1_label_9: Optima
+button_unlock: Desbloquear
 quest2: Cuestionario Tolerancia Psicológica al Estrés
 quest2_10: He estado convencid@ de que podía rendir en cualquier momento
 quest2_11: He resuelto de forma adecuada los problemas con mis compañeros/as
