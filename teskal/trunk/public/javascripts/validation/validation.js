@@ -278,8 +278,11 @@ Validation.addAllThese([
 				notOneOf : ['password','PASSWORD','1234567','0123456'],
 				notEqualToField : 'user[login]'
 			}],
-	['validate-password-confirm', 'Your confirmation password does not match your first password, please try again.', {
+	['validate-password-confirm', 'Your confirmation password does not match your password, please try again.', {
 				equalToField : 'password'
+			}],
+	['validate-new-password-confirm', 'Your confirmation password does not match your new password, please try again.', {
+				equalToField : 'new_password'
 			}],
 	['validate-selection', _transl["selection"], function(v,elm){
 				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);

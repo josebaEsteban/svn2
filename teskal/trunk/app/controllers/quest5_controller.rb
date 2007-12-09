@@ -58,7 +58,7 @@ class Quest5Controller < ApplicationController
   end
 
   def teskalChart5
-    # @answer = Answer.find_first
+    # @answer = Answer.find(:first)
     # calculo de las dimensiones
 
     rendimientoGeneral = @answer.answ1 + @answer.answ2  + @answer.answ3 + @answer.answ4 + @answer.answ5

@@ -273,8 +273,11 @@ Validation.addAllThese([
 					notOneOf : ['password','PASSWORD','1234567','0123456','12345679012','012345678901'],
 					notEqualToField : 'user[login]'
 				}],
-	['validate-password-confirm', 'Egiaztapena ez da pasa-hitz berria bezalakoa, beste saiakera bat gehiago egin ezazu mesedez.', {
+	['validate-password-confirm', 'Egiaztapena ez da pasa-hitz bezalakoa, beste saiakera bat gehiago egin ezazu mesedez.', {
 					equalToField : 'password'
+				}],
+	['validate-new-password-confirm', 'Egiaztapena ez da pasa-hitz berria bezalakoa, beste saiakera bat gehiago egin ezazu mesedez.', {
+					 equalToField : 'new_password'
 				}],
 	['validate-selection', 'Mesedez hautaketaren bat egin ezazu', function(v,elm){
 				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);

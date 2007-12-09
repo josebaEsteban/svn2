@@ -8,28 +8,28 @@ class ApplicationController < ActionController::Base
 
 
 
-  # def store_locations
-  #   if @session['prevpage'] && @session['thispage'] != @request.request_uri
-  #     @session['prevpage'] = @session['thispage'] || ''
-  #     @session['thispage'] = @request.request_uri
-  #   end
-  # end
-  #
-  # def redirect_back(default)
-  #   if @session['prevpage'].nil?
-  #     if default
-  #       redirect_to default
-  #     else
-  #       redirect_to :controller => "", :action => ""
-  #     end
-  #   else
-  #     if @session['prevpage'].length > 4
-  #       redirect_to_url @session['prevpage']
-  #     else
-  #       redirect_to default
-  #     end
-  #   end
-  # end
+  def store_locations
+    if session['prevpage'] && session['thispage'] != @request.request_uri
+      session['prevpage'] = session['thispage'] || ''
+      session['thispage'] = @request.request_uri
+    end
+  end
+  
+  def redirect_back(default)
+    if session['prevpage'].nil?
+      if default
+        redirect_to default
+      else
+        redirect_to :controller => "", :action => ""
+      end
+    else
+      if session['prevpage'].length > 4
+        redirect_to_url session['prevpage']
+      else
+        redirect_to default
+      end
+    end
+  end
 
 
   def logged_in_user=(user)

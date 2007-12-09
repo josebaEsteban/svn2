@@ -279,8 +279,11 @@ Validation.addAllThese([
 				notOneOf : ['password','PASSWORD','1234567','0123456','12345679012','012345678901'],
 				notEqualToField : 'user[login]'
 			}],
-	['validate-password-confirm', 'La confirmació no és igual a la nova contrasenya, intenta-ho de nou si us plau.', {
+	['validate-password-confirm', 'La confirmació no és igual a la contrasenya, intenta-ho de nou si us plau.', {
 				equalToField : 'password'
+			}],
+	['validate-new-password-confirm', 'La confirmació no és igual a la nova contrasenya, intenta-ho de nou si us plau.', {
+				equalToField : 'new_password'
 			}],
 	['validate-selection', 'Si us plau faci una selecció', function(v,elm){
 				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);

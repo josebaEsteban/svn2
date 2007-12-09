@@ -281,6 +281,9 @@ Validation.addAllThese([
 	['validate-password-confirm', 'Sua confirmação não corresponde à sua senha, por favor, tente novamente.', {
 				equalToField : 'password'
 			}],
+    ['validate-new-password-confirm', 'Sua confirmação não corresponde à sua nova senha, por favor, tente novamente.', {
+						equalToField : 'new_password'
+					}],
 	['validate-selection', _transl["selection"], function(v,elm){
 				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
 			}],

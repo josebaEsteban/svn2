@@ -60,7 +60,7 @@ class Quest2Controller < ApplicationController
   end
 
   def teskal_chart2
-    # @answer = Answer.find_first
+    # @answer = Answer.find(:first)
     # calculo de las dimensiones
     descansoInterrumpido = (@answer.answ2 + @answer.answ9  + @answer.answ17 + @answer.answ23) /4.0
     cansancioEmocional = (@answer.answ5 + @answer.answ14 + @answer.answ19 + @answer.answ27) /4.0

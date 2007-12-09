@@ -273,7 +273,7 @@ notice_locking_conflict: Data have been updated by another user.
 notice_not_authorized: No está autorizado a acceder a esta página.
 notice_scm_error: La entrada y/o la revisión no existe en el depósito.
 notice_successful_connection: Successful connection.
-notice_successful_create: Se he creado correctamente.
+notice_successful_create: Se ha creado correctamente.
 notice_successful_delete: Successful deletion.
 notice_successful_update: Successful update.
 quest10: Cuestionario de Clima de Tecnificación Reflejado

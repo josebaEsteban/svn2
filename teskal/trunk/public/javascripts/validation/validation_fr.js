@@ -278,8 +278,11 @@ Validation.addAllThese([
 				notOneOf : ['password','PASSWORD','1234567','0123456'],
 				notEqualToField : 'user[login]'
 			}],
-	['validate-password-confirm', 'Votre confirmation de mot de passe ne correspond pas à votre premier mot de passe, veuillez réessayer.', {
+	['validate-password-confirm', 'Votre confirmation de mot de passe ne correspond pas à votre mot de passe, veuillez réessayer.', {
 				equalToField : 'password'
+			}],
+	['validate-new-password-confirm', 'Votre confirmation de mot de passe ne correspond pas à votre premier mot de passe, veuillez réessayer.', {
+						equalToField : 'new_password'
 			}],
 	['validate-selection', _transl["selection"], function(v,elm){
 				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
