@@ -54,7 +54,7 @@ class Changeset < ActiveRecord::Base
     comments.scan(Regexp.new("(#{kw_regexp})[\s:]+(([\s,;&]*#?\\d+)+)", Regexp::IGNORECASE)).each do |match|
       action = match[0]
       target_issue_ids = match[1].scan(/\d+/)
-      target_issues = repository.project.issues.find_all_by_id(target_issue_ids)
+      target_issues = repository.project.issues.find(:all)_by_id(target_issue_ids)
       if fix_status && fix_keywords.include?(action.downcase)
         # update status of issues
         logger.debug "Issues fixed by changeset #{self.revision}: #{issue_ids.join(', ')}." if logger && logger.debug?

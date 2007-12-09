@@ -36,7 +36,7 @@
         <%- odd=1 end -%>
         <td><%= link_to user.login, :controller  => 'my', :action => 'quest', :id => user.id %></td>
         <td></td>
-        <td><%= user.name %></td>
+        <td><%= link_to user.name, :controller  => 'my', :action => 'quest', :id => user.id %></td>
         <td></td>
         <td><%= l_datetime(TzTime.zone.utc_to_local(user.created_on))%></td>
         <td></td>
@@ -48,9 +48,9 @@
         <td></td>
         <td><div align="center"><a href="/users/switch/<%= user.id.to_s %>"
 			<%- if user.status == 3 -%>
-			<%= image_tag 'status_busy.png' %>
+			<%= image_tag 'key_delete.png' %>
 			 <%- else -%>
-			<%= image_tag 'status_online.png' %>
+			<%= image_tag 'key.png' %>
 			<%- end -%> 
 			</a></div></td>
       </tr>

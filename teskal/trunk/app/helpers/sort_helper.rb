@@ -18,7 +18,7 @@
 #   def list
 #     sort_init 'last_name'
 #     sort_update
-#     @items = Contact.find_all nil, sort_clause
+#     @items = Contact.find(:all) nil, sort_clause
 #   end
 # 
 # Controller (using Pagination module):
