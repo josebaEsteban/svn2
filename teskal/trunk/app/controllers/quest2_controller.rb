@@ -7,12 +7,12 @@ class Quest2Controller < ApplicationController
   def new
     user=User.find(session[:user_id])
     user.start = Time.now
-    user.save
     if !params[:id].nil?
       user.filled_for = params[:id]
     else
       user.filled_for = session[:user_id]
     end
+    user.save
   end
 
   def create

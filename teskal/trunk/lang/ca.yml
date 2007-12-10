@@ -443,3 +443,6 @@ signup_label_13: El teu compte ha estat creada en Teskal.
 signup_label_14: Rebràs una confirmació per correu.
 signup_label_15: Té un enllaç d'activació del teu compte que has de clicar per a entrar en
 label_timezone: Zona horària 
+label_quest_pending: Qüestionaris pendents
+label_quest_no_pending: No hi ha qüestionaris pendents.
+label_quest_pending_from: Pendent des de

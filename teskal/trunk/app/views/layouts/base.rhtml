@@ -17,7 +17,7 @@
   <meta name="RATING" content="General" />
   <meta name="REVISIT-AFTER" content="2 weeks" />
   <meta name="ROBOTS" content="index,follow" />
-  <meta name="description" content="Teskal, enjoy the pressure, disfruta la presion,  それは圧力を楽しむ, presioa gozatu, gaudeix la pressió, aproveite a pressão, apprécie la pression, 它享受压" />
+  <meta name="description" content="Teskal, enjoy the pressure, disfruta la presión,  それは圧力を楽しむ, presioa gozatu, gaudeix la pressió, aproveite a pressão, apprécie la pression, 它享受压" />
   <!--[if IE]>
 	<style type="text/css">
 	body {behavior: url(<%= stylesheet_path "csshover.htc" %>);}
@@ -64,11 +64,16 @@
   <div id="content">
     <% if loggedin? %>
     <div align="left">
-      <h3><%= @logged_in_user.name %>
+	<h3> 
+	<%- if @logged_in_user.name.length < 2-%>
+	   <%= @logged_in_user.login %>
+	<%- else -%>
+      <%= @logged_in_user.name %>
+	<%- end -%>
         <%- if @logged_in_user.suscription? -%>
-        • <%= @logged_in_user.my_role %> </h3>
+        • <%= @logged_in_user.my_role %> 
       <% end %>
-    </div>
+    </div></h3>
     <% end %>
     <% if flash[:notice] %>
     <p style="color: white;text-shadow: 2px 2px #eee;

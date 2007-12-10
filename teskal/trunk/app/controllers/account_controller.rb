@@ -4,7 +4,7 @@
 class AccountController < ApplicationController
   layout 'base'
 
- # prevents login action to be filtered by check_if_login_required application scope filter
+  # prevents login action to be filtered by check_if_login_required application scope filter
   skip_before_filter :check_if_login_required, :only => [:login, :lost_password, :signup, :terms]
   before_filter :require_login, :only => :logout
 
@@ -21,7 +21,7 @@ class AccountController < ApplicationController
   end
 
   # Login request and validation
-  def login 
+  def login
     if request.get?
       # Logout user
       self.logged_in_user = nil
@@ -38,7 +38,11 @@ class AccountController < ApplicationController
           token = Token.create(:user => user, :action => 'autologin')
           cookies[:autologin] = { :value => token.value, :expires => 5.day.from_now }
         end
-        redirect_back_or_default :controller => 'my', :action => 'page'
+        if user.show?
+          redirect_back_or_default :controller => 'my', :action => 'athletes'
+        else
+          redirect_back_or_default :controller => 'my', :action => 'page'
+        end
       else
         # if user.locked?
         # flash.now[:notice] = l(:status_locked)
@@ -122,13 +126,15 @@ class AccountController < ApplicationController
         @user.admin = false
         @user.login = params[:user][:login]
         @user.status = User::STATUS_REGISTERED
+        @user.role = User::ROLE_GRATIS
         @user.password, @user.password_confirmation = params[:password], params[:password_confirmation]
         token = Token.new(:user => @user, :action => "signup")
         @user.ip = request.remote_ip
         if @user.save and token.save
           journal("signup account",@user.id)
           Mailer.deliver_signup(token)
-          set_language_if_valid(@user.language) 
+          set_language_if_valid(@user.language)
+          create_library(@user.id)
           # render :partial => "signup_done"
           # flash[:notice] = l(:notice_account_register_done)
           # redirect_to :controller => 'account', :action => 'login'

@@ -1072,4 +1072,7 @@ signup_label_13: Votre Teskal compte a été créé.
 signup_label_14: Surveillez un e-mail de confirmation de votre nouvel abonnement.
 signup_label_15: Il contient un lien d'activation que vous devrez cliquer avant de tenter de se connecter à
 label_timezone: Fuseau horaire
+label_quest_pending: En attendant les questionnaires
+label_quest_no_pending: En attendant il n'ya pas de questionnaires
+label_quest_pending_from: En attente depuis
 
