@@ -47,7 +47,7 @@
 	            when 12 
 	              quest=l(:quest12_label_0)
 	            end -%>
-      <%- if odd -%>
+      <%- if odd == 1 -%>
       <tr class="odd">
         <%- odd = 0-%>
         <%-else -%>
@@ -272,7 +272,7 @@
               when 12 
                 quest=l(:quest12_label_0)
               end -%>
-      <%- if odd -%>
+      <%- if odd ==1 -%>
       <tr class="odd">
         <%- odd=0-%>
         <%-else -%>
