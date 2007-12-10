@@ -12,8 +12,8 @@
 ActiveRecord::Schema.define(:version => 0) do
 
   create_table "answers", :force => true do |t|
-    t.integer  "quest_id",                                  :null => false
-    t.integer  "user_id",                    :default => 0, :null => false
+    t.integer  "quest_id",                                      :null => false
+    t.integer  "user_id",                    :default => 0,     :null => false
     t.text     "competition"
     t.integer  "answ1",        :limit => 3
     t.integer  "answ2",        :limit => 3
@@ -92,16 +92,16 @@ ActiveRecord::Schema.define(:version => 0) do
     t.integer  "answ75",       :limit => 3
     t.integer  "answ76",       :limit => 3
     t.integer  "answ77",       :limit => 3
-    t.integer  "browse",       :limit => 3,  :default => 0, :null => false
+    t.boolean  "browse",                     :default => false, :null => false
     t.text     "note1"
     t.text     "note2"
-    t.integer  "checked",      :limit => 3,  :default => 0, :null => false
+    t.integer  "checked",      :limit => 3,  :default => 0,     :null => false
     t.datetime "created_on"
     t.text     "note3"
     t.text     "note4"
     t.text     "note5"
     t.string   "ip",           :limit => 15
-    t.time     "time_to_fill",                              :null => false
+    t.time     "time_to_fill",                                  :null => false
     t.integer  "filled_by"
   end
 
@@ -123,7 +123,7 @@ ActiveRecord::Schema.define(:version => 0) do
   create_table "books", :force => true do |t|
     t.integer "user_id"
     t.integer "order",   :limit => 2
-    t.integer "browse",  :limit => 3, :default => 0, :null => false
+    t.boolean "browse",               :default => false, :null => false
   end
 
   add_index "books", ["user_id"], :name => "user_id"
@@ -243,8 +243,8 @@ ActiveRecord::Schema.define(:version => 0) do
     t.datetime  "created_on"
     t.string    "ip",                :limit => 15
     t.integer   "role",                            :default => 1,               :null => false
-    t.string    "time_zone",         :limit => 40, :default => "Europe/Madrid"
-    t.string    "ip_last",           :limit => 15
+    t.string    "time_zone",         :limit => 40, :default => "Europe/Madrid", :null => false
+    t.string    "ip_last",           :limit => 15, :default => "",              :null => false
     t.timestamp "start",                                                        :null => false
     t.integer   "managed_by"
     t.integer   "filled_for"
