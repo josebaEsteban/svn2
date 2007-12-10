@@ -202,6 +202,7 @@ label_modification: %d mudança
 label_modification_plural: %d mudanças
 label_modified: modificado
 label_my_account: Minha conta
+label_my_athletes: Mis atletas
 label_my_page: Minha página
 label_my_quest: Meus questionários
 label_new: Novo
@@ -224,6 +225,9 @@ label_preview: Inspeção prévia
 label_previous: Precedente
 label_quest: Questionário
 label_quest_avail: Questionários disponíveis
+label_quest_no_pending: Não há questionários pendentes
+label_quest_pending: Questionários pendentes
+label_quest_pending_from: Pendente desde
 label_quest_plural: Questionários
 label_read: Lido…
 label_register: Registre-se
@@ -234,6 +238,10 @@ label_report_plural: Relatórios
 label_result: %d resultado
 label_result_plural: %d resultados
 label_role: Papel
+label_role_1: cuenta gratuita
+label_role_2: deportista
+label_role_3: entrenador/a
+label_role_4: tutor/a
 label_role_and_permissions: Papéis e permissões
 label_role_new: Papel regra
 label_role_plural: Papéis
@@ -241,6 +249,7 @@ label_search: Busca
 label_send_information: Emitir a informação de cliente ao usuário
 label_settings: Ajustes
 label_show: Mostra 
+label_timezone: Fuso horário
 label_user: Usuário
 label_user_new: Novo usuário
 label_user_plural: Usuários
@@ -347,83 +356,6 @@ quest12_label_1: Clima do Desempenho
 quest12_label_2: Clima de Maestría
 quest12_valor_1: 0 (nada)
 quest12_valor_2: 100 (completamente)
-setting_app_subtitle: Subtítulo da aplicação
-setting_app_title: Título da aplicação
-setting_attachment_max_size: Tamanho do máximo do anexo
-setting_autofetch_changesets: Autofetch compromete
-setting_autologin: Autologin
-setting_date_format: Formato de data
-setting_default_language: Língua da opção
-setting_feeds_limit: Limite do Feed
-setting_host_name: Servidor
-setting_login_required: Autenticaçao obrigatoria
-setting_mail_from: Endereço do correio da emissão
-setting_self_registration: Auto-registo permitido
-setting_text_formatting: Formato do texto
-setting_welcome_text: Texto de boa-vinda
-signup_label_10: Termos de serviço
-signup_label_11: Estalando "a tecla do Cadastro", eu estou anexando minha assinatura eletrônica a e estou concordando aos <a href="http:/account/terms">Terms de Teskal do serviço </a>.
-signup_label_1: Etapa
-signup_label_2: Escolher um nome de início de uma sessão e uma língua.
-signup_label_3: A língua será usada a próxima vez onde você entra.
-signup_label_4: Escolher uma senha para seu cliente novo.
-signup_label_5: As senhas devem ser 6-12 caráteres do comprimento.
-signup_label_6: Detalhes do email
-signup_label_7: Incorporar seu email address.
-signup_label_8: Você deve incorporar um email address válido para ativar seu cliente.
-signup_label_9: Submeter o formulário
-status_active: ativo
-status_locked: bloqueado
-status_registered: registrado
-text_are_you_sure: Você tem certeza ?
-text_caracters_maximum: %d máximo de caráteres
-text_length_between: Tamanho entre %d e %d caráteres.
-text_min_max_length_info: 0 siginifica sem restriçao
-unit_10_path: 10.La.Comunicacion.es
-unit_10_title: La Comunicación
-unit_11_path: 11.Responsabilidad.vs.Culpabilidad.es
-unit_11_title: Responsabilidad vs Culpabilidad
-unit_12_path: 12.Confianza.y.Auto.Eficacia.es 
-unit_12_title: Confianza y Auto Eficacia
-unit_13_path: 13.Estado.de.Animo.es
-unit_13_title: Estado de Animo
-unit_14_path: 14.Asertividad.es 
-unit_14_title: Asertividad
-unit_15_path: 15.Deportista.de.ARD.es 
-unit_15_title: Deportista de ARD 
-unit_16_path: 16.Sistema.de.Autoregulacion.es
-unit_16_title: Sistema de Autoregulación
-unit_1_path: 01.Teskal.es.pdf
-unit_1_title: Presentación Teskal
-unit_2_path: 02.Atencion.y.Concentracion.es.pdf
-unit_2_title: Atención y Concentración
-unit_3_path: 03.Emociones.y.Rendimiento.Deportivo.es
-unit_3_title: Emociones y Rendimiento Deportivo
-unit_4_path: 04.Establecimiento.de.Objetivos.es
-unit_4_title: Establecimiento de Objetivos
-unit_5_path: 05.Estres.es.pdf
-unit_5_title: El estrés en la competición
-unit_6_path: 06.Motivacion.es
-unit_6_title: Motivación
-unit_7_path: 07.Tension.y.Relajacion.es 
-unit_7_title: Tension y Relajación
-unit_8_path: 08.Tolerancia.Psicologica.es
-unit_8_title: Tolerancia Psicólogica
-unit_9_path: 09.La.Competicion.es
-unit_9_title: La Competición
-label_my_athletes: Mis atletas
-label_role_1: cuenta gratuita
-label_role_2: deportista
-label_role_3: entrenador/a
-label_role_4: tutor/a
-signup_label_12: Obrigado por se inscrever!
-signup_label_13: Seu conta Teskal foi criada.
-signup_label_14: Preste atenção para um e - mail confirmando a sua nova inscrição.
-signup_label_15: Ela contém uma activação link que você deve clicar antes de tentar efetuar login no
-label_timezone: Fuso horário
-label_quest_pending: Questionários pendentes
-label_quest_no_pending: Não há questionários pendentes
-label_quest_pending_from: Pendente desde
 quest2: Questionário de Tolerância do Estresse Psicológico 
 quest2_10: Eu fui convencido de que eu poderia conseguir meu desempenho a qualquer hora
 quest2_11: Resolvi eficazmente os problemas dos meus companheiros da equipe
@@ -497,3 +429,71 @@ quest2_valor_3: 3 (frequentemente)
 quest2_valor_4: 4 (muitas vezes)
 quest2_valor_5: 5 (quase sempre)
 quest2_valor_6: 6 (sempre)
+setting_app_subtitle: Subtítulo da aplicação
+setting_app_title: Título da aplicação
+setting_attachment_max_size: Tamanho do máximo do anexo
+setting_autofetch_changesets: Autofetch compromete
+setting_autologin: Autologin
+setting_date_format: Formato de data
+setting_default_language: Língua da opção
+setting_feeds_limit: Limite do Feed
+setting_host_name: Servidor
+setting_login_required: Autenticaçao obrigatoria
+setting_mail_from: Endereço do correio da emissão
+setting_self_registration: Auto-registo permitido
+setting_text_formatting: Formato do texto
+setting_welcome_text: Texto de boa-vinda
+signup_label_10: Termos de serviço
+signup_label_11: Estalando "a tecla do Cadastro", eu estou anexando minha assinatura eletrônica a e estou concordando aos <a href="http:/account/terms">Terms de Teskal do serviço </a>.
+signup_label_12: Obrigado por se inscrever!
+signup_label_13: Seu conta Teskal foi criada.
+signup_label_14: Preste atenção para um e - mail confirmando a sua nova inscrição.
+signup_label_15: Ela contém uma activação link que você deve clicar antes de tentar efetuar login no
+signup_label_1: Etapa
+signup_label_2: Escolher um nome de início de uma sessão e uma língua.
+signup_label_3: A língua será usada a próxima vez onde você entra.
+signup_label_4: Escolher uma senha para seu cliente novo.
+signup_label_5: As senhas devem ser 6-12 caráteres do comprimento.
+signup_label_6: Detalhes do email
+signup_label_7: Incorporar seu email address.
+signup_label_8: Você deve incorporar um email address válido para ativar seu cliente.
+signup_label_9: Submeter o formulário
+status_active: ativo
+status_locked: bloqueado
+status_registered: registrado
+text_are_you_sure: Você tem certeza ?
+text_caracters_maximum: %d máximo de caráteres
+text_length_between: Tamanho entre %d e %d caráteres.
+text_min_max_length_info: 0 siginifica sem restriçao
+unit_10_path: 10.La.Comunicacion.es
+unit_10_title: La Comunicación
+unit_11_path: 11.Responsabilidad.vs.Culpabilidad.es
+unit_11_title: Responsabilidad vs Culpabilidad
+unit_12_path: 12.Confianza.y.Auto.Eficacia.es 
+unit_12_title: Confianza y Auto Eficacia
+unit_13_path: 13.Estado.de.Animo.es
+unit_13_title: Estado de Animo
+unit_14_path: 14.Asertividad.es 
+unit_14_title: Asertividad
+unit_15_path: 15.Deportista.de.ARD.es 
+unit_15_title: Deportista de ARD 
+unit_16_path: 16.Sistema.de.Autoregulacion.es
+unit_16_title: Sistema de Autoregulación
+unit_1_path: 01.Teskal.es.pdf
+unit_1_title: Presentación Teskal
+unit_2_path: 02.Atencion.y.Concentracion.es.pdf
+unit_2_title: Atención y Concentración
+unit_3_path: 03.Emociones.y.Rendimiento.Deportivo.es
+unit_3_title: Emociones y Rendimiento Deportivo
+unit_4_path: 04.Establecimiento.de.Objetivos.es
+unit_4_title: Establecimiento de Objetivos
+unit_5_path: 05.Estres.es.pdf
+unit_5_title: El estrés en la competición
+unit_6_path: 06.Motivacion.es
+unit_6_title: Motivación
+unit_7_path: 07.Tension.y.Relajacion.es 
+unit_7_title: Tension y Relajación
+unit_8_path: 08.Tolerancia.Psicologica.es
+unit_8_title: Tolerancia Psicólogica
+unit_9_path: 09.La.Competicion.es
+unit_9_title: La Competición
