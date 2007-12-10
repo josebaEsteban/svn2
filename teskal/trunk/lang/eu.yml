@@ -1090,6 +1090,6 @@ signup_label_13: Zure Teskaleko kontua sortua izan da.
 signup_label_14: Korreoz konfirmazio bat jasoko duzu.
 signup_label_15: Sartzeko klikatu behar duzun zure kontuaren aktibazio lotura bat dauka
 label_timezone: Ordu-zona
-label_quest_pending: Cuestionarios pendientes
-label_quest_no_pending: No hay cuestionarios pendientes. 
-label_quest_pending_from: Pendiente desde
+label_quest_pending: Egin gabeko galdetegiak
+label_quest_no_pending: Ez dago egin gabeko galdetegirik.
+label_quest_pending_from: ...-tik egin gabe

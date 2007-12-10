@@ -1,7 +1,7 @@
-Información de tu cuenta en Teskal:
-* Usuario:    <%= @user.login %>
-* Contraseña: <%= @password %>
+Zure Teskal kontuaren
+* Erabiltzailea:    <%= @user.login %>
+* Pasa-hitza: <%= @password %>
 
-Puedes entrar en: <%= url_for :only_path => false, :host => Setting.host_name, :controller => 'account', :action => 'login' %>
+sartu zaitezke: <%= url_for :only_path => false, :host => Setting.host_name, :controller => 'account', :action => 'login' %>
 
-Puedes cambiar tu contraseña aqui: <%= url_for :only_path => false, :host => Setting.host_name, :controller => 'my', :action => 'account' %>
+Hemen alda dezakezu zure pasa-hitza.: <%= url_for :only_path => false, :host => Setting.host_name, :controller => 'my', :action => 'account' %>
