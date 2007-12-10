@@ -201,7 +201,7 @@ label_modification: %d modificación
 label_modification_plural: %d modificaciones
 label_modified: modificado
 label_my_account: Mi cuenta
-label_my_athletes: Mis atletas
+label_my_athletes: Mis deportistas
 label_my_page: Mi página
 label_my_quest: Mis cuestionarios
 label_new: Nuevo
@@ -1057,9 +1057,9 @@ status_locked: bloqueado
 status_registered: registrado
 text_are_you_sure: ¿ Estás seguro ?
 text_caracters_maximum: máximo %d caracteres.
-text_length_between: Longitud entre %d y %d caracteres.
+text_length_between: Longitud\ entre %d y %d caracteres.
 text_min_max_length_info: 0 para ninguna restricción
-unit_9_path: 9.La.Comunicacion.es.pdf
+unit_9_path: 09.La.Comunicacion.es.pdf
 unit_9_title: La Comunicación
 unit_10_path: 10.Responsabilidad.vs.Culpabilidad.es.pdf
 unit_10_title: Responsabilidad vs Culpabilidad
