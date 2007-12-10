@@ -347,79 +347,6 @@ quest12_label_1: Clima do Desempenho
 quest12_label_2: Clima de Maestría
 quest12_valor_1: 0 (nada)
 quest12_valor_2: 100 (completamente)
-quest2: Questionário do Tolerância do Estresse Psicológico 
-quest2_10: Eu fui convencido que eu poderia conseguir meu desempenho a qualquer hora
-quest2_11: Eu tratei muito eficazmente os problemas dos meus companheros da equipo
-quest2_12: Eu estava en boas condições fisicamente
-quest2_13: Eu empurrei-me durante o desempenho
-quest2_14: Eu senti o desempenho emocionalmente escoado
-quest2_15: Eu tive a dor de músculo após o desempenho
-quest2_16: Eu fui convencido que eu executei bem
-quest2_17: Demasiado foi exijido de mim durante as rupturas
-quest2_18: Eu psyched acima antes do desempenho
-quest2_19: Eu senti que eu quis parar meu esporte
-quest2_1: As partes de meu corpo estavam demondo
-quest2_20: Eu senti muito energético
-quest2_21: I de fácil compreensão como minhas colegas de equipa sentiram sobre coisas
-quest2_22: Eu fui convencido que eu tinha treinado bem
-quest2_23: As rupturas não se realizavam nos momentos adequados
-quest2_24: Eu senti vulnerável aos ferimentos
-quest2_25: Eu ajustei objetivos definitivos para mim mesmo durante o desempenho
-quest2_26: Meu corpo sentiu forte
-quest2_27: Eu senti frustado por meu esporte
-quest2_28: Eu tratei os problemas emocionais em meu esporte muito calma 
-quest2_2: Eu não poderia começar o descanso durante as rupturas
-quest2_3: Eu estaba convencido de que iria conseguir meus objetivos
-quest2_4: Eu recuperei bem fisicamente
-quest2_5: Eu me senti quemado por meu esporte
-quest2_6: Eu realizei muitas coisas de valor em meu esporte
-quest2_7: Eu estava mentalmente pronto para executar
-quest2_8: Meus músculos sentiram duros ou tensos durante o desempenho
-quest2_9: Eu tive a impressão lá era demasiado poucas rupturas
-quest2_d1_a: Os valores associados com o sono interrompido ou com um deficit da recuperação são baixos, assim que significa que as cargas de trabalho podem ser consideradas adequadas.
-quest2_d1_b: Os valores associados com o sono interrompido ou com um deficit da recuperação são médios, assim que significa que as cargas de trabalho devem ser monitoradas pròxima.
-quest2_d1_c: Os valores associados com o sono interrompido ou com um deficit da recuperação são elevados, assim que significa que as cargas de trabalho devem ser revisadas e as demandas da prática ajustadas.
-quest2_d2_a: A fatiga emocional relacionou-se às situações frustrantes e associou-se com a baixa perseverança possível está a baixos níveis.
-quest2_d2_b: A fatiga emocional relacionou-se às situações frustrantes e associou-se com a baixa perseverança possível está a níveis intermediários e este valor worrysome deve ser discutido com o atleta.
-quest2_d2_c: A fatiga emocional relacionou-se às situações frustrantes e associou-se com a baixa perseverança possível está em altos níeses e é necessário encontrar o que está causando estes níveis perigosos.
-quest2_d3_a: Um de baixo nível da vulnerabilidade de ferimento indica uma boa disposição para lidar com e abordar situações difíceis ou complexas com a determinação.
-quest2_d3_b: Um nível intermediário de vulnerabilidade de ferimento pode negativamente impatar sua convição do atleta a decisão e ao enfrentar situações difíceis ou arriscadas na prática.
-quest2_d3_c: Um de nível elevado da vulnerabilidade aos ferimentos implica uma percepção aumentada da fragilidade e da insegurança ao enfrentar situações duras ou mais arriscadas na prática.
-quest2_d4_a: A baixa aptidão física nivela negativamente o impato os sentimentos subjetivos da competência percebida no desempenho físico.
-quest2_d4_b: Um nível moderado de aptidão implica sentimentos adequados da competência percebida no desempenho físico.
-quest2_d4_c: Os níveis elevados da aptidão significam sentimentos fortes da eficácia e da vitalidade, com uma percepção elevada de sua aptidão física na prática.
-quest2_d5_a: Os baixos níveis de realização pessoal indicam a baixa satisfação com a realização do objetivo e igualmente os baixos níveis de apreciação ou a empatia com a equipe ou agrupam-nos.
-quest2_d5_b: Um nível intermediário de realização pessoal significa algum grau de satisfação com realização do objetivo e igualmente apreciação aceitável e de empatia com a equipe ou o grupo.
-quest2_d5_c: Os níveis pessoais elevados da realização indicam um alto nível da satisfação com a realização do objetivo e o nível elevado igualmente da apreciação e da empatia com a equipe ou agrupam-no. 
-quest2_d6_a: De baixo nível da auto-eficácia significa que o sentimento do atleta sobre as práticas da maneira tem ido e sobre seu nível de prontidão ser baixo, assim a dinâmica do último diversas práticas deve ser revista.
-quest2_d6_b: A percepção do atleta sobre as práticas da maneira foi e sobre sua preparação está a nível moderado. Houve provavelmente algumas interferências com a dinâmica da prática mas não tiveram um impato principal na prontidão do atleta.
-quest2_d6_c: Os altos níeses da auto-eficácia indicam que o atleta sente muito positivo sobre práticas e sua própria preparação, com os altos níeses do self-satisfaction para o trabalho feito.
-quest2_d7_a: Um de baixo nível da auto-regulação implica a dificuldade using habilidades mentais na prática, como a auto-motivação e o estabelecimento de objetivos pessoais. É necessário endereçar especificamente estas edições, talvez using a informação contida na apresentação da motivação de realização na biblioteca.
-quest2_d7_b: O nível moderado de uso das habilidades tais como a auto-motivação e do estabelecimento de objetivos pessoais é considerado com níveis moderados de auto-regulação.
-quest2_d7_c: As contagens elevadas indicam de nível elevado do uso de habilidades mentais na prática, como a auto-motivação e o estabelecimento de objetivos pessoais, que então reforça e destaca o trajeto à realização destes objetivos.
-quest2_header: Durante o mês passado…
-quest2_intro: Abaixo de você ter uma série de frases relativas aos aspetos diferentes do treinamento e da competição em que nós queremos recolher sua opinião. Por favor, lê-los com tranquilidade, respondê-los sincera e verifica a opção com que você concorda mais ou do que descreve melhor sua opinião.
-quest2_label_0: Tolerância do Estresse Psicológico
-quest2_label_1: Sono perturbado
-quest2_label_2: Fatiga emocional
-quest2_label_3: Vulnerabilidade aos ferimentos
-quest2_label_4: Nível da aptidão
-quest2_label_5: Realização pessoal
-quest2_label_6: Auto-Eficácia
-quest2_label_7: Auto-regulação
-quest2_label_8: Avaliação geral
-quest2_label_9: resposta 
-quest2_val_1: Total o nível de tolerância do esforço é muito bom, indicando a capacidade óptima segurar na prática toda a situação ou competição. O nível de deslocamentos predeterminados do gerador do esforço é baixo, quando os valores das dimensões da recuperação forem positivos, particular essas indicadas acima. Em resumo, este atleta tem uma percepção positiva de seu nível da aptidão e da preparação, seus desempenhos e é motivado fortemente para alcangar seus objetivos.
-quest2_val_2: O nível de tolerância é globalmente positivo, indicando a presença de bastante recursos para lidar na prática com as situações especiais, e na competição. O nível do esforço que gera deslocamentos predeterminados está a nível do baixo-media, quando os níveis das dimensões da recuperação estiverem a níveis media-elevados, ao redor 4. Total este é um atleta motivated, com uma percepção positiva de do sua nível, prontidão e realização e motivated da aptidão para conseguir seus objetivos. 
-quest2_val_3: Há um contrapeso delicado aqui entre indutor do esforço e dimensões da recuperação, que seja uma situação perigosa. O atleta tem bastante recursos a lidar com ele e pode reduzir o nível de esforço gerado pelas dimensões indicadas acima. É importante setup uma intervenção específica baseada no módulo do esforço/pressão, aplicado com uma entrevista direta com o atleta para avaliar os fatores de força atuais e para costurar apropriadamente a intervenção. 
-quest2_val_4: Isto significa que o nível de tolerância é muito baixo porque os deslocamentos predeterminados de geração são maiores do que os deslocamentos predeterminados da recuperação. É uma situação do risco elevado que precise de ser endereçada imediatamente com a ajuda do tutor, a menos que a reflexão comum da díade do ônibus/atleta identificar as causas que geram os valores observados. Nesse exemplo, o trabalho específico baseado no módulo do esforço/pressão pode ser projetado com a supervisão do tutor.
-quest2_valor_0: 0 (nada)
-quest2_valor_1: 1 (raramente)
-quest2_valor_2: 2 (às vezes)
-quest2_valor_3: 3 (frequentemente)
-quest2_valor_4: 4 (muitas vezes)
-quest2_valor_5: 5 (quase sempre)
-quest2_valor_6: 6 (sempre)
 setting_app_subtitle: Subtítulo da aplicação
 setting_app_title: Título da aplicação
 setting_attachment_max_size: Tamanho do máximo do anexo
@@ -497,3 +424,76 @@ label_timezone: Fuso horário
 label_quest_pending: Questionários pendentes
 label_quest_no_pending: Não há questionários pendentes
 label_quest_pending_from: Pendente desde
+quest2: Questionário de Tolerância do Estresse Psicológico 
+quest2_10: Eu fui convencido de que eu poderia conseguir meu desempenho a qualquer hora
+quest2_11: Resolvi eficazmente os problemas dos meus companheiros da equipe
+quest2_12: Eu estava em boas condições fisicamente
+quest2_13: Estive motivado durante o treinamento/competição
+quest2_14: Senti-me emocionalmente esgotado durante o treinamento
+quest2_15: Tive dores musculares após o treinamento
+quest2_16: Me convenci de que executei bem o treinamento
+quest2_17: Exijiram muito de mim durante os descansos 
+quest2_18: Me concentrei antes da atuação
+quest2_19: Desejei abodonar meu esporte
+quest2_1: Algumas partes do meu corpo doeram
+quest2_20: Me senti com muita energia
+quest2_21: Comprendi facilmente como se sentian meus companheiros
+quest2_22: Convenci-me de ter feito um bom treinamento
+quest2_23: Os descansos não se realizavam nos momentos adequados
+quest2_24: Senti-me vulnerável aos lesões
+quest2_25: Logrei objetivos definidos para o treinamento/competição
+quest2_26: Senti-me fisicamente forte
+quest2_27: Senti-me frustado no meu esporte
+quest2_28: Resolvi com muita tranquilidade, os problemas emocionais em meu esporte
+quest2_2: Não podi relaxar durante os descancos
+quest2_3: Estaba convencido que iria conseguir meus objetivos
+quest2_4: Recupere-me bem fisicamente
+quest2_5: Me senti exausto em meu esporte
+quest2_6: Logrei objetivos que valeram a pena em meu esporte
+quest2_7: Eu estava mentalmente pronto para reder
+quest2_8: Meus músculos estavam duros e tensos durante o treinamento
+quest2_9: Tive a impressão de que havia pouco tempo para o decanso
+quest2_d1_a: Os valores associados ao descanso interrompido, e ao deficit da recuperação são baixos. Isso significa que as cargas de trabalho podem ser consideradas adequadas.
+quest2_d1_b: Os valores associados ao descanso interrompido, e ao deficit da recuperação são médios. Isso significa que as cargas de trabalho devem ser monitoradas.
+quest2_d1_c: Os valores associados ao descanso interrompido, e ao deficit da recuperação são elevados. Isso significa que as cargas de trabalho devem ser revisadas e as demandas da prática ajustadas.
+quest2_d2_a: A fadiga emocional e o cansanco, relacionados com situações de frustracão e associado a uma posivel falta de persistencia se encontra em baixos niveis.
+quest2_d2_b: A fadiga emocional relacionou-se às situações frustrantes, e associou-se a baixa perseverança. E possível estes níveis intermediários, e este valores serem descutido com o atleta.
+quest2_d2_c: A fadiga emocional relacionou-se às situações frustrantes e associou-se com a baixa perseverança possível está em altos níeses e é necessário encontrar o que está causando estes níveis perigosos.
+quest2_d3_a: Um baixo nível de vunerabilidade a ferimentos, indica uma boa disposição para lidar e abordar situações difíceis ou complexas com determinação.
+quest2_d3_b: Um nível intermediário de vunerabilidade a ferimentos, pode negativamente impedir a convicção do atleta a decisão, ao enfrentar situações difíceis ou arriscadas na prática.
+quest2_d3_c: Um de nível elevado da vulnerabilidade aos ferimentos implica uma percepção aumentada da fragilidade e da insegurança ao enfrentar situações dificeis ou mais arriscadas na prática.
+quest2_d4_a: A baixa aptidão física nivela negativamente o impacto aos sentimentos subjetivos da competência percebida no desempenho físico.
+quest2_d4_b: Um nível moderado da aptidão implica em sentimentos adequados da competência percebida no desempenho físico.
+quest2_d4_c: Os níveis elevados da aptidão significam sentimentos fortes,e de eficácia da vitalidade, com uma percepção elevada de sua aptidão física na prática.
+quest2_d5_a: Os baixos níveis de realização pessoal indicam a baixa satisfação com a realização do objetivo e igualmente os baixos níveis de apreciação ou a empatia com a equipe ou grupo.
+quest2_d5_b: Um nível intermediário de realização pessoal significa algum grau de satisfação com realização do objetivo e igualmente apreciação aceitável de empatia com a equipe ou o grupo.
+quest2_d5_c: Os níveis pessoais elevados da realização indicam um alto nível da satisfação com a realização do objetivo, e o nível elevado igualmente da apreciação e da empatia com a equipe ou grupo.
+quest2_d6_a: A convição que possue a desportita pela forma que ha desenvolvido o treinamento e a crenca em sua preparacao sao baixa,portanto se faz necessario revisar a dinamica do treinamentos do ultimo periodo.
+quest2_d6_b: A percepção do atleta sobre as práticas e maneira de sua preparação está a nível moderado. Houve provavelmente algumas interferências com a dinâmica da prática, mas não tiveram um impacto principal na prontidão do atleta.
+quest2_d6_c: A convição que possue o desportista pela forma que se desenrolou o treinamento, e a crença em sua preparação proporciona- lhe valores altos isto produz uma sensação gratificante e de auta sastifação.
+quest2_d7_a: O baixo nível da auto-regulação implica na dificuldade de usar habilidades mentais na prática.E com a auto-motivação e o estabelecimento de objetivos pessoais. É necessário endereçar especificamente estas edições, talvez usando a informação contida na apresentação da motivação de realização na biblioteca.
+quest2_d7_b: O nível moderado de uso das habilidades tais como a auto-motivação, e o estabelecimento de objetivos pessoais é considerado como níveis moderados de auto-regulação.
+quest2_d7_c: As contagens elevadas indicam o nível elevado do uso de habilidades mentais na prática. Como a auto-motivação e o estabelecimento de objetivos pessoais, que então reforça e destaca o trajeto e a realização destes objetivos.
+quest2_header: No ultimo mês 
+quest2_intro: Abaixo temos uma série de frases relativas aos aspetos diferentes do treinamento e da competição, queremos colher sua opinião. Por favor, leias com tranquilidade, responda-as com sinceridade, e verifique a que melhor condiz com seu perfil.
+quest2_label_0: Tolerância do Estres Psicológico
+quest2_label_1: Descanso interrompido
+quest2_label_2: Cansaço emocional
+quest2_label_3: Vulnerabilidade as lesoes
+quest2_label_4: Nível da aptidão
+quest2_label_5: Realização pessoal
+quest2_label_6: Auto-Eficácia
+quest2_label_7: Auto-regulação
+quest2_label_8: Avaliação geral
+quest2_label_9: resposta 
+quest2_val_1: No total o nível de tolerância,e do esforço é muito bom, indicando a capacidade de segurar na prática toda a situação ou competição. O nível de deslocamentos predeterminados gerador do esforço é baixo, quando os valores das dimensões da recuperação forem positivos, particularmente essas indicadas acima. Em resumo, este atleta tem uma percepção positiva de seu nível de aptidão e da preparação, seus desempenhos sao motivados fortemente para alcancar seus objetivos.
+quest2_val_2: O nível de tolerância é globalmente positivo, indicando a presença de bastante recursos para lidar na prática e na competicao com as situações especiais. O nível do esforço que gera deslocamentos predeterminados está a baixo-media, quando os níveis das dimensões da recuperação estiverem a nível medio, ao redor 4. No total este é um atleta motivado e com aptidão para conseguir seus objetivos.
+quest2_val_3: Há um contrapeso delicado aqui entre indutor do esforço e dimensões da recuperação, que e uma situação perigosa. O atleta tem bastante recursos a lidar com ele e pode reduzir o nível de esforço gerado pelas dimensões indicadas acima. É importante se ter uma intervenção específica, baseada no módulo do esforço/pressão, aplicado com uma entrevista direta com o atleta, para avaliar os fatores de força atuais e para costurar apropriadamente a intervenção.
+quest2_val_4: Isto significa que o nível de tolerância é muito baixo porque os deslocamentos predeterminados de geração, são maiores do que os deslocamentos predeterminados da recuperação. É uma situação de risco elevado que precise ser endereçada imediatamente com a ajuda do tutor, a menos que a reflexão conjunta, treinador/ atleta para identificar as causas que geram os valores observados. Nesse exemplo, o trabalho específico baseado no módulo do esforço/pressão pode ser projetado com a supervisão do tutor.
+quest2_valor_0: 0 (nada)
+quest2_valor_1: 1 (raramente)
+quest2_valor_2: 2 (às vezes)
+quest2_valor_3: 3 (frequentemente)
+quest2_valor_4: 4 (muitas vezes)
+quest2_valor_5: 5 (quase sempre)
+quest2_valor_6: 6 (sempre)
