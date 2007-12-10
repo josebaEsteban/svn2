@@ -27,10 +27,10 @@ Rails::Initializer.run do |config|
   # Enable page/fragment caching by setting a file-based store
   # (remember to create the caching directory and make it readable to the application)
   # config.action_controller.fragment_cache_store = :file_store, "#{RAILS_ROOT}/cache"
-  config.action_controller.session = {
-    :session_key => '_teskal_session',
-    :secret      => '034d2395387791bdb923de0c985d4cd564c0f40b92448ed584cf7b2199dc449fdf0098be22fd117cce2e70159dda9e1cda29523a5f97188b0fc8076a713b67dd'
-  } 
+  # config.action_controller.session = {
+  #   :session_key => '_teskal_session',
+  #   :secret      => '034d2395387791bdb923de0c985d4cd564c0f40b92448ed584cf7b2199dc449fdf0098be22fd117cce2e70159dda9e1cda29523a5f97188b0fc8076a713b67dd'
+  # } 
   # Activate observers that should always be running
   # config.active_record.observers = :cacher, :garbage_collector
   config.active_record.observers = :message_observer
