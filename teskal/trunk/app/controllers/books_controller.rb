@@ -4,6 +4,24 @@ class BooksController < ApplicationController
   # GET /books
   # GET /books.xml
   def index
+    @users = User.find(:all)
+    for user in @users
+      1.upto(Book::CATALOG) {|number| book = Book.new
+        book.user_id = user.id
+        book.order = number
+        if user.show?
+          book.browse = 1
+        else
+          if number == Book::FREE
+            book.browse = 1
+          else
+            book.browse = 0
+          end
+        end
+      book.save}
+
+    end
+
     @books = Book.find(:all)
 
     respond_to do |format|
@@ -100,7 +118,7 @@ class BooksController < ApplicationController
       redirect_back_or_default :controller => 'my', :action => 'page'
     end
   end
-  
+
   def populate
     @users = User.find(:all)
     for user in @users
