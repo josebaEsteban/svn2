@@ -107,12 +107,13 @@ class BooksController < ApplicationController
     book = Book.find(params[:id])
     user = User.find(book.user_id)
     if @logged_in_user.admin? or @logged_in_user.id == user.managed_by
-      if book.browse == 0
-        book.browse = 1
-      else
-        book.browse = 0
-      end
-      book.save
+      book.toggle!(:browse)
+      # if book.browse == 0
+      #   book.browse = 1
+      # else
+      #   book.browse = 0
+      # end
+      # book.save
       redirect_back_or_default :controller => 'my', :action => 'quest' , :id  => book.user_id
     else
       redirect_back_or_default :controller => 'my', :action => 'page'
