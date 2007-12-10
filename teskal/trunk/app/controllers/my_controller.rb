@@ -28,6 +28,7 @@ class MyController < ApplicationController
     @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{session[:user_id]} and answers.browse=1 order by answers.created_on DESC")
     @blocks = @user.pref[:my_page_layout] || DEFAULT_LAYOUT
     @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{session[:user_id]} order by pendings.created_on DESC")
+    @books = Book.find_by_sql("select * from books where books.user_id=#{session[:user_id]} order by books.order ASC")
   end
 
   def athletes
@@ -41,8 +42,9 @@ class MyController < ApplicationController
 
   def quest
     @athlete = User.find(params[:id])
-    @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{params[:id]}  order by answers.created_on DESC")
-    @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{params[:id]}  order by pendings.created_on DESC")
+    @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{params[:id]} order by answers.created_on DESC")
+    @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{params[:id]} order by pendings.created_on DESC")
+    @books = Book.find_by_sql("select * from books where books.user_id=#{params[:id]} order by books.order ASC")
   end
 
   # Edit user's account

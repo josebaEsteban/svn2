@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
       session['thispage'] = @request.request_uri
     end
   end
-  
+
   def redirect_back(default)
     if session['prevpage'].nil?
       if default
@@ -96,7 +96,7 @@ class ApplicationController < ActionController::Base
     end
     true
   end
-  
+
   def require_coach
     return unless require_login
     unless self.logged_in_user.show?
@@ -327,10 +327,20 @@ class ApplicationController < ActionController::Base
     organization=geo_ip[9]
     error=geo_ip[10]
   end
-      
 
-  
-  
+  def create_library(user)
+    1.upto(Book::CATALOG) {|number| book = Book.new
+      book.user_id = user
+      book.order = number
+      if number == Book::FREE
+        book.browse = 1
+      else
+        book.browse = 0
+      end
+    book.save}
+  end
+
+
   # private
   # def set_timezone
   #   if logged_in? && !current_user.time_zone.nil?

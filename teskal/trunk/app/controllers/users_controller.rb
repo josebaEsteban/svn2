@@ -50,11 +50,13 @@ class UsersController < ApplicationController
       @user.password, @user.password_confirmation = params[:password], params[:password_confirmation]
       ip = request.remote_ip
       @user.managed_by = session[:user_id]
+      @user.role = User::ROLE_ATHLETE
       if @user.save
         Mailer.deliver_account_information(@user, params[:password])
+        create_library(@user.id)
         # if params[:send_information]
-        flash[:notice] = l(:notice_successful_create) 
-              redirect_to :controller => 'my', :action => 'athletes'
+        flash[:notice] = l(:notice_successful_create)
+        redirect_to :controller => 'my', :action => 'athletes'
         # redirect_to :action => 'list'
       end
     end
