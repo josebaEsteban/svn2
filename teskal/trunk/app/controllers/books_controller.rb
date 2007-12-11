@@ -10,12 +10,12 @@ class BooksController < ApplicationController
         book.user_id = user.id
         book.order = number
         if user.show?
-          book.browse = 1
+          book.browse = true
         else
           if number == Book::FREE
-            book.browse = 1
+            book.browse = true
           else
-            book.browse = 0
+            book.browse = false
           end
         end
       book.save}

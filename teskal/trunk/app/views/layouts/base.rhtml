@@ -65,11 +65,7 @@
     <% if loggedin? %>
     <div align="left">
 	<h3> 
-	<%- if @logged_in_user.name.length < 2-%>
-	   <%= @logged_in_user.login %>
-	<%- else -%>
       <%= @logged_in_user.name %>
-	<%- end -%>
         <%- if @logged_in_user.suscription? -%>
         • <%= @logged_in_user.my_role %> 
       <% end %>

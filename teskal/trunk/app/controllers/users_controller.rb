@@ -40,10 +40,8 @@ class UsersController < ApplicationController
 
   def add
     if request.get?
-      puts "request.get?"
       @user = User.new(:language => Setting.default_language)
     else
-      puts "params"
       @user = User.new(params[:user])
       @user.admin = params[:user][:admin] || false
       @user.login = params[:user][:login]
@@ -64,21 +62,20 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find(params[:id])
-    if request.get?
-
-    else
-      @user.admin = params[:user][:admin] if params[:user][:admin]
-      @user.login = params[:user][:login] if params[:user][:login]
-      @user.password, @user.password_confirmation = params[:password], params[:password_confirmation] unless params[:password].nil? or params[:password].empty?
-      if @user.update_attributes(params[:user])
-        flash[:notice] = l(:notice_successful_update)
-        redirect_to :action => 'list'
-      end
+    if @user.managed_by != @logged_in_user.id
+      flash.now[:notice] = l(:notice_not_authorized)
+      redirect_to :controller => 'my', :action => 'athletes'
     end
+  end
 
-    @roles = Role.find(:all, :order => 'position')
-    # @projects = Project.find(:all, :order => 'name', :conditions => "status=#{Project::STATUS_ACTIVE}") - @user.projects
-    # @membership ||= Member.new
+  def update
+    @user = User.find(params[:id])
+    @user.attributes = params[:user]
+    if  @user.save
+      journal("update account",@user.id)
+      flash.now[:notice] = l(:notice_account_updated)
+    end
+    redirect_to :controller => 'my', :action => 'athletes'
   end
 
   def edit_membership

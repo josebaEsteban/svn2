@@ -1062,7 +1062,7 @@ unit_8_path: 08.Tolerancia.Psicologica.es
 unit_8_title: Tolerancia Psicólogica
 unit_9_path: 09.La.Competicion.es
 unit_9_title: La Competición
-label_my_athletes: Mis atletas
+label_my_athletes: Mon athlètes
 label_role_1: cuenta gratuita
 label_role_2: deportista
 label_role_3: entrenador/a
@@ -1075,4 +1075,6 @@ label_timezone: Fuseau horaire
 label_quest_pending: En attendant les questionnaires
 label_quest_no_pending: En attendant il n'ya pas de questionnaires
 label_quest_pending_from: En attente depuis
+label_quest_no_filled: n'ya pas de questionnaires
+
 

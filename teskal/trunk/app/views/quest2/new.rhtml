@@ -19,7 +19,11 @@
 <%- end -%>
 <%- end -%>
 
-<h2><%=l(:quest2)%></h2>
+<h2><%=l(:quest2)%>
+	<%- if !@subject.nil? -%>
+	<%= " - "+ @subject %>
+	<%- end -%>
+	</h2>
 <center>
   <form id="quest2" action="/quest2/create" method="post" > 
     <br/>

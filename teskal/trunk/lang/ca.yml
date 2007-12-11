@@ -433,9 +433,9 @@ unit_8_path: 08.Tolerancia.Psicologica.es
 unit_8_title: Tolerancia Psicólogica
 unit_9_path: 09.La.Competicion.es
 unit_9_title: La Competición
-label_my_athletes: Mis atletas
-label_role_1: cuenta gratuita
-label_role_2: deportista
+label_my_athletes: Meus esportistes
+label_role_1: compte gratuït
+label_role_2: esportiste
 label_role_3: entrenador/a
 label_role_4: tutor/a
 signup_label_12: Gràcies per registrar-te! 
@@ -446,3 +446,5 @@ label_timezone: Zona horària
 label_quest_pending: Qüestionaris pendents
 label_quest_no_pending: No hi ha qüestionaris pendents.
 label_quest_pending_from: Pendent des de
+label_quest_no_filled: No hi ha qüestionaris.
+
