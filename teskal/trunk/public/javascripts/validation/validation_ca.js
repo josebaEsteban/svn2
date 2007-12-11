@@ -289,8 +289,6 @@ Validation.addAllThese([
             p = p.parentNode;
             options = p.getElementsByTagName('INPUT');
             }
-            // var p = elm.parentNode;
-            // var options = p.getElementsByTagName('INPUT');
             return $A(options).any(function(elm) {
                 return $F(elm);
                 });
