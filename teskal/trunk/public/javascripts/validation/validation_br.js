@@ -226,7 +226,7 @@ Validation.add('IsEmpty', '', function(v) {
 			});
 
 Validation.addAllThese([
-	['required', 'Esse é um campo obrigatório', function(v) {
+	['required', 'Esse e um campo obrigatório', function(v) {
 				return !Validation.get('IsEmpty').test(v);
 			}],
 	['validate-number', 'Please enter a valid number in this field.', function(v) {
