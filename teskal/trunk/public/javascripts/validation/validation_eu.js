@@ -245,7 +245,7 @@ Validation.addAllThese([
 				var test = new Date(v);
 				return Validation.get('IsEmpty').test(v) || !isNaN(test);
 			}],
-	['validate-email', 'Por favor introduzca una dirección de E-mail válida. Por ejemplo jose@web.com', function (v) {
+	['validate-email', 'Por favor introduzca una direcciÃ³n de E-mail vÃ¡lida. Por ejemplo jose@web.com', function (v) {
 				return Validation.get('IsEmpty').test(v) || /\w{1,}[@][\w\-]{1,}([.]([\w\-]{1,})){1,3}$/.test(v)
 			}],
 	['validate-url', 'Please enter a valid URL.', function (v) {
@@ -270,7 +270,7 @@ Validation.addAllThese([
        	 ['validate-password', 'Zure pasa-hitzak zure kontuaren ezberdinak diren 6-12 karaketere bitarte izan behar ditu.', {
 				minLength : 6,
 				maxLength : 12,
-				notOneOf : ['contraseña','CONTRASEÑA','1234567','0123456'],
+				notOneOf : ['contraseÃ±a','CONTRASEÃ‘A','1234567','0123456'],
 				notEqualToField : 'user[login]'
 			}],
 	['validate-password-confirm', 'Egiaztapena ez da pasa-hitz bezalakoa, beste saiakera bat gehiago egin ezazu mesedez.', {

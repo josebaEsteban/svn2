@@ -226,32 +226,32 @@ Validation.add('IsEmpty', '', function(v) {
 			});
 
 Validation.addAllThese([
-	['required', 'Aquest camp és obligatori', function(v) {
+	['required', 'Aquest camp Ã©s obligatori', function(v) {
 				return !Validation.get('IsEmpty').test(v);
 			}],
-	['validate-number', 'Si us plau introdueixi un numero vàlid', function(v) {
+	['validate-number', 'Si us plau introdueixi un numero vÃ lid', function(v) {
 				return Validation.get('IsEmpty').test(v) || (!isNaN(v) && !/^\s+$/.test(v));
 			}],
-	['validate-digits', 'Si us plau introdueixi sol números en aquest camp. Eviti espais o altres caràcters com a punts o comes.', function(v) {
+	['validate-digits', 'Si us plau introdueixi sol nÃºmeros en aquest camp. Eviti espais o altres carÃ cters com a punts o comes.', function(v) {
 				return Validation.get('IsEmpty').test(v) ||  !/[^\d]/.test(v);
 			}],
 	['validate-alpha', 'Si us plau introdueixi sol lletres (a-z) en aquest camp.', function (v) {
 				return Validation.get('IsEmpty').test(v) ||  /^[a-zA-Z]+$/.test(v)
 			}],
-	['validate-alphanum', 'Si us plau introdueixi sol lletres (a-z) o números (0-9) en aquest camp. Espais o altres caràcters no estan permesos.', function(v) {
+	['validate-alphanum', 'Si us plau introdueixi sol lletres (a-z) o nÃºmeros (0-9) en aquest camp. Espais o altres carÃ cters no estan permesos.', function(v) {
 				return Validation.get('IsEmpty').test(v) ||  !/\W/.test(v)
 			}],
-	['validate-date', 'Si us plau introdueixi una data vàlida', function(v) {
+	['validate-date', 'Si us plau introdueixi una data vÃ lida', function(v) {
 				var test = new Date(v);
 				return Validation.get('IsEmpty').test(v) || !isNaN(test);
 			}],
-	['validate-email', "Si us plau introdueixi una direcció d'e-correu vàlida. Per exemple marta@web.com", function (v) {
+	['validate-email', "Si us plau introdueixi una direcciÃ³ d'e-correu vÃ lida. Per exemple marta@web.com", function (v) {
 				return Validation.get('IsEmpty').test(v) || /\w{1,}[@][\w\-]{1,}([.]([\w\-]{1,})){1,3}$/.test(v)
 			}],
-	['validate-url', 'Per favor introdueixi una URL vàlida.', function (v) {
+	['validate-url', 'Per favor introdueixi una URL vÃ lida.', function (v) {
 				return Validation.get('IsEmpty').test(v) || /^(http|https|ftp):\/\/(([A-Z0-9][A-Z0-9_-]*)(\.[A-Z0-9][A-Z0-9_-]*)+)(:(\d+))?\/?/i.test(v)
 			}],
-	['validate-date-au', 'Per favor usi aquest format de data: dd/mm/yyyy. Per exemple 17/03/2006 Per al 17 de Març de 2006.', function(v) {
+	['validate-date-au', 'Per favor usi aquest format de data: dd/mm/yyyy. Per exemple 17/03/2006 Per al 17 de MarÃ§ de 2006.', function(v) {
 				if(Validation.get('IsEmpty').test(v)) return true;
 				var regex = /^(\d{2})\/(\d{2})\/(\d{4})$/;
 				if(!regex.test(v)) return false;
@@ -267,22 +267,22 @@ Validation.addAllThese([
 				// [$].##
 				return Validation.get('IsEmpty').test(v) ||  /^\$?\-?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}\d*(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$/.test(v)
 			}],
-    ['validate-password', 'La teva contrasenya ha de tenir entre 6 i 12 caràcters i no ser \'contrasenya\' o igual que el nom del teu compte.', {
+    ['validate-password', 'La teva contrasenya ha de tenir entre 6 i 12 carÃ cters i no ser \'contrasenya\' o igual que el nom del teu compte.', {
                 minLength : 6,
                 maxLength : 12,
                 notOneOf : ['password','PASSWORD','1234567','0123456','12345679012','012345678901'],
                 notEqualToField : 'user[login]'
             }],
-    ['validate-password-confirm', 'La confirmació no és igual a la contrasenya, intenta-ho de nou si us plau.', {
+    ['validate-password-confirm', 'La confirmaciÃ³ no Ã©s igual a la contrasenya, intenta-ho de nou si us plau.', {
                 equalToField : 'password'
             }],
-    ['validate-new-password-confirm', 'La confirmació no és igual a la nova contrasenya, intenta-ho de nou si us plau.', {
+    ['validate-new-password-confirm', 'La confirmaciÃ³ no Ã©s igual a la nova contrasenya, intenta-ho de nou si us plau.', {
                 equalToField : 'new_password'
             }],
-    ['validate-selection', 'Si us plau faci una selecció', function(v,elm){
+    ['validate-selection', 'Si us plau faci una selecciÃ³', function(v,elm){
                 return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
             }],
-    ['validate-one-required', 'Per favor seleccioni un ítem', function (v,elm) {
+    ['validate-one-required', 'Per favor seleccioni un Ã­tem', function (v,elm) {
          var p = elm;
         var options = new Array();
         while (options.length < 2) {

@@ -245,7 +245,7 @@ Validation.addAllThese([
 				var test = new Date(v);
 				return Validation.get('IsEmpty').test(v) || !isNaN(test);
 			}],
-	['validate-email', 'Por favor introduzca una dirección de E-mail válida. Por ejemplo jose@web.com', function (v) {
+	['validate-email', 'Por favor introduzca una direcciÃ³n de E-mail vÃ¡lida. Por ejemplo jose@web.com', function (v) {
 				return Validation.get('IsEmpty').test(v) || /\w{1,}[@][\w\-]{1,}([.]([\w\-]{1,})){1,3}$/.test(v)
 			}],
 	['validate-url', 'Please enter a valid URL.', function (v) {
@@ -267,22 +267,22 @@ Validation.addAllThese([
 				// [$].##
 				return Validation.get('IsEmpty').test(v) ||  /^\$?\-?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}\d*(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$/.test(v)
 			}],
-    ['validate-password', 'La contraseña debe tener entre 6 y 12 caracteres y no ser \'contraseña\' o igual que el nombre de tu cuenta.', {
+    ['validate-password', 'La contraseÃ±a debe tener entre 6 y 12 caracteres y no ser \'contraseÃ±a\' o igual que el nombre de tu cuenta.', {
 				minLength : 6,
 				maxLength : 12,
-				notOneOf : ['contraseña','CONTRASEÑA','1234567','0123456'],
+				notOneOf : ['contraseÃ±a','CONTRASEÃ‘A','1234567','0123456'],
 				notEqualToField : 'user[login]'
 			}],
-	['validate-password-confirm', 'La confirmación no es igual a la contraseña, inténtelo de nuevo por favor.', {
+	['validate-password-confirm', 'La confirmaciÃ³n no es igual a la contraseÃ±a, intÃ©ntelo de nuevo por favor.', {
 				equalToField : 'password'
 			}],
-	['validate-new-password-confirm', 'La confirmación no es igual a la nueva contraseña, inténtelo de nuevo por favor.', {
+	['validate-new-password-confirm', 'La confirmaciÃ³n no es igual a la nueva contraseÃ±a, intÃ©ntelo de nuevo por favor.', {
 				equalToField : 'new_password'
 			}],
-	['validate-selection', 'Por favor haga una selección', function(v,elm){
+	['validate-selection', 'Por favor haga una selecciÃ³n', function(v,elm){
 				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
 			}],
-	['validate-one-required','Por favor seleccione un ítem', function (v,elm) {
+	['validate-one-required','Por favor seleccione un Ã­tem', function (v,elm) {
 		 var p = elm;
 		var options = new Array();
 		while (options.length < 2) {

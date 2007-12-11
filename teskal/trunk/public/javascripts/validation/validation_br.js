@@ -226,7 +226,7 @@ Validation.add('IsEmpty', '', function(v) {
 			});
 
 Validation.addAllThese([
-	['required', 'Esse e um campo obrigatório', function(v) {
+	['required', 'Esse e um campo obrigatÃ³rio', function(v) {
 				return !Validation.get('IsEmpty').test(v);
 			}],
 	['validate-number', 'Please enter a valid number in this field.', function(v) {
@@ -245,7 +245,7 @@ Validation.addAllThese([
 				var test = new Date(v);
 				return Validation.get('IsEmpty').test(v) || !isNaN(test);
 			}],
-	['validate-email', 'Digite um endereço de email válido. Por exemplo fred@domain.com', function (v) {
+	['validate-email', 'Digite um endereÃ§o de email vÃ¡lido. Por exemplo fred@domain.com', function (v) {
 				return Validation.get('IsEmpty').test(v) || /\w{1,}[@][\w\-]{1,}([.]([\w\-]{1,})){1,3}$/.test(v)
 			}],
 	['validate-url', 'Please enter a valid URL.', function (v) {
@@ -267,22 +267,22 @@ Validation.addAllThese([
 				// [$].##
 				return Validation.get('IsEmpty').test(v) ||  /^\$?\-?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}\d*(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$/.test(v)
 			}],
-    ['validate-password', 'La senha deve ter entre 6 e 12 caracteres e não pode ser \'senha\' ou o mesmo que o seu nome.', {
+    ['validate-password', 'La senha deve ter entre 6 e 12 caracteres e nÃ£o pode ser \'senha\' ou o mesmo que o seu nome.', {
                 minLength : 6,
                 maxLength : 12,
                 notOneOf : ['password','PASSWORD','1234567','0123456','12345679012','012345678901'],
                 notEqualToField : 'user[login]'
             }],
-    ['validate-password-confirm', 'Sua confirmação não corresponde à sua senha, por favor, tente novamente.', {
+    ['validate-password-confirm', 'Sua confirmaÃ§Ã£o nÃ£o corresponde Ã  sua senha, por favor, tente novamente.', {
                 equalToField : 'password'
             }],
-    ['validate-new-password-confirm', 'Sua confirmação não corresponde à sua nova senha, por favor, tente novamente.', {
+    ['validate-new-password-confirm', 'Sua confirmaÃ§Ã£o nÃ£o corresponde Ã  sua nova senha, por favor, tente novamente.', {
                         equalToField : 'new_password'
                     }],
-    ['validate-selection', 'Por favor, faça a selecção', function(v,elm){
+    ['validate-selection', 'Por favor, faÃ§a a selecÃ§Ã£o', function(v,elm){
                 return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
             }],
-    ['validate-one-required', 'Selecione uma opção', function (v,elm) {
+    ['validate-one-required', 'Selecione uma opÃ§Ã£o', function (v,elm) {
          var p = elm;
         var options = new Array();
         while (options.length < 2) {
