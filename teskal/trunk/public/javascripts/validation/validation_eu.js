@@ -90,7 +90,7 @@ Validation.prototype = {
 			});
 		}
 	},
-	onSubmit : function(ev){
+	onSubmit :  function(ev){
 		if(!this.validate()) Event.stop(ev);
 	},
 	validate : function() {
@@ -142,14 +142,14 @@ Object.extend(Validation, {
 						case 'radio':
 							var p = elm.parentNode;
 							if(p) {
-								new Insertion.After(p, advice); //Bottom
+								new Insertion.Bottom(p, advice);
 							} else {
 								new Insertion.After(elm, advice);
 							}
 							break;
 						default:
 							new Insertion.After(elm, advice);
-				  }
+				    }
 					advice = Validation.getAdvice(name, elm);
 				}
 				if(typeof Effect == 'undefined') {
@@ -198,7 +198,7 @@ Object.extend(Validation, {
 				elm[prop] = '';
 			}
 			elm.removeClassName('validation-failed');
-			elm.removeClassName('validation-passed');  
+			elm.removeClassName('validation-passed');
 		});
 	},
 	add : function(className, error, test, options) {
@@ -214,7 +214,7 @@ Object.extend(Validation, {
 		Object.extend(Validation.methods, nv);
 	},
 	get : function(name) {
-		return Validation.methods[name] ? Validation.methods[name] : Validation.methods['_LikeNoIDIEverSaw_'];
+		return  Validation.methods[name] ? Validation.methods[name] : Validation.methods['_LikeNoIDIEverSaw_'];
 	},
 	methods : {
 		'_LikeNoIDIEverSaw_' : new Validator('_LikeNoIDIEverSaw_','',{})
@@ -222,36 +222,36 @@ Object.extend(Validation, {
 });
 
 Validation.add('IsEmpty', '', function(v) {
-				return ((v == null) || (v.length == 0)); // || /^\s+$/.test(v));
+				return  ((v == null) || (v.length == 0)); // || /^\s+$/.test(v));
 			});
 
 Validation.addAllThese([
 	['required', 'Eremu hau derrigorrezkoa da', function(v) {
 				return !Validation.get('IsEmpty').test(v);
 			}],
-	['validate-number', 'Por favor introduzca un numero válido', function(v) {
+	['validate-number', 'Please enter a valid number in this field.', function(v) {
 				return Validation.get('IsEmpty').test(v) || (!isNaN(v) && !/^\s+$/.test(v));
 			}],
-	['validate-digits', 'Por favor introduzca solo números en este campo. Evite espacios u otros caracteres como puntos o comas.', function(v) {
-				return Validation.get('IsEmpty').test(v) || !/[^\d]/.test(v);
+	['validate-digits', 'Please use numbers only in this field. please avoid spaces or other characters such as dots or commas.', function(v) {
+				return Validation.get('IsEmpty').test(v) ||  !/[^\d]/.test(v);
 			}],
-	['validate-alpha', 'Por favor introduzca solo letras (a-z) en este campo.', function (v) {
-				return Validation.get('IsEmpty').test(v) || /^[a-zA-Z]+$/.test(v)
+	['validate-alpha', 'Please use letters only (a-z) in this field.', function (v) {
+				return Validation.get('IsEmpty').test(v) ||  /^[a-zA-Z]+$/.test(v)
 			}],
-	['validate-alphanum', 'Por favor introduzca solo letras (a-z) o números (0-9) en este campo. Espacios u otros caracteres no están permitidos.', function(v) {
-				return Validation.get('IsEmpty').test(v) || !/\W/.test(v)
+	['validate-alphanum', 'Please use only letters (a-z) or numbers (0-9) only in this field. No spaces or other characters are allowed.', function(v) {
+				return Validation.get('IsEmpty').test(v) ||  !/\W/.test(v)
 			}],
-	['validate-date', 'Mesedez balioko data bat sar ezazu ', function(v) {
+	['validate-date', 'Please enter a valid date.', function(v) {
 				var test = new Date(v);
 				return Validation.get('IsEmpty').test(v) || !isNaN(test);
 			}],
-	['validate-email', 'Mesedez baliozko e-mail helbide bat sartu ezazu. asier@web.com adibidez', function (v) {
+	['validate-email', 'Por favor introduzca una direcci�n de E-mail v�lida. Por ejemplo jose@web.com', function (v) {
 				return Validation.get('IsEmpty').test(v) || /\w{1,}[@][\w\-]{1,}([.]([\w\-]{1,})){1,3}$/.test(v)
 			}],
-	['validate-url', 'Por favor introduzca una URL válida.', function (v) {
+	['validate-url', 'Please enter a valid URL.', function (v) {
 				return Validation.get('IsEmpty').test(v) || /^(http|https|ftp):\/\/(([A-Z0-9][A-Z0-9_-]*)(\.[A-Z0-9][A-Z0-9_-]*)+)(:(\d+))?\/?/i.test(v)
 			}],
-	['validate-date-au', 'Por favor use este formato de fecha: dd/mm/yyyy. Por ejemplo 17/03/2006 Para el 17 de Marzo de 2006.', function(v) {
+	['validate-date-au', 'Please use this date format: dd/mm/yyyy. For example 17/03/2006 for the 17th of March, 2006.', function(v) {
 				if(Validation.get('IsEmpty').test(v)) return true;
 				var regex = /^(\d{2})\/(\d{2})\/(\d{4})$/;
 				if(!regex.test(v)) return false;
@@ -260,29 +260,29 @@ Validation.addAllThese([
 							(parseInt(RegExp.$1, 10) == d.getDate()) && 
 							(parseInt(RegExp.$3, 10) == d.getFullYear() );
 			}],
-	['validate-currency-dollar', 'Por favor introduzca una cantidad válida de $. Por ejemplo $100.00 .', function(v) {
+	['validate-currency-dollar', 'Please enter a valid $ amount. For example $100.00 .', function(v) {
 				// [$]1[##][,###]+[.##]
 				// [$]1###+[.##]
 				// [$]0.##
 				// [$].##
-				return Validation.get('IsEmpty').test(v) || /^\$?\-?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}\d*(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$/.test(v)
+				return Validation.get('IsEmpty').test(v) ||  /^\$?\-?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}\d*(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$/.test(v)
 			}],
-	 ['validate-password', 'Zure pasa-hitzak zure kontuaren ezberdinak diren 6-12 karaketere bitarte izan behar ditu.', {
-					minLength : 6,
-					maxLength : 12,
-					notOneOf : ['password','PASSWORD','1234567','0123456','12345679012','012345678901'],
-					notEqualToField : 'user[login]'
-				}],
+       	 ['validate-password', 'Zure pasa-hitzak zure kontuaren ezberdinak diren 6-12 karaketere bitarte izan behar ditu.', {
+				minLength : 6,
+				maxLength : 12,
+				notOneOf : ['contrase�a','CONTRASE�A','1234567','0123456'],
+				notEqualToField : 'user[login]'
+			}],
 	['validate-password-confirm', 'Egiaztapena ez da pasa-hitz bezalakoa, beste saiakera bat gehiago egin ezazu mesedez.', {
-					equalToField : 'password'
-				}],
+				equalToField : 'password'
+			}],
 	['validate-new-password-confirm', 'Egiaztapena ez da pasa-hitz berria bezalakoa, beste saiakera bat gehiago egin ezazu mesedez.', {
-					 equalToField : 'new_password'
-				}],
+				equalToField : 'new_password'
+			}],
 	['validate-selection', 'Mesedez hautaketaren bat egin ezazu', function(v,elm){
 				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
 			}],
-	['validate-one-required', 'Mesedez itemen bat haukeratu ezazu', function (v,elm) {
+	['validate-one-required','Mesedez itemen bat haukeratu ezazu', function (v,elm) {
 		 var p = elm;
 		var options = new Array();
 		while (options.length < 2) {
