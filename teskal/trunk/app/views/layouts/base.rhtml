@@ -64,12 +64,12 @@
   <div id="content">
     <% if loggedin? %>
     <div align="left">
-	<h3> 
+
       <%= @logged_in_user.name %>
         <%- if @logged_in_user.suscription? -%>
         • <%= @logged_in_user.my_role %> 
       <% end %>
-    </div></h3>
+    </div>
     <% end %>
     <% if flash[:notice] %>
     <p style="color: white;text-shadow: 2px 2px #eee;
