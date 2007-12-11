@@ -267,19 +267,19 @@ Validation.addAllThese([
 				// [$].##
 				return Validation.get('IsEmpty').test(v) ||  /^\$?\-?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}\d*(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$/.test(v)
 			}],
-    ['validate-password', 'Votre mot de passe doit être compris entre 6 et 12 caractères et ne pas être \'mot de passe\' ou identique à votre nom.', {
+    ['validate-password', 'Votre mot de passe doit Ãªtre compris entre 6 et 12 caractÃ¨res et ne pas Ãªtre \'mot de passe\' ou identique Ã  votre nom.', {
                 minLength : 6,
                 maxLength : 12,
                 notOneOf : ['password','PASSWORD','1234567','0123456'],
                 notEqualToField : 'user[login]'
             }],
-    ['validate-password-confirm', 'Votre confirmation de mot de passe ne correspond pas à votre mot de passe, veuillez réessayer.', {
+    ['validate-password-confirm', 'Votre confirmation de mot de passe ne correspond pas Ã  votre mot de passe, veuillez rÃ©essayer.', {
                 equalToField : 'password'
             }],
-    ['validate-new-password-confirm', 'Votre confirmation de mot de passe ne correspond pas à votre premier mot de passe, veuillez réessayer.', {
+    ['validate-new-password-confirm', 'Votre confirmation de mot de passe ne correspond pas Ã  votre premier mot de passe, veuillez rÃ©essayer.', {
                         equalToField : 'new_password'
             }],
-    ['validate-selection','Veuillez faire une sélection', function(v,elm){
+    ['validate-selection','Veuillez faire une sÃ©lection', function(v,elm){
                 return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
             }],
     ['validate-one-required', 'Veuillez choisir une option', function (v,elm) {
