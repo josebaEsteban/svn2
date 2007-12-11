@@ -226,32 +226,32 @@ Validation.add('IsEmpty', '', function(v) {
 			});
 
 Validation.addAllThese([
-	['required', 'This is a required field.', function(v) {
+	['required', 'Este campo es obligatorio', function(v) {
 				return !Validation.get('IsEmpty').test(v);
 			}],
-	['validate-number', 'Please enter a valid number in this field.', function(v) {
+	['validate-number', 'Por favor introduzca un numero válido', function(v) {
 				return Validation.get('IsEmpty').test(v) || (!isNaN(v) && !/^\s+$/.test(v));
 			}],
-	['validate-digits', 'Please use numbers only in this field. please avoid spaces or other characters such as dots or commas.', function(v) {
+	['validate-digits', 'Por favor introduzca solo números en este campo. Evite espacios u otros caracteres como puntos o comas.', function(v) {
 				return Validation.get('IsEmpty').test(v) ||  !/[^\d]/.test(v);
 			}],
-	['validate-alpha', 'Please use letters only (a-z) in this field.', function (v) {
+	['validate-alpha', 'Por favor introduzca solo letras (a-z) en este campo.', function (v) {
 				return Validation.get('IsEmpty').test(v) ||  /^[a-zA-Z]+$/.test(v)
 			}],
-	['validate-alphanum', 'Please use only letters (a-z) or numbers (0-9) only in this field. No spaces or other characters are allowed.', function(v) {
+	['validate-alphanum', 'Por favor introduzca solo letras (a-z) o números (0-9) en este campo. Espacios u otros caracteres no están permitidos.', function(v) {
 				return Validation.get('IsEmpty').test(v) ||  !/\W/.test(v)
 			}],
-	['validate-date', 'Please enter a valid date.', function(v) {
+	['validate-date', 'Por favor introduzca una fecha válida', function(v) {
 				var test = new Date(v);
 				return Validation.get('IsEmpty').test(v) || !isNaN(test);
 			}],
-	['validate-email', 'Please enter a valid email address. For example fred@domain.com .', function (v) {
+	['validate-email', 'Por favor introduzca una dirección de E-mail válida. Por ejemplo jose@web.com', function (v) {
 				return Validation.get('IsEmpty').test(v) || /\w{1,}[@][\w\-]{1,}([.]([\w\-]{1,})){1,3}$/.test(v)
 			}],
-	['validate-url', 'Please enter a valid URL.', function (v) {
+	['validate-url', 'Por favor introduzca una URL válida.', function (v) {
 				return Validation.get('IsEmpty').test(v) || /^(http|https|ftp):\/\/(([A-Z0-9][A-Z0-9_-]*)(\.[A-Z0-9][A-Z0-9_-]*)+)(:(\d+))?\/?/i.test(v)
 			}],
-	['validate-date-au', 'Please use this date format: dd/mm/yyyy. For example 17/03/2006 for the 17th of March, 2006.', function(v) {
+	['validate-date-au', 'Por favor use este formato de fecha: dd/mm/yyyy. Por ejemplo 17/03/2006 Para el 17 de Marzo de 2006.', function(v) {
 				if(Validation.get('IsEmpty').test(v)) return true;
 				var regex = /^(\d{2})\/(\d{2})\/(\d{4})$/;
 				if(!regex.test(v)) return false;
@@ -260,29 +260,29 @@ Validation.addAllThese([
 							(parseInt(RegExp.$1, 10) == d.getDate()) && 
 							(parseInt(RegExp.$3, 10) == d.getFullYear() );
 			}],
-	['validate-currency-dollar', 'Please enter a valid $ amount. For example $100.00 .', function(v) {
+	['validate-currency-dollar', 'Por favor introduzca una cantidad válida de $. Por ejemplo $100.00 .', function(v) {
 				// [$]1[##][,###]+[.##]
 				// [$]1###+[.##]
 				// [$]0.##
 				// [$].##
 				return Validation.get('IsEmpty').test(v) ||  /^\$?\-?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}\d*(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$/.test(v)
 			}],
-       	 ['validate-password', 'Your password must be between 6 and 12 characters and not be \'password\' or the same as your name.', {
+       	 ['validate-password', 'La contraseña debe tener entre 6 y 12 caracteres y no ser \'contraseña\' o igual que el nombre de tu cuenta.', {
 				minLength : 6,
 				maxLength : 12,
 				notOneOf : ['password','PASSWORD','1234567','0123456'],
 				notEqualToField : 'user[login]'
 			}],
-	['validate-password-confirm', 'Your confirmation password does not match your password, please try again.', {
+	['validate-password-confirm', 'La confirmación no es igual a la contraseña, inténtalo de nuevo por favor.'', {
 				equalToField : 'password'
 			}],
-	['validate-new-password-confirm', 'Your confirmation password does not match your new password, please try again.', {
+	['validate-new-password-confirm', 'La confirmación no es igual a la nueva contraseña, inténtalo de nuevo por favor.', {
 				equalToField : 'new_password'
 			}],
-	['validate-selection', 'Please make a selection', function(v,elm){
+	['validate-selection', 'Por favor haga una selección', function(v,elm){
 				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
 			}],
-	['validate-one-required','Please select an item', function (v,elm) {
+	['validate-one-required','Por favor seleccione un ítem', function (v,elm) {
 		 var p = elm;
 		var options = new Array();
 		while (options.length < 2) {
