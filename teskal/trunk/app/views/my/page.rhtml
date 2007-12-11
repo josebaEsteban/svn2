@@ -19,7 +19,7 @@
     </thead>
     <tbody>
       <%- if @logged_in_user.athlete? -%>
-      <%- odd = 0 -%>
+      <!-- <%- odd = 0 -%> -->
       <%- for pending in @pendings -%>
       <%- case pending.quest_id
 	            when 1 
@@ -47,12 +47,12 @@
 	            when 12 
 	              quest=l(:quest12_label_0)
 	            end -%>
-      <%- if odd == 1 -%>
+      <!-- <%- if odd == 1 -%>
       <tr class="odd">
         <%- odd = 0-%>
-        <%-else -%>
+        <%-else -%> -->
       <tr>
-        <%- odd=1 end -%>
+        <!-- <%- odd=1 end -%> -->
         <%- controlador="quest"+ pending.quest_id.to_s -%>
         <td> <%= pending.quest_id.to_s %> </td>
         <!-- <td> <%= l_date(pending.created_on) %> </td> -->

@@ -66,11 +66,6 @@ Validator.methods = {
 		return Validation.get(value).test(v,elm);
 	})}
 }
-_transl = {
-   "required": "This is a required field",
-   "selection": "Please make a selection",
-   "options": "Please select an option"
- }
 
 var Validation = Class.create();
 
@@ -147,7 +142,7 @@ Object.extend(Validation, {
 						case 'radio':
 							var p = elm.parentNode;
 							if(p) {
-								new Insertion.After(p, advice);
+								new Insertion.Bottom(p, advice);
 							} else {
 								new Insertion.After(elm, advice);
 							}
@@ -231,7 +226,7 @@ Validation.add('IsEmpty', '', function(v) {
 			});
 
 Validation.addAllThese([
-	['required', 'This is a required field', function(v) {
+	['required', 'This is a required field.', function(v) {
 				return !Validation.get('IsEmpty').test(v);
 			}],
 	['validate-number', 'Please enter a valid number in this field.', function(v) {
@@ -250,7 +245,7 @@ Validation.addAllThese([
 				var test = new Date(v);
 				return Validation.get('IsEmpty').test(v) || !isNaN(test);
 			}],
-	['validate-email', 'Please enter a valid email address. For example fred@domain.com', function (v) {
+	['validate-email', 'Please enter a valid email address. For example fred@domain.com .', function (v) {
 				return Validation.get('IsEmpty').test(v) || /\w{1,}[@][\w\-]{1,}([.]([\w\-]{1,})){1,3}$/.test(v)
 			}],
 	['validate-url', 'Please enter a valid URL.', function (v) {
@@ -272,7 +267,7 @@ Validation.addAllThese([
 				// [$].##
 				return Validation.get('IsEmpty').test(v) ||  /^\$?\-?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}\d*(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$/.test(v)
 			}],
-	 ['validate-password', 'Your password must be between 6 and 12 characters and not be \'password\' or the same as your name.', {
+       	 ['validate-password', 'Your password must be between 6 and 12 characters and not be \'password\' or the same as your name.', {
 				minLength : 6,
 				maxLength : 12,
 				notOneOf : ['password','PASSWORD','1234567','0123456'],
@@ -284,18 +279,16 @@ Validation.addAllThese([
 	['validate-new-password-confirm', 'Your confirmation password does not match your new password, please try again.', {
 				equalToField : 'new_password'
 			}],
-	['validate-selection', _transl["selection"], function(v,elm){
+	['validate-selection', 'Please make a selection', function(v,elm){
 				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
 			}],
-	['validate-one-required', _transl["options"], function (v,elm) {
+	['validate-one-required','Please select an item', function (v,elm) {
 		 var p = elm;
 		var options = new Array();
 		while (options.length < 2) {
 			p = p.parentNode;
 			options = p.getElementsByTagName('INPUT');
 			}
-			// var p = elm.parentNode;
-			// var options = p.getElementsByTagName('INPUT');
 			return $A(options).any(function(elm) {
 				return $F(elm);
 				});
