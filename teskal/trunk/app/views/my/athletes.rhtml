@@ -1,7 +1,7 @@
 <%= stylesheet_link_tag "reset" -%>
 <%- TzTime.zone=@user.timezone -%>
-<div align="right">
-		<a href="/users/add" <img alt="Add" src="/images/add.png"><%= l(:label_user_new)%> </a>
+<div align="center">
+		<a href="/users/add" <img alt="Add" src="/images/add.png"/> </a><%= l(:label_user_new)%>
 		</div>
 <br/>
 <div align="center">
@@ -10,18 +10,21 @@
     <thead>
       <tr>
         <th scope="col"><div align="left"><%=l(:field_login)%></div></th>
-        <th></th>
+<!-- <th></th> --> 
         <th scope="col"><div align="left"><%=l(:field_name) %></div></th>
-        <th></th>
+<!-- <th></th> --> 
         <th scope="col"><div align="left"><%=l(:field_created_on)%></div></th>
-        <th></th>
+<!-- <th></th> --> 
         <th scope="col"><div align="left"><%=l(:field_mail)%></div></th>
-        <th></th>
+<!-- <th></th> --> 
         <th scope="col"><div align="left"><%=l(:field_last_login_on)%></div></th>
-        <th></th>
+<!-- <th></th> --> 
         <th scope="col"><div align="left"><%=l(:field_language)%></div></th>
-        <th></th>
-        <th scope="col"><div align="left"><%=l(:field_status)%></div></th>
+<!-- <th></th> --> 
+       <!-- <th scope="col"><div align="left"><%=l(:field_status)%></div></th> -->
+<th></th> 
+<th></th> 
+<th></th>
       </tr>
     </thead>
     <tbody>
@@ -35,17 +38,17 @@
       <tr>
         <%- odd=1 end -%>
         <td><%= link_to user.login, :controller  => 'my', :action => 'quest', :id => user.id %></td>
-        <td></td>
+        <!-- <td></td> --> 
         <td><%= link_to user.name, :controller  => 'my', :action => 'quest', :id => user.id %></td>
-        <td></td>
+        <!-- <td></td> --> 
         <td><%= l_datetime(TzTime.zone.utc_to_local(user.created_on))%></td>
-        <td></td>
+        <!-- <td></td> --> 
         <td><%= user.mail %></td>
-        <td></td>
+        <!-- <td></td> --> 
         <td><%= l_datetime(TzTime.zone.utc_to_local(user.last_login_on)) unless user.last_login_on.nil? %></td>
-        <td></td>
+        <!-- <td></td> --> 
         <td><div align="center"><%= user.language %></div></td>
-        <td></td>
+        <!-- <td></td> --> 
         <td><div align="center"><a href="/users/switch/<%= user.id.to_s %>"
 			<%- if user.status == 3 -%>
 			<%= image_tag 'key_delete.png' %>
@@ -53,6 +56,8 @@
 			<%= image_tag 'key.png' %>
 			<%- end -%> 
 			</a></div></td>
+        <td><div align="center"><a href="/users/edit/<%= user.id.to_s %>"<%= image_tag 'pencil.png' %></a></div></td
+        <td><div align="center"><a href="/my/quest/<%= user.id.to_s %>"<%= image_tag 'zoom.png' %></a></div></td
       </tr>
       <%- end -%>
     </tbody>

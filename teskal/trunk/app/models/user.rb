@@ -78,7 +78,11 @@ class User < ActiveRecord::Base
 
   # Return user's full name for display
   def name
-    "#{firstname} #{lastname}"
+    if (self.firstname+ self.lastname).length == 0
+      "#{login}"
+    else
+      "#{firstname} #{lastname}"
+    end
   end
 
   def active?

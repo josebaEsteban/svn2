@@ -54,6 +54,7 @@ button_reply: Reply
 button_save: Save
 button_sort: Sort
 button_submit: Submit
+button_unlock: Unlock
 field_account: Account
 field_activity: Activity
 field_admin: Administrator
@@ -132,7 +133,7 @@ gui_validation_error: 1 error
 gui_validation_error_plural: %d errors
 label_activity: Activity
 label_add_note: Add a note
-label_added: added
+label_added: Added
 label_administration: Administration
 label_ago: days ago
 label_all: all
@@ -225,6 +226,10 @@ label_preview: Preview
 label_previous: Previous
 label_quest: Questionnaire
 label_quest_avail: Available questionnaires
+label_quest_no_filled: No filled questionnaires
+label_quest_no_pending: No pending questionnaires
+label_quest_pending: Pending questionnaires
+label_quest_pending_from: Pending since
 label_quest_plural: Questionnaires
 label_read: Read...
 label_register: Sign up
@@ -234,7 +239,6 @@ label_report: Report
 label_report_plural: Reports
 label_result: %d result
 label_result_plural: %d results
-button_unlock: Unlock
 label_role: Role
 label_role_1: free account
 label_role_2: athlete
@@ -1091,6 +1095,3 @@ unit_8_path: 08.Tolerancia.Psicologica.es
 unit_8_title: Tolerancia Psicólogica
 unit_9_path: 09.La.Competicion.es
 unit_9_title: La Competición
-label_quest_pending: Pending questionnaires
-label_quest_no_pending: No pending questionnaires
-label_quest_pending_from: Pending since

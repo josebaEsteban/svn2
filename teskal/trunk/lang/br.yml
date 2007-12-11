@@ -135,7 +135,7 @@ gui_validation_error: 1 erro
 gui_validation_error_plural: %d erros
 label_activity: Atividade
 label_add_note: Adicionar nota
-label_added: adicionado
+label_added: Adicionado
 label_administration: Administraçao
 label_ago: dias há
 label_all: tudo
@@ -202,7 +202,7 @@ label_modification: %d mudança
 label_modification_plural: %d mudanças
 label_modified: modificado
 label_my_account: Minha conta
-label_my_athletes: Mis atletas
+label_my_athletes: Meus atletas
 label_my_page: Minha página
 label_my_quest: Meus questionários
 label_new: Novo
@@ -225,6 +225,7 @@ label_preview: Inspeção prévia
 label_previous: Precedente
 label_quest: Questionário
 label_quest_avail: Questionários disponíveis
+label_quest_no_filled: Não há questionários
 label_quest_no_pending: Não há questionários pendentes
 label_quest_pending: Questionários pendentes
 label_quest_pending_from: Pendente desde

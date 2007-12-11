@@ -121,9 +121,10 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   create_table "books", :force => true do |t|
-    t.integer "user_id"
-    t.integer "order",   :limit => 2
-    t.boolean "browse",               :default => false, :null => false
+    t.integer  "user_id"
+    t.integer  "order",      :limit => 2
+    t.boolean  "browse",                  :default => false, :null => false
+    t.datetime "updated_on"
   end
 
   add_index "books", ["user_id"], :name => "user_id"

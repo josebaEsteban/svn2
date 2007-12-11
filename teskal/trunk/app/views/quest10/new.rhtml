@@ -19,7 +19,11 @@
 <%- end -%>
 <%- end -%>
 
-<h2><%=l(:quest10)%></h2>
+<h2><%=l(:quest10)%>
+	<%- if !@subject.nil? -%>
+	<%= " - "+ @subject %>
+	<%- end -%>
+	</h2>
 <div id="values"> <%=l(:quest9_valor_1)%> • <%=l(:quest9_valor_2)%> • <%=l(:quest9_valor_3)%> • <%=l(:quest9_valor_4)%> • <%=l(:quest9_valor_5)%>
 </div>
 <br/>
@@ -235,7 +239,7 @@
         </tbody>
       </table>
     </div>
-    <div class="splitnoteright"> <%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true , :time  => true%>
+    <div class="splitnoteright @athlete.name"> <%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true , :time  => true%>
     </div>
     <br/>
     <br/>

@@ -19,7 +19,11 @@
 <%- end -%>
 <%- end -%>
 
-<h2><%=l(:quest9)%></h2>
+<h2><%=l(:quest9)%>
+	<%- if !@subject.nil? -%>
+	<%= " - "+ @subject %>
+	<%- end -%>
+	</h2>
 <div id="values"> <%=l(:quest9_valor_1)%> • <%=l(:quest9_valor_2)%> • <%=l(:quest9_valor_3)%> • <%=l(:quest9_valor_4)%> • <%=l(:quest9_valor_5)%>
 </div>
 <br/>

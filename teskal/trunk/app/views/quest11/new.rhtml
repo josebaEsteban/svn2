@@ -19,7 +19,11 @@
 <%- end -%>
 <%- end -%>
 
-<h2><%=l(:quest11)%></h2>
+<h2><%=l(:quest11)%>
+<%- if !@subject.nil? -%>
+<%= " - "+ @subject %>
+<%- end -%>
+</h2>
 <br/>
 <div id="intro"><%=l(:quest11_intro)%></div>
 <br/>
