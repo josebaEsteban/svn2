@@ -1,8 +1,8 @@
 
-<%= stylesheet_link_tag "reset" -%><%= @athlete.name %>
+<%= stylesheet_link_tag "reset" -%><h3><%= @athlete.name %></h3>
 
-• <%= @athlete.my_role %><br/>
-<br/>
+<!-- ï <%= @athlete.my_role %><br/>
+<br/> -->
 <%- id = @athlete.id.to_s -%>
 <div class="splitcontentleft">
   <table cellspacing="0">
@@ -11,8 +11,7 @@
       <tr>
         <th>##</th>
         <th scope="col"><div align="left"><%=l(:label_quest_avail)%></div></th>
-        <th></th>
-        <th></th>
+
       </tr>
     </thead>
     <tbody>
@@ -99,7 +98,7 @@
         <th scope="col"><div align="left"><%=l(:label_added) %></div></th>
         <th scope="col">##</th>
         <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
-        <th scope="col"></th>
+  
       </tr>
     </thead>
     <tbody>
@@ -158,15 +157,13 @@
         <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>
         <th scope="col">##</th>
         <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
-        <th scope="col"></th>
-      </tr>
+   
     </thead>
     <tbody>
       <%- if @answers.length == 0 -%>
     <td></td>
       <td></td>
-      <td></td>
-      <td>  <%= l(:label_quest_no_pending) %> </td>
+      <td>  <%= l(:label_quest_no_filled) %> </td><td></td>
       <%- else -%>
       <%- odd=0 -%>
       <%- for answer in @answers -%>
@@ -222,7 +219,7 @@
         <th scope="col"><%= l(:label_last_updates) %></th>
         <th scope="col">##</th>
         <th scope="col"><div align="left"><%=l(:label_library)%></div></th>
-        <th scope="col"></th>
+
       </tr>
     </thead>
     <tbody>
