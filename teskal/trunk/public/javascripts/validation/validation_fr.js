@@ -1,4 +1,4 @@
-                                                    /*
+/*
 * Really easy field validation with Prototype
 * http://tetlaw.id.au/view/javascript/really-easy-field-validation
 * Andrew Tetlaw
@@ -66,11 +66,6 @@ Validator.methods = {
 		return Validation.get(value).test(v,elm);
 	})}
 }
-_transl = {
-   "required": "Ce champ est obligatoire",
-   "selection": "Veuillez faire une sÃ©lection",
-   "options": "Veuillez choisir une option"
- }
 
 var Validation = Class.create();
 
@@ -147,7 +142,7 @@ Object.extend(Validation, {
 						case 'radio':
 							var p = elm.parentNode;
 							if(p) {
-								new Insertion.After(p, advice);
+								new Insertion.Bottom(p, advice);
 							} else {
 								new Insertion.After(elm, advice);
 							}
@@ -231,7 +226,7 @@ Validation.add('IsEmpty', '', function(v) {
 			});
 
 Validation.addAllThese([
-	['required', _transl["required"], function(v) {
+	['required', 'Ce champ est obligatoire', function(v) {
 				return !Validation.get('IsEmpty').test(v);
 			}],
 	['validate-number', 'Please enter a valid number in this field.', function(v) {
@@ -272,32 +267,32 @@ Validation.addAllThese([
 				// [$].##
 				return Validation.get('IsEmpty').test(v) ||  /^\$?\-?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}\d*(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$/.test(v)
 			}],
-	['validate-password', 'Votre mot de passe doit Ãªtre compris entre 6 et 12 caractÃ¨res et ne pas Ãªtre \'mot de passe\' ou identique Ã  votre nom.', {
-				minLength : 6,
-				maxLength : 12,
-				notOneOf : ['password','PASSWORD','1234567','0123456'],
-				notEqualToField : 'user[login]'
-			}],
-	['validate-password-confirm', 'Votre confirmation de mot de passe ne correspond pas Ã  votre mot de passe, veuillez rÃ©essayer.', {
-				equalToField : 'password'
-			}],
-	['validate-new-password-confirm', 'Votre confirmation de mot de passe ne correspond pas Ã  votre premier mot de passe, veuillez rÃ©essayer.', {
-						equalToField : 'new_password'
-			}],
-	['validate-selection', _transl["selection"], function(v,elm){
-				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
-			}],
-	['validate-one-required', _transl["options"], function (v,elm) {
-		 var p = elm;
-		var options = new Array();
-		while (options.length < 2) {
-			p = p.parentNode;
-			options = p.getElementsByTagName('INPUT');
-			}
-			// var p = elm.parentNode;
-			// var options = p.getElementsByTagName('INPUT');
-			return $A(options).any(function(elm) {
-				return $F(elm);
-				});
-				}]
-				]);
+    ['validate-password', 'Votre mot de passe doit être compris entre 6 et 12 caractères et ne pas être \'mot de passe\' ou identique à votre nom.', {
+                minLength : 6,
+                maxLength : 12,
+                notOneOf : ['password','PASSWORD','1234567','0123456'],
+                notEqualToField : 'user[login]'
+            }],
+    ['validate-password-confirm', 'Votre confirmation de mot de passe ne correspond pas à votre mot de passe, veuillez réessayer.', {
+                equalToField : 'password'
+            }],
+    ['validate-new-password-confirm', 'Votre confirmation de mot de passe ne correspond pas à votre premier mot de passe, veuillez réessayer.', {
+                        equalToField : 'new_password'
+            }],
+    ['validate-selection','Veuillez faire une sélection', function(v,elm){
+                return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
+            }],
+    ['validate-one-required', 'Veuillez choisir une option', function (v,elm) {
+         var p = elm;
+        var options = new Array();
+        while (options.length < 2) {
+            p = p.parentNode;
+            options = p.getElementsByTagName('INPUT');
+            }
+            // var p = elm.parentNode;
+            // var options = p.getElementsByTagName('INPUT');
+            return $A(options).any(function(elm) {
+                return $F(elm);
+                });
+                }]
+                ]);
