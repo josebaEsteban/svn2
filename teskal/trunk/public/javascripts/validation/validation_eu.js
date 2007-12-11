@@ -1,4 +1,4 @@
-                   /*
+/*
 * Really easy field validation with Prototype
 * http://tetlaw.id.au/view/javascript/really-easy-field-validation
 * Andrew Tetlaw
@@ -289,8 +289,6 @@ Validation.addAllThese([
 			p = p.parentNode;
 			options = p.getElementsByTagName('INPUT');
 			}
-			// var p = elm.parentNode;
-			// var options = p.getElementsByTagName('INPUT');
 			return $A(options).any(function(elm) {
 				return $F(elm);
 				});
