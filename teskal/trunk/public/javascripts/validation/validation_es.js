@@ -282,7 +282,7 @@ Validation.addAllThese([
 	['validate-selection', 'Please make a selection', function(v,elm){
 				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
 			}],
-	['validate-one-required','Please select an item', function (v,elm) {
+	['validate-one-required','Por favor seleccione un ítem', function (v,elm) {
 		 var p = elm;
 		var options = new Array();
 		while (options.length < 2) {
