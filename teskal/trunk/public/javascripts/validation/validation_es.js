@@ -267,19 +267,19 @@ Validation.addAllThese([
 				// [$].##
 				return Validation.get('IsEmpty').test(v) ||  /^\$?\-?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}\d*(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$/.test(v)
 			}],
-       	 ['validate-password', 'Your password must be between 6 and 12 characters and not be \'password\' or the same as your name.', {
+       	 ['validate-password', 'La contraseña debe tener entre 6 y 12 caracteres y no ser \'contraseña\' o igual que el nombre de tu cuenta.', {
 				minLength : 6,
 				maxLength : 12,
-				notOneOf : ['password','PASSWORD','1234567','0123456'],
+				notOneOf : ['contraseña','CONTRASEÑA','1234567','0123456'],
 				notEqualToField : 'user[login]'
 			}],
-	['validate-password-confirm', 'Your confirmation password does not match your password, please try again.', {
+	['validate-password-confirm', 'La confirmación no es igual a la contraseña, inténtalo de nuevo por favor.', {
 				equalToField : 'password'
 			}],
-	['validate-new-password-confirm', 'Your confirmation password does not match your new password, please try again.', {
+	['validate-new-password-confirm', 'La confirmación no es igual a la nueva contraseña, inténtalo de nuevo por favor.', {
 				equalToField : 'new_password'
 			}],
-	['validate-selection', 'Please make a selection', function(v,elm){
+	['validate-selection', 'Por favor haga una selección', function(v,elm){
 				return elm.options ? elm.selectedIndex > 0 : !Validation.get('IsEmpty').test(v);
 			}],
 	['validate-one-required','Por favor seleccione un ítem', function (v,elm) {
