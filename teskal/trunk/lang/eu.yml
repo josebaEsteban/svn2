@@ -146,10 +146,10 @@ label_attachment_plural: Ficheros
 label_boolean: Boleano
 label_browse: Gainbegiratu
 label_calendar: Calendario
-label_competition: Leihaketa
+label_competition: lehiaketa
 label_confirmation: Confirmación
 label_contains: contiene 
-label_current_status: Egungo egoera
+label_current_status: egun egoera
 label_current_version: Versión actual
 label_date: Data
 label_date_from: From
@@ -199,6 +199,7 @@ label_modification: %d modificación
 label_modification_plural: %d modificaciones
 label_modified: berraldatua
 label_my_account: Nire kontua
+label_my_athletes: Nire kirolariak
 label_my_page: Nire orria
 label_my_quest: Mis cuestionarios 
 label_new: Nuevo
@@ -222,6 +223,10 @@ label_preview: Previo
 label_previous: Aurrekoa
 label_quest: Galdetegia 
 label_quest_avail: Galdetegiak
+label_quest_no_filled: Ez da galdetegirik bete
+label_quest_no_pending: Ez dago egin gabeko galdetegirik.
+label_quest_pending: Egin gabeko galdetegiak
+label_quest_pending_from: ...-tik egin gabe
 label_quest_plural: Galdetegiak 
 label_read: Leer...
 label_register: Erregistratu
@@ -232,6 +237,10 @@ label_report_plural: Txostenak
 label_result: %d emaitza
 label_result_plural: %d emaitzak
 label_role: Rola
+label_role_1: doako kontua
+label_role_2: kirolaria
+label_role_3: entrenatzailea
+label_role_4: tutorea
 label_role_and_permissions: Rolak eta baimenak 
 label_role_new: Rola berria
 label_role_plural: Rolak
@@ -239,6 +248,7 @@ label_search: Bilaketa
 label_send_information: Erabiltzaileari bidalitako kontuaren informazioa
 label_settings: Configuración
 label_show: Erakutsi
+label_timezone: Ordu-zona
 label_user: Erabiltzailea
 label_user_new: Erabiltzaile Berria
 label_user_plural: Erabiltzaileak
@@ -663,7 +673,7 @@ quest3_header2: Entrenamenduan...
 quest3_header3: …momento honetan
 quest3_intro: Behean, entrenamendu egoeratan jendeak izaten dituen sentsazioak deskribatzen dituzten hitz zerrenda bat eta hauekin zer ikusia duten esaldi eta iruzkin sorta bat dago. Mesedez,bakoitza arretaz irakurri ezazu eta momentuotan sentitzen duzuna, edo eta entrenamendu saioetan zure jokabidea egokien deskribatzen duen zenbaki gainean klik egin ezazu.
 quest3_label_0: Entrenamenduan izandako sasoi mailaren profila
-quest3_label_10: Egungo
+quest3_label_10: egun
 quest3_label_1: Tentsioa
 quest3_label_2: Depresio
 quest3_label_3: Areriotasuna
@@ -1032,6 +1042,10 @@ setting_text_formatting: Formato de texto
 setting_welcome_text: Texto acogida
 signup_label_10: Zerbitzuaren terminoak
 signup_label_11: Gorde-tzeko klik egiterako orduan, nire sinadura eranstearekin batera <a href="http:/account/terms">Teskal Zerbitzuaren Baldintzekin</a> ados nagoela adierazten dut.
+signup_label_12: Mila esker erregistratzeagatik!
+signup_label_13: Zure Teskaleko kontua sortua izan da.
+signup_label_14: Korreoz konfirmazio bat jasoko duzu.
+signup_label_15: Sartzeko klikatu behar duzun zure kontuaren aktibazio lotura bat dauka
 signup_label_1: Pasatu
 signup_label_2: Erabiltzaile eta hizkuntza bat aukeratu.
 signup_label_3: Hizkuntza sartzen zaren hurrengoan erabilia izango da. 
@@ -1080,17 +1094,3 @@ unit_8_path: 08.Tolerancia.Psicologica.es
 unit_8_title: Tolerantzia Psikologikoa
 unit_9_path: 09.La.Competicion.es
 unit_9_title: Lehiaketa
-label_my_athletes: Mis deportistas
-label_role_1: cuenta gratuita
-label_role_2: deportista
-label_role_3: entrenador/a
-label_role_4: tutor/a
-signup_label_12: Mila esker erregistratzeagatik!
-signup_label_13: Zure Teskaleko kontua sortua izan da.
-signup_label_14: Korreoz konfirmazio bat jasoko duzu.
-signup_label_15: Sartzeko klikatu behar duzun zure kontuaren aktibazio lotura bat dauka
-label_timezone: Ordu-zona
-label_quest_pending: Egin gabeko galdetegiak
-label_quest_no_pending: Ez dago egin gabeko galdetegirik.
-label_quest_pending_from: ...-tik egin gabe
-label_quest_no_filled: Ez galdetegirik
