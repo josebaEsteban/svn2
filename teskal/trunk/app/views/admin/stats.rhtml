@@ -21,7 +21,7 @@
     </thead>
     <%- odd=0 -%>
     <%- nope=0 -%>
-    <%- (Journal.find_by_sql("select * from journals order by journals.created_on desc")).each do |journal|  -%>
+    <%- (Journal.find_by_sql("select * from journals  order by journals.created_on desc limit 50")).each do |journal|  -%>
                <%- if odd == 1 -%>
         <tr class="odd">
           <%- odd=0-%>
