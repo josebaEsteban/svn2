@@ -113,10 +113,10 @@ class BooksController < ApplicationController
       # else
       #   book.browse = 0
       # end
-      # book.save
-      redirect_back_or_default :controller => 'my', :action => 'quest' , :id  => book.user_id
+      # book.save 
+      redirect_to :controller => 'my', :action => 'quest' , :id  => book.user_id
     else
-      redirect_back_or_default :controller => 'my', :action => 'page'
+      redirect_to :controller => 'my', :action => 'page'
     end
   end
 

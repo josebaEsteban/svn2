@@ -45,7 +45,7 @@
 
       <li> <%= link_to l(:label_home), { :controller => 'welcome' } %></li>
  -->
-      <% if loggedin? %>
+      <%- if loggedin? -%>
       <li><%= link_to l(:label_logout), { :controller => 'account', :action => 'logout' } %></li>
       <% else %>
       <li><a href="/account/login" class="active"><%= l(:label_login) %></a></li>
@@ -63,12 +63,17 @@
   </div>
   <div id="content">
     <% if loggedin? %>
-    <div align="left">
-
-      <%= @logged_in_user.name %>
-        <%- if @logged_in_user.suscription? -%>
-        • <%= @logged_in_user.my_role %> 
-      <% end %>
+    <div align="left"> <%= @logged_in_user.name %> •
+      <%- case @logged_in_user.role -%>
+      <%- when User::ROLE_GRATIS -%>
+      <%= l(:label_role_1) %>
+      <%- when User::ROLE_ATHLETE -%>
+      <%= l(:label_role_2) %>
+      <%- when User::ROLE_COACH -%>
+      <%= l(:label_role_3) %>
+      <%- when User::ROLE_TUTOR -%>
+      <%= l(:label_role_4) %>
+      <%- end -%>
     </div>
     <% end %>
     <% if flash[:notice] %>

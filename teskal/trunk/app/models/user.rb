@@ -4,6 +4,7 @@ require "digest/sha1"
 
 class User < ActiveRecord::Base
   # Account statuses
+  STATUS_ANONYMOUS  = 0
   STATUS_ACTIVE     = 1
   STATUS_REGISTERED = 2
   STATUS_LOCKED     = 3
@@ -97,6 +98,14 @@ class User < ActiveRecord::Base
     self.status == STATUS_LOCKED
   end
 
+  def check_password?(clear_password)
+    User.hash_password(clear_password) == self.hashed_password
+  end
+
+  def pref
+    self.preference ||= UserPreference.new(:user => self)
+  end
+
   def suscription?
     self.role > ROLE_GRATIS
   end
@@ -120,9 +129,9 @@ class User < ActiveRecord::Base
     my_role=""
     case self.role
     when ROLE_GRATIS
-      my_role=l(:label_role_1)
+      puts l(:label_role_1)
     when ROLE_ATHLETE
-      my_role=l(:label_role_2)
+      my_role=l(:label_search)
     when ROLE_COACH
       my_role=l(:label_role_3)
     when ROLE_TUTOR
@@ -131,42 +140,41 @@ class User < ActiveRecord::Base
     return my_role
   end
 
-  def check_password?(clear_password)
-    User.hash_password(clear_password) == self.hashed_password
-  end
-
-  def role_for_project(project)
-    return nil unless project
-    member = memberships.detect {|m| m.project_id == project.id}
-    member ? member.role : nil
-  end
-
-  def authorized_to(project, action)
-    return true if self.admin?
-    role = role_for_project(project)
-    role && Permission.allowed_to_role(action, role)
-  end
-
-  def pref
-    self.preference ||= UserPreference.new(:user => self)
-  end
-
-  def get_or_create_rss_key
-    self.rss_key || Token.create(:user => self, :action => 'feeds')
-  end
-
-  def self.find_by_rss_key(key)
-    token = Token.find_by_value(key)
-    token && token.user.active? ? token.user : nil
-  end
 
   def self.find_by_autologin_key(key)
     token = Token.find_by_action_and_value('autologin', key)
     token && (token.created_on > Setting.autologin.to_i.day.ago) && token.user.active? ? token.user : nil
   end
 
+
   def <=>(user)
-    lastname == user.lastname ? firstname <=> user.firstname : lastname <=> user.lastname
+    user.nil? ? -1 : (lastname == user.lastname ? firstname <=> user.firstname : lastname <=> user.lastname)
+  end
+
+  def to_s
+    name
+  end
+
+  def logged?
+    true
+  end
+
+  def self.current=(user)
+    @current_user = user
+  end
+
+  def self.current
+    @current_user ||= User.anonymous
+  end
+
+  def self.anonymous
+    return @anonymous_user if @anonymous_user
+    anonymous_user = AnonymousUser.find(:first)
+    if anonymous_user.nil?
+      anonymous_user = AnonymousUser.create(:lastname => 'Anonymous', :firstname => '', :mail => '', :login => '', :status => 0)
+      raise 'Unable to create the anonymous user.' if anonymous_user.new_record?
+    end
+    @anonymous_user = anonymous_user
   end
 
   private
@@ -174,4 +182,21 @@ class User < ActiveRecord::Base
   def self.hash_password(clear_password)
     Digest::SHA1.hexdigest(clear_password || "")
   end
+end
+
+
+class AnonymousUser < User
+
+  def validate_on_create
+    # There should be only one AnonymousUser in the database
+    errors.add_to_base 'An anonymous user already exists.' if AnonymousUser.find(:first)
+  end
+
+  # Overrides a few properties
+  def logged?; false end
+  def admin; false end
+  def name; 'Anonymous' end
+  def mail; nil end
+  def time_zone; nil end
+  def rss_key; nil end
 end

@@ -111,7 +111,7 @@ field_url: URL
 field_user: Erabiltzaile
 field_value: Balio
 field_version: Bertsioa
-footer_1: Diseinu 
+footer_1: Diseinua 
 footer_2: Kontaktua info arroba teskal.com
 general_csv_encoding: ISO-8859-1
 general_csv_separator: ';'
@@ -222,12 +222,12 @@ label_please_login: Konexio
 label_preview: Previo
 label_previous: Aurrekoa
 label_quest: Galdetegia 
-label_quest_avail: Galdetegiak
+label_quest_avail: Galde-sortak
 label_quest_no_filled: Ez da galdetegirik bete
 label_quest_no_pending: Ez dago egin gabeko galdetegirik.
-label_quest_pending: Egin gabeko galdetegiak
+label_quest_pending: Egin gabeko
 label_quest_pending_from: ...-tik egin gabe
-label_quest_plural: Galdetegiak 
+label_quest_plural: Galde-sortak 
 label_read: Leer...
 label_register: Erregistratu
 label_registered_on: (a)n inskribatua
