@@ -411,5 +411,5 @@
 		var valid3 = new Validation('quest2',{immediate : true});
 	</script>
 	
-	 <%= link_to l(:button_back),'/my/page' %>
+<%= link_to l(:button_back),session[:return_to_params] %> 
 </center>

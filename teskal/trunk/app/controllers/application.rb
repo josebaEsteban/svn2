@@ -2,34 +2,10 @@
 
 
 class ApplicationController < ActionController::Base
-  before_filter :check_if_login_required, :set_localization   #, :store_locations
+  before_filter :check_if_login_required, :set_localization 
   filter_parameter_logging :password
   # around_filter :set_timezone
 
-
-
-  def store_locations
-    if session['prevpage'] && session['thispage'] != @request.request_uri
-      session['prevpage'] = session['thispage'] || ''
-      session['thispage'] = @request.request_uri
-    end
-  end
-
-  def redirect_back(default)
-    if session['prevpage'].nil?
-      if default
-        redirect_to default
-      else
-        redirect_to :controller => "", :action => ""
-      end
-    else
-      if session['prevpage'].length > 4
-        redirect_to_url session['prevpage']
-      else
-        redirect_to default
-      end
-    end
-  end
 
 
   def logged_in_user=(user)
@@ -112,14 +88,14 @@ class ApplicationController < ActionController::Base
       if user == session[:user_id]
         if browse == 0
           flash[:notice] = l(:notice_not_authorized)
-          redirect_back_or_default :controller => 'my', :action => 'page'
+          redirect_to :controller => 'my', :action => 'page'
         else
           browse_score = 0
         end
       else
         if @logged_in_user.id != managed_by
           flash[:notice] = l(:notice_not_authorized)
-          redirect_back_or_default :controller => 'my', :action => 'page'
+          redirect_to :controller => 'my', :action => 'page'
         end
       end
     end
@@ -132,7 +108,7 @@ class ApplicationController < ActionController::Base
 
     else
       flash[:notice] = l(:notice_not_authorized)
-      redirect_back_or_default :controller => 'my', :action => 'page'
+      redirect_to :controller => 'my', :action => 'page'
     end
   end
 

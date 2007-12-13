@@ -123,9 +123,9 @@ class UsersController < ApplicationController
         end
       end
       user.save
-      redirect_back_or_default :controller => 'my', :action => 'athletes'
+      redirect_to :controller => 'my', :action => 'athletes'
     else
-      redirect_back_or_default :controller => 'my', :action => 'page'
+      redirect_to :controller => 'my', :action => 'page'
     end
   end
 

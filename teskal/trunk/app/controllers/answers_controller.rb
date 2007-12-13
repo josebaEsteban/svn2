@@ -74,10 +74,10 @@ class AnswersController < ApplicationController
       # else
       #   answer.browse = 0
       # end
-      # answer.save
-      redirect_back_or_default :controller => 'my', :action => 'quest' , :id  => answer.user_id
-    else
-      redirect_back_or_default :controller => 'my', :action => 'page'
+      # answer.save 
+      redirect_to :controller => 'my', :action => 'quest' , :id  => answer.user_id
+    else  
+      redirect_to :controller => 'my', :action => 'page'
     end
   end
 

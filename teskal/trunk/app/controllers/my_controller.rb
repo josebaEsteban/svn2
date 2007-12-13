@@ -24,6 +24,7 @@ class MyController < ApplicationController
 
   # Show user's page
   def page
+    store_location
     @user = self.logged_in_user
     @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{session[:user_id]} and answers.browse=1 order by answers.created_on DESC")
     @blocks = @user.pref[:my_page_layout] || DEFAULT_LAYOUT
@@ -36,11 +37,13 @@ class MyController < ApplicationController
     if @user.show?
       @users = User.find_by_sql("select * from users where users.managed_by=#{session[:user_id]} and  (users.status =1 or users.status=3) order by users.created_on DESC")
     else
-      redirect_back_or_default :controller => 'my', :action => 'page'
+      redirect_to :controller => 'my', :action => 'page'
     end
   end
 
   def quest
+    store_location
+    puts   store_location
     @athlete = User.find(params[:id])
     @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{params[:id]} order by answers.created_on DESC")
     @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{params[:id]} order by pendings.created_on DESC")
