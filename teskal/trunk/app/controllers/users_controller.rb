@@ -113,11 +113,13 @@ class UsersController < ApplicationController
   def switch
     user = User.find(params[:id])
     if  @logged_in_user.admin? or @logged_in_user.id == user.managed_by
-      if user.status == 3
-        user.status = 1
+      if user.status == User::STATUS_LOCKED
+        user.status = User::STATUS_ACTIVE
+        flash[:notice] = l(:field_user) +" "+l(:activo)
       else
-        if user.status == 1
-          user.status = 3
+        if user.status == User::STATUS_ACTIVE
+          user.status = User::STATUS_LOCKED
+          flash[:notice] = l(:field_user) +" "+l(:status_locked)
         end
       end
       user.save
