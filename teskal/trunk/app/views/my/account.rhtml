@@ -33,9 +33,14 @@
 	line-height: 1em;
 }
 </style>
-  <!-- <h2><%=l(:label_my_account)%></h2>    -->
-<p><%=l(:field_login)%>: <strong><%= @user.login %></strong><br />
-  <%=l(:field_created_on)%>: <%= format_time(@user.created_on) %></p>
+
+<p><%=l(:field_login)%>: <strong><%= @user.login %></strong><br /> 
+	<%- if @user.language == "eu" -%>
+  <%= format_time(@user.created_on) %>-tan sortua
+<%- else -%>
+<%=l(:field_created_on)%>: <%= format_time(@user.created_on) %>
+<%- end -%>
+</p>
 <center>
   <div id="theform">
     <h3><%=l(:label_information_plural)%></h3>
