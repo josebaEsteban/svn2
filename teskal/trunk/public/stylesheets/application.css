@@ -200,11 +200,11 @@ img.right {
 
 html>body #content {
 	height: auto;
-	min-height: 500px;
+	min-height: 400px;
 }
 #content {
 	width: auto;
-	height: 500px;
+
 	font-size: 0.9em;
 	padding: 0px 20px 0px 20px;
 	margin-left: 20px;

@@ -2,9 +2,10 @@
 <%- TzTime.zone=@user.timezone -%>
 <div align="center">
 		<a href="/users/add"> <img alt="Add" src="/images/add.png"/> </a><%= l(:label_user_new)%>
+	  <br/> <a href="/reports/export"><img alt="Export" src="/images/page_white_excel.png"/> </a><%= l(:label_export_to)%>
 		</div>
-<br/>
-<div align="center">
+		<br/>
+		<div align="center">
   <table cellspacing="0">
     <!-- <caption></caption> -->
     <thead>
@@ -60,5 +61,7 @@
       <%- end -%>
     </tbody>
   </table>
-  </center>
+  </center> 
 </div>
+
+
