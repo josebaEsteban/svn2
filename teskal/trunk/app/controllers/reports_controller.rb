@@ -23,6 +23,8 @@ class ReportsController < ApplicationController
 
   private
   def stream_csv
+    journal( "export", session[:user_id])
+
     filename = params[:action] + ".csv"
 
     #this is required if you want this to work with IE
