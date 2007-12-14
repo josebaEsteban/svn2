@@ -33,6 +33,7 @@ class MyController < ApplicationController
   end
 
   def athletes
+    store_location
     @user = self.logged_in_user
     if @user.show?
       @users = User.find_by_sql("select * from users where users.managed_by=#{session[:user_id]} and  (users.status =1 or users.status=3) order by users.created_on DESC")
