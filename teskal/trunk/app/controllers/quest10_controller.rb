@@ -12,7 +12,7 @@ class Quest10Controller < ApplicationController
     else
       user.filled_for = session[:user_id]
     end
-    user.save 
+    user.save
   end
 
   def create
@@ -21,6 +21,9 @@ class Quest10Controller < ApplicationController
     @answer.quest_id=10
     if user.filled_for == session[:user_id]
       @answer.user_id=session[:user_id]
+      if user.show?
+        @answer.browse = true
+      end
     else
       @answer.user_id = user.filled_for
     end
@@ -222,7 +225,7 @@ class Quest10Controller < ApplicationController
     strXML = strXML + "</dataset> </chart>"
 
     #Create the chart - Pie 3D Chart with data from strXML
-    @chart1= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest10", 750, 300, false, false)
+    @chart1= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest10", 830, 300, false, false)
   end
 
 end
