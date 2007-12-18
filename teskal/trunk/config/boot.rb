@@ -9,6 +9,17 @@ unless defined?(RAILS_ROOT)
   RAILS_ROOT = root_path
 end
 
+# rails_gem_version =
+# if defined? RAILS_GEM_VERSION
+#   puts "boot.rb #{RAILS_GEM_VERSION}"           #<--- insert
+#   RAILS_GEM_VERSION
+# else
+#   puts "boot.rb RAILS_GEM_VERSION not defined"  #<--- insert
+#   File.read("#{File.dirname(__FILE__)}/environment.rb") =~
+#   /^[^#]*RAILS_GEM_VERSION\s+=\s+'([\d.]+)'/
+#   $1
+# end
+
 if File.directory?("#{RAILS_ROOT}/vendor/rails")
   require "#{RAILS_ROOT}/vendor/rails/railties/lib/initializer"
 else
