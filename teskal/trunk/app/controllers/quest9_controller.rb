@@ -210,7 +210,7 @@ class Quest9Controller < ApplicationController
     strXML = strXML + "<category label= '"+l(:quest9_label_9)+"'/>"
     strXML = strXML +"</categories>"
     strXML = strXML +"<dataset SeriesName='"+l(:quest3_label_9)+"' lineThickness='3' renderAs='Area' >"
-    strXML = strXML +"<set value='2.5' /><set value='2.5' /><set value='5' /><set value='5' /><set value='1' /><set value='5' /><set value='5' /><set value='5' /><set value='3' />"
+    strXML = strXML +"<set value='1' /><set value='5' /><set value='5' /><set value='5' /><set value='1' /><set value='5' /><set value='5' /><set value='5' /><set value='3' />"
     strXML = strXML +"</dataset>"
     strXML = strXML +"<dataset SeriesName='"+l(:quest3_label_10)+"' lineThickness='4' renderAs='Line' >"
     strXML = strXML + "<set value='" + acorta(peg) + "'/>"
