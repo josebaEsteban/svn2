@@ -21,6 +21,9 @@ class Quest7Controller < ApplicationController
     @answer.quest_id=7
     if user.filled_for == session[:user_id]
       @answer.user_id=session[:user_id]
+      if user.show?
+        @answer.browse = true
+      end
     else
       @answer.user_id = user.filled_for
     end
