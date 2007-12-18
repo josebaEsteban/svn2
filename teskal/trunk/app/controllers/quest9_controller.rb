@@ -63,27 +63,27 @@ class Quest9Controller < ApplicationController
     @advice=[]
     @icon=[]
 
-    peg = (@answer.answ3 + @answer.answ4 + @answer.answ5)/3.0
+    peg = (@answer.answ3 + @answer.answ5)/2.0
     item=0
     if peg < 2.5
       @advice[item]=l(:quest9_d1_a)
-      @icon[item]="stop"
+      @icon[item]="star"
     else
       if peg < 4
         @advice[item]=l(:quest9_d1_b)
         @icon[item]="medium"
       else
         @advice[item]=l(:quest9_d1_c)
-        @icon[item]="star"
+        @icon[item]="stop"
       end
     end
-    co = (@answer.answ16 + @answer.answ17 + @answer.answ19 + @answer.answ20)/4.0
+    maestria_grupal = (@answer.answ4 + @answer.answ21)/2.0
     item=1
-    if co < 2.5
+    if maestria_grupal < 2.5
       @advice[item]=l(:quest9_d2_a)
       @icon[item]="stop"
     else
-      if co < 4
+      if maestria_grupal < 4
         @advice[item]=l(:quest9_d2_b)
         @icon[item]="medium"
       else
@@ -91,13 +91,13 @@ class Quest9Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    ca = (@answer.answ6 + @answer.answ7 + @answer.answ11)/3.0
+    co = (@answer.answ16 + @answer.answ17 + @answer.answ19 + @answer.answ20)/4.0
     item=2
-    if ca < 2.5
+    if co < 2.5
       @advice[item]=l(:quest9_d3_a)
       @icon[item]="stop"
     else
-      if ca < 4
+      if co < 4
         @advice[item]=l(:quest9_d3_b)
         @icon[item]="medium"
       else
@@ -105,13 +105,13 @@ class Quest9Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    cr = (@answer.answ13 + @answer.answ14)/2.0
+    ca = (@answer.answ6 + @answer.answ7 + @answer.answ11)/3.0
     item=3
-    if cr < 2.5
+    if ca < 2.5
       @advice[item]=l(:quest9_d4_a)
       @icon[item]="stop"
     else
-      if cr < 4
+      if ca < 4
         @advice[item]=l(:quest9_d4_b)
         @icon[item]="medium"
       else
@@ -119,27 +119,27 @@ class Quest9Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    ci = (@answer.answ8 + @answer.answ15)/2.0
+    cr = (@answer.answ13 + @answer.answ14)/2.0
     item=4
-    if ci < 2.5
+    if cr < 2.5
       @advice[item]=l(:quest9_d5_a)
-      @icon[item]="stop"
+      @icon[item]="star"
     else
-      if ci < 4
+      if cr < 4
         @advice[item]=l(:quest9_d5_b)
         @icon[item]="medium"
       else
         @advice[item]=l(:quest9_d5_c)
-        @icon[item]="star"
+        @icon[item]="stop"
       end
     end
-    ed = (@answer.answ1 + @answer.answ10)/2.0
+    ci = (@answer.answ8 + @answer.answ15)/2.0
     item=5
-    if ed < 2.5
+    if ci < 2.5
       @advice[item]=l(:quest9_d6_a)
       @icon[item]="stop"
     else
-      if ed < 4
+      if ci < 4
         @advice[item]=l(:quest9_d6_b)
         @icon[item]="medium"
       else
@@ -147,13 +147,13 @@ class Quest9Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    pem = (@answer.answ2 + @answer.answ18)/2.0
+    ed = (@answer.answ1 + @answer.answ10)/2.0
     item=6
-    if pem < 2.5
+    if ed < 2.5
       @advice[item]=l(:quest9_d7_a)
       @icon[item]="stop"
     else
-      if pem < 4
+      if ed < 4
         @advice[item]=l(:quest9_d7_b)
         @icon[item]="medium"
       else
@@ -161,17 +161,31 @@ class Quest9Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    per = (@answer.answ9 + @answer.answ12)/2.0
+    pem = (@answer.answ2 + @answer.answ18)/2.0
     item=7
-    if per < 2.5
+    if pem < 2.5
       @advice[item]=l(:quest9_d8_a)
       @icon[item]="stop"
     else
-      if per < 4
+      if pem < 4
         @advice[item]=l(:quest9_d8_b)
         @icon[item]="medium"
       else
         @advice[item]=l(:quest9_d8_c)
+        @icon[item]="star"
+      end
+    end
+    per = (@answer.answ9 + @answer.answ12)/2.0
+    item=8
+    if per < 2.5
+      @advice[item]=l(:quest9_d9_a)
+      @icon[item]="stop"
+    else
+      if per < 4
+        @advice[item]=l(:quest9_d9_b)
+        @icon[item]="medium"
+      else
+        @advice[item]=l(:quest9_d9_c)
         @icon[item]="star"
       end
     end
@@ -190,12 +204,14 @@ class Quest9Controller < ApplicationController
     strXML = strXML + "<category label= '"+l(:quest9_label_6)+"'/>"
     strXML = strXML + "<category label= '"+l(:quest9_label_7)+"'/>"
     strXML = strXML + "<category label= '"+l(:quest9_label_8)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest9_label_9)+"'/>"
     strXML = strXML +"</categories>"
     strXML = strXML +"<dataset SeriesName='"+l(:quest3_label_9)+"' lineThickness='3' renderAs='Area' >"
-    strXML = strXML +"<set value='2.5' /><set value='5' /><set value='5' /><set value='1' /><set value='5' /><set value='5' /><set value='5' /><set value='3' />"
+    strXML = strXML +"<set value='2.5' /><set value='2.5' /><set value='5' /><set value='5' /><set value='1' /><set value='5' /><set value='5' /><set value='5' /><set value='3' />"
     strXML = strXML +"</dataset>"
     strXML = strXML +"<dataset SeriesName='"+l(:quest3_label_10)+"' lineThickness='4' renderAs='Line' >"
     strXML = strXML + "<set value='" + acorta(peg) + "'/>"
+    strXML = strXML + "<set value='" + acorta(maestria_grupal) + "'/>"
     strXML = strXML + "<set value='" + acorta(co) + "'/>"
     strXML = strXML + "<set value='" + acorta(ca) + "'/>"
     strXML = strXML + "<set value='" + acorta(cr) + "'/>"
