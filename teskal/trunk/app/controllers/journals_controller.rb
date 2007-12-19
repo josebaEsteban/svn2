@@ -1,6 +1,7 @@
-class JournalsController < ApplicationController 
- before_filter :require_admin
-  
+class JournalsController < ApplicationController
+  before_filter :require_admin
+  layout 'base'	
+
   def index
     list
     render :action => 'list'
@@ -8,7 +9,7 @@ class JournalsController < ApplicationController
 
   # GETs should be safe (see http://www.w3.org/2001/tag/doc/whenToUseGet.html)
   verify :method => :post, :only => [ :destroy, :create, :update ],
-         :redirect_to => { :action => :list }
+  :redirect_to => { :action => :list }
 
   def list
     @journal_pages, @journals = paginate :journals, :order => 'created_on DESC', :per_page => 100
@@ -50,4 +51,13 @@ class JournalsController < ApplicationController
     Journal.find(params[:id]).destroy
     redirect_to :action => 'list'
   end
+
+
+  def stats
+    @users = User.count_by_sql "select count(*) from users"
+    @quests = Answer.count_by_sql "select count(*) from answers"
+    # @journals = Journal.find_by_sql("select * from journals order by journals.created_on desc")
+    @journals = Journal.paginate(:page => params[:page], :per_page => 20, :order => 'created_on DESC')
+  end
+
 end
