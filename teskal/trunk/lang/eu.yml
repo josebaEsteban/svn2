@@ -278,7 +278,7 @@ notice_successful_connection: Successful connection.
 notice_successful_create: Successful creation.
 notice_successful_delete: Successful deletion.
 notice_successful_update: Successful update.
-quest10: Erakutsitako teknifikazio klimaren galdetegia
+quest10: Antzemandako Maisutza Klimaren Galde-sorta Talde Kirolak 
 quest10_10: Lehiaketako egoerak emandako gidalerroen modu ezberdinean konpontzen usten du
 quest10_11: Kirolariak hutsen bat egiten dutenean animatu egiten ditu
 quest10_12: Kirolariek arrakasta dutela uste du modu nabarian beste guztiei nagusitzen direnean
@@ -291,16 +291,17 @@ quest10_18: Kirolariek arrakasta dutela uste du, hauek dakiten bezain ondo egite
 quest10_19: Lehiaketa bat jokatzen dutenenan kirolari guztiengan konfiantza osoa dauka
 quest10_1: Aurreikusitako taktikarekin bat ez datozen erabakiak hartzen usten die
 quest10_20: Kirolariek akatsen bat egiten dutenean beraiengan konfiantza mantentzen jarraitzen du
+quest10_21: Garrantzitsuena taldeak ahal bezain ondo jokatzea dela pentsatzen du
 quest10_2: Kirolariek arrakasta zailtasunak gainditzen dituztenean lortzen dutela uste du
-quest10_3: Nahiago du taldeak irabaztea –gauzak ondo egiñak egotea baino-
-quest10_4: Emaitza lotzearren lehiaketako teknikaren kalitatea sakrifikatzen du
-quest10_5: Berarentzat aurrena irabaztea da eta ondon lehiatzea ondoren
+quest10_3: Nahiago du partida irabaztea “gauzak ondo eginda egitea” baino 
+quest10_4: Garrantzitsuena talde jokoaren kalitatearen garapena dela pentsatzen du
+quest10_5: Berarentzat aurrena partida irabaztea da eta ondoren ondo jokatzea 
 quest10_6: Gauzak ondo egiten dituztenean kirolariak zoriontzen ditu, espero denaren arabera jokatzen dute
 quest10_7: Kirolariak etorkizuneko egintzetan animatzen ditu
 quest10_8: Aspektu tekniko, taktiko, estilozko, ibilbidezko, etab.-i buruzko instrukzioak ematen ditu
 quest10_9: Kirolariek arrakasta besteek bainon heobeto egiten dutenean lortzen dutela uste du
 quest10_intro: Behean lehiaketako egoerekin eta jokabidearekin zer ikusia duten komentario eta esaldi sorta dago. Mesedez, arretaz irakurri eta entrenamenduetan zehar eta lehiaketa partiduetan zehar zure entrenatzailearen portaera hobekien deskribatzen duen zenbakia borobildu ezazu.
-quest10_label_0: Erakutsitako teknifikazio klima
+quest10_label_0: Antzemandako Maisutza Klima Talde Kirolak 
 quest10_label_1: Nire entrenatzailea
 quest11: Motibazio intrintsekoaren galdetegia
 quest11_10: Sasoi onean egon nahi baldin bada guztiz ezinbestekoa bait da kirolak egitea
@@ -959,7 +960,7 @@ quest8_label_8: Taldearen errendimendua
 quest8_label_9: Zeregin integrazioa
 quest8_valor_1: 1 (inolaz ere) 
 quest8_valor_7: 7 (guztiz)
-quest9: Antzemandako teknifikazio klimari buruzko galdetegia
+quest9: Auto Antzemandako Maisutza Klimaren Galde-sorta Talde Kirolak
 quest9_10: Lehiaketako egoerak nik emandako gidalerroen modu ezberinean konpontzen usten dut
 quest9_11: Kirolariak hutsen bat egiten dutenean animatu egiten ditut
 quest9_12: Kirolariek arrakasta dutela uste dut modu nabarian beste guztiei nagusitzen direnean.
@@ -972,21 +973,21 @@ quest9_18: kirolariek arrakasta dutela uste dut, hauek dakiten bezain ondo egite
 quest9_19: Lehiaketa bat jokatzen dutenenan kirolari guztiengan konfiantza osoa daukat
 quest9_1: Aurreikusitako taktikarekin bat ez datozen erabakiak hartzen usten diet
 quest9_20: Kirolariek akatsen bat egiten dutenean beraiengan konfiantza mantentzen jarraitzen dut
+quest9_21: Garrantzitsuena taldeak ahal bezain ondo jokatzea dela pentsatzen dut
 quest9_2: Kirolariek arrakasta zailtasunak gainditzen dituztenean lortzen dutela uste dut
-quest9_3: Nahiago dut taldeak irabaztea –gauzak ondo egiñak egotea baino-
-quest9_4: Emaitza lotzearren lehiaketako teknikaren kalitatea sakrifikatzen det
-quest9_5: Aurrena irabaztea da eta ondon lehiatzea ondoren
+quest9_3: Nahiago dut partida irabaztea “gauzak ondo eginda egitea” baino
+quest9_4: Garrantzitsuena talde jokoaren kalitatearen garapena dela pentsatzen dut
+quest9_5: Aurrena partida irabaztea da eta ondoren ondo jokatzea
 quest9_6: Gauzak ondo egiten dituztenean kirolariak zoriontzen ditut, espero denaren arabera jokatzen dute
 quest9_7: Kirolariak etorkizuneko egintzetan animatzen ditut
-quest9_21: Pienso que lo más importante es que el equipo juegue lo mejor posible
 quest9_8: Aspektu tekniko, taktiko, estilozko, ibilbidezko, etab.-i buruzko instrukzioak ematen ditut
 quest9_9: Kirolariek arrakasta besteek bainon heobeto egiten dutenean lortzen dutela uste dut
-quest9_d1_a: Este bajo valor del clima de rendimiento grupal (CRG), situado por debajo de 2'5, supone percibir que, para est@ entrenador/a, el resultado del equipo tiene una relativa importancia frente a la calidad del juego que desarrolle el equipo. En el caso de que se corresponda con un alto valor en el clima de maestría grupal, reforzará la integración en la tarea, minimizando la posible la ansiedad frente a los errores colectivos que se cometan.
-quest9_d1_b: Este valor medio del clima de rendimiento grupal, supone percibir que, para est@ entrenador/a, el resultado del equipo tiene bastante importancia, tanto o más que la calidad del juego colectivo. En el caso de que estuvieran acompañados de altos valores del clima de maestría grupal, supondría un efecto positivo sobre la competitividad del equipo, el compromiso con el esfuerzo, la integración en la tarea, y una toma de decisiones atrevida.
-quest9_d1_c: Este alto valor del clima de rendimiento grupal, situado entre 4 y 5, supone que para est@ entrenador/a, el resultado del equipo es lo más importante, incluso a costa de sacrificar la calidad del juego del equipo. Esto debilitará la capacidad del equipo para afrontar situaciones de máximo desafío, provocando un importante aumento de la ansiedad frente a los errores y el miedo a tomar decisiones colectivas, en situaciones de alta dificultad o de máxima presión.
-quest9_d2_a: Los valores del clima de maestría grupal se sitúan en un nivel por debajo de 2'5. Supone percibir que, para est@ entrenador/a, el desarrollo de la calidad del juego del equipo se encuentran en un segundo plano, frente al resultado del equipo, y en el caso de que se corresponda con un alto valor en el clima de rendimiento grupal, debilitará la integración en la tarea, pudiendo provocar un aumento colectivo de la ansiedad frente a los errores que se cometan.
-quest9_d2_b: Los valores del clima de maestría grupal se sitúan dentro de la zona media. Para est@ entrenador/a, la búsqueda de la calidad del juego del equipo puede equipararse con el resultado, pero será necesario vigilar el valor en el clima de rendimiento grupal, dado que si presenta altos valores debilitará el compromiso con el esfuerzo y la integración en la tarea, pudiendo provocar un efecto negativo sobre la toma de decisiones por miedo a cometer errores.
-quest9_d2_a: Los valores del clima de maestría grupal se sitúan en una zona alta. Para est@ entrenador/a, la búsqueda de la calidad y la mejora del juego del equipo, se convierte en algo prioritario, lo que generará un efecto positivo sobre el compromiso con el esfuerzo y la integración en la tarea, facilitando una de toma de decisiones alejada del miedo a cometer errores. Es la atmósfera más adecuada para progresar y enfrentarse a retos personales de máximas dificultades, ya que consolida las mejoras que se producen, y minimiza los errores.
+quest9_d1_a: Talde errendimendu klimaren (TEK) balio baxu honek, entrenatzaile honentzat taldearen emaitzak honek garatzen duen jokoarekin alderatuta garrantzi erlatiboa duela antzematea suposatzen du. Talde maisutza klimaren balio altuekin bat eginez gero, zereginarekiko integrazioa sendotuko du egiten diren talde akatsekiko antsietate posiblea minimizatuz. 
+quest9_d1_b: Talde errendimendu klimaren balio ertain honek, entrenatzaile honentzat taldearen emaitzak garrantzi nahikoa duela antzematea suposatzen du, talde jokoaren kalitateak bezain beste edo gehiago. Talde maisutza klimaren balio altuetaz lagunduta egonez gero, taldearen lehiakortasunarengan, esfortzuarekiko konpromisoarengan, zereginarekiko integrazioarengan, eta erabaki hartze ausartengan  eragin positibo bat suposatuko luke.
+quest9_d1_c: 4 eta 5 tartean kokaturiko talde errendimendu klimaren balio altu honek, entrenatzaile honentzat taldearen emaitza garrantzitsuena dela suposatzen du, talde jokoaren kalitatea sakrifikatzeraino. Honek erronka goreneko egoerei aurre egiteko gaitasuna ahulduko du zailtasun handiko edo eta presio goreneko egoeretan akatsen aurreko antsietatearen eta talde erabakiak hartzeko beldurrarengan areagotze garrantzitsu bat eraginaz.
+quest9_d2_a: Talde maisutza klimaren balioa 2´5 azpiko maila batetan kokatzen dira. Honek, entrenatzaile honentzat taldearen joko kalitatearen garapenak emaitzarekiko bigarren plano batean aurkitzen dela antzematea suposatzen du, eta talde errendimendu klimaren balio altu batekin bat eginez gero, zereginarekiko integrazioa ahulduko du egiten diren akatsekiko antsietearen areagotze kolektibo bat eragin lezakeelarik. 
+quest9_d2_a: Talde maisutza klimaren balioak maila altu batetan kokatzen dira. Entrenatzaile honentzat taldearen jokoaren kalitatea eta hobekuntza lehentasun kontu batetan bilakatzen dira, esfortzuarekiko konpromisorengan eta zereginarekiko integrazioarengan efektu positibo bat eragingo duena huts egiteko beldurretik hurrunduriko erabaki hartzeak erraztuz. Zailtasun goreneko erronka pertsonalei aurre egiteko eta aurrera egiteko atmosfera egokiena da.
+quest9_d2_b: Talde maisutza klimaren balioak erdialdean kokatzen dira. Entrenatzaile honentzat taldearen jokoa emaitzaren pare dela esan liteke, baina talde errendimendu klimaren balioa zaintzea beharrezkoa izango da zeren, balio altuak aurkezten baditu, esfortzuarekiko konpromisoa eta zereginarekiko integrazioa ahulduko bait ditu, huts egiteko beldurragatik erabaki hartzeengan efektu negatibo bat eragin lezakeelarik. 
 quest9_d3_a: Konfiantza mailan behaturiko (BK) puntuazio baxu honek entrenatzaileak bere jokalarien gaitasunenganako zalantzen existentzia suposatzen du. Hau da, hauetako bakoitzak egingo duenarengain konbentzimendu maila baxua dauka. Balio hauek entrenatzailearenarekin kointziditzen badute, garrantzitsua izango da maila hau areagotzen lortzeko miniestrategia espezifiko bat garatzea, bai tutoreari kontsultatuz nola Autoefikazia edukien bisionatu sesioekin.
 quest9_d3_b: Konfiantza mailan behaturiko (BK) puntuazio ertain honek entrenatzaileak bere jokalarietako bakoitza bere baliabideak modu efiziente batean erabiliko dituenaren, hau da, hauetak bakoitzak bere gaitasunen arabaera ahalik eta ondoen egingo duenaren uste positiboa duela suposatuko du. Garrantzitsua litzateke behaturiko maila hau mantentzea ala areagotzea, kontutan izanik konfiantza termino autoerreferentzialetan baloratu behar dela, hau da kirolari bakoitza bere buruarekin.
 quest9_d3_c: Konfiantza mailan behaturiko (BK) puntuazio altu honek entrenatzaileak bere jokalarietako bakoitza bere baliabideak modu efiziente batean erabiliko dituenaren, hau da, hauetako bakoitzak bere gaitasunen arabaera ahalik eta ondoen egingo duenaren uste altua duela suposatuko du. Garrantzitusa da konfiantza termino autoerreferentzialetan baloratu behar dela, hau da kirolari bakoitza bere buruarekin, ohartaraztea.
@@ -1010,7 +1011,7 @@ quest9_d9_b: Errendimendu klimaren (PER) balio ertain honek entrenatzailearentza
 quest9_d9_c: Errendimendu klimaren (PER) balio altu honek entrenatzailearentzat kirolariengan ematen diren emaitzak garrantzitsuena direla antzematea suposatzen du. Honek kirolarien erronka pertsonal handieneko egoerei aurre egiteko gaitasuna ahultzeaz gain, zailtasun handiko egoeretan ematen diren akatsen aurrean ematen den antsietatearen areagotze garrantzitsuan lagunduko du.
 quest9_header: …-kiko asetasun maila
 quest9_intro: Segidan aurkezten zaizkizun entrenamendu eta lehiaketaren aspektu ezberdinekin zer ikusia duten esaldi sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotazunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbakian klik eginaz.
-quest9_label_0: Antzemandako teknifikazio klima
+quest9_label_0: Auto Antzemandako Maisutza Klima Talde Kirolak
 quest9_label_1: Talde arrakastaren pertzepzio balioak
 quest9_label_2: Antzemandako jokalarienganako konfiantza
 quest9_label_3: Komunikazio erreaktiboa
