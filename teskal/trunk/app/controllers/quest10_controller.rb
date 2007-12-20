@@ -70,14 +70,14 @@ class Quest10Controller < ApplicationController
     item=0
     if peg < 2.5
       @advice[item]=l(:quest9_d1_a)
-      @icon[item]="stop"
+      @icon[item]="star"
     else
       if peg < 4
         @advice[item]=l(:quest9_d1_b)
         @icon[item]="medium"
       else
         @advice[item]=l(:quest9_d1_c)
-        @icon[item]="star"
+        @icon[item]="stop"
       end
     end
     maestria_grupal = (@answer.answ4 + @answer.answ21)/2.0
@@ -182,14 +182,14 @@ class Quest10Controller < ApplicationController
     item=8
     if per < 2.5
       @advice[item]=l(:quest9_d9_a)
-      @icon[item]="stop"
+      @icon[item]="star"
     else
       if per < 4
         @advice[item]=l(:quest9_d9_b)
         @icon[item]="medium"
       else
         @advice[item]=l(:quest9_d9_c)
-        @icon[item]="star"
+        @icon[item]="stop"
       end
     end
 
@@ -210,7 +210,7 @@ class Quest10Controller < ApplicationController
     strXML = strXML + "<category label= '"+l(:quest9_label_9)+"'/>"
     strXML = strXML +"</categories>"
     strXML = strXML +"<dataset SeriesName='"+l(:quest3_label_9)+"' lineThickness='3' renderAs='Area' >"
-    strXML = strXML +"<set value='5' /><set value='5' /><set value='5' /><set value='5' /><set value='1' /><set value='5' /><set value='5' /><set value='5' /><set value='3' />"
+    strXML = strXML +"<set value='1' /><set value='5' /><set value='5' /><set value='5' /><set value='1' /><set value='5' /><set value='5' /><set value='5' /><set value='3' />"
     strXML = strXML +"</dataset>"
     strXML = strXML +"<dataset SeriesName='"+l(:quest3_label_10)+"' lineThickness='4' renderAs='Line' >"
     strXML = strXML + "<set value='" + acorta(peg) + "'/>"
