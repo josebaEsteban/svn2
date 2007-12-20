@@ -46,6 +46,7 @@ class AdminController < ApplicationController
   def stats
     @users = User.count_by_sql "select count(*) from users"
     @quests = Answer.count_by_sql "select count(*) from answers"
+    @journals = Journal.find_by_sql("select * from journals order by journals.created_on desc")
   end
   
   def info

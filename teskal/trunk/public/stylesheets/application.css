@@ -20,7 +20,7 @@ body {
 	margin: 0;
 	background-image: url(../images/fondo_teskal_10.gif);
 }
-.content {
+.contentall {
 	margin: 10px auto 10px auto;
 	padding: 0;
 	width: 910px;
@@ -178,24 +178,7 @@ img.right {
 .icon-medium {
 	background-image: url(../images/error_delete.png);
 }
-.icon-eye {
-	background-image: url(../images/eye.png);
-}
-.icon-eye_crossed {
-	background-image: url(../images/eye_crossed.png);
-}
-.icon-key {
-	background-image: url(../images/key.png);
-}
-.icon-key_crossed {
-	background-image: url(../images/key_delete.png);
-}
-.icon-add {
-	background-image: url(../images/add.png);
-}
-.icon-write {
-	background-image: url(../images/pencil.png);
-}
+
 /**************** Content styles ****************/
 
 html>body #content {
@@ -463,19 +446,26 @@ ul.documents li {
 
 .splitcontentleft {
 	float: left;
-	width: 38%;
+	max-width: 500px;
 	text-align: left;
 		background-color: #f7f4ee;
 		padding: 0px 10px 0px 10px;
-		border: 1px solid #ddd;   
+		border: 1px solid #ddd;
+		overflow:hidden;  
 		
 }  	
 .splitcontentright {
 	float: right;
 	width: 50%;
 	padding: 0px 10px 0px 10px;
+	overflow:hidden;
 /*  	border: 1px solid #ddd;   */ 
-}
+} 
+
+#sidebar{float:right;width:200px;margin:10px 0 0;padding:0;}
+#rsidebar{float:right;width:200px;margin:0;padding:0; overflow:hidden;}
+
+
 .splitnoteleft {
 	float: left;
 	width: 60%;

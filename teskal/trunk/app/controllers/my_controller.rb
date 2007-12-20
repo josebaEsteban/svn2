@@ -43,12 +43,18 @@ class MyController < ApplicationController
   end
 
   def quest
+    id=params[:id].split('/')
+    if id[1].nil?
+      @libreria = false
+    else
+      @libreria = true
+    end
+    busca = id[0]
     store_location
-    puts   store_location
-    @athlete = User.find(params[:id])
-    @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{params[:id]} order by answers.created_on DESC")
-    @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{params[:id]} order by pendings.created_on DESC")
-    @books = Book.find_by_sql("select * from books where books.user_id=#{params[:id]} order by books.order ASC")
+    @athlete = User.find(busca)
+    @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{busca} order by answers.created_on DESC")
+    @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{busca} order by pendings.created_on DESC")
+    @books = Book.find_by_sql("select * from books where books.user_id=#{busca} order by books.order ASC")
   end
 
   # Edit user's account
