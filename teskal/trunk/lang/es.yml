@@ -286,7 +286,7 @@ quest10_10: Permite solucionar situaciones de competición de forma diferente a 
 quest10_11: Anima a l@s deportistas cuando cometen un fallo
 quest10_12: Piensa que l@s deportistas tienen éxito cuando son claramente superiores a los demás
 quest10_13: Se enfada cuando l@s deportistas actúan de forma no deseada
-quest10_14: Se enfada cuando tengo que corregir a l@s deportistas después de un error
+quest10_14: Se enfada cuando tiene que corregir a l@s deportistas después de un error
 quest10_15: Para él/ella, los errores ayudan a l@s deportistas a darse cuenta de sus déficits y a mejorar.
 quest10_16: Procura que el tiempo de competición de cada deportistas en la temporada sea semejante
 quest10_17: Procura que l@s deportistas participen en el mismo nº de competiciones en la temporada
@@ -338,7 +338,7 @@ quest11_5: Por el placer de descubrir nuevas técnicas de entrenamiento
 quest11_6: Ya no lo tengo claro; tengo la impresion de que soy incapaz de tener éxito en este deporte
 quest11_7: Porque me permite estar bien visto(a) por la gente que conozco
 quest11_8: Porque, para mi, es una de las mejores formas de conocer gente
-quest11_9: Porque experimento mucha satisfacción nersonal cuando controlo algunas técnicas difíciles 
+quest11_9:   cuando controlo algunas técnicas difíciles 
 quest11_d1_a: Este bajo valor de la motivación intrínseca, supone baja implicación en el entrenamiento y no disfruta de lo que está haciendo. Rehuye enfrentarse a tareas nuevas o difíciles en el entrenamiento y le cuesta centrarse en la mejora de sus puntos débiles.
 quest11_d1_b: Este valor medio de la motivación intrínseca, supone que se encuentra implicado en el entrenamiento, pero podía estarlo más. Siente cierta satisfacción personal cuando se le proponen tareas difíciles, sobre todo en el entrenamiento, y se encuentra centrado en la mejora de sus puntos débiles.
 quest11_d1_c: Este alto valor de la motivación intrínseca, supone que se encuentra altamente implicado en el entrenamiento y disfruta de lo que está haciendo. Además siente una alta satisfacción personal sobre todo al enfrentarse a tareas difíciles, tanto en el entrenamiento como en la competición, intenta hacer cosas que antes no lo había intentado y se encuentra muy centrado en la mejora de sus puntos débiles.
@@ -391,7 +391,7 @@ quest11_valor_tit_6: Presenta un Perfil Global de Motivación No Autodeterminado
 quest11_valor_tit_7: Presenta un Perfil Global de Motivación Bajo Autodeterminado.
 quest11_valor_tit_8: Presenta un Perfil Global de Motivación Bajo Autodeterminado.
 quest11_valor_tit_9: Presenta un Perfil Global de Motivación No Autodeterminado.
-quest12: Cuestionario de Clima Motivacional
+quest12: Cuestionario de Clima Motivacional Percibido
 quest12_10: Lo hago todo lo mejor que se
 quest12_11: Alcanzo la meta que me propuse
 quest12_12: Soy claramente superior a los/las demás
@@ -412,7 +412,7 @@ quest12_d2_b: El clima motivacional de maestría, se encuentra en niveles medios
 quest12_d2_c: El clima motivacional de maestría, se encuentra en niveles altos, lo cual es positivo. Este técnico se centra en la mejora personal de l@s deportistas, siendo esto lo más importante. Esto contribuye a afrontar, con una excelente actitud, situaciones novedosas o de gran dificultad. Genera una influencia positiva en el compromiso con el entrenamiento, en la competencia percibida y minimiza la posible ansiedad frente a los errores que pudieran tener l@s deportistas.
 quest12_header: Al practicar deporte, mi entrenador/a piensa que tengo éxito cuando
 quest12_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de competición. Por favor, lee cuidadosamente y después selecciona el porcentaje que mejor describa la opinión de tu entrenador.
-quest12_label_0: Clima Motivacional
+quest12_label_0: Clima Motivacional Percibido
 quest12_label_1: Clima de Rendimiento
 quest12_label_2: Clima de Maestría
 quest12_valor_1: 0 (nada)
@@ -981,7 +981,7 @@ quest9_4: Pienso que lo más importante es el desarrollo de la calidad del juego
 quest9_5: Lo primero es ganar el partido y después jugar bien
 quest9_6: Felicito a l@s deportistas cuando hacen las cosas bien, actúan según lo esperado
 quest9_7: Animo a l@s deportistas en las acciones futuras
-quest9_8: Doy instrucciones sobre aspectos técnicos, tácticos, estilo, recorrido..etc.
+quest9_8: Doy instrucciones sobre aspectos técnicos, tácticos, estilo, recorrido, etc.
 quest9_9: Pienso que l@s deportistas tienen éxito cuando lo hacen mejor que los demás
 quest9_d1_a: Este bajo valor del clima de rendimiento grupal (CRG), situado por debajo de 2'5, supone percibir que, para est@ entrenador/a, el resultado del equipo tiene una relativa importancia frente a la calidad del juego que desarrolle el equipo. En el caso de que se corresponda con un alto valor en el clima de maestría grupal, reforzará la integración en la tarea, minimizando la posible la ansiedad frente a los errores colectivos que se cometan.
 quest9_d1_b: Este valor medio del clima de rendimiento grupal, supone percibir que, para est@ entrenador/a, el resultado del equipo tiene bastante importancia, tanto o más que la calidad del juego colectivo. En el caso de que estuvieran acompañados de altos valores del clima de maestría grupal, supondría un efecto positivo sobre la competitividad del equipo, el compromiso con el esfuerzo, la integración en la tarea, y una toma de decisiones atrevida.
@@ -989,7 +989,7 @@ quest9_d1_c: Este alto valor del clima de rendimiento grupal, situado entre 4 y 
 quest9_d2_a: Los valores del clima de maestría grupal se sitúan en un nivel por debajo de 2'5. Supone percibir que, para est@ entrenador/a, el desarrollo de la calidad del juego del equipo se encuentran en un segundo plano, frente al resultado del equipo, y en el caso de que se corresponda con un alto valor en el clima de rendimiento grupal, debilitará la integración en la tarea, pudiendo provocar un aumento colectivo de la ansiedad frente a los errores que se cometan.
 quest9_d2_b: Los valores del clima de maestría grupal se sitúan dentro de la zona media. Para est@ entrenador/a, la búsqueda de la calidad del juego del equipo puede equipararse con el resultado, pero será necesario vigilar el valor en el clima de rendimiento grupal, dado que si presenta altos valores debilitará el compromiso con el esfuerzo y la integración en la tarea, pudiendo provocar un efecto negativo sobre la toma de decisiones por miedo a cometer errores.
 quest9_d2_a: Los valores del clima de maestría grupal se sitúan en una zona alta. Para est@ entrenador/a, la búsqueda de la calidad y la mejora del juego del equipo, se convierte en algo prioritario, lo que generará un efecto positivo sobre el compromiso con el esfuerzo y la integración en la tarea, facilitando una de toma de decisiones alejada del miedo a cometer errores. Es la atmósfera más adecuada para progresar y enfrentarse a retos personales de máximas dificultades, ya que consolida las mejoras que se producen, y minimiza los errores.
-quest9_d3_c: Esta baja puntuación observada en el grado de confianza (CO), supone la existencia de dudas en el/la entrenador@ acerca de la capacidad de sus jugadores. Es decir, una baja convicción de que cada uno de ellos hará un buen trabajo. Si estos valores coinciden con los del/la entrenador@, será importante desarrollar una miniestrategia específica para conseguir aumentar este nivel, bien consultando al tutor o bien a través de sesiones de visionado con contenidos de Autoeficacia.
+quest9_d3_a: Esta baja puntuación observada en el grado de confianza (CO), supone la existencia de dudas en el/la entrenador@ acerca de la capacidad de sus jugadores. Es decir, una baja convicción de que cada uno de ellos hará un buen trabajo. Si estos valores coinciden con los del/la entrenador@, será importante desarrollar una miniestrategia específica para conseguir aumentar este nivel, bien consultando al tutor o bien a través de sesiones de visionado con contenidos de Autoeficacia.
 quest9_d3_b: Esta puntuación media observada en el grado de confianza (CO), supondrá que el/la entrenador/@ tiene positivas creencias acerca de que cada uno de sus jugadores será capaz de utilizar sus recursos eficientemente, es decir, de que cada uno de ellos lo hará bien, en la medida de sus posibilidades. Sería importante mantener o aumentar este nivel observado, considerando que la confianza hay que valorarla en términos autoreferentes, es decir, cada jugador consigo mismo.
 quest9_d3_c: Esta alta puntuación observada en el grado de confianza (CO), supondrá que el entrenador tiene alta creencia en que cada uno de sus jugadores será capaz de utilizar sus recursos eficientemente, es decir, alta convicción de que cada uno de ellos lo hará bien, en la medida de sus posibilidades. Es importante señalar que la confianza hay que valorarla en términos autoreferentes, es decir, cada jugador consigo mismo.
 quest9_d4_a: Esta baja puntuación indica la existencia de un déficit percibido en la manera de transmitir la información. La característica fundamental es la ausencia de manifestaciones emocionales empáticas y existenciales y la presencia de las vitales negativas que, a veces, se perciben como irrespetuosas y ofensivas. Enturbian las relaciones entrenador/a-deportista.

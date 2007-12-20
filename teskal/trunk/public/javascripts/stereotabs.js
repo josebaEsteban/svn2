@@ -63,7 +63,7 @@ tabset.prototype = {
     if (this.options.effects) {
       new Effect.Appear(this.currentPanel, {queue: 'end'});
     } else {
-      $(this.showPanel).show();
+      $(this.currentPanel).show();
     }
 
     this.tabs.invoke('removeClassName', this.options.classNames.tabActive);
