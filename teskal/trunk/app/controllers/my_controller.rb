@@ -43,7 +43,7 @@ class MyController < ApplicationController
   end
 
   def quest
-    id=params[:id].split('/')
+    id=params[:id].split('p')
     if id[1].nil?
       @libreria = false
     else
