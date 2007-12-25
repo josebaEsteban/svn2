@@ -53,7 +53,6 @@ class Quest6Controller < ApplicationController
 
   def show
     @answer = Answer.find(params[:id])
-    @fecha = l_datetime(@answer.created_on)
     @user=User.find(@answer.user_id )
     @browse_score = answer_show(@answer.user_id, @answer.browse, @user.managed_by)
     journal( "quest6/show/"+@answer.id.to_s, @answer.user_id)
@@ -63,25 +62,26 @@ class Quest6Controller < ApplicationController
   end
 
   def teskalChart6
+    scale=10/25.0
     # calculo de las dimensiones
 
-    rg = @answer.answ1 + @answer.answ2  + @answer.answ3 + @answer.answ4 + @answer.answ5
-    it =  @answer.answ6 + @answer.answ7 + @answer.answ8 + @answer.answ9 + @answer.answ10
-    ct = @answer.answ11 + @answer.answ12 + @answer.answ13 + @answer.answ14 + @answer.answ15
-    rp = @answer.answ16 + @answer.answ17 + @answer.answ18 + @answer.answ19 + @answer.answ20
+    rg = (@answer.answ1 + @answer.answ2  + @answer.answ3 + @answer.answ4 + @answer.answ5) * scale
+    it =  (@answer.answ6 + @answer.answ7 + @answer.answ8 + @answer.answ9 + @answer.answ10) * scale
+    ct = (@answer.answ11 + @answer.answ12 + @answer.answ13 + @answer.answ14 + @answer.answ15) * scale
+    rp = (@answer.answ16 + @answer.answ17 + @answer.answ18 + @answer.answ19 + @answer.answ20) * scale
     cl = rg + it + ct + rp
-    ctt = @answer.answ21
+    ctt = @answer.answ21 * scale
     x = (cl + ctt) / 2
     y = (cl - ctt).abs
 
     @advice=[]
     @icon=[]
     item=0
-    if rg < 14
+    if rg < 14 * scale
       @advice[item]=l(:quest6_d1_a)
       @icon[item]="stop"
     else
-      if rg < 20
+      if rg < 20 * scale
         @advice[item]=l(:quest6_d1_b)
         @icon[item]="medium"
       else
@@ -90,11 +90,11 @@ class Quest6Controller < ApplicationController
       end
     end
     item=1
-    if rp < 14
+    if rp < 14 * scale
       @advice[item]=l(:quest6_d2_a)
       @icon[item]="stop"
     else
-      if rp < 20
+      if rp < 20 * scale
         @advice[item]=l(:quest6_d2_b)
         @icon[item]="medium"
       else
@@ -103,11 +103,11 @@ class Quest6Controller < ApplicationController
       end
     end
     item=2
-    if ct < 14
+    if ct < 14 * scale
       @advice[item]=l(:quest6_d3_a)
       @icon[item]="stop"
     else
-      if ct < 20
+      if ct < 20 * scale
         @advice[item]=l(:quest6_d3_b)
         @icon[item]="medium"
       else
@@ -116,11 +116,11 @@ class Quest6Controller < ApplicationController
       end
     end
     item=3
-    if it < 14
+    if it < 14 * scale
       @advice[item]=l(:quest6_d4_a)
       @icon[item]="stop"
     else
-      if it < 20
+      if it < 20 * scale
         @advice[item]=l(:quest6_d4_b)
         @icon[item]="medium"
       else
@@ -130,22 +130,22 @@ class Quest6Controller < ApplicationController
     end
     item=4
     case
-    when x < 60
+    when x < 60 * scale
       @icon[item]="stop"
       case
-      when y < 15
+      when y < 15 * scale
         @advice[item]=l(:quest5_val_g)
-      when y < 30
+      when y < 30 * scale
         @advice[item]=l(:quest5_val_h)
       else
         @advice[item]=l(:quest5_val_i)
       end
-    when x < 80
+    when x < 80 * scale
       @icon[item]="medium"
       case
-      when y < 15
+      when y < 15 * scale
         @advice[item]=l(:quest5_val_d)
-      when y < 30
+      when y < 30 * scale
         @advice[item]=l(:quest5_val_e)
       else
         @advice[item]=l(:quest5_val_f)
@@ -153,9 +153,9 @@ class Quest6Controller < ApplicationController
     else
       @icon[item]="star"
       case
-      when y < 15
+      when y < 15 * scale
         @advice[item]=l(:quest5_val_a)
-      when y < 30
+      when y < 30 * scale
         @advice[item]=l(:quest5_val_b)
       else
         @advice[item]=l(:quest5_val_c)
@@ -165,9 +165,11 @@ class Quest6Controller < ApplicationController
     #strXML will be used to store the entire XML document generated
     strXML=''
 
+    # before scaling to base 10
+    # yAxisMaxValue='25'
 
     #Generate the chart element
-    strXML = "<chart caption='"+l(:quest6_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='25' showvalues='0'  PYAxisName='Comarcas' formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='10'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
+    strXML = "<chart caption='"+l(:quest6_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='10' showvalues='0'  PYAxisName='Comarcas' formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='10'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
     strXML = strXML + "<set label='" + l(:quest6_label_1) + "' value= '" + rg.to_s + "'/>"
     strXML = strXML + "<set label='" + l(:quest6_label_2) + "' value= '" + rp.to_s + "'/>"
     strXML = strXML + "<set label='" + l(:quest6_label_3) + "' value= '" + ct.to_s + "'/>"

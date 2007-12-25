@@ -32,6 +32,15 @@ class MyController < ApplicationController
     @books = Book.find_by_sql("select * from books where books.user_id=#{session[:user_id]} order by books.order ASC")
   end
 
+  def quest
+    store_location
+    @user = self.logged_in_user
+    @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{session[:user_id]} and answers.browse=1 order by answers.created_on DESC")
+    @blocks = @user.pref[:my_page_layout] || DEFAULT_LAYOUT
+    @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{session[:user_id]} order by pendings.created_on DESC")
+    @books = Book.find_by_sql("select * from books where books.user_id=#{session[:user_id]} order by books.order ASC")
+  end
+
   def athletes
     store_location
     @user = self.logged_in_user
@@ -42,7 +51,7 @@ class MyController < ApplicationController
     end
   end
 
-  def quest
+  def admin
     id=params[:id].split('p')
     if id[1].nil?
       @libreria = false

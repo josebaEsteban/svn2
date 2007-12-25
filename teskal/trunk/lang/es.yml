@@ -358,7 +358,7 @@ quest11_d6_a: Este valor bajo supone que, tiene pocas dudas acerca de su capacid
 quest11_d6_b: Este valor medio supone que, a veces le entran dudas en relación a su capacidad para tener éxito, se siente incapaz de conseguir las metas propuestas y, a veces, se cuestiona el abandonar este deporte.
 quest11_d6_c: Este valor tan alto supone que se está planteando abandonar este deporte, ya que siente cierta incapacidad para tener éxito. Además puede estar en peligro su continuidad, dado que se siente incapaz de conseguir las metas propuestas.
 quest11_header: Por qué practicas tu deporte
-quest11_intro: Utilizando la escala que se está debajo, indica por favor en qué medida cada uno de los siguientes temas corresponde a una de las razones por las que practicas tu deporte. 
+quest11_intro: Utilizando la escala que está debajo, indica por favor en qué medida cada uno de los siguientes temas corresponde a una de las razones por las que practicas tu deporte. 
 quest11_label_0: Motivación Autodeterminada
 quest11_label_1: Motivación Intrínseca
 quest11_label_2: Regulación Integrada

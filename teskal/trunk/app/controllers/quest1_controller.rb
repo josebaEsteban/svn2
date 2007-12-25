@@ -60,7 +60,6 @@ class Quest1Controller < ApplicationController
 
   def show
     @answer = Answer.find(params[:id])
-    @fecha = l_datetime(@answer.created_on)
     @user=User.find(@answer.user_id )
     @browse_score = answer_show(@answer.user_id, @answer.browse, @user.managed_by)
     TzTime.zone=@user.timezone
@@ -83,14 +82,14 @@ class Quest1Controller < ApplicationController
     hostilidad = @answer.answ5 + @answer.answ10  + @answer.answ15
     vigor = @answer.answ4 + @answer.answ9 + @answer.answ14
     fatiga = @answer.answ3 + @answer.answ8 + @answer.answ13
-    ansiedadCognitiva = @answer.answ26 + @answer.answ29 + @answer.answ32 + @answer.answ35 + @answer.answ38 + @answer.answ41 + @answer.answ44 + @answer.answ47 + @answer.answ50
-    autoConfianza = @answer.answ28 + @answer.answ31 + @answer.answ34 + @answer.answ37 + @answer.answ40 + @answer.answ43 + @answer.answ46 + @answer.answ49 + @answer.answ52
-    ansiedadSomatica = @answer.answ27 + @answer.answ30 + @answer.answ33 + @answer.answ36 + @answer.answ39 + @answer.answ42 + @answer.answ45 + @answer.answ48 + @answer.answ51
+    ansiedad_cognitiva = @answer.answ26 + @answer.answ29 + @answer.answ32 + @answer.answ35 + @answer.answ38 + @answer.answ41 + @answer.answ44 + @answer.answ47 + @answer.answ50
+    auto_confianza = @answer.answ28 + @answer.answ31 + @answer.answ34 + @answer.answ37 + @answer.answ40 + @answer.answ43 + @answer.answ46 + @answer.answ49 + @answer.answ52
+    ansiedad_somatica = @answer.answ27 + @answer.answ30 + @answer.answ33 + @answer.answ36 + @answer.answ39 + @answer.answ42 + @answer.answ45 + @answer.answ48 + @answer.answ51
     dificultad = (@answer.answ59 + @answer.answ61 + @answer.answ63 + @answer.answ65)/4
     confianza = (@answer.answ60 + @answer.answ62 + @answer.answ64 + @answer.answ66)/4
-    autoControl = ((@answer.answ16 + @answer.answ17) /2) *2.5
+    auto_control = ((@answer.answ16 + @answer.answ17) /2) *2.5
     visionado = ((@answer.answ18 + @answer.answ19 + @answer.answ20) /3) *2.5
-    autoMotivacion = ((@answer.answ21 + @answer.answ22 + @answer.answ23) /3) *2.5
+    auto_motivacion = ((@answer.answ21 + @answer.answ22 + @answer.answ23) /3) *2.5
     ego = ((@answer.answ53 + @answer.answ54 + @answer.answ57 + @answer.answ58 + @answer.answ61 + @answer.answ64) /6.0) /10.0
     ot = ((@answer.answ55 + @answer.answ56 + @answer.answ59 + @answer.answ60 + @answer.answ62 + @answer.answ63) /6.0) /10.0
 
@@ -162,11 +161,11 @@ class Quest1Controller < ApplicationController
       end
     end
     item=5
-    if ansiedadCognitiva < 13
+    if ansiedad_cognitiva < 13
       @advice[item]=l(:quest1_d6_a)
       @icon[item]="star"
     else
-      if ansiedadCognitiva < 25
+      if ansiedad_cognitiva < 25
         @advice[item]=l(:quest1_d6_b)
         @icon[item]="medium"
       else
@@ -175,11 +174,11 @@ class Quest1Controller < ApplicationController
       end
     end
     item=6
-    if autoConfianza < 13
+    if auto_confianza < 13
       @advice[item]=l(:quest1_d7_a)
       @icon[item]="stop"
     else
-      if autoConfianza < 25
+      if auto_confianza < 25
         @advice[item]=l(:quest1_d7_b)
         @icon[item]="medium"
       else
@@ -188,11 +187,11 @@ class Quest1Controller < ApplicationController
       end
     end
     item=7
-    if ansiedadSomatica < 13
+    if ansiedad_somatica < 13
       @advice[item]=l(:quest1_d8_a)
       @icon[item]="star"
     else
-      if ansiedadSomatica < 25
+      if ansiedad_somatica < 25
         @advice[item]=l(:quest1_d8_b)
         @icon[item]="medium"
       else
@@ -227,11 +226,11 @@ class Quest1Controller < ApplicationController
       end
     end
     item=10
-    if autoControl < 4
+    if auto_control < 4
       @advice[item]=l(:quest1_d11_a)
       @icon[item]="stop"
     else
-      if autoControl <= 7
+      if auto_control <= 7
         @advice[item]=l(:quest1_d11_b)
         @icon[item]="medium"
       else
@@ -253,11 +252,11 @@ class Quest1Controller < ApplicationController
       end
     end
     item=12
-    if autoMotivacion < 4
+    if auto_motivacion < 4
       @advice[item]=l(:quest1_d13_a)
       @icon[item]="stop"
     else
-      if autoMotivacion <= 7
+      if auto_motivacion <= 7
         @advice[item]=l(:quest1_d13_b)
         @icon[item]="medium"
       else
@@ -297,9 +296,9 @@ class Quest1Controller < ApplicationController
     hTransformada=hVal[hostilidad]
     vTransformada=vVal[vigor]
     fTransformada=fVal[fatiga]
-    acTransformada=ansiedadCognitiva+36
-    atTransformada=autoConfianza+36
-    asTransformada=ansiedadSomatica+36
+    acTransformada=ansiedad_cognitiva+36
+    atTransformada=auto_confianza+36
+    asTransformada=ansiedad_somatica+36
 
     #strXML will be used to store the entire XML document generated
     strXML=''
@@ -357,9 +356,9 @@ class Quest1Controller < ApplicationController
 
     strXML=''
     strXML ="<chart palette='2' caption='"+l(:quest1_label_32)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+" 'showvalues='0'  formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='10'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
-    strXML = strXML + "<set label= '"+l(:quest1_label_13)+"' value='"+acorta(autoControl)+"'/>"
+    strXML = strXML + "<set label= '"+l(:quest1_label_13)+"' value='"+acorta(auto_control)+"'/>"
     strXML = strXML + "<set label= '"+l(:quest1_label_14)+"' value='"+acorta(visionado)+"'/>"
-    strXML = strXML + "<set label= '"+l(:quest1_label_15)+"' value='"+acorta(autoMotivacion)+"'/>"
+    strXML = strXML + "<set label= '"+l(:quest1_label_15)+"' value='"+acorta(auto_motivacion)+"'/>"
     strXML = strXML + "<set label= '"+l(:quest1_label_16)+"' value='"+acorta(ego)+"'/>"
     strXML = strXML + "<set label= '"+l(:quest1_label_17)+"' value='"+acorta(ot)+"'/>"
     strXML = strXML + "</chart>"

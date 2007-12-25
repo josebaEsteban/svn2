@@ -12,7 +12,9 @@ p, ul, ol, li {
 	padding: 0;
 }
 body {
-	font: 76% Verdana, Tahoma, Arial, sans-serif;
+	font: 76% "Lucida Grande", verdana, arial, helvetica, sans-serif;
+  
+/*	font: 76% Verdana, Tahoma, Arial, sans-serif;*/
 	line-height: 1.4em;
 	text-align: center;
 	color: #303030;
@@ -136,7 +138,7 @@ img.right {
 }
 #navTeskal a:link, #navTeskal a:visited {
 	/*	float: right; */
-	font-size: 10px;
+	font-size: 11px;
 	line-height: 14px;
 	font-weight: bold;
 	margin: 0 10px 4px 10px;
@@ -190,19 +192,21 @@ html>body #content {
 
 	font-size: 0.9em;
 	padding: 0px 20px 0px 20px;
-	margin-left: 20px;
+	margin-left: 12px;
 	margin-right: 20px;
 }
 #content h2, #content h1 {
 	display: block;
 	margin: 0 0 16px 0;
-	font-size: 1.7em;
+	font-size: 1.8em;
 	font-weight: normal;
 	letter-spacing: -1px;
-	color: #606060;
+	color: #444;                                      
 	/*			color: #523a0b;*/
-	background-color: inherit;
-	font-family: Verdana, Trebuchet MS, Georgia, "Times New Roman", serif;
+	background-color: inherit; 
+  font: normal 250% "Georgia", "Times New Roman", Times, serif;
+/*	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+/*	font-family: Verdana, Trebuchet MS, Georgia, "Times New Roman", serif;*/
 }
 #content h2 a {
 	font-weight: normal;
@@ -211,8 +215,11 @@ html>body #content {
 	margin: 0 0 10px 0;
 	font-size: 1.4em;
 	color: #707070;
-	/*	color: #523a0b;*/
-	font-family: Trebuchet MS, Georgia, "Times New Roman", serif;
+	/*	color: #523a0b;*/ 
+	/*	font-family: helvetica, arial; */
+	font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 130%;
+  	font-weight: bold;
 }
 #content h4 {
 	font-size: 1em;
@@ -220,6 +227,7 @@ html>body #content {
 	margin-top: 5px;
 	font-weight: normal;
 	border-bottom: dotted 1px #c0c0c0;
+  	font: 1em/160% Verdana, Arial, Helvetica, sans-serif;
 }
 #content a:hover, #subcontent a:hover {
 	text-decoration: underline;
@@ -449,7 +457,7 @@ ul.documents li {
 	max-width: 500px;
 	text-align: left;
 		background-color: #f7f4ee;
-		padding: 0px 10px 0px 10px;
+		padding: 0px 0px 0px 10px;
 		border: 1px solid #ddd;
 		overflow:hidden;  
 		
@@ -718,4 +726,31 @@ html>body #ajax-indicator {
 	font-size: 100%;
 	/*	color: #5f5f5f;*/
 	border: none;
+} 
+
+.boxx {  
+	float: left;
+	max-width: 500px;
+	text-align: left;
+/*		padding: 0px 0px 0px 10px;*/
+
+		overflow:hidden;
+  background: #F7F4EE; 
+}
+.boxxtop { 
+  background: url(../images/ne5.gif) no-repeat top right; 
+}
+.boxxtop div { 
+  height: 5px; 
+  background: url(../images/nw5.gif) no-repeat top left; 
+}
+.boxxbottom { 
+  background: url(../images/se5.gif) no-repeat bottom right; 
+}
+.boxxbottom div { 
+  height: 5px; 
+  background: url(../images/sw5.gif) no-repeat bottom left; 
+}
+.boxxcontent {
+  padding: 5px 5px 0px 15px;
 }
