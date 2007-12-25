@@ -46,7 +46,6 @@ class Quest12Controller < ApplicationController
 
   def show
     @answer = Answer.find(params[:id])
-    @fecha = l_datetime(@answer.created_on)
     @user=User.find(@answer.user_id )
     @browse_score = answer_show(@answer.user_id, @answer.browse, @user.managed_by)
     journal( "quest12/show/"+@answer.id.to_s, @answer.user_id)
@@ -60,14 +59,14 @@ class Quest12Controller < ApplicationController
     @advice=[]
     @icon=[]
 
-    climaRendimiento = (@answer.answ1 + @answer.answ2 + @answer.answ5 + @answer.answ6 + @answer.answ9 + @answer.answ12)/6.0
-    climaRendimiento = climaRendimiento/10.0
+    clima_rendimiento = (@answer.answ1 + @answer.answ2 + @answer.answ5 + @answer.answ6 + @answer.answ9 + @answer.answ12)/6.0
+    clima_rendimiento = clima_rendimiento/10.0
     item=0
-    if climaRendimiento < 4
+    if clima_rendimiento < 4
       @advice[item]=l(:quest12_d1_a)
       @icon[item]="stop"
     else
-      if climaRendimiento <= 7
+      if clima_rendimiento <= 7
         @advice[item]=l(:quest12_d1_b)
         @icon[item]="medium"
       else
@@ -75,14 +74,14 @@ class Quest12Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    climaMaestria = (@answer.answ3 + @answer.answ4 + @answer.answ7 + @answer.answ8 + @answer.answ10 + @answer.answ11)/6.0
-    climaMaestria = climaMaestria/10.0
+    clima_maestria = (@answer.answ3 + @answer.answ4 + @answer.answ7 + @answer.answ8 + @answer.answ10 + @answer.answ11)/6.0
+    clima_maestria = clima_maestria/10.0
     item=1
-    if climaMaestria < 4
+    if clima_maestria < 4
       @advice[item]=l(:quest12_d2_a)
       @icon[item]="stop"
     else
-      if climaMaestria <= 7
+      if clima_maestria <= 7
         @advice[item]=l(:quest12_d2_b)
         @icon[item]="medium"
       else
@@ -95,8 +94,8 @@ class Quest12Controller < ApplicationController
     strXML=''
 
     strXML = "<chart caption='"+l(:quest12_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='10' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
-    strXML = strXML + "<set label='" + l(:quest12_label_1) + "' value='" + acorta(climaRendimiento) + "'/>"
-    strXML = strXML + "<set label='" + l(:quest12_label_2) + "' value='" + acorta(climaMaestria) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest12_label_1) + "' value='" + acorta(clima_rendimiento) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest12_label_2) + "' value='" + acorta(clima_maestria) + "'/>"
     strXML = strXML + "</chart>"
 
     #Create the chart - Pie 3D Chart with data from strXML

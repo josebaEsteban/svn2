@@ -75,7 +75,7 @@ class AnswersController < ApplicationController
       #   answer.browse = 0
       # end
       # answer.save
-      redirect_to :controller => 'my', :action => 'quest' , :id  => answer.user_id
+      redirect_to :controller => 'my', :action => 'admin' , :id  => answer.user_id
     else
       redirect_to :controller => 'my', :action => 'page'
     end

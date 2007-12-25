@@ -58,14 +58,14 @@ class PendingsController < ApplicationController
     pending.quest_id = accion[0]
     pending.save
     journal( "pendings/add/"+accion[0]+"/"+pending.id.to_s, @logged_in_user.id)
-    redirect_to :controller => 'my', :action => 'quest' , :id  => accion[1]
+    redirect_to :controller => 'my', :action => 'admin' , :id  => accion[1]
   end 
   
   def delete
     accion=params[:id].split('d')
     journal( "pendings/destroy/"+accion[1], @logged_in_user.id)
     Pending.delete(accion[0])
-    redirect_to :controller => 'my', :action => 'quest' , :id  => accion[1]
+    redirect_to :controller => 'my', :action => 'admin' , :id  => accion[1]
   end
 
 end

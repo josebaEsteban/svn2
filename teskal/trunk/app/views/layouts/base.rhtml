@@ -54,7 +54,11 @@
       <li><%= link_to l(:label_my_account), { :controller => 'my', :action => 'account' } %></li>
       <% end %>
       <% if loggedin? %>
+<%- if @logged_in_user.show? -%>
+   <li><%= link_to l(:label_quest_plural), { :controller => 'my',:action => 'quest' } %></li>
+<%- else -%>
       <li><%= link_to l(:label_quest_plural), { :controller => 'my',:action => 'page' } %></li>
+<%- end -%>
       <% end %>
       <% if loggedin? and @logged_in_user.show? %>
       <li><%= link_to l(:label_my_athletes), { :controller => 'my',:action => 'athletes' } %></li>

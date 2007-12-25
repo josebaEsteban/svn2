@@ -59,7 +59,6 @@ class Quest3Controller < ApplicationController
 
   def show
     @answer = Answer.find(params[:id])
-    @fecha = l_datetime(@answer.created_on)
     @user=User.find(@answer.user_id )
     @browse_score = answer_show(@answer.user_id, @answer.browse, @user.managed_by)
     journal( "quest3/show/"+@answer.id.to_s, @answer.user_id)
@@ -86,9 +85,9 @@ class Quest3Controller < ApplicationController
     hostilidad = @answer.answ5 + @answer.answ10 + @answer.answ15
     vigor = @answer.answ4 + @answer.answ9 + @answer.answ14
     fatiga = @answer.answ3 + @answer.answ8 + @answer.answ13
-    compromisoEsfuerzo = ((@answer.answ16 + @answer.answ19 + @answer.answ22)*3.0).round
-    ansiedadErrores = ((@answer.answ18 + @answer.answ21 + @answer.answ24)*3.0).round
-    competenciaPercibida = ((@answer.answ17 + @answer.answ20 + @answer.answ23)*3.0).round
+    compromiso_esfuerzo = ((@answer.answ16 + @answer.answ19 + @answer.answ22)*3.0).round
+    ansiedad_errores = ((@answer.answ18 + @answer.answ21 + @answer.answ24)*3.0).round
+    competencia_percibida = ((@answer.answ17 + @answer.answ20 + @answer.answ23)*3.0).round
 
     @advice=[]
     @icon=[]
@@ -158,11 +157,11 @@ class Quest3Controller < ApplicationController
       end
     end
     item=5
-    if compromisoEsfuerzo < 13
+    if compromiso_esfuerzo < 13
       @advice[item]=l(:quest3_d6_a)
       @icon[item]="stop"
     else
-      if compromisoEsfuerzo < 25
+      if compromiso_esfuerzo < 25
         @advice[item]=l(:quest3_d6_b)
         @icon[item]="medium"
       else
@@ -171,11 +170,11 @@ class Quest3Controller < ApplicationController
       end
     end
     item=6
-    if ansiedadErrores < 13
+    if ansiedad_errores < 13
       @advice[item]=l(:quest3_d7_a)
       @icon[item]="star"
     else
-      if ansiedadErrores < 25
+      if ansiedad_errores < 25
         @advice[item]=l(:quest3_d7_b)
         @icon[item]="medium"
       else
@@ -184,11 +183,11 @@ class Quest3Controller < ApplicationController
       end
     end
     item=7
-    if competenciaPercibida < 13
+    if competencia_percibida < 13
       @advice[item]=l(:quest3_d8_a)
       @icon[item]="stop"
     else
-      if competenciaPercibida < 25
+      if competencia_percibida < 25
         @advice[item]=l(:quest3_d8_b)
         @icon[item]="medium"
       else
@@ -202,9 +201,9 @@ class Quest3Controller < ApplicationController
     hTrans=hVal[hostilidad]
     vTrans=vVal[vigor]
     fTrans=fVal[fatiga]
-    ceTrans=compromisoEsfuerzo+36
-    aeTrans=ansiedadErrores+36
-    cpTrans=competenciaPercibida+36
+    ceTrans=compromiso_esfuerzo+36
+    aeTrans=ansiedad_errores+36
+    cpTrans=competencia_percibida+36
 
     #strXML will be used to store the entire XML document generated
     strXML=''

@@ -114,7 +114,7 @@ class BooksController < ApplicationController
       #   book.browse = 0
       # end
       # book.save 
-      redirect_to :controller => 'my', :action => 'quest' , :id  => book.user_id.to_s+"pL"
+      redirect_to :controller => 'my', :action => 'admin' , :id  => book.user_id.to_s+"pL"
     else
       redirect_to :controller => 'my', :action => 'page'
     end

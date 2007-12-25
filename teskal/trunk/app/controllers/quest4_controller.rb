@@ -53,7 +53,6 @@ class Quest4Controller < ApplicationController
 
   def show
     @answer = Answer.find(params[:id])
-    @fecha = l_datetime(@answer.created_on)
     @user=User.find(@answer.user_id )
     @browse_score = answer_show(@answer.user_id, @answer.browse, @user.managed_by)
     journal( "quest4/show/"+@answer.id.to_s, @answer.user_id)
@@ -76,8 +75,8 @@ class Quest4Controller < ApplicationController
     hostilidad = @answer.answ5 + @answer.answ10  + @answer.answ15
     vigor = @answer.answ4 + @answer.answ9 + @answer.answ14
     fatiga = @answer.answ3 + @answer.answ8 + @answer.answ13
-    ansiedadCognitiva = @answer.answ19 + @answer.answ22 + @answer.answ25 + @answer.answ28 + @answer.answ31 + @answer.answ34 + @answer.answ37 + @answer.answ40 + @answer.answ43
-    autoConfianza = @answer.answ21 + @answer.answ24 + @answer.answ27 + @answer.answ30 + @answer.answ33 + @answer.answ36 + @answer.answ39 + @answer.answ42 + @answer.answ45
+    ansiedad_cognitiva = @answer.answ19 + @answer.answ22 + @answer.answ25 + @answer.answ28 + @answer.answ31 + @answer.answ34 + @answer.answ37 + @answer.answ40 + @answer.answ43
+    auto_confianza = @answer.answ21 + @answer.answ24 + @answer.answ27 + @answer.answ30 + @answer.answ33 + @answer.answ36 + @answer.answ39 + @answer.answ42 + @answer.answ45
     relajado = 0
     case @answer.answ32
     when 1:
@@ -89,11 +88,11 @@ class Quest4Controller < ApplicationController
     when 4:
       relajado = 1
     end
-    ansiedadSomatica = @answer.answ20 + @answer.answ23 + @answer.answ26 + @answer.answ29 + relajado+ @answer.answ35 + @answer.answ38 + @answer.answ41 + @answer.answ44
-    nivelMotivacion = (@answer.answ46 + @answer.answ47)/2.0
-    nivelDificultad = @answer.answ17
-    gradoConfianza =  @answer.answ18
-    percepcionElaboracion = (@answer.answ50 + @answer.answ51)/2.0
+    ansiedad_somatica = @answer.answ20 + @answer.answ23 + @answer.answ26 + @answer.answ29 + relajado+ @answer.answ35 + @answer.answ38 + @answer.answ41 + @answer.answ44
+    nivel_motivacion = (@answer.answ46 + @answer.answ47)/2.0
+    nivel_dificultad = @answer.answ17
+    grado_confianza =  @answer.answ18
+    percepcion_elaboracion = (@answer.answ50 + @answer.answ51)/2.0
 
     @advice=[]
     @icon=[]
@@ -164,11 +163,11 @@ class Quest4Controller < ApplicationController
       end
     end
     item=5
-    if ansiedadCognitiva < 13
+    if ansiedad_cognitiva < 13
       @advice[item]=l(:quest4_d6_a)
       @icon[item]="star"
     else
-      if ansiedadCognitiva < 25
+      if ansiedad_cognitiva < 25
         @advice[item]=l(:quest4_d6_b)
         @icon[item]="medium"
       else
@@ -177,11 +176,11 @@ class Quest4Controller < ApplicationController
       end
     end
     item=6
-    if autoConfianza < 1
+    if auto_confianza < 1
       @advice[item]=l(:quest4_d7_a)
       @icon[item]="stop"
     else
-      if autoConfianza < 25
+      if auto_confianza < 25
         @advice[item]=l(:quest4_d7_b)
         @icon[item]="medium"
       else
@@ -190,11 +189,11 @@ class Quest4Controller < ApplicationController
       end
     end
     item=7
-    if ansiedadSomatica < 13
+    if ansiedad_somatica < 13
       @advice[item]=l(:quest4_d8_a)
       @icon[item]="star"
     else
-      if ansiedadSomatica < 25
+      if ansiedad_somatica < 25
         @advice[item]=l(:quest4_d8_b)
         @icon[item]="medium"
       else
@@ -203,11 +202,11 @@ class Quest4Controller < ApplicationController
       end
     end
     item=8
-    if nivelMotivacion < 60
+    if nivel_motivacion < 60
       @advice[item]=l(:quest4_d9_a)
       @icon[item]="stop"
     else
-      if nivelMotivacion <= 80
+      if nivel_motivacion <= 80
         @advice[item]=l(:quest4_d9_b)
         @icon[item]="medium"
       else
@@ -216,11 +215,11 @@ class Quest4Controller < ApplicationController
       end
     end
     item=9
-    if nivelDificultad < 60
+    if nivel_dificultad < 60
       @advice[item]=l(:quest4_d10_c)
       @icon[item]="star"
     else
-      if nivelDificultad <= 80
+      if nivel_dificultad <= 80
         @advice[item]=l(:quest4_d10_b)
         @icon[item]="medium"
       else
@@ -229,11 +228,11 @@ class Quest4Controller < ApplicationController
       end
     end
     item=10
-    if gradoConfianza < 60
+    if grado_confianza < 60
       @advice[item]=l(:quest4_d11_a)
       @icon[item]="stop"
     else
-      if gradoConfianza <= 80
+      if grado_confianza <= 80
         @advice[item]=l(:quest4_d11_b)
         @icon[item]="medium"
       else
@@ -242,11 +241,11 @@ class Quest4Controller < ApplicationController
       end
     end
     item=11
-    if percepcionElaboracion < 60
+    if percepcion_elaboracion < 60
       @advice[item]=l(:quest4_d12_a)
       @icon[item]="stop"
     else
-      if percepcionElaboracion <= 80
+      if percepcion_elaboracion <= 80
         @advice[item]=l(:quest4_d12_b)
         @icon[item]="medium"
       else
@@ -260,9 +259,9 @@ class Quest4Controller < ApplicationController
     hTransformada=hVal[hostilidad]
     vTransformada=vVal[vigor]
     fTransformada=fVal[fatiga]
-    acTransformada=ansiedadCognitiva+36
-    atTransformada=autoConfianza+36
-    asTransformada=ansiedadSomatica+36
+    acTransformada=ansiedad_cognitiva+36
+    atTransformada=auto_confianza+36
+    asTransformada=ansiedad_somatica+36
 
     #strXML will be used to store the entire XML document generated
     strXML=''
@@ -298,10 +297,10 @@ class Quest4Controller < ApplicationController
 
     strXML=''
     strXML ="<chart palette='2' caption='"+l(:quest4_label_0)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+" 'showvalues='0'  formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='100'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
-    strXML = strXML + "<set label= '"+l(:quest4_label_11)+"' value='"+acorta(nivelMotivacion)+"'/>"
-    strXML = strXML + "<set label= '"+l(:quest4_label_12)+"' value='"+nivelDificultad.to_s+"'/>"
-    strXML = strXML + "<set label= '"+l(:quest4_label_13)+"' value='"+gradoConfianza.to_s+"'/>"
-    strXML = strXML + "<set label= '"+l(:quest4_label_14)+"' value='"+acorta(percepcionElaboracion)+"'/>"
+    strXML = strXML + "<set label= '"+l(:quest4_label_11)+"' value='"+acorta(nivel_motivacion)+"'/>"
+    strXML = strXML + "<set label= '"+l(:quest4_label_12)+"' value='"+nivel_dificultad.to_s+"'/>"
+    strXML = strXML + "<set label= '"+l(:quest4_label_13)+"' value='"+grado_confianza.to_s+"'/>"
+    strXML = strXML + "<set label= '"+l(:quest4_label_14)+"' value='"+acorta(percepcion_elaboracion)+"'/>"
     strXML = strXML + "</chart>"
     @chart2= renderChart("/charts/Column2D.swf"+l(:PBarLoadingText), "", strXML, "quest4_2", 450, 300, false, false)
   end
