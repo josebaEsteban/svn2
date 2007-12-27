@@ -1,6 +1,6 @@
 class JournalsController < ApplicationController
   before_filter :require_admin
-  layout 'base'	
+  # layout 'base' 
 
   def index
     list
