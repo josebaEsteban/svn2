@@ -121,23 +121,28 @@ class AccountController < ApplicationController
       if request.get?
         @user = User.new(:language => Setting.default_language)
       else
-        @user = User.new(params[:user])
-        @user.admin = false
-        @user.login = params[:user][:login]
-        @user.status = User::STATUS_REGISTERED
-        @user.role = User::ROLE_GRATIS
-        @user.password, @user.password_confirmation = params[:password], params[:password_confirmation]
-        token = Token.new(:user => @user, :action => "signup")
-        @user.ip = request.remote_ip
-        if @user.save and token.save
-          journal("signup account",@user.id)
-          Mailer.deliver_signup(token)
-          set_language_if_valid(@user.language)
-          create_library(@user.id)
-          # render :partial => "signup_done"
-          # flash[:notice] = l(:notice_account_register_done)
-          # redirect_to :controller => 'account', :action => 'login'
-          redirect_to :controller => 'welcome', :action => 'signup_done'
+        repite = User.find_by_mail(params[:user][:mail])
+        if repite.nil?
+          @user = User.new(params[:user])
+          @user.admin = false
+          @user.login = params[:user][:login]
+          @user.status = User::STATUS_REGISTERED
+          @user.role = User::ROLE_GRATIS
+          @user.password, @user.password_confirmation = params[:password], params[:password_confirmation]
+          token = Token.new(:user => @user, :action => "signup")
+          @user.ip = request.remote_ip
+          if @user.save and token.save
+            journal("signup account",@user.id)
+            Mailer.deliver_signup(token)
+            set_language_if_valid(@user.language)
+            create_library(@user.id)
+            # render :partial => "signup_done"
+            # flash[:notice] = l(:notice_account_register_done)
+            # redirect_to :controller => 'account', :action => 'login'
+            redirect_to :controller => 'welcome', :action => 'signup_done'
+          end
+        else
+          flash[:notice] = l(:notice_account_email_exists)
         end
       end
     end
