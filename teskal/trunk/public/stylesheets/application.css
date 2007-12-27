@@ -741,7 +741,7 @@ font-size: 100%;
 
 .boxx {
 float: left;
-max-width: 500px;
+max-width: 45%;
 text-align: left;
 /*		padding: 0px 0px 0px 10px;*/
 
@@ -753,6 +753,9 @@ color: #48436a;
 }
 .boxx h3{
 color: #523a0b;
+}
+.boxx ul{
+list-style: none;
 }
 .boxxtop {
 background: url(../images/ne5.gif) no-repeat top right;
@@ -771,5 +774,5 @@ height: 5px;
 background: url(../images/sw5.gif) no-repeat bottom left;
 }
 .boxxcontent {
-padding: 5px 5px 0px 15px;
+padding: 5px 15px 0px 15px;
 }

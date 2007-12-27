@@ -1,27 +1,27 @@
-<div class="splitcontentleft">
-  <table cellspacing="0">
-	 <% puts @logged_in_user.athlete? %>
+<div class='boxx'>
+  <div class='boxxtop'>
+    <div></div>
+  </div>
+  <div class='boxxcontent'>
+    <!-- Content goes here -->
+    <% puts @logged_in_user.athlete? %>
     <%- if @logged_in_user.athlete? and @pendings.length == 0 -%>
     <h4><%= l(:label_quest_no_pending) %></h4>
     <%- else -%>
-    <thead>
-      <tr>
-        <th>##</th>
-
-        <th scope="col"><div align="left">
-            <%- if @logged_in_user.athlete? -%>
-            <%=l(:label_quest_pending)%>
-            <%- else -%>
-            <%=l(:label_quest_avail)%>
-            <%- end -%>
-          </div></th>
-      </tr>
-    </thead>
-    <tbody>
-      <%- if @logged_in_user.athlete? -%>
-      <!-- <%- odd = 0 -%> -->
-      <%- for pending in @pendings -%>
-      <%- case pending.quest_id
+    <p>
+    <h3>
+      <div align="left">
+        <%- if @logged_in_user.athlete? -%>
+        <%=l(:label_quest_pending)%>
+        <%- else -%>
+        <%=l(:label_quest_avail)%>
+        <%- end -%>
+      </div>
+    </h3>
+    <%- if @logged_in_user.athlete? -%>
+<ul>
+    <%- for pending in @pendings -%>
+    <%- case pending.quest_id
 	            when 1 
 	              quest=l(:quest1) 
 	            when 2 
@@ -47,188 +47,93 @@
 	            when 12 
 	              quest=l(:quest12_label_0)
 	            end -%>
-      <!-- <%- if odd == 1 -%>
-      <tr class="odd">
-        <%- odd = 0-%>
-        <%-else -%> -->
-      <tr>
-        <!-- <%- odd=1 end -%> -->
-        <%- controlador="quest"+ pending.quest_id.to_s -%>
-        <td> <%= pending.quest_id.to_s %> </td>
-        <!-- <td> <%= l_date(pending.created_on) %> </td> -->
-        <td><%= link_to quest, :controller  => controlador, :action => 'new' %></td>
-      </tr>
-      <%- end -%>
-      <%- elsif @logged_in_user.show? -%>
-      <tr>
-        <td>1</td>
-        <td><%= link_to l(:quest1), :controller  => 'quest1', :action => 'new' %></td>
-      </tr>
-      <tr class='odd'>
-        <td>2</td>
-        <td><%= link_to l(:quest2_label_0), :controller  => 'quest2', :action => 'new' %></td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td><%= link_to l(:quest3), :controller  => 'quest3', :action => 'new' %></td>
-      </tr>
-      <tr class='odd'>
-        <td>4</td>
-        <td><%= link_to l(:quest4), :controller  => 'quest4', :action => 'new' %></td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td><%= link_to l(:quest5), :controller  => 'quest5', :action => 'new' %></td>
-      </tr>
-      <tr class='odd'>
-        <td>6</td>
-        <td><%= link_to l(:quest6), :controller  => 'quest6', :action => 'new' %></td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td><%= link_to l(:quest7_label_0), :controller  => 'quest7', :action => 'new' %></td>
-      </tr>
-      <tr class='odd'>
-        <td>8</td>
-        <td><%= link_to l(:quest8_label_0), :controller  => 'quest8', :action => 'new' %></td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td><%= link_to l(:quest9_label_0), :controller  => 'quest9', :action => 'new' %></td>
-      </tr>
-      <tr class='odd'>
-        <td>10</td>
-        <td><%= link_to l(:quest10_label_0), :controller  => 'quest10', :action => 'new' %></td>
-      </tr>
-      <tr>
-        <td>11</td>
-        <td><%= link_to l(:quest11_label_0), :controller  => 'quest11', :action => 'new' %></td>
-      </tr>
-      <tr class='odd'>
-        <td>12</td>
-        <td><%= link_to l(:quest12_label_0), :controller  => 'quest12', :action => 'new' %></td>
-      </tr>
-      <%- else -%>
-      <tr>
-        <td>2</td>
-        <td><%= link_to l(:quest2_label_0), :controller  => 'quest2', :action => 'new' %></td>
-      </tr>
-      <tr class='odd'>
-        <td>12</td>
-        <td><%= link_to l(:quest12_label_0), :controller  => 'quest12', :action => 'new' %></td>
-      </tr>
-      <%- end -%>
-      <%- end -%>
-    <th></th>
-    <thead>
-      <tr>
-        <th>##</th>
-        <th scope="col"><div align="left"><%=l(:label_library)%></div></th>
-      </tr>
-    </thead>
-    <%- if @logged_in_user.suscription? -%> 
-    <%- if @books[0].browse -%>
-    <tr>
-      <td>1</td>
-      <td><a href="../lib/<%= l(:unit_1_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_1_path) %>');"><%= l(:unit_1_title) %></a></td>
-    </tr>
-    <%- end -%>
-    <%- if @books[1].browse -%>
-    <tr>
-      <td>2</td>
-      <td><a href="../lib/<%= l(:unit_2_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_2_path) %>');"><%= l(:unit_2_title) %></a></td>
-    </tr>
-    <%- end -%> 
-    <%- if @books[2].browse -%> 
-    <tr>
-      <td>3</td>
-      <td><a href="../lib/<%= l(:unit_3_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_3_path) %>');"><%= l(:unit_3_title) %></a></td>
-    </tr>
-    <%- end -%>
-    <%- end -%>
-    <%- if @logged_in_user.gratis? -%>
-    <tr>
-      <td>4</td>
-      <td><a href="../lib/<%= l(:unit_4_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_4_path) %>');"><%= l(:unit_4_title) %></a></td>
-    </tr>
+	<li>
+    <%- controlador="quest"+ pending.quest_id.to_s -%>
+    <!-- <%= pending.quest_id.to_s %> --> <%= link_to quest, :controller  => controlador, :action => 'new' %></li>
+    <%- end -%></ul>
+    <%- elsif @logged_in_user.show? -%>
+    1 <%= link_to l(:quest1), :controller  => 'quest1', :action => 'new' %> 
+	 2 <%= link_to l(:quest2_label_0), :controller  => 'quest2', :action => 'new' %>
+	 3 <%= link_to l(:quest3), :controller  => 'quest3', :action => 'new' %>
+	 4 <%= link_to l(:quest4), :controller  => 'quest4', :action => 'new' %>
+	 5 <%= link_to l(:quest5), :controller  => 'quest5', :action => 'new' %>
+	 6 <%= link_to l(:quest6), :controller  => 'quest6', :action => 'new' %>
+	 7 <%= link_to l(:quest7_label_0), :controller  => 'quest7', :action => 'new' %>
+	 8 <%= link_to l(:quest8_label_0), :controller  => 'quest8', :action => 'new' %>
+	 9 <%= link_to l(:quest9_label_0), :controller  => 'quest9', :action => 'new' %>
+	 10 <%= link_to l(:quest10_label_0), :controller  => 'quest10', :action => 'new' %>
+	 11 <%= link_to l(:quest11_label_0), :controller  => 'quest11', :action => 'new' %>
+	 12 <%= link_to l(:quest12_label_0), :controller  => 'quest12', :action => 'new' %>
     <%- else -%>
-    <%- if @books[3].browse -%>
-    <tr>
-      <td>4</td>
-      <td><a href="../lib/<%= l(:unit_4_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_4_path) %>');"><%= l(:unit_4_title) %></a></td>
-    </tr>
+    <ul><li><%= link_to l(:quest2_label_0), :controller  => 'quest2', :action => 'new' %></li>
+    <li><%= link_to l(:quest12_label_0), :controller  => 'quest12', :action => 'new' %></li></ul>
     <%- end -%>
     <%- end -%>
+    </p>
+    <p>
+    <h3>
+      <div align="left"><%=l(:label_library)%></div>
+    </h3>
+<ul>
     <%- if @logged_in_user.suscription? -%>
-    <%- if @books[4].browse -%>
-    <tr>
-      <td>5</td>
-      <td><a href="../lib/<%= l(:unit_5_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_5_path) %>');"><%= l(:unit_5_title) %></a></td>
-    </tr>
+	    <%- if @books[0].browse -%>
+	     <li><a href="../lib/<%= l(:unit_1_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_1_path) %>');"><%= l(:unit_1_title) %></a></li>
+	    <%- end -%>
+	    <%- if @books[1].browse -%>
+	     <li><a href="../lib/<%= l(:unit_2_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_2_path) %>');"><%= l(:unit_2_title) %></a></li>
+	    <%- end -%>
+	    <%- if @books[2].browse -%>
+	     <li><a href="../lib/<%= l(:unit_3_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_3_path) %>');"><%= l(:unit_3_title) %></a></li>
+	    <%- end -%>
     <%- end -%>
-    <%- if @books[5].browse -%>
-    <tr>
-      <td>6</td>
-      <td><a href="../lib/<%= l(:unit_6_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_6_path) %>');"><%= l(:unit_6_title) %></a></td>
-    </tr>
+    <%- if @logged_in_user.gratis? -%> 
+    <li><a href="../lib/<%= l(:unit_4_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_4_path) %>');"><%= l(:unit_4_title) %></a></li>
+    <%- else -%>
+	    <%- if @books[3].browse -%>
+	     <li><a href="../lib/<%= l(:unit_4_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_4_path) %>');"><%= l(:unit_4_title) %></a></li>
+	    <%- end -%>
+	    <%- end -%>
+	    <%- if @logged_in_user.suscription? -%> 
+	    <%- if @books[4].browse -%>
+	     <li><a href="../lib/<%= l(:unit_5_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_5_path) %>');"><%= l(:unit_5_title) %></a></li>
+	    <%- end -%>
+	    <%- if @books[5].browse -%>
+	     <li><a href="../lib/<%= l(:unit_6_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_6_path) %>');"><%= l(:unit_6_title) %></a></li>
+	    <%- end -%>
+	    <%- if @books[6].browse -%>
+	     <li><a href="../lib/<%= l(:unit_7_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_7_path) %>');"><%= l(:unit_7_title) %></a></li>
+	    <%- end -%>
+	    <%- if @books[7].browse -%>
+	     <li><a href="../lib/<%= l(:unit_8_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_8_path) %>');"><%= l(:unit_8_title) %></a></li>
+	    <%- end -%>
+	    <%- if @books[8].browse -%>
+	     <li><a href="../lib/<%= l(:unit_9_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_9_path) %>');"><%= l(:unit_9_title) %></a></li>
+	    <%- end -%>
+	    <%- if @books[9].browse -%>
+	     <li><a href="../lib/<%= l(:unit_10_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_10_path) %>');"><%= l(:unit_10_title) %></a></li>
+	    <%- end -%>
+	    <%- if @books[10].browse -%>
+	     <li><a href="../lib/<%= l(:unit_11_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_11_path) %>');"><%= l(:unit_11_title) %></a></li>
+	    <%- end -%>
+	    <%- if @books[11].browse -%>
+	     <li><a href="../lib/<%= l(:unit_12_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_12_path) %>');"><%= l(:unit_12_title) %></a></li>
+	    <%- end -%>
+	    <%- if @books[12].browse -%>
+	     <li><a href="../lib/<%= l(:unit_13_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_13_path) %>');"><%= l(:unit_13_title) %></a></li>
+	    <%- end -%>
+	    <%- if @books[13].browse -%>
+	     <li><a href="../lib/<%= l(:unit_14_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_14_path) %>');"><%= l(:unit_14_title) %></a></li>
+	    <%- end -%>
+	    <%- if @books[14].browse -%>
+	     <li><a href="../lib/<%= l(:unit_15_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_15_path) %>');"><%= l(:unit_15_title) %></a></li>
+	    <%- end -%>
     <%- end -%>
-    <%- if @books[6].browse -%>
-    <tr>
-      <td>7</td>
-      <td><a href="../lib/<%= l(:unit_7_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_7_path) %>');"><%= l(:unit_7_title) %></a></td>
-    </tr>
-    <%- end -%>
-    <%- if @books[7].browse -%>
-    <tr>
-      <td>8</td>
-      <td><a href="../lib/<%= l(:unit_8_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_8_path) %>');"><%= l(:unit_8_title) %></a></td>
-    </tr>
-    <%- end -%>
-    <%- if @books[8].browse -%>
-    <tr>
-      <td>9</td>
-      <td><a href="../lib/<%= l(:unit_9_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_9_path) %>');"><%= l(:unit_9_title) %></a></td>
-    </tr>
-    <%- end -%>
-    <%- if @books[9].browse -%>
-    <tr>
-      <td>10</td>
-      <td><a href="../lib/<%= l(:unit_10_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_10_path) %>');"><%= l(:unit_10_title) %></a></td>
-    </tr>
-    <%- end -%>
-    <%- if @books[10].browse -%>
-    <tr>
-      <td>11</td>
-      <td><a href="../lib/<%= l(:unit_11_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_11_path) %>');"><%= l(:unit_11_title) %></a></td>
-    </tr>
-    <%- end -%>
-    <%- if @books[11].browse -%>
-    <tr>
-      <td>12</td>
-      <td><a href="../lib/<%= l(:unit_12_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_12_path) %>');"><%= l(:unit_12_title) %></a></td>
-    </tr>
-    <%- end -%>
-    <%- if @books[12].browse -%>
-    <tr>
-      <td>13</td>
-      <td><a href="../lib/<%= l(:unit_13_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_13_path) %>');"><%= l(:unit_13_title) %></a></td>
-    </tr>
-    <%- end -%>
-    <%- if @books[13].browse -%>
-    <tr>
-      <td>14</td>
-      <td><a href="../lib/<%= l(:unit_14_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_14_path) %>');"><%= l(:unit_14_title) %></a></td>
-    </tr>
-    <%- end -%>
-    <%- if @books[14].browse -%>
-    <tr>
-      <td>15</td>
-      <td><a href="../lib/<%= l(:unit_15_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_15_path) %>');"><%= l(:unit_15_title) %></a></td>
-    </tr>
-    <%- end -%>
-    <%- end -%>
-    </tbody>
-  </table>
+</ul>
+</p>
+  </div>
+  <div class='boxxbottom'>
+    <div></div>
+  </div>
 </div>
 <%- if @answers.length != 0 -%>
 <%- TzTime.zone=@user.timezone -%>
