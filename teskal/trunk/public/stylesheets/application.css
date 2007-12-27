@@ -37,7 +37,7 @@ background-position: center;
 float: none;
 }
 a {
-color: #48436a;
+color: #d42e12;
 font-weight: bold;
 text-decoration: none;
 background-color: inherit;
@@ -748,13 +748,17 @@ text-align: left;
 		overflow:hidden;
 background: #F7F4EE;
 }
+.boxx a{
+color: #48436a;
+}
+.boxx h3{
+color: #523a0b;
+}
 .boxxtop {
 background: url(../images/ne5.gif) no-repeat top right;
-color: #523a0b; 
+ 
 }
-.boxxtop h3 {
 
-}
 .boxxtop div {
 height: 5px;
 background: url(../images/nw5.gif) no-repeat top left;
