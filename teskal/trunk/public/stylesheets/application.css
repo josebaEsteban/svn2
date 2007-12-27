@@ -37,7 +37,7 @@ body {
 	float: none;
 }
 a {
-	color: #d42e12;
+	color: #48436a;
 	font-weight: bold;
 	text-decoration: none;
 	background-color: inherit;
@@ -206,7 +206,10 @@ html>body #content {
 	background-color: inherit; 
   font: normal 250% "Georgia", "Times New Roman", Times, serif;
 /*	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-/*	font-family: Verdana, Trebuchet MS, Georgia, "Times New Roman", serif;*/
+/*	font-family: Verdana, Trebuchet MS, Georgia, "Times New Roman", serif; */
+/*	font-family: "lucidamac bold", "lucida grande", arial, sans-serif;*/
+
+
 }
 #content h2 a {
 	font-weight: normal;
@@ -457,7 +460,7 @@ ul.documents li {
 	max-width: 500px;
 	text-align: left;
 		background-color: #f7f4ee;
-		padding: 0px 0px 0px 10px;
+		padding: 0px 10px 0px 10px;
 		border: 1px solid #ddd;
 		overflow:hidden;  
 		
@@ -753,4 +756,7 @@ html>body #ajax-indicator {
 }
 .boxxcontent {
   padding: 5px 5px 0px 15px;
+}
+.boxxcontent h3{
+color: #000000;
 }

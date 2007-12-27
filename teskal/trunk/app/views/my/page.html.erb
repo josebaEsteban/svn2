@@ -1,13 +1,13 @@
 <div class="splitcontentleft">
   <table cellspacing="0">
-    <!-- <caption><%=l(:quest2)%></caption> -->
+	 <% puts @logged_in_user.athlete? %>
     <%- if @logged_in_user.athlete? and @pendings.length == 0 -%>
     <h4><%= l(:label_quest_no_pending) %></h4>
     <%- else -%>
     <thead>
       <tr>
         <th>##</th>
-        <!-- <th scope="col"><div align="left"><%=l(:label_quest_pending_from)%></div></th> -->
+
         <th scope="col"><div align="left">
             <%- if @logged_in_user.athlete? -%>
             <%=l(:label_quest_pending)%>
