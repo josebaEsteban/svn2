@@ -5,7 +5,10 @@ www.456bereastreet.com
 ================================================*/
 
 table {
-  font:normal 100%/150% "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+/*  	font: 1em/120% Verdana, Arial, Helvetica, sans-serif;*/
+
+  
+  font:normal 100%/120% "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
   	border-collapse:separate;
 	border-spacing:0;
 	margin:0 0 1em;
@@ -14,19 +17,21 @@ table {
 table a {
 	color:#523A0B;
 	text-decoration:none;
-	border-bottom:1px dotted;
+/*	border-bottom:1px dotted;*/
 	}
-table a:visited {
+/*table a:visited {
 	color:#444;
 	font-weight:normal;
 	}
 table a:visited:after {
 	content:"\00A0\221A";
-	}
+	}*/
 table a:hover {
-/*	border-bottom-style:solid;
+	border-bottom-style: 1px dotted;
 	background:none;
-*/text-decoration:none; 	}
+text-decoration:none;
+color:#523A0B;
+ 	}
 thead th,
 thead td,
 tfoot th,
