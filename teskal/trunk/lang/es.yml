@@ -1103,3 +1103,4 @@ unit_9_path: 09.La.Comunicacion.es.pdf
 unit_9_title: La Comunicación
 label_book: Libro
 label_available: Disponible
+notice_account_email_exists: Ya existe un usuario con ese correo. Por favor use un correo distinto.

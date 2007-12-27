@@ -1,14 +1,14 @@
 <% content_for :header_tags do -%>
 <%= javascript_include_tag 'prototype' -%>
-<%- if @user.language == "br" -%>
+<%- if @logged_in_user.language == "br" -%>
 <%= javascript_include_tag 'validation/validation_br' -%>
-<%- elsif @user.language == "ca"-%>
+<%- elsif @logged_in_user.language == "ca"-%>
 <%= javascript_include_tag 'validation/validation_ca' -%>
-<%- elsif @user.language == "es" -%>
+<%- elsif @logged_in_user.language == "es" -%>
 <%= javascript_include_tag 'validation/validation_es' -%>
-<%- elsif @user.language == "eu"-%>
+<%- elsif @logged_in_user.language == "eu"-%>
 <%= javascript_include_tag 'validation/validation_eu' -%>
-<%- elsif @user.language == "fr"-%>
+<%- elsif @logged_in_user.language == "fr"-%>
 <%= javascript_include_tag 'validation/validation_fr' -%>
 <%- else -%>
 <%= javascript_include_tag 'validation/validation' -%>
