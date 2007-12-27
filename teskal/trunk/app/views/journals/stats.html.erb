@@ -63,7 +63,11 @@
     <th scope="col"></th>
     <th scope="col"></th>
     <%- end -%>
-    <%- if journal.event[0,1]=='q'
+	<%- if journal.event[0,3]=='add'
+	 paso = journal.event.split('/') 
+	 accion = "/users/edit/"+ paso[2] -%> 
+      <td><a href=<%= accion %>><%= journal.event %></td> 
+    <%- elsif journal.event[0,1]=='q'
                        paso = journal.event.split('/') 
                        accion = "/"+paso[0]+"/show/"+ paso[2]-%>
     <td><a href=<%= accion %>><%= journal.event %></td>
