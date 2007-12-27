@@ -63,7 +63,7 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find(params[:id])
-    if @user.managed_by != @logged_in_user.id
+    if @user.managed_by != @logged_in_user.id and !@logged_in_user.admin?
       flash.now[:notice] = l(:notice_not_authorized)
       redirect_to :controller => 'my', :action => 'athletes'
     end
