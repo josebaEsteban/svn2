@@ -34,6 +34,10 @@ class Quest12Controller < ApplicationController
     if @answer.save
       # flash[:notice] = 'Answer was successfully created.'
       journal( "quest12/create/"+@answer.id.to_s, @answer.user_id)
+
+      quest = Quest.find(:first, :conditions  => {:user_id  => @answer.user_id, :order => 12})
+      quest.toggle!(:browse)
+
       redirect_to :action => 'show', :id => @answer.id
 
       # format.html { redirect_to answer_url(@answer) }

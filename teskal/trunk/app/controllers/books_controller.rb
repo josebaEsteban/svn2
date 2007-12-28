@@ -12,7 +12,7 @@ class BooksController < ApplicationController
         if user.show?
           book.browse = true
         else
-          if number == Book::FREE
+          if Book::FREE.include?(number)
             book.browse = true
           else
             book.browse = false
@@ -108,12 +108,6 @@ class BooksController < ApplicationController
     user = User.find(book.user_id)
     if @logged_in_user.admin? or @logged_in_user.id == user.managed_by
       book.toggle!(:browse)
-      # if book.browse == 0
-      #   book.browse = 1
-      # else
-      #   book.browse = 0
-      # end
-      # book.save 
       redirect_to :controller => 'my', :action => 'admin' , :id  => book.user_id.to_s+"pL"
     else
       redirect_to :controller => 'my', :action => 'page'

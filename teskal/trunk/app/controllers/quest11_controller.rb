@@ -32,11 +32,14 @@ class Quest11Controller < ApplicationController
     @answer.time_to_fill =  Time.now - user.start
     if @answer.save
       journal( "quest11/create/"+@answer.id.to_s, @answer.user_id)
-      pendings = Pending.find_by_sql("select id from pendings where pendings.user_id=#{@answer.user_id} and pendings.quest_id=#{@answer.quest_id} order by pendings.created_on ASC")
-      if pendings.length >0
-        Pending.delete(pendings[0])
-      end
-      # flash[:notice] = 'Answer was successfully created.'
+      # pendings = Pending.find_by_sql("select id from pendings where pendings.user_id=#{@answer.user_id} and pendings.quest_id=#{@answer.quest_id} order by pendings.created_on ASC")
+      # if pendings.length >0
+      #   Pending.delete(pendings[0])
+      # end
+
+      quest = Quest.find(:first, :conditions  => {:user_id  => @answer.user_id, :order => 11})
+      quest.toggle!(:browse)
+
       if user.show?
         redirect_to :action => 'show', :id => @answer.id
       else

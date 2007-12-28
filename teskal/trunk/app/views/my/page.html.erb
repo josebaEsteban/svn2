@@ -5,7 +5,7 @@
   <div class='boxxcontent'>
     <!-- Content goes here -->
     <% puts @logged_in_user.athlete? %>
-    <%- if @logged_in_user.athlete? and @pendings.length == 0 -%>
+    <%- if @logged_in_user.athlete? and @quests.length == 0 -%>
     <h4><%= l(:label_quest_no_pending) %></h4>
     <%- else -%>
     <p>
@@ -20,45 +20,21 @@
     </h3>
     <%- if @logged_in_user.athlete? -%>
     <ul>
-      <%- for pending in @pendings -%>
-      <%- case pending.quest_id
-	            when 1 
-	              quest=l(:quest1) 
-	            when 2 
-	              quest=l(:quest2_label_0) 
-	            when 3 
-	              quest=l(:quest3) 
-	            when 4 
-	              quest=l(:quest4) 
-	            when 5 
-	              quest=l(:quest5) 
-	            when 6 
-	              quest=l(:quest6) 
-	            when 7 
-	              quest=l(:quest7_label_0) 
-	            when 8 
-	              quest=l(:quest8_label_0)  
-	            when 9 
-	              quest=l(:quest9_label_0)  
-	            when 10 
-	              quest=l(:quest10_label_0)  
-	            when 11 
-	              quest=l(:quest11_label_0)
-	            when 12 
-	              quest=l(:quest12_label_0)
-	            end -%>
+      <%- i=0 -%>
+      <%- for quest in @quests -%>
+      <%- if quest.browse -%>
       <li>
-        <%- controlador="quest"+ pending.quest_id.to_s -%>
-        <!-- <%= pending.quest_id.to_s %> -->
-        <%= link_to quest, :controller  => controlador, :action => 'new' %></li>
+        <%- controlador="quest"+quest.order.to_s -%>
+        <%= link_to @titulo[i], :controller  => controlador, :action => 'new' %></li>
+      <%- end -%>
+      <%- i=i+1 -%>
       <%- end -%>
     </ul>
     <%- elsif @logged_in_user.show? -%>
-    1 <%= link_to l(:quest1), :controller  => 'quest1', :action => 'new' %> 2 <%= link_to l(:quest2_label_0), :controller  => 'quest2', :action => 'new' %> 3 <%= link_to l(:quest3), :controller  => 'quest3', :action => 'new' %> 4 <%= link_to l(:quest4), :controller  => 'quest4', :action => 'new' %> 5 <%= link_to l(:quest5), :controller  => 'quest5', :action => 'new' %> 6 <%= link_to l(:quest6), :controller  => 'quest6', :action => 'new' %> 7 <%= link_to l(:quest7_label_0), :controller  => 'quest7', :action => 'new' %> 8 <%= link_to l(:quest8_label_0), :controller  => 'quest8', :action => 'new' %> 9 <%= link_to l(:quest9_label_0), :controller  => 'quest9', :action => 'new' %> 10 <%= link_to l(:quest10_label_0), :controller  => 'quest10', :action => 'new' %> 11 <%= link_to l(:quest11_label_0), :controller  => 'quest11', :action => 'new' %> 12 <%= link_to l(:quest12_label_0), :controller  => 'quest12', :action => 'new' %>
     <%- else -%>
     <ul>
-      <li><%= link_to l(:quest2_label_0), :controller  => 'quest2', :action => 'new' %></li>
-      <li><%= link_to l(:quest12_label_0), :controller  => 'quest12', :action => 'new' %></li>
+      <li><%= link_to @titulo[1], :controller  => 'quest2', :action => 'new' %></li>
+      <li><%= link_to @titulo[11], :controller  => 'quest12', :action => 'new' %></li>
     </ul>
     <%- end -%>
     <%- end -%>

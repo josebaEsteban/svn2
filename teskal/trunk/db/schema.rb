@@ -206,6 +206,15 @@ ActiveRecord::Schema.define(:version => 0) do
     t.integer  "status",                       :default => 1,    :null => false
   end
 
+  create_table "quests", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "order",      :limit => 2
+    t.boolean  "browse",                  :default => false, :null => false
+    t.datetime "updated_on"
+  end
+
+  add_index "quests", ["user_id"], :name => "user_id"
+
   create_table "roles", :force => true do |t|
     t.string  "name",     :limit => 30, :default => "", :null => false
     t.integer "position",               :default => 1,  :null => false
@@ -253,5 +262,6 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   add_index "users", ["managed_by"], :name => "managed_by"
+  add_index "users", ["mail"], :name => "mail"
 
 end

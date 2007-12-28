@@ -52,15 +52,20 @@ class PendingsController < ApplicationController
   end
 
   def add
-    pending = Pending.new
     accion=params[:id].split('p')
-    pending.user_id = accion[1]
-    pending.quest_id = accion[0]
-    pending.save
-    journal( "pendings/add/"+accion[0]+"/"+pending.id.to_s, @logged_in_user.id)
+    igual = Pending.find(:first, :conditions  => {:user_id  => accion[1], :quest_id => accion[0] })
+    if igual.nil?
+      pending = Pending.new
+      pending.user_id = accion[1]
+      pending.quest_id = accion[0]
+      pending.save
+      journal( "pendings/add/"+accion[0]+"/"+pending.id.to_s, @logged_in_user.id)
+    else
+      flash[:notice] = l(:notice_pendant_exists)
+    end
     redirect_to :controller => 'my', :action => 'admin' , :id  => accion[1]
-  end 
-  
+  end
+
   def delete
     accion=params[:id].split('d')
     journal( "pendings/destroy/"+accion[1], @logged_in_user.id)
