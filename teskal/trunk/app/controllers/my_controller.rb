@@ -25,11 +25,26 @@ class MyController < ApplicationController
   # Show user's page
   def page
     store_location
+    @titulo=[]
+    @titulo[0]=l(:quest1) 
+    @titulo[1]=l(:quest2_label_0) 
+    @titulo[2]=l(:quest3) 
+    @titulo[3]=l(:quest4) 
+    @titulo[4]=l(:quest5) 
+    @titulo[5]=l(:quest6) 
+    @titulo[6]=l(:quest7_label_0) 
+    @titulo[7]=l(:quest8_label_0)  
+    @titulo[8]=l(:quest9_label_0)  
+    @titulo[9]=l(:quest10_label_0)  
+    @titulo[10]=l(:quest11_label_0)
+    @titulo[11]=l(:quest12_label_0)
+    
     @user = self.logged_in_user
     @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{session[:user_id]} and answers.browse=1 order by answers.created_on DESC")
     @blocks = @user.pref[:my_page_layout] || DEFAULT_LAYOUT
-    @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{session[:user_id]} order by pendings.created_on DESC")
+    # @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{session[:user_id]} order by pendings.created_on DESC")
     @books = Book.find_by_sql("select * from books where books.user_id=#{session[:user_id]} order by books.order ASC")
+    @quests = Quest.find_by_sql("select * from quests where quests.user_id=#{session[:user_id]} order by quests.order ASC")
   end
 
   def quest
@@ -37,8 +52,9 @@ class MyController < ApplicationController
     @user = self.logged_in_user
     @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{session[:user_id]} and answers.browse=1 order by answers.created_on DESC")
     @blocks = @user.pref[:my_page_layout] || DEFAULT_LAYOUT
-    @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{session[:user_id]} order by pendings.created_on DESC")
+    # @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{session[:user_id]} order by pendings.created_on DESC")
     @books = Book.find_by_sql("select * from books where books.user_id=#{session[:user_id]} order by books.order ASC")
+    @quests = Quest.find_by_sql("select * from quests where quests.user_id=#{session[:user_id]} order by quests.order ASC")
   end
 
   def athletes
@@ -62,8 +78,10 @@ class MyController < ApplicationController
     store_location
     @athlete = User.find(busca)
     @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{busca} order by answers.created_on DESC")
-    @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{busca} order by pendings.created_on DESC")
+    # @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{busca} order by pendings.created_on DESC")
     @books = Book.find_by_sql("select * from books where books.user_id=#{busca} order by books.order ASC")
+    @quests = Quest.find_by_sql("select * from quests where quests.user_id=#{busca} order by quests.order ASC")
+    puts @quests[0].browse
   end
 
   # Edit user's account

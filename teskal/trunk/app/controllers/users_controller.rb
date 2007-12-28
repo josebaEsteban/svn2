@@ -55,6 +55,7 @@ class UsersController < ApplicationController
           journal("add user/by_"+@user.managed_by.to_s+"/"+@user.id.to_s,@user.id)
           Mailer.deliver_account_information(@user, params[:password])
           create_library(@user.id)
+          create_avail_quest(@user.id)
           # if params[:send_information]
           flash[:notice] = l(:notice_successful_create)
           redirect_to :controller => 'my', :action => 'athletes'

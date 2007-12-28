@@ -6,8 +6,6 @@ class ApplicationController < ActionController::Base
   filter_parameter_logging :password
   # around_filter :set_timezone
 
-
-
   def logged_in_user=(user)
     @logged_in_user = user
     session[:user_id] = (user ? user.id : nil)
@@ -316,6 +314,17 @@ class ApplicationController < ActionController::Base
     book.save}
   end
 
+  def create_avail_quest(user)
+    1.upto(Quest::CATALOG) {|number| quest = Quest.new
+      quest.user_id = user
+      quest.order = number
+      if Quest::FREE.include?(number)
+        quest.browse = 1
+      else
+        quest.browse = 0
+      end
+    quest.save}
+  end
 
   # private
   # def set_timezone

@@ -136,6 +136,7 @@ class AccountController < ApplicationController
             Mailer.deliver_signup(token)
             set_language_if_valid(@user.language)
             create_library(@user.id)
+            create_avail_quest(@user.id)
             # render :partial => "signup_done"
             # flash[:notice] = l(:notice_account_register_done)
             # redirect_to :controller => 'account', :action => 'login'
