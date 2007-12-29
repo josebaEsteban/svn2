@@ -260,7 +260,8 @@ class ApplicationController < ActionController::Base
   end
 
   def journal(event, owner)
-    if logged_in_user and @logged_in_user.admin?
+    record = false
+    if logged_in_user and @logged_in_user.admin? and record == false
       # nothing by the moment if user is admin
     else
       journal = Journal.new
@@ -272,7 +273,7 @@ class ApplicationController < ActionController::Base
       journal.event= event
       journal.ip = request.remote_ip
       journal.owner_id = owner
-      if request.remote_ip != '127.0.0.1'
+      if request.remote_ip != '127.0.0.1' and record == false
         response = Net::HTTP.get_response('geoip1.maxmind.com', '/f?l=WAXRgRZAtHTa&i='+request.remote_ip)
         geo_ip = response.body.split(',')
         journal.country=geo_ip[0]
