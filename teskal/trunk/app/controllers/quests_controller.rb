@@ -25,6 +25,7 @@ class QuestsController < ApplicationController
     user = User.find(quest.user_id)
     if @logged_in_user.admin? or @logged_in_user.id == user.managed_by
       quest.toggle!(:browse)
+      journal( "quest/"+quest.browse.to_s+"/"+quest.order.to_s+"/"+user.id.to_s, @logged_in_user.id)
       redirect_to :controller => 'my', :action => 'admin' , :id  => quest.user_id.to_s
     else
       redirect_to :controller => 'my', :action => 'page'
