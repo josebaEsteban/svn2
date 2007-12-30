@@ -15,45 +15,6 @@ class Quest11Controller < ApplicationController
     user.save
   end
 
-  def create
-    @answer = Answer.new(params[:answer])
-    user=User.find(session[:user_id])
-    @answer.quest_id=11
-    if user.filled_for == session[:user_id]
-      @answer.user_id=session[:user_id]
-      if user.show?
-        @answer.browse = true
-      end
-    else
-      @answer.user_id = user.filled_for
-    end
-    @answer.filled_by = session[:user_id]
-    @answer.ip = request.remote_ip
-    @answer.time_to_fill =  Time.now - user.start
-    if @answer.save
-      journal( "quest11/create/"+@answer.id.to_s, @answer.user_id)
-      # pendings = Pending.find_by_sql("select id from pendings where pendings.user_id=#{@answer.user_id} and pendings.quest_id=#{@answer.quest_id} order by pendings.created_on ASC")
-      # if pendings.length >0
-      #   Pending.delete(pendings[0])
-      # end
-
-      quest = Quest.find(:first, :conditions  => {:user_id  => @answer.user_id, :order => 11})
-      quest.toggle!(:browse)
-
-      if user.show?
-        redirect_to :action => 'show', :id => @answer.id
-      else
-        redirect_to :controller  => 'my', :action  => 'page'
-      end
-
-      # format.html { redirect_to answer_url(@answer) }
-      # format.xml  { head :created, :location => answer_url(@answer) }
-    else
-      format.html { render :action => "new" }
-      format.xml  { render :xml => @answer.errors.to_xml }
-    end
-  end
-
   def show
     @answer = Answer.find(params[:id])
     @user=User.find(@answer.user_id )
@@ -67,14 +28,14 @@ class Quest11Controller < ApplicationController
 
   def teskal_chart11
     scale=10/7.0
-    valor_bajo = 3 * scale
-    valor_medio = 5 * scale
+    valor_bajo = 3
+    valor_medio = 5
     @advice=[]
     @icon=[]
 
-    know = ((@answer.answ2 + @answer.answ5 + @answer.answ26 + @answer.answ30)/4.0 ) * scale
-    accomplish = ((@answer.answ9 + @answer.answ13 + @answer.answ16 + @answer.answ22)/4.0 ) * scale
-    experience = ((@answer.answ1 + @answer.answ14 + @answer.answ20 + @answer.answ28)/4.0 ) * scale
+    know = ((@answer.answ2 + @answer.answ5 + @answer.answ26 + @answer.answ30)/4.0 )
+    accomplish = ((@answer.answ9 + @answer.answ13 + @answer.answ16 + @answer.answ22)/4.0 )
+    experience = ((@answer.answ1 + @answer.answ14 + @answer.answ20 + @answer.answ28)/4.0 )
     motivacion_intrinseca= (know+accomplish+experience)/3.0
 
     item=0
@@ -90,7 +51,7 @@ class Quest11Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    integrated_regulation = ((@answer.answ4 + @answer.answ18 + @answer.answ24 + @answer.answ31)/4.0 ) * scale
+    integrated_regulation = ((@answer.answ4 + @answer.answ18 + @answer.answ24 + @answer.answ31)/4.0 )
     item=1
     if integrated_regulation < valor_bajo
       @advice[item]=l(:quest11_d2_a)
@@ -104,7 +65,7 @@ class Quest11Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    identified_regulation = ((@answer.answ8 + @answer.answ12 + @answer.answ19 + @answer.answ27)/4.0 ) * scale
+    identified_regulation = ((@answer.answ8 + @answer.answ12 + @answer.answ19 + @answer.answ27)/4.0 )
     item=2
     if identified_regulation < valor_bajo
       @advice[item]=l(:quest11_d3_a)
@@ -118,7 +79,7 @@ class Quest11Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    introjected_regulation = ((@answer.answ10 + @answer.answ15 + @answer.answ23 + @answer.answ29)/4.0 ) * scale
+    introjected_regulation = ((@answer.answ10 + @answer.answ15 + @answer.answ23 + @answer.answ29)/4.0 )
     item=3
     if introjected_regulation < valor_bajo
       @advice[item]=l(:quest11_d4_a)
@@ -132,7 +93,7 @@ class Quest11Controller < ApplicationController
         @icon[item]="stop"
       end
     end
-    motivacion_extrinseca = ((@answer.answ7 + @answer.answ11 + @answer.answ17 + @answer.answ25)/4.0 ) * scale
+    motivacion_extrinseca = ((@answer.answ7 + @answer.answ11 + @answer.answ17 + @answer.answ25)/4.0 )
     item=4
     if motivacion_extrinseca < valor_bajo
       @advice[item]=l(:quest11_d5_a)
@@ -146,7 +107,7 @@ class Quest11Controller < ApplicationController
         @icon[item]="stop"
       end
     end
-    amotivation = ((@answer.answ3 + @answer.answ6 + @answer.answ21 + @answer.answ32)/4.0 ) * scale
+    amotivation = ((@answer.answ3 + @answer.answ6 + @answer.answ21 + @answer.answ32)/4.0 )
     item=5
     if amotivation < valor_bajo
       @advice[item]=l(:quest11_d6_a)
@@ -234,12 +195,12 @@ class Quest11Controller < ApplicationController
     # @chart1= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest11", 750, 300, false, false)
 
     strXML = "<chart caption='"+l(:quest11_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='10' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
-    strXML = strXML + "<set label='" + l(:quest11_label_1) + "' value='" + acorta(motivacion_intrinseca) + "'/>"
-    strXML = strXML + "<set label='" + l(:quest11_label_2) + "' value='" + acorta(integrated_regulation) + "'/>"
-    strXML = strXML + "<set label='" + l(:quest11_label_3) + "' value='" + acorta(identified_regulation) + "'/>"
-    strXML = strXML + "<set label='" + l(:quest11_label_4) + "' value='" + acorta(introjected_regulation) + "'/>"
-    strXML = strXML + "<set label='" + l(:quest11_label_5) + "' value='" + acorta(motivacion_extrinseca) + "'/>"
-    strXML = strXML + "<set label='" + l(:quest11_label_6) + "' value='" + acorta(amotivation) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest11_label_1) + "' value='" + acorta(motivacion_intrinseca * scale) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest11_label_2) + "' value='" + acorta(integrated_regulation * scale) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest11_label_3) + "' value='" + acorta(identified_regulation * scale) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest11_label_4) + "' value='" + acorta(introjected_regulation * scale) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest11_label_5) + "' value='" + acorta(motivacion_extrinseca * scale) + "'/>"
+    strXML = strXML + "<set label='" + l(:quest11_label_6) + "' value='" + acorta(amotivation * scale) + "'/>"
     strXML = strXML + "</chart>"
 
     #Create the chart - Pie 3D Chart with data from strXML

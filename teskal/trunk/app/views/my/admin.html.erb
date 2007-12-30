@@ -95,142 +95,38 @@ width: 300px;
     </ul>
     <div id="panel_quest" class="panel" style="display:none">
       <table cellspacing="0">
+        <thead>
+          <tr>
+            <th scope="col"><%= l(:label_last_updates) %></th>
+            <th scope="col">##</th>
+            <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
+          </tr>
+        </thead>
         <tbody>
+          <%- i=0 -%>
+          <%- for quest in @quests -%>
+          <%- if i/2 == i/2.0 -%>
           <tr>
-            <td>1</td>
-            <td><%= l(:quest1)%></td>
-            <td><a href="/quest1/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
-            <td> <a href="/quests/switch/<%= @quests[0].id.to_s %>">	
-			 	<%- if @quests[0].browse -%>
+            <%- else -%>
+          <tr class="odd">
+            <%- end -%>
+            <td><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(quest.updated_on))%></td>
+            <td><%= quest.order.to_s %></td>
+            <td><%= @titulo[i]%></td>
+            <td><a href="/quest<%= quest.order.to_s %>/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
+            <td> <a href="/quests/switch/<%= quest.id.to_s %>">	
+			 	<%- if quest.browse -%>
 			 		<%= image_tag 'tick.png' %>
 			 <%- else -%>
 			 		<%= image_tag 'cross.png' %> 
 			 <%- end -%></a></td>
           </tr>
-          <tr class='odd'>
-            <td>2</td>
-            <td><%= l(:quest2_label_0)%></td>
-            <td><a href="/quest2/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
-            <td> <a href="/quests/switch/<%= @quests[1].id.to_s %>">	
-			 	<%- if @quests[1].browse -%>
-			 		<%= image_tag 'tick.png' %>
-			 <%- else -%>
-			 		<%= image_tag 'cross.png' %> 
-			 <%- end -%></a></td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td><%=l(:quest3)%></td>
-            <td><a href="/quest3/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
-            <td> <a href="/quests/switch/<%= @quests[2].id.to_s %>">	
-			 	<%- if @quests[2].browse -%>
-			 		<%= image_tag 'tick.png' %>
-			 <%- else -%>
-			 		<%= image_tag 'cross.png' %> 
-			 <%- end -%></a></td>
-          </tr>
-          <tr class='odd'>
-            <td>4</td>
-            <td><%= l(:quest4)%></td>
-            <td><a href="/quest4/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
-            <td> <a href="/quests/switch/<%= @quests[3].id.to_s %>">	
-			 	<%- if @quests[3].browse -%>
-			 		<%= image_tag 'tick.png' %>
-			 <%- else -%>
-			 		<%= image_tag 'cross.png' %> 
-			 <%- end -%></a></td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td><%= l(:quest5) %></td>
-            <td><a href="/quest5/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
-            <td> <a href="/quests/switch/<%= @quests[4].id.to_s %>">	
-			 	<%- if @quests[4].browse -%>
-			 		<%= image_tag 'tick.png' %>
-			 <%- else -%>
-			 		<%= image_tag 'cross.png' %> 
-			 <%- end -%></a></td>
-          </tr>
-          <tr class='odd'>
-            <td>6</td>
-            <td><%= l(:quest6) %></td>
-            <td><a href="/quest6/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
-            <td> <a href="/quests/switch/<%= @quests[5].id.to_s %>">	
-			 	<%- if @quests[5].browse -%>
-			 		<%= image_tag 'tick.png' %>
-			 <%- else -%>
-			 		<%= image_tag 'cross.png' %> 
-			 <%- end -%></a></td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td><%= l(:quest7_label_0) %></td>
-            <td><a href="/quest7/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
-            <td> <a href="/quests/switch/<%= @quests[6].id.to_s %>">	
-			 	<%- if @quests[6].browse -%>
-			 		<%= image_tag 'tick.png' %>
-			 <%- else -%>
-			 		<%= image_tag 'cross.png' %> 
-			 <%- end -%></a></td>
-          </tr>
-          <tr class='odd'>
-            <td>8</td>
-            <td><%= l(:quest8_label_0) %></td>
-            <td><a href="/quest8/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
-            <td> <a href="/quests/switch/<%= @quests[7].id.to_s %>">	
-			 	<%- if @quests[7].browse -%>
-			 		<%= image_tag 'tick.png' %>
-			 <%- else -%>
-			 		<%= image_tag 'cross.png' %> 
-			 <%- end -%></a></td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td><%= l(:quest9_label_0) %></td>
-            <td><a href="/quest9/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
-            <td> <a href="/quests/switch/<%= @quests[8].id.to_s %>">	
-			 	<%- if @quests[8].browse -%>
-			 		<%= image_tag 'tick.png' %>
-			 <%- else -%>
-			 		<%= image_tag 'cross.png' %> 
-			 <%- end -%></a></td>
-          </tr>
-          <tr class='odd'>
-            <td>10</td>
-            <td><%=l(:quest10_label_0) %></td>
-            <td><a href="/quest10/new/<%= id %>"><%= image_tag 'pencil.png' %></span></a></td>
-            <td> <a href="/quests/switch/<%= @quests[9].id.to_s %>">	
-			 	<%- if @quests[9].browse -%>
-			 		<%= image_tag 'tick.png' %>
-			 <%- else -%>
-			 		<%= image_tag 'cross.png' %> 
-			 <%- end -%></a></td>
-          </tr>
-          <tr>
-            <td>11</td>
-            <td><%=  l(:quest11_label_0) %></td>
-            <td><a href="/quest11/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
-            <td> <a href="/quests/switch/<%= @quests[10].id.to_s %>">	
-			 	<%- if @quests[10].browse -%>
-			 		<%= image_tag 'tick.png' %>
-			 <%- else -%>
-			 		<%= image_tag 'cross.png' %> 
-			 <%- end -%></a></td>
-          </tr>
-          <tr class='odd'>
-            <td>12</td>
-            <td><%= l(:quest12_label_0) %></td>
-            <td><a href="/quest12/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
-            <td> <a href="/quests/switch/<%= @quests[11].id.to_s %>">	
-			 	<%- if @quests[11].browse -%>
-			 		<%= image_tag 'tick.png' %>
-			 <%- else -%>
-			 		<%= image_tag 'cross.png' %> 
-			 <%- end -%></a></td>
-          </tr>
+          <%- i=i+1 -%>
+          <%- end -%>
         </tbody>
       </table>
     </div>
+
     <div id="panel_library" class="panel" style="display:none">
       <table cellspacing="0">
         <thead>
@@ -241,196 +137,32 @@ width: 300px;
           </tr>
         </thead>
         <tbody>
+          <%- i=0 -%>
+          <%- for book in @books -%>
+          <%- if i/2 == i/2.0 -%>
           <tr>
-            <td><%= l_date(TzTime.zone.utc_to_local(@books[0].updated_on))%></td>
-            <td>1</td>
-            <td><%= l(:unit_1_title) %></td>
-            <td> <a href="/books/switch/<%= @books[0].id.to_s %>">	
-		 	<%- if @books[0].browse -%>
+            <%- else -%>
+          <tr class="odd">
+            <%- end -%>
+            <td><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(book.updated_on))%></td>
+            <td><%= book.order.to_s %></td>
+            <td><%= @libro[i] %></td>
+            <td> <a href="/books/switch/<%= book.id.to_s %>">	
+		 	<%- if book.browse -%>
 		 		<%= image_tag 'tick.png' %>
 		 <%- else -%>
 		 		<%= image_tag 'cross.png' %> 
 		 <%- end -%></a></td>
             <td></td>
           </tr>
-          <tr class='odd'>
-            <td><%= l_date(TzTime.zone.utc_to_local(@books[1].updated_on))%></td>
-            <td>2</td>
-            <td><%= l(:unit_2_title) %></td>
-            <td> <a href="/books/switch/<%= @books[1].id.to_s %>">	
-		 	<%- if @books[1].browse -%>
-		 		<%= image_tag 'tick.png' %>
-		 <%- else -%>
-		 		<%= image_tag 'cross.png' %> 
-		 <%- end -%></a></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><%= l_date(TzTime.zone.utc_to_local(@books[2].updated_on))%></td>
-            <td>3</td>
-            <td><%= l(:unit_3_title) %></td>
-            <td> <a href="/books/switch/<%= @books[2].id.to_s %>">	
-		 	<%- if @books[2].browse -%>
-		 		<%= image_tag 'tick.png' %>
-		 <%- else -%>
-		 		<%= image_tag 'cross.png' %> 
-		 <%- end -%></a></td>
-            <td></td>
-          </tr>
-          <tr class='odd'>
-            <td><%= l_date(TzTime.zone.utc_to_local(@books[3].updated_on))%></td>
-            <td>4</td>
-            <td><%= l(:unit_4_title) %></td>
-            <td> <a href="/books/switch/<%= @books[3].id.to_s %>">	
-		 	<%- if @books[3].browse -%>
-		 		<%= image_tag 'tick.png' %>
-		 <%- else -%>
-		 		<%= image_tag 'cross.png' %> 
-		 <%- end -%></a></td>
-            <td></td>
-          </tr>
-          <tr>
-          <tr>
-            <td><%= l_date(TzTime.zone.utc_to_local(@books[4].updated_on))%></td>
-            <td>5</td>
-            <td><%= l(:unit_5_title) %></td>
-            <td> <a href="/books/switch/<%= @books[4].id.to_s %>">	
-		 	<%- if @books[4].browse -%>
-		 		<%= image_tag 'tick.png' %>
-		 <%- else -%>
-		 		<%= image_tag 'cross.png' %> 
-		 <%- end -%></a></td>
-            <td></td>
-          </tr>
-          <tr class='odd'>
-            <td><%= l_date(TzTime.zone.utc_to_local(@books[5].updated_on))%></td>
-            <td>6</td>
-            <td><%= l(:unit_6_title) %></td>
-            <td> <a href="/books/switch/<%= @books[5].id.to_s %>">	
-		 	<%- if @books[5].browse -%>
-		 		<%= image_tag 'tick.png' %>
-		 <%- else -%>
-		 		<%= image_tag 'cross.png' %> 
-		 <%- end -%></a></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><%= l_date(TzTime.zone.utc_to_local(@books[6].updated_on))%></td>
-            <td>7</td>
-            <td><%= l(:unit_7_title) %></td>
-            <td> <a href="/books/switch/<%= @books[6].id.to_s %>">	
-		 	<%- if @books[6].browse -%>
-		 		<%= image_tag 'tick.png' %>
-		 <%- else -%>
-		 		<%= image_tag 'cross.png' %> 
-		 <%- end -%></a></td>
-            <td></td>
-          </tr>
-          <tr class='odd'>
-            <td><%= l_date(TzTime.zone.utc_to_local(@books[7].updated_on))%></td>
-            <td>8</td>
-            <td><%= l(:unit_8_title) %></td>
-            <td> <a href="/books/switch/<%= @books[7].id.to_s %>">	
-		 	<%- if @books[7].browse -%>
-		 		<%= image_tag 'tick.png' %>
-		 <%- else -%>
-		 		<%= image_tag 'cross.png' %> 
-		 <%- end -%></a></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><%= l_date(TzTime.zone.utc_to_local(@books[8].updated_on))%></td>
-            <td>9</td>
-            <td><%= l(:unit_9_title) %></td>
-            <td> <a href="/books/switch/<%= @books[8].id.to_s %>">	
-		 	<%- if @books[8].browse -%>
-		 		<%= image_tag 'tick.png' %>
-		 <%- else -%>
-		 		<%= image_tag 'cross.png' %> 
-		 <%- end -%></a></td>
-            <td></td>
-          </tr>
-          <tr class='odd'>
-            <td><%= l_date(TzTime.zone.utc_to_local(@books[9].updated_on))%></td>
-            <td>10</td>
-            <td><%= l(:unit_10_title) %></td>
-            <td> <a href="/books/switch/<%= @books[9].id.to_s %>">	
-		 	<%- if @books[9].browse -%>
-		 		<%= image_tag 'tick.png' %>
-		 <%- else -%>
-		 		<%= image_tag 'cross.png' %> 
-		 <%- end -%></a></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><%= l_date(TzTime.zone.utc_to_local(@books[10].updated_on))%></td>
-            <td>11</td>
-            <td><%= l(:unit_11_title) %></td>
-            <td> <a href="/books/switch/<%= @books[10].id.to_s %>">	
-		 	<%- if @books[10].browse -%>
-		 		<%= image_tag 'tick.png' %>
-		 <%- else -%>
-		 		<%= image_tag 'cross.png' %> 
-		 <%- end -%></a></td>
-            <td></td>
-          </tr>
-          <tr class='odd'>
-            <td><%= l_date(TzTime.zone.utc_to_local(@books[11].updated_on))%></td>
-            <td>12</td>
-            <td><%= l(:unit_12_title) %></td>
-            <td> <a href="/books/switch/<%= @books[11].id.to_s %>">	
-		 	<%- if @books[11].browse -%>
-		 		<%= image_tag 'tick.png' %>
-		 <%- else -%>
-		 		<%= image_tag 'cross.png' %> 
-		 <%- end -%></a></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><%= l_date(TzTime.zone.utc_to_local(@books[12].updated_on))%></td>
-            <td>13</td>
-            <td><%= l(:unit_13_title) %></td>
-            <td> <a href="/books/switch/<%= @books[12].id.to_s %>">	
-		 	<%- if @books[12].browse -%>
-		 		<%= image_tag 'tick.png' %>
-		 <%- else -%>
-		 		<%= image_tag 'cross.png' %> 
-		 <%- end -%></a></td>
-            <td></td>
-          </tr>
-          <tr class='odd'>
-            <td><%= l_date(TzTime.zone.utc_to_local(@books[13].updated_on))%></td>
-            <td>14</td>
-            <td><%= l(:unit_14_title) %></td>
-            <td> <a href="/books/switch/<%= @books[13].id.to_s %>">	
-		 	<%- if @books[13].browse -%>
-		 		<%= image_tag 'tick.png' %>
-		 <%- else -%>
-		 		<%= image_tag 'cross.png' %> 
-		 <%- end -%></a></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><%= l_date(TzTime.zone.utc_to_local(@books[14].updated_on))%></td>
-            <td>15</td>
-            <td><%= l(:unit_15_title) %></td>
-            <td> <a href="/books/switch/<%= @books[14].id.to_s %>">	
-		 	<%- if @books[14].browse -%>
-		 		<%= image_tag 'tick.png' %>
-		 <%- else -%>
-		 		<%= image_tag 'cross.png' %> 
-		 <%- end -%></a></td>
-            <td></td>
-          </tr>
+          <%- i=i+1 -%>
+          <%- end -%>
         </tbody>
       </table>
     </div>
   </div>
 </div>
-
-
 <%- TzTime.zone=@athlete.timezone -%>
-
 <div class="splitcontentright">
   <table cellspacing="0">
     <thead>
@@ -448,32 +180,6 @@ width: 300px;
       <%- else -%>
       <%- odd=0 -%>
       <%- for answer in @answers -%>
-      <%- case answer.quest_id
-			          when 1 
-			            quest=l(:quest1) 
-			          when 2 
-			            quest=l(:quest2_label_0) 
-			          when 3 
-			            quest=l(:quest3) 
-			          when 4 
-			            quest=l(:quest4) 
-			          when 5 
-			            quest=l(:quest5) 
-			          when 6 
-			            quest=l(:quest6) 
-			          when 7 
-			            quest=l(:quest7_label_0) 
-			          when 8 
-			            quest=l(:quest8_label_0)  
-			          when 9 
-			            quest=l(:quest9_label_0)  
-			          when 10 
-			            quest=l(:quest10_label_0)  
-			          when 11 
-			            quest=l(:quest11_label_0)
-			          when 12 
-			            quest=l(:quest12_label_0)
-			          end -%>
       <%- if odd == 1 -%>
     <tr class="odd">
       <%- odd=0-%>
@@ -481,9 +187,9 @@ width: 300px;
     <tr>
       <%- odd=1 end -%>
       <%- controlador="quest"+ answer.quest_id.to_s -%>
-      <td><%= l_date(TzTime.zone.utc_to_local(answer.created_on))%></td>
+      <td><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(answer.created_on))%></td>
       <td> <%= answer.quest_id.to_s %> </td>
-      <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
+      <td><%= link_to @titulo[answer.quest_id-1], :controller  => controlador, :action => 'show', :id => answer %></td>
       <td> <a href="/answers/switch/<%= answer.id.to_s %>">	
 			      	<%- if answer.browse -%>
 			      		<%= image_tag 'tick.png' %>

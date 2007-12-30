@@ -15,53 +15,6 @@ class Quest1Controller < ApplicationController
     user.save 
   end
 
-  def create
-    @answer = Answer.new(params[:answer])
-    user=User.find(session[:user_id])
-    @answer.quest_id=1
-    if user.filled_for == session[:user_id]
-      @answer.user_id=session[:user_id]
-      if user.show?
-        @answer.browse = true
-      end
-    else
-      @answer.user_id = user.filled_for
-    end
-    @answer.filled_by = session[:user_id]
-    @answer.ip = request.remote_ip
-    @answer.time_to_fill =  Time.now - user.start
-    if @answer.answ24.nil?
-      @answer.answ24=0
-    end
-    if @answer.answ25.nil?
-      @answer.answ25=0
-    end
-    if @answer.save
-      # flash[:notice] = 'Answer was successfully created.'
-      journal( "quest1/create/"+@answer.id.to_s, @answer.user_id)
-      # pendings = Pending.find_by_sql("select id from pendings where pendings.user_id=#{@answer.user_id} and pendings.quest_id=#{@answer.quest_id} order by pendings.created_on ASC")
-      # if pendings.length >0
-      #   Pending.delete(pendings[0])
-      # end
-
-      quest = Quest.find(:first, :conditions  => {:user_id  => @answer.user_id, :order => 1})
-      quest.toggle!(:browse)
-
-      if user.show?
-        redirect_to :action => 'show', :id => @answer.id
-      else
-        redirect_to :controller  => 'my', :action  => 'page'
-      end
-
-      # format.html { redirect_to answer_url(@answer) }
-      # format.xml  { head :created, :location => answer_url(@answer) }
-    else
-      format.html { render :action => "new" }
-      format.xml  { render :xml => @answer.errors.to_xml }
-    end
-  end
-
-
   def show
     @answer = Answer.find(params[:id])
     @user=User.find(@answer.user_id )

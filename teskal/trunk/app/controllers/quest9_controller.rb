@@ -15,45 +15,6 @@ class Quest9Controller < ApplicationController
     user.save 
   end
 
-  def create
-    @answer = Answer.new(params[:answer])
-    user=User.find(session[:user_id])
-    @answer.quest_id=9
-    if user.filled_for == session[:user_id]
-      @answer.user_id=session[:user_id]
-      if user.show?
-        @answer.browse = true
-      end
-    else
-      @answer.user_id = user.filled_for
-    end
-    @answer.filled_by = session[:user_id]
-    @answer.ip = request.remote_ip
-    @answer.time_to_fill =  Time.now - user.start
-    if @answer.save
-      # flash[:notice] = 'Answer was successfully created.'
-      journal( "quest9/create/"+@answer.id.to_s, @answer.user_id)
-      # pendings = Pending.find_by_sql("select id from pendings where pendings.user_id=#{@answer.user_id} and pendings.quest_id=#{@answer.quest_id} order by pendings.created_on ASC")
-      # if pendings.length >0
-      #   Pending.delete(pendings[0])
-      # end
-
-      quest = Quest.find(:first, :conditions  => {:user_id  => @answer.user_id, :order => 9})
-      quest.toggle!(:browse)
-
-      if user.show?
-        redirect_to :action => 'show', :id => @answer.id
-      else
-        redirect_to :controller  => 'my', :action  => 'page'
-      end
-      # format.html { redirect_to answer_url(@answer) }
-      # format.xml  { head :created, :location => answer_url(@answer) }
-    else
-      format.html { render :action => "new" }
-      format.xml  { render :xml => @answer.errors.to_xml }
-    end
-  end
-
   def show
     @answer = Answer.find(params[:id])
     @user=User.find(@answer.user_id )
@@ -69,10 +30,10 @@ class Quest9Controller < ApplicationController
     scale=10/5
     @advice=[]
     @icon=[]
-    valor_bajo = 2.5 * scale
-    valor_medio = 4 * scale
+    valor_bajo = 2.5
+    valor_medio = 4
 
-    peg = ((@answer.answ3 + @answer.answ5) * scale) /2.0
+    peg = ((@answer.answ3 + @answer.answ5)) /2.0
     item=0
     if peg < valor_bajo
       @advice[item]=l(:quest9_d1_a)
@@ -86,7 +47,7 @@ class Quest9Controller < ApplicationController
         @icon[item]="stop"
       end
     end
-    maestria_grupal = ((@answer.answ4 + @answer.answ21)/2.0) * scale
+    maestria_grupal = ((@answer.answ4 + @answer.answ21)/2.0)
     item=1
     if maestria_grupal < valor_bajo
       @advice[item]=l(:quest9_d2_a)
@@ -100,7 +61,7 @@ class Quest9Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    co = ((@answer.answ16 + @answer.answ17 + @answer.answ19 + @answer.answ20)/4.0) * scale
+    co = ((@answer.answ16 + @answer.answ17 + @answer.answ19 + @answer.answ20)/4.0)
     item=2
     if co < valor_bajo
       @advice[item]=l(:quest9_d3_a)
@@ -114,7 +75,7 @@ class Quest9Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    ca = ((@answer.answ6 + @answer.answ7 + @answer.answ11)/3.0) * scale
+    ca = ((@answer.answ6 + @answer.answ7 + @answer.answ11)/3.0)
     item=3
     if ca < valor_bajo
       @advice[item]=l(:quest9_d4_a)
@@ -128,7 +89,7 @@ class Quest9Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    cr = ((@answer.answ13 + @answer.answ14)/2.0) * scale
+    cr = ((@answer.answ13 + @answer.answ14)/2.0)
     item=4
     if cr < valor_bajo
       @advice[item]=l(:quest9_d5_a)
@@ -142,7 +103,7 @@ class Quest9Controller < ApplicationController
         @icon[item]="stop"
       end
     end
-    ci = ((@answer.answ8 + @answer.answ15)/2.0) * scale
+    ci = ((@answer.answ8 + @answer.answ15)/2.0)
     item=5
     if ci < valor_bajo
       @advice[item]=l(:quest9_d6_a)
@@ -156,7 +117,7 @@ class Quest9Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    ed = ((@answer.answ1 + @answer.answ10)/2.0) * scale
+    ed = ((@answer.answ1 + @answer.answ10)/2.0)
     item=6
     if ed < valor_bajo
       @advice[item]=l(:quest9_d7_a)
@@ -170,7 +131,7 @@ class Quest9Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    pem = ((@answer.answ2 + @answer.answ18)/2.0) * scale
+    pem = ((@answer.answ2 + @answer.answ18)/2.0)
     item=7
     if pem < valor_bajo
       @advice[item]=l(:quest9_d8_a)
@@ -184,7 +145,7 @@ class Quest9Controller < ApplicationController
         @icon[item]="star"
       end
     end
-    per = ((@answer.answ9 + @answer.answ12)/2.0) * scale
+    per = ((@answer.answ9 + @answer.answ12)/2.0)
     item=8
     if per < valor_bajo
       @advice[item]=l(:quest9_d9_a)
@@ -222,15 +183,15 @@ class Quest9Controller < ApplicationController
     strXML = strXML +"<set value='"+(1*scale).to_s+"'/><set value='"+(5*scale).to_s+"' /><set value='"+(5*scale).to_s+"'/><set value='"+(5*scale).to_s+"'/><set value='"+(1*scale).to_s+"'/><set value='"+(5*scale).to_s+"'/><set value='"+(5*scale).to_s+"'/><set value='"+(5*scale).to_s+"'/><set value='"+(3*scale).to_s+"'/>"
     strXML = strXML +"</dataset>"
     strXML = strXML +"<dataset SeriesName='"+l(:quest3_label_10)+"' lineThickness='4' renderAs='Line' >"
-    strXML = strXML + "<set value='" + acorta(peg) + "'/>"
-    strXML = strXML + "<set value='" + acorta(maestria_grupal) + "'/>"
-    strXML = strXML + "<set value='" + acorta(co) + "'/>"
-    strXML = strXML + "<set value='" + acorta(ca) + "'/>"
-    strXML = strXML + "<set value='" + acorta(cr) + "'/>"
-    strXML = strXML + "<set value='" + acorta(ci) + "'/>"
-    strXML = strXML + "<set value='" + acorta(ed)+ "'/>"
-    strXML = strXML + "<set value='" + acorta(pem) + "'/>"
-    strXML = strXML + "<set value='" + acorta(per) + "'/>"
+    strXML = strXML + "<set value='" + acorta(peg * scale) + "'/>"
+    strXML = strXML + "<set value='" + acorta(maestria_grupal * scale) + "'/>"
+    strXML = strXML + "<set value='" + acorta(co * scale) + "'/>"
+    strXML = strXML + "<set value='" + acorta(ca * scale) + "'/>"
+    strXML = strXML + "<set value='" + acorta(cr * scale) + "'/>"
+    strXML = strXML + "<set value='" + acorta(ci * scale) + "'/>"
+    strXML = strXML + "<set value='" + acorta(ed * scale)+ "'/>"
+    strXML = strXML + "<set value='" + acorta(pem * scale) + "'/>"
+    strXML = strXML + "<set value='" + acorta(per * scale) + "'/>"
     strXML = strXML + "</dataset> </chart>"
 
     #Create the chart - Pie 3D Chart with data from strXML

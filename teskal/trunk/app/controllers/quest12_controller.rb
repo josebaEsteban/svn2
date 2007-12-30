@@ -3,49 +3,7 @@ class Quest12Controller < ApplicationController
   before_filter :require_login
 
   def new
-    user=User.find(session[:user_id])
-    user.start = Time.now
-    if !params[:id].nil?
-      user.filled_for = params[:id]
-      passive = User.find_by_sql("select * from users where users.id=#{params[:id]}")
-      @subject = passive[0].name
-    else
-      user.filled_for = session[:user_id]
-    end
-    user.save 
-  end
-
-  def create
-    @answer = Answer.new(params[:answer])
-    user=User.find(session[:user_id])
-    @answer.quest_id=12
-    if user.filled_for == session[:user_id]
-      @answer.user_id=session[:user_id]
-      if user.show?
-        @answer.browse = true
-      end
-    else
-      @answer.user_id = user.filled_for
-    end
-    @answer.filled_by = session[:user_id]
-    @answer.ip = request.remote_ip
-    @answer.time_to_fill =  Time.now - user.start
-    @answer.browse=1
-    if @answer.save
-      # flash[:notice] = 'Answer was successfully created.'
-      journal( "quest12/create/"+@answer.id.to_s, @answer.user_id)
-
-      quest = Quest.find(:first, :conditions  => {:user_id  => @answer.user_id, :order => 12})
-      quest.toggle!(:browse)
-
-      redirect_to :action => 'show', :id => @answer.id
-
-      # format.html { redirect_to answer_url(@answer) }
-      # format.xml  { head :created, :location => answer_url(@answer) }
-    else
-      format.html { render :action => "new" }
-      format.xml  { render :xml => @answer.errors.to_xml }
-    end
+    new_quest
   end
 
   def show
