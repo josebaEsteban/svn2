@@ -97,7 +97,7 @@ tbody tr:hover th{background:#ffffee;border-color:#523A0B;}
                        paso = journal.event.split('/') 
                        accion = "/"+paso[0]+"/show/"+ paso[2]-%>
     <td><a href=<%= accion %>><%= journal.event %></td>
-    <%- 	if paso[1]='create'
+    <%- 	if paso[1]=='create'
 		answer=Answer.find(paso[2])
 			if  answer.time_to_fill.nil?
 				time_taken = 0
