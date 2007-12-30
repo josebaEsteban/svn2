@@ -2,7 +2,7 @@
 
 
 class ApplicationController < ActionController::Base
-  before_filter :check_if_login_required, :set_localization 
+  before_filter :check_if_login_required, :set_localization
   filter_parameter_logging :password
   # around_filter :set_timezone
 
@@ -308,9 +308,9 @@ class ApplicationController < ActionController::Base
       book.user_id = user
       book.order = number
       if number == Book::FREE
-        book.browse = 1
+        book.browse = true
       else
-        book.browse = 0
+        book.browse = false
       end
     book.save}
   end
@@ -320,13 +320,63 @@ class ApplicationController < ActionController::Base
       quest.user_id = user
       quest.order = number
       if Quest::FREE.include?(number)
-        quest.browse = 1
+        quest.browse = true
       else
-        quest.browse = 0
+        quest.browse = false
       end
     quest.save}
   end
 
+  def get_label_quest
+    titulo=[]
+    titulo[0]=l(:quest1)
+    titulo[1]=l(:quest2_label_0)
+    titulo[2]=l(:quest3)
+    titulo[3]=l(:quest4)
+    titulo[4]=l(:quest5)
+    titulo[5]=l(:quest6)
+    titulo[6]=l(:quest7_label_0)
+    titulo[7]=l(:quest8_label_0)
+    titulo[8]=l(:quest9_label_0)
+    titulo[9]=l(:quest10_label_0)
+    titulo[10]=l(:quest11_label_0)
+    titulo[11]=l(:quest12_label_0)
+    return titulo
+  end
+
+  def get_label_book
+    libro=[]
+    libro[0]=l(:unit_1_title)
+    libro[1]=l(:unit_2_title)
+    libro[2]=l(:unit_3_title)
+    libro[3]=l(:unit_4_title)
+    libro[4]=l(:unit_5_title)
+    libro[5]=l(:unit_6_title)
+    libro[6]=l(:unit_7_title)
+    libro[7]=l(:unit_8_title)
+    libro[8]=l(:unit_9_title)
+    libro[9]=l(:unit_10_title)
+    libro[10]=l(:unit_11_title)
+    libro[11]=l(:unit_12_title)
+    libro[12]=l(:unit_13_title)
+    libro[13]=l(:unit_14_title)
+    libro[14]=l(:unit_15_title)
+    return libro
+  end
+
+  def new_quest
+    user=User.find(session[:user_id])
+    user.start = Time.now
+    if !params[:id].nil?
+      user.filled_for = params[:id]
+      passive = User.find_by_sql("select * from users where users.id=#{params[:id]}")
+      @subject = passive[0].name
+    else
+      user.filled_for = session[:user_id]
+    end
+    user.save
+  end
+  
   # private
   # def set_timezone
   #   if logged_in? && !current_user.time_zone.nil?

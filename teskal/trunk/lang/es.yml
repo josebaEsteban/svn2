@@ -7,16 +7,16 @@ actionview_datehelper_select_month_prefix:
 actionview_datehelper_select_year_prefix:
 actionview_datehelper_time_in_words_day: 1 día
 actionview_datehelper_time_in_words_day_plural: %d días
-actionview_datehelper_time_in_words_hour_about: about an hour
-actionview_datehelper_time_in_words_hour_about_plural: about %d hours
-actionview_datehelper_time_in_words_hour_about_single: about an hour
-actionview_datehelper_time_in_words_minute: 1 minute
-actionview_datehelper_time_in_words_minute_half: half a minute
-actionview_datehelper_time_in_words_minute_less_than: less than a minute
-actionview_datehelper_time_in_words_minute_plural: %d minutes
-actionview_datehelper_time_in_words_minute_single: 1 minute
-actionview_datehelper_time_in_words_second_less_than: less than a second
-actionview_datehelper_time_in_words_second_less_than_plural: less than %d seconds
+actionview_datehelper_time_in_words_hour_about: una hora
+actionview_datehelper_time_in_words_hour_about_plural: %d horas
+actionview_datehelper_time_in_words_hour_about_single: una hora
+actionview_datehelper_time_in_words_minute: 1 minuto
+actionview_datehelper_time_in_words_minute_half: medio minuto
+actionview_datehelper_time_in_words_minute_less_than: menos de un minuto
+actionview_datehelper_time_in_words_minute_plural: %d minutos
+actionview_datehelper_time_in_words_minute_single: 1 minuto
+actionview_datehelper_time_in_words_second_less_than: menos de 1 segundo
+actionview_datehelper_time_in_words_second_less_than_plural: menos de %d segundos
 actionview_instancetag_blank_option: Por favor seleccione
 activerecord_error_accepted: debe ser aceptado
 activerecord_error_blank: no puede estar en blanco
@@ -107,7 +107,7 @@ field_summary: Resumen
 field_title: Título
 field_tracker: Tracker
 field_type: Tipo
-field_updated_on: Actualizado
+field_updated_on: Actualizado hace
 field_url: URL
 field_user: Usuario
 field_value: Valor
@@ -169,7 +169,7 @@ label_export_to: Exportar a
 label_f_hour: %.2f hour
 label_f_hour_plural: %.2f hours
 label_fill: Rellenar
-label_filled: Rellenado
+label_filled: Rellenado hace
 label_filter_plural: Filtros
 label_help: Ayuda
 label_history: Histórico
@@ -183,7 +183,7 @@ label_internal: Interno
 label_language_based: Language based
 label_last_changes: %d cambios del último
 label_last_login: Última conexión
-label_last_updates: Actualizado
+label_last_updates: Actualizado hace
 label_last_updates_plural: %d Actualizados
 label_less_than_ago: hace menos de
 label_library: Biblioteca
