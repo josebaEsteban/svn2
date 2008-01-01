@@ -87,8 +87,10 @@ width: 300px;
 
 </style>
 <%- id = @athlete.id.to_s -%>
-<div class="splitcontentleft">
-  <div id="container">
+<div class='boxx'>
+ <div class='boxxtop'><div></div></div>
+  <div class='boxxcontent'>
+	  <div id="container"> 
     <ul id="tabnav">
       <li><a href="#quest" id="tab_quest" class="tab"><%= l(:label_quest_plural) %></a></li>
       <li><a href="#library" id="tab_library" class="tab"><%= l(:label_library) %></a></li>
@@ -160,7 +162,9 @@ width: 300px;
         </tbody>
       </table>
     </div>
+    </div> 
   </div>
+ <div class='boxxbottom'><div></div></div>
 </div>
 <%- TzTime.zone=@athlete.timezone -%>
 <div class="splitcontentright">

@@ -366,7 +366,8 @@ class ApplicationController < ActionController::Base
 
   def new_quest
     user=User.find(session[:user_id])
-    user.start = Time.now
+    user.start = Time.now 
+    # para quien se esta rellenando?
     if !params[:id].nil?
       user.filled_for = params[:id]
       passive = User.find_by_sql("select * from users where users.id=#{params[:id]}")

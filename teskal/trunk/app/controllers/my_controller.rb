@@ -5,18 +5,18 @@ class MyController < ApplicationController
   layout 'base'
   before_filter :require_login
 
-  BLOCKS = { 'news' => :label_news_laquest,
-    'documents' => :label_document_plural
-  }.freeze
-
-  DEFAULT_LAYOUT = {  'left' => ['issuesassignedtome'],
-    'right' => ['issuesreportedbyme']
-  }.freeze
-
-  verify :xhr => true,
-  :session => :page_layout,
-  :only => [:add_block, :remove_block, :order_blocks]
-
+  # BLOCKS = { 'news' => :label_news_laquest,
+  #   'documents' => :label_document_plural
+  # }.freeze
+  # 
+  # DEFAULT_LAYOUT = {  'left' => ['issuesassignedtome'],
+  #   'right' => ['issuesreportedbyme']
+  # }.freeze
+  # 
+  # verify :xhr => true,
+  # :session => :page_layout,
+  # :only => [:add_block, :remove_block, :order_blocks]
+  #  
   
   def index
     page
@@ -29,7 +29,7 @@ class MyController < ApplicationController
     @titulo = get_label_quest
     @user = self.logged_in_user
     @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{session[:user_id]} and answers.browse=1 order by answers.created_on DESC")
-    @blocks = @user.pref[:my_page_layout] || DEFAULT_LAYOUT
+    # @blocks = @user.pref[:my_page_layout] || DEFAULT_LAYOUT
     # @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{session[:user_id]} order by pendings.created_on DESC")
     @books = Book.find_by_sql("select * from books where books.user_id=#{session[:user_id]} order by books.order ASC")
     @quests = Quest.find_by_sql("select * from quests where quests.user_id=#{session[:user_id]} order by quests.order ASC")
