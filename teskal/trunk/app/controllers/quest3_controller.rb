@@ -16,12 +16,7 @@ class Quest3Controller < ApplicationController
   end
 
   def show
-    @answer = Answer.find(params[:id])
-    @user=User.find(@answer.user_id )
-    @browse_score = answer_show(@answer.user_id, @answer.browse, @user.managed_by)
-    journal( "quest3/show/"+@answer.id.to_s, @answer.user_id)
-    TzTime.zone=@user.timezone
-    @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
+    show_quest
     teskalChart3
   end
 
@@ -178,7 +173,7 @@ class Quest3Controller < ApplicationController
     strXML = strXML + "<category label= '"+l(:quest3_label_7)+"'/>"
     strXML = strXML + "<category label= '"+l(:quest3_label_8)+"'/>"
     strXML = strXML + "</categories>"
-    strXML = strXML + "<dataset SeriesName='"+l(:quest3_label_9)+"' lineThickness='3' renderAs='Line' >"
+    strXML = strXML + "<dataset SeriesName='"+l(:quest3_label_9)+"' lineThickness='3' renderAs='Area' >"
     strXML = strXML + "<set value='40' /><set value='36' /><set value='40' /><set value='70' /><set value='38' /><set value='70' /><set value='38' /><set value='70' />"
     strXML = strXML + "</dataset>"
     strXML = strXML + "<dataset SeriesName='"+l(:quest3_label_10)+"' lineThickness='4' renderAs='Line' >"
@@ -190,7 +185,7 @@ class Quest3Controller < ApplicationController
     strXML = strXML + "<set value='" + ceTrans.to_s + "'/>"
     strXML = strXML + "<set value='" + aeTrans.to_s + "'/>"
     strXML = strXML + "<set value='" + cpTrans.to_s + "'/>"
-    strXML = strXML + "</dataset> </chart>"
+    strXML = strXML + "</dataset></chart>"
     #Create the chart - Pie 3D Chart with data from strXML
     @chart1= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest3", 770, 300, false, false)
   end
