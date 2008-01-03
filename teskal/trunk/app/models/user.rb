@@ -129,9 +129,9 @@ class User < ActiveRecord::Base
     my_role=""
     case self.role
     when ROLE_GRATIS
-      puts l(:label_role_1)
+      my_role= l(:label_role_1)
     when ROLE_ATHLETE
-      my_role=l(:label_search)
+      my_role=l(:label_role_2)
     when ROLE_COACH
       my_role=l(:label_role_3)
     when ROLE_TUTOR

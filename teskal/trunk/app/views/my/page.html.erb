@@ -4,7 +4,6 @@
   </div>
   <div class='boxxcontent'>
     <!-- Content goes here -->
-    <% puts @logged_in_user.athlete? %>
     <%- if @logged_in_user.athlete? and @quests.length == 0 -%>
     <h4><%= l(:label_quest_no_pending) %></h4>
     <%- else -%>

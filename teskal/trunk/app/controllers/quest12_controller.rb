@@ -7,12 +7,7 @@ class Quest12Controller < ApplicationController
   end
 
   def show
-    @answer = Answer.find(params[:id])
-    @user=User.find(@answer.user_id )
-    @browse_score = answer_show(@answer.user_id, @answer.browse, @user.managed_by)
-    journal( "quest12/show/"+@answer.id.to_s, @answer.user_id)
-    TzTime.zone=@user.timezone
-    @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
+    show_quest
     teskalChart12
   end
 

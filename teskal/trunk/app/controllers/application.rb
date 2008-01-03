@@ -366,7 +366,7 @@ class ApplicationController < ActionController::Base
 
   def new_quest
     user=User.find(session[:user_id])
-    user.start = Time.now 
+    user.start = Time.now
     # para quien se esta rellenando?
     if !params[:id].nil?
       user.filled_for = params[:id]
@@ -377,7 +377,24 @@ class ApplicationController < ActionController::Base
     end
     user.save
   end
-  
+
+  def show_quest
+    @answer = Answer.find(params[:id])
+    @user=User.find(@answer.user_id )
+    @browse_score = answer_show(@answer.user_id, @answer.browse, @user.managed_by)
+    if @answer.quest_id == 2
+      usuario =  @answer.user_id
+      fecha = @answer.created_on 
+      @id = @answer.id
+      @answers = Answer.find(:all, :conditions  => ["created_on <= ? and user_id =? and quest_id=?",fecha,usuario,2], :order  => "created_on ASC",:limit  => 5)
+      @fecha = l_datetime(TzTime.zone.utc_to_local(fecha))
+    else
+      journal( "quest"+@answer.quest_id.to_s+"/show/"+@answer.id.to_s, @answer.user_id)
+      TzTime.zone=@user.timezone
+      @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
+    end
+  end
+
   # private
   # def set_timezone
   #   if logged_in? && !current_user.time_zone.nil?
