@@ -384,9 +384,12 @@ class ApplicationController < ActionController::Base
     @browse_score = answer_show(@answer.user_id, @answer.browse, @user.managed_by)
     if @answer.quest_id == 2
       usuario =  @answer.user_id
-      fecha = @answer.created_on 
+      fecha = @answer.created_on
+      puts  usuario
+      puts fecha
       @id = @answer.id
       @answers = Answer.find(:all, :conditions  => ["created_on <= ? and user_id =? and quest_id=?",fecha,usuario,2], :order  => "created_on ASC",:limit  => 5)
+      puts @answers.length
       @fecha = l_datetime(TzTime.zone.utc_to_local(fecha))
     else
       journal( "quest"+@answer.quest_id.to_s+"/show/"+@answer.id.to_s, @answer.user_id)
