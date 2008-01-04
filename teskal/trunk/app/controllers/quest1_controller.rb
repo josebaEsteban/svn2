@@ -29,21 +29,41 @@ class Quest1Controller < ApplicationController
     vVal = %w(36 36 36 37 41 44 48 51 55 59 62 66 69)
     fVal = %w(36 39 42 45 49 52 55 59 62 65 68 72 75)
 
-    tension = @answer.answ1 + @answer.answ6  + @answer.answ11
-    depresion = @answer.answ2 + @answer.answ7 + @answer.answ12
-    hostilidad = @answer.answ5 + @answer.answ10  + @answer.answ15
-    vigor = @answer.answ4 + @answer.answ9 + @answer.answ14
-    fatiga = @answer.answ3 + @answer.answ8 + @answer.answ13
-    ansiedad_cognitiva = @answer.answ26 + @answer.answ29 + @answer.answ32 + @answer.answ35 + @answer.answ38 + @answer.answ41 + @answer.answ44 + @answer.answ47 + @answer.answ50
-    auto_confianza = @answer.answ28 + @answer.answ31 + @answer.answ34 + @answer.answ37 + @answer.answ40 + @answer.answ43 + @answer.answ46 + @answer.answ49 + @answer.answ52
-    ansiedad_somatica = @answer.answ27 + @answer.answ30 + @answer.answ33 + @answer.answ36 + @answer.answ39 + @answer.answ42 + @answer.answ45 + @answer.answ48 + @answer.answ51
-    dificultad = (@answer.answ59 + @answer.answ61 + @answer.answ63 + @answer.answ65)/4
-    confianza = (@answer.answ60 + @answer.answ62 + @answer.answ64 + @answer.answ66)/4
-    auto_control = ((@answer.answ16 + @answer.answ17) /2) *2.5
-    visionado = ((@answer.answ18 + @answer.answ19 + @answer.answ20) /3) *2.5
-    auto_motivacion = ((@answer.answ21 + @answer.answ22 + @answer.answ23) /3) *2.5
-    ego = ((@answer.answ53 + @answer.answ54 + @answer.answ57 + @answer.answ58 + @answer.answ61 + @answer.answ64) /6.0) /10.0
-    ot = ((@answer.answ55 + @answer.answ56 + @answer.answ59 + @answer.answ60 + @answer.answ62 + @answer.answ63) /6.0) /10.0
+    #strXML will be used to store the entire XML document generated
+    strXML=''
+    #Generate the chart element
+    # labelDisplay='Stagger' staggerLines='2'
+    strXML = "<chart palette='2' caption='"+l(:quest1_label_30)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' chartRightMargin='35'>"
+    strXML = strXML +"<categories>"
+    strXML = strXML + "<category label= '"+l(:quest1_label_1)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest1_label_2)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest1_label_3)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest1_label_4)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest1_label_5)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest1_label_6)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest1_label_7)+"'/>"
+    strXML = strXML + "<category label= '"+l(:quest1_label_8)+"'/>"
+    strXML = strXML +"</categories>"
+    strXML = strXML +"<dataset SeriesName='"+l(:quest1_label_9)+"' lineThickness='3' renderAs='Area' >"
+    strXML = strXML +"<set value='42' /><set value='37' /><set value='40' /><set value='68' /><set value='38' /><set value='42' /><set value='68' /><set value='38' />"
+    strXML = strXML +"</dataset>"
+
+    for answer in @answers
+    tension = answer.answ1 + answer.answ6  + answer.answ11
+    depresion = answer.answ2 + answer.answ7 + answer.answ12
+    hostilidad = answer.answ5 + answer.answ10  + answer.answ15
+    vigor = answer.answ4 + answer.answ9 + answer.answ14
+    fatiga = answer.answ3 + answer.answ8 + answer.answ13
+    ansiedad_cognitiva = answer.answ26 + answer.answ29 + answer.answ32 + answer.answ35 + answer.answ38 + answer.answ41 + answer.answ44 + answer.answ47 + answer.answ50
+    auto_confianza = answer.answ28 + answer.answ31 + answer.answ34 + answer.answ37 + answer.answ40 + answer.answ43 + answer.answ46 + answer.answ49 + answer.answ52
+    ansiedad_somatica = answer.answ27 + answer.answ30 + answer.answ33 + answer.answ36 + answer.answ39 + answer.answ42 + answer.answ45 + answer.answ48 + answer.answ51
+    dificultad = (answer.answ59 + answer.answ61 + answer.answ63 + answer.answ65)/4
+    confianza = (answer.answ60 + answer.answ62 + answer.answ64 + answer.answ66)/4
+    auto_control = ((answer.answ16 + answer.answ17) /2) *2.5
+    visionado = ((answer.answ18 + answer.answ19 + answer.answ20) /3) *2.5
+    auto_motivacion = ((answer.answ21 + answer.answ22 + answer.answ23) /3) *2.5
+    ego = ((answer.answ53 + answer.answ54 + answer.answ57 + answer.answ58 + answer.answ61 + answer.answ64) /6.0) /10.0
+    ot = ((answer.answ55 + answer.answ56 + answer.answ59 + answer.answ60 + answer.answ62 + answer.answ63) /6.0) /10.0
 
     @advice=[]
     @icon=[]
@@ -252,25 +272,13 @@ class Quest1Controller < ApplicationController
     atTransformada=auto_confianza+36
     asTransformada=ansiedad_somatica+36
 
-    #strXML will be used to store the entire XML document generated
-    strXML=''
-    #Generate the chart element
-    # labelDisplay='Stagger' staggerLines='2'
-    strXML = "<chart palette='2' caption='"+l(:quest1_label_30)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' chartRightMargin='35'>"
-    strXML = strXML +"<categories>"
-    strXML = strXML + "<category label= '"+l(:quest1_label_1)+"'/>"
-    strXML = strXML + "<category label= '"+l(:quest1_label_2)+"'/>"
-    strXML = strXML + "<category label= '"+l(:quest1_label_3)+"'/>"
-    strXML = strXML + "<category label= '"+l(:quest1_label_4)+"'/>"
-    strXML = strXML + "<category label= '"+l(:quest1_label_5)+"'/>"
-    strXML = strXML + "<category label= '"+l(:quest1_label_6)+"'/>"
-    strXML = strXML + "<category label= '"+l(:quest1_label_7)+"'/>"
-    strXML = strXML + "<category label= '"+l(:quest1_label_8)+"'/>"
-    strXML = strXML +"</categories>"
-    strXML = strXML +"<dataset SeriesName='"+l(:quest1_label_9)+"' lineThickness='3' renderAs='Line' >"
-    strXML = strXML +"<set value='42' /><set value='37' /><set value='40' /><set value='68' /><set value='38' /><set value='42' /><set value='68' /><set value='38' />"
-    strXML = strXML +"</dataset>"
-    strXML = strXML +"<dataset SeriesName='"+l(:quest1_label_10)+"' lineThickness='4' renderAs='Line' >"
+    strXML = strXML + "<dataset SeriesName='"
+    if answer.id == @id
+      strXML = strXML+l(:quest1_label_10)+"' lineThickness='4' "
+    else
+      strXML = strXML+l_datetime(TzTime.zone.utc_to_local(answer.created_on))+"' anchorSides='4' lineThickness='1' "
+    end     
+    strXML = strXML +" renderAs='Line' >"
     strXML = strXML + "<set value='" + tTransformada + "'/>"
     strXML = strXML + "<set value='" + dTransformada + "'/>"
     strXML = strXML + "<set value='" + hTransformada + "'/>"
@@ -279,7 +287,9 @@ class Quest1Controller < ApplicationController
     strXML = strXML + "<set value='" + acTransformada.to_s + "'/>"
     strXML = strXML + "<set value='" + atTransformada.to_s + "'/>"
     strXML = strXML + "<set value='" + asTransformada.to_s + "'/>"
-    strXML = strXML + "</dataset> </chart>"
+    strXML = strXML + "</dataset>"
+  end
+  strXML = strXML + "</chart>"
 
     #Create the chart
     @chart1= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest3", 770, 300, false, false)
@@ -293,16 +303,16 @@ class Quest1Controller < ApplicationController
     strXML = strXML + "<category label= '"+l(:quest1_label_21)+"'/>"
     strXML = strXML +"</categories>"
     strXML = strXML +"<dataset SeriesName='"+l(:quest1_label_22)+"' color='b23f3f'>"
-    strXML = strXML +"<set value='"+@answer.answ66.to_s+"' />"
-    strXML = strXML +"<set value='"+@answer.answ68.to_s+"' />"
-    strXML = strXML +"<set value='"+@answer.answ70.to_s+"' />"
-    strXML = strXML +"<set value='"+@answer.answ72.to_s+"' />"
+    strXML = strXML +"<set value='"+answer.answ66.to_s+"' />"
+    strXML = strXML +"<set value='"+answer.answ68.to_s+"' />"
+    strXML = strXML +"<set value='"+answer.answ70.to_s+"' />"
+    strXML = strXML +"<set value='"+answer.answ72.to_s+"' />"
     strXML = strXML +"</dataset>"
     strXML = strXML +"<dataset SeriesName='"+l(:quest1_label_23)+"' renderAs='Area' color='759a0c'>"
-    strXML = strXML +"<set value='"+@answer.answ67.to_s+"' />"
-    strXML = strXML +"<set value='"+@answer.answ69.to_s+"' />"
-    strXML = strXML +"<set value='"+@answer.answ71.to_s+"' />"
-    strXML = strXML +"<set value='"+@answer.answ73.to_s+"' />"
+    strXML = strXML +"<set value='"+answer.answ67.to_s+"' />"
+    strXML = strXML +"<set value='"+answer.answ69.to_s+"' />"
+    strXML = strXML +"<set value='"+answer.answ71.to_s+"' />"
+    strXML = strXML +"<set value='"+answer.answ73.to_s+"' />"
     strXML = strXML + "</dataset> </chart>"
     @chart2= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest3_2", 450, 300, false, false)
 
