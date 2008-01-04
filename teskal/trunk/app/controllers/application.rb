@@ -80,24 +80,22 @@ class ApplicationController < ActionController::Base
     true
   end
 
-  def answer_show(user, browse, managed_by)
-    browse_score = 1
+  def answer_show?(user, browse, managed_by)
+    answer_show = true
     if !@logged_in_user.admin?
       if user == session[:user_id]
-        if browse == 0
-          flash[:notice] = l(:notice_not_authorized)
-          redirect_to :controller => 'my', :action => 'page'
+        if browse == false
+          answer_show = false
         else
-          browse_score = 0
+          answer_show = true
         end
       else
         if @logged_in_user.id != managed_by
-          flash[:notice] = l(:notice_not_authorized)
-          redirect_to :controller => 'my', :action => 'page'
+          answer_show = false
         end
       end
     end
-    return browse_score
+    return answer_show
   end
 
   # authorizes only to suscribed customers
@@ -381,17 +379,29 @@ class ApplicationController < ActionController::Base
   def show_quest
     @answer = Answer.find(params[:id])
     @user=User.find(@answer.user_id )
-    @browse_score = answer_show(@answer.user_id, @answer.browse, @user.managed_by)
-    if @answer.quest_id == 2
-      usuario =  @answer.user_id
-      fecha = @answer.created_on
-      @id = @answer.id
-      @answers = Answer.find(:all, :conditions  => ["created_on <= ? and user_id =? and quest_id=?",fecha,usuario,2], :order  => "created_on ASC",:limit  => 5)
-      @fecha = l_datetime(TzTime.zone.utc_to_local(fecha))
-    else
+    if answer_show?(@answer.user_id, @answer.browse, @user.managed_by)
+      if @answer.quest_id == 5
+      else
+        @id = @answer.id
+        @answers =[]
+        @respuestas = Answer.find(:all, :conditions  => ["created_on <= ? and user_id =? and quest_id=?",@answer.created_on,@answer.user_id,@answer.quest_id], :order  => "created_on ASC",:limit  => 5)
+        i=0
+        j=0
+        while (i <@respuestas.length)
+          if answer_show?(@respuestas[i].user_id, @respuestas[i].browse, @user.managed_by)
+            @answers[j] = @respuestas[i]
+            j=j+1
+          end
+          i=i+1
+        end
+      end
+      puts @answers
       journal( "quest"+@answer.quest_id.to_s+"/show/"+@answer.id.to_s, @answer.user_id)
       TzTime.zone=@user.timezone
       @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
+    else
+      flash[:notice] = l(:notice_not_authorized)
+      redirect_to :controller => 'my', :action => 'page'
     end
   end
 

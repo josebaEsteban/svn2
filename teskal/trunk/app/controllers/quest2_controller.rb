@@ -162,10 +162,12 @@ class Quest2Controller < ApplicationController
         @advice[item]=l(:quest2_val_1)
       end
       if @answers.length > 1
-        strXML = strXML +"<dataset SeriesName='"+l_datetime(TzTime.zone.utc_to_local(answer.created_on))
+        strXML = strXML +"<dataset SeriesName='"
         if answer.id == @id
+          strXML = strXML+l(:quest3_label_10)
           strXML = strXML+"' renderAs='Bar' >"
         else
+          strXML = strXML+l_datetime(TzTime.zone.utc_to_local(answer.created_on))
           strXML = strXML+"' lineThickness='2' renderAs='Line' >"
         end
         strXML = strXML + "<set value='-" + acorta(descanso_interrumpido * scale)  + "'/>"
