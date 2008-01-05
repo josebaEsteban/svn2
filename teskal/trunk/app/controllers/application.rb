@@ -380,22 +380,25 @@ class ApplicationController < ActionController::Base
     @answer = Answer.find(params[:id])
     @user=User.find(@answer.user_id )
     if answer_show?(@answer.user_id, @answer.browse, @user.managed_by)
-      if @answer.quest_id == 5
-      else
-        @id = @answer.id
-        @answers =[]
-        @respuestas = Answer.find(:all, :conditions  => ["created_on <= ? and user_id =? and quest_id=?",@answer.created_on,@answer.user_id,@answer.quest_id], :order  => "created_on ASC",:limit  => 5)
-        i=0
-        j=0
-        while (i <@respuestas.length)
-          if answer_show?(@respuestas[i].user_id, @respuestas[i].browse, @user.managed_by)
-            @answers[j] = @respuestas[i]
-            j=j+1
-          end
-          i=i+1
+      @id = @answer.id
+      puts @id
+      @answers =[]
+      resp_inicial = Answer.find(:all, :conditions  => ["created_on <= ? and user_id =? and quest_id=?",@answer.created_on,@answer.user_id,@answer.quest_id], :order  => "created_on DESC",:limit  => 5)
+      respuestas = resp_inicial.reverse
+      puts respuestas.length
+      i=0
+      j=0
+      while (i <respuestas.length)
+        puts respuestas[j].id
+        if answer_show?(respuestas[i].user_id, respuestas[i].browse, @user.managed_by)
+          @answers[j] = respuestas[i]
+          puts @answers[j].id
+          j=j+1
         end
+        i=i+1
       end
       puts @answers
+      puts @answers.length
       journal( "quest"+@answer.quest_id.to_s+"/show/"+@answer.id.to_s, @answer.user_id)
       TzTime.zone=@user.timezone
       @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
