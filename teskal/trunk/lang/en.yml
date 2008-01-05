@@ -300,7 +300,7 @@ quest10_3: Prefers a victory over “Doing things well”
 quest10_4: Will sacrifice the quality of the competition tecnique to secure the result.
 quest10_5: For him/her winning is first, and then competing well 
 quest10_6: Congratulates the athletes when they perform well, do what was expected. 
-quest10_7:  Encourages athletes in their future actions.
+quest10_7: Encourages athletes in their future actions.
 quest10_8: Gives instructions on technical and tactical aspects, style, 
 quest10_9: Thinks that athletes are successful when they perform better than others.
 quest10_intro: Below is a series of comments and expressions related to competition situations and behaviors. Please, read them carefully and then select the one that best describes your coach’s behavior during practices and games. 
@@ -962,28 +962,27 @@ quest8_label_9: Task Integration
 quest8_valor_1: 1 (no, not at all)
 quest8_valor_7: 7 (totally)
 quest9: Cuestionario de Clima Formativo Auto Percibido Deportes Colectivos
-quest9_10: Permito solucionar situaciones de competición de forma diferente a mis directrices
-quest9_11: Animo a l@s deportistas cuando cometen un fallo
-quest9_12: Pienso que l@s deportistas tienen éxito cuando son claramente superiores a los demás
-quest9_13: Me enfado cuando l@s deportistas actúan de forma no deseada
-quest9_14: Me enfado cuando tengo que corregir a l@s deportistas después de un error
-quest9_15: Los errores ayudan a l@s deportistas a darse cuenta de sus déficits y a mejorar.
-quest9_16: Procuro que el tiempo de competición de cada deportistas en la temporada sea semejante
-quest9_17: Procuro que l@s deportistas participen en el mismo nº de competiciones en la temporada
-quest9_18: Pienso que l@s deportistas tienen éxito cuando lo hacen todo lo mejor que saben hacerlo
-quest9_19: Tengo la máxima confianza en todos l@s deportistas cuando disputan una competición
-quest9_1: Permito que tomen decisiones que no se corresponden con la táctica prevista
-quest9_20: Cuando l@s deportistas cometen errores sigo manteniendo la confianza en ell@s
-quest9_21: Pienso que lo más importante es que el equipo juegue lo mejor posible
-quest9_2: Pienso que l@s deportistas tienen éxito cuando superan las dificultades
-quest9_3: Prefiero ganar el partido que “hacer las cosas bien hechas”
-quest9_4: Pienso que lo más importante es el desarrollo de la calidad del juego colectivo
-quest9_5: Lo primero es ganar el partido y después jugar bien
-quest9_6: Felicito a l@s deportistas cuando hacen las cosas bien, actúan según lo esperado
-quest9_7: Animo a l@s deportistas en las acciones futuras
-quest9_8: Doy instrucciones sobre aspectos técnicos, tácticos, estilo, recorrido..etc.
-quest9_9: Pienso que l@s deportistas tienen éxito cuando lo hacen mejor que los demás
-quest9_d1_a: Este bajo valor del clima de rendimiento grupal (CRG), situado por debajo de 2'5, supone percibir que, para est@ entrenador/a, el resultado del equipo tiene una relativa importancia frente a la calidad del juego que desarrolle el equipo. En el caso de que se corresponda con un alto valor en el clima de maestría grupal, reforzará la integración en la tarea, minimizando la posible la ansiedad frente a los errores colectivos que se cometan.
+quest9_10: I allow for different solutions to competition situations than originally planned.
+quest9_11: I encourage athletes after a mistake
+quest9_12: I thinks the team must compete in the best way
+quest9_13: I thinks that athletes are successful when they are clearly better than others.
+quest9_14: I get mad when athletes behave in an undesirable way
+quest9_15: I get mad when he or she has to correct an athlete after a mistake
+quest9_16: For me mistakes help athletes become aware of their deficits and improve.
+quest9_17: I try to make sure that each athlete has similar amounts of competition time during the season.
+quest9_18: I try to get athlete to compete in the same number of competitions during the season.
+quest9_19: I believe that athletes are successful when they perform as well as they are capable.
+quest9_1: I have the utmost confidence in all athletes when they compete.
+quest9_20: I allow the making of decisions that do not match the tactical plan. 
+quest9_21: I remain confident in the athletes even when they make mistakes.
+quest9_2: I believe that athletes are successful when they overcome difficulties.
+quest9_3: I prefer a victory over “Doing things well”
+quest9_4: I will sacrifice the quality of the competition tecnique to secure the result.
+quest9_5: For me winning is first, and then competing well 
+quest9_6: I congratulate the athletes when they perform well, do what was expected. 
+quest9_7: I encourages athletes in their future actions.
+quest9_8: I give instructions on technical and tactical aspects, style, 
+quest9_9: I think that athletes are successful when they perform better than others.quest9_d1_a: Este bajo valor del clima de rendimiento grupal (CRG), situado por debajo de 2'5, supone percibir que, para est@ entrenador/a, el resultado del equipo tiene una relativa importancia frente a la calidad del juego que desarrolle el equipo. En el caso de que se corresponda con un alto valor en el clima de maestría grupal, reforzará la integración en la tarea, minimizando la posible la ansiedad frente a los errores colectivos que se cometan.
 quest9_d1_b: Este valor medio del clima de rendimiento grupal, supone percibir que, para est@ entrenador/a, el resultado del equipo tiene bastante importancia, tanto o más que la calidad del juego colectivo. En el caso de que estuvieran acompañados de altos valores del clima de maestría grupal, supondría un efecto positivo sobre la competitividad del equipo, el compromiso con el esfuerzo, la integración en la tarea, y una toma de decisiones atrevida.
 quest9_d1_c: Este alto valor del clima de rendimiento grupal, situado entre 4 y 5, supone que para est@ entrenador/a, el resultado del equipo es lo más importante, incluso a costa de sacrificar la calidad del juego del equipo. Esto debilitará la capacidad del equipo para afrontar situaciones de máximo desafío, provocando un importante aumento de la ansiedad frente a los errores y el miedo a tomar decisiones colectivas, en situaciones de alta dificultad o de máxima presión.
 quest9_d2_a: Los valores del clima de maestría grupal se sitúan en un nivel por debajo de 2'5. Supone percibir que, para est@ entrenador/a, el desarrollo de la calidad del juego del equipo se encuentran en un segundo plano, frente al resultado del equipo, y en el caso de que se corresponda con un alto valor en el clima de rendimiento grupal, debilitará la integración en la tarea, pudiendo provocar un aumento colectivo de la ansiedad frente a los errores que se cometan.
@@ -1010,8 +1009,8 @@ quest9_d8_c: Los valores del clima de maestría (PEM) se sitúan por encima del 
 quest9_d9_a: Este bajo valor del clima de rendimiento (PER), situado por debajo de 2,5 supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s se encuentran en un segundo plano frente a la mejora de las habilidades, lo que refuerza la implicación durante el entrenamiento, y puede ayudar a disminuir la ansiedad frente a los errores en el caso de que la hubiera.
 quest9_d9_b: Este valor medio del clima de rendimiento (PER), supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s son importantes, a veces, incluso más que la mejora de sus habilidades. Puede influir positivamente en el compromiso con el esfuerzo, y contribuye a disminuir la ansiedad frente a los errores en el caso de que la hubiera.
 quest9_d9_c: Este alto valor del clima de rendimiento (PER), situado entre 4 y 5, supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s es lo más importante. Esto debilitará la capacidad de l@ deportistas para afrontar situaciones de máximo desafío personal y, además, contribuirá de forma importante en el aumento de la ansiedad frente a los errores en situaciones de alta dificultad.
-quest9_header: El grado de satisfacción con...
-quest9_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de competición. Por favor, lee cuidadosamente y después rodea con un círculo el número que hay al lado, el que mejor describa tu comportamiento durante el entrenamiento y los partidos de competición.
+quest9_header: The degree of satisfaction with...
+quest10_intro: Below is a series of comments and expressions related to competition situations and behaviors. Please, read them carefully and then select the one that best describes your behavior during practices and games. 
 quest9_label_0: Clima Formativo Auto Percibido Deportes Colectivos
 quest9_label_1: Clima de Rendimiento Grupal
 quest9_label_2: Clima de Maestría Grupal
