@@ -338,7 +338,7 @@ quest11_5: Por el placer de descubrir nuevas técnicas de entrenamiento
 quest11_6: Ya no lo tengo claro; tengo la impresion de que soy incapaz de tener éxito en este deporte
 quest11_7: Porque me permite estar bien visto(a) por la gente que conozco
 quest11_8: Porque, para mi, es una de las mejores formas de conocer gente
-quest11_9:   cuando controlo algunas técnicas difíciles 
+quest11_9: cuando controlo algunas técnicas difíciles 
 quest11_d1_a: Este bajo valor de la motivación intrínseca, supone baja implicación en el entrenamiento y no disfruta de lo que está haciendo. Rehuye enfrentarse a tareas nuevas o difíciles en el entrenamiento y le cuesta centrarse en la mejora de sus puntos débiles.
 quest11_d1_b: Este valor medio de la motivación intrínseca, supone que se encuentra implicado en el entrenamiento, pero podía estarlo más. Siente cierta satisfacción personal cuando se le proponen tareas difíciles, sobre todo en el entrenamiento, y se encuentra centrado en la mejora de sus puntos débiles.
 quest11_d1_c: Este alto valor de la motivación intrínseca, supone que se encuentra altamente implicado en el entrenamiento y disfruta de lo que está haciendo. Además siente una alta satisfacción personal sobre todo al enfrentarse a tareas difíciles, tanto en el entrenamiento como en la competición, intenta hacer cosas que antes no lo había intentado y se encuentra muy centrado en la mejora de sus puntos débiles.
@@ -375,6 +375,7 @@ quest11_val_6: Se produce un valor medio en las dimensiones motivacionales de re
 quest11_val_7: Se produce un bajo valor tanto de las dimensiones motivacionales de regulación autodeterminada como no autodeterminada. A pesar de que carece de la fuerza dinámica suficiente para mantener una alta eficacia en sus acciones y una persistencia en sus objetivos, puede ser positiva la baja dependencia que posee respecto a contingencias externas. Quizás se encuentre en un ciclo de preparación de altas intensidades o de gran complejidad y volumen de tareas. Será importante mantener bajos los valores de las dimensiones extrínsecas, sobre todo si estamos en periodos competitivos, para evitar el exceso de presión o el miedo a cometer errores. Es una situación que requiere consultar con el/la tutor/a para establecer una miniestrategia orientada a elevar, cuanto antes, los valores de las dimensiones de la motivación intrínseca, y mantener los correspondientes a la extrínseca.
 quest11_val_8: Se produce un bajo valor de las dimensiones motivacionales de regulación autodeterminada, acompañadas de valores medios en las dimensiones extrínsecas de la motivación. En principio, carece de la fuerza dinámica suficiente para mantener una alta eficacia en sus acciones y una persistencia en sus objetivos, que afectarán negativamente a los estilos de afrontamiento. Habrá que vigilar el comportamiento que, a corto plazo, se produzca en los valores de las dimensiones extrínsecas para contrarrestar la posible ausencia de motivación (amotivación) o el negativo impacto que puedan generar situaciones de presión exógena (motivación extrínseca). Sería conveniente consultar con el/la tutor/a para establecer una miniestrategia orientada a elevar los valores de las dimensiones de la motivación intrínseca y mantener o minimizar los correspondientes a la extrínseca.
 quest11_val_9: Se produce un bajo valor de las dimensiones motivacionales de regulación autodeterminada, acompañadas de altos valores en las dimensiones extrínsecas de la motivación. En principio supone que, por un lado, carece de la fuerza dinámica suficientes para mantener una alta eficacia en sus acciones y una persistencia en sus objetivos, que afectarán negativamente a los estilos de afrontamiento. Por otro, estos altos valores de las dimensiones extrínsecas (sobre todo de la amotivación), supone que se encuentra excesivamente mediatizado por fuerzas percibidas ajenas, con una alta dependencia de contingencias externas. Es necesario consultar con el/la tutor/a para establecer una miniestrategia orientada a elevar los valores de las dimensiones intrínsecas de la motivación y reducir los de carácter extrínseco, ya que puede verse afectada la continuidad de la práctica de este deporte.
+quest11_val_10: Este valor tan alto de la Amotivación contamina al resto de las dimensiones, anulando la posibilidad de realizar interpretaciones de mayor complejidad y significación. Se hace necesario consultar con el/la tutor/a ya que est@ deportista se encuentra en una situación alarmante, siente cierta incapacidad para tener éxito, acompañada de un importante descenso de su nivel de autoconfianza. Además puede estar en peligro su continuidad, dada la confusión y la ineficacia percibida de conseguir las metas propuestas en este deporte.
 quest11_valor_1: 1 (nada)
 quest11_valor_2: 2 (muy poco)
 quest11_valor_3: 3 (un poco)
@@ -391,6 +392,7 @@ quest11_valor_tit_6: Presenta un Perfil Global de Motivación No Autodeterminado
 quest11_valor_tit_7: Presenta un Perfil Global de Motivación Bajo Autodeterminado.
 quest11_valor_tit_8: Presenta un Perfil Global de Motivación Bajo Autodeterminado.
 quest11_valor_tit_9: Presenta un Perfil Global de Motivación No Autodeterminado.
+quest11_valor_tit_10: Perfil Amotivacional
 quest12: Cuestionario de Clima Motivacional Percibido
 quest12_10: Lo hago todo lo mejor que se
 quest12_11: Alcanzo la meta que me propuse
@@ -1012,7 +1014,7 @@ quest9_d9_b: Este valor medio del clima de rendimiento (PER), supone percibir qu
 quest9_d9_c: Este alto valor del clima de rendimiento (PER), situado entre 4 y 5, supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s es lo más importante. Esto debilitará la capacidad de l@ deportistas para afrontar situaciones de máximo desafío personal y, además, contribuirá de forma importante en el aumento de la ansiedad frente a los errores en situaciones de alta dificultad.
 quest9_header: El grado de satisfacción con...
 quest9_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de competición. Por favor, lee cuidadosamente y después rodea con un círculo el número que hay al lado, el que mejor describa tu comportamiento durante el entrenamiento y los partidos de competición.
-quest9_label_0: Clima Formativo Auto Percibido Deportes Colectivos
+quest9_label_0: Clima Formativo del Entrenador Auto Percibido Deportes Colectivos
 quest9_label_1: Clima de Rendimiento Grupal
 quest9_label_2: Clima de Maestría Grupal
 quest9_label_3: Confianza en los jugadores percibida
@@ -1104,4 +1106,18 @@ unit_9_title: La Comunicación
 label_book: Libro
 label_available: Disponible
 notice_account_email_exists: Ya existe un usuario con ese correo. Por favor use un correo distinto.
-notice_pendant_exists: Ya está pendiente un cuestionario de ese mismo tipo. 
+notice_pendant_exists: Ya está pendiente un cuestionario de ese mismo tipo.
+markt_1: Herramienta para el manejo de las variables psicológicas del rendimiento deportivo.
+markt_2: ¿Quieres poder rendir en competición al nivel que sabes que eres capaz?
+markt_3: ¿Quieres entrenar la capacidad de manejar el estrés, la auto confianza?
+markt_4: Deportista en buena forma física, ha entrenado, tiene buenos rendimientos pero en el momento de la competición no es capaz de repetir esos niveles. ¿Como manejas esas variables? ¿Cómo sabes en qué y cuándo intervenir?
+markt_5: Deportista con un plan concreto, elaborado con el entrenador, ante la presión de la competición empieza a tomar decisiones impulsivas y poco eficaces. ¿Como prevenir eso?
+markt_6: Deportista que está pasando por situaciones personales que impactan su estado de ánimo, su energía, su motivación. ¿Como puedes detectarlo a tiempo?
+markt_7: ¿Como sabes si los entrenadores crean el ambiente adecuado para el rendimiento óptimo de los equipos?
+markt_8: ¿Te interesa el cuidado global del deportista?
+markt_9: ¿Que herramientas tienen los entrenadores para manejarlos?
+markt_10: Teskal pone esas herramientas a disposición de tus entrenadores. 
+markt_11: Es un concepto integral del rendimiento deportivo que considera no solo las habilidades físicas y técnicas sino la persona del deportista.
+markt_12: Teskal permite mantener un alto nivel de comunicación al dúo deportista/entrenador o al grupo deportista/entrenador/psicólogo 
+markt_13: Sea para situaciones en que el deportista y el entrenador residen en sitios distintos, o en momentos en que el deportista acude a competiciones en otros sitios, Teskal permite el seguimiento de múltiples variables que afectan al deportista y a su rendimiento.
+

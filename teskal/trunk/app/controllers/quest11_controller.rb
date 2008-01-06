@@ -176,8 +176,11 @@ class Quest11Controller < ApplicationController
           @titulo=l(:quest11_valor_tit_9)
         end
       end
-
-
+      if amotivation > valor_medio
+        @advice[item]=l(:quest11_val_10)
+        @titulo=l(:quest11_valor_tit_10)
+      end      
+      
       #Generate the chart element
       # labelDisplay='Stagger' staggerLines='2'
       # strXML = "<chart palette='2' caption='"+l(:quest11_label_0)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='0' yAxisMaxValue='7' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' chartLeftMargin='25' chartRightMargin='35'>"
