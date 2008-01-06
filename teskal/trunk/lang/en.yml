@@ -307,7 +307,7 @@ quest10_8: Gives instructions on technical and tactical aspects, style,
 quest10_9: Thinks that athletes are successful when they perform better than others.
 quest10_intro: Below is a series of comments and expressions related to competition situations and behaviors. Please, read them carefully and then select the one that best describes your behavior during practices and games. 
 quest10_intro: Below is a series of comments and expressions related to competition situations and behaviors. Please, read them carefully and then select the one that best describes your coach’s behavior during practices and games. 
-quest10_label_0: Technical Coaching Climate
+quest10_label_0: Perception of educational climate/team sports
 quest10_label_1: My coach
 quest11: Questionnaire of Intrinsic Motivation
 quest11_10: Because it is absolutely necessary to do sports if one wants to be in shape.
@@ -1014,7 +1014,7 @@ quest9_d9_a: Este bajo valor del clima de rendimiento (PER), situado por debajo 
 quest9_d9_b: Este valor medio del clima de rendimiento (PER), supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s son importantes, a veces, incluso más que la mejora de sus habilidades. Puede influir positivamente en el compromiso con el esfuerzo, y contribuye a disminuir la ansiedad frente a los errores en el caso de que la hubiera.
 quest9_d9_c: Este alto valor del clima de rendimiento (PER), situado entre 4 y 5, supone percibir que, para el/la entrenador/a, los resultados que se producen en l@s deportist@s es lo más importante. Esto debilitará la capacidad de l@ deportistas para afrontar situaciones de máximo desafío personal y, además, contribuirá de forma importante en el aumento de la ansiedad frente a los errores en situaciones de alta dificultad.
 quest9_header: The degree of satisfaction with...
-quest9_label_0: Clima Formativo Auto Percibido Deportes Colectivos
+quest9_label_0: Coache's self-perception of educational climate/team sports
 quest9_label_10: Como entrenador/a... 
 quest9_label_1: Clima de Rendimiento Grupal
 quest9_label_2: Clima de Maestría Grupal
@@ -1103,3 +1103,16 @@ unit_8_path: 08.Tolerancia.Psicologica.es
 unit_8_title: Tolerancia Psicólogica
 unit_9_path: 09.La.Competicion.es
 unit_9_title: La Competición
+markt_1: Tool to manage the psychological variables of sporting performance.
+markt_2: Would you like to perform in competition at the level that you know you are able?
+markt_3: Want to train the ability to manage stress, self confidence?
+markt_4: Sports fitness, has trained, has good returns but at the time of the competition is not able to repeat those levels. How to drive these variables? How do you know how and when to intervene?
+markt_5: Sports with a concrete plan, developed with the coach, under the pressure of the competition begins to make impulsive decisions and ineffective. How to prevent it?
+markt_6: Sports is happening by personal situations that impact their mood, their energy, their motivation. How can detect it on time?
+markt_7: How do you know if the coaches create the right atmosphere for optimal performance of the teams?
+markt_8: Are you interested in the overall care of the athlete?
+markt_9: What tools are coaches to handle?
+markt_10: Teskal puts those tools at the disposal of your coaches. 
+markt_11: It is a holistic concept of sporting performance that considers not only the physical and technical skills but the individual athlete.
+markt_12: Teskal can maintain a high level of communication to the duo athlete / coach or group athlete / coach / psychologist
+markt_13: Whether for situations where the athlete and coach living in different places, or at a time when the athlete goes to competitions elsewhere, Teskal allows monitoring of multiple variables that affect the athlete and his performance.
