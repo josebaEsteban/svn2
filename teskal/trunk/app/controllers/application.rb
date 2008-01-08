@@ -81,6 +81,7 @@ class ApplicationController < ActionController::Base
   end
 
   def answer_show?(user, browse, managed_by)
+
     answer_show = true
     if !@logged_in_user.admin?
       if user == session[:user_id]
@@ -92,6 +93,8 @@ class ApplicationController < ActionController::Base
       else
         if @logged_in_user.id != managed_by
           answer_show = false
+        else
+          answer_show = true
         end
       end
     end
@@ -379,26 +382,20 @@ class ApplicationController < ActionController::Base
   def show_quest
     @answer = Answer.find(params[:id])
     @user=User.find(@answer.user_id )
-    if answer_show?(@answer.user_id, @answer.browse, @user.managed_by)
-      @id = @answer.id
-      puts @id
+    if answer_show?(@answer.user_id, @answer.browse, @user.managed_by) 
+       @id = @answer.id
       @answers =[]
       resp_inicial = Answer.find(:all, :conditions  => ["created_on <= ? and user_id =? and quest_id=?",@answer.created_on,@answer.user_id,@answer.quest_id], :order  => "created_on DESC",:limit  => 5)
       respuestas = resp_inicial.reverse
-      puts respuestas.length
       i=0
       j=0
       while (i <respuestas.length)
-        puts respuestas[j].id
         if answer_show?(respuestas[i].user_id, respuestas[i].browse, @user.managed_by)
           @answers[j] = respuestas[i]
-          puts @answers[j].id
           j=j+1
         end
         i=i+1
       end
-      puts @answers
-      puts @answers.length
       journal( "quest"+@answer.quest_id.to_s+"/show/"+@answer.id.to_s, @answer.user_id)
       TzTime.zone=@user.timezone
       @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
