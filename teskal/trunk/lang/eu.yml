@@ -8,18 +8,18 @@ actionview_datehelper_select_month_names: Urtarrila, Otsaila, Martxoa, Apirila, 
 actionview_datehelper_select_month_names_abbr: Urt, Ots, Mar, Api, Mai, Eka, Uzt, Abu, Ira, Urr, Aza, Abe
 actionview_datehelper_select_month_prefix:
 actionview_datehelper_select_year_prefix:
-actionview_datehelper_time_in_words_day: Egun 1
-actionview_datehelper_time_in_words_day_plural: %d egun
-actionview_datehelper_time_in_words_hour_about: about an hour
-actionview_datehelper_time_in_words_hour_about_plural: about %d hours
-actionview_datehelper_time_in_words_hour_about_single: about an hour
-actionview_datehelper_time_in_words_minute: 1 minute
-actionview_datehelper_time_in_words_minute_half: half a minute
+actionview_datehelper_time_in_words_day: 1 egun
+actionview_datehelper_time_in_words_day_plural: %d egunak
+actionview_datehelper_time_in_words_hour_about: ordubete
+actionview_datehelper_time_in_words_hour_about_plural:  %d orduk
+actionview_datehelper_time_in_words_hour_about_single: ordubete
+actionview_datehelper_time_in_words_minute: 1 minutu
+actionview_datehelper_time_in_words_minute_half: minutu terdi
 actionview_datehelper_time_in_words_minute_less_than: less than a minute
-actionview_datehelper_time_in_words_minute_plural: %d minutes
-actionview_datehelper_time_in_words_minute_single: 1 minute
-actionview_datehelper_time_in_words_second_less_than: less than a second
-actionview_datehelper_time_in_words_second_less_than_plural: less than %d seconds
+actionview_datehelper_time_in_words_minute_plural: %d minutuak
+actionview_datehelper_time_in_words_minute_single: 1 minutu
+actionview_datehelper_time_in_words_second_less_than: less than a segundu
+actionview_datehelper_time_in_words_second_less_than_plural: less than %d segunduak
 actionview_instancetag_blank_option: Aukeratu mesedez
 activerecord_error_accepted: onartua izan behar du
 activerecord_error_blank: ezin du zuriunerik egon
@@ -118,9 +118,9 @@ general_csv_separator: ';'
 general_day_names: Astelehena, Asteartea, Asteazkena, Osteguna, Ostirala, Larunbata, Igandea
 general_fmt_age: %d urtea
 general_fmt_age_plural: %d urteak
-general_fmt_date time_short: %%d/%%m %%H:%%M
+general_fmt_date time_short: %%m/%%d %%H:%%M
 general_fmt_date: %%d/%%m/%%Y
-general_fmt_datetime: %%d/%%m/%%Y %%H:%%M
+general_fmt_datetime: %%Y/%%m/%%d %%H:%%M
 general_fmt_time: %%H:%%M
 general_lang_name: 'Euskera'
 general_pdf_encoding: ISO-8859-1
@@ -154,7 +154,7 @@ label_current_version: Versión actual
 label_date: Data
 label_date_from: From
 label_date_to: To
-label_day_plural: días
+label_day_plural: egunak
 label_deleted: ezabatua
 label_details: Xehetasunak
 label_document: Dokumentu
@@ -201,7 +201,7 @@ label_modified: berraldatua
 label_my_account: Nire kontua
 label_my_athletes: Nire kirolariak
 label_my_page: Nire orria
-label_my_quest: Mis cuestionarios 
+label_my_quest: Mis galdetegiak
 label_new: Nuevo
 label_news: Albistea
 label_next: Hurrengoa
@@ -227,7 +227,7 @@ label_quest_no_filled: Ez da galdetegirik bete
 label_quest_no_pending: Ez dago egin gabeko galdetegirik.
 label_quest_pending: Egin gabeko
 label_quest_pending_from: ...-tik egin gabe
-label_quest_plural: Galde-sortak 
+label_quest_plural: Galdetegiak 
 label_read: Leer...
 label_register: Erregistratu
 label_registered_on: (a)n inskribatua
