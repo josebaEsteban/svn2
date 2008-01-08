@@ -55,7 +55,7 @@
       <% end %>
       <% if loggedin? %>
 <%- if @logged_in_user.show? -%>
-  <li><a href="/my/quest" accesskey="q">Cuestionarios</a></li> 
+  <li><a href="/my/quest" accesskey="q"><%= l(:label_quest_plural) %></a></li> 
 <%- else -%>
       <li><%= link_to l(:label_quest_plural), { :controller => 'my',:action => 'page' } %></li>
 <%- end -%>
