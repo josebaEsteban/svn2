@@ -265,6 +265,19 @@ login_label_5: Sign up
 login_label_6: for a free account.
 mail_subject_lost_password: Your Teskal password
 mail_subject_register: Teskal account activation
+markt_10: Teskal gives the right tools to your coaches 
+markt_11: It’s an integral concept of athletic performance that takes into account not just the physical and technical skills of the athlete, but also the person who is the athlete. 
+markt_12: Teskal allows for a consistent level of communication between coach/athlete or team. 
+markt_13: Whether for situations where the athlete and coach live in different places, or when the athlete competes far away, Teskal allows for the continued monitoring of numerous variables relevant to the athlete and the athlete’s performance. 
+markt_1: Tool to help manage the psychological variables of sport performance.
+markt_2: Do you want to be able to perform at the level you know you are able?
+markt_3: How do you train your capacity to manage stress, your self-confidence?
+markt_4: An athlete in good physical shape, well trained, having good performances that he is unable to repeat in competition. How do you handle these situations? How and when do you intervene? 
+markt_5: An athlete with a specific competition plan, developed jointly with the coach. When faced with pressure during the competition this athlete starts making impulsive, ineffective decisions. How can that be prevented? 
+markt_6: Something is going on in an athlete’s life that impacts her mood, her energy, her motivation. How can you detect it early enough? 
+markt_7: How do you know if the coaches are creating the right climate for the optimal performance of the teams?
+markt_8: Are you interested in the overall care of the athlete?
+markt_9: What tools do coaches have for handling care for the whole person? 
 notice_account_activated: Your account has been activated. You can now log in.
 notice_account_email_exists: There is a user already with that email. Please choose a different one.
 notice_account_invalid_creditentials: Invalid user or password
@@ -369,6 +382,8 @@ quest11_label_3: Identified regulation
 quest11_label_4: Introjected regulation
 quest11_label_5: Extrinsic Motivation
 quest11_label_6: Amotivation
+quest11_val_10: The high value obtained in Amotivation contaminates the rest of the measures, which annuls the possibility to make any more complex or significant interpretations. Consultation with the tutor is required because this athlete is in a worrisome situation, feels incapable of achieving success and is experiencing a noticeable decrease in self-confidence. The athlete’s continuity in sport is in danger, given the level of confusion and perceived inefficacy to reach the desired goals in sport.
+
 quest11_val_1: High values of intrinsic motivation dimensions go hand in hand with low values in the extrinsic dimensions. Besides the other spects already discussed, this means that this athlete’s high levels of self-determined motivation will help maintain a high sense of efficacy in his/her actions, will strengthen the perseverance in his/her goals, will favor the use of positive coping styles and will have a positive impact in his/her personal adjustment with increased feelings of wellness.
 quest11_val_2: High Intrinsic Motivation values are accompanied by medium level values in Extrinsic Motivation. That implies that this athlete’s high levels of self-determined motivation will help maintain a high sense of efficacy in his/her actions, will strengthen the perseverance in his/her goals, will favor the use of positive coping styles and will have a positive impact in his/her personal adjustment , with increased feelings of wellness. At the same time it will be important to monitor the extrinsic motivation values because they can undermine the positive motivational state described, particularly if this evaluation has been conducted outside of the competitive season. 
 quest11_val_3: High values of all the dimensions measured were obtained. This represents a confusing and contradictory motivational state, because his/her values pool around two opposite ends of the spectrum; self-determination and externally determined. It may be necessary to consult the tutor, unless lo que sigue me parece una contradiccion. Lo puedes revisar Josean?Se hace necesario consultar con el/la tutor/a, salvo que los valores de la amotivación sean muy bajos y nos encontremos en periodo competitivo, en cuyo caso esta sugerencia sería recomendable. It is also recommended to continue monitoring and conduct another evaluation shortly.
@@ -385,6 +400,7 @@ quest11_valor_4: 4 (corresponds moderately)
 quest11_valor_5: 5 corresponds quit a bit)
 quest11_valor_6: 6 (quite a lot)
 quest11_valor_7: 7 (completely)
+quest11_valor_tit_10: Amotivational Profile
 quest11_valor_tit_1: Shows a Self-Determined Global Motivational Profile.
 quest11_valor_tit_2: Shows an Auto-Determined Global Motivational Profile.
 quest11_valor_tit_3: Shows a Bipolar Global Motivational Profile.
@@ -1103,16 +1119,3 @@ unit_8_path: 08.Tolerancia.Psicologica.es
 unit_8_title: Tolerancia Psicólogica
 unit_9_path: 09.La.Competicion.es
 unit_9_title: La Competición
-markt_1: Tool to help manage the psychological variables of sport performance.
-markt_2: Do you want to be able to perform at the level you know you are able?
-markt_3: How do you train your capacity to manage stress, your self-confidence?
-markt_4: An athlete in good physical shape, well trained, having good performances that he is unable to repeat in competition. How do you handle these situations? How and when do you intervene? 
-markt_5: An athlete with a specific competition plan, developed jointly with the coach. When faced with pressure during the competition this athlete starts making impulsive, ineffective decisions. How can that be prevented? 
-markt_6: Something is going on in an athlete’s life that impacts her mood, her energy, her motivation. How can you detect it early enough? 
-markt_7: How do you know if the coaches are creating the right climate for the optimal performance of the teams?
-markt_8: Are you interested in the overall care of the athlete?
-markt_9: What tools do coaches have for handling care for the whole person? 
-markt_10: Teskal gives the right tools to your coaches 
-markt_11: It’s an integral concept of athletic performance that takes into account not just the physical and technical skills of the athlete, but also the person who is the athlete. 
-markt_12: Teskal allows for a consistent level of communication between coach/athlete or team. 
-markt_13: Whether for situations where the athlete and coach live in different places, or when the athlete competes far away, Teskal allows for the continued monitoring of numerous variables relevant to the athlete and the athlete’s performance. 

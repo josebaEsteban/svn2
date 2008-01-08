@@ -32,13 +32,13 @@ class QuestsController < ApplicationController
     end
   end
 
-# todos los quest se crean aqui 
+  # todos los quest se crean aqui
   def create
     @answer = Answer.new(params[:answer])
     user=User.find(session[:user_id])
-    @answer.quest_id=(params[:id])          
+    @answer.quest_id=(params[:id])
     # rellenado por si mismo
-    if user.filled_for == session[:user_id] 
+    if user.filled_for == session[:user_id]
       @answer.user_id=session[:user_id]
       if user.show?
         @answer.browse = true
@@ -56,7 +56,7 @@ class QuestsController < ApplicationController
     @answer.filled_by = session[:user_id]
     @answer.ip = request.remote_ip
     @answer.time_to_fill =  Time.now - user.start
-     # para quest 1 y 2 
+    # para quest 1 y 2
     if @answer.quest_id == 1 or @answer.quest_id == 3
       if @answer.answ24.nil?
         @answer.answ24=0
@@ -67,15 +67,19 @@ class QuestsController < ApplicationController
     end
 
     if @answer.save
-      # flash[:notice] = 'Answer was successfully created.'
+      flash[:notice] = l(:notice_successful_create)
       controlador = "quest"+@answer.quest_id.to_s
       journal( controlador+"/create/"+@answer.id.to_s, @answer.user_id)
 
       quest = Quest.find(:first, :conditions  => {:user_id  => @answer.user_id, :order => @answer.quest_id})
       quest.toggle!(:browse)
+      user=User.find(@answer.user_id) 
+      if answer_show?(@answer.user_id, @answer.browse, user.managed_by)
 
-      redirect_to :controller  => controlador, :action => 'show', :id => @answer.id
-
+        redirect_to :controller  => controlador, :action => 'show', :id => @answer.id
+      else
+        redirect_to :controller => 'my', :action => 'page'
+      end
       # format.html { redirect_to answer_url(@answer) }
       # format.xml  { head :created, :location => answer_url(@answer) }
     else
