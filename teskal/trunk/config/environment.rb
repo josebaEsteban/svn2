@@ -80,6 +80,8 @@ ActiveRecord::Errors.default_error_messages = {
   :not_a_number => "activerecord_error_not_a_number"
 }
 
+CalendarDateSelect.format = :hyphen_ampm
+
 ActionView::Base.field_error_proc = Proc.new{ |html_tag, instance| "#{html_tag}" }
 
 GLoc.set_config :default_language => :es

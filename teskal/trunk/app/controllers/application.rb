@@ -391,7 +391,6 @@ class ApplicationController < ActionController::Base
       while (i <respuestas.length)
         if answer_show?(respuestas[i].user_id, respuestas[i].browse, @user.managed_by)
           @answers[j] = respuestas[i]
-                puts @answers[j].id
           j=j+1
         end
         i=i+1
