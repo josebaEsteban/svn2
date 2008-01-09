@@ -150,7 +150,6 @@ class Quest7Controller < ApplicationController
         strXML = strXML + "<set value='" + acorta(rg * scale).to_s + "'/>"
         strXML = strXML + "<set value='" + acorta(dp * scale).to_s + "'/>"
         strXML = strXML + "<set value='" + acorta(fe * scale).to_s + "'/>"
-        # strXML = strXML + "<set value=''/>"
         strXML = strXML + "<set value='" +  acorta(uc * scale).to_s + "'/>"
         strXML = strXML + "<set value='" +  acorta(ei * scale).to_s + "'/>"
         strXML = strXML + "<set value='" +  acorta(tp * scale).to_s + "'/>"

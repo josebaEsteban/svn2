@@ -81,7 +81,6 @@ class ApplicationController < ActionController::Base
   end
 
   def answer_show?(user, browse, managed_by)
-
     answer_show = true
     if !@logged_in_user.admin?
       if user == session[:user_id]
@@ -382,8 +381,8 @@ class ApplicationController < ActionController::Base
   def show_quest
     @answer = Answer.find(params[:id])
     @user=User.find(@answer.user_id )
-    if answer_show?(@answer.user_id, @answer.browse, @user.managed_by) 
-       @id = @answer.id
+    if answer_show?(@answer.user_id, @answer.browse, @user.managed_by)
+      @id = @answer.id
       @answers =[]
       resp_inicial = Answer.find(:all, :conditions  => ["created_on <= ? and user_id =? and quest_id=?",@answer.created_on,@answer.user_id,@answer.quest_id], :order  => "created_on DESC",:limit  => 5)
       respuestas = resp_inicial.reverse
@@ -392,13 +391,14 @@ class ApplicationController < ActionController::Base
       while (i <respuestas.length)
         if answer_show?(respuestas[i].user_id, respuestas[i].browse, @user.managed_by)
           @answers[j] = respuestas[i]
+                puts @answers[j].id
           j=j+1
         end
         i=i+1
       end
       journal( "quest"+@answer.quest_id.to_s+"/show/"+@answer.id.to_s, @answer.user_id)
       TzTime.zone=@user.timezone
-      @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
+      @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))   
     else
       flash[:notice] = l(:notice_not_authorized)
       redirect_to :controller => 'my', :action => 'page'
