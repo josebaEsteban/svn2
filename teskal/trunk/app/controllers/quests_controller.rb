@@ -36,7 +36,7 @@ class QuestsController < ApplicationController
   def create
     @answer = Answer.new(params[:answer])
     user=User.find(session[:user_id])
-    @answer.quest_id=(params[:id])
+    @answer.quest_id=(params[:id])  
     # rellenado por si mismo
     if user.filled_for == session[:user_id]
       @answer.user_id=session[:user_id]
@@ -55,7 +55,12 @@ class QuestsController < ApplicationController
     end
     @answer.filled_by = session[:user_id]
     @answer.ip = request.remote_ip
-    @answer.time_to_fill =  Time.now - user.start
+    @answer.time_to_fill =  Time.now - user.start 
+    # @answer.created_on = params[:created_on] 
+    puts  params[:answer] 
+    puts  @answer.created_on
+    # paso = Time.parse(@answer.created_on) 
+    # @answer.created_on = paso.to_datetime  
     # para quest 1 y 2
     if @answer.quest_id == 1 or @answer.quest_id == 3
       if @answer.answ24.nil?
