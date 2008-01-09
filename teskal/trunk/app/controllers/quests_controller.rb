@@ -57,8 +57,6 @@ class QuestsController < ApplicationController
     @answer.ip = request.remote_ip
     @answer.time_to_fill =  Time.now - user.start 
     # @answer.created_on = params[:created_on] 
-    puts  params[:answer] 
-    puts  @answer.created_on
     # paso = Time.parse(@answer.created_on) 
     # @answer.created_on = paso.to_datetime  
     # para quest 1 y 2
@@ -70,7 +68,9 @@ class QuestsController < ApplicationController
         @answer.answ25=0
       end
     end
-
+    if !@answer.created_on.nil? 
+      @answer.created_on=TzTime.zone.local_to_utc(@answer.created_on)
+    end
     if @answer.save
       flash[:notice] = l(:notice_successful_create)
       controlador = "quest"+@answer.quest_id.to_s
