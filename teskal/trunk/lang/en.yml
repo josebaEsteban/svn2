@@ -1020,7 +1020,7 @@ quest9_d6_a: A low score in this dimension means that the coach does not provide
 quest9_d6_b: The medium values obtained in this dimension signify an appropriate way of conveying information. They correspond with a positive impact over the athlete’s improvement.  
 quest9_d6_c: The high values obtained in this dimension correspond to the highest quality and type of information conveyed. It implies an excellent way of reinforcing and improving athlete’s behavior.  
 quest9_d7_a: The low score obtained in this variable means that the athlete lacks decision-making power, which may lower his/her confidence when making decisions, negatively impacting the development of independent decision-making skills. The only solution considered in competitive situations is the one suggested by the coach. With this style, it develops players with high resolution skills.  
-quest9_d7_b: The medium values obtained in this dimension imply that the coach combines both decision-making styles: The directive and the reflexive ones, which may result in some withdrawal in the part of the athletes and a stalling of the development of independent decision-making skills. Coach does not like to consider other possible solutions for a specific situation, only the one he or she considers most appropriate.  
+quest9_d7_b: The medium values obtained in this dimension imply that the coach combines both decision-making styles; The directive and the reflexive ones, which may result in some withdrawal in the part of the athletes and a stalling of the development of independent decision-making skills. Coach does not like to consider other possible solutions for a specific situation, only the one he or she considers most appropriate.  
 quest9_d7_c: The high score obtained in this dimension conveys a perception of the coach as someone who strengthens the player’s decision making autonomy, using a reflexive decisional style, which will increase their decision-making confidence, strengthening the development of independent decision-making skills and allowing for the consideration of several possible solutions to the same situation. This style contributes to the development of smart players, who can think and make decisions during the game.  
 quest9_d8_a: Mastery climate values are at a level below 2.5. That means that for this coach, athlete’s improvement take second place to results, which weakens commitment to effort and may result in an increase in anxiety about making mistakes.
 quest9_d8_b: Mastery climate values are at a medium level, between 2.5-4, which means that there is a perception that for this coach commitment to effort and perseverance in front of difficulties are important and that he/she may see mistakes as contributing to the athlete’s improvement. 
@@ -1040,13 +1040,13 @@ quest9_label_6: Instructional Communication  
 quest9_label_7: Perceived Decisional style (Estill desicional percibido) 
 quest9_label_8: Mastery Climate 
 quest9_label_9: Performance Climate
-quest9_valor_1: 1 (no, en absoluto)
-quest9_valor_1: 1 (nunca)
-quest9_valor_2: 2 (pocas veces)
-quest9_valor_3: 3 (a menudo)
-quest9_valor_4: 4 (casi siempre)
-quest9_valor_5: 5 (siempre)
-quest9_valor_7: 7 (totalmente)
+quest9_valor_1: 1 (no, not at all)
+quest9_valor_1: 1 (never)
+quest9_valor_2: 2 (sometimes)
+quest9_valor_3: 3 (often)
+quest9_valor_4: 4 (many times)
+quest9_valor_5: 5 (always)
+quest9_valor_7: 7 (totally) 
 setting_app_subtitle: Application subtitle
 setting_app_title: Application title
 setting_attachment_max_size: Attachment max. size
