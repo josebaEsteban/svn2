@@ -65,14 +65,14 @@ class Quest12Controller < ApplicationController
     item=0
     if clima_rendimiento < 4
       @advice[item]=l(:quest12_d1_a)
-      @icon[item]="stop"
+      @icon[item]="star"
     else
       if clima_rendimiento <= 7
         @advice[item]=l(:quest12_d1_b)
         @icon[item]="medium"
       else
         @advice[item]=l(:quest12_d1_c)
-        @icon[item]="star"
+        @icon[item]="stop"
       end
     end
     item=1
