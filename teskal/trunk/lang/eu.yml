@@ -1087,35 +1087,35 @@ text_are_you_sure: ¿ Ziur zaude ?
 text_caracters_maximum: %d characters maximum.
 text_caracters_maximum: karaktereen %d maximoa
 text_length_between: Longitud entre %d y %d caracteres. 
-unit_10_path: 10.La.Comunicacion.es.pdf
-unit_10_title: Komunikazioa
-unit_11_path: 11.Responsabilidad.vs.Culpabilidad.es.pdf
-unit_11_title: Erantzunkizuna vs Erruduntasuna
-unit_12_path: 12.Confianza.y.Auto.Eficacia.es.pdf 
-unit_12_title: Konfiantza eta Auto Efikazia
-unit_13_path: 13.Estado.de.Animo.es.pdf
-unit_13_title: Tentua
-unit_14_path: 14.Asertividad.es.pdf 
-unit_14_title: Asertibitatea
-unit_15_path: 15.Deportista.de.ARD.es.pdf 
-unit_15_title: EHK-ko Kirolaria
-unit_16_path: 16.Sistema.de.Autoregulacion.es.pdf
-unit_16_title: Autoerregulazio Sistema
-unit_1_path: 01.Teskal.eu.pdf
-unit_1_title: Teskal Aurkezpena
-unit_2_path: 02.Atencion.y.Concentracion.es.pdf
-unit_2_title: Arreta y Kontzentrazioa
-unit_3_path: 03.Emociones.y.Rendimiento.Deportivo.es.pdf
-unit_3_title: Emozioak eta Kirol Errendimendua
-unit_4_path: 04.Establecimiento.de.Objetivos.es.pdf
-unit_4_title: Helburuen Ezarpena
-unit_5_path: 05.Estresa.eu.pdf
-unit_5_title: Estresa lehiaketan
-unit_6_path: 06.Motivacion.es
-unit_6_title: Motibazioa
-unit_7_path: 07.Tension.y.Relajacion.es 
-unit_7_title: Tentsioa eta Erlaxapena
-unit_8_path: 08.Tolerancia.Psicologica.es
-unit_8_title: Tolerantzia Psikologikoa
-unit_9_path: 09.La.Competicion.es
-unit_9_title: Lehiaketa
+unit_9_path: 09.Komunikazioa.eu.pdf
+unit_9_title: Komunikazioa
+unit_10_path: 10.Erantzunkizuna.vs.Erruduntasuna.eu.pdf
+unit_10_title: Erantzunkizuna vs Erruduntasuna
+unit_11_path: 11.Confianza.y.Auto.Eficacia.es.pdf 
+unit_11_title: Konfiantza eta Auto Efikazia
+unit_12_path: 12.Tentua.eu
+unit_12_title: Tentua
+unit_13_path: 13.Asertividad.es.pdf 
+unit_13_title: Asertibitatea
+unit_14_path: 14.Deportista.de.ARD.es.pdf 
+unit_14_title: EHK-ko Kirolaria
+unit_15_path: 15.Sistema.de.Autoregulacion.es.pdf
+unit_15_title: Autoerregulazio Sistema
+unit_0_path: Teskal.eu.pdf
+unit_0_title: Teskal Aurkezpena
+unit_1_path: 01.Arreta.eta.Kontzentrazioa.eu.pfd
+unit_1_title: Arreta eta Kontzentrazioa
+unit_2_path: 02.Emozioak.eta.Kirol.Errendimendua.eu.pdf
+unit_2_title: Emozioak eta Kirol Errendimendua.eu
+unit_3_path: 03.Helburuen.Finkatzea.eu.pdf
+unit_3_title: Helburuen Finkatzea.eu
+unit_4_path: 04.Estresa.eu.pdf
+unit_4_title: Estresa lehiaketan
+unit_5_path: 05.Motibazioa.eu.pdf
+unit_5_title: Motibazioa
+unit_6_path: 06.Tentsioa.eta.Erlaxapena.eu.pdf
+unit_6_title: Tentsioa eta Erlaxapena
+unit_7_path: 07.Tolerantzia.Psikologikoa.eu.pdf
+unit_7_title: Tolerantzia Psikologikoa
+unit_8_path: 08.Lehiaketa.eu.pdf
+unit_8_title: Lehiaketa
