@@ -18,23 +18,25 @@ class UsersController < ApplicationController
 
   def list
     if @logged_in_user.admin?
-      sort_init 'login', 'asc'
-      sort_update
-
-      @status = params[:status] ? params[:status].to_i : 1
-      conditions = nil
-      conditions = ["status=?", @status] unless @status == 0
-
-      @user_count = User.count(:conditions => conditions)
-      @user_pages = Paginator.new self, @user_count,
-      15,
-      params['page']
-      @users =  User.find :all,:order => sort_clause,
-      :conditions => conditions,
-      :limit  =>  @user_pages.items_per_page,
-      :offset =>  @user_pages.current.offset
-
-      render :action => "list", :layout => false if request.xhr?
+      # sort_init 'login', 'asc'
+      # sort_update
+      # 
+      # @status = params[:status] ? params[:status].to_i : 1
+      # conditions = nil
+      # conditions = ["status=?", @status] unless @status == 0
+      # 
+      # @user_count = User.count(:conditions => conditions)
+      # @user_pages = Paginator.new self, @user_count,
+      # 15,
+      # params['page']
+      # @users =  User.find :all,:order => sort_clause,
+      # :conditions => conditions,
+      # :limit  =>  @user_pages.items_per_page,
+      # :offset =>  @user_pages.current.offset
+      # 
+      # render :action => "list", :layout => false if request.xhr?     
+      @users = User.paginate(:page => params[:page], :per_page => 50, :order => 'created_on DESC')
+      
     end
   end
 
@@ -123,7 +125,7 @@ class UsersController < ApplicationController
     if  @logged_in_user.admin? or @logged_in_user.id == user.managed_by
       if user.status == User::STATUS_LOCKED
         user.status = User::STATUS_ACTIVE
-        flash[:notice] = l(:field_user) +" "+l(:activo)
+        flash[:notice] = l(:field_user) +" "+l(:status_active)
       else
         if user.status == User::STATUS_ACTIVE
           user.status = User::STATUS_LOCKED
