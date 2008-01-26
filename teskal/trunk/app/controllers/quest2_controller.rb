@@ -150,7 +150,7 @@ class Quest2Controller < ApplicationController
           @icon[item]="star"
         end
       end
-      valoracion_general=((estado_forma+logro_personal+auto_eficacia+auto_regulacion/4.0))-((descanso_interrumpido+cansancio_emocional+vulnerabilidad_lesiones)/3.0)
+      valoracion_general=((estado_forma+logro_personal+auto_eficacia+auto_regulacion)/4.0)-((descanso_interrumpido+cansancio_emocional+vulnerabilidad_lesiones)/3.0)    
       item=7
       if valoracion_general < 0
         @advice[item]=l(:quest2_val_4)
