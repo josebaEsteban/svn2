@@ -96,5 +96,12 @@ class Mailer < ActionMailer::Base
     @from           = Setting.mail_from
     @subject        = "[#{message.board.project.name} - #{message.board.name}] #{message.subject}"
     @body['message'] = message
+  end 
+  def quest(token)
+    # set_language_if_valid(token.user.language)
+    @recipients     = token.user.mail
+    @from           = Setting.mail_from
+    @subject        = l(:mail_subject_register)
+    @body['token']  = token
   end
 end

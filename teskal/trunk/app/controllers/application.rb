@@ -82,6 +82,7 @@ class ApplicationController < ActionController::Base
 
   def answer_show?(user, browse, managed_by)
     answer_show = true
+    @browse_score = false
     if !@logged_in_user.admin?
       if user == session[:user_id]
         if browse == false
@@ -96,6 +97,9 @@ class ApplicationController < ActionController::Base
           answer_show = true
         end
       end
+    else
+      @browse_score = true
+      answer_show = true
     end
     return answer_show
   end
@@ -397,7 +401,7 @@ class ApplicationController < ActionController::Base
       end
       journal( "quest"+@answer.quest_id.to_s+"/show/"+@answer.id.to_s, @answer.user_id)
       TzTime.zone=@user.timezone
-      @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))   
+      @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
     else
       flash[:notice] = l(:notice_not_authorized)
       redirect_to :controller => 'my', :action => 'page'
