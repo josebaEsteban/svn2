@@ -80,7 +80,7 @@ class Quest6Controller < ApplicationController
 
     cl = rg + it + ct + rp
     ctt = answer.answ21
-    x = (cl + ctt) / 2
+    x = (cl + ctt) / 2.0
     y = (cl - ctt).abs
 
     @advice=[]

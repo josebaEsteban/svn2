@@ -57,8 +57,8 @@ class Quest1Controller < ApplicationController
     ansiedad_cognitiva = answer.answ26 + answer.answ29 + answer.answ32 + answer.answ35 + answer.answ38 + answer.answ41 + answer.answ44 + answer.answ47 + answer.answ50
     auto_confianza = answer.answ28 + answer.answ31 + answer.answ34 + answer.answ37 + answer.answ40 + answer.answ43 + answer.answ46 + answer.answ49 + answer.answ52
     ansiedad_somatica = answer.answ27 + answer.answ30 + answer.answ33 + answer.answ36 + answer.answ39 + answer.answ42 + answer.answ45 + answer.answ48 + answer.answ51
-    dificultad = (answer.answ59 + answer.answ61 + answer.answ63 + answer.answ65)/4
-    confianza = (answer.answ60 + answer.answ62 + answer.answ64 + answer.answ66)/4
+    dificultad = (answer.answ59 + answer.answ61 + answer.answ63 + answer.answ65)/4.0
+    confianza = (answer.answ60 + answer.answ62 + answer.answ64 + answer.answ66)/4.0
     auto_control = ((answer.answ16 + answer.answ17) /2) *2.5
     visionado = ((answer.answ18 + answer.answ19 + answer.answ20) /3) *2.5
     auto_motivacion = ((answer.answ21 + answer.answ22 + answer.answ23) /3) *2.5

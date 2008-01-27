@@ -51,7 +51,7 @@ class Quest7Controller < ApplicationController
       rg = (( answer.answ1 + answer.answ2  + answer.answ3 )/3.0 )
       uc = (( answer.answ4 + answer.answ5 + answer.answ6 )/3.0 )
       fe = (( answer.answ13 + answer.answ14 + answer.answ15 )/3.0 )
-      dp = (( answer.answ16 + answer.answ17 + answer.answ18  )/3.0 )
+      dp = (( answer.answ16 + answer.answ17 + answer.answ18 )/3.0 )
       ei = (( answer.answ10 + answer.answ11 + answer.answ12 )/3.0 )
       tp = (( answer.answ7 + answer.answ8 + answer.answ9 )/3.0 )
 

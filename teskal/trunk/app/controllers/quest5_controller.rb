@@ -49,7 +49,7 @@ class Quest5Controller < ApplicationController
       rcom = (answer.answ16 + answer.answ17 + answer.answ18 + answer.answ19 + answer.answ20)
       cl = rendimiento_general + rendimiento_emocional + rcog + rcom
       ct = answer.answ21
-      x = (cl + ct) / 2
+      x = (cl + ct) / 2.0
       y = (cl - ct).abs
 
       @advice=[]
