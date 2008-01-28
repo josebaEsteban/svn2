@@ -72,7 +72,7 @@ class QuestsController < ApplicationController
       @answer.created_on=TzTime.zone.local_to_utc(@answer.created_on)
     end
     if @answer.save 
-      Mailer.deliver_lost_password(token)
+      # Mailer.deliver_lost_password(token)
       flash[:notice] = l(:notice_successful_create)
       controlador = "quest"+@answer.quest_id.to_s
       journal( controlador+"/create/"+@answer.id.to_s, @answer.user_id)
