@@ -263,8 +263,6 @@ login_label_3: with information about creating a new password.
 login_label_4: New to Teskal?
 login_label_5: Sign up
 login_label_6: for a free account.
-mail_subject_lost_password: Your Teskal password
-mail_subject_register: Teskal account activation
 markt_10: Teskal gives the right tools to your coaches 
 markt_11: It’s an integral concept of athletic performance that takes into account not just the physical and technical skills of the athlete, but also the person who is the athlete. 
 markt_12: Teskal allows for a consistent level of communication between coach/athlete or team. 
@@ -313,7 +311,7 @@ quest10_21: Thinks the team must compete in the best way
 quest10_2: Believes that athletes are successful when they overcome difficulties.
 quest10_3: Prefers a victory over “Doing things well”
 quest10_4: Will sacrifice the quality of the competition tecnique to secure the result.
-quest10_5: For him/her winning is first, and then competing well 
+quest10_5: For him or her winning is first, and then competing well 
 quest10_6: Congratulates the athletes when they perform well, do what was expected. 
 quest10_7: Encourages athletes in their future actions.
 quest10_8: Gives instructions on technical and tactical aspects, style, 
@@ -359,14 +357,14 @@ quest11_d1_a: Intrinsic motivation values are low, which means low commitment to
 quest11_d1_b: Intrinsic motivation values are at a medium level, which means that he is involved in practice, but could be more committed. This athlete experiences some satisfaction when tackling difficult tasks, particularly in practice, and can focus on his or her weaknesses.
 quest11_d1_c: Intrinsic motivation values are high, which indicate high level of commitment to practice and enjoyment of the activity. This athlete experiences high satisfaction when facing difficult tasks, both in practice and in competition, attempts things that he or she had not done before and focuses on improving his or her weaknesses.
 quest11_d2_a: Low levels of integrated regulation (esta expresion en ingles no tiene sentido y la verdad es que no se muy bien que quiere decir en castellano. Podemos llamarle de otra manera? Que representa?) imply low levels of agreement with his core principles, far from being true to him or herself. This athlete probably doubts whether sport is an integral part of his or her life and consistent with his/her core essence.
-quest11_d2_b: The obtained levels of integrated regulation imply a certain degree of agreement with the athlete’s basic principles, aligned with a sense of being tru to him/herself. Sport for this athlete is a central part of his/her life and reflects his/her core essence.
-quest11_d2_c: The high level of integrated regulation means high degree of agreement with the athlete’s basic principles and the feeling of being really tru to him/herself. Sport is a central part of this athlete’s life, clearly reflecting hi/her essence.
-quest11_d3_a: Low values of identified motivation regulation (otra expression que no veo clara) result in this athlete thinking twice about whether sport participation allows him/her enough social interaction and enough of a chance to stay in touch with friends. He/she likely doubts that sport will promote personal development opportunities that will transfer to other areas of his/her life.
-quest11_d3_b: Medium level of identified motivation regulation means that the athlete believes that participation in this sport will allow him to meet people and keep in touch with friends. He/she is also likely to think that this activity may result in personal development opportunities applicable to other areas of life.
+quest11_d2_b: The obtained levels of integrated regulation imply a certain degree of agreement with the athlete’s basic principles, aligned with a sense of being true to him or herself. Sport for this athlete is a central part of his/her life and reflects his/her core essence.
+quest11_d2_c: The high level of integrated regulation means high degree of agreement with the athlete’s basic principles and the feeling of being really tru to him or herself. Sport is a central part of this athlete’s life, clearly reflecting hi/her essence.
+quest11_d3_a: Low values of identified motivation regulation (otra expression que no veo clara) result in this athlete thinking twice about whether sport participation allows him or her enough social interaction and enough of a chance to stay in touch with friends. He/she likely doubts that sport will promote personal development opportunities that will transfer to other areas of his/her life.
+quest11_d3_b: Medium level of identified motivation regulation means that the athlete believes that participation in this sport will allow him or her to meet people and keep in touch with friends. He/she is also likely to think that this activity may result in personal development opportunities applicable to other areas of life.
 quest11_d3_c: High levels of identified motivation regulation reinforce the idea that practicing this sport will allow this athlete to meet people and keep good relationships with his friends. He/she is also likely to think that this activity offers excellent opportunities for personal development, which will be helpful in other areas of life.
-quest11_d4_a: The low value obtained in introjected regulation indicates that this athlete believes sport in part helps him/her stay in shape, which gives him/her a certain degree of satisfaction, venthough he probably thinks that there are more important reasons.
-quest11_d4_b: The obtained value of introjected regulation is associated with the need to practice sport to remain in shape, which makes him/her feel good about him/herself. At the same time this athlete feels bad at times, because he/she considers training like an obligation.
-quest11_d4_c: The high value of introjected regulation obtained is associated with a strong need to train to remain in shape, which makes the athlete feel good about him/herself, but it also results in feeling that sport is an obligation, so that he/she feels guilty when he/she misses practice.
+quest11_d4_a: The low value obtained in introjected regulation indicates that this athlete believes sport in part helps him or her stay in shape, which gives him or her a certain degree of satisfaction, venthough he probably thinks that there are more important reasons.
+quest11_d4_b: The obtained value of introjected regulation is associated with the need to practice sport to remain in shape, which makes him/her feel good about him or herself. At the same time this athlete feels bad at times, because he/she considers training like an obligation.
+quest11_d4_c: The high value of introjected regulation obtained is associated with a strong need to train to remain in shape, which makes the athlete feel good about him or herself, but it also results in feeling that sport is an obligation, so that he/she feels guilty when he/she misses practice.
 quest11_d5_a: Low levels of extrinsic motivation mean that this athlete does not feel a need to show others how good he/she is to gain status and be admired by friends. Is able to put in relative terms the value that hers/his physical ability has for others.
 quest11_d5_b: The obtained level of extrinsic motivation points to the likelihood of this athlete believing that showing how good he/she is will contribute to having prestige and being admired by his/her friends. This athlete is also likely to believe that being in good physical shape is also somewhat important to others.
 quest11_d5_c: The obtained high level of extrinsic motivation points to this athlete believing that showing how good he/she is will contribute to having prestige and being admired by his/her friends. This athlete is also likely to believe that being in good physical shape is also important to others.
@@ -426,7 +424,7 @@ quest12_d1_a: The low value obtained in the performance scale of the motivationa
 quest12_d1_b: The value obtained in the performance scale of the motivational climate is at a medium level, between 4 and 7, and that means that for this coach the results obtained by the athletes are definitely valued, and if they are similar to the mastery values they will strengthen motivation, and increase effort commitment, helping the athlete regulate fear of failure if it was present.
 quest12_d1_c: The high value obtained in the performance scale of the motivational climate, above 7, means that this coach gives the most importance to the results obtained by the athletes. This will only result in good motivation to increase commitment to effort if the mastery values are also very high. Otherwise it is possible that it will result in a deterioration of the athlete’s ability to cope with situations of maximum personal challenge. 
 quest12_d2_a: The mastery motivational climate is low, and that is worrisome. For this coach it is hard to evaluate positively the improvements made by athletes. As a result, when they confront new or very difficult situations they may feel uncomfortable, and lack initiative. The coach needs some help to learn to value the importance of improvements, emphasizing self-comparison in the athletes.
-quest12_d2_b: The mastery motivational climate is at a medium level, which is acceptable but could be better. The coach values improvements in his or her athletes, and that helps them cope better with new or very difficult situations. It would be helpful to remind the coach of the importance improvements have in the pathway to goal achievement, encouraging him or her to recognize and value effort whenever there is a personal improvement, no matter how small.
+quest12_d2_b: The mastery motivational climate is at a medium level, which is acceptable but could be better. The coach values improvements in his or her athletes, and that helps them cope better with new or very difficult situations. It would be helpful to remind the coach of the importance improvements have in the pathway to goal achievement, encouraging him/her to recognize and value effort whenever there is a personal improvement, no matter how small.
 quest12_d2_c: The mastery motivational climate reaches very high levels, which is very positive. This coach focuses on the athlete’s personal improvement, which is very important. This helps them cope very well with new or very difficult situations. It has a positive impact on their commitment to practice and on their perceived competency, and it minimizes any fear of mistakes the athletes could have.
 quest12_header: Playing sport, the coach thinks I am most successful when...
 quest12_intro: This is a questionnaire which asks you to express your perception of what success in sport means to your coach. There are no right or wrong answers.
@@ -894,7 +892,7 @@ quest7_d5_a: Low levels of satisfaction related to the amount of information rec
 quest7_d5_b: Medium levels of satisfaction related to the amount of information received about the technical-tactical aspects relevant to his position, and with facets of his or her personal improvement
 quest7_d5_c: High levels of satisfaction related to the amount of information received about the technical-tactical aspects relevant to his position, and with facets of his or her personal improvement. This will positively impact his or her self-efficacy.
 quest7_d6_a: The athlete shows low levels of satisfaction with the way he felt the coach treated him, how pleasant the interactions were, how much recognition he received and how valued he felt for a job well done.
-quest7_d6_b: The athlete shows medium levels of satisfaction with the way he felt the coach treated him, how pleasant the interactions were, how much recognition he received and how valued he felt for a job well done. It places him at a level perceived to be just like everyone else.
+quest7_d6_b: The athlete shows medium levels of satisfaction with the way he felt the coach treated him, how pleasant the interactions were, how much recognition he received and how valued he felt for a job well done. It places him or her at a level perceived to be just like everyone else.
 quest7_d6_c: The athlete shows high levels of satisfaction with the way he felt the coach treated him, how pleasant the interactions were, how much recognition he received and how valued he felt for a job well done. This implies an excellent relationship with the coach.
 quest7_header: Degree of satisfaction with...
 quest7_intro: Below are a series of sentences related to different aspects of practice and competition. We would like to get your opinion about them. Please, read them carefully, answer sincerely and click on the number that best describes your opinion or the one with which you agree most.
@@ -950,7 +948,7 @@ quest8_d4_a: Low levels of satisfaction related to the amount of information rec
 quest8_d4_b: Medium levels of satisfaction related to the amount of information received about the technical-tactical aspects relevant to his position, and with facets of his or her personal improvement
 quest8_d4_c: High levels of satisfaction related to the amount of information received about the technical-tactical aspects relevant to his position, and with facets of his or her personal improvement. This will positively impact his or her self-efficacy. 
 quest8_d5_a: The athlete shows low levels of satisfaction with the way he felt the coach treated him, how pleasant the interactions were, how much recognition he received and how valued he felt for a job well done.
-quest8_d5_b: The athlete shows medium levels of satisfaction with the way he felt the coach treated him, how pleasant the interactions were, how much recognition he received and how valued he felt for a job well done. It places him at a level perceived to be just like everyone else.
+quest8_d5_b: The athlete shows medium levels of satisfaction with the way he felt the coach treated him, how pleasant the interactions were, how much recognition he received and how valued he felt for a job well done. It places him or her at a level perceived to be just like everyone else.
 quest8_d5_c: The athlete shows high levels of satisfaction with the way he felt the coach treated him, how pleasant the interactions were, how much recognition he received and how valued he felt for a job well done. This implies an excellent relationship with the coach.
 quest8_d6_a: There is low satisfaction with the decisions made regarding line-up. There seems to be an important level of disagreement with the tactical choices for competition and the way of making adjustments during the game.
 quest8_d6_b: There is medium level of satisfaction with the decisions made regarding line-up. There does not seem to be disagreement with the tactical choices for competition and the way of making adjustments during the game.
@@ -1047,23 +1045,32 @@ quest9_valor_3: 3 (often)
 quest9_valor_4: 4 (many times)
 quest9_valor_5: 5 (always)
 quest9_valor_7: 7 (totally) 
-setting_app_subtitle: Application subtitle
 setting_app_title: Application title
-setting_attachment_max_size: Attachment max. size
-setting_autofetch_changesets: Autofetch commits
-setting_autologin: Autologin
-setting_commit_fix_keywords: Fixing keywords
-setting_commit_ref_keywords: Referencing keywords
-setting_date_format: Date format
-setting_default_language: Default language
-setting_feeds_limit: Feed content limit
-setting_host_name: Host name
-setting_issues_export_limit: Issues export limit
-setting_login_required: Authent. required
-setting_mail_from: Emission mail address
-setting_self_registration: Self-registration enabled
-setting_text_formatting: Text formatting
+setting_app_subtitle: Application subtitle
 setting_welcome_text: Welcome text
+setting_default_language: Default language
+setting_login_required: Authentication required
+setting_self_registration: Self-registration
+setting_attachment_max_size: Attachment max. size
+setting_issues_export_limit: Issues export limit
+setting_mail_from: Emission email address
+setting_bcc_recipients: Blind carbon copy recipients (bcc)
+setting_host_name: Host name
+setting_text_formatting: Text formatting
+setting_wiki_compression: Wiki history compression
+setting_feeds_limit: Feed content limit
+setting_autofetch_changesets: Autofetch commits
+setting_sys_api_enabled: Enable WS for repository management
+setting_commit_ref_keywords: Referencing keywords
+setting_commit_fix_keywords: Fixing keywords
+setting_autologin: Autologin
+setting_date_format: Date format
+setting_time_format: Time format
+setting_cross_project_issue_relations: Allow cross-project issue relations
+setting_issue_list_default_columns: Default columns displayed on the issue list
+setting_repositories_encodings: Repositories encodings
+setting_emails_footer: Emails footer
+setting_protocol: Protocol
 signup_label_10: Terms of Service
 signup_label_11: By clicking the 'Complete Signup' button, I am attaching my electronic signature to and agreeing to the Teskal <a href="http:/account/terms">Terms of Service Agreement</a>.
 signup_label_12: Thanks for signing up!
@@ -1090,16 +1097,16 @@ unit_9_path: 09.Comunication.en.pdf
 unit_9_title: Comunication
 unit_10_path: 10.Responsability.vs.Guilt.en.pdf
 unit_10_title: Responsability vs Guilt
-unit_11_path: 11.Confidence&Autoefficacy.en
-unit_11_title: Confidence and Autoefficacy
-unit_12_path: 12.MoodState.en.pdf
-unit_12_title: MoodState
-unit_13_path: 13.Assertiveness.en
+unit_11_path: 11.Confidence&Selfefficacy.en.pdf
+unit_11_title: Confidence and Selfefficacy
+unit_12_path: 12.MoodStates.en.pdf
+unit_12_title: Mood States
+unit_13_path: 13.Assertiveness.en.pdf
 unit_13_title: Assertiveness
-unit_14_path: 14.Deportista.de.ARD.es 
-unit_14_title: Deportista de ARD 
-unit_15_path: 15.Sistema.de.Autoregulacion.es
-unit_15_title: Sistema de Autoregulación
+unit_14_path: 14.High.Performance.Athlete.en.pdf
+unit_14_title: High Performance Athlete
+unit_15_path: 15.SelfRegulatory.System.en.pdf
+unit_15_title: Self Regulatory System
 unit_0_path: Teskal.en.pdf
 unit_0_title: Teskal Presentation
 unit_1_path: 01.Attention.&.Concentration.en.pdf
@@ -1116,6 +1123,15 @@ unit_6_path: 06.Tension.&.Relaxation.en.pdf
 unit_6_title: Tension and Relaxation
 unit_7_path: 07.Psychological.Tolerance.en.pdf
 unit_7_title: Psychological Tolerance
-unit_8_path: 08.Competition.en
+unit_8_path: 08.Competition.en.pdf
 unit_8_title: Competition
+mail_subject_lost_password: Your Teskal password
+mail_body_lost_password: 'To change your Teskal password, click on the following link'
+mail_subject_signup: Teskal account activation
+mail_body_register: 'Thank you for signing up for Teskal! To activate your account, use the following link'
+mail_body_account_information_external: You can use your "%s" account to log into Teskal.
+mail_body_account_information: Your Teskal account information
+mail_subject_account_activation_request: Teskal account activation request
+setting_protocol: Protocol
+text_select_mail_notifications: Select actions for which email notifications should be sent.
  
