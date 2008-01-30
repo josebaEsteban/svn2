@@ -248,8 +248,6 @@ login_label_3: avec des informations sur la création d'un nouveau mot de passe.
 login_label_4: Nouveau à Teskal?
 login_label_5: Inscrivez-vous
 login_label_6: pour obtenir un compte gratuit.
-mail_subject_lost_password: Votre mot de passe Teskal
-mail_subject_register: Activation de votre compte Teskal
 notice_account_activated: Votre compte a été activé. Vous pouvez à présent vous connecter.
 notice_account_invalid_creditentials: Identifiant ou mot de passe invalide.
 notice_account_lost_email_sent: Un message contenant les instructions pour choisir un nouveau mot de passe vous a été envoyé.
@@ -1078,5 +1076,10 @@ label_quest_pending: En attendant les questionnaires
 label_quest_no_pending: En attendant il n'ya pas de questionnaires
 label_quest_pending_from: En attente depuis
 label_quest_no_filled: n'ya pas de questionnaires
-
-
+mail_body_account_activation_request: "Un nouvel utilisateur (%s) s'est inscrit. Son compte nécessite votre approbation"
+mail_body_account_information: Paramètres de connexion de votre compte Teskal
+mail_body_account_information_external: Vous pouvez utiliser votre compte "%s" pour vous connecter à Teskal.
+mail_body_lost_password: 'Pour changer votre mot de passe Teskal, cliquez sur le lien suivant'
+mail_body_register: 'Pour activer votre compte Teskal, cliquez sur le lien suivant'
+mail_subject_account_activation_request: "Demande d'activation d'un compte Teskal"
+setting_protocol: Protocol 

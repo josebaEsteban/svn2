@@ -261,8 +261,6 @@ login_label_3: pasa-hitz berri bat eratzari buruzko informazioarekin.
 login_label_4: Berria Teskalen?
 login_label_5: Eratu ezazu kontu
 login_label_6: bat doan.
-mail_subject_lost_password: Zure pasa-hitza Teskal
-mail_subject_register: Kontuaren aktibazioa Teskal
 markt_10: Teskalek erraminta horiek zure entrenatzaieen eskura jartzen ditu.  
 markt_11: Kirolariaren trebetasun fisiko eta teknikoez gain, kirolariaren pertsona bera ere kontuan hartzen dituen Kirol errendimenduaren kontzeptu integral bat da.  
 markt_12: Teskalek kirolari/entrenatzaile bikoteari nola kirolari/entrenatzaile/psikologo taldeari komunikazio maila altu bat mantentzea ahalbidetzen die.  
@@ -1119,3 +1117,11 @@ unit_7_path: 07.Tolerantzia.Psikologikoa.eu.pdf
 unit_7_title: Tolerantzia Psikologikoa
 unit_8_path: 08.Lehiaketa.eu.pdf
 unit_8_title: Lehiaketa
+setting_protocol: Protocolo
+mail_body_lost_password: Zure Teskaleko pasa-hitza aldatzeko ondorengo loturan klikatu ezazu
+mail_body_register: Zure Teskaleko kontua aktibatzeko ondorengo loturan klikatu ezazu
+mail_body_account_information_external: Zure “%s” kontua erabili dezakezu Teskalen sartzeko.
+mail_body_account_information: Zure Teskaleko kontuaren informazioa
+mail_subject_account_activation_request: Teskalen kontua aktibatzeko eskaera
+mail_subject_lost_password: Zure pasa-hitza Teskal
+mail_subject_signup: Kontuaren aktibazioa Teskal
