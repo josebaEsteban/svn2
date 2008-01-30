@@ -261,8 +261,6 @@ login_label_3: com a informação para criar uma nova senha.
 login_label_4: Novo a Teskal?
 login_label_5: Assinar acima
 login_label_6: para uma conta grátis.
-mail_subject_lost_password: Sua senha do Teskal.
-mail_subject_register: Ativaçao de conta do Teskal.
 notice_account_activated: Sua conta foi ativada. Você pode agora entrar.
 notice_account_invalid_creditentials: Usuário ou senha inválido.
 notice_account_lost_email_sent: Um email com instruções para escolher uma nova senha foi enviado para você.
@@ -498,3 +496,11 @@ unit_8_path: 08.Tolerancia.Psicologica.es
 unit_8_title: Tolerancia Psicólogica
 unit_9_path: 09.La.Competicion.es
 unit_9_title: La Competición
+mail_subject_lost_password: Seu Teskal senha
+mail_body_lost_password: 'Para mudar sua senha, clique no link abaixo'
+mail_body_register: 'Para ativar sua conta do Teskal, clique no link abaixo'
+mail_body_account_information_external: Você pode usar sua conta "%s" para entrar no Teskal.
+mail_body_account_information: Seu Teskal conta informaçao
+mail_subject_account_activation_request: Petiçao de ativaçao de conta do Teskal
+mail_subject_lost_password: Sua senha do Teskal.
+mail_subject_signup: Ativaçao de conta do Teskal.
