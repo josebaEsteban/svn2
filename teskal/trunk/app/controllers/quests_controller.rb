@@ -80,7 +80,7 @@ class QuestsController < ApplicationController
       user=User.find(@answer.user_id)
       if user.admin?
         Mailer.deliver_quest(@answer,user)
-      elsif user.id != user.managed_by
+      elsif !user.managed_by.nil?
         manager=User.find(user.managed_by)
         Mailer.deliver_quest(@answer,manager)
       end
