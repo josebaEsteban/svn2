@@ -89,7 +89,8 @@ class Mailer < ActionMailer::Base
     @from           = Setting.mail_from
     @subject        = l(:mail_subject_signup)
     @body['token']  = token
-  end  
+  end    
+  
   def message_posted(message, recipients)
     set_language_if_valid(Setting.default_language)
     @recipients     = recipients
@@ -97,11 +98,27 @@ class Mailer < ActionMailer::Base
     @subject        = "[#{message.board.project.name} - #{message.board.name}] #{message.subject}"
     @body['message'] = message
   end 
-  def quest(token)
-    # set_language_if_valid(token.user.language)
-    @recipients     = token.user.mail
+  def quest(ahivauno,recipient)
+    set_language_if_valid(Setting.default_language)
+    @recipients     = recipient
     @from           = Setting.mail_from
-    @subject        = l(:mail_subject_register)
-    @body['token']  = token
-  end
+    @subject        = l(:mail_subject_quest)
+    @body['ahivauno']  = ahivauno
+  end                                  
+  
+  # def signup(token)
+  #   set_language_if_valid(token.user.language)
+  #   recipients token.user.mail
+  #   subject l(:mail_subject_register)
+  #   body :token => token,
+  #        :url => url_for(:controller => 'account', :action => 'activate', :token => token.value)
+  # end
+  # 
+  # private
+  # def initialize_defaults(method_name)
+  #   super
+  #   set_language_if_valid Setting.default_language
+  #   default_url_options[:host] = "www.teskal.com"
+  #   default_url_options[:protocol] = "http"
+  # end     
 end
