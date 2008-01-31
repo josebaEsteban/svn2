@@ -87,7 +87,7 @@ class Mailer < ActionMailer::Base
     set_language_if_valid(token.user.language)
     @recipients     = token.user.mail
     @from           = Setting.mail_from
-    @subject        = l(:mail_subject_register)
+    @subject        = l(:mail_subject_signup)
     @body['token']  = token
   end  
   def message_posted(message, recipients)

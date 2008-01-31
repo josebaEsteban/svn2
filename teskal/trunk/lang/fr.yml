@@ -199,6 +199,7 @@ label_modification: %d modification
 label_modification_plural: %d modifications
 label_modified: modifié
 label_my_account: Mon compte
+label_my_athletes: Mon athlètes
 label_my_page: Ma page
 label_my_quest: Mon questionnaire
 label_new: Nouveau
@@ -221,6 +222,10 @@ label_preview: Prévisualisation
 label_previous: Précédent
 label_quest: Questionnaire
 label_quest_avail: Des questionnaires disponibles
+label_quest_no_filled: n'ya pas de questionnaires
+label_quest_no_pending: En attendant il n'ya pas de questionnaires
+label_quest_pending: En attendant les questionnaires
+label_quest_pending_from: En attente depuis
 label_quest_plural: Questionnaires
 label_read: Lire...
 label_register: S'enregistrer
@@ -231,6 +236,10 @@ label_report_plural: Rapports
 label_result: %d résultat
 label_result_plural: %d résultats
 label_role: Rôle
+label_role_1: cuenta gratuita
+label_role_2: deportista
+label_role_3: entrenador/a
+label_role_4: tutor/a
 label_role_and_permissions: Rôles et permissions
 label_role_new: Nouveau rôle
 label_role_plural: Rôles
@@ -238,6 +247,7 @@ label_search: Recherche
 label_send_information: Envoyer les informations à l'utilisateur
 label_settings: Configuration
 label_show: Montrer
+label_timezone: Fuseau horaire
 label_user: Utilisateur
 label_user_new: Nouvel utilisateur
 label_user_plural: Utilisateurs
@@ -248,6 +258,13 @@ login_label_3: avec des informations sur la création d'un nouveau mot de passe.
 login_label_4: Nouveau à Teskal?
 login_label_5: Inscrivez-vous
 login_label_6: pour obtenir un compte gratuit.
+mail_body_account_activation_request: "Un nouvel utilisateur (%s) s'est inscrit. Son compte nécessite votre approbation"
+mail_body_account_information: Paramètres de connexion de votre compte Teskal
+mail_body_account_information_external: Vous pouvez utiliser votre compte "%s" pour vous connecter à Teskal.
+mail_body_lost_password: 'Pour changer votre mot de passe Teskal, cliquez sur le lien suivant'
+mail_body_register: 'Pour activer votre compte Teskal, cliquez sur le lien suivant'
+mail_subject_account_activation_request: "Demande d'activation d'un compte Teskal"  
+mail_subject_signup: Activation de votre compte Teskal     
 notice_account_activated: Votre compte a été activé. Vous pouvez à présent vous connecter.
 notice_account_invalid_creditentials: Identifiant ou mot de passe invalide.
 notice_account_lost_email_sent: Un message contenant les instructions pour choisir un nouveau mot de passe vous a été envoyé.
@@ -951,11 +968,11 @@ quest9_d1_a: Este bajo valor del clima de rendimiento grupal (CRG), situado por 
 quest9_d1_b: Este valor medio del clima de rendimiento grupal, supone percibir que, para est@ entrenador/a, el resultado del equipo tiene bastante importancia, tanto o más que la calidad del juego colectivo. En el caso de que estuvieran acompañados de altos valores del clima de maestría grupal, supondría un efecto positivo sobre la competitividad del equipo, el compromiso con el esfuerzo, la integración en la tarea, y una toma de decisiones atrevida.
 quest9_d1_c: Este alto valor del clima de rendimiento grupal, situado entre 4 y 5, supone que para est@ entrenador/a, el resultado del equipo es lo más importante, incluso a costa de sacrificar la calidad del juego del equipo. Esto debilitará la capacidad del equipo para afrontar situaciones de máximo desafío, provocando un importante aumento de la ansiedad frente a los errores y el miedo a tomar decisiones colectivas, en situaciones de alta dificultad o de máxima presión.
 quest9_d2_a: Los valores del clima de maestría grupal se sitúan en un nivel por debajo de 2'5. Supone percibir que, para est@ entrenador/a, el desarrollo de la calidad del juego del equipo se encuentran en un segundo plano, frente al resultado del equipo, y en el caso de que se corresponda con un alto valor en el clima de rendimiento grupal, debilitará la integración en la tarea, pudiendo provocar un aumento colectivo de la ansiedad frente a los errores que se cometan.
-quest9_d2_b: Los valores del clima de maestría grupal se sitúan dentro de la zona media. Para est@ entrenador/a, la búsqueda de la calidad del juego del equipo puede equipararse con el resultado, pero será necesario vigilar el valor en el clima de rendimiento grupal, dado que si presenta altos valores debilitará el compromiso con el esfuerzo y la integración en la tarea, pudiendo provocar un efecto negativo sobre la toma de decisiones por miedo a cometer errores.
 quest9_d2_a: Los valores del clima de maestría grupal se sitúan en una zona alta. Para est@ entrenador/a, la búsqueda de la calidad y la mejora del juego del equipo, se convierte en algo prioritario, lo que generará un efecto positivo sobre el compromiso con el esfuerzo y la integración en la tarea, facilitando una de toma de decisiones alejada del miedo a cometer errores. Es la atmósfera más adecuada para progresar y enfrentarse a retos personales de máximas dificultades, ya que consolida las mejoras que se producen, y minimiza los errores.
-quest9_d3_c: Esta baja puntuación observada en el grado de confianza (CO), supone la existencia de dudas en el/la entrenador@ acerca de la capacidad de sus jugadores. Es decir, una baja convicción de que cada uno de ellos hará un buen trabajo. Si estos valores coinciden con los del/la entrenador@, será importante desarrollar una miniestrategia específica para conseguir aumentar este nivel, bien consultando al tutor o bien a través de sesiones de visionado con contenidos de Autoeficacia.
+quest9_d2_b: Los valores del clima de maestría grupal se sitúan dentro de la zona media. Para est@ entrenador/a, la búsqueda de la calidad del juego del equipo puede equipararse con el resultado, pero será necesario vigilar el valor en el clima de rendimiento grupal, dado que si presenta altos valores debilitará el compromiso con el esfuerzo y la integración en la tarea, pudiendo provocar un efecto negativo sobre la toma de decisiones por miedo a cometer errores.
 quest9_d3_b: Esta puntuación media observada en el grado de confianza (CO), supondrá que el/la entrenador/@ tiene positivas creencias acerca de que cada uno de sus jugadores será capaz de utilizar sus recursos eficientemente, es decir, de que cada uno de ellos lo hará bien, en la medida de sus posibilidades. Sería importante mantener o aumentar este nivel observado, considerando que la confianza hay que valorarla en términos autoreferentes, es decir, cada jugador consigo mismo.
 quest9_d3_c: Esta alta puntuación observada en el grado de confianza (CO), supondrá que el entrenador tiene alta creencia en que cada uno de sus jugadores será capaz de utilizar sus recursos eficientemente, es decir, alta convicción de que cada uno de ellos lo hará bien, en la medida de sus posibilidades. Es importante señalar que la confianza hay que valorarla en términos autoreferentes, es decir, cada jugador consigo mismo.
+quest9_d3_c: Esta baja puntuación observada en el grado de confianza (CO), supone la existencia de dudas en el/la entrenador@ acerca de la capacidad de sus jugadores. Es decir, una baja convicción de que cada uno de ellos hará un buen trabajo. Si estos valores coinciden con los del/la entrenador@, será importante desarrollar una miniestrategia específica para conseguir aumentar este nivel, bien consultando al tutor o bien a través de sesiones de visionado con contenidos de Autoeficacia.
 quest9_d4_a: Esta baja puntuación indica la existencia de un déficit percibido en la manera de transmitir la información. La característica fundamental es la ausencia de manifestaciones emocionales empáticas y existenciales y la presencia de las vitales negativas que, a veces, se perciben como irrespetuosas y ofensivas. Enturbian las relaciones entrenador/a-deportista.
 quest9_d4_b: Esta puntuación media se encuentra asociada a comportamientos correctos percibidos, a la hora de transmitir la información. Cuando esta percepción va acompañada de manifestaciones emocionales empáticas y existenciales facilitan las relaciones con el/la entrenador/a.
 quest9_d4_c: Esta alta puntuación se corresponde con maneras respetuosas y afectuosas percibidas de transmitir la información. Se encuentran acompañadas de manifestaciones emocionales empáticas y existenciales, con un efecto de reforzamiento positivo.
@@ -977,6 +994,7 @@ quest9_d9_c: Este alto valor del clima de rendimiento (PER), situado entre 4 y 5
 quest9_header: El grado de satisfacción con...
 quest9_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de competición. Por favor, lee cuidadosamente y después rodea con un círculo el número que hay al lado, el que mejor describa tu comportamiento durante el entrenamiento y los partidos de competición.
 quest9_label_0: Clima Formativo Auto Percibido Deportes Colectivos
+quest9_label_10: Como entrenador/a... 
 quest9_label_1: Clima de Rendimiento Grupal
 quest9_label_2: Clima de Maestría Grupal
 quest9_label_3: Confianza en los jugadores percibida
@@ -986,7 +1004,6 @@ quest9_label_6: Comunicación instruccional
 quest9_label_7: Estilo desicional percibido
 quest9_label_8: Clima de Maestría
 quest9_label_9: Clima de Rendimiento 
-quest9_label_10: Como entrenador/a... 
 quest9_valor_1: 1 (no, en absoluto)
 quest9_valor_1: 1 (nunca)
 quest9_valor_2: 2 (pocas veces)
@@ -1008,11 +1025,16 @@ setting_host_name: Nom d'hôte
 setting_issues_export_limit: Limite export demandes
 setting_login_required: Authentif. obligatoire
 setting_mail_from: Adresse d'émission
+setting_protocol: Protocol 
 setting_self_registration: Enregistrement autorisé
 setting_text_formatting: Formatage du texte
 setting_welcome_text: Texte d'accueil
 signup_label_10: Termes de l'accord de service
 signup_label_11: En cliquant sur "Inscription complet', je joins à ma signature électronique et accepte les Teskal <a href="http:/account/terms">Termes de l'accord de service</a>.
+signup_label_12: Merci de votre inscription!
+signup_label_13: Votre Teskal compte a été créé.
+signup_label_14: Surveillez un e-mail de confirmation de votre nouvel abonnement.
+signup_label_15: Il contient un lien d'activation que vous devrez cliquer avant de tenter de se connecter à
 signup_label_1: Étape
 signup_label_2: Choisissez un nom de connexion et un langage.
 signup_label_3: La langue utilisée sera la prochaine fois que vous vous connectez.
@@ -1062,24 +1084,3 @@ unit_8_path: 08.Tolerancia.Psicologica.es
 unit_8_title: Tolerancia Psicólogica
 unit_9_path: 09.La.Competicion.es
 unit_9_title: La Competición
-label_my_athletes: Mon athlètes
-label_role_1: cuenta gratuita
-label_role_2: deportista
-label_role_3: entrenador/a
-label_role_4: tutor/a
-signup_label_12: Merci de votre inscription!
-signup_label_13: Votre Teskal compte a été créé.
-signup_label_14: Surveillez un e-mail de confirmation de votre nouvel abonnement.
-signup_label_15: Il contient un lien d'activation que vous devrez cliquer avant de tenter de se connecter à
-label_timezone: Fuseau horaire
-label_quest_pending: En attendant les questionnaires
-label_quest_no_pending: En attendant il n'ya pas de questionnaires
-label_quest_pending_from: En attente depuis
-label_quest_no_filled: n'ya pas de questionnaires
-mail_body_account_activation_request: "Un nouvel utilisateur (%s) s'est inscrit. Son compte nécessite votre approbation"
-mail_body_account_information: Paramètres de connexion de votre compte Teskal
-mail_body_account_information_external: Vous pouvez utiliser votre compte "%s" pour vous connecter à Teskal.
-mail_body_lost_password: 'Pour changer votre mot de passe Teskal, cliquez sur le lien suivant'
-mail_body_register: 'Pour activer votre compte Teskal, cliquez sur le lien suivant'
-mail_subject_account_activation_request: "Demande d'activation d'un compte Teskal"
-setting_protocol: Protocol 
