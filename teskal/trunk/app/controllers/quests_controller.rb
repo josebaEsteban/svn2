@@ -36,7 +36,7 @@ class QuestsController < ApplicationController
   def create
     @answer = Answer.new(params[:answer])
     user=User.find(session[:user_id])
-    @answer.quest_id=(params[:id])  
+    @answer.quest_id=(params[:id])
     # rellenado por si mismo
     if user.filled_for == session[:user_id]
       @answer.user_id=session[:user_id]
@@ -55,10 +55,10 @@ class QuestsController < ApplicationController
     end
     @answer.filled_by = session[:user_id]
     @answer.ip = request.remote_ip
-    @answer.time_to_fill =  Time.now - user.start 
-    # @answer.created_on = params[:created_on] 
-    # paso = Time.parse(@answer.created_on) 
-    # @answer.created_on = paso.to_datetime  
+    @answer.time_to_fill =  Time.now - user.start
+    # @answer.created_on = params[:created_on]
+    # paso = Time.parse(@answer.created_on)
+    # @answer.created_on = paso.to_datetime
     # para quest 1 y 2
     if @answer.quest_id == 1 or @answer.quest_id == 3
       if @answer.answ24.nil?
@@ -68,18 +68,22 @@ class QuestsController < ApplicationController
         @answer.answ25=0
       end
     end
-    if !@answer.created_on.nil? 
+    if !@answer.created_on.nil?
       @answer.created_on=TzTime.zone.local_to_utc(@answer.created_on)
     end
-    if @answer.save 
-      # Mailer.deliver_lost_password(token)
+    if @answer.save
       flash[:notice] = l(:notice_successful_create)
       controlador = "quest"+@answer.quest_id.to_s
       journal( controlador+"/create/"+@answer.id.to_s, @answer.user_id)
-
       quest = Quest.find(:first, :conditions  => {:user_id  => @answer.user_id, :order => @answer.quest_id})
       quest.toggle!(:browse)
-      user=User.find(@answer.user_id) 
+      user=User.find(@answer.user_id)
+      if user.admin?
+        Mailer.deliver_quest(@answer,user)
+      elsif user.id != user.managed_by
+        manager=User.find(user.managed_by)
+        Mailer.deliver_quest(@answer,manager)
+      end
       if answer_show?(@answer.user_id, @answer.browse, user.managed_by)
 
         redirect_to :controller  => controlador, :action => 'show', :id => @answer.id
