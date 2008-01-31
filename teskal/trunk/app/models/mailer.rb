@@ -97,22 +97,23 @@ class Mailer < ActionMailer::Base
     @from           = Setting.mail_from
     @subject        = "[#{message.board.project.name} - #{message.board.name}] #{message.subject}"
     @body['message'] = message
-  end 
-  def quest(ahivauno,recipient)
-    set_language_if_valid(Setting.default_language)
-    @recipients     = recipient
-    @from           = Setting.mail_from
-    @subject        = l(:mail_subject_quest)
-    @body['ahivauno']  = ahivauno
-  end                                  
+  end  
   
-  # def signup(token)
-  #   set_language_if_valid(token.user.language)
-  #   recipients token.user.mail
-  #   subject l(:mail_subject_register)
-  #   body :token => token,
-  #        :url => url_for(:controller => 'account', :action => 'activate', :token => token.value)
-  # end
+  # def quest(ahivauno,recipient)
+  #   set_language_if_valid(Setting.default_language)
+  #   @recipients     = recipient
+  #   @from           = Setting.mail_from
+  #   @subject        = l(:mail_subject_quest)
+  #   @body['ahivauno']  = ahivauno
+  # end                                  
+  
+  def quest(answer,user) 
+    set_language_if_valid(user.language)
+    recipients user.mail
+    subject l(:mail_subject_quest)
+    body :answer => answer.quest_id,
+         :answer_url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
+  end     
   # 
   # private
   # def initialize_defaults(method_name)
