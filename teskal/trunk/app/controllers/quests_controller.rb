@@ -78,12 +78,12 @@ class QuestsController < ApplicationController
       quest = Quest.find(:first, :conditions  => {:user_id  => @answer.user_id, :order => @answer.quest_id})
       quest.toggle!(:browse)
       user=User.find(@answer.user_id)
-      if user.admin?
-        Mailer.deliver_quest(@answer,user)
-      elsif !user.managed_by.nil?
-        manager=User.find(user.managed_by)
-        Mailer.deliver_quest(@answer,manager)
-      end
+      # if user.admin?
+      #   Mailer.deliver_quest(@answer,user)
+      # elsif !user.managed_by.nil?
+      #   manager=User.find(user.managed_by)
+      #   Mailer.deliver_quest(@answer,manager)
+      # end
       if answer_show?(@answer.user_id, @answer.browse, user.managed_by)
 
         redirect_to :controller  => controlador, :action => 'show', :id => @answer.id
