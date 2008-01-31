@@ -201,6 +201,7 @@ label_modification: %d modificació
 label_modification_plural: %d modificacions 
 label_modified: modificat
 label_my_account: El meu compte 
+label_my_athletes: Meus esportistes
 label_my_page: La meva pàgina
 label_my_quest: Els meus qüestionaris 
 label_new: Nou
@@ -224,6 +225,10 @@ label_preview: Previ
 label_previous: Anterior 
 label_quest: Qüestionari 
 label_quest_avail: Qüestionaris disponibles
+label_quest_no_filled: No hi ha qüestionaris.
+label_quest_no_pending: No hi ha qüestionaris pendents.
+label_quest_pending: Qüestionaris pendents
+label_quest_pending_from: Pendent des de
 label_quest_plural: Qüestionaris 
 label_read: Llegir...
 label_register: Registrar-se 
@@ -234,6 +239,10 @@ label_report_plural: Informes
 label_result: %d resultat 
 label_result_plural: %d resultats
 label_role: Rol 
+label_role_1: compte gratuït
+label_role_2: esportiste
+label_role_3: entrenador/a
+label_role_4: tutor/a
 label_role_and_permissions: Rols i permisos
 label_role_new: Nou rol 
 label_role_plural: Rols 
@@ -241,6 +250,7 @@ label_search: Recerca
 label_send_information: Informació del compte enviat a l'usuari
 label_settings: Configuració 
 label_show: Mostrar 
+label_timezone: Zona horària 
 label_user: Usuari
 label_user_new: Nou usuari 
 label_user_plural: Usuaris 
@@ -251,6 +261,13 @@ login_label_3: amb informació sobre com crear una nova contrasenya
 login_label_4: Nou en Teskal?
 login_label_5: Crea un compte
 login_label_6: gratis.
+mail_body_account_information: Informació del teu compte en Teskal
+mail_body_account_information_external: Pots usar el teu compte "%s" per a entrar en Teskal.
+mail_body_lost_password: "Per canviar la seva contrasenya de Teskal, faci clic a l'enllaç següent"
+mail_body_register: "Gràcies per registrar-te a Teskal! Per activar el teu compte, usa el següent enllaç"
+mail_subject_account_activation_request: Petició d'activació de compte en Teskal
+mail_subject_lost_password: La teva contrasenya de Teskal
+mail_subject_signup: Activació del compte de Teskal
 notice_account_activated: El teu compte ha estat activat. Pots entrar.
 notice_account_invalid_creditentials: Usuari o contrasenya no vàlid.
 notice_account_lost_email_sent: Se li ha enviat un correu amb instruccions per crear una contrasenya.
@@ -382,11 +399,16 @@ setting_host_name: Nombre de anfitrión
 setting_issues_export_limit: Issues export limit
 setting_login_required: Autentif. requerida
 setting_mail_from: Email de la emisión
+setting_protocol: Protocolo
 setting_self_registration: Registro permitido
 setting_text_formatting: Formato de texto
 setting_welcome_text: Texto de bienvenida
 signup_label_10: Condicions del Servei
 signup_label_11: En fer clic en 'Guardar', adjunt la meva signatura electrònica i estic d'acord amb les < a href="http:/account/terms">Condicions del Servei</a > de Teskal.
+signup_label_12: Gràcies per registrar-te! 
+signup_label_13: El teu compte ha estat creada en Teskal.
+signup_label_14: Rebràs una confirmació per correu.
+signup_label_15: Té un enllaç d'activació del teu compte que has de clicar per a entrar en
 signup_label_1: Pas signup
 signup_label_3: El llenguatge serà usat quan entris la pròxima vegada.
 signup_label_4: Elegeix una contrasenya per al teu nou compte.
@@ -431,26 +453,3 @@ unit_8_path: 08.Tolerancia.Psicologica.es
 unit_8_title: Tolerancia Psicólogica
 unit_9_path: 09.La.Competicion.es
 unit_9_title: La Competición
-label_my_athletes: Meus esportistes
-label_role_1: compte gratuït
-label_role_2: esportiste
-label_role_3: entrenador/a
-label_role_4: tutor/a
-signup_label_12: Gràcies per registrar-te! 
-signup_label_13: El teu compte ha estat creada en Teskal.
-signup_label_14: Rebràs una confirmació per correu.
-signup_label_15: Té un enllaç d'activació del teu compte que has de clicar per a entrar en
-label_timezone: Zona horària 
-label_quest_pending: Qüestionaris pendents
-label_quest_no_pending: No hi ha qüestionaris pendents.
-label_quest_pending_from: Pendent des de
-label_quest_no_filled: No hi ha qüestionaris.
-mail_body_account_information_external: Pots usar el teu compte "%s" per a entrar en Teskal.
-mail_body_account_information: Informació del teu compte en Teskal
-mail_subject_account_activation_request: Petició d'activació de compte en Teskal
-mail_subject_lost_password: La teva contrasenya de Teskal
-mail_subject_signup: Activació del compte de Teskal
-setting_protocol: Protocolo
-mail_body_lost_password: "Per canviar la seva contrasenya de Teskal, faci clic a l'enllaç següent"
-mail_body_register: "Gràcies per registrar-te a Teskal! Per activar el teu compte, usa el següent enllaç"
-
