@@ -1,6 +1,0 @@
-# Teskal
-
-
-
-module AccountHelper
-end

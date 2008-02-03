@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /projects/gantt
-Disallow: /projects/calendar
-Disallow: /lib
-Disallow: /manual
-Disallow: /images
-Disallow: /charts

@@ -1,6 +1,0 @@
-# Teskal
-
-
-
-module WelcomeHelper
-end

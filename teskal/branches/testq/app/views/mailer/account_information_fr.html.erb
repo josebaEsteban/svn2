@@ -1,6 +1,0 @@
-Paramètres de connexion de votre compte Teskal:
-* Identifiant:  <%= @user.login %>
-* Mot de passe: <%= @password %>
-Pour se connecter à l'application: <%= url_for :only_path => false, :host => Setting.host_name, :controller => 'account', :action => 'login' %>
-Vous pouvez changer votre mot de passe à l'adresse: <%= url_for :only_path => false, :host => Setting.host_name, :controller => 'my', :action => 'account' %>
-
