@@ -1,0 +1,455 @@
+PBarLoadingText: ?PBarLoadingText=Cargando dades. Esperi si us plau...
+_gloc_rule_default: '|n| n==1 ? "" : "_plural" '  
+actionview_datehelper_select_day_prefix:
+actionview_datehelper_select_month_names: Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre
+actionview_datehelper_select_month_names_abbr: Ene,Feb,Mar,Abr,Mayo,Jun,Jul,Ago,Sep,Oct,Nov,Dic
+actionview_datehelper_select_month_prefix:
+actionview_datehelper_select_year_prefix:
+actionview_datehelper_time_in_words_day: 1 día
+actionview_datehelper_time_in_words_day_plural: %d dies
+actionview_datehelper_time_in_words_hour_about: about an hour
+actionview_datehelper_time_in_words_hour_about_plural: about %d hours
+actionview_datehelper_time_in_words_hour_about_single: about an hour
+actionview_datehelper_time_in_words_minute: 1 minute
+actionview_datehelper_time_in_words_minute_half: half a minute
+actionview_datehelper_time_in_words_minute_less_than: less than a minute
+actionview_datehelper_time_in_words_minute_plural: %d minutes
+actionview_datehelper_time_in_words_minute_single: 1 minute
+actionview_datehelper_time_in_words_second_less_than: less than a second
+actionview_datehelper_time_in_words_second_less_than_plural: less than %d seconds
+actionview_instancetag_blank_option: Si us plau seleccioni
+activerecord_error_accepted: ha de ser acceptat
+activerecord_error_blank: no pot ser en blanc
+activerecord_error_confirmation: doesn't match confirmation
+activerecord_error_empty: no pot ser en blanc
+activerecord_error_exclusion: está reservado
+activerecord_error_greater_than_start_date: debe ser mayor que la fecha de comienzo
+activerecord_error_inclusion: is not included in the list
+activerecord_error_invalid: no es válido
+activerecord_error_not_a_date: no es una fecha válida
+activerecord_error_not_a_number: no es un número
+activerecord_error_taken: ya existe
+activerecord_error_too_long: es demasiado larga
+activerecord_error_too_short: demasiado corta
+activerecord_error_wrong_length: is the wrong length
+button_activate: Activar 
+button_add: Afegir 
+button_apply: Aplicar
+button_archive: Arxivar 
+button_back: Tornar 
+button_cancel: Cancel·lar
+button_change: Canviar 
+button_check_all: Seleccionar tot 
+button_clear: Anular 
+button_create: Crear 
+button_delete: Suprimir 
+button_download: Telecarregar 
+button_edit: Modificar 
+button_list: Llistar 
+button_lock: Bloquejar 
+button_log_time: Log estafi 
+button_login: Connexió
+button_move: Moure 
+button_reply: Respondre 
+button_save: Validar
+button_sort: Ordenar 
+button_submit: Guardar
+field_activity: Activitat
+field_admin: Administrador 
+field_assigned_to: Assignat a 
+field_attr_firstname: Qualitat del nom 
+field_attr_lastname: Qualitat del cognom 
+field_attr_login: Qualitat de l'identificador
+field_attr_mail: Qualitat de l'Email 
+field_auth_source: Manera de l'autenticació 
+field_author: Autor 
+field_category: Categoria
+field_comments: Comentari 
+field_created_on: Creada el 
+field_delay: Delay 
+field_description: Descripció
+field_downloads: Telecàrregues
+field_due_date: Data deguda 
+field_effective_date: Data 
+field_field_format: Format 
+field_filename: Fitxer
+field_filesize: Mida 
+field_firstname: Nom 
+field_fixed_version: Versió
+field_hide_mail corregida: Ocultar el meu email address
+field_homepage: Lloc web 
+field_is_public: Públic 
+field_is_required: Obligatori 
+field_language: Idioma 
+field_last_login_on: Última connexió
+field_lastname: Cognom 
+field_login: Usuari 
+field_mail: Email
+field_mail_notification: Notificació per correu
+field_max_length: Longitud màxima 
+field_min_length: Longitud mínima
+field_name: Nom 
+field_new_password: Nova contrasenya 
+field_notes: Notes
+field_password: Contrasenya 
+field_password_change: Canviar contrasenya
+field_password_confirmation: Confirmació 
+field_priority: Prioritat
+field_role: Paper 
+field_spent_on: Data 
+field_start_date: Començament
+field_start_page: Pàgina principal 
+field_status: Estatut 
+field_subject: Tema 
+field_summary: Resum 
+field_title: Títol 
+field_tracker: Tracker
+field_type: Tipus 
+field_updated_on: Actualitzat 
+field_url: URL
+field_user: Usuari 
+field_value: Valor 
+field_version: Versió
+
+footer_1: Disseny 
+footer_2: Contacte en info rova teskal.com
+general_csv_encoding: ISO-8859-1
+general_csv_separator: ';'
+general_day_names: Dilluns,Dimarts,Dimecres,Dijous,Divendres,Dissabte,Diumenge
+general_fmt_age: %d any
+general_fmt_age_plural: %d anys
+general_fmt_date: %%d/%%m/%%Y
+general_fmt_datetime: %%d/%%m/%%Y %%H:%%M
+general_fmt_datetime_short: %%d/%%m %%H:%%M
+general_fmt_time: %%H:%%M
+general_lang_name: 'Català'
+general_pdf_encoding: ISO-8859-1
+general_text_No: 'No'
+general_text_Yes: 'Sí'
+general_text_no: 'no'
+general_text_yes: 'sí'    
+gui_validation_error: 1 error
+gui_validation_error_plural: %d errors
+label_10: Condicions del Servei
+label_2: Escull un usuari i un llenguatge.
+label_activity: Activitat 
+label_add_note: Agregar una nota 
+label_added: agregat 
+label_administration: Administració 
+label_ago: fa 
+label_all: tots
+label_all_words: Totes les paraules 
+label_applied_status: Applied estatus 
+label_assigned_to_me_issues: Peticions que m'estan
+label_attachment assignades: Fitxer 
+label_attachment_delete: Suprimir el fitxer 
+label_attachment_new: Nou fitxer 
+label_attachment_plural: Fitxers
+label_boolean: Boleano 
+label_browse: Fullejar 
+label_calendar: Calendari 
+label_competition: Competició 
+label_confirmation: Confirmació
+label_contains: conté 
+label_current_status: Estat actual
+label_current_version: Versió actual 
+label_date: Data
+label_date_from: From 
+label_date_to: To 
+label_day_plural: dies 
+label_deleted: suprimit 
+label_details: Detalls 
+label_document: Document
+label_document_new: Nou document 
+label_document_plural: Documents
+label_download: %d Descarrega 
+label_download_plural: %d Descàrregues
+label_equals: igual 
+label_export_to: Exportar a 
+label_f_hour: %.2f hour 
+label_f_hour_plural: %.2f hours 
+label_fill: Omplir
+label_filled: Omplert el 
+label_help: Ajuda 
+label_history: Històric
+label_home: Inici 
+label_in: en 
+label_in_less_than: en menys que
+label_in_more_than: en més que 
+label_information: Informació
+label_information_plural: Dades personals 
+label_internal: Intern
+label_language_based: Language based 
+# label_last_changes: %d canvis de l'últim 
+label_last_login: Última connexió 
+label_last_updates: Actualitzat 
+label_last_updates_plural: %d 
+label_less_than_ago Actualitzats: fa menys de 
+label_library: Biblioteca 
+label_list: Llista
+label_loading: Loading...
+label_logged_as: Connectat com a 
+label_login: Connexió
+label_logout: Desconnexió 
+label_max_size: Mida màxima 
+label_me: em
+label_message_last: Last message 
+label_message_new: New message 
+label_message_plural: Messages 
+label_min_max_length: Longitud com a mínim - com a màxim 
+label_modification: %d modificació
+label_modification_plural: %d modificacions 
+label_modified: modificat
+label_my_account: El meu compte 
+label_my_athletes: Meus esportistes
+label_my_page: La meva pàgina
+label_my_quest: Els meus qüestionaris 
+label_new: Nou
+label_news: Notícies
+label_next: Següent 
+label_no_data: Cap dada a exhibir 
+label_none: cap
+label_not_contains: no conté 
+label_not_equals: no igual 
+label_on: en
+label_options: Opcions 
+label_overview: Cop d'ull 
+label_page_index: Índex
+label_password_lost: Vas oblidar la contrasenya?
+label_per_page: Per la pàgina 
+label_permissions: Permisos
+label_permissions_report: Permissions report
+label_personalize_page: Personalitzar aquesta pàgina 
+label_please_login: Connexió 
+label_preview: Previ 
+label_previous: Anterior 
+label_quest: Qüestionari 
+label_quest_avail: Qüestionaris disponibles
+label_quest_no_filled: No hi ha qüestionaris.
+label_quest_no_pending: No hi ha qüestionaris pendents.
+label_quest_pending: Qüestionaris pendents
+label_quest_pending_from: Pendent des de
+label_quest_plural: Qüestionaris 
+label_read: Llegir...
+label_register: Registrar-se 
+label_registered_on: Inscrit el
+label_reply_plural: Respostes 
+label_report: Informe 
+label_report_plural: Informes 
+label_result: %d resultat 
+label_result_plural: %d resultats
+label_role: Rol 
+label_role_1: compte gratuït
+label_role_2: esportiste
+label_role_3: entrenador/a
+label_role_4: tutor/a
+label_role_and_permissions: Rols i permisos
+label_role_new: Nou rol 
+label_role_plural: Rols 
+label_search: Recerca
+label_send_information: Informació del compte enviat a l'usuari
+label_settings: Configuració 
+label_show: Mostrar 
+label_timezone: Zona horària 
+label_user: Usuari
+label_user_new: Nou usuari 
+label_user_plural: Usuaris 
+label_year: Any
+login_label_1: Has oblidat la teva contrasenya?
+login_label_2: Envia't un correu 
+login_label_3: amb informació sobre com crear una nova contrasenya 
+login_label_4: Nou en Teskal?
+login_label_5: Crea un compte
+login_label_6: gratis.
+mail_body_account_information: Informació del teu compte en Teskal
+mail_body_account_information_external: Pots usar el teu compte "%s" per a entrar en Teskal.
+mail_body_lost_password: "Per canviar la seva contrasenya de Teskal, faci clic a l'enllaç següent"
+mail_body_register: "Gràcies per registrar-te a Teskal! Per activar el teu compte, usa el següent enllaç"
+mail_subject_account_activation_request: Petició d'activació de compte en Teskal
+mail_subject_lost_password: La teva contrasenya de Teskal
+mail_subject_signup: Activació del compte de Teskal
+notice_account_activated: El teu compte ha estat activat. Pots entrar.
+notice_account_invalid_creditentials: Usuari o contrasenya no vàlid.
+notice_account_lost_email_sent: Se li ha enviat un correu amb instruccions per crear una contrasenya.
+notice_account_password_updated: Contrasenya actualitzada.
+notice_account_register_done: Compte creat. Se li ha enviat un correu amb instruccions per activar-la.
+notice_account_unknown_email: Usuari desconegut
+notice_account_updated: El compte s'ha modificat.
+notice_account_wrong_password: Contrasenya errònia.
+notice_can_t_change_password: Aquest compte usa una autenticació externa. No es pot canviar la contrasenya.
+notice_file_not_found: La pàgina que intentaves tenir accés no existeix ni s'ha tret.
+notice_locking_conflict: Data have been updated by another user.
+notice_not_authorized: No està autoritzat a accedir a aquesta pàgina.
+notice_scm_error: L'entrada i/o la revisió no existeix en el dipòsit.
+notice_successful_connection: Successful connection.
+notice_successful_create: Successful creation.
+notice_successful_delete: Successful deletion.
+notice_successful_update: Successful update.
+quest12: Qüestionari de Clima Motivacional
+quest12_10: Ho faig tot el millor que es
+quest12_11: Assoleixo la meta que em vaig proposar
+quest12_12: Sóc clarament superior als/les altres
+quest12_1: Derroto els meus companys
+quest12_2: Sóc el/la millor
+quest12_3: Treball dur
+quest12_4: Demostro una clara millora personal
+quest12_5: Ho faig millor que els altres i que les altres
+quest12_6: Demostro a la gent que sóc el/la millor
+quest12_7: Supero les dificultats
+quest12_8: Domino una cosa que no podia fer
+quest12_9: Faig una cosa que els altres no poden fer
+quest12_d1_a: Aquest baix valor d'associat al clima motivacional rendiment, situat per sota de 4, suposa que, per a est@ tècnic, els resultats obtinguts per l@s esportistes tenen un valor baix, potser menys que la millora de les habilitats, el que produirà un efecte positiu sobre la implicació durant l'entrenament i el control sobre l'ansietat davant els errors de l@s esportistes, en el cas que n'hi hagués.
+quest12_d1_b: Aquest valor mig clima associat motivacional rendiment, situat entre 4 i 7, suposa que, per a est@ tècnic, els resultats obtinguts per l@s esportistes tenen un important valor, que si són semblants als del clima de mestria, enfortirà la motivació i augmentarà el seu compromís amb l'esforç, ajudant-li el deprotista a controlar l'ansietat davant els errors en el cas que la tingués.
+quest12_d1_c: Aquest alt valor associat clima motivacional rendiment situat per sobre de 7, suposa que, per a est@ tècnic, els resultats obtinguts per l@s esportistes tenen un màxim valor. Només si van acompanyats de màxims valors en el clima moticacional de mestria, suposarà una bona motivació per augmentar el seu compromís i implicació amb l'esforç. En el cas que prevalgui sobre el de mestria assenyalat, possiblement minvarà la capacitat de l@s esportistes davant situacions de màxim desafiament personal.
+quest12_d2_a: El clima motivacional de mestria, es troba en nivells baixos, la qual cosa és una mica preocupant. Li costa valorar positivament les millores de l@s esportistes i, quan s'enfrontin a situacions noves o de gran dificultat se sentiran incòmodes, sense iniciativa Habrá per orientar al tècnic perquè valori la importància de les millores que es produeixin, a través de l'autocomparació de l'esportista.
+quest12_d2_b: El clima motivacional de mestria, es troba en nivells mitjos, el qual és adequat però millorable. Valora positivament les millores dels seus esportistes, el que els ajuda a afronta amb bona actitud situacions noves o de gran dificultat. Serà adequat recordar-li la importància que tenen les millores perquè els esportistes aconsegueixin els seus objectius, reconeixent i valorant el seu esforç en produir-se una millora personal, per lleugera que sigui.
+quest12_d2_c: El clima motivacional de mestria, es troba en nivells alts, la qual cosa és positiu. Aquest tècnic se centra en la millora personal de l@s esportistes, sent això el més important. Això contribueix a afrontar, amb una excel·lent actitud, situacions noves o de gran dificultat. Genera una influència positiva en el compromís amb l'entrenament, en la competència percebuda i minimitza la possible ansietat davant els errors que poguessin tenir l@s esportistes.
+quest12_header: En practicar esport, meu entrenador/a pensa que tinc èxit quan
+quest12_intro: Més a baix hi ha una sèrie de comentaris i frases relacionades amb situacions i comportament de competició. Si us plau, llegeix acuradament i després selecciona el percentatge que millor descrigui l'opinió del teu entrenador.
+quest12_label_0: Clima Motivacional
+quest12_label_1: Clima de Rendiment
+quest12_label_2: Clima de Mestria
+quest12_valor_1: 0 (res)
+quest12_valor_2: 100 (completament)
+quest2: Qüestionari Tolerància Psicològica a l'Estrès
+quest2_10: He estat convençut que podia rendir en qualsevol moment 
+quest2_11: He resolt de forma adequada els problemes amb els meus companys/as 
+quest2_12: He estat en bona forma física 
+quest2_13: M'he motivat durant l'entrenament/competició 
+quest2_14: M'he sentit esgotat emocionalment durant l'entrenament/competició 
+quest2_15: He tingut dolors musculars després de l'entrenament/competició 
+quest2_16: He estat convençut de què he entrenat/competit correctament 
+quest2_17: Se m'ha demanat que faci massa coses durant els descansos 
+quest2_18: M'he mentalitzat abans de l'actuació 
+quest2_19: He sentit que volia abandonar el meu esport 
+quest2_1: M'han dolgut algunes parts del cos 
+quest2_20: M'he sentit ple d'energia 
+quest2_21: He comprès fàcilment com se sentien els meus companys/as 
+quest2_22: He estat convençut que he entrenat correctament 
+quest2_23: Els descansos no han estat en els moments adequats 
+quest2_24: M'he sentit vulnerable a les lesions 
+quest2_25: M'he marcat objectius per a l'entrenament/competició 
+quest2_26: M'he sentit físicament fort
+quest2_27: M'he sentit frustrat en el meu esport
+quest2_28: He manejat amb tranquil·litat els problemes emocionals en el meu esport
+quest2_2: No he pogut descansar durant els descansos
+quest2_3: He estat convençut que podia aconseguir les meves metes
+quest2_4: M'he recuperat bé físicament
+quest2_5: M'he sentit cremat en el meu esport
+quest2_6: He aconseguit moltes coses que valen la pena en el meu esport
+quest2_7: M'he preparat mentalment per rendir
+quest2_8: He tingut la musculatura tensa/engarrotada durant l'entrenament/competició
+quest2_9: He tingut la impressió que hi havia poc temps de descans
+quest2_d1_a: Els valors relacionats amb el descans interromput o amb un dèficit en la recuperació són baixos, el que permet considera ajustats els nivells de la càrrega de treball proposats.
+quest2_d1_b: Els valors relacionats amb el descans interromput o amb un dèficit en la recuperació són mitjans, per la qual cosa caldrà, vigilar la càrrega de treball durant l'entrenament.
+quest2_d1_c: Els valors relacionats amb el descans interromput o amb un dèficit en la recuperació són alts, per la qual cosa caldrà revisar i potser recompondre's la càrrega de treball de les sessions d'entrenament
+quest2_d2_a: Quant al cansament emocional relacionat amb situacions de frustració i associat a una possible falta de persistència es troba en nivells baixos.
+quest2_d2_b: Quant al cansament emocional relacionat amb situacions de frustració i associat a una possible falta de persistència es troba en nivells mitjos, amb la qual cosa es fa necessari analitzar amb l'esportista aquest inquietant valor.
+quest2_d2_c: Quant al cansament emocional relacionat amb situacions de frustració i associat a una possible falta de persistència es troba en nivells alts, amb la qual cosa es fa necessari detectar les causes que estan generant aquest perillós valor.
+quest2_d3_a: En observar els valors de la vulnerabilitat a les lesions veiem que es troben en un baix nivell, la qual cosa suposa una bona disposició per afrontar amb garanties i determinació les situacions més dures o de major complexitat.
+quest2_d3_b: En observar els valors de la vulnerabilitat a les lesions veiem que es troben en un nivell mig, la qual cosa pot afectar negativament la seva disposició i la seva fermesa decisional en afrontar situacions dures o de major risc de l'entrenament.
+quest2_d3_c: En observar els valors de la vulnerabilitat a les lesions veiem que es troben en un alt nivell, que suposa una elevada percepció de fragilitat i d'inseguretat en afrontar les situacions més dures o de major risc en l'entrenament.
+quest2_d4_a: En relació amb el seu estat de forma, veiem que se situa en el nivell baix, la qual cosa perjudica els sentiments subjectius de capacitat percebuda relacionada amb el rendiment. Estar en forma mesura els sentiments subjectius d'habilitat i competència en el rendiment, la percepció d'estar en forma i la vitalitat puntuacions altes es descriuen com a físicament eficients, i vitals.
+quest2_d4_b: En relació amb el seu estat de forma, veiem que se situa en un nivell mig, la qual cosa ajudarà a tenir adequats sentiments de capacitat percebuda relacionada amb el rendiment.
+quest2_d4_c: En relació amb el seu estat de forma, veiem que se situen en un nivell alt, la qual cosa suposa tenir profunds sentiments d'eficiència i de vitalitat, acompanyats d'una alta percepció sobre el seu estat de forma relacionada amb el rendiment.
+quest2_d5_a: Fixant-nos en els valors relacionats amb els èxits personals veiem que es troben en un baix nivell, la qual cosa indica certa insatisfacció amb la consecució de les seves metes, o també una baixa apreciació i empatia amb el grup o l'equip.
+quest2_d5_b: Fixant-nos en els valors relacionats amb els èxits personals veiem que es troben en un nivell mig, la qual cosa indica certa satisfacció amb la consecució de les seves metes, o també una acceptable apreciació i empatia amb el grup o l'equip.
+quest2_d5_c: Fixant-nos en els valors relacionats amb els èxits personals veiem que es troben en un alt nivell, la qual cosa indica una elevada satisfacció amb la consecució de les seves metes i, també, una alta apreciació i nivell d'empatia amb el grup/equip.
+quest2_d6_a: La convicció que té això esportista de la forma en la qual s'ha desenvolupat l'entrenament i les creences sobre la seva preparació són baixes, per la qual cosa serà necessari revisar la dinàmica dels entrenaments de l'últim període.
+quest2_d6_b: La convicció que té això esportista de la forma en la qual s'ha desenvolupat l'entrenament i les creences sobre la seva preparació se situa en valors mitjos. Potser hi hagi hagut algunes interferències en la dinàmica dels entrenaments de l'últim període, que no han afectat la seva preparació de forma important.
+quest2_d6_c: La convicció que té això esportista de la forma en la qual s'ha desenvolupat l'entrenament i les creences sobre la seva preparació se situa en valors alts. Això produeix una sensació gratificant i autosatisfacció per entrenaments realitzat.
+quest2_d7_a: Sembla que li costi utilitzar les habilitats mentals en la seva preparació, entre elles l'automotivació i l'establiment d'objectius autoimposats, ja que presenta baixos valors relacionats amb aquesta dimensió. És necessari realitzar un treball específic, recolzat amb el PDF de la motivació d'èxit.
+quest2_d7_b: Podem assenyalés que utilitza les habilitats mentals en la seva preparació, entre elles l'automotivació i l'establiment d'objectius autoimposats, ja que presenta valors mitjos relacionats amb aquesta dimensió.
+quest2_d7_c: Això esportista utilitza les habilitats mentals en la seva preparació, entre elles l'automotivació i l'establiment d'objectius autoimposats, que se serveix de reforç i de guia al seu camí cap a la consecució dels mateixos.
+quest2_header: L'últim mes...
+quest2_intro: Més a baix tens una sèrie de frases relacionades amb diferents aspectes de l'entrenament i de la competició sobre les quals volem recollir la teva opinió. Si us plau, llegeix-les amb tranquil·litat, respon amb sinceritat i fes clic en el número amb què estiguis més d'acord o que descrigui millor la teva opinió.
+quest2_label_0: Tolerància Psicològica Estrès
+quest2_label_1: Descans Interromput
+quest2_label_2: Cansament emocional
+quest2_label_3: Vulnerabilitat a les lesions
+quest2_label_4: Estat de Forma
+quest2_label_5: Èxit Personal
+quest2_label_6: Autoeficàcia
+quest2_label_7: Autoregulació
+quest2_label_8: Valoració General
+quest2_label_9: resposta
+quest2_val_1: En general el nivell de tolerància presenta uns valors mitjos molt positius el que li permetrà afrontar qualsevol situació d'entrenament o competició de forma òptima. El nivell dels generadors en el seu conjunt se situa en valors baixos, mentre que els valors de de les dimensions recuperadores són positius, sobretot els que hem assenyalat. Per tant, es pot afirmar que això esportista posseeix una alta percepció quant al seu estat de forma i a les seves prestacions de rendiment, es troba molt motivat i amb gran determinació per assolir els seus objectius.
+quest2_val_2: En general el nivell de tolerància presenta uns valors mitjos positius, per la qual cosa li disposa de recursos per afrontar situacions especials, tant en l'entrenament com en la competició. El nivell dels generadors en el seu conjunt se situen en la part alta del nivell baix, mentre que els valors de de les dimensions recuperadores se situen en la part alta del nivell mig, entorn de 4, com els que hem assenyalat. Podem assenyalar que això esportista té una adequada percepció quant al seu estat de forma i a les seves prestacions de rendiment, es troba motivat i amb moltes ganes d'assolir els seus objectius.
+quest2_val_3: En general el nivell de tolerància es troba en una delicada situació, ja que existeix una igualtat entre els valors generadors i recuperadors, per la qual cosa es troba en una situació d'alarma, però amb recursos suficients per afrontar-la i intentar reduir el nivell d'estrès generat per les dimensions assenyalades. És important plantejar un treball específic recolzat per continguts relacionats amb la Pressió/Estrès i, a més, implementar-lo amb una exploració presencial a l'esportista, per conèixer la possible causa estresora i, d'aquesta manera abordar-la adequadament.
+quest2_val_4: En general el grau de tolerància es troba en nivells baixíssims, ja que el nivell dels valors mitjos corresponent als generadors són majors que els dels recuperadors. És una situació de reg que necessita ser abordada immediatament amb l'assessorament del tutor, llevat que de la reflexió conjunta entrenador/a-esportista que es realitzi s'identifiquin les causes que generen els valors assenyalats. En aquest cas es pot plantejar un treball específic recolzat per continguts relacionats amb la Pressió/Estrès i l'orientació indirecta del tutor.
+quest2_valor_0: 0 (res)
+quest2_valor_1: 1 (rares vegades)
+quest2_valor_2: 2 (de vegades)
+quest2_valor_3: 3 (sovint)
+quest2_valor_4: 4 (moltes vegades)
+quest2_valor_5: 5 (gairebé sempre)
+quest2_valor_6: 6 (sempre)      
+
+setting_app_subtitle: Subtítulo del aplicación
+setting_app_title: Título del aplicación
+setting_attachment_max_size: Tamaño máximo del fichero
+setting_autofetch_changesets: Autofetch commits
+setting_autologin: Autologin
+setting_commit_fix_keywords: Fixing keywords
+setting_commit_ref_keywords: Referencing keywords
+setting_date_format: Date format
+setting_default_language: Idioma por defecto
+setting_feeds_limit: Feed content limit
+setting_host_name: Nombre de anfitrión
+setting_issues_export_limit: Issues export limit
+setting_login_required: Autentif. requerida
+setting_mail_from: Email de la emisión
+setting_protocol: Protocolo
+setting_self_registration: Registro permitido
+setting_text_formatting: Formato de texto
+setting_welcome_text: Texto de bienvenida
+signup_label_10: Condicions del Servei
+signup_label_11: En fer clic en 'Guardar', adjunt la meva signatura electrònica i estic d'acord amb les < a href="http:/account/terms">Condicions del Servei</a > de Teskal.
+signup_label_12: Gràcies per registrar-te! 
+signup_label_13: El teu compte ha estat creada en Teskal.
+signup_label_14: Rebràs una confirmació per correu.
+signup_label_15: Té un enllaç d'activació del teu compte que has de clicar per a entrar en
+signup_label_1: Pas signup
+signup_label_3: El llenguatge serà usat quan entris la pròxima vegada.
+signup_label_4: Elegeix una contrasenya per al teu nou compte.
+signup_label_5: La contrasenya ha de tenir de 6 a 12 caràcters de longitud.
+signup_label_6: Detalls email.
+signup_label_7: Escriu la teva direcció de correu.
+signup_label_8: La direcció ha de ser vàlida per poder activar el teu compte.
+signup_label_9: Submit form signup
+text_are_you_sure: Estàs segur ?
+text_caracters_maximum: màxim %d caràcters.
+text_length_between: Longitud entre %d i %d caràcters.
+text_min_max_length_info: 0 per a cap restricció
+unit_10_path: 10.La.Comunicacion.es
+unit_10_title: La Comunicación
+unit_11_path: 11.Responsabilidad.vs.Culpabilidad.es
+unit_11_title: Responsabilidad vs Culpabilidad
+unit_12_path: 12.Confianza.y.Auto.Eficacia.es 
+unit_12_title: Confianza y Auto Eficacia
+unit_13_path: 13.Estado.de.Animo.es
+unit_13_title: Estado de Animo
+unit_14_path: 14.Asertividad.es 
+unit_14_title: Asertividad
+unit_15_path: 15.Deportista.de.ARD.es 
+unit_15_title: Deportista de ARD 
+unit_16_path: 16.Sistema.de.Autoregulacion.es
+unit_16_title: Sistema de Autoregulación
+unit_1_path: 01.Teskal.es.pdf
+unit_1_title: Presentación Teskal
+unit_2_path: 02.Atencion.y.Concentracion.es.pdf
+unit_2_title: Atención y Concentración
+unit_3_path: 03.Emociones.y.Rendimiento.Deportivo.es
+unit_3_title: Emociones y Rendimiento Deportivo
+unit_4_path: 04.Establecimiento.de.Objetivos.es
+unit_4_title: Establecimiento de Objetivos
+unit_5_path: 05.Estres.es.pdf
+unit_5_title: El estrés en la competición
+unit_6_path: 06.Motivacion.es
+unit_6_title: Motivación
+unit_7_path: 07.Tension.y.Relajacion.es 
+unit_7_title: Tension y Relajación
+unit_8_path: 08.Tolerancia.Psicologica.es
+unit_8_title: Tolerancia Psicólogica
+unit_9_path: 09.La.Competicion.es
+unit_9_title: La Competición
