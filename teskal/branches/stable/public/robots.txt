@@ -5,3 +5,4 @@ Disallow: /lib
 Disallow: /manual
 Disallow: /images
 Disallow: /charts
+Disallow: /stylesheets
