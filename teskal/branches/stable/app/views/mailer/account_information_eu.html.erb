@@ -1,0 +1,7 @@
+Zure Teskal kontuaren
+* Erabiltzailea:    <%= @user.login %>
+* Pasa-hitza: <%= @password %>
+
+sartu zaitezke: <%= url_for :only_path => false, :host => Setting.host_name, :controller => 'account', :action => 'login' %>
+
+Hemen alda dezakezu zure pasa-hitza.: <%= url_for :only_path => false, :host => Setting.host_name, :controller => 'my', :action => 'account' %>
