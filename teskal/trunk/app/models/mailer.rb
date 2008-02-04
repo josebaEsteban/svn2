@@ -1,125 +1,155 @@
 # Copyright (C) 2007 Teskal
 
+
 class Mailer < ActionMailer::Base
+  helper ApplicationHelper
   # helper IssuesHelper
-  
-  def account_information(user, password)
-    set_language_if_valid user.language
-    recipients user.mail
-    from Setting.mail_from
-    subject l(:mail_subject_register)
-    body :user => user, :password => password
-  end
+  # helper CustomFieldsHelper
+
+  include ActionController::UrlWriter
 
   def issue_add(issue)
-    set_language_if_valid(Setting.default_language)
-    # Sends to all project members
-    @recipients     = issue.project.members.collect { |m| m.user.mail if m.user.mail_notification }.compact
-    # Sends to author and assignee (even if they turned off mail notification)
-    @recipients     << issue.author.mail if issue.author
-    @recipients     << issue.assigned_to.mail if issue.assigned_to
-    @recipients.compact!
-    @recipients.uniq!
-    @from           = Setting.mail_from
-    @subject        = "[#{issue.project.name} - #{issue.tracker.name} ##{issue.id}] #{issue.status.name} - #{issue.subject}"
-    @body['issue']  = issue
+    recipients issue.recipients
+    subject "[#{issue.project.name} - #{issue.tracker.name} ##{issue.id}] #{issue.status.name} - #{issue.subject}"
+    body :issue => issue,
+    :issue_url => url_for(:controller => 'issues', :action => 'show', :id => issue)
   end
 
   def issue_edit(journal)
-    set_language_if_valid(Setting.default_language)
-    # Sends to all project members
     issue = journal.journalized
-    @recipients     = issue.project.members.collect { |m| m.user.mail if m.user.mail_notification }
-    # Sends to author and assignee (even if they turned off mail notification)
-    @recipients     << issue.author.mail if issue.author
-    @recipients     << issue.assigned_to.mail if issue.assigned_to
-    @recipients.compact!
-    @recipients.uniq!
+    recipients issue.recipients
     # Watchers in cc
-    @cc             = issue.watcher_recipients - @recipients
-    @from           = Setting.mail_from
-    @subject        = "[#{issue.project.name} - #{issue.tracker.name} ##{issue.id}] #{issue.status.name} - #{issue.subject}"
-    @body['issue']  = issue
-    @body['journal']= journal
+    cc(issue.watcher_recipients - @recipients)
+    subject "[#{issue.project.name} - #{issue.tracker.name} ##{issue.id}] #{issue.status.name} - #{issue.subject}"
+    body :issue => issue,
+    :journal => journal,
+    :issue_url => url_for(:controller => 'issues', :action => 'show', :id => issue)
   end
-  
-  def document_add(document)
-    set_language_if_valid(Setting.default_language)
-    @recipients     = document.project.users.collect { |u| u.mail if u.mail_notification }.compact
-    @from           = Setting.mail_from
-    @subject        = "[#{document.project.name}] #{l(:label_document_new)}: #{document.title}"
-    @body['document'] = document
+
+  def document_added(document)
+    recipients document.project.recipients
+    subject "[#{document.project.name}] #{l(:label_document_new)}: #{document.title}"
+    body :document => document,
+    :document_url => url_for(:controller => 'documents', :action => 'show', :id => document)
   end
-  
-  def attachments_add(attachments)
-    set_language_if_valid(Setting.default_language)
+
+  def attachments_added(attachments)
     container = attachments.first.container
-    url = "http://#{Setting.host_name}/"
-    added_to = ""
-    case container.class.to_s
+    added_to = ''
+    added_to_url = ''
+    case container.class.name
     when 'Version'
-      url << "projects/list_files/#{container.project_id}"
+      added_to_url = url_for(:controller => 'projects', :action => 'list_files', :id => container.project_id)
       added_to = "#{l(:label_version)}: #{container.name}"
     when 'Document'
-      url << "documents/show/#{container.id}"
+      added_to_url = url_for(:controller => 'documents', :action => 'show', :id => container.id)
       added_to = "#{l(:label_document)}: #{container.title}"
-    when 'Issue'
-      url << "issues/show/#{container.id}"
-      added_to = "#{container.tracker.name} ##{container.id}: #{container.subject}"
     end
-    @recipients     = container.project.users.collect { |u| u.mail if u.mail_notification }.compact
-    @from           = Setting.mail_from
-    @subject        = "[#{container.project.name}] #{l(:label_attachment_new)}"
-    @body['attachments'] = attachments
-    @body['url']    = url
-    @body['added_to'] = added_to
+    recipients container.project.recipients
+    subject "[#{container.project.name}] #{l(:label_attachment_new)}"
+    body :attachments => attachments,
+    :added_to => added_to,
+    :added_to_url => added_to_url
   end
-  
+
+  def news_added(news)
+    recipients news.project.recipients
+    subject "[#{news.project.name}] #{l(:label_news)}: #{news.title}"
+    body :news => news,
+    :news_url => url_for(:controller => 'news', :action => 'show', :id => news)
+  end
+
+  def message_posted(message, recipients)
+    recipients(recipients)
+    subject "[#{message.board.project.name} - #{message.board.name}] #{message.subject}"
+    body :message => message,
+    :message_url => url_for(:controller => 'messages', :action => 'show', :board_id => message.board_id, :id => message.root)
+  end
+
+  def account_information(user, password)
+    set_language_if_valid user.language
+    recipients user.mail
+    subject l(:mail_subject_register)
+    body :user => user,
+    :password => password,
+    :login_url => url_for(:controller => 'account', :action => 'login')
+  end
+
+  def account_activation_request(user)
+    # Send the email to all active administrators
+    recipients User.find_active(:all, :conditions => {:admin => true}).collect { |u| u.mail }.compact
+    subject l(:mail_subject_account_activation_request)
+    body :user => user,
+    :url => url_for(:controller => 'users', :action => 'index', :status => User::STATUS_REGISTERED, :sort_key => 'created_on', :sort_order => 'desc')
+  end
+
   def lost_password(token)
     set_language_if_valid(token.user.language)
-    @recipients     = token.user.mail
-    @from           = Setting.mail_from
-    @subject        = l(:mail_subject_lost_password)
-    @body['token']  = token
-  end  
+    recipients token.user.mail
+    subject l(:mail_subject_lost_password)
+    body :token => token,
+    :url => url_for(:controller => 'account', :action => 'lost_password', :token => token.value)
+  end
 
   def signup(token)
     set_language_if_valid(token.user.language)
-    @recipients     = token.user.mail
-    @from           = Setting.mail_from
-    @subject        = l(:mail_subject_signup)
-    @body['token']  = token
-  end    
-  
-  def message_posted(message, recipients)
-    set_language_if_valid(Setting.default_language)
-    @recipients     = recipients
-    @from           = Setting.mail_from
-    @subject        = "[#{message.board.project.name} - #{message.board.name}] #{message.subject}"
-    @body['message'] = message
-  end  
-  
-  # def quest(ahivauno,recipient)
-  #   set_language_if_valid(Setting.default_language)
-  #   @recipients     = recipient
-  #   @from           = Setting.mail_from
-  #   @subject        = l(:mail_subject_quest)
-  #   @body['ahivauno']  = ahivauno
-  # end                                  
-  
-  def quest(answer,user) 
+    recipients token.user.mail
+    subject l(:mail_subject_signup)
+    body :token => token,
+    :url => url_for(:controller => 'account', :action => 'activate', :token => token.value)
+  end
+
+  def test(user)
+    set_language_if_valid(user.language)
+    recipients user.mail
+    subject 'Redmine test'
+    body :url => url_for(:controller => 'welcome')
+  end
+
+
+  def quest(answer,user)
     set_language_if_valid(user.language)
     recipients user.mail
     subject l(:mail_subject_quest)
     body :answer => answer.quest_id,
-         :answer_url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
-  end     
-  
+    :answer_url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
+  end
+
   private
   def initialize_defaults(method_name)
     super
     set_language_if_valid Setting.default_language
-    default_url_options[:host] = "www.teskal.com"
-    default_url_options[:protocol] = "http"
-  end     
+    from Setting.mail_from
+    default_url_options[:host] = Setting.host_name
+    default_url_options[:protocol] = Setting.protocol
+  end
+
+  # Overrides the create_mail method
+  def create_mail
+    # Removes the current user from the recipients and cc
+    # if he doesn't want to receive notifications about what he does
+    if User.current.pref[:no_self_notified]
+      recipients.delete(User.current.mail) if recipients
+      cc.delete(User.current.mail) if cc
+    end
+    # Blind carbon copy recipients
+    if Setting.bcc_recipients?
+      bcc([recipients, cc].flatten.compact.uniq)
+      recipients []
+      cc []
+    end
+    super
+  end
+
+  # Renders a message with the corresponding layout
+  def render_message(method_name, body)
+    layout = method_name.match(%r{text\.html\.(rhtml|rxml)}) ? 'layout.text.html.rhtml' : 'layout.text.plain.rhtml'
+    body[:content_for_layout] = render(:file => method_name, :body => body)
+    ActionView::Base.new(template_root, body, self).render(:file => "mailer/#{layout}")
+  end
+
+  # Makes partial rendering work with Rails 1.2 (retro-compatibility)
+  def self.controller_path
+    ''
+  end unless respond_to?('controller_path')
 end
