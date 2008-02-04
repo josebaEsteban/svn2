@@ -102,7 +102,7 @@ class Mailer < ActionMailer::Base
   def test(user)
     set_language_if_valid(user.language)
     recipients user.mail
-    subject 'Redmine test'
+    subject 'Teskal test'
     body :url => url_for(:controller => 'welcome')
   end
 
@@ -120,7 +120,7 @@ class Mailer < ActionMailer::Base
     super
     set_language_if_valid Setting.default_language
     # from Setting.mail_from
-    default_url_options[:host] = "www.teskal.com"
+    default_url_options[:host] = "test.teskal.com"
     default_url_options[:protocol] = "http"
   end
 

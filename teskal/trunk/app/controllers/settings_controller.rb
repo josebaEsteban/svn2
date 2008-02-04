@@ -3,9 +3,9 @@
 
 
 class SettingsController < ApplicationController
-  layout 'base'	
+  layout 'base'
   before_filter :require_admin
-  
+
   def index
     edit
     render :action => 'edit'
@@ -16,6 +16,5 @@ class SettingsController < ApplicationController
       params[:settings].each { |name, value| Setting[name] = value }
       redirect_to :action => 'edit' and return
     end
-    @textile_available = ActionView::Helpers::TextHelper.method_defined?("textilize")
   end
 end
