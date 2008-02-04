@@ -119,9 +119,9 @@ class Mailer < ActionMailer::Base
   def initialize_defaults(method_name)
     super
     set_language_if_valid Setting.default_language
-    # from Setting.mail_from
-    default_url_options[:host] = "test.teskal.com"
-    default_url_options[:protocol] = "http"
+    from Setting.mail_from
+    default_url_options[:host] = Setting.host_name
+    default_url_options[:protocol] = Setting.protocol
   end
 
     # Overrides the create_mail method
