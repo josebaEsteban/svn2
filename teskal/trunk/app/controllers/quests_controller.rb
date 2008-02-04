@@ -84,6 +84,9 @@ class QuestsController < ApplicationController
       #   manager=User.find(user.managed_by)
       #   Mailer.deliver_quest(@answer,manager)
       # end
+      if user.admin?
+        Mailer.deliver_quest(@answer,user)
+      end
       if answer_show?(@answer.user_id, @answer.browse, user.managed_by)
 
         redirect_to :controller  => controlador, :action => 'show', :id => @answer.id

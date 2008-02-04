@@ -110,9 +110,8 @@ field_url: URL
 field_user: Usuari 
 field_value: Valor 
 field_version: Versió
-
 footer_1: Disseny 
-footer_2: Contacte en info rova teskal.com
+footer_2: Contacte en info[rova]teskal[punt]com
 general_csv_encoding: ISO-8859-1
 general_csv_separator: ';'
 general_day_names: Dilluns,Dimarts,Dimecres,Dijous,Divendres,Dissabte,Diumenge
@@ -384,7 +383,6 @@ quest2_valor_3: 3 (sovint)
 quest2_valor_4: 4 (moltes vegades)
 quest2_valor_5: 5 (gairebé sempre)
 quest2_valor_6: 6 (sempre)      
-
 setting_app_subtitle: Subtítulo del aplicación
 setting_app_title: Título del aplicación
 setting_attachment_max_size: Tamaño máximo del fichero
@@ -421,35 +419,35 @@ text_are_you_sure: Estàs segur ?
 text_caracters_maximum: màxim %d caràcters.
 text_length_between: Longitud entre %d i %d caràcters.
 text_min_max_length_info: 0 per a cap restricció
-unit_10_path: 10.La.Comunicacion.es
-unit_10_title: La Comunicación
-unit_11_path: 11.Responsabilidad.vs.Culpabilidad.es
-unit_11_title: Responsabilidad vs Culpabilidad
-unit_12_path: 12.Confianza.y.Auto.Eficacia.es 
-unit_12_title: Confianza y Auto Eficacia
-unit_13_path: 13.Estado.de.Animo.es
-unit_13_title: Estado de Animo
-unit_14_path: 14.Asertividad.es 
-unit_14_title: Asertividad
-unit_15_path: 15.Deportista.de.ARD.es 
-unit_15_title: Deportista de ARD 
-unit_16_path: 16.Sistema.de.Autoregulacion.es
-unit_16_title: Sistema de Autoregulación
-unit_1_path: 01.Teskal.es.pdf
-unit_1_title: Presentación Teskal
-unit_2_path: 02.Atencion.y.Concentracion.es.pdf
-unit_2_title: Atención y Concentración
-unit_3_path: 03.Emociones.y.Rendimiento.Deportivo.es
-unit_3_title: Emociones y Rendimiento Deportivo
-unit_4_path: 04.Establecimiento.de.Objetivos.es
-unit_4_title: Establecimiento de Objetivos
-unit_5_path: 05.Estres.es.pdf
-unit_5_title: El estrés en la competición
-unit_6_path: 06.Motivacion.es
-unit_6_title: Motivación
-unit_7_path: 07.Tension.y.Relajacion.es 
-unit_7_title: Tension y Relajación
-unit_8_path: 08.Tolerancia.Psicologica.es
-unit_8_title: Tolerancia Psicólogica
-unit_9_path: 09.La.Competicion.es
-unit_9_title: La Competición
+unit_0_path: Teskal.es.pdf
+unit_0_title: Presentación Teskal
+unit_10_path: 10.Responsabilidad.vs.Culpabilidad.es.pdf
+unit_10_title: Responsabilidad vs Culpabilidad
+unit_11_path: 11.Confianza.y.Auto.Eficacia.es.pdf
+unit_11_title: Confianza y Auto Eficacia
+unit_12_path: 12.Estado.de.Animo.es.pdf
+unit_12_title: Estado de Animo
+unit_13_path: 13.Asertividad.es.pdf
+unit_13_title: Asertividad
+unit_14_path: 14.Deportista.de.ARD.es.pdf
+unit_14_title: Deportista de ARD 
+unit_15_path: 15.Sistema.de.Autoregulacion.es.pdf
+unit_15_title: Sistema de Autoregulación
+unit_1_path: 01.Atencion.y.Concentracion.es.pdf
+unit_1_title: Atención y Concentración
+unit_2_path: 02.Emociones.y.Rendimiento.Deportivo.es.pdf
+unit_2_title: Emociones y Rendimiento Deportivo
+unit_3_path: 03.Establecimiento.de.Objetivos.es.pdf
+unit_3_title: Establecimiento de Objetivos
+unit_4_path: 04.Estres.es.pdf
+unit_4_title: El estrés en la competición
+unit_5_path: 05.Motivacion.es.pdf
+unit_5_title: Motivación
+unit_6_path: 06.Tension.y.Relajacion.es.pdf
+unit_6_title: Tension y Relajación
+unit_7_path: 07.Tolerancia.Psicologica.es.pdf
+unit_7_title: Tolerancia Psicólogica
+unit_8_path: 08.La.Competicion.es.pdf
+unit_8_title: La Competición
+unit_9_path: 09.La.Comunicacion.es.pdf
+unit_9_title: La Comunicación
