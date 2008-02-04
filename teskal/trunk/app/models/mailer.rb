@@ -119,37 +119,37 @@ class Mailer < ActionMailer::Base
   def initialize_defaults(method_name)
     super
     set_language_if_valid Setting.default_language
-    from Setting.mail_from
-    default_url_options[:host] = Setting.host_name
-    default_url_options[:protocol] = Setting.protocol
+    # from Setting.mail_from
+    default_url_options[:host] = "www.teskal.com"
+    default_url_options[:protocol] = "http"
   end
 
-  # Overrides the create_mail method
-  def create_mail
-    # Removes the current user from the recipients and cc
-    # if he doesn't want to receive notifications about what he does
-    if User.current.pref[:no_self_notified]
-      recipients.delete(User.current.mail) if recipients
-      cc.delete(User.current.mail) if cc
+    # Overrides the create_mail method
+    def create_mail
+      # Removes the current user from the recipients and cc
+      # if he doesn't want to receive notifications about what he does
+      # if User.current.pref[:no_self_notified]
+      #   recipients.delete(User.current.mail) if recipients
+      #   cc.delete(User.current.mail) if cc
+      # end
+      # # Blind carbon copy recipients
+      # if Setting.bcc_recipients?
+      #   bcc([recipients, cc].flatten.compact.uniq)
+      #   recipients []
+      #   cc []
+      # end    
+      super
     end
-    # Blind carbon copy recipients
-    if Setting.bcc_recipients?
-      bcc([recipients, cc].flatten.compact.uniq)
-      recipients []
-      cc []
+
+    # Renders a message with the corresponding layout
+    def render_message(method_name, body)
+      layout = method_name.match(%r{text\.html\.(rhtml|rxml)}) ? 'layout.text.html.rhtml' : 'layout.text.plain.rhtml'
+      body[:content_for_layout] = render(:file => method_name, :body => body)
+      ActionView::Base.new(template_root, body, self).render(:file => "mailer/#{layout}")
     end
-    super
-  end
 
-  # Renders a message with the corresponding layout
-  def render_message(method_name, body)
-    layout = method_name.match(%r{text\.html\.(rhtml|rxml)}) ? 'layout.text.html.rhtml' : 'layout.text.plain.rhtml'
-    body[:content_for_layout] = render(:file => method_name, :body => body)
-    ActionView::Base.new(template_root, body, self).render(:file => "mailer/#{layout}")
+    # Makes partial rendering work with Rails 1.2 (retro-compatibility)
+    def self.controller_path
+      ''
+    end unless respond_to?('controller_path')
   end
-
-  # Makes partial rendering work with Rails 1.2 (retro-compatibility)
-  def self.controller_path
-    ''
-  end unless respond_to?('controller_path')
-end

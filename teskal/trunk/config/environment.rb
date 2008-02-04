@@ -84,6 +84,9 @@ CalendarDateSelect.format = :hyphen_ampm
 
 ActionView::Base.field_error_proc = Proc.new{ |html_tag, instance| "#{html_tag}" }
 
+Mime::SET << Mime::CSV unless Mime::SET.include?(Mime::CSV)
+Mime::Type.register 'application/pdf', :pdf
+
 GLoc.set_config :default_language => :es
 GLoc.clear_strings
 GLoc.set_kcode
