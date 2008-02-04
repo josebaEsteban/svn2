@@ -114,12 +114,12 @@ class Mailer < ActionMailer::Base
     body :answer => answer.quest_id,
          :answer_url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
   end     
-  # 
-  # private
-  # def initialize_defaults(method_name)
-  #   super
-  #   set_language_if_valid Setting.default_language
-  #   default_url_options[:host] = "www.teskal.com"
-  #   default_url_options[:protocol] = "http"
-  # end     
+  
+  private
+  def initialize_defaults(method_name)
+    super
+    set_language_if_valid Setting.default_language
+    default_url_options[:host] = "www.teskal.com"
+    default_url_options[:protocol] = "http"
+  end     
 end
