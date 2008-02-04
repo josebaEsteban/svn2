@@ -23,15 +23,7 @@ module ApplicationHelper
 
   # Return true if user is authorized for controller/action, otherwise false
   def authorize_for(controller, action)
-    # check if action is allowed on public projects
-    if @project.is_public? and Permission.allowed_to_public "%s/%s" % [ controller, action ]
-      return true
-    end
-    # check if user is authorized
-    if @logged_in_user and (@logged_in_user.admin? or Permission.allowed_to_role( "%s/%s" % [ controller, action ], @logged_in_user.role_for_project(@project)  )  )
-      return true
-    end
-    return false
+    User.current.allowed_to?({:controller => controller, :action => action}, @project)
   end
 
   # Display a link if user is authorized
@@ -55,6 +47,14 @@ module ApplicationHelper
     link_to(name, "#", :onclick => onclick)
   end
 
+  def show_and_goto_link(name, id, options={})
+    onclick = "Element.show('#{id}'); "
+    onclick << (options[:focus] ? "Form.Element.focus('#{options[:focus]}'); " : "this.blur(); ")
+    onclick << "location.href='##{id}-anchor'; "
+    onclick << "return false;"
+    link_to(name, "#", options.merge(:onclick => onclick))
+  end
+
   def image_to_function(name, function, html_options = {})
     html_options.symbolize_keys!
     tag(:input, html_options.merge({
@@ -65,15 +65,28 @@ module ApplicationHelper
 
   def format_date(date)
     return nil unless date
-    @date_format_setting ||= Setting.date_format.to_i
-    @date_format_setting == 0 ? l_date(date) : date.strftime("%Y-%m-%d")
+    # "Setting.date_format.size < 2" is a temporary fix (content of date_format setting changed)
+    @date_format ||= (Setting.date_format.blank? || Setting.date_format.size < 2 ? l(:general_fmt_date) : Setting.date_format)
+    date.strftime(@date_format)
   end
 
-  def format_time(time)
+  def format_time(time, include_date = true)
     return nil unless time
-    @date_format_setting ||= Setting.date_format.to_i
     time = time.to_time if time.is_a?(String)
-    @date_format_setting == 0 ? l_datetime(time) : (time.strftime("%Y-%m-%d") + ' ' + l_time(time))
+    zone = User.current.time_zone
+    if time.utc?
+      local = zone ? zone.adjust(time) : time.getlocal
+    else
+      local = zone ? zone.adjust(time.getutc) : time
+    end
+    @date_format ||= (Setting.date_format.blank? || Setting.date_format.size < 2 ? l(:general_fmt_date) : Setting.date_format)
+    @time_format ||= (Setting.time_format.blank? ? l(:general_fmt_time) : Setting.time_format)
+    include_date ? local.strftime("#{@date_format} #{@time_format}") : local.strftime(@time_format)
+  end
+
+  def authoring(created, author)
+    time_tag = content_tag('acronym', distance_of_time_in_words(Time.now, created), :title => format_time(created))
+    l(:label_added_time_by, author || 'Anonymous', time_tag)
   end
 
   def day_name(day)
@@ -102,6 +115,28 @@ module ApplicationHelper
     {:update => "content", :url => options.merge(page_param => paginator.current.next)},
     {:href => url_for(:params => options.merge(page_param => paginator.current.next))}) if paginator.current.next
     html
+  end
+
+  def set_html_title(text)
+    @html_header_title = text
+  end
+
+  def html_title
+    title = []
+    title << @project.name if @project
+    title << @html_header_title
+    title << Setting.app_title
+    title.compact.join(' - ')
+  end
+
+  ACCESSKEYS = {:edit => 'e',
+    :preview => 'r',
+    :quick_search => 'f',
+    :search => '4',
+  }.freeze unless const_defined?(:ACCESSKEYS)
+
+  def accesskey(s)
+    ACCESSKEYS[s]
   end
 
   # textilize text according to system settings and RedCloth availability
@@ -228,38 +263,48 @@ module ApplicationHelper
   def wikitoolbar_for(field_id)
     return '' unless Setting.text_formatting == 'textile'
     javascript_include_tag('jstoolbar') + javascript_tag("var toolbar = new jsToolBar($('#{field_id}')); toolbar.draw();")
+  end 
+  
+  def content_for(name, content = nil, &block)
+    @has_content ||= {}
+    @has_content[name] = true
+    super(name, content, &block)
+  end
+  
+  def has_content?(name)
+    (@has_content && @has_content[name]) || false
   end
 end
 
 class TabularFormBuilder < ActionView::Helpers::FormBuilder
   include GLoc
-
+  
   def initialize(object_name, object, template, options, proc)
     set_language_if_valid options.delete(:lang)
-    @object_name, @object, @template, @options, @proc = object_name, object, template, options, proc
-  end
-
+    @object_name, @object, @template, @options, @proc = object_name, object, template, options, proc        
+  end      
+      
   (field_helpers - %w(radio_button hidden_field) + %w(date_select)).each do |selector|
     src = <<-END_SRC
-    def #{selector}(field, options = {})
+    def #{selector}(field, options = {}) 
       return super if options.delete :no_label
       label_text = l(options[:label]) if options[:label]
       label_text ||= l(("field_"+field.to_s.gsub(/\_id$/, "")).to_sym)
       label_text << @template.content_tag("span", " *", :class => "required") if options.delete(:required)
-      label = @template.content_tag("label", label_text,
-      :class => (@object && @object.errors[field] ? "error" : nil),
-      :for => (@object_name.to_s + "_" + field.to_s))
+      label = @template.content_tag("label", label_text, 
+                    :class => (@object && @object.errors[field] ? "error" : nil), 
+                    :for => (@object_name.to_s + "_" + field.to_s))
       label + super
     end
     END_SRC
     class_eval src, __FILE__, __LINE__
   end
 
-  def select(field, choices, options = {}, html_options = {})
+  def select(field, choices, options = {}, html_options = {}) 
     label_text = l(("field_"+field.to_s.gsub(/\_id$/, "")).to_sym) + (options.delete(:required) ? @template.content_tag("span", " *", :class => "required"): "")
-    label = @template.content_tag("label", label_text,
-    :class => (@object && @object.errors[field] ? "error" : nil),
-    :for => (@object_name.to_s + "_" + field.to_s))
+    label = @template.content_tag("label", label_text, 
+                  :class => (@object && @object.errors[field] ? "error" : nil), 
+                  :for => (@object_name.to_s + "_" + field.to_s))
     label + super
   end
 
