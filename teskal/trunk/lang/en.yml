@@ -270,7 +270,9 @@ mail_body_register: 'Thank you for signing up for Teskal! To activate your accou
 mail_subject_account_activation_request: Teskal account activation request
 mail_subject_lost_password: Your Teskal password
 mail_subject_signup: Teskal account activation 
-mail_subject_quest: New quest
+mail_subject_quest: New questionnaire
+mail_body_quest1: has completed a new questionnaire.
+mail_body_quest2: Once you login into Teskal, you can browse it at the following link:
 markt_10: Teskal gives the right tools to your coaches 
 markt_11: It’s an integral concept of athletic performance that takes into account not just the physical and technical skills of the athlete, but also the person who is the athlete. 
 markt_12: Teskal allows for a consistent level of communication between coach/athlete or team. 
