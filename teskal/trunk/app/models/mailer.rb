@@ -112,7 +112,7 @@ class Mailer < ActionMailer::Base
     recipients user.mail
     subject l(:mail_subject_quest)
     body :answer => answer.quest_id,
-    :answer_url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
+    :url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
   end
 
   private
