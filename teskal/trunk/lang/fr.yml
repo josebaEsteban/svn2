@@ -266,7 +266,7 @@ mail_body_register: 'Pour activer votre compte Teskal, cliquez sur le lien suiva
 mail_subject_account_activation_request: "Demande d'activation d'un compte Teskal"  
 mail_subject_signup: Activation de votre compte Teskal
 mail_subject_quest: Nouveau questionnaire
-mail_body_quest1: a complété un nouveau questionnaire
+mail_body_quest1: a complété un
 mail_body_quest2: Une fois que vous vous connectez en Teskal, vous pouvez naviguer sur le lien suivant
 notice_account_activated: Votre compte a été activé. Vous pouvez à présent vous connecter.
 notice_account_invalid_creditentials: Identifiant ou mot de passe invalide.
