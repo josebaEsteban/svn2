@@ -107,11 +107,11 @@ class Mailer < ActionMailer::Base
   end
 
 
-  def quest(answer,user)
+  def quest(answer,user,athlete)
     set_language_if_valid(user.language)
     recipients user.mail
     subject l(:mail_subject_quest)
-    body :answer => answer.quest_id,
+    body :who => athlete,
     :url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
   end
 
