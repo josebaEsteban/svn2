@@ -84,8 +84,9 @@ class QuestsController < ApplicationController
       #   manager=User.find(user.managed_by)
       #   Mailer.deliver_quest(@answer,manager)
       # end
-      if user.admin?
-        Mailer.deliver_quest(@answer,user)
+      if @logged_in_user.admin? or @logged_in_user.id == user.managed_by  
+        pavo= User.find(@answer.user_id)
+        Mailer.deliver_quest(@answer,@logged_in_user,pavo.name)
       end
       if answer_show?(@answer.user_id, @answer.browse, user.managed_by)
 
