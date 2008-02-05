@@ -2,6 +2,11 @@
 
 
 class Mailer < ActionMailer::Base
+
+  QUEST_NEW = 1
+  QUEST_ALLOWED = 2
+  QUEST_PENDING = 3
+
   helper ApplicationHelper
   # helper IssuesHelper
   # helper CustomFieldsHelper
@@ -107,49 +112,72 @@ class Mailer < ActionMailer::Base
   end
 
 
-  def quest(answer,manager,athlete)
-    set_language_if_valid(manager.language)
-    recipients manager.mail
-    cual=""
-    case answer.quest_id
-    when 1
-      cual = l(:quest1)
-    when 2
-      cual = l(:quest2)
-    when 3
-      cual = l(:quest3)
-    when 4
-      cual = l(:quest4)
-    when 5
-      cual = l(:quest5)
-    when 6
-      cual = l(:quest6)
-    when 7
-      cual = l(:quest7)
-    when 8
-      cual = l(:quest8)
-    when 9
-      cual = l(:quest9)
-    when 10
-      cual = l(:quest10)
-    when 11
-      cual = l(:quest11)
-    when 12
-      cual = l(:quest12)
-    when 13
-      cual = l(:quest13)
-    when 14
-      cual = l(:quest14)
-    when 15
-      cual = l(:quest15)
-    end
+  def quest(answer,manager,athlete,type)
+    quest_name = ""
 
-    subject l(:mail_subject_quest)
-    body :who => athlete,
-    :which  => cual,
-    :url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
+    if type == QUEST_NEW
+      set_language_if_valid(manager.language)
+      recipients manager.mail
+      subject l(:mail_subject_quest)
+      quest_name = get_title_quest(answer.quest_id)
+      body :who => athlete.name,
+      :which  => quest_name,
+      :url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
+    elsif type == QUEST_ALLOWED
+      set_language_if_valid(athlete.language)
+      recipients athlete.mail
+      subject l(:mail_subject_allowed)
+      quest_name = get_title_quest(answer.quest_id)
+      body :who => athlete.name,
+      :which  => quest_name,
+      :url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)   
+    elsif type == QUEST_PENDING
+      set_language_if_valid(athlete.language)
+      recipients athlete.mail
+      subject l(:mail_subject_pending)
+      puts answer.order
+      quest_name = get_title_quest(answer.order)
+      body :who => athlete.name,
+      :which  => quest_name,
+      :url => url_for(:controller => "quest"+answer.order.to_s, :action => 'new')
+    end
   end
 
+  def get_title_quest(selector)
+    case selector
+    when 1
+      quest_name = l(:quest1)
+    when 2
+      quest_name = l(:quest2)
+    when 3
+      quest_name = l(:quest3)
+    when 4
+      quest_name = l(:quest4)
+    when 5
+      quest_name = l(:quest5)
+    when 6
+      quest_name = l(:quest6)
+    when 7
+      quest_name = l(:quest7)
+    when 8
+      quest_name = l(:quest8)
+    when 9
+      quest_name = l(:quest9)
+    when 10
+      quest_name = l(:quest10)
+    when 11
+      quest_name = l(:quest11)
+    when 12
+      quest_name = l(:quest12)
+    when 13
+      quest_name = l(:quest13)
+    when 14
+      quest_name = l(:quest14)
+    when 15
+      quest_name = l(:quest15)
+    end
+  end
+  
   private
   def initialize_defaults(method_name)
     super

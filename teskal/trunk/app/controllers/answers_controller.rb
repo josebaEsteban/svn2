@@ -69,12 +69,9 @@ class AnswersController < ApplicationController
     user=User.find(answer.user_id )
     if  @logged_in_user.admin? or @logged_in_user.id == user.managed_by
       answer.toggle!(:browse)
-      # if answer.browse == 0
-      #   answer.browse = 1
-      # else
-      #   answer.browse = 0
-      # end
-      # answer.save
+      if answer.browse == true
+        Mailer.deliver_quest(answer,@logged_in_user,user,Mailer::QUEST_ALLOWED)
+      end
       redirect_to :controller => 'my', :action => 'admin' , :id  => answer.user_id
     else
       redirect_to :controller => 'my', :action => 'page'
