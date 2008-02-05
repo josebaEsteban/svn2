@@ -268,9 +268,9 @@ mail_body_register: Zure Teskaleko kontua aktibatzeko ondorengo loturan klikatu 
 mail_subject_account_activation_request: Teskalen kontua aktibatzeko eskaera
 mail_subject_lost_password: Zure pasa-hitza Teskal
 mail_subject_signup: Kontuaren aktibazioa Teskal
-mail_subject_quest: Nuevo cuestionario
-mail_body_quest1: ha completado un
-mail_body_quest2: Si entras en Teskal, puedes verlo en el siguiente enlace
+mail_subject_quest: Galde-sorta berria
+mail_body_quest1: Galde-sorta bat osatu du
+mail_body_quest2: Teskalen sartuz gero ondorengo loturan ikusi dezakezu
 markt_10: Teskalek erraminta horiek zure entrenatzaieen eskura jartzen ditu.  
 markt_11: Kirolariaren trebetasun fisiko eta teknikoez gain, kirolariaren pertsona bera ere kontuan hartzen dituen Kirol errendimenduaren kontzeptu integral bat da.  
 markt_12: Teskalek kirolari/entrenatzaile bikoteari nola kirolari/entrenatzaile/psikologo taldeari komunikazio maila altu bat mantentzea ahalbidetzen die.  
@@ -300,7 +300,7 @@ notice_not_authorized: Ez zaude orri honetan sartzeko baimendua.
 notice_pendant_exists: Jada burutu gabeko tipo horretako galde-sorta bat dago.  
 notice_scm_error: La entrada y/o la revisión no existe en el depósito.
 notice_successful_connection: Successful connection.
-notice_successful_create: Successful creation.
+notice_successful_create: Egokiro sortu da.
 notice_successful_delete: Successful deletion.
 notice_successful_update: Successful update.
 quest10: Antzemandako Maisutza Klimaren Galde-sorta Talde Kirolak 
