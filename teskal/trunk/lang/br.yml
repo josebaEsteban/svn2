@@ -269,6 +269,9 @@ mail_subject_account_activation_request: Petiçao de ativaçao de conta do Teska
 mail_subject_lost_password: Seu Teskal senha
 mail_subject_lost_password: Sua senha do Teskal.
 mail_subject_signup: Ativaçao de conta do Teskal.
+mail_subject_quest: Novo questionário
+mail_body_quest1: ter concluído um novo questionário
+mail_body_quest2: Após efetuar login em Teskal, você pode navegar ele no seguinte link
 notice_account_activated: Sua conta foi ativada. Você pode agora entrar.
 notice_account_invalid_creditentials: Usuário ou senha inválido.
 notice_account_lost_email_sent: Um email com instruções para escolher uma nova senha foi enviado para você.
