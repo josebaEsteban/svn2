@@ -107,9 +107,9 @@ class Mailer < ActionMailer::Base
   end
 
 
-  def quest(answer,user,athlete)
-    set_language_if_valid(user.language)
-    recipients user.mail
+  def quest(answer,manager,athlete)
+    set_language_if_valid(manager.language)
+    recipients manager.mail
     cual=""
     case answer.quest_id
     when 1
