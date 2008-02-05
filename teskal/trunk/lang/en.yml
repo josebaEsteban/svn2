@@ -271,7 +271,7 @@ mail_subject_account_activation_request: Teskal account activation request
 mail_subject_lost_password: Your Teskal password
 mail_subject_signup: Teskal account activation 
 mail_subject_quest: New questionnaire
-mail_body_quest1: has completed a
+mail_body_quest1: has completed a questionnaire of
 mail_body_quest2: Once you login into Teskal, you can browse it at the following link
 markt_10: Teskal gives the right tools to your coaches 
 markt_11: It’s an integral concept of athletic performance that takes into account not just the physical and technical skills of the athlete, but also the person who is the athlete. 
@@ -304,7 +304,7 @@ notice_successful_connection: Successful connection.
 notice_successful_create: Successful creation.
 notice_successful_delete: Successful deletion.
 notice_successful_update: Successful update.
-quest10: Technical Coaching Climate Questionnaire
+quest10: Technical Coaching Climate
 quest10_10: Allows for different solutions to competition situations than originally planned.
 quest10_11: Encourages athletes after a mistake
 quest10_12: Thinks that athletes are successful when they are clearly better than others.
@@ -330,7 +330,7 @@ quest10_intro: Below is a series of comments and expressions related to competit
 quest10_intro: Below is a series of comments and expressions related to competition situations and behaviors. Please, read them carefully and then select the one that best describes your coach’s behavior during practices and games. 
 quest10_label_0: Perception of educational climate/team sports
 quest10_label_1: My coach
-quest11: Questionnaire of Intrinsic Motivation
+quest11: Intrinsic Motivation
 quest11_10: Because it is absolutely necessary to do sports if one wants to be in shape.
 quest11_11: For the prestige of being an athlete.
 quest11_12: Because it is one of the best ways I have chosen to develop other aspects of myself.
@@ -417,7 +417,7 @@ quest11_valor_tit_6: Shows a Global Motivational Profile Not-Auto-determined.
 quest11_valor_tit_7: Shows a Global Motivational Profile of Low Auto-determination.
 quest11_valor_tit_8: Shows a Global Motivational Profile of Low Auto-determination.
 quest11_valor_tit_9: Shows a Global Motivational Profile Not-Auto-determined
-quest12: Motivational Climate Questionnaire
+quest12: Motivational Climate
 quest12_10: I win
 quest12_11: I show other people I am the best
 quest12_12: I perform to the best of my ability
@@ -443,7 +443,7 @@ quest12_label_1: Performance Climate
 quest12_label_2: Mastery Climate
 quest12_valor_1: 0 (nothing)
 quest12_valor_2: 100 (completely)
-quest1: Pre-Season Assessment Questionnaire
+quest1: Pre-Season Assessment
 quest1_16: Do you prepare psychologically before games or competitions?
 quest1_17: Do you use any type of relaxation technique?
 quest1_18: Do you use any strategy to maintain control when the sports situation overwhelms you?
@@ -572,7 +572,7 @@ quest1_label_6: Cognitive Anxiety
 quest1_label_7: Self-confidence
 quest1_label_8: Somatic Anxiety
 quest1_label_9: Optimal
-quest2: Questionnaire Psychological Stress Tolerance
+quest2: Psychological Stress Tolerance
 quest2_10: I was convinced that I could achieve my performance at any time
 quest2_11: I dealt very effectively with my teammates's problems
 quest2_12: I was in good condition physically
@@ -867,7 +867,7 @@ quest6_label_2: Personal Performance
 quest6_label_3: Task Contribution
 quest6_label_4: Task Integration
 quest6_label_5: General Evaluation
-quest7: Satisfaction Questionnaire (Individual Sports
+quest7: Satisfaction (Individual Sports)
 quest7_10: The instruction I have received from the coach past seasons
 quest7_11: The instruction I have received from the coach this season
 quest7_12: The coach's teaching of the tactics and techniques of my position
@@ -915,7 +915,7 @@ quest7_label_5: Teaching and Instruction
 quest7_label_6: Personal interaction
 quest7_valor_1: 1 (no, not at all)
 quest7_valor_7: 7 (totally)
-quest8: Satisfaction Questionnaire (Team Sports)
+quest8: Satisfaction (Team Sports)
 quest8_10: The amount of time I play during competitions
 quest8_11: The degree to which my role on the team matches my preferred role
 quest8_12: The coach's choice of plays during competition
@@ -987,7 +987,7 @@ quest8_label_8: Team Performance
 quest8_label_9: Task Integration
 quest8_valor_1: 1 (no, not at all)
 quest8_valor_7: 7 (totally)
-quest9: Cuestionario de Clima Formativo Auto Percibido Deportes Colectivos
+quest9: Coaches’ self-perception of educational climate/team sports
 quest9_10: I allow for different solutions to competition situations than originally planned.
 quest9_11: I encourage athletes after a mistake
 quest9_12: I thinks the team must compete in the best way

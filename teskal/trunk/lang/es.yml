@@ -272,7 +272,7 @@ mail_subject_account_activation_request: Petición de activación de cuenta en T
 mail_subject_lost_password: Tu contraseña de Teskal
 mail_subject_signup: Activación de la cuenta de Teskal 
 mail_subject_quest: Nuevo cuestionario
-mail_body_quest1: ha completado un
+mail_body_quest1: ha completado un cuestionario de
 mail_body_quest2: Si entras en Teskal, puedes verlo en el siguiente enlace
 markt_10: Teskal pone esas herramientas a disposición de tus entrenadores.
 markt_11: Es un concepto integral del rendimiento deportivo que considera no solo las habilidades físicas y técnicas sino la persona del deportista.
@@ -306,7 +306,7 @@ notice_successful_connection: Successful connection.
 notice_successful_create: Se ha creado correctamente.
 notice_successful_delete: Successful deletion.
 notice_successful_update: Successful update.
-quest10: Cuestionario de Clima Formativo Percibido Deportes Colectivos
+quest10: Clima Formativo Percibido Deportes Colectivos
 quest10_10: Permite solucionar situaciones de competición de forma diferente a mis directrices
 quest10_11: Anima a l@s deportistas cuando cometen un fallo
 quest10_12: Piensa que l@s deportistas tienen éxito cuando son claramente superiores a los demás
@@ -331,7 +331,7 @@ quest10_9: Piensa que l@s deportistas tienen éxito cuando lo hacen mejor que lo
 quest10_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de competición. Por favor, lee cuidadosamente y después seleccina el que mejor describa el comportamiento de tu entrenador durante el entrenamiento y los partidos de competición.
 quest10_label_0: Clima Formativo Percibido Deportes Colectivos
 quest10_label_1: Mi entrenador/a
-quest11: Cuestionario de Motivación Autodeterminada
+quest11: Motivación Autodeterminada
 quest11_10: Porque es absolutamente necesario hacer deportes si se quiere estar en forma
 quest11_11: Por el prestigio de ser un deportista
 quest11_12: Porque es uno de los medios que he elegido para desarrollar otros aspectos de mi persona
@@ -418,7 +418,7 @@ quest11_valor_tit_6: Presenta un Perfil Global de Motivación No Autodeterminado
 quest11_valor_tit_7: Presenta un Perfil Global de Motivación Bajo Autodeterminado.
 quest11_valor_tit_8: Presenta un Perfil Global de Motivación Bajo Autodeterminado.
 quest11_valor_tit_9: Presenta un Perfil Global de Motivación No Autodeterminado.
-quest12: Cuestionario de Clima Motivacional Percibido
+quest12: Clima Motivacional Percibido
 quest12_10: Lo hago todo lo mejor que se
 quest12_11: Alcanzo la meta que me propuse
 quest12_12: Soy claramente superior a los/las demás
@@ -573,7 +573,7 @@ quest1_label_6: Ansiedad cognitiva
 quest1_label_7: Autoconfianza
 quest1_label_8: Ansiedad Somática
 quest1_label_9: Optima
-quest2: Cuestionario Tolerancia Psicológica al Estrés
+quest2: Tolerancia Psicológica al Estrés
 quest2_10: He estado convencid@ de que podía rendir en cualquier momento
 quest2_11: He resuelto de forma adecuada los problemas con mis compañeros/as
 quest2_12: He estado en buena forma física
@@ -868,7 +868,7 @@ quest6_label_2: Rendimiento Personal
 quest6_label_3: Contribución a la Tarea
 quest6_label_4: Integración Tarea
 quest6_label_5: Valoración general 
-quest7: Cuestionario de Satisfacción (Deportes Individuales) 
+quest7: Satisfacción (Deportes Individuales) 
 quest7_10: La formación que he recibido durante las temporadas anteriores
 quest7_11: La formación que he recibido durante esta temporada
 quest7_12: Las instrucciones del/la entrenador/a técnico-tácticas de mi papel
@@ -916,7 +916,7 @@ quest7_label_5: Enseñanza e instrucción
 quest7_label_6: Trato personal
 quest7_valor_1: 1 (totalmente insatisfecho)
 quest7_valor_7: 7 (totalmente satisfecho)
-quest8: Cuestionario de Satisfacción (Deportes Colectivos)
+quest8: Satisfacción (Deportes Colectivos)
 quest8_10: La cantidad de tiempo que juego durante la competición
 quest8_11: El grado de correspondencia entre mi rol en el equipo con mi rol preferido
 quest8_12: La elección que el/la entrenador/a hace sobre los jugadores durante la competición
@@ -988,7 +988,7 @@ quest8_label_8: Rendimiento del equipo
 quest8_label_9: Integración tarea
 quest8_valor_1: 1 (no, en absoluto)
 quest8_valor_7: 7 (totalmente)
-quest9: Cuestionario de Clima Formativo Auto Percibido Deportes Colectivos
+quest9: Clima Formativo Auto Percibido Deportes Colectivos
 quest9_10: Permito solucionar situaciones de competición de forma diferente a mis directrices
 quest9_11: Animo a l@s deportistas cuando cometen un fallo
 quest9_12: Pienso que l@s deportistas tienen éxito cuando son claramente superiores a los demás
