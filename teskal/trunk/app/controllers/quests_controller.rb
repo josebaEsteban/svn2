@@ -77,15 +77,14 @@ class QuestsController < ApplicationController
       journal( controlador+"/create/"+@answer.id.to_s, @answer.user_id)
       quest = Quest.find(:first, :conditions  => {:user_id  => @answer.user_id, :order => @answer.quest_id})
       quest.toggle!(:browse)
-      user=User.find(@answer.user_id)
+      pavo=User.find(@answer.user_id)
       # if user.admin?
       #   Mailer.deliver_quest(@answer,user)
       # elsif !user.managed_by.nil?
       #   manager=User.find(user.managed_by)
       #   Mailer.deliver_quest(@answer,manager)
       # end
-      if @logged_in_user.admin? or @logged_in_user.id == user.managed_by  
-        pavo= User.find(@answer.user_id)
+      if @logged_in_user.admin? or @logged_in_user.id == pavo.managed_by  
         Mailer.deliver_quest(@answer,@logged_in_user,pavo.name)
       end
       if answer_show?(@answer.user_id, @answer.browse, user.managed_by)

@@ -272,7 +272,7 @@ mail_subject_account_activation_request: Petición de activación de cuenta en T
 mail_subject_lost_password: Tu contraseña de Teskal
 mail_subject_signup: Activación de la cuenta de Teskal 
 mail_subject_quest: Nuevo cuestionario
-mail_body_quest1: ha completado un nuevo cuestionario.
+mail_body_quest1: ha completado un
 mail_body_quest2: Si entras en Teskal, puedes verlo en el siguiente enlace
 markt_10: Teskal pone esas herramientas a disposición de tus entrenadores.
 markt_11: Es un concepto integral del rendimiento deportivo que considera no solo las habilidades físicas y técnicas sino la persona del deportista.
