@@ -110,8 +110,43 @@ class Mailer < ActionMailer::Base
   def quest(answer,user,athlete)
     set_language_if_valid(user.language)
     recipients user.mail
+    cual=""
+    case answer.quest_id
+    when 1
+      cual = l(:quest1)
+    when 2
+      cual = l(:quest2)
+    when 3
+      cual = l(:quest3)
+    when 4
+      cual = l(:quest4)
+    when 5
+      cual = l(:quest5)
+    when 6
+      cual = l(:quest6)
+    when 7
+      cual = l(:quest7)
+    when 8
+      cual = l(:quest8)
+    when 9
+      cual = l(:quest9)
+    when 10
+      cual = l(:quest10)
+    when 11
+      cual = l(:quest11)
+    when 12
+      cual = l(:quest12)
+    when 13
+      cual = l(:quest13)
+    when 14
+      cual = l(:quest14)
+    when 15
+      cual = l(:quest15)
+    end
+
     subject l(:mail_subject_quest)
     body :who => athlete,
+    :which  => cual,
     :url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
   end
 
@@ -124,32 +159,32 @@ class Mailer < ActionMailer::Base
     default_url_options[:protocol] = Setting.protocol
   end
 
-    # Overrides the create_mail method
-    def create_mail
-      # Removes the current user from the recipients and cc
-      # if he doesn't want to receive notifications about what he does
-      # if User.current.pref[:no_self_notified]
-      #   recipients.delete(User.current.mail) if recipients
-      #   cc.delete(User.current.mail) if cc
-      # end
-      # # Blind carbon copy recipients
-      # if Setting.bcc_recipients?
-      #   bcc([recipients, cc].flatten.compact.uniq)
-      #   recipients []
-      #   cc []
-      # end    
-      super
-    end
-
-    # Renders a message with the corresponding layout
-    def render_message(method_name, body)
-      layout = method_name.match(%r{text\.html\.(rhtml|rxml)}) ? 'layout.text.html.rhtml' : 'layout.text.plain.rhtml'
-      body[:content_for_layout] = render(:file => method_name, :body => body)
-      ActionView::Base.new(template_root, body, self).render(:file => "mailer/#{layout}")
-    end
-
-    # Makes partial rendering work with Rails 1.2 (retro-compatibility)
-    def self.controller_path
-      ''
-    end unless respond_to?('controller_path')
+  # Overrides the create_mail method
+  def create_mail
+    # Removes the current user from the recipients and cc
+    # if he doesn't want to receive notifications about what he does
+    # if User.current.pref[:no_self_notified]
+    #   recipients.delete(User.current.mail) if recipients
+    #   cc.delete(User.current.mail) if cc
+    # end
+    # # Blind carbon copy recipients
+    # if Setting.bcc_recipients?
+    #   bcc([recipients, cc].flatten.compact.uniq)
+    #   recipients []
+    #   cc []
+    # end
+    super
   end
+
+  # Renders a message with the corresponding layout
+  def render_message(method_name, body)
+    layout = method_name.match(%r{text\.html\.(rhtml|rxml)}) ? 'layout.text.html.rhtml' : 'layout.text.plain.rhtml'
+    body[:content_for_layout] = render(:file => method_name, :body => body)
+    ActionView::Base.new(template_root, body, self).render(:file => "mailer/#{layout}")
+  end
+
+  # Makes partial rendering work with Rails 1.2 (retro-compatibility)
+  def self.controller_path
+    ''
+  end unless respond_to?('controller_path')
+end
