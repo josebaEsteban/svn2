@@ -1,4 +1,11 @@
-<%= @who +" "+ l(:mail_body_quest1) +" "+ @which +"." %>
+<%-    case @type
+    when Mailer::QUEST_NEW    -%>
+	  <%= @who +" "+ l(:mail_body_quest1) +" "+ @which +"." %>  
+ <%- when Mailer::QUEST_ALLOWED -%>   
+  	  <%=" "+ l(:mail_body_quest3) +" "+ @which +"." %>
+ <%- when Mailer::QUEST_PENDING -%>
+	  <%=" "+ l(:mail_body_quest4) +" "+ @which +"." %>   
+ <%- end -%> 
 <%= l(:mail_body_quest2) %>:
         
 <%= @url %>      
