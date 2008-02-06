@@ -262,14 +262,20 @@ login_label_5: Crea un compte
 login_label_6: gratis.
 mail_body_account_information: Informació del teu compte en Teskal
 mail_body_account_information_external: Pots usar el teu compte "%s" per a entrar en Teskal.
+mail_body_book: Tens disponible en la teva biblioteca de Teskal el llibre
 mail_body_lost_password: "Per canviar la seva contrasenya de Teskal, faci clic a l'enllaç següent"
-mail_body_register: "Gràcies per registrar-te a Teskal! Per activar el teu compte, usa el següent enllaç"
-mail_subject_account_activation_request: Petició d'activació de compte en Teskal
-mail_subject_lost_password: La teva contrasenya de Teskal
-mail_subject_signup: Activació del compte de Teskal
-mail_subject_quest: Nou qüestionari 
 mail_body_quest1: ha completat un qüestionari de
 mail_body_quest2: Si entres en Teskal, pots veure'l en el següent enllaç
+mail_body_quest3: Pots veure ja el resultat del teu qüestionari de 
+mail_body_quest4: Tens pendent d'emplenar un qüestionari de 
+mail_body_register: "Gràcies per registrar-te a Teskal! Per activar el teu compte, usa el següent enllaç"
+mail_subject_account_activation_request: Petició d'activació de compte en Teskal
+mail_subject_allowed: Resultat qüestionari 
+mail_subject_book: Biblioteca Teskal
+mail_subject_lost_password: La teva contrasenya de Teskal
+mail_subject_pending: Qüestionari pendent
+mail_subject_quest: Nou qüestionari 
+mail_subject_signup: Activació del compte de Teskal
 notice_account_activated: El teu compte ha estat activat. Pots entrar.
 notice_account_invalid_creditentials: Usuari o contrasenya no vàlid.
 notice_account_lost_email_sent: Se li ha enviat un correu amb instruccions per crear una contrasenya.

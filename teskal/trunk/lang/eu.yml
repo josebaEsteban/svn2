@@ -263,14 +263,20 @@ login_label_5: Eratu ezazu kontu
 login_label_6: bat doan.
 mail_body_account_information: Zure Teskaleko kontuaren informazioa
 mail_body_account_information_external: Zure “%s” kontua erabili dezakezu Teskalen sartzeko.
+mail_body_book: Tienes disponible en tu biblioteca de Teskal el libro
 mail_body_lost_password: Zure Teskaleko pasa-hitza aldatzeko ondorengo loturan klikatu ezazu
-mail_body_register: Zure Teskaleko kontua aktibatzeko ondorengo loturan klikatu ezazu
-mail_subject_account_activation_request: Teskalen kontua aktibatzeko eskaera
-mail_subject_lost_password: Zure pasa-hitza Teskal
-mail_subject_signup: Kontuaren aktibazioa Teskal
-mail_subject_quest: Galde-sorta berria
 mail_body_quest1: Galde-sorta bat osatu du
 mail_body_quest2: Teskalen sartuz gero ondorengo loturan ikusi dezakezu
+mail_body_quest3: Puedes ver ya el resultado de tu cuestionario de
+mail_body_quest4: Tienes pendiente de rellenar un cuestionario de
+mail_body_register: Zure Teskaleko kontua aktibatzeko ondorengo loturan klikatu ezazu
+mail_subject_account_activation_request: Teskalen kontua aktibatzeko eskaera
+mail_subject_allowed: Resultado cuestionario
+mail_subject_book: Biblioteca Teskal
+mail_subject_lost_password: Zure pasa-hitza Teskal
+mail_subject_pending: Cuestionario pendiente
+mail_subject_quest: Galde-sorta berria
+mail_subject_signup: Kontuaren aktibazioa Teskal
 markt_10: Teskalek erraminta horiek zure entrenatzaieen eskura jartzen ditu.  
 markt_11: Kirolariaren trebetasun fisiko eta teknikoez gain, kirolariaren pertsona bera ere kontuan hartzen dituen Kirol errendimenduaren kontzeptu integral bat da.  
 markt_12: Teskalek kirolari/entrenatzaile bikoteari nola kirolari/entrenatzaile/psikologo taldeari komunikazio maila altu bat mantentzea ahalbidetzen die.  

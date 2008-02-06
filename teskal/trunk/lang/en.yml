@@ -265,6 +265,7 @@ login_label_5: Sign up
 login_label_6: for a free account.
 mail_body_account_information: Your Teskal account information
 mail_body_account_information_external: You can use your "%s" account to log into Teskal.
+mail_body_book: Now you have available in your Teskal library the book
 mail_body_lost_password: 'To change your Teskal password, click on the following link'
 mail_body_quest1: has completed a questionnaire of
 mail_body_quest2: Once you login into Teskal, you can browse it at the following link
@@ -274,7 +275,6 @@ mail_body_register: 'Thank you for signing up for Teskal! To activate your accou
 mail_subject_account_activation_request: Teskal account activation request
 mail_subject_allowed: Result Questionnaire
 mail_subject_book: Teskal Library   
-mail_body_book: Now you have available in your Teskal library the book
 mail_subject_lost_password: Your Teskal password
 mail_subject_pending: Pending Questionnaire
 mail_subject_quest: New Questionnaire
