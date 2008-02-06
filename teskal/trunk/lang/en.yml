@@ -273,7 +273,8 @@ mail_body_quest4: You have a pending questionnaire of
 mail_body_register: 'Thank you for signing up for Teskal! To activate your account, use the following link'
 mail_subject_account_activation_request: Teskal account activation request
 mail_subject_allowed: Result Questionnaire
-mail_subject_book: Teskal Library
+mail_subject_book: Teskal Library   
+mail_body_book: Now you have available in your Teskal library the book
 mail_subject_lost_password: Your Teskal password
 mail_subject_pending: Pending Questionnaire
 mail_subject_quest: New Questionnaire
