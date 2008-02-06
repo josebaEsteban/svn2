@@ -264,7 +264,7 @@ login_label_6: para uma conta grátis.
 mail_body_account_information: Seu Teskal conta informaçao
 mail_body_account_information_external: Você pode usar sua conta "%s" para entrar no Teskal.
 mail_body_lost_password: 'Para mudar sua senha, clique no link abaixo'
-mail_body_register: 'Para ativar sua conta do Teskal, clique no link abaixo'
+mail_body_signup: 'Para ativar sua conta do Teskal, clique no link abaixo'
 mail_subject_account_activation_request: Petiçao de ativaçao de conta do Teskal
 mail_subject_lost_password: Seu Teskal senha
 mail_subject_lost_password: Sua senha do Teskal.

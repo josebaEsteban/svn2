@@ -262,7 +262,7 @@ mail_body_account_activation_request: "Un nouvel utilisateur (%s) s'est inscrit.
 mail_body_account_information: Paramètres de connexion de votre compte Teskal
 mail_body_account_information_external: Vous pouvez utiliser votre compte "%s" pour vous connecter à Teskal.
 mail_body_lost_password: 'Pour changer votre mot de passe Teskal, cliquez sur le lien suivant'
-mail_body_register: 'Pour activer votre compte Teskal, cliquez sur le lien suivant'
+mail_body_signup: 'Pour activer votre compte Teskal, cliquez sur le lien suivant'
 mail_subject_account_activation_request: "Demande d'activation d'un compte Teskal"  
 mail_subject_signup: Activation de votre compte Teskal
 mail_subject_quest: Nouveau questionnaire

@@ -77,7 +77,7 @@ notice_feeds_access_key_reseted: Your RSS access key was reseted.
 mail_subject_lost_password: Sua senha do Teskal.
 mail_body_lost_password: 'Para mudar sua senha, clique no link abaixo:'
 mail_subject_register: Ativação de conta do Teskal.
-mail_body_register: 'Para ativar sua conta do Teskal, clique no link abaixo:'
+mail_body_signup: 'Para ativar sua conta do Teskal, clique no link abaixo:'
 
 gui_validation_error: 1 erro
 gui_validation_error_plural: %d erros
