@@ -146,7 +146,31 @@ class Mailer < ActionMailer::Base
       :url => url_for(:controller => "quest"+answer.order.to_s, :action => 'new')
     end
   end
-
+  
+  def book(book,athlete) 
+    set_language_if_valid(athlete.language) 
+    libro=[]
+    libro[0]=l(:unit_1_title)
+    libro[1]=l(:unit_2_title)
+    libro[2]=l(:unit_3_title)
+    libro[3]=l(:unit_4_title)
+    libro[4]=l(:unit_5_title)
+    libro[5]=l(:unit_6_title)
+    libro[6]=l(:unit_7_title)
+    libro[7]=l(:unit_8_title)
+    libro[8]=l(:unit_9_title)
+    libro[9]=l(:unit_10_title)
+    libro[10]=l(:unit_11_title)
+    libro[11]=l(:unit_12_title)
+    libro[12]=l(:unit_13_title)
+    libro[13]=l(:unit_14_title)
+    libro[14]=l(:unit_15_title)
+    recipients athlete.mail
+    subject l(:mail_subject_book)
+    body :who => athlete.name,
+    :which  => libro[book.order-1]
+   end
+  
   def get_title_quest(selector)
     case selector
     when 1
