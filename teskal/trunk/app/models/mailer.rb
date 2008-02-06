@@ -122,6 +122,7 @@ class Mailer < ActionMailer::Base
       subject l(:mail_subject_quest)
       quest_name = get_title_quest(answer.quest_id)
       body :who => athlete.name,
+      :text  => " " + l(:mail_body_quest1),
       :which  => quest_name,
       :url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
     when QUEST_ALLOWED
@@ -129,7 +130,8 @@ class Mailer < ActionMailer::Base
       recipients athlete.mail
       subject l(:mail_subject_allowed)
       quest_name = get_title_quest(answer.quest_id)
-      body :who => athlete.name,
+      body :who => "",
+      :text  => l(:mail_body_quest3),     
       :which  => quest_name,
       :url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
     when QUEST_PENDING
@@ -138,7 +140,8 @@ class Mailer < ActionMailer::Base
       subject l(:mail_subject_pending)
       puts answer.order
       quest_name = get_title_quest(answer.order)
-      body :who => athlete.name,
+      body :who => "",
+      :text  => l(:mail_body_quest4),           
       :which  => quest_name,
       :url => url_for(:controller => "quest"+answer.order.to_s, :action => 'new')
     end
