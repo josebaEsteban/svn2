@@ -268,6 +268,8 @@ mail_body_account_information_external: You can use your "%s" account to log int
 mail_body_lost_password: 'To change your Teskal password, click on the following link'
 mail_body_quest1: has completed a questionnaire of
 mail_body_quest2: Once you login into Teskal, you can browse it at the following link
+mail_body_quest3: Now you can browse the result of your questionnaire of
+mail_body_quest4: You have a pending questionnaire of
 mail_body_register: 'Thank you for signing up for Teskal! To activate your account, use the following link'
 mail_subject_account_activation_request: Teskal account activation request
 mail_subject_allowed: Result Questionnaire

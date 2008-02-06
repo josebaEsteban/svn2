@@ -6,7 +6,7 @@ class Mailer < ActionMailer::Base
   QUEST_NEW = 1
   QUEST_ALLOWED = 2
   QUEST_PENDING = 3
-
+  BOOK_ALLOWED = 4
   helper ApplicationHelper
   # helper IssuesHelper
   # helper CustomFieldsHelper
@@ -114,8 +114,9 @@ class Mailer < ActionMailer::Base
 
   def quest(answer,manager,athlete,type)
     quest_name = ""
-
-    if type == QUEST_NEW
+    @type = type
+    case @type
+    when QUEST_NEW
       set_language_if_valid(manager.language)
       recipients manager.mail
       subject l(:mail_subject_quest)
@@ -123,15 +124,15 @@ class Mailer < ActionMailer::Base
       body :who => athlete.name,
       :which  => quest_name,
       :url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
-    elsif type == QUEST_ALLOWED
+    when QUEST_ALLOWED
       set_language_if_valid(athlete.language)
       recipients athlete.mail
       subject l(:mail_subject_allowed)
       quest_name = get_title_quest(answer.quest_id)
       body :who => athlete.name,
       :which  => quest_name,
-      :url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)   
-    elsif type == QUEST_PENDING
+      :url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
+    when QUEST_PENDING
       set_language_if_valid(athlete.language)
       recipients athlete.mail
       subject l(:mail_subject_pending)
@@ -177,7 +178,7 @@ class Mailer < ActionMailer::Base
       quest_name = l(:quest15)
     end
   end
-  
+
   private
   def initialize_defaults(method_name)
     super
