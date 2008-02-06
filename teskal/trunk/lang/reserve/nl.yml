@@ -77,7 +77,7 @@ notice_feeds_access_key_reseted: Your RSS access key was reseted.
 mail_subject_lost_password: Uw Teskal wachtwoord
 mail_body_lost_password: 'Gebruik de volgende link om Uw wachtwoord te wijzigen:'
 mail_subject_register: Teskal account activatie
-mail_body_register: 'Gebruik de volgende link om Uw Teskal account te activeren:'
+mail_body_signup: 'Gebruik de volgende link om Uw Teskal account te activeren:'
 
 gui_validation_error: 1 fout
 gui_validation_error_plural: %d fouten

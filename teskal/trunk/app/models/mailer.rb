@@ -74,7 +74,7 @@ class Mailer < ActionMailer::Base
   def account_information(user, password)
     set_language_if_valid user.language
     recipients user.mail
-    subject l(:mail_subject_register)
+    subject l(:mail_subject_signup)
     body :user => user,
     :password => password,
     :login_url => url_for(:controller => 'account', :action => 'login')

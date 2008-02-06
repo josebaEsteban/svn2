@@ -80,7 +80,7 @@ notice_feeds_access_key_reseted: Your RSS access key was reseted.
 mail_subject_lost_password: 您的Teskal口令
 mail_body_lost_password: 'To change your Teskal password, click on the following link:'
 mail_subject_register: Teskal帐户激活
-mail_body_register: 'To activate your Teskal account, click on the following link:'
+mail_body_signup: 'To activate your Teskal account, click on the following link:'
 
 gui_validation_error: 1 个错误
 gui_validation_error_plural: %d 个错误

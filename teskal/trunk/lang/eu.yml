@@ -269,7 +269,7 @@ mail_body_quest1: Galde-sorta bat osatu du
 mail_body_quest2: Teskalen sartuz gero ondorengo loturan ikusi dezakezu
 mail_body_quest3: Puedes ver ya el resultado de tu cuestionario de
 mail_body_quest4: Tienes pendiente de rellenar un cuestionario de
-mail_body_register: Zure Teskaleko kontua aktibatzeko ondorengo loturan klikatu ezazu
+mail_body_signup: Zure Teskaleko kontua aktibatzeko ondorengo loturan klikatu ezazu
 mail_subject_account_activation_request: Teskalen kontua aktibatzeko eskaera
 mail_subject_allowed: Resultado cuestionario
 mail_subject_book: Biblioteca Teskal

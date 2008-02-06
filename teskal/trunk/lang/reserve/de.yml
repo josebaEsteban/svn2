@@ -77,7 +77,7 @@ notice_feeds_access_key_reseted: Ihr RSS-Zugriffsschlüssel wurde zurückgesetzt
 mail_subject_lost_password: Ihr Teskal-Kennwort
 mail_body_lost_password: 'Benutzen Sie den folgenden Link, um Ihr Kennwort zu ändern:'
 mail_subject_register: Teskal Kontoaktivierung
-mail_body_register: 'Um Ihr Konto zu aktivieren, benutzen Sie folgenden Link:'
+mail_body_signup: 'Um Ihr Konto zu aktivieren, benutzen Sie folgenden Link:'
 
 gui_validation_error: 1 Fehler
 gui_validation_error_plural: %d Fehler

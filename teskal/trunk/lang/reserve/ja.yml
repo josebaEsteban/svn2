@@ -78,7 +78,7 @@ notice_feeds_access_key_reseted: RSSアクセスキーを初期化しました�
 mail_subject_lost_password: Teskalパスワード
 mail_body_lost_password: 'パスワードを変更するには、以下のリンクをたどってください:'
 mail_subject_register: Teskalアカウントが有効になりました
-mail_body_register: 'Teskalアカウントをアクティブにするには、以下のリンクをたどってください:'
+mail_body_signup: 'Teskalアカウントをアクティブにするには、以下のリンクをたどってください:'
 
 gui_validation_error: 1件のエラー
 gui_validation_error_plural: %d件のエラー
