@@ -149,6 +149,21 @@ class AccountController < ApplicationController
     end
   end
 
+  # Token based account activation
+  def activate
+    redirect_to(home_url) && return unless Setting.self_registration? && params[:token]
+    token = Token.find_by_action_and_value('signup', params[:token])
+    redirect_to(home_url) && return unless token and !token.expired?
+    user = token.user
+    redirect_to(home_url) && return unless user.status == User::STATUS_REGISTERED
+    user.status = User::STATUS_ACTIVE
+    if user.save
+      token.destroy
+      flash[:notice] = l(:notice_account_activated)
+    end
+    redirect_to :action => 'login'
+  end
+
   def terms
   end
 
