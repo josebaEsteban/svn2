@@ -266,12 +266,12 @@ login_label_5: Crea una cuenta
 login_label_6: gratis.
 mail_body_account_information: Información de tu cuenta en Teskal
 mail_body_account_information_external: Puedes usar tu cuenta "%s" para entrar en Teskal.
+mail_body_book: Tienes disponible en tu biblioteca de Teskal el libro
 mail_body_lost_password: 'Para cambiar tu contraseña en Teskal, haz clic en el siguiente enlace'
 mail_body_quest1: ha completado un cuestionario de
 mail_body_quest2: Si entras en Teskal, puedes verlo en el siguiente enlace
 mail_body_quest3: Puedes ver ya el resultado de tu cuestionario de
 mail_body_quest4: Tienes pendiente de rellenar un cuestionario de
-mail_body_book: Tienes disponible en tu biblioteca de Teskal el libro
 mail_body_register: 'Gracias por registrarte en Teskal! Para activar tu cuenta, usa el siguiente enlace'
 mail_subject_account_activation_request: Petición de activación de cuenta en Teskal
 mail_subject_allowed: Resultado cuestionario
