@@ -110,7 +110,8 @@ class BooksController < ApplicationController
       book.toggle!(:browse)
       if book.browse
         Mailer.deliver_book(book,user)
-      end
+      end          
+       journal( "book"+book.order.to_s+"/"+"visible-"+book.browse.to_s+"/"+user.id.to_s, @logged_in_user.id)        
       redirect_to :controller => 'my', :action => 'admin' , :id  => book.user_id.to_s+"pL"
     else
       redirect_to :controller => 'my', :action => 'page'
