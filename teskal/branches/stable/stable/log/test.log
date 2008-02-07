@@ -1,0 +1,461 @@
+RespondToController: missing default helper path respond_to_helper
+RenderController: missing default helper path render_helper
+
+
+Processing RespondToController#js_or_html (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"js_or_html", "controller"=>"respond_to"}
+Completed in 0.00158 (633 reqs/sec) | Rendering: 0.00005 (3%) | DB: 0.27586 (17480%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#html_or_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"html_or_xml", "controller"=>"respond_to"}
+Completed in 0.00042 (2369 reqs/sec) | Rendering: 0.00004 (9%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#just_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"just_xml", "controller"=>"respond_to"}
+Completed in 0.00030 (3279 reqs/sec) | Rendering: 0.00004 (11%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#all_types_with_layout (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"all_types_with_layout", "controller"=>"respond_to"}
+Rendering respond_to/all_types_with_layout.rjs
+Completed in 0.00501 (199 reqs/sec) | Rendering: 0.00468 (93%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/all_types_with_layout]
+
+
+Processing RespondToController#all_types_with_layout (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"all_types_with_layout", "controller"=>"respond_to"}
+Rendering layoutfalseactionall_types_with_layoutcontent_typetext/html within layouts/standard
+Rendering respond_to/all_types_with_layout
+Completed in 0.00184 (544 reqs/sec) | Rendering: 0.00145 (78%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/all_types_with_layout]
+
+
+Processing RespondToController#custom_type_handling (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"custom_type_handling", "controller"=>"respond_to"}
+Completed in 0.00046 (2174 reqs/sec) | Rendering: 0.00004 (8%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/custom_type_handling]
+
+
+Processing RespondToController#custom_type_handling (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"custom_type_handling", "controller"=>"respond_to"}
+Completed in 0.00036 (2792 reqs/sec) | Rendering: 0.00004 (10%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/custom_type_handling]
+
+
+Processing RespondToController#using_defaults (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults
+Completed in 0.00150 (667 reqs/sec) | Rendering: 0.00099 (65%) | DB: 0.00037 (24%) | 200 OK [http://www.example.com/respond_to/using_defaults]
+
+
+Processing RespondToController#using_defaults (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults.rjs
+Completed in 0.00528 (189 reqs/sec) | Rendering: 0.00492 (93%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/using_defaults]
+
+
+Processing RespondToController#using_defaults (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults.rxml
+Completed in 0.00166 (602 reqs/sec) | Rendering: 0.00127 (76%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/using_defaults]
+
+
+Processing RespondToController#html_or_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"html_or_xml", "controller"=>"respond_to"}
+Completed in 0.00048 (2083 reqs/sec) | Rendering: 0.00004 (7%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/html_or_xml]
+
+
+Processing RespondToController#using_defaults (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults
+Completed in 0.00126 (795 reqs/sec) | Rendering: 0.00090 (71%) | DB: 0.00113 (89%) | 200 OK [http://www.example.com/respond_to/using_defaults]
+
+
+Processing RespondToController#using_defaults (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults.rjs
+Completed in 0.00498 (200 reqs/sec) | Rendering: 0.00461 (92%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/using_defaults]
+
+
+Processing RespondToController#using_defaults (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults.rxml
+Completed in 0.00151 (660 reqs/sec) | Rendering: 0.00116 (76%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/using_defaults]
+
+
+Processing RespondToController#js_or_html (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"js_or_html", "controller"=>"respond_to"}
+Completed in 0.00033 (3048 reqs/sec) | Rendering: 0.00003 (10%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#html_or_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"html_or_xml", "controller"=>"respond_to"}
+Completed in 0.00031 (3269 reqs/sec) | Rendering: 0.00003 (9%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#just_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"just_xml", "controller"=>"respond_to"}
+Completed in 0.00026 (3788 reqs/sec) | Rendering: 0.00003 (12%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#all_types_with_layout (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"all_types_with_layout", "controller"=>"respond_to"}
+Rendering respond_to/all_types_with_layout.rjs
+Completed in 0.00383 (261 reqs/sec) | Rendering: 0.00347 (90%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/all_types_with_layout]
+
+
+Processing RespondToController#all_types_with_layout (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"all_types_with_layout", "controller"=>"respond_to"}
+Rendering layoutfalseactionall_types_with_layoutcontent_typetext/html within layouts/standard
+Rendering respond_to/all_types_with_layout
+Completed in 0.00112 (894 reqs/sec) | Rendering: 0.00084 (75%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/all_types_with_layout]
+
+
+Processing RespondToController#custom_type_handling (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"custom_type_handling", "controller"=>"respond_to"}
+Completed in 0.00033 (2985 reqs/sec) | Rendering: 0.00003 (9%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/custom_type_handling]
+
+
+Processing RespondToController#custom_type_handling (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"custom_type_handling", "controller"=>"respond_to"}
+Completed in 0.00028 (3545 reqs/sec) | Rendering: 0.00003 (10%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/custom_type_handling]
+
+
+Processing RespondToController#html_or_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"html_or_xml", "controller"=>"respond_to"}
+Completed in 0.00039 (2538 reqs/sec) | Rendering: 0.00003 (7%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/html_or_xml]
+
+
+Processing RespondToController#handle_any (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"handle_any", "controller"=>"respond_to"}
+Completed in 0.00029 (3495 reqs/sec) | Rendering: 0.00003 (10%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/handle_any]
+
+
+Processing RespondToController#handle_any (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"handle_any", "controller"=>"respond_to"}
+Completed in 0.00030 (3310 reqs/sec) | Rendering: 0.00003 (9%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/handle_any]
+
+
+Processing RespondToController#handle_any (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"handle_any", "controller"=>"respond_to"}
+Completed in 0.00030 (3289 reqs/sec) | Rendering: 0.00003 (9%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/handle_any]
+
+
+Processing RespondToController#js_or_html (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"js_or_html", "controller"=>"respond_to"}
+Completed in 0.00032 (3106 reqs/sec) | Rendering: 0.00007 (22%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#html_or_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"html_or_xml", "controller"=>"respond_to"}
+Completed in 0.00035 (2824 reqs/sec) | Rendering: 0.00005 (13%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#just_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"just_xml", "controller"=>"respond_to"}
+Completed in 0.00027 (3758 reqs/sec) | Rendering: 0.00004 (13%) | DB: 0.00000 (0%) | 406 Not Acceptable [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#js_or_html (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"js_or_html", "controller"=>"respond_to"}
+Completed in 0.00029 (3449 reqs/sec) | Rendering: 0.00003 (9%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#html_or_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"html_or_xml", "controller"=>"respond_to"}
+Completed in 0.00033 (3066 reqs/sec) | Rendering: 0.00003 (8%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#just_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"just_xml", "controller"=>"respond_to"}
+Completed in 0.00027 (3663 reqs/sec) | Rendering: 0.00003 (10%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#js_or_html (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"js_or_html", "controller"=>"respond_to"}
+Completed in 0.00031 (3236 reqs/sec) | Rendering: 0.00003 (9%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#html_xml_or_rss (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"html_xml_or_rss", "controller"=>"respond_to"}
+Completed in 0.00032 (3086 reqs/sec) | Rendering: 0.00003 (8%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#using_defaults (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults
+Completed in 0.00080 (1254 reqs/sec) | Rendering: 0.00039 (48%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/using_defaults]
+
+
+Processing RespondToController#using_defaults (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults.rjs
+Completed in 0.00368 (271 reqs/sec) | Rendering: 0.00342 (93%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/using_defaults]
+
+
+Processing RespondToController#using_defaults (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults.rxml
+Completed in 0.00093 (1079 reqs/sec) | Rendering: 0.00064 (69%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/using_defaults]
+
+
+Processing RespondToController#using_defaults_with_type_list (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults_with_type_list", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults_with_type_list
+Completed in 0.00090 (1105 reqs/sec) | Rendering: 0.00066 (73%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/using_defaults_with_type_list]
+
+
+Processing RespondToController#using_defaults_with_type_list (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults_with_type_list", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults_with_type_list.rjs
+Completed in 0.00370 (270 reqs/sec) | Rendering: 0.00345 (93%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/using_defaults_with_type_list]
+
+
+Processing RespondToController#using_defaults_with_type_list (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults_with_type_list", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults_with_type_list.rxml
+Completed in 0.00159 (630 reqs/sec) | Rendering: 0.00122 (77%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/using_defaults_with_type_list]
+
+
+Processing RespondToController#made_for_content_type (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"made_for_content_type", "controller"=>"respond_to"}
+Completed in 0.00042 (2359 reqs/sec) | Rendering: 0.00005 (12%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/made_for_content_type]
+
+
+Processing RespondToController#made_for_content_type (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"made_for_content_type", "controller"=>"respond_to"}
+Completed in 0.00038 (2637 reqs/sec) | Rendering: 0.00004 (10%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/made_for_content_type]
+
+
+Processing RespondToController#js_or_html (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"js_or_html", "controller"=>"respond_to"}
+Completed in 0.00053 (1893 reqs/sec) | Rendering: 0.00006 (11%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#using_defaults (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults.rjs
+Completed in 0.00690 (144 reqs/sec) | Rendering: 0.00643 (93%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#custom_type_handling (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"custom_type_handling", "controller"=>"respond_to"}
+Completed in 0.00033 (3030 reqs/sec) | Rendering: 0.00004 (11%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/custom_type_handling]
+
+
+Processing RespondToController#custom_type_handling (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"custom_type_handling", "controller"=>"respond_to"}
+Completed in 0.00059 (1706 reqs/sec) | Rendering: 0.00011 (17%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/custom_type_handling]
+
+
+Processing RespondToController#handle_any (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"handle_any", "controller"=>"respond_to"}
+Completed in 0.00030 (3366 reqs/sec) | Rendering: 0.00003 (9%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/handle_any]
+
+
+Processing RespondToController#handle_any (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"handle_any", "controller"=>"respond_to"}
+Completed in 0.00027 (3675 reqs/sec) | Rendering: 0.00003 (9%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/handle_any]
+
+
+Processing RespondToController#handle_any (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"handle_any", "controller"=>"respond_to"}
+Completed in 0.00028 (3560 reqs/sec) | Rendering: 0.00003 (9%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/handle_any]
+
+
+Processing RespondToController#js_or_html (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"js_or_html", "controller"=>"respond_to"}
+Completed in 0.00078 (1278 reqs/sec) | Rendering: 0.00003 (3%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#html_or_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"html_or_xml", "controller"=>"respond_to"}
+Completed in 0.00029 (3472 reqs/sec) | Rendering: 0.00003 (10%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#just_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"just_xml", "controller"=>"respond_to"}
+Completed in 0.00021 (4877 reqs/sec) | Rendering: 0.00003 (15%) | DB: 0.00000 (0%) | 406 Not Acceptable [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#js_or_html (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"js_or_html", "controller"=>"respond_to"}
+Completed in 0.00028 (3584 reqs/sec) | Rendering: 0.00003 (10%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#html_or_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"html_or_xml", "controller"=>"respond_to"}
+Completed in 0.00031 (3194 reqs/sec) | Rendering: 0.00003 (8%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#just_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"just_xml", "controller"=>"respond_to"}
+Completed in 0.00044 (2277 reqs/sec) | Rendering: 0.00005 (10%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#js_or_html (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"js_or_html", "controller"=>"respond_to"}
+Completed in 0.00029 (3401 reqs/sec) | Rendering: 0.00003 (11%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#html_or_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"html_or_xml", "controller"=>"respond_to"}
+Completed in 0.00030 (3331 reqs/sec) | Rendering: 0.00003 (8%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#just_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"just_xml", "controller"=>"respond_to"}
+Completed in 0.00027 (3688 reqs/sec) | Rendering: 0.00004 (15%) | DB: 0.00000 (0%) | 406 Not Acceptable [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#js_or_html (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"js_or_html", "controller"=>"respond_to"}
+Completed in 0.00030 (3377 reqs/sec) | Rendering: 0.00003 (9%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#html_xml_or_rss (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"html_xml_or_rss", "controller"=>"respond_to"}
+Completed in 0.00037 (2695 reqs/sec) | Rendering: 0.00003 (7%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#using_defaults (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults
+Completed in 0.00057 (1757 reqs/sec) | Rendering: 0.00032 (56%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/using_defaults]
+
+
+Processing RespondToController#using_defaults (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults.rjs
+Completed in 0.00407 (245 reqs/sec) | Rendering: 0.00382 (93%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/using_defaults]
+
+
+Processing RespondToController#using_defaults (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults.rxml
+Completed in 0.00091 (1104 reqs/sec) | Rendering: 0.00061 (67%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/using_defaults]
+
+
+Processing RespondToController#using_defaults_with_type_list (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults_with_type_list", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults_with_type_list
+Completed in 0.00073 (1364 reqs/sec) | Rendering: 0.00049 (66%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/using_defaults_with_type_list]
+
+
+Processing RespondToController#using_defaults_with_type_list (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults_with_type_list", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults_with_type_list.rjs
+Completed in 0.00367 (272 reqs/sec) | Rendering: 0.00344 (93%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/using_defaults_with_type_list]
+
+
+Processing RespondToController#using_defaults_with_type_list (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults_with_type_list", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults_with_type_list.rxml
+Completed in 0.00108 (926 reqs/sec) | Rendering: 0.00079 (73%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/using_defaults_with_type_list]
+
+
+Processing RespondToController#made_for_content_type (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"made_for_content_type", "controller"=>"respond_to"}
+Completed in 0.00028 (3625 reqs/sec) | Rendering: 0.00003 (10%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/made_for_content_type]
+
+
+Processing RespondToController#made_for_content_type (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"made_for_content_type", "controller"=>"respond_to"}
+Completed in 0.00027 (3731 reqs/sec) | Rendering: 0.00003 (9%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/made_for_content_type]
+
+
+Processing RespondToController#js_or_html (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"js_or_html", "controller"=>"respond_to"}
+Completed in 0.00032 (3144 reqs/sec) | Rendering: 0.00003 (8%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#using_defaults (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"using_defaults", "controller"=>"respond_to"}
+Rendering respond_to/using_defaults.rjs
+Completed in 0.00430 (232 reqs/sec) | Rendering: 0.00401 (93%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/js_or_html]
+
+
+Processing RespondToController#html_or_xml (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"html_or_xml", "controller"=>"respond_to"}
+Completed in 0.00033 (3048 reqs/sec) | Rendering: 0.00003 (10%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/html_or_xml]
+
+
+Processing RespondToController#html_xml_or_rss (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"html_xml_or_rss", "controller"=>"respond_to"}
+Completed in 0.00034 (2976 reqs/sec) | Rendering: 0.00003 (8%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/respond_to/html_xml_or_rss]
+
+
+Processing RenderController#test (for 0.0.0.0 at 2007-09-27 02:29:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"test", "controller"=>"render"}
+Rendering render/test
+Completed in 0.00206 (485 reqs/sec) | Rendering: 0.00102 (49%) | DB: 0.00058 (28%) | 200 OK [http://test.host/render/test]
