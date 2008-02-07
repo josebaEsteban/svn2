@@ -1,7 +1,0 @@
-Your Teskal account information:
-* Login:    <%= @user.login %>
-* Password: <%= @password %>
-
-Log in: <%= url_for :only_path => false, :host => Setting.host_name, :controller => 'account', :action => 'login' %>
-
-You can change your password here: <%= url_for :only_path => false, :host => Setting.host_name, :controller => 'my', :action => 'account' %>
