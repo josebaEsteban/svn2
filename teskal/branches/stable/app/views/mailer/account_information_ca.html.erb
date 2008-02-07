@@ -1,7 +1,0 @@
-Informació del teu compte en Teskal:
-* Usuari:    <%= @user.login %>
-* Contrasenya: <%= @password %>
-
-Pots entrar en: <%= url_for :only_path => false, :host => Setting.host_name, :controller => 'account', :action => 'login' %>
-
-Pots canviar la teva contrasenya aqui: <%= url_for :only_path => false, :host => Setting.host_name, :controller => 'my', :action => 'account' %>
