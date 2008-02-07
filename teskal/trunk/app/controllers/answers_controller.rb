@@ -69,6 +69,8 @@ class AnswersController < ApplicationController
     user=User.find(answer.user_id )
     if  @logged_in_user.admin? or @logged_in_user.id == user.managed_by
       answer.toggle!(:browse)
+      controlador = "quest"+@answer.quest_id.to_s
+      journal( controlador+"/toggle/"+answer.toggle.to_s+"/"+@answer.id.to_s, @answer.user_id)
       if answer.browse == true
         Mailer.deliver_quest(answer,@logged_in_user,user,Mailer::QUEST_ALLOWED)
       end
