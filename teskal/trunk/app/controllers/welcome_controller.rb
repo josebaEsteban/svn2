@@ -3,7 +3,7 @@
 
 class WelcomeController < ApplicationController
   layout 'base'
-    skip_before_filter :check_if_login_required, :only => [:signup_done, :index] 
+  skip_before_filter :check_if_login_required, :only => [:signup_done, :index]
   def index
     # @projects = Project.laquest logged_in_user
     # @answers = Answer.find_by_user_id('21')
@@ -17,6 +17,9 @@ class WelcomeController < ApplicationController
   end
 
   def signup_done
+  end
+
+  def lost_email_sent
   end
 
 end
