@@ -24,7 +24,7 @@ issues_export_limit:
   format: int
   default: 500
 mail_from:
-  default: test@teskal.com
+  default: info@teskal.com
 bcc_recipients:
   default: 1
 text_formatting:
@@ -34,7 +34,7 @@ wiki_compression:
 default_language:
   default: en
 host_name:
-  default: test.teskal.com
+  default: www.teskal.com
 protocol:
   default: http
 feeds_limit:
