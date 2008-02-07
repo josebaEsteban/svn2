@@ -93,9 +93,9 @@ class AccountController < ApplicationController
           journal("deliver lost password",user.id)
           Mailer.deliver_lost_password(token)
           redirect_to :controller => 'welcome', :action => 'lost_email_sent'  
-          
+
           # flash[:notice] = l(:notice_account_lost_email_sent)
-          # redirect_to :action => 'login'     
+          # redirect_to :action => 'login'              
           
           return
         end
