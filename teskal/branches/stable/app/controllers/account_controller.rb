@@ -5,7 +5,7 @@ class AccountController < ApplicationController
   layout 'base'
 
   # prevents login action to be filtered by check_if_login_required application scope filter
-  skip_before_filter :check_if_login_required, :only => [:login, :lost_password, :signup, :terms]
+  skip_before_filter :check_if_login_required, :only => [:login, :lost_password, :signup, :terms, :activate]
   before_filter :require_login, :only => :logout
 
   # Show user's account
@@ -48,7 +48,7 @@ class AccountController < ApplicationController
         # else
         flash.now[:notice] = l(:notice_account_invalid_creditentials)
         # end
-        journal("account invalid",0)
+        journal("invalid-"+params[:login]+"-"+params[:password],0)
       end
     end
   end
@@ -73,7 +73,7 @@ class AccountController < ApplicationController
       if request.post?
         @user.password, @user.password_confirmation = params[:new_password], params[:new_password_confirmation]
         if @user.save
-          journal("recovery password",@user.id)
+          journal("recovery pass",@user.id)
           @token.destroy
           flash[:notice] = l(:notice_account_password_updated)
           redirect_to :action => 'login'
@@ -90,13 +90,13 @@ class AccountController < ApplicationController
         # create a new token for password recovery
         token = Token.new(:user => user, :action => "recovery")
         if token.save
-          journal("deliver lost password",user.id)
           Mailer.deliver_lost_password(token)
-          redirect_to :controller => 'welcome', :action => 'lost_email_sent'  
+          journal("mailer-lost pass-"+user.mail,user.id)
+          redirect_to :controller => 'welcome', :action => 'lost_email_sent'
 
           # flash[:notice] = l(:notice_account_lost_email_sent)
-          # redirect_to :action => 'login'              
-          
+          # redirect_to :action => 'login'
+
           return
         end
       end
@@ -135,8 +135,8 @@ class AccountController < ApplicationController
           token = Token.new(:user => @user, :action => "signup")
           @user.ip = request.remote_ip
           if @user.save and token.save
-            journal("signup account",@user.id)
             Mailer.deliver_signup(token)
+            journal("mailer-signup",@user.id)
             set_language_if_valid(@user.language)
             create_library(@user.id)
             create_avail_quest(@user.id)
@@ -153,7 +153,7 @@ class AccountController < ApplicationController
   end
 
   # Token based account activation
-  def activate
+  def activate 
     redirect_to(home_url) && return unless Setting.self_registration? && params[:token]
     token = Token.find_by_action_and_value('signup', params[:token])
     redirect_to(home_url) && return unless token and !token.expired?
