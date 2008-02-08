@@ -27,6 +27,7 @@ class QuestsController < ApplicationController
       quest.toggle!(:browse)
       journal( "quest"+quest.order.to_s+"/pending-"+quest.browse.to_s+"/"+user.id.to_s, @logged_in_user.id)  
       Mailer.deliver_quest(quest,@logged_in_user,user,Mailer::QUEST_PENDING)
+      journal( "mailer"+quest.order.to_s+"/pending-"+quest.browse.to_s+"/"+user.id.to_s, @logged_in_user.id)  
       redirect_to :controller => 'my', :action => 'admin' , :id  => quest.user_id.to_s
     else
       redirect_to :controller => 'my', :action => 'page'
