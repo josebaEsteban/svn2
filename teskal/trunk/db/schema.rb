@@ -130,7 +130,7 @@ ActiveRecord::Schema.define(:version => 0) do
   add_index "books", ["user_id"], :name => "user_id"
 
   create_table "journals", :force => true do |t|
-    t.string   "event",        :limit => 30,  :default => "", :null => false
+    t.string   "event",        :limit => 60,  :default => "", :null => false
     t.datetime "created_on"
     t.string   "ip",           :limit => 15
     t.integer  "user_id",                     :default => 0,  :null => false
@@ -214,6 +214,7 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   add_index "quests", ["user_id"], :name => "user_id"
+  add_index "quests", ["order"], :name => "order"
 
   create_table "roles", :force => true do |t|
     t.string  "name",     :limit => 30, :default => "", :null => false
@@ -262,6 +263,5 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   add_index "users", ["managed_by"], :name => "managed_by"
-  add_index "users", ["mail"], :name => "mail"
 
 end
