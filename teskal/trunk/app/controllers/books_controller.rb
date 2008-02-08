@@ -108,11 +108,11 @@ class BooksController < ApplicationController
     user = User.find(book.user_id)
     if @logged_in_user.admin? or @logged_in_user.id == user.managed_by
       book.toggle!(:browse)
+      journal( "book"+book.order.to_s+"/"+"visible-"+book.browse.to_s+"/"+user.id.to_s, @logged_in_user.id)
       if book.browse
         Mailer.deliver_book(book,user)
-        journal( "mailer"+book.order.to_s+"/"+"visible-"+book.browse.to_s+"/"+user.id.to_s, @logged_in_user.id)  
-      end          
-       journal( "book"+book.order.to_s+"/"+"visible-"+book.browse.to_s+"/"+user.id.to_s, @logged_in_user.id)        
+        journal( "mailer"+book.order.to_s+"/"+"visible-"+book.browse.to_s+"/"+user.id.to_s, @logged_in_user.id)
+      end
       redirect_to :controller => 'my', :action => 'admin' , :id  => book.user_id.to_s+"pL"
     else
       redirect_to :controller => 'my', :action => 'page'
