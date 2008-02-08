@@ -547,7 +547,6 @@ quest1_d9_b: Antzemandako zailtasun estimatua (AZE) arrakasta lortzeko probabili
 quest1_d9_c: Antzemandako zailtasun estimatua (AZE) arrakasta lortzeko probabilitatearekin zuzenki erlazionaturik aurkitzen da. Proposaturiko helburua geroz eta txikiagoa lortzeko geroz eta probabilitate gehiago. Beharrezkoa da, gutxienez helburuetako bi hobekuntza pertsonalaren helburuei lotuak egotea. AZEaren balio altu hauek helburuen hautaketa amso handikoa izan dela adierazten dute. Balorazioan nolabaiteko aldakortasunaz lagunduak badoaz, 70-100 bitarte alegia, kirolari honek bere helburuak hautatzerako orduan diskriminaziorako gaitasun bikaina duela esan nahiko du. Komeni da egoeraren zailtasun maila kirolariaren esku ez dagoela gogoraraztea inolaz ezingo baitu hau aldatu bainan bai arrakasta lortzeko probabilitatea hareagotu bere buruarenganako sinesmenak altu mantenduaz.
 quest1_header2: Lehiaketa aurretik 
 quest1_header4: Kirola egiterakoan, … arrakasta dudala sentitzen dut
-quest1_header5: Te sientes capaz de competir en tu deporte
 quest1_header5: Zure kirolean lehiatzeko gai ikusted duzu zeure burua
 quest1_intro: Behean, jendeak izaten dituen sentsazioak deskribatzen dituzten hitz zerrenda bat dago. Segidan, kirolariek lehiaketa baten aurretik izan dituzten sentimenduak eta emoziak deskribatzeko erabilitako komentario batzuk azaltzen dira. Mesedez, arretaz irakurri itzazu eta momentuotan sentitzen duzuna egokien deskribatzen duen zenbaki gainean klik egin ezazu.
 quest1_label_10: Egungoa
@@ -579,7 +578,7 @@ quest1_label_6: Antsietate Kognitiboa
 quest1_label_7: Autokonfiantza
 quest1_label_8: Antsietate somatikoa
 quest1_label_9: Ezin hobea
-quest2: Estresarekiko tolerantzia psikologikoa galdetegia
+quest2: Estresarekiko tolerantzia psikologikoaren galde-sorta 
 quest2_10: Edozein unetan errenditu nezakelako konbentzimendu osoa izan dut
 quest2_11: Nire kideekin izandako arazoak modu egokian konpondu ditut
 quest2_12: Sasoi onean egon naiz
@@ -658,19 +657,19 @@ quest3_11: Tenko
 quest3_12: Triste
 quest3_13: Nekoso
 quest3_14: Aktibo
-quest3_15: Jenio txarrez
-quest3_16: Entrenamenduan egin behar ditudan gauzei arreta handia jartzen diet
-quest3_17: Garai batean egiteko gai ez nintzen gauazak egiteko gai naiz egun
-quest3_18: Entrenamenduak akatsak baditut hurrengo egunean urduri nago
-quest3_19: Ariketa zaila denean, ondo egiteko gehiago saiatzen naiz
+quest3_15: Jenio txarrez  
 quest3_1: Urduri
-quest3_20: Planteatzen den edozein zeregin meneratzen det
-quest3_21: Entrenamenduan akatsen bat egiten dudanean urduri jarzten naiz
-quest3_22: Nahiz ta entrenamenduan zehar gauzak ez ondo atera ahaleginean jarraitzen dut
-quest3_23: Burutzeko asmoa hartzen dudan hori egiten dut
-quest3_24: Entrenamenduan ariketa berriak praktikatzeak urduri jartzen nau
-quest3_25: UNE HONETAN ekintza teknikoak egiteko daukazun eskumen maila
-quest3_26: UNE HONETAN zein mailatan sentitzen zara zeure kirolean lehiatzeko gai
+quest3_16: egin behar ditudan gauzei arreta handia jartzen diet
+quest3_17: garai batean egiteko gai ez nintzen gauazak egiteko gai naiz egun
+quest3_18: akatsak baditut hurrengo egunean urduri nago
+quest3_19: ariketa zaila denean, ondo egiteko gehiago saiatzen naiz
+quest3_20: planteatzen den edozein zeregin meneratzen det
+quest3_21: akatsen bat egiten dudanean urduri jarzten naiz
+quest3_22: zehar nahiz ta gauzak ez ondo atera ahaleginean jarraitzen dut
+quest3_23: burutzeko asmoa hartzen dudan hori egiten dut
+quest3_24: ariketa berriak praktikatzeak urduri jartzen nau
+quest3_25: ekintza teknikoak egiteko daukazun eskumen maila
+quest3_26: zein mailatan sentitzen zara zeure kirolean lehiatzeko gai?
 quest3_2: Babesgabe
 quest3_3: Indarrik gabe
 quest3_4: Energiaz beterik
@@ -705,7 +704,7 @@ quest3_d8_b: Kirolari honek aurkezten zaizkion zereginak garatzeko gaitasun on b
 quest3_d8_c: Kirolari honek antzemandako eskumen maila altua aurkezten du gauza berriak egiteko gaitasun handiarekin. Beti, proposatzen zaion lana dakien bezain ondoen egiten saiatzen da domeinu eta gauzatze sentzazio mugagabe batekin, hau da, bere buruari proposatzen dizkion gauzak egiteko gai da.
 quest3_header1: Momentu honetan … sentitzen naiz
 quest3_header2: Entrenamenduan...
-quest3_header3: …momento honetan
+quest3_header3: …Une honetan
 quest3_intro: Behean, entrenamendu egoeratan jendeak izaten dituen sentsazioak deskribatzen dituzten hitz zerrenda bat eta hauekin zer ikusia duten esaldi eta iruzkin sorta bat dago. Mesedez,bakoitza arretaz irakurri ezazu eta momentuotan sentitzen duzuna, edo eta entrenamendu saioetan zure jokabidea egokien deskribatzen duen zenbaki gainean klik egin ezazu.
 quest3_label_0: Entrenamenduan izandako sasoi mailaren profila
 quest3_label_10: egun
@@ -737,7 +736,7 @@ quest4_4: Aurkariei buruz daukazun ezagutza maila
 quest4_5: Proba zuretzat egokia da
 quest4_6: Lehiaketa plana prestatu duzu?
 quest4_7: Zein modutan jokatu nahi duzun argi daukazu
-quest4_8: Lortzea espero duen emaitza
+quest4_8: Lortzea espero duzun emaitza
 quest4_d10_a: Antzemandako zailtasun estimatua (AZE) arrakasta izateko probabilitateekin zuzenki erlkazionaturik aurkitzen da. Proposaturiko helburua geroz eta txikiagoa lortzeko geroz eta probabilitate gehiago. Beharrezkoa da, gutxienez helburuetako bi hobekuntza pertsonalaren helburuei lotuak egotea. AZEaren balio baxu hauek helburuen hautaketa xumea izan dela adierazten dute. Balorazioan nolabaiteko ezegonkortasuna azaltzen badute, kirolari honek bere helburuak hautatzeko orduan diskriminazio gaitasuna duela esan nahiko du baina seguruaski autokonfiantza maila baxuekin. Autoefikaziaren PDF-ean oinarrituriko lan espezifiko bat planteatzea ezin bestekoa egingo da.
 quest4_d10_b: Antzemandako zailtasun estimatua (AZE) arrakasta lortzeko probabilitatearekin zuzenki erlazionaturik aurkitzen da. Proposaturiko helburua geroz eta txikiagoa lortzeko geroz eta probabilitate gehiago. Beharrezkoa da, gutxienez helburuetako bi hobekuntza pertsonalaren helburuei lotuak egotea. AZEaren balio ertain hauek helburuen hautaketa mugatua izan dela adierazten dute. Balorazioan nolabaiteko egonkortasunarekin bat badatoz, 70 inguru alegia, kirolariak autoinposaturiko helburuak uniformatzeko joera duela bainan asmo handiagoan izan beharko lituzkeela esan nahiko du. Komeni da egoeraren zailtasun maila kirolariaren esku ez dagoela gogoraraztea inolaz ezingo baitu hau aldatu bainan bai -arrakasta lortzeko probabilitatea hareagotu bere buruarenganako sinesmenak altu mantenduaz-.
 quest4_d10_c: Antzemandako zailtasun estimatua (AZE) arrakasta lortzeko probabilitatearekin zuzenki erlazionaturik aurkitzen da. Proposaturiko helburua geroz eta txikiagoa lortzeko geroz eta probabilitate gehiago. Beharrezkoa da, gutxienez helburuetako bi hobekuntza pertsonalaren helburuei lotuak egotea. AZEaren balio altu hauek helburuen hautaketa amso handikoa izan dela adierazten dute. Balorazioan nolabaiteko aldakortasunaz lagunduak badoaz, 70-100 bitarte alegia, kirolari honek bere helburuak hautatzerako orduan diskriminaziorako gaitasun bikaina duela esan nahiko du. Komeni da egoeraren zailtasun maila kirolariaren esku ez dagoela gogoraraztea inolaz ezingo baitu hau aldatu bainan bai -arrakasta lortzeko probabilitatea hareagotu bere buruarenganako sinesmenak altu mantenduaz-.
@@ -783,27 +782,27 @@ quest4_label_14: Lehiaketako Plan integralaren pertzepzioa.
 quest4_label_1: Lehiaketako Errendimendu Profila
 quest4_valor_1: 1 (ezer es)
 quest5: Lehiaketa osteko balorazioa (Banakako Kirolak)
-quest5_10: Nire pentsamenduen kontrola eta aurre egite positiboa
-quest5_11: Besteen ekintzei erantzuteko modua
-quest5_12: Entrenatzailearen helburuak jakinik hartu ditudan erabakiak
-quest5_13: Lehiaketan zehar izandako jokaeraren argitasuna
-quest5_14: Momenturo lehiketako plan integralaren argitasuna
-quest5_15: Lehiaketa osoan zehar egindako ekintza denak
-quest5_16: Lehiaketa osoan zehar mantentzen nuen konfiantza maila 
-quest5_17: Lehiaketan zehar nuen asetasun maila
-quest5_18: Egin behar nituen gauzekin loturiko pentsamendua
-quest5_19: Sentsazio onekin loturik neuzkan pentsamenduak
+quest5_10: Nire pentsamenduen kontrola eta aurre egite positiboarekiko
+quest5_11: Besteen ekintzei erantzuteko moduarekiko
+quest5_12: Entrenatzailearen helburuak jakinik hartu ditudan erabakiekiko
+quest5_13: Lehiaketan zehar izandako jokaeraren argitasunarekiko
+quest5_14: Momenturo lehiketako plan integralaren argitasunarekiko
+quest5_15: Lehiaketa osoan zehar egindako ekintza denekiko
+quest5_16: Lehiaketa osoan zehar mantentzen nuen konfiantza mailarekiko
+quest5_17: Lehiaketan zehar nuen asetasun mailarekiko
+quest5_18: Egin behar nituen gauzekin loturiko pentsamenduekiko
+quest5_19: Sentsazio onekin loturik neuzkan pentsamenduekiko
 quest5_1: Teknikoki
-quest5_20: Lehiaketan zehar mantentzen nuen interes eta borroka maila
-quest5_21: Erabilitako errendimendu gaitasunarekiko asetasuna
+quest5_20: Lehiaketan zehar mantentzen nuen interes eta borroka mailarekiko
+quest5_21: Erabilitako errendimendu gaitasunarekiko
 quest5_2: Fisikoki
 quest5_3: Asertiboki
 quest5_4: Mentalki
 quest5_5: Taktikoki 
-quest5_6: Nire emozioen kontrola
-quest5_7: Momentu konkretu batzuetan nire emoziak sentitzearen gozamena
-quest5_8: Presiopean errenditu izanaren ziurtasuna. 
-quest5_9: Mentalki erlaxaturik egon izanaren sentsazioa
+quest5_6: Nire emozioen kontrolarekiko
+quest5_7: Momentu konkretu batzuetan nire emoziak sentitzearen gozamenarekiko
+quest5_8: Presiopean errenditu izanaren ziurtasunarekiko
+quest5_9: Mentalki erlaxaturik egon izanaren sentsazioarekiko
 quest5_d1_a: EG-arekin zer ikusia duten balioak maila baxu batean kokatzen diren heinean lehiaketan bere jokabide tekniko-taktikoa, fisikoa eta psikologikoa bere gaitasunetatik urrun egon dela esan nahi du. Honek AEB-a baldintzatuko duenez lehikatan gertaturiko ekintza esanguratsuenak sakonean aztertzea beharrezko egingo du.
 quest5_d1_b: EG-arekin zer ikusia duten balioak maila ertain batean kokatzen dira. Honek jokabide tekniko-taktiko, fisiko eta psikologikoarekiko nolabaiteko asetasuna suposatzen du baina argi dago ez duela nahi bezala errenditzea lortu.
 quest5_d1_c: EG-arekin zer ikusia duten balioak maila altu batean kokatzen dira. Honek jokabide tekniko-taktiko, fisiko eta psikologikoarekiko asetasun handi batetaz gain AEB altu bat antzematen laguntzen dute.
@@ -818,7 +817,7 @@ quest5_d4_b: PORTE-aren balioei so eginez gero, maila ertain batean aurkitzen di
 quest5_d4_c: PORTE-aren balioei so eginez gero, maila altu batean aurkitzen direla ikusi dezakegu. Honek aurkarien ekintzei modu eraginkor batean erantzun diela eta LPI-a lehiaketa osoan zehar argi izan duela esan nahi du. Halaber, momentuoro jakin izan du egin behar zuena, zalantzarik gabe eta determinazioarekin hartutako erabakietan.
 quest5_header1: Nire jokaerarekin izandako asetasun maila
 quest5_header2: Lehiaketan zehar izandako asetasun maila
-quest5_header3: …-kin/ko asetasun maila
+quest5_header3: Asetasun maila…
 quest5_intro: Segidan aurkezten zaizkizun lehiaketaren aspektu ezberdinekin zer ikusia duten galdera sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez,bakoitza arretaz irakurri ezazu eta momentuotan sentitzen duzuna egokien deskribatzen duen zenbaki gainean klik egin ezazu
 quest5_label_0: Banakako Antzemandako Errendimenduaren Balorazio
 quest5_label_1: Errendimendu Globala
@@ -840,22 +839,22 @@ quest5_valor_3: 3 (nola-halakoa)
 quest5_valor_4: 4 (ona)
 quest5_valor_5: 5 (oso ona)
 quest6: Lehiaketa osteko balorazioa (Talde kirola)
-quest6_10: Zure kideekiko komunikazio mailarekin
-quest6_11: Talde lanari egiten diozun ekarpenarekin
-quest6_12: Ahaleginarekiko daukazun inplilazioarekin
-quest6_13: Proposaturiko jokuaren helburuekiko daukazun konfiantza mailarekin
-quest6_14: Eman zaizun lanarekiko daukazun jarrerarekin
-quest6_15: Partiduan zeha hartu dituzun erabakiekin
-quest6_16: Lehiaketa osoan zehar izan duzun konfiantza mailarekin
-quest6_17: Intentsitate oso handiko egoeretan daukazun errendimendu mailarekin
-quest6_18: Zure borroka eta pertseberantzia gaitasunarekin
-quest6_19: Zure hobekuntzarekiko daukazun jarrera baikorrarekin
-quest6_20: Gozamen, asetasun eta sentsazio onen transmisioarekin
+quest6_10: Zure kideekin duzun komunikazio mailarekiko
+quest6_11: Talde lanari egiten diozun ekarpenarekiko
+quest6_12: Ahaleginarekin daukazun inplilazioarekiko
+quest6_13: Proposaturiko jokuaren helburuekin daukazun konfiantza mailarekiko
+quest6_14: Eman zaizun lanarekin daukazun jarrerarekiko
+quest6_15: Partiduan zehar hartu dituzun erabakiekiko
+quest6_16: Lehiaketa osoan zehar izan duzun konfiantza mailarekiko
+quest6_17: Intentsitate oso handiko egoeretan daukazun errendimendu mailarekiko
+quest6_18: Zure borroka eta pertseberantzia gaitasunarekiko
+quest6_19: Zure hobekuntzarekin daukazun jarrera baikorrarekiko
+quest6_20: Gozamen, asetasun eta sentsazio onen transmisioarekiko
 quest6_21: Taldearen errendimendu gaitasunarekin daukazun asetasuna
-quest6_6: Talde helburuekiko daukazun konplizitate mailarekin
-quest6_7: Zure kideekiko eskuzabaltasun eta sostenguarekin
-quest6_8: Zure kideekiko errespetuarekin
-quest6_9: Hartutako erabakiekiko zure leialtasunarekin
+quest6_6: Talde helburuekin daukazun konplizitate mailarekiko
+quest6_7: Zure kideekin duzun eskuzabaltasun eta sostenguarekiko
+quest6_8: Zure kideei diezun errespetuarekikiko
+quest6_9: Hartutako erabakiekin duzun leialtasunarekiko
 quest6_d1_a: EG-arekin zer ikusia duten balioak maila baxu batean kokatzen diren heinean lehiaketan bere jokabide tekniko-taktikoa, fisikoa eta psikologikoa bere gaitasunetatik urrun egon dela esan nahi du. Honek AEB-a baldintzatuko duenez lehikatan gertaturiko ekintza esanguratsuenak sakonean aztertzea beharrezko egingo du.
 quest6_d1_b: EG-arekin zer ikusia duten balioak maila ertain batean kokatzen dira. Honek jokabide tekniko-taktiko, fisiko eta psikologikoarekiko nolabaiteko asetasuna suposatzen du baina argi dago ez duela nahi bezala errenditzea lortu.
 quest6_d1_c: EG-arekin zer ikusia duten balioak maila altu batean kokatzen dira. Honek jokabide tekniko-taktiko, fisiko eta psikologikoarekiko asetasun handi batetaz gain AEB altu bat antzematen laguntzen dute.
