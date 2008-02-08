@@ -54,7 +54,6 @@ class UsersController < ApplicationController
         @user.managed_by = session[:user_id]
         @user.role = User::ROLE_ATHLETE
         if @user.save
-          journal("add user/by_"+@user.managed_by.to_s+"/"+@user.id.to_s,@user.id)
           Mailer.deliver_account_information(@user, params[:password])
           journal("mailer-add user/by_"+@user.managed_by.to_s+"/"+@user.id.to_s,@user.id)     
           create_library(@user.id)
