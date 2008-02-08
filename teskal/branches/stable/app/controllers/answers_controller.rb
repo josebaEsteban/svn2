@@ -71,9 +71,9 @@ class AnswersController < ApplicationController
       answer.toggle!(:browse)
       controlador = "quest"+answer.quest_id.to_s
       journal( controlador+"/visible-"+answer.browse.to_s+"/"+answer.id.to_s, answer.user_id)
-        if answer.browse == true
+      if answer.browse == true
         Mailer.deliver_quest(answer,@logged_in_user,user,Mailer::QUEST_ALLOWED)
-        journal( "mailer"+answer.quest_id.to_s+"/visible-"+answer.browse.to_s+"/"+answer.id.to_s, answer.user_id)  
+        journal( "mailer"+answer.quest_id.to_s+"/visible-"+answer.browse.to_s+"/"+answer.id.to_s, answer.user_id)
       end
       redirect_to :controller => 'my', :action => 'admin' , :id  => answer.user_id
     else
