@@ -92,11 +92,12 @@ class AccountController < ApplicationController
         if token.save
           journal("deliver lost password",user.id)
           Mailer.deliver_lost_password(token)
-          redirect_to :controller => 'welcome', :action => 'lost_email_sent'  
+          journal("mailer-lost password",user.id)
+          redirect_to :controller => 'welcome', :action => 'lost_email_sent'
 
           # flash[:notice] = l(:notice_account_lost_email_sent)
-          # redirect_to :action => 'login'              
-          
+          # redirect_to :action => 'login'
+
           return
         end
       end
@@ -137,6 +138,7 @@ class AccountController < ApplicationController
           if @user.save and token.save
             journal("signup account",@user.id)
             Mailer.deliver_signup(token)
+            journal("mailer-signup",@user.id)
             set_language_if_valid(@user.language)
             create_library(@user.id)
             create_avail_quest(@user.id)
