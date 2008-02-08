@@ -258,6 +258,9 @@ label_user: Usuario
 label_user_new: Añadir deportista
 label_user_plural: Usuarios
 label_year: Año
+label_registration_activation_by_email: activación de cuenta por correo
+label_registration_automatic_activation: activación automática de cuenta
+label_registration_manual_activation: activación manual de cuenta
 login_label_1: Has olvidado tu contraseña?
 login_label_2: Envíate un correo
 login_label_3: con información sobre como crear una nueva contraseña.
