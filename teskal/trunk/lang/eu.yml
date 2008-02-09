@@ -284,9 +284,13 @@ markt_13: Dela kirolaria eta entrenatzailea toki ezberdinetan bizi diren kasueta
 markt_1: Kirol errendimenduaren aldagai psikologikoak maneiatzeko erreminta. 
 markt_2: Lehiaketan zuk dakizun gai zaren mailan errenditu ahal izatea nahi duzu? 
 markt_3: Estresa maneiatzeko gaitasuna, auto konfiantza alegia, entrenatu nahi al duzu?  
-markt_4: Sasoi onean, entrenatu duen eta errendimendu onak dituen kirolaria baina lehiaketako unean ez da maila horiek errepikatzeko gai. Nola maneiatzen dituzu aldagai horiek? Nola dakizu zertan eta zein unetan esku hartu?  
-markt_5: Plan zehatza duen kirolaria, entrenatzailearekin prestaturikoa, lehiaketako presioaren aurrean erabaki odolberoak eta efikazia gutxikoak hartzen hasten da. Hau nola prebenitu? 
-markt_6: Bere tentua, energia eta motibazioa hunkitzen duten egoera pertsonaletatik pasatzen ari den kirolaria. Nola egin dezakezu garaiz antzemateko?  
+markt_4_1: Sasoi onean, entrenatu duen eta errendimendu onak dituen kirolaria baina lehiaketako unean ez da maila horiek errepikatzeko gai.
+markt_4_2: Nola maneiatzen dituzu aldagai horiek?
+markt_4_3: Nola dakizu zertan eta zein unetan esku hartu?  
+markt_5_1: Plan zehatza duen kirolaria, entrenatzailearekin prestaturikoa, lehiaketako presioaren aurrean erabaki odolberoak eta efikazia gutxikoak hartzen hasten da.
+markt_5_2: Hau nola prebenitu? 
+markt_6_1: Bere tentua, energia eta motibazioa hunkitzen duten egoera pertsonaletatik pasatzen ari den kirolaria.
+markt_6_2: Nola egin dezakezu garaiz antzemateko?  
 markt_7: Nola dakizu entrenatzaileek taldeen errendimendu ezin hobearentzako giro egokia sortzen dutenentz? 
 markt_8: Kirolariaren zaintza globala interesatzen al zaizu? 
 markt_9: Zein erreminta dituzte entrenatzaileek haiek maneiatzeko?  
