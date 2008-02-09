@@ -70,6 +70,5 @@ class AdminController < ApplicationController
     @users = User.count_by_sql "select count(*) from users"
     @quests = Answer.count_by_sql "select count(*) from answers"
     @journals = Journal.find_by_sql("select * from journals order by journals.created_on desc") 
-    @emails= Journal.find_by_sql("SELECT count(*) FROM journals WHERE event like 'mailer%'")
   end
 end
