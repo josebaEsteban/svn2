@@ -236,6 +236,9 @@ label_quest_plural: Cuestionarios
 label_read: Leer...
 label_register: Registrarse
 label_registered_on: Inscrito el
+label_registration_activation_by_email: activación de cuenta por correo
+label_registration_automatic_activation: activación automática de cuenta
+label_registration_manual_activation: activación manual de cuenta
 label_reply_plural: Respuestas
 label_report: Informe
 label_report_plural: Informes
@@ -258,9 +261,6 @@ label_user: Usuario
 label_user_new: Añadir deportista
 label_user_plural: Usuarios
 label_year: Año
-label_registration_activation_by_email: activación de cuenta por correo
-label_registration_automatic_activation: activación automática de cuenta
-label_registration_manual_activation: activación manual de cuenta
 login_label_1: Has olvidado tu contraseña?
 login_label_2: Envíate un correo
 login_label_3: con información sobre como crear una nueva contraseña.
@@ -290,9 +290,13 @@ markt_13: Sea para situaciones en que el deportista y el entrenador residen en s
 markt_1: Herramienta para el manejo de las variables psicológicas del rendimiento deportivo.
 markt_2: ¿Quieres poder rendir en competición al nivel que sabes que eres capaz?
 markt_3: ¿Quieres entrenar la capacidad de manejar el estrés, la auto confianza?
-markt_4: Deportista en buena forma física, ha entrenado, tiene buenos rendimientos pero en el momento de la competición no es capaz de repetir esos niveles. ¿Como manejas esas variables? ¿Cómo sabes en qué y cuándo intervenir?
-markt_5: Deportista con un plan concreto, elaborado con el entrenador, ante la presión de la competición empieza a tomar decisiones impulsivas y poco eficaces. ¿Como prevenir eso?
-markt_6: Deportista que está pasando por situaciones personales que impactan su estado de ánimo, su energía, su motivación. ¿Como puedes detectarlo a tiempo?
+markt_4_1: Deportista en buena forma física, ha entrenado, tiene buenos rendimientos pero en el momento de la competición no es capaz de repetir esos niveles.
+markt_4_2: ¿Como manejas esas variables?
+markt_4_3: ¿Cómo sabes en qué y cuándo intervenir?
+markt_5_1: Deportista con un plan concreto, elaborado con el entrenador, ante la presión de la competición empieza a tomar decisiones impulsivas y poco eficaces.
+markt_5_2: ¿Como prevenir eso?
+markt_6_1: Deportista que está pasando por situaciones personales que impactan su estado de ánimo, su energía, su motivación.
+markt_6_2: ¿Como puedes detectarlo a tiempo?
 markt_7: ¿Como sabes si los entrenadores crean el ambiente adecuado para el rendimiento óptimo de los equipos?
 markt_8: ¿Te interesa el cuidado global del deportista?
 markt_9: ¿Que herramientas tienen los entrenadores para manejarlos?

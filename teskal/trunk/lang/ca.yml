@@ -276,6 +276,23 @@ mail_subject_lost_password: La teva contrasenya de Teskal
 mail_subject_pending: Qüestionari pendent
 mail_subject_quest: Nou qüestionari 
 mail_subject_signup: Activació del compte de Teskal
+markt_10: Teskal posa aquestes eines a la disposició dels teus entrenadors. 
+markt_11: És un concepte integral del rendiment esportiu que considera no solament les habilitats físiques i tècniques sinó la persona de l'esportista. 
+markt_12: Teskal permet mantenir un alt nivell de comunicació al duo esportista/entrenador o al grup esportista/entrenador/psicòleg.
+markt_13: Sigui per a situacions que l'esportista i l'entrenador resideixen en llocs distints, o en moments que l'esportista acudeix a competicions en altres llocs, Teskal permet el seguiment de múltiples variables que afecten a l'esportista i al seu rendiment. 
+markt_1: Eina per al maneig de les variables psicològiques del rendiment esportiu.
+markt_2: Vols poder rendir en competició al nivell que saps que ets capaç?
+markt_3: Vols entrenar la capacitat de manejar l'estrès, l'acte confiança?
+markt_4_1: Esportista en bona forma física, ha entrenat, té bons rendiments però en el moment de la competició no és capaç de repetir aquests nivells.
+markt_4_2: Com maneges aquestes variables?
+markt_4_3: Com saps en quines i quan intervenir? 
+markt_5_1: Esportista amb un pla concret, elaborat amb l'entrenador, davant la pressió de la competició comença a prendre decisions impulsives i poc eficaces.
+markt_5_2: Com prevenir això? 
+markt_6_1: Esportista que està passant per situacions personals que impacten el seu estat d'ànim, la seva energia, la seva motivació.
+markt_6_2: Com pots detectar-lo a temps? 
+markt_7: Com saps si els entrenadors creen l'ambient adequat per al rendiment òptim dels equips?
+markt_8: T'interessa la cura global de l'esportista?
+markt_9: Que eines tenen els entrenadors per a manejar-los?
 notice_account_activated: El teu compte ha estat activat. Pots entrar.
 notice_account_invalid_creditentials: Usuari o contrasenya no vàlid.
 notice_account_lost_email_sent: Se li ha enviat un correu amb instruccions per crear una contrasenya.

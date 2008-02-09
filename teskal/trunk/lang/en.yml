@@ -289,9 +289,13 @@ markt_13: Whether for situations where the athlete and coach live in different p
 markt_1: Tool to help manage the psychological variables of sport performance.
 markt_2: Do you want to be able to perform at the level you know you are able?
 markt_3: How do you train your capacity to manage stress, your self-confidence?
-markt_4: An athlete in good physical shape, well trained, having good performances that he is unable to repeat in competition. How do you handle these situations? How and when do you intervene? 
-markt_5: An athlete with a specific competition plan, developed jointly with the coach. When faced with pressure during the competition this athlete starts making impulsive, ineffective decisions. How can that be prevented? 
-markt_6: Something is going on in an athlete’s life that impacts her mood, her energy, her motivation. How can you detect it early enough? 
+markt_4_1: An athlete in good physical shape, well trained, having good performances that he is unable to repeat in competition.
+markt_4_2: How do you handle these situations?
+markt_4_3: How and when do you intervene? 
+markt_5_1: An athlete with a specific competition plan, developed jointly with the coach. When faced with pressure during the competition this athlete starts making impulsive, ineffective decisions.
+markt_5_2: How can that be prevented? 
+markt_6_1: Something is going on in an athlete’s life that impacts her mood, her energy, her motivation.
+markt_6_2: How can you detect it early enough? 
 markt_7: How do you know if the coaches are creating the right climate for the optimal performance of the teams?
 markt_8: Are you interested in the overall care of the athlete?
 markt_9: What tools do coaches have for handling care for the whole person? 
