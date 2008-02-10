@@ -33,7 +33,7 @@ class Quest3Controller < ApplicationController
     strXML=''
     #Generate the chart element
 
-    strXML = "<chart palette='2' caption='"+l(:quest3_label_0)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4'   bgcolor='ffffff' borderColor='ffffff' chartRightMargin='35'>"
+    strXML = "<chart palette='2' caption='"+l(:quest3_label_0)+"' subCaption='"+@user.name+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4'   bgcolor='ffffff' borderColor='ffffff' chartRightMargin='35'>"
     strXML = strXML + "<categories>"
     strXML = strXML + "<category label= '"+l(:quest3_label_1)+"'/>"
     strXML = strXML + "<category label= '"+l(:quest3_label_2)+"'/>"

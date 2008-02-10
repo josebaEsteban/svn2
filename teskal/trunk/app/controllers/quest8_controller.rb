@@ -34,7 +34,7 @@ class Quest8Controller < ApplicationController
 
     #Generate the chart element
     if @answers.length > 1
-      strXML = "<chart palette='2' caption='"+l(:quest8_label_0)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='0' yAxisMaxValue='10' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4'  numDivLines='4' bgcolor='ffffff' borderColor='ffffff'>"
+      strXML = "<chart palette='2' caption='"+l(:quest8_label_0)+"' subCaption='"+@user.name+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='0' yAxisMaxValue='10' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4'  numDivLines='4' bgcolor='ffffff' borderColor='ffffff'>"
       strXML = strXML +"<categories>"
       strXML = strXML + "<category label= '"+l(:quest8_label_1)+"'/>"
       strXML = strXML + "<category label= '"+l(:quest8_label_2)+"'/>"
@@ -49,7 +49,7 @@ class Quest8Controller < ApplicationController
       strXML = strXML + "<category label= '"+l(:quest8_label_10)+"'/>"
       strXML = strXML +"</categories>"
     else
-      strXML = "<chart caption='"+l(:quest8_label_0)+"' subCaption='"+@user.login+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='10' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
+      strXML = "<chart caption='"+l(:quest8_label_0)+"' subCaption='"+@user.name+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='10' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
     end
 
     for answer in @answers
