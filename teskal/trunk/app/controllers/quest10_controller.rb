@@ -36,7 +36,7 @@ class Quest10Controller < ApplicationController
 
     #Generate the chart element
     # labelDisplay='Stagger' staggerLines='2'
-    strXML = "<chart palette='2' caption='"+l(:quest10_label_0)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='0' yAxisMaxValue='10' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' chartLeftMargin='25' chartRightMargin='35'>"
+    strXML = "<chart palette='2' caption='"+l(:quest10_label_0)+"' subCaption='"+@user.name+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='0' yAxisMaxValue='10' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' chartLeftMargin='25' chartRightMargin='35'>"
     strXML = strXML +"<categories>"
     strXML = strXML + "<category label= '"+l(:quest9_label_1)+"'/>"
     strXML = strXML + "<category label= '"+l(:quest9_label_2)+"'/>"

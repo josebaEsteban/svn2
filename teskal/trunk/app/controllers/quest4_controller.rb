@@ -33,7 +33,7 @@ class Quest4Controller < ApplicationController
     strXML=''
     #Generate the chart element
     # labelDisplay='Stagger' staggerLines='2'
-    strXML = "<chart palette='2' caption='"+l(:quest4_label_1)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' chartRightMargin='35'>"
+    strXML = "<chart palette='2' caption='"+l(:quest4_label_1)+"' subCaption='"+@user.name+"' xAxisName='"+@fecha.to_s+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' chartRightMargin='35'>"
     strXML = strXML +"<categories>"
     strXML = strXML + "<category label= '"+l(:quest1_label_1)+"'/>"
     strXML = strXML + "<category label= '"+l(:quest1_label_2)+"'/>"
@@ -265,7 +265,7 @@ class Quest4Controller < ApplicationController
     @chart1= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest3", 770, 300, false, false)
 
     strXML=''
-    strXML ="<chart palette='2' caption='"+l(:quest4_label_0)+"' subCaption='"+@user.login+"' xAxisName='"+@fecha.to_s+" 'showvalues='0'  formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='100'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
+    strXML ="<chart palette='2' caption='"+l(:quest4_label_0)+"' subCaption='"+@user.name+"' xAxisName='"+@fecha.to_s+" 'showvalues='0'  formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='100'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
     strXML = strXML + "<set label= '"+l(:quest4_label_11)+"' value='"+acorta(nivel_motivacion)+"'/>"
     strXML = strXML + "<set label= '"+l(:quest4_label_12)+"' value='"+nivel_dificultad.to_s+"'/>"
     strXML = strXML + "<set label= '"+l(:quest4_label_13)+"' value='"+grado_confianza.to_s+"'/>"
