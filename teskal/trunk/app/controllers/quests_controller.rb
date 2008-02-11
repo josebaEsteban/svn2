@@ -36,27 +36,27 @@ class QuestsController < ApplicationController
   # todos los quest se crean aqui
   def create
     @answer = Answer.new(params[:answer])
-    user=User.find(session[:user_id])
+    # user=User.find(session[:user_id])
     @answer.quest_id=(params[:id])
     # rellenado por si mismo
-    if user.filled_for == session[:user_id]
+    if @logged_in_user.filled_for == session[:user_id]
       @answer.user_id=session[:user_id]
-      if user.show?
+      if @logged_in_user.show?
         @answer.browse = true
       else
-        if user.gratis? and Quest::FREE.include?(@answer.quest_id)
+        if @logged_in_user.gratis? and Quest::FREE.include?(@answer.quest_id)
           @answer.browse = true
         else
           @answer.browse = false
         end
       end
     else
-      @answer.user_id = user.filled_for
+      @answer.user_id = @logged_in_user.filled_for
       @answer.browse = false
     end
     @answer.filled_by = session[:user_id]
     @answer.ip = request.remote_ip
-    @answer.time_to_fill =  Time.now - user.start
+    @answer.time_to_fill =  Time.now - @logged_in_user.start
     # @answer.created_on = params[:created_on]
     # paso = Time.parse(@answer.created_on)
     # @answer.created_on = paso.to_datetime
@@ -87,13 +87,13 @@ class QuestsController < ApplicationController
       #   Mailer.deliver_quest(@answer,manager)
       # end  
 
-      if !athlete.managed_by.nil? and user.filled_for == session[:user_id] 
+      if !athlete.managed_by.nil? and @logged_in_user.filled_for == session[:user_id] 
         manager = User.find(athlete.managed_by)
         Mailer.deliver_quest(@answer,manager,athlete,Mailer::QUEST_NEW)
       end   
                                        
-                                       
-      if answer_show?(@answer.user_id, @answer.browse, user.managed_by)
+                               
+      if answer_show?(@answer.user_id, @answer.browse, athlete.managed_by)
          redirect_to :controller  => controlador, :action => 'show', :id => @answer.id
       else
         redirect_to :controller => 'my', :action => 'page'
