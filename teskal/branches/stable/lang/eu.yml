@@ -1,0 +1,1139 @@
+Field_Category: Kategoria
+Field_Role: Zeregin
+Field_Title: Izenburua
+PBarLoadingText: ?PBarLoadingText=Datuak kargatzen. Itxaron mesedez...
+_gloc_rule_default: '|n| n==1 ? "" : "_plural" '
+actionview_datehelper_select_day_prefix:
+actionview_datehelper_select_month_names: Urtarrila, Otsaila, Martxoa, Apirila, Maiatza, Ekaina, Uztaila, Abuztua, Iraila, Urria, Azaroa, Abendua
+actionview_datehelper_select_month_names_abbr: Urt, Ots, Mar, Api, Mai, Eka, Uzt, Abu, Ira, Urr, Aza, Abe
+actionview_datehelper_select_month_prefix:
+actionview_datehelper_select_year_prefix:
+actionview_datehelper_time_in_words_day: 1 egun
+actionview_datehelper_time_in_words_day_plural: %d egunak
+actionview_datehelper_time_in_words_hour_about: ordubete
+actionview_datehelper_time_in_words_hour_about_plural:  %d orduk
+actionview_datehelper_time_in_words_hour_about_single: ordubete 
+actionview_datehelper_time_in_words_minute: minutu 1 
+actionview_datehelper_time_in_words_minute_half: minutu erdi 
+actionview_datehelper_time_in_words_minute_less_than: minutu bat baino gutxiago  
+actionview_datehelper_time_in_words_minute_plural: minutu %d 
+actionview_datehelper_time_in_words_minute_single: minutu 1 
+actionview_datehelper_time_in_words_second_less_than: segundo 1 baino gutxiago 
+actionview_datehelper_time_in_words_second_less_than_plural: segundu %da baino gutxiago
+actionview_instancetag_blank_option: Aukeratu mesedez
+activerecord_error_accepted: onartua izan behar du
+activerecord_error_blank: ezin du zuriunerik egon
+activerecord_error_confirmation: ez dator egiaztapenarekin bat
+activerecord_error_empty: ezin du zuriunerik egon
+activerecord_error_exclusion: hartua dago
+activerecord_error_greater_than_start_date: hasiera data baino handiagoa izan behar du
+activerecord_error_inclusion: ez dago zerrendan barne sartuta
+activerecord_error_invalid: ez da baliokoa
+activerecord_error_not_a_date: ez da data egoki bat
+activerecord_error_not_a_number: ez da zenbaki bat
+activerecord_error_taken: hartua izan da / existitzen da
+activerecord_error_too_long: luzeegia da
+activerecord_error_too_short: laburregia da
+activerecord_error_wrong_length: luzera desegokia
+button_activate: Aktibatu
+button_add: Erantsi
+button_apply: Aplikatu
+button_archive: Artxibatu
+button_back: Atzera
+button_cancel: Ezeztatu
+button_change: Aldatu
+button_check_all: Seleccionar todo
+button_clear: Baliogabetu
+button_create: Sortu
+button_delete: Ezabatu
+button_download: Deskargatu
+button_edit: Berraldatu
+button_list: Zerrendatu
+button_lock: Blokeatu
+button_log_time: Log time
+button_login: Konexio
+button_move: Mugitu
+button_reply: Erantzun
+button_save: Balioztatu
+button_sort: Ordenatu
+button_submit: Bidali
+field_account: Kontua
+field_activity: Jarduera
+field_admin: Administratzailea
+field_assigned_to: Asignado a
+field_attr_firstname: Cualidad del nombre
+field_attr_lastname: Cualidad del apellido
+field_attr_login: Cualidad del identificador
+field_attr_mail: Cualidad del Email
+field_auth_source: Modo de la autentificación
+field_author: Egilea
+field_comments: Iruzkina
+field_created_on: -n sortua
+field_delay: Delay
+field_description: Deskribapena
+field_downloads: Descargak
+field_due_date: Fecha debida
+field_effective_date: Data
+field_field_format: Formatu
+field_filename: Fitxategi
+field_filesize: Tamaina
+field_firstname: Izena
+field_fixed_version: Versión corregida
+field_hide_mail: Ocultar mi email address
+field_homepage: Web Gunea
+field_is_public: Publiko
+field_is_required: Derrigorrezkoa
+field_language: Hizkuntza
+field_last_login_on: Azkenengo Konexioa
+field_lastname: Deitura(k)
+field_login: Identifikatzailea
+field_mail: Emaila
+field_mail_notification: Mail Bidezko Jakinarazpena
+field_max_length: Gehienezko Luzera
+field_min_length: Gutxienezko luzera
+field_name: Izena
+field_new_password: Pasa-hitz berria
+field_notes: Oharrak
+field_password: Pasa-hitza
+field_password_change: Pasa-hitza aldatu
+field_password_confirmation: Egiaztapena
+field_priority: Prioridad
+field_spent_on: Data
+field_start_date: Hasiera
+field_start_page: Página principal
+field_status: Estatuto
+field_subject: Gaia
+field_summary: Laburpena
+field_tracker: Tracker
+field_type: Mota
+field_updated_on: -n eguneratua
+field_url: URL
+field_user: Erabiltzaile
+field_value: Balio
+field_version: Bertsioa
+footer_1: Diseinua 
+footer_2: Kontaktua info[arroba]teskal[puntu]com
+general_csv_encoding: ISO-8859-1
+general_csv_separator: ';'
+general_day_names: Astelehena, Asteartea, Asteazkena, Osteguna, Ostirala, Larunbata, Igandea
+general_fmt_age: %d urtea
+general_fmt_age_plural: %d urteak
+general_fmt_date time_short: %%m/%%d %%H:%%M
+general_fmt_date: %%d/%%m/%%Y
+general_fmt_datetime: %%Y/%%m/%%d %%H:%%M
+general_fmt_time: %%H:%%M
+general_lang_name: 'Euskera'
+general_pdf_encoding: ISO-8859-1
+general_text_No: 'Ez'
+general_text_Yes: 'Bai'
+general_text_no: 'ez'
+general_text_yes: 'bai'
+gui_validation_error: akats 1
+gui_validation_error_plural: %d akats
+label_activity: Jarduera
+label_add_note: Ohar bat erantsi
+label_added: erantsia
+label_administration: Administrazioa
+label_ago: hace
+label_all: Guztiak
+label_all_words: Todas las palabras
+label_applied_status: Applied status
+label_assigned_to_me_issues: Peticiones que me están asignadas
+label_attachment: Fitxategi
+label_attachment_delete: Borrar el fichero
+label_attachment_new: Fitxategi berria
+label_attachment_plural: Ficheros
+label_available: Erabilgarri 
+label_book: Liburua 
+label_boolean: Boleano
+label_browse: Gainbegiratu
+label_calendar: Calendario
+label_competition: lehiaketa
+label_confirmation: Confirmación
+label_contains: contiene 
+label_current_status: egun egoera
+label_current_version: Versión actual
+label_date: Data
+label_date_from: From
+label_date_to: To
+label_day_plural: egunak
+label_deleted: ezabatua
+label_details: Xehetasunak
+label_document: Dokumentu
+label_document_new: Dokumentu berria
+label_document_plural: Dokumentuak
+label_download: %d descarga
+label_download_plural: %d deskargak
+label_equals: igual
+label_export_to: Exportar a
+label_f_hour: %.2f hour
+label_f_hour_plural: %.2f hours
+label_fill: Bete
+label_filled: Noiz betea
+label_help: Laguntza
+label_history: Historiko
+label_home: Hasiera
+label_in: en
+label_in_less_than: en menos que
+label_in_more_than: en más que
+label_information: Argibidea
+label_information_plural: Argibideak
+label_internal: Interno
+label_language_based: Language based
+label_last_changes: %d cambios del último
+label_last_login: Última conexión
+label_last_updates: Actualizado
+label_last_updates_plural: %d Actualizados
+label_less_than_ago: hace menos de
+label_library: Biblioteka 
+label_list: Zerrenda
+label_loading: Loading...
+label_logged_as: modura konektatua 
+label_login: Konexio
+label_logout: Deskonexioa
+label_max_size: Tamaño máximo
+label_me: me
+label_message_last: Last message
+label_message_new: New message
+label_message_plural: Mezuak
+label_min_max_length: gutxieneko – gehienezko luzera
+label_modification: %d modificación
+label_modification_plural: %d modificaciones
+label_modified: berraldatua
+label_my_account: Nire kontua
+label_my_athletes: Nire kirolariak
+label_my_page: Nire orria
+label_my_quest: Mis galdetegiak
+label_new: Nuevo
+label_news: Albistea
+label_next: Hurrengoa
+label_no_data: Ningunos datos a exhibir
+label_none: Bat ere ez
+label_not_contains: no contiene
+label_not_equals: no igual
+label_on: en
+label_options: Options
+label_overview: Vistazo
+label_page_index: Índice
+label_password_lost: Pasa-hitza ahaztu zaizu? 
+label_per_page: Por la página
+label_permissions: Baimenak
+label_permissions_report: Permissions report
+label_personalize_page: Personalizar esta página
+label_please_login: Konexio
+label_preview: Previo
+label_previous: Aurrekoa
+label_quest: Galdetegia 
+label_quest_avail: Galde-sortak
+label_quest_no_filled: Ez da galdetegirik bete
+label_quest_no_pending: Ez dago egin gabeko galdetegirik.
+label_quest_pending: Egin gabeko
+label_quest_pending_from: ...-tik egin gabe
+label_quest_plural: Galdetegiak 
+label_read: Leer...
+label_register: Erregistratu
+label_registered_on: (a)n inskribatua
+label_reply_plural: Replies
+label_report: Txostena
+label_report_plural: Txostenak
+label_result: %d emaitza
+label_result_plural: %d emaitzak
+label_role: Rola
+label_role_1: doako kontua
+label_role_2: kirolaria
+label_role_3: entrenatzailea
+label_role_4: tutorea
+label_role_and_permissions: Rolak eta baimenak 
+label_role_new: Rola berria
+label_role_plural: Rolak
+label_search: Bilaketa
+label_send_information: Erabiltzaileari bidalitako kontuaren informazioa
+label_settings: Configuración
+label_show: Erakutsi
+label_timezone: Ordu-zona
+label_user: Erabiltzailea
+label_user_new: Erabiltzaile Berria
+label_user_plural: Erabiltzaileak
+label_year: Year
+login_label_1: Pasa-hitza ahaztu duzu?
+login_label_2: Bidali zaitez mail bat
+login_label_3: pasa-hitz berri bat eratzari buruzko informazioarekin.
+login_label_4: Berria Teskalen?
+login_label_5: Eratu ezazu kontu
+login_label_6: bat doan.
+mail_body_account_information: Zure Teskaleko kontuaren informazioa
+mail_body_account_information_external: Zure “%s” kontua erabili dezakezu Teskalen sartzeko.
+mail_body_book: Teskal-eko bibliotekan liburua eskuragarri daukazu
+mail_body_lost_password: Zure Teskaleko pasa-hitza aldatzeko ondorengo loturan klikatu ezazu
+mail_body_quest1: Galde-sorta bat osatu du
+mail_body_quest2: Teskalen sartuz gero ondorengo loturan ikusi dezakezu
+mail_body_quest3: Dagoeneko galde-sortaren emaitza ikusi dezakezu
+mail_body_quest4: galde sorta bat egin gabe daukazu
+mail_body_signup: Zure Teskaleko kontua aktibatzeko ondorengo loturan klikatu ezazu
+mail_subject_account_activation_request: Teskalen kontua aktibatzeko eskaera
+mail_subject_allowed: Galde-sortaren emaitza
+mail_subject_book: Teskal Biblioteka
+mail_subject_lost_password: Zure pasa-hitza Teskal
+mail_subject_pending: Egin gabeko galde-sorta
+mail_subject_quest: Galde-sorta berria
+mail_subject_signup: Kontuaren aktibazioa Teskal  
+markt_10: Teskalek erraminta horiek zure entrenatzaieen eskura jartzen ditu.  
+markt_11: Kirolariaren trebetasun fisiko eta teknikoez gain, kirolariaren pertsona bera ere kontuan hartzen dituen Kirol errendimenduaren kontzeptu integral bat da.  
+markt_12: Teskalek kirolari/entrenatzaile bikoteari nola kirolari/entrenatzaile/psikologo taldeari komunikazio maila altu bat mantentzea ahalbidetzen die.  
+markt_13: Dela kirolaria eta entrenatzailea toki ezberdinetan bizi diren kasuetarako, dela kirolaria beste lekuren batetara lehiatzera joaten den aldietarako, Teskalek kirolariari nola bere errendimenduari eragiten dioten aldagai anitzen segimendua ahalbidetzen du.
+markt_1: Kirol errendimenduaren aldagai psikologikoak maneiatzeko erreminta. 
+markt_2: Lehiaketan zuk dakizun gai zaren mailan errenditu ahal izatea nahi duzu? 
+markt_3: Estresa maneiatzeko gaitasuna, auto konfiantza alegia, entrenatu nahi al duzu?  
+markt_4_1: Sasoi onean, entrenatu duen eta errendimendu onak dituen kirolaria baina lehiaketako unean ez da maila horiek errepikatzeko gai.
+markt_4_2: Nola maneiatzen dituzu aldagai horiek?
+markt_4_3: Nola dakizu zertan eta zein unetan esku hartu?  
+markt_5_1: Plan zehatza duen kirolaria, entrenatzailearekin prestaturikoa, lehiaketako presioaren aurrean erabaki odolberoak eta efikazia gutxikoak hartzen hasten da.
+markt_5_2: Hau nola prebenitu? 
+markt_6_1: Bere tentua, energia eta motibazioa hunkitzen duten egoera pertsonaletatik pasatzen ari den kirolaria.
+markt_6_2: Nola egin dezakezu garaiz antzemateko?  
+markt_7: Nola dakizu entrenatzaileek taldeen errendimendu ezin hobearentzako giro egokia sortzen dutenentz? 
+markt_8: Kirolariaren zaintza globala interesatzen al zaizu? 
+markt_9: Zein erreminta dituzte entrenatzaileek haiek maneiatzeko?  
+notice_account_activated: Zure kontua aktibatua izan da. Sartu egin zaitezke.
+notice_account_email_exists: Jada email hau duen beste erabiltzaile bat existitzen da. Mesedez email ezberdin bat erabili. 
+notice_account_invalid_creditentials: Balio gabeko erabiltzaile edo eta pasa-hitza.
+notice_account_lost_email_sent: Pasa-hitza sortzeko behar dituzun argibideekin mezu bat bidali zaizu.
+notice_account_password_updated: Pasa-hitz eguneratua.
+notice_account_register_done: Kontu sortu berria.
+notice_account_unknown_email: Erabiltzaile ezezaguna
+notice_account_updated: Kontua berraldatu egin da.
+notice_account_wrong_password: Okerreko pasa-hitz.
+notice_can_t_change_password: Esta cuenta usa una autentificación externa. No se puede cambiar la contraseña.
+notice_file_not_found: sartu nahi zenueneko orria ez da existitzen eta ez da kendua izan ere.
+notice_locking_conflict: Data have been updated by another user.
+notice_not_authorized: Ez zaude orri honetan sartzeko baimendua.
+notice_pendant_exists: Jada burutu gabeko tipo horretako galde-sorta bat dago.  
+notice_scm_error: La entrada y/o la revisión no existe en el depósito.
+notice_successful_connection: Successful connection.
+notice_successful_create: Egokiro sortu da.
+notice_successful_delete: Successful deletion.
+notice_successful_update: Successful update.
+quest10: Antzemandako Maisutza Klimaren Galde-sorta Talde Kirolak 
+quest10_10: Lehiaketako egoerak emandako gidalerroen modu ezberdinean konpontzen usten du
+quest10_11: Kirolariak hutsen bat egiten dutenean animatu egiten ditu
+quest10_12: Kirolariek arrakasta dutela uste du modu nabarian beste guztiei nagusitzen direnean
+quest10_13: Kirolariek desio ez den moduan jokatzen dutenean haserretu egiten da
+quest10_14: Kirolariek akatsen baten ostean zuzendu behar dituenean haserretu egiten da
+quest10_15: Berarentzat Akatsek kirolaria beren defizietaz eta hobetu beharraz ohartarazten laguntzen dute
+quest10_16: Denboraldian zehar, kirolari bakoitzaren lehiaketa denbora berdina izan dadin saiatzen da
+quest10_17: Denboraldian zehar kirolariak lehiaketa kopuru berean parte hartu dezaten saiatzen da
+quest10_18: Kirolariek arrakasta dutela uste du, hauek dakiten bezain ondo egiten dutenean
+quest10_19: Lehiaketa bat jokatzen dutenenan kirolari guztiengan konfiantza osoa dauka
+quest10_1: Aurreikusitako taktikarekin bat ez datozen erabakiak hartzen usten die
+quest10_20: Kirolariek akatsen bat egiten dutenean beraiengan konfiantza mantentzen jarraitzen du
+quest10_21: Garrantzitsuena taldeak ahal bezain ondo jokatzea dela pentsatzen du
+quest10_2: Kirolariek arrakasta zailtasunak gainditzen dituztenean lortzen dutela uste du
+quest10_3: Nahiago du partida irabaztea “gauzak ondo eginda egitea” baino 
+quest10_4: Garrantzitsuena talde jokoaren kalitatearen garapena dela pentsatzen du
+quest10_5: Berarentzat aurrena partida irabaztea da eta ondoren ondo jokatzea 
+quest10_6: Gauzak ondo egiten dituztenean kirolariak zoriontzen ditu, espero denaren arabera jokatzen dute
+quest10_7: Kirolariak etorkizuneko egintzetan animatzen ditu
+quest10_8: Aspektu tekniko, taktiko, estilozko, ibilbidezko, etab.-i buruzko instrukzioak ematen ditu
+quest10_9: Kirolariek arrakasta besteek bainon heobeto egiten dutenean lortzen dutela uste du
+quest10_intro: Behean lehiaketako egoerekin eta jokabidearekin zer ikusia duten komentario eta esaldi sorta dago. Mesedez, arretaz irakurri eta entrenamenduetan zehar eta lehiaketa partiduetan zehar zure entrenatzailearen portaera hobekien deskribatzen duen zenbakia borobildu ezazu.
+quest10_label_0: Antzemandako Maisutza Klima Talde Kirolak 
+quest10_label_1: Nire entrenatzailea
+quest11: Motibazio intrintsekoaren galdetegia
+quest11_10: Sasoi onean egon nahi baldin bada guztiz ezinbestekoa bait da kirolak egitea
+quest11_11: Kirolaria izatearen ospeagatik
+quest11_12: Nire bizitzako beste aspektu batzuk garatzeko aukeratu dudan bitartekoetariko bat delako
+quest11_13: Nire ahulezietakoren bat hobetzen dudanean esperimentatzen dudan gozamenagatik
+quest11_14: Jarduera hau praktikatzen dudanean esperimentatzen dudan eszitazioagatik
+quest11_15: Nire buruarekin gustura sentitzeko ezinbestekotzat jotzen dudalako kirolen bat praktikatzea
+quest11_16: Nire trebetasunak hobetzen ditudanean sentitzen dudan gozamenarengatik
+quest11_17: Sasoi onean egotea nire inguruko jendeagatik ondo ikusia dagoelako
+quest11_18: Kirola egitea nire bizitzako parte integrala delako
+quest11_19: Nire bizitzako beste esparru batzuetan baliagarriak izan daitezken beste gauza batzuk ikasteko modu on bat delako
+quest11_1: Esperientzia suspergarriak bizitzearen plazerragatik
+quest11_20: Gustuko dudan kirola bat egiterako orduan esperimentazten ditudan emozio biziengatik
+quest11_21: Argi ez dakit; nire lekua kirol honetan ez dagoela uste dut
+quest11_22: Mugiendu zail batzuk gauzatzen ditudanean lortzen dudan gozamenarengatik
+quest11_23: Kirola praktikatzeko behar haina denbora dedikatuko ez banu gaizki sentituko nintzatekeelako
+quest11_24: Kirolaren bitartez bizitza ulertzeko dudan moduarekin erlazionaturiko printzipioak adierazi ditzazkedalako
+quest11_25: Besteei nire kirolean zenabteraino ona naizen erakusteko
+quest11_26: Niretzako entrenamendu metodo berriak aurkitzea oso atsegina delako
+quest11_27: Nire lagunekin harreman onak mantentzeko modu onenetarikoa delako
+quest11_28: Nire kirolea guztiz murgildua sentitzearen sentsazioa gustoko dudalako
+quest11_29: Kirola maiz praktikatzea beharrezkoa delako
+quest11_2: Praktikatzen dudan kirolari buruz geroz eta gehiago jakiteak eragiten didan plazerragatik
+quest11_30: Teknika berriak aurkitzearen gozamenarengatik
+quest11_31: Zeren kirola praktikatuaz niretzako garrantzitsuak diren balioak adierazi ditzazkedalako
+quest11_32: Maiz galdetzen diot nire buruari; ez naiz iristen planteatzen ditudan helburuak lortzera
+quest11_3: Lehen kirola praktikatzeko arrazoi onak izaten nituen baina egun, jarraitu ala ez galdetzen diot neure buruari
+quest11_4: Kirola praktikatzeak ni naizenaren esentzia adierazten duelako
+quest11_5: Entrenamendu teknika berriak deskubritzearen plazerragatik
+quest11_6: Jada ez daukat bat ere argi; kirol honetan arrakasta lortzeko gai ez naizenaren inpresioa daukat
+quest11_7: Ezagutzen dudan jendeagatik ondo ikusia izaten laguntzen didalako
+quest11_8: Niretzako, jendea ezagutzeko modu onenetarikoa delako
+quest11_9: Teknika zail batzuk kontrolatzen ditudanean gozamen pertsonal asko esperimentatzen dudalako
+quest11_d1_a: Motibazioa intrintsekoan duen balio baxu honek entrenamenduan inplikazio baxua duela eta egiten duenaz ez duela gozatzen suposatzen du. Entrenamenduan zeregin berriei edo eta zailei aurre egitetik ihes egiten du eta bere ahulezien hobekuntzan zentratzea kosta egiten zaio.
+quest11_d1_b: Motibazio intrintsekoan duen balio ertain honek, entrenamenduan inplikatua aurkitzen bada ere gehiago ere egon litekeela suposatzen du. Bereziki entrenamenduan, zeregin zailak proposatzen zaizkionean nolabaiteko asetasun pertsonala sentitzen du eta bere ahulezien hobekuntzan zentraturik aurkitzen da.
+quest11_d1_c: Motibazio intrintsekoaren balio altu honek entrenamenduan maila altu batean inplikatua aurkitzen dela eta egiten duenaz gozatzen duela suposatzen du. Gainera, asetasun maila altu bat sentitzen du bereziki zeregin zailei aurre egiten dienean, bai entrenamenduan nola lehiaketan, lehenago egiten saiatu ez den gauzak egiten saiatzen da eta bere ahulezien hobekuntzan oso zentratua aurkitzen da.
+quest11_d2_a: Erregulazio integratuaren maila baxu honek bere oinarrizko printzipioekin bateratasun escasa suposatzen du, bere buruarekin fidela izatearen islada batetik urrun. Kirol honek bere bizitzaren zati integral bat suposatzen duen ala ez eta honen esentziarekin bat egiten duen ere duda egiten du.
+quest11_d2_b: Erregulazio integratuaren maila honek bere buruarekiko fidela izatearen sentsazioa elikatzen duen oinarrizko printzipioekiko nolabaiteko bateratasuna suposatzen du. Gainera, kirol hau bere bizitzaren parte integrala dela kontsideratzen du eta, hein batean, bere esentzia bera ere islatzen duela.A
+quest11_d2_c: Erregulazio integratuaren maila altu honek bere oinarrizko balioekin bateratasun maila altua suposatzen du bere buruarekiko fidela izatearen sentsazio bikainarekin. Gainera, kirol hau bere bizitzaren parte integrala dela kontsideratzen du eta bere esentzia bera eregarbiki islatzen duela.
+quest11_d3_a: Identifikaturiko erregulazio motibazionalaren balio baxu honek kirol honen praktikak jendearekin kontaktatzen eta bere lagunekin harreman onak mantentzen laguntzen diotenaren idea birkontsideratuarazten diote. Bere bizitzako beste esparru batzuetara transferigarriak diren garapen pertsonal aukerarik eskainiko dion duda egiten du.
+quest11_d3_b: Identifikaturiko erregulazio motibazionalaren balio ertain honek kirol honen praktikak jendearekin kontaktatzen eta bere lagunekin harreman onak mantentzen laguntzen diotenaren idea mantenduarazten diote. Gainera bere bizitzako beste esparruetan aplikatzeko garapen pertsonalerako aukerak eskaini ahal dizkiola pentsatzen du.
+quest11_d3_c: Identifikaturiko erregulazio motibazionalaren balio altu honek kirol honen praktikak jendearekin kontaktatzen eta bere lagunekin harreman onak mantentzen laguntzen diotenaren idea sendotzen diote. Gainera bere bizitzako beste esparruetan aplikatzeko balioko zaizkion garapen pertsonalerako aukera bikainak eskaintzen dizkiola pentsatzen du.
+quest11_d4_a: Introiektaturiko erregulaziaoren balio baxu honek, kirol honek, nahiz eta arrazoi garrantzitsuagoak existitu daitezkeela uste badu ere, bere buruarekin nolabaiteko asetasuna eragiten dion sasoi onean mantetzen laguntzen diola pentsarazten dio.
+quest11_d4_b: Introiektaturiko erregulazioaren balio hau sasoi onean mantetzenko kirol hau praktikatzeko beharrarekin elkartua dago. Honek bere buruarekin ondo sentiarazten badu ere, batzuetan gaizki sentiarazten dio entrenatzea eginbehar bat bezala kontsideratzen baitu.
+quest11_d4_c: Introiektaturiko erregulazioaren balio altu hau sasoi onean mantetzenko kirol hau praktikatzeko behar garrantzitsu batekin elkartua dago. Honek bere buruarekin ondo sentiarazten badu ere, eginbehar bezala hartzen du eta entrenamendura joaten ez denean errudun sentitu liteke.
+quest11_d5_a: Motibazio estrintsekoaren maila baxu honek bere lagunen artean prestigioa izateko eta ondo kontsideratua izateko zeinen ona den erakustea beharrezkoa ez duela suposatzen du. Besteentzako sasoi onean egoteak duen balioa erlatibizatzen du.
+quest11_d5_b: Motibazio estrintsekoaren maila honek zeinen ona den erakusteak bere lagunen aurrean prestigioa eman diezaiokela eta ondo kontsideratua izaten lagundu dezakela pentsarazten dio. Baita ere, besteentzako sasoi onean egoteak nolabaiteko garrantzia duela usten du.
+quest11_d5_c: Motibazio estrintsekoaren maila altu honek zeinen ona den erakusteak bere ingurune sozialean prestigioa emango diola eta ondo kontsideratua izango dela pentsarazten dio. Baita ere, besteentzako sasoi onean egoteak garrantzitsua dela uste du. 
+quest11_d6_a: Balio baxu honek arrakasta izateko eta proposaturiko helburuak lortzekeko gaitasunarengan zalantza gutxi dituela suposatzen du. Gainera, inolaz ere ez du kirol hau ustea plantetzen.
+quest11_d6_b: Balio ertain honek, batzuetan arrakasta izateko gaitasunekiko zalantzak dituela eta proposaturiko helburuak lortzeko ezgai sentitzen dela suposatzen du, eta batzuetan, kirol hau uztea pentsatzen du.
+quest11_d6_c: Balio altu honek kirol hau uztea plantetzen ari dela suposatzen du arrakasta izateko nolabaiteko ezgaitasuna sentitzen baitu. Gainera bere jarraikortasuna arriskuan egon liteke planteatzen dituen helburuak lortzeko ezgai sentitzen baita.
+quest11_header: Zergatik praktikatzen duzu zure kirola
+quest11_intro: Behean dagoen eskalaz baliatuta adierazi ezazu mesedez zenbateraino gai hauetako bakoitzak zure kirola praktikatzeko arrazoietako batekin bat egiten duen. 
+quest11_label_0: Motibazio Autodeterminatua
+quest11_label_1: Motibazio Intrintsekoa
+quest11_label_2: Erregulazo Integratua
+quest11_label_3: Identifikaturiko erregulazioa
+quest11_label_4: Introiektaturiko erregulazioa
+quest11_label_5: Motibazio Estrintsekoa
+quest11_label_6: Amotibazioa 
+quest11_label_6: Amotibazioa  
+quest11_val_10: Amotibazioaren balio altu honek beste dimentsioak kutsatzen ditu konplexutasun eta esangura handiagoko interpretazioak egitea galeraziz. Beharrezkoa egiten da tutoreari kontsulta egitea kirolari hau egoera larrian aurkitzen bait da, arrakasta izateko nolabaiteko ezintasuna sentitzen du, bere autokonfiantza mailaren beherakada garrantzitsu batetaz lagunduta. Gainera bere iraunkortasuna arriskuan egon daiteke kirol honetan proposaturiko helburuak lortzeko duen nahasmena eta hautemandako inefikazia medio.  
+quest11_val_1: Izaera intrinsekoa duten dimentsio motibazionaletan balio altu bat ematen da, dimentsio estrintsekoetan balio baxuetaz lagunduta. Honek, dagozkion ataletan aipaturikoaz gain, autodeterminaturiko motibazio altu honek bere egintzetan efikazia altua mantentzen lagunduko diola, bere helburuetan iraunkortasuna sendotuko duela, aurre egite modu positiboen erabilpena erraztuko diola eta ongizate sentsazio handiagoetaz lagunduriko egokitze pertsonal hobeagoa lortzen lagunduko diola suposatzen du.
+quest11_val_2: Autodeterminaturiko erregulazioaren dimentsio motibazionaletan balio altu bat ematen da motibazioaren dimentsio estrintsekoen balio ertainetaz lagunduta. Printzipioz, izaera intrinsekoa duten dimentsio motibazionalen balio altuek bere egintzetan efikazia altua izaten lagunduko lagunduko diola, bere helburuetan iraunkortasuna sendotuko duela, aurre egite modu positiboen erabilpena erraztuko diola eta ongizate sentsazio handiagoetaz lagunduriko egokitze pertsonal hobeagoa lortzen lagunduko diola suposatzen du, alde batetik. Bestetik, epe laburrera dimentsio estrintsekoaren (amotibazioa) balioetan ematen den portaera zaindu beharko da zeren aipaturiko egoera motibazional positiboa minatu baitlezake, bereziki balorazio hau lehiaketa garaitik kanpo egin bada.
+quest11_val_3: Ikusi daiteken moduan baloraturiko dimentsioetan orotara balio altuak ematen dira. Hau oinarri harturik, bere egoera motibazionala kontraesankorra eta nahasia dela esan daiteke balioak motibazioaren kontrako poloen inguruan (autodeterminatua ez-autodeterminatua) pilatzen baitira. Amotibazioaren balioak oso baxuak izan ezean, edo eta lehiaketa garaian aurkitu ezean tutorearekin kontsultatzea beharrezkoa egiten da, eta bestela ere, gomendagarria litzateke iradokizun hau. Gainera gomendagarria litzateke zaintza mantentzea eta epe laburrera beste balorazioa bat egitea.
+quest11_val_4: Erregulazio autodeterminatuaren dimentsio motibazionaletan balio ertain bat ematen da ez autodeterminatuetan ematen diren balio baxuez lagunduta. Printzipioz honek suposatzen du, batetik, izaera intrinsekoa duten dimentsio motibazionalen balioek beren egintzetan efikazia maila altu bat mantentzen lagundu diezaioketela beren helburuekiko nolabaiteko iraunkortasunaz lagunduta, eta aurre egite positiboak erabiltzeko joera batekin eta, maiz ere, ongizate sentsazioekin. Dimentsio estrintsekoetan ematen diren balio baxuak modu oso positiboan baloratuak izan daitezke egoera zailen aurrean eman daitekeen inplikazio baxuaren eta neke kronikoaren kontra, bereziki kirolaria bere lehiaketa garaitik kanpo aurkitzen bada, antidotoa suposatzen baitute. Motibazio intrintsekoaren balioak sendotzen eta areagotzen saiatzea gomendatzen da.
+quest11_val_5: Bai erregulazio autodeterminatuaren dimentsio motibazionaletan nola ez-autodeterminatuetan balio ertain bat ematen da. Printzipioz honek suposatzen du, batetik, izaera intrinsekoa duten dimentsio motibazionalen balioek beren egintzetan efikazia maila altu bat mantentzen lagundu diezaioketela beren helburuekiko nolabaiteko iraunkortasunaz lagunduta. Bestetik, epe laburrera, dimentsio estrintsekoen balioen portaera zaindu beharko litzateke motibazio falta posibleari (amotibazioa) edo eta presio exogenoaren (motibazio estrintsekoa) eragin ezkorrari kontra egiteko. Komenigarria litzateke tutorearekin kontsultatzea motibazio intrintsekoari dagozkion balioak igotzeko miniestrategia bat ezartzeko.
+quest11_val_6: Erregulazio autodeterminatuaren dimentsio motibazionaletan balio ertain bat ematen da motibazioaren dimentsio estrintsekoen balio altuez lagunduta. Printzipioz honek suposatzen du, batetik, izaera intrinsekoa duten dimentsio motibazionalen balio hauek bere egintzetan efikazia maila altu bat mantentzen lagundu diezaioketela, bainon bai bere helburuekiko iraunkortasuna nola aurre egite modu positiboen erabilpena lermatuak ikusiko dira. Bestetik, dimentsio estrintsekoen (bereziki amotibazioaren) balio altu hauek errendimendu optimoak eskatzen dituen egokitze eta oreka pertsonalak lortzea oztopatuko diote. Beharrezkoa da tutorearekin kontsultatzea oreka emozional bat berrezartzeko eta bere iraunkortasuna eta jarraipena sendotzen duten neurri egokiak hartzea.
+quest11_val_7: Bai erregulazio autodeterminatuaren dimentsio motibazionaletan nola ez-autodeterminatuetan balio baxu bat ematen da. Nahiz eta bere egintzetan efikazia maila altua mantentzeko eta bere helburuak lortzeko iraunkortasunarentzako indar dinamikorik ez izan, positiboa izan daiteke kanpo kontingentziekiko daukan menpekotasun baxua. Akaso intentsitate altuen edo eta konplexutasun handiko eta zeregin bolumen handiko prestakuntza ziklo batetan aurkitzen da. Garrantzitsua izango da dimentsio estrintsekoen balioak baxu mantentzea, bereziki lehiaketa garaian bagaude, gehiegizko presioa edo eta huts egiteko beldurra ekiditeko. Tutorearekin kontsultatzea eskatzen duen egoera baten aurrean aurkitzen gera lehenbaitlehen motibazio intrintsekoaren dimentsioak areagotzeko eta estrintsekoari dagozkionak mantentzeko miniestrategia bat ezartzeko.
+quest11_val_8: Erregulazio autodeterminatuaren dimentsio motibazionaletan balio baxu bat ematen da motibazioaren dimentsio estrintsekoen balio ertainetaz lagunduta. Printzipioz, bere aurre egite moduetan modu ezkorrean eragingo duten bere egintzetan efikazia maila altua eta bere helburuetan iraunkortasuna mantentzeko indar dinamiko nahikorik ez dauka. Epe laburrera, dimentsio estrintsekoen balioetan ematen den portaera zaindu beharko da motibazio gabezia (amotibazioa) edo eta presio exogeneko egoerek (motibazio estrintsekoa) sor dezaketen eragin ezkorrei kontra egiteko. Komenigarria litzateke tutorearekin kontsultatzea motibazio intrintsekoaren dimentsioaren balioak areagotzeko eta extrinsekoari dagozkionak mantentzeko edo murrizteko miniestrategia bat ezartzeko.
+quest11_val_9: Erregulazio autodeterminatuaren dimentsio motibazionaletan balio baxu bat ematen da motibazioaren dimentsio estrintsekoen balio altuez lagunduta. Printzipioz, honek, batetik, bere aurre egite moduetan modu ezkorrean eragingo duen bere egintzetan efikazia altua eta bere helburuetan iraunkortasuna mantentzeko indar dinamikorik ez duela suposatzen du. Bestalde, dimentsio estrintsekoen (amotibazioarena bereziki) balio altu hauek, antzemandako inoren indarrengatik gehiegi mediatizaturik aurkitzen direla suposatzen du, kanpo kontingentzien menpekotasun handiarekin. Beharrezkoa da tutorearekin kontsultatzea motibazioaren dimentsio intrintsekoak igotzeko eta izaera estrintsekokoak murrizteko miniestaregia bat ezartzeko, kirol honen praktikaren jarraipena bera eragina ikusi bait daiteke.
+quest11_valor_1: 1 (ez guztiz)
+quest11_valor_2: 2 (oso gutxi)
+quest11_valor_3: 3 (pixka bat)
+quest11_valor_4: 4 (hobe esanda)
+quest11_valor_5: 5 (dexent)
+quest11_valor_6: 6 (asko)
+quest11_valor_7: 7 (guztiz)
+quest11_valor_tit_10: Profil Amotibazionala 
+quest11_valor_tit_1: Autodeterminaturiko Motibazio Profil Globala aurkezten du. 
+quest11_valor_tit_2: Autodeterminaturiko Motibazio Profil Globala aurkezten du. 
+quest11_valor_tit_3: Motibazio Bipolar Profil Globala aurkezten du. 
+quest11_valor_tit_4: Motibazio moderatu Profil Globala aurkezten du.
+quest11_valor_tit_5: Motibazio moderatu Profil Globala aurkezten du.
+quest11_valor_tit_6: Ez Autodeterminaturiko Motibazio Profil Globala aurkezten du. 
+quest11_valor_tit_7: Baxu Autodeterminaturiko Motibazio Profil Globala aurkezten du. 
+quest11_valor_tit_8: Baxu Autodeterminaturiko Motibazio Profil Globala aurkezten du. 
+quest11_valor_tit_9: Ez Autodeterminaturiko Motibazio Profil Globala aurkezten du.
+quest12: Arrakasta pertzepzioaren galdetegia
+quest12_10: Guztia dakidan bezain ondo egiten dut
+quest12_11: Nire buruari jarritako jomuga lortzen dut
+quest12_12: Argi eta garbi besteak baino gehiago naiz
+quest12_1: Nire kideak garaitzen ditut
+quest12_2: Hoberena naiz
+quest12_3: Gogor lan egiten dut
+quest12_4: Hobekuntza pertsonal argi bat erakusten dut 
+quest12_5: Besteek baino hobeto egiten dut
+quest12_6: Jendeari onena naizela erakusten diot
+quest12_7: Zailtasunak gainditzen ditut
+quest12_8: Egin ezin nezaken zerbait meneratzen dut
+quest12_9: Besteek egin ezin duten zerbait egiten dut
+quest12_d1_a: Errendimedu motibazional klimarekin elkarturiko 4 azpiko balio baxu honen arabera, entrenatzaile honentzako kirolariek lorturiko emaitzek balio baxua daukate, akaso trebezien hobekuntza baino gutxiago. Honek entrenamenduan zehar inplikazioaren areagotze bat eragingo du eta kirolarien akatsen aurrean, egonez gero, aintsietatearen kontrola erraztuko du.
+quest12_d1_b: Errendimedu motibazional klimarekin elkarturiko 4 eta 7 artean kokaturiko balio ertain honen arabera, entrenatzaile honentzako kirolariek lorturiko emaitzek balio handia daukate, maisutza klimaren antzekoak izanez gero, esfortzuarekiko konpromezua areagotzeko motibazio on batetaz hornituko dute, akatsak egonez gero, kirolariari hauen aurrean antsietatea kontrolatzen lagunduaz.
+quest12_d1_c: Errendimedu motibazional klimarekin elkarturiko 7 bainon altuagoko balio altu honen arabera, entrenatzaile honentzako kirolariek lorturiko emaitzek garantzi handiena daukate. Soilik maisutza klima motibazionalaren balio altuekin batera joanez gero esfortzuarekiko konpromezua eta inplikazioa areagotzeko motibazio on bat suposatuko du. Aipaturiko maisutza klima motibazionalari gailenduz gero, seguruenik kirolariarengan eragin ezkorra izango du erronka pertsonal handiei aurre egiterako orduan.
+quest12_d2_a: Maisutza klima motibazionala kezkagarria da maila oso baxuetan aurkitzen den heinean. Kirolarien hobekuntzak modu positibo batean baloratzea kosta egiten zaio eta egoera berrien edo eta zailtasun handikoen aurrean aurkitzen direnean deseroso eta iniziatiba sentituko dira. Entrenatzailea kirolariaren autokonparaziaren bitartez ematen diren hobekuntzen garrantzia aintzat har dezan zuzendu beharko zaio.
+quest12_d2_b: Maisutza klima motibazionala egokia bada ere, hobetu liteken maila ertain batean aurkitzen da. Positiboki baloratzen ditu kirolarien hobekuntzak, egoera berriei edo eta zailtasun handikoei jarrera onarekin aurre egiten laguntzen dielarik. Komenigarria litzateke kirolariek beren helburuak lortzeko hobekuntzek duten garrantzia azpimarratzea, hobekuntza pertsonal bat ematerako orduan, txikia bada ere, hau aintzat hartuaz eta baloratuaz.
+quest12_d2_c: Maisutza klima motibazionala positiboa da maila altuan aurkitzen bait da. Entrenatzaile hau kirolarien hobekuntza pertsonalean zentratzen da, hau izanik garrantzitsuena. Honek jarrera ezin hobeaz egoera berriei edo eta zailtasun berezikoei aurre egiten laguntzen du. Entrenamenduarekiko konpromezuarengan, antzemandako eskumenarengan eragin positibo bat sortzen du eta kirolariak izan litzazkteten akatsen aurreko antsietatea murrizten du.
+quest12_header: Kirola praktikatzerako orduan, nire entrenatzaileak arrakasta dudala uste du …dudanean
+quest12_intro: Behean lehiaketako egoerekin eta jokabidearekin zer ikusia duten komentario eta esaldi sorta dago. Mesedez, arretaz irakurri eta zure entrenatzailearen iritzia hobekien deskribatzen duen portzentaia aukeratu.
+quest12_label_0: Arrakasta pertzepzioa
+quest12_label_1: Errendimendu klima
+quest12_label_2: Maisutza klima
+quest12_valor_1: 0 (Ezer ez)
+quest12_valor_2: 100 (erabat)
+quest1: Denboraldiko lehen balorazioa
+quest1_16: Lehiaketa aurretik psikologikoki prestatzen zara
+quest1_17: Erlaxapen teknikaren batetaz baliatzen zara
+quest1_18: Kirol egoerak gainditzen zaituenean kontrola mantentzeko estrategiaren batetaz baliatzen zara
+quest1_19: Zure kiroleko kontuak bisionatzen dituzu
+quest1_20: Zure errendimendua areagotzeko bisualizazioaz baliatzen zara
+quest1_21: …-kin amezten duzu
+quest1_22: Zeure buruarekin hitz egiten duzu
+quest1_23: Zeure burua akuilatzeko zerbait egiten duzu
+quest1_24: Zeure prestakuntzan ohiturak erabiltzen dituzu
+quest1_25: Lehiaketa planen batetaz baliatzen al zara?
+quest1_26: Lehiaketak, orokorrean, kezkatzen nau
+quest1_27: Urdirik nago
+quest1_28: Gustura sentitzen naiz
+quest1_29: Neure buruaz duda egiten dut
+quest1_30: Oso urduri sentitzen naiz
+quest1_31: Eroso sentitzen naiz
+quest1_32: Lehiaketan ahal bezain ondo ez egiteak kezkatzen nau
+quest1_33: Gorputza tenko daukat
+quest1_34: Neure buruarengan konfidantza daukat
+quest1_35: Galtzeak kezkatzen nau
+quest1_36: Sabelean tentsioa daukat
+quest1_37: Seguru sentitzen naiz
+quest1_38: Presioak meneratzea kezkatzen nau
+quest1_39: Nire gorputza erlaxaturik dago
+quest1_40: Egin dezakedalaz ziur nago
+quest1_41: Gutxi errenditzeak kezkatzen nau
+quest1_42: Bihotza azeleratua doakit
+quest1_43: Ondo errendituko dudalaz ziur nago
+quest1_44: Nire helburua lortzeak kezkatzen nau
+quest1_45: Sabelean hustasun bat sentitzen dut
+quest1_46: Mentalki erlaxaturik sentitzen naiz
+quest1_47: Nire errendimenduak besteak desepzionatzea kezkatzen nau
+quest1_48: Eskutan izerdi hotza daukat
+quest1_49: Nire helburua lortzen imaginatzen naizelako daukat konfidantza nire buruarengan
+quest1_50: Kontzentratzeko kapaz ez izateak kezkatzen nau
+quest1_51: Gorputza trinko daukat
+quest1_52: Presiopean errenditzeko ziur sentitzen naiz
+quest1_53: Nire kideak garaitzen ditut
+quest1_54: Hoberena naiz
+quest1_55: Gogor lan egiten dut
+quest1_56: Hobekuntza pertsonal argi bat erakusten dut
+quest1_57: Besteek baino hobeto egiten dut
+quest1_58: Jendeari onena naizela erakusten diot
+quest1_59: Zailtasunak gainditzen ditut
+quest1_60: Egin ezin nezaken zerbait meneratzen dut
+quest1_61: Besteek egin ezin duten zerbait egiten dut
+quest1_62: Guztia dakidan bezain ondo egiten dut
+quest1_63: Nire buruari jarritako jomuga lortzen dut
+quest1_64: Argi eta garbi besteak baino gehiago naiz
+quest1_65: En que medida?
+quest1_65: Zein neurritan?
+quest1_d10_a: Behaturiko bere helburuekiko duen konfiantza maila hain baxu honek oso zaila egingo du hauek lortu ahal izatea gutxiegi eta ezegonkorra delako eta gainera, bere gaitasunekin loturiko zalantza asko eragingo ditu. Beharrezkoa da kirolariaren antsietate mailak behatzea eta, altuak izanez gero, tutorearekin kontsultatzea komenigarria da berregituratze lan orokor amankomun bat planteatzeko.
+quest1_d10_b: Behaturiko bere helburuekiko duen konfiantza maila ertainak hauek lortzeko aukerak murriztuko ditu. Honez gain, balioespenetan nolabaiteko ezegonkortasunarekin batera badoaz, 50-90 ingurukoa alegia, planteatzen dituen edozein trebetasun gauzatzeko gai sentitzeko zailtasunak dituen KOMAIL (GRACO) gutxiegi eta ezegonkorra suposatzen du. Beharrezkoa da Autoefikaziaren PDF-aren babesarekin aspektu garrantzitsu hau hobetzeko helburuarekin 3-4 saio egitea.
+quest1_d10_c: Bere helburuekiko duen konfiantza maila altua, bere balioespenetan egonkortasunak, 80-100 bitarte alegia, lagunduta badijoa hauek lortzeko konbentzimendu maila altua duela esan nahi du. Norberarengan sinesmen maila maximo honek aparteko energiaz baliatzen lagunduko dion eragin positiboa du endorfinengan. Hau da, KOMAIL altu eta egonkor bat dauka, lehiatzeko sentzazio onekin eta planteatzen dituen edozein trebezia mota gauzatu ahal izateko gaitasun handiarekin. Garrantzitsu da balio hauek AZE-aren arabera aldatzen diren ala ez ikustea zeren horrela balitz tutorearekin hitz egitea komenigarria bait litzateke.
+quest1_d11_a: Autokontrol gaitasunarekin erlazionaturiko teknika edo estrategien erabilpenarekin zer ikusia duten balio baxuak behatzen dira. Akaso oreka emozional on bat duenez, bere prestakuntzan ez du aspektu honi arreta jartzeko beharrik izan. Erlaxapen lan bat egitera bideratzea komenigarria izan liteke.
+quest1_d11_b: Balio ertain honek, noizbehinka bere prestakuntzaren zati bat positiboa den bere autokontrol gaitasuna garatzera dedikatzen diola adierazten du. Gutxiegizkoa kontsideratzen bada, komenigarria litzateke erlaxapen lan hau mantendu eta indartzea.
+quest1_d11_c: Balio altu honek erlaxapen teknikak erabiltzen ohitua dagoela eta autokontrol gaitasun ona duela adierazten du. Kasu honetan, gaitasun garrantzitsu hau mantendu eta indartzeko, nahikoa litzateke denboraldian zehar egiten diren zereginekiko zaintza jarrera bat mantentzearekin.
+quest1_d12_a: Bisionatuarekin erlazionaturiko teknika edo estrategien erabilpenarekin zer ikusia duten balio baxuak behatzen dira. Imajinagintzaren entrenamenduarekiko ere nolabaiteko zailtasunak aurkezten azaltzen dira. Garrantzitsua da bere kirolarekin zer ikusia duten materialeak bisionatzearekin batera hauek imajinatzen saiatzea. Pixkanaka pixkanaka bisionatuaren euskarria gabe bisualizazio lanak egin beharko ditu.
+quest1_d12_b: Bisionatuarekin zer ikusia duten teknika edo estrategien erabilpenean ematen diren bataz besteko balio hauek, bere prestakuntzan jarduera honen edukiak areagotu behar direla adierazten dute. Garrantzitsua da bere aktuazioarekin erlazionaturiko materialeen bisionadua eta euskarri bisual gabeko bisualizazioak bateratzea. Gainera, interesgarria litzateke bere kirolarekin erlazionaturiko ametsak gogoraraztera induzitzea.
+quest1_d12_c: Bisionatuaren estrategia edo tekniken erabilpenarekin erlazionaturiko balio altu hauek, posible den heinean gehiago potentziatu behar den trebetasun berezi bat duela esan nahi du. Gainera lehiaketako momentuekin ameztera induzitzea planteatzea interesgarria litzateke, hauetan positiboki birkreatuz eta argi gogoratuz.
+quest1_d13_a: Balio baxu honek automotibazioarekin erlazionaturiko akzio pertsonal falta bat nola bere prestakuntzan errutina gabezi bat adierazten du. Honek suposatzen du bere errendimendurako lehiaketa planen eta aurrerapen ekintzen garrantzia ez dituela ezagutzen. Zentzu honetan orientatzea eta Lehiaketako plan integralaren (LPI) eraikuntza lanean hastea.
+quest1_d13_b: Balio ertain batek, positiboki hartu behar den automotibazioarekin nola bere prestakuntzako errutina batzuekin erlazionaturiko ekintza pertsonalak egiten dituela adierazten du. Bere Lehiaketako plan integralean interesatu eta honen hobekuntzan orientatu egin beharko zaio LPI-aren edukien sesio espezifiko baten bitartez.
+quest1_d13_c: Balio altu batek, positiboki hartu behar den automotibazioarekin nola bere prestakuntzako errutina batzuekin erlazionaturiko ekintza pertsonalak egiten dituela adierazten du. Bere Lehiaketako plan integrala errebisatu eta honen berreraikuntzan lagundu LPI-aren sesio espezifiko batetan euskarriarekin.
+quest1_d14_a: EGO-arekiko orientazio motibazionalarekin elkarturiko 4 azpiko balio baxu honen arabera, kirolari honentzako lorturiko emaitzek balio baxua daukate, akaso trebezien hobekuntza baino gutxiago. Honek entrenamenduan zehar inplikazioaren areagotze bat eragingo du eta akatsen aurrean, egonez gero, aintsietatearen kontrola erraztuko du.
+quest1_d14_b: EGO-arekiko orientazio motibazionalarekin elkarturiko 4 eta 7 artean kokaturiko balio ertain honen arabera, kirolari honentzako lorturiko emaitzek balio handia daukate, ZO-aren antzekoak izanez gero, esfortzuarekiko konpromezua areagotzeko motibazio on batetaz hornituko dute, akatsak egonez gero, hauen aurrean antsietatea kontrolatzen lagunduaz.
+quest1_d14_c: EGO-arekiko orientazio motibazionalarekin elkarturiko 7 bainon altuagoko balio altu honen arabera, kirolari honentzako lorturiko emaitzek garantzi handiena daukate. Soilik ZO-aren balio altuekin batera joanez gero esfortzuarekiko konpromezua eta inplikazioa areagotzeko motibazio on bat suposatuko du. ZO-ari gailenduz gero, seguruenik kirolariarengan eragin negatiboa izango du bereziki erronka pertsonal handiei aurre egiterako orduan.a
+quest1_d15_a: Zereginarekin loturiko orientazio motibazionala (ZO) kezkagarria da maila oso baxuetan aurkitzen den heinean. Bere hobekuntzak modu positibo batean baloratzea kosta egiten zaio eta egoera berrien edo eta zailtasun handikoen aurrean atzera botatzen den heinean, bultzada bat behar izan ohi du. entrenamenduan bere asistentzia eta jarraikortasuna zaindu beharko dira autokonparaziaren bitartez bere presentziaren eta ematen diren hobekuntzen garrantzia gogoraraziaz eta indartuaz.
+quest1_d15_b: Zereginarekin loturiko orientazio motibazionala (ZO) maila ertainean aurkitzen da. Positiboki baloratzen ditu bere hobekuntzak eta egera berriei edo eta zailtasun handikoei jarrera onarekin aurre egiten die. Helburuak lortzeko hobekuntzek duten garrantzia azpimarratuaz bere esfortzuarekiko inplikazioa sendotu beharko da. Hobekuntza argi bat ematen denean, txikia bada ere, komenigarria da esfortzua aintzat hartzea eta baloratzea. Modu honetan balio hau areagotzea lortuko dugu.
+quest1_d15_c: Zereginarekin loturiko orientazio motibazionala (ZO) positiboa da maila altuan aurkitzen bait da. Bere hobekuntza propioetan zentratzen da egoera berriei edo eta zailtasun berezikoei jarrera bikainaz aurre egiten dielarik. Entrenamenduarekiko duen konpromezuagatik, antzemandako eskumen altuagatik eta akatsak hobekuntzarako tresna bezala ulertzen dituelako nabarmentzen da.
+quest1_d1_a: Tentsioaren balioak maila baxu batean aurkitzen dira. Hau positiboa da kirolaria gomendatzen zaion lanean lasai eta zentratua dagoela esan nahi bait du. 
+quest1_d1_b: Tentsioaren balioak nolabaiteko urduritasunaren ondorio edo maila ertain batean aurkitzen dira. Datorren egunetan dimentsio honen eboluzioari adi egotea gomendagarria litzateke eta, bereziki lehiaketatik oso urrun baldin bagaude, balio hauek zonalde baxuan pixkanaka pixkanaka kokatzen joan daitezen saiatzea.
+quest1_d1_c: Tentsioaren balioak maila altu batean aurkitzen dira. Hau kezkagarria da zeren seguruenik kirolari honek balio hauek jaitsi ezean ez baitu gomendatzen zaion lanean zentratzea lortuko. Lehiaketan baten parte hartze gertu izatearen ondorio izan liteke bainan horrela ez balitz, komenigarria litzateke zaintza lan bat egitea.
+quest1_d2_a: Depresioari dagokionez, bere balioak maila baxu batean aurkitzen dira. Hau positiboa da zeren kirolariak bere alde egiten dela eta estimatua dela sentitzen baitu entrenamendu saioetan zehar oso zentratua egoteaz gain oreka on bat eta sentsazioak transmitituaz.
+quest1_d2_b: Depresioari dagokionez, bere balioak maila ertain batean aurkitzen direnez pixkat kezkagarria suertatu liteke. Hau, entrenamenduaren dinamika berari kalte egin diezaioken gaizkiegon orokortu batek eraigina izan ohi da. Datorren egunetan zehar dimentsio honen garapenari adi egotea eta maila baxuan kokatu arte jaistea komenigarria da zeren bestela beste dimentsioetan eragina izan bait lezake, bereziki areriotasunaren eta tentsioaren balioak areagotuaz.
+quest1_d2_c: Depresioari dagokionez, bere balioak maila altu batean aurkitzen dira. Hau oso kezkagarria zeren seguruenik bere egoera pertsonala nahiko konplikatua bait da. Akaso bere tentuarengan eragin oso negatibo bat izaten ari diren entrenamenduaren dinamikaz kanpoko elementuak daude. Beste dimentsio negatiboak kutsatzen hastea nola edo hala ekiditea beharrezkoa da, bereziki areriotasuna eta tentsioa.
+quest1_d3_a: Areriotasunaren balioei so egiten badiegu, maila baxu batean aurkitzen direla ikusi dezakegu. Honek entrenamenduetan zentraturik mantentzen ari dela eta gauzak ematen ari diren moduarekin pozik eta asetuta sentitzen dela suposatzen du.
+quest1_d3_b: Areriotasunaren balioei so egiten badiegu, balio ertain batean aurkitzen direla ikusi ahal izango dugu, akaso, eta nahiz eta bere jokaeran modu garrantzitsu baten ez eragin, entrenamenduaren kontu batzuekin apur bat haserre aurkitzen delako. Kalte arin edo azaleko lesioen existentziaren ondorio ere izan liteke. Kasu batzuetan kirolariak balio hauek positiboki berbideratzeko gaitasuna baldin badu entrenamenduetako kargak jasateko energia gehigarria suposatzen dute.
+quest1_d3_c: Areriotasunaren balioei so egiten badiegu maila altu batean aurkitzen direla ikusi ahal izango dugu. Hau kezkagarria da zeren seguruaski gertaeren bilakaerarekin atsekabetuta eta batere konforme egongo delako. Muskuluetako kalteekin edo lesio arinen existentziarekin lotua egon daiteke. Bestelako dimentsio negatiboengan izan dezakeen eragin kutsakorra gutxitzea beharrezkoa da. Depresioaren mailan antzeko balioekin bat eginez gero egoera arriskutsu baten aurrean geundeke.
+quest1_d4_a: Kemenaren balioei so eginez gero, maila baxu batean aurkitzen direla ikusi ahal izango dugu. Hau kezkagarria bezain negatiboa da itzalita eta txispa gabe aurkitzen bait da. Litekena da kirolariak lesio arinen bat edo kalte txikiak izatea. Balioak nekearen balioekiko alderantzikatuak eta areriotasuna edo eta tentsio erregistro altuetaz lagunduak aurkitzen badira, gehiegizko entrenamendu kasu posible baten aurrean geundeke. Nolanahi ere, gomendagarria litzateke zergatiak identifikatzea eta, behar izanez gero, balio hoberenak berreskuratzeko egun batzuetako atsedena hartzea.
+quest1_d4_b: Kemenaren balioei so egiten badiegu, maila ertain batean aurkitzen direla ikusi ahal izango dugu. Hau, printzipioz normaltasunaren baitan sartzen da, bereziki mailaren goiko zonaldean aurkitzen badira. Baliteke ere entrenamendu saio gogor baten ostean jasoak izanaren ondorio izatea. Areriotasuna eta depresioa bezalako dimentsio negatiboen balio ertainak lagunduta aurkitzen badira, hauen efrektu kutsatzaileak ekiditeko zaintza bat ezarri beharko da.
+quest1_d4_c: Kemenaren balioei so egiten badiegu maila altu batean aurkitzen direla ikusi ahal izango dugu, errendimendurako eta aurkezten den edozein erronkari aurre egin ahal izateko zonalde hoberenean alegia. Printzipioz oreka emozional on bat ziurtatzen duen adierazle bikaina suposatzen du. Beste dimentsio animikoak maila baxuan aurkitzen badira, diagrama hau Iceberg profilari egokitzen zaiola esan genezake.
+quest1_d5_a: Nekearen kasuan, bere balioek maila baxu bat aurkezten dute. Hau positiboa da kirolaria pletoriko, entrenamenduan dena emateko eta esfortzu karga eta intentsitate altuak jasateko prest dagoela esan nahi bait du.
+quest1_d5_b: Nekearen kasuan, bere balioek maila ertain bat aurkezten dute. Hau nahiko kezkagarria suerta liteke datuak esfortzu baten edo entrenamendu baten ostean erregistratu ezean. Intentsitate altuko esfortzu garai batetan aurkitzearen ondorio ere izan liteke, baina balore hauek errekuperazio prozesu on batekin bat badatoz, normaltzat jo genitzake.
+quest1_d5_c: Nekearen kasuan, bere balioek maila altu bat aurkezten dute. Hau kezkagarria da bereziki kemenaren balioak baxu aurkitzen badira, hau da, dimentsio honekiko alderantzikatuak, sobreentrenamendu arrisku egoera baten aurrean aurkitu bait daiteke, beti ere balioak entrenamendu saio baten ostean erregistratu ez badira. Honek koadro animiko kezkagarria suposatu luke areriotasuna eta depresioa bezalako balio altuen existentziak kutsatuak izan balira.
+quest1_d6_a: Antsietate kognitiboari dagokonez balio baxu bat aurkezten du beharrezkoak diren momentuetan kontzentratzeko gaitasun handia, axolagabetasuna, lasaitasuna eta baretasuna transmitituaz.
+quest1_d6_b: Antsietate kognitiboari dagokionez balio ertain bat ikusten da. Honek batzuetan apur bat kezkati edo eta urduri aurkitzen dela esan nahi du. Balio hauek zonalde baxuan, 48 azpitik alegia, kokatu daitezen, komenigarria da lan espezifikoa egitea presio/estres bisionatuekin sendotuaz.
+quest1_d6_c: Antsietate kognitiboari dagokionean, lehiaketan zeharreko errendimendu pertsonalarekiko gehiegizko kezkarekin erlazionaturiko balio altu bat aurkezten du. Akaso momento garrantzitsuetan kontzentratzen usten ez dioten pentsamendu desordenatu gehiegi ditu. Balio altu hau murritzeko ezin bestekoa egiten da lan espezifiko bat egitea presio/estrés edukien bisionadu sesioekin batera eta balio hauek denboran mantenduko balira, tutoreari kontsultatu.
+quest1_d7_a: Autokonfiantza balioak oso baxuak dira lehiaketan zehar ziurgabetasun handia eraginaz, bereziki presio handiko egoerak ematen direnean. Balio hauek areagotzeko plan espezifiko bat garatzea ezin bestekoa egiten da. Autoefikazia edukien bisionatu bat gomendatzen da entrenatzailearen nahiz tutorearen esplikazio batetaz lagunduta.
+quest1_d7_b: Autokonfiantza maila ertain bat aurkezten du presio egoeren aurrean nolabaiteko deserotasuna transmitituaz. Akaso kosta egiten zaio bere burua lehiaketako egoerak modu arrakastatsu batean erabakitzen ikustea. Komenigarria da balio hauek hobetzeko eta zonalde altuan, 60-tik gora alegia, kokatzeko, lan espezifiko bat proposatzea.
+quest1_d7_c: Autokonfiantza maila altu bat ikusten da lehiatzeko sentsazio onekin, eroso eta presio egoeretan bere errendimendua hobezin egiteko gaitasunarekin batera.
+quest1_d8_a: Antsietate somatikoari dagokionez balio baxu bat aurkezten du lasaitasuna eta erosotasuna azalduaz, beharrezkoak diren momentuetan gorputza erlaxatzeko eta mentalki aktibo egoteko, calma expectante-a alegia, gaitasun handiarekin.
+quest1_d8_b: Antsietate somatikoari dagokionez balio ertain bat ikusten da noizbehinka apur bat urduri eta tentso dagoela suposatzen duena. Entrenamendua balio hauen murrizketara eta hobekuntzara zuzentzea eta erlajazio edukien bisionatuekin sendotuaz egitea gomendatzen da.
+quest1_d8_c: Antsietate somatikoaren balioak gehiegizkoak eta errendimenduarentzako kaltegarriak dira. Tentsio kontrolatzeko zailtasunak izango ditu eta litekena da egoera konkretu batzuetan bere ekintzetan prezipitatzea bere maila hoberenean errenditzea galeraziz. Balio hauek murrizteko ezin bestekoa egiten da erlaxapenarekin eta presio/estrés edukien bisioantuen lan espezifiko bat egitea tutorearen orientazioarekin sendotua.
+quest1_d9_a: Antzemandako zailtasun estimatua (AZE) arrakasta izateko probabilitateekin zuzenki erlkazionaturik aurkitzen da. Proposaturiko helburua geroz eta txikiagoa lortzeko geroz eta probabilitate gehiago. Beharrezkoa da, gutxienez helburuetako bi hobekuntza pertsonalaren helburuei lotuak egotea. AZEaren balio baxu hauek helburuen hautaketa xumea izan dela adierazten dute. Balorazioan nolabaiteko ezegonkortasuna azaltzen badute, kirolari honek bere helburuak hautatzeko orduan diskriminazio gaitasuna duela esan nahiko du baina seguruaski autokonfiantza maila baxuekin. Autoefikaziaren PDF-ean oinarrituriko lan espezifiko bat planteatzea ezin bestekoa egingo da.
+quest1_d9_b: Antzemandako zailtasun estimatua (AZE) arrakasta lortzeko probabilitatearekin zuzenki erlazionaturik aurkitzen da. Proposaturiko helburua geroz eta txikiagoa lortzeko geroz eta probabilitate gehiago. Beharrezkoa da, gutxienez helburuetako bi hobekuntza pertsonalaren helburuei lotuak egotea. AZEaren balio ertain hauek helburuen hautaketa mugatua izan dela adierazten dute. Balorazioan nolabaiteko egonkortasunarekin bat badatoz, 70 inguru alegia, kirolariak autoinposaturiko helburuak uniformatzeko joera duela bainan asmo handiagoan izan beharko lituzkeela esan nahiko du. Komeni da egoeraren zailtasun maila kirolariaren esku ez dagoela gogoraraztea inolaz ezingo baitu hau aldatu bainan bai arrakasta lortzeko probabilitatea hareagotu bere buruarenganako sinesmenak altu mantenduaz.
+quest1_d9_c: Antzemandako zailtasun estimatua (AZE) arrakasta lortzeko probabilitatearekin zuzenki erlazionaturik aurkitzen da. Proposaturiko helburua geroz eta txikiagoa lortzeko geroz eta probabilitate gehiago. Beharrezkoa da, gutxienez helburuetako bi hobekuntza pertsonalaren helburuei lotuak egotea. AZEaren balio altu hauek helburuen hautaketa amso handikoa izan dela adierazten dute. Balorazioan nolabaiteko aldakortasunaz lagunduak badoaz, 70-100 bitarte alegia, kirolari honek bere helburuak hautatzerako orduan diskriminaziorako gaitasun bikaina duela esan nahiko du. Komeni da egoeraren zailtasun maila kirolariaren esku ez dagoela gogoraraztea inolaz ezingo baitu hau aldatu bainan bai arrakasta lortzeko probabilitatea hareagotu bere buruarenganako sinesmenak altu mantenduaz.
+quest1_header2: Lehiaketa aurretik 
+quest1_header4: Kirola egiterakoan, … arrakasta dudala sentitzen dut
+quest1_header5: Zure kirolean lehiatzeko gai ikusted duzu zeure burua
+quest1_intro: Behean, jendeak izaten dituen sentsazioak deskribatzen dituzten hitz zerrenda bat dago. Segidan, kirolariek lehiaketa baten aurretik izan dituzten sentimenduak eta emoziak deskribatzeko erabilitako komentario batzuk azaltzen dira. Mesedez, arretaz irakurri itzazu eta momentuotan sentitzen duzuna egokien deskribatzen duen zenbaki gainean klik egin ezazu.
+quest1_label_10: Egungoa
+quest1_label_11: Antzemandako zailtasun estimatua
+quest1_label_12: Konfiantza maila
+quest1_label_13: Autokontrola
+quest1_label_14: Bisualizazioa
+quest1_label_15: Autoakzioak
+quest1_label_16: EGO-arekiko orientazio motibazionala.
+quest1_label_17: Zereginarekiko orientazio motibazionala.
+quest1_label_18: 1 Helburua
+quest1_label_19: 2 Helburua
+quest1_label_1: Tentsioa
+quest1_label_20: 3 Helburua
+quest1_label_21: 4 Helburua
+quest1_label_22: Zailtasuna
+quest1_label_23: Konfiantza
+quest1_label_2: Depresioa
+quest1_label_30: Oinarrizko Errendimenduaren Profila
+quest1_label_31: Denboraldiko Helburuak
+quest1_label_32: Autoerregulazio Sistema
+quest1_label_33: Denboraldiko helburuak
+quest1_label_34: Zailatasun maila
+quest1_label_35: Hauek lortzeko konfiantza maila
+quest1_label_3: Areriotasuna
+quest1_label_4: Kemena
+quest1_label_5: Nekea
+quest1_label_6: Antsietate Kognitiboa
+quest1_label_7: Autokonfiantza
+quest1_label_8: Antsietate somatikoa
+quest1_label_9: Ezin hobea
+quest2: Estresarekiko tolerantzia psikologikoaren galde-sorta 
+quest2_10: Edozein unetan errenditu nezakelako konbentzimendu osoa izan dut
+quest2_11: Nire kideekin izandako arazoak modu egokian konpondu ditut
+quest2_12: Sasoi onean egon naiz
+quest2_13: Entrenamenduan / lehiaketan zehar ernatu naiz
+quest2_14: Entrenamenduan / lehiaketan zehar emozionalki leher eginda sentitu naiz
+quest2_15: Entrenamendu / lehiaketa ostean muskuluetako oinazeak izan ditut
+quest2_16: Behar bezala entrenatu / lehiatu naizelako konbentzimendu osoa izan dut
+quest2_17: Atsedenaldietan zehar gauza gehiegi egiteko eskatu zait
+quest2_18: Ekitaldi aurretik mentalizatu egin naiz
+quest2_19: Nire kirola utzi nahi nuela sentitu dut
+quest2_1: Gorputzeko atal batzuk min egin didate
+quest2_20: Energiaz bete sentitu naiz
+quest2_21: Nire kideak nola sentitzen ziren aise ulertu dut
+quest2_22: Behar bezala entrenatu naizelako konbentzimendu osoa izan dut
+quest2_23: Atsedenaldiak ez dira une egokietan izan
+quest2_24: Lesioetara zaurkor sentitu naiz
+quest2_25: Entrenamendurako / lehiaketarako helburuak finkatu ditut
+quest2_26: Fisikoki sasoitsu sentitu naiz
+quest2_27: Nire kirolean frustratuta sentitu naiz
+quest2_28: Nire kirolean arazo emozionalak lasaitasunez maneiatu ditut
+quest2_2: Ezin izan dut atsedenaldietan zehar atseden hartu
+quest2_3: Nire helburuak lortu nitzakeela konbentzimendu osoa izan dut
+quest2_4: Fisikoki ondo indarberritu naiz
+quest2_5: Nire kirolean erremindua sentitu naiz
+quest2_6: Nire kirolean pena merezi duten gauza asko lortu ditut
+quest2_7: Errenditzeko mentalki prestatu naiz
+quest2_8: Entrenamenduan / lehiaketan zehar muskulatura tenko / gogortua izan dut
+quest2_9: Atseden hartzeko tarte txikia zegoelako impresio izan dut
+quest2_d1_a: Etendako atsedenaldiarekin edo eta errekuperazioaren gabeziarekin zer ikusia duten balore baxuak medio, proposaturiko lan karga maila egokiak izan dela pentsarasten digu.
+quest2_d1_b: Etendako atsedenaldiarekin edo eta errekuperazioaren gabeziarekin zer ikusia duten balore ertainak medio, entrenamenduan zehar lan karga zaindu beharko litzateke. 
+quest2_d1_c: Etendako atsedenaldiarekin edo eta errekuperazioaren gabeziarekin zer ikusia duten balore altuak medio, entrenamendu saioetako lan karga berrikusi eta akaso berregituratu beharko lirateke.
+quest2_d2_a: Iraunkortasun maila baxu bati lotuak dauden frustrazio egoerekin erlazioaturik dagoen neke emozionalari dagokionez, maila baxuetan aurkitzen da.
+quest2_d2_b: Iraunkortasun maila baxu bati lotuak dauden frustrazio egoerekin erlazioaturik dagoen neke emozionalari dagokionez, maila ertainetan aurkitzen denez, balio kezkagarri hau kirolariarekin aztertzea eskatzen du.
+quest2_d2_c: Iraunkortasun maila baxu bati lotuak dauden frustrazio egoerekin erlazioaturik dagoen neke emozionalari dagokionez, maila altuetan aurkitzen denez,balio kezkagarria honen jatorria atzematea eskatzen dute.
+quest2_d3_a: Lesioekiko zaurkortasun baloreei so eginez gero, maila baxu batean aurkitzen direla ikusten degu. Honek egoera gogor edo eta komplexutasun handiagokoei bermez eta determinazioz aurre egiteko gaitasun ona adierazten du. 
+quest2_d3_b: Lesioekiko zaurkortasun baloreei so eginez gero, maila ertain batean aurkitzen direla ikusten degu. Honek entrenamenduan azaltzen diren egoera gogor eta harrisku handiagokoei aurre egiteko behar den erabakitzeko irmotasunarengan eragin kaltegarria izan lezake.
+quest2_d3_c: Lesioekiko zaurkortasun baloreei so eginez gero, maila altu batean aurkitzen direla ikusten degu. Honek entrenamenduan azaltzen diren egoera gogor eta harrisku handiagokoei aurre egiteko ahultasun eta ziurgabetasun pertzepzioa altu bat suposatzen du.
+quest2_d4_a: Sasoi mailari dagokionez, maila baxu batean kokatzen dela ikusten degu. Honek errendimenduarekin erlazionaturik dauden antzemandako gaitasunaren sentimendu subjektiboak kaltetzen ditu. Sasoi onean egoteak trebetasun eta konpetentzia errendimenduaren sentimendu subjektiboak neurtzen ditu, sasoi onean egotea eta bizitasunaren pertzepzioan puntuazio altuak efizienteak bezain ezinbestekoak dira fisikoki.
+quest2_d4_b: Sasoi mailari dagokionez, maila ertainean kokatzen dela ikusten dugu. Honek errendimenduarekin erlazionaturik dauden antzemandako gaitasunen sentimendu egokiak izaten lagunduko du.
+quest2_d4_c: Sasoi mailari dagokionez, maila altu batean kokatzen dela ikusten degu. Honek errendimenduarekin zer ikusia duten bizitasun eta efikazia sentimendu sakonak izateaz gain, sasoi mailaren pertzepzio altu batekin zer ikusia dute.
+quest2_d5_a: Lorpen pertsonalekin erlazionaturiko baloreei so eginez gero, maila baxu batean daudela ikusi dezakegu. Honek helburuen lorpenarekiko atsekabea edo eta taldearekiko enpatia eta apreziazio baxuak adierazten ditu.
+quest2_d5_b: Lorpen pertsonalekin erlazionaturiko baloreei so eginez gero, maila ertain batean daudela ikusi dezakegu. Honek helburuen lorpenarekiko nolabaiteko asetasuna edo eta taldearekiko enpatia eta apreziazio onargarriak adierazten ditu.
+quest2_d5_c: Lorpen pertsonalekin erlazionaturiko baloreei so eginez gero, maila altu batean daudela ikusi dezakegu. Honek helburuen lorpenarekiko asetasun maila altu bat eta taldearekiko enpatia eta apreziazio maila altuak adierazten ditu.
+quest2_d6_a: Kirolari honek dituen entrenamendua joan den moduari buruzko konbentzimendua eta bere prestakuntzari buruzko uste baxuak medio, azkenaldiko entrenamendu dinamika berrikustea beharrezko egiten dute. 
+quest2_d6_b: Kirolari honek dituen entrenamendua joan den moduari buruzko konbentzimendua eta bere prestakuntzari buruzko usteak balore ertainetan kokatzen dira. Akaso nahiz eta bere prestakuntzan modu garrantzitsuan eragin ez duten, entrenamendu dinamikaren gaineko interferentzia batzuk existitu dira azkenaldian. 
+quest2_d6_c: Kirolari honek dituen entrenamendua joan den moduari buruzko konbentzimendua eta bere prestakuntzari buruzko usteak balore altuetan kokatzen dira. Honek, buruturiko entrenamendu bakoitzeko autoasetasun eta sentsazio atseginak eragiten ditu. 
+quest2_d7_a: Badirudienez bere prestakuntzan automotibazioa eta autoinposaturiko helburuen finkatzea bezalako trebetasun mentaletaz baliatzea kosta egiten zaio balio baxuak aurkezten bait ditu dimentsio honetan. Lorpenare araberako PDF-ean oinarrituriko lan espezifiko bat egitea beharrezkoa egiten da.
+quest2_d7_b: Dimentsio honekin erlazionaturik dauden balio ertainak aurkezten dituen heinean bere prestakuntzan, besteak beste automotibazioa eta autoinposaturiko helburuen finkatzea bezalako trebetasun mentaletaz baliatzen dela esan dezakegu.
+quest2_d7_c: Kirolari hau automotibazioaz eta autoinposaturiko helburuen finkatzean gida eta errefortzu diren trebetasun mentaletaz baliatzen da.a
+quest2_header: azken hilabetean.
+quest2_intro: Segidan aurkezten zaizkizun entrenamendu eta lehiaketaren aspektu ezberdinekin zer ikusia duten esaldi sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotazunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbakia borobilduaz.
+quest2_label_0: Estresarekiko tolerantzia psikologikoa
+quest2_label_1: Atseden etendua
+quest2_label_2: Neke emozionala
+quest2_label_3: Lesioekiko zaurkortasuna
+quest2_label_4: Sasoi maila 
+quest2_label_5: Lorpen pertsonala
+quest2_label_6: Autoefikazia
+quest2_label_7: Autoerregulazioa
+quest2_label_8: Balorazio orokorra
+quest2_label_9: erantzunak 
+quest2_val_1: Orokorran entrenamenduko nahiz lehiaketako edozein egoerari modu egokian aurre egiten lagunduko dioten bataz besteko balioak aurkezkezten ditu bere tolerantzia mailan. Bereziki, seiñalatu ditugun errekuperazio dimentsioen balioak positiboak diren bitartean, generadoreak bere osotasunean balio baxuetan kokatzen dira. Ondorioz, kirolari hau bere osasun mailari eta errendimendurako prestazioei buruzko pertzepzio altuak dituela eta bere helburuak lortzeko determinazio osoa eta guztiz motibatua dagoela baieztatu daiteke.
+quest2_val_2: Orokorran entrenamenduko nahiz lehiaketako egoera bereziei aurre egiteko baliabideak dituela esan dezakegu aurkezten dituen tolerantzia balio positiboei so egiten badiegu. Seiñalatu ditugun moduko errekuperazio dimentsioen balioak maila ertaineko parte altuan kokatzen diren bitartean, 4 inguru, generadoreak bere osotasunean maila baxuko parte altuan kokatzen dira. Ondorioz, kirolari hau bere osasun mailari eta errendimendurako prestazioei buruzko pertzepzio egokia duela eta bere helburuak lortzeko motibatua eta gogotxu dagoela esan daiteke.
+quest2_val_3: Orokorrean, tolerantzia maila egoera delikatu batean aurkitzen da balio generatzaileen eta errekuperatzaileen artean berdintasun bat ematen den heinean. Beraz, nahiz eta seinalaturiko dimentsioek sortarazten duten estresari aurre egiteko baliabide nahikoak izan, alarma egoera batean gaudela esan liteke. Horregatik, kausa estresorea behin ezagututa modu egoki batetan heldu ahal izateko, garrantzitsua da Presioa/estresa-rekin zer ikusia duten edukietan oinarritutaok lan espezifiko bat planteatzea eta kirolariari egindako aurrez-aurreko explorazio batekin inplementu. 
+quest2_val_4: Orokorrean, tolerantzia maila oso bajuan aurkitzen da bataz besteko balio generatzaileak bataz besteko balio errekuperatzaileak baino handiagoak diren heinean. Entrenatzailearen eta kirolariaren artean egindako hausnarketatik seinalaturiko balioen identifikaziorik eratortzen ez bada, tutorearen berehalako asesoramenduarekin heltzea eskazten duen Arrisku egoera baten aurrean gaude. Kasu honetan Presioa/estresa-rekin zer ikusia duten edukietan oinarritzen den lan espezifiko bat eta tutorearen zeharkako orientazioa planteatu litezke. 
+quest2_valor_0: 0 (ezer ez)
+quest2_valor_1: 1 (inoiz gutxitan)
+quest2_valor_2: 2 (batzuetan)
+quest2_valor_3: 3 (sarri)
+quest2_valor_4: 4 (askotan)
+quest2_valor_5: 5 (ia beti)
+quest2_valor_6: 6 (beti)
+quest3: Entrenamenduko sasoi mailaren profila
+quest3_10: Haserre
+quest3_11: Tenko
+quest3_12: Triste
+quest3_13: Nekoso
+quest3_14: Aktibo
+quest3_15: Jenio txarrez  
+quest3_1: Urduri
+quest3_16: egin behar ditudan gauzei arreta handia jartzen diet
+quest3_17: garai batean egiteko gai ez nintzen gauazak egiteko gai naiz egun
+quest3_18: akatsak baditut hurrengo egunean urduri nago
+quest3_19: ariketa zaila denean, ondo egiteko gehiago saiatzen naiz
+quest3_20: planteatzen den edozein zeregin meneratzen det
+quest3_21: akatsen bat egiten dudanean urduri jarzten naiz
+quest3_22: zehar nahiz ta gauzak ez ondo atera ahaleginean jarraitzen dut
+quest3_23: burutzeko asmoa hartzen dudan hori egiten dut
+quest3_24: ariketa berriak praktikatzeak urduri jartzen nau
+quest3_25: ekintza teknikoak egiteko daukazun eskumen maila
+quest3_26: zein mailatan sentitzen zara zeure kirolean lehiatzeko gai?
+quest3_2: Babesgabe
+quest3_3: Indarrik gabe
+quest3_4: Energiaz beterik
+quest3_5: Minduta
+quest3_6: Astoratuta
+quest3_7: Zoritxarreko
+quest3_8: Nekatuta
+quest3_9: Gogotsu
+quest3_d1_a: Tentsioaren balioak maila baxu batean aurkitzen dira. Hau positiboa da kirolaria ezartzen zaion lanean lasai eta zentratua dagoela esan nahi bait du.
+quest3_d1_b: Tentsioaren balioak nolabaiteko ezinegona sortarazi lezakeen maila ertain batean aurkitzen dira. Datozen egunetan dimentsio honen bilakaera zaintzea komeni da balioak pixkanaka-pixkanaka zonalde baxuan koka daitezen saiatuaz, bereziki lehiaketatik oso urrun aurkitzen bagera.
+quest3_d1_c: Tentsioaren balioak maila oso altuan aurkitzen dira. Hau kezkagarria da litekena delako kirolari honek, balio hauek murriztu ezean, ezartzen zaion lanean ezin zentratzea. Hau lehiaketaren batetan parte hartzea hurbil egotearen ondorio izan liteke. Horrela ez balitz zaintza lan bat egitea komenigarria litzateke.
+quest3_d2_a: Depresioari dagokionez, bere balioak maila baxu batean aurkitzen dira. Hau positiboa da kirolari hau babestua eta aintzat hartua sentitzen bait da entrenamendu saioetan zehar, oso zentratua aurkitzeaz gain, oreka eta sentsazio onak transmitituaz. 
+quest3_d2_b: Depresioari dagokionez, bere balioak apur bat kezkagarria izan daiteken maila ertain batean aurkitzen dira. Batzuetan entrenamenduaren dinamika berari reagiten dion gaizkiegon orokor batek eragina izan ohi da. Datozen egunetan dimentsio honen bilakaera zaintzea eta zonalde baxuan kokatzeraino murrizten saiatzea komeni da, bereziki areriotasunaren eta tentsioaren dimentsioak areagotuaz.
+quest3_d2_c: Depresioari dagokionez, bere balioak kezkagarria den maila altu batean aurkitzen dira, litekena delako bere egoera pertsonala nahiko konplikatua izatea. Akaso bere tentuarengan modu oso negatiboan eragiten ari diren entrenamenduz kanpoko elementuak daude. Beste dimentsio negatiboak kutsatzen hastea nola edo hala ekiditea beharrezkoa da, bereziki areriotasuna eta tentsioa.
+quest3_d3_a: Areriotasunaren balioei so egiten badiegu, maila baxu batean aurkitzen direla ikusi dezakegu. Honek entrenamenduetan zentraturik mantentzen ari dela eta gauzak ematen ari diren moduarekin pozik eta asetuta sentitzen dela suposatzen du.
+quest3_d3_b: Areriotasunaren balioei so egiten badiegu, balio ertain batean aurkitzen direla ikusi ahal izango dugu, akaso, eta nahiz eta bere jokaeran modu garrantzitsu baten ez eragin, entrenamenduaren kontu batzuekin apur bat haserre aurkitzen delako. Kalte arin edo azaleko lesioen existentziaren ondorio ere izan liteke. Kasu batzuetan kirolariak balio hauek positiboki berbideratzeko gaitasuna baldin badu entrenamenduetako kargak jasateko energia gehigarria suposatzen dute.
+quest3_d3_c: Areriotasunaren balioei so egiten badiegu maila altu batean aurkitzen direla ikusi ahal izango dugu. Hau kezkagarria da zeren seguruaski gertaeren bilakaerarekin atsekabetuta eta batere konforme egongo delako. Muskuluetako kalteekin edo lesio arinen existentziarekin lotua egon daiteke. Bestelako dimentsio negatiboengan izan dezakeen eragin kutsakorra gutxitzea beharrezkoa da. Depresioaren mailan antzeko balioekin bat eginez gero egoera arriskutsu baten aurrean geundeke.
+quest3_d4_a: Kemenaren balioei so eginez gero, maila baxu batean aurkitzen direla ikusi ahal izango dugu. Hau kezkagarria bezain negatiboa da itzalita eta txispa gabe aurkitzen bait da. Litekena da kirolariak lesio arinen bat edo kalte txikiak izatea. Balioak nekearen balioekiko alderantzikatuak eta areriotasuna edo eta tentsio erregistro altuetaz lagunduak aurkitzen badira, gehiegizko entrenamendu kasu posible baten aurrean geundeke. Nolanahi ere, gomendagarria litzateke zergatiak identifikatzea eta, behar izanez gero, balio hoberenak berreskuratzeko egun batzuetako atsedena hartzea.
+quest3_d4_b: Kemenaren balioei so egiten badiegu, maila ertain batean aurkitzen direla ikusi ahal izango dugu. Hau, printzipioz normaltasunaren baitan sartzen da, bereziki mailaren goiko zonaldean aurkitzen badira. Baliteke ere entrenamendu saio gogor baten ostean jasoak izanaren ondorio izatea. Areriotasuna eta depresioa bezalako dimentsio negatiboen balio ertainak lagunduta aurkitzen badira, hauen efrektu kutsatzaileak ekiditeko zaintza bat ezarri beharko da.
+quest3_d4_c: Kemenaren balioei so egiten badiegu maila altu batean aurkitzen direla ikusi ahal izango dugu, errendimendurako eta aurkezten den edozein erronkari aurre egin ahal izateko zonalde hoberenean alegia. Printzipioz oreka emozional on bat ziurtatzen duen adierazle bikaina suposatzen du. Beste dimentsio animikoak maila baxuan aurkitzen badira, diagrama hau Iceberg profilari egokitzen zaiola esan genezake.
+quest3_d5_a: Nekearen kasuan, bere balioek maila baxu bat aurkezten dute. Hau positiboa da kirolaria pletoriko, entrenamenduan dena emateko eta esfortzu karga eta intentsitate altuak jasateko prest dagoela esan nahi bait du.
+quest3_d5_b: Nekearen kasuan, bere balioek maila ertain bat aurkezten dute. Hau nahiko kezkagarria suerta liteke datuak esfortzu baten edo entrenamendu baten ostean erregistratu ezean. Intentsitate altuko esfortzu garai batetan aurkitzearen ondorio ere izan liteke, baina balore hauek errekuperazio prozesu on batekin bat badatoz, normaltzat jo genitzake.
+quest3_d5_c: Nekearen kasuan, bere balioek maila altu bat aurkezten dute. Hau kezkagarria da bereziki kemenaren balioak baxu aurkitzen badira, hau da, dimentsio honekiko alderantzikatuak, sobreentrenamendu arrisku egoera baten aurrean aurkitu bait daiteke, beti ere balioak entrenamendu saio baten ostean erregistratu ez badira. Honek koadro animiko kezkagarria suposatu luke areriotasuna eta depresioa bezalako balio altuen existentziak kutsatuak izan balira.
+quest3_d6_a: Entrenamenduan konpromezu balio baxuak aurkezten ditu. Litekena da lanean eta exijentzia goreneko kasuak aurkezten zaizkionean kontzentratzen kostatzea, bere erantzuna hobea izan liteke. Meneratzen ez dituen zereginetan aldeko dituen egoeretan baino inplikazio maila baxuagoa da. Beste bi dimentsioetako balioak, antzemandako eskumenarena eta antsietatearena alegia, kontutan hartu beharko dira bere motibazio maila baloratzeko.
+quest3_d6_b: Entrenamendu egoerekiko konpromezuarekin eralzionaturiko balio ertainak aurkezten ditu proposatzen zaizkion zereginekiko inplikazio nahikoarekin. Nolanahi ere, gehienetan aurkezten zaion lanarekiko inplikaturik eta konprometiturik ikusten bazaio ere, zereginak konplikatu egiten direnean apur bat atzean geratu ohi da.
+quest3_d6_c: Entrenatzailearen edo eta kideen esplikazio eta azalpenekiko arreta handi baten adierazgarri den esfortzuarekiko konpromezu maila altu bat aurkezten du. Nahiz eta zereginak zailtasun maila gorenekoak izan, hauek ahalik eta ondoen egiteko, motibaturik, saituz eta proposatzen zaion dena delako lanarekiko interesa eta pertseberantzia mantentzen ditu.
+quest3_d7_a: Kirolari honek akatsekiko antsietate balio baxuak aurkezten ditu, beti lasai dago hanka zartzeari garrantzia kenduaz eta hau gertatzen denean ikasteko aukera ona dela pentsatzen duelarik.
+quest3_d7_b: Kirolari honek nolabaiteko urduritasuna aurkezten du hanka sartu dezakela uste duen zereginekiko, nolabaiteko garrantzia ematen diolarik hanka sartzeari, bereziki meneratzen ez dituen zereginak proposatzen zaizkionean. Entrenamenduan gauzak ateratzen ez zaizkionean gehiegi pentsazten du batzuetan gaizki pasatzen duelarik.
+quest3_d7_c: Akatsekiko antsietate mailetan balio altuak aurkezten ditu zeregin berriekiko edo eta konplikatuekiko egonezin eta urduritasun altuak erakutsiaz. Hanka sartzeari gehiegizko garrantzia ematen dio eta askotan akatsen bat egiten duenean haserretu egiten da. Oso garrantzitsua da saiatzen direnak bakarrik hanka sartu dezaketela ikustaraztea eta hobekuntzarako bide bakarra saiatzea dela –hobekuntzarako bidaian akatsak beharrezko kideak dira.
+quest3_d8_a: Antzemandako eskumen mailari dagokionez balio baxuak aurkezten ditu, hau da, bere eskumen maila baloratzeko beste kirolariekin konparatzen da. Bereziki konplexuak edo eta ebazpen zailekoak diren egoeretan bere trebetasun propioen pertzepzioan sendotua izatea behar duen kasu bat da. Diagnostiko ahalik eta egokiena egin ahal izateko akatsekiko antsietatearen balioak kontutan hartu beharko dira. 
+quest3_d8_b: Kirolari honek aurkezten zaizkion zereginak garatzeko gaitasun on bat aurkezten du antzemandako eskumen maila on batekin. Nolanahi ere, pertzepzio hau hobetu dezake, bereziki bere hobekuntza propioarekiko zuzentzen bazaio. Erronka edo eta zeregin oso konplikatuei aurre egin behar dienean arreta berezia jartzea eta positiboki sendotzea.
+quest3_d8_c: Kirolari honek antzemandako eskumen maila altua aurkezten du gauza berriak egiteko gaitasun handiarekin. Beti, proposatzen zaion lana dakien bezain ondoen egiten saiatzen da domeinu eta gauzatze sentzazio mugagabe batekin, hau da, bere buruari proposatzen dizkion gauzak egiteko gai da.
+quest3_header1: Momentu honetan … sentitzen naiz
+quest3_header2: Entrenamenduan...
+quest3_header3: …Une honetan
+quest3_intro: Behean, entrenamendu egoeratan jendeak izaten dituen sentsazioak deskribatzen dituzten hitz zerrenda bat eta hauekin zer ikusia duten esaldi eta iruzkin sorta bat dago. Mesedez,bakoitza arretaz irakurri ezazu eta momentuotan sentitzen duzuna, edo eta entrenamendu saioetan zure jokabidea egokien deskribatzen duen zenbaki gainean klik egin ezazu.
+quest3_label_0: Entrenamenduan izandako sasoi mailaren profila
+quest3_label_10: egun
+quest3_label_1: Tentsioa
+quest3_label_2: Depresioa
+quest3_label_3: Areriotasuna
+quest3_label_4: Kemena
+quest3_label_5: Nekea
+quest3_label_6: Esfortzuarekin konpromezua
+quest3_label_7: Akatsekiko antsietatea
+quest3_label_8: Antzemandako eskumena
+quest3_label_9: Ezin hobea
+quest3_valor_0: 0 (ezer ez)
+quest3_valor_1: 1 (pixka bat)
+quest3_valor_2: 2 (neurrian)
+quest3_valor_3: 3 (dexente)
+quest3_valor_4: 4 (asko)
+quest3_valor_5: 0 (inoiz ere ez)
+quest3_valor_6: 1 (gutxitan)
+quest3_valor_7: 2 (noizbehinka)
+quest3_valor_8: 3 (askotan)
+quest3_valor_9: 4 (beti)
+quest4: Lehiaketa aurreko balorazioa
+quest4_0: Zailtasun maila
+quest4_1: Nahi bezala lehiatzen bazara lortzea espero duzun emaitza
+quest4_2: Motibazio maila
+quest4_3: Lehiaketak zuretzako daukan garrantzia
+quest4_4: Aurkariei buruz daukazun ezagutza maila
+quest4_5: Proba zuretzat egokia da
+quest4_6: Lehiaketa plana prestatu duzu?
+quest4_7: Zein modutan jokatu nahi duzun argi daukazu
+quest4_8: Lortzea espero duzun emaitza
+quest4_d10_a: Antzemandako zailtasun estimatua (AZE) arrakasta izateko probabilitateekin zuzenki erlkazionaturik aurkitzen da. Proposaturiko helburua geroz eta txikiagoa lortzeko geroz eta probabilitate gehiago. Beharrezkoa da, gutxienez helburuetako bi hobekuntza pertsonalaren helburuei lotuak egotea. AZEaren balio baxu hauek helburuen hautaketa xumea izan dela adierazten dute. Balorazioan nolabaiteko ezegonkortasuna azaltzen badute, kirolari honek bere helburuak hautatzeko orduan diskriminazio gaitasuna duela esan nahiko du baina seguruaski autokonfiantza maila baxuekin. Autoefikaziaren PDF-ean oinarrituriko lan espezifiko bat planteatzea ezin bestekoa egingo da.
+quest4_d10_b: Antzemandako zailtasun estimatua (AZE) arrakasta lortzeko probabilitatearekin zuzenki erlazionaturik aurkitzen da. Proposaturiko helburua geroz eta txikiagoa lortzeko geroz eta probabilitate gehiago. Beharrezkoa da, gutxienez helburuetako bi hobekuntza pertsonalaren helburuei lotuak egotea. AZEaren balio ertain hauek helburuen hautaketa mugatua izan dela adierazten dute. Balorazioan nolabaiteko egonkortasunarekin bat badatoz, 70 inguru alegia, kirolariak autoinposaturiko helburuak uniformatzeko joera duela bainan asmo handiagoan izan beharko lituzkeela esan nahiko du. Komeni da egoeraren zailtasun maila kirolariaren esku ez dagoela gogoraraztea inolaz ezingo baitu hau aldatu bainan bai -arrakasta lortzeko probabilitatea hareagotu bere buruarenganako sinesmenak altu mantenduaz-.
+quest4_d10_c: Antzemandako zailtasun estimatua (AZE) arrakasta lortzeko probabilitatearekin zuzenki erlazionaturik aurkitzen da. Proposaturiko helburua geroz eta txikiagoa lortzeko geroz eta probabilitate gehiago. Beharrezkoa da, gutxienez helburuetako bi hobekuntza pertsonalaren helburuei lotuak egotea. AZEaren balio altu hauek helburuen hautaketa amso handikoa izan dela adierazten dute. Balorazioan nolabaiteko aldakortasunaz lagunduak badoaz, 70-100 bitarte alegia, kirolari honek bere helburuak hautatzerako orduan diskriminaziorako gaitasun bikaina duela esan nahiko du. Komeni da egoeraren zailtasun maila kirolariaren esku ez dagoela gogoraraztea inolaz ezingo baitu hau aldatu bainan bai -arrakasta lortzeko probabilitatea hareagotu bere buruarenganako sinesmenak altu mantenduaz-.
+quest4_d11_a: Antzemandako autoefikaziaren balioak baxuak dira, borroka handiko lehiaketa egoeretan ziurgabetasun handia suposatzen du. Lehiaketa egoera berriak proposatu aurretik balio hau areagotzea beharrezkoa litzateke. Autoefikaziaren atalean, lehiketako plan integralari datozen lehiaketei zuzendutako miniestrategia bat gehitzea gomendatzen da. Epe ertainera, ahozko persuasioaren eta pasatako egoera arrakastatsuen bisionatuen bitartez, tutorearen laguntzarekin balio hauek areagotzen saiatu.
+quest4_d11_b: Lehiaketan zehar nolabaiteko ziurgabetasuna suposatzen duen antzemandako autoefikazia balio ertaina aurkezten du. Akaso Antzemandako zailtasun estimatuaren (AZE) efektuak eragina izan daiteke edo eta puntuan jartzeko sasoitik urrun aurkitzeagatik. Nolanahi ere, komenigarria litzateke ahozko persuasioaren eta pasatako egoera arrakastatsuen bisionatuen bitartez,balio hauek areagotzen saiatzea, eta lortuko ez balitz tutoreari kontsultatu
+quest4_d11_c: Antzemandako autoefikazia balio altu bat da lehiatzeko sentsazio onekin eta lehiaketan zehar aplikatzeko ebazpen gaitasun handiarekin. Balio ezin hobeak dira eta gehienezko balioetara gerturatu ala orain errenditzeko aukerak areagotzen dira.
+quest4_d12_a: Lehiaketako plan integralaren elaborazioaren pertzepzioa balio baxuetan aurkitzen da. Honek kirolariaren errendimendu aukerak nahiko murrizten ditu. Litekena da bere erantzun emozional bere tentuaren dimentsio negatiboengatik baldintzatua egotea eta, gainera, bere konfiantza ezegonkorra izatea. LPI-rekin zerikusia duten autoefikazia eta Ardura/Erruduntasun bezalako edukien PDF-ean oinarrituz lan espezifiko bat egin beharko da tutorearen laguntzarekin.
+quest4_d12_b: Lehiaketako plan integralaren elaborazioaren pertzepzioa balio ertainetan dagoela suposatzen du. Akaso dimentsio negatiboen erantzun emozioanala kontrolatzeko zailtasunak ditu eta bere jokaeraren gainean zalatza batzuk sortzen zaizkio. Arreta LPI-aren berregituratze emozionalean eta bere bisualizazioan jarri beharko da. Errendimenduaren balorazioa egiterako orduan aspektu hau kontutan hartu beharko da.
+quest4_d12_c: Lehiaketako plan integralaren elaborazioaren pertzepzioa balio ezin hobeetan dagoela suposatzen du. Honek dimentsio negatiboen kontrol emozionalarengan eragin positibo bat sortuko dio eta gainera bere konfiantza maila sendotuko dio. Era berean Antzemandako Errendimenduaren Balorazio (AEB) hobeago bat egiten lagunduko du.
+quest4_d1_a: Tentsioaren balioak maila baxu batean aurkitzen direnez kirolari hau lasai dagolea suposatzen du. Balio hau lehiaketa egoera honetan positiboa denentz identifikatu behar da ze errendimendu altueneko egoerei aurre egiteko zonalde ertaineko emaitzak lortzea gomendatzen bait da.
+quest4_d1_b: Tentsioaren balioak maila ertain batean aurkitzen dira. Kasu honetan positiboa da kirolaria erne eta zain egon bait da. Lehiaketa egoeretan dimentsio hau erdiko zonaldeko maila ertainean kokatzea komeni da.
+quest4_d1_c: Tentsioaren balioak bere errendimenduan modu negatibo batean eragin ahal izan duten maila altu batean aurkitzen dira. Kezkatuegi eta urduriegi litekena da lehiaketan zehar egin behar zuen lanean ezin zentratu izana.
+quest4_d2_a: Depresioaren kasuan balioak maila baxu batean aurkitzen dira. Hau positiboa da kirolari hau babestua eta aintzat hartua sentitzen bait da, lehiaketan zehar oreka emozionala eta sentsazio onak transmitituaz.
+quest4_d2_b: Depresioaren kasuan, balioak apur bat kezkagarria izan daiteken maila ertain batean aurkitzen dira. Batzuetan lehiaketaren dinamika berari eragiten dion gaizkiegon orokor batek eragina izan ohi da. Dimentsio honen bilakaera eta honelako balio baten arrazoiak aztertzea komeni da datozen lehiaketetan indargabetzeko.
+quest4_d2_c: Depresioaren kasuan balioak maila altu batean aurkitzen dira. Hau kezkagarria da litekena bait da lehiaketa konplikatu izana. Beharrezkoa litzateke bere tentuarengan modu negatiboan eragiten ari diren elementuak identifikatzea.
+quest4_d3_a: Areriotasunari so egiterakoan bere balioak kasu honetan komenigarria ez den maila baxu batean aurkitzen direla ikusi dezakegu. Balio hau lehiaketa egoera honetan positiboa den ala ez identifikatu beharko litzateke ze errendimendu goreneko egoerei aurre egiteko erdiko zonaldeko erdiko balioak lortzea gomendatzen bait da.
+quest4_d3_b: Areriotasunari so egiterakoan bere balioak maila ertain batean aurkitzen direla ikusten dugu. Hau lehiaketa egoera honentzako egokia iruditzen zaigu. Kasu hauetan balio hauek “lehiaketako egoera gogorrei” aurre egiteko aparteko energia suposatze dute.
+quest4_d3_c: Areriotasunari so egiterakoan bere balioak maila altu batean aurkitzen direla ikusten dugu. Hau kezkagarria da litekena bait da bere errendimenduan modu negatiboan eragitea. Haserreegi, bere indarrak modu ez inteligente batean erabiliko zituen eta lehiaketako momento garrantzitsuenetan bere errendimendua bere aukeren azpitik izango zen. Kirolari honi Aktibazioaren PDF-a eta Errendimendu Egoera Optimoaren (EEO) edukiak esplikatu beharko litzaizkioke.
+quest4_d4_a: Kemenaren balioak maila baxu batean aurkitzen dira. Honek lehiatzeko itzalita eta txispa gabe aurkitzen dela suposatzen du. Balioak nekearen balioekiko alderantzikatuak badaude gehiegizko entrenamendu kasu posible baten aurrean geundeke. Nolanahi ere, behin lehiaketa amaituta eta entrenamenduekin berriro hasi aurretik komenigarria litzateke egun batzuetan zehar atseden hartzea eta profil optimoaren balioetara hurbiltzea.
+quest4_d4_b: Kemenaren balioak maila ertain batean aurkitzen dira. Honek, printzipioz, bere errendimendua kaltetuko du balioak maila honen goiko zonaldean aurkitu ezean. Litekena da lehiaketa honetarako espezifikoki ez prestatu izana edo eta entrenamendu dentso eta intentsitate altuko periodo batean aurkitzea.
+quest4_d4_c: Kemenaren balioak maila altu batean aurkitzen dira, lehiatzeko zonalde optimoan alegia. Honek planteatzen zaion dena delako erronkaren aurrean arrakasta aukerak areagotzea suposatzen du. Honen arabera, printzipioz, errendimendurako dimentsio emozional positiboak lehiaketa honi garantiekin aurre egiteko oreka emozional on bat bermatzen du.
+quest4_d5_a: Nekearen balioei dagokionez maila baxu batean aurkitzen dira. Hau positiboa da kirolari hau lehiaketan zehar lehiaketa erritmo altuak eta iraupen luzeko esfortzuak jasateko pletoriko dagoela suposatzen bait du.
+quest4_d5_b: Nekearen balioei dagokionez maila ertain batean aurkitzen dira. Kasu honetan hau apur bat kezkagarria izan daiteke bere errendiemenduan modu negatiboan eragingo bait du. Balio hauek intralehiaketan egindako pasazioetatik eratortzen badira, normaltzat jo daitezke errekuperazio prozesuak kontutan hartu beharko direlarik ebaluatuak izan ahal izateko.
+quest4_d5_c: Nekearen balioei dagokionez maila altu batetan aurkitzen dira. Hau oso kezkagarria da bere lehiakortasunaren errendimenduan modu oso negatiboan eragingo bait du, beti ere lehiaketa hau prestatu ez badu eta intentsitate bolumen handiko entrenamendu bolada batekin kointziditzen ez badu. Sasoi puntuan jartzeko lan egokia egin bada, balio altu honek kirolari honengan gehiegizko entrenamendu arriskua dagoela adierazi diezaguke.
+quest4_d6_a: Antsietate kognitiboari dagokionez balio baxua aurkezten du lasaitasuna eta baretasuna transmitituaz, arduragabe, lehiaketan beharrezkoak diren uneetan kontzentratzeko gaitasun handiarekin.
+quest4_d6_b: Antsietate kognitiboari dagokionez balio ertain bat behatzen da. Honen arabera, batzuetan apur bat kezkati edo eta urduri aurkitzen dela esan nahi du. Hurrengo lehiaketari begira balio hauek murrizteko ahozko persuazioaren bitartez, presio/estres bisionatuetaz lagunduta, lehiaketan zehar egokitzapen txiki bat egitea komeni da.
+quest4_d6_c: Antsietate kognitiboari dagokionean, lehiaketan zeharreko errendimendu pertsonalarekiko gehiegizko kezkarekin erlazionaturiko balio altu bat aurkezten du. Akaso momento garrantzitsuetan kontzentratzen usten ez dioten pentsamendu desordenatu gehiegi ditu. Segidan datozen lehiaketetarako Lehiaketako Plan Integralean zentratzea beharrezkoa izango da eta, entrenamenduan, presio/estres bisionatu sesioetaz lagunduriko lan espezifiko bat egitea.
+quest4_d7_a: Autokonfiantza balioak oso baxuak dira lehiaketan zehar ziurgabetasun handia eraginaz, bereziki presio handiko egoerak sortzen direnean. Beharrezkoa egiten da Lehiaketako Plan Integralean zentratzea eta datozen lehiaketetarako ahozko persuasioaz baliatzea. Luzera begira, tutoreak gidaturiko bere esperientzia pertsonaletan eta autoefikazia edukien bisionatu sesioekin balio hauek areagotzeko entrenamenduan lan espezifiko bat proposatu.
+quest4_d7_b: Autokonfiantza maila ertain bat aurkezten du nolabaiteko deserosotasuna erakutsiaz errendimendu egoera honetan. Akaso kosta egiten zaio bere burua lehiaketako egoerak modu arrakastatsu batean erabakizten ikustea, horregatik berehalako lehiaketei begira hau hobetzeko ahozko persuasioaz baliatzea gomendatzen da. Luzera begira, balio hauek areagotzeko entrenamenduan lan espezifiko bat proposatu.
+quest4_d7_c: Autokonfiantza maila altu bat ikusten da lehiatzeko sentsazio onekin, eroso eta presio egoeretan bere errendimendua hobezin egiteko gaitasunarekin batera. Konbikzio altu honek lehiaketari bere aukera guztiekin aurre egiteko bermea eskainiko dio.
+quest4_d8_a: Antsietate somatikoari dagokionez balio baxu bat aurkezten du lasaitasuna eta erosotasuna azalduaz, beharrezkoak diren momentuetan gorputza erlaxatzeko eta mentalki aktibo egoteko, “calma expectante”-a alegia, gaitasun handiarekin. Lehiaketan errenditzeko balio ezin hobeak dira.
+quest4_d8_b: Antsietate somatikoari dagokionez balio ertain bat ikusten da noizbehinka apur bat urduri eta tentso dagoela suposatzen duena. Datozen lehiaketetarako miniestrategia bat erlaxapen/arnasketa edukiekiekin eta Lehiaketako Plan Integralaren reebaluazio kognitiboaren atalari lotua, eskaintzea gomendatzen da. Luzera begira, erlaxapen edukiekin loturiko iraganeko esperientzia arrakastatsuen bisionatu sesioekin sendotu.
+quest4_d8_c: Antsietate somatikoaren balioak gehiegizkoak eta errendimenduarentzako kaltegarriak dira. Tentsio kontrolatzeko zailtasunak izango ditu eta litekena da egoera konkretu batzuetan bere ekintzetan prezipitatzea bere maila hoberenean errenditzea galeraziz. Balio hauek murrizteko datozen lehiaketetarako erlaxapen/arnasketa edukiekin miniestrategia bat eskainztea gomendatzen da, Lehiaketako Plan Integralaren reebaluazio kognitiboaren atalari lotua eta honetan bertan integratzea. Luzera begira, erlaxapen eta Presio/estres edukiekin loturiko iraganeko esperientzia arrakastatsuen bisionatu sesioekin sendotu tutorearen gidaritzarekin.
+quest4_d9_a: Garrantzitsua litzateke autoerregulazio sisteman zentratzea eta bere hiru dimentsioetan –autokontrolean, Lehiaketako plan integralaren bisualizazioan eta aurrerapen ekintzetan- esfortzu bat egitea. Errendimendu egoera ezin hobearen (EEEH) bilaketan konsienteki lan egiteko eta ahalegintzeko aukera bat da.
+quest4_d9_b: Kirolari honen egutegian balio eta esangura erlatiboa duen lehiaketa da balioak maila ertainean kokatzen bait dira. Edozein lehiaketetan parte hartzeak suposatzen duen hobekuntza aukeran eta automotibazioan zentratzea garrantzitsua litzateke. Lehiaketako plan integralaren baitako reestrukturazio emozionalak norantza berdina mantenduko du –lehiatzeko erronka, hobekuntza aukera, eta desira aurreratzea.
+quest4_d9_c: Kirolari honentzako lehiaketa honek garrantzi eta esangura oso handiak dauzka balioal maila altuenean kokatzen bait dira. Garratzitsua litzateke balorazioa modu positiboan zuzentzea, erronkaruntz, lehiatzeko prestatzen egon bait da eta egin ahal izate hutsa pozgarria bait da.
+quest4_header: Momentu honetan … sentitzen naiz
+quest4_label_0: Lehiaketako aurre egitea 
+quest4_label_11: Esanahi pertsonala
+quest4_label_12: Antzemandako zailtasun estimatua
+quest4_label_13: Konfiantza maila
+quest4_label_14: Lehiaketako Plan integralaren pertzepzioa.
+quest4_label_1: Lehiaketako Errendimendu Profila
+quest4_valor_1: 1 (ezer es)
+quest5: Lehiaketa osteko balorazioa (Banakako Kirolak)
+quest5_10: Nire pentsamenduen kontrola eta aurre egite positiboarekiko
+quest5_11: Besteen ekintzei erantzuteko moduarekiko
+quest5_12: Entrenatzailearen helburuak jakinik hartu ditudan erabakiekiko
+quest5_13: Lehiaketan zehar izandako jokaeraren argitasunarekiko
+quest5_14: Momenturo lehiketako plan integralaren argitasunarekiko
+quest5_15: Lehiaketa osoan zehar egindako ekintza denekiko
+quest5_16: Lehiaketa osoan zehar mantentzen nuen konfiantza mailarekiko
+quest5_17: Lehiaketan zehar nuen asetasun mailarekiko
+quest5_18: Egin behar nituen gauzekin loturiko pentsamenduekiko
+quest5_19: Sentsazio onekin loturik neuzkan pentsamenduekiko
+quest5_1: Teknikoki
+quest5_20: Lehiaketan zehar mantentzen nuen interes eta borroka mailarekiko
+quest5_21: Erabilitako errendimendu gaitasunarekiko
+quest5_2: Fisikoki
+quest5_3: Asertiboki
+quest5_4: Mentalki
+quest5_5: Taktikoki 
+quest5_6: Nire emozioen kontrolarekiko
+quest5_7: Momentu konkretu batzuetan nire emoziak sentitzearen gozamenarekiko
+quest5_8: Presiopean errenditu izanaren ziurtasunarekiko
+quest5_9: Mentalki erlaxaturik egon izanaren sentsazioarekiko
+quest5_d1_a: EG-arekin zer ikusia duten balioak maila baxu batean kokatzen diren heinean lehiaketan bere jokabide tekniko-taktikoa, fisikoa eta psikologikoa bere gaitasunetatik urrun egon dela esan nahi du. Honek AEB-a baldintzatuko duenez lehikatan gertaturiko ekintza esanguratsuenak sakonean aztertzea beharrezko egingo du.
+quest5_d1_b: EG-arekin zer ikusia duten balioak maila ertain batean kokatzen dira. Honek jokabide tekniko-taktiko, fisiko eta psikologikoarekiko nolabaiteko asetasuna suposatzen du baina argi dago ez duela nahi bezala errenditzea lortu.
+quest5_d1_c: EG-arekin zer ikusia duten balioak maila altu batean kokatzen dira. Honek jokabide tekniko-taktiko, fisiko eta psikologikoarekiko asetasun handi batetaz gain AEB altu bat antzematen laguntzen dute.
+quest5_d2_a: Errendimendu emozionalari dagokionez (EE), bere balioak maila baxu batean aurkitzeak lehiaketan zehar bere erantzun emozionala behar bezala ezin izan duela erabili adierazten du. Presio momentu batzuetan ez du gozatu eta ez da ziur sentitu, hau da, nahiz eta aurre egite emozional on bat edukitzen saiatu den ez du lortu. Honelako jokaerak errepikatzen badira komenigarria izango da Emozio, estrés eta LPI-an PDF-arekin lan espezifiko bat egitea tutorearen orientazioarekin.
+quest5_d2_b: Errendimendu emozionalari dagokionez (EE) bere balioak maila ertain batean aurkitzen dira. Honek lehiaketan zehar bere erantzun emozionalak gorabeherak izan dituela esan nahi du, presio uneetan zalantzekin batera kontrol falta sentsazioa ere izan duelarik, hau da, aurre egite emozional on bat izaten saiatu da baina lehiaketan zehar mantentzea kostatu egin zaio.
+quest5_d2_c: Errendimendu emozionalari dagokionez (EE), maila altu batean kokatzen dira. Honek lehiaketan zehar erantzun emozional ezin hobea izan duela esan nahi du, presiopean erantzun izanaren segurtasunarekin, kontrol sentsazioarekin eta gozatuaz gainera, hau da, aurre egite emozional oso positiboarekin.
+quest5_d3_a: EKOG-aren kasuan balioak maila baxu batean kokatzen dira. Honek esan nahi du lehiaketan zehar ez dela konfiantza eta asetasuna mailak mantentzeko gai izan. Honez gain, momentu oso gutxitan izan ditu sentsazio onak edo eroso sentitu da.
+quest5_d3_b: EKOG-aren kasuan balioak maila ertain batean kokatzen dira. Honek lehiaketan zehar konfiantza eta asetasun mailetan gorabeherak egoteko aukera suposatzen du. Aldi berean, lehiaketan zehar izandako interesean eta sentsazioetan ere eragin ahal izan du.
+quest5_d3_c: EKOG-aren kasuan balioak maila altu batean kokatzen dira. Honek lehiaketa osoan zehar bere konfiantza eta asetasun mailak mantendu dituela esan nahi du. Sentsazio onek lagunduriko interes altu baten presentzia ere adierazten dute.
+quest5_d4_a: PORTE-aren balioei so eginez gero, maila baxu batean aurkitzen direla ikusi dezakegu. Honek aurkarien ekintzei erantzuterako orduan zailtasun ugari daudela eta LPI-a argi ez zegoela adierazten dute. Hainbat kasutan zer egin nehar zuen ez zekiela geratu da eta gainera hartutako erabakiak ez desegokiak izaz dira. Tutorearen laguntzarekin LPI-aren sakoneko berrikuspen bat egin beharko da.
+quest5_d4_b: PORTE-aren balioei so eginez gero, maila ertain batean aurkitzen direla ikusi dezakegu. Honek aurkarien ekintzei erantzuterako orduan zailtasunak daudela adierazten du nahiz eta LPI-a nahiko argi zuen. Gehienetan bazekien zer egin behar zuen eta hartutako erabakiak egokiak izan direla uste du.
+quest5_d4_c: PORTE-aren balioei so eginez gero, maila altu batean aurkitzen direla ikusi dezakegu. Honek aurkarien ekintzei modu eraginkor batean erantzun diela eta LPI-a lehiaketa osoan zehar argi izan duela esan nahi du. Halaber, momentuoro jakin izan du egin behar zuena, zalantzarik gabe eta determinazioarekin hartutako erabakietan.
+quest5_header1: Nire jokaerarekin izandako asetasun maila
+quest5_header2: Lehiaketan zehar izandako asetasun maila
+quest5_header3: Asetasun maila…
+quest5_intro: Segidan aurkezten zaizkizun lehiaketaren aspektu ezberdinekin zer ikusia duten galdera sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez,bakoitza arretaz irakurri ezazu eta momentuotan sentitzen duzuna egokien deskribatzen duen zenbaki gainean klik egin ezazu
+quest5_label_0: Banakako Antzemandako Errendimenduaren Balorazio
+quest5_label_1: Errendimendu Globala
+quest5_label_2: Errendimendu emozionala
+quest5_label_3: Errendimendu kognitiboa
+quest5_label_4: Portaeraren errendimendua
+quest5_val_a: Orohar bere AEB oso positiboa da, maila altuenera hurbilduaz aipaturiko aspektuek islatzen duten moduan. Gainera dimentsio kualitatiboen eta kuantitatiboen arteko bateratasun bat ematen da egidako balorazioaren kontsistentzia eta koherentzia indartuaz.
+quest5_val_b: Orohar bere AEB oso positiboa da, maila altuenera hurbilduaz aipaturiko aspektuek islatzen duten moduan. Aldiz, dimentsio kualitatibo eta kuantitatiboen balioen arteko diferentzia bat ematen da bien artean egindako balorazioa berrikustea beharrezkoa izango delarik bien arteko alde txikiago batetara aldaketa eginaz.
+quest5_val_c: EBALUAZIO EZ BALIOZKOA. Gurutzatutako analisian behatutako balorazio kualitatibo eta kuantitatiboaren arteko aldea onarturiko gehienezkoa gainditzen duenez galdetegia errepikatzea gomendatzen da.
+quest5_val_d: Aipaturiko aspektuek islatzen duten moduan, orohar bere AEB oso positiboa da nahiz eta bere ohiko mailaren azpitik errenditu duen. Gainera, egindako balorazioari kontsistentzia eta koherentzia ematen dion dimentsio kualitatibo eta kuantitatiboen arteko bateratasun bat ematen da.
+quest5_val_e: Aipaturiko aspektuek islatzen duten moduan, orohar bere AEB oso positiboa da nahiz eta bere ohiko mailaren azpitik errenditu duen. Aldiz, dimentsio kualitatibo eta kuantitatiboen balioen arteko diferentzia bat ematen da bien artean egindako balorazioa berrikustea beharrezkoa izango delarik bien arteko alde txikiago batetara aldaketa eginaz.
+quest5_val_f: EBALUAZIO EZ BALIOZKOA. Gurutzatutako analisian behatutako balorazio kualitatibo eta kuantitatiboaren arteko aldea onarturiko gehienezkoa gainditzen duenez galdetegia errepikatzea gomendatzen da.
+quest5_val_g: Orohar bere AEB baxua da, aipatutako aspetuek adierazten duten moduan bere gaitasunetatik urrun dagoen errendimendu maila batean dagoelarik. Positiboa da dimentsio kualitatibo eta kuantitatiboen artean bateratasun bat ematea, egindako balorazioari kontsistentzia eta koherentzia ematen bait dizkio.
+quest5_val_h: Orohar bere AEB baxua da, aipatutako aspetuek adierazten duten moduan bere gaitasunetatik urrun dagoen errendimendu maila batean dagoelarik. Gainera dimentsio kualitatibo eta kuantitatiboen balioen arteko diferentzia bat ematen da bien artean egindako balorazioa berrikustea beharrezkoa izango delarik bien arteko alde txikiago batetara aldaketa eginaz, zeren akaso, honen hobekuntza nabari batean eragin positiboa izan bait dezake.
+quest5_val_i: EBALUAZIO EZ BALIOZKOA. Gurutzatutako analisian behatutako balorazio kualitatibo eta kuantitatiboaren arteko aldea onarturiko gehienezkoa gainditzen duenez galdetegia errepikatzea gomendatzen da.
+quest5_valor_1: 1 (oso txarra)
+quest5_valor_2: 2 (txarra)
+quest5_valor_3: 3 (nola-halakoa)
+quest5_valor_4: 4 (ona)
+quest5_valor_5: 5 (oso ona)
+quest6: Lehiaketa osteko balorazioa (Talde kirola)
+quest6_10: Zure kideekin duzun komunikazio mailarekiko
+quest6_11: Talde lanari egiten diozun ekarpenarekiko
+quest6_12: Ahaleginarekin daukazun inplilazioarekiko
+quest6_13: Proposaturiko jokuaren helburuekin daukazun konfiantza mailarekiko
+quest6_14: Eman zaizun lanarekin daukazun jarrerarekiko
+quest6_15: Partiduan zehar hartu dituzun erabakiekiko
+quest6_16: Lehiaketa osoan zehar izan duzun konfiantza mailarekiko
+quest6_17: Intentsitate oso handiko egoeretan daukazun errendimendu mailarekiko
+quest6_18: Zure borroka eta pertseberantzia gaitasunarekiko
+quest6_19: Zure hobekuntzarekin daukazun jarrera baikorrarekiko
+quest6_20: Gozamen, asetasun eta sentsazio onen transmisioarekiko
+quest6_21: Taldearen errendimendu gaitasunarekin daukazun asetasuna
+quest6_6: Talde helburuekin daukazun konplizitate mailarekiko
+quest6_7: Zure kideekin duzun eskuzabaltasun eta sostenguarekiko
+quest6_8: Zure kideei diezun errespetuarekikiko
+quest6_9: Hartutako erabakiekin duzun leialtasunarekiko
+quest6_d1_a: EG-arekin zer ikusia duten balioak maila baxu batean kokatzen diren heinean lehiaketan bere jokabide tekniko-taktikoa, fisikoa eta psikologikoa bere gaitasunetatik urrun egon dela esan nahi du. Honek AEB-a baldintzatuko duenez lehikatan gertaturiko ekintza esanguratsuenak sakonean aztertzea beharrezko egingo du.
+quest6_d1_b: EG-arekin zer ikusia duten balioak maila ertain batean kokatzen dira. Honek jokabide tekniko-taktiko, fisiko eta psikologikoarekiko nolabaiteko asetasuna suposatzen du baina argi dago ez duela nahi bezala errenditzea lortu.
+quest6_d1_c: EG-arekin zer ikusia duten balioak maila altu batean kokatzen dira. Honek jokabide tekniko-taktiko, fisiko eta psikologikoarekiko asetasun handi batetaz gain AEB altu bat antzematen laguntzen dute.
+quest6_d2_a: EP-arekin zer ikusia duten balioei so eginez gero hauek maila baxu batean kokatzen direla ikusi dezakegu. Honek lehiaketan zehar gauzak gaizki joan zaizkiola eta une bat beran ere gustora ez dela egon aditzera ematen du. Gainera bere konfiantza eta borrokarako gaitasunak ez dira altuak izan. AEB-a ere baxua izanez gero eta lehiaketa ezberdinetan zehar errepikatuz gero, beharrezkoa izango da tutorearekin batera egindako sesio bat balorazio osoago bat egiteko.
+quest6_d2_b: EP-arekin zer ikusia duten balioei so eginez gero hauek maila ertain batean kokatzen direla ikusi dezakegu. Honek gauzak ez direla espero bezain erraz joan eta sentsazio onak izatea kostatu zaiola aditzera ematen digu. Nahiz eta batzuetan zalantza batzuk sortu zaizkion beti saiatu da borrokalari mantentzen.
+quest6_d2_c: EP-arekin zer ikusia duten balioei so eginez gero hauek maila altu batean kokatzen direla ikusi dezakegu. Honek lehiaketan zehar sentsazio onak izan dituela eta, bereziki, bukaeraraino konfiantza mantentzen iraunkorra izan dela aditzera ematen digu. Gaiera, honek bere hobekuntza propiorako bidea sendotzen du.
+quest6_d3_a: Zereginari egindako ekarpenari dagokionez, balioak maila baxu batean kokatzen dira. Honek suposatzen du partidan zehar egindako erabaki hartzea oker egon dela eta bai bere esfortzuarekiko inplikazioa nola gomendatu zaion eginkizunarekiko jarrerak baxuak dira. Balio hauek errepikatzen badira beharrezkoa izango da tutorearen babesarekin sesio bat egitea.
+quest6_d3_b: Zereginari egindako ekarpenari dagokionez, balioak maila ertain batean kokatzen dira. Honek partidan zehar harturiko erabaki batzuk ez direla egokiak izan aditzera ematen digute. Gainera, bai bere esfortzuarekiko inplikazioa nola jarrerarekin zer ikusia duten gomendatu zaion eginkizunarekiko jarrerak handiagoak izan zitezken.
+quest6_d3_c: ZEE-aren kasuan balioak maila altu batean kokatzen dira. Honek partidan zehar erabaki egokiak hartu dituela eta esfortzuarekiko inplikazio altuarekin esan nahi du. Bai talde lanari egindako ekarpena nola gomendatu zaion eginkizunarekiko jarrera oso asegarriak izan dira.
+quest6_d4_a: Zeregin integrazioarne kasuan, balioak maila baxu batean kokatzen dira. Honek harturiko erabakiekiko kidetasun eta leialtasun minimoa adierazten ditu. Ezin nabarmendu daitezke ezta kideei eskainitako babesa ez eta heuren arteko komunikazio maila. Tutorearen orientazioarekin batera saio bat egitea gomendatzen da.
+quest6_d4_b: ZI-aren kasuan balioak maila ertain batean kokatzen dira. Honek harturiko erabakiekiko nolabaiteko kidetasun eta leialtasun maila suposatzen du. Halaber, kideei eskainitako babesarekiko nola euren arteko komunikazio mailarekiko asetasun onak aurkezten ditu.
+quest6_d4_c: ZI-aren kasuan balioak maila altu batean kokatzen dira. Honek harturiko erabakiekiko kidetasun eta leialtasun maila altua suposatzen du. Halaber, kideei eskainitako babesarekiko nola euren arteko komunikazio mailarekiko asetasun onak nabarmentzekoak dira.
+quest6_label_0: Taldean Antzemandako Errendimendu indibiduala
+quest6_label_1: Errendimendu globala
+quest6_label_2: Errendimendu pertsonala
+quest6_label_3: Zereginari egindako ekarpena
+quest6_label_4: Zeregin integrazioa
+quest6_label_5: Balorazio orokorra
+quest7: Asetasun galdetegia (banakako kirolak) 
+quest7_10: Aurreko denboraldietan jaso dudan prestakuntza
+quest7_11: Denboraldi honetan zehar jaso dudan prestakuntza
+quest7_12: Entrenatzaileak nire zereginari buruz emandako jarraibide tekniko-taktikoak
+quest7_13: Zenbateraino nire taldeko kideak etikoak diren
+quest7_14: Nire kideek joko garbiari emten dioten zentzua
+quest7_15: Nire taldekideen kiroltasun maila
+quest7_16: Zenbateraino ahal dudan onena ematen dudan
+quest7_17: Entrenamenduan zehar dudan dedikazio pertsonal maila
+quest7_18: Lehiaketean zehar dudan gogoa
+quest7_1: Denboraldian zehar nire helburuetan lorturiko maila
+quest7_2: Aurreko denboraldian nire errendimenduan izandako hobekuntza
+quest7_3: Orain arteko nire trebetasunen hobekuntza maila
+quest7_4: Nire trebetasunak erabiltzen ditudaneko maila
+quest7_5: Nire talentuaren erabilpen maila
+quest7_6: Nire rola nire potentzialekin bat datorren maila
+quest7_7: Nola nire entrenatzaileak aintzat hartzen nauen
+quest7_8: Nirekin entrenatzaileak erakusten duen gozotasuna
+quest7_9: Entrenatzaileak zenbateraino aintzat hartzen duen nik gauzak ondo egitea
+quest7_d1_a: Errendimendu pertsonalarekin (EP) erlazionaturiko balio baxuak, bere denboraldiko helburuen lorpenarekin lotua egon daiteke, edo eta bere ahulezi eta kualitateen hobekuntzaren pertzepzioarekin. 
+quest7_d1_b: Behatzen den errendimendu pertsonalarekin (EP) erlazionaturiko bataz besteko asetasun maila bere denboraldiko helburuen lorpen pertzepzio ertainarekin lotua egon daiteke, edo eta bere ahulezi posible eta kualitateen hobekuntzarekin.
+quest7_d1_c: Behatzen den errendimendu pertsonalarekin (EP) erlazionaturiko astetasun maila altua bere denboraldiko helburuen lorpenarekin lotua dago, eta baita ere, bere ahulezi eta kualitateen hobekuntzaren pertzepzio altu batekin lotua egon daiteke.
+quest7_d2_a: Bestalde, bere gaitasunen araberako taldearekiko duen konpromezuaren asetasuna (DP), maila baxuetan aurkitzen da. Hau lehiaketan nola entrenamenduan zehar ematen den dedikazio nola inplikazio pertsonal eznahiko batekin lotua egon liteke. Akaso aspektu honengan modu negatiboan eragiten ari diren kanpo elementuak existitzen dira.
+quest7_d2_b: Bere gaitasunen araberako taldearekiko duen konpromezuaren bataz besteko asetasuna (DP) maila ertainetan aurkitzen da. Honek lehiaketan nola entrenamenduan zehar ematen den dedikazio nola inplikazio pertsonalarengan eragin lezake. Garrantzitsua da funtsezko aspektu honek planteaturiko helburu pertsonalak lortzerako orduan duen eragina gogoraraztea.
+quest7_d2_c: Bestalde, bere gaitasunen araberako taldearekiko duen konpromezuaren asetasuna (DP), maila altuetan aurkitzen da. Honek lehiaketan nola entrenamenduan zehar ematen den dedikazio nola inplikazio pertsonal bikainak suposatzen ditu. Arrakasta esfortzuren bitartez datorrela argi daukanez hau sendotzea positiboa.
+quest7_d3_a: Taldearen funtzionamendu etikoarekin (FE) eta joku garbiaren zentzuarekin erlazionaturiko asetasunaren balioak baxuak dira. Halaber, bere kideek kiroltasun gutxi dutela uste du.
+quest7_d3_b: Taldearen funtzionamendu etikoarekin (FE) eta joku garbiaren zentzuarekin erlazionaturiko asetasunaren balio hauek ertainak dira. Batzuetan, bere kideak kiroltasun handiagoarekin jokatu lezaketela uste du.
+quest7_d3_c: Taldearen funtzionamendu etikoarekin (FE) eta joku garbiaren zentzuarekin erlazionaturiko asetasunaren balio hain altu hauek taldean duen integrazioa sendotzen dute. Halaber, bere kideak ekintza guztietan kiroltasun handiarekin jokatzen dutela sentitzen du.
+quest7_d4_a: Bere trebetasunen erabilpenarekin, lehiaketa denborarekin eta kirolariari emandako eginkizuna bere gustokoenarekin edo eta bere idealarekin bat datorreneko mailarekin kirolariaren talentua maximizatzeko duen moduarekiko asetasuna maila baxuetan kokatzen da. Interesgarria litzateke bere tentua eta motibazio mailak ezagutzea.
+quest7_d4_b: Bere trebetasunen erabilpenarekin, lehiaketa denborarekin eta kirolariari emandako eginkizuna bere gustokoenarekin edo eta bere idealarekin bat datorreneko mailarekin kirolariaren talentua maximizatzeko duen moduarekiko asetasuna batzuetan nolabaiteko ezegonkortasun emozionala eragiten duen maila ertainetan kokatzen da.
+quest7_d4_c: Bere trebetasunen erabilpenarekin, lehiaketa denborarekin eta kirolariari emandako eginkizuna bere gustokoenarekin edo eta bere idealarekin bat datorreneko mailarekin kirolariaren talentua maximizatzeko duen moduarekiko asetasuna bere motibazioa sendotuko duen maila altuetan kokatzen da.
+quest7_d5_a: Bere kokapenaren prestazio tekniko-taktikoekin edo eta hobekuntza pertsonalarekin (II) lotutako jasotako informazioarekin erlazionaturiko asetasun maila baxua da.
+quest7_d5_b: Bere kokapenaren prestazio tekniko-taktikoekin edo eta hobekuntza pertsonalarekin (II) lotutako jasotako informazioarekin erlazionaturiko asetasuna maila ertain batean kokatzen da.
+quest7_d5_c: Bere kokapenaren prestazio tekniko-taktikoekin edo eta hobekuntza pertsonalarekin (II) lotutako jasotako informazioarekin erlazionaturiko asetasuna balio altuetan kokatzen da. Honek bere antzemandako autoefikazia mailarentzako errefortzu on bat suposatuko luke.
+quest7_d6_a: Ondo egindako lanarekiko begikotasunarekin, aintzat hartzearekin eta estimuarekin loturiko entrenatzaileangandik jasotako tratuarekiko (TP) asetasunari dagokionez, maila baxuetan kokatzen da. Honen arabera jasotako arreta maila ere baxua izango da.
+quest7_d6_b: Ondo egindako lanarekiko begikotasunarekin, aintzat hartzearekin eta estimuarekin loturiko entrenatzaileangandik jasotako tratuarekiko (TP) asetasunari dagokionez, maila ertainetan kokatzen da. Honen arabera jasotako arreta maila normala izan da, beste kirolariei eskainitakoa bezalakoa, alegia.
+quest7_d6_c: Ondo egindako lanarekiko begikotasunarekin, aintzat hartzearekin eta estimuarekin loturiko entrenatzaileangandik jasotako tratuarekiko (TP) asetasunari dagokionez, maila altuetan kokatzen da. Honen arabera entrenatzailearekin harreman bikaina antzematen du.
+quest7_header: …-(r)ekiko asetasun maila
+quest7_intro: Segidan aurkezten zaizkizun enrtenamenduaren eta lehiaketaren aspektu ezberdinekin zer ikusia duten esaldi sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotazunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbaki gainean klik eginaz.
+quest7_label_0: Asetasuna (banakako kirolak)
+quest7_label_1: Errendimendu pertsonala
+quest7_label_2: Dedikazio pertsonala
+quest7_label_3: Funtzionamendu etikoa
+quest7_label_4: Gaitasunaren erabilpena
+quest7_label_5: Irakaskuntza eta instrukzioa
+quest7_label_6: Tratu pertsonala
+quest7_valor_1: 1 (guztiz ase gabe)
+quest7_valor_7: 7 (guztiz asebete) 
+quest8: Asetasun galdetegia (Talde kirolak)
+quest8_10: Lehiaketan zehar jokatzen dudan denbora
+quest8_11: Taldean dudan rolaren eta nire rol gustokoenaren arteko korrespondentzia maila
+quest8_12: Lehiaketan zehar entrenatzaileak jokalariei buruz egiten duen hautaketa
+quest8_13: Lehiaketan zehar erabilitako taktikak
+quest8_14: Lehiaketan zehar entrenatzaileak egiten dituen estrategia hautaketak
+quest8_15: Lehiaketan zehar entrenatzaileak egokitzeak egiten dituen modua
+quest8_16: Entrenatzailearen joko planak
+quest8_17: Entrenatzaileak erabilgarri duen talentua konbinatzen duen modua
+quest8_21: Entrenatzailearen nirekiko leialtasuna
+quest8_22: Entrenatzailea zenbateraino dagoen nire pendiente 
+quest8_26: Nire kideek jarraibideak ematen dizkidaten maila
+quest8_27: Nire taldekideengandik jasotzen dudan orientazioa
+quest8_28: Nire kideengandik jasotzen dudan feed-back positiboa 
+quest8_29: Taldean dudan estatus soziala
+quest8_30: Taldearen bizitza sozialean jokatzen dudan rola
+quest8_31: Nire kideek sozialki onartzen nauten maila
+quest8_33: Nire kideek joko garbiari emten dioten zentzua
+quest8_35: Hobea izateko taldeak lan egiten duen modua
+quest8_36: Zenbateraino taldekideek helburu bera daukaten
+quest8_37: Taldeko helburuak lortzeko taldekideek batera lan egiteari eskaintzen dioten dedikazioa
+quest8_38: Zenbateraino taldekideek talde bezala jokatzen duten
+quest8_39: Zenbateraino ahal dudan onena ematen dudan taldearentzako
+quest8_42: Taldearekiko dudan konpromiso maila.
+quest8_4: Denboraldian zehar irabazi eta galdutako lehiaketa kopurua
+quest8_5: Azken denboraldi honetan zehar taldeak izandako errendimendu globala
+quest8_6: Orain artean taldeak zenbateraino lortu dituen denboraldi honetarako zituen helburuak
+quest8_d0_a: Errendimendu pertsonalarekin (EP) erlazionaturiko balio baxuak, bere denboraldiko helburuen lorpenarekin lotua egon daiteke, edo eta bere ahulezi eta kualitateen hobekuntzaren pertzepzioarekin.
+quest8_d0_b: Behatzen den errendimendu pertsonalarekin (EP) erlazionaturiko bataz besteko asetasun maila bere denboraldiko helburuen lorpen pertzepzio ertainarekin lotua egon daiteke, edo eta bere ahulezi posible eta kualitateen hobekuntzarekin.a
+quest8_d0_c: Behatzen den errendimendu pertsonalarekin (EP) erlazionaturiko astetasun maila altua bere denboraldiko helburuen lorpenarekin lotua dago, eta baita ere, bere ahulezi eta kualitateen hobekuntzaren pertzepzio altu batekin lotua egon daiteke.
+quest8_d1_a: Bestalde, bere gaitasunen araberako taldearekiko duen konpromezuaren asetasuna (DP), maila baxuetan aurkitzen da. Hau lehiaketan nola entrenamenduan zehar ematen den dedikazio nola inplikazio pertsonal eznahiko batekin lotua egon liteke. Akaso aspektu honengan modu negatiboan eragiten ari diren kanpo elementuak existitzen dira.
+quest8_d1_b: Bere gaitasunen araberako taldearekiko duen konpromezuaren bataz besteko asetasuna (DP) maila ertainetan aurkitzen da. Honek lehiaketan nola entrenamenduan zehar ematen den dedikazio nola inplikazio pertsonalarengan eragin lezake. Garrantzitsua da funtsezko aspektu honek planteaturiko helburu pertsonalak lortzerako orduan duen eragina gogoraraztea.
+quest8_d1_c: Bestalde, bere gaitasunen araberako taldearekiko duen konpromezuaren asetasuna (DP), maila altuetan aurkitzen da. Honek lehiaketan nola entrenamenduan zehar ematen den dedikazio nola inplikazio pertsonal bikainak suposatzen ditu. Arrakasta esfortzuren bitartez datorrela argi daukanez hau sendotzea positiboa.
+quest8_d2_a: Taldearen funtzionamendu etikoarekin (FE) eta joku garbiaren zentzuarekin erlazionaturiko asetasunaren balioak baxuak dira. Halaber, bere kideek kiroltasun gutxi dutela uste du.
+quest8_d2_b: Asetasunaren balio hauek ertainak dira. Batzuetan, bere kideak kiroltasun handiagoarekin jokatu lezaketela uste du.
+quest8_d2_c: Taldearen funtzionamendu etikoarekin (FE) eta joku garbiaren zentzuarekin erlazionaturiko asetasunaren balio hain altu hauek taldean duen integrazioa sendotzen dute. Halaber, bere kideak ekintza guztietan kiroltasun handiarekin jokatzen dutela sentitzen du.
+quest8_d3_a: Bere trebetasunen erabilpenarekin, lehiaketa denborarekin eta kirolariari emandako eginkizuna bere gustokoenarekin edo eta bere idealarekin bat datorreneko mailarekin kirolariaren talentua maximizatzeko duen moduarekiko asetasuna maila baxuetan kokatzen da. Interesgarria litzateke bere tentua eta motibazio mailak ezagutzea.
+quest8_d3_b: Bere trebetasunen erabilpenarekin, lehiaketa denborarekin eta kirolariari emandako eginkizuna bere gustokoenarekin edo eta bere idealarekin bat datorreneko mailarekin kirolariaren talentua maximizatzeko duen moduarekiko asetasuna batzuetan nolabaiteko ezegonkortasun emozionala eragiten duen maila ertainetan kokatzen da.
+quest8_d3_c: Bere trebetasunen erabilpenarekin, lehiaketa denborarekin eta kirolariari emandako eginkizuna bere gustokoenarekin edo eta bere idealarekin bat datorreneko mailarekin kirolariaren talentua maximizatzeko duen moduarekiko asetasuna bere motibazioa sendotuko duen maila altuetan kokatzen da.
+quest8_d4_a: Bere kokapenaren prestazio tekniko-taktikoekin edo eta hobekuntza pertsonalarekin (II) lotutako jasotako informazioarekin erlazionaturiko asetasun maila baxua da. 
+quest8_d4_b: Bere kokapenaren prestazio tekniko-taktikoekin edo eta hobekuntza pertsonalarekin (II) lotutako jasotako informazioarekin erlazionaturiko asetasuna maila ertain batean kokatzen da.
+quest8_d4_c: Bere kokapenaren prestazio tekniko-taktikoekin edo eta hobekuntza pertsonalarekin (II) lotutako jasotako informazioarekin erlazionaturiko asetasuna balio altuetan kokatzen da. Honek bere antzemandako autoefikazia mailarentzako errefortzu on bat suposatuko luke.
+quest8_d5_a: Ondo egindako lanarekiko begikotasunarekin, aintzat hartzearekin eta estimuarekin loturiko entrenatzaileangandik jasotako tratuarekiko (TP) asetasunari dagokionez, maila baxuetan kokatzen da. Honen arabera jasotako arreta maila ere baxua izango da.
+quest8_d5_b: Ondo egindako lanarekiko begikotasunarekin, aintzat hartzearekin eta estimuarekin loturiko entrenatzaileangandik jasotako tratuarekiko (TP) asetasunari dagokionez, maila ertainetan kokatzen da. Honen arabera jasotako arreta maila normala izan da, beste kirolariei eskainitakoa bezalakoa, alegia.
+quest8_d5_c: Ondo egindako lanarekiko begikotasunarekin, aintzat hartzearekin eta estimuarekin loturiko entrenatzaileangandik jasotako tratuarekiko (TP) asetasunari dagokionez, maila altuetan kokatzen da. Honen arabera entrenatzailearekin harreman bikaina antzematen du.
+quest8_d6_a: Taldeko jokalarien zerrenda egiteko hartzen dituen erabakiekin loturiko asetasun maila baxua da. Zentzu honetan, lehiaketan zehar aplikatzeko planteamendu taktikoaren elekzioarekin eta honetan zehar egiten dituen egokitzeekin desadostasun garrantzitsu bat existitzen da.
+quest8_d6_b: Taldeko jokalarien zerrenda egiteko hartzen dituen erabakiekiko nola lehiaketan zehar egiten dituen egokitzeekiko asetasun maila ertaina da. Kasu honetan ez da desadostasun taktikorik ematen, bereziki lehiaketan zehar aplikatzeko egiten duen estrategiarekin loturiko elekzioarekin.
+quest8_d6_c: Taldeko jokalarien zerrenda egiterako jokalari egokienak aukeratzeko hartzen dituen erabakiekin loturiko asetasun maila altua da. Gainera planteamendu taktiko eta estrategikoen artean, nola lehiaketan zehar egokitzeak egiten dituen moduarekin bateratasun altu bat ematen da.
+quest8_d7_a: Taldearen errendimenduarekiko (TE) asetasun maila baxua da. Hau denboraldiko helburuen lorpenarekin eta taldeak jokatzeko duen moduarekin lotua egon liteke. Akaso taldeak orain arte errenditu duena baino gehiago errenditu dezakeela uste du.
+quest8_d7_b: Taldearen errendimenduarekiko (TE) asetasun maila ertaina da. Honen arabera denboraldiko helburuen lorpenarekin edo eta taldeak duen jokatzeko moduarekin nolabaiteko konformagaiztasuna adierazten du. Akaso taldeak hobeto egin dezakela uste du.
+quest8_d7_c: Taldearen errendimenduarekiko (TE) asetasun maila altua da. Honek denboraldiko helburuen lorpenarekin eta taldeak jokatzeko duen moduarekin konformitate handia transmititzen du.
+quest8_d8_a: Bestalde, taldearen babes ekintzetaz duen pertzepzioari, honi are eta ekarpen hobeagoa egiteko, eta jokoan zehar bere kideengandik jasotako orientazioekin loturiko (ZI) asetasunaren balioak, baxuak dira. Kasu batzuetan honen jatorria taldekideen artean komunikazio on bat ez egotea izaten da. 
+quest8_d8_b: Bestalde, taldearen babes ekintzetaz duen pertzepzioari, honi are eta ekarpen hobeagoa egiteko, eta jokoan zehar bere kideengandik jasotako orientazioekin loturiko (ZI) asetasunaren balioak maila ertain batean aurkitzen dira. Akaso beste taldekideekin duen komunikazioa maila hobetu nahi luke.
+quest8_d8_c: Aldi berean, taldearen babes ekintzetaz duen pertzepzioari, honi are eta ekarpen hobeagoa egiteko, eta jokoan zehar bere kideengandik jasotako orientazioekin loturiko (ZI) asetasunaren balioak maila altu batean aurkitzen direla behatu dezakegu. Hau oso positiboa da beste taldekideekin komunikazio maila on bat mantentzeko.
+quest8_d9_a: Bestalde, taldearen integrazio mailarekin (ZE) erlazionaturiko asetasun balioak baxuak dira. Taldekideek batera lan egiteko eta beren helburuak lortzeko dexentes gehiago egin lezaketela uste du eta, gainera, taldeak talde bezala ez duela jokatzen sentitzen du.
+quest8_d9_b: Taldearen integrazio mailarekin (ZE) erlazionaturiko asetasun balio hauek ertainak dira. Batzuetan taldekideek batera lan egiteko eta beren helburuak lortzeko gehiago egin lezaketela uste du eta, gainera, batzuetan taldeak talde bezala jokatzuen duen ala ez duda egiten du.
+quest8_d9_c: Taldearen integrazio mailarekin (ZE) erlazionaturiko asetasun balio altu hauek medio, taldeak talde bezala lan egiten duela pentsarazten diote eta, gainera, bere kideek beren helburuak lortzeko batera eta modu egoki batean lan egiten dutela pentsatzen du. 
+quest8_header: …-(r)ekiko asetasun maila
+quest8_intro: Segidan aurkezten zaizkizun enrtenamenduaren eta lehiaketaren aspektu ezberdinekin zer ikusia duten esaldi sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotazunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbaki gainean klik eginaz.
+quest8_label_0: Asetasuna (taldeko kirola)
+quest8_label_10: Zeregin ekarpena
+quest8_label_1: Errendimendu pertsonala
+quest8_label_2: Taldearekiko konpromezu pertsonala
+quest8_label_3: Funtzionamendu etikoa
+quest8_label_4: Gaitasunaren erabilera
+quest8_label_5: Irakaskuntza eta instrukzioa
+quest8_label_6: Tratu pertsonala
+quest8_label_7: Erabaki hartzeak
+quest8_label_8: Taldearen errendimendua
+quest8_label_9: Zeregin integrazioa
+quest8_valor_1: 1 (inolaz ere) 
+quest8_valor_7: 7 (guztiz)
+quest9: Auto Antzemandako Maisutza Klimaren Galde-sorta Talde Kirolak
+quest9_10: Lehiaketako egoerak nik emandako gidalerroen modu ezberinean konpontzen usten dut
+quest9_11: Kirolariak hutsen bat egiten dutenean animatu egiten ditut
+quest9_12: Kirolariek arrakasta dutela uste dut modu nabarian beste guztiei nagusitzen direnean.
+quest9_13: Kirolariek desio ez den moduan jokatzen dutenean haserretu egiten naiz
+quest9_14: Kirolariek akatsen baten ostean zuzendu behar ditudanean haserretu egiten naiz
+quest9_15: Akatsek kirolaria beren defizietaz eta hobetu beharraz ohartarazten laguntzen dute
+quest9_16: Denboraldian zehar, kirolari bakoitzaren lehiaketa denbora berdina izan dadin saiatzen naiz
+quest9_17: Denboraldian zehar kirolariak lehiaketa kopuru berean parte hartu dezaten saiatzen naiz
+quest9_18: kirolariek arrakasta dutela uste dut, hauek dakiten bezain ondo egiten dutenean
+quest9_19: Lehiaketa bat jokatzen dutenenan kirolari guztiengan konfiantza osoa daukat
+quest9_1: Aurreikusitako taktikarekin bat ez datozen erabakiak hartzen usten diet
+quest9_20: Kirolariek akatsen bat egiten dutenean beraiengan konfiantza mantentzen jarraitzen dut
+quest9_21: Garrantzitsuena taldeak ahal bezain ondo jokatzea dela pentsatzen dut
+quest9_2: Kirolariek arrakasta zailtasunak gainditzen dituztenean lortzen dutela uste dut
+quest9_3: Nahiago dut partida irabaztea “gauzak ondo eginda egitea” baino
+quest9_4: Garrantzitsuena talde jokoaren kalitatearen garapena dela pentsatzen dut
+quest9_5: Aurrena partida irabaztea da eta ondoren ondo jokatzea
+quest9_6: Gauzak ondo egiten dituztenean kirolariak zoriontzen ditut, espero denaren arabera jokatzen dute
+quest9_7: Kirolariak etorkizuneko egintzetan animatzen ditut
+quest9_8: Aspektu tekniko, taktiko, estilozko, ibilbidezko, etab.-i buruzko instrukzioak ematen ditut
+quest9_9: Kirolariek arrakasta besteek bainon heobeto egiten dutenean lortzen dutela uste dut
+quest9_d1_a: Talde errendimendu klimaren (TEK) balio baxu honek, entrenatzaile honentzat taldearen emaitzak honek garatzen duen jokoarekin alderatuta garrantzi erlatiboa duela antzematea suposatzen du. Talde maisutza klimaren balio altuekin bat eginez gero, zereginarekiko integrazioa sendotuko du egiten diren talde akatsekiko antsietate posiblea minimizatuz. 
+quest9_d1_b: Talde errendimendu klimaren balio ertain honek, entrenatzaile honentzat taldearen emaitzak garrantzi nahikoa duela antzematea suposatzen du, talde jokoaren kalitateak bezain beste edo gehiago. Talde maisutza klimaren balio altuetaz lagunduta egonez gero, taldearen lehiakortasunarengan, esfortzuarekiko konpromisoarengan, zereginarekiko integrazioarengan, eta erabaki hartze ausartengan  eragin positibo bat suposatuko luke.
+quest9_d1_c: 4 eta 5 tartean kokaturiko talde errendimendu klimaren balio altu honek, entrenatzaile honentzat taldearen emaitza garrantzitsuena dela suposatzen du, talde jokoaren kalitatea sakrifikatzeraino. Honek erronka goreneko egoerei aurre egiteko gaitasuna ahulduko du zailtasun handiko edo eta presio goreneko egoeretan akatsen aurreko antsietatearen eta talde erabakiak hartzeko beldurrarengan areagotze garrantzitsu bat eraginaz.
+quest9_d2_a: Talde maisutza klimaren balioa 2´5 azpiko maila batetan kokatzen dira. Honek, entrenatzaile honentzat taldearen joko kalitatearen garapenak emaitzarekiko bigarren plano batean aurkitzen dela antzematea suposatzen du, eta talde errendimendu klimaren balio altu batekin bat eginez gero, zereginarekiko integrazioa ahulduko du egiten diren akatsekiko antsietearen areagotze kolektibo bat eragin lezakeelarik. 
+quest9_d2_a: Talde maisutza klimaren balioak maila altu batetan kokatzen dira. Entrenatzaile honentzat taldearen jokoaren kalitatea eta hobekuntza lehentasun kontu batetan bilakatzen dira, esfortzuarekiko konpromisorengan eta zereginarekiko integrazioarengan efektu positibo bat eragingo duena huts egiteko beldurretik hurrunduriko erabaki hartzeak erraztuz. Zailtasun goreneko erronka pertsonalei aurre egiteko eta aurrera egiteko atmosfera egokiena da.
+quest9_d2_b: Talde maisutza klimaren balioak erdialdean kokatzen dira. Entrenatzaile honentzat taldearen jokoa emaitzaren pare dela esan liteke, baina talde errendimendu klimaren balioa zaintzea beharrezkoa izango da zeren, balio altuak aurkezten baditu, esfortzuarekiko konpromisoa eta zereginarekiko integrazioa ahulduko bait ditu, huts egiteko beldurragatik erabaki hartzeengan efektu negatibo bat eragin lezakeelarik. 
+quest9_d3_a: Konfiantza mailan behaturiko (BK) puntuazio baxu honek entrenatzaileak bere jokalarien gaitasunenganako zalantzen existentzia suposatzen du. Hau da, hauetako bakoitzak egingo duenarengain konbentzimendu maila baxua dauka. Balio hauek entrenatzailearenarekin kointziditzen badute, garrantzitsua izango da maila hau areagotzen lortzeko miniestrategia espezifiko bat garatzea, bai tutoreari kontsultatuz nola Autoefikazia edukien bisionatu sesioekin.
+quest9_d3_b: Konfiantza mailan behaturiko (BK) puntuazio ertain honek entrenatzaileak bere jokalarietako bakoitza bere baliabideak modu efiziente batean erabiliko dituenaren, hau da, hauetak bakoitzak bere gaitasunen arabaera ahalik eta ondoen egingo duenaren uste positiboa duela suposatuko du. Garrantzitsua litzateke behaturiko maila hau mantentzea ala areagotzea, kontutan izanik konfiantza termino autoerreferentzialetan baloratu behar dela, hau da kirolari bakoitza bere buruarekin.
+quest9_d3_c: Konfiantza mailan behaturiko (BK) puntuazio altu honek entrenatzaileak bere jokalarietako bakoitza bere baliabideak modu efiziente batean erabiliko dituenaren, hau da, hauetako bakoitzak bere gaitasunen arabaera ahalik eta ondoen egingo duenaren uste altua duela suposatuko du. Garrantzitusa da konfiantza termino autoerreferentzialetan baloratu behar dela, hau da kirolari bakoitza bere buruarekin, ohartaraztea.
+quest9_d4_a: Puntuazio baxu honek informazioa transmititzeko moduan antzemandako defizit baten existentzia adierazten du. Ezaugarri funtsezkoena adierazpen emozional empatiko eta existentzialen ausentzia da eta batzuetan adeigabetzat eta iraingarritzat hartzen diren bitale negatiboen presentzia. Entrenatzaile kirolari arteko harremanak lohitzen dituzte.
+quest9_d4_b: Puntuazio ertain honek informazioa transmititzerako orduan ematen diren antzemandako jokabide egokiekin lotua aurkitzen da. Pertzepzio hau adierazpen emozional enpatikoz eta existentzialez lagundua dijoanean entrenatzailearekin harremanak errazten ditu.
+quest9_d4_c: Puntuazio altu honek informazioa transmititzerako orduan antzematen diren modu errespetuoso eta adeitsuekin bat egiten du. Sendotze positiboaren efektua duen adierazpen emozional enpatikoz eta existentzialez lagundua aurkitzen da.
+quest9_d5_a: Entrenatzaileak akatsen aurrean duen erantzunarekin (AE) loturik dagoen behaturiko puntuazio baxuak honen erreakzio emozional positibo eta egokien existentzia suposatzen du. Bere jokabideak ez du inolako elementu erreaktiborik kirolariei instrukzio eta irakaskuntza edukiak proposatzen zentratzen delarik.
+quest9_d5_b: Entrenatzaileak akatsen aurrean duen erantzunarekin (AE) loturik dagoen behaturiko puntuazio ertain hau nahiko negatiboa da eta bere jokabideak elementu erreaktiboak dituela suposatzen du eta, batzuetan, zentzu formatiboa duten instrukzioak ere ematen ditu.
+quest9_d5_c: Entrenatzaileak akatsen aurrean duen erantzunarekin (AE) loturik dagoen behaturiko puntuazio altu hau oso negatiboa da, komunikatu nahi duen instrukzio oro alferrekoa egiten duen zentzu erreaktiboa duen erraietako jokabidea suposatzen bait du. Kirolaria ez dago ematen zaion inolako instrukzio nola irakaskuntza edukiri arreta jartzeko aldartearekin.
+quest9_d6_a: Faktore honetan ematen den puntuazio baxu honek entrenatzaileak kirolariak ez dituela zuzentzen edo eta ondo egiteko modu ezberdinak ez dizkiela erakusten suposatzen du, hau da, transmititu nahi den informazio tipoaren kantitate, kalitate eta egokieran defizit garrantzitsu bat existitzen da.
+quest9_d6_b: Faktore honetan ematen den puntuazio ertain honek informazioa transmititzeko modu egokiarekin bat egiten du. Kirolariaren jokabidearen hobekuntzan modu kualitatiboan laguntzeko modu on bat suposatzen du.
+quest9_d6_c: Faktore honetan ematen den puntuazio altu honek transmititu nahi den informazio tipoaren kalitate eta egokiera hobe batekin bat egiten du. Kirolariaren jokabidea modu kualitatiboan hobetzeko eta sendotzeko modu bikaina suposatzen du.
+quest9_d7_a: Faktore honetan behatzen den puntuazio baxuak kirolariak erabakitzeko aukerarik ez duela suposatzen du, zuzendaritzako estiloa. Honek bere erabakitze konfiantza murriztuko du erabakitze prozesu autonomoen garapena kaltetuaz. Lehiaketa egoeren aurrean soluzio bakarra kontenplatzen da, entrenatzaileak proposatzen duena alegia, estilo honekin gaitasun erresolutiboa duten jokalariak prestatzea oso zaila egiten da.
+quest9_d7_b: Faktore honetan behaturiko puntuazio ertain honen arabera entrenatzaileak kirolariarengan nolabaiteko atzeratzea eta erabakitze prozesu autonomoen garapenean geldialdia sortarazten duten bi erabakitze estiloak bateratzen dituela, zuzendaritzakoa eta erreflexiboa alegia, suposatzen du. Egoera berdin baten aurrean entrenatzailearen aldetik ez dago ondo ikusia konponbide ezberdinak kontutan hartzea egokiena baino.
+quest9_d7_c: Faktore honetan ematen den puntuazio altuaren arabera entrenatzaileak, erabakitze prozesu autonomoen garapena lagunduaz eta egoera berdin baten aurrean aukera ezberdinak kontutan hartzeko aukera kontutan hartuaz, bere erabakitze konfiantza areagotuko duen kirolariaren erabakitze autonomia sendotzen duela nabarmentzen da. Erabakitzeko modu honek gaitasun erresolutibo handi bat duten kirolari argiak egiten laguntzen du.
+quest9_d8_a: Maisutza klimaren (PEM) 1 balioak 2,5 azpiko maila batean kokatzen dira. Honen arabera entrenatzailearentzako kirolariarengan ematen diren hobekuntzak, proposaturiko lanarekiko inplikazioa ahuldu eta egiten diren akatsen aurrean antsietatearen areagotzea eragin dezaken emaitzekiko bigarren plano batean antzematea suposatzen du.
+quest9_d8_b: Maisutza klimaren (PEM) balioak zona ertain batean kokatzen dira, 2,5 eta 4 tartean. Honek entrenatzailearentzat ere lanarekiko konpromezua, zailtasunekiko iraunkortasuna positboa dela eta akatsek kirolaria hobetzen lagundu dezaketela antzematea suposatzen du.
+quest9_d8_c: Maisutza klimaren (PEM) balioak 4 gainetik kokatzen dira. Honek entrenatzailearentzat entrenamenduan izandako konpromezua, zailtasunekiko eta akatsekiko iraunkortasuna sendotu eta, bereziki kirolariengan ematen diren hobekuntzak baloratzen dituela antzematea suposatzen du. Hobetzeko eta zailtasun handieneko erronka pertsonalei aurre egiteko atmosfera egokiena da ematen diren hobekuntzak sendotu eta akatsak txikiagotzen bait ditu.
+quest9_d9_a: 2,5 azpitik kokatzen den errendimendu klimaren (PER) balio baxu honek entrenatzailearentzat kirolariarengan ematen diren emaitzak trebezien aurrean bigarren plano batean aurkitzen direla antzematea suposatzen du entrenamenduan zehar ematen den inplikazioa sendotuaz eta, akatsen aurrean antsietatea gutxitzen lagundu dezakelarik, egotekotan.
+quest9_d9_b: Errendimendu klimaren (PER) balio ertain honek entrenatzailearentzat kirolariengan ematen diren emaitzak garrantzitsuak direla, batzuetan bere gaitasunen hobetzea bainon gehiago gainera, antzematea suposatzen du. Esfortzuarekiko konpromezuan positiboki eragin dezake eta akatsen aurrean antsietatea gutxitzen lagundu dezake, egotekotan.
+quest9_d9_c: Errendimendu klimaren (PER) balio altu honek entrenatzailearentzat kirolariengan ematen diren emaitzak garrantzitsuena direla antzematea suposatzen du. Honek kirolarien erronka pertsonal handieneko egoerei aurre egiteko gaitasuna ahultzeaz gain, zailtasun handiko egoeretan ematen diren akatsen aurrean ematen den antsietatearen areagotze garrantzitsuan lagunduko du.
+quest9_header: …-kiko asetasun maila
+quest9_intro: Segidan aurkezten zaizkizun entrenamendu eta lehiaketaren aspektu ezberdinekin zer ikusia duten esaldi sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotazunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbakian klik eginaz.
+quest9_label_0: Auto Antzemandako Maisutza Klima Talde Kirolak
+quest9_label_1: Talde arrakastaren pertzepzio balioak
+quest9_label_2: Antzemandako jokalarienganako konfiantza
+quest9_label_3: Komunikazio erreaktiboa
+quest9_label_4: Komunikazio erreaktiboa
+quest9_label_5: Komunikazio instrukzionala
+quest9_label_6: Antzemandako erabakitze modua
+quest9_label_7: Maisutza klima
+quest9_label_8: Errendimendu klima
+quest9_label_9: Entrenatzaile modura…
+quest9_valor_1: 1 (inoiz ere ez)
+quest9_valor_1: 1 (inolaz ere)
+quest9_valor_2: 2 (gutxitan)
+quest9_valor_3: 3 (sarri)
+quest9_valor_4: 4 (ia beti)
+quest9_valor_5: 5 (beti)
+quest9_valor_7: 7 (guztiz)
+setting_app_subtitle: Subtítulo del aplicación
+setting_app_title: Título del aplicación
+setting_attachment_max_size: Tamaño máximo del fichero
+setting_autofetch_changesets: Autofetch commits
+setting_autologin: Autologin
+setting_commit_fix_keywords: Fixing keywords
+setting_commit_ref_keywords: Referencing keywords
+setting_date_format: Date format
+setting_default_language: Gutxiegizko hizkuntza
+setting_feeds_limit: Feed content limit
+setting_host_name: Nombre de anfitrión
+setting_issues_export_limit: Issues export limit
+setting_login_required: Benetakotzea Eskatzen Da
+setting_mail_from: Email de la emisión
+setting_protocol: Protocolo
+setting_self_registration: Erregistro Baimendua
+setting_text_formatting: Formato de texto
+setting_welcome_text: Texto acogida
+signup_label_10: Zerbitzuaren terminoak
+signup_label_11: Gorde-tzeko klik egiterako orduan, nire sinadura eranstearekin batera <a href="http:/account/terms">Teskal Zerbitzuaren Baldintzekin</a> ados nagoela adierazten dut.
+signup_label_12: Mila esker erregistratzeagatik!
+signup_label_13: Zure Teskaleko kontua sortua izan da.
+signup_label_14: Korreoz konfirmazio bat jasoko duzu.
+signup_label_15: Sartzeko klikatu behar duzun zure kontuaren aktibazio lotura bat dauka
+signup_label_1: Pasatu
+signup_label_2: Erabiltzaile eta hizkuntza bat aukeratu.
+signup_label_3: Hizkuntza sartzen zaren hurrengoan erabilia izango da. 
+signup_label_4: Zure kontu berriarentzar pasa-hitz bat aukeratu ezazu. 
+signup_label_5: Pasa-hitzak 6-12 karaktere bitartekoa izan behar du.
+signup_label_6: Postaren xehetasunak.
+signup_label_7: Zure posta elektronikoaren helbidea idatzi ezazu.
+signup_label_8: Zure kontua aktibatu ahal izateko posta elektronikoak baliagarria izan behar du. 
+signup_label_9: Gorde
+status_active: aktibo
+status_locked: blokeatuta
+status_registered: erregistratu
+text_are_you_sure: ¿ Ziur zaude ?
+text_caracters_maximum: %d characters maximum.
+text_caracters_maximum: karaktereen %d maximoa
+text_length_between: Longitud entre %d y %d caracteres. 
+unit_0_path: Teskal.eu.pdf
+unit_0_title: Teskal Aurkezpena
+unit_10_path: 10.Erantzunkizuna.vs.Erruduntasuna.eu.pdf
+unit_10_title: Erantzunkizuna vs Erruduntasuna
+unit_11_path: 11.Konfiantza.Eta.Autoefikazia.eu.pdf 
+unit_11_title: Konfiantza eta Auto Efikazia
+unit_12_path: 12.Tentua.eu.pdf
+unit_12_title: Tentua
+unit_13_path: 13.Asertibitatea.eu.pdf 
+unit_13_title: Asertibitatea
+unit_14_path: 14.Errendimendu.Handiko.Kirolaria.eu.pdf
+unit_14_title: Errendimendu Handiko Kirolaria
+unit_15_path: 15.Autoerregulazio.Sistema.eu.pdf
+unit_15_title: Autoerregulazio Sistema
+unit_1_path: 01.Arreta.eta.Kontzentrazioa.eu.pdf
+unit_1_title: Arreta eta Kontzentrazioa
+unit_2_path: 02.Emozioak.eta.Kirol.Errendimendua.eu.pdf
+unit_2_title: Emozioak eta Kirol Errendimendua
+unit_3_path: 03.Helburuen.Finkatzea.eu.pdf
+unit_3_title: Helburuen Finkatzea
+unit_4_path: 04.Estresa.eu.pdf
+unit_4_title: Estresa lehiaketan
+unit_5_path: 05.Motibazioa.eu.pdf
+unit_5_title: Motibazioa
+unit_6_path: 06.Tentsioa.eta.Erlaxapena.eu.pdf
+unit_6_title: Tentsioa eta Erlaxapena
+unit_7_path: 07.Tolerantzia.Psikologikoa.eu.pdf
+unit_7_title: Tolerantzia Psikologikoa
+unit_8_path: 08.Lehiaketa.eu.pdf
+unit_8_title: Lehiaketa
+unit_9_path: 09.Komunikazioa.eu.pdf
+unit_9_title: Komunikazioa
