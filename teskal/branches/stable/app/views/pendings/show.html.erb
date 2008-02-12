@@ -1,8 +1,0 @@
-<% for column in Pending.content_columns %>
-<p>
-  <b><%= column.human_name %>:</b> <%=h @pending.send(column.name) %>
-</p>
-<% end %>
-
-<%= link_to 'Edit', :action => 'edit', :id => @pending %> |
-<%= link_to 'Back', :action => 'list' %>
