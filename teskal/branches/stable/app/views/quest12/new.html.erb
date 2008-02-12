@@ -1,0 +1,280 @@
+<!-- quest12 -->
+<% content_for :header_tags do -%>
+<%= javascript_include_tag 'prototype' -%>
+<%= calendar_date_select_includes "plain" -%>
+<%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language -%>
+<%- case @logged_in_user.language -%>
+<%- when "br": -%>
+<%= javascript_include_tag 'validation/validation_br' -%>
+<%- when "ca": -%>
+<%= javascript_include_tag 'validation/validation_ca' -%>
+<%- when "es": -%>
+<%= javascript_include_tag 'validation/validation_es' -%> 
+<%- when "eu": -%>
+<%= javascript_include_tag 'validation/validation_eu' -%>
+<%- when "fr": -%>
+<%= javascript_include_tag 'validation/validation_fr' -%> 
+<%- else -%>
+<%= javascript_include_tag 'validation/validation' -%>  
+<%- end -%>
+<%- end -%>
+
+<h2><%=l(:quest12)%>
+	<%- if !@subject.nil? -%>
+	<%= " - "+ @subject %>
+	<%- end -%>
+	</h2>
+<br/>
+<div id="intro"><%=l(:quest12_intro)%></div>
+<br/>
+<div id="values"> <%=l(:quest12_valor_1)%><•> <•> <•> <•> <•> <•> <•> <•> <%=l(:quest12_valor_2)%> <br/>
+  <br/>
+</div>
+<form id="quest12" action="/quests/create/12" method="post">
+<center>
+  <br/>
+  <br/>
+  <table cellspacing="0">
+    <!-- <caption><%=l(:quest12)%></caption> -->
+    <thead>
+      <tr>
+        <th scope="col"> ## </th>
+        <th scope="col"><div align="left"><%=l(:quest12_header)%></div></th>
+        <th scope="col">0</th>
+        <th scope="col">10</th>
+        <th scope="col">20</th>
+        <th scope="col">30</th>
+        <th scope="col">40</th>
+        <th scope="col">50</th>
+        <th scope="col">60</th>
+        <th scope="col">70</th>
+        <th scope="col">80</th>
+        <th scope="col">90</th>
+        <th scope="col">100</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><%=l(:quest12_1)%></td>
+        <td><input type="radio" name="answer[answ1]" value="0" id="answer_answ1_0"/></td>
+        <td><input type="radio" name="answer[answ1]" value="10" id="answer_answ1_1"/></td>
+        <td><input type="radio" name="answer[answ1]" value="20" id="answer_answ1_2"/></td>
+        <td><input type="radio" name="answer[answ1]" value="30" id="answer_answ1_3"/></td>
+        <td><input type="radio" name="answer[answ1]" value="40" id="answer_answ1_4"/></td>
+        <td><input type="radio" name="answer[answ1]" value="50" id="answer_answ1_5"/></td>
+        <td><input type="radio" name="answer[answ1]" value="60" id="answer_answ1_6"/></td>
+        <td><input type="radio" name="answer[answ1]" value="70" id="answer_answ1_7"/></td>
+        <td><input type="radio" name="answer[answ1]" value="80" id="answer_answ1_8"/></td>
+        <td><input type="radio" name="answer[answ1]" value="90" id="answer_answ1_9"/></td>
+        <td><input type="radio" name="answer[answ1]" class="validate-one-required" value="100" id="answer_answ1_10"/></td>
+      </tr>
+      <tr class="odd">
+        <td>2</td>
+        <td><%=l(:quest12_2)%></td>
+        <td><input type="radio" name="answer[answ2]" value="0" id="answer_answ2_0"/></td>
+        <td><input type="radio" name="answer[answ2]" value="10" id="answer_answ2_1"/></td>
+        <td><input type="radio" name="answer[answ2]" value="20" id="answer_answ2_2"/></td>
+        <td><input type="radio" name="answer[answ2]" value="30" id="answer_answ2_3"/></td>
+        <td><input type="radio" name="answer[answ2]" value="40" id="answer_answ2_4"/></td>
+        <td><input type="radio" name="answer[answ2]" value="50" id="answer_answ2_5"/></td>
+        <td><input type="radio" name="answer[answ2]" value="60" id="answer_answ2_6"/></td>
+        <td><input type="radio" name="answer[answ2]" value="70" id="answer_answ2_7"/></td>
+        <td><input type="radio" name="answer[answ2]" value="80" id="answer_answ2_8"/></td>
+        <td><input type="radio" name="answer[answ2]" value="90" id="answer_answ2_9"/></td>
+        <td><input type="radio" name="answer[answ2]" class="validate-one-required" value="100" id="answer_answ2_10"/></td>
+      </tr>                                                                                                      
+      <tr>
+        <td>3</td>
+        <td><%=l(:quest12_3)%></td>
+        <td><input type="radio" name="answer[answ3]" value="0" id="answer_answ3_0"/></td>
+        <td><input type="radio" name="answer[answ3]" value="10" id="answer_answ3_1"/></td>
+        <td><input type="radio" name="answer[answ3]" value="20" id="answer_answ3_2"/></td>
+        <td><input type="radio" name="answer[answ3]" value="30" id="answer_answ3_3"/></td>
+        <td><input type="radio" name="answer[answ3]" value="40" id="answer_answ3_4"/></td>
+        <td><input type="radio" name="answer[answ3]" value="50" id="answer_answ3_5"/></td>
+        <td><input type="radio" name="answer[answ3]" value="60" id="answer_answ3_6"/></td>
+        <td><input type="radio" name="answer[answ3]" value="70" id="answer_answ3_7"/></td>
+        <td><input type="radio" name="answer[answ3]" value="80" id="answer_answ3_8"/></td>
+        <td><input type="radio" name="answer[answ3]" value="90" id="answer_answ3_9"/></td>
+        <td><input type="radio" name="answer[answ3]" class="validate-one-required" value="100" id="answer_answ3_10"/></td>
+      </tr>
+      <tr class="odd">
+        <td>4</td>
+        <td><%=l(:quest12_4)%></td>
+        <td><input type="radio" name="answer[answ4]" value="0" id="answer_answ4_0"/></td>
+        <td><input type="radio" name="answer[answ4]" value="10" id="answer_answ4_1"/></td>
+        <td><input type="radio" name="answer[answ4]" value="20" id="answer_answ4_2"/></td>
+        <td><input type="radio" name="answer[answ4]" value="30" id="answer_answ4_3"/></td>
+        <td><input type="radio" name="answer[answ4]" value="40" id="answer_answ4_4"/></td>
+        <td><input type="radio" name="answer[answ4]" value="50" id="answer_answ4_5"/></td>
+        <td><input type="radio" name="answer[answ4]" value="60" id="answer_answ4_6"/></td>
+        <td><input type="radio" name="answer[answ4]" value="70" id="answer_answ4_7"/></td>
+        <td><input type="radio" name="answer[answ4]" value="80" id="answer_answ4_8"/></td>
+        <td><input type="radio" name="answer[answ4]" value="90" id="answer_answ4_9"/></td>
+        <td><input type="radio" name="answer[answ4]" class="validate-one-required" value="100" id="answer_answ4_10"/></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><%=l(:quest12_5)%></td>
+        <td><input type="radio" name="answer[answ5]" value="0" id="answer_answ5_0"/></td>
+        <td><input type="radio" name="answer[answ5]" value="10" id="answer_answ5_1"/></td>
+        <td><input type="radio" name="answer[answ5]" value="20" id="answer_answ5_2"/></td>
+        <td><input type="radio" name="answer[answ5]" value="30" id="answer_answ5_3"/></td>
+        <td><input type="radio" name="answer[answ5]" value="40" id="answer_answ5_4"/></td>
+        <td><input type="radio" name="answer[answ5]" value="50" id="answer_answ5_5"/></td>
+        <td><input type="radio" name="answer[answ5]" value="60" id="answer_answ5_6"/></td>
+        <td><input type="radio" name="answer[answ5]" value="70" id="answer_answ5_7"/></td>
+        <td><input type="radio" name="answer[answ5]" value="80" id="answer_answ5_8"/></td>
+        <td><input type="radio" name="answer[answ5]" value="90" id="answer_answ5_9"/></td>
+        <td><input type="radio" name="answer[answ5]" class="validate-one-required" value="100" id="answer_answ5_10"/></td>
+      </tr>
+      <tr class="odd">
+        <td>6</td>
+        <td><%=l(:quest12_6)%></td>
+        <td><input type="radio" name="answer[answ6]" value="0" id="answer_answ6_0"/></td>
+        <td><input type="radio" name="answer[answ6]" value="10" id="answer_answ6_1"/></td>
+        <td><input type="radio" name="answer[answ6]" value="20" id="answer_answ6_2"/></td>
+        <td><input type="radio" name="answer[answ6]" value="30" id="answer_answ6_3"/></td>
+        <td><input type="radio" name="answer[answ6]" value="40" id="answer_answ6_4"/></td>
+        <td><input type="radio" name="answer[answ6]" value="50" id="answer_answ6_5"/></td>
+        <td><input type="radio" name="answer[answ6]" value="60" id="answer_answ6_6"/></td>
+        <td><input type="radio" name="answer[answ6]" value="70" id="answer_answ6_7"/></td>
+        <td><input type="radio" name="answer[answ6]" value="80" id="answer_answ6_8"/></td>
+        <td><input type="radio" name="answer[answ6]" value="90" id="answer_answ6_9"/></td>
+        <td><input type="radio" name="answer[answ6]" class="validate-one-required" value="100" id="answer_answ6_10"/></td>
+      </tr>
+        <td>7</td>
+        <td><%=l(:quest12_7)%></td>
+        <td><input type="radio" name="answer[answ7]" value="0" id="answer_answ7_0"/></td>
+        <td><input type="radio" name="answer[answ7]" value="10" id="answer_answ7_1"/></td>
+        <td><input type="radio" name="answer[answ7]" value="20" id="answer_answ7_2"/></td>
+        <td><input type="radio" name="answer[answ7]" value="30" id="answer_answ7_3"/></td>
+        <td><input type="radio" name="answer[answ7]" value="40" id="answer_answ7_4"/></td>
+        <td><input type="radio" name="answer[answ7]" value="50" id="answer_answ7_5"/></td>
+        <td><input type="radio" name="answer[answ7]" value="60" id="answer_answ7_6"/></td>
+        <td><input type="radio" name="answer[answ7]" value="70" id="answer_answ7_7"/></td>
+        <td><input type="radio" name="answer[answ7]" value="80" id="answer_answ7_8"/></td>
+        <td><input type="radio" name="answer[answ7]" value="90" id="answer_answ7_9"/></td>
+        <td><input type="radio" name="answer[answ7]" class="validate-one-required" value="100" id="answer_answ7_10"/></td>
+      </tr>
+      <tr class="odd">
+        <td>8</td>
+        <td><%=l(:quest12_8)%></td>
+        <td><input type="radio" name="answer[answ8]" value="0" id="answer_answ8_0"/></td>
+        <td><input type="radio" name="answer[answ8]" value="10" id="answer_answ8_1"/></td>
+        <td><input type="radio" name="answer[answ8]" value="20" id="answer_answ8_2"/></td>
+        <td><input type="radio" name="answer[answ8]" value="30" id="answer_answ8_3"/></td>
+        <td><input type="radio" name="answer[answ8]" value="40" id="answer_answ8_4"/></td>
+        <td><input type="radio" name="answer[answ8]" value="50" id="answer_answ8_5"/></td>
+        <td><input type="radio" name="answer[answ8]" value="60" id="answer_answ8_6"/></td>
+        <td><input type="radio" name="answer[answ8]" value="70" id="answer_answ8_7"/></td>
+        <td><input type="radio" name="answer[answ8]" value="80" id="answer_answ8_8"/></td>
+        <td><input type="radio" name="answer[answ8]" value="90" id="answer_answ8_9"/></td>
+        <td><input type="radio" name="answer[answ8]" class="validate-one-required" value="100" id="answer_answ8_10"/></td>
+      </tr>                                                                                                      
+      <tr>
+        <td>9</td>
+        <td><%=l(:quest12_9)%></td>
+        <td><input type="radio" name="answer[answ9]" value="0" id="answer_answ9_0"/></td>
+        <td><input type="radio" name="answer[answ9]" value="10" id="answer_answ9_1"/></td>
+        <td><input type="radio" name="answer[answ9]" value="20" id="answer_answ9_2"/></td>
+        <td><input type="radio" name="answer[answ9]" value="30" id="answer_answ9_3"/></td>
+        <td><input type="radio" name="answer[answ9]" value="40" id="answer_answ9_4"/></td>
+        <td><input type="radio" name="answer[answ9]" value="50" id="answer_answ9_5"/></td>
+        <td><input type="radio" name="answer[answ9]" value="60" id="answer_answ9_6"/></td>
+        <td><input type="radio" name="answer[answ9]" value="70" id="answer_answ9_7"/></td>
+        <td><input type="radio" name="answer[answ9]" value="80" id="answer_answ9_8"/></td>
+        <td><input type="radio" name="answer[answ9]" value="90" id="answer_answ9_9"/></td>
+        <td><input type="radio" name="answer[answ9]" class="validate-one-required" value="100" id="answer_answ9_10"/></td>
+      </tr>
+      <tr class="odd">
+        <td>10</td>
+        <td><%=l(:quest12_10)%></td>
+        <td><input type="radio" name="answer[answ10]" value="0" id="answer_answ10_0"/></td>
+        <td><input type="radio" name="answer[answ10]" value="10" id="answer_answ10_1"/></td>
+        <td><input type="radio" name="answer[answ10]" value="20" id="answer_answ10_2"/></td>
+        <td><input type="radio" name="answer[answ10]" value="30" id="answer_answ10_3"/></td>
+        <td><input type="radio" name="answer[answ10]" value="40" id="answer_answ10_4"/></td>
+        <td><input type="radio" name="answer[answ10]" value="50" id="answer_answ10_5"/></td>
+        <td><input type="radio" name="answer[answ10]" value="60" id="answer_answ10_6"/></td>
+        <td><input type="radio" name="answer[answ10]" value="70" id="answer_answ10_7"/></td>
+        <td><input type="radio" name="answer[answ10]" value="80" id="answer_answ10_8"/></td>
+        <td><input type="radio" name="answer[answ10]" value="90" id="answer_answ10_9"/></td>
+        <td><input type="radio" name="answer[answ10]" class="validate-one-required" value="100" id="answer_answ10_10"/></td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td><%=l(:quest12_11)%></td>
+        <td><input type="radio" name="answer[answ11]" value="0" id="answer_answ11_0"/></td>
+        <td><input type="radio" name="answer[answ11]" value="10" id="answer_answ11_1"/></td>
+        <td><input type="radio" name="answer[answ11]" value="20" id="answer_answ11_2"/></td>
+        <td><input type="radio" name="answer[answ11]" value="30" id="answer_answ11_3"/></td>
+        <td><input type="radio" name="answer[answ11]" value="40" id="answer_answ11_4"/></td>
+        <td><input type="radio" name="answer[answ11]" value="50" id="answer_answ11_5"/></td>
+        <td><input type="radio" name="answer[answ11]" value="60" id="answer_answ11_6"/></td>
+        <td><input type="radio" name="answer[answ11]" value="70" id="answer_answ11_7"/></td>
+        <td><input type="radio" name="answer[answ11]" value="80" id="answer_answ11_8"/></td>
+        <td><input type="radio" name="answer[answ11]" value="90" id="answer_answ11_9"/></td>
+        <td><input type="radio" name="answer[answ11]" class="validate-one-required" value="100" id="answer_answ11_10"/></td>
+      </tr>
+      <tr class="odd">
+        <td>12</td>
+        <td><%=l(:quest12_12)%></td>
+        <td><input type="radio" name="answer[answ12]" value="0" id="answer_answ12_0"/></td>
+        <td><input type="radio" name="answer[answ12]" value="10" id="answer_answ12_1"/></td>
+        <td><input type="radio" name="answer[answ12]" value="20" id="answer_answ12_2"/></td>
+        <td><input type="radio" name="answer[answ12]" value="30" id="answer_answ12_3"/></td>
+        <td><input type="radio" name="answer[answ12]" value="40" id="answer_answ12_4"/></td>
+        <td><input type="radio" name="answer[answ12]" value="50" id="answer_answ12_5"/></td>
+        <td><input type="radio" name="answer[answ12]" value="60" id="answer_answ12_6"/></td>
+        <td><input type="radio" name="answer[answ12]" value="70" id="answer_answ12_7"/></td>
+        <td><input type="radio" name="answer[answ12]" value="80" id="answer_answ12_8"/></td>
+        <td><input type="radio" name="answer[answ12]" value="90" id="answer_answ12_9"/></td>
+        <td><input type="radio" name="answer[answ12]" class="validate-one-required" value="100" id="answer_answ12_10"/></td>
+      </tr>
+	</tbody>
+  </table>
+<br/>
+<br/>
+    <div class="splitnoteleft">
+      <table cellspacing="0">
+        <!-- <caption><%=l(:quest1)%></caption> -->
+        <thead>
+          <tr>
+            <th scope="col"><div align="left"><%= l(:field_notes) %></div></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><textarea name="answer[note1]" id="note1" cols="60" rows="6"></textarea></td>
+           </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="splitnoteright"> <%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true , :time  => true%>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+   <p><%= submit_tag l(:button_save) %></p> 
+  </form>
+	<script type="text/javascript">
+		var valid3 = new Validation('quest12',{immediate : true});
+	</script>
+ <br/>
+ <br/>
+<%= link_to l(:button_back),session[:return_to_params] %> 
