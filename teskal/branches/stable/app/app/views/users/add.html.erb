@@ -1,0 +1,83 @@
+<% content_for :header_tags do -%>
+<%= javascript_include_tag 'prototype' -%>
+<%- if @logged_in_user.language == "br" -%>
+<%= javascript_include_tag 'validation/validation_br' -%>
+<%- elsif @logged_in_user.language == "ca"-%>
+<%= javascript_include_tag 'validation/validation_ca' -%>
+<%- elsif @logged_in_user.language == "es" -%>
+<%= javascript_include_tag 'validation/validation_es' -%>
+<%- elsif @logged_in_user.language == "eu"-%>
+<%= javascript_include_tag 'validation/validation_eu' -%>
+<%- elsif @logged_in_user.language == "fr"-%>
+<%= javascript_include_tag 'validation/validation_fr' -%>
+<%- else -%>
+<%= javascript_include_tag 'validation/validation' -%>
+<%- end -%>
+<%- end -%>
+<style type="text/css">
+#theform {
+	background-color: #f7f4ee;
+	text-align: left;
+	font: 100% Verdana, Tahoma, Arial, sans-serif;
+	margin: 0 0 20px 0;
+	padding: 10px;
+	max-width: 450px;
+	color: #505050;
+	line-height: 1.5em;
+	border: 1px solid #ddd;
+}
+#theform h3 {
+	height: 2em;
+	font-size: 1.7em;
+	color: #523a0b;
+	line-height: 1em;
+}
+</style>
+  <!-- <h2><%=l(:label_my_account)%></h2>    -->
+<center>
+  <div id="theform">
+    <h3><%=l(:label_information_plural)%></h3>
+    <form id="myData" action="/users/add" class="tabular" method="post">
+      <p>
+        <label for="user_login"><%= l(:field_login) %> </label>
+        <input class="required" id="user_login" name="user[login]" size="30" type="text" value="<%= @user.login %>" />
+      </p>
+      <p>
+        <label for="user_firstname"><%= l(:field_firstname) %> </label>
+        <input id="user_firstname" name="user[firstname]" size="30" type="text" value="<%= @user.firstname %>" />
+      </p>
+      <p>
+        <label for="user_lastname"><%= l(:field_lastname) %> </label>
+        <input id="user_lastname" name="user[lastname]" size="30" type="text" value="<%= @user.lastname %>" />
+      </p>
+      <p>
+        <label for="user_mail"><%= l(:field_mail) %> </label>
+        <input class="required validate-email" id="user_mail" name="user[mail]" size="37" type="text" value="<%= @user.mail %>" />
+      </p>
+      <p>
+        <label for="user_language"><%= l(:field_language) %></label>
+        <%= select("user", "language", lang_options_for_select) %></p>
+      <p>
+        <label for="default_timezone"><%= l(:label_timezone) %></label>
+        <%= time_zone_select 'user', 'time_zone', TZInfo::Timezone.all.sort, :model => TZInfo::Timezone %> </p>
+      <br/>
+      <h3><%=l(:label_authentication)%></h3>
+      <p>
+        <label for="password"><%= l(:field_password) %></label>
+        <input class="required validate-password" id="password" name="password" size="25" type="password" />
+        <br />
+        <em><%= l(:text_length_between, 6, 12) %></em></p>
+      <p>
+        <label for="password_confirmation"><%= l(:field_password_confirmation) %></label>
+        <input class="required validate-password-confirm" id="password_confirmation" name="password_confirmation" size="25" type="password" />
+      </p>
+      <center>
+        <%= submit_tag l(:button_create) %>
+      </center>
+    </form>
+    <script type="text/javascript">
+		var valid3 = new Validation('myData',{immediate : true});
+	</script>
+  </div>
+<%= link_to l(:button_back),session[:return_to_params] %> 
+</center>
