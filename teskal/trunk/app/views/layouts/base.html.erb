@@ -81,9 +81,9 @@
     </div>
     <% end %>
     <% if flash[:notice] %>
-    <p style="color: white;text-shadow: 2px 2px #eee;
+    <p style="color: black;text-shadow: 2px 1px #eee;
 		background: #ccc;
-		padding: 5px;  font-size: 120%;"><%= flash[:notice] %></p>
+		padding: 5px;  font-size: 120%;font-weight: bold;"><%= flash[:notice] %></p>
     <% end %>
     <%= yield %> </div>
   <div id="footer">

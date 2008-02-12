@@ -138,7 +138,6 @@ class Mailer < ActionMailer::Base
       set_language_if_valid(athlete.language)
       recipients athlete.mail
       subject l(:mail_subject_pending)
-      puts answer.order
       quest_name = get_title_quest(answer.order)
       body :who => "",
       :text  => l(:mail_body_quest4),           
