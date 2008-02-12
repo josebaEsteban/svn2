@@ -1,0 +1,115 @@
+<h3>Users <%= @users %> </h3>
+<h3>Quests <%= @quests %></h3>
+<h3><a href="/rails/info/properties" onClick="about(); return false">About your application&rsquo;s environment</a></h3>
+<table cellspacing="0">
+  <tbody>
+    <%- odd=0 -%>
+    <%- nope=0 -%>
+    <%- (User.find_by_sql("select * from users order by last_login_on desc	, lastname asc, firstname")).each do |user|  -%> 
+    <%- odd=0 -%>
+  <thead>
+    <tr>
+      <th scope="col"><div align="left">#</div></th>   
+      <th scope="col"><div align="left"><%= user.firstname + " " +user.lastname %></div></th>
+	 <%- TzTime.zone=user.timezone -%> 
+      <%- if user.last_login_on.nil? -%>
+      <th scope="col"><div align="left">never</div></th>
+      <%- else -%>
+      <th scope="col"><div align="left"><%=l_datetime(TzTime.zone.utc_to_local(user.last_login_on))%></div></th>
+      <%- end -%>
+    <th scope="col"><div align="left"><%= user.ip %></div></th>
+    <th scope="col"><div align="left"><%= user.ip_last %></div></th>
+    <th scope="col"><div align="left"><%= user.language %></div></th> 
+    <th scope="col"><div align="left">
+	<%- case user.status -%>
+	<%- when 1: -%>active
+	<%- when 2: -%>registered
+	<%- when 3: -%>locked
+	<%- end -%>  
+	</div></th>
+    <th scope="col"><div align="left">	
+	<%- case user.role -%>
+	<%- when 1: -%>gratis
+	<%- when 2: -%>athlete
+	<%- when 3: -%>coach
+	<%- when 4: -%>tutor
+ 	<%- end -%>
+	</div></th>
+    <th scope="col"><div align="left"><%= user.time_zone %></div></th>
+    </tr>   
+  </thead> 
+<%- respuestas=1 -%>
+  <%- (Journal.find_by_sql("select * from journals where journals.user_id=#{user.id } order by journals.created_on desc")).each do |journal|  -%>
+  <%- if odd == 1 -%>
+  <tr class="odd">
+    <%- odd=0-%>
+    <%-else -%>
+  <tr>
+    <%- odd=1 end -%>
+        <td><%= respuestas %></td>
+<%- if journal.event[0,1]=='q'
+paso = journal.event.split('/') 
+accion = "/"+paso[0]+"/show/"+ paso[2]-%>
+<td><a href=<%= accion %>><%= journal.event %></td>
+<%- else -%>
+     <td><%= journal.event %></td>
+<%- end -%>   
+    <td><%= l_datetime(TzTime.zone.utc_to_local(journal.created_on)) %></td> 
+    <td><%= journal.ip %></td>
+    <td><%= journal.country %></td>         
+    <td><%= journal.region %></td>  
+    <td><%= journal.city %></td>  
+    <td><%= journal.organization %></td>  
+  </tr>   
+<%- respuestas = respuestas+1 -%> 
+   <%- end -%>
+<%- respuestas=1 -%>
+  <%- (Answer.find_by_sql("select * from answers where answers.user_id=#{user.id } order by answers.created_on desc")).each do |answer|  -%>
+  <%- if odd == 1 -%>
+  <tr class="odd">
+    <%- odd=0-%>
+    <%-else -%>
+  <tr>
+    <%- odd=1 end -%>
+    <%- case answer.quest_id 
+            when 1 
+              quest=l(:quest1) 
+            when 2 
+              quest=l(:quest2_label_0) 
+            when 3 
+              quest=l(:quest3) 
+            when 4 
+              quest=l(:quest4) 
+            when 5 
+              quest=l(:quest5) 
+            when 6 
+              quest=l(:quest6) 
+            when 7 
+              quest=l(:quest7_label_0) 
+            when 8 
+              quest=l(:quest8_label_0)  
+            when 9 
+              quest=l(:quest9_label_0)  
+            when 10 
+              quest=l(:quest10_label_0)  
+            when 11 
+              quest=l(:quest11_label_0)
+            when 12 
+              quest=l(:quest12_label_0)
+            end -%>
+    <td><%= respuestas %></td> 
+    <%- controlador="quest"+ answer.quest_id.to_s -%>
+    <td><%= link_to quest, :controller  => controlador, :action => 'show', :id => answer %></td>
+    <td><%= l_datetime(TzTime.zone.utc_to_local(answer.created_on)) %></td>
+	<%- if  answer.time_to_fill.nil? -%>
+    <td></td>
+	<%- else -%>
+    <td><%=l_time(answer.time_to_fill) %></td> 
+	<%- end -%>
+    <td><%= answer.ip %></td> 
+  </tr>
+<%- respuestas = respuestas+1 -%>
+  <%- end -%>
+  <%- end -%>
+  </tbody>
+</table>
