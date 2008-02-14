@@ -20,14 +20,19 @@
     <%- if @logged_in_user.athlete? -%>
     <ul>
       <%- i=0 -%>
+			<%- bw = 0 -%>
       <%- for quest in @quests -%>
       <%- if quest.browse -%>
       <li>
         <%- controlador="quest"+quest.order.to_s -%>
-        <%= link_to @titulo[i], :controller  => controlador, :action => 'new' %></li>
+        <%= link_to @titulo[i], :controller  => controlador, :action => 'new' %></li> 
+		<%- bw = bw+1 -%>
       <%- end -%>
       <%- i=i+1 -%>
       <%- end -%>
+		<%- if bw == 0 -%>
+    	<li><%= l(:label_quest_no_pending) %></li>  
+		<%- end -%>
     </ul>
     <%- elsif @logged_in_user.show? -%>
     <%- else -%>
@@ -112,7 +117,9 @@
         <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>
         <th>##</th>
         <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
-        <th scope="col"><div align="left"><%=l(:label_competition) %></div></th>
+        <th scope="col">
+	<!-- <div align="left"><%=l(:label_competition) %></div> -->
+	</th>
       </tr>
     </thead>
     <tbody>
@@ -134,7 +141,7 @@
         <td><%= @titulo[answer.quest_id-1] %></td>
         <td> <%= image_tag 'cross.png' %></td>
         <%- end -%>
-        <td><%= answer.competition %></td>
+        <!-- <td><%= answer.competition %></td> -->
       </tr>
       <%- end -%>
     </tbody>
