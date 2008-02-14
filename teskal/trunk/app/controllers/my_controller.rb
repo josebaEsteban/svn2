@@ -8,16 +8,16 @@ class MyController < ApplicationController
   # BLOCKS = { 'news' => :label_news_laquest,
   #   'documents' => :label_document_plural
   # }.freeze
-  # 
+  #
   # DEFAULT_LAYOUT = {  'left' => ['issuesassignedtome'],
   #   'right' => ['issuesreportedbyme']
   # }.freeze
-  # 
+  #
   # verify :xhr => true,
   # :session => :page_layout,
   # :only => [:add_block, :remove_block, :order_blocks]
-  #  
-  
+  #
+
   def index
     page
     render :action => 'page'
@@ -28,7 +28,9 @@ class MyController < ApplicationController
     store_location
     @titulo = get_label_quest
     @user = self.logged_in_user
-    @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{session[:user_id]} and answers.browse=1 order by answers.created_on DESC")
+    @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{session[:user_id]}  order by answers.created_on DESC")
+    # and answers.browse=1
+
     # @blocks = @user.pref[:my_page_layout] || DEFAULT_LAYOUT
     # @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{session[:user_id]} order by pendings.created_on DESC")
     @books = Book.find_by_sql("select * from books where books.user_id=#{session[:user_id]} order by books.order ASC")
@@ -48,10 +50,16 @@ class MyController < ApplicationController
   def athletes
     store_location
     @user = self.logged_in_user
-    if @user.show?
-      @users = User.find_by_sql("select * from users where users.managed_by=#{session[:user_id]} and  (users.status =1 or users.status=3) order by users.created_on DESC")
+    if @logged_in_user.admin? and !params[:id].nil?
+      id=params[:id].split('p')
+      busca = id[0]
+      @users = User.find_by_sql("select * from users where users.managed_by=#{busca} and  (users.status =1 or users.status=3) order by users.created_on DESC")
     else
-      redirect_to :controller => 'my', :action => 'page'
+      if @user.show?
+        @users = User.find_by_sql("select * from users where users.managed_by=#{session[:user_id]} and  (users.status =1 or users.status=3) order by users.created_on DESC")
+      else
+        redirect_to :controller => 'my', :action => 'page'
+      end
     end
   end
 
