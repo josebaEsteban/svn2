@@ -239,14 +239,14 @@ class Quest1Controller < ApplicationController
     item=13
     if ego < 4
       @advice[item]=l(:quest1_d14_a)
-      @icon[item]="stop"
+      @icon[item]="star"
     else
       if ego <= 7
         @advice[item]=l(:quest1_d14_b)
         @icon[item]="medium"
       else
         @advice[item]=l(:quest1_d14_c)
-        @icon[item]="star"
+        @icon[item]="stop"
       end
     end
     item=14

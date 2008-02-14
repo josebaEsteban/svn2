@@ -129,9 +129,10 @@
         <td> <%= answer.quest_id.to_s %></td>
         <%- if answer.browse -%>
         <td><%= link_to @titulo[answer.quest_id-1], :controller  => controlador, :action => 'show', :id => answer %></td>
+        <td> <%= image_tag 'tick.png' %></td>      
         <%- else -%>
         <td><%= @titulo[answer.quest_id-1] %></td>
-        <td></td>
+        <td> <%= image_tag 'cross.png' %></td>
         <%- end -%>
         <td><%= answer.competition %></td>
       </tr>
