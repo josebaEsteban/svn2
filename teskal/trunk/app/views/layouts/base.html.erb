@@ -50,6 +50,10 @@
       <% else %>
       <li><a href="/account/login" class="active"><%= l(:label_login) %></a></li>
       <% end %>
+	  <%- case current_language -%>
+	  <%- when :es -%>
+	           <li><a href="http://teskal.typepad.com/">Blog</a></li> 
+	     <%- end -%>      
       <% if loggedin? %>
       <li><%= link_to l(:label_my_account), { :controller => 'my', :action => 'account' } %></li>
       <% end %>
