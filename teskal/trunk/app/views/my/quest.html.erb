@@ -62,7 +62,7 @@
       <tr>
         <%- odd=1 end -%>
         <%- controlador="quest"+ answer.quest_id.to_s -%>
-      	<td><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(answer.created_on))%></td>
+        <td><div align="center"><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(answer.created_on))%></div></td>
         <td> <%= answer.quest_id.to_s %></td>
         <%- if answer.browse -%>
         <td><%= link_to @titulo[answer.quest_id-1], :controller  => controlador, :action => 'show', :id => answer %></td>
