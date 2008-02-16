@@ -401,7 +401,8 @@ class ApplicationController < ActionController::Base
       end
       journal( "quest"+@answer.quest_id.to_s+"/show/"+@answer.id.to_s, @answer.user_id)
       TzTime.zone=@user.timezone
-      @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
+      @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on)) 
+      @fechado = @answer.created_on
     else
       flash[:notice] = l(:notice_not_authorized)
       redirect_to :controller => 'my', :action => 'page'

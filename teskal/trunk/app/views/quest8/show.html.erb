@@ -7,7 +7,7 @@
 <br/> 
 <div align="left">
  		<h2><%=l(:quest8_label_0)%></h2>
-  <h4><%= @user.name+" - "+@fecha.to_s %></h4> 
+  <h4><%= @user.name+" - "+l(:label_filled)+" "+distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(@fechado))+" - "+day_name(@fechado.wday)+", "+@fecha%></h4>
 		<br/> 
   <h3><span class=<%= '"icon icon-'+@icon[0]+'">' + l(:quest8_label_1) %></span></h3>
   <h4> <%=@advice[0]%> </h4>
