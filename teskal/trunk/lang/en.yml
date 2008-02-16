@@ -5,18 +5,18 @@ actionview_datehelper_select_month_names: January,February,March,April,May,June,
 actionview_datehelper_select_month_names_abbr: Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec
 actionview_datehelper_select_month_prefix:
 actionview_datehelper_select_year_prefix:
-actionview_datehelper_time_in_words_day: 1 day
-actionview_datehelper_time_in_words_day_plural: %d days
-actionview_datehelper_time_in_words_hour_about: about an hour
-actionview_datehelper_time_in_words_hour_about_plural: about %d hours
-actionview_datehelper_time_in_words_hour_about_single: about an hour
-actionview_datehelper_time_in_words_minute: 1 minute
-actionview_datehelper_time_in_words_minute_half: half a minute
-actionview_datehelper_time_in_words_minute_less_than: less than a minute
-actionview_datehelper_time_in_words_minute_plural: %d minutes
-actionview_datehelper_time_in_words_minute_single: 1 minute
-actionview_datehelper_time_in_words_second_less_than: less than a second
-actionview_datehelper_time_in_words_second_less_than_plural: less than %d seconds
+actionview_datehelper_time_in_words_day: 1 day ago
+actionview_datehelper_time_in_words_day_plural: %d days ago
+actionview_datehelper_time_in_words_hour_about: about an hour ago
+actionview_datehelper_time_in_words_hour_about_plural: about %d hours ago
+actionview_datehelper_time_in_words_hour_about_single: about an hour ago
+actionview_datehelper_time_in_words_minute: 1 minute ago
+actionview_datehelper_time_in_words_minute_half: half a minute ago
+actionview_datehelper_time_in_words_minute_less_than: less than a minute ago
+actionview_datehelper_time_in_words_minute_plural: %d minutes ago
+actionview_datehelper_time_in_words_minute_single: 1 minute ago
+actionview_datehelper_time_in_words_second_less_than: less than a second ago
+actionview_datehelper_time_in_words_second_less_than_plural: less than %d seconds ago
 actionview_instancetag_blank_option: Please select
 activerecord_error_accepted: must be accepted
 activerecord_error_blank: can't be blank
@@ -170,7 +170,7 @@ label_export_to: Export to
 label_f_hour: %.2f hour
 label_f_hour_plural: %.2f hours
 label_fill: Fill
-label_filled: Date filled
+label_filled: Filled
 label_filter_plural: Filters
 label_help: Help
 label_history: History

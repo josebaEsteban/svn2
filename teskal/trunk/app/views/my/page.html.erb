@@ -114,7 +114,7 @@
   <table cellspacing="0">
     <thead>
       <tr>
-        <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>
+        <th scope="col"><div align="center"><%=l(:label_filled) %></div></th>
         <th>##</th>
         <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
         <th scope="col">
@@ -133,8 +133,8 @@
       <tr>
         <%- odd=1 end -%>
         <%- controlador="quest"+ answer.quest_id.to_s -%>
-     	<td><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(answer.created_on))%></td> 	
-        <td> <%= answer.quest_id.to_s %></td>
+     	<td><div align="right"><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(answer.created_on))%></div></td> 	
+        <td><div align="right"> <%= answer.quest_id.to_s %></div></td>
         <%- if answer.browse -%>
         <td><%= link_to @titulo[answer.quest_id-1], :controller  => controlador, :action => 'show', :id => answer %></td>
         <td> <div align="center"><%= image_tag 'tick.png' %></div></td>      

@@ -114,7 +114,7 @@ font:normal 100%/120% "Lucida Grande","Lucida Sans Unicode",Verdana,Arial,Helvet
             <%- else -%>
           <tr class="odd">
             <%- end -%>
-            <td><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(quest.updated_on))%></td>
+            <td><div align="center"><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(quest.updated_on))%></div></td>
             <td><%= quest.order.to_s %></td>
             <td><%= @titulo[i]%></td>
             <td><a href="/quest<%= quest.order.to_s %>/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
@@ -135,7 +135,7 @@ font:normal 100%/120% "Lucida Grande","Lucida Sans Unicode",Verdana,Arial,Helvet
       <table cellspacing="0">
         <thead>
           <tr>
-            <th scope="col"><%= l(:label_last_updates) %></th>
+            <th scope="col"><div align="left"><%= l(:label_last_updates) %></div?</th>
             <th scope="col">##</th>
             <th scope="col"><div align="left"><%=l(:label_book)%></div></th>
           </tr>
@@ -148,7 +148,7 @@ font:normal 100%/120% "Lucida Grande","Lucida Sans Unicode",Verdana,Arial,Helvet
             <%- else -%>
           <tr class="odd">
             <%- end -%>
-            <td><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(book.updated_on))%></td>
+            <td><div align="center"><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(book.updated_on))%><div>	</td>
             <td><%= book.order.to_s %></td>
             <td><%= @libro[i] %></td>
             <td> <a href="/books/switch/<%= book.id.to_s %>">	
@@ -193,7 +193,7 @@ font:normal 100%/120% "Lucida Grande","Lucida Sans Unicode",Verdana,Arial,Helvet
     <tr>
       <%- odd=1 end -%>
       <%- controlador="quest"+ answer.quest_id.to_s -%>
-      <td><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(answer.created_on))%></td>
+      <td><div align="center"><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(answer.created_on))%></div></td>
       <td> <%= answer.quest_id.to_s %> </td>
       <td><%= link_to @titulo[answer.quest_id-1], :controller  => controlador, :action => 'show', :id => answer %></td>
       <td> <a href="/answers/switch/<%= answer.id.to_s %>">	

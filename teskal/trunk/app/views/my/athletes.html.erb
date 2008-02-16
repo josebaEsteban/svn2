@@ -43,8 +43,8 @@
         <td><%= l_datetime(TzTime.zone.utc_to_local(user.created_on))%></td>
         <!-- <td></td> --> 
         <td><%= user.mail %></td>
-        <!-- <td></td> --> 
-        <td><%= l_datetime(TzTime.zone.utc_to_local(user.last_login_on)) unless user.last_login_on.nil? %></td>
+        <!-- <td></td> -->     
+        <td><div align="center"><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(user.last_login_on)) unless user.last_login_on.nil? %></div></td> 
         <!-- <td></td> --> 
         <td><div align="center"><%= user.language %></div></td>
         <!-- <td></td> --> 
