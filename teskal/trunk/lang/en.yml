@@ -114,6 +114,7 @@ field_value: Value
 field_version: Version
 footer_1: Design
 footer_2: Contact info[at]teskal[dot]com
+mail_spam: Check your spam filter if it doesn't show up within a few minutes.
 general_csv_encoding: ISO-8859-1
 general_csv_separator: ','
 general_day_names: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday

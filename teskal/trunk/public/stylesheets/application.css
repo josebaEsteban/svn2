@@ -352,13 +352,20 @@ width: 420px;
 height: auto;
 text-align: left;
 background: #f7f4ee;
-padding: 15px;
+padding-top: 15px;
+padding-bottom: 0px;
+padding-left: 15px;
+padding-right: 15px;
 font-size: 110%;
 border: 1px solid #ddd;
 }
 #signin p {
 padding: 5px;
 font-weight: normal;
+} 
+#spam {
+font-size: 100%;
+font-style: italic;   
 }
 #errors h3, #signin h3 {
 text-shadow: 2px 2px #bbb;
