@@ -272,6 +272,7 @@ mail_body_signup: "Gràcies per registrar-te a Teskal! Per activar el teu compte
 mail_subject_account_activation_request: Petició d'activació de compte en Teskal
 mail_subject_allowed: Resultat qüestionari 
 mail_subject_book: Biblioteca Teskal
+mail_spam: Chequea el teu filtre de correu escombraries si no apareix als pocs minuts. 
 mail_subject_lost_password: La teva contrasenya de Teskal
 mail_subject_pending: Qüestionari pendent
 mail_subject_quest: Nou qüestionari 

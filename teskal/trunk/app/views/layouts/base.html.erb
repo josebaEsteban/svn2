@@ -52,7 +52,7 @@
       <% end %>
 	  <%- case current_language -%>
 	  <%- when :es -%>
-	           <li><a href="http://teskal.typepad.com/">Blog</a></li> 
+	           <li><a href="http://teskal.typepad.com" target="_blank">Blog</a></li> 
 	     <%- end -%>      
       <% if loggedin? %>
       <li><%= link_to l(:label_my_account), { :controller => 'my', :action => 'account' } %></li>
