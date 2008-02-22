@@ -125,6 +125,7 @@ general_fmt_date: %%m/%%d/%%Y
 general_fmt_datetime: %%m/%%d/%%Y %%I:%%M %%p
 general_fmt_datetime_short: %%b %%d, %%I:%%M %%p
 general_fmt_time: %%I:%%M %%p
+general_fmt_time: %%X
 general_lang_name: 'Portugues Brasileiro'
 general_pdf_encoding: ISO-8859-1
 general_text_No: 'Não'
@@ -525,3 +526,4 @@ markt_6_2: Como é que você pode detectá-lo suficientemente cedo?
 markt_7: Como é que eu sei se as carruagens estão a criar um ambiente adequado para o melhor desempenho das equipas? 
 markt_8: Tem interesse em todo o cuidado do atleta? 
 markt_9: O que fazer treinadores têm ferramentas para manipulação cuidados para toda a pessoa?
+label_time_taken: Tempo para concluí-lo

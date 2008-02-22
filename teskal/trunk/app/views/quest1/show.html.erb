@@ -7,7 +7,7 @@
 <br/>
 <div align="left">
   <h2><%=l(:quest1)%></h2>
-  <h4><%= @user.name+" - "+l(:label_filled)+" "+distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(@fechado))+" - "+day_name(@fechado.wday)+", "+@fecha%></h4>
+  <h4><%= @user.name+' • '+day_name(@fechado.wday)+" "+@fecha +" • "+l(:label_filled)+' '+distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(@fechado))+@time_to_fill%></h4>
   <br/>
   <h3><span class=<%= '"icon icon-'+@icon[0]+'">' +  l(:quest1_label_1) %></span></h3>
   <h4> <%=@advice[0]%> </h4>

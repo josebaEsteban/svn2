@@ -121,6 +121,7 @@ general_fmt_date: %%d/%%m/%%Y
 general_fmt_datetime: %%d/%%m/%%Y %%H:%%M
 general_fmt_datetime_short: %%d/%%m %%H:%%M
 general_fmt_time: %%H:%%M
+general_fmt_time: %%X 
 general_lang_name: 'Català'
 general_pdf_encoding: ISO-8859-1
 general_text_No: 'No'
@@ -478,3 +479,4 @@ unit_8_path: 08.La.Competicion.es.pdf
 unit_8_title: La Competición
 unit_9_path: 09.La.Comunicacion.es.pdf
 unit_9_title: La Comunicación
+label_time_taken: Es va trigar en completar-lo

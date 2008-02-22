@@ -124,6 +124,7 @@ general_fmt_date: %%m/%%d/%%Y
 general_fmt_datetime: %%m/%%d/%%Y %%I:%%M %%p
 general_fmt_datetime_short: %%b %%d, %%I:%%M %%p
 general_fmt_time: %%I:%%M %%p
+general_fmt_time: %%X
 general_lang_name: 'English'
 general_pdf_encoding: ISO-8859-1
 general_text_No: 'No'
@@ -1151,3 +1152,4 @@ unit_8_path: 08.Competition.en.pdf
 unit_8_title: Competition
 unit_9_path: 09.Comunication.en.pdf
 unit_9_title: Comunication
+label_time_taken: Time to complete it
