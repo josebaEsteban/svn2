@@ -122,6 +122,7 @@ general_fmt_date: %%d/%%m/%%Y
 general_fmt_datetime: %%d/%%m/%%Y %%H:%%M
 general_fmt_datetime_short: %%d/%%m %%H:%%M
 general_fmt_time: %%H:%%M
+general_fmt_time: %%X
 general_lang_name: 'Français'
 general_pdf_encoding: ISO-8859-1
 general_text_No: 'Non'
@@ -1105,5 +1106,6 @@ markt_7: Comment savez-vous que les entraîneurs sont en train de créer le clim
 markt_8: Êtes-vous intéressé à la prise en charge globale de l'athlète?
 markt_9: Quels outils les entraîneurs ont pour la manipulation des soins pour l'ensemble de la personne?
 mail_spam: Vérifiez si votre filtre anti-spam si elle n'apparaît pas en quelques minutes.
+label_time_taken: Heure de les achever
 
     

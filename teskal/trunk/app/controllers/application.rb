@@ -401,8 +401,16 @@ class ApplicationController < ActionController::Base
       end
       journal( "quest"+@answer.quest_id.to_s+"/show/"+@answer.id.to_s, @answer.user_id)
       TzTime.zone=@user.timezone
-      @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on)) 
+      @fecha = l_datetime(TzTime.zone.utc_to_local(@answer.created_on))
       @fechado = @answer.created_on
+      @time_to_fill = ""
+      if @user.managed_by == @logged_in_user.id or @logged_in_user.admin?
+        if  l_time(@answer.time_to_fill) == "00:00:00" 
+          @time_to_fill = ""
+        else
+          @time_to_fill = ' • '+l(:label_time_taken)+', '+l_time(@answer.time_to_fill)
+        end
+      end
     else
       flash[:notice] = l(:notice_not_authorized)
       redirect_to :controller => 'my', :action => 'page'
