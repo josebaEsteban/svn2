@@ -31,7 +31,21 @@
   <%= @chart2%>
 </center>
 <div align="left">
-  <h3><span class=<%= '"icon icon-'+@icon[8]+'">' +  l(:quest1_label_22) %></span></h3>
+   <h3><%= l(:quest1_label_31) %></span></h3>
+<%- if @answer.answ66>0 or @answer.answ67>0 -%>
+  <h4><%=@answer.note1%> </h4>   
+<%- end -%>   
+<%- if @answer.answ68 >0 or @answer.answ69>0 -%>
+  <h4><%=@answer.note2%> </h4>   
+<%- end -%>
+<%- if @answer.answ70 >0 or @answer.answ71>0 -%>
+  <h4><%=@answer.note3%> </h4>   
+<%- end -%>
+<%- if @answer.answ72 >0 or @answer.answ73>0 -%>
+  <h4><%=@answer.note4%> </h4>   
+<%- end -%>
+
+ <h3><span class=<%= '"icon icon-'+@icon[8]+'">' +  l(:quest1_label_22) %></span></h3>
   <h4> <%=@advice[8]%> </h4>
   <h3><span class=<%= '"icon icon-'+@icon[9]+'">' +  l(:quest1_label_23) %></span></h3>
   <h4> <%=@advice[9]%> </h4>
