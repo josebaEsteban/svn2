@@ -25,12 +25,12 @@ class Quest1Controller < ApplicationController
     cuantos=pele.size
     if cuantos>4
       cuantos=4
-    end 
+    end
     cuantos =cuantos-1
     for i in 0..cuantos
       inicio=inicio+pele[i]+" "
     end
-    inicio.chop!  
+    inicio.chop!
     return inicio
   end
 
@@ -364,19 +364,24 @@ class Quest1Controller < ApplicationController
     # strXML = strXML + "<category label= '"+l(:quest1_label_19)+"'/>"
     # strXML = strXML + "<category label= '"+l(:quest1_label_20)+"'/>"
     # strXML = strXML + "<category label= '"+l(:quest1_label_21)+"'/>"
-    strXML = strXML + "<category label= '"+objetivo[0]+"'/>"
-    strXML = strXML + "<category label= '"+objetivo[1]+"'/>"
-    strXML = strXML + "<category label= '"+objetivo[2]+"'/>"
-    strXML = strXML + "<category label= '"+objetivo[3]+"'/>"
+    for i in 0..3
+      if objetivo[i] !=""
+        strXML = strXML + "<category label= '"+objetivo[i]+"'/>"
+      end
+    end
     strXML = strXML +"</categories>"
     strXML = strXML +"<dataset SeriesName='"+l(:quest1_label_22)+"' color='b23f3f'>"
-    for plot in dificultad_plot
-      strXML = strXML +"<set value='"+plot.to_s+"' />"
+    for i in 0..3
+      if objetivo[i] !=""
+        strXML = strXML +"<set value='"+dificultad_plot[i].to_s+"' />"
+      end
     end
     strXML = strXML +"</dataset>"
     strXML = strXML +"<dataset SeriesName='"+l(:quest1_label_23)+"' renderAs='Area' color='759a0c'>"
-    for plot in confianza_plot
-      strXML = strXML +"<set value='"+plot.to_s+"' />"
+    for i in 0..3
+      if objetivo[i] !=""
+        strXML = strXML +"<set value='"+confianza_plot[i].to_s+"' />"
+      end
     end
     strXML = strXML + "</dataset> </chart>"
     @chart2= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest3_2", 610, 300, false, false)
