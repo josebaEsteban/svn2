@@ -20,6 +20,20 @@ class Quest1Controller < ApplicationController
     teskalChart1
   end
 
+  def truncate(pele)
+    inicio=""
+    cuantos=pele.size
+    if cuantos>4
+      cuantos=4
+    end 
+    cuantos =cuantos-1
+    for i in 0..cuantos
+      inicio=inicio+pele[i]+" "
+    end
+    inicio.chop!  
+    return inicio
+  end
+
   def teskalChart1
 
     # Transformadas
@@ -60,25 +74,40 @@ class Quest1Controller < ApplicationController
       media = 0
       confianza_plot=[]
       dificultad_plot=[]
+      objetivo=[]
+      for i in 0..3
+        confianza_plot[i]=0
+        dificultad_plot[i]=0
+        objetivo[i]=""
+      end
+      truncado_a=15
       if answer.answ66 > 0 or answer.answ67 > 0
         media = media +1.0
-        dificultad_plot[media-1]=answer.answ66
-        confianza_plot[media-1]= answer.answ67
+        dificultad_plot[0]=answer.answ66
+        confianza_plot[0]= answer.answ67
+        pele=answer.note1.split
+        objetivo[0]=truncate(pele)
       end
       if answer.answ68 > 0 or answer.answ69 > 0
         media = media +1.0
-        dificultad_plot[media-1]=answer.answ68
-        confianza_plot[media-1]= answer.answ69
+        dificultad_plot[1]=answer.answ68
+        confianza_plot[1]= answer.answ69
+        pele=answer.note2.split
+        objetivo[1]=truncate(pele)
       end
       if answer.answ70 > 0 or answer.answ71 > 0
         media = media +1.0
-        dificultad_plot[media-1]=answer.answ70
-        confianza_plot[media-1]= answer.answ71
+        dificultad_plot[2]=answer.answ70
+        confianza_plot[2]= answer.answ71
+        pele=answer.note3.split
+        objetivo[2]=truncate(pele)
       end
       if answer.answ72 > 0 or answer.answ73 > 0
         media = media +1.0
-        dificultad_plot[media-1]=answer.answ72
-        confianza_plot[media-1]= answer.answ73
+        dificultad_plot[3]=answer.answ72
+        confianza_plot[3]= answer.answ73
+        pele=answer.note4.split
+        objetivo[3]=truncate(pele)
       end
       if media > 0
         dificultad = (answer.answ66 + answer.answ68 + answer.answ70 + answer.answ72)/media
@@ -331,10 +360,14 @@ class Quest1Controller < ApplicationController
     strXML=''
     strXML ="<chart palette='2' caption='"+l(:quest1_label_31)+"' subCaption='"+@user.name+"' xAxisName='"+@fecha.to_s+" 'showvalues='0'  formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='100'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' >"
     strXML = strXML +"<categories>"
-    strXML = strXML + "<category label= '"+l(:quest1_label_18)+"'/>"
-    strXML = strXML + "<category label= '"+l(:quest1_label_19)+"'/>"
-    strXML = strXML + "<category label= '"+l(:quest1_label_20)+"'/>"
-    strXML = strXML + "<category label= '"+l(:quest1_label_21)+"'/>"
+    # strXML = strXML + "<category label= '"+l(:quest1_label_18)+"'/>"
+    # strXML = strXML + "<category label= '"+l(:quest1_label_19)+"'/>"
+    # strXML = strXML + "<category label= '"+l(:quest1_label_20)+"'/>"
+    # strXML = strXML + "<category label= '"+l(:quest1_label_21)+"'/>"
+    strXML = strXML + "<category label= '"+objetivo[0]+"'/>"
+    strXML = strXML + "<category label= '"+objetivo[1]+"'/>"
+    strXML = strXML + "<category label= '"+objetivo[2]+"'/>"
+    strXML = strXML + "<category label= '"+objetivo[3]+"'/>"
     strXML = strXML +"</categories>"
     strXML = strXML +"<dataset SeriesName='"+l(:quest1_label_22)+"' color='b23f3f'>"
     for plot in dificultad_plot
@@ -346,8 +379,8 @@ class Quest1Controller < ApplicationController
       strXML = strXML +"<set value='"+plot.to_s+"' />"
     end
     strXML = strXML + "</dataset> </chart>"
-    @chart2= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest3_2", 450, 300, false, false)
-
+    @chart2= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest3_2", 610, 300, false, false)
+    puts @chart2
     strXML=''
     strXML ="<chart palette='2' caption='"+l(:quest1_label_32)+"' subCaption='"+@user.name+"' xAxisName='"+@fecha.to_s+" 'showvalues='0'  formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='10'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
     strXML = strXML + "<set label= '"+l(:quest1_label_13)+"' value='"+acorta(auto_control)+"'/>"
@@ -356,6 +389,6 @@ class Quest1Controller < ApplicationController
     strXML = strXML + "<set label= '"+l(:quest1_label_16)+"' value='"+acorta(ego)+"'/>"
     strXML = strXML + "<set label= '"+l(:quest1_label_17)+"' value='"+acorta(ot)+"'/>"
     strXML = strXML + "</chart>"
-    @chart3= renderChart("/charts/Column2D.swf"+l(:PBarLoadingText), "", strXML, "quest3_3", 450, 300, false, false)
+    @chart3= renderChart("/charts/Column2D.swf"+l(:PBarLoadingText), "", strXML, "quest3_3", 610, 300, false, false)
   end
 end

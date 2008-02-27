@@ -4,7 +4,6 @@ class Quest9Controller < ApplicationController
 
   def new
     user=User.find(session[:user_id])
-    user.start = Time.now
     if !params[:id].nil?
       user.filled_for = params[:id]
       passive = User.find_by_sql("select * from users where users.id=#{params[:id]}")
@@ -12,6 +11,7 @@ class Quest9Controller < ApplicationController
     else
       user.filled_for = session[:user_id]
     end
+    user.start = Time.now
     user.save
   end
 

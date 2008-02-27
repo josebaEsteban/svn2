@@ -405,7 +405,7 @@ class ApplicationController < ActionController::Base
       @fechado = @answer.created_on
       @time_to_fill = ""
       if @user.managed_by == @logged_in_user.id or @logged_in_user.admin?
-        if  l_time(@answer.time_to_fill) == "00:00:00" 
+        if  l_time(@answer.time_to_fill) == "00:00:00"
           @time_to_fill = ""
         else
           @time_to_fill = ' • '+l(:label_time_taken)+', '+l_time(@answer.time_to_fill)
@@ -416,6 +416,7 @@ class ApplicationController < ActionController::Base
       redirect_to :controller => 'my', :action => 'page'
     end
   end
+
 
   # private
   # def set_timezone
