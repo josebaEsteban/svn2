@@ -31,6 +31,9 @@ class Quest1Controller < ApplicationController
       inicio=inicio+pele[i]+" "
     end
     inicio.chop!
+    if inicio.length == 0
+      inicio = " "
+    end
     return inicio
   end
 
