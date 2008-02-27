@@ -380,10 +380,14 @@ class Quest1Controller < ApplicationController
       end
     end
     strXML = strXML +"</dataset>"
-    strXML = strXML +"<dataset SeriesName='"+l(:quest1_label_23)+"' renderAs='Area' color='759a0c'>"
-    for i in 0..3
-      if objetivo[i] !=""
-        strXML = strXML +"<set value='"+confianza_plot[i].to_s+"' />"
+    if media > 1
+      strXML = strXML +"<dataset SeriesName='"+l(:quest1_label_23)+"' renderAs='Area' color='759a0c'>"
+    else
+      strXML = strXML +"<dataset SeriesName='"+l(:quest1_label_23)+"' color='759a0c'>"
+    end
+    for j in 0..3
+      if objetivo[j] !=""
+        strXML = strXML +"<set value='"+confianza_plot[j].to_s+"' />"
       end
     end
     strXML = strXML + "</dataset> </chart>"
