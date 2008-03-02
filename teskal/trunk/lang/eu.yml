@@ -1,6 +1,6 @@
-Field_Category: Kategoria
-Field_Role: Zeregin
-Field_Title: Izenburua
+field_Category: Kategoria
+field_Role: Zeregin
+field_Title: Izenburua
 PBarLoadingText: ?PBarLoadingText=Datuak kargatzen. Itxaron mesedez...
 _gloc_rule_default: '|n| n==1 ? "" : "_plural" '
 actionview_datehelper_select_day_prefix:
@@ -1138,4 +1138,9 @@ unit_8_path: 08.Lehiaketa.eu.pdf
 unit_8_title: Lehiaketa
 unit_9_path: 09.Komunikazioa.eu.pdf
 unit_9_title: Komunikazioa
-label_time_taken: Se tardó en completarlo 
+label_time_taken: Se tardó en completarlo          
+mark_role_1: Deportista
+mark_role_2: Entrenador/a
+mark_role_3: Directivo/a                                                                          
+markt_quick_tour: Paseo Rápido                                      
+mark_concept: Qué es?
