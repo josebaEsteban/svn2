@@ -3,7 +3,7 @@
 
 class WelcomeController < ApplicationController
   layout 'base'
-  skip_before_filter :check_if_login_required, :only => [:signup_done, :index, :lost_email_sent, :chart1, :chart2, :chart3, :chart4, :chart5, :chart6]
+  skip_before_filter :check_if_login_required, :only => [:signup_done, :index, :lost_email_sent, :chart1, :chart2, :chart3, :chart4, :chart5, :chart6, :chart7, :chart8]
   def index
 
     # @projects = Project.laquest logged_in_user
@@ -13,9 +13,7 @@ class WelcomeController < ApplicationController
 
   def chart1
     strXML=''
-    #Generate the chart element
-    # labelDisplay='Stagger' staggerLines='2'
-    strXML = "<chart palette='2' caption='"+l(:quest1_label_30)+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' chartRightMargin='35'>"
+    strXML = "<chart palette='2' caption='"+l(:quest1_label_30)+"' xAxisName='"+l_datetime(Time.now)+"'showvalues='0'  decimalSeparator=',' formatNumberScale='0' legendAllowDrag='1' yAxisMinValue='36' yAxisMaxValue='72' showShadow='1'  useRoundEdges='1' showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' chartRightMargin='35'>"
     strXML = strXML +"<categories>"
     strXML = strXML + "<category label= '"+l(:quest1_label_1)+"'/>"
     strXML = strXML + "<category label= '"+l(:quest1_label_2)+"'/>"
@@ -40,7 +38,7 @@ class WelcomeController < ApplicationController
 
   def chart2
     strXML=''
-    strXML ="<chart palette='2' caption='"+l(:quest1_label_31)+"'showvalues='0'  formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='100'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' >"
+    strXML ="<chart palette='2' caption='"+l(:quest1_label_31)+"' xAxisName='"+l_datetime(Time.now)+"'showvalues='0'  formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='100'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff' >"
     strXML = strXML +"<categories>"
     strXML = strXML + "<category label= '"+l(:quest1_label_18)+"'/>"
     strXML = strXML + "<category label= '"+l(:quest1_label_19)+"'/>"
@@ -117,6 +115,31 @@ class WelcomeController < ApplicationController
     strXML = strXML + "<dataset SeriesName='"+l_datetime(Time.now-6000000)+"' lineThickness='2' renderAs='Line' ><set value='8.5'/><set value='3.16'/></dataset>"
     strXML = strXML +  "<dataset SeriesName='"+l(:quest3_label_10)+"' renderAs='Bar' ><set value='1.66'/><set value='8.33'/></dataset></chart>"
     @chart= renderChart("/charts/MSCombi2D.swf"+l(:PBarLoadingText), "", strXML, "quest12", 480, 300, false, false)
+  end
+
+  def chart7
+    strXML = "<chart caption='"+l(:quest2_label_0)+"' yAxisName='"+l_datetime(Time.now)+"' palette='2' yAxisMinValue='-10' yAxisMaxValue='10' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff' numDivLines='7'>"
+    strXML = strXML + "<set label='" + l(:quest2_label_1) + "' value='-1.66'/>"
+    strXML = strXML + "<set label='" + l(:quest2_label_2) + "' value='-0.93'/>"
+    strXML = strXML + "<set label='" + l(:quest2_label_3) + "' value='-6.66'/>"
+    strXML = strXML + "<set label='" + l(:quest2_label_4) + "' value='7.5'/>"
+    strXML = strXML + "<set label='" + l(:quest2_label_5) + "' value='6.25'/>"
+    strXML = strXML + "<set label='" + l(:quest2_label_6) + "' value='9.66'/>"
+    strXML = strXML + "<set label='" + l(:quest2_label_7) + "' value='9.15'/>"
+    strXML = strXML + "</chart>"
+    @chart= renderChart("/charts/Bar2D.swf"+l(:PBarLoadingText), "", strXML, "quest2", 550, 300, false, false)
+  end
+
+  def chart8
+    strXML = "<chart caption='"+l(:quest11_label_0)+"' yAxisName='"+l_datetime(Time.now)+"' palette='2' yAxisMaxValue='10' showShadow='1' use3DLighting='1' legendAllowDrag='1' useRoundEdges='1' noValue='0' showValues='0' bgcolor='ffffff' borderColor='ffffff'>"
+    strXML = strXML + "<set label='" + l(:quest11_label_1) + "' value='6.54'/>"
+    strXML = strXML + "<set label='" + l(:quest11_label_2) + "' value='6.98'/>"
+    strXML = strXML + "<set label='" + l(:quest11_label_3) + "' value='3.57'/>"
+    strXML = strXML + "<set label='" + l(:quest11_label_4) + "' value='3.92'/>"
+    strXML = strXML + "<set label='" + l(:quest11_label_5) + "' value='1.42'/>"
+    strXML = strXML + "<set label='" + l(:quest11_label_6) + "' value='4.1'/>"
+    strXML = strXML + "</chart>"
+    @chart= renderChart("/charts/Bar2D.swf"+l(:PBarLoadingText), "", strXML, "quest11", 600, 300, false, false)
   end
 
   def signup_done

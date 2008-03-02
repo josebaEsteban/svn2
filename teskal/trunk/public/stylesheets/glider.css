@@ -8,7 +8,7 @@ margin-left: 84px;
 div.scroller {
 	/* modify width and height of scrolling section if necessary */
 width:635px;
-height: 410px;
+height: 360px;
 overflow: hidden;
 border: 1px solid #cccccc;
 padding: 0em 2em 0em 2em;
@@ -16,7 +16,7 @@ padding: 0em 2em 0em 2em;
 div.scroller div.section {
 	/* modify width and height of each section as needed (should match the size of the scroller window) */ 
 width:635px;
-height: 410px;
+height: 360px;
 overflow: hidden;
 float: left;
 padding: 2em;
@@ -37,4 +37,14 @@ color: #444;
 background-color: inherit;
 font-family: "Gill Sans","Lucida Grande", "Times New Roman", Times, serif;
 }
-
+.columnwrapper {
+	width: 600px;
+	margin: 30px 0 30px 30px;
+	float: left;
+}
+.cols1_1, .cols1_2, .cols1_3 {
+	width: 250px;
+	float: left;
+	padding-top: 20px;
+	padding-left: 50px;
+}

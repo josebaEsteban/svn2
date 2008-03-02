@@ -110,6 +110,12 @@ margin: 0px;
 padding: 0;
 height: 28px;
 background-image: url(../images/head2_stripe_br.gif);
+} 
+#head_lang_ca {
+margin: 0px;
+padding: 0;
+height: 28px;
+background-image: url(../images/head2_stripe_ca.gif);
 }
 #header a {
 color: #fff;
