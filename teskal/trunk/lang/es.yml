@@ -256,6 +256,7 @@ label_search: Búsqueda
 label_send_information: Información de la cuenta enviada al usuario
 label_settings: Configuración
 label_show: Mostrar
+label_time_taken: Se tardó en completarlo      
 label_timezone: Zona horaria
 label_user: Usuario
 label_user_new: Añadir deportista
@@ -276,6 +277,7 @@ mail_body_quest2: Si entras en Teskal, puedes verlo en el siguiente enlace
 mail_body_quest3: Puedes ver ya el resultado de tu cuestionario de
 mail_body_quest4: Tienes pendiente de rellenar un cuestionario de
 mail_body_signup: 'Gracias por registrarte en Teskal! Para activar tu cuenta, usa el siguiente enlace'
+mail_spam: Chequea tu filtro de correo basura si no aparece a los pocos minutos.
 mail_subject_account_activation_request: Petición de activación de cuenta en Teskal
 mail_subject_allowed: Resultado cuestionario
 mail_subject_book: Biblioteca Teskal
@@ -283,7 +285,10 @@ mail_subject_lost_password: Tu contraseña de Teskal
 mail_subject_pending: Cuestionario pendiente
 mail_subject_quest: Nuevo cuestionario
 mail_subject_signup: Activación de la cuenta de Teskal
-mail_spam: Chequea tu filtro de correo basura si no aparece a los pocos minutos.
+mark_concept: Qué es? 
+mark_role_1: Deportista
+mark_role_2: Entrenador/a
+mark_role_3: Directivo/a                                                                          
 markt_10: Teskal pone esas herramientas a disposición de tus entrenadores.
 markt_11: Es un concepto integral del rendimiento deportivo que considera no solo las habilidades físicas y técnicas sino la persona del deportista.
 markt_12: Teskal permite mantener un alto nivel de comunicación al dúo deportista/entrenador o al grupo deportista/entrenador/psicólogo 
@@ -301,6 +306,8 @@ markt_6_2: ¿Como puedes detectarlo a tiempo?
 markt_7: ¿Como sabes si los entrenadores crean el ambiente adecuado para el rendimiento óptimo de los equipos?
 markt_8: ¿Te interesa el cuidado global del deportista?
 markt_9: ¿Que herramientas tienen los entrenadores para manejarlos?
+markt_quick_tour: Paseo Rápido                                      
+
 notice_account_activated: Tu cuenta ha sido activada. Puedes entrar.
 notice_account_email_exists: Ya existe un usuario con ese correo. Por favor use un correo distinto.
 notice_account_invalid_creditentials: Usuario o contraseña no válido.
@@ -819,7 +826,7 @@ quest5_d2_a: En cuanto al rendimiento emocional (RE), sus valores se sitúan en 
 quest5_d2_b: En cuanto al rendimiento emocional (RE), sus valores se sitúan en un nivel medio, lo que representa que durante la competición su respuesta emocional ha tenido altibajos, con una sensación de falta de control, acompañada de dudas en los momentos de presión, es decir, se ha esforzado en tener un buen afrontamiento emocional pero le ha costado mantenerlo a lo largo de la competición. 
 quest5_d2_c: En cuanto al rendimiento emocional (RE), sus valores se sitúan en un alto nivel, lo que representa que durante la competición ha tenido una excelente respuesta emocional, ha disfrutando, con una sensación de control y con la seguridad de haber rendido bajo la presión, es decir, con un afrontamiento emocional muy positivo. 
 quest5_d3_a: En el caso del RCOG, los valores se sitúan en un nivel bajo, lo que implica que no ha podido mantener los niveles de confianza y de satisfacción durante la competición. Además, en escasos momentos ha tenido buenas sensaciones o se ha sentido cómodo. 
-quest5_d3_b: En el caso del RCOG, los valores se sitúan en un nivel medio, lo que implica que la posibilidad de fluctuaciones en los niveles de confianza y de satisfacción durante la competición. También pueden haber influido en el interés y en las sensaciones que haya podido tener durante la misma. 
+quest5_d3_b: En el caso del RCOG, los valores se sitúan en un nivel medio, lo que implica la posibilidad de fluctuaciones en los niveles de confianza y de satisfacción durante la competición. También pueden haber influido en el interés y en las sensaciones que haya podido tener durante la misma. 
 quest5_d3_c: En el caso del RCOG, los valores se sitúan en un alto nivel, lo que implica que ha mantenido sus niveles de confianza y de satisfacción durante toda la competición. También indican la presencia de alto de interés acompañado de buenas sensaciones. 
 quest5_d4_a: Al observar los valores del RCOM, vemos que se encuentran en un bajo nivel, lo que representa muchas dificultades a la hora de responder a las acciones de l@s adversari@s, y que el PIC no estaba claro. En ocasiones se ha quedado sin saber lo que tenía que hacer y, además, las decisiones tomadas han sido desacertadas. Habrá que realizar una revisión exhaustiva del PIC, con la ayuda del/a tutor/a. 
 quest5_d4_b: Al observar los valores del RCOM, vemos que se encuentran en un nivel medio, lo que representa dificultades a la hora de responder a las acciones de l@s adversari@s, aunque el PIC lo tenía bastante claro. Casi siempre sabía lo que tenía que hacer, y considera que las decisiones adoptadas han sido acertadas. 
@@ -853,7 +860,7 @@ quest6_11: Con tu aportación al trabajo colectivo
 quest6_12: Con tu implicación hacia el esfuerzo
 quest6_13: Con tu confianza en los objetivos del juego propuestos
 quest6_14: Con tu actitud hacia el trabajo que se te ha encomendado
-quest6_15: Con las decisiones que has tomado durante el partido
+quest6_15: Con las decisiones que has tomado durante la competición
 quest6_16: Con tu nivel de confianza durante toda la competición
 quest6_17: Con tu nivel de rendimiento ante las situaciones de muy alta intensidad
 quest6_18: Con tu capacidad luchadora y perseverante
@@ -1114,7 +1121,7 @@ text_min_max_length_info: 0 para ninguna restricción
 unit_0_path: Teskal.es.pdf
 unit_0_title: Presentación Teskal
 unit_10_path: 10.Responsabilidad.vs.Culpabilidad.es.pdf
-unit_10_title: Responsabilidad vs Culpabilidad
+unit_10_title: Responsabilidad vs   
 unit_11_path: 11.Confianza.y.Auto.Eficacia.es.pdf
 unit_11_title: Confianza y Auto Eficacia
 unit_12_path: 12.Estado.de.Animo.es.pdf
@@ -1143,4 +1150,3 @@ unit_8_path: 08.La.Competicion.es.pdf
 unit_8_title: La Competición
 unit_9_path: 09.La.Comunicacion.es.pdf
 unit_9_title: La Comunicación
-label_time_taken: Se tardó en completarlo

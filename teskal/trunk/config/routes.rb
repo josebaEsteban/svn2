@@ -1,8 +1,4 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :books
-
-  map.resources :answers
-
   # Add your own custom routes here.
   # The priority is based upon order of creation: first created -> highest priority.
 
@@ -11,10 +7,14 @@ ActionController::Routing::Routes.draw do |map|
   # Keep in mind you can assign values other than :controller and :action
 
   # You can have the root of your site routed by hooking up ''
-  # -- just remember to delete public/index.html.
-  # map.connect '', :controller => "welcome" ,:action  => "signup_done"
-  map.connect '', :controller => "account", :action  => "login"
-
+  # -- just remember to delete public/index.html. 
+  
+  # map.resources :books
+  # map.resources :answers
+  
+  
+  map.home '', :controller => 'welcome'
+  # map.connect :controller => "account", :action  => "login"
 
   # map.connect 'roles/workflow/:id/:role_id/:tracker_id', :controller => 'roles', :action => 'workflow'
   # map.connect 'help/:ctrl/:page', :controller => 'help'

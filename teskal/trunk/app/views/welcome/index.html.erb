@@ -1,23 +1,76 @@
-<h2><%= l(:label_home) %></h2>
-
-<div class="splitcontentleft">
+<link rel="stylesheet" href="stylesheets/glider.css" type="text/css" media="screen" charset="utf-8">
+<%= javascript_include_tag 'prototype' -%><%= javascript_include_tag 'effects' -%><%= javascript_include_tag 'glider' -%> 
+<p>
+<h3><%= l(:markt_1) %></h3>
+</p>
+<!-- <div class="splitcontentleft">
   <p><%= Setting.welcome_text %></p>
 </div>
 
 <div class="splitcontentright">
-	<div class="box">
-	<h3><%=l(:label_project_laquest)%></h3>
-		<ul>
-		<% for answer in @answers %>
-			<li>
-			<%= link_to answer.id, :controller => 'quest2', :action => 'show', :id => answer %> (<%= format_time(project.created_on) %>)<br />
-			<%=h project.description %>
-			</li>
-		<% end %>
-		</ul>
-	</div>  
-</div>	
-
-<% content_for :header_tags do %>
-<%= auto_discovery_link_tag(:rss, {:controller => 'feeds' , :action => 'news' }) %>
-<% end %>
+</div>   -->
+<div id="my-glider">
+  <div id="quick_tour">
+    <!-- <a href="#" onClick="my_glider.previous();return false;"><img src="../images/left.png" width="21" height="26" alt="left"></a> -->
+    <%= l(:markt_quick_tour) %> <a href="#" onClick="my_glider.next();return false"><img src="../images/right.png" width="21" height="26" alt="right"></a> </div>
+  <div class="scroller" align=left>
+    <div class="content">
+      <div class="section" id="section1">
+        <h3><%= l(:mark_concept) %></h3>
+        <p>
+        <ul>
+          <li><%= l(:markt_11) %></li>
+          <li><%= l(:markt_12) %></li>
+          <li><%= l(:markt_13) %></li>
+        </ul>
+        </p>
+			<div align=right><a href="#"><img src="../images/th_markt_2.png" border="0" alt="Click to launch chart" onClick="window.open('../welcome/chart1','chart','status=yes,scrollbars=no,resizable=no,width=765,height=550');"></a></div>
+			<div align=right><a href="#"><img src="../images/th_markt_8.png" border="0" alt="Click to launch chart" onClick="window.open('../welcome/chart2','chart','status=yes,scrollbars=no,resizable=no,width=765,height=550');"></a></div>
+      </div>
+      <div class="section" id="section2">
+        <h3><%= l(:mark_role_1) %></h3>
+        <p>
+        <ul>
+          <li><%= l(:markt_2) %></li>
+          <li><%= l(:markt_3) %></li>
+        </ul>
+        </p>
+        <div align=right> <img src="../images/th_markt_4.png" /></div>
+			<div align=right><a href="#"><img src="../images/th_markt_7.png" border="0" alt="Click to launch chart" onClick="window.open('../welcome/chart3','chart','status=yes,scrollbars=no,resizable=no,width=765,height=550');"></a></div>
+      </div>
+      <div class="section" id="section3">
+        <h3><%= l(:mark_role_2) %></h3>
+        <p>
+        <ul>
+          <li><%= l(:markt_4_1) %></li>
+          <%= l(:markt_4_2) %>
+			 <%= l(:markt_4_3) %>
+          <li><%= l(:markt_5_1) %> </li>
+          </br>
+          <%= l(:markt_5_2) %>
+          <li> <%= l(:markt_6_1) %> </li>
+          <%= l(:markt_6_2) %>
+        </ul>
+        </p>
+        <div align=right> <img src="../images/th_markt_6.png" /></div>
+			<div align=right><a href="#"><img src="../images/th_markt_10.png" border="0" alt="Click to launch chart" onClick="window.open('../welcome/chart4','chart','status=yes,scrollbars=no,resizable=no,width=765,height=550');"></a></div>
+      </div>
+      <div class="section" id="section4">
+        <h3><%= l(:mark_role_3) %></h3>
+        <p>
+        <ul>
+          <li><%= l(:markt_7) %> </li>
+          <li><%= l(:markt_8) %> </li>
+          <li><%= l(:markt_9) %> </li>
+          <li><em><%= l(:markt_10) %>.</em></li>
+        </ul>
+        </p>
+			<div align=right><a href="#"><img src="../images/th_markt_11.png" border="0" alt="Click to launch chart" onClick="window.open('../welcome/chart5','chart','status=yes,scrollbars=no,resizable=no,width=765,height=550');"></a></div>
+			<div align=right><a href="#"><img src="../images/th_markt_12.png" border="0" alt="Click to launch chart" onClick="window.open('../welcome/chart6','chart','status=yes,scrollbars=no,resizable=no,width=765,height=550');"></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" charset="utf-8">
+	var my_glider = new Glider('my-glider', {duration:0.5});
+</script>

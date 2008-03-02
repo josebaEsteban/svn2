@@ -2,28 +2,28 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <!-- <link href="favicon.ico"
+<!-- <link href="favicon.ico"
 				 rel="icon"
 				 type="image/x-icon" />   -->
-  <title><%= Setting.app_title + (@html_title ? ": #{@html_title}" : "") %></title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="KEYWORDS" content="Teskal, Teskal.com, high performance sport, Sport Psychology" />
-  <meta name="OWNER" content="Teskal.com" />
-  <meta name="AUTHOR" content="Cabeza de Lobo" />
-  <meta http-equiv="OBJECT TYPE" content="Document" />
-  <meta http-equiv="CONTENT-TYPE" content="text/html" charset="ISO-8859-1" />
-  <meta http-equiv="CONTENT-LANGUAGE" content="english" />
-  <meta name="DISTRIBUTION" content="Global" />
-  <meta name="RATING" content="General" />
-  <meta name="REVISIT-AFTER" content="2 weeks" />
-  <meta name="ROBOTS" content="index,follow" />
-  <meta name="description" content="Teskal, enjoy the pressure, disfruta la presión,  それは圧力を楽しむ, presioa gozatu, gaudeix la pressió, aproveite a pressão, apprécie la pression, 它享受压" />
-  <!--[if IE]>
+<title><%= Setting.app_title + (@html_title ? ": #{@html_title}" : "") %></title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="KEYWORDS" content="Teskal, Teskal.com, high performance sport, Sport Psychology" />
+<meta name="OWNER" content="Teskal.com" />
+<meta name="AUTHOR" content="Cabeza de Lobo" />
+<meta http-equiv="OBJECT TYPE" content="Document" />
+<meta http-equiv="CONTENT-TYPE" content="text/html" charset="ISO-8859-1" />
+<meta http-equiv="CONTENT-LANGUAGE" content="english" />
+<meta name="DISTRIBUTION" content="Global" />
+<meta name="RATING" content="General" />
+<meta name="REVISIT-AFTER" content="2 weeks" />
+<meta name="ROBOTS" content="index,follow" />
+<meta name="description" content="Teskal, enjoy the pressure, disfruta la presión,  それは圧力を楽しむ, presioa gozatu, gaudeix la pressió, aproveite a pressão, apprécie la pression, 它享受压" />
+<!--[if IE]>
 	<style type="text/css">
 	body {behavior: url(<%= stylesheet_path "csshover.htc" %>);}
 	</style>
     <![endif]-->
-  <%= stylesheet_link_tag "application" %><%= stylesheet_link_tag "coffee-with-milk" -%><%= yield :header_tags %>
+<%= stylesheet_link_tag "application" %><%= stylesheet_link_tag "coffee-with-milk" -%><%= yield :header_tags %>
 </head>
 <body>
 <div class="contentall">
@@ -40,29 +40,25 @@
   <%- end -%>
   <div id="navTeskal">
     <ul>
-      <!-- 				
-	<li class="top"><%= link_to l(:label_help), { :controller => 'help', :ctrl => params[:controller], :page => params[:action] }, :onclick => "window.open(this.href); return false;"%></li>
 
-      <li> <%= link_to l(:label_home), { :controller => 'welcome' } %></li>
- -->
       <%- if loggedin? -%>
       <li><%= link_to l(:label_logout), { :controller => 'account', :action => 'logout' } %></li>
       <% else %>
       <li><a href="/account/login" class="active"><%= l(:label_login) %></a></li>
       <% end %>
-	  <%- case current_language -%>
-	  <%- when :es -%>
-	           <li><a href="http://teskal.typepad.com" target="_blank">Blog</a></li> 
-	     <%- end -%>      
+      <%- case current_language -%>
+      <%- when :es, :eu -%>
+      <li><a href="http://teskal.typepad.com" target="_blank">Blog</a></li>
+      <%- end -%>
       <% if loggedin? %>
       <li><%= link_to l(:label_my_account), { :controller => 'my', :action => 'account' } %></li>
       <% end %>
       <% if loggedin? %>
-<%- if @logged_in_user.show? -%>
-  <li><a href="/my/quest" accesskey="q"><%= l(:label_quest_plural) %></a></li> 
-<%- else -%>
+      <%- if @logged_in_user.show? -%>
+      <li><a href="/my/quest" accesskey="q"><%= l(:label_quest_plural) %></a></li>
+      <%- else -%>
       <li><%= link_to l(:label_quest_plural), { :controller => 'my',:action => 'page' } %></li>
-<%- end -%>
+      <%- end -%>
       <% end %>
       <% if loggedin? and @logged_in_user.show? %>
       <li><%= link_to l(:label_my_athletes), { :controller => 'my',:action => 'athletes' } %></li>
@@ -91,7 +87,7 @@
     <% end %>
     <%= yield %> </div>
   <div id="footer">
-	 <!-- <%- if request.remote_ip != '127.0.0.1' -%>
+    <!-- <%- if request.remote_ip != '127.0.0.1' -%>
 		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
 		<script type="text/javascript">
 		  //<![CDATA[
@@ -105,5 +101,4 @@
   </div>
 </div>
 </body>
-</html> 
-
+</html>

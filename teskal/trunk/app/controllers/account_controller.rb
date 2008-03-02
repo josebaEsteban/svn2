@@ -35,12 +35,12 @@ class AccountController < ApplicationController
         # generate a key and set cookie if autologin
         if params[:autologin] && Setting.autologin?
           token = Token.create(:user => user, :action => 'autologin')
-          cookies[:autologin] = { :value => token.value, :expires => 5.day.from_now }
+          cookies[:autologin] = { :value => token.value, :expires => 1.year.from_now  }
         end
         if user.show?
-          redirect_to :controller => 'my', :action => 'athletes'
+          redirect_back_or_default :controller => 'my', :action => 'athletes'
         else
-          redirect_to :controller => 'my', :action => 'page'
+          redirect_back_or_default :controller => 'my', :action => 'page'
         end
       else
         # if user.locked?
