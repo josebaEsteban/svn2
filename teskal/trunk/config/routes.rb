@@ -14,7 +14,7 @@ ActionController::Routing::Routes.draw do |map|
   
   
   map.home '', :controller => 'welcome'
-  # map.connect :controller => "account", :action  => "login"
+  # map.connect '', :controller => "account", :action  => "login"
 
   # map.connect 'roles/workflow/:id/:role_id/:tracker_id', :controller => 'roles', :action => 'workflow'
   # map.connect 'help/:ctrl/:page', :controller => 'help'

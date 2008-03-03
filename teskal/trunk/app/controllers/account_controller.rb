@@ -37,9 +37,12 @@ class AccountController < ApplicationController
           token = Token.create(:user => user, :action => 'autologin')
           cookies[:autologin] = { :value => token.value, :expires => 1.year.from_now  }
         end
-        if user.show?
+        puts "aqui"
+        if user.show? 
+                  puts "1"
           redirect_back_or_default :controller => 'my', :action => 'athletes'
-        else
+        else  
+                  puts "2" 
           redirect_back_or_default :controller => 'my', :action => 'page'
         end
       else
@@ -59,8 +62,8 @@ class AccountController < ApplicationController
     cookies.delete :autologin
     Token.delete_all(["user_id = ? AND action = ?", logged_in_user.id, "autologin"]) if logged_in_user
     self.logged_in_user = nil
-    # redirect_to :controller => 'welcome'
-    redirect_to :action => 'login'
+    redirect_to :controller => 'welcome'
+    # redirect_to :action => 'login'
   end
 
   # Enable user to choose a new password
