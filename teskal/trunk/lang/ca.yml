@@ -282,11 +282,11 @@ mark_concept: Què és?
 mark_role_1: Esportista
 mark_role_2: Entrenador/a
 mark_role_3: Directiu/va                                                                        
-markt_10: Teskal posa aquestes eines a disposició dels teus entrenadors i entrenadores
+markt_10: Teskal posa aquestes eines a disposició dels teus entrenadors i entrenadores.
 markt_11: És un concepte integral del rendiment esportiu que considera no només les habilitats físiques i tècniques sinó la persona de l’esportista.
 markt_12: Teskal permet mantenir un alt nivell de comunicació al duo esportista/entrenador o al grup esportista/entrenador/psicòleg.
 markt_13: Sigui per a situacions en què l’esportista i l’entrenador resideixen a llocs diferents, o en moments en els quals l’esportista assisteix a competicions a altres llocs, Teskal permet el seguiment de múltiples variables que afecten a l’esportista i al seu rendiment.
-markt_1: Eina per al maneig de les variables psicològiques del rendiment esportiu.
+markt_1: Eina per al maneig de les variables psicològiques del rendiment esportiu
 markt_2: Vols poder rendir en competició al nivell que saps que ets capaç?
 markt_3: Vols entrenar la capacitat de manejar l’estrès, l’autoconfiança?
 markt_4_1: Esportista en bona forma física, ha entrenat, té bons rendiments però en el moment de la competició no és capaç de repetir aquests nivells.
@@ -485,4 +485,5 @@ unit_8_path: 08.La.Competicion.es.pdf
 unit_8_title: La Competición
 unit_9_path: 09.La.Comunicacion.es.pdf
 unit_9_title: La Comunicación
-label_time_taken: Es va trigar en completar-lo
+label_time_taken: Es va trigar en completar-lo 
+markt_presentation: Presentació  

@@ -307,7 +307,6 @@ markt_7: ¿Como sabes si los entrenadores crean el ambiente adecuado para el ren
 markt_8: ¿Te interesa el cuidado global del deportista?
 markt_9: ¿Que herramientas tienen los entrenadores para manejarlos?
 markt_quick_tour: Paseo Rápido                                      
-
 notice_account_activated: Tu cuenta ha sido activada. Puedes entrar.
 notice_account_email_exists: Ya existe un usuario con ese correo. Por favor use un correo distinto.
 notice_account_invalid_creditentials: Usuario o contraseña no válido.
@@ -1150,3 +1149,4 @@ unit_8_path: 08.La.Competicion.es.pdf
 unit_8_title: La Competición
 unit_9_path: 09.La.Comunicacion.es.pdf
 unit_9_title: La Comunicación
+markt_presentation: Presentación
