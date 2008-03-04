@@ -1,6 +1,3 @@
-field_Category: Kategoria
-field_Role: Zeregin
-field_Title: Izenburua
 PBarLoadingText: ?PBarLoadingText=Datuak kargatzen. Itxaron mesedez...
 _gloc_rule_default: '|n| n==1 ? "" : "_plural" '
 actionview_datehelper_select_day_prefix:
@@ -57,6 +54,9 @@ button_reply: Erantzun
 button_save: Balioztatu
 button_sort: Ordenatu
 button_submit: Bidali
+field_Category: Kategoria
+field_Role: Zeregin
+field_Title: Izenburua
 field_account: Kontua
 field_activity: Jarduera
 field_admin: Administratzailea
@@ -251,6 +251,7 @@ label_search: Bilaketa
 label_send_information: Erabiltzaileari bidalitako kontuaren informazioa
 label_settings: Configuración
 label_show: Erakutsi
+label_time_taken: Betetzen denbora gehiegi erabili da         
 label_timezone: Ordu-zona
 label_user: Erabiltzailea
 label_user_new: Erabiltzaile Berria
@@ -278,6 +279,10 @@ mail_subject_lost_password: Zure pasa-hitza Teskal
 mail_subject_pending: Egin gabeko galde-sorta
 mail_subject_quest: Galde-sorta berria
 mail_subject_signup: Kontuaren aktibazioa Teskal  
+mark_concept: Zer da?
+mark_role_1: Kirolaria
+mark_role_2: Entrenatzailea
+mark_role_3: Zuzendaritzako kidea                                                                   
 markt_10: Teskalek erraminta horiek zure entrenatzaieen eskura jartzen ditu. 
 markt_11: Kirolariaren trebetasun fisiko eta teknikoez gain, kirolariaren pertsona bera ere kontuan hartzen dituen Kirol errendimenduaren kontzeptu integral bat da.  
 markt_12: Teskalek kirolari/entrenatzaile bikoteari nola kirolari/entrenatzaile/psikologo taldeari komunikazio maila altu bat mantentzea ahalbidetzen die.  
@@ -295,6 +300,7 @@ markt_6_2: Nola egin dezakezu garaiz antzemateko?
 markt_7: Nola dakizu entrenatzaileek taldeen errendimendu ezin hobearentzako giro egokia sortzen dutenentz? 
 markt_8: Kirolariaren zaintza globala interesatzen al zaizu? 
 markt_9: Zein erreminta dituzte entrenatzaileek haiek maneiatzeko?  
+markt_presentation: Aurkezpenamarkt_quick_tour: itzuli azkarra
 notice_account_activated: Zure kontua aktibatua izan da. Sartu egin zaitezke.
 notice_account_email_exists: Jada email hau duen beste erabiltzaile bat existitzen da. Mesedez email ezberdin bat erabili. 
 notice_account_invalid_creditentials: Balio gabeko erabiltzaile edo eta pasa-hitza.
@@ -663,11 +669,11 @@ quest3_12: Triste
 quest3_13: Nekoso
 quest3_14: Aktibo
 quest3_15: Jenio txarrez  
-quest3_1: Urduri
 quest3_16: egin behar ditudan gauzei arreta handia jartzen diet
 quest3_17: garai batean egiteko gai ez nintzen gauazak egiteko gai naiz egun
 quest3_18: akatsak baditut hurrengo egunean urduri nago
 quest3_19: ariketa zaila denean, ondo egiteko gehiago saiatzen naiz
+quest3_1: Urduri
 quest3_20: planteatzen den edozein zeregin meneratzen det
 quest3_21: akatsen bat egiten dudanean urduri jarzten naiz
 quest3_22: zehar nahiz ta gauzak ez ondo atera ahaleginean jarraitzen dut
@@ -1138,10 +1144,3 @@ unit_8_path: 08.Lehiaketa.eu.pdf
 unit_8_title: Lehiaketa
 unit_9_path: 09.Komunikazioa.eu.pdf
 unit_9_title: Komunikazioa
-label_time_taken: Betetzen denbora gehiegi erabili da         
-mark_role_1: Kirolaria
-mark_role_2: Entrenatzailea
-mark_role_3: Zuzendaritzako kidea                                                                   
-markt_quick_tour: itzuli azkarra
-mark_concept: Zer da?
-markt_presentation: Aurkezpena
