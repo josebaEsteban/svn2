@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<!-- <link href="favicon.ico"
+				 rel="icon"
+				 type="image/x-icon" />   -->
+<title><%= Setting.app_title + (@html_title ? ": #{@html_title}" : "") %></title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="KEYWORDS" content="Teskal, Teskal.com, high performance sport, Sport Psychology" />
+<meta name="OWNER" content="Teskal.com" />
+<meta name="AUTHOR" content="Cabeza de Lobo" />
+<meta http-equiv="OBJECT TYPE" content="Document" />
+<meta http-equiv="CONTENT-TYPE" content="text/html" charset="ISO-8859-1" />
+<meta http-equiv="CONTENT-LANGUAGE" content="english" />
+<meta name="DISTRIBUTION" content="Global" />
+<meta name="RATING" content="General" />
+<meta name="REVISIT-AFTER" content="2 weeks" />
+<meta name="ROBOTS" content="index,follow" />
+<meta name="description" content="Teskal, enjoy the pressure, disfruta la presión,  それは圧力を楽しむ, presioa gozatu, gaudeix la pressió, aproveite a pressão, apprécie la pression, 它享受压" />
+<!--[if IE]>
+	<style type="text/css">
+	body {behavior: url(<%= stylesheet_path "csshover.htc" %>);}
+	</style>
+    <![endif]-->
+<%= stylesheet_link_tag "application" %><%= stylesheet_link_tag "coffee-with-milk" -%><%= yield :header_tags %>
+</head>
+<body>
+<div class="contentall">
+  <div id="header"></div>
+  <%- case current_language -%>
+  <%- when :es -%>
+  <div id="head_lang_es"></div>
+  <%- when :eu -%>
+  <div id="head_lang_eu"></div>
+  <%- when :br -%>
+  <div id="head_lang_br"></div>
+  <%- when :ca -%>
+  <div id="head_lang_ca"></div>
+  <%- else -%>
+  <div id="head_lang_en"></div>
+  <%- end -%>
+  <div id="navTeskal">
+    <ul>
+       <%- if loggedin? -%>
+      <li><%= link_to l(:label_home), { :controller => 'welcome' } %></li>
+      <% end %>  
+      <%- case current_language -%>
+      <%- when :es, :eu, :ca -%>
+      <li><a href="http://teskal.typepad.com" target="_blank">Blog</a></li>
+      <%- end -%>
+      <%- if loggedin? -%>
+      <li><%= link_to l(:label_logout), { :controller => 'account', :action => 'logout' } %></li>
+      <% else %>
+      <li><a href="/account/login" class="active"><%= l(:label_login) %></a></li>
+      <% end %>
+      <% if loggedin? %>
+      <li><%= link_to l(:label_my_account), { :controller => 'my', :action => 'account' } %></li>
+      <% end %>
+      <% if loggedin? %>
+      <%- if @logged_in_user.show? -%>
+      <li><a href="/my/quest" accesskey="q"><%= l(:label_quest_plural) %></a></li>
+      <%- else -%>
+      <li><%= link_to l(:label_quest_plural), { :controller => 'my',:action => 'page' } %></li>
+      <%- end -%>
+      <% end %>
+      <% if loggedin? and @logged_in_user.show? %>
+      <li><%= link_to l(:label_my_athletes), { :controller => 'my',:action => 'athletes' } %></li>
+      <% end %>
+    </ul>
+  </div>
+  <div id="content">
+    <% if loggedin? %>
+    <div align="left"> <%= @logged_in_user.name %> •
+      <%- case @logged_in_user.role -%>
+      <%- when User::ROLE_GRATIS -%>
+      <%= l(:label_role_1) %>
+      <%- when User::ROLE_ATHLETE -%>
+      <%= l(:label_role_2) %>
+      <%- when User::ROLE_COACH -%>
+      <%= l(:label_role_3) %>
+      <%- when User::ROLE_TUTOR -%>
+      <%= l(:label_role_4) %>
+      <%- end -%>
+    </div>
+    <% end %>
+    <% if flash[:notice] %>
+    <p style="color: black;text-shadow: 2px 1px #eee;
+		background: #ccc;
+		padding: 5px;  font-size: 120%;font-weight: bold;"><%= flash[:notice] %></p>
+    <% end %>
+    <%= yield %> </div>
+  <div id="footer">
+    <!-- <%- if request.remote_ip != '127.0.0.1' -%>
+		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		  //<![CDATA[
+		 _uacct = "UA-1545741-8";
+		 urchinTracker();
+		 //]]>
+		</script>
+	<%- end -%>  -->
+    <div class="padding"> Copyright &copy; 2007 Teskal // <%= l(:footer_2) %> | <%= l(:footer_1) %>: <a href="http://www.cabezadelobo.com">Cabeza
+      de Lobo </a> </div>
+  </div>
+</div>
+</body>
+</html>

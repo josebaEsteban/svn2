@@ -1,0 +1,90 @@
+<div class='boxx'>
+ <div class='boxxtop'><div></div></div>
+  <div class='boxxcontent'>
+   <!-- Content goes here -->
+
+	<h3> <%=l(:label_quest_avail).upcase%></h3>
+  <ol>
+    <li><%= link_to l(:quest1), :controller  => 'quest1', :action => 'new' %></li>
+      <li> <%= link_to l(:quest2_label_0), :controller  => 'quest2', :action => 'new' %> </li>
+      <li> <%= link_to l(:quest3), :controller  => 'quest3', :action => 'new' %> </li>
+      <li> <%= link_to l(:quest4), :controller  => 'quest4', :action => 'new' %> </li>
+      <li> <%= link_to l(:quest5), :controller  => 'quest5', :action => 'new' %> </li>
+      <li> <%= link_to l(:quest6), :controller  => 'quest6', :action => 'new' %> </li>
+      <li> <%= link_to l(:quest7_label_0), :controller  => 'quest7', :action => 'new' %> </li>
+      <li> <%= link_to l(:quest8_label_0), :controller  => 'quest8', :action => 'new' %> </li>
+      <li> <%= link_to l(:quest9_label_0), :controller  => 'quest9', :action => 'new' %> </li>
+      <li> <%= link_to l(:quest10_label_0), :controller  => 'quest10', :action => 'new' %> </li>
+      <li> <%= link_to l(:quest11_label_0), :controller  => 'quest11', :action => 'new' %> </li>
+      <li> <%= link_to l(:quest12_label_0), :controller  => 'quest12', :action => 'new' %> </li>
+  </ol>
+  <h3><div align="left"><%=l(:label_library).upcase%></div></h3>
+  <ol>
+    <li><a href="../lib/<%= l(:unit_1_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_1_path) %>');"><%= l(:unit_1_title) %></a></li>
+    <li> <a href="../lib/<%= l(:unit_2_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_2_path) %>');"><%= l(:unit_2_title) %></a></li>
+    <li> <a href="../lib/<%= l(:unit_3_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_3_path) %>');"><%= l(:unit_3_title) %></a></li>
+    <li> <a href="../lib/<%= l(:unit_4_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_4_path) %>');"><%= l(:unit_4_title) %></a></li>
+    <li> <a href="../lib/<%= l(:unit_5_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_5_path) %>');"><%= l(:unit_5_title) %></a></li>
+    <li> <a href="../lib/<%= l(:unit_6_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_6_path) %>');"><%= l(:unit_6_title) %></a></li>
+    <li> <a href="../lib/<%= l(:unit_7_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_7_path) %>');"><%= l(:unit_7_title) %></a></li>
+    <li> <a href="../lib/<%= l(:unit_8_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_8_path) %>');"><%= l(:unit_8_title) %></a></li>
+    <li> <a href="../lib/<%= l(:unit_9_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_9_path) %>');"><%= l(:unit_9_title) %></a></li>
+    <li> <a href="../lib/<%= l(:unit_10_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_10_path) %>');"><%= l(:unit_10_title) %></a></li>
+    <li> <a href="../lib/<%= l(:unit_11_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_11_path) %>');"><%= l(:unit_11_title) %></a></li>
+    <li> <a href="../lib/<%= l(:unit_12_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_12_path) %>');"><%= l(:unit_12_title) %></a></li>
+    <li> <a href="../lib/<%= l(:unit_13_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_13_path) %>');"><%= l(:unit_13_title) %></a></li>
+    <li> <a href="../lib/<%= l(:unit_14_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_14_path) %>');"><%= l(:unit_14_title) %></a></li>
+    <li> <a href="../lib/<%= l(:unit_15_path) %>" onClick="javascript:urchinTracker ('/lib/<%= l(:unit_15_path) %>');"><%= l(:unit_15_title) %></a></li>
+  </ol>
+
+  </div>
+ <div class='boxxbottom'><div></div></div>
+</div>
+<%- if @answers.length != 0 -%>
+<%- TzTime.zone=@user.timezone -%>
+<div class="splitcontentright">
+  <table cellspacing="0">
+    <thead>
+      <tr>
+        <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>
+        <th>##</th>
+        <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
+        <th scope="col"><div align="left"><%=l(:label_competition) %></div></th>
+      </tr>
+    </thead>
+    <tbody>
+      <%- odd=0 -%>
+      <%- for answer in @answers -%>
+      <%- if odd ==1 -%>
+      <tr class="odd">
+        <%- odd=0-%>
+        <%-else -%>
+      <tr>
+        <%- odd=1 end -%>
+        <%- controlador="quest"+ answer.quest_id.to_s -%>
+        <td><div align="center"><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(answer.created_on))%></div></td>
+        <td> <%= answer.quest_id.to_s %></td>
+        <%- if answer.browse -%>
+        <td><%= link_to @titulo[answer.quest_id-1], :controller  => controlador, :action => 'show', :id => answer %></td>
+        <%- else -%>
+        <td><%= @titulo[answer.quest_id-1] %></td>
+        <td></td>
+        <%- end -%>
+        <td><%= answer.competition %></td>
+      </tr>
+      <%- end -%>
+    </tbody>
+  </table>
+</div>
+<%- end -%>
+<%- if request.remote_ip != '127.0.0.1' -%>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+  _uacct = "UA-1545741-8";
+  urchinTracker();
+//]]>
+</script>
+<%- end -%>
+
+

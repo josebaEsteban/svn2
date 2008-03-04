@@ -1,0 +1,529 @@
+PBarLoadingText: ?PBarLoadingText=Carregando Carta. Esperar por favor...
+_gloc_rule_default: '|n| n==1 ? "": "_plural" '
+actionview_datehelper_select_day_prefix:
+actionview_datehelper_select_month_names: Janeiro,Fevereiro,Marco,Abril,Maio,Junho,Julho,Agosto,Setembro,Outubro,Novembro,Dezembro
+actionview_datehelper_select_month_names_abbr: Jan,Fev,Mar,Abr,Mai,Jun,Jul,Ago,Set,Out,Nov,Dez
+actionview_datehelper_select_month_prefix:
+actionview_datehelper_select_year_prefix:
+actionview_datehelper_time_in_words_day: 1 dia
+actionview_datehelper_time_in_words_day_plural: %d dias
+actionview_datehelper_time_in_words_hour_about: sobre uma hora
+actionview_datehelper_time_in_words_hour_about_plural: sobra %d horas
+actionview_datehelper_time_in_words_hour_about_single: sobre uma hora
+actionview_datehelper_time_in_words_minute: 1 minuto
+actionview_datehelper_time_in_words_minute_half: meio minuto
+actionview_datehelper_time_in_words_minute_less_than: menos que um minuto
+actionview_datehelper_time_in_words_minute_plural: %d minutos
+actionview_datehelper_time_in_words_minute_single: 1 minuto
+actionview_datehelper_time_in_words_second_less_than: menos que um segundo
+actionview_datehelper_time_in_words_second_less_than_plural: menos que %d segundos
+actionview_instancetag_blank_option: Selecione
+activerecord_error_accepted: deve ser aceitado
+activerecord_error_blank: não pode ser em branco
+activerecord_error_confirmation: não combina a confirmação
+activerecord_error_empty: não pode estar vazio
+activerecord_error_exclusion: e reservado
+activerecord_error_greater_than_start_date: deve ser maior que a data de início
+activerecord_error_inclusion: não é incluído na lista
+activerecord_error_invalid: e invalido
+activerecord_error_not_a_date: não é uma data válida
+activerecord_error_not_a_number: não é um número
+activerecord_error_taken: tem sido tomado já
+activerecord_error_too_long: é demasiado longo
+activerecord_error_too_short: é demasiado curto
+activerecord_error_wrong_length: é o comprimento errado
+button_activate: Ativar
+button_add: Adicionar
+button_apply: Aplicar
+button_archive: Arquivo
+button_back: Voltar
+button_cancel: Cancelamento
+button_change: Mudar
+button_check_all: Marcar todos
+button_clear: Limpar
+button_create: Criar
+button_delete: Apagar
+button_download: Download
+button_edit: Editar
+button_list: Listar
+button_lock: Bloquear
+button_log_time: Tempo de trabalho
+button_login: Logar
+button_move: Mover
+button_reply: Resposta
+button_save: Salvar
+button_sort: Ordenar
+button_submit: Enviar
+field_account: Conta
+field_activity: Atividade
+field_admin: Administrador
+field_assigned_to: Atribuído a
+field_attr_firstname: Atributo primeiro nome
+field_attr_lastname: Atributo ultimo nome
+field_attr_login: Atributo login
+field_attr_mail: Atributo do email
+field_auth_source: Modalidade de autenticação
+field_author: Autor
+field_base_dn: Base DN
+field_category: Categoria
+field_comments: Comentário
+field_created_on: Criado
+field_delay: Atraso
+field_description: Descrição
+field_done_ratio: %% Terminado
+field_downloads: Downloads
+field_due_date: Data devida
+field_effective_date: Data
+field_field_format: Formato
+field_filename: Arquivo
+field_filesize: Tamanho
+field_firstname: Primeiro nome
+field_fixed_version: Versão corrigida
+field_hide_mail: Esconder meu email
+field_homepage: Início
+field_is_public: Publico
+field_is_required: Obrigatorio
+field_issue: Tarefa 
+field_issue_to_id: Related issue
+field_language: Lingua
+field_last_login_on: Ultima conexao
+field_lastname: Ultimo nome
+field_login: Logar
+field_mail: Email
+field_mail_notification: Notificaçoes por email
+field_max_length: Tamanho maximo
+field_min_length: Tamanho minimo
+field_name: Nome
+field_new_password: Nova senha
+field_notes: Notas
+field_password: Senha 
+field_password_change: Alterar senha
+field_password_confirmation: Confirmaçao
+field_priority: Prioridade
+field_role: Papel
+field_spent_on: Data
+field_start_date: Início
+field_start_page: Início
+field_status: Status
+field_subject: Assunto
+field_summary: Sumário
+field_title: Título
+field_type: Tipo
+field_updated_on: Alterado
+field_url: URL
+field_user: Usuário
+field_value: Valor
+field_version: Versão
+footer_1: Desenho
+footer_2: Contatar a info em teskal.com
+general_csv_encoding: ISO-8859-1
+general_csv_separator: ','
+general_day_names: Segunda,Terca,Quarta,Quinta,Sexta,Sabado,Domingo
+general_fmt_age: %d yr
+general_fmt_age_plural: %d yrs
+general_fmt_date: %%m/%%d/%%Y
+general_fmt_datetime: %%m/%%d/%%Y %%I:%%M %%p
+general_fmt_datetime_short: %%b %%d, %%I:%%M %%p
+general_fmt_time: %%I:%%M %%p
+general_fmt_time: %%X
+general_lang_name: 'Portugues Brasileiro'
+general_pdf_encoding: ISO-8859-1
+general_text_No: 'Não'
+general_text_Yes: 'Sim'
+general_text_no: 'não'
+general_text_yes: 'sim'
+gui_validation_error: 1 erro
+gui_validation_error_plural: %d erros
+label_activity: Atividade
+label_add_note: Adicionar nota
+label_added: Adicionado
+label_administration: Administraçao
+label_ago: dias há
+label_all: tudo
+label_all_words: Todas as palavras
+label_applied_status: Status aplicado
+label_attachment: Arquivo
+label_attachment_delete: Apagar arquivo
+label_attachment_new: Novo arquivo
+label_attachment_plural: Arquivos
+label_boolean: Boleano
+label_browse: Consultar
+label_calendar: Calendário
+label_competition: Competição 
+label_confirmation: Confirmação
+label_contains: contem
+label_current_status: Status atual
+label_current_version: Versão atual
+label_date: Data
+label_date_from: De
+label_date_to: A
+label_day_plural: dias
+label_deleted: suprimido
+label_details: Detalhes
+label_document: Documento
+label_document_new: Novo documento
+label_document_plural: Documentos
+label_download: %d Download
+label_download_plural: %d Downloads
+label_equals: e
+label_export_to: Exportação a
+label_f_hour: %.2f hora
+label_f_hour_plural: %.2f horas
+label_fill: Suficiência
+label_filled: Enchido sobre
+label_help: Ajuda
+label_history: História
+label_home: Início
+label_in: em
+label_in_less_than: e maior que
+label_in_more_than: e menor que
+label_information: Informação
+label_information_plural: Informaçoes
+label_integer: Inteiro
+label_internal: Interno
+label_language_based: Baseado na linguagem
+label_last_changes: ultimas %d mudanças
+label_last_login: Utima conexao
+label_last_updates: Ultima alteraçao
+label_last_updates_plural: %d últimas mudanças
+label_less_than_ago: faz menos de
+label_library: Biblioteca
+label_list: Lista
+label_loading: Carregamento...
+label_logged_as: Registrado como
+label_login: Sessão
+label_logout: Sair
+label_max_size: Tamanho máximo
+label_me: mim
+label_message_last: Última mensagem
+label_message_new: Mensagem nova
+label_message_plural: Mensagens
+label_min_max_length: Tamanho min-max
+label_modification: %d mudança
+label_modification_plural: %d mudanças
+label_modified: modificado
+label_my_account: Minha conta
+label_my_athletes: Meus atletas
+label_my_page: Minha página
+label_my_quest: Meus questionários
+label_new: Novo
+label_next: Proximo
+label_no_data: Sem dados para mostrar
+label_none: nenhum
+label_not_contains: não contem
+label_not_equals: não e
+label_on: 'em'
+label_options: Opções
+label_overview: Vista geral
+label_page_index: Index
+label_password_lost: Perdi a senha
+label_per_page: Por página
+label_permissions: Permissões
+label_permissions_report: Relatório das permissões
+label_personalize_page: Personalizar esta página
+label_please_login: Entrar por favor
+label_preview: Inspeção prévia
+label_previous: Precedente
+label_quest: Questionário
+label_quest_avail: Questionários disponíveis
+label_quest_no_filled: Não há questionários
+label_quest_no_pending: Não há questionários pendentes
+label_quest_pending: Questionários pendentes
+label_quest_pending_from: Pendente desde
+label_quest_plural: Questionários
+label_read: Lido…
+label_register: Registre-se
+label_registered_on: Registrado em
+label_reply_plural: Respostas
+label_report: Relatório
+label_report_plural: Relatórios
+label_result: %d resultado
+label_result_plural: %d resultados
+label_role: Papel
+label_role_1: cuenta gratuita
+label_role_2: deportista
+label_role_3: entrenador/a
+label_role_4: tutor/a
+label_role_and_permissions: Papéis e permissões
+label_role_new: Papel regra
+label_role_plural: Papéis
+label_search: Busca
+label_send_information: Emitir a informação de cliente ao usuário
+label_settings: Ajustes
+label_show: Mostra 
+label_timezone: Fuso horário
+label_user: Usuário
+label_user_new: Novo usuário
+label_user_plural: Usuários
+label_year: Ano
+login_label_1: Esqueceu a sua senha?
+login_label_2: Envie um correio eletrônico a você
+login_label_3: com a informação para criar uma nova senha.
+login_label_4: Novo a Teskal?
+login_label_5: Assinar acima
+login_label_6: para uma conta grátis.
+mail_body_account_information: Seu Teskal conta informaçao
+mail_body_account_information_external: Você pode usar sua conta "%s" para entrar no Teskal.
+mail_body_lost_password: 'Para mudar sua senha, clique no link abaixo'
+mail_body_signup: 'Para ativar sua conta do Teskal, clique no link abaixo'
+mail_subject_account_activation_request: Petiçao de ativaçao de conta do Teskal
+mail_subject_lost_password: Seu Teskal senha
+mail_subject_lost_password: Sua senha do Teskal.
+mail_subject_signup: Ativaçao de conta do Teskal.
+mail_subject_quest: Novo questionário
+mail_body_quest1: ter concluído um questionário de
+mail_body_quest2: Após efetuar login em Teskal, você pode navegar ele no seguinte link
+notice_account_activated: Sua conta foi ativada. Você pode agora entrar.
+notice_account_invalid_creditentials: Usuário ou senha inválido.
+notice_account_lost_email_sent: Um email com instruções para escolher uma nova senha foi enviado para você.
+notice_account_password_updated: A senha foi atualizada com sucesso.
+notice_account_register_done: A senha foi criada com sucesso. Um email com instruções para ativá-lo foi-lhe emitido.
+notice_account_unknown_email: Usuário desconhecido
+notice_account_updated: Conta foi alterada com sucesso.
+notice_account_wrong_password: Senha errada.
+notice_can_t_change_password: Esta conta usa uma fonte externa da autenticação. Impossível mudar a senha.
+notice_file_not_found: A página que você estava tentando alcançar não existe nem foi removida.
+notice_locking_conflict: Os dados foram atualizados por um outro usuário.
+notice_not_authorized: Você não é autorizado alcançar esta página.
+notice_scm_error: A entrada e/ou a revisao não existem no repositorio.
+notice_successful_connection: Conexão bem sucedida.
+notice_successful_create: Criação bem sucedida.
+notice_successful_delete: Apagamento bem sucedido.
+notice_successful_update: Atualização bem sucedida.
+quest11: Questionário da Motivação Intrínseca
+quest11_10: Porque é absolutamente necessário fazer esportes se um quer estar na forma.
+quest11_11: Para o prestígio de ser um atleta.
+quest11_12: Porque é uma das melhores maneiras mim escolheram desenvolver outros aspetos de mim mesmo.
+quest11_13: Para o prazer eu sinto ao melhorar alguns de meus pontos fracos.
+quest11_14: Para o excitamento eu sinto quando eu sou envolvido realmente na atividade.
+quest11_15: Porque eu devo fazer esportes para sentir bom sobre mim mesmo.
+quest11_16: Para a experiência da satisfação I quando eu aperfeiçoar minhas habilidades.
+quest11_17: Porque os povos em torno de mim pensam é importante estar na forma.
+quest11_18: Porque participar no esporte é uma parte integrante de minha vida.
+quest11_19: Porque é uma boa maneira de aprender lotes das coisas que poderiam ser úteis a mim em outras áreas de minha vida.
+quest11_1: Para o prazer eu sinto em experiências emocionantes de vida.
+quest11_20: Para as emoções intensas que eu sinto quando eu fizer um esporte de que eu goste.
+quest11_21: Não é desobstruído a mim anymore; Eu não penso realmente que meu lugar está no esporte.
+quest11_22: Para o prazer que eu sinto ao executar determinados movimentos difíceis.
+quest11_23: Porque eu sentiria o mau se eu não tomava o momento do fazer.
+quest11_24: Porque com o esporte, eu estou vivendo na linha de meus princípios mais profundos.
+quest11_25: Para mostrar a outro como bom eu estou em meu esporte.
+quest11_26: Para o prazer eu sinto ao aprender as técnicas de formação que eu tenho tentado nunca antes.
+quest11_27: Porque é uma das melhores maneiras de manter bons relacionamentos com meus amigos.
+quest11_28: Porque eu gosto do sentimento totalmente da imersão na atividade.
+quest11_29: Porque eu devo fazer esportes regularmente.
+quest11_2: Para o prazer dá-me para saber mais sobre o esporte que eu pratico.
+quest11_30: Para o prazer de descobrir estratégias novas do desempenho.
+quest11_31: Porque fazendo o eu estou expressando inteiramente meus valores mais profundos.
+quest11_32: Eu pergunto-me frequentemente; Eu não posso parecer conseguir os objetivos que eu ajusto para mim mesmo.
+quest11_3: Eu usei-me para ter boas razões para fazer esportes, mas agora eu sou perguntando-se se eu continuar.
+quest11_4: Porque praticar ostenta renects a essência de quem eu sou.
+quest11_5: Para o prazer de descobrir técnicas novas do treinamento.
+quest11_6: Eu não sei anymore; Eu tenho a impressão que eu sou incapaz do êxito neste esporte.
+quest11_7: Porque permite que eu seja considerado bem pelos povos que eu conheço.
+quest11_8: Porque, em minha opinião, é uma das melhores maneiras de encontrar povos.
+quest11_9: Porque eu sinto muita satisfação pessoal ao dominar determinadas técnicas de formação difíceis.
+quest11_header: Por que você pratica seu esporte?
+quest11_intro: Using a escala abaixo, indicar por favor a que extensão cada um dos seguintes artigos corresponde a uma das razões para que você está praticando presentemente seu esporte.
+quest11_label_0: Motivação intrínseca
+quest11_label_1: Para saber
+quest11_label_2: Para realizar
+quest11_label_3: À estimulação da experiência
+quest11_label_4: Regulamento Integrated
+quest11_label_5: Regulamento identificado
+quest11_label_6: Regulamento de Introjected
+quest11_label_7: Regulamento externo
+quest11_label_8: Amotivation
+quest11_valor_1: 1 (não corresponde de todo)
+quest11_valor_2: 2 (correspondem muito pouco)
+quest11_valor_3: 3 (correspondem pouco)
+quest11_valor_4: 4 (correspondem moderada)
+quest11_valor_5: 5 correspondem pararam um bit)
+quest11_valor_6: 6 (completamente muito)
+quest11_valor_7: 7 (completamente)
+quest12: Questionário do Clima Inspirador
+quest12_10: Eu ganho
+quest12_11: Eu mostro outros povos que eu sou o melhor
+quest12_12: Eu executo ao melhor de minha habilidade
+quest12_1: Eu bati outros povos
+quest12_2: Eu sou claramente superior
+quest12_3: Eu sou o melhor
+quest12_4: Eu trabalho duramente
+quest12_5: Eu mostro a melhoria pessoal desobstruída
+quest12_6: Eu supero meus oponentes
+quest12_7: Eu alcango um objetivo
+quest12_8: Eu supero dificuldades
+quest12_9: Eu alcango objetivos pessoais
+quest12_d1_a: Este baixo valor associado ao clima inspirador do desempenho, abaixo de 4, supor que, para este técnico, os resultados têm um baixo valor, mais baixo do que a melhoria das habilidades, que produzirão um efeito positivo na implicação durante o treinamento e no controle na ansiedade de encontro aos erros dos atletas.
+quest12_d1_b: Este valor médio associado ao clima inspirador do desempenho, situado entre 4 e 7, supor que, para este técnico, os resultados têm um valor importante, que se é similar àqueles do clima dos mestres, ele fortificará a motivação e aumentará seu comprometimento com o esforço, ajudando o atleta a controlar a ansiedade de encontro aos erros.
+quest12_d1_c: Este elevado valor associado ao desempenho inspirador, sobre 7, supor que, para este técnico, os resultados obtidos em uma competição de esporte têm um valor máximo. Somente se vão acompanhado de valores máximos no clima inspirador mestre, supor uma boa motivação aumentar seu comprometimento e a implicação com o esforço. Caso que prevalece sobre o clima mestre, possivelmente diminuirá a capacidade do atleta de encontro às situações do desafio pessoal máximo.
+quest12_d2_a: O clima inspirador mestre está em baixos níveis, que é um pouco preocupante. Encontra difícil avaliar positivamente as melhorias do esporte, e quando seus atletas enfrentam situações da novidade ou da grande dificuldade sentirão inquietos, sem iniciativa. É necessário orientar o técnico de modo que avalie a importância das melhorias.
+quest12_d2_b: O clima inspirador mestre está em níveis médios, que é adaptado mas improvable. Avalia positivamente as melhorias de seus atletas, que dae (dispositivo automático de entrada) confrontam com as situações novas da boa atitude ou da grande dificuldade. Será adaptado para recordar-lhe a importância que tem as melhorias de modo que os atletas fixem seus objetivos, reconhecendo e avaliando seu esforço ao ocorrer uma melhoria pessoal.
+quest12_d2_c: O clima inspirador mestre está nos altos níeses, que é muito positivo. Este técnico concentra-se na melhoria pessoal do esporte, sendo este o mais importante. Isto contribui para confrontar, com uma atitude excelente, umas situações novas ou da grande dificuldade. Gera uma influência positiva no comprometimento com o treinamento, a competição percebida e diminui a ansiedade possível de encontro aos erros do esporte.
+quest12_header: Jogando o esporte, o ônibus pensa que eu sou o mais bem sucedido quando…
+quest12_intro: Este é um questionário que peça que você expresse sua percepção de que sucesso no esporte significa a seu ônibus. Não há nenhuma resposta direita ou errada.
+quest12_label_0: Clima Inspirador
+quest12_label_1: Clima do Desempenho
+quest12_label_2: Clima de Maestría
+quest12_valor_1: 0 (nada)
+quest12_valor_2: 100 (completamente)
+quest2: Questionário de Tolerância do Estresse Psicológico 
+quest2_10: Eu fui convencido de que eu poderia conseguir meu desempenho a qualquer hora
+quest2_11: Resolvi eficazmente os problemas dos meus companheiros da equipe
+quest2_12: Eu estava em boas condições fisicamente
+quest2_13: Estive motivado durante o treinamento/competição
+quest2_14: Senti-me emocionalmente esgotado durante o treinamento
+quest2_15: Tive dores musculares após o treinamento
+quest2_16: Me convenci de que executei bem o treinamento
+quest2_17: Exijiram muito de mim durante os descansos 
+quest2_18: Me concentrei antes da atuação
+quest2_19: Desejei abodonar meu esporte
+quest2_1: Algumas partes do meu corpo doeram
+quest2_20: Me senti com muita energia
+quest2_21: Comprendi facilmente como se sentian meus companheiros
+quest2_22: Convenci-me de ter feito um bom treinamento
+quest2_23: Os descansos não se realizavam nos momentos adequados
+quest2_24: Senti-me vulnerável aos lesões
+quest2_25: Logrei objetivos definidos para o treinamento/competição
+quest2_26: Senti-me fisicamente forte
+quest2_27: Senti-me frustado no meu esporte
+quest2_28: Resolvi com muita tranquilidade, os problemas emocionais em meu esporte
+quest2_2: Não podi relaxar durante os descancos
+quest2_3: Estaba convencido que iria conseguir meus objetivos
+quest2_4: Recupere-me bem fisicamente
+quest2_5: Me senti exausto em meu esporte
+quest2_6: Logrei objetivos que valeram a pena em meu esporte
+quest2_7: Eu estava mentalmente pronto para reder
+quest2_8: Meus músculos estavam duros e tensos durante o treinamento
+quest2_9: Tive a impressão de que havia pouco tempo para o decanso
+quest2_d1_a: Os valores associados ao descanso interrompido, e ao deficit da recuperação são baixos. Isso significa que as cargas de trabalho podem ser consideradas adequadas.
+quest2_d1_b: Os valores associados ao descanso interrompido, e ao deficit da recuperação são médios. Isso significa que as cargas de trabalho devem ser monitoradas.
+quest2_d1_c: Os valores associados ao descanso interrompido, e ao deficit da recuperação são elevados. Isso significa que as cargas de trabalho devem ser revisadas e as demandas da prática ajustadas.
+quest2_d2_a: A fadiga emocional e o cansanco, relacionados com situações de frustracão e associado a uma posivel falta de persistencia se encontra em baixos niveis.
+quest2_d2_b: A fadiga emocional relacionou-se às situações frustrantes, e associou-se a baixa perseverança. E possível estes níveis intermediários, e este valores serem descutido com o atleta.
+quest2_d2_c: A fadiga emocional relacionou-se às situações frustrantes e associou-se com a baixa perseverança possível está em altos níeses e é necessário encontrar o que está causando estes níveis perigosos.
+quest2_d3_a: Um baixo nível de vunerabilidade a ferimentos, indica uma boa disposição para lidar e abordar situações difíceis ou complexas com determinação.
+quest2_d3_b: Um nível intermediário de vunerabilidade a ferimentos, pode negativamente impedir a convicção do atleta a decisão, ao enfrentar situações difíceis ou arriscadas na prática.
+quest2_d3_c: Um de nível elevado da vulnerabilidade aos ferimentos implica uma percepção aumentada da fragilidade e da insegurança ao enfrentar situações dificeis ou mais arriscadas na prática.
+quest2_d4_a: A baixa aptidão física nivela negativamente o impacto aos sentimentos subjetivos da competência percebida no desempenho físico.
+quest2_d4_b: Um nível moderado da aptidão implica em sentimentos adequados da competência percebida no desempenho físico.
+quest2_d4_c: Os níveis elevados da aptidão significam sentimentos fortes,e de eficácia da vitalidade, com uma percepção elevada de sua aptidão física na prática.
+quest2_d5_a: Os baixos níveis de realização pessoal indicam a baixa satisfação com a realização do objetivo e igualmente os baixos níveis de apreciação ou a empatia com a equipe ou grupo.
+quest2_d5_b: Um nível intermediário de realização pessoal significa algum grau de satisfação com realização do objetivo e igualmente apreciação aceitável de empatia com a equipe ou o grupo.
+quest2_d5_c: Os níveis pessoais elevados da realização indicam um alto nível da satisfação com a realização do objetivo, e o nível elevado igualmente da apreciação e da empatia com a equipe ou grupo.
+quest2_d6_a: A convição que possue a desportita pela forma que ha desenvolvido o treinamento e a crenca em sua preparacao sao baixa,portanto se faz necessario revisar a dinamica do treinamentos do ultimo periodo.
+quest2_d6_b: A percepção do atleta sobre as práticas e maneira de sua preparação está a nível moderado. Houve provavelmente algumas interferências com a dinâmica da prática, mas não tiveram um impacto principal na prontidão do atleta.
+quest2_d6_c: A convição que possue o desportista pela forma que se desenrolou o treinamento, e a crença em sua preparação proporciona- lhe valores altos isto produz uma sensação gratificante e de auta sastifação.
+quest2_d7_a: O baixo nível da auto-regulação implica na dificuldade de usar habilidades mentais na prática.E com a auto-motivação e o estabelecimento de objetivos pessoais. É necessário endereçar especificamente estas edições, talvez usando a informação contida na apresentação da motivação de realização na biblioteca.
+quest2_d7_b: O nível moderado de uso das habilidades tais como a auto-motivação, e o estabelecimento de objetivos pessoais é considerado como níveis moderados de auto-regulação.
+quest2_d7_c: As contagens elevadas indicam o nível elevado do uso de habilidades mentais na prática. Como a auto-motivação e o estabelecimento de objetivos pessoais, que então reforça e destaca o trajeto e a realização destes objetivos.
+quest2_header: No ultimo mês 
+quest2_intro: Abaixo temos uma série de frases relativas aos aspetos diferentes do treinamento e da competição, queremos colher sua opinião. Por favor, leias com tranquilidade, responda-as com sinceridade, e verifique a que melhor condiz com seu perfil.
+quest2_label_0: Tolerância do Estres Psicológico
+quest2_label_1: Descanso interrompido
+quest2_label_2: Cansaço emocional
+quest2_label_3: Vulnerabilidade as lesoes
+quest2_label_4: Nível da aptidão
+quest2_label_5: Realização pessoal
+quest2_label_6: Auto-Eficácia
+quest2_label_7: Auto-regulação
+quest2_label_8: Avaliação geral
+quest2_label_9: resposta 
+quest2_val_1: No total o nível de tolerância,e do esforço é muito bom, indicando a capacidade de segurar na prática toda a situação ou competição. O nível de deslocamentos predeterminados gerador do esforço é baixo, quando os valores das dimensões da recuperação forem positivos, particularmente essas indicadas acima. Em resumo, este atleta tem uma percepção positiva de seu nível de aptidão e da preparação, seus desempenhos sao motivados fortemente para alcancar seus objetivos.
+quest2_val_2: O nível de tolerância é globalmente positivo, indicando a presença de bastante recursos para lidar na prática e na competicao com as situações especiais. O nível do esforço que gera deslocamentos predeterminados está a baixo-media, quando os níveis das dimensões da recuperação estiverem a nível medio, ao redor 4. No total este é um atleta motivado e com aptidão para conseguir seus objetivos.
+quest2_val_3: Há um contrapeso delicado aqui entre indutor do esforço e dimensões da recuperação, que e uma situação perigosa. O atleta tem bastante recursos a lidar com ele e pode reduzir o nível de esforço gerado pelas dimensões indicadas acima. É importante se ter uma intervenção específica, baseada no módulo do esforço/pressão, aplicado com uma entrevista direta com o atleta, para avaliar os fatores de força atuais e para costurar apropriadamente a intervenção.
+quest2_val_4: Isto significa que o nível de tolerância é muito baixo porque os deslocamentos predeterminados de geração, são maiores do que os deslocamentos predeterminados da recuperação. É uma situação de risco elevado que precise ser endereçada imediatamente com a ajuda do tutor, a menos que a reflexão conjunta, treinador/ atleta para identificar as causas que geram os valores observados. Nesse exemplo, o trabalho específico baseado no módulo do esforço/pressão pode ser projetado com a supervisão do tutor.
+quest2_valor_0: 0 (nada)
+quest2_valor_1: 1 (raramente)
+quest2_valor_2: 2 (às vezes)
+quest2_valor_3: 3 (frequentemente)
+quest2_valor_4: 4 (muitas vezes)
+quest2_valor_5: 5 (quase sempre)
+quest2_valor_6: 6 (sempre)
+setting_app_subtitle: Subtítulo da aplicação
+setting_app_title: Título da aplicação
+setting_attachment_max_size: Tamanho do máximo do anexo
+setting_autofetch_changesets: Autofetch compromete
+setting_autologin: Autologin
+setting_date_format: Formato de data
+setting_default_language: Língua da opção
+setting_feeds_limit: Limite do Feed
+setting_host_name: Servidor
+setting_login_required: Autenticaçao obrigatoria
+setting_mail_from: Endereço do correio da emissão
+setting_self_registration: Auto-registo permitido
+setting_text_formatting: Formato do texto
+setting_welcome_text: Texto de boa-vinda
+signup_label_10: Termos de serviço
+signup_label_11: Estalando "a tecla do Cadastro", eu estou anexando minha assinatura eletrônica a e estou concordando aos <a href="http:/account/terms">Terms de Teskal do serviço </a>.
+signup_label_12: Obrigado por se inscrever!
+signup_label_13: Seu conta Teskal foi criada.
+signup_label_14: Preste atenção para um e - mail confirmando a sua nova inscrição.
+signup_label_15: Ela contém uma activação link que você deve clicar antes de tentar efetuar login no
+signup_label_1: Etapa
+signup_label_2: Escolher um nome de início de uma sessão e uma língua.
+signup_label_3: A língua será usada a próxima vez onde você entra.
+signup_label_4: Escolher uma senha para seu cliente novo.
+signup_label_5: As senhas devem ser 6-12 caráteres do comprimento.
+signup_label_6: Detalhes do email
+signup_label_7: Incorporar seu email address.
+signup_label_8: Você deve incorporar um email address válido para ativar seu cliente.
+signup_label_9: Submeter o formulário
+status_active: ativo
+status_locked: bloqueado
+status_registered: registrado
+text_are_you_sure: Você tem certeza ?
+text_caracters_maximum: %d máximo de caráteres
+text_length_between: Tamanho entre %d e %d caráteres.
+text_min_max_length_info: 0 siginifica sem restriçao
+unit_10_path: 10.La.Comunicacion.es
+unit_10_title: La Comunicación
+unit_11_path: 11.Responsabilidad.vs.Culpabilidad.es
+unit_11_title: Responsabilidad vs Culpabilidad
+unit_12_path: 12.Confianza.y.Auto.Eficacia.es 
+unit_12_title: Confianza y Auto Eficacia
+unit_13_path: 13.Estado.de.Animo.es
+unit_13_title: Estado de Animo
+unit_14_path: 14.Asertividad.es 
+unit_14_title: Asertividad
+unit_15_path: 15.Deportista.de.ARD.es 
+unit_15_title: Deportista de ARD 
+unit_16_path: 16.Sistema.de.Autoregulacion.es
+unit_16_title: Sistema de Autoregulación
+unit_1_path: 01.Teskal.es.pdf
+unit_1_title: Presentación Teskal
+unit_2_path: 02.Atencion.y.Concentracion.es.pdf
+unit_2_title: Atención y Concentración
+mail_spam: Confira seu filtro anti-spam, se não mostrar-se dentro de alguns minutos
+unit_3_path: 03.Emociones.y.Rendimiento.Deportivo.es
+unit_3_title: Emociones y Rendimiento Deportivo
+unit_4_path: 04.Establecimiento.de.Objetivos.es
+unit_4_title: Establecimiento de Objetivos
+unit_5_path: 05.Estres.es.pdf
+unit_5_title: El estrés en la competición
+unit_6_path: 06.Motivacion.es
+unit_6_title: Motivación
+unit_7_path: 07.Tension.y.Relajacion.es 
+unit_7_title: Tension y Relajación
+unit_8_path: 08.Tolerancia.Psicologica.es
+unit_8_title: Tolerancia Psicólogica
+unit_9_path: 09.La.Competicion.es
+unit_9_title: La Competición
+markt_10: Teskal fornece as ferramentas certas para o seu treinadores 
+markt_11: É um conceito integral de desempenho atlético que leva em conta não só as capacidades físicas e técnicas do atleta, mas também a pessoa que é o atleta. 
+markt_12: Teskal permite um nível consistente de comunicação entre treinador / atleta ou equipe. 
+markt_13: Quer para as situações em que o atleta e treinador viver em lugares diferentes, ou quando o atleta compete longe, Teskal permite o acompanhamento contínuo das inúmeras variáveis relevantes para o atleta e da performance do atleta. 
+markt_1: Ferramenta para ajudar a gerir as variáveis psicológicas do desporto desempenho. 
+markt_2: Você quer ser capaz de executar a nível você sabe que são capazes? 
+markt_3: Como você treinar a sua capacidade para gerir o stress, a sua auto-confiança? 
+markt_4_1: Um atleta em boa forma física, bem treinados, com boas performances que não é capaz de repetir na competição. 
+markt_4_2: Como você lidar com essas situações? 
+markt_4_3: Como e quando você intervir? 
+markt_5_1: Um atleta com um plano específico concorrência, desenvolvido em conjunto com o treinador. Quando confrontados com a pressão da concorrência durante este atleta começa a fazer impulsivo, ineficaz decisões. 
+markt_5_2: Como é que isso pode ser evitado? 
+markt_6_1: Algo se passa na vida de um atleta que impactos seu humor, sua energia, sua motivação. 
+markt_6_2: Como é que você pode detectá-lo suficientemente cedo? 
+markt_7: Como é que eu sei se as carruagens estão a criar um ambiente adequado para o melhor desempenho das equipas? 
+markt_8: Tem interesse em todo o cuidado do atleta? 
+markt_9: O que fazer treinadores têm ferramentas para manipulação cuidados para toda a pessoa?
+label_time_taken: Tempo para concluí-lo

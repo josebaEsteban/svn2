@@ -1,0 +1,212 @@
+<%= javascript_include_tag 'prototype' -%><%= javascript_include_tag 'effects' -%><%= javascript_include_tag 'stereotabs' -%><%= stylesheet_link_tag "reset" -%>
+<%- if @libreria -%>
+<script type="text/javascript">
+		//<![CDATA[
+		Event.observe(window, 'load', loadTabs, false);
+
+	function loadTabs() {
+	  var tabs = new tabset('container');
+	  tabs.autoActivate($('tab_library'));
+	}
+
+		//]]>
+	</script>
+<%- else -%>
+<script type="text/javascript">
+	//<![CDATA[
+	Event.observe(window, 'load', loadTabs, false);
+
+function loadTabs() {
+  var tabs = new tabset('container'); // name of div to crawl for tabs and panels
+  tabs.autoActivate($('tab_quest')); // name of tab to auto-select if none exists in the url
+}
+
+	//]]>
+	</script>
+<%- end -%>
+
+<h3><%= @athlete.name %></h3>
+<style type="text/css" >
+  ul#tabnav {
+
+/*    border-bottom:2px solid #B1BA8D;
+    border-top:2px solid #B1BA8D;
+*/    height:35px;
+    margin:0pt;
+    padding:0pt;
+    display:block;
+    line-height:35px;
+
+  }
+  ul#tabnav li {
+/*		background-color: #f7f4ee;*/
+    margin:0;
+    padding:0;
+    float:left;
+    height:35px;
+    list-style-type:none;
+    position:relative;
+  }
+  ul#tabnav li a {
+    color:#A0A0A0;
+    font-size:15px;
+    font-weight:bold;
+    line-height:25px;
+    text-decoration:none;
+    display:block;
+    float:left;
+    height:25px;
+    margin:0pt 0pt 0pt 5px;
+    padding:0pt 6px;
+    position:relative;
+  }
+  ul#tabnav li a:hover, ul#tabnav li a.selected {
+/*    background:#f7f4ee none repeat scroll 0%; */
+    color:#523A0B;  
+/*		border-bottom: 1px solid #f7f4ee;*/
+
+
+  }
+  .panel {
+/*    background:#EAE6C9 none repeat scroll 0%;
+    display:block;*/
+  }
+  .content1 {
+    line-height:12px;
+    padding:13px 35px 15px 15px;
+    text-align:left;
+
+  }
+  
+  /* non-tab related styles */
+
+  #container {
+    font-size:10px;
+width: 300px;   
+font:normal 100%/120% "Lucida Grande","Lucida Sans Unicode",Verdana,Arial,Helvetica,sans-serif;border-collapse:separate;border-spacing:0;margin:0 0 1em;color:#000;}
+
+  }
+
+</style>
+<%- id = @athlete.id.to_s -%>
+<div class='boxx'>
+ <div class='boxxtop'><div></div></div>
+  <div class='boxxcontent'>
+	  <div id="container"> 
+    <ul id="tabnav">
+      <li><a href="#quest" id="tab_quest" class="tab"><%= l(:label_quest_plural) %></a></li>
+      <li><a href="#library" id="tab_library" class="tab"><%= l(:label_library) %></a></li>
+    </ul>
+    <div id="panel_quest" class="panel" style="display:none">
+      <table cellspacing="0">
+        <thead>
+          <tr>
+            <th scope="col"><%= l(:label_last_updates) %></th>
+            <th scope="col">##</th>
+            <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%- i=0 -%>
+          <%- for quest in @quests -%>
+          <%- if i/2 == i/2.0 -%>
+          <tr>
+            <%- else -%>
+          <tr class="odd">
+            <%- end -%>
+            <td><div align="center"><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(quest.updated_on))%></div></td>
+            <td><%= quest.order.to_s %></td>
+            <td><%= @titulo[i]%></td>
+            <td><a href="/quest<%= quest.order.to_s %>/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
+            <td> <a href="/quests/switch/<%= quest.id.to_s %>">	
+			 	<%- if quest.browse -%>
+			 		<%= image_tag 'tick.png' %>
+			 <%- else -%>
+			 		<%= image_tag 'cross.png' %> 
+			 <%- end -%></a></td>
+          </tr>
+          <%- i=i+1 -%>
+          <%- end -%>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="panel_library" class="panel" style="display:none">
+      <table cellspacing="0">
+        <thead>
+          <tr>
+            <th scope="col"><div align="left"><%= l(:label_last_updates) %></div?</th>
+            <th scope="col">##</th>
+            <th scope="col"><div align="left"><%=l(:label_book)%></div></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%- i=0 -%>
+          <%- for book in @books -%>
+          <%- if i/2 == i/2.0 -%>
+          <tr>
+            <%- else -%>
+          <tr class="odd">
+            <%- end -%>
+            <td><div align="center"><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(book.updated_on))%><div>	</td>
+            <td><%= book.order.to_s %></td>
+            <td><%= @libro[i] %></td>
+            <td> <a href="/books/switch/<%= book.id.to_s %>">	
+		 	<%- if book.browse -%>
+		 		<%= image_tag 'tick.png' %>
+		 <%- else -%>
+		 		<%= image_tag 'cross.png' %> 
+		 <%- end -%></a></td>
+            <td></td>
+          </tr>
+          <%- i=i+1 -%>
+          <%- end -%>
+        </tbody>
+      </table>
+    </div>
+    </div> 
+  </div>
+ <div class='boxxbottom'><div></div></div>
+</div>
+<%- TzTime.zone=@athlete.timezone -%>
+<div class="splitcontentright">
+  <table cellspacing="0">
+    <thead>
+      <tr>
+        <th scope="col"><div align="left"><%=l(:label_filled) %></div></th>
+        <th scope="col">##</th>
+        <th scope="col"><div align="left"><%=l(:label_quest)%></div></th>
+    </thead>
+    <tbody>
+      <%- if @answers.length == 0 -%>
+    <td></td>
+      <td></td>
+      <td>  <%= l(:label_quest_no_filled) %> </td>
+      <td></td>
+      <%- else -%>
+      <%- odd=0 -%>
+      <%- for answer in @answers -%>
+      <%- if odd == 1 -%>
+    <tr class="odd">
+      <%- odd=0-%>
+      <%-else -%>
+    <tr>
+      <%- odd=1 end -%>
+      <%- controlador="quest"+ answer.quest_id.to_s -%>
+      <td><div align="center"><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(answer.created_on))%></div></td>
+      <td> <%= answer.quest_id.to_s %> </td>
+      <td><%= link_to @titulo[answer.quest_id-1], :controller  => controlador, :action => 'show', :id => answer %></td>
+      <td> <a href="/answers/switch/<%= answer.id.to_s %>">	
+			      	<%- if answer.browse -%>
+			      		<%= image_tag 'tick.png' %>
+			      <%- else -%>
+			      		<%= image_tag 'cross.png' %> 
+			      <%- end -%></a>
+		</td>
+    </tr>
+    <%- end -%>
+    <%- end -%>
+    </tbody>
+  </table>
+  <%= link_to l(:button_back),"/my/athletes" %>
+</div>
