@@ -114,7 +114,6 @@ field_value: Value
 field_version: Version
 footer_1: Design
 footer_2: Contact info[at]teskal[dot]com
-mail_spam: Check your spam filter if it doesn't show up within a few minutes.
 general_csv_encoding: ISO-8859-1
 general_csv_separator: ','
 general_day_names: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
@@ -212,9 +211,6 @@ label_new: New
 label_news: News
 label_next: Next
 label_no_data: No data to display
-label_registration_activation_by_email: account activation by email
-label_registration_manual_activation: manual account activation
-label_registration_automatic_activation: automatic account activation
 label_none: none
 label_not_contains: doesn't contain
 label_not_equals: is not
@@ -240,6 +236,9 @@ label_quest_plural: Questionnaires
 label_read: Read...
 label_register: Sign up
 label_registered_on: Registered on
+label_registration_activation_by_email: account activation by email
+label_registration_automatic_activation: automatic account activation
+label_registration_manual_activation: manual account activation
 label_reply_plural: Replies
 label_report: Report
 label_report_plural: Reports
@@ -257,6 +256,7 @@ label_search: Search
 label_send_information: Send account information to the user
 label_settings: Settings
 label_show: Show
+label_time_taken: Time to complete it
 label_timezone: Default timezone
 label_user: User
 label_user_new: New user
@@ -277,6 +277,7 @@ mail_body_quest2: Once you login into Teskal, you can browse it at the following
 mail_body_quest3: Now you can browse the result of your questionnaire of
 mail_body_quest4: You have a pending questionnaire of
 mail_body_signup: 'Thank you for signing up for Teskal! To activate your account, use the following link'
+mail_spam: Check your spam filter if it doesn't show up within a few minutes.
 mail_subject_account_activation_request: Teskal account activation request
 mail_subject_allowed: Result Questionnaire
 mail_subject_book: Teskal Library   
@@ -284,6 +285,10 @@ mail_subject_lost_password: Your Teskal password
 mail_subject_pending: Pending Questionnaire
 mail_subject_quest: New Questionnaire
 mail_subject_signup: Teskal account activation 
+mark_concept: What is it?   
+mark_role_1: Athlete
+mark_role_2: Coach
+mark_role_3: Manager
 markt_10: Teskal gives the right tools to your coaches 
 markt_11: It’s an integral concept of athletic performance that takes into account not just the physical and technical skills of the athlete, but also the person who is the athlete. 
 markt_12: Teskal allows for a consistent level of communication between coach/athlete and/or team. 
@@ -301,6 +306,8 @@ markt_6_2: How can you detect it early enough?
 markt_7: How do you know when your coaches are creating the right climate for the optimal performance of the teams?
 markt_8: Are you interested in the overall care of the athlete?
 markt_9: Do your coaches have the necessary tools for handling care for the whole person? 
+markt_presentation: Quick Tour
+markt_quick_tour: Quick Tour
 notice_account_activated: Your account has been activated. You can now log in.
 notice_account_email_exists: There is a user already with that email. Please choose a different one.
 notice_account_invalid_creditentials: Invalid user or password
@@ -1152,10 +1159,3 @@ unit_8_path: 08.Competition.en.pdf
 unit_8_title: Competition
 unit_9_path: 09.Comunication.en.pdf
 unit_9_title: Comunication
-label_time_taken: Time to complete it
-mark_role_1: Athlete
-mark_role_2: Coach
-mark_role_3: Manager
-markt_quick_tour: Quick Tour
-mark_concept: What is it?   
-markt_presentation: Quick Tour
