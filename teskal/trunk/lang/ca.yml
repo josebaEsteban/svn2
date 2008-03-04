@@ -344,7 +344,7 @@ quest10_8: Dóna instruccions sobre aspectes tècnics, tàctics, estil, recorreg
 quest10_9: Pensa que els esportistes tenen èxit quan ho fan millor que els demés
 quest10_intro: A sota hi ha una sèrie de comentaris i frases relacionades amb situacions i comportaments de competició. Si us plau, llegeix cuidadosament i després selecciona el què millor descrigui el comportament de tu entrenador durant l’entrenament i els partits de competició.
 quest10_label_0: Clima Formatiu Percebut Esports Col·lectius
-quest10_label_1: El meu entrenador/aquest11: Motivación Autodeterminada
+quest10_label_1: El meu entrenador/a
 quest11: Motivació Autodeterminada
 quest11_10: Perquè és absolutament necessari fer esport si es vol estar en forma
 quest11_11: Pel prestigi de se un esportista
@@ -543,10 +543,10 @@ quest1_d5_a: En el cas de la Fatiga, els seus valors presenten un nivell baix, e
 quest1_d5_b: En el cas de la Fatiga, els seus valors presenten un nivell mitjà, el què pot ser una mica preocupant, si no s’han registrat les dades després de la realització d’esforços o d’una sessió d’entrenament. També pot ser degut a que ens trobem en un període d’esforços d’altes intensitats, però si aquests valors es troben acompanyats d’un bon procés de recuperació els podem considerar com normals
 quest1_d5_c: En el cas de la Fatiga, els seus valors presenten un nivell alts, la qual cosa és alarmant, ja que pot trobar-se en una situació de risc de sobreentrenament, sobretot si els valors del Vigor es troben baixos, és a dir, invertits amb respecte a aquesta dimensió, a no ser que s’hagin registrat després d’una sessió d’entrenament. També poden haver estat contaminats per l’existència de valors alts en Hostilitat i Depressió, el que representaria un quadre anímic alarmant
 quest1_d6_a: Presenta un valor baix pel què fa a l’ansietat cognitiva, transmetent calma i serenitat, despreocupat/da, amb molta capacitat de concentració en els moments que sigui necessari
-quest1_d6_b: S’observa un valor mitjà pel què fa a l’ansietat cognitiva, el què suposa que, a vegades, es trobi una mica intranquil/a i lleugerament nerviós/a. Convé realitzar un treball específic i reforçar-ho amb sessions de visionat de pressió/estrés, perquè aquests valors es situïn a la zona baixa, és a dir, per sota de 48
+quest1_d6_b: S’observa un valor mitjà pel què fa a l’ansietat cognitiva, el què suposa que, a vegades, es trobi una mica intranquil/a i lleugerament nerviós/a. Convé realitzar un treball específic i reforçar-ho amb sessions de visionat de pressió/estrés, perquè aquests valors es situïn a la zona baixa.
 quest1_d6_c: Presenta un valor alt pel què fa a l’ansietat cognitiva, amb una excessiva preocupació relacionada amb el rendiment personal durant la competició. Potser tingui masses pensaments desordenats que li impedeixen concentrar-se en moments importants. És necessari realitzar un treball específic per a reduir aquest alt valor acompanyat de sessions de visionat amb continguts de pressió/estrés, i en el cas de que persisteixin en el temps, consultar al tutor/a
 quest1_d7_a: Els valors de l’autoconfiança són molt baixos, provocant molta inseguretat durant la competició, sobretot quan es donen situacions de molta pressió. Es fa necessari elaborar un pla específic per augmentar aquests valors. Es recomana una sessió de visionat amb continguts d’autoeficàcia. Acompanyat d’una explicació o bé amb el propi entrenador o bé amb el/la tutor/a
-quest1_d7_b: Presenta un nivell mitjà d’autoconfiança, transmetent certa incomoditat enfront de situacions de pressió. Potser li costi una mica veure’s a sí mateix resolent exitosament les situacions de competició. Convé proposar un treball específic per a millorar aquests valors i es situïn en la zona alta, és a dir, pers obre de 60
+quest1_d7_b: Presenta un nivell mitjà d’autoconfiança, transmetent certa incomoditat enfront de situacions de pressió. Potser li costi una mica veure’s a sí mateix resolent exitosament les situacions de competició. Convé proposar un treball específic per a millorar aquests valors i es situïn en la zona alta.
 quest1_d7_c: S’observa un alt nivell d’autoconfiança, amb bones sensacions per a competir, còmode i amb alta capacitat per a optimitzar el seu rendiment en situacions de pressió
 quest1_d8_a: Presenta un valor baix pel què fa a l’ansietat somàtica, transmetent comoditat i tranquilitat, amb molta capacitat per a relaxar-se corporalment i estar mentalment actiu en els moments que sigui necessari, és a dir, calma expectant
 quest1_d8_b: S’observa un valor mitjà pel què fa a l’ansietat somàtica, el què suposa que, a vegades, es troba una mica inquiet/a i tens/a. S’aconsella orientar una part de l’entrenament cap a la reducció i millora d’aquests valors i, a més a més reforçar-ho amb unes sessions de visionat amb continguts de Relaxació
@@ -557,7 +557,7 @@ quest1_d9_c: La dificultat percebuda estimada (DPE) es troba directament relacio
 quest1_header2: Abans de la competició...
 quest1_header4: Al practicar esport, sento que tinc èxit quan...
 quest1_header5: Et sents capaç de competir en el teu esport
-quest1_intro: A sota hi ha una llista de paraules que descriuen sensacions que té la gent. A continuació apareixen una sèrie de comentaris que han estat utilitzats pels esportistes per a descriure els seus sentiments o emocions abans d’una competició. Si us plau, llegeix cadascuna cuidadosament, i fes clic en el número que millor descrigui com et sents en aquest moment
+squest1_intro: A sota hi ha una llista de paraules que descriuen sensacions que té la gent. A continuació apareixen una sèrie de comentaris que han estat utilitzats pels esportistes per a descriure els seus sentiments o emocions abans d’una competició. Si us plau, llegeix cadascuna cuidadosament, i fes clic en el número que millor descrigui com et sents en aquest moment
 quest1_label_10: Actual
 quest1_label_11: Dificultat percebuda estimada
 quest1_label_12: Grau de confiança
@@ -715,7 +715,7 @@ quest3_header1: Ara mateix em sento...
 quest3_header2: A l’entrenament...
 quest3_header3: En aquest moment, indica el percentatge de...
 quest3_intro: A sota hi ha una llista de paraules que descriuen sensacions que té la gent, i una sèrie de comentaris i frases relacionats amb situacions d’entrenament. Si us plau, llegeix cadascuna cuidadosament, i fes clic en el número que millor descrigui com et sents en aquest moment, o que millor descrigui el teu comportament durant les sessions d’entrenament
-quest3_label_o: Perfil d’Estat de Forma de l’Entrenament
+quest3_label_0: Perfil d’Estat de Forma de l’Entrenament
 quest3_label_10: Actual
 quest3_label_1: Tensió
 quest3_label_2: Depressió
@@ -726,16 +726,16 @@ quest3_label_6: Compromís amb l’esforç
 quest3_label_7: Ansietat enfront als errors
 quest3_label_8: Competència percebuda
 quest3_label_9: Òptima
-quest3_label_0: 0 (res)
-quest3_label_1: 1 (una mica)
-quest3_label_2: 2 (moderadament)
-quest3_label_3: 3 (bastant)
-quest3_label_4: 4 (molt)
-quest3_label_5: 0 (mai)
-quest3_label_6: 1 (poques vegades)
-quest3_label_7: 2 (a vegades)
-quest3_label_8: 3 (moltes vegades)
-quest3_label_9: 4 (sempre)
+quest3_valor_0: 0 (res)
+quest3_valor_1: 1 (una mica)
+quest3_valor_2: 2 (moderadament)
+quest3_valor_3: 3 (bastant)
+quest3_valor_4: 4 (molt)
+quest3_valor_5: 0 (mai)
+quest3_valor_6: 1 (poques vegades)
+quest3_valor_7: 2 (a vegades)
+quest3_valor_8: 3 (moltes vegades)
+quest3_valor_9: 4 (sempre)
 quest4: Valoració Pre-Competició
 quest4_0: Nivell de dificultat
 quest4_1: Grau de confiança en competir d’aquesta manera
@@ -751,7 +751,7 @@ quest4_d10_b: La dificultat percebuda estimada (DPE) es troba lleugerament relac
 quest4_d10_c: La dificultat percebuda estimada (DPE) es troba lleugerament relacionada amb les probabilitats de tenir èxit; a menor dificultat d’objectiu proposat més probabilitats d’assolir-lo. Aquests alts valors de la DPE, suposa que ens trobem en una situació límit i, si es troben acompanyats d’un alt nivell d’autoconfiança, entre 80 i 100, permetrà assolir l’objectiu proposat. Convé recordar que el grau de dificultat de les situacions no depèn del/la esportista, ja que en cap cas ho podrà canviar, però ‘augmentar les probabilitats d’èxit sí, mantenint alta les creences en sí mateix/a’
 quest4_d11_a: Són valors baixos d’autoeficàcia percebuda, el que suposa molta inseguretat enfront a les situacions de gran disputa competitiva. Serà necessari incrementar aquest valor abans de proposar-li noves situacions de competició. Es recomana una miniestratègia per a incorporar-la al Pla Integral de Competició, a l’apartat d’Autoeficàcia orientada cap a les properes competicions. A mitjà termini, a través de la persuasió verbal i del visionat de situacions exitoses passades, intentar incrementar aquests valors amb l’ajuda del/la tutor/a
 quest4_d11_b: Presenta un nivell mitjà d’autoeficàcia percebuda, el què suposa certa inseguretat durant la competició. Potser sigui degut a l’efecte de la Dificultat Percebuda Estimada (DPE), o a trobar-se en un període allunyat de la seva posta a punt. En qualsevol cas és convenient, a través de la persuasió verbal i del visionat de situacions exitoses passades, intentar incrementar aquests valors i, si no s’aconsegueix, consultar al/a tutor/a
-quest4_d11_c: És un alt nivell d’autoeficacia percebuda, amb bones sensacions per a competir i amb alta capacitat resolutiva per aplicar-la durant la competició. Són valors òptims i, a mesura que s’aproxima al màxim augmenten les seves possibilitats per rendir ara
+quest4_d11_c: És un alt nivell d’autoeficacia percebuda, amb bones sensacions per a competir i amb alta capacitat resolutiva per aplicar-la durant la competició. Són valors òptims i, a mesura que s’aproxima al màxim augmenten les seves possibilitats per rendir ara.
 quest4_d12_a: La percepción de elaboración del Plan Integral de Competición se encuentra en valores bajos, lo cual merma bastante las posibilidades de rendimiento de est@ deportista. Existen muchas posibilidades de que la respuesta emocional esté condicionada por las dimensiones negativas de su estado de ánimo y, además su confianza sea inestable. Habrá que realizar un trabajo específico, apoyado con el PDF de contenidos relacionados con el PIC, con el de Autoeficacia y con el de Responsabilidad/Culpabilidad, con ayuda del/a tutor/a.
 quest4_d12_b: Supone que la percepción de elaboración del Plan Integral de Competición se encuentra en valores medios. Quizás tenga dificultades para controlar la respuesta emocional de las dimensiones negativas y se le generen ciertas dudas en su actuación. Habrá que centrar la atención en la reestructuración emocional del PIC y en su visualización. Habrá que tener en cuenta este aspecto al realizar la Valoración del Rendimiento.
 quest4_d12_c: Supone que la percepción de elaboración del Plan Integral de Competición se encuentra en valores óptimos. Esto le va a generar una influencia positiva en el control emocional de las dimensiones negativas y, además, le reforzará su grado de confianza. También contribuirá a realizar una mejor Valoración del Rendimiento Percibido. (VRP).
@@ -1103,7 +1103,7 @@ signup_label_6: Detalls email.
 signup_label_7: Escriu la teva direcció de correu.
 signup_label_8: La direcció ha de ser vàlida per poder activar el teu compte.
 signup_label_9: Submit form signup
-text_are_you_sure: Estàs segur ?
+text_are_you_sure: Estàs segur?
 text_caracters_maximum: màxim %d caràcters.
 text_length_between: Longitud entre %d i %d caràcters.
 text_min_max_length_info: 0 per a cap restricció
