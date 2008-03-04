@@ -215,7 +215,7 @@ label_not_equals: no igual
 label_on: en
 label_options: Options
 label_overview: Vistazo
-label_page_index: Índice
+label_page_index: Indice
 label_password_lost: Pasa-hitza ahaztu zaizu? 
 label_per_page: Por la página
 label_permissions: Baimenak
@@ -300,7 +300,8 @@ markt_6_2: Nola egin dezakezu garaiz antzemateko?
 markt_7: Nola dakizu entrenatzaileek taldeen errendimendu ezin hobearentzako giro egokia sortzen dutenentz? 
 markt_8: Kirolariaren zaintza globala interesatzen al zaizu? 
 markt_9: Zein erreminta dituzte entrenatzaileek haiek maneiatzeko?  
-markt_presentation: Aurkezpenamarkt_quick_tour: itzuli azkarra
+markt_presentation: Aurkezpena
+markt_quick_tour: Itzuli azkarra
 notice_account_activated: Zure kontua aktibatua izan da. Sartu egin zaitezke.
 notice_account_email_exists: Jada email hau duen beste erabiltzaile bat existitzen da. Mesedez email ezberdin bat erabili. 
 notice_account_invalid_creditentials: Balio gabeko erabiltzaile edo eta pasa-hitza.
