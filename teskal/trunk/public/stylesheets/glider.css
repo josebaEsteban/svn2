@@ -1,13 +1,10 @@
-#my-glider {
-text-align: right;
-padding-top: 20px;
-width: 635px;
-height: auto;
-margin-left: 84px;
+div.content {
+text-align: left;
 }
 div.scroller {
-	/* modify width and height of scrolling section if necessary */
-width:635px;
+	/* modify width and height of scrolling section if necessary */ 
+text-align: left;
+width: 635px;
 height: 370px;
 overflow: hidden;
 border: 1px solid #ddd;
@@ -29,7 +26,9 @@ background: #666666;
 color: #ffffff;
 }
 #quick_tour {
-margin: 0 0 16px 0;
+text-align: right;
+margin: 16px 0 7px 0;
+padding-right: 90px;
 font-size: 3.2em;
 font-weight: normal;
 letter-spacing: -1px;
@@ -38,49 +37,14 @@ background-color: inherit;
 font-family: "Gill Sans","Georgia", "Times New Roman", Times, serif;
 }
 .columnwrapper {
-	width: 600px;
-	margin: 30px 0 30px 30px;
-	float: left;
+width: 600px;
+margin: 30px 0 30px 30px;
+float: left;
 }
 .cols1_1, .cols1_2, .cols1_3 {
-	width: 250px;
-	float: left;
-	padding-top: 20px;
-	padding-left: 50px;
-	font-weight: bold;
-}
-.boxxg {
-width: 635px;
-/*		padding: 0px 0px 0px 10px;*/
-
-		overflow:hidden;
-background: #F7F4EE;
-}
-.boxxg a{
-color: #48436a;
-}
-.boxxg h3{
-color: #523a0b;
-}
-.boxxg ul{
-list-style: none;
-}
-.boxxtopg {
-background: url(../images/ne5.gif) no-repeat top right;
- 
-}
-
-.boxxtopg div {
-height: 5px;
-background: url(../images/nw5.gif) no-repeat top left;
-}
-.boxxbottomg {
-background: url(../images/se5.gif) no-repeat bottom right;
-}
-.boxxbottomg div {
-height: 5px;
-background: url(../images/sw5.gif) no-repeat bottom left;
-}
-.boxxcontentg {
-padding: 5px 0px 0px 0px;
+width: 250px;
+float: left;
+padding-top: 20px;
+padding-left: 50px;
+font-weight: bold;
 }
