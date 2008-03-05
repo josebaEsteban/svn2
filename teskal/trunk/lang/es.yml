@@ -256,7 +256,7 @@ label_search: Búsqueda
 label_send_information: Información de la cuenta enviada al usuario
 label_settings: Configuración
 label_show: Mostrar
-label_time_taken: Se tardó en completarlo      
+label_time_taken: Se tardó en completarlo
 label_timezone: Zona horaria
 label_user: Usuario
 label_user_new: Añadir deportista
@@ -285,14 +285,15 @@ mail_subject_lost_password: Tu contraseña de Teskal
 mail_subject_pending: Cuestionario pendiente
 mail_subject_quest: Nuevo cuestionario
 mail_subject_signup: Activación de la cuenta de Teskal
-mark_concept: Qué es? 
+mark_concept: Qué es?
 mark_role_1: Deportista
 mark_role_2: Entrenador/a
-mark_role_3: Directivo/a                                                                          
-markt_10: Teskal pone esas herramientas a disposición de tus entrenadores.
+mark_role_3: Directivo/a
+markt_10: Teskal pone tu disposición las herramientas para conseguirlo
 markt_11: Es un concepto integral del rendimiento deportivo que considera no solo las habilidades físicas y técnicas sino la persona del deportista.
 markt_12: Teskal permite mantener un alto nivel de comunicación al dúo deportista/entrenador o al grupo deportista/entrenador/psicólogo 
 markt_13: Sea para situaciones en que el deportista y el entrenador residen en sitios distintos, o en momentos en que el deportista acude a competiciones en otros sitios, Teskal permite el seguimiento de múltiples variables que afectan al deportista y a su rendimiento.
+markt_14: ¿Que herramientas tienen los entrenadores para manejarlos?
 markt_1: La herramienta para el manejo de las variables psicológicas del rendimiento deportivo
 markt_2: ¿Quieres poder rendir en competición al nivel que sabes que eres capaz?
 markt_3: ¿Quieres entrenar la capacidad de manejar el estrés, la auto confianza?
@@ -303,11 +304,11 @@ markt_5_1: Deportista con un plan concreto, elaborado con el entrenador, ante la
 markt_5_2: ¿Como prevenir eso?
 markt_6_1: Deportista que está pasando por situaciones personales que impactan su estado de ánimo, su energía, su motivación.
 markt_6_2: ¿Como puedes detectarlo a tiempo?
-markt_7: ¿Como sabes si los entrenadores crean el ambiente adecuado para el rendimiento óptimo de los equipos?
-markt_8: ¿Te interesa el cuidado global del deportista?
-markt_9: ¿Que herramientas tienen los entrenadores para manejarlos?
-markt_14: Te interesa desarrollar la consistencia psicológica a través de la confianza, el esfuerzo y la motivación para disponer de deportistas, atrevidos, comprometidos, persistentes y resolutivos?
-markt_quick_tour: Paseo Rápido                                      
+markt_7: ¿Te interesa desarrollar un modelo integral de tecnificación que contemple el desarrollo de capacidades psicosociales y sea sostenible en el tiempo?
+markt_8: ¿Te interesa conocer y analizar los cambios y la evolución que se ha generado en los deportistas a lo largo de varias temporadas?
+markt_9: ¿Te interesa desarrollar la consistencia psicológica a través de la confianza, el esfuerzo y la motivación para disponer de deportistas atrevidos, comprometidos, persistentes y resolutivos?
+markt_presentation: Presentación
+markt_quick_tour: Paseo Rápido
 notice_account_activated: Tu cuenta ha sido activada. Puedes entrar.
 notice_account_email_exists: Ya existe un usuario con ese correo. Por favor use un correo distinto.
 notice_account_invalid_creditentials: Usuario o contraseña no válido.
@@ -384,7 +385,7 @@ quest11_5: Por el placer de descubrir nuevas técnicas de entrenamiento
 quest11_6: Ya no lo tengo claro; tengo la impresion de que soy incapaz de tener éxito en este deporte
 quest11_7: Porque me permite estar bien visto(a) por la gente que conozco
 quest11_8: Porque, para mi, es una de las mejores formas de conocer gente
-quest11_9: cuando controlo algunas técnicas difíciles 
+quest11_9: cuando controlo algunas técnicas difíciles
 quest11_d1_a: Este bajo valor de la motivación intrínseca, supone baja implicación en el entrenamiento y no disfruta de lo que está haciendo. Rehuye enfrentarse a tareas nuevas o difíciles en el entrenamiento y le cuesta centrarse en la mejora de sus puntos débiles.
 quest11_d1_b: Este valor medio de la motivación intrínseca, supone que se encuentra implicado en el entrenamiento, pero podía estarlo más. Siente cierta satisfacción personal cuando se le proponen tareas difíciles, sobre todo en el entrenamiento, y se encuentra centrado en la mejora de sus puntos débiles.
 quest11_d1_c: Este alto valor de la motivación intrínseca, supone que se encuentra altamente implicado en el entrenamiento y disfruta de lo que está haciendo. Además siente una alta satisfacción personal sobre todo al enfrentarse a tareas difíciles, tanto en el entrenamiento como en la competición, intenta hacer cosas que antes no lo había intentado y se encuentra muy centrado en la mejora de sus puntos débiles.
@@ -835,7 +836,7 @@ quest5_header1: El grado de satisfacción con mi actuación ha sido...
 quest5_header2: El grado de satisfacción durante la competición con...
 quest5_header3: El porcentaje del grado de satisfacción con...
 quest5_intro: Más abajo se plantean una serie de preguntas relacionadas con determinados aspectos de la competición, sobre las que queremos recoger tu opinión. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
-quest5_label_0: Valoración de Rendimiento Percibido Individual 
+quest5_label_0: Valoración de Rendimiento Percibido Individual
 quest5_label_1: Rendimiento Global
 quest5_label_2: Rendimiento Emocional
 quest5_label_3: Rendimiento Cognitivo
@@ -959,7 +960,7 @@ quest8_35: La forma en que el equipo trabaja para ser el mejor
 quest8_36: El grado hasta el que los miembros del equipo comparten el mismo objetivo
 quest8_37: La dedicación de los miembros del equipo a trabajar conjuntamente para conseguir los objetivos del equipo
 quest8_38: El grado en el que los miembros del equipo juegan como equipo
-quest8_39: El grado hasta el que hago lo mejor que puedo para el equipo 
+quest8_39: El grado hasta el que hago lo mejor que puedo para el equipo
 quest8_42: Mi compromiso hacia el equipo
 quest8_4: El nº de competiciones ganadas y perdidas durante la temporada
 quest8_5: El rendimiento global del equipo durante esta temporada
@@ -1061,7 +1062,7 @@ quest9_d9_c: Este alto valor del clima de rendimiento (PER) supone percibir, par
 quest9_header: El grado de satisfacción con...
 quest9_intro: Más abajo hay una serie de comentarios y frases relacionadas con situaciones y comportamiento de competición. Por favor, lee cuidadosamente y después rodea con un círculo el número que hay al lado, el que mejor describa tu comportamiento durante el entrenamiento y los partidos de competición.
 quest9_label_0: Clima Formativo del Entrenador Auto Percibido Deportes Colectivos
-quest9_label_10: Como entrenador/a... 
+quest9_label_10: Como entrenador/a...
 quest9_label_1: Clima de Rendimiento Grupal
 quest9_label_2: Clima de Maestría Grupal
 quest9_label_3: Confianza en los jugadores percibida
@@ -1070,7 +1071,7 @@ quest9_label_5: Comunicación reactiva
 quest9_label_6: Comunicación instruccional
 quest9_label_7: Estilo decisional percibido
 quest9_label_8: Clima de Maestría
-quest9_label_9: Clima de Rendimiento 
+quest9_label_9: Clima de Rendimiento
 quest9_valor_1: 1 (no, en absoluto)
 quest9_valor_1: 1 (nunca)
 quest9_valor_2: 2 (pocas veces)
@@ -1098,7 +1099,7 @@ setting_text_formatting: Formato de texto
 setting_welcome_text: Texto de bienvenida
 signup_label_10: Condiciones del Servicio
 signup_label_11: Al hacer clic en 'Guardar', adjunto mi firma electrónica y estoy de acuerdo con las <a href="http:/account/terms">Condiciones de Servicio</a> de Teskal.
-signup_label_12: Gracias por registrarte! 
+signup_label_12: Gracias por registrarte!
 signup_label_13: Tu cuenta ha sido creada en Teskal.
 signup_label_14: Recibirás una confirmación por correo.
 signup_label_15: Tiene un enlace de activación de tu cuenta que debes clicar para entrar en
@@ -1150,4 +1151,3 @@ unit_8_path: 08.La.Competicion.es.pdf
 unit_8_title: La Competición
 unit_9_path: 09.La.Comunicacion.es.pdf
 unit_9_title: La Comunicación
-markt_presentation: Presentación
