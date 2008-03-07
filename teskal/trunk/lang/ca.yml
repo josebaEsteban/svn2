@@ -588,23 +588,23 @@ quest1_label_7: Autoconfiança
 quest1_label_8: Ansietat Somàtica
 quest1_label_9: Òptima
 quest2: Qüestionari Tolerància Psicològica a l'Estrès
-quest2_10: He estat convençut que podia rendir en qualsevol moment 
-quest2_11: He resolt de forma adequada els problemes amb els meus companys/as 
-quest2_12: He estat en bona forma física 
+quest2_10: He estat convençut que podia rendir en qualsevol moment
+quest2_11: He resolt de forma adequada els problemes amb els meus companys/as
+quest2_12: He estat en bona forma física
 quest2_13: M'he motivat durant l'entrenament/competició 
-quest2_14: M'he sentit esgotat emocionalment durant l'entrenament/competició 
-quest2_15: He tingut dolors musculars després de l'entrenament/competició 
-quest2_16: He estat convençut de què he entrenat/competit correctament 
-quest2_17: Se m'ha demanat que faci massa coses durant els descansos 
-quest2_18: M'he mentalitzat abans de l'actuació 
-quest2_19: He sentit que volia abandonar el meu esport 
-quest2_1: M'han dolgut algunes parts del cos 
-quest2_20: M'he sentit ple d'energia 
-quest2_21: He comprès fàcilment com se sentien els meus companys/as 
-quest2_22: He estat convençut que he entrenat correctament 
-quest2_23: Els descansos no han estat en els moments adequats 
-quest2_24: M'he sentit vulnerable a les lesions 
-quest2_25: M'he marcat objectius per a l'entrenament/competició 
+quest2_14: M'he sentit esgotat emocionalment durant l'entrenament/competició
+quest2_15: He tingut dolors musculars després de l'entrenament/competició
+quest2_16: He estat convençut de què he entrenat/competit correctament
+quest2_17: Se m'ha demanat que faci massa coses durant els descansos
+quest2_18: M'he mentalitzat abans de l'actuació
+quest2_19: He sentit que volia abandonar el meu esport
+quest2_1: M'han dolgut algunes parts del cos
+quest2_20: M'he sentit ple d'energia
+quest2_21: He comprès fàcilment com se sentien els meus companys/as
+quest2_22: He estat convençut que he entrenat correctament
+quest2_23: Els descansos no han estat en els moments adequats
+quest2_24: M'he sentit vulnerable a les lesions
+quest2_25: M'he marcat objectius per a l'entrenament/competició
 quest2_26: M'he sentit físicament fort
 quest2_27: M'he sentit frustrat en el meu esport
 quest2_28: He manejat amb tranquil·litat els problemes emocionals en el meu esport
@@ -659,7 +659,7 @@ quest2_valor_2: 2 (de vegades)
 quest2_valor_3: 3 (sovint)
 quest2_valor_4: 4 (moltes vegades)
 quest2_valor_5: 5 (gairebé sempre)
-quest2_valor_6: 6 (sempre)      
+quest2_valor_6: 6 (sempre)
 quest3: Perfil d’Estat de Forma de l’Entrenament
 quest3_10: Enfadat/da
 quest3_11: Tens/a
@@ -746,7 +746,7 @@ quest4_5: La prova es apropiada per tu?
 quest4_6: Has provat el pla de competició?
 quest4_7: Tens clar com vols actuar
 quest4_8: Resultat que esperes assolir
-quest4_d10_1: La dificultat percebuda estimada (DPE) es troba directament relacionada amb les probabilitats de tenir èxit; a menor dificultat d’objectiu proposat més probabilitats d’assolir-lo. Suposa que aquest/a esportista té capacitat discriminativa a l’hora de seleccionar el seu objectiu, però aquests valors baixos de DPE, poden provocar una baixa activació de l’estat de rendiment, o un excés de confiança. Serà necessari focalitzar l’atenció en el PIC, amb el suport del PDF de l’Autoeficàcia
+quest4_d10_a: La dificultat percebuda estimada (DPE) es troba directament relacionada amb les probabilitats de tenir èxit; a menor dificultat d’objectiu proposat més probabilitats d’assolir-lo. Suposa que aquest/a esportista té capacitat discriminativa a l’hora de seleccionar el seu objectiu, però aquests valors baixos de DPE, poden provocar una baixa activació de l’estat de rendiment, o un excés de confiança. Serà necessari focalitzar l’atenció en el PIC, amb el suport del PDF de l’Autoeficàcia
 quest4_d10_b: La dificultat percebuda estimada (DPE) es troba lleugerament relacionada amb les probabilitats de tenir èxit; a menor dificultat d’objectiu proposat més probabilitats d’assolir-lo. Aquests valors mitjans de la DPE, acompanyats d’estabilitat en la confiança, contribuiran a optimitzar el rendiment, si l’activació de l’estat de rendiment és òptim. Convé recordar que el grau de dificultat de les situacions no depèn del/la esportista, ja que en cap cas ho podrà canviar, però ‘augmentar les probabilitats d’èxit sí, mantenint alta les creences en sí mateix/a’
 quest4_d10_c: La dificultat percebuda estimada (DPE) es troba lleugerament relacionada amb les probabilitats de tenir èxit; a menor dificultat d’objectiu proposat més probabilitats d’assolir-lo. Aquests alts valors de la DPE, suposa que ens trobem en una situació límit i, si es troben acompanyats d’un alt nivell d’autoconfiança, entre 80 i 100, permetrà assolir l’objectiu proposat. Convé recordar que el grau de dificultat de les situacions no depèn del/la esportista, ja que en cap cas ho podrà canviar, però ‘augmentar les probabilitats d’èxit sí, mantenint alta les creences en sí mateix/a’
 quest4_d11_a: Són valors baixos d’autoeficàcia percebuda, el que suposa molta inseguretat enfront a les situacions de gran disputa competitiva. Serà necessari incrementar aquest valor abans de proposar-li noves situacions de competició. Es recomana una miniestratègia per a incorporar-la al Pla Integral de Competició, a l’apartat d’Autoeficàcia orientada cap a les properes competicions. A mitjà termini, a través de la persuasió verbal i del visionat de situacions exitoses passades, intentar incrementar aquests valors amb l’ajuda del/la tutor/a
@@ -789,7 +789,7 @@ quest4_label_12: Dificultat percebuda estimada
 quest4_label_13: Grau de confiança
 quest4_label_14: Percepció del Pla Integral de Competició
 quest4_label_1: Perfil de Rendiment en Competició
-quest4_label_1: 1 (res)
+quest4_valor_1: 1 (res)
 quest5: Valoració Post-Competició (Esports Individuals)
 quest5_10: El control dels meus pensaments i l’afrontament positiu
 quest5_11: La forma de respondre a les accions de les demés
@@ -911,7 +911,7 @@ quest7_d2_a: D'altra banda, la satisfacció amb el compromís personal vers l'eq
 quest7_d2_b: La satisfacció amb el compromís personal vers l'equip (DP), en funció de les seves possibilitats, es troba en nivells mitjos, i potser influint en la seva dedicació i implicació personal , tant durant l'entrenament com en competició. És important recordar que aquest aspecte és fonamental per l'assoliment dels objectius plantejats.
 quest7_d2_c: D'altra banda, la satisfacció amb el compromís personal vers l'equip (DP), en funció de les seves possibilitats, es troba en nivells alts; això implica una excel·lent dedicació i implicació personal, tant durant l'entrenament com en competició. Té clar que l'èxit arriba a través de l'esforç, i és positiu reforçar-li-ho.
 quest7_d3_a: Els valors de satisfacció relacionats amb el funcionament ètic (FE) del grup i amb el significat que tenen respecte al joc net són baixos. A més, pensa que els seus companys tenen poca esportivitat.
-quest7_d3_b:Els valors de satisfacció relacionats amb el funcionament ètic (FE) del grup i amb el significat que tenen respecte al joc net són mitjos. De vegades pensa que els seus companys podrien tenir comportaments més esportius.
+quest7_d3_b: Els valors de satisfacció relacionats amb el funcionament ètic (FE) del grup i amb el significat que tenen respecte al joc net són mitjos. De vegades pensa que els seus companys podrien tenir comportaments més esportius.
 quest7_d3_c: Aquests valors tan alts de satisfacció relacionats amb el funcionament ètic (FE) del grup i amb el significat que tenen respecte al joc net, reforcen la seva integració a l'equip. A més, pensa que els seus companys tenen sempre comportaments molt esportius.
 quest7_d4_a: El nivell de satisfacció amb la manera de maximitzar el talent dels/les esportistes, amb l'ús de les seves habilitats, amb el temps de competició i amb la mesura en què el rol assignat a l'esportista es correspon amb el seu preferit o ideal es situa en nivells baixos. Serà interessant conèixer el seu estat d'ànim i motivació.
 quest7_d4_b: El nivell de satisfacció amb la manera de maximitzar el talent dels/les esportistes, amb l'ús de les seves habilitats, amb el temps de competició i amb la mesura en què el rol assignat a l'esportista es correspon amb el seu preferit o ideal es situa en nivells mitjos. Això pot provocar, en certes ocasions, certa inestabilitat emocional.
@@ -921,7 +921,7 @@ quest7_d5_b: El grau de satisfacció relacionat amb la informació rebuda respec
 quest7_d5_c: El grau de satisfacció relacionat amb la informació rebuda respecte les prestacions tècnico-tàctiques de la seva posició, o amb aspectes de la seva millora personal (EI), és alt. Això comportarà un bon reforç per al seu nivell d'autoeficàcia percebuda.
 quest7_d6_a: La satisfacció pel tractament rebut de l'entrenador/a en quant a l'amabilitat, el reconeixement i l'estima per la feina ben feta (TP), es situa en nivells baixos i, per tant, el nivell d'atenció rebut també serà baix.
 quest7_d6_b: La satisfacció pel tractament rebut de l'entrenador/a en quant a l'amabilitat, el reconeixement i l'estima per la feina ben feta (TP), es situa en nivells mitjos i, per tant, el nivell d'atenció rebut serà normal, com a la resta d'esportistes.
-quest7_d6_c:La satisfacció pel tractament rebut de l'entrenador/a en quant a l'amabilitat, el reconeixement i l'estima per la feina ben feta (TP), es situa en nivells alts i, per tant, percep una relació amb l'entrenador/a excel·lent.
+quest7_d6_c: La satisfacció pel tractament rebut de l'entrenador/a en quant a l'amabilitat, el reconeixement i l'estima per la feina ben feta (TP), es situa en nivells alts i, per tant, percep una relació amb l'entrenador/a excel·lent.
 quest7_header: El grau e satisfacció és...
 quest7_intro: Aquí sota tens un seguit de frases relacionades amb diferents aspectes de l'entrenament i la competició sobre els que voldríem saber la teva opinió. Si us plau, llegeix-les tranquil·lament, respon amb sinceritat i fes clic al número amb què estiguis més d'acord, o que millor descrigui la teva opinió.
 quest7_label_0: Satisfacció (Esports Individuals)
