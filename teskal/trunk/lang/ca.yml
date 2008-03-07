@@ -843,7 +843,7 @@ quest5_val_g: En general la seva VRP és baixa, amb un nivell de rendiment allun
 quest5_val_h: En general la seva VRP és baixa, amb un nivell de rendiment allunyat de la seva capacitat, com reflecteixen els aspectes senyalats. A més a més, es produeix una discrepància entre els valors de les dimensions qualitatives amb el de la quantitativa, i per tant serà necessari revisar la valoració realitzada, reajustant-la a una menor diferència entre elles, que potser pugui influir positivament amb una millora substancial de la mateixa.
 quest5_val_i: AVALUACIÓ NO VÀLIDA. La diferència entre la valoració qualitativa i quantitativa observada en l’anàlisi creuat realitzat supera el valor màxim permès, per tant es recomana torna a completar el qüestionari.
 quest5_valor_1: 1 (molt dolenta)
-quest5_valor_2: 2 (polenta)
+quest5_valor_2: 2 (dolenta)
 quest5_valor_3: 3 (regular)
 quest5_valor_4: 4 (bona)
 quest5_valor_5: 5 (molt bona)
