@@ -1,37 +1,48 @@
 <!-- quest4 -->
 <% content_for :header_tags do -%>
-<%= javascript_include_tag 'prototype' -%>
-<%= calendar_date_select_includes "plain" -%>
-<%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language -%>
+<%= javascript_include_tag 'prototype' -%><%= calendar_date_select_includes "plain" -%><%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language -%>
 <%- case @logged_in_user.language -%>
 <%- when "br": -%>
 <%= javascript_include_tag 'validation/validation_br' -%>
 <%- when "ca": -%>
 <%= javascript_include_tag 'validation/validation_ca' -%>
 <%- when "es": -%>
-<%= javascript_include_tag 'validation/validation_es' -%> 
+<%= javascript_include_tag 'validation/validation_es' -%>
 <%- when "eu": -%>
 <%= javascript_include_tag 'validation/validation_eu' -%>
 <%- when "fr": -%>
-<%= javascript_include_tag 'validation/validation_fr' -%> 
+<%= javascript_include_tag 'validation/validation_fr' -%>
 <%- else -%>
-<%= javascript_include_tag 'validation/validation' -%>  
+<%= javascript_include_tag 'validation/validation' -%>
 <%- end -%>
 <%- end -%>
 
 <h2><%=l(:quest4)%>
-	<%- if !@subject.nil? -%>
-	<%= " - "+ @subject %>
-	<%- end -%>
-	</h2>
+  <%- if !@subject.nil? -%>
+  <%= " - "+ @subject %>
+  <%- end -%>
+</h2>
 <br/>
-<div id="intro"><%=l(:quest1_intro)%></div>
-<br/>
-<div id="values"> <%=l(:quest3_valor_0)%> • <%=l(:quest3_valor_1)%> • <%=l(:quest3_valor_2)%> • <%=l(:quest3_valor_3)%> • <%=l(:quest3_valor_4)%> <br/>
-  <br/>
-</div>
 <form id="quest4" action="/quests/create/4" method="post">
-<center>
+  <center>
+  <table cellspacing="0">
+    <thead>
+      <tr>
+        <th scope="col"><div align="left"><%= l(:label_competition) %></div></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><textarea name="answer[competition]" id="competition" cols="45" rows="2"></textarea></td>
+      </tr>
+    </tbody>
+  </table>
+  <br/>
+  <div id="intro"><%=l(:quest1_intro)%></div>
+  <br/>
+  <div id="values"> <%=l(:quest3_valor_0)%> • <%=l(:quest3_valor_1)%> • <%=l(:quest3_valor_2)%> • <%=l(:quest3_valor_3)%> • <%=l(:quest3_valor_4)%> <br/>
+    <br/>
+  </div>
   <table cellspacing="0">
     <!-- <caption><%=l(:quest1)%></caption> -->
     <thead>
@@ -250,7 +261,7 @@
         <td><input type="radio" name="answer[answ18]" value="80" id="answer_answ18_8"/></td>
         <td><input type="radio" name="answer[answ18]" value="90" id="answer_answ18_9"/></td>
         <td><input type="radio" name="answer[answ18]" class="validate-one-required" value="100" id="answer_answ18_10"/></td>
-      </tr>                                                                                                      
+      </tr>
     </tbody>
   </table>
   <br/>
@@ -540,7 +551,7 @@
         <td><input type="radio" name="answer[answ47]" value="80" id="answer_answ47_8"/></td>
         <td><input type="radio" name="answer[answ47]" value="90" id="answer_answ47_9"/></td>
         <td><input type="radio" name="answer[answ47]" class="validate-one-required" value="100" id="answer_answ47_10"/></td>
-      </tr>                                                                                                      
+      </tr>
       <tr>
         <td>48</td>
         <td><%=l(:quest4_4)%></td>
@@ -603,46 +614,45 @@
       </tr>
     </tbody>
   </table>
-<br/>
-<br/>
-    <div class="splitnoteleft">
-      <table cellspacing="0">
-        <!-- <caption><%=l(:quest1)%></caption> -->
-        <thead>
-          <tr>
-            <th scope="col"><div align="left"><%= l(:field_notes) %></div></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><textarea name="answer[note2]" id="note2" cols="60" rows="6"></textarea></td>
-           </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="splitnoteright"> <%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true , :time  => true%>
-    </div>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-   <p><%= submit_tag l(:button_save) %></p> 
-  </form>
-	<script type="text/javascript">
+  <br/>
+  <br/>
+  <div class="splitnoteleft">
+    <table cellspacing="0">
+      <!-- <caption><%=l(:quest1)%></caption> -->
+      <thead>
+        <tr>
+          <th scope="col"><div align="left"><%= l(:field_notes) %></div></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><textarea name="answer[note2]" id="note2" cols="60" rows="6"></textarea></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="splitnoteright"> <%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true , :time  => true%> </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <p><%= submit_tag l(:button_save) %></p>
+</form>
+<script type="text/javascript">
 		var valid3 = new Validation('quest4',{immediate : true});
 	</script>
- <br/>
- <br/>
-<%= link_to l(:button_back),session[:return_to_params] %> 
+<br/>
+<br/>
+<%= link_to l(:button_back),session[:return_to_params] %>
