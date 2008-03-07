@@ -432,7 +432,7 @@ quest11_valor_tit_6: Presenta un Perfil Global de Motivació No Autodeterminat
 quest11_valor_tit_7: Presenta un Perfil Global de Motivació Baix Autodeterminat
 quest11_valor_tit_8: Presenta un Perfil Global de Motivació Baix Autodeterminat
 quest11_valor_tit_9: Presenta un Perfil Global de Motivació No Autodeterminat
-quest12: Qüestionari de Clima Motivacional
+quest12: Clima Motivacional
 quest12_10: Ho faig tot el millor que es
 quest12_11: Assoleixo la meta que em vaig proposar
 quest12_12: Sóc clarament superior als/les altres
@@ -587,7 +587,7 @@ quest1_label_6: Ansietat cognitiva
 quest1_label_7: Autoconfiança
 quest1_label_8: Ansietat Somàtica
 quest1_label_9: Òptima
-quest2: Qüestionari Tolerància Psicològica a l'Estrès
+quest2: Tolerància Psicològica a l'Estrès
 quest2_10: He estat convençut que podia rendir en qualsevol moment
 quest2_11: He resolt de forma adequada els problemes amb els meus companys/as
 quest2_12: He estat en bona forma física
