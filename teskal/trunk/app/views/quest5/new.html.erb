@@ -18,21 +18,34 @@
 <%= javascript_include_tag 'validation/validation' -%>  
 <%- end -%>
 <%- end -%>
-
 <h2><%=l(:quest5)%>
 	<%- if !@subject.nil? -%>
 	<%= " - "+ @subject %>
 	<%- end -%>
 	</h2>
-<br/>
+	<br/>
+	<center> 
+		<form id="quest5" action="/quests/create/5" method="post">
+  
+	  <table cellspacing="0">
+	    <thead>
+	      <tr>
+	        <th scope="col"><div align="left"><%= l(:label_competition) %></div></th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr>
+	        <td><textarea name="answer[competition]" id="competition" cols="45" rows="2"><%= @competi %></textarea></td>
+	      </tr>
+	    </tbody>
+	  </table>
+	  <br/>
 <div id="intro"><%=l(:quest5_intro)%></div>
 <br/>
 <div id="values"> <%=l(:quest5_valor_1)%> • <%=l(:quest5_valor_2)%> • <%=l(:quest5_valor_3)%> • <%=l(:quest5_valor_4)%> • <%=l(:quest5_valor_5)%>
 </div>
 <br/>
 <br/>
-<center> 
-	<form id="quest5" action="/quests/create/5" method="post">
   <table cellspacing="0">
     <!-- <caption><%=l(:quest5)%></caption> -->
     <thead>
