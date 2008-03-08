@@ -334,7 +334,7 @@ quest10_11: Anima a l@s deportistas cuando cometen un fallo
 quest10_12: Piensa que l@s deportistas tienen éxito cuando son claramente superiores a los demás
 quest10_13: Se enfada cuando l@s deportistas actúan de forma no deseada
 quest10_14: Se enfada cuando tiene que corregir a l@s deportistas después de un error
-quest10_15: Para él/ella, los errores ayudan a l@s deportistas a darse cuenta de sus déficits y a mejorar.
+quest10_15: Para él/ella, los errores ayudan a l@s deportistas a darse cuenta de sus déficits y a mejorar
 quest10_16: Procura que el tiempo de competición de cada deportistas en la temporada sea semejante
 quest10_17: Procura que l@s deportistas participen en el mismo nº de competiciones en la temporada
 quest10_18: Piensa que l@s deportistas tienen éxito cuando lo hacen todo lo mejor que saben hacerlo
@@ -1151,3 +1151,5 @@ unit_8_path: 08.La.Competicion.es.pdf
 unit_8_title: La Competición
 unit_9_path: 09.La.Comunicacion.es.pdf
 unit_9_title: La Comunicación
+quest13: Clima Formativo Percibido Deportes Individuales 
+quest13_label_0: Clima Formativo Percibido Deportes Individuales

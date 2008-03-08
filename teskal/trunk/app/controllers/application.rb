@@ -345,6 +345,7 @@ class ApplicationController < ActionController::Base
     titulo[9]=l(:quest10_label_0)
     titulo[10]=l(:quest11_label_0)
     titulo[11]=l(:quest12_label_0)
+    titulo[12]=l(:quest13_label_0)
     return titulo
   end
 

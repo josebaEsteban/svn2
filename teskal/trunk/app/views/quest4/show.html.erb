@@ -10,12 +10,12 @@
   <h2><%=l(:quest4)%></h2>
   <h4><%= @user.name+' • '+day_name(@fechado.wday)+" "+@fecha +" • "+l(:label_filled)+' '+distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(@fechado))+@time_to_fill%></h4>
   <h3><%= l(:label_competition) %></h3>
-  <h4> <%=@answer.competition%> </h4>    
+  <h4> <%=@answer.competition%> </h4>
   <h3><%= l(:quest4_8) %></h3>
   <h4> <%=@answer.note1%> </h4>
   <h3><%= l(:field_notes) %></h3>
   <h4> <%=@answer.note2%> </h4>
-  <br/>     
+  <br/>
   <h3><span class=<%= '"icon icon-'+@icon[0]+'">' + l(:quest1_label_1) %></span></h3>
   <h4> <%=@advice[0]%> </h4>
   <h3><span class=<%= '"icon icon-'+@icon[1]+'">' + l(:quest1_label_2) %></span></h3>
@@ -47,14 +47,13 @@
   <h3><span class=<%= '"icon icon-'+@icon[11]+'">' + l(:quest4_label_14) %></span></h3>
   <h4> <%=@advice[11]%> </h4>
 </div>
-<br/> 
+<br/>
 <br/>
 <div align="center">
-<%- if @browse_score -%>
-<div id="values"> <%=l(:quest3_valor_0)%> • <%=l(:quest3_valor_1)%> • <%=l(:quest3_valor_2)%> • <%=l(:quest3_valor_3)%> • <%=l(:quest3_valor_4)%> </div>
-<br/>
-<br/>
-
+  <%- if @browse_score -%>
+  <div id="values"> <%=l(:quest3_valor_0)%> • <%=l(:quest3_valor_1)%> • <%=l(:quest3_valor_2)%> • <%=l(:quest3_valor_3)%> • <%=l(:quest3_valor_4)%> </div>
+  <br/>
+  <br/>
   <table cellspacing="0">
     <!-- <caption><%=l(:quest1)%></caption> -->
     <thead>
@@ -159,7 +158,7 @@
         <td><%=l(:quest4_8)%></td>
         <td><div align="left"><%=simple_format(@answer.note1)%></div></td>
       </tr>
-      <tr  class="odd">
+      <tr class="odd">
         <td>17</td>
         <td><%=l(:quest4_0)%></td>
         <td><div align="center"><%=@answer.answ17%></div></td>
@@ -190,110 +189,137 @@
         <td>19</td>
         <td><%=l(:quest1_26)%></td>
         <td><div align="center"><%=@answer.answ19%></div></td>
+      </tr>
       <tr class="odd">
         <td>20</td>
         <td><%=l(:quest1_27)%></td>
         <td><div align="center"><%=@answer.answ20%></div></td>
+      </tr>
       <tr>
         <td>21</td>
         <td><%=l(:quest1_28)%></td>
         <td><div align="center"><%=@answer.answ21%></div></td>
+      </tr>
       <tr class="odd">
         <td>22</td>
         <td><%=l(:quest1_29)%></td>
         <td><div align="center"><%=@answer.answ22%></div></td>
+      </tr>
       <tr>
         <td>23</td>
         <td><%=l(:quest1_30)%></td>
         <td><div align="center"><%=@answer.answ23%></div></td>
+      </tr>
       <tr class="odd">
         <td>24</td>
         <td><%=l(:quest1_31)%></td>
         <td><div align="center"><%=@answer.answ24%></div></td>
+      </tr>
       <tr>
         <td>25</td>
         <td><%=l(:quest1_32)%></td>
         <td><div align="center"><%=@answer.answ25%></div></td>
+      </tr>
       <tr class="odd">
         <td>26</td>
         <td><%=l(:quest1_33)%></td>
         <td><div align="center"><%=@answer.answ26%></div></td>
+      </tr>
       <tr>
         <td>27</td>
         <td><%=l(:quest1_34)%></td>
         <td><div align="center"><%=@answer.answ27%></div></td>
+      </tr>
       <tr class="odd">
         <td>28</td>
         <td><%=l(:quest1_35)%></td>
         <td><div align="center"><%=@answer.answ28%></div></td>
+      </tr>
       <tr>
         <td>29</td>
         <td><%=l(:quest1_36)%></td>
         <td><div align="center"><%=@answer.answ29%></div></td>
+      </tr>
       <tr class="odd">
         <td>30</td>
         <td><%=l(:quest1_37)%></td>
         <td><div align="center"><%=@answer.answ30%></div></td>
+      </tr>
       <tr>
         <td>31</td>
         <td><%=l(:quest1_38)%></td>
         <td><div align="center"><%=@answer.answ31%></div></td>
+      </tr>
       <tr class="odd">
         <td>32</td>
         <td><%=l(:quest1_39)%></td>
         <td><div align="center"><%=@answer.answ32%></div></td>
+      </tr>
       <tr>
         <td>33</td>
         <td><%=l(:quest1_40)%></td>
         <td><div align="center"><%=@answer.answ33%></div></td>
+      </tr>
       <tr class="odd">
         <td>34</td>
         <td><%=l(:quest1_41)%></td>
         <td><div align="center"><%=@answer.answ34%></div></td>
+      </tr>
       <tr>
         <td>35</td>
         <td><%=l(:quest1_42)%></td>
         <td><div align="center"><%=@answer.answ35%></div></td>
+      </tr>
       <tr class="odd">
         <td>36</td>
         <td><%=l(:quest1_43)%></td>
         <td><div align="center"><%=@answer.answ36%></div></td>
+      </tr>
       <tr>
         <td>37</td>
         <td><%=l(:quest1_44)%></td>
         <td><div align="center"><%=@answer.answ37%></div></td>
+      </tr>
       <tr class="odd">
         <td>38</td>
         <td><%=l(:quest1_45)%></td>
         <td><div align="center"><%=@answer.answ38%></div></td>
+      </tr>
       <tr>
         <td>39</td>
         <td><%=l(:quest1_46)%></td>
         <td><div align="center"><%=@answer.answ39%></div></td>
+      </tr>
       <tr class="odd">
         <td>40</td>
         <td><%=l(:quest1_47)%></td>
         <td><div align="center"><%=@answer.answ40%></div></td>
+      </tr>
       <tr>
         <td>41</td>
         <td><%=l(:quest1_48)%></td>
         <td><div align="center"><%=@answer.answ41%></div></td>
+      </tr>
       <tr class="odd">
         <td>42</td>
         <td><%=l(:quest1_49)%></td>
         <td><div align="center"><%=@answer.answ42%></div></td>
+      </tr>
       <tr>
         <td>43</td>
         <td><%=l(:quest1_50)%></td>
         <td><div align="center"><%=@answer.answ43%></div></td>
+      </tr>
       <tr class="odd">
         <td>44</td>
         <td><%=l(:quest1_51)%></td>
         <td><div align="center"><%=@answer.answ44%></div></td>
+      </tr>
       <tr>
         <td>45</td>
         <td><%=l(:quest1_52)%></td>
         <td><div align="center"><%=@answer.answ45%></div></td>
+      </tr>
     </tbody>
   </table>
   <br/>
@@ -342,6 +368,6 @@
   </table>
   <br/>
   <br/>
-<%- end -%>
+  <%- end -%>
 </div>
-<%= link_to l(:button_back),session[:return_to_params] %> 
+<%= link_to l(:button_back),session[:return_to_params] %>

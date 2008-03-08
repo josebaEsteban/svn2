@@ -20,13 +20,25 @@ class QuestsController < ApplicationController
     end
   end
 
+  def populate
+    new_quest=13
+    @users = User.find(:all)
+    for user in @users
+      quest = Quest.new
+      quest.user_id = user.id
+      quest.order = new_quest
+      quest.browse = false
+      quest.save
+    end
+  end
+
   def switch
     quest = Quest.find(params[:id])
     user = User.find(quest.user_id)
     if @logged_in_user.admin? or @logged_in_user.id == user.managed_by
       quest.toggle!(:browse)
       Mailer.deliver_quest(quest,@logged_in_user,user,Mailer::QUEST_PENDING)
-      journal( "mailer"+quest.order.to_s+"/pending-"+quest.browse.to_s+"/"+user.id.to_s, @logged_in_user.id)  
+      journal( "mailer"+quest.order.to_s+"/pending-"+quest.browse.to_s+"/"+user.id.to_s, @logged_in_user.id)
       redirect_to :controller => 'my', :action => 'admin' , :id  => quest.user_id.to_s
     else
       redirect_to :controller => 'my', :action => 'page'
@@ -78,23 +90,23 @@ class QuestsController < ApplicationController
       journal( controlador+"/create/"+@answer.id.to_s, @answer.user_id)
       quest = Quest.find(:first, :conditions  => {:user_id  => @answer.user_id, :order => @answer.quest_id})
       quest.toggle!(:browse)
-      athlete=User.find(@answer.user_id)   
-      
+      athlete=User.find(@answer.user_id)
+
       # if user.admin?
       #   Mailer.deliver_quest(@answer,user)
       # elsif !user.managed_by.nil?
       #   manager=User.find(user.managed_by)
       #   Mailer.deliver_quest(@answer,manager)
-      # end  
+      # end
 
-      if !athlete.managed_by.nil? and @logged_in_user.filled_for == session[:user_id] 
+      if !athlete.managed_by.nil? and @logged_in_user.filled_for == session[:user_id]
         manager = User.find(athlete.managed_by)
         Mailer.deliver_quest(@answer,manager,athlete,Mailer::QUEST_NEW)
-      end   
-                                       
-                               
+      end
+
+
       if answer_show?(@answer.user_id, @answer.browse, athlete.managed_by)
-         redirect_to :controller  => controlador, :action => 'show', :id => @answer.id
+        redirect_to :controller  => controlador, :action => 'show', :id => @answer.id
       else
         redirect_to :controller => 'my', :action => 'page'
       end
