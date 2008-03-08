@@ -38,47 +38,55 @@ class MyController < ApplicationController
   end
 
   def quest
-    store_location
-    @titulo = get_label_quest
-    @user = self.logged_in_user
-    @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{session[:user_id]} and answers.browse=1 order by answers.created_on DESC")
-    # @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{session[:user_id]} order by pendings.created_on DESC")
-    @books = Book.find_by_sql("select * from books where books.user_id=#{session[:user_id]} order by books.order ASC")
-    @quests = Quest.find_by_sql("select * from quests where quests.user_id=#{session[:user_id]} order by quests.order ASC")
+    if self.logged_in_user.show?
+      store_location
+      @titulo = get_label_quest
+      @user = self.logged_in_user
+      @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{session[:user_id]} and answers.browse=1 order by answers.created_on DESC")
+      # @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{session[:user_id]} order by pendings.created_on DESC")
+      @books = Book.find_by_sql("select * from books where books.user_id=#{session[:user_id]} order by books.order ASC")
+      @quests = Quest.find_by_sql("select * from quests where quests.user_id=#{session[:user_id]} order by quests.order ASC")
+    else
+      render_403
+    end
   end
 
   def athletes
-    store_location
-    @user = self.logged_in_user
-    if @logged_in_user.admin? and !params[:id].nil?
-      id=params[:id].split('p')
-      busca = id[0]
-      @users = User.find_by_sql("select * from users where users.managed_by=#{busca} and  (users.status =1 or users.status=3) order by users.created_on DESC")
-    else
-      if @user.show?
-        @users = User.find_by_sql("select * from users where users.managed_by=#{session[:user_id]} and  (users.status =1 or users.status=3) order by users.created_on DESC")
+    if self.logged_in_user.show?
+      store_location
+      @user = self.logged_in_user
+      if @logged_in_user.admin? and !params[:id].nil?
+        id=params[:id].split('p')
+        busca = id[0]
+        @users = User.find_by_sql("select * from users where users.managed_by=#{busca} and  (users.status =1 or users.status=3) order by users.created_on DESC")
       else
-        redirect_to :controller => 'my', :action => 'page'
+        @users = User.find_by_sql("select * from users where users.managed_by=#{session[:user_id]} and  (users.status =1 or users.status=3) order by users.created_on DESC")
       end
+    else
+      redirect_to :controller => 'my', :action => 'page'
     end
   end
 
   def admin
-    @titulo = get_label_quest
-    @libro = get_label_book
-    id=params[:id].split('p')
-    if id[1].nil?
-      @libreria = false
+    if self.logged_in_user.show?
+      @titulo = get_label_quest
+      @libro = get_label_book
+      id=params[:id].split('p')
+      if id[1].nil?
+        @libreria = false
+      else
+        @libreria = true
+      end
+      busca = id[0]
+      store_location
+      @athlete = User.find(busca)
+      @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{busca} order by answers.created_on DESC")
+      # @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{busca} order by pendings.created_on DESC")
+      @books = Book.find_by_sql("select * from books where books.user_id=#{busca} order by books.order ASC")
+      @quests = Quest.find_by_sql("select * from quests where quests.user_id=#{busca} order by quests.order ASC")
     else
-      @libreria = true
+      render_403
     end
-    busca = id[0]
-    store_location
-    @athlete = User.find(busca)
-    @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{busca} order by answers.created_on DESC")
-    # @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{busca} order by pendings.created_on DESC")
-    @books = Book.find_by_sql("select * from books where books.user_id=#{busca} order by books.order ASC")
-    @quests = Quest.find_by_sql("select * from quests where quests.user_id=#{busca} order by quests.order ASC")
   end
 
   # Edit user's account

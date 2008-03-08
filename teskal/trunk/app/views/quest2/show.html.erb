@@ -1,7 +1,7 @@
 <!-- quest2-->
-<%=javascript_include_tag 'charts.js' %>
-
-<CENTER>
+	<%=javascript_include_tag 'charts.js' %>
+<div align="right"> <%= link_to l(:button_back),session[:return_to_params] %> </div>  
+<CENTER>                                  
   <%= @chart1%>
 </CENTER>
 <br/>
