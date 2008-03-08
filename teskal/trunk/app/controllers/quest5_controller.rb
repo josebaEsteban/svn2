@@ -4,12 +4,6 @@ class Quest5Controller < ApplicationController
 
   def new
     user=User.find(session[:user_id])
-    cual = Answer.find_by_sql("select * from answers where user_id=#{user.id} and quest_id=4 order by created_on DESC limit 1")
-    if !cual.nil?
-      @competi = cual[0].competition
-    else
-      @competi = ""
-    end
     user.start = Time.now
     if !params[:id].nil?
       user.filled_for = params[:id]
@@ -17,6 +11,12 @@ class Quest5Controller < ApplicationController
       @subject = passive[0].name
     else
       user.filled_for = session[:user_id]
+    end
+    cual = Answer.find_by_sql("select * from answers where user_id=#{user.filled_for} and quest_id=4 order by created_on DESC limit 1")
+    if cual.size > 0
+      @competi = cual[0].competition
+    else
+      @competi = ""
     end
     user.save
   end
