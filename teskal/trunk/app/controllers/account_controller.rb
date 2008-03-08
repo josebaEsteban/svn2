@@ -36,11 +36,14 @@ class AccountController < ApplicationController
         if params[:autologin] && Setting.autologin?
           token = Token.create(:user => user, :action => 'autologin')
           cookies[:autologin] = { :value => token.value, :expires => 1.year.from_now  }
-        end
-        if user.show? 
-          redirect_back_or_default :controller => 'my', :action => 'athletes'
+        end 
+        puts user.role
+        if user.role > User::ROLE_ATHLETE 
+          puts "atheta"
+          redirect_to :controller => 'my', :action => 'athletes'
         else  
-          redirect_back_or_default :controller => 'my', :action => 'page'
+          puts "deportista"
+          redirect_to :controller => 'my', :action => 'page'
         end
       else
         # if user.locked?
