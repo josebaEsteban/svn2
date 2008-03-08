@@ -10,7 +10,7 @@
   <h4><%= @user.name+' • '+day_name(@fechado.wday)+" "+@fecha +" • "+l(:label_filled)+' '+distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(@fechado))+@time_to_fill%></h4>
   <h3><%= l(:field_notes) %></h3>
   <h4> <%=@answer.note1%> </h4>
-  <br/> 
+  <br/>
   <h3><span class=<%= '"icon icon-'+@icon[0]+'">' + l(:quest9_label_1) %></span></h3>
   <h4> <%=@advice[0]%> </h4>
   <h3><span class=<%= '"icon icon-'+@icon[1]+'">' + l(:quest9_label_2) %></span></h3>
@@ -32,9 +32,8 @@
 </div>
 <br/>
 <br/>
-
 <div align="center">
-<%- if @browse_score -%>
+  <%- if @browse_score -%>
   <div id="values"> <%=l(:quest9_valor_1)%> • <%=l(:quest9_valor_2)%> • <%=l(:quest9_valor_3)%> • <%=l(:quest9_valor_4)%> • <%=l(:quest9_valor_5)%> </div>
   <br/>
   <br/>
@@ -98,27 +97,27 @@
         <td><%=l(:quest9_10)%></td>
         <td><div align="center"><%=@answer.answ10%></div></td>
       </tr>
-      <tr
+      <tr>
         <td>11</td>
         <td><%=l(:quest9_11)%></td>
         <td><div align="center"><%=@answer.answ11%></div></td>
       </tr>
-      <tr class="odd" class="odd">
+      <tr class="odd">
         <td>12</td>
         <td><%=l(:quest9_12)%></td>
         <td><div align="center"><%=@answer.answ12%></div></td>
       </tr>
-      <tr
+      <tr>
         <td>13</td>
         <td><%=l(:quest9_13)%></td>
         <td><div align="center"><%=@answer.answ13%></div></td>
       </tr>
-      <tr class="odd" class="odd">
+      <tr class="odd">
         <td>14</td>
         <td><%=l(:quest9_14)%></td>
         <td><div align="center"><%=@answer.answ14%></div></td>
       </tr>
-      <tr
+      <tr>
         <td>15</td>
         <td><%=l(:quest9_15)%></td>
         <td><div align="center"><%=@answer.answ15%></div></td>
@@ -157,6 +156,6 @@
   </table>
   <br/>
   <br/>
-<%- end -%>
+  <%- end -%>
 </div>
-<%= link_to l(:button_back),session[:return_to_params] %> 
+<%= link_to l(:button_back),session[:return_to_params] %>

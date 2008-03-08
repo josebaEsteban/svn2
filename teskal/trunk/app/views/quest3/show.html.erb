@@ -4,13 +4,13 @@
 <center>
   <%= @chart1%>
 </center>
-<br/> 
+<br/>
 <div align="left">
- 		<h2><%=l(:quest3_label_0)%></h2>
+  <h2><%=l(:quest3_label_0)%></h2>
   <h4><%= @user.name+' • '+day_name(@fechado.wday)+" "+@fecha +" • "+l(:label_filled)+' '+distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(@fechado))+@time_to_fill%></h4>
   <h3><%= l(:field_notes) %></h3>
   <h4> <%=@answer.note1%> </h4>
-  <br/> 
+  <br/>
   <h3><span class=<%= '"icon icon-'+@icon[0]+'">' + l(:quest3_label_1) %></span></h3>
   <h4> <%=@advice[0]%> </h4>
   <h3><span class=<%= '"icon icon-'+@icon[1]+'">' + l(:quest3_label_2) %></span></h3>
@@ -31,7 +31,7 @@
 <br/>
 <br/>
 <div align="center">
-<%- if @browse_score -%>
+  <%- if @browse_score -%>
   <div id="values"> <%=l(:quest3_valor_0)%> • <%=l(:quest3_valor_1)%> • <%=l(:quest3_valor_2)%> • <%=l(:quest3_valor_3)%> • <%=l(:quest3_valor_4)%> </div>
   <br/>
   <br/>
@@ -47,8 +47,7 @@
     <tbody>
       <tr>
         <td> 1 </td>
-        <td><%=l(:quest3_1)%>
-          </td>
+        <td><%=l(:quest3_1)%> </td>
         <td><div align="center"><%=@answer.answ1%></div></td>
       </tr>
       <tr class="odd">
@@ -137,8 +136,7 @@
     <tbody>
       <tr class="odd">
         <td> 16</td>
-        <td><%=l(:quest3_16)%>
-          </td>
+        <td><%=l(:quest3_16)%> </td>
         <td><div align="center"><%=@answer.answ16%></div></td>
       </tr>
       <tr>
@@ -208,8 +206,8 @@
   </table>
   <br/>
   <br/>
-<%- end -%>
+  <%- end -%>
   <br/>
   <br/>
 </div>
-<%= link_to l(:button_back),session[:return_to_params] %> 
+<%= link_to l(:button_back),session[:return_to_params] %>
