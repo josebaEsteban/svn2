@@ -18,6 +18,8 @@
 <%= javascript_include_tag 'validation/validation' -%>  
 <%- end -%>
 <%- end -%>
+<div align="right"> <%= link_to l(:button_back),session[:return_to_params] %> </div>
+
 <h2><%=l(:quest5)%>
 	<%- if !@subject.nil? -%>
 	<%= " - "+ @subject %>

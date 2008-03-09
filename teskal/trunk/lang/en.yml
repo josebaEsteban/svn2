@@ -326,7 +326,7 @@ notice_successful_connection: Successful connection.
 notice_successful_create: Successful creation.
 notice_successful_delete: Successful deletion.
 notice_successful_update: Successful update.
-quest10: Technical Coaching Climate
+quest10: Technical Coaching Climate (Team Sports)
 quest10_10: Allows for different solutions to competition situations than originally planned.
 quest10_11: Encourages athletes after a mistake
 quest10_12: Thinks that athletes are successful when they are clearly better than others.
@@ -790,7 +790,7 @@ quest4_d9_a: This appears to be a competition of low significance and importance
 quest4_d9_b: This appears to be a competition of moderate importance, with some significance in the athlete’s calendar, because the values obtained are at a medium level. It will be important to focus on self-improvement and keep in mind that participation in any competition offers an opportunity for improvement. The emotional restructuring within the personal competition plan will have to follow the same lines; direction-challenge-opportunity for improvement and anticipation of wish to compete.
 quest4_d9_c: This competition appears to be very important and have great meaning for this athlete, because the obtained values are very high. It will be necessary to focus the evaluation on the positives, on the challenge, considering that the athlete has been preparing to compete, and being able to do it is already satisfactory.
 quest4_header: If you compete the way you want to...
-quest4_label_0: Diagram of Coping during Competition
+quest4_label_0: Diagram of Coping during Pre-competition
 quest4_label_11: Personal meaning
 quest4_label_12: Estimate of perceived difficulty
 quest4_label_13: Degree of confidence
@@ -1159,3 +1159,5 @@ unit_8_path: 08.Competition.en.pdf
 unit_8_title: Competition
 unit_9_path: 09.Comunication.en.pdf
 unit_9_title: Comunication
+quest13: Technical Coaching Climate (Individual Sports)
+quest13_label_0: Technical Coaching Climate (Individual Sports)

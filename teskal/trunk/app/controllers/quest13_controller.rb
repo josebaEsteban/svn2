@@ -47,7 +47,7 @@ class Quest13Controller < ApplicationController
     strXML = strXML + "<category label= '"+l(:quest9_label_8)+"'/>"
     strXML = strXML +"</categories>"
     strXML = strXML +"<dataset SeriesName='"+l(:quest3_label_9)+"' lineThickness='3' renderAs='Area' >"
-    strXML = strXML +"<set value='"+(3*scale).to_s+"'/><set value='"+(5*scale).to_s+"'/><set value='"+(5*scale).to_s+"'/><set value='"+(1*scale).to_s+"'/><set value='"+(5*scale).to_s+"'/><set value='"+(5*scale).to_s+"'/><set value='"+(5*scale).to_s+"'/>"
+    strXML = strXML +"<set value='"+(2.5*scale).to_s+"'/><set value='"+(5*scale).to_s+"'/><set value='"+(5*scale).to_s+"'/><set value='"+(1*scale).to_s+"'/><set value='"+(5*scale).to_s+"'/><set value='"+(5*scale).to_s+"'/><set value='"+(4*scale).to_s+"'/>"
     strXML = strXML +"</dataset>"
 
     for answer in @answers

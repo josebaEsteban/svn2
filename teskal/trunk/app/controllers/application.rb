@@ -95,6 +95,9 @@ class ApplicationController < ActionController::Base
           answer_show = false
         else
           answer_show = true
+          if @logged_in_user.role == User::ROLE_TUTOR
+            @browse_score = true
+          end
         end
       end
     else

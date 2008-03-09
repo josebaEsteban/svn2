@@ -791,7 +791,7 @@ quest4_d9_a: Es una competición de baja significación e importante y significa
 quest4_d9_b: Es una competición relativamente importante y significativa dentro del calendario de est@ deportista, ya que los valores se sitúan en el nivel medio. Será importante centrarse en la automotivación y en la oportunidad de mejora que supone toda participación en competición. La reestructuración emocional dentro del Plan Integral de Competición seguirá la misma dirección - reto, oportunidad de mejora y anticipar deseo por disputarla.
 quest4_d9_c: Esta competición es muy importante y significativa para est@ deportista, ya que los valores se sitúan en el nivel más alto. Será importante orientar la valoración de forma positiva, hacia el reto, dado que se ha estado preparando para disputarla y el hecho de poder hacerlo ya es satisfactorio.
 quest4_header: Si compites como quieres...
-quest4_label_0: Diagrama de Afrontamiento en Competición
+quest4_label_0: Diagrama de Afrontamiento Pre-competición
 quest4_label_11: Significación personal
 quest4_label_12: Dificultad percibida estimada
 quest4_label_13: Grado de confianza
@@ -811,7 +811,7 @@ quest5_18: El pensamiento relacionado con cosas que tenía que hacer
 quest5_19: Los pensamientos que tenía relacionados con las buenas sensaciones
 quest5_1: Técnicamente
 quest5_20: El nivel de interés y de lucha que mantenía durante la competición
-quest5_21: La capacidad de rendimiento utilizada
+quest5_21: Tu nivel de rendimiento en esta competición
 quest5_2: Físicamente
 quest5_3: Asertivamente
 quest5_4: Mentalmente
@@ -834,7 +834,7 @@ quest5_d4_b: Al observar los valores del RCOM, vemos que se encuentran en un niv
 quest5_d4_c: Al observar los valores del RCOM, vemos que se encuentran en un alto nivel, lo que representa que ha respondido eficientemente a las acciones de l@s adversari@s y que ha tenido claro el PIC a lo largo de toda la competición. Además, en todo momento ha sabido lo que tenía que hacer, sin dudarlo y con determinación en las decisiones adoptadas. 
 quest5_header1: El grado de satisfacción con mi actuación ha sido...
 quest5_header2: El grado de satisfacción durante la competición con...
-quest5_header3: El porcentaje del grado de satisfacción con...
+quest5_header3: El grado de satisfacción con...
 quest5_intro: Más abajo se plantean una serie de preguntas relacionadas con determinados aspectos de la competición, sobre las que queremos recoger tu opinión. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa cómo te sientes en este momento.
 quest5_label_0: Valoración de Rendimiento Percibido Individual
 quest5_label_1: Rendimiento Global
