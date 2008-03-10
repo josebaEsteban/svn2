@@ -1,38 +1,37 @@
 PBarLoadingText: ?PBarLoadingText=Cargando dades. Esperi si us plau...
 _gloc_rule_default: '|n| n==1 ? "" : "_plural" '  
-actionview_datehelper_select_day_prefix:
-actionview_datehelper_select_month_names: Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre
-actionview_datehelper_select_month_names_abbr: Ene,Feb,Mar,Abr,Mayo,Jun,Jul,Ago,Sep,Oct,Nov,Dic
+actionview_datehelper_select_month_names: Gener,Febrer,Març,Abril,Maig,Juny,Juliol,Agost,Setembre,Octubre,Novembre,Desembre
+actionview_datehelper_select_month_names_abbr: Gen,Feb,Mar,Abr,Maig,Jun,Jul,Ago,Set,Oct,Nov,Des
 actionview_datehelper_select_month_prefix:
 actionview_datehelper_select_year_prefix:
-actionview_datehelper_time_in_words_day: 1 día
+actionview_datehelper_time_in_words_day: 1 dia
 actionview_datehelper_time_in_words_day_plural: %d dies
-actionview_datehelper_time_in_words_hour_about: about an hour
-actionview_datehelper_time_in_words_hour_about_plural: about %d hours
-actionview_datehelper_time_in_words_hour_about_single: about an hour
-actionview_datehelper_time_in_words_minute: 1 minute
-actionview_datehelper_time_in_words_minute_half: half a minute
-actionview_datehelper_time_in_words_minute_less_than: less than a minute
-actionview_datehelper_time_in_words_minute_plural: %d minutes
-actionview_datehelper_time_in_words_minute_single: 1 minute
-actionview_datehelper_time_in_words_second_less_than: less than a second
-actionview_datehelper_time_in_words_second_less_than_plural: less than %d seconds
+actionview_datehelper_time_in_words_hour_about: una hora
+actionview_datehelper_time_in_words_hour_about_plural: %d hores
+actionview_datehelper_time_in_words_hour_about_single: una hora
+actionview_datehelper_time_in_words_minute: 1 minut
+actionview_datehelper_time_in_words_minute_half: mig minut
+actionview_datehelper_time_in_words_minute_less_than: menys d’un minut
+actionview_datehelper_time_in_words_minute_plural: %d minuts
+actionview_datehelper_time_in_words_minute_single: 1 minut
+actionview_datehelper_time_in_words_second_less_than: menys d’1 segon
+actionview_datehelper_time_in_words_second_less_than_plural: menys de %d segons
 actionview_instancetag_blank_option: Si us plau seleccioni
 activerecord_error_accepted: ha de ser acceptat
-activerecord_error_blank: no pot ser en blanc
-activerecord_error_confirmation: doesn't match confirmation
-activerecord_error_empty: no pot ser en blanc
-activerecord_error_exclusion: está reservado
-activerecord_error_greater_than_start_date: debe ser mayor que la fecha de comienzo
-activerecord_error_inclusion: is not included in the list
-activerecord_error_invalid: no es válido
-activerecord_error_not_a_date: no es una fecha válida
-activerecord_error_not_a_number: no es un número
-activerecord_error_taken: ya existe
-activerecord_error_too_long: es demasiado larga
-activerecord_error_too_short: demasiado corta
-activerecord_error_wrong_length: is the wrong length
-button_activate: Activar 
+activerecord_error_blank: no pot estar en blanc
+activerecord_error_confirmation: no es correspon amb la confirmació
+activerecord_error_empty: no pot estar en blanc
+activerecord_error_exclusion: està reservat
+activerecord_error_greater_than_start_date: ha de ser major que la data d’inici
+activerecord_error_inclusion: no està inclòs a la llista
+activerecord_error_invalid: no és vàlid
+activerecord_error_not_a_date: no és una data vàlida
+activerecord_error_not_a_number: no és un número
+activerecord_error_taken: ja existeix
+activerecord_error_too_long: és massa llarga
+activerecord_error_too_short: massa curta
+activerecord_error_wrong_length: té una longitud errònia
+button_activate: Activar
 button_add: Afegir 
 button_apply: Aplicar
 button_archive: Arxivar 
@@ -282,7 +281,7 @@ mail_subject_signup: Activació del compte de Teskal
 mark_concept: Què és?
 mark_role_1: Esportista
 mark_role_2: Entrenador/a
-mark_role_3: Direccion Tècnica
+mark_role_3: Direcció Tècnica
 markt_10: Teskal posa la teva disposició les eines per a aconseguir-lo
 markt_11: És un concepte integral del rendiment esportiu que considera no només les habilitats físiques i tècniques sinó la persona de l’esportista.
 markt_12: Teskal permet mantenir un alt nivell de comunicació al duo esportista/entrenador o al grup esportista/entrenador/psicòleg.
@@ -316,10 +315,10 @@ notice_file_not_found: La pàgina que intentaves tenir accés no existeix ni s'h
 notice_locking_conflict: Data have been updated by another user.
 notice_not_authorized: No està autoritzat a accedir a aquesta pàgina.
 notice_scm_error: L'entrada i/o la revisió no existeix en el dipòsit.
-notice_successful_connection: Successful connection.
-notice_successful_create: Successful creation.
-notice_successful_delete: Successful deletion.
-notice_successful_update: Successful update.
+notice_successful_connection: Connexió correcta.
+notice_successful_create: S’ha creat correctament.
+notice_successful_delete: S’ha eliminat correctament.
+notice_successful_update: S’ha actualitzat correctament.
 quest10: Clima Formatiu Percebut Esports Col·lectius
 quest10_10: Permet solucionar situacions de competició de manera diferent a les meves directrius
 quest10_11: Anima als i les esportistes quan cometen un error
@@ -458,6 +457,8 @@ quest12_label_1: Clima de Rendiment
 quest12_label_2: Clima de Mestria
 quest12_valor_1: 0 (res)
 quest12_valor_2: 100 (completament)
+quest13: Clima Formatiu Percebut Esports Individuals
+quest13_label_0: Clima Formatiu Percebut Esports Individuals
 quest1: Valoració Inicial Temporada
 quest1_16: Utilitzes alguna tècnica de relaxació
 quest1_17: Uses alguna estratègia per a mantenir el control quan la situació esportiva et supera
@@ -803,7 +804,7 @@ quest5_18: El pensament relacionat amb coses que havia de fer
 quest5_19: Els pensaments que tenia relacionats amb les bones sensacions
 quest5_1: Tècnicament
 quest5_20: El nivell d’interès i de lluita que mantenia durant la competició
-quest5_21: La capacitat de rendiment utilitzada
+quest5_21: El teu nivell de rendiment en aquesta competició
 quest5_2: Físicament
 quest5_3: Assertivament
 quest5_4: Mentalment
@@ -826,7 +827,7 @@ quest5_d4_b: A l’observar els valors del RCOM, veiem que es troben en un nivel
 quest5_d4_c: A l’observar els valors del RCOM, veiem que es troben en un alt nivell, el què representa que ha respost eficientment a les accions dels/les adversaris/es i que ha tingut clar el PIC al llarg de tota la competició. A més a més, en tot moment ha sabut el què havia de fer, sense dubtar i amb determinació en les decisions preses
 quest5_header1: El grau de satisfacció amb la meva actuació ha estat...
 quest5_header2: El grau de satisfacció durant la competició amb...
-quest5_header3: El percentatge del grau de satisfacció amb...
+quest5_header3: El grau de satisfacció amb...
 quest5_intro: A sota es plantegen una sèrie de preguntes relacionades amb determinats aspectes de la competició, sobre les que volem recollir la teva opinió. Si us plau, llegeix cadascuna cuidadosament, i fes clic en el número que millor descrigui com et sents en aquets moment.
 quest5_label_0: Valoració de Rendiment Percebut Individual
 quest5_label_1: Rendiment Global
@@ -868,10 +869,10 @@ quest6_d1_a: Els valors relacionats amb el RG es situen en un nivell baix, el qu
 quest6_d1_b: Els valors relacionats amb el RG es situen en un nivell mitjà, el què suposa certa satisfacció amb el seu comportament tècnic-tàctic, físic i psicològic, però és evident que no ha aconseguit rendir com esperava.
 quest6_d1_c: Els valors relacionats amb el RG es situen en un alt nivell, el què suposa una elevada satisfacció amb el seu comportament tècnic-tàctic, físic, psicològic i, a més a més, contribueixen a una alta VRP.
 quest6_d2_a: A l’observar els valors relacionats amb el RP, veiem que es situen en un nivell baix, el què representa que les coses li han anat malament i en cap moment de la competició s’ha trobat a gust. A més a més, la seva confiança i la seva capacitat lluitadora no han estat altes. En el cas de que la VRP sigui baixa i es repeteixi al llarg de diferents competicions, serà necessari realitzar una sessió conjunta amb el/a tutor/a, per a realitzar una valoració més completa.
-quest6_d2_b: A l’observar els valors relacionats amb el RP, veiem que se situen en un nivell mitjà, el què representa que les coses no han anat tant fluides com esperava i que li ha costat tenir bones sensacions al llarg de la competició. Tot i que a vegades han sorgit alguns dubtes, sempre ha intentat mantenir-se lluitador/a.
-quest6_d2_c: A l’observar els valors relacionats amb el RP, veiem que se situen en un alt nivell, el què representa que ha tingut bones sensacions al llarg de la competició i, sobretot, que ha estat perseverant mantenint la confiança fins al final. A més a més, això reforça el camí cap a la seva pròpia millora.
 quest6_d2_a: Els valors relacionats amb l'RP tenen un nivell baix. Això indica que les coses li han anat malament i en cap moment de la competició s'ha trobat a gust. A més, la confiança i la capacitat de lluita no han estat altes. Si la VRP fos baixa, i es repeteix durant vàries competicions, caldrà fer una sessió conjunta amb el/a tutor/a, per fer una valoració més complerta.
+quest6_d2_b: A l’observar els valors relacionats amb el RP, veiem que se situen en un nivell mitjà, el què representa que les coses no han anat tant fluides com esperava i que li ha costat tenir bones sensacions al llarg de la competició. Tot i que a vegades han sorgit alguns dubtes, sempre ha intentat mantenir-se lluitador/a.
 quest6_d2_b: Els valors relacionats amb l'RP tenen un nivell mitjà. Això indica que les coses no han estat tan fàcils com esperava, i li ha estat difícil trobar-se a gust durant la competició. Tot i que algunes vegades ha tingut dubtes, sempre a intentat mantenir-se lluitador.
+quest6_d2_c: A l’observar els valors relacionats amb el RP, veiem que se situen en un alt nivell, el què representa que ha tingut bones sensacions al llarg de la competició i, sobretot, que ha estat perseverant mantenint la confiança fins al final. A més a més, això reforça el camí cap a la seva pròpia millora.
 quest6_d2_c: Els valors relacionats amb l'RP tenen un nivell alt. Això indica que ha tingut bones sensacions durant la competició i, sobre tot, que ha perseverat, mantenint la confiança fins el final. A més, tot plegat reforça el camí cap a la seva millora.
 quest6_d3_a: Respecte a les tasques de contribució, els valors prenen nivells baixos, indicant que la presa de decisions ha estat desencertada durant el partit i que tant la seva implicació en l'esforç, com l'actitud lligada amb el rol encomanat han estat baixos. Si aquests valors es repeteixen caldrà fer una sessió conjunta amb el suport del/la tutor/a.
 quest6_d3_b: Respecte a les tasques de contribució, els valors prenen nivells mitjos, indicant que algunes de les decisions preses durant el partit no han estat encertades. A més, tant la implicació en l'esforç com l'actitud amb el rol encomanat podrien haver estat més grans.
@@ -1067,31 +1068,30 @@ quest9_label_6: Comunicació instruccional
 quest9_label_7: Estil decisional percebut
 quest9_label_8: Clima de Mestratge
 quest9_label_9: Clima de Rendiment
-quest9_valor_1: 1 (no, en absolut)
 quest9_valor_1: 1 (mai)
+quest9_valor_1: 1 (no, en absolut)
 quest9_valor_2: 2 (poques vegades)
 quest9_valor_3: 3 (sovint)
 quest9_valor_4: 4 (quasi sempre)
 quest9_valor_5: 5 (sempre)
 quest9_valor_7: 7 (totalment)
-setting_app_subtitle: Subtítulo del aplicación
-setting_app_title: Título del aplicación
-setting_attachment_max_size: Tamaño máximo del fichero
-setting_autofetch_changesets: Autofetch commits
+setting_app_subtitle: Subtítol de l’aplicació
+setting_app_title: Títol de l’aplicació
+setting_attachment_max_size: Mida màxim de l’arxiu
 setting_autologin: Autologin
 setting_commit_fix_keywords: Fixing keywords
 setting_commit_ref_keywords: Referencing keywords
-setting_date_format: Date format
-setting_default_language: Idioma por defecto
+setting_date_format: format de data
+setting_default_language: Idioma per defecte
 setting_feeds_limit: Feed content limit
-setting_host_name: Nombre de anfitrión
+setting_host_name: Nom d’amfitrió
 setting_issues_export_limit: Issues export limit
-setting_login_required: Autentif. requerida
-setting_mail_from: Email de la emisión
-setting_protocol: Protocolo
-setting_self_registration: Registro permitido
-setting_text_formatting: Formato de texto
-setting_welcome_text: Texto de bienvenida
+setting_login_required: Autentificació requerida
+setting_mail_from: Email de l’emissió
+setting_protocol: Protocol
+setting_self_registration: Registre permès
+setting_text_formatting: Format de text
+setting_welcome_text: Text de benvinguda
 signup_label_10: Condicions del Servei
 signup_label_11: En fer clic en 'Guardar', adjunt la meva signatura electrònica i estic d'acord amb les < a href="http:/account/terms">Condicions del Servei</a > de Teskal.
 signup_label_12: Gràcies per registrar-te! 
@@ -1111,34 +1111,34 @@ text_caracters_maximum: màxim %d caràcters.
 text_length_between: Longitud entre %d i %d caràcters.
 text_min_max_length_info: 0 per a cap restricció
 unit_0_path: Teskal.es.pdf
-unit_0_title: Presentación Teskal
+unit_0_title: Presentació Teskal
 unit_10_path: 10.Responsabilidad.vs.Culpabilidad.es.pdf
-unit_10_title: Responsabilidad vs Culpabilidad
+unit_10_title: Responsabilitat vs Culpabilitat
 unit_11_path: 11.Confianza.y.Auto.Eficacia.es.pdf
-unit_11_title: Confianza y Auto Eficacia
+unit_11_title: Confiança i Auto Eficàcia
 unit_12_path: 12.Estado.de.Animo.es.pdf
-unit_12_title: Estado de Animo
+unit_12_title: Estat d’Ànim
 unit_13_path: 13.Asertividad.es.pdf
-unit_13_title: Asertividad
+unit_13_title: Assertivitat
 unit_14_path: 14.Deportista.de.ARD.es.pdf
-unit_14_title: Deportista de ARD 
+unit_14_title: Esportista d’ARD
 unit_15_path: 15.Sistema.de.Autoregulacion.es.pdf
-unit_15_title: Sistema de Autoregulación
+unit_15_title: Sistema d’Autoregulació
 unit_1_path: 01.Atencion.y.Concentracion.es.pdf
-unit_1_title: Atención y Concentración
+unit_1_title: Atenció i Concentració
 unit_2_path: 02.Emociones.y.Rendimiento.Deportivo.es.pdf
-unit_2_title: Emociones y Rendimiento Deportivo
+unit_2_title: Emocions i Rendiment Esportiu
 unit_3_path: 03.Establecimiento.de.Objetivos.es.pdf
-unit_3_title: Establecimiento de Objetivos
+unit_3_title: Establiment d’Objectius
 unit_4_path: 04.Estres.es.pdf
-unit_4_title: El estrés en la competición
+unit_4_title: L’estrès en la competició
 unit_5_path: 05.Motivacion.es.pdf
-unit_5_title: Motivación
+unit_5_title: Motivació
 unit_6_path: 06.Tension.y.Relajacion.es.pdf
-unit_6_title: Tension y Relajación
+unit_6_title: Tensió i Relaxació
 unit_7_path: 07.Tolerancia.Psicologica.es.pdf
-unit_7_title: Tolerancia Psicólogica
+unit_7_title: Tolerància Psicològica
 unit_8_path: 08.La.Competicion.es.pdf
-unit_8_title: La Competición
+unit_8_title: La Competició
 unit_9_path: 09.La.Comunicacion.es.pdf
-unit_9_title: La Comunicación
+unit_9_title: La Comunicació
