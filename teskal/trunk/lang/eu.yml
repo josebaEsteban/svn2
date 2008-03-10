@@ -460,6 +460,8 @@ quest12_label_1: Errendimendu klima
 quest12_label_2: Maisutza klima
 quest12_valor_1: 0 (Ezer ez)
 quest12_valor_2: 100 (erabat)
+quest13: Antzemandako Prestakuntza Klima Banakako Kirolak
+quest13_label_0: Antzemandako Prestakuntza Klima Banakako Kirolak
 quest1: Denboraldiko lehen balorazioa
 quest1_16: Lehiaketa aurretik psikologikoki prestatzen zara
 quest1_17: Erlaxapen teknikaren batetaz baliatzen zara
@@ -806,7 +808,7 @@ quest5_18: Egin behar nituen gauzekin loturiko pentsamenduekiko
 quest5_19: Sentsazio onekin loturik neuzkan pentsamenduekiko
 quest5_1: Teknikoki
 quest5_20: Lehiaketan zehar mantentzen nuen interes eta borroka mailarekiko
-quest5_21: Erabilitako errendimendu gaitasunarekiko
+quest5_21: Lehiaketa honetan izan duzun errendimendu maila
 quest5_2: Fisikoki
 quest5_3: Asertiboki
 quest5_4: Mentalki
@@ -829,7 +831,7 @@ quest5_d4_b: PORTE-aren balioei so eginez gero, maila ertain batean aurkitzen di
 quest5_d4_c: PORTE-aren balioei so eginez gero, maila altu batean aurkitzen direla ikusi dezakegu. Honek aurkarien ekintzei modu eraginkor batean erantzun diela eta LPI-a lehiaketa osoan zehar argi izan duela esan nahi du. Halaber, momentuoro jakin izan du egin behar zuena, zalantzarik gabe eta determinazioarekin hartutako erabakietan.
 quest5_header1: Nire jokaerarekin izandako asetasun maila
 quest5_header2: Lehiaketan zehar izandako asetasun maila
-quest5_header3: Asetasun maila…
+quest5_header3: ...-rekiko asetasun maila
 quest5_intro: Segidan aurkezten zaizkizun lehiaketaren aspektu ezberdinekin zer ikusia duten galdera sorta honen inguruan zure iritzia jakin nahiko genuke. Mesedez,bakoitza arretaz irakurri ezazu eta momentuotan sentitzen duzuna egokien deskribatzen duen zenbaki gainean klik egin ezazu
 quest5_label_0: Banakako Antzemandako Errendimenduaren Balorazio
 quest5_label_1: Errendimendu Globala
