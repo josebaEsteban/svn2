@@ -16,8 +16,8 @@
 <%= javascript_include_tag 'validation/validation' -%>
 <%- end -%>
 <%- end -%>
-<div align="right"> <%= link_to l(:button_back),session[:return_to_params] %> </div>
 
+<div align="right"> <%= link_to l(:button_back),session[:return_to_params] %> </div>
 <h2><%=l(:quest11)%>
   <%- if !@subject.nil? -%>
   <%= " - "+ @subject %>
@@ -449,10 +449,9 @@
     <br/>
     <br/>
     <br/>
-    <p><%= submit_tag l(:button_save) %></p>
+    <p><%= submit_tag l(:button_save),:class => 'edit-button' %></p>
   </form>
   <script type="text/javascript">
 		var valid3 = new Validation('quest11',{immediate : true});
 	</script>
 </div>
-<%= link_to l(:button_back),session[:return_to_params] %>
