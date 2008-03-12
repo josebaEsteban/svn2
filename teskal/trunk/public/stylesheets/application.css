@@ -132,8 +132,9 @@ color: #606060;
 /**************** navigation ****************/
 #navTeskal {
 position: relative;
+text-align: right;
 top: -31px;
-margin: 0 40px 0 357px;
+margin: 0 40px 0 310px;
 padding: 0 0 5px 10px;/*	border-bottom: 1px solid #999;*/
 }
 #navTeskal li {
@@ -655,6 +656,11 @@ font-size: 0.8em;
 color: #505050;
 }
 /***** CSS FORM ******/
+.edit-button {
+	height:2.2em; width:8em;
+	font-weight: bold;
+}
+
 .tabular p {
 margin: 0;
 padding: 5px 0 8px 0;

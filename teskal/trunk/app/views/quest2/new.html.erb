@@ -1,32 +1,30 @@
 <!-- quest2 -->
 <% content_for :header_tags do -%>
-<%= javascript_include_tag 'prototype' -%>
-<%= calendar_date_select_includes "plain" -%>
-<%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language -%>
+<%= javascript_include_tag 'prototype' -%><%= calendar_date_select_includes "plain" -%><%= javascript_include_tag 'calendar_date_select/locale/'+@logged_in_user.language -%>
 <%- case @logged_in_user.language -%>
 <%- when "br": -%>
 <%= javascript_include_tag 'validation/validation_br' -%>
 <%- when "ca": -%>
 <%= javascript_include_tag 'validation/validation_ca' -%>
 <%- when "es": -%>
-<%= javascript_include_tag 'validation/validation_es' -%> 
+<%= javascript_include_tag 'validation/validation_es' -%>
 <%- when "eu": -%>
 <%= javascript_include_tag 'validation/validation_eu' -%>
 <%- when "fr": -%>
-<%= javascript_include_tag 'validation/validation_fr' -%> 
+<%= javascript_include_tag 'validation/validation_fr' -%>
 <%- else -%>
-<%= javascript_include_tag 'validation/validation' -%>  
+<%= javascript_include_tag 'validation/validation' -%>
 <%- end -%>
 <%- end -%>
-<div align="right"> <%= link_to l(:button_back),session[:return_to_params] %> </div>
 
+<div align="right"> <%= link_to l(:button_back),session[:return_to_params] %> </div>
 <h2><%=l(:quest2)%>
-	<%- if !@subject.nil? -%>
-	<%= " - "+ @subject %>
-	<%- end -%>
-	</h2>
+  <%- if !@subject.nil? -%>
+  <%= " - "+ @subject %>
+  <%- end -%>
+</h2>
 <center>
-  <form id="quest2" action="/quests/create/2" method="post" > 
+  <form id="quest2" action="/quests/create/2" method="post" >
     <br/>
     <div id="intro"><%=l(:quest2_intro)%></div>
     <br/>
@@ -62,8 +60,10 @@
       </tfoot>
       <tbody>
         <tr>
-          <td><label> 1</label> </td>
-          <td><%=l(:quest2_1)%></t>
+          <td><label> 1</label>
+          </td>
+          <td><%=l(:quest2_1)%>
+            </t>
           <td><input type="radio" name="answer[answ1]" value="0"  id="answer_answ1_0"/></td>
           <td><input type="radio" name="answer[answ1]" value="1"  id="answer_answ1_1"/></td>
           <td><input type="radio" name="answer[answ1]" value="2"  id="answer_answ1_2"/></td>
@@ -71,7 +71,7 @@
           <td><input type="radio" name="answer[answ1]" value="4"  id="answer_answ1_4"/></td>
           <td><input type="radio" name="answer[answ1]" value="5"  id="answer_answ1_5"/></td>
           <td><input type="radio" name="answer[answ1]" class="validate-one-required" value="6"  id="answer_answ1_6"/></td>
-        </tr>                           
+        </tr>
         <tr class="odd">
           <td> 2 </td>
           <td><%=l(:quest2_2)%></td>
@@ -150,7 +150,7 @@
           <td><input type="radio" name="answer[answ8]" class="validate-one-required" value="6" id="answer_answ8_6"/></td>
         </tr>
         <tr>
-          <td> 9	 </td>
+          <td> 9 </td>
           <td><%=l(:quest2_9)%></td>
           <td><input type="radio" name="answer[answ9]" value="0" id="answer_answ9_0"/></td>
           <td><input type="radio" name="answer[answ9]" value="1" id="answer_answ9_1"/></td>
@@ -384,12 +384,11 @@
         <tbody>
           <tr>
             <td><textarea name="answer[note1]" id="note1" cols="60" rows="6"></textarea></td>
-           </tr>
+          </tr>
         </tbody>
       </table>
     </div>
-    <div class="splitnoteright"> <%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true , :time  => true%>
-    </div>
+    <div class="splitnoteright"> <%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true , :time  => true%> </div>
     <br/>
     <br/>
     <br/>
@@ -406,11 +405,9 @@
     <br/>
     <br/>
     <br/>
-   <p><%= submit_tag l(:button_save) %></p> 
+    <p><%= submit_tag l(:button_save),:class => 'edit-button' %></p>
   </form>
-	<script type="text/javascript">
+  <script type="text/javascript">
 		var valid3 = new Validation('quest2',{immediate : true});
 	</script>
-	
-<%= link_to l(:button_back),session[:return_to_params] %> 
 </center>

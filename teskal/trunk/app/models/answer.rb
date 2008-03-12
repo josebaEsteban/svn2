@@ -4,7 +4,7 @@ class Answer < ActiveRecord::Base
   # tz_time_attributes :created_on 
   # def created_on
   #     d = read_attribute(:created_on)
-  #     puts d
+  #     
   #     if d.utc?
   #       write_attribute :created_on, TzTime.at(Time.at(TzTime.zone.utc_to_local(d)))
   #     else
