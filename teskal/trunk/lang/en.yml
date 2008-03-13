@@ -327,64 +327,64 @@ notice_successful_create: Successful creation.
 notice_successful_delete: Successful deletion.
 notice_successful_update: Successful update.
 quest10: Technical Coaching Climate (Team Sports)
-quest10_10: Allows for different solutions to competition situations than originally planned.
+quest10_10: Allows for different solutions to competition situations than originally planned
 quest10_11: Encourages athletes after a mistake
-quest10_12: Thinks that athletes are successful when they are clearly better than others.
+quest10_12: Thinks that athletes are successful when they are clearly better than others
 quest10_13: Gets mad when athletes behave in an undesirable way
 quest10_14: Gets mad when he or she has to correct an athlete after a mistake
-quest10_15: For him/her mistakes help athletes become aware of their deficits and improve.
-quest10_16: Tries to make sure that each athlete has similar amounts of competition time during the season.
-quest10_17: Tries to get athlete to compete in the same number of competitions during the season.
-quest10_18: Believes that athletes are successful when they perform as well as they are capable.
-quest10_19: Has the utmost confidence in all athletes when they compete.
-quest10_1: Allows the making of decisions that do not match the tactical plan.
-quest10_20: Remains confident in the athletes even when they make mistakes.
+quest10_15: For him/her mistakes help athletes become aware of their deficits and improve
+quest10_16: Tries to make sure that each athlete has similar amounts of competition time during the season
+quest10_17: Tries to get athlete to compete in the same number of competitions during the season
+quest10_18: Believes that athletes are successful when they perform as well as they are capable
+quest10_19: Has the utmost confidence in all athletes when they compete
+quest10_1: Allows the making of decisions that do not match the tactical plan
+quest10_20: Remains confident in the athletes even when they make mistakes
 quest10_21: Thinks the team must compete in the best way
-quest10_2: Believes that athletes are successful when they overcome difficulties.
+quest10_2: Believes that athletes are successful when they overcome difficulties
 quest10_3: Prefers a victory over “Doing things well”
-quest10_4: Will sacrifice the quality of the competition tecnique to secure the result.
+quest10_4: Will sacrifice the quality of the competition tecnique to secure the result
 quest10_5: For him or her winning is first, and then competing well
-quest10_6: Congratulates the athletes when they perform well, do what was expected.
-quest10_7: Encourages athletes in their future actions.
+quest10_6: Congratulates the athletes when they perform well, do what was expected
+quest10_7: Encourages athletes in their future actions
 quest10_8: Gives instructions on technical and tactical aspects, style, etc.
-quest10_9: Thinks that athletes are successful when they perform better than others.
+quest10_9: Thinks that athletes are successful when they perform better than others
 quest10_intro: Below is a series of comments and expressions related to competition situations and behaviors. Please, read them carefully and then select the one that best describes your behavior during practices and games.
 quest10_intro: Below is a series of comments and expressions related to competition situations and behaviors. Please, read them carefully and then select the one that best describes your coach’s behavior during practices and games.
 quest10_label_0: Perception of educational climate/team sports
 quest10_label_1: My coach
 quest11: Intrinsic Motivation
-quest11_10: Because it is absolutely necessary to do sports if one wants to be in shape.
-quest11_11: For the prestige of being an athlete.
-quest11_12: Because it is one of the best ways I have chosen to develop other aspects of myself.
-quest11_13: For the pleasure I feel while improving some of my weak points.
-quest11_14: For the excitement I feel when I am really involved in the activity.
-quest11_15: Because I must do sports to feel good about myself.
-quest11_16: For the satisfaction I experience while I am perfecting my abilities.
-quest11_17: Because people around me think it is important to be in shape.
-quest11_18: Because participating in sport is an integral part of my life.
-quest11_19: Because it is a good way to learn lots of things which could be useful to me in other areas of my life.
-quest11_1: For the pleasure I feel in living exciting experiences.
-quest11_20: For the intense emotions that I feel while I am doing a sport that I like.
-quest11_21: It is not clear to me anymore; I don't really think my place is in sport.
-quest11_22: For the pleasure that I feel while executing certain difficult movements.
-quest11_23: Because I would feel bad if I was not taking the time to do it.
-quest11_24: Because through sport, I am living in line with my deepest principles.
-quest11_25: To show others how good I am at my sport.
-quest11_26: For the pleasure I feel while learning training techniques that I have never tried before.
-quest11_27: Because it is one of the best ways to maintain good relationships with my friends.
-quest11_28: Because I like the feeling of being totally immersed in the activity.
-quest11_29: Because I must do sports regularly.
-quest11_2: For the pleasure it gives me to know more about the sport that I practice.
-quest11_30: For the pleasure of discovering new performance strategies.
-quest11_31: Because by doing it I am fully expressing my deepest values.
-quest11_32: I often ask myself; I can't seem to achieve the goals that I set for myself.
-quest11_3: I used to have good reasons for doing sports, but now I am asking myself if I should continue.
-quest11_4: Because practicing sports renects the essence of whom I am.
-quest11_5: For the pleasure of discovering new training techniques.
-quest11_6: I don't know anymore; I have the impression that I am incapable of succeeding in this sport.
-quest11_7: Because it allows me to be well regarded by people that I know.
-quest11_8: Because, in my opinion, it is one of the best ways to meet people.
-quest11_9: Because I feel a lot of personal satisfaction while mastering certain difficult training techniques.
+quest11_10: Because it is absolutely necessary to do sports if one wants to be in shape
+quest11_11: For the prestige of being an athlete
+quest11_12: Because it is one of the best ways I have chosen to develop other aspects of myself
+quest11_13: For the pleasure I feel while improving some of my weak points
+quest11_14: For the excitement I feel when I am really involved in the activity
+quest11_15: Because I must do sports to feel good about myself
+quest11_16: For the satisfaction I experience while I am perfecting my abilities
+quest11_17: Because people around me think it is important to be in shape
+quest11_18: Because participating in sport is an integral part of my life
+quest11_19: Because it is a good way to learn lots of things which could be useful to me in other areas of my life
+quest11_1: For the pleasure I feel in living exciting experiences
+quest11_20: For the intense emotions that I feel while I am doing a sport that I like
+quest11_21: It is not clear to me anymore; I don't really think my place is in sport
+quest11_22: For the pleasure that I feel while executing certain difficult movements
+quest11_23: Because I would feel bad if I was not taking the time to do it
+quest11_24: Because through sport, I am living in line with my deepest principles
+quest11_25: To show others how good I am at my sport
+quest11_26: For the pleasure I feel while learning training techniques that I have never tried before
+quest11_27: Because it is one of the best ways to maintain good relationships with my friends
+quest11_28: Because I like the feeling of being totally immersed in the activity
+quest11_29: Because I must do sports regularly
+quest11_2: For the pleasure it gives me to know more about the sport that I practice
+quest11_30: For the pleasure of discovering new performance strategies
+quest11_31: Because by doing it I am fully expressing my deepest values
+quest11_32: I often ask myself; I can't seem to achieve the goals that I set for myself
+quest11_3: I used to have good reasons for doing sports, but now I am asking myself if I should continue
+quest11_4: Because practicing sports renects the essence of whom I am
+quest11_5: For the pleasure of discovering new training techniques
+quest11_6: I don't know anymore; I have the impression that I am incapable of succeeding in this sport
+quest11_7: Because it allows me to be well regarded by people that I know
+quest11_8: Because, in my opinion, it is one of the best ways to meet people
+quest11_9: Because I feel a lot of personal satisfaction while mastering certain difficult training techniques
 quest11_d1_a: Intrinsic motivation values are low, which means low commitment to practice and lack of enjoyment of the activity. This athlete is likely to avoid new or difficult tasks in practice, and may have a hard time focusing on his or her weaknesses.
 quest11_d1_b: Intrinsic motivation values are at a medium level, which means that he is involved in practice, but could be more committed. This athlete experiences some satisfaction when tackling difficult tasks, particularly in practice, and can focus on his or her weaknesses.
 quest11_d1_c: Intrinsic motivation values are high, which indicate high level of commitment to practice and enjoyment of the activity. This athlete experiences high satisfaction when facing difficult tasks, both in practice and in competition, attempts things that he or she had not done before and focuses on improving his or her weaknesses.
@@ -438,7 +438,7 @@ quest11_valor_tit_5: Shows a Moderate Global Motivational Profile.
 quest11_valor_tit_6: Shows a Global Motivational Profile Not-Auto-determined.
 quest11_valor_tit_7: Shows a Global Motivational Profile of Low Auto-determination.
 quest11_valor_tit_8: Shows a Global Motivational Profile of Low Auto-determination.
-quest11_valor_tit_9: Shows a Global Motivational Profile Not-Auto-determined
+quest11_valor_tit_9: Shows a Global Motivational Profile Not-Auto-determined.
 quest12: Motivational Climate
 quest12_10: I win
 quest12_11: I show other people I am the best
@@ -1010,27 +1010,27 @@ quest8_label_9: Task Integration
 quest8_valor_1: 1 (no, not at all)
 quest8_valor_7: 7 (totally)
 quest9: Coaches’ self-perception of educational climate/team sports
-quest9_10: I allow for different solutions to competition situations than originally planned.
+quest9_10: I allow for different solutions to competition situations than originally planned
 quest9_11: I encourage athletes after a mistake
 quest9_12: I thinks the team must compete in the best way
-quest9_13: I thinks that athletes are successful when they are clearly better than others.
+quest9_13: I thinks that athletes are successful when they are clearly better than others
 quest9_14: I get mad when athletes behave in an undesirable way
 quest9_15: I get mad when he or she has to correct an athlete after a mistake
-quest9_16: For me mistakes help athletes become aware of their deficits and improve.
-quest9_17: I try to make sure that each athlete has similar amounts of competition time during the season.
-quest9_18: I try to get athlete to compete in the same number of competitions during the season.
-quest9_19: I believe that athletes are successful when they perform as well as they are capable.
-quest9_1: I have the utmost confidence in all athletes when they compete.
-quest9_20: I allow the making of decisions that do not match the tactical plan.
-quest9_21: I remain confident in the athletes even when they make mistakes.
-quest9_2: I believe that athletes are successful when they overcome difficulties.
+quest9_16: For me mistakes help athletes become aware of their deficits and improve
+quest9_17: I try to make sure that each athlete has similar amounts of competition time during the season
+quest9_18: I try to get athlete to compete in the same number of competitions during the season
+quest9_19: I believe that athletes are successful when they perform as well as they are capable
+quest9_1: I have the utmost confidence in all athletes when they compete
+quest9_20: I allow the making of decisions that do not match the tactical plan
+quest9_21: I remain confident in the athletes even when they make mistakes
+quest9_2: I believe that athletes are successful when they overcome difficulties
 quest9_3: I prefer a victory over “Doing things well”
-quest9_4: I will sacrifice the quality of the competition tecnique to secure the result.
+quest9_4: I will sacrifice the quality of the competition tecnique to secure the result
 quest9_5: For me winning is first, and then competing well 
-quest9_6: I congratulate the athletes when they perform well, do what was expected. 
-quest9_7: I encourages athletes in their future actions.
+quest9_6: I congratulate the athletes when they perform well, do what was expected
+quest9_7: I encourages athletes in their future actions
 quest9_8: I give instructions on technical and tactical aspects, style, etc.
-quest9_9: I think that athletes are successful when they perform better than others.
+quest9_9: I think that athletes are successful when they perform better than others
 quest9_d1_a: This low value of the Team Performance Climate implies that, for this coach, the quality of the athlete’s play is more important than the outcome of the game. If this result coincides with high values in the Team Mastery Climate, it will strengthen the task integration, minimizing anxiety about collective mistakes. 
 quest9_d1_b: The medium value obtained in Team Performance Climate means that the outcome of the game is important for the coach, as much or more than the quality of the team’s play. If this value coincides also with high values in Team Mastery Climate, it will have a positive effect on the team’s competitiveness, their commitment to effort, task integration and aggressive decision-making.  
 quest9_d1_c: A high value such as this one in Team Performance Climate means that for this coach the outcome of the game is of the utmost importance, even if it means sacrificing the quality of the team’s play. This is likely to weaken the team’s ability to handle high challenge situations, resulting in an increase in anxiety and fear of making mistakes, with poor decision-making in high pressure or high difficulty situations. 

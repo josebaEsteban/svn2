@@ -16,7 +16,6 @@
 <%= javascript_include_tag 'validation/validation' -%>
 <%- end -%>
 <%- end -%>
-
 <div align="right"> <%= link_to l(:button_back),session[:return_to_params] %> </div>
 <h2><%=l(:quest9)%>
   <%- if !@subject.nil? -%>
@@ -234,7 +233,6 @@
     <br/>
     <div class="splitnoteleft">
       <table cellspacing="0">
-        <!-- <caption><%=l(:quest1)%></caption> -->
         <thead>
           <tr>
             <th scope="col"><div align="left"><%= l(:field_notes) %></div></th>
