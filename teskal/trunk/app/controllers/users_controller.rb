@@ -20,11 +20,11 @@ class UsersController < ApplicationController
     if @logged_in_user.admin?
       # sort_init 'login', 'asc'
       # sort_update
-      # 
+      #
       # @status = params[:status] ? params[:status].to_i : 1
       # conditions = nil
       # conditions = ["status=?", @status] unless @status == 0
-      # 
+      #
       # @user_count = User.count(:conditions => conditions)
       # @user_pages = Paginator.new self, @user_count,
       # 15,
@@ -33,10 +33,10 @@ class UsersController < ApplicationController
       # :conditions => conditions,
       # :limit  =>  @user_pages.items_per_page,
       # :offset =>  @user_pages.current.offset
-      # 
-      # render :action => "list", :layout => false if request.xhr?     
+      #
+      # render :action => "list", :layout => false if request.xhr?
       @users = User.paginate(:page => params[:page], :per_page => 50, :order => 'created_on DESC')
-      
+
     end
   end
 
@@ -55,7 +55,7 @@ class UsersController < ApplicationController
         @user.role = User::ROLE_ATHLETE
         if @user.save
           Mailer.deliver_account_information(@user, params[:password])
-          journal("mailer-add user/by_"+@user.managed_by.to_s+"/"+@user.id.to_s,@user.id)     
+          journal("mailer-add user/by_"+@user.managed_by.to_s+"/"+@user.id.to_s,@user.id)
           create_library(@user.id)
           create_avail_quest(@user.id)
           # if params[:send_information]
