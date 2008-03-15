@@ -21,14 +21,16 @@ class QuestsController < ApplicationController
   end
 
   def populate
-    new_quest=13
-    @users = User.find(:all)
-    for user in @users
-      quest = Quest.new
-      quest.user_id = user.id
-      quest.order = new_quest
-      quest.browse = false
-      quest.save
+    if @logged_in_user.admin?
+      new_quest=params[:id]
+      @users = User.find(:all)
+      for user in @users
+        quest = Quest.new
+        quest.user_id = user.id
+        quest.order = new_quest
+        quest.browse = false
+        quest.save
+      end
     end
   end
 

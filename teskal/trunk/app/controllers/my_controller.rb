@@ -91,15 +91,19 @@ class MyController < ApplicationController
 
   # Edit user's account
   def account
-    @user = self.logged_in_user
-    @pref = @user.pref
-    @user.attributes = params[:user]
-    @user.pref.attributes = params[:pref]
-    if request.post? and @user.save and @user.pref.save
-      journal("update account",@user.id)
-      set_localization
-      flash.now[:notice] = l(:notice_account_updated)
-      self.logged_in_user.reload
+    if @logged_in_user.admin? and !params[:id].nil?
+      @user = User.find(params[:id])
+    else
+      @user = self.logged_in_user
+      @pref = @user.pref
+      @user.attributes = params[:user]
+      @user.pref.attributes = params[:pref]
+      if request.post? and @user.save and @user.pref.save
+        journal("update account",@user.id)
+        set_localization
+        flash.now[:notice] = l(:notice_account_updated)
+        self.logged_in_user.reload
+      end
     end
   end
 
