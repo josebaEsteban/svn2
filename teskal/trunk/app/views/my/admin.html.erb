@@ -118,12 +118,16 @@ font:normal 100%/120% "Lucida Grande","Lucida Sans Unicode",Verdana,Arial,Helvet
             <td><%= quest.order.to_s %></td>
             <td><%= @titulo[i]%></td>
             <td><a href="/quest<%= quest.order.to_s %>/new/<%= id %>"><%= image_tag 'pencil.png' %></a></td>
-            <td> <a href="/quests/switch/<%= quest.id.to_s %>">	
+            <td> 
+	<%- if quest.order < 14 -%>
+	<a href="/quests/switch/<%= quest.id.to_s %>">	
 			 	<%- if quest.browse -%>
 			 		<%= image_tag 'tick.png' %>
 			 <%- else -%>
 			 		<%= image_tag 'cross.png' %> 
-			 <%- end -%></a></td>
+			 <%- end -%></a>
+			<%- end -%>
+			</td>
           </tr>
           <%- i=i+1 -%>
           <%- end -%>

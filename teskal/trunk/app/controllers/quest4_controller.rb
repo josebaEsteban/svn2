@@ -195,14 +195,14 @@ class Quest4Controller < ApplicationController
       end
       item=9
       if nivel_dificultad < 60
-        @advice[item]=l(:quest4_d10_c)
+        @advice[item]=l(:quest4_d10_a)
         @icon[item]="star"
       else
         if nivel_dificultad <= 80
           @advice[item]=l(:quest4_d10_b)
           @icon[item]="medium"
         else
-          @advice[item]=l(:quest4_d10_a)
+          @advice[item]=l(:quest4_d10_c)
           @icon[item]="stop"
         end
       end

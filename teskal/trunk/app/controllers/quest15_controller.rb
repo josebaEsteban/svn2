@@ -44,7 +44,7 @@ class Quest15Controller < ApplicationController
       strXML = strXML + "<category label= '"+l(:quest6_label_4)+"'/>"
       strXML = strXML + "</categories>"
     else
-      strXML = "<chart caption='"+l(:quest6_label_0)+"' subCaption='"+@user.name+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='10' showvalues='0'  PYAxisName='Comarcas' formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='10'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
+      strXML = "<chart caption='"+l(:quest15_label_0)+"' subCaption='"+@user.name+"' yAxisName='"+@fecha.to_s+"' palette='2' yAxisMaxValue='10' showvalues='0'  PYAxisName='Comarcas' formatNumberScale='0' legendAllowDrag='1' showShadow='1'  useRoundEdges='1' yAxisMaxValue='10'  showAlternateHGridColor='1' alternateHGridColor='f8f6f4' bgcolor='ffffff' borderColor='ffffff'>"
     end
     for answer in @answers
       rg = answer.answ1 + answer.answ2  + answer.answ3 + answer.answ4 + answer.answ5
@@ -56,7 +56,7 @@ class Quest15Controller < ApplicationController
       if @answers.length > 1
         strXML = strXML +"<dataset SeriesName='"
         if answer.id == @id
-          strXML = strXML+l(:quest15_label_10)
+          strXML = strXML+l(:quest3_label_10)
           strXML = strXML+"' renderAs='Bar' >"
         else
           strXML = strXML+l_datetime(TzTime.zone.utc_to_local(answer.created_on))
