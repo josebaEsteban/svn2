@@ -1188,4 +1188,50 @@ quest15_18: Con su capacidad luchadora y perseverante
 quest15_19: Con su actitud positiva hacia su propia mejora
 quest15_20: Con su transmisión de disfrute, satisfacción y buenas sensaciones
 quest15_21: Su nivel de rendimiento en esta competición
+quest100: Cuestionario CTP
+quest100_intro: A continuación te presentamos una serie de frases que están relacionadas con tu deporte, con lo que sientes y haces cuando lo practicas. Son tus opiniones personales y no existen respuestas acertadas o desacertadas, siempre que respondas con sinceridad. Por favor, lee cada una de ellas cuidadosamente y después clica en la opción que más se aproxime a tu opinión.
+quest100_1: Quiero aprender todo lo que pueda durante la práctica deportiva
+quest100_2: A veces tengo miedo de no aprender, tanto como quisiera, ciertas habilidades de mi deporte
+quest100_3: Para mí es importante hacer las cosas mejor que otr@s compañer@s
+quest100_4: A menudo lo que me motiva en el entrenamiento es el miedo a hacerlo mal
+quest100_5: Mi objetivo es rendir mejor que otr@s compañer@s
+quest100_6: Para mí es importante aprender lo mejor posible las habilidades enseñadas en el entrenamiento
+quest100_7: Me preocupa no poder aprender todo lo que podría en el entrenamiento
+quest100_8: Mi objetivo es evitar realizar mal las tareas
+quest100_9: Quiero dominar completamente las tareas practicadas en el entrenamiento
+quest100_10: Me preocupa no poder aprender todo lo que hay que aprender en las sesiones de entrenamiento
+quest100_11: Para mí es importante hacer las cosas bien en comparación con otr@s compañer@s
+quest100_12: Yo sólo quiero evitar hacer mal los ejercicios
+quest100_13: Pienso que soy bastante bueno en mi deporte
+quest100_14: Estoy satisfecho con mi rendimiento en mi deporte
+quest100_15: Después de entrenar me siento habilidos@ durante un rato
+quest100_16: Soy bastante hábil en la práctica de este deporte dentro del equipo
+quest100_17: No sé jugar muy bien en este deporte
+quest100_18: Tengo mi propia opinión respecto a las habilidades que quiero practicar durante el entrenamiento
+quest100_19: Puedo decidir las actividades que quiero practicar durante el entrenamiento
+quest100_20: Jugar en este equipo me hacer sentir más cerca de l@s otr@s compañer@s
+quest100_21: Las actividades del entrenamiento me hacen sentir más conectado con l@s otr@s compañer@s
+quest100_22: Me propongo hacer deporte durante mucho tiempo
+quest100_23: Durante la práctica deportiva
+quest100_24: A menudo se da la oportunidad a l@s deportistas de que planifiquen sus propias actividades durante el entrenamiento
+quest100_25: A menudo se da la oportunidad a l@s deportistas de que digan lo que piensan sobre las tareas del entrenamiento
+quest100_26: L@s deportistas pueden elegir los ejercicios que van a practicar
+quest100_27: No me esfuerzo mucho en el entrenamiento
+quest100_28: Me esfuerzo mucho cuando practico mi deporte
+quest100_29: Intento esforzarme con mucha fuerza cuando practico en el entrenamiento
+quest100_30: Para mi es importante hacerlo bien cuando practico mi deporte
+quest100_31: Cuando practicamos en el entrenamiento generalmente deseo que el juego termine rápido
+quest100_32: Cuando practico mi deporte generalmente me aburro
+quest100_33: Durante el entrenamiento a menudo "estoy dormido o ausente"
+quest100_34: En las sesiones de entrenamiento l@s deportistas se ayudan unos a otros a aprender
+quest100_35: En las sesiones de entrenamiento l@s deportistas se ayudan unos a otros a mejorar y a superarse
+quest100_36: En las sesiones de entrenamiento l@s deportistas trabajan juntos como un equipo
+quest100_37: El/la entrenador@ anima a l@s deportistas a que se ayuden mutuamente para mejorar
+quest100_38: En las sesiones de entrenamiento se anima a l@s deportistas a que trabajen sus puntos débiles
+quest100_39: En las sesiones de entrenamiento el/la entrenador@ se asegura de que l@s deportistas mejoren las habilidades que no dominan
+quest100_40: En las sesiones de entrenamiento el/la entrenador@ insiste en que debemos mejorar en cada sesión
+quest100_41: En las sesiones de entrenamiento el/la entrenador@ siempre insiste en que intentemos hacer lo mejor posible
+quest100_valor_1: 1 (totalmente en desacuerdo)
+quest100_valor_5: 5 (totalmente de acuerdo)
+quest100_header: En mi deporte...
 
