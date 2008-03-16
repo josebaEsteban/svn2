@@ -1153,7 +1153,7 @@ unit_9_path: 09.La.Comunicacion.es.pdf
 unit_9_title: La Comunicación
 quest13: Clima Formativo Percibido (Deportes Individuales)
 quest13_label_0: Clima Formativo Percibido (Deportes Individuales)
-quest14: Rendimiento Post-Competición realizado por el/la Entrenador/a (Deportes Individuales)
+quest14: Valoración Post-Competición realizada por el/la Entrenador/a (Deportes Individuales)
 quest14_header1: El grado de satisfacción con la actuación del/la deportista ha sido...
 quest14_header2: El grado de satisfacción con la actuación del/la deportista sobre
 quest14_6: El control de sus emociones
@@ -1168,10 +1168,10 @@ quest14_17: El grado de satisfacción que ha transmitido durante la competición
 quest14_intro: Más abajo se plantean una serie de preguntas relacionadas con el comportamiento del/la deportista durante la competición, sobre las que queremos recoger tu opinión. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa lo que piensas acerca de ello.
 quest14_d3_a: En el caso del RCOG, los valores se sitúan en un nivel bajo, lo que implica que no ha podido mantener los niveles de confianza y de satisfacción durante la competición. Además, han sido escasos los momentos en los que ha tenido buenas sensaciones o se ha sentido cómodo.
 quest14_d4_b: Al observar los valores del RCOM, vemos que se encuentran en un nivel medio, lo que representa dificultades a la hora de responder a las acciones de l@s adversari@s, aunque el PIC lo tenía bastante claro. Casi siempre sabía lo que tenía que hacer, y se considera que las decisiones adoptadas han sido acertadas.
-quest14_label_0: Rendimiento Post-Competición realizado por el/la Entrenador/a
+quest14_label_0: Valoración Post-Competición realizada por el/la Entrenador/a
 quest14_21: Su nivel de rendimiento en esta competición
-quest15: Rendimiento Post-Competición realizado por el/la Entrenador/a (Deportes Colectivos)
-quest15_label_0: Rendimiento Post-Competición realizado por el/la Entrenador/a
+quest15: Valoración Post-Competición realizada por el/la Entrenador/a (Deportes Colectivos)
+quest15_label_0: Valoración Post-Competición realizada por el/la Entrenador/a
 quest15_6: Con su grado de complicidad hacia el objetivo colectivo
 quest15_7: Con su generosidad y apoyo hacia sus compañer@s
 quest15_8: Con el respeto hacia sus compañeros
