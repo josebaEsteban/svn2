@@ -18,7 +18,7 @@ class MessagesController < ApplicationController
   end
 
   def show
-    @messages = Message.paginate_by_board_id(@board.id,:page => params[:page], :per_page => 20, :order => 'created_on DESC')
+    @messages = Message.paginate_by_board_id(@board.id,:page => params[:page], :per_page => 15, :order => 'created_on DESC')
   end
 
   def find_board
