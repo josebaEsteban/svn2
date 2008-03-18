@@ -193,7 +193,7 @@ label_logged_as: modura konektatua
 label_login: Konexio
 label_logout: Deskonexioa
 label_max_size: Tamaño máximo
-label_me: me
+label_me: ni
 label_message_last: Last message
 label_message_new: New message
 label_message_plural: Mezuak
@@ -1182,3 +1182,4 @@ quest15_18: Con su capacidad luchadora y perseverante
 quest15_19: Con su actitud positiva hacia su propia mejora
 quest15_20: Con su transmisión de disfrute, satisfacción y buenas sensaciones
 quest15_21: Su nivel de rendimiento en esta competición
+label_done: Noiz betea

@@ -1,26 +1,52 @@
-<h2><%= link_to h(@board.name), :controller => 'boards', :action => 'show', :project_id => @project, :id => @board %> &#187; <%=h @message.subject %></h2>
-
-<p><em><%= @message.author.name %>, <%= format_time(@message.created_on) %></em></p>
-<div class="wiki">
-<%= textilizable(@message.content, :attachments => @message.attachments) %>
+<div align="right"> <%= link_to l(:button_back),session[:return_to_params] %> </div><br/>  
+<div class='boxx'>
+	<div class='boxxtop'>
+  		<div>
+    	</div>
+	</div>
+	<div class='boxxcontent'>
+	<form id="message" action="/messages/create/<%= @board.id.to_s %>" method="post">
+	<p>
+ 	 <label><%= l(:label_message_new) %></label>
+  	<br />
+  	<textarea name="message[content]" id="note1" cols="40" rows="6"></textarea>
+	<p>
+	<div align=right><%= submit_tag l(:button_save),:class => 'edit-button' %>
+    </div>
+	</p>
+	</div>
+	<div class='boxxbottom'>
+  	<div></div>
+	</div>
 </div>
-<%= link_to_attachments @message.attachments, :no_author => true %>
+<div class="splitcontentright">
+  <table  cellspacing="0">
+    <tbody>
+      <%- odd=1 -%>
+      <%- nope=0 -%>
+      <% for message in @messages %>
+      <%- if odd == 1 -%>
+      <tr class="odd">
+        <%- odd=0-%>
+        <%-else -%>
+      <tr>
+        <%- odd=1 end -%>
 
-<h3 class="icon22 icon22-comment"><%= l(:label_reply_plural) %></h3>
-<% @message.children.each do |message| %>
-  <a name="<%= "message-#{message.id}" %>"></a>
-  <h4><%=h message.subject %> - <%= message.author.name %>, <%= format_time(message.created_on) %></h4>
-  <div class="wiki"><p><%= textilizable message.content %></p></div>
-<% end %>
-
-<% if @logged_in_user %>
-<p><%= toggle_link l(:button_reply), "reply", :focus => "reply_content" %></p>
-<div id="reply" style="display:none;">
-<%= error_messages_for 'message' %>
-<% form_for :reply, @reply, :url => {:action => 'reply', :id => @message} do |f| %>
-  <p><%= f.text_field :subject, :required => true, :size => 60 %></p>
-  <p><%= f.text_area :content, :required => true, :cols => 80, :rows => 10 %></p>
-  <p><%= submit_tag l(:button_submit) %></p>
-<% end %>
+        <%- if message.author_id == @logged_in_user.id -%>
+        <td><div align=right><em><%= l(:label_me)+","%>
+        <%- else -%>
+        <%- autor = User.find(message.author_id) -%>
+        <td><div align=right><em><%= autor.name+","%>
+        <%- end -%>
+       <%= l(:label_done).downcase+" "+distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(message.created_on)) %>
+<%= image_tag 'comment.png' %>
+</em></div>       
+<br/>
+        <strong><%= simple_format(message.content) %></strong><br/> 
+      </tr>
+      <% end %>
+      </tr>
+    </tbody>
+  </table>
+  <%= will_paginate @messages %>
 </div>
-<% end %>

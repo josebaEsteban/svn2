@@ -113,7 +113,7 @@ ActiveRecord::Schema.define(:version => 0) do
     t.string   "filename",                     :default => "", :null => false
     t.string   "disk_filename",                :default => "", :null => false
     t.integer  "filesize",                     :default => 0,  :null => false
-    t.string   "content_type",   :limit => 60, :default => ""
+    t.string   "content_type",   :limit => 60
     t.string   "digest",         :limit => 40, :default => "", :null => false
     t.integer  "downloads",                    :default => 0,  :null => false
     t.integer  "author_id",                    :default => 0,  :null => false
@@ -153,19 +153,14 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   create_table "messages", :force => true do |t|
-    t.integer  "board_id",                      :null => false
-    t.integer  "parent_id"
-    t.string   "subject",       :default => "", :null => false
+    t.integer  "board_id",   :null => false
     t.text     "content"
     t.integer  "author_id"
-    t.integer  "replies_count", :default => 0,  :null => false
-    t.integer  "last_reply_id"
-    t.datetime "created_on",                    :null => false
-    t.datetime "updated_on",                    :null => false
+    t.datetime "created_on", :null => false
   end
 
   add_index "messages", ["board_id"], :name => "messages_board_id"
-  add_index "messages", ["parent_id"], :name => "messages_parent_id"
+  add_index "messages", ["created_on"], :name => "messages_created_on"
 
   create_table "pendings", :force => true do |t|
     t.integer  "user_id"

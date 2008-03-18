@@ -20,7 +20,7 @@
       </tr>
     </thead>
     <tbody>
-      <%- odd=0 -%>
+      <%- odd=0 -%>                                                                                        
       <%- for user in @users -%>
         <%- if odd == 1 -%>
       <tr class="odd">
@@ -42,6 +42,7 @@
             <%- end -%>
             </a></div></td>
         <td><div align="center"><a href="/users/edit/<%= user.id.to_s %>"><%= image_tag 'pencil.png' %></a></div></td>
+        <td><div align="center"><a href="/messages/show/<%= user.id.to_s %>"><%= image_tag 'comments.png' %></a></div></td>
         <td><div align="center"><a href="/my/admin/<%= user.id.to_s %>"><%= image_tag 'zoom.png' %></a></div></td>
       </tr>
       <%- end -%>

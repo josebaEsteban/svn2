@@ -195,10 +195,10 @@ label_logged_as: Conectad@ como
 label_login: Entrar
 label_logout: Salir
 label_max_size: Tamaño máximo
-label_me: me
+label_me: yo
 label_message_last: Last message
-label_message_new: New message
-label_message_plural: Messages
+label_message_new: Crear mensaje
+label_message_plural: Mensajes
 label_min_max_length: Longitud mín - máx
 label_modification: %d modificación
 label_modification_plural: %d modificaciones
@@ -1234,4 +1234,4 @@ quest100_41: En las sesiones de entrenamiento el/la entrenador@ siempre insiste 
 quest100_valor_1: 1 (totalmente en desacuerdo)
 quest100_valor_5: 5 (totalmente de acuerdo)
 quest100_header: En mi deporte...
-
+label_done: hace
