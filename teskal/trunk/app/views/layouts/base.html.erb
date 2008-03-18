@@ -56,6 +56,9 @@
       <% if loggedin? %>
       <li><%= link_to l(:label_my_account), { :controller => 'my', :action => 'account' } %></li>
       <% end %>
+		<% if loggedin?  and !@logged_in_user.managed_by.nil?-%>
+      <li><a href="/messages/show"><%= l(:label_message_plural) %></a></li> 
+      <%- end -%>  		
       <% if loggedin? %>
       <%- if @logged_in_user.show? -%>
       <li><a href="/my/quest" accesskey="q"><%= l(:label_quest_plural) %></a></li>
