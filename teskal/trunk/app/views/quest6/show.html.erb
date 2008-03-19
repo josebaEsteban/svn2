@@ -1,4 +1,3 @@
-<!-- quest6 -->
 <%=javascript_include_tag 'charts.js' %>
 <div align="right"> <%= link_to l(:button_back),session[:return_to_params] %> </div>  
 <center>
@@ -25,6 +24,7 @@
   <h4> <%=@advice[4]%> </h4>
 </div>
 <br/>
+<%= render :file => "/messages/add_from_quest.html.erb" %>
 <br/>
 <div align="center">
   <%- if @browse_score -%>

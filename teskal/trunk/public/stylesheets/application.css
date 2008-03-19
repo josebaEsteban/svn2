@@ -179,6 +179,17 @@ overflow:hidden;background:#F7F4EE;}
 .boxxbottom{background:url(../images/se5.gif) no-repeat bottom right;}
 .boxxbottom div{height:5px;background:url(../images/sw5.gif) no-repeat bottom left;}
 .boxxcontent{padding:5px 15px 0px 15px;}
+/*variant for quests*/
+.boxxq{float:none;max-width:45%;text-align:left;/* padding:0px 0px 0px 10px;*/
+overflow:hidden;background:#F7F4EE;}
+.boxxq a{color:#48436a;}
+.boxxq h3{color:#523a0b;}
+.boxxq ul{list-style:none;}
+.boxxqtop{background:url(../images/ne5.gif) no-repeat top right;}
+.boxxqtop div{height:5px;background:url(../images/nw5.gif) no-repeat top left;}
+.boxxqbottom{background:url(../images/se5.gif) no-repeat bottom right;}
+.boxxqbottom div{height:5px;background:url(../images/sw5.gif) no-repeat bottom left;}
+.boxxqcontent{padding:5px 15px 0px 15px;}
 /***********glider**********/
 div.content{text-align:left;}
 div.scroller{/* modify width and height of scrolling section if necessary */ 

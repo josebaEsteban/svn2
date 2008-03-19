@@ -1,9 +1,7 @@
 <%= error_messages_for 'message' %>
 <div class="box"> 
-<form id="message" action="/messages/create/<%= @board.id.to_s %>" method="post">
-<p><label><%= l(:field_subject) %></label><br />
-
-<textarea name="message[content]" id="note1" cols="60" rows="6"></textarea>  
-<p><%= submit_tag l(:button_save),:class => 'edit-button' %></p>   
-
+	<form id="message" action="/messages/create/<%= @board.id.to_s %>" method="post">
+	<p><label><%= l(:field_subject) %></label></p>
+	<textarea name="message[content]" id="note1" cols="60" rows="6"></textarea>  
+	<p><%= submit_tag l(:button_save),:class => 'edit-button' %></p>    
 </div>
