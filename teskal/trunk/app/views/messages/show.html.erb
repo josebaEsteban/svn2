@@ -5,15 +5,13 @@
     	</div>
 	</div>
 	<div class='boxxcontent'>
-	<form id="message" action="/messages/create/<%= @board.id.to_s %>" method="post">
-	<p>
- 	 <label><%= l(:label_message_new) %></label>
-  	<br />
-  	<textarea name="message[content]" id="note1" cols="40" rows="6"></textarea>
-	<p>
-	<div align=right><%= submit_tag l(:button_save),:class => 'edit-button' %>
-    </div>
-	</p>
+		<form id="message" action="/messages/create/<%= @board.id.to_s %>" method="post">
+	 	<label><%= l(:label_message_new) %></label>
+	  	<br />
+	  	<textarea name="message[content]" id="note1" cols="40" rows="6"></textarea>
+	   <p>
+		<div align=right><%= submit_tag l(:button_save) %></div>
+	   </p>  
 	</div>
 	<div class='boxxbottom'>
   	<div></div>
