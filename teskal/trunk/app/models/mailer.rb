@@ -115,24 +115,43 @@ class Mailer < ActionMailer::Base
   def quest(answer,manager,athlete,type)
     quest_name = ""
     @type = type
+    competicion = ""
+    notas = ""
     case @type
     when QUEST_NEW
       set_language_if_valid(manager.language)
       recipients manager.mail
       subject l(:mail_subject_quest)
       quest_name = get_title_quest(answer.quest_id)
+      competicion = answer.competition
+      if competicion.nil?
+        competicion = ""
+      end
+      case answer.quest_id
+      when 1
+        notas = answer.note5
+      when 4
+        notas = answer.note2
+      else
+        notas = answer.note1
+      end
       body :who => athlete.name,
       :text  => " " + l(:mail_body_quest1),
       :which  => quest_name,
+      :competition  => competicion,
+      :notes  => notas,
       :url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
+
     when QUEST_ALLOWED
       set_language_if_valid(athlete.language)
       recipients athlete.mail
       subject l(:mail_subject_allowed)
       quest_name = get_title_quest(answer.quest_id)
       body :who => "",
-      :text  => l(:mail_body_quest3),     
+      :text  => l(:mail_body_quest3),
       :which  => quest_name,
+      :competition  => competicion,
+      :notes  => notas,
       :url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
     when QUEST_PENDING
       set_language_if_valid(athlete.language)
@@ -140,14 +159,16 @@ class Mailer < ActionMailer::Base
       subject l(:mail_subject_pending)
       quest_name = get_title_quest(answer.order)
       body :who => "",
-      :text  => l(:mail_body_quest4),           
+      :text  => l(:mail_body_quest4),
       :which  => quest_name,
+      :competition  => competicion,
+      :notes  => notas,
       :url => url_for(:controller => "quest"+answer.order.to_s, :action => 'new')
     end
   end
-  
-  def book(book,athlete) 
-    set_language_if_valid(athlete.language) 
+
+  def book(book,athlete)
+    set_language_if_valid(athlete.language)
     libro=[]
     libro[0]=l(:unit_1_title)
     libro[1]=l(:unit_2_title)
@@ -168,8 +189,8 @@ class Mailer < ActionMailer::Base
     subject l(:mail_subject_book)
     body :who => athlete.name,
     :which  => libro[book.order-1]
-   end
-  
+  end
+
   def get_title_quest(selector)
     case selector
     when 1

@@ -1,5 +1,14 @@
 <%= @who + @text +" "+ @which +"." %>  
 
+<%- if !@competition.nil? -%>
+	 <%= l(:label_competition) %>
+	 <%= @competition %>
+<%- end -%>
+<%- if !@notes.nil? -%>
+	 <%= l(:field_notes) %>
+	 <%= simple_format(@notes) %>
+<%- end -%>
+
 <%= l(:mail_body_quest2) %>:
         
 <%= @url %>      

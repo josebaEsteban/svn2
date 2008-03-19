@@ -1,6 +1,12 @@
-<p>
-	  <strong><%= @who %></strong>
-	  <%= @text +" "+ @which +"." %><br />     
-  <%= l(:mail_body_quest2) %>:<br /><br />
-  <%= auto_link(@url) %>
+<p> 
+<strong><%= @who %></strong> <%= @text +" "+ @which +"." %><br/><br/>
+ <%- if @competition != nil.to_s -%>
+	 <strong><%= l(:label_competition) %></strong><br/>
+	 <%= @competition %><br />
+ <%- end -%>
+ <%- if @notes != nil.to_s-%>
+	 <strong><%= l(:field_notes) %></strong><%= simple_format(@notes) %>
+ <%- end -%>
+ <%= l(:mail_body_quest2) %>:<br />
+ <%= auto_link(@url) %>  
 </p>
