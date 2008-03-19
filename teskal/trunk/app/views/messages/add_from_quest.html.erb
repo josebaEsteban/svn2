@@ -6,10 +6,10 @@
 	</div> 
 	<div class='boxxqcontent'>
 		<form id="message" action="/messages/create/<%= @user.id.to_s %>" method="post">
-		<p>
 		  <label><%= l(:label_message_new) %></label>
 		  <br />
 		  <textarea name="message[content]" id="note1" cols="40" rows="6"></textarea>
+		<input type="hidden" name="message[answer_id]" value="<%= @answer.id %>">
 		<p>
 		<div align=right><%= submit_tag l(:button_save) %></div>
 		</p>
