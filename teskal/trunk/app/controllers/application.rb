@@ -417,7 +417,8 @@ class ApplicationController < ActionController::Base
         else
           @time_to_fill = ' • '+l(:label_time_taken)+', '+l_time(@answer.time_to_fill)
         end
-      end
+      end 
+      @messages = Message.find_by_sql("select * from messages where answer_id=#{@answer.id} order by created_on asc")
     else
       flash[:notice] = l(:notice_not_authorized)
       redirect_to :controller => 'my', :action => 'page'

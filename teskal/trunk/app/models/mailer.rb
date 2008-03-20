@@ -112,11 +112,10 @@ class Mailer < ActionMailer::Base
     :message => message
   end
 
-  def quest(answer,manager,athlete,type)
+  def quest(answer,manager,athlete,type,message)
     quest_name = ""
     @type = type
     competicion = ""
-    notas = ""
     case @type
     when QUEST_NEW
       set_language_if_valid(manager.language)
@@ -127,12 +126,11 @@ class Mailer < ActionMailer::Base
       if competicion.nil?
         competicion = ""
       end
-      notas = answer.note_to_mail
       body :who => athlete.name,
       :text  => " " + l(:mail_body_quest1),
       :which  => quest_name,
       :competition  => competicion,
-      :notes  => notas,
+      :notes  => message,
       :url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
 
     when QUEST_ALLOWED
@@ -144,7 +142,7 @@ class Mailer < ActionMailer::Base
       :text  => l(:mail_body_quest3),
       :which  => quest_name,
       :competition  => competicion,
-      :notes  => notas,
+      :notes  => message,
       :url => url_for(:controller => "quest"+answer.quest_id.to_s, :action => 'show', :id => answer.id)
     when QUEST_PENDING
       set_language_if_valid(athlete.language)
@@ -155,7 +153,7 @@ class Mailer < ActionMailer::Base
       :text  => l(:mail_body_quest4),
       :which  => quest_name,
       :competition  => competicion,
-      :notes  => notas,
+      :notes  => message,
       :url => url_for(:controller => "quest"+answer.order.to_s, :action => 'new')
     end
   end

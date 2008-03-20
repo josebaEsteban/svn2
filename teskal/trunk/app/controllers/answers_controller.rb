@@ -72,7 +72,7 @@ class AnswersController < ApplicationController
       controlador = "quest"+answer.quest_id.to_s
       journal( controlador+"/visible-"+answer.browse.to_s+"/"+answer.id.to_s, answer.user_id)
       if answer.browse == true
-        Mailer.deliver_quest(answer,@logged_in_user,user,Mailer::QUEST_ALLOWED)
+        Mailer.deliver_quest(answer,@logged_in_user,user,Mailer::QUEST_ALLOWED,"")
         journal( "mailer"+answer.quest_id.to_s+"/visible-"+answer.browse.to_s+"/"+answer.id.to_s, answer.user_id)
       end
       redirect_to :controller => 'my', :action => 'admin' , :id  => answer.user_id
@@ -92,4 +92,22 @@ class AnswersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def migrate
+    answers = Answer.find_by_sql "select * from answers"
+    for answer in  answers
+      puts answer
+      notes = answer.note_to_mail
+      if notes != nil.to_s
+        message = Message.new
+        message.author_id = answer.user_id
+        message.board_id = answer.user_id
+        message.content = notes
+        message.answer_id = answer.id
+        message.created_on = answer.created_on
+        message.save
+      end
+    end
+  end 
+  
 end

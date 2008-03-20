@@ -37,7 +37,7 @@
         <td><div align=right><em><%= autor.name+","%>
         <%- end -%>
        <%= l(:label_done).downcase+" "+distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(message.created_on)) %>
-<%= image_tag 'comment.png' %>
+		<img src="/images/comment.png" />
 </em></div>       
 <br/>
         <strong><%= simple_format(message.content) %></strong><br/> 
