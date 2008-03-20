@@ -18,7 +18,7 @@ class MessagesController < ApplicationController
       else
         destino = User.find(message.board_id)
       end
-      Mailer.deliver_message_posted(@logged_in_user.name,destino.mail,message.content)
+      Mailer.deliver_message_posted(@logged_in_user,destino,message.content)
       redirect_to :action => 'show', :id  => params[:id]
     end
   end

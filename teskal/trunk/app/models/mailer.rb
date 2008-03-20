@@ -104,11 +104,11 @@ class Mailer < ActionMailer::Base
     body :url => url_for(:controller => 'welcome')
   end
 
-  def message_posted(origin,destination,message)
-    recipients destination
-    subject l(:label_message_from)+" "+origin
-    body :subject  => l(:label_message_from),
-    :origin  => origin,
+  def message_posted(from,to,message)
+    recipients to.mail
+    subject l(:label_message_from)+" "+from.name
+    body :origin  => from.name,
+    :destination  => to.name,
     :message => message
   end
 
