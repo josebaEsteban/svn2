@@ -1,0 +1,14 @@
+<%- if @messages.size >0 -%>
+	  <h3><%= l(:label_message_plural) %></h3>
+	  <% for message in @messages %>
+			<img src="/images/comment.png" />
+	  	<%- if message.author_id == @logged_in_user.id -%>
+			  <em><%= l(:label_me)+","%>
+			  <%- else -%>
+			  <%- autor = User.find(message.author_id) -%>
+			  <em><%= autor.name+","%>
+		  <%- end -%>
+		  	<%= l(:label_done).downcase+" "+distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(message.created_on)) %></em>
+		  <h4><%= simple_format(message.content) %></h4>
+	  <% end %>
+<% end %>
