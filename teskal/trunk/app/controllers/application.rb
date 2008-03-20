@@ -424,7 +424,7 @@ class ApplicationController < ActionController::Base
     end
   end
 
-
+    
   # private
   # def set_timezone
   #   if logged_in? && !current_user.time_zone.nil?

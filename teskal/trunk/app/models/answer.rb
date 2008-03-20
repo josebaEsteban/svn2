@@ -1,18 +1,15 @@
 class Answer < ActiveRecord::Base
   belongs_to :user
-  # before_create :fix_timezone
-  # tz_time_attributes :created_on 
-  # def created_on
-  #     d = read_attribute(:created_on)
-  #     
-  #     if d.utc?
-  #       write_attribute :created_on, TzTime.at(Time.at(TzTime.zone.utc_to_local(d)))
-  #     else
-  #       d
-  #     end
-  #   end 
-  # protected
-  #   def fix_timezone
-  #     self.created_on = TzTime.at(created_on)
-  #   end  
+
+  def note_to_mail
+    case self.quest_id
+    when 1
+      notas = self.note5
+    when 4
+      notas = self.note2
+    else
+      notas = self.note1
+    end
+  end
+
 end
