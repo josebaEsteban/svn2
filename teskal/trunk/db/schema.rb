@@ -157,10 +157,12 @@ ActiveRecord::Schema.define(:version => 0) do
     t.text     "content"
     t.integer  "author_id"
     t.datetime "created_on", :null => false
+    t.integer  "answer_id"
   end
 
   add_index "messages", ["board_id"], :name => "messages_board_id"
   add_index "messages", ["created_on"], :name => "messages_created_on"
+  add_index "messages", ["answer_id"], :name => "messages_answer_id"
 
   create_table "pendings", :force => true do |t|
     t.integer  "user_id"

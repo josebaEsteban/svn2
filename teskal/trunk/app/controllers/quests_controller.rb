@@ -39,7 +39,7 @@ class QuestsController < ApplicationController
     user = User.find(quest.user_id)
     if @logged_in_user.admin? or @logged_in_user.id == user.managed_by
       quest.toggle!(:browse)
-      Mailer.deliver_quest(quest,@logged_in_user,user,Mailer::QUEST_PENDING)
+      Mailer.deliver_quest(quest,@logged_in_user,user,Mailer::QUEST_PENDING,"")
       journal( "mailer"+quest.order.to_s+"/pending-"+quest.browse.to_s+"/"+user.id.to_s, @logged_in_user.id)
       redirect_to :controller => 'my', :action => 'admin' , :id  => quest.user_id.to_s
     else
@@ -91,13 +91,13 @@ class QuestsController < ApplicationController
       controlador = "quest"+@answer.quest_id.to_s
       journal( controlador+"/create/"+@answer.id.to_s, @answer.user_id)
       notas = @answer.note_to_mail
-      if notas != nil.to_s
+      note = params[:message]
+      if note != nil.to_s
         message = Message.new
-        message.author = @logged_in_user
+        message.author_id = @logged_in_user
         message.board_id = @answer.user_id
-        message.content = @answer.note1
+        message.content = note
         message.answer_id = @answer.id
-        message.quest_new = true
         message.save
       end
       quest = Quest.find(:first, :conditions  => {:user_id  => @answer.user_id, :order => @answer.quest_id})
@@ -106,7 +106,7 @@ class QuestsController < ApplicationController
 
       if !athlete.managed_by.nil? and @logged_in_user.filled_for == session[:user_id]
         manager = User.find(athlete.managed_by)
-        Mailer.deliver_quest(@answer,manager,athlete,Mailer::QUEST_NEW)
+        Mailer.deliver_quest(@answer,manager,athlete,Mailer::QUEST_NEW,note)
       end
 
       if answer_show?(@answer.user_id, @answer.browse, athlete.managed_by)

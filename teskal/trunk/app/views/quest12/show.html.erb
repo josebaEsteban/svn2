@@ -8,18 +8,14 @@
 <div align="left">
   <h2><%=l(:quest12_label_0)%></h2>
   <h4><%= @user.name+' • '+day_name(@fechado.wday)+" "+@fecha +" • "+l(:label_filled)+' '+distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(@fechado))+@time_to_fill%></h4>
-  <h3><%= l(:field_notes) %></h3>
-  <h4> <%=@answer.note1%> </h4>
-  <br/>
+	<%= render :file => "/messages/show_in_quest.html.erb" %> <br/>
   <h3><span class=<%= '"icon icon-'+@icon[0]+'">' + l(:quest12_label_1) %></span></h3>
   <h4> <%=@advice[0]%> </h4>
   <h3><span class=<%= '"icon icon-'+@icon[1]+'">' + l(:quest12_label_2) %></span></h3>
   <h4> <%=@advice[1]%> </h4>
 </div>
 <br/>
-
-<%= render :file => "/messages/add_from_quest.html.erb" %>
-<br/> 
+<%= render :file => "/messages/add_from_quest.html.erb" %> <br/>
 <div align="center">
   <%- if @browse_score -%>
   <div id="values"> <%=l(:quest12_valor_1)%>

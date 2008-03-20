@@ -10,16 +10,21 @@ class MessagesController < ApplicationController
 
   def create
     message = Message.new(params[:message])
-    message.author = @logged_in_user
+    message.author_id = @logged_in_user
     message.board_id = params[:id]
     if message.save
-      if @logged_in_user.id == message.board_id
-        destino = User.find(@logged_in_user.managed_by)
-      else
-        destino = User.find(message.board_id)
+      if !@logged_in_user.gratis?
+        if @logged_in_user.id == message.board_id
+          if !@logged_in_user.managed_by.nil?
+            destino = User.find(@logged_in_user.managed_by)
+            Mailer.deliver_message_posted(@logged_in_user,destino,message.content)
+          end
+        else
+          destino = User.find(message.board_id)
+          Mailer.deliver_message_posted(@logged_in_user,destino,message.content)
+        end
+        redirect_to :action => 'show', :id  => params[:id]
       end
-      Mailer.deliver_message_posted(@logged_in_user,destino,message.content)
-      redirect_to :action => 'show', :id  => params[:id]
     end
   end
 

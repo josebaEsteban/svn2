@@ -233,21 +233,7 @@
     </table>
     <br/>
     <br/>
-    <div class="splitnoteleft">
-      <table cellspacing="0">
-        <!-- <caption><%=l(:quest1)%></caption> -->
-        <thead>
-          <tr>
-            <th scope="col"><div align="left"><%= l(:field_notes) %></div></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><textarea name="answer[note1]" id="note1" cols="60" rows="6"></textarea></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+	 <%= render :file => "/messages/new_from_quest.html.erb" %>
     <div class="splitnoteright"> <%= calendar_date_select_tag "answer[created_on]", nil, :embedded => true , :time  => true%> </div>
     <br/>
     <br/>
