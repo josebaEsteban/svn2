@@ -64,13 +64,6 @@ class Mailer < ActionMailer::Base
     :news_url => url_for(:controller => 'news', :action => 'show', :id => news)
   end
 
-  def message_posted(message, recipients)
-    recipients(recipients)
-    subject "[#{message.board.project.name} - #{message.board.name}] #{message.subject}"
-    body :message => message,
-    :message_url => url_for(:controller => 'messages', :action => 'show', :board_id => message.board_id, :id => message.root)
-  end
-
   def account_information(user, password)
     set_language_if_valid user.language
     recipients user.mail
@@ -111,6 +104,13 @@ class Mailer < ActionMailer::Base
     body :url => url_for(:controller => 'welcome')
   end
 
+  def message_posted(origin,destination,message)
+    recipients destination
+    subject l(:label_message_from)+" "+origin
+    body :subject  => l(:label_message_from),
+    :origin  => origin,
+    :message => message
+  end
 
   def quest(answer,manager,athlete,type)
     quest_name = ""
@@ -127,14 +127,7 @@ class Mailer < ActionMailer::Base
       if competicion.nil?
         competicion = ""
       end
-      case answer.quest_id
-      when 1
-        notas = answer.note5
-      when 4
-        notas = answer.note2
-      else
-        notas = answer.note1
-      end
+      notas = answer.note_to_mail
       body :who => athlete.name,
       :text  => " " + l(:mail_body_quest1),
       :which  => quest_name,

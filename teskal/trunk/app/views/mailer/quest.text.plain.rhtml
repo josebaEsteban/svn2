@@ -1,10 +1,10 @@
 <%= @who + @text +" "+ @which +"." %>  
 
-<%- if !@competition.nil? -%>
+<%- if @competition != nil.to_s -%>
 	 <%= l(:label_competition) %>
 	 <%= @competition %>
 <%- end -%>
-<%- if !@notes.nil? -%>
+<%- if @notes != nil.to_s -%>
 	 <%= l(:field_notes) %>
 	 <%= simple_format(@notes) %>
 <%- end -%>
