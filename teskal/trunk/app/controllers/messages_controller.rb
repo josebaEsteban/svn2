@@ -2,29 +2,39 @@
 
 class MessagesController < ApplicationController
   layout 'base'
-  before_filter :require_login,:find_board
+  before_filter :require_login,:find_board, :require_suscription
 
   def new
 
   end
 
   def create
+    add_here
+    redirect_to :action => 'show', :id  => params[:id]
+  end
+
+  def add_from_quest
+    add_here      
+    # this must be ajaxed - this query is too much
+    answer = Answer.find(@which_answer) 
+    controlador = "quest"+answer.quest_id.to_s
+    redirect_to :controller  => controlador, :action => 'show', :id => @which_answer
+  end
+
+  def add_here
     message = Message.new(params[:message])
-    message.author_id = @logged_in_user
+    @which_answer = message.answer_id
+    message.author_id = @logged_in_user.id
     message.board_id = params[:id]
-    if message.save
-      if !@logged_in_user.gratis?
-        if @logged_in_user.id == message.board_id
-          if !@logged_in_user.managed_by.nil?
-            destino = User.find(@logged_in_user.managed_by)
-            Mailer.deliver_message_posted(@logged_in_user,destino,message.content)
-          end
-        else
-          destino = User.find(message.board_id)
-          Mailer.deliver_message_posted(@logged_in_user,destino,message.content)
-        end
-        redirect_to :action => 'show', :id  => params[:id]
+    message.save
+    if @logged_in_user.id == message.board_id
+      if !@logged_in_user.managed_by.nil?
+        destino = User.find(@logged_in_user.managed_by)
+        Mailer.deliver_message_posted(@logged_in_user,destino,message.content)
       end
+    else
+      destino = User.find(message.board_id)
+      Mailer.deliver_message_posted(@logged_in_user,destino,message.content)
     end
   end
 

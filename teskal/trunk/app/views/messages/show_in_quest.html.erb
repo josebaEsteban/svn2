@@ -1,14 +1,56 @@
-<%- if @messages.size >0 -%>
-	  <h3><%= l(:label_message_plural) %></h3>
-	  <% for message in @messages %>
-			<img src="/images/comment.png" />
-	  	<%- if message.author_id == @logged_in_user.id -%>
-			  <em><%= l(:label_me)+","%>
-			  <%- else -%>
-			  <%- autor = User.find(message.author_id) -%>
-			  <em><%= autor.name+","%>
-		  <%- end -%>
-		  	<%= l(:label_done).downcase+" "+distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(message.created_on)) %></em>
-		  <h4><%= simple_format(message.content) %></h4>
-	  <% end %>
+<div align="left"><h3><%= l(:label_message_plural) %></h3></div>    
+<div class='boxx'>
+	<div class='boxxtop'>
+	  <div>
+	  </div>
+	</div> 
+	<div class='boxxcontent'>
+		<form id="message" action="/messages/add_from_quest/<%= @user.id.to_s %>" method="post">
+		  <label><%= l(:label_message_new) %></label>
+		  <textarea name="message[content]" id="note1" cols="40" rows="6"></textarea>
+		<input type="hidden" name="message[answer_id]" value="<%= @answer.id %>">
+		<p>
+		<div align=right><%= submit_tag l(:button_save) %></div>
+		</p>
+	</div>
+	<div class='boxxbottom'>
+	  <div>
+	  </div>
+	</div> 
+</div>
+<div class="splitcontentright">
+	<%- if @messages.size >0 -%>
+ 		<table  cellspacing="0">
+    		<tbody>
+	      <%- odd=1 -%>
+	      <%- nope=0 -%>
+	      <% for message in @messages %>
+	      <%- if odd == 1 -%>
+		      <tr class="odd">
+		      <%- odd=0-%>
+		      <%-else -%>
+		      <tr>
+		      <%- odd=1 end -%>
+            <td><div id="who">
+	       <%- if message.author_id == @logged_in_user.id -%>
+		       <%= l(:label_me)+","%>
+	       <%- else -%>
+		       <%- autor = User.find(message.author_id) -%>
+		       <%= autor.name+","%>
+	        <%- end -%>
+	        <%= l(:label_done).downcase+" "+distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(message.created_on)) %>
+			
+			<img src="/images/comment.png" /></div>
+			</em></div>       
+			<br/>
+	      <strong><%= simple_format(message.content) %></strong><br/> 
+	      </tr>
+	      <% end %>
+	      </tr>
+	    </tbody>
+	  </table>
 <% end %>
+<div align="right"> <%= link_to l(:button_back),session[:return_to_params] %> </div>   
+</div>
+
+
