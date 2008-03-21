@@ -31,10 +31,12 @@ class MessagesController < ApplicationController
       if !@logged_in_user.managed_by.nil?
         destino = User.find(@logged_in_user.managed_by)
         Mailer.deliver_message_posted(@logged_in_user,destino,message.content)
+        journal( "mailer/message_to/"+destino.id.to_s, message.author_id)
       end
     else
       destino = User.find(message.board_id)
       Mailer.deliver_message_posted(@logged_in_user,destino,message.content)
+      journal( "mailer/message_to/"+destino.id.to_s, message.author_id)
     end
   end
 
