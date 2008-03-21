@@ -1,6 +1,4 @@
 User-agent: *
-Disallow: /
-User-agent: *
 Disallow: /lib
 Disallow: /charts
 Disallow: /manual
