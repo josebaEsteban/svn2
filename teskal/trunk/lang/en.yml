@@ -1199,3 +1199,4 @@ quest15_21: Performance skills used
 label_done: Filled
 label_message_from: New message in Teskal from
 label_message: Message
+label_message_no_reply: Please do not respond to this message. If you'd like to reply, please log in to your account in Teskal and compose a message.
