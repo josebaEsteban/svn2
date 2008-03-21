@@ -94,7 +94,7 @@ class QuestsController < ApplicationController
       note = params[:message]
       if note != nil.to_s
         message = Message.new
-        message.author_id = @logged_in_user
+        message.author_id = @logged_in_user.id
         message.board_id = @answer.user_id
         message.content = note
         message.answer_id = @answer.id

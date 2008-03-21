@@ -7,7 +7,6 @@
 <div align="left">
   <h2><%=l(:quest3_label_0)%></h2>
   <h4><%= @user.name+' • '+day_name(@fechado.wday)+" "+@fecha +" • "+l(:label_filled)+' '+distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(@fechado))+@time_to_fill%></h4>
-	<%= render :file => "/messages/show_in_quest.html.erb" %> <br/>
   <h3><span class=<%= '"icon icon-'+@icon[0]+'">' + l(:quest3_label_1) %></span></h3>
   <h4> <%=@advice[0]%> </h4>
   <h3><span class=<%= '"icon icon-'+@icon[1]+'">' + l(:quest3_label_2) %></span></h3>
@@ -25,14 +24,11 @@
   <h3><span class=<%= '"icon icon-'+@icon[7]+'">' + l(:quest3_label_8) %></span></h3>
   <h4> <%=@advice[7]%> </h4>
 </div>
-<br/>
-<%= render :file => "/messages/add_from_quest.html.erb" %>
-<br/>
 <div align="center">
   <%- if @browse_score -%>
+  <br/><br/>
   <div id="values"> <%=l(:quest3_valor_0)%> • <%=l(:quest3_valor_1)%> • <%=l(:quest3_valor_2)%> • <%=l(:quest3_valor_3)%> • <%=l(:quest3_valor_4)%> </div>
-  <br/>
-  <br/>
+  <br/><br/>
   <table cellspacing="0">
     <!-- <caption><%=l(:quest3)%></caption> -->
     <thead>
@@ -202,10 +198,7 @@
       </tr>
     </tbody>
   </table>
-  <br/>
-  <br/>
-  <%- end -%>
-  <br/>
-  <br/>
+<h4></h4>
+<%- end -%>
 </div>
-<div align="right"> <%= link_to l(:button_back),session[:return_to_params] %> </div>
+<%= render :file => "/messages/show_in_quest.html.erb" %> <br/>

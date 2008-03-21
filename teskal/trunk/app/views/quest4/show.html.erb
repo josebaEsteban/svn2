@@ -11,7 +11,6 @@
   <h4> <%=@answer.competition%> </h4>
   <h3><%= l(:quest4_8) %></h3>
   <h4> <%=@answer.note1%> </h4>
-	<%= render :file => "/messages/show_in_quest.html.erb" %> <br/>
   <h3><span class=<%= '"icon icon-'+@icon[0]+'">' + l(:quest1_label_1) %></span></h3>
   <h4> <%=@advice[0]%> </h4>
   <h3><span class=<%= '"icon icon-'+@icon[1]+'">' + l(:quest1_label_2) %></span></h3>
@@ -43,14 +42,11 @@
   <h3><span class=<%= '"icon icon-'+@icon[11]+'">' + l(:quest4_label_14) %></span></h3>
   <h4> <%=@advice[11]%> </h4>
 </div>
-<br/>
-<%= render :file => "/messages/add_from_quest.html.erb" %>
-<br/>
 <div align="center">
   <%- if @browse_score -%>
+  <br/><br/>
   <div id="values"> <%=l(:quest3_valor_0)%> • <%=l(:quest3_valor_1)%> • <%=l(:quest3_valor_2)%> • <%=l(:quest3_valor_3)%> • <%=l(:quest3_valor_4)%> </div>
-  <br/>
-  <br/>
+  <br/><br/>
   <table cellspacing="0">
     <!-- <caption><%=l(:quest1)%></caption> -->
     <thead>
@@ -167,8 +163,6 @@
       </tr>
     </tbody>
   </table>
-  <br/>
-  <br/>
   <div id="values"> <%=l(:quest4_valor_1)%> • <%=l(:quest3_valor_2)%> • <%=l(:quest3_valor_3)%> • <%=l(:quest3_valor_4)%> <br/>
     <br/>
   </div>
@@ -362,9 +356,9 @@
         <td><div align="center"><%=@answer.answ51%></div></td>
       </tr>
     </tbody>
-  </table>
-  <br/>
-  <br/>
-  <%- end -%>
+  </table>   
+<h4></h4>
+  <%- end -%> 
 </div>
-<div align="right"> <%= link_to l(:button_back),session[:return_to_params] %> </div>
+<%= render :file => "/messages/show_in_quest.html.erb" %> <br/>
+
