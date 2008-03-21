@@ -29,12 +29,12 @@
         <%-else -%>
       <tr>
         <%- odd=1 end -%>
-
+        <td><div id="who">
         <%- if message.author_id == @logged_in_user.id -%>
-        <td><div align=right><em><%= l(:label_me)+","%>
+        <%= l(:label_me)+","%>
         <%- else -%>
         <%- autor = User.find(message.author_id) -%>
-        <td><div align=right><em><%= autor.name+","%>
+        <%= autor.name+","%>
         <%- end -%>
        <%= l(:label_done).downcase+" "+distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(message.created_on)) %>
 		<img src="/images/comment.png" />
