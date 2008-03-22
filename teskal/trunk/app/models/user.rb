@@ -122,6 +122,14 @@ class User < ActiveRecord::Base
     self.role == ROLE_ATHLETE
   end
 
+  def coach?
+    self.role == ROLE_COACH
+  end
+
+  def tutor?
+    self.role == ROLE_TUTOR
+  end
+
   def managed_by?
   end
 
