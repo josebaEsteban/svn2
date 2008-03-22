@@ -17,8 +17,6 @@ class Quest100Controller < ApplicationController
 
   def show
     show_quest
-  else
-
   end
 
 
