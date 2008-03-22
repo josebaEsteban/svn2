@@ -1212,25 +1212,24 @@ quest100_19: Puedo decidir las actividades que quiero practicar durante el entre
 quest100_20: Jugar en este equipo me hacer sentir más cerca de l@s otr@s compañer@s
 quest100_21: Las actividades del entrenamiento me hacen sentir más conectado con l@s otr@s compañer@s
 quest100_22: Me propongo hacer deporte durante mucho tiempo
-quest100_23: Durante la práctica deportiva
-quest100_24: A menudo se da la oportunidad a l@s deportistas de que planifiquen sus propias actividades durante el entrenamiento
-quest100_25: A menudo se da la oportunidad a l@s deportistas de que digan lo que piensan sobre las tareas del entrenamiento
-quest100_26: L@s deportistas pueden elegir los ejercicios que van a practicar
-quest100_27: No me esfuerzo mucho en el entrenamiento
-quest100_28: Me esfuerzo mucho cuando practico mi deporte
-quest100_29: Intento esforzarme con mucha fuerza cuando practico en el entrenamiento
-quest100_30: Para mi es importante hacerlo bien cuando practico mi deporte
-quest100_31: Cuando practicamos en el entrenamiento generalmente deseo que el juego termine rápido
-quest100_32: Cuando practico mi deporte generalmente me aburro
-quest100_33: Durante el entrenamiento a menudo "estoy dormido o ausente"
-quest100_34: En las sesiones de entrenamiento l@s deportistas se ayudan unos a otros a aprender
-quest100_35: En las sesiones de entrenamiento l@s deportistas se ayudan unos a otros a mejorar y a superarse
-quest100_36: En las sesiones de entrenamiento l@s deportistas trabajan juntos como un equipo
-quest100_37: El/la entrenador@ anima a l@s deportistas a que se ayuden mutuamente para mejorar
-quest100_38: En las sesiones de entrenamiento se anima a l@s deportistas a que trabajen sus puntos débiles
-quest100_39: En las sesiones de entrenamiento el/la entrenador@ se asegura de que l@s deportistas mejoren las habilidades que no dominan
-quest100_40: En las sesiones de entrenamiento el/la entrenador@ insiste en que debemos mejorar en cada sesión
-quest100_41: En las sesiones de entrenamiento el/la entrenador@ siempre insiste en que intentemos hacer lo mejor posible
+quest100_23: A menudo se da la oportunidad a l@s deportistas de que planifiquen sus propias actividades durante el entrenamiento
+quest100_24: A menudo se da la oportunidad a l@s deportistas de que digan lo que piensan sobre las tareas del entrenamiento
+quest100_25: L@s deportistas pueden elegir los ejercicios que van a practicar
+quest100_26: No me esfuerzo mucho en el entrenamiento
+quest100_27: Me esfuerzo mucho cuando practico mi deporte
+quest100_28: Intento esforzarme con mucha fuerza cuando practico en el entrenamiento
+quest100_29: Para mi es importante hacerlo bien cuando practico mi deporte
+quest100_30: Cuando practicamos en el entrenamiento generalmente deseo que el juego termine rápido
+quest100_31: Cuando practico mi deporte generalmente me aburro
+quest100_32: Durante el entrenamiento a menudo "estoy dormido o ausente"
+quest100_33: En las sesiones de entrenamiento l@s deportistas se ayudan unos a otros a aprender
+quest100_34: En las sesiones de entrenamiento l@s deportistas se ayudan unos a otros a mejorar y a superarse
+quest100_35: En las sesiones de entrenamiento l@s deportistas trabajan juntos como un equipo
+quest100_36: El/la entrenador@ anima a l@s deportistas a que se ayuden mutuamente para mejorar
+quest100_37: En las sesiones de entrenamiento se anima a l@s deportistas a que trabajen sus puntos débiles
+quest100_38: En las sesiones de entrenamiento el/la entrenador@ se asegura de que l@s deportistas mejoren las habilidades que no dominan
+quest100_39: En las sesiones de entrenamiento el/la entrenador@ insiste en que debemos mejorar en cada sesión
+quest100_40: En las sesiones de entrenamiento el/la entrenador@ siempre insiste en que intentemos hacer lo mejor posible
 quest100_valor_1: 1 (totalmente en desacuerdo)
 quest100_valor_5: 5 (totalmente de acuerdo)
 quest100_header: En mi deporte...
