@@ -57,7 +57,6 @@ class Quest5Controller < ApplicationController
       ct = answer.answ21
       x = (cl + ct) / 2.0
       y = (cl - ct).abs
-
       @advice=[]
       @icon=[]
       item=0
@@ -139,9 +138,9 @@ class Quest5Controller < ApplicationController
         case
         when y < 15
           @advice[item]=l(:quest5_val_a)
-        when y < 30
-          @advice[item]=l(:quest5_val_c)
-        else
+        when y < 30  
+          @advice[item]=l(:quest5_val_b)
+        else               
           @advice[item]=l(:quest5_val_c)
         end
       end

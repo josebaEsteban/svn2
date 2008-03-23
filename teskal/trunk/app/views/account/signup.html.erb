@@ -6,54 +6,105 @@
 <%- when :ca -%>
 <%= javascript_include_tag 'validation/validation_ca' -%>
 <%- when :es -%>
-<%= javascript_include_tag 'validation/validation_es' -%> 
+<%= javascript_include_tag 'validation/validation_es' -%>
 <%- when :eu -%>
 <%= javascript_include_tag 'validation/validation_eu' -%>
 <%- when :fr -%>
-<%= javascript_include_tag 'validation/validation_fr' -%> 
+<%= javascript_include_tag 'validation/validation_fr' -%>
 <%- else -%>
-<%= javascript_include_tag 'validation/validation' -%>  
+<%= javascript_include_tag 'validation/validation' -%>
 <%- end -%>
-<%= stylesheet_link_tag 'signup' -%>
-<%- end -%>
-<center> 
-<div id="signup">
-<form id="theform" action="/account/signup" method="post">
-	<fieldset id="pt1">
-		<legend><span><%= l(:signup_label_1) %> </span>1. <span>: Login details</span></legend>
-		<h3><%= l(:signup_label_2) %></h3>
-		<div class="help"><%= l(:signup_label_3) %></div>
-		<label for="user_login"><%=l(:field_user)%></label>
-		<input class="required" id="user_login" name="user[login]"  type="text" value="" tabindex="1"/>
-		<label for="user_language"><%=l(:field_language)%> </label>
-		<%= select("user", "language", lang_options_for_select) %>
-	</fieldset>
-	<fieldset id="pt2">
-		<legend><span><%= l(:signup_label_1) %> </span>2. <span>: <%= l(:field_password) %></span></legend>
-		<h3><%= l(:signup_label_4) %></h3>
-		<div class="help"><%= l(:signup_label_5) %></div>
-		<label for="password"><%=l(:field_password)%></label>
-		<input class="required validate-password" id="password" name="password"  type="password" tabindex="3" />
-		<label for="password-confirm"><%=l(:field_password_confirmation)%></label>
-		<input class="required validate-password-confirm" id="password_confirmation" name="password_confirmation" type="password" tabindex="4" />
-	</fieldset>
-	<fieldset id="pt3" class="error">
-		<legend><span><%= l(:signup_label_1) %> </span>3. <span>: <%= l(:signup_label_6) %></span></legend>
-		<h3><%= l(:signup_label_7) %></h3>
-		<div class="help"><%= l(:signup_label_8) %></div>
-		<label for="user_mail"><%=l(:field_mail)%></label>
-		<input class="required validate-email" id="user_mail" name="user[mail]"  type="text" value="" tabindex="5" />
-   </fieldset>
-	<fieldset id="pt4">
-		<legend><%= l(:signup_label_1) %> 4  : <%= l(:signup_label_9) %></legend>
-		<h3><%= l(:signup_label_10) %></h3>
-		<div id="disclaimer"><%= l(:signup_label_11) %></div>
-		<input name="commit" type="submit" tabindex="6" value="<%= l(:button_submit) %>"/>
-	</fieldset>
-	<div id="copyright"></div>	
-</form>
- <script type="text/javascript">
-	var valid3 = new Validation('theform',{immediate : true});
-</script>  
-</div> 
-</center>
+<%= stylesheet_link_tag "reset_form" -%> 
+<%- end -%>     
+
+<div align="center">
+  <div class='boxxq'>
+    <div class='boxxqtop'>
+      <div> </div>
+    </div>
+    <div class='boxxqcontent'>
+  	<div class="title2"><%= l(:label_register) %></div>  
+      <form id="accountform" action="/account/signup" method="post">
+			   <table cellspacing="0">
+          <tbody>
+ 				<tr>
+					<td colspan="2"><hr></td>
+				</tr>
+            <tr>
+              <td><label for="user_firstname"><%= l(:field_firstname) %> </label></td>
+              <td><input class="required" id="user_firstname" name="user[firstname]" size="25" type="text" value="" tabindex="1"/></td>
+            </tr>
+            <tr>
+              <td><label for="user_lastname"><%= l(:field_lastname) %> </label></td>
+              <td><input class="required" id="user_lastname" name="user[lastname]" size="25" type="text" value="" tabindex="2"/></td>
+            </tr>
+            <tr>
+              <td><label for="user_mail"><%=l(:field_mail)%></label></td>
+              <td><input class="required validate-email" id="user_mail" name="user[mail]"  size="25" type="text" value="" tabindex="3" /></td>
+            </tr  
+            <tr>
+              <td></td>
+              <td><div class="small"><%= l(:signup_label_8) %></div></td>
+            </tr>
+ 				<tr>
+					<td colspan="2"><hr></td>
+				</tr>
+				<tr>
+              <td><label for="user_login"><%=l(:field_user)%></label></td>
+              <td><input class="required" id="user_login" name="user[login]"  size="25" type="text" value="" tabindex="4"/></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><div class="small"><%= l(:signup_label_2) %></div></td>
+            </tr>
+            <tr>
+              <td><label for="password"><%=l(:field_password)%></label></td>
+              <td><input class="required validate-password" id="password" name="password"  size="25" type="password" tabindex="5" /></td>
+            </tr>
+            <tr>
+              <td><label for="password"><%=l(:field_password_confirmation)%></label></td>
+              <td><input class="required validate-password-confirm" id="password_confirmation" name="password_confirmation" size="25" type="password" tabindex="6" /></td>
+            </tr>
+ 				<tr>
+					<td colspan="2"><hr></td>
+				</tr>
+            <tr>
+              <td><label for="user_language"><%=l(:field_language)%> </label></td>
+              <td><%= select("user", "language", lang_options_for_select) %> </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><div class="small"><%= l(:signup_label_3) %></div></td>
+            </tr>
+            <tr>
+              <td><label for="default_timezone"><%= l(:label_timezone) %></label></td>
+              <td><%= time_zone_select 'user', 'time_zone', TZInfo::Timezone.all.sort, :model => TZInfo::Timezone %> </td>
+            </tr>
+ 				<tr>
+					<td colspan="2"><hr></td>
+				</tr>
+            <tr>
+              <td><label for="terms"><%= l(:signup_label_10) %> </label></td>
+              <td><%= l(:signup_label_11) %></td>
+            </tr>
+ 				<tr>
+					<td colspan="2"><hr></td>
+				</tr>
+          </tbody>
+        </table>
+ 			<div id="pt4">
+					<input name="commit" type="submit" tabindex="7" value="<%= l(:button_submit) %>"/>
+			</div>
+      </form>
+<br/>
+<br/>
+<br/>
+      <script type="text/javascript">
+	var valid3 = new Validation('accountform',{immediate : true});
+</script>
+    </div>
+    <div class='boxxqbottom'>
+      <div> </div>
+    </div>
+  </div>
+</div>

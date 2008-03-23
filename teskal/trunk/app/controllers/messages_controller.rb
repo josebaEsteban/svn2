@@ -10,11 +10,13 @@ class MessagesController < ApplicationController
 
   def create
     add_here
+    journal( "mailer/add_message_to/"+destino.id.to_s, @logged_in_user.id)
     redirect_to :action => 'show', :id  => params[:id]
   end
 
   def add_from_quest
     add_here      
+    journal( "mailer/quest_message_to/"+destino.id.to_s, @logged_in_user.id)
     # this must be ajaxed - this query is too much
     answer = Answer.find(@which_answer) 
     controlador = "quest"+answer.quest_id.to_s

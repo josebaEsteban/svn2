@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* CSS Document */   
+
+table a {
+	border: 0;
+	outline: 0;
+	text-decoration:none;
+	border:none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+table a:link, table a:hover, table a:visited {
+	text-decoration:none;
+}
+table a:visited:after {
+	content:"";
+}
+td a:hover {
+	background: none;
+	text-decoration:none;
+	border: none;
+}
+tbody td,
+tbody th{border:none;border-width:1px 0;padding:0.35em 0.5em;text-align: left;vertical-align:middle}
+
+tbody tr:hover td,
+tbody tr:hover th{background:none;border-color:none;}

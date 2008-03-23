@@ -95,7 +95,7 @@ field_new_password: New password
 field_notes: Notes
 field_password: Password
 field_password_change: Change password
-field_password_confirmation: Confirmation
+field_password_confirmation: Retype Password
 field_priority: Priority
 field_role: Role
 field_spent_on: Date
@@ -257,7 +257,7 @@ label_send_information: Send account information to the user
 label_settings: Settings
 label_show: Show
 label_time_taken: Time to complete it
-label_timezone: Default timezone
+label_timezone: Timezone
 label_user: User
 label_user_new: New user
 label_user_plural: Users
@@ -1105,19 +1105,18 @@ setting_time_format: Time format
 setting_welcome_text: Welcome text
 setting_wiki_compression: Wiki history compression
 signup_label_10: Terms of Service
-signup_label_11: By clicking the 'Complete Signup' button, I am attaching my electronic signature to and agreeing to the Teskal <a href="http:/account/terms">Terms of Service Agreement</a>.
+signup_label_11: By clicking the Submit button, I am attaching my electronic signature to and agreeing to the Teskal <a href="/account/terms"> Terms of Service Agreement</a>.
 signup_label_12: Thanks for signing up!
 signup_label_13: Your Teskal account has been created.
 signup_label_14: Watch for an email confirming your new subscription.
 signup_label_15: It contains an activation link that you must click before trying to log into
 signup_label_1: Step
-signup_label_2: Pick a login name and a language.
+signup_label_2: What you'll use to log in.
 signup_label_3: The language will be used next time you login.
 signup_label_4: Choose a password for your new account.
 signup_label_5: Passwords must be 6-12 characters in length.
 signup_label_6: Email details
 signup_label_7: Enter your email address.
-signup_label_8: You must enter a valid email address to activate your account.
 signup_label_9: Submit form
 status_active: active
 status_locked: locked
@@ -1200,3 +1199,6 @@ label_done: Filled
 label_message_from: New message in Teskal from
 label_message: Message
 label_message_no_reply: Please do not respond to this message. If you'd like to reply, please log in to your account in Teskal and compose a message.
+label_signup_1: We never share your e-mail address.
+label_signup_2: This address will be used if you forget your password or to notify you messages from Teskal.
+signup_label_8: We never share your e-mail address.<br/> This address will be used to to activate your account and to notify you messages from Teskal, or if you forget your password.

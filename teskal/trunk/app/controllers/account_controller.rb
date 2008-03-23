@@ -37,12 +37,9 @@ class AccountController < ApplicationController
           token = Token.create(:user => user, :action => 'autologin')
           cookies[:autologin] = { :value => token.value, :expires => 1.year.from_now  }
         end 
-        puts user.role
         if user.role > User::ROLE_ATHLETE 
-          puts "atheta"
           redirect_to :controller => 'my', :action => 'athletes'
         else  
-          puts "deportista"
           redirect_to :controller => 'my', :action => 'page'
         end
       else
