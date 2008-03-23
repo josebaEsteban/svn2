@@ -1099,6 +1099,7 @@ signup_label_13: El teu compte ha estat creada en Teskal.
 signup_label_14: Rebràs una confirmació per correu.
 signup_label_15: Té un enllaç d'activació del teu compte que has de clicar per a entrar en
 signup_label_1: Pas signup
+signup_label_2: Escull un nom d'usuari.
 signup_label_3: El llenguatge serà usat quan entris la pròxima vegada.
 signup_label_4: Elegeix una contrasenya per al teu nou compte.
 signup_label_5: La contrasenya ha de tenir de 6 a 12 caràcters de longitud.
