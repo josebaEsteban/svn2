@@ -13,71 +13,74 @@
 <%- else -%>
 <%= javascript_include_tag 'validation/validation' -%>
 <%- end -%>
+<%= stylesheet_link_tag "reset_form" -%>  
 <%- end -%>
-<style type="text/css">
-#theform {
-	background-color: #f7f4ee;
-	text-align: left;
-	font: 100% Verdana, Tahoma, Arial, sans-serif;
-	margin: 0 0 20px 0;
-	padding: 10px;
-	max-width: 450px;
-	color: #505050;
-	line-height: 1.5em;
-	border: 1px solid #ddd;
-}
-#theform h3 {
-	height: 2em;
-	font-size: 1.7em;
-	color: #523a0b;
-	line-height: 1em;
-}
-</style>
-  <!-- <h2><%=l(:label_my_account)%></h2>    -->
-<center>
-  <div id="theform">
-    <h3><%=l(:label_information_plural)%></h3>
-    <form id="myData" action="/users/add" class="tabular" method="post">
-      <p>
-        <label for="user_login"><%= l(:field_login) %> </label>
-        <input class="required" id="user_login" name="user[login]" size="30" type="text" value="<%= @user.login %>" />
-      </p>
-      <p>
-        <label for="user_firstname"><%= l(:field_firstname) %> </label>
-        <input id="user_firstname" name="user[firstname]" size="30" type="text" value="<%= @user.firstname %>" />
-      </p>
-      <p>
-        <label for="user_lastname"><%= l(:field_lastname) %> </label>
-        <input id="user_lastname" name="user[lastname]" size="30" type="text" value="<%= @user.lastname %>" />
-      </p>
-      <p>
-        <label for="user_mail"><%= l(:field_mail) %> </label>
-        <input class="required validate-email" id="user_mail" name="user[mail]" size="37" type="text" value="<%= @user.mail %>" />
-      </p>
-      <p>
-        <label for="user_language"><%= l(:field_language) %></label>
-        <%= select("user", "language", lang_options_for_select) %></p>
-      <p>
-        <label for="default_timezone"><%= l(:label_timezone) %></label>
-        <%= time_zone_select 'user', 'time_zone', TZInfo::Timezone.all.sort, :model => TZInfo::Timezone %> </p>
-      <br/>
-      <h3><%=l(:label_authentication)%></h3>
-      <p>
-        <label for="password"><%= l(:field_password) %></label>
-        <input class="required validate-password" id="password" name="password" size="25" type="password" />
-        <br />
-        <em><%= l(:text_length_between, 6, 12) %></em></p>
-      <p>
-        <label for="password_confirmation"><%= l(:field_password_confirmation) %></label>
-        <input class="required validate-password-confirm" id="password_confirmation" name="password_confirmation" size="25" type="password" />
-      </p>
+<STYLE type="text/css">
+.boxxq {max-width:48%;}
+</STYLE>
+<div align="center">
+  <div class='boxxq'>
+    <div class='boxxqtop'>
+      <div> </div>
+    </div>
+    <div class='boxxqcontent'>
+  	<div class="title"><%= l(:label_user_new) %></div>
+   <p></p>
+   <h4></h4>  
+      <form id="accountform" action="/users/add" method="post">
+			   <table cellspacing="0">
+          <tbody>
+            <tr>
+              <td><label for="user_firstname"><%= l(:field_firstname) %> </label></td>
+              <td><input class="required" id="user_firstname" name="user[firstname]" size="25" type="text" value="" tabindex="1"/></td>
+            </tr>
+            <tr>
+              <td><label for="user_lastname"><%= l(:field_lastname) %> </label></td>
+              <td><input class="required" id="user_lastname" name="user[lastname]" size="25" type="text" value="" tabindex="2"/></td>
+            </tr>
+            <tr>
+              <td><label for="user_mail"><%=l(:field_mail)%></label></td>
+              <td><input class="required validate-email" id="user_mail" name="user[mail]"  size="25" type="text" value="" tabindex="3" /></td>
+            </tr  
+ 				<tr>
+					<td colspan="2"><hr></td>
+				</tr>
+				<tr>
+              <td><label for="user_login"><%=l(:field_user)%></label></td>
+              <td><input class="required" id="user_login" name="user[login]"  size="25" type="text" value="" tabindex="4"/></td>
+            </tr>
+            <tr>
+              <td><label for="password"><%=l(:field_password)%></label></td>
+              <td><input class="required validate-password" id="password" name="password"  size="25" type="password" tabindex="5" /></td>
+            </tr>
+            <tr>
+              <td><label for="password"><%=l(:field_password_confirmation)%></label></td>
+              <td><input class="required validate-password-confirm" id="password_confirmation" name="password_confirmation" size="25" type="password" tabindex="6" /></td>
+            </tr>
+ 				<tr>
+					<td colspan="2"><hr></td>
+				</tr>
+            <tr>
+              <td><label for="user_language"><%=l(:field_language)%> </label></td>
+              <td><%= select("user", "language", lang_options_for_select) %> </td>
+            </tr>
+            <tr>
+              <td><label for="default_timezone"><%= l(:label_timezone) %></label></td>
+              <td><%= time_zone_select 'user', 'time_zone', TZInfo::Timezone.all.sort, :model => TZInfo::Timezone %> </td>
+            </tr>
+          </tbody>
+        </table>
+	   <h4></h4>
       <center>
-        <%= submit_tag l(:button_create) %>
+        <p><input name="commit" type="submit" tabindex="7" value="<%= l(:button_submit) %>"/></p>
       </center>
-    </form>
-    <script type="text/javascript">
-		var valid3 = new Validation('myData',{immediate : true});
-	</script>
+      </form>
+      <script type="text/javascript">
+	var valid3 = new Validation('accountform',{immediate : true});
+</script>
+    </div>
+    <div class='boxxqbottom'>
+      <div> </div>
+    </div>
   </div>
-<%= link_to l(:button_back),session[:return_to_params] %> 
-</center>
+</div>

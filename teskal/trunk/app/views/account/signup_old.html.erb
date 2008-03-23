@@ -25,25 +25,31 @@
 		<div class="help"><%= l(:signup_label_3) %></div>
 		<label for="user_login"><%=l(:field_user)%></label>
 		<input class="required" id="user_login" name="user[login]"  type="text" value="" tabindex="1"/>
-		<label for="user_language"><%=l(:field_language)%> </label>
-		<%= select("user", "language", lang_options_for_select) %>
+      <label for="user_firstname"><%= l(:field_firstname) %> </label>
+      <input class="required" id="user_firstname" name="user[firstname]" size="20" type="text" value="" tabindex="2"/>
+      <label for="user_lastname"><%= l(:field_lastname) %> </label>
+      <input class="required" id="user_lastname" name="user[lastname]" size="20" type="text" value="" tabindex="3"/>
+		<p><label for="default_timezone"><%= l(:label_timezone) %></label>
+		<%= time_zone_select 'user', 'time_zone', TZInfo::Timezone.all.sort, :model => TZInfo::Timezone %> </p>
 	</fieldset>
 	<fieldset id="pt2">
 		<legend><span><%= l(:signup_label_1) %> </span>2. <span>: <%= l(:field_password) %></span></legend>
 		<h3><%= l(:signup_label_4) %></h3>
 		<div class="help"><%= l(:signup_label_5) %></div>
 		<label for="password"><%=l(:field_password)%></label>
-		<input class="required validate-password" id="password" name="password"  type="password" tabindex="3" />
+		<input class="required validate-password" id="password" name="password"  type="password" tabindex="4" />
 		<label for="password-confirm"><%=l(:field_password_confirmation)%></label>
-		<input class="required validate-password-confirm" id="password_confirmation" name="password_confirmation" type="password" tabindex="4" />
+		<input class="required validate-password-confirm" id="password_confirmation" name="password_confirmation" type="password" tabindex="5" />
 	</fieldset>
 	<fieldset id="pt3" class="error">
 		<legend><span><%= l(:signup_label_1) %> </span>3. <span>: <%= l(:signup_label_6) %></span></legend>
 		<h3><%= l(:signup_label_7) %></h3>
 		<div class="help"><%= l(:signup_label_8) %></div>
 		<label for="user_mail"><%=l(:field_mail)%></label>
-		<input class="required validate-email" id="user_mail" name="user[mail]"  type="text" value="" tabindex="5" />
-   </fieldset>
+		<input class="required validate-email" id="user_mail" name="user[mail]"  type="text" value="" tabindex="6" />
+    	<label for="user_language"><%=l(:field_language)%> </label>
+			<%= select("user", "language", lang_options_for_select) %>
+	</fieldset>
 	<fieldset id="pt4">
 		<legend><%= l(:signup_label_1) %> 4  : <%= l(:signup_label_9) %></legend>
 		<h3><%= l(:signup_label_10) %></h3>
@@ -52,115 +58,8 @@
 	</fieldset>
 	<div id="copyright"></div>	
 </form>
-<%- case current_language -%>
-	<%- when :br -%>
-	<script type="text/javascript">
-		function formCallback(result, form) {
-			window.status = "validation callback for form '" + form.id + "': result = " + result;
-		}
-	    var valid = new Validation('theform', {immediate : true, onFormValidate : formCallback}); 
-	 	Validation.addAllThese([
-			['validate-password', 'Sua senha deve ter entre 6 e 12 caracteres e não pode ser \'senha\' ou o mesmo que o seu nome.', {
-				minLength : 6,
-				maxLength : 12,  
-				notOneOf : ['password','PASSWORD','1234567','0123456'],
-				notEqualToField : 'user[login]'
-			}],
-			['validate-password-confirm', 'Sua confirmação não corresponde à sua senha, por favor, tente novamente.', {
-				equalToField : 'password'
-			}]
-		]);
-	</script>
-<%- when :ca -%>
-<script type="text/javascript">
-	function formCallback(result, form) {
-		window.status = "validation callback for form '" + form.id + "': result = " + result;
-	}
-    var valid = new Validation('theform', {immediate : true, onFormValidate : formCallback}); 
- 	Validation.addAllThese([
-			['validate-password', 'La teva contrasenya ha de tenir entre 6 i 12 caràcters i no ser \'contrasenya\' o igual que el nom del teu compte.', {
-			minLength : 6,
-			maxLength : 12,  
-			notOneOf : ['password','PASSWORD','1234567','0123456'],
-			notEqualToField : 'user[login]'
-		}],
-		['validate-password-confirm', 'La confirmació no és igual a la nova contrasenya, intenta-ho de nou si us plau.', {
-			equalToField : 'password'
-		}]
-	]);
-</script>
-<%- when :es -%>
-<script type="text/javascript">
-	function formCallback(result, form) {
-		window.status = "validation callback for form '" + form.id + "': result = " + result;
-	}
-    var valid = new Validation('theform', {immediate : true, onFormValidate : formCallback}); 
- 	Validation.addAllThese([
-			['validate-password', 'Tu contraseña debe tener entre 6 y 12 caracteres y no ser \'contraseña\' o igual que el nombre de tu cuenta.', {
-			minLength : 6,
-			maxLength : 12,  
-			notOneOf : ['password','PASSWORD','1234567','0123456'],
-			notEqualToField : 'user[login]'
-		}],
-		['validate-password-confirm', 'La confirmación no es igual a la nueva contraseña, inténtalo de nuevo por favor.', {
-			equalToField : 'password'
-		}]
-	]);
-</script>
-<%- when :eu -%>
-<script type="text/javascript">
-	function formCallback(result, form) {
-		window.status = "validation callback for form '" + form.id + "': result = " + result;
-	}
-    var valid = new Validation('theform', {immediate : true, onFormValidate : formCallback}); 
- 	Validation.addAllThese([
-			['validate-password', 'Zure pasa-hitzak zure kontuaren ezberdinak diren 6-12 karaketere bitarte izan behar ditu.', {
-			minLength : 6,
-			maxLength : 12,  
-			notOneOf : ['password','PASSWORD','1234567','0123456'],
-			notEqualToField : 'user[login]'
-		}],
-		['validate-password-confirm', 'Egiaztapena ez da pasa-hitz berria bezalakoa, beste saiakera bat gehiago egin ezazu mesedez.', {
-			equalToField : 'password'
-		}]
-	]);
-</script>
-<%- when :fr -%>
-<script type="text/javascript">
-	function formCallback(result, form) {
-		window.status = "validation callback for form '" + form.id + "': result = " + result;
-	}
-    var valid = new Validation('theform', {immediate : true, onFormValidate : formCallback}); 
- 	Validation.addAllThese([
-		['validate-password', 'Votre mot de passe doit être compris entre 6 et 12 caractères et ne pas être \'mot de passe\'ou identique à votre nom.', {
-			minLength : 6,
-			maxLength : 12,  
-			notOneOf : ['password','PASSWORD','1234567','0123456'],
-			notEqualToField : 'user[login]'
-		}],
-		['validate-password-confirm', 'Votre confirmation de mot de passe ne correspond pas à votre premier mot de passe, veuillez réessayer.', {
-			equalToField : 'password'
-		}]
-	]);
-</script>
-<%- else -%>
-<script type="text/javascript">
-	function formCallback(result, form) {
-		window.status = "validation callback for form '" + form.id + "': result = " + result;
-	}
-    var valid = new Validation('theform', {immediate : true, onFormValidate : formCallback}); 
- 	Validation.addAllThese([
-		['validate-password', 'Your password must be between 6 and 12 characters and not be \'password\' or the same as your name.', {
-			minLength : 6,
-			maxLength : 12,  
-			notOneOf : ['password','PASSWORD','1234567','0123456'],
-			notEqualToField : 'user[login]'
-		}],
-		['validate-password-confirm', 'Your confirmation password does not match your first password, please try again.', {
-			equalToField : 'password'
-		}]
-	]);
-</script>
-<%- end -%>   
+ <script type="text/javascript">
+	var valid3 = new Validation('theform',{immediate : true});
+</script>  
 </div> 
 </center>

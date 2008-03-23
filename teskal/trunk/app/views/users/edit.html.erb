@@ -13,61 +13,62 @@
 <%- else -%>
 <%= javascript_include_tag 'validation/validation' -%>
 <%- end -%>
+<%= stylesheet_link_tag "reset_form" -%>
 <%- end -%>
-<style type="text/css">
-#theform {
-	background-color: #f7f4ee;
-	text-align: left;
-	font: 100% Verdana, Tahoma, Arial, sans-serif;
-	margin: 0 0 20px 0;
-	padding: 10px;
-	max-width: 450px;
-	color: #505050;
-	line-height: 1.7em;
-	border: 1px solid #ddd;
+<STYLE type="text/css">
+.boxxq {
+	float:none;
+	max-width:49%
 }
-#theform h3 {
-	height: 2em;
-	font-size: 1.7em;
-	color: #523a0b;
-	line-height: 1em;
-}
-</style>
-  <!-- <h2><%=l(:label_my_account)%></h2>    -->
-<center>
-  <div id="theform">
-    <h3><%=l(:label_information_plural)%></h3>
-    <form id="myData" action="/users/update/<%= @user.id %>" class="tabular" method="post">
-      <p>
-        <label for="user_login"><%= l(:field_login) %> </label>
-        <input class="required" id="user_login" name="user[login]" size="30" type="text" value="<%= @user.login %>" />
-      </p>
-      <p>
-        <label for="user_firstname"><%= l(:field_firstname) %> </label>
-        <input id="user_firstname" name="user[firstname]" size="30" type="text" value="<%= @user.firstname %>" />
-      </p>
-      <p>
-        <label for="user_lastname"><%= l(:field_lastname) %> </label>
-        <input id="user_lastname" name="user[lastname]" size="30" type="text" value="<%= @user.lastname %>" />
-      </p>
-      <p>
-        <label for="user_mail"><%= l(:field_mail) %> </label>
-        <input class="required validate-email" id="user_mail" name="user[mail]" size="37" type="text" value="<%= @user.mail %>" />
-      </p>
-      <p>
-        <label for="user_language"><%= l(:field_language) %></label>
-        <%= select("user", "language", lang_options_for_select) %></p>
-      <p>
-        <label for="default_timezone"><%= l(:label_timezone) %></label>
-        <%= time_zone_select 'user', 'time_zone', TZInfo::Timezone.all.sort, :model => TZInfo::Timezone %> </p>
-      <br/>
-      <center>
-        <%= submit_tag l(:button_save) %>
-      </center>
-    </form>
-    <script type="text/javascript">
-		var valid3 = new Validation('myData',{immediate : true});
+</STYLE>
+<div align="center">
+  <div class='boxxq'>
+    <div class='boxxqtop'>
+      <div> </div>
+    </div>
+    <div class='boxxqcontent'>
+      <div class="title"><%=l(:label_information_plural)%></div>
+      <p></p>
+      <h4></h4>
+      <form id="accountform" action="/users/update/<%= @user.id %>" method="post">
+        <table cellspacing="0">
+          <tbody>
+            <tr>
+              <td><label for="user_firstname"><%= l(:field_firstname) %> </label></td>
+              <td><input class="required" id="user_firstname" name="user[firstname]" size="30" type="text" value="<%= @user.firstname %>" /></td>
+            </tr>
+            <tr>
+              <td><label for="user_lastname"><%= l(:field_lastname) %> </label></td>
+              <td><input class="required" id="user_lastname" name="user[lastname]" size="30" type="text" value="<%= @user.lastname %>" /></td>
+            </tr>
+            <tr>
+              <td><label for="user_mail"><%= l(:field_mail) %> </label></td>
+              <td><input class="required validate-email" id="user_mail" name="user[mail]" size="30" type="text" value="<%= @user.mail %>" /></td>
+            </tr>
+            <tr>
+              <td><label for="user_language"><%= l(:field_language) %></label></td>
+              <td><%= select("user", "language", lang_options_for_select) %></td>
+            </tr>
+            <tr>
+              <td><label for="default_timezone"><%= l(:label_timezone) %></label></td>
+              <td><%= time_zone_select 'user', 'time_zone', TZInfo::Timezone.all.sort, :model => TZInfo::Timezone %></td>
+            </tr>
+          </tbody>
+        </table>
+        <center>
+          <p><%= submit_tag l(:button_save) %></p>
+        </center>
+      </form>
+      <script type="text/javascript">
+		var valid3 = new Validation('accountform',{immediate : true});
 	</script>
-  </div>   
-<%= link_to l(:button_back),'/my/athletes' %> 
+    </div>
+    <div class='boxxqbottom'>
+      <div> </div>
+    </div>
+  </div>
+</div>
+<br/>
+<br/>
+<div align="right"><%= link_to l(:button_back),'/my/athletes' %></div>
 </center>

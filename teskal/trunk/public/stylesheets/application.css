@@ -40,8 +40,7 @@ font-size:11px;line-height:14px;font-weight:bold;margin:0 10px 4px 10px;padding-
 .icon-stop{background-image:url(../images/stop.png);}
 .icon-star{background-image:url(../images/star.png);}
 .icon-medium{background-image:url(../images/error_delete.png);}
-.icon-add{background-image:url(../images/add.png);} 
-
+.icon-add{background-image:url(../images/add.png);}
 /**************** Content ****************/
 html>body #content{height:auto;min-height:400px;}
 #content{width:auto;font-size:0.9em;padding:0px 20px 0px 20px;margin-left:12px;margin-right:20px;}
@@ -64,7 +63,7 @@ font-family:"Trebuchet MS",Trebuchet,Verdana,Arial,Helvetica,sans-serif;font-siz
 #content .tabs ul li{list-style-type:none;white-space:nowrap;margin-right:8px;background:#fff;}
 #content .tabs ul li a{display:block;font-size:0.9em;text-decoration:none;line-height:1em;padding:4px;border:1px solid #c0c0c0;}
 #content .tabs ul li a.selected,#content .tabs ul li a:hover{background-color:#80b0da;border:1px solid #80b0da;color:#fff;text-decoration:none;}
-#who{font-size:0.9em;font-style:italic;text-align: right;}
+#who{font-size:0.9em;font-style:italic;text-align:right;}
 /******************* form ********************/
 form{display:inline;}
 blockquote{padding-left:6px;border-left:2px solid #ccc;}
@@ -113,11 +112,13 @@ background-image:url(../images/footer_plain.gif);background-repeat:no-repeat;bac
 .splitnoteleft{float:left;width:60%;text-align:left;padding:0;}
 .splitnoteright{float:right;width:35%;padding:0;/* border:1px solid #ddd;*/}
 .clear{clear:both;}
-.small{font-size:0.95em;line-height:1.4em;padding:0 0 0 0;}
+.small{font-size:0.9em;line-height:1.3em;padding:0 0 0 0;color:#B0ABA2;}
 .hide{display:none;}
 .textcenter{text-align:center;}
 .textright{text-align:right;}
 .important{color:#f02025;background-color:inherit;font-weight:bold;}
+.title{font-size:1.5em;color:#523a0b;font-weight:bold;}
+.title2{font-size:2em;color:#523a0b;font-weight:bold;}
 .box{background-color:#f7f4ee;text-align:left;font:100% Verdana,Tahoma,Arial,sans-serif;margin:0 0 20px 0;padding:10px;max-width:530px;color:#505050;line-height:1.5em;border:1px solid #ddd;}
 a.close-icon{display:block;margin-top:3px;overflow:hidden;width:12px;height:12px;background-repeat:no-repeat;cursor:pointer;background-image:url('../images/close.png');}
 a.close-icon:hover{background-image:url('../images/close_hl.png');}
@@ -137,13 +138,23 @@ div.attachments p{margin-bottom:2px;}
 .progress .open{background:#FFF none repeat scroll 0%;}
 /***** Contextual links div *****/
 .contextual{float:right;font-size:0.95em;line-height:16px;padding:2px;}
-.contextual select,.contextual input{font-size:1em;} 
+.contextual select,.contextual input{font-size:1em;}
 /***** Tooltips ******/
 .tooltip{position:relative;z-index:24;}
 .tooltip:hover{z-index:25;color:#000;}
 .tooltip span.tip{display:none;text-align:left;}
 div.tooltip:hover span.tip{display:block;position:absolute;top:12px;left:24px;width:270px;border:1px solid #555;background-color:#fff;padding:4px;font-size:0.8em;color:#505050;}
 /***** CSS FORM ******/
+#accountform label{font-size:1em;display:block;line-height:1.5em;color:#523a0b;text-align:right;}
+#accountform input{font-size:1.2em;height:1.5em;}
+#accountform #pt4 input{border:none;height:2.4em;font-size:1.3em;width:14em;color:#333333;background:#f3f3f3;font-weight:bold;border-bottom:1px solid #999999;border-right:1px solid #999999;border-top:1px solid #CCCCCC;border-left:1px solid #CCCCCC;float:right;}
+#myPassword label{font-size:1em;display:block;line-height:1.5em;color:#523a0b;text-align:right;}
+#myPassword input{font-size:1.2em;height:1.5em;}
+#myPassword #pt4 input{border:none;height:2.4em;font-size:1.3em;width:14em;color:#333333;background:#f3f3f3;font-weight:bold;border-bottom:1px solid #999999;border-right:1px solid #999999;border-top:1px solid #CCCCCC;border-left:1px solid #CCCCCC;float:right;}
+#login label{font-size:1em;display:block;line-height:1.5em;color:#523a0b;text-align:right;}
+#login input{font-size:1.2em;height:1.5em;}
+#login #pt4 input{margin-top:10px;border:none;height:2.4em;font-size:1.3em;width:9em;color:#333333;background:#f3f3f3;font-weight:bold;border-bottom:1px solid #999999;border-right:1px solid #999999;border-top:1px solid #CCCCCC;border-left:1px solid #CCCCCC;float:right;}
+#login a {color: #c3531b;}
 .edit-button{height:2.2em;width:8em;font-weight:bold;}
 .tabular p{margin:0;padding:5px 0 8px 0;padding-left:140px;/*width of left column containing the label elements*/
 height:1%;}
@@ -181,8 +192,7 @@ overflow:hidden;background:#F7F4EE;}
 .boxxbottom div{height:5px;background:url(../images/sw5.gif) no-repeat bottom left;}
 .boxxcontent{padding:5px 15px 0px 15px;}
 /*variant for quests*/
-.boxxq{float:none;max-width:45%;text-align:left;/* padding:0px 0px 0px 10px;*/
-overflow:hidden;background:#F7F4EE;}
+.boxxq{float:none;max-width:55%;height:auto;text-align:left;overflow:hidden;background:#F7F4EE;}
 .boxxq a{color:#48436a;}
 .boxxq h3{color:#523a0b;}
 .boxxq ul{list-style:none;}
