@@ -10,13 +10,13 @@ class MessagesController < ApplicationController
 
   def create
     add_here
-    journal( "mailer/add_message_to/"+destino.id.to_s, @logged_in_user.id)
+    # journal( "mailer/add_message_to/"+destino.id.to_s, @logged_in_user.id)
     redirect_to :action => 'show', :id  => params[:id]
   end
 
   def add_from_quest
     add_here      
-    journal( "mailer/quest_message_to/"+destino.id.to_s, @logged_in_user.id)
+    # journal( "mailer/quest_message_to/"+destino.id.to_s, @logged_in_user.id)
     # this must be ajaxed - this query is too much
     answer = Answer.find(@which_answer) 
     controlador = "quest"+answer.quest_id.to_s
@@ -43,7 +43,7 @@ class MessagesController < ApplicationController
   end
 
   def show
-    @messages = Message.paginate_by_board_id(@board.id,:page => params[:page], :per_page => 15, :order => 'created_on DESC')
+    @messages = Message.paginate_by_board_id(@board.id,:page => params[:page], :per_page => 15, :order => 'created_on ASC')
   end
 
   def find_board
