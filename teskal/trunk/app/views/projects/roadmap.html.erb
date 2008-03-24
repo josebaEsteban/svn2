@@ -7,7 +7,7 @@
   <%= check_box_tag "tracker_ids[]", tracker.id, (@selected_tracker_ids.include? tracker.id.to_s) %>
   <%= tracker.name %><br />
 <% end %></p>
-<p class="small"><label for="completed"><%= check_box_tag "completed", 1, params[:completed] %> <%= l(:label_show_completed_versions) %></label></p>
+<p boxxq><label for="completed"><%= check_box_tag "completed", 1, params[:completed] %> <%= l(:label_show_completed_versions) %></label></p>
 <p><center><%= submit_tag l(:button_apply), :class => 'button-small' %></center></p>
 <% end %>
 </div>
