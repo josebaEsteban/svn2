@@ -18,7 +18,7 @@
 <STYLE type="text/css">
 .boxxq {
 	float:none;
-	max-width:49%
+	max-width:51%
 }
 </STYLE>
 <p><%=l(:field_login)%>: <strong><%= @user.login %></strong><br />
@@ -49,8 +49,12 @@
               <td><input class="required" id="user_lastname" name="user[lastname]" size="30" type="text" value="<%= @user.lastname %>" /></td>
             </tr>
             <tr>
+              <td><label for="user_sport"><%= l(:signup_label_16) %> </label></td>
+              <td><input class="required" id="user_sport" name="user[sport]" size="40" type="text" value="<%= @user.sport %>" /></td>
+            </tr>
+            <tr>
               <td><label for="user_mail"><%= l(:field_mail) %> </label></td>
-              <td><input class="required validate-email" id="user_mail" name="user[mail]" size="30" type="text" value="<%= @user.mail %>" /></td>
+              <td><input class="required validate-email" id="user_mail" name="user[mail]" size="40" type="text" value="<%= @user.mail %>" /></td>
             </tr>
             <tr>
               <td><label for="user_language"><%= l(:field_language) %></label></td>
@@ -93,11 +97,11 @@
           <tbody>
             <tr>
               <td><label for="password"><%= l(:field_password) %></label></td>
-              <td><input class="required" id="password" name="password" size="30" type="password" /></td>
+              <td><input class="required" id="password" name="password" size="20" type="password" /></td>
             </tr>
             <tr>
               <td><label for="new_password"><%= l(:field_new_password) %></label></td>
-              <td><input class="required validate-password" id="new_password" name="new_password" size="30" type="password" /></td>
+              <td><input class="required validate-password" id="new_password" name="new_password" size="20" type="password" /></td>
             </tr>
             <tr>
               <td></td>
@@ -106,7 +110,7 @@
             </tr>
             <tr>
               <td><label for="new_password_confirmation"><%= l(:field_password_confirmation) %></label></td>
-              <td><input class="required validate-new-password-confirm" id="new_password_confirmation" name="new_password_confirmation" size="30" type="password" /></td>
+              <td><input class="required validate-new-password-confirm" id="new_password_confirmation" name="new_password_confirmation" size="20" type="password" /></td>
             </tr>
           </tbody>
         </table>

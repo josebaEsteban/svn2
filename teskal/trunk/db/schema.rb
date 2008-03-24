@@ -257,6 +257,7 @@ ActiveRecord::Schema.define(:version => 0) do
     t.integer   "managed_by"
     t.integer   "filled_for"
     t.datetime  "updated_on"
+    t.string    "sport",             :limit => 50
   end
 
   add_index "users", ["managed_by"], :name => "managed_by"

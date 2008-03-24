@@ -18,7 +18,7 @@
 <STYLE type="text/css">
 .boxxq {
 	float:none;
-	max-width:49%
+	max-width:51%
 }
 </STYLE>
 <div align="center">
@@ -42,8 +42,12 @@
               <td><input class="required" id="user_lastname" name="user[lastname]" size="30" type="text" value="<%= @user.lastname %>" /></td>
             </tr>
             <tr>
+              <td><label for="user_sport"><%= l(:signup_label_16) %> </label></td>
+              <td><input class="required" id="user_sport" name="user[sport]" size="40" type="text" value="<%= @user.sport %>" /></td>
+            </tr>
+            <tr>
               <td><label for="user_mail"><%= l(:field_mail) %> </label></td>
-              <td><input class="required validate-email" id="user_mail" name="user[mail]" size="30" type="text" value="<%= @user.mail %>" /></td>
+              <td><input class="required validate-email" id="user_mail" name="user[mail]" size="40" type="text" value="<%= @user.mail %>" /></td>
             </tr>
             <tr>
               <td><label for="user_language"><%= l(:field_language) %></label></td>
