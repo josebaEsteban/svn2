@@ -251,7 +251,7 @@ label_search: Bilaketa
 label_send_information: Erabiltzaileari bidalitako kontuaren informazioa
 label_settings: Configuración
 label_show: Erakutsi
-label_time_taken: Betetzen denbora gehiegi erabili da         
+label_time_taken: Betetzen denbora gehiegi erabili da
 label_timezone: Ordu-zona
 label_user: Erabiltzailea
 label_user_new: Erabiltzaile Berria
@@ -282,21 +282,21 @@ mail_subject_signup: Kontuaren aktibazioa Teskal
 mark_concept: Zer da?
 mark_role_1: Kirolaria
 mark_role_2: Entrenatzailea
-mark_role_3: Zuzendaritzako kidea                                                                   
-markt_10: Teskalek erraminta horiek zure entrenatzaieen eskura jartzen ditu. 
+mark_role_3: Zuzendaritzako kidea
+markt_10: Teskalek erraminta horiek zure entrenatzaieen eskura jartzen ditu.
 markt_11: Kirolariaren trebetasun fisiko eta teknikoez gain, kirolariaren pertsona bera ere kontuan hartzen dituen Kirol errendimenduaren kontzeptu integral bat da.  
 markt_12: Teskalek kirolari/entrenatzaile bikoteari nola kirolari/entrenatzaile/psikologo taldeari komunikazio maila altu bat mantentzea ahalbidetzen die.  
 markt_13: Dela kirolaria eta entrenatzailea toki ezberdinetan bizi diren kasuetarako, dela kirolaria beste lekuren batetara lehiatzera joaten den aldietarako, Teskalek kirolariari nola bere errendimenduari eragiten dioten aldagai anitzen segimendua ahalbidetzen du.
-markt_1: Kirol errendimenduaren aldagai psikologikoak maneiatzeko erreminta 
-markt_2: Lehiaketan zuk dakizun gai zaren mailan errenditu ahal izatea nahi duzu? 
-markt_3: Estresa maneiatzeko gaitasuna, auto konfiantza alegia, entrenatu nahi al duzu?  
+markt_1: Kirol errendimenduaren aldagai psikologikoak maneiatzeko erreminta
+markt_2: Lehiaketan zuk dakizun gai zaren mailan errenditu ahal izatea nahi duzu?
+markt_3: Estresa maneiatzeko gaitasuna, auto konfiantza alegia, entrenatu nahi al duzu?
 markt_4_1: Sasoi onean, entrenatu duen eta errendimendu onak dituen kirolaria baina lehiaketako unean ez da maila horiek errepikatzeko gai.
 markt_4_2: Nola maneiatzen dituzu aldagai horiek?
-markt_4_3: Nola dakizu zertan eta zein unetan esku hartu?  
+markt_4_3: Nola dakizu zertan eta zein unetan esku hartu?
 markt_5_1: Plan zehatza duen kirolaria, entrenatzailearekin prestaturikoa, lehiaketako presioaren aurrean erabaki odolberoak eta efikazia gutxikoak hartzen hasten da.
 markt_5_2: Hau nola prebenitu? 
 markt_6_1: Bere tentua, energia eta motibazioa hunkitzen duten egoera pertsonaletatik pasatzen ari den kirolaria.
-markt_6_2: Nola egin dezakezu garaiz antzemateko?  
+markt_6_2: Nola egin dezakezu garaiz antzemateko?
 markt_7: Nola dakizu entrenatzaileek taldeen errendimendu ezin hobearentzako giro egokia sortzen dutenentz? 
 markt_8: Kirolariaren zaintza globala interesatzen al zaizu? 
 markt_9: Zein erreminta dituzte entrenatzaileek haiek maneiatzeko?  
@@ -315,13 +315,13 @@ notice_can_t_change_password: Esta cuenta usa una autentificación externa. No s
 notice_file_not_found: sartu nahi zenueneko orria ez da existitzen eta ez da kendua izan ere.
 notice_locking_conflict: Data have been updated by another user.
 notice_not_authorized: Ez zaude orri honetan sartzeko baimendua.
-notice_pendant_exists: Jada burutu gabeko tipo horretako galde-sorta bat dago.  
+notice_pendant_exists: Jada burutu gabeko tipo horretako galde-sorta bat dago.
 notice_scm_error: La entrada y/o la revisión no existe en el depósito.
 notice_successful_connection: Successful connection.
 notice_successful_create: Egokiro sortu da.
 notice_successful_delete: Successful deletion.
 notice_successful_update: Successful update.
-quest10: Antzemandako Maisutza Klimaren Galde-sorta Talde Kirolak 
+quest10: Antzemandako Maisutza Klimaren Galde-sorta Talde Kirolak
 quest10_10: Lehiaketako egoerak emandako gidalerroen modu ezberdinean konpontzen usten du
 quest10_11: Kirolariak hutsen bat egiten dutenean animatu egiten ditu
 quest10_12: Kirolariek arrakasta dutela uste du modu nabarian beste guztiei nagusitzen direnean
@@ -425,14 +425,14 @@ quest11_valor_5: 5 (dexent)
 quest11_valor_6: 6 (asko)
 quest11_valor_7: 7 (guztiz)
 quest11_valor_tit_10: Profil Amotibazionala 
-quest11_valor_tit_1: Autodeterminaturiko Motibazio Profil Globala aurkezten du. 
-quest11_valor_tit_2: Autodeterminaturiko Motibazio Profil Globala aurkezten du. 
-quest11_valor_tit_3: Motibazio Bipolar Profil Globala aurkezten du. 
+quest11_valor_tit_1: Autodeterminaturiko Motibazio Profil Globala aurkezten du.
+quest11_valor_tit_2: Autodeterminaturiko Motibazio Profil Globala aurkezten du.
+quest11_valor_tit_3: Motibazio Bipolar Profil Globala aurkezten du.
 quest11_valor_tit_4: Motibazio moderatu Profil Globala aurkezten du.
 quest11_valor_tit_5: Motibazio moderatu Profil Globala aurkezten du.
-quest11_valor_tit_6: Ez Autodeterminaturiko Motibazio Profil Globala aurkezten du. 
-quest11_valor_tit_7: Baxu Autodeterminaturiko Motibazio Profil Globala aurkezten du. 
-quest11_valor_tit_8: Baxu Autodeterminaturiko Motibazio Profil Globala aurkezten du. 
+quest11_valor_tit_6: Ez Autodeterminaturiko Motibazio Profil Globala aurkezten du.
+quest11_valor_tit_7: Baxu Autodeterminaturiko Motibazio Profil Globala aurkezten du.
+quest11_valor_tit_8: Baxu Autodeterminaturiko Motibazio Profil Globala aurkezten du.
 quest11_valor_tit_9: Ez Autodeterminaturiko Motibazio Profil Globala aurkezten du.
 quest12: Arrakasta pertzepzioaren galdetegia
 quest12_10: Guztia dakidan bezain ondo egiten dut
@@ -441,7 +441,7 @@ quest12_12: Argi eta garbi besteak baino gehiago naiz
 quest12_1: Nire kideak garaitzen ditut
 quest12_2: Hoberena naiz
 quest12_3: Gogor lan egiten dut
-quest12_4: Hobekuntza pertsonal argi bat erakusten dut 
+quest12_4: Hobekuntza pertsonal argi bat erakusten dut
 quest12_5: Besteek baino hobeto egiten dut
 quest12_6: Jendeari onena naizela erakusten diot
 quest12_7: Zailtasunak gainditzen ditut
@@ -1100,7 +1100,7 @@ signup_label_13: Zure Teskaleko kontua sortua izan da.
 signup_label_14: Korreoz konfirmazio bat jasoko duzu.
 signup_label_15: Sartzeko klikatu behar duzun zure kontuaren aktibazio lotura bat dauka
 signup_label_1: Pasatu
-signup_label_2: Erabiltzaile eta hizkuntza bat aukeratu.
+signup_label_2: Erabiltzaile izen bat aukeratu ezazu.
 signup_label_3: Hizkuntza sartzen zaren hurrengoan erabilia izango da. 
 signup_label_4: Zure kontu berriarentzar pasa-hitz bat aukeratu ezazu. 
 signup_label_5: Pasa-hitzak 6-12 karaktere bitartekoa izan behar du.
@@ -1114,12 +1114,12 @@ status_registered: erregistratu
 text_are_you_sure: ¿ Ziur zaude ?
 text_caracters_maximum: %d characters maximum.
 text_caracters_maximum: karaktereen %d maximoa
-text_length_between: Longitud entre %d y %d caracteres. 
+text_length_between: Longitud entre %d y %d caracteres.
 unit_0_path: Teskal.eu.pdf
 unit_0_title: Teskal Aurkezpena
 unit_10_path: 10.Erantzunkizuna.vs.Erruduntasuna.eu.pdf
 unit_10_title: Erantzunkizuna vs Erruduntasuna
-unit_11_path: 11.Konfiantza.Eta.Autoefikazia.eu.pdf 
+unit_11_path: 11.Konfiantza.Eta.Autoefikazia.eu.pdf
 unit_11_title: Konfiantza eta Auto Efikazia
 unit_12_path: 12.Tentua.eu.pdf
 unit_12_title: Tentua
@@ -1186,3 +1186,4 @@ label_done: Noiz betea
 label_message_from: -ren mezu berria Teskalen
 label_message: Mezu
 label_message_no_reply: Por favor no respondas a este mensaje. Si deseas contestar, por favor accede a tu cuenta en Teskal y redacta ahi un mensaje.
+signup_label_16: Kirol

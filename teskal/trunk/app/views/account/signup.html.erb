@@ -32,15 +32,19 @@
 				</tr>
             <tr>
               <td><label for="user_firstname"><%= l(:field_firstname) %> </label></td>
-              <td><input class="required" id="user_firstname" name="user[firstname]" size="25" type="text" value="" tabindex="1"/></td>
+              <td><input class="required" id="user_firstname" name="user[firstname]" size="30" type="text" value="" tabindex="1"/></td>
             </tr>
             <tr>
               <td><label for="user_lastname"><%= l(:field_lastname) %> </label></td>
-              <td><input class="required" id="user_lastname" name="user[lastname]" size="25" type="text" value="" tabindex="2"/></td>
+              <td><input class="required" id="user_lastname" name="user[lastname]" size="30" type="text" value="" tabindex="2"/></td>
+            </tr>
+            <tr>
+              <td><label for="user_sport"><%= l(:signup_label_16) %> </label></td>
+              <td><input class="required" id="user_sport" name="user[sport]" size="50" type="text" value="" tabindex="3"/></td>
             </tr>
             <tr>
               <td><label for="user_mail"><%=l(:field_mail)%></label></td>
-              <td><input class="required validate-email" id="user_mail" name="user[mail]"  size="25" type="text" value="" tabindex="3" /></td>
+              <td><input class="required validate-email" id="user_mail" name="user[mail]"  size="50" type="text" value="" tabindex="4" /></td>
             </tr  
             <tr>
               <td></td>
@@ -51,7 +55,7 @@
 				</tr>
 				<tr>
               <td><label for="user_login"><%=l(:field_user)%></label></td>
-              <td><input class="required" id="user_login" name="user[login]"  size="25" type="text" value="" tabindex="4"/></td>
+              <td><input class="required" id="user_login" name="user[login]"  size="30" type="text" value="" tabindex="5"/></td>
             </tr>
             <tr>
               <td></td>
@@ -59,11 +63,11 @@
             </tr>
             <tr>
               <td><label for="password"><%=l(:field_password)%></label></td>
-              <td><input class="required validate-password" id="password" name="password"  size="25" type="password" tabindex="5" /></td>
+              <td><input class="required validate-password" id="password" name="password"  size="20" type="password" tabindex="6" /></td>
             </tr>
             <tr>
               <td><label for="password"><%=l(:field_password_confirmation)%></label></td>
-              <td><input class="required validate-password-confirm" id="password_confirmation" name="password_confirmation" size="25" type="password" tabindex="6" /></td>
+              <td><input class="required validate-password-confirm" id="password_confirmation" name="password_confirmation" size="20" type="password" tabindex="7" /></td>
             </tr>
  				<tr>
 					<td colspan="2"><hr></td>
@@ -93,7 +97,7 @@
           </tbody>
         </table>
  			<div id="pt4">
-					<input name="commit" type="submit" tabindex="7" value="<%= l(:button_submit) %>"/>
+					<input name="commit" type="submit" tabindex="8" value="<%= l(:button_submit) %>"/>
 			</div>
       </form>
 <br/>
