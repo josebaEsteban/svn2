@@ -1183,3 +1183,40 @@ label_message_from: Nou missatge en Teskal de
 label_message: Missatge
 label_message_no_reply: Per favor no responguis a aquest missatge. Si desitges contestar, per favor accedeix al teu compte en Teskal i redacta ahi un missatge.
 signup_label_16: Esport
+quest13: Clima Formatiu Percebut (Esports Individuals)
+quest13_label_0: Clima Formatiu Percebut (Esports Individuals)
+quest14: Valoració Post-Competició Percebut per l’Entrenador/a (Esports Individuals)
+quest14_header1: El grau de satisfacció amb l’actuació de l’esportista ha estat...
+quest14_header2: El grau de satisfacció amb l’actuació de l’esportista sobre
+quest14_6: El control de les seves emocions
+quest14_7: El sentir-se a gust amb les seves emocions en determinats moments
+quest14_10: El control dels seus pensaments i l’afrontament positiu
+quest14_11: La manera de respondre a les accions dels/les demés
+quest14_12: Les decisions que ha pres, una vegada coneguts els objectius proposats
+quest14_13: La claredat en la seva forma d’actuar durant la competició
+quest14_14: La claredat del seu Pla Integral de Competició durant tots els moments
+quest14_16: El nivell de confiança que ha mantingut al llarg de tota la competició
+quest14_17: El grau de satisfacció que ha transmès durant la competició
+quest14_intro: A sota es plantegen una sèrie de preguntes relacionades amb el comportament de l’esportista durant la competició, sobre les que volem recollir la teva opinió. Si us plau, llegeix cadascuna cuidadosament, i fes un clic en el número que millor descriu el què en penses
+quest14_d3_a: En el cas del RCOG, els valors es situen en un nivell baix, la qual cosa implica que no ha pogut mantenir els nivells de confiança i de satisfacció durant la competició. A més, han estat escassos els moments en els que ha tingut bones sensacions o s’ha sentit còmode
+quest14_d4_b: A l’observar els valors del RCOM, veiem que es troba en un nivell mitjà, la qual cosa representa dificultats a l’hora de respondre a les accions dels/les adversaris/es, tot i que el PIC el tenia bastant clar. Quasi sempre sabia què havia de fer, i es considera que les decisions adoptades han estat encertades
+quest14_label_0: Rendiment Post-Competició Percebut per l’Entrenador/a
+quest14_21: El seu nivell de rendiment en aquesta competició
+quest15: Valoració Post-Competició Percebut per l’Entrenador/a (Esports Col·lectius)
+quest15_label_0: Rendiment Post-Competició Percebut per l’Entrenador/a
+quest15_6: Amb el seu grau de complicitat cap a l’objectiu col·lectiu
+quest15_7: Amb la seva generositat i recolzament cap als seus companys i companyes
+quest15_8: Amb el respecte cap als seus companys i companyes
+quest15_9: Amb la seva lleialtat  cap a les decisions adoptades
+quest15_10: Amb el grau de comunicació amb els seus companys i companyes
+quest15_11: Amb la seva aportació al treball col·lectiu
+quest15_12: Amb la seva implicació cap a l’esforç
+quest15_13: Amb la seva confiança en els objectius del joc proposats
+quest15_14: Amb la seva actitud vers al treball que se t’ha encomanat
+quest15_15: Amb les decisions que ha pres durant la competició
+quest15_16: Amb el seu nivell de confiança durant tota la competició
+quest15_17: Amb el seu nivell de rendiment enfront les situacions de molt alta intensitat
+quest15_18: Amb la seva capacitat lluitadora i perseverant
+quest15_19: Amb la seva actitud positiva cap a la seva pròpia millora
+quest15_20: Amb la transmissió de gaudir, satisfacció i bones sensacions
+quest15_21: El seu nivell de rendiment en aquesta competició
