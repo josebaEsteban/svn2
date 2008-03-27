@@ -5,18 +5,18 @@ actionview_datehelper_select_month_names: Enero,Febrero,Marzo,Abril,Mayo,Junio,J
 actionview_datehelper_select_month_names_abbr: Ene,Feb,Mar,Abr,Mayo,Jun,Jul,Ago,Sep,Oct,Nov,Dic
 actionview_datehelper_select_month_prefix:
 actionview_datehelper_select_year_prefix:
-actionview_datehelper_time_in_words_day: 1 día
-actionview_datehelper_time_in_words_day_plural: %d días
-actionview_datehelper_time_in_words_hour_about: una hora
-actionview_datehelper_time_in_words_hour_about_plural: %d horas
-actionview_datehelper_time_in_words_hour_about_single: una hora
-actionview_datehelper_time_in_words_minute: 1 minuto
-actionview_datehelper_time_in_words_minute_half: medio minuto
-actionview_datehelper_time_in_words_minute_less_than: menos de un minuto
-actionview_datehelper_time_in_words_minute_plural: %d minutos
-actionview_datehelper_time_in_words_minute_single: 1 minuto
-actionview_datehelper_time_in_words_second_less_than: menos de 1 segundo
-actionview_datehelper_time_in_words_second_less_than_plural: menos de %d segundos
+actionview_datehelper_time_in_words_day: hace 1 día
+actionview_datehelper_time_in_words_day_plural: hace %d días
+actionview_datehelper_time_in_words_hour_about: hace una hora
+actionview_datehelper_time_in_words_hour_about_plural: hace %d horas
+actionview_datehelper_time_in_words_hour_about_single: hace una hora
+actionview_datehelper_time_in_words_minute: hace 1 minuto
+actionview_datehelper_time_in_words_minute_half: hace medio minuto
+actionview_datehelper_time_in_words_minute_less_than: hace menos de un minuto
+actionview_datehelper_time_in_words_minute_plural: hace %d minutos
+actionview_datehelper_time_in_words_minute_single: hace 1 minuto
+actionview_datehelper_time_in_words_second_less_than: hace menos de 1 segundo
+actionview_datehelper_time_in_words_second_less_than_plural: hace menos de %d segundos
 actionview_instancetag_blank_option: Por favor seleccione
 activerecord_error_accepted: debe ser aceptado
 activerecord_error_blank: no puede estar en blanco
@@ -67,7 +67,7 @@ field_auth_source: Modo de la autentificación
 field_author: Autor
 field_category: Categoría
 field_comments: Comentario
-field_created_on: Creado el
+field_created_on: Creado
 field_delay: Delay
 field_description: Descripción
 field_downloads: Telecargas
@@ -83,7 +83,7 @@ field_homepage: Sitio web
 field_is_public: Público
 field_is_required: Obligatorio
 field_language: Idioma
-field_last_login_on: Última conexión hace
+field_last_login_on: Última conexión
 field_lastname: Apellido
 field_login: Usuario
 field_mail: Email
@@ -107,7 +107,7 @@ field_summary: Resumen
 field_title: Título
 field_tracker: Tracker
 field_type: Tipo
-field_updated_on: Actualizado hace
+field_updated_on: Actividad
 field_url: URL
 field_user: Usuario
 field_value: Valor
@@ -171,7 +171,7 @@ label_export_to: Exportar a
 label_f_hour: %.2f hour
 label_f_hour_plural: %.2f hours
 label_fill: Completar
-label_filled: Completado hace
+label_filled: Completado
 label_filter_plural: Filtros
 label_help: Ayuda
 label_history: Histórico
@@ -185,7 +185,7 @@ label_internal: Interno
 label_language_based: Language based
 label_last_changes: %d cambios del último
 label_last_login: Última conexión
-label_last_updates: Actualizado hace
+label_last_updates: Actividad
 label_last_updates_plural: %d Actualizados
 label_less_than_ago: hace menos de
 label_library: Biblioteca

@@ -35,9 +35,37 @@ module ActionView #:nodoc:
           when 46..90     then l(:actionview_datehelper_time_in_words_hour_about_single)
           when 90..1440   then lwr(:actionview_datehelper_time_in_words_hour_about, (distance_in_minutes.to_f / 60.0).round)
           when 1441..2880 then lwr(:actionview_datehelper_time_in_words_day, 1)
+          else                 l_datetime(to_time)
+        end
+      end
+
+      def time_in_words(from_time, to_time = 0, include_seconds = false)
+        # this version always says distance in time, the other say original date
+        from_time = from_time.to_time if from_time.respond_to?(:to_time)
+        to_time = to_time.to_time if to_time.respond_to?(:to_time)
+        distance_in_minutes = (((to_time - from_time).abs)/60).round
+        distance_in_seconds = ((to_time - from_time).abs).round
+
+        case distance_in_minutes
+          when 0..1
+            return (distance_in_minutes==0) ? l(:actionview_datehelper_time_in_words_minute_less_than) : l(:actionview_datehelper_time_in_words_minute_single) unless include_seconds
+            case distance_in_seconds
+              when 0..5   then lwr(:actionview_datehelper_time_in_words_second_less_than, 5)
+              when 6..10  then lwr(:actionview_datehelper_time_in_words_second_less_than, 10)
+              when 11..20 then lwr(:actionview_datehelper_time_in_words_second_less_than, 20)
+              when 21..40 then l(:actionview_datehelper_time_in_words_minute_half)
+              when 41..59 then l(:actionview_datehelper_time_in_words_minute_less_than)
+              else             l(:actionview_datehelper_time_in_words_minute)
+            end
+                                
+          when 2..45      then lwr(:actionview_datehelper_time_in_words_minute, distance_in_minutes)
+          when 46..90     then l(:actionview_datehelper_time_in_words_hour_about_single)
+          when 90..1440   then lwr(:actionview_datehelper_time_in_words_hour_about, (distance_in_minutes.to_f / 60.0).round)
+          when 1441..2880 then lwr(:actionview_datehelper_time_in_words_day, 1)
           else                 lwr(:actionview_datehelper_time_in_words_day, (distance_in_minutes / 1440).round)
         end
       end
+
 
       # This method has been modified so that a localized string can be appended to the day numbers.
       def select_day(date, options = {})

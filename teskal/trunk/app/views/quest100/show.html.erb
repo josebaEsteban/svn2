@@ -3,7 +3,7 @@
 <div align="right"> <%= link_to l(:button_back),session[:return_to_params] %> </div>  
 <div align="left">
   <h2><%=l(:quest100)%></h2>
-  <h4><%= @user.name+' • '+day_name(@fechado.wday)+" "+@fecha +" • "+l(:label_filled)+' '+distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(@fechado))+@time_to_fill%></h4>
+  <h4><%= @user.name+' • '+day_name(@fechado.wday)+" "+@fecha +" • "+l(:label_filled)+' '+time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(@fechado))+@time_to_fill%></h4>
 </div>
 <div align="center">
   <%- if @browse_score -%>
