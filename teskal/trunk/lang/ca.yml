@@ -4,18 +4,18 @@ actionview_datehelper_select_month_names: Gener,Febrer,Març,Abril,Maig,Juny,Jul
 actionview_datehelper_select_month_names_abbr: Gen,Feb,Mar,Abr,Maig,Jun,Jul,Ago,Set,Oct,Nov,Des
 actionview_datehelper_select_month_prefix:
 actionview_datehelper_select_year_prefix:
-actionview_datehelper_time_in_words_day: 1 dia
-actionview_datehelper_time_in_words_day_plural: %d dies
-actionview_datehelper_time_in_words_hour_about: una hora
-actionview_datehelper_time_in_words_hour_about_plural: %d hores
-actionview_datehelper_time_in_words_hour_about_single: una hora
-actionview_datehelper_time_in_words_minute: 1 minut
-actionview_datehelper_time_in_words_minute_half: mig minut
-actionview_datehelper_time_in_words_minute_less_than: menys d’un minut
-actionview_datehelper_time_in_words_minute_plural: %d minuts
-actionview_datehelper_time_in_words_minute_single: 1 minut
-actionview_datehelper_time_in_words_second_less_than: menys d’1 segon
-actionview_datehelper_time_in_words_second_less_than_plural: menys de %d segons
+actionview_datehelper_time_in_words_day: fa 1 dia
+actionview_datehelper_time_in_words_day_plural: fa %d dies
+actionview_datehelper_time_in_words_hour_about: fa una hora
+actionview_datehelper_time_in_words_hour_about_plural: fa %d hores
+actionview_datehelper_time_in_words_hour_about_single: fa una hora
+actionview_datehelper_time_in_words_minute: fa 1 minut
+actionview_datehelper_time_in_words_minute_half: fa mig minut
+actionview_datehelper_time_in_words_minute_less_than: fa menys d’un minut
+actionview_datehelper_time_in_words_minute_plural: fa %d minuts
+actionview_datehelper_time_in_words_minute_single: fa 1 minut
+actionview_datehelper_time_in_words_second_less_than: fa menys d’1 segon
+actionview_datehelper_time_in_words_second_less_than_plural: fa menys de %d segons
 actionview_instancetag_blank_option: Si us plau seleccioni
 activerecord_error_accepted: ha de ser acceptat
 activerecord_error_blank: no pot estar en blanc
@@ -60,56 +60,56 @@ field_attr_firstname: Qualitat del nom
 field_attr_lastname: Qualitat del cognom 
 field_attr_login: Qualitat de l'identificador
 field_attr_mail: Qualitat de l'Email 
-field_auth_source: Manera de l'autenticació 
-field_author: Autor 
+field_auth_source: Manera de l'autenticació
+field_author: Autor
 field_category: Categoria
-field_comments: Comentari 
-field_created_on: Creada el 
+field_comments: Comentari
+field_created_on: Creada
 field_delay: Delay 
 field_description: Descripció
 field_downloads: Telecàrregues
-field_due_date: Data deguda 
-field_effective_date: Data 
-field_field_format: Format 
+field_due_date: Data deguda
+field_effective_date: Data
+field_field_format: Format
 field_filename: Fitxer
-field_filesize: Mida 
-field_firstname: Nom 
+field_filesize: Mida
+field_firstname: Nom
 field_fixed_version: Versió
 field_hide_mail corregida: Ocultar el meu email address
 field_homepage: Lloc web 
 field_is_public: Públic 
-field_is_required: Obligatori 
+field_is_required: Obligatori
 field_language: Idioma 
 field_last_login_on: Última connexió
 field_lastname: Cognom 
 field_login: Usuari 
 field_mail: Email
 field_mail_notification: Notificació per correu
-field_max_length: Longitud màxima 
+field_max_length: Longitud màxima
 field_min_length: Longitud mínima
 field_name: Nom 
-field_new_password: Nova contrasenya 
+field_new_password: Nova contrasenya
 field_notes: Notes
 field_password: Contrasenya 
 field_password_change: Canviar contrasenya
-field_password_confirmation: Confirmació 
+field_password_confirmation: Confirmació
 field_priority: Prioritat
-field_role: Paper 
-field_spent_on: Data 
+field_role: Paper
+field_spent_on: Data
 field_start_date: Començament
-field_start_page: Pàgina principal 
-field_status: Estatut 
-field_subject: Tema 
-field_summary: Resum 
-field_title: Títol 
+field_start_page: Pàgina principal
+field_status: Estatut
+field_subject: Tema
+field_summary: Resum
+field_title: Títol
 field_tracker: Tracker
-field_type: Tipus 
-field_updated_on: Actualitzat 
+field_type: Tipus
+field_updated_on: Actualitzat
 field_url: URL
-field_user: Usuari 
-field_value: Valor 
+field_user: Usuari
+field_value: Valor
 field_version: Versió
-footer_1: Disseny 
+footer_1: Disseny
 footer_2: Contacte en info[rova]teskal[punt]com
 general_csv_encoding: ISO-8859-1
 general_csv_separator: ';'
@@ -131,71 +131,71 @@ gui_validation_error: 1 error
 gui_validation_error_plural: %d errors
 label_10: Condicions del Servei
 label_2: Escull un usuari i un llenguatge.
-label_activity: Activitat 
-label_add_note: Agregar una nota 
-label_added: agregat 
-label_administration: Administració 
-label_ago: fa 
+label_activity: Activitat
+label_add_note: Agregar una nota
+label_added: agregat
+label_administration: Administració
+label_ago: fa
 label_all: tots
-label_all_words: Totes les paraules 
-label_applied_status: Applied estatus 
+label_all_words: Totes les paraules
+label_applied_status: Applied estatus
 label_assigned_to_me_issues: Peticions que m'estan
 label_attachment assignades: Fitxer 
-label_attachment_delete: Suprimir el fitxer 
-label_attachment_new: Nou fitxer 
+label_attachment_delete: Suprimir el fitxer
+label_attachment_new: Nou fitxer
 label_attachment_plural: Fitxers
-label_boolean: Boleano 
-label_browse: Fullejar 
-label_calendar: Calendari 
-label_competition: Competició 
+label_boolean: Boleano
+label_browse: Fullejar
+label_calendar: Calendari
+label_competition: Competició
 label_confirmation: Confirmació
-label_contains: conté 
+label_contains: conté
 label_current_status: Estat actual
-label_current_version: Versió actual 
+label_current_version: Versió actual
 label_date: Data
-label_date_from: From 
-label_date_to: To 
-label_day_plural: dies 
-label_deleted: suprimit 
-label_details: Detalls 
+label_date_from: From
+label_date_to: To
+label_day_plural: dies
+label_deleted: suprimit
+label_details: Detalls
 label_document: Document
-label_document_new: Nou document 
+label_document_new: Nou document
 label_document_plural: Documents
 label_download: %d Descarrega 
 label_download_plural: %d Descàrregues
-label_equals: igual 
-label_export_to: Exportar a 
+label_equals: igual
+label_export_to: Exportar a
 label_f_hour: %.2f hour 
 label_f_hour_plural: %.2f hours 
 label_fill: Omplir
-label_filled: Omplert el 
-label_help: Ajuda 
+label_filled: Omplert
+label_help: Ajuda
 label_history: Històric
-label_home: Inici 
-label_in: en 
+label_home: Inici
+label_in: en
 label_in_less_than: en menys que
-label_in_more_than: en més que 
+label_in_more_than: en més que
 label_information: Informació
-label_information_plural: Dades personals 
+label_information_plural: Dades personals
 label_internal: Intern
-label_language_based: Language based 
+label_language_based: Language based
 # label_last_changes: %d canvis de l'últim 
 label_last_login: Última connexió 
-label_last_updates: Actualitzat 
+label_last_updates: Actualitzat
 label_last_updates_plural: %d 
 label_less_than_ago Actualitzats: fa menys de 
-label_library: Biblioteca 
+label_library: Biblioteca
 label_list: Llista
 label_loading: Loading...
-label_logged_as: Connectat com a 
+label_logged_as: Connectat com a
 label_login: Connexió
-label_logout: Desconnexió 
-label_max_size: Mida màxima 
+label_logout: Desconnexió
+label_max_size: Mida màxima
 label_me: em
-label_message_last: Last message 
-label_message_new: New message 
-label_message_plural: Messages 
-label_min_max_length: Longitud com a mínim - com a màxim 
+label_message_last: Last message
+label_message_new: New message
+label_message_plural: Messages
+label_min_max_length: Longitud com a mínim - com a màxim
 label_modification: %d modificació
 label_modification_plural: %d modificacions 
 label_modified: modificat
