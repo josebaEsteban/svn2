@@ -36,14 +36,14 @@
         <td><div align="center"><%= user.language %></div></td>
         <td><div align="center"><a href="/users/switch/<%= user.id.to_s %>">
             <%- if user.status == 3 -%>
-            <%= image_tag 'lock.png' %>
+            <%= image_tag 'key_delete.png' %>
             <%- else -%>
-            <%= image_tag 'lock_open.png' %>
+            <%= image_tag 'key.png' %>
             <%- end -%>
             </a></div></td>
-        <td><div align="center"><a href="/users/edit/<%= user.id.to_s %>"><%= image_tag 'information.png' %></a></div></td>
+        <td><div align="center"><a href="/users/edit/<%= user.id.to_s %>"><%= image_tag 'pencil.png' %></a></div></td>
         <td><div align="center"><a href="/messages/show/<%= user.id.to_s %>"><%= image_tag 'comments.png' %></a></div></td>
-        <td><div align="center"><a href="/my/admin/<%= user.id.to_s %>"><%= image_tag 'magnifier.png' %></a></div></td>
+        <td><div align="center"><a href="/my/admin/<%= user.id.to_s %>"><%= image_tag 'zoom.png' %></a></div></td>
       </tr>
       <%- end -%>
     </tbody>
