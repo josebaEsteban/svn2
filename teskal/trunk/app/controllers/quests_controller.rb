@@ -100,8 +100,13 @@ class QuestsController < ApplicationController
         message.answer_id = @answer.id
         message.save
       end
-      quest = Quest.find(:first, :conditions  => {:user_id  => @answer.user_id, :order => @answer.quest_id})
-      quest.toggle!(:browse)
+      case @answer.quest_id
+      when 4..6:
+        # a estos cuestionarios se les deja siempre como disponibles
+      else
+        quest = Quest.find(:first, :conditions  => {:user_id  => @answer.user_id, :order => @answer.quest_id})
+        quest.toggle!(:browse)
+      end
       athlete=User.find(@answer.user_id)
 
       if !athlete.managed_by.nil? and @logged_in_user.filled_for == session[:user_id]
