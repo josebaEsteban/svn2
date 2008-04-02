@@ -1,4 +1,4 @@
 class Quest < ActiveRecord::Base
-  CATALOG = 15
+  CATALOG = 16
   FREE = [2,12]
 end

@@ -105,7 +105,10 @@ class QuestsController < ApplicationController
         # a estos cuestionarios se les deja siempre como disponibles
       else
         quest = Quest.find(:first, :conditions  => {:user_id  => @answer.user_id, :order => @answer.quest_id})
-        quest.toggle!(:browse)
+        if quest.browse
+          # only change it if it was true, or the coach was filling it
+          quest.toggle!(:browse)
+        end
       end
       athlete=User.find(@answer.user_id)
 
