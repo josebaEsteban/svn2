@@ -1220,3 +1220,48 @@ quest15_18: Amb la seva capacitat lluitadora i perseverant
 quest15_19: Amb la seva actitud positiva cap a la seva pròpia millora
 quest15_20: Amb la transmissió de gaudir, satisfacció i bones sensacions
 quest15_21: El seu nivell de rendiment en aquesta competició
+quest100: Qüestionari CTP
+quest100_intro: A continuació et presentem una sèrie de frases que estan relacionades amb el teu esport, amb allò que sents i fas quan el practiques. Són les teves opinions personals i no existeixen respostes encertades o desencertades, sempre que responguis amb sinceritat. Si us plau, llegeix cadascuna d’elles curosament i després clica a l’opció que més s’aproximi a la teva opinió.
+quest100_1: Vull aprendre tot el què pugui durant la pràctica esportiva
+quest100_2: A vegades tinc por de no aprendre, tant com voldria, certes habilitats del meu esport
+quest100_3: Per a mi és important fer les coses millor que altres companys/es
+quest100_4: Sovint el què em motiva a l’entrenament és la por a fer-ho malament
+quest100_5: El meu objectiu és rendir millor que altres companys/es
+quest100_6: Per a mi és important aprendre el millor possible les habilitats ensenyades a l’entrenament
+quest100_7: Em preocupa no poder aprendre tot el què podria a l’entrenament
+quest100_8: El meu objectiu és evitar realitzar malament les tasques
+quest100_9: Vull dominar completament les tasques practicades a l’entrenament
+quest100_10: Em preocupa no poder aprendre tot el què s’ha d’aprendre a les sessions d’entrenament
+quest100_11: Per a mi és important fer les coses bé en comparació amb altres companys/es
+quest100_12: Jo només vull evitar fer malament els exercicis
+quest100_13: Penso que soc bastant bo en el meu esport
+quest100_14: Estic satisfet amb el meu rendiment en el meu esport
+quest100_15: Després d’entrenar em sento hàbil durant una estona
+quest100_16: Soc bastant hàbil en la pràctica d’aquest esport dins de l’equip
+quest100_17: No sé jugar molt bé a aquest esport
+quest100_18: Tinc la meva pròpia opinió respecte a les habilitats que vull practicar durant l’entrenament
+quest100_19: Puc decidir les activitats que vull practicar durant l’entrenament
+quest100_20: Jugar en aquest equip em fa sentir més propera dels/les altres companys/es
+quest100_21: Les activitats de l’entrenament em fan sentir més connectat amb els/les altres companys/es
+quest100_22: Em proposo fer esport durant molt temps
+quest100_23: Sovint es dóna la oportunitat als/les esportistes de que planifiquin les seves pròpies activitats durant l’entrenament
+quest100_24: Sovint es dóna l’oportunitat als/les esportistes de que diguin el què pensen sobre les tasques de l’entrenament
+quest100_25: Els/les esportistes poden triar els exercicis que practicaran
+quest100_26: No m’esforço molt a l’entrenament
+quest100_27: M’esforço molt quan practico el meu esport
+quest100_28: Intento esforçar-me amb molta força quan practico a l’entrenament
+quest100_29: Per a mi és important fer-ho bé quan practico el meu esport
+quest100_30: Quan practiquem a l’entrenament generalment desitjo que el joc acabi ràpid
+quest100_31: Quan practico el meu esport generalment m’avorreixo
+quest100_32: Durant l’entrenament sovint “estic adormit o absent”
+quest100_33: En les sessions d’entrenament els/les esportistes s’ajuden uns als altres a aprendre
+quest100_34: En les sessions d’entrenament els/les esportistes s’ajuden uns als altres a millorar i a superar-se
+quest100_35: En les sessions d’entrenament els/les esportistes treballen junts com un equip
+quest100_36: L’entrenador/a anima als/les esportistes a que s’ajudin mútuament per a millorar
+quest100_37: En les sessions d’entrenament s’anima als/les esportistes a que treballin els seus punts dèbils
+quest100_38: En les sessions d’entrenament l’entrenador/a s’assegura de que els/les esportistes millorin les seves habilitats que no dominen
+quest100_39: En les sessions d’entrenament l’entrenador/a insisteix en què hem de millorar a cada sessió
+quest100_40: En les sessions d’entrenament l’entrenador/a sempre insisteix en què intentem fer el millor possible
+quest100_valor_1: 1 (totalment en desacord)
+quest100_valor_5: 5 (totalment d’acord)
+quest100_header: En el meu esport...
