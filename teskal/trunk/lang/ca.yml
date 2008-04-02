@@ -1265,3 +1265,6 @@ quest100_40: En les sessions d’entrenament l’entrenador/a sempre insisteix e
 quest100_valor_1: 1 (totalment en desacord)
 quest100_valor_5: 5 (totalment d’acord)
 quest100_header: En el meu esport...
+quest16: Clima Formatiu Auto Percebut (Esports Individuals)
+quest16_label_0: Clima Formatiu Auto Percebut (Esports Individuals)
+quest16_label_1: Clima de Rendiment Individual
