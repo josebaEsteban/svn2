@@ -214,6 +214,8 @@ class Mailer < ActionMailer::Base
       quest_name = l(:quest14)
     when 15
       quest_name = l(:quest15)
+    when 16
+      quest_name = l(:quest16)
     end
   end
 

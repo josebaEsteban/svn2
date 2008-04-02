@@ -83,7 +83,7 @@ class MyController < ApplicationController
       @answers = Answer.find_by_sql("select * from answers where answers.user_id=#{busca} order by answers.created_on DESC")
       # @pendings = Pending.find_by_sql("select * from pendings where pendings.user_id=#{busca} order by pendings.created_on DESC")
       @books = Book.find_by_sql("select * from books where books.user_id=#{busca} order by books.order ASC")
-      @quests = Quest.find_by_sql("select * from quests where quests.user_id=#{busca} order by quests.order ASC limit 15")
+      @quests = Quest.find_by_sql("select * from quests where quests.user_id=#{busca} order by quests.order ASC limit 16")
     else
       render_403
     end
