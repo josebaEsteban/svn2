@@ -1241,3 +1241,4 @@ signup_label_16: Deporte
 quest16: Clima Formativo del Entrenador Auto Percibido (Deportes Individuales)
 quest16_label_0: Clima Formativo del Entrenador Auto Percibido (Deportes Individuales)
 quest16_label_1: Clima de Rendimiento Individual
+notice_account_login_exists: Ya existe una cuenta con ese nombre de usuario. Por favor, elija uno diferente.

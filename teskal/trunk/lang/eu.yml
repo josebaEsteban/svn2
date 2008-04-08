@@ -1190,3 +1190,4 @@ signup_label_16: Kirol
 quest16: Auto Antzemandako Maisutza Klimaren Galde-sorta Banakako Kirolak
 quest16_label_0: Auto Antzemandako Maisutza Klimaren Galde-sorta Banakako Kirolak 
 quest16_label_1: Banakako arrakastaren pertzepzio balioak
+notice_account_login_exists: Ya existe una cuenta con ese nombre de usuario. Por favor, elija uno diferente.

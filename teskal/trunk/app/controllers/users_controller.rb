@@ -43,14 +43,15 @@ class UsersController < ApplicationController
     if request.get?
       @user = User.new(:language => Setting.default_language)
     else
-      repite = User.find_by_mail(params[:user][:mail])
-      if repite.nil?
+      dup_email = User.find_by_mail(params[:user][:mail])
+      dup_login = User.find_by_login(params[:user][:login])
+      if dup_email.nil? and dup_login.nil?
         @user = User.new(params[:user])
         @user.admin = params[:user][:admin] || false
         @user.login = params[:user][:login]
         @user.password, @user.password_confirmation = params[:password], params[:password_confirmation]
         ip = request.remote_ip
-        @user.managed_by = session[:user_id]
+        @user.managed_by = @logged_in_user.id
         @user.role = User::ROLE_ATHLETE
         if @user.save
           Mailer.deliver_account_information(@user, params[:password])
@@ -63,7 +64,11 @@ class UsersController < ApplicationController
           # redirect_to :action => 'list'
         end
       else
-        flash[:notice] = l(:notice_account_email_exists)
+        if dup_login.nil?
+          flash[:notice] = l(:notice_account_email_exists)
+        else
+          flash[:notice] = l(:notice_account_login_exists)
+        end
         redirect_to :controller => 'my', :action => 'athletes'
       end
     end
