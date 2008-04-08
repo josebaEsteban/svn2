@@ -261,5 +261,7 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   add_index "users", ["managed_by"], :name => "managed_by"
+  add_index "users", ["mail"], :name => "mail"
+  add_index "users", ["login"], :name => "login"
 
 end

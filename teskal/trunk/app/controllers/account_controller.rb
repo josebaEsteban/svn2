@@ -36,10 +36,10 @@ class AccountController < ApplicationController
         if params[:autologin] && Setting.autologin?
           token = Token.create(:user => user, :action => 'autologin')
           cookies[:autologin] = { :value => token.value, :expires => 1.year.from_now  }
-        end 
-        if user.role > User::ROLE_ATHLETE 
+        end
+        if user.role > User::ROLE_ATHLETE
           redirect_to :controller => 'my', :action => 'athletes'
-        else  
+        else
           redirect_to :controller => 'my', :action => 'page'
         end
       else
@@ -124,8 +124,9 @@ class AccountController < ApplicationController
       if request.get?
         @user = User.new(:language => Setting.default_language)
       else
-        repite = User.find_by_mail(params[:user][:mail])
-        if repite.nil?
+        dup_email = User.find_by_mail(params[:user][:mail])
+        dup_login = User.find_by_login(params[:user][:login])
+        if dup_email.nil? and dup_login.nil?
           @user = User.new(params[:user])
           @user.admin = false
           @user.login = params[:user][:login]
@@ -146,14 +147,18 @@ class AccountController < ApplicationController
             redirect_to :controller => 'welcome', :action => 'signup_done'
           end
         else
-          flash[:notice] = l(:notice_account_email_exists)
+          if dup_login.nil?
+            flash[:notice] = l(:notice_account_email_exists)
+          else
+            flash[:notice] = l(:notice_account_login_exists)
+          end
         end
       end
     end
   end
 
   # Token based account activation
-  def activate 
+  def activate
     redirect_to(home_url) && return unless Setting.self_registration? && params[:token]
     token = Token.find_by_action_and_value('signup', params[:token])
     redirect_to(home_url) && return unless token and !token.expired?

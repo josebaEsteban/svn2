@@ -1206,4 +1206,6 @@ signup_label_16: Sport
 quest16: Coaches’ self-perception of educational climate (Individual Sports)
 quest16_label_0: Coaches’ self-perception of educational climate (Individual Sports)
 quest16_label_1: Performance Climate
+notice_account_login_exists: There is a user already with that login name. Please choose a different one. 
+
 
