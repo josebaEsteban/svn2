@@ -70,11 +70,11 @@ tbody tr:hover td, tbody tr:hover th {
       <th scope="col"><div align="left">lg</div></th>
       <th scope="col"><div align="left">status</div></th>
       <th scope="col"><div align="left">role</div></th>
+      <th scope="col"><div align="left">managed_by</div></th>
       <th scope="col"><div align="left">event</div></th>
       <th scope="col"><div align="left">2fill</div></th>
       <th scope="col"><div align="left">date</div></th>
       <th scope="col"><div align="left">co</div></th>
-      <th scope="col"><div align="left">reg</div></th>
       <th scope="col"><div align="left">city</div></th>
       <th scope="col"><div align="left">org</div></th>
     </tr>
@@ -89,8 +89,8 @@ tbody tr:hover td, tbody tr:hover th {
   <tr>
     <%- odd=1 end -%>
     <%- if journal.user_id >0 -%>
-    <%- user = User.find(journal.user_id) -%> 
-	 <%- accion = "/my/admin/"+user.id.to_s -%>
+    <%- user = User.find(journal.user_id) -%>
+    <%- accion = "/my/admin/"+user.id.to_s -%>
     <td><div align="left"><a href=<%= accion %>><%= user.firstname + " " +user.lastname %></div></td>
     <%- TzTime.zone=user.timezone -%>
     <td><div align="left"><%=user.timezone %></div></td>
@@ -117,14 +117,22 @@ tbody tr:hover td, tbody tr:hover th {
         tutor
         <%- end -%>
       </div></td>
+    <%- if !user.managed_by.nil? and user.role == 2-%>
+    <%- manager = User.find(user.managed_by) -%>
+    <%- accion = "/my/admin/"+manager.id.to_s -%>
+    <td><div align="left"><a href=<%= accion %>><%= manager.firstname + " " +manager.lastname %></div></td>
+    <%- else -%>
+    <td></td>
+    <%- end -%>
     <%- else -%>
     <th scope="col"></th>
     <th scope="col"></th>
     <th scope="col"></th>
     <th scope="col"></th>
     <th scope="col"></th>
-    <%- end -%>  
-<%- time_taken = 0 -%>
+    <th scope="col"></th>
+    <%- end -%>
+    <%- time_taken = 0 -%>
     <%- if journal.event[0,3]=='add'
 	 paso = journal.event.split('/') 
 	 accion = "/users/edit/"+ paso[2] -%>
@@ -132,8 +140,7 @@ tbody tr:hover td, tbody tr:hover th {
     <%- elsif journal.event[0,1]=='q'
                        paso = journal.event.split('/') 
                        accion = "/"+paso[0]+"/show/"+ paso[2]-%>
-    <td><a href=<%= accion %>><%= journal.event %></td>   
-
+    <td><a href=<%= accion %>><%= journal.event %></td>
     <%- 	if paso[1]=='create'
 		answer=Answer.find(paso[2])
 			if  answer.time_to_fill.nil?
@@ -142,20 +149,16 @@ tbody tr:hover td, tbody tr:hover th {
 				time_taken = l_time(answer.time_to_fill)
 			end
 		end  -%>
-
-       <%- elsif journal.event[0,1]=='b'
+    <%- elsif journal.event[0,1]=='b'
   	                       paso = journal.event.split('/') 
 	                       accion = "/my/admin/"+paso[2]-%>
-	    <td><a href=<%= accion %>><%= journal.event %></td>   
-		
-		<%- else -%>  
-
+    <td><a href=<%= accion %>><%= journal.event %></td>
+    <%- else -%>
     <td><%= journal.event %></td>
     <%- end -%>
     <td><%= time_taken %></td>
     <td><%= l_datetime(TzTime.zone.utc_to_local(journal.created_on)) %></td>
     <td><%= journal.country %></td>
-    <td><%= journal.region %></td>
     <td><%= journal.city %></td>
     <td><%= journal.organization %></td>
   </tr>
