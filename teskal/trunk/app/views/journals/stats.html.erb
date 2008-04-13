@@ -90,7 +90,11 @@ tbody tr:hover td, tbody tr:hover th {
     <%- odd=1 end -%>
     <%- if journal.user_id >0 -%>
     <%- user = User.find(journal.user_id) -%>
-    <%- accion = "/my/admin/"+user.id.to_s -%>
+	 <%- if user.role == 3 or user.role == 4 -%> 
+    	<%- accion = "/my/admin/"+user.id.to_s -%>    
+	 <%- else -%>
+    	<%- accion = "/my/page/"+user.id.to_s -%> 
+	 <%- end -%>
     <td><div align="left"><a href=<%= accion %>><%= user.firstname + " " +user.lastname %></div></td>
     <%- TzTime.zone=user.timezone -%>
     <td><div align="left"><%=user.timezone %></div></td>
@@ -116,11 +120,15 @@ tbody tr:hover td, tbody tr:hover th {
         <%- when 4: -%>
         tutor
         <%- end -%>
-      </div></td>
+      </div></td> 
+
     <%- if !user.managed_by.nil? and user.role == 2-%>
     <%- manager = User.find(user.managed_by) -%>
     <%- accion = "/my/athletes/"+manager.id.to_s -%>
     <td><div align="left"><a href=<%= accion %>><%= manager.firstname + " " +manager.lastname %></div></td>
+	<%- elsif user.role > 2 -%> 
+   <%- accion = "/my/athletes/"+user.id.to_s -%>
+   <td><div align="left"><a href=<%= accion %>><%= user.firstname + " " +user.lastname %></div></td>
     <%- else -%>
     <td></td>
     <%- end -%>
