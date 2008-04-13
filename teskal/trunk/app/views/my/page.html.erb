@@ -4,20 +4,20 @@
   </div>
   <div class='boxxcontent'>
     <!-- Content goes here -->
-    <%- if @logged_in_user.athlete? and @quests.length == 0 -%>
+    <%- if (@logged_in_user.athlete? or @logged_in_user.admin?) and @quests.length == 0 -%>
     <h4><%= l(:label_quest_no_pending) %></h4>
     <%- else -%>
     <p>
     <h3>
       <div align="left">
-        <%- if @logged_in_user.athlete? -%>
+        <%- if (@logged_in_user.athlete? or @logged_in_user.admin?) -%>
         <%=l(:label_quest_pending)%>
         <%- else -%>
         <%=l(:label_quest_avail)%>
         <%- end -%>
       </div>
     </h3>
-    <%- if @logged_in_user.athlete? -%>
+    <%- if (@logged_in_user.athlete? or @logged_in_user.admin?) -%>
     <ul>
       <%- i=0 -%>
 			<%- bw = 0 -%>
