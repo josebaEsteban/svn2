@@ -119,7 +119,7 @@ tbody tr:hover td, tbody tr:hover th {
       </div></td>
     <%- if !user.managed_by.nil? and user.role == 2-%>
     <%- manager = User.find(user.managed_by) -%>
-    <%- accion = "/my/admin/"+manager.id.to_s -%>
+    <%- accion = "/my/athletes/"+manager.id.to_s -%>
     <td><div align="left"><a href=<%= accion %>><%= manager.firstname + " " +manager.lastname %></div></td>
     <%- else -%>
     <td></td>
