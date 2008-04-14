@@ -87,8 +87,8 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     @user.attributes = params[:user]
-    if  @user.save
-      journal("update account",@user.id)
+    if @user.save
+      journal("update account/"+@user.id.to_s,@logged_in_user.id)
       flash.now[:notice] = l(:notice_account_updated)
     end
     redirect_to :controller => 'my', :action => 'athletes'

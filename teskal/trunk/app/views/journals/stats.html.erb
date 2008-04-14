@@ -160,7 +160,12 @@ tbody tr:hover td, tbody tr:hover th {
     <%- elsif journal.event[0,1]=='b'
   	                       paso = journal.event.split('/') 
 	                       accion = "/my/admin/"+paso[2]-%>
-    <td><a href=<%= accion %>><%= journal.event %></td>
+    <td><a href=<%= accion %>><%= journal.event %></td> 
+	     <%-  elsif journal.event[0,15]=='update account/'
+	  	                       paso = journal.event.split('/')
+		                       accion = "/users/edit/"+paso[1]  -%>
+	    <td><a href=<%= accion %>><%= journal.event %></td> 
+		
     <%- else -%>
     <td><%= journal.event %></td>
     <%- end -%>
