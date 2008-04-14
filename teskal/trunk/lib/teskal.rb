@@ -1,3 +1,4 @@
+require 'will_paginate'    
 require 'tzinfo'
 require 'net/http' 
 require 'teskal/version'

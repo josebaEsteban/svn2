@@ -46,5 +46,5 @@
       </tr>
     </tbody>
   </table>
-  <%= will_paginate @messages %>
+  <%= will_paginate @messages, :prev_label => '« '+l(:label_previous), :next_label => l(:label_next)+' »' %>
 </div>
