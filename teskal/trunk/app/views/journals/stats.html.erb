@@ -1,3 +1,4 @@
+<%= stylesheet_link_tag "pagination" -%> 
 <STYLE type="text/css">
 <!--
 body {
@@ -181,4 +182,6 @@ tbody tr:hover td, tbody tr:hover th {
   </tbody>
   
 </table>
-<%= will_paginate @journals, :prev_label => '« '+l(:label_previous), :next_label  => l(:label_next)+' »' %>
+  <div class='flickr_pagination'>      
+<%= will_paginate @journals, :prev_label => '« '+l(:label_previous), :next_label  => l(:label_next)+' »' %>  
+  </div>   
