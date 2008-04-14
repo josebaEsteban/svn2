@@ -57,7 +57,9 @@ class JournalsController < ApplicationController
     @users = User.count_by_sql "select count(*) from users"
     @quests = Answer.count_by_sql "select count(*) from answers"
     @emails= Journal.count_by_sql("select count(*) FROM journals WHERE event like 'mailer%'")
-    @journals = Journal.paginate(:page => params[:page], :per_page => 50, :order => 'created_on DESC')
+    @journals = Journal.paginate(:page => params[:page], :per_page => 50, :order => 'created_on DESC', :limit  => 500) 
+    # puts params[:page]
+    # @journals = Journal.paginate_by_sql(['select * from journals order by created_on DESC'],:page => params[:page], :per_page => 300)
   end
 
 end
