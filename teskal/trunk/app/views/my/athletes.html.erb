@@ -30,7 +30,7 @@
       <tr>
         <%- odd=1 end -%>
 		<%- if user.picture.url(:medium) !="/pictures/medium/missing.png" -%>
-	<td><a href="/my/admin/<%= user.id.to_s %>"><%= image_tag user.picture.url(:thumb) , :class  => "photoborder"%></td>    
+	<td><a href="/my/admin/<%= user.id.to_s %>"><%= image_tag user.picture.url(:thumb) , :class  => "photoborder"%></a></td>    
 	<%- else -%>
 	   <td></td>
 		<%- end -%>

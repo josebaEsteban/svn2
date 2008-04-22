@@ -2,8 +2,15 @@
   <div class='boxxtop'>
     <div></div>
   </div>
-  <div class='boxxcontent'> 
-  <div align="center"> <%= image_tag @user.picture.url(:medium), :class  => "photoborder"%> </div>
+  <div class='boxxcontent'>
+	<div align="center"><a href="/my/account">
+			<%- if @user.picture.url(:medium) !="/pictures/medium/missing.png" -%>
+			<%= image_tag @user.picture.url(:medium) , :class  => "photoborder"%>  
+		<%- else -%>
+		 <%= image_tag "/images/missing.jpg", :class  => "photoborder" %>
+		<%- end -%>
+		</a> 
+ 		</div>
     <!-- Content goes here -->
     <%- if (@logged_in_user.athlete? or @logged_in_user.admin?) and @quests.length == 0 -%>
     <h4><%= l(:label_quest_no_pending) %></h4>

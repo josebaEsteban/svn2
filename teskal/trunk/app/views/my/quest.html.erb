@@ -2,7 +2,14 @@
  <div class='boxxtop'><div></div></div>
   <div class='boxxcontent'>
    <!-- Content goes here -->
-
+    		<div align="center"><a href="/my/account">
+				<%- if @user.picture.url(:medium) !="/pictures/medium/missing.png" -%>
+	<%= image_tag @user.picture.url(:medium) , :class  => "photoborder"%>  
+			<%- else -%>
+			 <%= image_tag "/images/missing.jpg", :class  => "photoborder" %>
+			<%- end -%>
+			</a> 
+	 		</div>
 	<h3> <%=l(:label_quest_avail).upcase%></h3>
   <ol>
     <li><%= link_to l(:quest1), :controller  => 'quest1', :action => 'new' %></li>
