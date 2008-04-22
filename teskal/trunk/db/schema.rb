@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define() do
 
   create_table "answers", :force => true do |t|
     t.integer  "quest_id",                                      :null => false
@@ -237,31 +237,34 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   create_table "users", :force => true do |t|
-    t.string    "login",             :limit => 30, :default => "",              :null => false
-    t.string    "hashed_password",   :limit => 40, :default => "",              :null => false
-    t.string    "firstname",         :limit => 30, :default => "",              :null => false
-    t.string    "lastname",          :limit => 30, :default => "",              :null => false
-    t.string    "mail",              :limit => 60, :default => "",              :null => false
-    t.boolean   "mail_notification",               :default => true,            :null => false
-    t.boolean   "admin",                           :default => false,           :null => false
-    t.integer   "status",                          :default => 1,               :null => false
+    t.string    "login",              :limit => 30, :default => "",              :null => false
+    t.string    "hashed_password",    :limit => 40, :default => "",              :null => false
+    t.string    "firstname",          :limit => 30, :default => "",              :null => false
+    t.string    "lastname",           :limit => 30, :default => "",              :null => false
+    t.string    "mail",               :limit => 60, :default => "",              :null => false
+    t.boolean   "mail_notification",                :default => true,            :null => false
+    t.boolean   "admin",                            :default => false,           :null => false
+    t.integer   "status",                           :default => 1,               :null => false
     t.datetime  "last_login_on"
-    t.string    "language",          :limit => 5,  :default => ""
+    t.string    "language",           :limit => 5,  :default => ""
     t.integer   "auth_source_id"
     t.datetime  "created_on"
-    t.string    "ip",                :limit => 15
-    t.integer   "role",                            :default => 1,               :null => false
-    t.string    "time_zone",         :limit => 40, :default => "Europe/Madrid", :null => false
-    t.string    "ip_last",           :limit => 15, :default => "",              :null => false
-    t.timestamp "start",                                                        :null => false
+    t.string    "ip",                 :limit => 15
+    t.integer   "role",                             :default => 1,               :null => false
+    t.string    "time_zone",          :limit => 40, :default => "Europe/Madrid", :null => false
+    t.string    "ip_last",            :limit => 15, :default => "",              :null => false
+    t.timestamp "start",                                                         :null => false
     t.integer   "managed_by"
     t.integer   "filled_for"
     t.datetime  "updated_on"
-    t.string    "sport",             :limit => 50
+    t.string    "sport",              :limit => 50
+    t.string    "picture_file_name"
+    t.string    "picture_content_type"
+    t.integer   "picture_file_size"
   end
 
   add_index "users", ["managed_by"], :name => "managed_by"
-  add_index "users", ["mail"], :name => "mail"
   add_index "users", ["login"], :name => "login"
+  add_index "users", ["mail"], :name => "mail"
 
 end

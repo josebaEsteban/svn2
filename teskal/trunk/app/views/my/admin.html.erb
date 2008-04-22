@@ -93,7 +93,10 @@ font:normal 100%/120% "Lucida Grande","Lucida Sans Unicode",Verdana,Arial,Helvet
   <div class='boxxtop'>
     <div></div>
   </div>
-  <div class='boxxcontent'>
+  <div class='boxxcontent'> 
+	<%- if @athlete.picture.url(:medium) !="/pictures/medium/missing.png" -%>
+	  <div align="center"> <%= image_tag @athlete.picture.url(:medium) , :class  => "photoborder"%> </div> 
+	<%- end -%>   
     <div id="container">
       <ul id="tabnav">
         <li><a href="#quest" id="tab_quest" class="tab"><%= l(:label_quest_plural) %></a></li>

@@ -30,7 +30,7 @@
       <div class="title"><%=l(:label_information_plural)%></div>
       <p></p>
       <h4></h4>
-      <form id="accountform" action="/users/update/<%= @user.id %>" method="post">
+      <form id="accountform" action="/users/update/<%= @user.id %>" enctype="multipart/form-data" method="post">
         <table cellspacing="0">
           <tbody>
             <tr>
@@ -56,6 +56,23 @@
             <tr>
               <td><label for="default_timezone"><%= l(:label_timezone) %></label></td>
               <td><%= time_zone_select 'user', 'time_zone', TZInfo::Timezone.all.sort, :model => TZInfo::Timezone %></td>
+            </tr>
+            <tr>
+              <td></td>
+					<%- if @user.picture.url(:medium) !="/pictures/medium/missing.png" -%>
+				<td><%= image_tag @user.picture.url(:medium) , :class  => "photoborder"%></td>    
+				<%- else -%>
+				   <td><%= image_tag "/images/missing.jpg" %></td>
+				<%- end -%>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input id="user_picture" name="user[picture]" size="30" type="file" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><div class="small"><%= l(:text_picture) %></div>
+              <td>
             </tr>
           </tbody>
         </table>

@@ -1111,7 +1111,7 @@ signup_label_13: Your Teskal account has been created.
 signup_label_14: Watch for an email confirming your new subscription.
 signup_label_15: It contains an activation link that you must click before trying to log into
 signup_label_1: Step
-signup_label_2: What you'll use to log in.
+signup_label_2: What you'll use to log in. No spaces please. It must be unique in Teskal.
 signup_label_3: The language will be used next time you login.
 signup_label_4: Choose a password for your new account.
 signup_label_5: Passwords must be 6-12 characters in length.
@@ -1199,13 +1199,15 @@ label_done: Filled
 label_message_from: New message in Teskal from
 label_message: Message
 label_message_no_reply: Please do not respond to this message. If you'd like to reply, please log in to your account in Teskal and compose a message.
-label_signup_1: We never share your e-mail address.
+label_signup_1: Please enter a valid email address in the format name@company.com. This email must be unique in Teskal. We never share your e-mail address. It must 
 label_signup_2: This address will be used if you forget your password or to notify you messages from Teskal.
-signup_label_8: We never share your e-mail address.<br/> This address will be used to to activate your account and to notify you messages from Teskal, or if you forget your password.
+signup_label_8: Please enter a valid email address in the format name@company.com. This email must be unique in Teskal.<br/>We never share your e-mail address.<br/> This address will be used to to activate your account and to notify you messages from Teskal, or if you forget your password.
 signup_label_16: Sport
 quest16: Coaches’ self-perception of educational climate (Individual Sports)
 quest16_label_0: Coaches’ self-perception of educational climate (Individual Sports)
 quest16_label_1: Performance Climate
 notice_account_login_exists: There is a user already with that login name. Please choose a different one. 
+label_picture: Photo
+text_picture: To add or change the photo, select here the file you want to upload. 
 
 

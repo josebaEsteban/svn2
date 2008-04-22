@@ -1,4 +1,5 @@
-require 'will_paginate'    
+require 'will_paginate'
+require 'paperclip'      
 require 'tzinfo'
 require 'net/http' 
 require 'teskal/version'

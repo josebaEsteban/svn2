@@ -1104,13 +1104,13 @@ signup_label_13: Tu cuenta ha sido creada en Teskal.
 signup_label_14: Recibirás una confirmación por correo.
 signup_label_15: Tiene un enlace de activación de tu cuenta que debes clicar para entrar en
 signup_label_1: Paso
-signup_label_2: Escoge un nombre de usuario.
+signup_label_2: Escoge un nombre de usuario. Que no contenga espacios, por favor.
 signup_label_3: El lenguaje será usado cuando entres la próxima vez.
 signup_label_4: Elige una contraseña para tu nueva cuenta.
 signup_label_5: La contraseña debe tener de 6 a 12 caracteres de longitud.
 signup_label_6: Detalles email.
 signup_label_7: Escribe tu dirección de correo.
-signup_label_8: La dirección debe ser válida para poder activar tu cuenta.
+signup_label_8: Por favor, escribe una dirección de correo válida en el formato nombre@empresa.com. <br/>Esta dirección se utilizará para activar tu cuenta y para notificarte mensajes de Teskal, o si olvidas tu contraseña.
 signup_label_9: Submit form
 status_active: activo
 status_locked: bloqueado
@@ -1242,3 +1242,5 @@ quest16: Clima Formativo del Entrenador Auto Percibido (Deportes Individuales)
 quest16_label_0: Clima Formativo del Entrenador Auto Percibido (Deportes Individuales)
 quest16_label_1: Clima de Rendimiento Individual
 notice_account_login_exists: Ya existe una cuenta con ese nombre de usuario. Por favor, elija uno diferente.
+label_picture: Foto
+text_picture: Para añadir o cambiar la foto, selecciona aquí el archivo que deseas subir.
