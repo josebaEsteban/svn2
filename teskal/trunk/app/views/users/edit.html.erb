@@ -62,7 +62,7 @@
 					<%- if @user.picture.url(:medium) !="/pictures/medium/missing.png" -%>
 				<td><%= image_tag @user.picture.url(:medium) , :class  => "photoborder"%></td>    
 				<%- else -%>
-				   <td><%= image_tag "/images/missing.jpg" %></td>
+				   <td><%= image_tag "/images/missing.jpg", :class  => "photoborder" %></td>
 				<%- end -%>
             </tr>
             <tr>

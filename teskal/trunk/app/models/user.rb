@@ -16,8 +16,7 @@ class User < ActiveRecord::Base
   has_attached_file :picture,
   # :path => ":rails_root/public/pictures/:id_:extension",
   :url => "/:attachment/:id/:style/:basename.:extension",
-  :styles => { :medium => "200x200>", :thumb => "65x65>" }
-
+  :styles => { :medium => "200x200>", :thumb => "65x65#" }
   has_many :answers
   has_one :preference, :dependent => :destroy, :class_name => 'UserPreference'
   composed_of :timezone, :class_name => 'TZInfo::Timezone', :mapping => %w( time_zone time_zone )
@@ -28,6 +27,7 @@ class User < ActiveRecord::Base
   attr_protected :login, :admin, :password, :password_confirmation, :hashed_password
 
   validates_presence_of :login, :mail
+  validates_attachment_size(less_than: 2.megabyte)
   # validates_presence_of :firstname, :lastname,
   validates_uniqueness_of :login, :mail
   # Login must contain lettres, numbers, underscores only
