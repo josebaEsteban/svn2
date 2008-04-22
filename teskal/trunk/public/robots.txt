@@ -1,8 +1,3 @@
 User-agent: *
-Disallow: /lib
-Disallow: /charts
-Disallow: /manual
-Disallow: /images
-Disallow: /javascripts
-
+Disallow: /
 
