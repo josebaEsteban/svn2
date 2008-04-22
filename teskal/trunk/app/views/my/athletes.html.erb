@@ -10,7 +10,8 @@
   <table cellspacing="0">
     <!-- <caption></caption> -->
     <thead>
-      <tr>
+      <tr> 
+        <th></th>   
         <th scope="col"><div align="left"><%=l(:field_login)%></div></th>
         <th scope="col"><div align="left"><%=l(:field_name) %></div></th>
         <th scope="col"><div align="left"><%=l(:field_created_on)%></div></th>
@@ -28,6 +29,11 @@
         <%-else -%>
       <tr>
         <%- odd=1 end -%>
+		<%- if user.picture.url(:medium) !="/pictures/medium/missing.png" -%>
+	<td><a href="/my/admin/<%= user.id.to_s %>"><%= image_tag user.picture.url(:thumb) , :class  => "photoborder"%></td>    
+	<%- else -%>
+	   <td></td>
+		<%- end -%>
         <td><%= link_to user.login, :controller  => 'my', :action => 'admin', :id => user.id %></td>
         <td><%= link_to user.name, :controller  => 'my', :action => 'admin', :id => user.id %></td>
         <td><%= l_date(TzTime.zone.utc_to_local(user.created_on))%></td>

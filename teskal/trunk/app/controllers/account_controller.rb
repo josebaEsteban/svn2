@@ -149,10 +149,10 @@ class AccountController < ApplicationController
         else
           if dup_login.nil?
             flash[:notice] = l(:notice_account_email_exists)
-            journal("failed_add_user/email_exists",@logged_in_user.id)
+            journal("failed_add_user/email_exists",0)
           else
             flash[:notice] = l(:notice_account_login_exists)
-            journal("failed_add_user/login_exists",@logged_in_user.id)
+            journal("failed_add_user/login_exists",0)
           end
         end
       end

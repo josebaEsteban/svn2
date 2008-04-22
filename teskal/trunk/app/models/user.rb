@@ -13,6 +13,11 @@ class User < ActiveRecord::Base
   ROLE_COACH        = 3
   ROLE_TUTOR        = 4
 
+  has_attached_file :picture,
+  # :path => ":rails_root/public/pictures/:id_:extension",
+  :url => "/:attachment/:id/:style/:basename.:extension",
+  :styles => { :medium => "200x200>", :thumb => "65x65>" }
+
   has_many :answers
   has_one :preference, :dependent => :destroy, :class_name => 'UserPreference'
   composed_of :timezone, :class_name => 'TZInfo::Timezone', :mapping => %w( time_zone time_zone )
