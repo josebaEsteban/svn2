@@ -27,7 +27,6 @@ class User < ActiveRecord::Base
   attr_protected :login, :admin, :password, :password_confirmation, :hashed_password
 
   validates_presence_of :login, :mail
-  validates_attachment_size(less_than: 2.megabyte)
   # validates_presence_of :firstname, :lastname,
   validates_uniqueness_of :login, :mail
   # Login must contain lettres, numbers, underscores only
