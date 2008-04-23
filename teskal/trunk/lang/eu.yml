@@ -163,6 +163,7 @@ label_details: Xehetasunak
 label_document: Dokumentu
 label_document_new: Dokumentu berria
 label_document_plural: Dokumentuak
+label_done: Noiz betea
 label_download: %d descarga
 label_download_plural: %d deskargak
 label_equals: igual
@@ -194,8 +195,11 @@ label_login: Konexio
 label_logout: Deskonexioa
 label_max_size: Tamaño máximo
 label_me: ni
+label_message: Mezu
+label_message_from: -ren mezu berria Teskalen
 label_message_last: Last message
 label_message_new: New message
+label_message_no_reply: Mesedez ez erantzun mezu honi. Erantzun nahi izanez gero Teskaleko zure kontuan sartu zaitez eta bertan idatzi ezazu zeure mezua.
 label_message_plural: Mezuak
 label_min_max_length: gutxieneko – gehienezko luzera
 label_modification: %d modificación
@@ -221,6 +225,7 @@ label_per_page: Por la página
 label_permissions: Baimenak
 label_permissions_report: Permissions report
 label_personalize_page: Personalizar esta página
+label_picture: Argazki
 label_please_login: Konexio
 label_preview: Previo
 label_previous: Aurrekoa
@@ -303,8 +308,9 @@ markt_9: Zein erreminta dituzte entrenatzaileek haiek maneiatzeko?
 markt_presentation: Aurkezpena
 markt_quick_tour: Itzuli azkarra
 notice_account_activated: Zure kontua aktibatua izan da. Sartu egin zaitezke.
-notice_account_email_exists: Jada email hau duen beste erabiltzaile bat existitzen da. Mesedez email ezberdin bat erabili. 
+notice_account_email_exists: Jada email hau duen beste erabiltzaile bat existitzen da. Mesedez email ezberdin bat erabili.
 notice_account_invalid_creditentials: Balio gabeko erabiltzaile edo eta pasa-hitza.
+notice_account_login_exists: Jada izen hau duen erabiltzaile kontu bat existitzen da. Mesedez beste izen ezberdin bat aukeratu ezazu.
 notice_account_lost_email_sent: Pasa-hitza sortzeko behar dituzun argibideekin mezu bat bidali zaizu.
 notice_account_password_updated: Pasa-hitz eguneratua.
 notice_account_register_done: Kontu sortu berria.
@@ -462,6 +468,44 @@ quest12_valor_1: 0 (Ezer ez)
 quest12_valor_2: 100 (erabat)
 quest13: Antzemandako Prestakuntza Klima Banakako Kirolak
 quest13_label_0: Antzemandako Formazio Klima (Banakako Kirolak)
+quest14: Entrenatzaileak Antzemandako Lehiaketa Osteko Errendimendua (Banakako Kirolak)
+quest14_10: Bere pentsamenduen kontrola eta aurre egite positiboa
+quest14_11: Besteen akzioei erantzuteko modua
+quest14_12: Proposaturiko helburuak behin ezagututa hartu dituen erabakiak.
+quest14_13: Lehiaketan zehar jarduteko duen argitasuna
+quest14_14: Uneoro bere lehiaketako plan integralean duen argitasuna
+quest14_16: Lehiaketa osoan zehar mantendu duen konfiantza maila
+quest14_17: Lehiaketan zehar transmititu duen asetasun maila.
+quest14_21: Lehiaketa honetan izan duen errendimendu maila.
+quest14_6: Bere emozioen kontrola.
+quest14_7: Une jakinetan bere emozioekin gustura sentitzea.
+quest14_d3_a: EKOG-aren kasuan balioak maila baxu batean kokatzen dira. Honek esan nahi du lehiaketan zehar ez dela konfiantza eta asetasuna mailak mantentzeko gai izan. Honez gain, momentu oso gutxitan izan ditu sentsazio onak edo eroso sentitu da.
+quest14_d4_b: PORTE-aren balioei so eginez gero, maila ertain batean aurkitzen direla ikusi dezakegu. Honek aurkarien ekintzei erantzuterako orduan zailtasunak daudela adierazten du nahiz eta LPI-a nahiko argi zuen. Gehienetan bazekien zer egin behar zuen eta hartutako erabakiak egokiak izan direla uste du.
+quest14_header1: Kirolariaren jokaerarekiko asetasun maila …(-koa) izan da.
+quest14_header2: Kirolariak …-an izandako jokaerarekiko asetasun maila.
+quest14_intro: Segidan lehiaketan zehar kirolariak izandako jokabidearekin zer ikusia duten galdera sortarekiko zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotasunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbaki gainean klik eginaz.
+quest14_label_0: Entrenatzaileak antzemandako lehiaketa osteko errendimendua Rendimiento Post-Competición Percibido por el/la Entrenador/a
+quest15: Entrenatzaileak Antzemandako Lehiaketa Osteko Errendimendua (Talde Kirolak)
+quest15_10: Kideekiko duen komunikazio mailarekiko.
+quest15_11: Talde lanari egiten dion ekarpenarekin.
+quest15_12: Ahaleginarekiko daukan inplikazioarekiko.
+quest15_13: Proposaturiko jokoaren helburuekiko daukan konfiantza mailarekin.
+quest15_14: Eman zaion lanarekiko erakutsi duen jarrerarekin.
+quest15_15: Partiduan zehar hartu dituen erabakiekiko.
+quest15_16: Lehiaketa osoan zehar izan duen konfiantza mailarekiko.
+quest15_17: Intentsitate oso handiko egoeretan duen errendimendu mailarekiko.
+quest15_18: Bere borroka eta pertseberantzia gaitasunarekiko.
+quest15_19: Hobekuntzarekiko duen jarrera baikorrarekiko.
+quest15_20: Bere gozamen, asetasun eta “sentsazio onen” transmisioarekiko.
+quest15_21: Lehiaketa honetan izan duen errendimendu mailarekiko
+quest15_6: Talde helburuekiko duen konpizlizitate mailarekiko.
+quest15_7: Kideekiko duen eskuzabaltasun eta sostenguarekiko.
+quest15_8: Kideekiko duen errespetuarekiko.
+quest15_9: Hartutako erabakiekiko duen leialtasunarekiko.
+quest15_label_0: Entrenatzaileak Antzemandako Lehiaketa Osteko Errendimendua
+quest16: Auto Antzemandako Maisutza Klimaren Galde-sorta Banakako Kirolak
+quest16_label_0: Auto Antzemandako Maisutza Klimaren Galde-sorta Banakako Kirolak 
+quest16_label_1: Banakako arrakastaren pertzepzio balioak
 quest1: Denboraldiko lehen balorazioa
 quest1_16: Lehiaketa aurretik psikologikoki prestatzen zara
 quest1_17: Erlaxapen teknikaren batetaz baliatzen zara
@@ -1099,6 +1143,7 @@ signup_label_12: Mila esker erregistratzeagatik!
 signup_label_13: Zure Teskaleko kontua sortua izan da.
 signup_label_14: Korreoz konfirmazio bat jasoko duzu.
 signup_label_15: Sartzeko klikatu behar duzun zure kontuaren aktibazio lotura bat dauka
+signup_label_16: Kirol
 signup_label_1: Pasatu
 signup_label_2: Erabiltzaile izen bat aukeratu ezazu.
 signup_label_3: Hizkuntza sartzen zaren hurrengoan erabilia izango da. 
@@ -1115,6 +1160,7 @@ text_are_you_sure: ¿ Ziur zaude ?
 text_caracters_maximum: %d characters maximum.
 text_caracters_maximum: karaktereen %d maximoa
 text_length_between: Longitud entre %d y %d caracteres.
+text_picture: Argazkia eransteko ala aldatzeko, hemen aukeratu igo nahi duzun artxiboa.
 unit_0_path: Teskal.eu.pdf
 unit_0_title: Teskal Aurkezpena
 unit_10_path: 10.Erantzunkizuna.vs.Erruduntasuna.eu.pdf
@@ -1147,50 +1193,3 @@ unit_8_path: 08.Lehiaketa.eu.pdf
 unit_8_title: Lehiaketa
 unit_9_path: 09.Komunikazioa.eu.pdf
 unit_9_title: Komunikazioa
-quest14: Entrenatzaileak Antzemandako Lehiaketa Osteko Errendimendua (Banakako Kirolak)
-quest14_header1: Kirolariaren jokaerarekiko asetasun maila …(-koa) izan da.
-quest14_header2: Kirolariak …-an izandako jokaerarekiko asetasun maila.
-quest14_6: Bere emozioen kontrola.
-quest14_7: Une jakinetan bere emozioekin gustura sentitzea.
-quest14_10: Bere pentsamenduen kontrola eta aurre egite positiboa
-quest14_11: Besteen akzioei erantzuteko modua
-quest14_12: Proposaturiko helburuak behin ezagututa hartu dituen erabakiak.
-quest14_13: Lehiaketan zehar jarduteko duen argitasuna
-quest14_14: Uneoro bere lehiaketako plan integralean duen argitasuna
-quest14_16: Lehiaketa osoan zehar mantendu duen konfiantza maila
-quest14_17: Lehiaketan zehar transmititu duen asetasun maila.
-quest14_intro: Segidan lehiaketan zehar kirolariak izandako jokabidearekin zer ikusia duten galdera sortarekiko zure iritzia jakin nahiko genuke. Mesedez, lasai irakurri eta zintzotasunez erantzun ezazu zure iritzia hobekien deskribatzen duen zenbaki gainean klik eginaz.
-quest14_d3_a: EKOG-aren kasuan balioak maila baxu batean kokatzen dira. Honek esan nahi du lehiaketan zehar ez dela konfiantza eta asetasuna mailak mantentzeko gai izan. Honez gain, momentu oso gutxitan izan ditu sentsazio onak edo eroso sentitu da.
-quest14_d4_b: PORTE-aren balioei so eginez gero, maila ertain batean aurkitzen direla ikusi dezakegu. Honek aurkarien ekintzei erantzuterako orduan zailtasunak daudela adierazten du nahiz eta LPI-a nahiko argi zuen. Gehienetan bazekien zer egin behar zuen eta hartutako erabakiak egokiak izan direla uste du.
-quest14_label_0: Entrenatzaileak antzemandako lehiaketa osteko errendimendua Rendimiento Post-Competición Percibido por el/la Entrenador/a
-quest14_21: Lehiaketa honetan izan duen errendimendu maila.
-quest15: Entrenatzaileak Antzemandako Lehiaketa Osteko Errendimendua (Talde Kirolak)
-quest15_label_0: Entrenatzaileak Antzemandako Lehiaketa Osteko Errendimendua
-quest15_6: Talde helburuekiko duen konpizlizitate mailarekiko.
-quest15_7: Kideekiko duen eskuzabaltasun eta sostenguarekiko.
-quest15_8: Kideekiko duen errespetuarekiko.
-quest15_9: Hartutako erabakiekiko duen leialtasunarekiko.
-quest15_10: Kideekiko duen komunikazio mailarekiko.
-quest15_11: Talde lanari egiten dion ekarpenarekin.
-quest15_12: Ahaleginarekiko daukan inplikazioarekiko.
-quest15_13: Proposaturiko jokoaren helburuekiko daukan konfiantza mailarekin.
-quest15_14: Eman zaion lanarekiko erakutsi duen jarrerarekin.
-quest15_15: Partiduan zehar hartu dituen erabakiekiko.
-quest15_16: Lehiaketa osoan zehar izan duen konfiantza mailarekiko.
-quest15_17: Intentsitate oso handiko egoeretan duen errendimendu mailarekiko.
-quest15_18: Bere borroka eta pertseberantzia gaitasunarekiko.
-quest15_19: Hobekuntzarekiko duen jarrera baikorrarekiko.
-quest15_20: Bere gozamen, asetasun eta “sentsazio onen” transmisioarekiko.
-quest15_21: Lehiaketa honetan izan duen errendimendu mailarekiko
-label_done: Noiz betea
-label_message_from: -ren mezu berria Teskalen
-label_message: Mezu
-label_message_no_reply: Mesedez ez erantzun mezu honi. Erantzun nahi izanez gero Teskaleko zure kontuan sartu zaitez eta bertan idatzi ezazu zeure mezua.
-signup_label_16: Kirol
-quest16: Auto Antzemandako Maisutza Klimaren Galde-sorta Banakako Kirolak
-quest16_label_0: Auto Antzemandako Maisutza Klimaren Galde-sorta Banakako Kirolak 
-quest16_label_1: Banakako arrakastaren pertzepzio balioak
-notice_account_login_exists: Ya existe una cuenta con ese nombre de usuario. Por favor, elija uno diferente.
-label_picture: Argazki
-text_picture: Argazkia eransteko ala aldatzeko, hemen aukeratu igo nahi duzun artxiboa.
-
