@@ -12,7 +12,6 @@
     <thead>
       <tr> 
         <th></th>   
-        <th scope="col"><div align="left"><%=l(:field_login)%></div></th>
         <th scope="col"><div align="left"><%=l(:field_name) %></div></th>
         <th scope="col"><div align="left"><%=l(:field_created_on)%></div></th>
         <th scope="col"><div align="left"><%=l(:field_mail)%></div></th>
@@ -34,7 +33,6 @@
 	<%- else -%>
 	   <td></td>
 		<%- end -%>
-        <td><%= link_to user.login, :controller  => 'my', :action => 'admin', :id => user.id %></td>
         <td><%= link_to user.name, :controller  => 'my', :action => 'admin', :id => user.id %></td>
         <td><%= l_date(TzTime.zone.utc_to_local(user.created_on))%></td>
         <td><%= user.mail %></td>
