@@ -24,7 +24,7 @@
     </div>
     <div class='boxxqcontent'>
   	<div class="title2"><%= l(:label_register) %></div>  
-      <form id="accountform" action="/account/signup" method="post">
+      <form id="accountform" action="/account/signup"  enctype="multipart/form-data" method="post">
 			   <table cellspacing="0">
           <tbody>
  				<tr>
@@ -84,6 +84,21 @@
               <td><label for="default_timezone"><%= l(:label_timezone) %></label></td>
               <td><%= time_zone_select 'user', 'time_zone', TZInfo::Timezone.all.sort, :model => TZInfo::Timezone %> </td>
             </tr>
+            <tr>
+              <td></td>
+
+				   <td><%= image_tag "/images/missing.jpg", :class  => "photoborder" %></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input id="user_picture" name="user[picture]" size="30" type="file" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><div class="small"><%= l(:text_picture, 6, 12) %></div>
+              <td>
+            </tr>
+
  				<tr>
 					<td colspan="2"><hr></td>
 				</tr>

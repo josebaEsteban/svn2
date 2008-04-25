@@ -16,7 +16,8 @@ class User < ActiveRecord::Base
   has_attached_file :picture,
   # :path => ":rails_root/public/pictures/:id_:extension",
   :url => "/:attachment/:id/:style/:basename.:extension",
-  :styles => { :medium => "200x200>", :thumb => "65x65#",:talk => "32x32#" }
+  :styles => { :medium => "200x200>", :thumb => "65x65#",:talk => "32x32#" } 
+  
   has_many :answers
   has_one :preference, :dependent => :destroy, :class_name => 'UserPreference'
   composed_of :timezone, :class_name => 'TZInfo::Timezone', :mapping => %w( time_zone time_zone )
