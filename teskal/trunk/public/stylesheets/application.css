@@ -224,3 +224,5 @@ div#section5{background:#666666;color:#ffffff;}
 .flickr_pagination .prev_page,.flickr_pagination .next_page{border-width:2px;}
 .flickr_pagination .prev_page{margin-right:1em;}
 .flickr_pagination .next_page{margin-left:1em;}
+
+#ShadowBox table, #ShadowBox tr, #ShadowBox td {padding:0;border:0;}

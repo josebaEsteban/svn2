@@ -1,9 +1,13 @@
+<% content_for :header_tags do -%> 
+<%= javascript_include_tag 'js-global/FancyZoom.js' -%>
+<%= javascript_include_tag 'js-global/FancyZoomHTML.js' -%> 
+<%- end -%>       
 <div class='boxx'>
   <div class='boxxtop'>
     <div></div>
   </div>
   <div class='boxxcontent'>
-	<div align="center"><a href="/my/account">
+	<div align="center"><a href="<%=@user.picture.url %>">
 			<%- if @user.picture.url(:medium) !="/pictures/medium/missing.png" -%>
 			<%= image_tag @user.picture.url(:medium) , :class  => "photoborder"%>  
 		<%- else -%>
