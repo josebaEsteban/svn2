@@ -6,10 +6,12 @@
     <div></div>
   </div>
   <div class='boxxcontent'>
-	<div align="center"><a href="<%=@user.picture.url %>">
+	<div align="center">
 			<%- if @user.picture.url(:medium) !="/pictures/medium/missing.png" -%>
+			<a href="<%=@user.picture.url %>">  
 			<%= image_tag @user.picture.url(:medium) , :class  => "photoborder"%>  
 		<%- else -%>
+					 <a href="/my/account">    
 		 <%= image_tag "/images/missing.jpg", :class  => "photoborder" %>
 		<%- end -%>
 		</a> 
