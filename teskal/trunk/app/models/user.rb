@@ -19,6 +19,8 @@ class User < ActiveRecord::Base
   :styles => { :medium => "200x200>", :thumb => "65x65#",:talk => "32x32#" } 
   
   has_many :answers
+  has_many :books
+  has_many :quests
   has_one :preference, :dependent => :destroy, :class_name => 'UserPreference'
   composed_of :timezone, :class_name => 'TZInfo::Timezone', :mapping => %w( time_zone time_zone )
 

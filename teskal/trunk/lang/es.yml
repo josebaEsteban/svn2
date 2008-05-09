@@ -164,6 +164,7 @@ label_details: Detalles
 label_document: Documento
 label_document_new: Nuevo documento
 label_document_plural: Documentos
+label_done: hace
 label_download: %d Descarga
 label_download_plural: %d Descargas
 label_equals: igual
@@ -196,8 +197,11 @@ label_login: Entrar
 label_logout: Salir
 label_max_size: Tamaño máximo
 label_me: yo
-label_message_last: Last message
+label_message: Mensaje
+label_message_from: Nuevo mensaje en Teskal de
+label_message_last: Ultimo mensaje
 label_message_new: Crear mensaje
+label_message_no_reply: Por favor no respondas a este mensaje. Si deseas contestar, por favor accede a tu cuenta en Teskal y redacta ahi un mensaje.
 label_message_plural: Mensajes
 label_min_max_length: Longitud mín - máx
 label_modification: %d modificación
@@ -210,7 +214,7 @@ label_my_quest: Mis cuestionarios
 label_new: Nuevo
 label_news: Noticias
 label_next: Siguiente
-label_no_data: Ningunos datos a exhibir
+label_no_data: No hay datos que mostrar
 label_none: ninguno
 label_not_contains: no contiene
 label_not_equals: no igual
@@ -219,12 +223,13 @@ label_options: Opciones
 label_overview: Vistazo
 label_page_index: Índice
 label_password_lost: ¿Olvidaste la contraseña?
-label_per_page: Por la página
+label_per_page: Por página
 label_permissions: Permisos
 label_permissions_report: Permissions report
 label_personalize_page: Personalizar esta página
+label_picture: Foto
 label_please_login: Conexión
-label_preview: Previo
+label_preview: Previsualización
 label_previous: Anterior
 label_quest: Cuestionario
 label_quest_avail: Cuestionarios disponibles 
@@ -312,6 +317,7 @@ markt_quick_tour: Paseo Rápido
 notice_account_activated: Tu cuenta ha sido activada. Puedes entrar.
 notice_account_email_exists: Ya existe un usuario con ese correo. Por favor use un correo distinto.
 notice_account_invalid_creditentials: Usuario o contraseña no válido.
+notice_account_login_exists: Ya existe una cuenta con ese nombre de usuario. Por favor, elija uno diferente.
 notice_account_lost_email_sent: Se le ha enviado un correo con instrucciones para crear una contraseña.
 notice_account_password_updated: Contraseña actualizada.
 notice_account_register_done: Cuenta creada. Se le ha enviado un correo con instrucciones para activarla.
@@ -328,6 +334,52 @@ notice_successful_connection: Successful connection.
 notice_successful_create: Se ha creado correctamente.
 notice_successful_delete: Successful deletion.
 notice_successful_update: Successful update.
+quest100: Cuestionario CTP
+quest100_10: Me preocupa no poder aprender todo lo que hay que aprender en las sesiones de entrenamiento
+quest100_11: Para mí es importante hacer las cosas bien en comparación con otr@s compañer@s
+quest100_12: Yo sólo quiero evitar hacer mal los ejercicios
+quest100_13: Pienso que soy bastante bueno en mi deporte
+quest100_14: Estoy satisfecho con mi rendimiento en mi deporte
+quest100_15: Después de entrenar me siento habilidos@ durante un rato
+quest100_16: Soy bastante hábil en la práctica de este deporte dentro del equipo
+quest100_17: No sé jugar muy bien en este deporte
+quest100_18: Tengo mi propia opinión respecto a las habilidades que quiero practicar durante el entrenamiento
+quest100_19: Puedo decidir las actividades que quiero practicar durante el entrenamiento
+quest100_1: Quiero aprender todo lo que pueda durante la práctica deportiva
+quest100_20: Jugar en este equipo me hacer sentir más cerca de l@s otr@s compañer@s
+quest100_21: Las actividades del entrenamiento me hacen sentir más conectado con l@s otr@s compañer@s
+quest100_22: Me propongo hacer deporte durante mucho tiempo
+quest100_23: A menudo se da la oportunidad a l@s deportistas de que planifiquen sus propias actividades durante el entrenamiento
+quest100_24: A menudo se da la oportunidad a l@s deportistas de que digan lo que piensan sobre las tareas del entrenamiento
+quest100_25: L@s deportistas pueden elegir los ejercicios que van a practicar
+quest100_26: No me esfuerzo mucho en el entrenamiento
+quest100_27: Me esfuerzo mucho cuando practico mi deporte
+quest100_28: Intento esforzarme con mucha fuerza cuando practico en el entrenamiento
+quest100_29: Para mi es importante hacerlo bien cuando practico mi deporte
+quest100_2: A veces tengo miedo de no aprender, tanto como quisiera, ciertas habilidades de mi deporte
+quest100_30: Cuando practicamos en el entrenamiento generalmente deseo que el juego termine rápido
+quest100_31: Cuando practico mi deporte generalmente me aburro
+quest100_32: Durante el entrenamiento a menudo "estoy dormido o ausente"
+quest100_33: En las sesiones de entrenamiento l@s deportistas se ayudan unos a otros a aprender
+quest100_34: En las sesiones de entrenamiento l@s deportistas se ayudan unos a otros a mejorar y a superarse
+quest100_35: En las sesiones de entrenamiento l@s deportistas trabajan juntos como un equipo
+quest100_36: El/la entrenador@ anima a l@s deportistas a que se ayuden mutuamente para mejorar
+quest100_37: En las sesiones de entrenamiento se anima a l@s deportistas a que trabajen sus puntos débiles
+quest100_38: En las sesiones de entrenamiento el/la entrenador@ se asegura de que l@s deportistas mejoren las habilidades que no dominan
+quest100_39: En las sesiones de entrenamiento el/la entrenador@ insiste en que debemos mejorar en cada sesión
+quest100_3: Para mí es importante hacer las cosas mejor que otr@s compañer@s
+quest100_40: En las sesiones de entrenamiento el/la entrenador@ siempre insiste en que intentemos hacer lo mejor posible
+quest100_4: A menudo lo que me motiva en el entrenamiento es el miedo a hacerlo mal
+quest100_5: Mi objetivo es rendir mejor que otr@s compañer@s
+quest100_6: Para mí es importante aprender lo mejor posible las habilidades enseñadas en el entrenamiento
+quest100_7: Me preocupa no poder aprender todo lo que podría en el entrenamiento
+quest100_8: Mi objetivo es evitar realizar mal las tareas
+quest100_9: Quiero dominar completamente las tareas practicadas en el entrenamiento
+quest100_header: En mi deporte...
+quest100_intro: A continuación te presentamos una serie de frases que están relacionadas con tu deporte, con lo que sientes y haces cuando lo practicas. Son tus opiniones personales y no existen respuestas acertadas o desacertadas, siempre que respondas con sinceridad. Por favor, lee cada una de ellas cuidadosamente y después clica en la opción que más se aproxime a tu opinión.
+quest100_valor_1: 1 (totalmente en desacuerdo)
+quest100_valor_5: 5 (totalmente de acuerdo)
+
 quest10: Clima Formativo Percibido (Deportes Colectivos)
 quest10_10: Permite solucionar situaciones de competición de forma diferente a mis directrices
 quest10_11: Anima a l@s deportistas cuando cometen un fallo
@@ -466,6 +518,46 @@ quest12_label_1: Clima de Rendimiento
 quest12_label_2: Clima de Maestría
 quest12_valor_1: 0 (nada)
 quest12_valor_2: 100 (completamente)
+quest13: Clima Formativo Percibido (Deportes Individuales)
+quest13_label_0: Clima Formativo Percibido (Deportes Individuales)
+quest14: Valoración Post-Competición realizada por el/la Entrenador/a (Deportes Individuales)
+quest14_10: El control de sus pensamientos y el afrontamiento positivo
+quest14_11: La forma de responder a las acciones de los/las demás
+quest14_12: Las decisiones que ha tomado, una vez conocidos los objetivos propuestos
+quest14_13: La claridad en su forma de actuar durante la competición
+quest14_14: La claridad de su Plan Integral de Competición durante todos los momentos
+quest14_16: El nivel de confianza que ha mantenido a lo largo de toda la competición
+quest14_17: El grado de satisfacción que ha transmitido durante la competición
+quest14_21: Su nivel de rendimiento en esta competición
+quest14_6: El control de sus emociones
+quest14_7: El sentirse a gusto con sus emociones en determinados momentos
+quest14_d3_a: En el caso del RCOG, los valores se sitúan en un nivel bajo, lo que implica que no ha podido mantener los niveles de confianza y de satisfacción durante la competición. Además, han sido escasos los momentos en los que ha tenido buenas sensaciones o se ha sentido cómodo.
+quest14_d4_b: Al observar los valores del RCOM, vemos que se encuentran en un nivel medio, lo que representa dificultades a la hora de responder a las acciones de l@s adversari@s, aunque el PIC lo tenía bastante claro. Casi siempre sabía lo que tenía que hacer, y se considera que las decisiones adoptadas han sido acertadas.
+quest14_header1: El grado de satisfacción con la actuación del/la deportista ha sido...
+quest14_header2: El grado de satisfacción con la actuación del/la deportista sobre
+quest14_intro: Más abajo se plantean una serie de preguntas relacionadas con el comportamiento del/la deportista durante la competición, sobre las que queremos recoger tu opinión. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa lo que piensas acerca de ello.
+quest14_label_0: Valoración Post-Competición realizada por el/la Entrenador/a
+quest15: Valoración Post-Competición realizada por el/la Entrenador/a (Deportes Colectivos)
+quest15_10: Con el grado de comunicación con sus compañer@s
+quest15_11: Con su aportación al trabajo colectivo
+quest15_12: Con su implicación hacia el esfuerzo
+quest15_13: Con su confianza en los objetivos del juego propuestos
+quest15_14: Con su actitud hacia el trabajo que se te ha encomendado
+quest15_15: Con las decisiones que ha tomado durante la competición.
+quest15_16: Con su nivel de confianza durante toda la competición
+quest15_17: Con su nivel de rendimiento ante las situaciones de muy alta intensidad
+quest15_18: Con su capacidad luchadora y perseverante
+quest15_19: Con su actitud positiva hacia su propia mejora
+quest15_20: Con su transmisión de disfrute, satisfacción y buenas sensaciones
+quest15_21: Su nivel de rendimiento en esta competición
+quest15_6: Con su grado de complicidad hacia el objetivo colectivo
+quest15_7: Con su generosidad y apoyo hacia sus compañer@s
+quest15_8: Con el respeto hacia sus compañeros
+quest15_9: Con su lealtad hacia las decisiones adoptadas
+quest15_label_0: Valoración Post-Competición realizada por el/la Entrenador/a
+quest16: Clima Formativo del Entrenador Auto Percibido (Deportes Individuales)
+quest16_label_0: Clima Formativo del Entrenador Auto Percibido (Deportes Individuales)
+quest16_label_1: Clima de Rendimiento Individual
 quest1: Valoración Inicial Temporada
 quest1_16: Utilizas alguna técnica de relajación
 quest1_17: Usas alguna estrategia para mantener el control cuando la situación deportiva te supera
@@ -1103,6 +1195,7 @@ signup_label_12: Gracias por registrarte!
 signup_label_13: Tu cuenta ha sido creada en Teskal.
 signup_label_14: Recibirás una confirmación por correo.
 signup_label_15: Tiene un enlace de activación de tu cuenta que debes clicar para entrar en
+signup_label_16: Deporte
 signup_label_1: Paso
 signup_label_2: Escoge un nombre de usuario. Que no contenga espacios, por favor.
 signup_label_3: El lenguaje será usado cuando entres la próxima vez.
@@ -1119,7 +1212,7 @@ text_are_you_sure: ¿ Estás seguro ?
 text_caracters_maximum: máximo %d caracteres.
 text_length_between: Longitud entre %d y %d caracteres.
 text_min_max_length_info: 0 para ninguna restricción
-unit_0_path: Teskal.es.pdf
+text_picture: Para añadir o cambiar la foto, selecciona aquí el archivo que deseas subir.unit_0_path: Teskal.es.pdf
 unit_0_title: Presentación Teskal
 unit_10_path: 10.Responsabilidad.vs.Culpabilidad.es.pdf
 unit_10_title: Responsabilidad vs Culpabilidad
@@ -1151,96 +1244,3 @@ unit_8_path: 08.La.Competicion.es.pdf
 unit_8_title: La Competición
 unit_9_path: 09.La.Comunicacion.es.pdf
 unit_9_title: La Comunicación
-quest13: Clima Formativo Percibido (Deportes Individuales)
-quest13_label_0: Clima Formativo Percibido (Deportes Individuales)
-quest14: Valoración Post-Competición realizada por el/la Entrenador/a (Deportes Individuales)
-quest14_header1: El grado de satisfacción con la actuación del/la deportista ha sido...
-quest14_header2: El grado de satisfacción con la actuación del/la deportista sobre
-quest14_6: El control de sus emociones
-quest14_7: El sentirse a gusto con sus emociones en determinados momentos
-quest14_10: El control de sus pensamientos y el afrontamiento positivo
-quest14_11: La forma de responder a las acciones de los/las demás
-quest14_12: Las decisiones que ha tomado, una vez conocidos los objetivos propuestos
-quest14_13: La claridad en su forma de actuar durante la competición
-quest14_14: La claridad de su Plan Integral de Competición durante todos los momentos
-quest14_16: El nivel de confianza que ha mantenido a lo largo de toda la competición
-quest14_17: El grado de satisfacción que ha transmitido durante la competición
-quest14_intro: Más abajo se plantean una serie de preguntas relacionadas con el comportamiento del/la deportista durante la competición, sobre las que queremos recoger tu opinión. Por favor, lee cada una cuidadosamente, y haz clic en el número que mejor describa lo que piensas acerca de ello.
-quest14_d3_a: En el caso del RCOG, los valores se sitúan en un nivel bajo, lo que implica que no ha podido mantener los niveles de confianza y de satisfacción durante la competición. Además, han sido escasos los momentos en los que ha tenido buenas sensaciones o se ha sentido cómodo.
-quest14_d4_b: Al observar los valores del RCOM, vemos que se encuentran en un nivel medio, lo que representa dificultades a la hora de responder a las acciones de l@s adversari@s, aunque el PIC lo tenía bastante claro. Casi siempre sabía lo que tenía que hacer, y se considera que las decisiones adoptadas han sido acertadas.
-quest14_label_0: Valoración Post-Competición realizada por el/la Entrenador/a
-quest14_21: Su nivel de rendimiento en esta competición
-quest15: Valoración Post-Competición realizada por el/la Entrenador/a (Deportes Colectivos)
-quest15_label_0: Valoración Post-Competición realizada por el/la Entrenador/a
-quest15_6: Con su grado de complicidad hacia el objetivo colectivo
-quest15_7: Con su generosidad y apoyo hacia sus compañer@s
-quest15_8: Con el respeto hacia sus compañeros
-quest15_9: Con su lealtad hacia las decisiones adoptadas
-quest15_10: Con el grado de comunicación con sus compañer@s
-quest15_11: Con su aportación al trabajo colectivo
-quest15_12: Con su implicación hacia el esfuerzo
-quest15_13: Con su confianza en los objetivos del juego propuestos
-quest15_14: Con su actitud hacia el trabajo que se te ha encomendado
-quest15_15: Con las decisiones que ha tomado durante la competición.
-quest15_16: Con su nivel de confianza durante toda la competición
-quest15_17: Con su nivel de rendimiento ante las situaciones de muy alta intensidad
-quest15_18: Con su capacidad luchadora y perseverante
-quest15_19: Con su actitud positiva hacia su propia mejora
-quest15_20: Con su transmisión de disfrute, satisfacción y buenas sensaciones
-quest15_21: Su nivel de rendimiento en esta competición
-quest100: Cuestionario CTP
-quest100_intro: A continuación te presentamos una serie de frases que están relacionadas con tu deporte, con lo que sientes y haces cuando lo practicas. Son tus opiniones personales y no existen respuestas acertadas o desacertadas, siempre que respondas con sinceridad. Por favor, lee cada una de ellas cuidadosamente y después clica en la opción que más se aproxime a tu opinión.
-quest100_1: Quiero aprender todo lo que pueda durante la práctica deportiva
-quest100_2: A veces tengo miedo de no aprender, tanto como quisiera, ciertas habilidades de mi deporte
-quest100_3: Para mí es importante hacer las cosas mejor que otr@s compañer@s
-quest100_4: A menudo lo que me motiva en el entrenamiento es el miedo a hacerlo mal
-quest100_5: Mi objetivo es rendir mejor que otr@s compañer@s
-quest100_6: Para mí es importante aprender lo mejor posible las habilidades enseñadas en el entrenamiento
-quest100_7: Me preocupa no poder aprender todo lo que podría en el entrenamiento
-quest100_8: Mi objetivo es evitar realizar mal las tareas
-quest100_9: Quiero dominar completamente las tareas practicadas en el entrenamiento
-quest100_10: Me preocupa no poder aprender todo lo que hay que aprender en las sesiones de entrenamiento
-quest100_11: Para mí es importante hacer las cosas bien en comparación con otr@s compañer@s
-quest100_12: Yo sólo quiero evitar hacer mal los ejercicios
-quest100_13: Pienso que soy bastante bueno en mi deporte
-quest100_14: Estoy satisfecho con mi rendimiento en mi deporte
-quest100_15: Después de entrenar me siento habilidos@ durante un rato
-quest100_16: Soy bastante hábil en la práctica de este deporte dentro del equipo
-quest100_17: No sé jugar muy bien en este deporte
-quest100_18: Tengo mi propia opinión respecto a las habilidades que quiero practicar durante el entrenamiento
-quest100_19: Puedo decidir las actividades que quiero practicar durante el entrenamiento
-quest100_20: Jugar en este equipo me hacer sentir más cerca de l@s otr@s compañer@s
-quest100_21: Las actividades del entrenamiento me hacen sentir más conectado con l@s otr@s compañer@s
-quest100_22: Me propongo hacer deporte durante mucho tiempo
-quest100_23: A menudo se da la oportunidad a l@s deportistas de que planifiquen sus propias actividades durante el entrenamiento
-quest100_24: A menudo se da la oportunidad a l@s deportistas de que digan lo que piensan sobre las tareas del entrenamiento
-quest100_25: L@s deportistas pueden elegir los ejercicios que van a practicar
-quest100_26: No me esfuerzo mucho en el entrenamiento
-quest100_27: Me esfuerzo mucho cuando practico mi deporte
-quest100_28: Intento esforzarme con mucha fuerza cuando practico en el entrenamiento
-quest100_29: Para mi es importante hacerlo bien cuando practico mi deporte
-quest100_30: Cuando practicamos en el entrenamiento generalmente deseo que el juego termine rápido
-quest100_31: Cuando practico mi deporte generalmente me aburro
-quest100_32: Durante el entrenamiento a menudo "estoy dormido o ausente"
-quest100_33: En las sesiones de entrenamiento l@s deportistas se ayudan unos a otros a aprender
-quest100_34: En las sesiones de entrenamiento l@s deportistas se ayudan unos a otros a mejorar y a superarse
-quest100_35: En las sesiones de entrenamiento l@s deportistas trabajan juntos como un equipo
-quest100_36: El/la entrenador@ anima a l@s deportistas a que se ayuden mutuamente para mejorar
-quest100_37: En las sesiones de entrenamiento se anima a l@s deportistas a que trabajen sus puntos débiles
-quest100_38: En las sesiones de entrenamiento el/la entrenador@ se asegura de que l@s deportistas mejoren las habilidades que no dominan
-quest100_39: En las sesiones de entrenamiento el/la entrenador@ insiste en que debemos mejorar en cada sesión
-quest100_40: En las sesiones de entrenamiento el/la entrenador@ siempre insiste en que intentemos hacer lo mejor posible
-quest100_valor_1: 1 (totalmente en desacuerdo)
-quest100_valor_5: 5 (totalmente de acuerdo)
-quest100_header: En mi deporte...
-label_done: hace
-label_message_from: Nuevo mensaje en Teskal de
-label_message: Mensaje
-label_message_no_reply: Por favor no respondas a este mensaje. Si deseas contestar, por favor accede a tu cuenta en Teskal y redacta ahi un mensaje.
-signup_label_16: Deporte
-quest16: Clima Formativo del Entrenador Auto Percibido (Deportes Individuales)
-quest16_label_0: Clima Formativo del Entrenador Auto Percibido (Deportes Individuales)
-quest16_label_1: Clima de Rendimiento Individual
-notice_account_login_exists: Ya existe una cuenta con ese nombre de usuario. Por favor, elija uno diferente.
-label_picture: Foto
-text_picture: Para añadir o cambiar la foto, selecciona aquí el archivo que deseas subir.

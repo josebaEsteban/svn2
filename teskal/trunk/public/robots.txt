@@ -1,5 +1,11 @@
 User-agent: *
-Disallow: /
+Disallow: /lib
+Disallow: /charts
+Disallow: /manual
+Disallow: /images
+Disallow: /pictures  
+Disallow: /javascripts
+
 
 
 
