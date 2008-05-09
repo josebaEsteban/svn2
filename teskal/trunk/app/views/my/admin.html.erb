@@ -102,11 +102,11 @@ font:normal 100%/120% "Lucida Grande","Lucida Sans Unicode",Verdana,Arial,Helvet
   </div>
   <div class='boxxcontent'>
 		<div align="center">
-			<a href="<%=@athlete.picture.url %>">
-		 <!-- <a href="/users/edit/<%= @athlete.id.to_s %>">      -->
 	<%- if @athlete.picture.url(:medium) !="/pictures/medium/missing.png" -%>
+				<a href="<%=@athlete.picture.url %>">  
 	   <%= image_tag @athlete.picture.url(:medium) , :class  => "photoborder"%> 
 	<%- else -%>
+			 <a href="/users/edit/<%= @athlete.id.to_s %>">   
     		 <%= image_tag "/images/missing.jpg", :class  => "photoborder" %>   
 	<%- end -%>
 	</a></div>   
