@@ -1,4 +1,12 @@
-<%= javascript_include_tag 'prototype' -%><%= javascript_include_tag 'effects' -%><%= javascript_include_tag 'stereotabs' -%><%= stylesheet_link_tag "reset" -%>
+<% content_for :header_tags do -%> 
+<%= javascript_include_tag 'js-global/FancyZoom.js' -%>
+<%= javascript_include_tag 'js-global/FancyZoomHTML.js' -%> 
+<%= javascript_include_tag 'prototype' -%>
+<%= javascript_include_tag 'effects' -%>
+<%= javascript_include_tag 'stereotabs' -%>
+<%= stylesheet_link_tag "reset" -%>
+<%- end -%>
+
 <%- if @libreria -%>
 <script type="text/javascript">
 		//<![CDATA[
@@ -95,7 +103,8 @@ font:normal 100%/120% "Lucida Grande","Lucida Sans Unicode",Verdana,Arial,Helvet
   </div>
   <div class='boxxcontent'>
 		<div align="center">
-		 <a href="/users/edit/<%= @athlete.id.to_s %>"> 
+			<a href="<%=@athlete.picture.url %>">
+		 <!-- <a href="/users/edit/<%= @athlete.id.to_s %>">      -->
 	<%- if @athlete.picture.url(:medium) !="/pictures/medium/missing.png" -%>
 	   <%= image_tag @athlete.picture.url(:medium) , :class  => "photoborder"%> 
 	<%- else -%>
