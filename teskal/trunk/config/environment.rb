@@ -52,7 +52,7 @@ Rails::Initializer.run do |config|
     :port => 25,
     :domain => "teskal.com",
     :authentication => :login,
-    :user_name => "support",
+    :user_name => "support@teskal.com",
     :password => "swaHMdEzu2",
   }
 
