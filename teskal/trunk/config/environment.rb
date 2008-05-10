@@ -48,11 +48,11 @@ Rails::Initializer.run do |config|
 
   # SMTP server configuration
   config.action_mailer.smtp_settings = {
-    :address => "smtp.teskal.com",
+    :address => "mail.speedyrails.com",
     :port => 25,
     :domain => "teskal.com",
     :authentication => :login,
-    :user_name => "teskal",
+    :user_name => "support@teskal.com",
     :password => "swaHMdEzu2",
   }
 
