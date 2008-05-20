@@ -300,7 +300,7 @@ markt_10: Teskal donne les bons outils pour vos entraîneurs
 markt_11: C'est un concept intégral de la performance sportive qui prenne en compte non seulement les compétences techniques et physiques de l'athlète, mais aussi la personne qui est l'athlète.
 markt_12: Teskal permet un niveau de la communication entre entraîneur / athlète ou une équipe.
 markt_13: Que ce soit pour les situations où l'athlète et entraîneur vivent dans des endroits différents, ou lorsque l'athlète en compétition loin, Teskal autorise la poursuite de la surveillance de nombreuses variables pertinentes pour l'athlète et la performance des athlètes.
-markt_1: Outil pour aider à gérer les variables psychologiques de la performance sportive.
+markt_1: Outil pour aider à gérer les variables psychologiques de la performance sportive
 markt_2: Voulez-vous être en mesure d'effectuer au niveau que vous savez que vous êtes capable?
 markt_3: Comment faites-vous former votre capacité à gérer le stress, votre confiance en soi?
 markt_4_1: Un athlète en bonne forme physique, bien formés, ayant de bonnes performances qu'il n'est pas en mesure de répéter dans la compétition.
@@ -413,73 +413,39 @@ quest11_d6_b: The medium level value obtained means that this athlete at times d
 quest11_d6_c: The high value obtained implies that this athlete is seriously considering abandoning the sport because he/she feels incapable of reaching the desired goals.
 quest11_header: Pourquoi pratiquez-vous votre sport ?
 quest11_intro: Using l'échelle ci-dessous, indiquer s'il vous plaît dans quelle mesure chacun des articles suivants correspond à une des raisons pour lesquelles vous pratiquez actuellement votre sport.
-quest11_label_0: Motivación Autodeterminada
 quest11_label_0: Self-determinated Motivation
 quest11_label_1: Intrinsic Motivation
-quest11_label_1: Motivación Intrínseca
 quest11_label_2: Integrated regulation
-quest11_label_2: Regulación Integrada
 quest11_label_3: Identified regulation
-quest11_label_3: Regulación Identificada
 quest11_label_4: Introjected regulation
-quest11_label_4: Regulación Introyectada
 quest11_label_5: Extrinsic Motivation
-quest11_label_5: Motivación Extrínseca
 quest11_label_6: Amotivación
-quest11_label_6: Amotivation
-quest11_val_10: Este valor tan alto de la Amotivación contamina al resto de las dimensiones, anulando la posibilidad de realizar interpretaciones de mayor complejidad y significación. Se hace necesario consultar con el/la tutor/a ya que est@ deportista se encuentra en una situación alarmante, siente cierta incapacidad para tener éxito, acompañada de un importante descenso de su nivel de autoconfianza. Además puede estar en peligro su continuidad, dada la confusión y la ineficacia percibida de conseguir las metas propuestas en este deporte.
 quest11_val_10: The high value obtained in Amotivation contaminates the rest of the measures, which annuls the possibility to make any more complex or significant interpretations. Consultation with the tutor is required because this athlete is in a worrisome situation, feels incapable of achieving success and is experiencing a noticeable decrease in self-confidence. The athlete’s continuity in sport is in danger, given the level of confusion and perceived inefficacy to reach the desired goals in sport.
 quest11_val_1: High values of intrinsic motivation dimensions go hand in hand with low values in the extrinsic dimensions. Besides the other spects already discussed, this means that this athlete’s high levels of self-determined motivation will help maintain a high sense of efficacy in his/her actions, will strengthen the perseverance in his/her goals, will favor the use of positive coping styles and will have a positive impact in his/her personal adjustment with increased feelings of wellness.
-quest11_val_1: Se produce un alto valor en las dimensiones motivacionales de carácter intrínseco, acompañadas de bajos valores en las dimensiones extrínsecas. Esto supone que, además de lo comentado en los apartados correspondientes, este nivel elevado de motivación autodeterminada le ayudará a mantener una alta eficacia en sus acciones, reforzará la persistencia en sus objetivos, le facilitará la utilización de estilos de afrontamiento positivos y contribuirá a alcanzar un mejor ajuste personal acompañado de mayores sensaciones de bienestar.
 quest11_val_2: High Intrinsic Motivation values are accompanied by medium level values in Extrinsic Motivation. That implies that this athlete’s high levels of self-determined motivation will help maintain a high sense of efficacy in his/her actions, will strengthen the perseverance in his/her goals, will favor the use of positive coping styles and will have a positive impact in his/her personal adjustment , with increased feelings of wellness. At the same time it will be important to monitor the extrinsic motivation values because they can undermine the positive motivational state described, particularly if this evaluation has been conducted outside of the competitive season. 
-quest11_val_2: Se produce un alto valor en las dimensiones motivacionales de regulación autodeterminada, acompañadas de valores medios en las dimensiones extrínsecas de la motivación. En principio supone que, por un lado, los altos valores de las dimensiones motivacionales de carácter intrínseco le ayudarán a mantener una alta eficacia en sus acciones, reforzará la persistencia en sus objetivos, le facilitará la utilización de estilos de afrontamiento positivos y contribuirá a alcanzar u mejor ajuste personal acompañado de mayores sensaciones de bienestar. Por otro, habrá que vigilar el comportamiento que, a corto plazo, se produzca en los valores de las dimensiones extrínsecas (la amotivación), dado que pueden minar el positivo estado motivacional indicado, sobre todo si esta valoración se ha realizado fuera del periodo competitivo.
-quest11_val_3: Como se puede observar, se producen altos valores en el conjunto de las dimensiones valoradas. En base a esto, se puede señalar que su estado motivacional es contradictorio y confuso, dado que los valores se agrupan en torno a los dos polos opuestos de la motivación (autodeterminado-no autodeterminado). Se hace necesario consultar con el/la tutor/a, salvo que los valores de la amotivación sean muy bajos y nos encontremos en periodo competitivo, en cuyo caso esta sugerencia sería recomendable. Además, sería conveniente mantener la vigilancia y volver a realizar otra valoración a corto plazo.
 quest11_val_3: High values of all the dimensions measured were obtained. This represents a confusing and contradictory motivational state, because his/her values pool around two opposite ends of the spectrum; self-determination and externally determined. It may be necessary to consult the tutor, unless lo que sigue me parece una contradiccion. Lo puedes revisar Josean?Se hace necesario consultar con el/la tutor/a, salvo que los valores de la amotivación sean muy bajos y nos encontremos en periodo competitivo, en cuyo caso esta sugerencia sería recomendable. It is also recommended to continue monitoring and conduct another evaluation shortly.
 quest11_val_4: Medium level values of self-regulated motivational dimensions, accompanied by low values of the externally determined values. This means that, in the one hand, the level of intrinsic motivation may help maintain high level of efficacy in his or her behaviors, and a certain level of perseverance in reaching for goals, with a generally positive coping style and frequent feelings of wellness. The low values of extrinsic motivation obtained can be seen as a positive, because they act as an antidote against low commitment in difficult situations or feelings of chronic fatigue, particularly if this athlete is not in season. It is recommended to strengthen and increase intrinsic motivation levels.
-quest11_val_4: Se produce un valor medio de las dimensiones motivacionales de regulación autodeterminadas, acompañadas de bajos valores en las no-autodeterminadas. En principio supone que, por un lado, los valores de las dimensiones motivacionales de carácter intrínseco le pueden ayudar a mantener una alta eficacia en sus acciones acompañada de cierta persistencia en sus objetivos, con una tendencia a utilizar estilos de afrontamiento positivos y a tener, a menudo, sensaciones de bienestar. Los bajos valores de las dimensiones extrínsecas pueden ser considerados muy positivamente, ya que suponen un antídoto contra la baja implicación en situaciones difíciles o la aparición de fatiga crónica, sobre todo si est@ deportista se encuentra fuera de su periodo competitivo. Se recomienda fortalecer e intentar elevar los valores de la motivación intrínseca.
 quest11_val_5: Medium level values of both, intrinsic motivation dimensions and externally controlled dimensions. This implies that, in the one hand, the level of intrinsic motivation may help maintain high level of efficacy in his or her behaviors, and a certain level of perseverance in reaching for goals. It is important to monitor the extrinsic motivation values, particularly in the short term, to counter the negative impact that they may have in pressure situations. It is recommended to consult with the tutor to set up a mini-intervention focused on raising intrinsic motivation values.
-quest11_val_5: Se produce un valor medio tanto en las dimensiones motivacionales de regulación autodeterminada como no-autodeterminada. En principio supone que, por un lado, los valores de las dimensiones motivacionales de carácter intrínseco le pueden ayudar a mantener una alta eficacia en sus acciones acompañada de cierta persistencia en sus objetivos. Por otro, habrá que vigilar el comportamiento que, a corto plazo, se produzca en los valores de las dimensiones extrínsecas para contrarrestar la posible ausencia de motivación (amotivación) o el negativo impacto que puedan generar situaciones de presión exógena (motivación extrínseca). Sería conveniente consultar con el/la tutor/a para establecer una miniestrategia orientada a elevar los valores correspondientes a las dimensiones de la motivación intrínseca.
 quest11_val_6: Medium level values of self-regulated motivational dimensions, accompanied by high values of the externally determined values . This pattern implies that, although the intrinsic motivational values will help maintain high efficacy in his/her actions, goal perseverance and positive coping styles will be weakened. At the same time, high extrinsic values will interfere with the capacity to reach the necessary motivational level required to feel the personal balance needed for optimal performance. Consultation with the tutor is recommended to regain emotional balance and implement the needed interventions to strengthen perseverance and continuity.
-quest11_val_6: Se produce un valor medio en las dimensiones motivacionales de regulación autodeterminada, acompañadas de altos valores en las dimensiones extrínsecas de la motivación. En principio supone que, por un lado, estos valores de las dimensiones motivacionales de carácter intrínseco le pueden ayudar a mantener una alta eficacia en sus acciones pero, tanto la persistencia en sus objetivos como la utilización de estilos de afrontamiento positivos se verán mermados. Por otro, estos altos valores de las dimensiones extrínsecas (sobre todo de la amotivación), le dificultarán alcanzar el nivel motivacional necesario para sentir un ajuste y un equilibrio personal acorde a los requerimientos del estado de rendimiento óptimo. Es necesario consultar con el/la tutor/a para reestablecer un equilibrio emocional y tomar medidas adecuadas que refuercen su persistencia y su continuidad.
 quest11_val_7: Low levels of both, intrinsic and extrinsic motivation values. Even though this athlete lacks the motivational energy to maintain high levels of efficacy in his/her actions and goal perseverance, the lack of dependency of external contingencies may have a positive impact. Perhaps this is due to the athlete being in the midst of a high intensity training cycle or working at many and very complex tasks. Keeping the extrinsic values low will be important , particularly during the competitive season, to avoid fear of mistakes or excess pressure. This situation requires consultation with the tutor to implement as soon as possible a strategy designed to increase intrinsic motivation values while keeping the extrinsic ones low.
-quest11_val_7: Se produce un bajo valor tanto de las dimensiones motivacionales de regulación autodeterminada como no autodeterminada. A pesar de que carece de la fuerza dinámica suficiente para mantener una alta eficacia en sus acciones y una persistencia en sus objetivos, puede ser positiva la baja dependencia que posee respecto a contingencias externas. Quizás se encuentre en un ciclo de preparación de altas intensidades o de gran complejidad y volumen de tareas. Será importante mantener bajos los valores de las dimensiones extrínsecas, sobre todo si estamos en periodos competitivos, para evitar el exceso de presión o el miedo a cometer errores. Es una situación que requiere consultar con el/la tutor/a para establecer una miniestrategia orientada a elevar, cuanto antes, los valores de las dimensiones de la motivación intrínseca, y mantener los correspondientes a la extrínseca.
 quest11_val_8: Low self-determined motivational values and medium levels of extrinsic motivation. This athlete lacks the motivational energy to maintain high levels of efficacy and goal perseverance, which will negatively impact his/her coping styles. The short term behavior of the extrinsic motivation dimensions should be monitored to counter the possible lack of motivation (amotivation) or the negative impact of external pressure sources (extrinsic motivation). This situation requires consultation with the tutor to implement as soon as possible a strategy designed to increase intrinsic motivation values while keeping the extrinsic ones stable or lower.
-quest11_val_8: Se produce un bajo valor de las dimensiones motivacionales de regulación autodeterminada, acompañadas de valores medios en las dimensiones extrínsecas de la motivación. En principio, carece de la fuerza dinámica suficiente para mantener una alta eficacia en sus acciones y una persistencia en sus objetivos, que afectarán negativamente a los estilos de afrontamiento. Habrá que vigilar el comportamiento que, a corto plazo, se produzca en los valores de las dimensiones extrínsecas para contrarrestar la posible ausencia de motivación (amotivación) o el negativo impacto que puedan generar situaciones de presión exógena (motivación extrínseca). Sería conveniente consultar con el/la tutor/a para establecer una miniestrategia orientada a elevar los valores de las dimensiones de la motivación intrínseca y mantener o minimizar los correspondientes a la extrínseca.
 quest11_val_9: Low self-determined motivational values and high levels of extrinsic motivation. This athlete lacks the motivational energy to maintain high levels of efficacy and goal perseverance, which will negatively impact his/her coping styles. The high values obtained in the extrinsic dimensions (particularly amotivation) imply that he/she is excessively dependent on external contingency sources. This situation requires consultation with the tutor to implement as soon as possible a strategy designed to increase intrinsic motivation values while keeping the extrinsic ones stable or lower, otherwise the continuity of sport participation may be compromised. 
-quest11_val_9: Se produce un bajo valor de las dimensiones motivacionales de regulación autodeterminada, acompañadas de altos valores en las dimensiones extrínsecas de la motivación. En principio supone que, por un lado, carece de la fuerza dinámica suficientes para mantener una alta eficacia en sus acciones y una persistencia en sus objetivos, que afectarán negativamente a los estilos de afrontamiento. Por otro, estos altos valores de las dimensiones extrínsecas (sobre todo de la amotivación), supone que se encuentra excesivamente mediatizado por fuerzas percibidas ajenas, con una alta dependencia de contingencias externas. Es necesario consultar con el/la tutor/a para establecer una miniestrategia orientada a elevar los valores de las dimensiones intrínsecas de la motivación y reducir los de carácter extrínseco, ya que puede verse afectada la continuidad de la práctica de este deporte.
-quest11_valor_1: 1 (does not correspond at all)
 quest11_valor_1: 1 (ne correspond pas du tout)
 quest11_valor_2: 2 (correspondent très peu)
-quest11_valor_2: 2 (corresponds very little)
 quest11_valor_3: 3 (correspondent)
-quest11_valor_3: 3 (corresponds a little)
 quest11_valor_4: 4 (correspondent modérément)
-quest11_valor_4: 4 (corresponds moderately)
 quest11_valor_5: 5 correspond ont quitté un bit)
-quest11_valor_5: 5 corresponds quit a bit)
-quest11_valor_6: 6 (quite a lot)
 quest11_valor_6: 6 (énormément)
-quest11_valor_7: 7 (completely)
 quest11_valor_7: 7 (complètement)
-quest11_valor_tit_10: Amotivational Profile
 quest11_valor_tit_10: Perfil Amotivacional
-quest11_valor_tit_1: Presenta un Perfil Global de Motivación Autodeterminado.
 quest11_valor_tit_1: Shows a Self-Determined Global Motivational Profile.
-quest11_valor_tit_2: Presenta un Perfil Global de Motivación Autodeterminado.
 quest11_valor_tit_2: Shows an Auto-Determined Global Motivational Profile.
-quest11_valor_tit_3: Presenta un Perfil Global de Motivación Bipolar.
 quest11_valor_tit_3: Shows a Bipolar Global Motivational Profile.
-quest11_valor_tit_4: Presenta un Perfil Global de Motivación Moderado.
 quest11_valor_tit_4: Shows a Moderate Global Motivational Profile.
-quest11_valor_tit_5: Presenta un Perfil Global de Motivación Moderado.
 quest11_valor_tit_5: Shows a Moderate Global Motivational Profile.
-quest11_valor_tit_6: Presenta un Perfil Global de Motivación No Autodeterminado.
 quest11_valor_tit_6: Shows a Global Motivational Profile Not-Auto-determined.
-quest11_valor_tit_7: Presenta un Perfil Global de Motivación Bajo Autodeterminado.
 quest11_valor_tit_7: Shows a Global Motivational Profile of Low Auto-determination.
-quest11_valor_tit_8: Presenta un Perfil Global de Motivación Bajo Autodeterminado.
 quest11_valor_tit_8: Shows a Global Motivational Profile of Low Auto-determination.
-quest11_valor_tit_9: Presenta un Perfil Global de Motivación No Autodeterminado.
 quest11_valor_tit_9: Shows a Global Motivational Profile Not-Auto-determined.
 quest12: Questionnaire sur le climat motivationnel
 quest12_10: Je fais tout de la meilleure façon que je sais
@@ -647,7 +613,7 @@ quest1_header2: Before the competition...
 quest1_header4: When playing sport, I feel most successful when
 quest1_header5: You feel capable of competing in your sport
 quest1_intro: Below is a list of words that describe feelings people have. Underneath is a list of comments used by athletes to describe some of their feelings or emotions before a competition. Please read each one carefully. Then click the answer which best describes how have you been feeling during the past week including today.
-quest1_label_10: Actual
+quest1_label_10: Actuel
 quest1_label_11: Estimate of perceived difficulty
 quest1_label_12: Degree of confidence
 quest1_label_13: Self-control
@@ -655,27 +621,27 @@ quest1_label_14: Visualization
 quest1_label_15: Self-initiated behavior
 quest1_label_16: EGO motivational orientation
 quest1_label_17: Task motivational orientation
-quest1_label_18: Goal 1
-quest1_label_19: Goal 2
+quest1_label_18: Objectif 1
+quest1_label_19: Objectif 2
 quest1_label_1: Tension
-quest1_label_20: Goal 3
-quest1_label_21: Goal 4
-quest1_label_22: Difficulty
-quest1_label_23: Confidence
-quest1_label_2: Depression
+quest1_label_20: Objectif 3
+quest1_label_21: Objectif 4
+quest1_label_22: Difficulté
+quest1_label_23: Confiance
+quest1_label_2: Dépression
 quest1_label_30: Profil de Performance de Base
 quest1_label_31: Saison Objectifs
 quest1_label_32: Self-regulation system
-quest1_label_33: Season's goals
-quest1_label_34: Difficulty Level
+quest1_label_33: Objectifs de la saison
+quest1_label_34: Niveau de difficulté
 quest1_label_35: Degree of confidence in their achievement
-quest1_label_3: Hostility
+quest1_label_3: Hostilité
 quest1_label_4: Vigor
 quest1_label_5: Fatigue
-quest1_label_6: Cognitive Anxiety
-quest1_label_7: Self-confidence
-quest1_label_8: Somatic Anxiety
-quest1_label_9: Optimal
+quest1_label_6: Anxiété cognitives
+quest1_label_7: Confiance en soi
+quest1_label_8: Anxiété somatique
+quest1_label_9: Optimale
 quest2: Questionnaire Tolérance Psychologique au stress
 quest2_10: J´étais convaincu que je pourrais avoir du rendement dans n´importe quelle moment.
 quest2_11: J´ai résolu correctement les problèmes avec mes collègues.
@@ -805,7 +771,7 @@ quest3_header2: In practice...
 quest3_header3: At this moment...
 quest3_intro: Below are a list of words that describe feelings people have and a list of comments used by athletes to describe some of their feelings or emotions associated with training. Please read each one carefully. Then click the answer which best describes how are you feeling at this moment or the one which best describes your behavior during practice.
 quest3_label_0: Profile of Training Shape
-quest3_label_10: Actual
+quest3_label_10: Actuel
 quest3_label_1: Tension
 quest3_label_2: Depression
 quest3_label_3: Hostility
@@ -814,7 +780,7 @@ quest3_label_5: Fatigue
 quest3_label_6: Commitment to Effort
 quest3_label_7: Fear of Failure
 quest3_label_8: Perceived competency
-quest3_label_9: Optimum
+quest3_label_9: Optimale
 quest3_valor_0: 0 (not at all) 
 quest3_valor_1: 1 (a little)
 quest3_valor_2: 2 (moderately)
