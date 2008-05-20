@@ -1180,7 +1180,7 @@ text_are_you_sure: Er du sikker ?
 text_caracters_maximum: %d tegn maksimum.
 text_length_between: Lengde mellom %d og %d tegn.
 text_min_max_length_info: 0 betyr ingen begrensning
-text_picture: For å legge til eller endre bildet, velger her den filen du vil laste opp 
+text_picture: For å legge til eller endre bildet, velger her den filen du vil laste opp. 
 text_select_mail_notifications: Velg hendelser som skal varsles med e-post.
 unit_0_path: Teskal.en.pdf
 unit_0_title: Teskal Presentation
