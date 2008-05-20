@@ -100,6 +100,7 @@ field_name: Navn
 field_new_password: Nytt passord
 field_notes: Notater
 field_password: Passord
+field_password_change: Endre passord
 field_password_confirmation: Bekreft passord
 field_priority: Prioritet
 field_role: Rolle
@@ -125,10 +126,10 @@ general_day_names: Mandag,Tirsdag,Onsdag,Torsdag,Fredag,Lørdag,Søndag
 general_first_day_of_week: '1'
 general_fmt_age: %d år
 general_fmt_age_plural: %d år
-general_fmt_date: %%d. %%B %%Y
-general_fmt_datetime: %%d. %%B %%H:%%M
-general_fmt_datetime_short: %%d.%%m.%%Y, %%H:%%M
-general_fmt_time: %%H:%%M
+general_fmt_date: %%d/%%m/%%Y
+general_fmt_datetime: %%d/%%m/%%Y %%H:%%M
+general_fmt_datetime_short: %%d/%%m %%H:%%M
+general_fmt_time: %%X
 general_lang_name: 'Norwegian (Norsk bokmål)'
 general_pdf_encoding: ISO-8859-1
 general_text_No: 'Nei'
@@ -195,6 +196,7 @@ label_last_login: Sist innlogget
 label_last_updates: Sist oppdatert
 label_last_updates_plural: %d siste oppdaterte
 label_less_than_ago: mindre enn dager siden
+label_library: Bibliotek
 label_list: Liste
 label_loading: Laster...
 label_logged_as: Innlogget som
@@ -302,9 +304,9 @@ mark_role_1: Idrettsutøvere
 mark_role_2: Coach
 mark_role_3: Leder
 markt_10: Teskal gir de riktige verktøyene til trenere
-markt_11: Det er en integrert konseptet atletisk ytelse som tar hensyn til ikke bare de fysiske og tekniske ferdigheter for utøveren, men også den personen som er utøveren. 
+markt_11: Det er en integrert konseptet atletisk ytelse som tar hensyn til ikke bare de fysiske og tekniske ferdigheter for utøveren, men også den personen som er utøveren.
 markt_12: Teskal tillater en konsekvent nivå av kommunikasjon mellom trener/utøver og/eller team.
-markt_13: Enten for situasjoner hvor utøveren og coach bor på forskjellige steder, eller når utøveren konkurrerer langt unna, Teskal kan for den videre overvåkning av en rekke variabler relevante for utøveren og utøveren ytelse. 
+markt_13: Enten for situasjoner hvor utøveren og coach bor på forskjellige steder, eller når utøveren konkurrerer langt unna, Teskal kan for den videre overvåkning av en rekke variabler relevante for utøveren og utøveren ytelse.
 markt_1: Et verktøy for å styre den psykologiske variabler idrett ytelse
 markt_2: Ønsker du å være i stand til å utføre på det nivået du er fysisk og teknisk stand?
 markt_3: Hvordan kan du trene din evne til å håndtere stress, din selvtillit?
@@ -312,9 +314,9 @@ markt_4_1: Når du har en idrettsutøver i god fysisk form, godt trent, har gode
 markt_4_2: Hvordan vil du håndtere disse situasjonene?
 markt_4_3: Hvordan og når vil du gripe inn?
 markt_5_1: En idrettsutøver med en bestemt konkurranse plan, utviklet i fellesskap med veileder. Når møtt med press under konkurransen denne utøveren begynner å gjøre impulsive, ineffektive beslutninger.
-markt_5_2: Hvordan kan det være forhindret? 
+markt_5_2: Hvordan kan det være forhindret?
 markt_6_1: Noe som skjer i en idrettsutøver liv som påvirker humør, energi, motivasjon.
-markt_6_2: Hvordan kan du oppdage det tidlig nok? 
+markt_6_2: Hvordan kan du oppdage det tidlig nok?
 markt_7: Ønsker du å utvikle en total coaching system som omfatter utvikling av psykososiale ferdigheter og som er bærekraftig over tid?
 markt_8: Er du interessert i å kunne følge opp og analysere endringer og utvikling som genereres i idrettsutøvere over flere sesonger?
 markt_9: Vil du være interessert i å utvikle psykiske konsistens gjennom tillit, innsats og motivasjon, slik at dine utøvere er forpliktet, vedvarende, dogmatiske og avgjørende?
@@ -323,7 +325,7 @@ markt_quick_tour: Omvisning
 notice_account_activated: Din konto er aktivert. Du kan nå logge inn.
 notice_account_email_exists: Det er en bruker allerede med at e-post. Velg en annen.
 notice_account_invalid_creditentials: Feil brukernavn eller passord
-notice_account_login_exists: Det er en bruker som allerede er med som påloggingsnavn. Velg en annen. 
+notice_account_login_exists: Det er en bruker som allerede er med som påloggingsnavn. Velg en annen.
 notice_account_lost_email_sent: En e-post med instruksjoner for å velge et nytt passord er sendt til deg.
 notice_account_password_updated: Passordet er oppdatert.
 notice_account_register_done: Kontoen er opprettet. Klikk lenken som er sendt deg i e-post for å aktivere kontoen.
@@ -813,7 +815,7 @@ quest4_d11_b: Perceived self-efficacy values are at medium levels, which imply a
 quest4_d11_c: Perceived self-efficacy is at a high level, with good attitude in front of the competition and commitment to applying it during the contest. These are optimal levels which increase the capacity to perform right now as they approach the maximum.
 quest4_d12_a: The evaluation of preparation of an integral competition plan is low, which lowers the athlete’s possibilities of achievement. It is highly likely that the emotional response is determined by the negative dimensions of the mood state, and it is also likely that the confidence is unstable. A specific intervention is recommended, using the contents of the Personal Competition Plan, Self-Efficacy and Responsibility/Guilt materials and the tutor’s help. 
 quest4_d12_b: The evaluation of preparation of an integral competition plan is at a medium level. Perhaps the athlete has a hard time controlling negative emotional responses and that causes an increase in self-doubt. An intervention should focus on emotionally restructuring the personal competition plan and visualizing it. This aspect must be considered when conducting Performance Evaluation.
-quest4_d12_c: The evaluation of preparation of an integral competition plan is at optimal levels. That should positively impact the emotional control of negative dimensions and it will also reinforce the degree of confidence. It may also contribute to a better overall Performance Evaluation. 
+quest4_d12_c: The evaluation of preparation of an integral competition plan is at optimal levels. That should positively impact the emotional control of negative dimensions and it will also reinforce the degree of confidence. It may also contribute to a better overall Performance Evaluation.
 quest4_d1_a: Tension values are low, indicating that the athlete is calm. It must be assessed whether this level is actually helpful in the current competition setting, because it is usually recommended to reach medium levels in order to cope with maximum performance challenges.
 quest4_d1_b: Tension values are at a medium level, which is positive because it means the athlete is alert and ready. In competition settings medium level values are considered optimal.
 quest4_d1_c: Tension values are high, which can have a negative impact on the athlete’s performance. Being too nervous and worried, it is unlikely that the athlete was able to focus on the task at hand during the competition.
@@ -825,19 +827,19 @@ quest4_d3_b: Hostility is at a medium level, which is often considered optimal f
 quest4_d3_c: Hostility values are high, which is alarming because they are likely to negatively impact the athlete’s performance. Being too mad and irritated, the athlete is unlikely to have used the energy in a smart way, which the result of underperforming in the crucial moments. The information contained in the Activation, and Optimal Performance materials can be helpful here.
 quest4_d4_a: Vigor values are low, which means the athlete is in the doldrums when reaching the competition. If fatigue is high we may have an overtraining situation. In any case, at the end of the competition, it is recommended to take several days off and get back to desirable levels before resuming practice.
 quest4_d4_b: Vigor values are at a medium level, which can hurt the athlete’s performance, unless the value is medium-high. Possible reasons are lack of specific preparation for this competition, or being in a very intense training period.
-quest4_d4_c: Vigor values are high, in the optimal zone for competition, which increases the probabilities of success in front of any challenge. The positive emotional energy suggests good emotional balance when faced with the competition. 
+quest4_d4_c: Vigor values are high, in the optimal zone for competition, which increases the probabilities of success in front of any challenge. The positive emotional energy suggests good emotional balance when faced with the competition.
 quest4_d5_a: Fatigue levels are low, which is positive, indicating that this athlete feels energetic and able to tolerate the competition pace and the demands of long term efforts during competition.
 quest4_d5_b: Fatigue levels are at a medium level, which can be worrisome because it may negatively impact performance. If these values were obtained during the competition, they can be considered within normal limits and in order to evaluate them we need to also observe the recovery process.
-quest4_d5_c: Fatigue levels are high, which is alarming because it will negatively impact the athlete’s performance, unless it is due to lack of preparation for this competition and coincides with high volume and intensity in practice. If the taper process was correct, high values such as this one may indicate overtraining danger in this athlete. 
+quest4_d5_c: Fatigue levels are high, which is alarming because it will negatively impact the athlete’s performance, unless it is due to lack of preparation for this competition and coincides with high volume and intensity in practice. If the taper process was correct, high values such as this one may indicate overtraining danger in this athlete.
 quest4_d6_a: Low values of cognitive anxiety, implying calm and balance, lack of worry, with capacity to focus on the right things during competition.
 quest4_d6_b: Cognitive anxiety is at a medium level, which means the athlete is, at times, uneasy and slightly nervous. Minor adjustments should be made during the competition, using mainly verbal persuasion and also referring back to the content of pressure/stress materials in order to lower these values for the next competitions.
 quest4_d6_c: Cognitive anxiety is high, with too much worry about personal performance during competition. Disorganized thoughts are likely to have interfered with concentration efforts at crucial moments. The athlete’s Competition Plan must be revised, and specific interventions must be carried out during practice, focusing on the content of the pressure/stress materials.
-quest4_d7_a: Self-confidence values are low, resulting in great insecurity during the competition, particularly in pressure situations. It is necessary to focus on the personal competition plan and use verbal persuasion for the next competitions. A long term intervention requires specific work to increase these values, with visualization of personal experiences and self-efficacy work organized by the tutor. 
+quest4_d7_a: Self-confidence values are low, resulting in great insecurity during the competition, particularly in pressure situations. It is necessary to focus on the personal competition plan and use verbal persuasion for the next competitions. A long term intervention requires specific work to increase these values, with visualization of personal experiences and self-efficacy work organized by the tutor.
 quest4_d7_b: Self-confidence is at a medium level, which implies certain discomfort with the performance situation. It is possible that this athlete has a hard time seeing himself successfully coping with competition demands, so verbal persuasion should be used with him or her before the next competitions. A specific plan should be outlined to modify these issues on the long run.
 quest4_d7_c: High level of self-confidence, with good attitude in front of the competition, comfortable and with the ability to maximize performance in high pressure situations. The strength of this belief will allow the athlete to face competitions with the certainty of performing to the best of his or her capabilities.
 quest4_d8_a: Low levels of somatic anxiety, conveying a sense of calm and comfort, with good ability to physically relax, while remaining mentally alert when needed, in a state of relaxed anticipation. These are optimal competition values.
 quest4_d8_b: Medium level values of somatic anxiety mean that the athlete is somewhat tense and restless. A mini-intervention based on the Relaxation/Breathing materials would be useful here before the next competitions, altogether with the cognitive reevaluation of the personal competition plan. For the long term, it must be reinforced with visualization of successful past experiences and information from the Relaxation materials.
-quest4_d8_c: Somatic anxiety values are too high and interfere with performance. The athlete will have a hard time controlling tension and he or she is likely to rush into action, which again interferes with optimal performance. It is recommended to implement a mini-intervention, with information from the Relaxation/Breathing materials, to help the athlete lower these values for the next competitions. This needs to be integrated in the personal competition plan. In the long run, this can be reinforced by visualizing previous successful experiences, and some work with the tutor on the Relaxation and Pressure/Stress materials. 
+quest4_d8_c: Somatic anxiety values are too high and interfere with performance. The athlete will have a hard time controlling tension and he or she is likely to rush into action, which again interferes with optimal performance. It is recommended to implement a mini-intervention, with information from the Relaxation/Breathing materials, to help the athlete lower these values for the next competitions. This needs to be integrated in the personal competition plan. In the long run, this can be reinforced by visualizing previous successful experiences, and some work with the tutor on the Relaxation and Pressure/Stress materials.
 quest4_d9_a: This appears to be a competition of low significance and importance for this athlete, because the values are low. It will be necessary to focus on the Self-regulatory system and make an effort in all three dimensions; Self-control, Visualization of the personal competition plan, and Anticipation behavior. This will be a good opportunity to try hard and actively work in the search for Optimal Performance State.
 quest4_d9_b: This appears to be a competition of moderate importance, with some significance in the athlete’s calendar, because the values obtained are at a medium level. It will be important to focus on self-improvement and keep in mind that participation in any competition offers an opportunity for improvement. The emotional restructuring within the personal competition plan will have to follow the same lines; direction-challenge-opportunity for improvement and anticipation of wish to compete.
 quest4_d9_c: This competition appears to be very important and have great meaning for this athlete, because the obtained values are very high. It will be necessary to focus the evaluation on the positives, on the challenge, considering that the athlete has been preparing to compete, and being able to do it is already satisfactory.
