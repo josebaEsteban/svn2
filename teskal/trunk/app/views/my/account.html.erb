@@ -10,6 +10,8 @@
 <%= javascript_include_tag 'validation/validation_eu' -%>
 <%- elsif @user.language == "fr"-%>
 <%= javascript_include_tag 'validation/validation_fr' -%>
+<%- elsif @user.language == "no"-%>
+<%= javascript_include_tag 'validation/validation_no' -%>
 <%- else -%>
 <%= javascript_include_tag 'validation/validation' -%>
 <%- end -%>
