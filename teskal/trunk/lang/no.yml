@@ -419,7 +419,7 @@ quest11_d6_b: The medium level value obtained means that this athlete at times d
 quest11_d6_c: The high value obtained implies that this athlete is seriously considering abandoning the sport because he/she feels incapable of reaching the desired goals.
 quest11_header: Why do you practice your sport?
 quest11_intro: Using the scale below, please indicate to what extent each of the following items corresponds to one of the reasons for which you are presently practicing your sport.
-quest11_label_0: Self-determinated Motivation
+quest11_label_0: Self-determinated Motivasjon
 quest11_label_1: Intrinsic Motivation
 quest11_label_2: Integrated regulation
 quest11_label_3: Identified regulation
@@ -474,7 +474,7 @@ quest12_d2_b: The mastery motivational climate is at a medium level, which is ac
 quest12_d2_c: The mastery motivational climate reaches very high levels, which is very positive. This coach focuses on the athlete’s personal improvement, which is very important. This helps them cope very well with new or very difficult situations. It has a positive impact on their commitment to practice and on their perceived competency, and it minimizes any fear of mistakes the athletes could have.
 quest12_header: Playing sport, the coach thinks I am most successful when...
 quest12_intro: This is a questionnaire which asks you to express your perception of what success in sport means to your coach. There are no right or wrong answers.
-quest12_label_0: Motivational Climate
+quest12_label_0: Motivering Klima
 quest12_label_1: Performance Climate
 quest12_label_2: Mastery Climate
 quest12_valor_1: 0 (nothing)
@@ -635,9 +635,9 @@ quest1_label_21: Goal 4
 quest1_label_22: Difficulty
 quest1_label_23: Confidence
 quest1_label_2: Depression
-quest1_label_30: Basic Performance Profile
-quest1_label_31: Season goals
-quest1_label_32: Self-regulation system
+quest1_label_30: Grunnleggende Ytelse Profil
+quest1_label_31: Sesong mål
+quest1_label_32: Self-Forskriften Systemet
 quest1_label_33: Season's goals
 quest1_label_34: Difficulty Level
 quest1_label_35: Degree of confidence in their achievement
@@ -648,7 +648,7 @@ quest1_label_6: Cognitive Anxiety
 quest1_label_7: Self-confidence
 quest1_label_8: Somatic Anxiety
 quest1_label_9: Optimal
-quest2: Psychological Stress Tolerance
+quest2: Psykologisk Stress Toleranse
 quest2_10: I was convinced that I could achieve my performance at any time
 quest2_11: I dealt very effectively with my teammates's problems
 quest2_12: I was in good condition physically
@@ -700,7 +700,7 @@ quest2_d7_b: Moderate level of usage of skills such as self-motivation and estab
 quest2_d7_c: High scores indicate high level of use of mental skills in practice, such as self-motivation and establishment of personal goals, which then reinforces and highlights the path to achievement of these goals.
 quest2_header: During the last month...
 quest2_intro: Below you have a series of phrases related to different aspects of the training and the competition on which we want to gather your opinion. Please, read them with tranquillity, answer sincerely and check the option with which you agree more or than it describes better your opinion.
-quest2_label_0: Psychological Stress Tolerance
+quest2_label_0: Psykologisk Stress Toleranse
 quest2_label_1: Disturbed sleep
 quest2_label_2: Emotional fatigue
 quest2_label_3: Vulnerability to injuries
@@ -721,7 +721,7 @@ quest2_valor_3: 3 (often)
 quest2_valor_4: 4 (many times)
 quest2_valor_5: 5 (almost always)
 quest2_valor_6: 6 (always)
-quest3: Profile of Training Shape
+quest3: Profil treningslære Form
 quest3_10: Angry
 quest3_11: Tense
 quest3_12: Sad
@@ -776,7 +776,7 @@ quest3_header1: Right now I feel...
 quest3_header2: In practice...
 quest3_header3: At this moment...
 quest3_intro: Below are a list of words that describe feelings people have and a list of comments used by athletes to describe some of their feelings or emotions associated with training. Please read each one carefully. Then click the answer which best describes how are you feeling at this moment or the one which best describes your behavior during practice.
-quest3_label_0: Profile of Training Shape
+quest3_label_0: Profil treningslære Form
 quest3_label_10: Actual
 quest3_label_1: Tension
 quest3_label_2: Depression
@@ -1050,7 +1050,7 @@ quest8_d9_b: The level of satisfaction with the degree of group cohesion in the 
 quest8_d9_c: The level of satisfaction with the degree of group cohesion in the team is high, which means that he feels the team plays as one and thinks that they work well together in order to reach their goals.
 quest8_header: The degree of satisfaction with...
 quest8_intro: Below are a series of sentences related to different aspects of practice and competition. We would like to get your opinion. Please, read them carefully, answer sincerely and click on the number that best describes your opinion or the one with which you agree most.
-quest8_label_0: Satisfaction (Team Sports)
+quest8_label_0: Tilfredshet (Team Sport)
 quest8_label_10: Task Contribution 
 quest8_label_1: Personal Achievement
 quest8_label_2: Personal Commitment to the team
