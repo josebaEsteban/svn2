@@ -619,7 +619,7 @@ quest1_header2: Before the competition...
 quest1_header4: When playing sport, I feel most successful when
 quest1_header5: You feel capable of competing in your sport
 quest1_intro: Below is a list of words that describe feelings people have. Underneath is a list of comments used by athletes to describe some of their feelings or emotions before a competition. Please read each one carefully. Then click the answer which best describes how have you been feeling during the past week including today.
-quest1_label_10: Actual
+quest1_label_10: Faktiske
 quest1_label_11: Estimate of perceived difficulty
 quest1_label_12: Degree of confidence
 quest1_label_13: Self-control
@@ -777,7 +777,7 @@ quest3_header2: In practice...
 quest3_header3: At this moment...
 quest3_intro: Below are a list of words that describe feelings people have and a list of comments used by athletes to describe some of their feelings or emotions associated with training. Please read each one carefully. Then click the answer which best describes how are you feeling at this moment or the one which best describes your behavior during practice.
 quest3_label_0: Profil treningslære Form
-quest3_label_10: Actual
+quest3_label_10: Faktiske
 quest3_label_1: Tension
 quest3_label_2: Depression
 quest3_label_3: Hostility
