@@ -663,8 +663,8 @@ quest1_label_21: Goal 4
 quest1_label_22: Difficulty
 quest1_label_23: Confidence
 quest1_label_2: Depression
-quest1_label_30: Basic Performance Profile
-quest1_label_31: Season goals
+quest1_label_30: Profil de Performance de Base
+quest1_label_31: Saison Objectifs
 quest1_label_32: Self-regulation system
 quest1_label_33: Season's goals
 quest1_label_34: Difficulty Level
@@ -1019,7 +1019,7 @@ quest7_label_5: Teaching and Instruction
 quest7_label_6: Personal interaction
 quest7_valor_1: 1 (no, not at all)
 quest7_valor_7: 7 (totally)
-quest8: Satisfaction (Team Sports)
+quest8: Satisfaction (Sports Collectifs)
 quest8_10: The amount of time I play during competitions
 quest8_11: The degree to which my role on the team matches my preferred role
 quest8_12: The coach's choice of plays during competition
@@ -1078,7 +1078,7 @@ quest8_d9_b: The level of satisfaction with the degree of group cohesion in the 
 quest8_d9_c: The level of satisfaction with the degree of group cohesion in the team is high, which means that he feels the team plays as one and thinks that they work well together in order to reach their goals.
 quest8_header: The degree of satisfaction with...
 quest8_intro: Below are a series of sentences related to different aspects of practice and competition. We would like to get your opinion. Please, read them carefully, answer sincerely and click on the number that best describes your opinion or the one with which you agree most.
-quest8_label_0: Satisfaction (Team Sports)
+quest8_label_0: Satisfaction (Sports Collectifs)
 quest8_label_10: Task Contribution 
 quest8_label_1: Personal Achievement
 quest8_label_2: Personal Commitment to the team
