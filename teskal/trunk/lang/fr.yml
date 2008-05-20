@@ -5,18 +5,18 @@ actionview_datehelper_select_month_names: Janvier,Février,Mars,Avril,Mai,Juin,J
 actionview_datehelper_select_month_names_abbr: Jan,Fév,Mars,Avril,Mai,Juin,Juil,Août,Sept,Oct,Nov,Déc
 actionview_datehelper_select_month_prefix:
 actionview_datehelper_select_year_prefix:
-actionview_datehelper_time_in_words_day: hace 1 día
-actionview_datehelper_time_in_words_day_plural: hace %d días
-actionview_datehelper_time_in_words_hour_about: hace una hora
-actionview_datehelper_time_in_words_hour_about_plural: hace %d horas
-actionview_datehelper_time_in_words_hour_about_single: hace una hora
-actionview_datehelper_time_in_words_minute: hace 1 minuto
-actionview_datehelper_time_in_words_minute_half: hace medio minuto
-actionview_datehelper_time_in_words_minute_less_than: hace menos de un minuto
-actionview_datehelper_time_in_words_minute_plural: hace %d minutos
-actionview_datehelper_time_in_words_minute_single: hace 1 minuto
-actionview_datehelper_time_in_words_second_less_than: hace menos de 1 segundo
-actionview_datehelper_time_in_words_second_less_than_plural: hace menos de %d segundos
+actionview_datehelper_time_in_words_day: il ya 1 jour
+actionview_datehelper_time_in_words_day_plural: il ya %d jours
+actionview_datehelper_time_in_words_hour_about: environ une heure
+actionview_datehelper_time_in_words_hour_about_plural: environ %d heures
+actionview_datehelper_time_in_words_hour_about_single: environ une heure
+actionview_datehelper_time_in_words_minute: il ya 1 minute
+actionview_datehelper_time_in_words_minute_half: une demi-minute il ya
+actionview_datehelper_time_in_words_minute_less_than: moins d'une minute il ya
+actionview_datehelper_time_in_words_minute_plural: il ya %d minutes
+actionview_datehelper_time_in_words_minute_single: il ya 1 minute
+actionview_datehelper_time_in_words_second_less_than: moins d'une seconde, il ya
+actionview_datehelper_time_in_words_second_less_than_plural: less than %d seconds ago
 actionview_instancetag_blank_option: Choisir
 activerecord_error_accepted: doit être accepté
 activerecord_error_blank: doit être renseigné
@@ -201,7 +201,7 @@ label_message: Message
 label_message_from: Nuevo mensaje en Teskal de
 label_message_last: Dernier message
 label_message_new: Nouveau message
-label_message_no_reply: Por favor no respondas a este mensaje. Si deseas contestar, por favor accede a tu cuenta en Teskal y redacta ahi un mensaje.
+label_message_no_reply: S’il vous plaît ne pas répondre à ce message. Si vous souhaitez répondre, s’il vous plaît connectez-vous à votre compte dans Teskal et composer un message.
 label_message_plural: Messages
 label_min_max_length: Longueurs mini - maxi
 label_modification: %d modification
@@ -227,7 +227,7 @@ label_per_page: Por página
 label_permissions: Permissions
 label_permissions_report: Synthèse des permissions
 label_personalize_page: Personnaliser cette page
-label_picture: Foto
+label_picture: Photo
 label_please_login: Identification
 label_preview: Prévisualisation
 label_previous: Précédent
@@ -250,18 +250,20 @@ label_report_plural: Rapports
 label_result: %d résultat
 label_result_plural: %d résultats
 label_role: Rôle
-label_role_1: cuenta gratuita
-label_role_2: deportista
-label_role_3: entrenador/a
-label_role_4: tutor/a
+label_role_1: compte gratuit
+label_role_2: athlète
+label_role_3: entraîneur
+label_role_4: tuteur
 label_role_and_permissions: Rôles et permissions
 label_role_new: Nouveau rôle
 label_role_plural: Rôles
 label_search: Recherche
 label_send_information: Envoyer les informations à l'utilisateur
-label_settings: Configuration
+label_settings: Paramètres
 label_show: Montrer
-label_time_taken: Heure de les achever
+label_signup_1: S’il vous plaît entrer une adresse de courriel valide dans le format nom@company.com. Cet e-mail doit être unique dans Teskal. Jamais nous ne partageons votre e-mail. Il doit
+label_signup_2: Cette adresse sera utilisée si vous oubliez votre mot de passe ou pour vous informer des messages de Teskal.
+label_time_taken: Le temps de le remplir
 label_timezone: Fuseau horaire
 label_user: Utilisateur
 label_user_new: Nouvel utilisateur
@@ -284,21 +286,20 @@ mail_body_quest4: Tienes pendiente de rellenar un cuestionario de
 mail_body_signup: 'Pour activer votre compte Teskal, cliquez sur le lien suivant'
 mail_spam: Vérifiez si votre filtre anti-spam si elle n'apparaît pas en quelques minutes.
 mail_subject_account_activation_request: "Demande d'activation d'un compte Teskal"
-mail_subject_allowed: Resultado cuestionario
-mail_subject_book: Biblioteca Teskal
-mail_subject_lost_password: Tu contraseña de Teskal
-mail_subject_pending: Cuestionario pendiente
+mail_subject_allowed: Résultat Questionnaire
+mail_subject_book: Bibliothèque Teskal
+mail_subject_lost_password: Votre mot de passe Teskal
+mail_subject_pending: Pending Questionnaire
 mail_subject_quest: Nouveau questionnaire
 mail_subject_signup: Activation de votre compte Teskal
-mark_concept: Qué es?
-mark_role_1: Deportista
-mark_role_2: Entrenador/a
-mark_role_3: Dirección Técnica
+mark_concept: Qu'est-ce que c'est?
+mark_role_1: Athlète
+mark_role_2: Entraîneur
+mark_role_3: Gestionnaire
 markt_10: Teskal donne les bons outils pour vos entraîneurs
 markt_11: C'est un concept intégral de la performance sportive qui prenne en compte non seulement les compétences techniques et physiques de l'athlète, mais aussi la personne qui est l'athlète.
 markt_12: Teskal permet un niveau de la communication entre entraîneur / athlète ou une équipe.
 markt_13: Que ce soit pour les situations où l'athlète et entraîneur vivent dans des endroits différents, ou lorsque l'athlète en compétition loin, Teskal autorise la poursuite de la surveillance de nombreuses variables pertinentes pour l'athlète et la performance des athlètes.
-markt_14: ¿Que herramientas tienen los entrenadores para manejarlos? 
 markt_1: Outil pour aider à gérer les variables psychologiques de la performance sportive.
 markt_2: Voulez-vous être en mesure d'effectuer au niveau que vous savez que vous êtes capable?
 markt_3: Comment faites-vous former votre capacité à gérer le stress, votre confiance en soi?
@@ -328,7 +329,6 @@ notice_can_t_change_password: Ce compte utilise une authentification externe. Im
 notice_file_not_found: La page à laquelle vous souhaitez accéder n'existe pas ou a été supprimée.
 notice_locking_conflict: Les données ont été mises à jour par un autre utilisateur. Mise à jour impossible.
 notice_not_authorized: Vous n'êtes pas autorisés à accéder à cette page.
-notice_pendant_exists: Ya está pendiente un cuestionario de ese mismo tipo.
 notice_scm_error: L'entrée et/ou la révision demandée n'existe pas dans le dépôt.
 notice_successful_connection: Connection réussie.
 notice_successful_create: Création effectuée avec succès.
@@ -1130,13 +1130,13 @@ setting_app_title: Titre de l'application
 setting_attachment_max_size: Taille max des fichiers
 setting_autofetch_changesets: Récupération auto. des commits
 setting_autologin: Autologin
+setting_bcc_recipients: Copie cachée bénéficiaires (bcc) 
 setting_commit_fix_keywords: Mot-clés de résolution
 setting_commit_ref_keywords: Mot-clés de référencement
 setting_date_format: Format de date
 setting_default_language: Langue par défaut
-setting_feeds_limit: Limite du contenu des flux RSS
+setting_emails_footer: Pied de page des e-mails
 setting_host_name: Nom d'hôte
-setting_issues_export_limit: Limite export demandes
 setting_login_required: Authentif. obligatoire
 setting_mail_from: Adresse d'émission
 setting_protocol: Protocol 
@@ -1149,15 +1149,15 @@ signup_label_12: Merci de votre inscription!
 signup_label_13: Votre Teskal compte a été créé.
 signup_label_14: Surveillez un e-mail de confirmation de votre nouvel abonnement.
 signup_label_15: Il contient un lien d'activation que vous devrez cliquer avant de tenter de se connecter à
-signup_label_16: Deporte  
+signup_label_16: Sport
 signup_label_1: Étape
-signup_label_2: Choisissez un nom de connexion et un langage.
+signup_label_2: Ce que vous utilisez pour vous connecter po s’il vous plaît pas d'espace. Il doit être unique dans Teskal.
 signup_label_3: La langue utilisée sera la prochaine fois que vous vous connectez.
 signup_label_4: Choisissez un mot de passe pour votre nouveau compte.
 signup_label_5: Les mots de passe doivent être 6-12 caractères.
-signup_label_6: Email details
+signup_label_6: E-mail détails
 signup_label_7: Entrez votre adresse e-mail.
-signup_label_8: Vous devez entrer une adresse e-mail valide pour activer votre compte.
+signup_label_8: S’il vous plaît entrer une adresse de courriel valide dans le format name@company.com. Cet e-mail doit être unique dans Teskal.<br/>Jamais nous ne partageons votre e-mail.<br/>Cette adresse sera utilisée pour activer votre compte et de vous informer des messages de Teskal, ou si vous oubliez votre mot de passe.
 signup_label_9: Soumettre forme
 status_active: actif
 status_locked: vérouillé
@@ -1166,7 +1166,8 @@ text_are_you_sure: Etes-vous sûr ?
 text_caracters_maximum: %d caractères maximum.
 text_length_between: Longueur comprise entre %d et %d caractères.
 text_min_max_length_info: 0 pour aucune restriction
-text_picture: Para añadir o cambiar la foto, selecciona aquí el archivo que deseas subir.
+text_picture: Pour ajouter ou modifier la photo, sélectionnez ici le fichier que vous souhaitez télécharger. 
+text_select_mail_notifications: Select actions for which email notifications should be sent.
 unit_0_title: Presentación Teskal
 unit_10_path: 10.Responsabilidad.vs.Culpabilidad.fr.pdf
 unit_10_title: Responsabilidad vs Culpabilidad
