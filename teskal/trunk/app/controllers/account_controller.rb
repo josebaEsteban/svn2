@@ -28,26 +28,27 @@ class AccountController < ApplicationController
     else
       # Authenticate user
       user = User.try_to_login(params[:login], params[:password])
+      puts user
       if user
-        self.logged_in_user = user
-        # user.update_attribute(:ip_last, request.remote_ip)
-        journal("log_in",user.id)
-        # generate a key and set cookie if autologin
-        if params[:autologin] && Setting.autologin?
-          token = Token.create(:user => user, :action => 'autologin')
-          cookies[:autologin] = { :value => token.value, :expires => 1.year.from_now  }
-        end
-        if user.role > User::ROLE_ATHLETE
-          redirect_to :controller => 'my', :action => 'athletes'
+        if user.locked?
+          flash.now[:notice] = l(:user)+" "+l(:status_locked)
         else
-          redirect_to :controller => 'my', :action => 'page'
+          self.logged_in_user = user
+          # user.update_attribute(:ip_last, request.remote_ip)
+          journal("log_in",user.id)
+          # generate a key and set cookie if autologin
+          if params[:autologin] && Setting.autologin?
+            token = Token.create(:user => user, :action => 'autologin')
+            cookies[:autologin] = { :value => token.value, :expires => 1.year.from_now  }
+          end
+          if user.role > User::ROLE_ATHLETE
+            redirect_to :controller => 'my', :action => 'athletes'
+          else
+            redirect_to :controller => 'my', :action => 'page'
+          end
         end
       else
-        # if user.locked?
-        # flash.now[:notice] = l(:status_locked)
-        # else
         flash.now[:notice] = l(:notice_account_invalid_creditentials)
-        # end
         journal("invalid-"+params[:login]+"-"+params[:password],0)
       end
     end

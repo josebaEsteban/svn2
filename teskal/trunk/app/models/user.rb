@@ -64,8 +64,8 @@ class User < ActiveRecord::Base
   def self.try_to_login(login, password)
     user = find(:first, :conditions => ["login=?", login])
     if user
-      # user is already in local database
-      return nil if !user.active?
+      # user is already in local database but only registered
+      return nil if user.registered?
       entra=0
       if entra==1
         # aqui habia una autentificacion ldap
