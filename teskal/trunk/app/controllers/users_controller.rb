@@ -139,7 +139,7 @@ class UsersController < ApplicationController
         end
       end
       user.save
-      redirect_to :controller => 'my', :action => 'athletes'
+      redirect_to :controller => 'my', :action => 'admin', :id  =>  user.id
     else
       redirect_to :controller => 'my', :action => 'page'
     end
