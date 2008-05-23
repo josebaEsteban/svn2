@@ -30,9 +30,22 @@ function loadTabs() {
 
 	//]]>
 	</script>
-<%- end -%>
-
-<h3><%= @athlete.name %></h3>
+<%- end -%> 
+<div align="center"> 
+  <table cellspacing="0">   
+   <tr>  
+<td><h3><%= @athlete.name %></h3></td> 
+<td><div align="center"><a href="/users/switch/<%= @athlete.id.to_s %>">
+    <%- if @athlete.status == 3 -%>
+    <%= image_tag 'lock.png' %>
+    <%- else -%>
+    <%= image_tag 'lock_open.png' %>
+    <%- end -%>
+    </a></div></td>
+    <td><div align="center"><a href="/users/edit/<%= @athlete.id.to_s %>"><%= image_tag 'pencil.png' %></a></div></td>
+    <td><div align="center"><a href="/messages/show/<%= @athlete.id.to_s %>"><%= image_tag 'comments.png' %></a></div></td>
+ </tr>
+  </table> </div>   
 <style type="text/css" >
   ul#tabnav {
 

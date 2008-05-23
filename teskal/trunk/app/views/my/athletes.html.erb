@@ -11,12 +11,11 @@
     <!-- <caption></caption> -->
     <thead>
       <tr> 
-        <th></th>   
         <th scope="col"><div align="left"><%=l(:field_name) %></div></th>
         <th scope="col"><div align="left"><%=l(:field_created_on)%></div></th>
         <th scope="col"><div align="left"><%=l(:field_mail)%></div></th>
         <th scope="col"><div align="left"><%=l(:field_last_login_on)%></div></th>
-        <th scope="col"><div align="left"><%=l(:field_language)%></div></th>
+        <th scope="col"><div align="left"><%=l(:field_language)%></div></th>  
       </tr>
     </thead>
     <tbody>
@@ -28,26 +27,17 @@
         <%-else -%>
       <tr>
         <%- odd=1 end -%>
-		<%- if user.picture.url(:medium) !="/pictures/medium/missing.png" -%>
-	<td><a href="/my/admin/<%= user.id.to_s %>"><%= image_tag user.picture.url(:thumb) , :class  => "photoborder"%></a></td>    
-	<%- else -%>
-	   <td></td>
-		<%- end -%>
+
         <td><%= link_to user.name, :controller  => 'my', :action => 'admin', :id => user.id %></td>
         <td><%= l_date(TzTime.zone.utc_to_local(user.created_on))%></td>
         <td><%= user.mail %></td>
         <td><div align="center"><%= distance_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(user.last_login_on)) unless user.last_login_on.nil? %></div></td>
         <td><div align="center"><%= user.language %></div></td>
-        <td><div align="center"><a href="/users/switch/<%= user.id.to_s %>">
-            <%- if user.status == 3 -%>
-            <%= image_tag 'lock.png' %>
-            <%- else -%>
-            <%= image_tag 'lock_open.png' %>
-            <%- end -%>
-            </a></div></td>
-        <td><div align="center"><a href="/users/edit/<%= user.id.to_s %>"><%= image_tag 'pencil.png' %></a></div></td>
-        <td><div align="center"><a href="/messages/show/<%= user.id.to_s %>"><%= image_tag 'comments.png' %></a></div></td>
-        <td><div align="center"><a href="/my/admin/<%= user.id.to_s %>"><%= image_tag 'magnifier.png' %></a></div></td>
+			<%- if user.picture.url(:medium) !="/pictures/medium/missing.png" -%>
+		<td><a href="/my/admin/<%= user.id.to_s %>"><%= image_tag user.picture.url(:thumb) , :class  => "photoborder"%></a></td>    
+		<%- else -%>
+		   <td></td>
+			<%- end -%>
       </tr>
       <%- end -%>
     </tbody>
