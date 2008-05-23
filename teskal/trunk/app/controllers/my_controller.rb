@@ -65,9 +65,9 @@ class MyController < ApplicationController
       if @logged_in_user.admin? and !params[:id].nil?
         id=params[:id].split('p')
         busca = id[0]
-        @users = User.find_by_sql("select * from users where users.managed_by=#{busca} and  (users.status =1 or users.status=3) order by users.created_on DESC")
+        @users = User.find_by_sql("select * from users where users.managed_by=#{busca} and  (users.status =1 or users.status=3) order by firstname, lastname ASC")
       else
-        @users = User.find_by_sql("select * from users where users.managed_by=#{session[:user_id]} and  (users.status =1 or users.status=3) order by users.created_on DESC")
+        @users = User.find_by_sql("select * from users where users.managed_by=#{session[:user_id]} and  (users.status =1 or users.status=3) order by firstname, lastname ASC")
       end
     else
       redirect_to :controller => 'my', :action => 'page'
