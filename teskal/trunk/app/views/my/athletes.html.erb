@@ -15,7 +15,7 @@
         <th scope="col"><div align="left"><%=l(:field_created_on)%></div></th>
         <th scope="col"><div align="left"><%=l(:field_mail)%></div></th>
         <th scope="col"><div align="left"><%=l(:field_last_login_on)%></div></th>
-        <th scope="col"><div align="left"><%=l(:field_language)%></div></th>  
+        <th scope="col"><div align="left"><%=l(:field_language)%></div></th> 
       </tr>
     </thead>
     <tbody>
@@ -37,6 +37,7 @@
 		<td><a href="/my/admin/<%= user.id.to_s %>"><%= image_tag user.picture.url(:thumb) , :class  => "photoborder"%></a></td>    
 		<%- else -%>
 		   <td></td>
+		<!-- <%= image_tag "/images/missing_th.jpg", :class  => "photoborder" %> -->
 			<%- end -%>
       </tr>
       <%- end -%>
