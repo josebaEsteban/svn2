@@ -32,14 +32,19 @@
 		      <tr>
 		      <%- odd=1 end -%>
             <td><div id="who">
-	       <%- if message.author_id == @logged_in_user.id -%>
-		       <%= l(:label_me)+","%>
-	       <%- else -%>
-		       <%- autor = User.find(message.author_id) -%>
-		       <%= autor.name+","%>
-	        <%- end -%>
-	        <%= distance_am_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(message.created_on)) %>
-			<img src="/images/comment.png" /></div>
+					        <%- if message.author_id == @logged_in_user.id -%>
+					<%- autor = @logged_in_user -%>r
+					        <%= l(:label_me)+","%>
+					        <%- else -%>
+					        <%- autor = User.find(message.author_id) -%>
+					        <%= autor.name+","%>
+					        <%- end -%>
+					       <%= distance_am_of_time_in_words(TzTime.zone.utc_to_local(Time.now),TzTime.zone.utc_to_local(message.created_on)) %>
+								<%- if autor.picture.url(:medium) !="/pictures/medium/missing.png" -%>
+								<%= image_tag autor.picture.url(:talk) , :class  => "photoborder"%>  
+							<%- else -%>
+							<img src="/images/comment.png" />  
+							<%- end -%></div>
 			</em></div>       
 			<br/>
 	      <strong><%= simple_format(message.content) %></strong><br/> 
